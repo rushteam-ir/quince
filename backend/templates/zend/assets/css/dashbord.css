@@ -55,3 +55,12 @@
     margin-right: 10px;
     transition: all linear 0.1s;
 }
+.shop_list_main_field{
+    list-style-type: none;
+    position: relative;
+}
+.shop_list_text{
+    color: rgb(209, 209, 209);
+    text-align: right;
+    margin-top: 10px;
+}

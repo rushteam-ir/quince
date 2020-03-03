@@ -102,19 +102,16 @@
   <script src="js/bootstrap.js"></script>
   <script src="js/wow.js"></script>
   <script src="https://kit.fontawesome.com/1c750158b2.js" crossorigin="anonymous"></script>
-  <script src="js/login-error.js"></script>
+  <script src="js/login.js"></script>
   <script>
-
     $(document).ready(function () {
 
       $('#btn-captcha').click(function () {
-
-        $('#img-captcha').attr('src','{captcha_url}?_' + Math.random());
-
+  
+          $('#img-captcha').attr('src', '{captcha_url}?_' + Math.random());
+  
       });
-
-    });
-
+  });
   </script>
 </body>
 
