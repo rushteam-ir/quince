@@ -37,7 +37,7 @@ module.exports = async function (req, res) {
 
                 }else{
 
-                    res.redirect(`${config.backend_url}recovery/verify/?code=${req.session.recovery_code}&msg=change-fail`);
+                    res.redirect(`${config.backend_url}recovery/verify/?code=${req.session.saved_code}&msg=change-fail`);
 
                 }
 
