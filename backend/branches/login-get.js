@@ -2,8 +2,6 @@ module.exports = async function (req, res) {
 
     try{
 
-        delete req.session.recovery_email;
-
         if(req.session.login_form){
 
             let login_form = req.session.login_form;
