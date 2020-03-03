@@ -31,7 +31,23 @@
             let parent_id = $(this).val();
 
             if(parent_id != ""){
-                
+
+                let p = {"id":parent_id};
+
+                $.get(`http://localhost:3000/admin/` + 'category/sub-category', p, function (data) {
+
+                    console.log(data);
+                    $('#select-sub-category').find('option:gt(0)').remove();
+
+                    for(let i = 0; i < data.length; i++){
+
+                        let opt = '<option value="' + data[i]._id + '">' + data[i].title + '</option>';
+
+                        $('#select-sub-category').append(opt);
+
+                    }
+
+                })
 
             }
 

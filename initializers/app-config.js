@@ -2,6 +2,7 @@
 let app_port = 3000;
 let mongodb_port = 27017;
 let address = `localhost`;
+BACK_URL = `http://${address}:${app_port}/admin/`;
 
 module.exports = config = {
 
