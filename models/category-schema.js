@@ -47,7 +47,7 @@ category_schema.statics = {
 
     },
 
-    getAll : async function () {
+    getSub : async function () {
 
         return await category_model.find();
 

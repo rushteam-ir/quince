@@ -79,7 +79,7 @@ session_options = {
     name : config.session_name,
     resave: false,
     saveUninitialized: true,
-    cookie: {maxAge: 120000}
+    cookie: {maxAge: 365*24*60*60}
 
 };
 
