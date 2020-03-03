@@ -1,13 +1,19 @@
-<form action="" method="post" autocomplete="off">
-    <label for="title">عنوان دسته:</label><br>
-    <input type="text" id="title_inp" name="title_inp"><br>
-    <label for="parent">والد دسته:</label><br>
-    <select id="parent_inp" name="parent_inp">
-        <option value="0">دسته اصلی</option>
-        {#list}
-            <option value="{_id}">{title}</option>
-        {/list}
-    </select>
-    <br><br>
-    <input type="submit" name="add_category" value="ذخیره">
-</form>
+{>"layouts/main-dashboard"/}
+
+{<body}
+
+    <form action="" method="post" autocomplete="off">
+        <label for="title">عنوان دسته:</label><br>
+        <input type="text" id="title_inp" name="title_inp"><br>
+        <label for="parent">والد دسته:</label><br>
+        <select id="parent_inp" name="parent_inp">
+            <option value="0">دسته اصلی</option>
+            {#list}
+                <option value="{_id}">{title}</option>
+            {/list}
+        </select>
+        <br><br>
+        <input type="submit" name="add_category" value="ذخیره">
+    </form>
+
+{/body}

@@ -47,9 +47,13 @@ category_schema.statics = {
 
     },
 
-    getSub : async function () {
+    getSub : async function (parent_id) {
 
-        return await category_model.find();
+        return await category_model.find({
+
+            parent : parent_id
+
+        });
 
     }
 
