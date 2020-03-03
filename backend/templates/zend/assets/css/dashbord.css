@@ -1,43 +1,57 @@
-#particles {
-    width: 100%;
+.main_dashbord_field {
+    width: 250px;
     height: 100vh;
-    overflow: hidden;
-}
-
-#intro {
-    position: absolute;
-    right: 5px;
-    top: 0;
-    margin-top: 0 !important;
-    color: rgba(255, 255, 255, 0.69);
-}
-
-.main-side-menu {
     position: fixed;
-    right: 0;
-    width: 200px;
-    height: 100vh;
-    background: linear-gradient(0deg, rgba(148, 200, 62, 1) 30%, rgba(24, 173, 148, 1) 100%);
+    right: 0px;
+    top: 0px;
+    background-color: #1E1E2D;
 }
 
-.main-txt-of-menu-list {
-    list-style-type: none;
-    margin-right: 25px;
-    border-right: 2px solid rgba(255, 255, 255, 0.514);
-    padding-right: 14px;
+.field_of_zend_cms_img {
+    width: 100%;
+    background-color: #1A1A2C;
 }
 
-#salam,
-#salam2,
-#salam3,
-#salam4 {
-    height: 0px;
+.zend_cms_img_for_dashbord {
+    width: 110px;
+    margin: 15px 70px;
 }
 
-.dashbord-li-title {
-    margin-right: 6px;
-}
-
-.open-dashbord-submenu-btn {
+.field_of_dashbord_partion {
+    color: rgb(177, 177, 177);
+    padding-right: 15px;
     cursor: pointer;
+    padding-top: 18px;
+    transition: all linear 0.1s;
+}
+.field_of_dashbord_partion:hover{
+    background-color: #1A1A2C;
+}
+.field_of_dashbord_partion:hover .dashbord_tiny_icons{
+    color: #5D78FF;
+}
+.field_of_dashbord_partion:hover .dashbord_tiny_arrow{
+    color: rgb(212, 212, 212);
+}
+.field_of_dashbord_partion:hover .title_text_of_dashbord{
+    color: rgb(243, 243, 243);
+}
+.dashbord_tiny_arrow {
+    font-size: 0.5rem;
+    color: #4A4C69;
+    transition: all linear 0.1s;
+    position: absolute;
+    left: 22px;
+    margin-top: 10px;
+}
+
+.dashbord_tiny_icons {
+    font-size: 1.2rem;
+    color: #494B74;
+    transition: all linear 0.1s;
+}
+
+.title_text_of_dashbord {
+    margin-right: 10px;
+    transition: all linear 0.1s;
 }

@@ -3,82 +3,59 @@
 
 <head>
     <meta charset="UTF-8">
-    <base href="{backend_url}">
-    <!-- %%%%%%%%%%%%%%% Use on all pages %%%%%%%%%%%%%%% -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap4.4.1.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="responsive-style.css">
-    <!-- %%%%%%%%%%%%%%% Use on all pages %%%%%%%%%%%%%%% -->
-    <title>dashboard</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/general-css.css">
+    <link rel="stylesheet" href="css/dashbord.css">
+    <title>پنل مدیریت</title>
 </head>
 
 <body>
 
-<section>
-    <div class="main-side-menu">
-        <div id="particles">
-            <div id="intro">
-                <div class="text-right">
-                    <p class="text-center dashbord-li-title" >{admin_info.first_name} {admin_info.last_name}</p>
-                    <div onclick="dashbordDrd()" class="open-dashbord-submenu-btn">
-                        <p class="header-of-dashbor-partion d-inline-block mr-2">
-                            خانه
-                        </p>
-                        <i class="fas fa-home d-inline-block mr-3"></i>
-                    </div>
-                    <ul id="main-txt-of-menu-list" class="main-txt-of-menu-list" style="display: none;">
-                        <li id="salam">آمار بازدید</li>
-                        <li id="salam2">میزان فروش</li>
-                        <li id="salam3">چارت ها</li>
-                        <li id="salam4">فروشگاه</li>
-                    </ul>
-                </div>
-                <div class="text-right">
-                    <p class="text-right dashbord-li-title">فهرست</p>
-                    <div onclick="dashbordDrd()" class="open-dashbord-submenu-btn">
-                        <p class="header-of-dashbor-partion d-inline-block mr-2">
-                            خانه
-                        </p>
-                        <i class="fas fa-home d-inline-block mr-3"></i>
-                    </div>
-                    <ul id="main-txt-of-menu-list" class="main-txt-of-menu-list" style="display: none;">
-                        <li id="salam">آمار بازدید</li>
-                        <li id="salam2">میزان فروش</li>
-                        <li id="salam3">چارت ها</li>
-                        <li id="salam4">فروشگاه</li>
-                    </ul>
-                </div>
-                <div class="text-right">
-                    <p class="text-right dashbord-li-title">فهرست</p>
-                    <div onclick="dashbordDrd()" class="open-dashbord-submenu-btn">
-                        <p class="header-of-dashbor-partion d-inline-block mr-2">
-                            خانه
-                        </p>
-                        <i class="fas fa-home d-inline-block mr-3"></i>
-                    </div>
-                    <ul id="main-txt-of-menu-list" class="main-txt-of-menu-list">
-                        <li>آمار بازدید</li>
-                        <li>میزان فروش</li>
-                        <li>چارت ها</li>
-                        <li>فروشگاه</li>
-                    </ul>
-                </div>
+    <section class="main_dashbord_field dir-rtl">
+        <div class="field_of_zend_cms_img">
+            <img class="zend_cms_img_for_dashbord" src="img/zendlogo.png" alt="" title="">
+        </div>
+
+        <div>
+            <div class="field_of_dashbord_partion text-right mt-3">
+                <i class="fas fa-home d-inline-block dashbord_tiny_icons"></i>
+                <p class="d-inline-block title_text_of_dashbord">داشبورد</p>
+            </div>
+
+            <div class="field_of_dashbord_partion text-right">
+                <i class="fas fa-user-circle d-inline-block dashbord_tiny_icons"></i>
+                <p class="d-inline-block title_text_of_dashbord">پروفایل</p>
+            </div>
+
+            <div class="field_of_dashbord_partion text-right">
+                <i class="fas fa-layer-group d-inline-block dashbord_tiny_icons"></i>
+                <p class="d-inline-block title_text_of_dashbord">دسته بندی ها</p>
+            </div>
+
+            <div class="field_of_dashbord_partion text-right">
+                <i class="fas fa-store d-inline-block dashbord_tiny_icons"></i>
+                <p class="d-inline-block title_text_of_dashbord">فروشگاه</p>
+                <i class="fas fa-chevron-left dashbord_tiny_arrow"></i>
+            </div>
+
+            <div class="field_of_dashbord_partion text-right">
+                <i class="fas fa-bookmark d-inline-block dashbord_tiny_icons"></i>
+                <p class="d-inline-block title_text_of_dashbord">مطالب</p>
+                <i class="fas fa-chevron-left dashbord_tiny_arrow"></i>
             </div>
         </div>
-    </div>
-</section>
 
-{+body/}
 
-<!-- %%%%%%%%%%%%%%% Use on all pages %%%%%%%%%%%%%%% -->
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/jquery.particleground.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="https://kit.fontawesome.com/1c750158b2.js" crossorigin="anonymous"></script>
-<script src="js/custom.js"></script>
-<!-- %%%%%%%%%%%%%%% Use on all pages %%%%%%%%%%%%%%% -->
+
+    </section>
+    <p class="ml-3">salam</p>
+    <p style="margin-left: 1vw;">dalam</p>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/1c750158b2.js" crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
 </body>
 
 </html>
