@@ -23,19 +23,25 @@
     cursor: pointer;
     padding-top: 18px;
     transition: all linear 0.1s;
+    background-color: transparent;
 }
-.field_of_dashbord_partion:hover{
+
+.field_of_dashbord_partion:hover {
     background-color: #1A1A2C;
 }
-.field_of_dashbord_partion:hover .dashbord_tiny_icons{
+
+.field_of_dashbord_partion:hover .dashbord_tiny_icons {
     color: #5D78FF;
 }
-.field_of_dashbord_partion:hover .dashbord_tiny_arrow{
+
+.field_of_dashbord_partion:hover .dashbord_tiny_arrow {
     color: rgb(212, 212, 212);
 }
-.field_of_dashbord_partion:hover .title_text_of_dashbord{
+
+.field_of_dashbord_partion:hover .title_text_of_dashbord {
     color: rgb(243, 243, 243);
 }
+
 .dashbord_tiny_arrow {
     font-size: 0.5rem;
     color: #4A4C69;
@@ -55,12 +61,22 @@
     margin-right: 10px;
     transition: all linear 0.1s;
 }
-.shop_list_main_field{
+
+.shop_list_main_field {
     list-style-type: none;
     position: relative;
+    display: none;
+    padding: 0px;
 }
-.shop_list_text{
+
+.shop_list_text {
     color: rgb(209, 209, 209);
     text-align: right;
-    margin-top: 10px;
+    height: 44px;
+    line-height: 50px;
+    padding-right: 60px;
+}
+.shop_list_text:hover{
+    background-color: #1A1A2C;
+    color: white;
 }

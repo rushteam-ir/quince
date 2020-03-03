@@ -39,29 +39,35 @@
                 </div>
             </a>
 
-
-            <div class="field_of_dashbord_partion text-right" onclick="shop_dropdown()">
-                <i class="fas fa-store d-inline-block dashbord_tiny_icons"></i>
-                <p class="d-inline-block title_text_of_dashbord">فروشگاه</p>
-                <i class="fas fa-chevron-left dashbord_tiny_arrow"></i>
+            <div class="field_of_dashbord_partion text-right" id="shop_field" onclick="shop_dropdown()">
+                <i class="fas fa-store d-inline-block dashbord_tiny_icons" id="shop_icon"></i>
+                <p class="d-inline-block title_text_of_dashbord" id="dashbord_shop_text">فروشگاه</p>
+                <i class="fas fa-chevron-left dashbord_tiny_arrow" id="shop_arrow"></i>
             </div>
 
 
-            <ul class="shop_list_main_field" id="shop_list_main_field_id">
+            <ul class="shop_list_main_field" id="shop_DD_id">
                 <a href="#">
-                    <li class="shop_list_text">لیست محصولات</li>
+                    <li class="shop_list_text">
+                        لیست محصولات
+                    </li>
                 </a>
                 <a href="#">
-                    <li class="shop_list_text">اضافه کردن محصول جدید</li>
+                    <li class="shop_list_text">
+                        اضافه کردن محصول جدید
+                    </li>
                 </a>
             </ul>
 
 
-            <div class="field_of_dashbord_partion text-right">
-                <i class="fas fa-bookmark d-inline-block dashbord_tiny_icons"></i>
-                <p class="d-inline-block title_text_of_dashbord">مطالب</p>
-                <i class="fas fa-chevron-left dashbord_tiny_arrow"></i>
-            </div>
+            <a href="">
+                <div class="field_of_dashbord_partion text-right">
+                    <i class="fas fa-bookmark d-inline-block dashbord_tiny_icons"></i>
+                    <p class="d-inline-block title_text_of_dashbord">مطالب</p>
+                    <i class="fas fa-chevron-left dashbord_tiny_arrow"></i>
+                </div>
+            </a>
+
         </div>
 
     </section>
