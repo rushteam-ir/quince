@@ -55,7 +55,7 @@ app.get('/captcha', async(req, res)=>{
 
         });
 
-        svg_captcha.loadFont('./captcha/svg-captcha.ttf')
+        svg_captcha.loadFont(`${config.app_dir}backend/templates/${config.backend_tmp}/assets/font/Vazir.ttf`);
 
         req.session.captcha = captcha.text;
 
