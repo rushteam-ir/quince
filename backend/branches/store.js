@@ -10,7 +10,7 @@ router.get('/list', async(req,res)=>{
 
     try{
 
-        res.render('store-list');
+        res.render('store/store-list');
 
     }
     catch (error) {
@@ -32,7 +32,7 @@ router.get('/add', async(req,res)=>{
         }
 
         log(data);
-        res.render('store-add', data);
+        res.render('store/store-add', data);
 
     }
     catch (error) {

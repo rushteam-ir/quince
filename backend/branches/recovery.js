@@ -4,7 +4,7 @@ router.get('/', async(req,res)=>{
 
     try{
 
-        res.render('recovery');
+        res.render('recovery/recovery');
 
     }
     catch (error) {
@@ -89,7 +89,7 @@ router.get('/verify', async(req,res)=>{
 
             if(req.session.saved_code === req.query.code){
 
-                res.render('recovery-verify');
+                res.render('recovery/recovery-verify');
 
             }
             else{
