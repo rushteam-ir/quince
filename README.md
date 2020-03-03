@@ -1,2 +1,2 @@
 # zend-cms
-Cntent management service developed by Rouzbeh Sabzehei and kasra Habibbeygi
+Content management service developed by Rouzbeh Sabzehei and kasra Habibbeygi
