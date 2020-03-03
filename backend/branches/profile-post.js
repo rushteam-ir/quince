@@ -22,7 +22,7 @@ module.exports = async function (req, res) {
                     if(req.files.avatar.size/1024 <= backend_limited_avatars_size){
 
                         let avatar = req.files.avatar;
-                        let avatar_path = `${backend_upload_dir}${admin_id.toString()}.png`;
+                        let avatar_path = `${backend_upload_dir}avatars/${admin_id.toString()}.png`;
                         avatar.mv(avatar_path, (err)=>{});
                         admin_data.avatar = `${admin_id.toString()}.png`
 

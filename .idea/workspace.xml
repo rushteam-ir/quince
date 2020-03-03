@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/backend-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend-init.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/branches/profile-post.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/branches/profile-post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/avatars/5e5d167c6d03f37c59ccb282.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +29,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="13.3.0" />
@@ -111,7 +113,7 @@
       <workItem from="1583168047462" duration="598000" />
       <workItem from="1583178298082" duration="4463000" />
       <workItem from="1583221213173" duration="2764000" />
-      <workItem from="1583225386538" duration="296000" />
+      <workItem from="1583225386538" duration="608000" />
     </task>
     <servers />
   </component>
