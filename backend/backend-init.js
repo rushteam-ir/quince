@@ -19,7 +19,7 @@ backend.use(file_upload());
 backend.locals.backend_url = config.backend_url;
 backend.locals.debug_mode = config.debug_mode;
 backend.locals.captcha_url = config.captcha_url;
-backend.locals.zend_cms_version = "0.0.1";
+backend.locals.zend_cms_version = "1.0.0";
 
 backend_allowd_urls = ['/login/', '/recovery/', '/recovery/verify/'];
 backend_allowd_avatars = ['png', 'jpeg', 'jpg', 'gif'];

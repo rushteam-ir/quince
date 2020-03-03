@@ -17,7 +17,7 @@ module.exports = async function (req, res) {
 
             if (req.files) {
 
-                if(backend_allowd_avatars.includes(req.files.avatar.name.slice(-3))){
+                if(backend_allowd_avatars.includes(req.files.avatar.name.slice(-3)) || backend_allowd_avatars.includes(req.files.avatar.name.slice(-4))){
 
                     if(req.files.avatar.size/1024 <= backend_limited_avatars_size){
 
@@ -34,7 +34,8 @@ module.exports = async function (req, res) {
                     }
 
 
-                }else {
+                }
+                else {
 
                     return res.redirect(`${config.backend_url}profile/?msg=illegal-avatar`);
 
