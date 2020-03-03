@@ -37,7 +37,14 @@
                 <i class="fas fa-store d-inline-block dashbord_tiny_icons"></i>
                 <p class="d-inline-block title_text_of_dashbord">فروشگاه</p>
                 <i class="fas fa-chevron-left dashbord_tiny_arrow"></i>
+
+                <ul>
+                    <li>لیست محصولات</li>
+                    <li>اضافه کردن محصول جدید</li>
+                </ul>
+
             </div>
+
 
             <div class="field_of_dashbord_partion text-right">
                 <i class="fas fa-bookmark d-inline-block dashbord_tiny_icons"></i>
@@ -46,12 +53,9 @@
             </div>
         </div>
 
-
-
     </section>
 
     {+body/}
-
     <script src="js/jquery.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.js"></script>
