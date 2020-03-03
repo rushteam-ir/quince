@@ -49,8 +49,9 @@
 
 
     </section>
-    <p class="ml-3">salam</p>
-    <p style="margin-left: 1vw;">dalam</p>
+
+    {+body/}
+
     <script src="js/jquery.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.js"></script>
