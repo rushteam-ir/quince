@@ -3,10 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="bd36d6d7-6b5a-4a74-b20a-025da208c5c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/assets/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/assets/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/js/popper.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/assets/js/popper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/views/login.dust" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/views/login.dust" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/branches/category-get.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/branches/category-post.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/branches/dashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/branches/login-check.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/branches/login-get.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/branches/login-post.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/branches/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/branches/param-check.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/branches/profile-get.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/branches/profile-post.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/branches/recovery-get.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/branches/recovery-post.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/branches/shop-add-get.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/branches/shop-get.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/branches/verify-get.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/branches/verify-post.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/zend/views/shop-add.dust" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/views/store-add.dust" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/zend/views/shop-list.dust" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/views/store-list.dust" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,19 +55,19 @@
     <property name="ts.external.directory.path" value="F:\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Programming\Node Js Projects\Zend CMS\initializers" />
-      <recent name="F:\Programming\Node Js Projects\Zend CMS\backend\templates\zend\views" />
-      <recent name="F:\Programming\Node Js Projects\Zend CMS\models" />
-      <recent name="F:\Programming\Node Js Projects\CMS\backend\templates\polybius\assets" />
-      <recent name="F:\Programming\Node Js Projects\CMS\backend\templates\polybius\assets\css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Programming\Node Js Projects\Zend CMS\backend\branches" />
       <recent name="F:\Programming\Node Js Projects\Zend CMS\backend\templates\zend\views" />
       <recent name="F:\Programming\Node Js Projects\Zend CMS\backend\templates\zend\views\layouts" />
       <recent name="F:\Programming\Node Js Projects\Zend CMS\models" />
       <recent name="F:\Programming\Node Js Projects\Zend CMS\backend\templates\zend\assets\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Programming\Git projects\backend\branches" />
+      <recent name="F:\Programming\Node Js Projects\Zend CMS\initializers" />
+      <recent name="F:\Programming\Node Js Projects\Zend CMS\backend\templates\zend\views" />
+      <recent name="F:\Programming\Node Js Projects\Zend CMS\models" />
+      <recent name="F:\Programming\Node Js Projects\CMS\backend\templates\polybius\assets" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -115,7 +130,8 @@
       <workItem from="1583178298082" duration="4463000" />
       <workItem from="1583221213173" duration="2764000" />
       <workItem from="1583225386538" duration="5015000" />
-      <workItem from="1583234213371" duration="2499000" />
+      <workItem from="1583234213371" duration="2730000" />
+      <workItem from="1583244640778" duration="4041000" />
     </task>
     <servers />
   </component>

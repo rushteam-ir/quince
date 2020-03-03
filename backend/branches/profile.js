@@ -1,4 +1,21 @@
-module.exports = async function (req, res) {
+const router = express.Router();
+
+router.get('/', async(req,res)=>{
+
+    try{
+
+        res.render('profile');
+
+    }
+    catch (error) {
+
+        res.status(500).render('500', {error});
+
+    }
+
+});
+
+router.post('/', async(req,res)=>{
 
     try{
 
@@ -112,4 +129,6 @@ module.exports = async function (req, res) {
 
     }
 
-};
+});
+
+module.exports = router;

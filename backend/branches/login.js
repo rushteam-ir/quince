@@ -1,4 +1,31 @@
-module.exports = async function (req, res) {
+const router = express.Router();
+
+router.get('/', async(req,res)=>{
+
+    try{
+
+        if(req.session.login_form){
+
+            let login_form = req.session.login_form;
+            res.render('login',{login_form})
+
+        }
+        else{
+
+            res.render('login');
+
+        }
+
+    }
+    catch (error) {
+
+        res.status(500).render('500', {error});
+
+    }
+
+});
+
+router.post('/', async(req,res)=>{
 
     try{
 
@@ -39,34 +66,34 @@ module.exports = async function (req, res) {
 
             admin_model.login(username_inp, password_inp, (result, find_user)=>{
 
-               if(result){
+                if(result){
 
-                   if(find_user.status){
+                    if(find_user.status){
 
-                       // Login was successful
-                       delete req.session.login_form;
-                       delete req.session.captcha;
+                        // Login was successful
+                        delete req.session.login_form;
+                        delete req.session.captcha;
 
-                       req.session.admin_id = find_user._id;
-                       req.session.admin_info = find_user;
+                        req.session.admin_id = find_user._id;
+                        req.session.admin_info = find_user;
 
-                       res.redirect(`${config.backend_url}dashboard`);
+                        res.redirect(`${config.backend_url}dashboard`);
 
-                   }
-                   else {
+                    }
+                    else {
 
-                       // User is banned
-                       res.redirect(`${config.backend_url}login/?msg=inactive-admin`);
+                        // User is banned
+                        res.redirect(`${config.backend_url}login/?msg=inactive-admin`);
 
-                   }
+                    }
 
-               }
-               else{
+                }
+                else{
 
-                   // Username or password is incorrect
-                   res.redirect(`${config.backend_url}login/?msg=incorrect-input`);
+                    // Username or password is incorrect
+                    res.redirect(`${config.backend_url}login/?msg=incorrect-input`);
 
-               }
+                }
 
             })
 
@@ -79,4 +106,6 @@ module.exports = async function (req, res) {
 
     }
 
-};
+});
+
+module.exports = router;

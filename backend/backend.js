@@ -1,111 +1,110 @@
 // Importing all requirements
 require('./backend-init');
 
-// Backend routs
-// Server get params middleware
+// Main rout
 backend.use(async(req,res,next)=>{
 
-    await backend_branches['param-check'](req, res, next);
+    try{
+
+        if(req.query.msg){
+
+            msg_param = req.query.msg.trim();
+
+        }
+        else{
+
+            msg_param = '';
+
+        }
+
+        next();
+
+    }
+    catch (error) {
+
+        res.status(500).render('500', {error});
+
+    }
 
 });
 
 
 backend.use(async(req, res, next)=>{
 
-    await backend_branches['login-check'](req, res, next);
+    let parsed_url = req._parsedUrl.pathname;
+
+    if(!parsed_url.endsWith('/')){
+
+        parsed_url += '/';
+
+    }
+
+    if(isUndefined(req.session.admin_id)){
+
+        // Admin is not logged in
+        if(backend_allowd_urls.includes(parsed_url)){
+
+            next();
+
+        }
+        else{
+
+            res.redirect(`${config.backend_url}login`);
+            return;
+
+        }
+
+    }
+    else{
+
+        // Admin is already logged in
+        backend.locals.admin_info = req.session.admin_info;
+
+        if(backend_allowd_urls.includes(parsed_url)){
+
+            res.redirect(`${config.backend_url}dashboard`);
+            return;
+
+        }
+        else{
+
+            next();
+
+        }
+
+    }
 
 });
 
 backend.get('/', async(req,res)=>{
 
-    await backend_branches['main'](req, res);
+    try{
+
+        res.redirect(`${config.backend_url}dashboard`);
+
+    }
+    catch (error) {
+
+        res.status(500).render('500', {error});
+
+    }
 
 });
 
-backend.get('/shop', async(req,res)=>{
+// Backend other routs
+const dashboard = require('./branches/dashboard');
+const login = require('./branches/login');
+const profile = require('./branches/profile');
+const category = require('./branches/category');
+const recovery = require('./branches/recovery');
+const store = require('./branches/store');
 
-    res.redirect(`${config.backend_url}shop/list`);
-
-});
-
-backend.get('/shop/list', async(req,res)=>{
-
-    await backend_branches['shop-get'](req, res);
-
-});
-
-backend.get('/shop/add', async(req,res)=>{
-
-    await backend_branches['shop-add-get'](req, res);
-
-});
-
-backend.get('/category', async(req,res)=>{
-
-    await backend_branches['category-get'](req, res);
-
-});
-
-backend.post('/category', async(req,res)=>{
-
-    await backend_branches['category-post'](req, res);
-
-});
-
-backend.get('/dashboard', async(req,res)=>{
-
-    await backend_branches['dashboard'](req, res);
-
-});
-
-backend.get('/profile', async(req,res)=>{
-
-    await backend_branches['profile-get'](req, res);
-
-});
-
-backend.post('/profile', async(req,res)=>{
-
-    await backend_branches['profile-post'](req, res);
-
-});
-
-backend.get('/login', async(req,res)=>{
-
-    await backend_branches['login-get'](req, res);
-
-});
-
-backend.post('/login', async(req,res)=>{
-
-    await backend_branches['login-post'](req, res);
-
-});
-
-
-backend.get('/recovery', async(req,res)=>{
-
-    await backend_branches['recovery-get'](req, res);
-
-});
-
-backend.post('/recovery', async(req,res)=>{
-
-    await backend_branches['recovery-post'](req, res);
-
-});
-
-backend.get('/recovery/verify', async(req,res)=>{
-
-    await backend_branches['verify-get'](req, res);
-
-});
-
-backend.post('/recovery/verify', async(req,res)=>{
-
-    await backend_branches['verify-post'](req, res);
-
-});
+backend.use('/dashboard', dashboard);
+backend.use('/login', login);
+backend.use('/profile', profile);
+backend.use('/category', category);
+backend.use('/recovery', recovery);
+backend.use('/store', store);
 
 // Backend 404 page
 backend.use(async(req,res,next)=>{

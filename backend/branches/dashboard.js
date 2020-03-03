@@ -1,4 +1,6 @@
-module.exports = async function (req, res) {
+const router = express.Router();
+
+router.get('/', async(req,res)=>{
 
     try{
 
@@ -11,4 +13,6 @@ module.exports = async function (req, res) {
 
     }
 
-};
+});
+
+module.exports = router;

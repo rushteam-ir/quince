@@ -1,4 +1,27 @@
-module.exports = async function (req, res) {
+const router = express.Router();
+
+router.get('/', async(req,res)=>{
+
+    try{
+
+        let data = {
+
+            list : await category_model.get()
+
+        };
+
+        res.render('category', data);
+
+    }
+    catch (error) {
+
+        res.status(500).render('500', {error});
+
+    }
+
+});
+
+router.post('/', async(req,res)=>{
 
     try{
 
@@ -40,4 +63,6 @@ module.exports = async function (req, res) {
 
     }
 
-};
+});
+
+module.exports = router;
