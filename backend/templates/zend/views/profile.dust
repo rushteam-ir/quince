@@ -1,0 +1,29 @@
+{>"layouts/main-dashboard"/}
+
+{<body}
+
+    <form action="" method="post" autocomplete="off" enctype="multipart/form-data">
+        <label for="first_name">نام:</label><br>
+        <input type="text" id="firstname_inp" name="firstname_inp" value="{admin_info.first_name}"><br>
+        <label for="last_name">نام خانوادگی:</label><br>
+        <input type="text" id="lastname_inp" name="lastname_inp" value="{admin_info.last_name}"><br>
+        <label for="email">ایمیل:</label><br>
+        <input type="text" id="email_inp" name="email_inp" value="{admin_info.email}"><br>
+        <label for="phone_number">شماره تلفن همراه:</label><br>
+        <input type="text" id="phonenumber_inp" name="phonenumber_inp" value="{admin_info.phone_number}"><br>
+        <label for="pic">تصویر پروفایل:</label><br>
+        <input type="file" id="avatar" name="avatar" ><br><br>
+        <input type="submit" name="change_profile" value="ذخیره">
+    </form>
+    <br><br><br>
+    <form action="" method="post">
+        <label for="current_password">رمز عبور فعلی:</label><br>
+        <input type="password" id="firstname_inp" name="current_password" value=""><br>
+        <label for="new_password">رمز عبور جدید:</label><br>
+        <input type="password" id="lastname_inp" name="new_password" value=""><br>
+        <label for="confirm_password">تکرار رمز عبور:</label><br>
+        <input type="password" id="email_inp" name="confirm_password" value=""><br><br>
+        <input type="submit" name="change_password" value="ذخیره">
+    </form>
+
+{/body}

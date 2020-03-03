@@ -1,0 +1,35 @@
+@font-face {
+    font-family: main-font;
+    src: url(../font/Vazir.ttf);
+}
+
+@font-face {
+    font-family: second-font;
+    src: url(../font/Vazir-Thin.ttf);
+}
+
+body {
+    font-family: second-font;
+}
+
+.dir-rtl {
+    direction: rtl;
+}
+
+.btn:hover {
+    color: #ffffff;
+}
+
+.btn.focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+button:focus {
+    outline: none;
+    outline: none;
+}

@@ -1,0 +1,24 @@
+{>"layouts/main-dashboard"/}
+
+{<body}
+
+    <form action="" method="post" autocomplete="off" enctype="multipart/form-data">
+        <label for="title">عنوان محصول:</label><br>
+        <input type="text" id="title_inp" name="title_inp"><br>
+        <label for="category">دسته:</label><br>
+        <select id="parent_inp" name="parent_inp">
+            <option value="0">---</option>
+            {#list}
+                <option value="{_id}">{title}</option>
+            {/list}
+        </select><br>
+        <label for="child_category">زیر دسته:</label><br>
+        <select id="parent_inp" name="child_inp">
+            <option value="0">---</option>
+        </select><br>
+        <label for="pic">تصویر محصول:</label><br>
+        <input type="file" id="product_img" name="product_img" ><br><br>
+        <input type="submit" name="add_product" value="ثبت">
+    </form>
+
+{/body}

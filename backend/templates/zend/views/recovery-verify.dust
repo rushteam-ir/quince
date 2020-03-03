@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="{backend_url}">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/general-css.css">
+  <link rel="stylesheet" href="css/login.css">
+  <title>بازیابی رمز عبور</title>
+</head>
+
+<body dir="ltr">
+  <section class="main_field_of_dashbord_login">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+          <div class="row row_of_dashbord_login_form">
+
+            <div class="col-12 col-md-7">
+              <div>
+                <p class="text-center header_of_dashbord_login">
+                  بازیابی رمز عبور
+                </p>
+              </div>
+
+              <div class="main_field_of_dashbord_login_form">
+
+                {@alertError key="invalid-input" msg="مقادیر ورودی را دوباره بررسی کنید"}{/alertError}
+                {@alertError key="empty-input" msg="لطفا تمام ورودی ها را وارد کنید"}{/alertError}
+                {@alertError key="not-match" msg="رمز عبور و تکرار آن تشابه ندارند"}{/alertError}
+                {@alertError key="change-fail" msg="تعویض رمز عبور انجام نشد با پشتیبانی در ارتباط باشید"}{/alertError}
+
+                <form action="" method="post" name="dashbord_login_form"
+                  onsubmit="return adminlogerrors()">
+
+                  <div class="form-group">
+                    <label for="email-for-id" class="text-right d-block">رمز عبور جدید</label>
+                    <input type="password" class="form-control dir-rtl dashbord_login_input" id="email-for-id"
+                           name="newpass_inp" autocomplete="off">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="password-for-id" class="text-right d-block">تکرار رمز عبور</label>
+                    <input type="password" class="form-control dir-rtl dashbord_login_input" id="password-for-id"
+                           name="compass_inp" autocomplete="off">
+                  </div>
+
+                  <button type="submit" class="btn sub_btn_of_dashbord_form ">تعویض رمز</button>
+
+                </form>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-5 p-0 col_of_left_log_part">
+              <img class="w-100 blur_img_for_login_form" src="img/img1.jpg" alt="" title="">
+
+              <div class="logo-field">
+                <img class="zend_logo_of_dashbord_form" src="img/fade-zend-logo.png" alt="" title="">
+                <p class="text-center small_of_logo">
+                  version {zend_cms_version}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="https://kit.fontawesome.com/1c750158b2.js" crossorigin="anonymous"></script>
+  <script src="js/login-error.js"></script>
+</body>
+
+</html>
