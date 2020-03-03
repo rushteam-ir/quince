@@ -111,28 +111,25 @@
     color: #aaaaaa;
     margin-top: 10px;
 }
-.captcha_img_class{
-    width: 90%;
+
+.captcha_img_class {
+    width: 80%;
     height: 60px;
 }
-.captcha_refresh_btn{
-    width: 10%;
-}
-.captcha_refresh_btn{
+
+.captcha_refresh_btn {
+    width: 20%;
     border: none;
-    background-color:transparent;
+    background-color: transparent;
+    display: unset !important;
 }
-.fa-redo{
+
+.fa-redo {
     color: #4455bd;
 }
-@media only screen and (max-width: 1200px) {}
-
-@media only screen and (max-width: 992px) {}
-
-@media only screen and (max-width: 768px) {}
 
 @media only screen and (max-width: 600px) {
-    .captcha_img_class{
+    .captcha_img_class {
         height: 80px;
     }
 }
