@@ -33,7 +33,7 @@
                 </div>
             </a>
 
-            <a href="">
+            <a href="{backend_url}category">
                 <div class="field_of_dashbord_partion text-right">
                     <i class="fas fa-layer-group d-inline-block dashbord_tiny_icons"></i>
                     <p class="d-inline-block title_text_of_dashbord">دسته بندی ها</p>
@@ -48,12 +48,12 @@
 
 
             <ul class="shop_list_main_field" id="shop_DD_id">
-                <a href="#">
+                <a href="{backend_url}store/list">
                     <li class="shop_list_text">
                         لیست محصولات
                     </li>
                 </a>
-                <a href="#">
+                <a href="{backend_url}store/add">
                     <li class="shop_list_text">
                         اضافه کردن محصول جدید
                     </li>
