@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="bd36d6d7-6b5a-4a74-b20a-025da208c5c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/branches/login-get.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/branches/login-get.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/assets/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/assets/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/js/popper.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/assets/js/popper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/zend/views/login.dust" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/views/login.dust" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +114,8 @@
       <workItem from="1583168047462" duration="598000" />
       <workItem from="1583178298082" duration="4463000" />
       <workItem from="1583221213173" duration="2764000" />
-      <workItem from="1583225386538" duration="4641000" />
+      <workItem from="1583225386538" duration="5015000" />
+      <workItem from="1583234213371" duration="2499000" />
     </task>
     <servers />
   </component>
