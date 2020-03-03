@@ -106,6 +106,7 @@
   <script>
 
     $(document).ready(function () {
+
       $('#btn-captcha').click(function () {
 
         $('#img-captcha').attr('src','{captcha_url}?_' + Math.random());

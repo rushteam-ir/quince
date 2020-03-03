@@ -28,7 +28,6 @@ router.get('/add', async(req,res)=>{
         let data = {
 
             list : await category_model.get(),
-            child : await category_model.getAll()
 
         }
 
