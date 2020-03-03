@@ -63,7 +63,3 @@ app.get('/captcha', async(req, res)=>{
         res.send(captcha.data);
 
 });
-
-
-
-//asas
