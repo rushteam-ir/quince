@@ -16,7 +16,7 @@
     <nav class="main_admin_navbar"> 
         <div class="d-inline-block field_of_admin_name">
             <img class="profile_admin_img " src="media/avatars/5e5d167c6d03f37c59ccb282.png" alt="" title="">
-            <p class="d-inline-block nick_name_of_admin_dashbord">MegaNoob</p>
+            <p class="d-inline-block nick_name_of_admin_dashbord">{admin_info.first_name} {admin_info.last_name}</p>
         </div>
         <div class="d-inline-block notification_main_box">
             <i class="far fa-envelope notification_icon"></i>
