@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bd36d6d7-6b5a-4a74-b20a-025da208c5c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/views/store/store-add.dust" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/views/store/store-add.dust" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +117,7 @@
       <workItem from="1583261410829" duration="3480000" />
       <workItem from="1583268279471" duration="1446000" />
       <workItem from="1583315397667" duration="5953000" />
-      <workItem from="1583325792539" duration="2420000" />
+      <workItem from="1583325792539" duration="4871000" />
     </task>
     <servers />
   </component>
