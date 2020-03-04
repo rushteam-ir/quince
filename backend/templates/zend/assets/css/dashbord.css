@@ -80,3 +80,63 @@
     background-color: #1A1A2C;
     color: white;
 }
+/* %%%%%%% nav bar %%%%%%% */
+.main_admin_navbar{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+}
+
+.profile_admin_img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 7px;
+}
+.main_background-color{
+    background-color: #ebebeb;
+}
+.field_of_admin_name{
+    background-color: white;
+    height: 60px;
+    border-right: 1px solid #e3e3e3;
+    padding-right: 18px;
+}
+.nick_name_of_admin_dashbord{
+    position: relative;
+    top: 5px;
+    left: 8px;
+}
+.notification_main_box{
+    height: 60px;
+}
+.notification_icon{
+    width: 20px;
+    font-size: 1.5rem;
+    color: #555555;
+    position: relative;
+    top: 8px;
+    left: 15px;
+}
+.number_of_dashbord_notif{
+    width: 17px;
+    height: 17px;
+    position: relative;
+    z-index: 10;
+    top: -5px;
+    left: 11px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 0.7rem;
+    border-radius: 50%;
+    line-height: 22px;
+    display: inline-block;
+
+}
+.custom_number_of_dashbord_notif{
+    top: -5px;
+    left: 3px;
+}
