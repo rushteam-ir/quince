@@ -20,6 +20,8 @@
         <textarea id="describe" rows="5" cols="50"></textarea><br>
         <label for="title">موجودی فعلی انبار:</label><br>
         <input type="number" id="title_inp" name="title_inp"><br>
+        <label for="title">تخفیف:</label><br>
+        <input type="number" id="title_inp" name="title_inp"> %<br>
         <label for="pic">تصویر اصلی محصول:</label><br>
         <input type="file" id="product_img" name="product_img" ><br><br>
         <label for="pic">تصاویر دیگر محصول:</label><br>

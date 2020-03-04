@@ -13,6 +13,7 @@ nodemailer = require('nodemailer');
 admin_model = require('../models/admin-schema');
 category_model = require('../models/category-schema');
 setting_model = require('../models/setting-schema');
+store_model = require('../models/store-schema');
 
 // Global variables
 msg_param = '';
