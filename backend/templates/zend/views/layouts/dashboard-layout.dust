@@ -55,7 +55,7 @@
                 </a>
                 <a href="{backend_url}store/add">
                     <li class="shop_list_text">
-                        اضافه کردن محصول جدید
+                        اضافه کردن محصول
                     </li>
                 </a>
             </ul>
@@ -66,6 +66,13 @@
                     <i class="fas fa-bookmark d-inline-block dashbord_tiny_icons"></i>
                     <p class="d-inline-block title_text_of_dashbord">مطالب</p>
                     <i class="fas fa-chevron-left dashbord_tiny_arrow"></i>
+                </div>
+            </a>
+
+            <a href="{backend_url}settings">
+                <div class="field_of_dashbord_partion text-right">
+                    <i class="fas fa-wrench d-inline-block dashbord_tiny_icons"></i>
+                    <p class="d-inline-block title_text_of_dashbord">تنظیمات</p>
                 </div>
             </a>
 

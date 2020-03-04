@@ -1,0 +1,14 @@
+{>"layouts/dashboard-layout"/}
+
+{<body}
+
+    <form action="" method="post">
+        <label >تنظیمات وب سایت</label><br><br>
+        <label for="website_title">عنوان سایت :</label><br>
+        <input type="text" id="website_title_inp" name="website_title_inp" value=""><br>
+        <label for="max_image_upload_size">حداکثر حجم مجاز آپلود تصویر:</label><br>
+        <input type="text" id="max_image_upload_size_inp" name="max_image_upload_size_inp" value=""><br><br>
+        <input type="submit" name="change_settings" value="ذخیره">
+    </form>
+
+{/body}
