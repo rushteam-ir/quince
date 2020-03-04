@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bd36d6d7-6b5a-4a74-b20a-025da208c5c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/views/layouts/main-dashboard.dust" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/views/layouts/main-dashboard.dust" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/views/store-add.dust" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/views/store-add.dust" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,19 +36,19 @@
     <property name="ts.external.directory.path" value="F:\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Programming\Git projects\backend\templates\zend\views" />
+      <recent name="F:\Programming\Git projects\backend\templates\zend\views\store" />
+      <recent name="F:\Programming\Git projects\backend\templates\zend\views\recovery" />
+      <recent name="F:\Programming\Git projects\backend\templates\zend\views\profile" />
+      <recent name="F:\Programming\Git projects\backend\templates\zend\views\category" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Programming\Node Js Projects\Zend CMS\backend\branches" />
       <recent name="F:\Programming\Node Js Projects\Zend CMS\backend\templates\zend\views" />
       <recent name="F:\Programming\Node Js Projects\Zend CMS\backend\templates\zend\views\layouts" />
       <recent name="F:\Programming\Node Js Projects\Zend CMS\models" />
       <recent name="F:\Programming\Node Js Projects\Zend CMS\backend\templates\zend\assets\css" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Programming\Git projects\backend\branches" />
-      <recent name="F:\Programming\Node Js Projects\Zend CMS\initializers" />
-      <recent name="F:\Programming\Node Js Projects\Zend CMS\backend\templates\zend\views" />
-      <recent name="F:\Programming\Node Js Projects\Zend CMS\models" />
-      <recent name="F:\Programming\Node Js Projects\CMS\backend\templates\polybius\assets" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -116,7 +114,8 @@
       <workItem from="1583234213371" duration="2730000" />
       <workItem from="1583244640778" duration="4300000" />
       <workItem from="1583255991057" duration="3845000" />
-      <workItem from="1583261410829" duration="3181000" />
+      <workItem from="1583261410829" duration="3480000" />
+      <workItem from="1583268279471" duration="1446000" />
     </task>
     <servers />
   </component>
