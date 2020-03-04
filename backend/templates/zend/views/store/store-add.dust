@@ -18,6 +18,8 @@
         </select><br>
         <label for="title">توضیحات:</label><br>
         <textarea id="describe" rows="5" cols="50"></textarea><br>
+        <label for="title">قیمت:</label><br>
+        <input type="number" id="title_inp" name="title_inp"> تومان<br>
         <label for="title">موجودی فعلی انبار:</label><br>
         <input type="number" id="title_inp" name="title_inp"><br>
         <label for="title">تخفیف:</label><br>
