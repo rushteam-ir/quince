@@ -69,16 +69,12 @@
 
                     <div id="profileCheckbox">
                         <v-app>
-                            <v-checkbox v-model="proCheckBox"
-                                label="آیا تمایل دارید که نام کاربری به عنوان نام پروفایل انتخاب گردد؟" value="left">
-                            </v-checkbox>
+                            <v-checkbox v-model="proCheckBox" label="آیا تمایل دارید که نام کاربری به عنوان نام پروفایل انتخاب گردد؟" value="left"></v-checkbox>
                         </v-app>
                     </div>
                     <button type="submit" name="change_profile" class="btn profile_submit">ذخیره</button>
                 </form>
             </div>
-
-
 
             <div id="admin_change_pass">
 
@@ -105,7 +101,6 @@
 
                     <button type="submit" name="change_password" class="btn profile_submit">ذخیره</button>
                 </form>
-
 
             </div>
             </div>
