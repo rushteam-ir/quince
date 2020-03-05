@@ -74,14 +74,11 @@
                     </label>
                     
 
-<<<<<<< HEAD
                     <div id="profileCheckbox">
                         <v-app >
                             <v-checkbox v-model="proCheckBox" label="آیا تمایل دارید که نام کاربری به عنوان نام پروفایل انتخاب گردد؟" value="left" name="author_change"></v-checkbox>
                         </v-app>
                     </div>
-=======
->>>>>>> 8fdf98726630097449b5d5366e2705154460eb0e
                     <button type="submit" name="change_profile" class="btn profile_submit">ذخیره</button>
                 </form>
             </div>
