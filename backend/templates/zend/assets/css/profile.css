@@ -7,7 +7,6 @@
     padding: 70px 220px;
     direction: rtl;
     text-align: right;
-
 }
 
 .admin_profile_profile {
@@ -35,6 +34,7 @@
     margin-right: 10px;
     text-align: right;
 }
+
 .v-input--selection-controls {
     margin-top: 0px;
 
@@ -47,6 +47,7 @@
     font-weight: bold;
     color: white;
 }
+
 .profile_delete {
     width: 130px;
     margin-top: 20px;
@@ -54,13 +55,16 @@
     font-weight: bold;
     color: white;
 }
-.profile_delete:hover{
+
+.profile_delete:hover {
     background-color: #ff1824;
 }
-.profile_submit:hover{
+
+.profile_submit:hover {
     background-color: #3758FF;
 }
-.main_filed_of_profile_option_btn{
+
+.main_filed_of_profile_option_btn {
     width: 250px;
     height: 80px;
     background-color: rgb(255, 255, 255);
@@ -69,9 +73,11 @@
     text-align: right;
     float: right;
     margin-right: -220px;
-    margin-top: -150px;    cursor: pointer;
+    margin-top: -150px;
+    cursor: pointer;
 }
-.number_of_profile_header{
+
+.number_of_profile_header {
     background-color: #5D78FF;
     color: #ffffff;
     height: 40px;
@@ -84,20 +90,96 @@
     margin-right: 30px;
     font-weight: bold;
 }
-.profile_header_text{
+
+.profile_header_text {
     font-size: 1.2rem;
     margin-right: 8px;
 }
-.main_filed_of_profile_option_second_btn{
+
+.main_filed_of_profile_option_second_btn {
     margin-right: 39px;
     background-color: #F7F8FB;
     cursor: pointer;
 }
-.second_number_of_profile_header{
+
+.second_number_of_profile_header {
     background-color: #DFE2EE;
     color: #5D78FF;
     font-weight: bold;
 }
-#admin_change_pass{
+
+#admin_change_pass {
+    display: none;
+}
+
+#admin_profile_error_field {
+    display: none;
+}
+
+.checkbox_body {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    padding-right: 39px;
+    margin-bottom: 12px;
+    margin-top: 24px;
+    cursor: pointer;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox_body input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: -2px;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 3px;
+}
+
+.checkbox_body:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.checkbox_body input:checked~.checkmark {
+    background-color: #1867C0;
+    border-radius: 3px;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox_body input:checked~.checkmark:after {
+    display: block;
+}
+
+.checkbox_body .checkmark:after {
+    left: 9px;
+    top: 3px;
+    width: 7px;
+    height: 14px;
+    border: solid white;
+    border-width: 0 1.6px 1.6px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#admin_profile_password_error{
     display: none;
 }

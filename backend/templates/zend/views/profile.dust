@@ -29,9 +29,9 @@
                     تنظیمات پروفایل کاربری
                 </p>
 
-                <div id="admin_profile_error_field" class=""></div>
+                <div id="admin_profile_error_field" class="alert alert-warning"></div>
 
-                <form action="" method="post" autocomplete="off" enctype="multipart/form-data" name="admin_pro_main_form">
+                <form action="" method="post" autocomplete="off" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="profile_username_inp">نام کاربری</label>
                         <input type="text" class="form-control" id="username_inp" name="username_inp"
@@ -58,7 +58,7 @@
 
                     <div class="form-group">
                         <label for="phonenumber_inp">شماره تلفن همراه</label>
-                        <input type="text" id="phonenumber_inp" class="form-control" name="phonenumber_inp"
+                        <input type="number" id="phonenumber_inp" class="form-control" name="phonenumber_inp"
                             value="{admin_info.phone_number}">
                     </div>
 
@@ -68,12 +68,12 @@
                         <button type="submit" name="delete_avatar" class="btn profile_delete">حذف</button>
                     </div>
 
+                    <label class="checkbox_body">آیا تمایل دارید که نام کاربری به عنوان نام پروفایل انتخاب گردد؟
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    
 
-                    <div id="profileCheckbox">
-                        <v-app>
-                            <v-checkbox v-model="proCheckBox" label="آیا تمایل دارید که نام کاربری به عنوان نام پروفایل انتخاب گردد؟" value="left"></v-checkbox>
-                        </v-app>
-                    </div>
                     <button type="submit" name="change_profile" class="btn profile_submit">ذخیره</button>
                 </form>
             </div>
@@ -84,21 +84,23 @@
                     عوض کردن رمز عبور
                 </p>
 
-                <form action="" method="post">
+                <form action="" method="post" name="admin_pro_pass_edit" onsubmit="return passError()">
 
+                    <div id="admin_profile_password_error" class="alert alert-warning"></div>
+                    
                     <div class="form-group">
-                        <label for="firstname_inp">رمز عبور فعلی</label>
-                        <input type="password" id="firstname_inp" class="form-control" name="current_password" value="">
+                        <label for="current_password">رمز عبور فعلی</label>
+                        <input type="password" id="current_password" class="form-control" name="current_password" value="">
                     </div>
 
                     <div class="form-group">
-                        <label for="lastname_inp">رمز عبور جدید</label>
-                        <input type="password" id="lastname_inp" class="form-control" name="new_password" value="">
+                        <label for="new_password">رمز عبور جدید</label>
+                        <input type="text" id="new_password" class="form-control" name="new_password" value="">
                     </div>
 
                     <div class="form-group">
-                        <label for="email_inp">تکرار رمز عبور جدید</label>
-                        <input type="password" id="email_inp" class="form-control" name="confirm_password" value="">
+                        <label for="confirm_password">تکرار رمز عبور جدید</label>
+                        <input type="password" id="confirm_password" class="form-control" name="confirm_password" value="">
                     </div>
 
                     <button type="submit" name="change_password" class="btn profile_submit">ذخیره</button>
