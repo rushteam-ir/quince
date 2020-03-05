@@ -70,7 +70,7 @@
                     <div id="profileCheckbox">
                         <v-app>
                             <v-checkbox v-model="proCheckBox"
-                                label="آیا تمایل دارید که نام کاربری به عنوان نام پروفایل انتخاب گردد؟" value="left">
+                                label="آیا تمایل دارید که نام کاربری به عنوان نام پروفایل انتخاب گردد؟" value="left" name="author_checkbox">
                             </v-checkbox>
                         </v-app>
                     </div>

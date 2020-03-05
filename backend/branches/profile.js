@@ -19,6 +19,8 @@ router.post('/', async(req,res)=>{
 
     try{
 
+        log(req.body);
+
         if(req.body.change_profile == ''){
 
             let {username_inp, firstname_inp, lastname_inp, email_inp, phonenumber_inp} = req.body;

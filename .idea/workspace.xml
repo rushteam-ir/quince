@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="bd36d6d7-6b5a-4a74-b20a-025da208c5c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/avatars/5e60a9cda03451d60febfab6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/branches/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/branches/profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/templates/zend/views/profile.dust" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/views/profile.dust" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dcuments/Issues.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/dcuments/Issues.rtf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +125,7 @@
       <workItem from="1583392720235" duration="1037000" />
       <workItem from="1583423416835" duration="4904000" />
       <workItem from="1583429112591" duration="94000" />
+      <workItem from="1583429836139" duration="1319000" />
     </task>
     <servers />
   </component>
