@@ -8,6 +8,7 @@ new Vue({
     },
   })
 
+
 var first_pro_box = document.getElementById('first_pro_box');
 var second_pro_box = document.getElementById('second_pro_box');
 
@@ -19,7 +20,6 @@ function secondChangeDisplay(){
     admin_pro_edit.style.display = "none";
     second_pro_box.style.backgroundColor = "white";
     first_pro_box.style.backgroundColor = "#F7F8FB";
-
 }
 
 function firstChangeDisplay(){
@@ -27,5 +27,7 @@ function firstChangeDisplay(){
     admin_change_pass.style.display = "none";
     second_pro_box.style.backgroundColor = "#F7F8FB";
     first_pro_box.style.backgroundColor = "white";
-
 }
+ 
+
+
