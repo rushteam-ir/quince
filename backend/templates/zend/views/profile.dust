@@ -29,7 +29,9 @@
                     تنظیمات پروفایل کاربری
                 </p>
 
-                <form action="" method="post" autocomplete="off" enctype="multipart/form-data">
+                <div id="admin_profile_error_field" class=""></div>
+
+                <form action="" method="post" autocomplete="off" enctype="multipart/form-data" name="admin_pro_main_form">
                     <div class="form-group">
                         <label for="profile_username_inp">نام کاربری</label>
                         <input type="text" class="form-control" id="username_inp" name="username_inp"
