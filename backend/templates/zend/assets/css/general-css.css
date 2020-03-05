@@ -33,3 +33,19 @@ button:focus {
     outline: none;
     outline: none;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #1E1E2D; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #4B5473; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(85, 94, 129); 
+  }
