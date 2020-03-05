@@ -62,14 +62,8 @@
 
                     <div class="form-group">
                         <label for="avatar">تصویر پروفایل</label>
-                        {@eq key="{admin_info.avatar}" value=""}
-                            <input class="form-control-file chose_file_pro" type="file" id="avatar" name="avatar">
-                        {:else}
-                            <br>
-                            <label for="delete_avatar">برای آپلود تصویر جدید باید تصویر قبلی پروفایل خود را حذف کنید</label>
-                            <br>
-                            <button type="submit" name="delete_avatar" class="btn profile_delete">حذف</button>
-                        {/eq}
+                        <input class="form-control-file chose_file_pro" type="file" id="avatar" name="avatar">
+                        <button type="submit" name="delete_avatar" class="btn profile_delete">حذف</button>
                     </div>
 
 
