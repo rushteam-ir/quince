@@ -30,4 +30,7 @@ function firstChangeDisplay(){
 }
  
 
+var admin_profile_error_field = document.getElementById('admin_profile_error_field');
+
+
 
