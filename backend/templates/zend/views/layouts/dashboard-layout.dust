@@ -25,7 +25,11 @@
             {:else}
             <img class="profile_admin_img " src="media/avatars/{admin_info.avatar}" alt="" title="">
             {/eq}
-            <p class="d-inline-block nick_name_of_admin_dashbord">{admin_info.first_name} {admin_info.last_name}</p>
+            {@eq key="{admin_info.author_type}" value="name"}
+                <p class="d-inline-block nick_name_of_admin_dashbord">{admin_info.first_name} {admin_info.last_name}</p>
+            {:else}
+                <p class="d-inline-block nick_name_of_admin_dashbord">{admin_info.username}</p>
+            {/eq}
         </div>
         <div class="d-inline-block notification_main_box">
             <i class="far fa-envelope notification_icon"></i>

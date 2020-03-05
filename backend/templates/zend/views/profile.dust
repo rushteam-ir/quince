@@ -69,7 +69,11 @@
                     </div>
 
                     <label class="checkbox_body">آیا تمایل دارید که نام کاربری به عنوان نام پروفایل انتخاب گردد؟
-                        <input type="checkbox" checked="checked">
+                        {@eq key="{admin_info.author_type}" value="name"}
+                            <input type="checkbox" name="author_type">
+                        {:else}
+                            <input type="checkbox" checked="checked" name="author_type">
+                        {/eq}
                         <span class="checkmark"></span>
                     </label>
 

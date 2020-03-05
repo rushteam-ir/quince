@@ -8,7 +8,8 @@ let admin_schema = new mongoose.Schema({
    email : String,
    phone_number : String,
    status : Boolean,
-   avatar : String
+   avatar : String,
+   author_type : String
 
 });
 

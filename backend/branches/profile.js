@@ -19,11 +19,22 @@ router.post('/', async(req,res)=>{
 
     try{
 
-        log(req.body);
-
         if(req.body.change_profile == ''){
 
             let {username_inp, firstname_inp, lastname_inp, email_inp, phonenumber_inp} = req.body;
+            let author_type = 'name';
+
+            if(req.body.author_type == 'on'){
+
+                author_type = 'username';
+
+            }
+            else{
+
+                author_type = 'name';
+
+            }
+
             let admin_id = req.session.admin_id;
             let admin_data = {
 
@@ -32,6 +43,7 @@ router.post('/', async(req,res)=>{
                 last_name : lastname_inp,
                 email : email_inp,
                 phone_number : phonenumber_inp,
+                author_type : author_type
 
             };
 
