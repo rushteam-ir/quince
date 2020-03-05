@@ -5,20 +5,25 @@
     <meta charset="UTF-8">
     <base href="{backend_url}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/fontAwsome.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/general-css.css">
     <link rel="stylesheet" href="css/dashbord.css">
+    {+css/}
     <title>پنل مدیریت</title>
 </head>
 
 <body class="main_background-color">
 
-    <nav class="main_admin_navbar"> 
+    <nav class="main_admin_navbar">
         <div class="d-inline-block field_of_admin_name">
             {@eq key="{admin_info.avatar}" value=""}
-                <img class="profile_admin_img " src="media/avatars/default.png" alt="" title="">
+            <img class="profile_admin_img " src="media/avatars/default.png" alt="" title="">
             {:else}
-                <img class="profile_admin_img " src="media/avatars/{admin_info.avatar}" alt="" title="">
+            <img class="profile_admin_img " src="media/avatars/{admin_info.avatar}" alt="" title="">
             {/eq}
             <p class="d-inline-block nick_name_of_admin_dashbord">{admin_info.first_name} {admin_info.last_name}</p>
         </div>
@@ -102,8 +107,10 @@
     <script src="js/jquery.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="https://kit.fontawesome.com/1c750158b2.js" crossorigin="anonymous"></script>
+    <script src="js/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
     <script src="js/dashboard.js"></script>
+    {+js/}
 </body>
 
 </html>
