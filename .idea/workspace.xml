@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd36d6d7-6b5a-4a74-b20a-025da208c5c9" name="Default Changelist" comment="" />
+    <list default="true" id="bd36d6d7-6b5a-4a74-b20a-025da208c5c9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/zend/views/profile.dust" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/views/profile.dust" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,6 +125,8 @@
       <workItem from="1583429112591" duration="94000" />
       <workItem from="1583429836139" duration="1319000" />
       <workItem from="1583431560657" duration="36000" />
+      <workItem from="1583431735506" duration="2698000" />
+      <workItem from="1583447703279" duration="618000" />
     </task>
     <servers />
   </component>
