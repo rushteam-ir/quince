@@ -32,7 +32,8 @@
                 <form action="" method="post" autocomplete="off" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="profile_username_inp">نام کاربری</label>
-                        <input type="text" class="form-control" id="profile_username_inp">
+                        <input type="text" class="form-control" id="username_inp" name="username_inp"
+                            value="{admin_info.username}">
                     </div>
 
                     <div class="form-group">
@@ -61,7 +62,14 @@
 
                     <div class="form-group">
                         <label for="avatar">تصویر پروفایل</label>
-                        <input class="form-control-file chose_file_pro" type="file" id="avatar" name="avatar">
+                        {@eq key="{admin_info.avatar}" value=""}
+                            <input class="form-control-file chose_file_pro" type="file" id="avatar" name="avatar">
+                        {:else}
+                            <br>
+                            <label for="delete_avatar">برای آپلود تصویر جدید باید تصویر قبلی پروفایل خود را حذف کنید</label>
+                            <br>
+                            <button type="submit" name="delete_avatar" class="btn profile_delete">حذف</button>
+                        {/eq}
                     </div>
 
 
@@ -101,7 +109,7 @@
                         <input type="password" id="email_inp" class="form-control" name="confirm_password" value="">
                     </div>
 
-                    <button type="submit" name="change_profile" class="btn profile_submit">ذخیره</button>
+                    <button type="submit" name="change_password" class="btn profile_submit">ذخیره</button>
                 </form>
 
 

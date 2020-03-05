@@ -18,13 +18,13 @@ router.get('/', async(req,res)=>{
 router.post('/', async(req,res)=>{
 
     try{
+        if(req.body.change_profile == ''){
 
-        if(req.body.change_profile){
-
-            let {firstname_inp, lastname_inp, email_inp, phonenumber_inp} = req.body;
+            let {username_inp, firstname_inp, lastname_inp, email_inp, phonenumber_inp} = req.body;
             let admin_id = req.session.admin_id;
             let admin_data = {
 
+                username : username_inp,
                 first_name : firstname_inp,
                 last_name : lastname_inp,
                 email : email_inp,
@@ -34,7 +34,10 @@ router.post('/', async(req,res)=>{
 
             if (req.files) {
 
-                if(backend_allowd_avatars.includes(req.files.avatar.name.slice(-3)) || backend_allowd_avatars.includes(req.files.avatar.name.slice(-4))){
+                let file_format1 = req.files.avatar.name.slice(-3).toLowerCase();
+                let file_format2 = req.files.avatar.name.slice(-4).toLowerCase();
+
+                if(backend_allowd_avatars.includes(file_format1) || backend_allowd_avatars.includes(file_format2)){
 
                     if(req.files.avatar.size/1024 <= backend_limited_avatars_size){
 
@@ -79,7 +82,7 @@ router.post('/', async(req,res)=>{
             })
 
         }
-        else if(req.body.change_password){
+        else if(req.body.change_password == ''){
 
             let {current_password, new_password, confirm_password} = req.body;
             let admin_data = {
@@ -112,6 +115,42 @@ router.post('/', async(req,res)=>{
             else{
 
                 res.redirect(`${config.backend_url}profile/?msg=incorrect-input`);
+
+            }
+
+        }
+        else if(req.body.delete_avatar == ''){
+
+            let admin_id = req.session.admin_id;
+            let admin_data = {
+
+                avatar : '',
+
+            };
+            let avatar_path = `${backend_upload_dir}avatars/${req.session.admin_info.avatar}`;
+
+            try {
+
+                await admin_model.editProfile(admin_id, admin_data, (result)=>{
+
+                    if(result){
+
+                        fs.unlinkSync(avatar_path);
+                        req.session.admin_info.avatar = '';
+                        res.redirect(`${config.backend_url}profile/?msg=delete-success`);
+
+                    }
+                    else{
+
+                        res.redirect(`${config.backend_url}profile/?msg=delete-fail`);
+
+                    }
+
+                })
+
+            } catch(err) {
+
+                res.redirect(`${config.backend_url}profile/?msg=delete-fail`);
 
             }
 

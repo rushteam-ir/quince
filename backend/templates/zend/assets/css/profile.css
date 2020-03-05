@@ -47,6 +47,16 @@
     font-weight: bold;
     color: white;
 }
+.profile_delete {
+    width: 130px;
+    margin-top: 20px;
+    background-color: #ff3748;
+    font-weight: bold;
+    color: white;
+}
+.profile_delete:hover{
+    background-color: #ff1824;
+}
 .profile_submit:hover{
     background-color: #3758FF;
 }
