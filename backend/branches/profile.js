@@ -22,7 +22,38 @@ router.post('/', async(req,res)=>{
         if(req.body.change_profile == ''){
 
             let {username_inp, firstname_inp, lastname_inp, email_inp, phonenumber_inp} = req.body;
+            let valid_username = validation.isUsername(username_inp);
+            let valid_firstname = validation.isSafe(firstname_inp);
+            let valid_lastname = validation.isSafe(lastname_inp);
+            let valid_email = validation.isEmail(email_inp);
+            let valid_phonenumber = validation.isPhonenumber(phonenumber_inp);
             let author_type = 'name';
+
+            if(valid_username != ''){
+
+                return res.redirect(`${config.backend_url}profile/?msg=${valid_username}`);
+
+            }
+            else if(valid_firstname != ''){
+
+                return res.redirect(`${config.backend_url}profile/?msg=${valid_firstname}`);
+
+            }
+            else if(valid_lastname != ''){
+
+                return res.redirect(`${config.backend_url}profile/?msg=${valid_lastname}`);
+
+            }
+            else if(valid_email != ''){
+
+                return res.redirect(`${config.backend_url}profile/?msg=${valid_email}`);
+
+            }
+            else if(valid_phonenumber != ''){
+
+                return res.redirect(`${config.backend_url}profile/?msg=${valid_phonenumber}`);
+
+            }
 
             if(req.body.author_type == 'on'){
 
@@ -100,11 +131,32 @@ router.post('/', async(req,res)=>{
         else if(req.body.change_password == ''){
 
             let {current_password, new_password, confirm_password} = req.body;
+            let valid_currpass = validation.isPassword(current_password);
+            let valid_newpass = validation.isPassword(new_password);
+            let valid_conpass = validation.isPassword(confirm_password);
+
+            if(valid_currpass != ''){
+
+                return res.redirect(`${config.backend_url}profile/?msg=${valid_currpass}`);
+
+            }
+            else if(valid_newpass != ''){
+
+                return res.redirect(`${config.backend_url}profile/?msg=${valid_newpass}`);
+
+            }
+            else if(valid_conpass != ''){
+
+                return res.redirect(`${config.backend_url}profile/?msg=${valid_conpass}`);
+
+            }
+
             let admin_data = {
 
                 password : new_password,
 
             };
+
             let admin_id = req.session.admin_id;
 
             if(current_password === req.session.admin_info.password && new_password === confirm_password && new_password != "" && confirm_password != ""){

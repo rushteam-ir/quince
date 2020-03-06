@@ -35,6 +35,11 @@
     display: none;
 }
 
+#store_add_server_error {
+    display: block;
+}
+
+
 html {
     scroll-behavior: smooth;
 }

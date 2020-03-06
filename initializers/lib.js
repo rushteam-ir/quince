@@ -172,6 +172,40 @@ validation = {
 
         }
 
-    }
+    },
+
+    isPhonenumber : function (number_inp) {
+
+
+        if(number_inp != ""){
+
+            if(number_inp.length == 11) {
+
+                if (!Array.isArray(number_inp)){
+
+                    return '';
+
+                }
+                else{
+
+                    return 'invalid-input';
+
+                }
+
+            }
+            else{
+
+                return 'not-phonenumber';
+
+            }
+
+        }
+        else{
+
+            return 'empty-input';
+
+        }
+
+    },
 
 };

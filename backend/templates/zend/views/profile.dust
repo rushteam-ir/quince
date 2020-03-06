@@ -5,12 +5,9 @@
 {<js} 
     <script src="js/profile.js"></script>
 {/js}
-{<body} 
-
-
+{<body}
 
     <div class="main_field_of_profile_input">
-
             <div class="main_filed_of_profile_option_btn" id="first_pro_box" onclick="firstChangeDisplay()">
                 <div class="d-inline-block number_of_profile_header" id="first_profile_header_number">1</div>
                 <p class="d-inline-block profile_header_text">تغییر مشخصات</p>
@@ -21,7 +18,19 @@
                 <p class="d-inline-block profile_header_text">تغییر رمز عبور</p>
             </div>
 
-
+        {@alertError key="empty-input" msg="لطفا تمام ورودی ها را وارد کنید"}{/alertError}
+        {@alertError key="invalid-input" msg="ورودی های وارد شده نا معتبر می باشند"}{/alertError}
+        {@alertError key="short-input" msg="نام کاربری باید بیشتر از چهار حرف باشد"}{/alertError}
+        {@alertError key="invalid-email" msg="ایمیل وارد شده نا معتبر می باشد"}{/alertError}
+        {@alertError key="not-phonenumber" msg="شماره تلفن همراه باید یازده رقمی باشد"}{/alertError}
+        {@alertError key="limited-avatar" msg="حجم تصویر انتخاب شده بیشتر از حد مجاز است"}{/alertError}
+        {@alertError key="illegal-avatar" msg="فایل انتخابی شما با پسوند تصویر مجاز نمی باشد"}{/alertError}
+        {@alertError key="delete-fail" msg="در حذف تصویر شما مشکلی پیش آمده است لطفا با پشتیبانی تماس حاصل فرمایید"}{/alertError}
+        {@alertError key="edit-fail" msg="در تغییر مشخصات پروفایل شما مشکلی پیش آمده است لطفا با پشتیبانی تماس حاصل فرمایید"}{/alertError}
+        {@alertError key="error" msg="در ارتباط با سرور مشکلی پیش آمده است لطفا با پشتیبانی تماس حاصل فرمایید"}{/alertError}
+        {@alertError key="incorrect-input" msg="رمز فعلی اشتباه است و یا رمز جدید و تکرار آن مشابه نیستند"}{/alertError}
+        {@alertSuccess key="edit-success" msg="مشخصات پروفایل شما با موفقیت تعویض شد"}{/alertSuccess}
+        {@alertSuccess key="delete-success" msg="تصویر پروفایل شما با موفقیت حذف شد"}{/alertSuccess}
 
             <div id="admin_pro_edit">
                 <p class="admin_profile_profile">
