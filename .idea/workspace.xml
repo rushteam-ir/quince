@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bd36d6d7-6b5a-4a74-b20a-025da208c5c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/branches/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/branches/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/css/store-add.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/assets/css/store-add.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/avatars/5e60aad5a03451d60febfc26.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/assets/media/avatars/5e60aad5a03451d60febfc26.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/views/profile.dust" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/views/profile.dust" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/initializers/lib.js" beforeDir="false" afterPath="$PROJECT_DIR$/initializers/lib.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/branches/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/branches/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/zend/views/category.dust" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/views/category.dust" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +129,8 @@
       <workItem from="1583431735506" duration="2698000" />
       <workItem from="1583447703279" duration="618000" />
       <workItem from="1583449870425" duration="2729000" />
-      <workItem from="1583518609766" duration="3753000" />
+      <workItem from="1583518609766" duration="5376000" />
+      <workItem from="1583531585234" duration="213000" />
     </task>
     <servers />
   </component>
