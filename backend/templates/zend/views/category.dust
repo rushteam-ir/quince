@@ -1,19 +1,98 @@
 {>"layouts/dashboard-layout"/}
 
+{<css}
+    <link rel="stylesheet" href="css/category.css">
+{/css}
+{<js} 
+    <script src="js/category.js"></script>
+{/js}
+
 {<body}
 
-    <form action="" method="post" autocomplete="off">
-        <label for="title">عنوان دسته:</label><br>
-        <input type="text" id="title_inp" name="title_inp"><br>
-        <label for="parent">والد دسته:</label><br>
-        <select id="parent_inp" name="parent_inp">
-            <option value="0">دسته اصلی</option>
-            {#list}
-                <option value="{_id}">{title}</option>
-            {/list}
-        </select>
-        <br><br>
-        <input type="submit" name="add_category" value="ذخیره">
-    </form>
+    <div class="main_diled_of_category_field">
 
+        <p class="category_title">
+            دسته بندی
+        </p>
+
+            <form action="" method="post" autocomplete="off">
+
+                <div class="form-group">
+                    <label for="title_inp">عنوان دسته:</label>
+                    <input type="text" class="form-control" id="title_inp" name="title_inp">
+                </div>
+
+                <div class="form-group">
+                    <label for="parent_inp">والد دسته:</label>
+                    <select class="form-control" id="parent_inp" name="parent_inp">
+                        <option value="0">دسته اصلی</option>
+                        {#list}
+                            <option value="{_id}">{title}</option>
+                        {/list}
+                    </select>
+
+                    <button type="submit" name="add_category" class="btn btn_of_category"> ذخیره</button>
+                </div>
+            </form>
+
+            <p class="category_title mt-5">
+                جدول دسته بندی ها
+            </p>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn search_btn_of_category"  type="button"><i class="fas fa-search"></i></button>
+                </div>
+                <input type="text" class="form-control search_category_inp" placeholder="جستجو دسته بندی">
+            </div>
+
+            <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">عنوان دسته</th>
+                    <th scope="col">والد دسته</th>
+                    <th scope="col">ویرایش</th>
+                    <th scope="col">حذف</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>
+                        <i class="far fa-edit"></i>
+                    </td>
+                    <td>
+                        <i class="far fa-trash-alt"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>
+                        <i class="far fa-edit"></i>
+                    </td>
+                    <td>
+                        <i class="far fa-trash-alt"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry the Bird</td>
+                    <td>@twitter</td>
+                    <td>
+                        <i class="far fa-edit"></i>
+                    </td>
+                    <td>
+                        <i class="far fa-trash-alt"></i>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+    </div>
 {/body}

@@ -1,6 +1,5 @@
 {>"layouts/dashboard-layout"/}
 {<css}
-    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/profile.css">
 {/css}
 {<js} 
@@ -118,3 +117,4 @@
             </div>
             </div>
 {/body}
+

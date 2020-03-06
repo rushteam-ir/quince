@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <base href="{backend_url}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="css/fontAwsome.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/general-css.css">
@@ -31,14 +27,7 @@
                 <p class="d-inline-block nick_name_of_admin_dashbord">{admin_info.username}</p>
             {/eq}
         </div>
-        <div class="d-inline-block notification_main_box">
-            <i class="far fa-envelope notification_icon"></i>
-            <span class="number_of_dashbord_notif">10</span>
-        </div>
-        <div class="d-inline-block notification_main_box ml-2">
-            <i class="far fa-bell notification_icon"></i>
-            <span class="number_of_dashbord_notif custom_number_of_dashbord_notif">2</span>
-        </div>
+
     </nav>
 
     <section class="main_dashbord_field dir-rtl">
@@ -112,7 +101,6 @@
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/vue.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
     <script src="js/dashboard.js"></script>
     {+js/}
 </body>

@@ -1,0 +1,48 @@
+.main_body_of_add_store_forms {
+    width: 76%;
+    background-color: #FFFFFF;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 3.5%;
+    padding: 70px 220px;
+    direction: rtl;
+    text-align: right;
+}
+
+.title_of_store_add {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.btn_of_store_add {
+    width: 130px;
+    margin-top: 20px;
+    background-color: #5D78FF;
+    font-weight: bold;
+    color: white;
+}
+
+.btn_of_store_add:hover {
+    background-color: #3758FF;
+}
+
+.chose_file_store_add {
+    width: 33%;
+}
+
+#store_add_error {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.number_inp_store_add {
+    width: 45%;
+    display: inline-block;
+}
+.number_inp_store_add_mr{
+    margin-right: 10%;
+}

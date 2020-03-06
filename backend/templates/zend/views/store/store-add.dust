@@ -1,37 +1,81 @@
 {>"layouts/dashboard-layout"/}
-
+{<css}
+    <link rel="stylesheet" href="css/store-add.css">
+{/css}
+{<js} 
+    <script src="js/store-add.js"></script>
+{/js}
 {<body}
 
-    <form action="" method="post" autocomplete="off" enctype="multipart/form-data">
-        <label for="title">عنوان محصول:</label><br>
-        <input type="text" id="title_inp" name="title_inp"><br>
-        <label for="category">دسته:</label><br>
-        <select id="select-category" name="parent_inp">
-            <option value="">---</option>
-            {#list}
-                <option value="{_id}">{title}</option>
-            {/list}
-        </select><br>
-        <label for="child_category">زیر دسته:</label><br>
-        <select id="select-sub-category" name="child_inp">
-            <option value="0">---</option>
-        </select><br>
-        <label for="title">توضیحات:</label><br>
-        <textarea id="describe" rows="5" cols="50"></textarea><br>
-        <label for="title">قیمت:</label><br>
-        <input type="number" id="title_inp" name="title_inp"> تومان<br>
-        <label for="title">موجودی فعلی انبار:</label><br>
-        <input type="number" id="title_inp" name="title_inp"><br>
-        <label for="title">تخفیف:</label><br>
-        <input type="number" id="title_inp" name="title_inp"> %<br>
-        <label for="pic">تصویر اصلی محصول:</label><br>
-        <input type="file" id="product_img" name="product_img" ><br><br>
-        <label for="pic">تصاویر دیگر محصول:</label><br>
-        <input type="file" id="product_img" name="product_img" ><br>
-        <input type="file" id="product_img" name="product_img" ><br>
-        <input type="file" id="product_img" name="product_img" ><br><br>
-        <input type="submit" name="add_product" value="ثبت">
-    </form>
+    <div class="main_body_of_add_store_forms">
+
+        <p class="title_of_store_add">
+            اضافه کردن محصول
+        </p>
+
+        <div id="store_add_error" class="alert alert-warning"></div>
+
+                <form action="" method="post" autocomplete="off" enctype="multipart/form-data" name="store_add_form" onsubmit="return storeAddError()">
+
+                    <div class="form-group">
+                        <label for="title_inp">عنوان محصول:</label>
+                        <input type="text" class="form-control" id="title_inp"  name="title_inp">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="select-category">دسته:</label>
+                        <select class="form-control" id="select-category" name="parent_inp">
+                            <option value="">---</option>
+                            {#list}
+                                <option value="{_id}">{title}</option>
+                            {/list}
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="select-sub-category">زیر دسته:</label>
+                        <select class="form-control" id="select-sub-category" name="child_inp">
+                            <option value="0">---</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="describe">توضیحات:</label>
+                        <textarea class="form-control" id="describe" rows="5" cols="50" name="describe" aria-describedby="emailHelp"></textarea>
+                        <small id="emailHelp" class="form-text text-muted">توضیحات نباید کم تر از 50 کلمه باشد.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="price_inp">قیمت:</label>
+                        <input class="form-control" type="text" id="price_inp" name="price_inp" placeholder="0"> 
+                    </div>
+
+                    <div class="form-group number_inp_store_add">
+                        <label for="inventory_inp">موجودی فعلی انبار:</label>
+                        <input class="form-control" type="number" id="inventory_inp" name="inventory_inp" min="0" placeholder="0">
+                    </div>
+
+                    <div class="form-group number_inp_store_add number_inp_store_add_mr">
+                        <label for="Discount_inp">تخفیف:</label>
+                        <input class="form-control" type="number" id="Discount_inp" name="Discount_inp" min="0" placeholder="0"> 
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product_img">تصویر اصلی محصول:</label>
+                        <input class="form-control-file" type="file" id="product_img" name="product_img" >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pic">تصاویر دیگر محصول:</label><br>
+                        <input class="d-inline-block chose_file_store_add" type="file" id="product_img" name="product_img" >
+                        <input class="d-inline-block chose_file_store_add" type="file" id="product_img" name="product_img" >
+                        <input class="d-inline-block chose_file_store_add" type="file" id="product_img" name="product_img" >
+                    </div>
+                    <button class="btn btn_of_store_add" type="submit" name="add_product">ثبت</button>  
+
+                </form>
+
+    </div>
 
 {/body}
 
