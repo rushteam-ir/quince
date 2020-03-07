@@ -29,7 +29,7 @@
         {@alertError key="edit-fail" msg="در تغییر مشخصات پروفایل شما مشکلی پیش آمده است لطفا با پشتیبانی تماس حاصل فرمایید"}{/alertError}
         {@alertError key="error" msg="در ارتباط با سرور مشکلی پیش آمده است لطفا با پشتیبانی تماس حاصل فرمایید"}{/alertError}
         {@alertError key="incorrect-input" msg="رمز فعلی اشتباه است و یا رمز جدید و تکرار آن مشابه نیستند"}{/alertError}
-        {@alertSuccess key="edit-success" msg="مشخصات پروفایل شما با موفقیت تعویض شد"}{/alertSuccess}
+        {@alertSuccess key="edit-success" msg="مشخصات پروفایل شما با موفقیت ثبت شد"}{/alertSuccess}
         {@alertSuccess key="delete-success" msg="تصویر پروفایل شما با موفقیت حذف شد"}{/alertSuccess}
 
             <div id="admin_pro_edit">
@@ -101,7 +101,7 @@
                     عوض کردن رمز عبور
                 </p>
 
-                <form action="" method="post" name="admin_pro_pass_edit" onsubmit="return passError()">
+                <form action="" method="post" name="admin_pro_pass_edit" onsubmit="return passError()" autocomplete="off">
 
                     <div id="admin_profile_password_error" class="alert alert-warning"></div>
                     
@@ -112,7 +112,7 @@
 
                     <div class="form-group">
                         <label for="new_password">رمز عبور جدید</label>
-                        <input type="text" id="new_password" class="form-control" name="new_password" value="">
+                        <input type="password" id="new_password" class="form-control" name="new_password" value="">
                     </div>
 
                     <div class="form-group">

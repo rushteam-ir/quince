@@ -11,8 +11,13 @@
 
     <div class="main_diled_of_category_field">
 
+        {@alertError key="empty-input" msg="لطفا تمام ورودی ها را وار کنید"}{/alertError}
+        {@alertError key="invalid-input" msg="ورودی وارد شده نا معتبر می باشد"}{/alertError}
+        {@alertError key="add-fail" msg="دسته جدید ثبت نشد. لطفا از نام های تکراری استفاده نکنید"}{/alertError}
+        {@alertSuccess key="add-success" msg="دسته جدید با موفقیت ثبت شد"}{/alertSuccess}
+
         <p class="category_title">
-            دسته بندی
+            اضافه کردن دسته جدید
         </p>
 
             <form action="" method="post" autocomplete="off">
@@ -36,35 +41,35 @@
             </form>
 
             <p class="category_title mt-5">
-                جدول دسته بندی ها
+                لیست دسته بندی ها
             </p>
 
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                   <button class="btn search_btn_of_category"  type="button"><i class="fas fa-search"></i></button>
                 </div>
-                <input type="text" class="form-control search_category_inp" placeholder="جستجو دسته بندی">
+                <input id="category_search" type="text" class="form-control search_category_inp" placeholder="جستجو دسته بندی">
             </div>
 
             <table class="table table-bordered">
                 <thead>
                   <tr>
-                    <th scope="col">id</th>
+                    <th scope="col">ردیف</th>
                     <th scope="col">عنوان دسته</th>
                     <th scope="col">والد دسته</th>
                     <th scope="col">ویرایش</th>
                     <th scope="col">حذف</th>
                   </tr>
                 </thead>
-                <tbody>
-                {#list}
+                <tbody id="category_table">
+                {#list_all}
                     <tr>
                         <th scope="row">{$idx}</th>
                         <td>{.title}</td>
                         {@eq key="{.parent}" value="{null}"}
                             <td>دسته اصلی</td>
                         {:else}
-                            <td>{.parent}</td>
+                            <td>{.parent.title}</td>
                         {/eq}
                         <td>
                             <i class="far fa-edit"></i>
@@ -73,10 +78,28 @@
                             <i class="far fa-trash-alt"></i>
                         </td>
                     </tr>
-                {/list}
+                {/list_all}
                 </tbody>
               </table>
 
 
     </div>
 {/body}
+
+<script>
+    $(document).ready(function(){
+
+        $("#category_search").on("keyup", function() {
+
+            let value = $(this).val().toLowerCase();
+
+            $("#category_table tr").filter(function() {
+
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+
+            });
+
+        });
+
+    });
+</script>

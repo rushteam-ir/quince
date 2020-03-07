@@ -55,6 +55,12 @@ category_schema.statics = {
 
         });
 
+    },
+
+    getAll : async function () {
+
+        return await category_model.find().populate('parent');
+
     }
 
 };
