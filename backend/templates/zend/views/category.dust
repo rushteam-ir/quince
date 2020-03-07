@@ -64,7 +64,7 @@
                 <tbody id="category_table">
                 {#list_all}
                     <tr>
-                        <th scope="row">{$idx}</th>
+                        <th scope="row">{.row}</th>
                         <td>{.title}</td>
                         {@eq key="{.parent}" value="{null}"}
                             <td>دسته اصلی</td>

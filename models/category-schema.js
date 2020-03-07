@@ -1,7 +1,8 @@
 // MongoDB schema
 let category_schema = new mongoose.Schema({
 
-    title : String,
+    title : {type : String, unique : true},
+    row : Number,
     parent : {
         type : 'ObjectId',
         ref : 'category'
@@ -12,6 +13,8 @@ let category_schema = new mongoose.Schema({
 category_schema.statics = {
 
     add : async function (title_inp, parent_inp) {
+
+        let list = await category_model.find();
 
         let parent = parent_inp;
 
@@ -29,10 +32,11 @@ category_schema.statics = {
         let new_category = new category_model({
 
             title : title_inp,
+            row : list.length + 1,
             parent : parent
 
         });
-
+        
         return await new_category.save();
 
     },
