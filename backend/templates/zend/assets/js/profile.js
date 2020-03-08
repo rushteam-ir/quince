@@ -14,20 +14,20 @@ if (sessionStorage.text == 1) {
     admin_pro_edit.style.display = "block"
     admin_change_pass.style.display = "none";
     second_pro_box.style.backgroundColor = "#F7F8FB";
-    first_pro_box.style.backgroundColor = "white";
     second_profile_header_number.style.color = "#5D78FF";
     second_profile_header_number.style.backgroundColor = "#DFE2EE";
-    first_profile_header_number.style.color = "white";
+    first_pro_box.style.backgroundColor = "white";
     first_profile_header_number.style.backgroundColor = "#5D78FF";
+    first_profile_header_number.style.color = "white";
 
 } else {
 
     admin_change_pass.style.display = "block";
     admin_pro_edit.style.display = "none";
     second_pro_box.style.backgroundColor = "white";
-    first_pro_box.style.backgroundColor = "#F7F8FB";
     second_profile_header_number.style.backgroundColor ="#5D78FF";
     second_profile_header_number.style.color = "white";
+    first_pro_box.style.backgroundColor = "#F7F8FB";
     first_profile_header_number.style.color="#5D78FF"
     first_profile_header_number.style.backgroundColor="#DFE2EE";
 
@@ -37,33 +37,33 @@ if (sessionStorage.text == 1) {
 // switch tab js
 function firstChangeDisplay() {
 
+    sessionStorage.text = 1;
     admin_pro_edit.style.display = "block"
     admin_change_pass.style.display = "none";
-    second_pro_box.style.backgroundColor = "#F7F8FB";
-    first_pro_box.style.backgroundColor = "white";
     second_profile_header_number.style.color = "#5D78FF";
+    second_pro_box.style.backgroundColor = "#F7F8FB";
     second_profile_header_number.style.backgroundColor = "#DFE2EE";
+    first_pro_box.style.backgroundColor = "white";
     first_profile_header_number.style.color = "white";
     first_profile_header_number.style.backgroundColor = "#5D78FF";
-    sessionStorage.text = 1;
+
 
 }
 
 function secondChangeDisplay() {
 
+    sessionStorage.text = 2;
     admin_change_pass.style.display = "block";
     admin_pro_edit.style.display = "none";
     second_pro_box.style.backgroundColor = "white";
-    first_pro_box.style.backgroundColor = "#F7F8FB";
     second_profile_header_number.style.backgroundColor ="#5D78FF";
     second_profile_header_number.style.color = "white";
+    first_pro_box.style.backgroundColor = "#F7F8FB";
     first_profile_header_number.style.color="#5D78FF"
     first_profile_header_number.style.backgroundColor="#DFE2EE";
-    sessionStorage.text = 2;
+
     
 }
-
-
 
 // password error js
 function passerror() {
