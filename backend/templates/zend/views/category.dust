@@ -36,7 +36,7 @@
                         {/list}
                     </select>
 
-                    <button type="submit" name="add_category" class="btn btn_of_category"> ذخیره</button>
+                    <button type="submit" name="add_category" class="btn btn_of_category mt-5"> ذخیره</button>
                 </div>
             </form>
 
@@ -51,8 +51,8 @@
                 <input id="category_search" type="text" class="form-control search_category_inp" placeholder="جستجو دسته بندی">
             </div>
 
-            <table class="table table-bordered">
-                <thead>
+            <table class="table table-bordered mt-4">
+                <thead class="text-center">
                   <tr>
                     <th scope="col">ردیف</th>
                     <th scope="col">عنوان دسته</th>
@@ -61,7 +61,7 @@
                     <th scope="col">حذف</th>
                   </tr>
                 </thead>
-                <tbody id="category_table">
+                <tbody id="category_table" class="text-center">
                 {#list_all}
                     <tr>
                         <th scope="row">{.row}</th>
@@ -72,10 +72,14 @@
                             <td>{.parent.title}</td>
                         {/eq}
                         <td>
-                            <i class="far fa-edit"></i>
+                            <a href="#" class="table_edit_and_delete">
+                                <i class="far fa-edit"></i>
+                            </a>
                         </td>
                         <td>
-                            <i class="far fa-trash-alt"></i>
+                            <a href="#" class="table_edit_and_delete">
+                                <i class="far fa-trash-alt"></i>
+                            </a>
                         </td>
                     </tr>
                 {/list_all}
