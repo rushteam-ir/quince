@@ -91,6 +91,12 @@
     font-weight: bold;
 }
 
+.second_number_of_profile_header {
+    background-color: #DFE2EE;
+    color: #5D78FF;
+    font-weight: bold;
+}
+
 .profile_header_text {
     font-size: 1.2rem;
     margin-right: 8px;
@@ -102,15 +108,7 @@
     cursor: pointer;
 }
 
-.second_number_of_profile_header {
-    background-color: #DFE2EE;
-    color: #5D78FF;
-    font-weight: bold;
-}
 
-#admin_change_pass {
-    display: none;
-}
 
 #admin_profile_error_field , #admin_profile_error_field_pass{
     display: none;
