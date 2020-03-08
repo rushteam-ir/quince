@@ -18,7 +18,7 @@
                 <p class="d-inline-block profile_header_text">تغییر رمز عبور</p>
             </div>
 
-        <!-- {@alertError key="empty-input" msg="لطفا تمام ورودی ها را وارد کنید"}{/alertError}
+        {@alertError key="empty-input" msg="لطفا تمام ورودی ها را وارد کنید"}{/alertError}
         {@alertError key="invalid-input" msg="ورودی های وارد شده نا معتبر می باشند"}{/alertError}
         {@alertError key="short-input" msg="نام کاربری باید بیشتر از چهار حرف باشد"}{/alertError}
         {@alertError key="invalid-email" msg="ایمیل وارد شده نا معتبر می باشد"}{/alertError}
@@ -30,7 +30,7 @@
         {@alertError key="error" msg="در ارتباط با سرور مشکلی پیش آمده است لطفا با پشتیبانی تماس حاصل فرمایید"}{/alertError}
         {@alertError key="incorrect-input" msg="رمز فعلی اشتباه است و یا رمز جدید و تکرار آن مشابه نیستند"}{/alertError}
         {@alertSuccess key="edit-success" msg="مشخصات پروفایل شما با موفقیت ثبت شد"}{/alertSuccess}
-        {@alertSuccess key="delete-success" msg="تصویر پروفایل شما با موفقیت حذف شد"}{/alertSuccess} -->
+        {@alertSuccess key="delete-success" msg="تصویر پروفایل شما با موفقیت حذف شد"}{/alertSuccess}
 
             <div id="admin_pro_edit">
                 <p class="admin_profile_profile">
@@ -39,7 +39,7 @@
 
                 <div id="admin_profile_error_field" class="alert alert-warning"></div>
 
-                <form action="" method="post" autocomplete="off" enctype="multipart/form-data">
+                <form action="" method="post" autocomplete="off" enctype="multipart/form-data" name="pro_op_main_form" onsubmit="return proError()">
                     <div class="form-group">
                         <label for="profile_username_inp">نام کاربری</label>
                         <input type="text" class="form-control" id="username_inp" name="username_inp"
@@ -99,7 +99,7 @@
                     عوض کردن رمز عبور
                 </p>
                 
-                <div id="admin_profile_error_field_pass" class="alert alert-warning"></div>
+                <div id="admin_profile_error_field_pass" class="alert alert-warning text-center"></div>
 
                 <form action="" method="post" name="admin_pro_pass_edit" onsubmit="return passerror()" autocomplete="off">
 
@@ -120,7 +120,7 @@
                         <input type="password" id="confirm_password" class="form-control" name="confirm_password" value="">
                     </div>
 
-                    <button type="submit" name="change_password" class="btn profile_submit">ذخیره</button>
+                    <button type="submit" name="change_password" class="btn profile_submit" >ذخیره</button>
                 </form>
 
             </div>

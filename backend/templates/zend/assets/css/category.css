@@ -24,7 +24,7 @@
 .category_title {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 tbody tr td:last-child {
@@ -78,4 +78,34 @@ tbody tr td:nth-child(4) {
 
 .table_edit_and_delete {
     color: black;
+}
+
+.edit_modal_btn {
+    color: black;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+.edit_modal_btn:hover {
+    color: #0056B3;
+}
+
+.modal_category_body {
+    width: 70%;
+    margin-right: 15%;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.modal-header .close {
+    padding: 1rem 1rem;
+    margin: 0px;
+}
+
+.modal-title {
+    line-height: 2.8;
+}
+#category_modal_error_field{
+    display: none;
 }
