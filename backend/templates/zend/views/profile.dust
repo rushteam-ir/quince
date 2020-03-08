@@ -34,7 +34,6 @@
                 {@alertError key="delete-fail" msg="در حذف تصویر شما مشکلی پیش آمده است لطفا با پشتیبانی تماس حاصل فرمایید"}{/alertError}
                 {@alertError key="edit-fail" msg="در تغییر مشخصات پروفایل شما مشکلی پیش آمده است لطفا با پشتیبانی تماس حاصل فرمایید"}{/alertError}
                 {@alertError key="error" msg="در ارتباط با سرور مشکلی پیش آمده است لطفا با پشتیبانی تماس حاصل فرمایید"}{/alertError}
-                {@alertError key="incorrect-input" msg="رمز فعلی اشتباه است و یا رمز جدید و تکرار آن مشابه نیستند"}{/alertError}
                 {@alertSuccess key="edit-success" msg="مشخصات پروفایل شما با موفقیت ثبت شد"}{/alertSuccess}
                 {@alertSuccess key="delete-success" msg="تصویر پروفایل شما با موفقیت حذف شد"}{/alertSuccess}
 
@@ -99,7 +98,10 @@
                 <p class="admin_profile_profile">
                     عوض کردن رمز عبور
                 </p>
-                
+
+                {@alertError key="incorrect-input" msg="رمز فعلی اشتباه است و یا رمز جدید و تکرار آن مشابه نیستند"}{/alertError}
+                {@alertSuccess key="edit-success" msg="مشخصات پروفایل شما با موفقیت ثبت شد"}{/alertSuccess}
+
                 <div id="admin_profile_error_field_pass" class="alert alert-warning text-center"></div>
 
                 <form action="" method="post" name="admin_pro_pass_edit" onsubmit="return passerror()" autocomplete="off">
