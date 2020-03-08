@@ -7,6 +7,7 @@
 {/js}
 {<body}
 
+
     <div class="main_field_of_profile_input">
             <div class="main_filed_of_profile_option_btn" id="first_pro_box" onclick="firstChangeDisplay()">
                 <div class="d-inline-block number_of_profile_header" id="first_profile_header_number">1</div>

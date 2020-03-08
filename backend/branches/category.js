@@ -3,6 +3,24 @@ const router = express.Router();
 router.get('/', async(req,res)=>{
 
     try{
+        let delete_id = req.query.del;
+
+        if(isObjectId(delete_id)){
+
+            let result = await category_model.del(delete_id);
+
+            if(result){
+
+                return res.redirect(`${config.backend_url}category/?msg=delete-success`);
+
+            }
+            else{
+
+                return res.redirect(`${config.backend_url}category/?msg=delete-fail`);
+
+            }
+
+        }
 
         let data = {
 

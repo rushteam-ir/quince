@@ -65,6 +65,12 @@ category_schema.statics = {
 
         return await category_model.find().populate('parent');
 
+    },
+
+    del : async function (category_id) {
+
+        return await category_model.findByIdAndDelete(category_id);
+
     }
 
 };

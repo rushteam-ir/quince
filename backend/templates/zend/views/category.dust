@@ -18,7 +18,9 @@
         {@alertError key="empty-input" msg="لطفا تمام ورودی ها را وار کنید"}{/alertError}
         {@alertError key="invalid-input" msg="ورودی وارد شده نا معتبر می باشد"}{/alertError}
         {@alertError key="add-fail" msg="دسته جدید ثبت نشد. لطفا از نام های تکراری استفاده نکنید"}{/alertError}
+        {@alertError key="delete-fail" msg="حذف دسته انجام نشد. لطفا با پشتیبانی تماس بگیرید"}{/alertError}
         {@alertSuccess key="add-success" msg="دسته جدید با موفقیت ثبت شد"}{/alertSuccess}
+        {@alertSuccess key="delete-success" msg="دسته مورد نظر با موفقیت حذف شد"}{/alertSuccess}
 
             <form action="" method="post" autocomplete="off">
 
@@ -56,7 +58,6 @@
                     <th scope="col">ردیف</th>
                     <th scope="col">عنوان دسته</th>
                     <th scope="col">والد دسته</th>
-                    <th scope="col">ویرایش</th>
                     <th scope="col">حذف</th>
                   </tr>
                 </thead>
@@ -71,51 +72,7 @@
                             <td>{.parent.title}</td>
                         {/eq}
                         <td>
-                            <button type="button" class="edit_modal_btn" data-toggle="modal" data-target=".bd-example-modal-lg">
-                                <i class="far fa-edit"></i>
-                            </button>
-
-                            <div class="modal fade bd-example-modal-lg mt-5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-
-                                        <div class="modal-header">
-                                            <h5 class="modal-title">ویرایش دسته بندی ها</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-
-                                        <div class="modal-body text-right modal_category_body">
-                                            <form action="" name="category_modal_form" onsubmit="return categoryError()">
-
-                                                <div id="category_modal_error_field" class="alert alert-warning"></div>
-
-                                                <div class="form-group">
-                                                    <label for="edit_title_inp">عنوان دسته </label>
-                                                    <input type="text" class="form-control" id="edit_title_inp" name="edit_title_inp">
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <label for="parent_inp">والد دسته:</label>
-                                                    <select class="form-control" id="parent_inp" name="parent_inp">
-                                                        <option value="0">دسته اصلی</option>
-                                                    </select>
-                                                </div>
-                                                
-                                                <button type="submit" name="add_category" class="btn btn_of_category mt-3"> ذخیره</button>
-
-                                            </form>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                                
-                            
-                        </td>
-                        <td>
-                            <a href="#" class="table_edit_and_delete">
+                            <a href="{backend_url}category/?del={._id}" class="table_edit_and_delete">
                                 <i class="far fa-trash-alt"></i>
                             </a>
                         </td>
