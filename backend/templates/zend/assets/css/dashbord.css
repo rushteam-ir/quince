@@ -140,3 +140,7 @@
     top: -5px;
     left: 3px;
 }
+.special_class_for_exit{
+    position: relative;
+    top: -3px;
+}
