@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bd36d6d7-6b5a-4a74-b20a-025da208c5c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/views/layouts/dashboard-layout.dust" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/views/layouts/dashboard-layout.dust" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/branches/logout.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/branches/logout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/templates/zend/views/login.dust" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/views/login.dust" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -138,7 +137,7 @@
       <workItem from="1583666418598" duration="615000" />
       <workItem from="1583671015949" duration="1527000" />
       <workItem from="1583686778945" duration="4204000" />
-      <workItem from="1583778960316" duration="3746000" />
+      <workItem from="1583778960316" duration="4114000" />
     </task>
     <servers />
   </component>

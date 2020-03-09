@@ -4,9 +4,20 @@ router.get('/', async(req,res)=>{
 
     try{
 
-        req.session.destroy();
+        req.session.destroy(function(err) {
 
-        res.redirect(`${config.backend_url}login/?msg=logout`);
+            if(!err){
+
+                res.redirect(`${config.backend_url}login/?msg=logout-success`);
+
+            }
+            else{
+
+                res.redirect(`${config.backend_url}dashboard/?msg=logout-fail`);
+
+            }
+
+        })
 
     }
     catch (error) {
