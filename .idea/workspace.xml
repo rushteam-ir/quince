@@ -4,7 +4,6 @@
     <list default="true" id="bd36d6d7-6b5a-4a74-b20a-025da208c5c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/branches/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/branches/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/views/profile.dust" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/views/profile.dust" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +136,7 @@
       <workItem from="1583666418598" duration="615000" />
       <workItem from="1583671015949" duration="1527000" />
       <workItem from="1583686778945" duration="4204000" />
-      <workItem from="1583778960316" duration="1311000" />
+      <workItem from="1583778960316" duration="2598000" />
     </task>
     <servers />
   </component>

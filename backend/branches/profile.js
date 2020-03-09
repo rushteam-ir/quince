@@ -24,9 +24,23 @@ router.post('/', async(req,res)=>{
             let {username_inp, firstname_inp, lastname_inp, email_inp, phonenumber_inp} = req.body;
 
             let last_input = req.session.admin_info;
+            let last_checkbox = '';
+
+            if(req.body.author_type === 'on'){
+
+                last_checkbox = 'username';
+
+            }
+            else{
+
+                last_checkbox = 'name';
+
+            }
 
             if(last_input.username == username_inp && last_input.first_name == firstname_inp &&
-                last_input.last_name == lastname_inp && last_input.email == email_inp && last_input.phone_number == phonenumber_inp){
+                last_input.last_name == lastname_inp && last_input.email == email_inp &&
+                last_input.phone_number == phonenumber_inp && last_input.author_type == last_checkbox &&
+                !req.files){
 
                 return res.redirect(`${config.backend_url}profile/?msg=no-change`);
 
