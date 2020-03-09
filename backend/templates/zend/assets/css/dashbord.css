@@ -76,12 +76,14 @@
     line-height: 50px;
     padding-right: 60px;
 }
-.shop_list_text:hover{
+
+.shop_list_text:hover {
     background-color: #1A1A2C;
     color: white;
 }
+
 /* %%%%%%% nav bar %%%%%%% */
-.main_admin_navbar{
+.main_admin_navbar {
     width: 100%;
     height: 60px;
     background-color: white;
@@ -94,24 +96,29 @@
     margin-top: 10px;
     margin-left: 7px;
 }
-.main_background-color{
+
+.main_background-color {
     background-color: #F2F3F8;
 }
-.field_of_admin_name{
+
+.field_of_admin_name {
     background-color: white;
     height: 60px;
     border-right: 1px solid #e3e3e3;
     padding-right: 18px;
 }
-.nick_name_of_admin_dashbord{
+
+.nick_name_of_admin_dashbord {
     position: relative;
     top: 5px;
     left: 8px;
 }
-.notification_main_box{
+
+.notification_main_box {
     height: 60px;
 }
-.notification_icon{
+
+.notification_icon {
     width: 20px;
     font-size: 1.5rem;
     color: #555555;
@@ -119,7 +126,8 @@
     top: 8px;
     left: 15px;
 }
-.number_of_dashbord_notif{
+
+.number_of_dashbord_notif {
     width: 17px;
     height: 17px;
     position: relative;
@@ -136,11 +144,34 @@
     display: inline-block;
 
 }
-.custom_number_of_dashbord_notif{
+
+.custom_number_of_dashbord_notif {
     top: -5px;
     left: 3px;
 }
-.special_class_for_exit{
+
+.special_class_for_exit {
     position: relative;
     top: -3px;
+}
+
+.notification_bell_of_navbar {
+    animation-name: example;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0% {
+        transform: rotate(-45deg);
+    }
+
+    50% {
+        transform: rotate(+45deg);
+    }
+
+    100% {
+        transform: rotate(-45deg);
+    }
 }

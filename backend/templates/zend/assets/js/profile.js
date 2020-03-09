@@ -9,19 +9,7 @@ var second_profile_header_number = document.getElementById('second_profile_heade
 admin_pro_edit.style.display = "block";
 admin_change_pass.style.display = "none";
 
-if (sessionStorage.text == 1) {
-
-    admin_pro_edit.style.display = "block"
-    admin_change_pass.style.display = "none";
-    second_pro_box.style.backgroundColor = "#F7F8FB";
-    second_profile_header_number.style.color = "#5D78FF";
-    second_profile_header_number.style.backgroundColor = "#DFE2EE";
-    first_pro_box.style.backgroundColor = "white";
-    first_profile_header_number.style.backgroundColor = "#5D78FF";
-    first_profile_header_number.style.color = "white";
-
-} else {
-
+if (sessionStorage.text == 2) {
     admin_change_pass.style.display = "block";
     admin_pro_edit.style.display = "none";
     second_pro_box.style.backgroundColor = "white";
@@ -31,6 +19,20 @@ if (sessionStorage.text == 1) {
     first_profile_header_number.style.color="#5D78FF"
     first_profile_header_number.style.backgroundColor="#DFE2EE";
 
+
+} else {
+
+
+
+
+    admin_pro_edit.style.display = "block"
+    admin_change_pass.style.display = "none";
+    second_pro_box.style.backgroundColor = "#F7F8FB";
+    second_profile_header_number.style.color = "#5D78FF";
+    second_profile_header_number.style.backgroundColor = "#DFE2EE";
+    first_pro_box.style.backgroundColor = "white";
+    first_profile_header_number.style.backgroundColor = "#5D78FF";
+    first_profile_header_number.style.color = "white";
 }
 
 

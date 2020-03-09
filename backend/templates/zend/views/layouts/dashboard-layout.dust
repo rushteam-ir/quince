@@ -27,7 +27,13 @@
                 <p class="d-inline-block nick_name_of_admin_dashbord">{admin_info.username}</p>
             {/eq}
         </div>
+        <div class="d-inline-block">
 
+            <div >
+                <i class="fa fa-bell d-inline-block notification_bell_of_navbar"></i>
+            </div>
+
+        </div>
     </nav>
 
     <section class="main_dashbord_field dir-rtl">
