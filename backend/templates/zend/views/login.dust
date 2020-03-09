@@ -35,6 +35,7 @@
                 {@alertError key="empty-input" msg="لطفا تمام ورودی ها را وارد کنید"}{/alertError}
                 {@alertSuccess key="change-success" msg="رمز عبور شما با موفقیت تعویض شد"}{/alertSuccess}
                 {@alertSuccess key="sent-success" msg="ایمیل بازیابی با موفقیت ارسال شد"}{/alertSuccess}
+                {@alertSuccess key="logout" msg="شما با موفقیت خارج شدید"}{/alertSuccess}
 
                 <form action="" method="post" name="dashbord_login_form" onsubmit="return adminlogerrors()">
 

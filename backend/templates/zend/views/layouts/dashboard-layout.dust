@@ -93,7 +93,7 @@
                 </div>
             </a>
 
-            <a href="">
+            <a href="{backend_url}logout">
                 <div class="field_of_dashbord_partion text-right">
                     <i class="fas fa-sign-out-alt d-inline-block dashbord_tiny_icons"></i>
                     <p class="d-inline-block title_text_of_dashbord special_class_for_exit">خروج</p>
