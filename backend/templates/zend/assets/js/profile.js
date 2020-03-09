@@ -22,9 +22,6 @@ if (sessionStorage.text == 2) {
 
 } else {
 
-
-
-
     admin_pro_edit.style.display = "block"
     admin_change_pass.style.display = "none";
     second_pro_box.style.backgroundColor = "#F7F8FB";

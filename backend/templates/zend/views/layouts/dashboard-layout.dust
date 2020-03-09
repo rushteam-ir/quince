@@ -29,9 +29,9 @@
         </div>
         <div class="d-inline-block">
 
-            <div >
+            <button class="notification_btn_navbar">
                 <i class="fa fa-bell d-inline-block notification_bell_of_navbar"></i>
-            </div>
+            </button>
 
         </div>
     </nav>
