@@ -22,6 +22,16 @@ router.post('/', async(req,res)=>{
         if(req.body.change_profile == ''){
 
             let {username_inp, firstname_inp, lastname_inp, email_inp, phonenumber_inp} = req.body;
+
+            let last_input = req.session.admin_info;
+
+            if(last_input.username == username_inp && last_input.first_name == firstname_inp &&
+                last_input.last_name == lastname_inp && last_input.email == email_inp && last_input.phone_number == phonenumber_inp){
+
+                return res.redirect(`${config.backend_url}profile/?msg=no-change`);
+
+            }
+
             let valid_username = validation.isUsername(username_inp);
             let valid_firstname = validation.isSafe(firstname_inp);
             let valid_lastname = validation.isSafe(lastname_inp);
