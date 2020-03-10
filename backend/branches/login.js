@@ -56,7 +56,7 @@ router.post('/', async(req,res)=>{
             res.redirect(`${config.backend_url}login/?msg=${valid_captcha}`);
 
         }
-        else if(captcha_inp != req.session.captcha){
+        else if(captcha_inp.toLowerCase()!= req.session.captcha){
 
             // Captcha Error
             res.redirect(`${config.backend_url}login/?msg=captcha-error`);

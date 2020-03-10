@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bd36d6d7-6b5a-4a74-b20a-025da208c5c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/branches/logout.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/branches/logout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/views/login.dust" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/views/login.dust" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/branches/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/branches/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/svg-captcha/lib/random.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/svg-captcha/lib/random.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +137,8 @@
       <workItem from="1583666418598" duration="615000" />
       <workItem from="1583671015949" duration="1527000" />
       <workItem from="1583686778945" duration="4204000" />
-      <workItem from="1583778960316" duration="4114000" />
+      <workItem from="1583778960316" duration="4747000" />
+      <workItem from="1583832677802" duration="334000" />
     </task>
     <servers />
   </component>
@@ -211,10 +212,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="580" y="332" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1583428049301" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1583521765205">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1583832760948">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1583521765205" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1583832760948" />
     <state x="534" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1582911397120">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
