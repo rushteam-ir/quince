@@ -79,7 +79,7 @@
 
 
                     <div class="form-group">
-                         <button type="submit" name="delete_avatar" class="btn profile_delete" onclick="return alertcall()">حذف</button>
+                         <button type="submit" name="delete_avatar" class="btn profile_delete" onclick="return deleteCall()">حذف</button>
                      </div>
 
                     <label class="checkbox_body">آیا تمایل دارید که نام کاربری به عنوان نام پروفایل انتخاب گردد؟

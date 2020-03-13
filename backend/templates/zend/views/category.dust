@@ -72,7 +72,8 @@
                             <td>{.parent.title}</td>
                         {/eq}
                         <td>
-                            <a href="{backend_url}category/?del={._id}" class="table_edit_and_delete">
+                            <script>del_id = '{._id}'</script>
+                            <a href="" onclick="return deleteCall()" class="table_edit_and_delete">
                                 <i class="far fa-trash-alt"></i>
                             </a>
                         </td>

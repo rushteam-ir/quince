@@ -210,42 +210,6 @@ router.post('/', async(req,res)=>{
             }
 
         }
-        else if(req.body.delete_avatar == ''){
-
-            let admin_id = req.session.admin_id;
-            let admin_data = {
-
-                avatar : '',
-
-            };
-            let avatar_path = `${backend_upload_dir}avatars/${req.session.admin_info.avatar}`;
-
-            try {
-
-                await admin_model.editProfile(admin_id, admin_data, (result)=>{
-
-                    if(result){
-
-                        fs.unlinkSync(avatar_path);
-                        req.session.admin_info.avatar = '';
-                        res.redirect(`${config.backend_url}profile/?msg=delete-success`);
-
-                    }
-                    else{
-
-                        res.redirect(`${config.backend_url}profile/?msg=delete-fail`);
-
-                    }
-
-                })
-
-            } catch(err) {
-
-                res.redirect(`${config.backend_url}profile/?msg=delete-fail`);
-
-            }
-
-        }
         else {
 
             res.redirect(`${config.backend_url}profile/?msg=error`);
@@ -256,6 +220,43 @@ router.post('/', async(req,res)=>{
     catch (error) {
 
         res.status(500).render('500', {error});
+
+    }
+
+});
+
+router.get('/delete', async(req,res)=>{
+
+    let admin_id = req.session.admin_id;
+    let admin_data = {
+
+        avatar : '',
+
+    };
+    let avatar_path = `${backend_upload_dir}avatars/${req.session.admin_info.avatar}`;
+
+    try {
+
+        await admin_model.editProfile(admin_id, admin_data, (result)=>{
+
+            if(result){
+
+                fs.unlinkSync(avatar_path);
+                req.session.admin_info.avatar = '';
+                res.redirect(`${config.backend_url}profile/?msg=delete-success`);
+
+            }
+            else{
+
+                res.redirect(`${config.backend_url}profile/?msg=delete-fail`);
+
+            }
+
+        })
+
+    } catch(err) {
+
+        res.redirect(`${config.backend_url}profile/?msg=delete-fail`);
 
     }
 
