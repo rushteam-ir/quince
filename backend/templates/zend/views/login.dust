@@ -52,7 +52,7 @@
                   </div>
 
                   <div class="row mb-3">
-                    <div class="col-6 pr-0">
+                    <div class="col-6 pr-0 pl-0">
                       <div class="mt-4">
                         <img id="img-captcha" class="captcha_img_class" src="{captcha_url}" alt="captcha" title="captcha">
                         <button type="button" id="btn-captcha" class="captcha_refresh_btn">
@@ -61,8 +61,8 @@
 
                       </div>
                     </div>
-
-                    <div class="col-6">
+ 
+                    <div class="col-6 pr-0 ">
                       <div class="form-group">
                         <label for="captcha-for-id dir-rtl" class="text-right d-block">کد امنیتی</label>
                         <input type="text" class="form-control dashbord_login_input" id="captcha-for-id"
@@ -80,7 +80,7 @@
               </div>
             </div>
 
-            <div class="col-12 col-md-4 p-0 col_of_left_log_part d-none d-md-block">
+            <div class="col-12 col-md-4 p-0 col_of_left_log_part d-none d-md-block col_of_log_custom_second">
               <img class="w-100 blur_img_for_login_form" src="img/cms-login-img.jpg" alt="" title="">
 
               <div class="logo-field">

@@ -189,6 +189,7 @@
     top: 61px;
     z-index: 10000000;
     box-shadow: 0px 15px 50px -20px #0000006e;
+    display: none;
 }
 
 .new_notif_header {

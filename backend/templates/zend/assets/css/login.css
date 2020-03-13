@@ -128,8 +128,12 @@
 
 .col_of_log_custom{
     background-color: white;
-    border-radius: 7px 0px 0px 7px;
-    box-shadow: 0px 0px 21px -6px black;
+    border-radius: 7px 0px 0px 7px;    
+    box-shadow: 10px 12px 34px -21px black;
+}
+.col_of_log_custom_second{
+    box-shadow: 21px 18px 34px -21px black;
+    border-radius: 0px 7px 7px 0px;
 }
 
 @media only screen and (max-width: 600px) {
