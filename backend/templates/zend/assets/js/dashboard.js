@@ -75,7 +75,6 @@ function notifDropDown() {
 
     if (notif_drd_id.style.display === "none") {
 
-        new WOW().init();
         notif_drd_id.style.display = "block";
 
     } else {
