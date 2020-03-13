@@ -21,7 +21,7 @@ function categoryError() {
 function deleteCall(){
     Swal.fire({
         title: 'حذف دسته',
-        text: "آیا از حذف این دسته مطمئن هستید ؟ توجه داشته باشید که با حف دسته اصلی تمام زیر دسته های آن دسته هم حذف خواهند شد",
+        text: "آیا از حذف این دسته مطمئن هستید ؟ توجه داشته باشید که با حذف دسته اصلی تمام زیر دسته های آن دسته هم حذف خواهند شد",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
