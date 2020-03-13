@@ -47,7 +47,7 @@
             </div>
 
             <div class="col-12 col-md-5 p-0 col_of_left_log_part">
-              <img class="w-100 blur_img_for_login_form" src="img/img1.jpg" alt="" title="">
+              <img class="w-100 blur_img_for_login_form" src="img/cms-login-img.jpg" alt="" title="">
 
               <div class="logo-field">
                 <img class="zend_logo_of_dashbord_form" src="img/fade-zend-logo.png" alt="" title="">

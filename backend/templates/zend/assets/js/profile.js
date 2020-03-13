@@ -132,7 +132,7 @@ function alertcall(){
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes, delete it!'
+        confirmButtonText: 'Yes, delete it!',
       }).then((result) => {
         if (result.value) {
           Swal.fire(
@@ -142,5 +142,5 @@ function alertcall(){
           )
         }
       })
-      return false
+      return false;
 }

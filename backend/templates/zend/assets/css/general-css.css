@@ -59,3 +59,7 @@ html{
     margin-right: 0px !important;
     margin-left: 0px !important;
 }
+
+.alert{
+    position: unset !important;
+}
