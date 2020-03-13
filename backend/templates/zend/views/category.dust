@@ -20,7 +20,6 @@
         {@alertError key="add-fail" msg="دسته جدید ثبت نشد. لطفا از نام های تکراری استفاده نکنید"}{/alertError}
         {@alertError key="delete-fail" msg="حذف دسته انجام نشد. لطفا با پشتیبانی تماس بگیرید"}{/alertError}
         {@alertSuccess key="add-success" msg="دسته جدید با موفقیت ثبت شد"}{/alertSuccess}
-        {@alertSuccess key="delete-success" msg="دسته مورد نظر با موفقیت حذف شد"}{/alertSuccess}
 
             <form action="" method="post" autocomplete="off">
 

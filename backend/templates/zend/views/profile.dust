@@ -37,7 +37,6 @@
                 {@alertError key="error" msg="در ارتباط با سرور مشکلی پیش آمده است لطفا با پشتیبانی تماس حاصل فرمایید"}{/alertError}
                 {@alertError key="no-change" msg="تغییری در مشخصات پروفایل اعمال نشده است"}{/alertError}
                 {@alertSuccess key="edit-success" msg="مشخصات پروفایل شما با موفقیت ثبت شد"}{/alertSuccess}
-                {@alertSuccess key="delete-success" msg="تصویر پروفایل شما با موفقیت حذف شد"}{/alertSuccess}
                 
                 <div id="admin_profile_error_field" class="alert alert-warning text-center"></div>
 

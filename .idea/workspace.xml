@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bd36d6d7-6b5a-4a74-b20a-025da208c5c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/branches/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/branches/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/js/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/assets/js/category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/js/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/assets/js/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/avatars/5e60a9cda03451d60febfab6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/avatars/5e60aad5a03451d60febfc26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/avatars/5e634f41c03e17e320ed188b.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/templates/zend/views/category.dust" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/views/category.dust" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/views/layouts/dashboard-layout.dust" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/views/layouts/dashboard-layout.dust" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/templates/zend/views/profile.dust" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/views/profile.dust" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -146,7 +139,7 @@
       <workItem from="1583686778945" duration="4204000" />
       <workItem from="1583778960316" duration="4747000" />
       <workItem from="1583832677802" duration="1792000" />
-      <workItem from="1584104361534" duration="4822000" />
+      <workItem from="1584104361534" duration="5603000" />
     </task>
     <servers />
   </component>
