@@ -41,7 +41,12 @@
 //     }
 // };
 
+var notif_drd_id = document.getElementById('notif_drd_id');
+notif_drd_id.style.display = "none";
+
+
 function shop_dropdown() {
+
     var shop_dropdown = document.getElementById('shop_DD_id');
     var dashbord_text = document.getElementById('dashbord_shop_text');
     var shop_field = document.getElementById('shop_field');
@@ -49,15 +54,35 @@ function shop_dropdown() {
     var shop_icon = document.getElementById('shop_icon');
 
     if (shop_dropdown.style.display == "block") {
+
         shop_dropdown.style.display = "none";
         dashbord_text.style.color = "#B1B1B1";
         shop_field.style.backgroundColor = "#1E1E2D";
         shop_icon.style.color = '#494B74';
 
     } else {
+
         shop_dropdown.style.display = "block";
         dashbord_text.style.color = "white";
         shop_field.style.background = "#1A1A2C";
         shop_icon.style.color = '#5D78FF';
+
     }
 }
+
+
+function notifDropDown() {
+
+    if (notif_drd_id.style.display === "none") {
+
+        new WOW().init();
+        notif_drd_id.style.display = "block";
+
+    } else {
+
+        notif_drd_id.style.display = "none";
+
+    }
+}
+
+

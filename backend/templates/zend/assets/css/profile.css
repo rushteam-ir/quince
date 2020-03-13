@@ -108,8 +108,6 @@
     cursor: pointer;
 }
 
-
-
 #admin_profile_error_field , #admin_profile_error_field_pass{
     display: none;
 }

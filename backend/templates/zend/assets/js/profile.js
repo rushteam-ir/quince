@@ -10,6 +10,7 @@ admin_pro_edit.style.display = "block";
 admin_change_pass.style.display = "none";
 
 if (sessionStorage.text == 2) {
+    
     admin_change_pass.style.display = "block";
     admin_pro_edit.style.display = "none";
     second_pro_box.style.backgroundColor = "white";
@@ -64,6 +65,7 @@ function secondChangeDisplay() {
     
 }
 
+
 // password error js
 function passerror() {
 
@@ -78,7 +80,9 @@ function passerror() {
     {
 
         admin_profile_error_field_pass.style.display = "block";
-        admin_profile_error_field_pass.innerHTML = "لطفا تمام ورودی ها را پر کنید"
+        admin_profile_error_field_pass.innerHTML = "لطفا تمام ورودی ها را پر کنید";
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
         return false;
 
     } else if (new_password !== confirm_password)
@@ -86,7 +90,9 @@ function passerror() {
     {
 
         admin_profile_error_field_pass.style.display = "block";
-        admin_profile_error_field_pass.innerHTML = "رمز جدید و تکرار آن مشابه نیستند"
+        admin_profile_error_field_pass.innerHTML = "رمز جدید و تکرار آن مشابه نیستند";
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
         return false;
 
     }

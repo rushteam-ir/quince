@@ -41,11 +41,11 @@ button:focus {
 }
 
 ::-webkit-scrollbar-track {
-    background: #1E1E2D;
+    background: #1e1e2d00;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #4B5473;
+    background: rgb(197, 197, 197);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -54,4 +54,8 @@ button:focus {
 
 html{
     scroll-behavior: smooth;
+}
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
 }

@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <base href="{backend_url}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/fontAwsome.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/general-css.css">
     <link rel="stylesheet" href="css/dashbord.css">
+    <link rel="stylesheet" href="css/css-animate.css">
     {+css/}
     <title>پنل مدیریت</title>
 </head>
@@ -22,20 +25,68 @@
             <img class="profile_admin_img " src="media/avatars/{admin_info.avatar}" alt="" title="">
             {/eq}
             {@eq key="{admin_info.author_type}" value="name"}
-                <p class="d-inline-block nick_name_of_admin_dashbord">{admin_info.first_name} {admin_info.last_name}</p>
+            <p class="d-inline-block nick_name_of_admin_dashbord">{admin_info.first_name} {admin_info.last_name}</p>
             {:else}
-                <p class="d-inline-block nick_name_of_admin_dashbord">{admin_info.username}</p>
+            <p class="d-inline-block nick_name_of_admin_dashbord">{admin_info.username}</p>
             {/eq}
         </div>
         <div class="d-inline-block">
 
-            <button class="notification_btn_navbar">
+            <button class="notification_btn_navbar" onclick="notifDropDown()">
                 <i class="fa fa-bell d-inline-block notification_bell_of_navbar"></i>
             </button>
 
+            <button class="notification_btn_navbar">
+                <i class="fa fa-envelope d-inline-block notification_envelope_of_navbar"></i>
+            </button>
+
+            <div id="notif_drd_id" class="main_field_of_notif_dropdown wow fadeInUp">
+
+                <div class="row">
+                    <img class="w-100 img_of_notif_field" src="img/notif-drd-img.jpg" alt="" title="">
+                    <p class="new_notif_header position-absolute">
+                        سفارش های جدید
+                    </p>
+                    <small class="small_of_new_notif_header">
+                        شما 24 سفارش جدید دارید
+                    </small>
+                </div>
+                <div class="row info_of_notif_body text-right">
+
+                    <a href="#" class="main_field_of_one_basket dir-rtl">
+                        <div class="d-inline-block basket_font_icon">
+                            <i class="fas fa-socks socks_icon_class"></i>
+                        </div>
+                        <div class="d-inline-block ">
+                            <p class="mb-0 text_of_notif_box">جوراب حوله ای مردانه <span
+                                    class="d-inline-block number_of_basket">(24X)</span>
+                            </p>
+                            <small>2 ساعت پیش</small>
+                            <i class="fas fa-chevron-left notif_drd_tiny_arrow"></i>
+                        </div>
+                    </a>
+
+                    
+                    <a href="#" class="main_field_of_one_basket dir-rtl">
+                        <div class="d-inline-block basket_font_icon">
+                            <i class="fas fa-socks socks_icon_class"></i>
+                        </div>
+                        <div class="d-inline-block ">
+                            <p class="mb-0 text_of_notif_box">جوراب حوله ای مردانه <span
+                                    class="d-inline-block number_of_basket">(24X)</span>
+                            </p>
+                            <small>2 ساعت پیش</small>
+                            <i class="fas fa-chevron-left notif_drd_tiny_arrow"></i>
+                        </div>
+                    </a>
+
+                    
+                </div>
+
+            </div>
+
         </div>
     </nav>
-
     <section class="main_dashbord_field dir-rtl">
         <div class="field_of_zend_cms_img">
             <img class="zend_cms_img_for_dashbord" src="img/zendlogo.png" alt="" title="">
@@ -115,6 +166,7 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/vue.js"></script>
     <script src="js/sweetAlert.js"></script>
+    <script src="js/wow.js"></script>
     <script src="js/dashboard.js"></script>
     {+js/}
 </body>
