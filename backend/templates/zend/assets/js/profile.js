@@ -132,12 +132,8 @@ function deleteCall(){
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-<<<<<<< HEAD
         confirmButtonText: 'بله',
         cancelButtonText: 'خیر',
-=======
-        confirmButtonText: 'Yes, delete it!',
->>>>>>> cda3ada3e1105dc8ddcaf1a52790634ef148ef2f
       }).then((result) => {
         if (result.value) {
           Swal.fire({
@@ -152,13 +148,9 @@ function deleteCall(){
           })
         }
       })
-<<<<<<< HEAD
       return false
 }
 
 function redirect(url) {
     location.href = url
-=======
-      return false;
->>>>>>> cda3ada3e1105dc8ddcaf1a52790634ef148ef2f
 }
