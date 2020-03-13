@@ -124,23 +124,33 @@ function proError() {
 
 // sweetalert
 
-function alertcall(){
+function deleteCall(){
     Swal.fire({
-        title: 'Are you sure?',
-        text: "You won't be able to revert this!",
+        title: 'حذف تصویر',
+        text: "آیا از حذف تصویر پروفایل خود مطمئن هستید ؟",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes, delete it!'
+        confirmButtonText: 'بله',
+        cancelButtonText: 'خیر',
       }).then((result) => {
         if (result.value) {
-          Swal.fire(
-            'Deleted!',
-            'Your file has been deleted.',
-            'success'
-          )
+          Swal.fire({
+              title : 'حذف شد',
+              text : 'تصویر پروفایل شما با موفقیت حذف شد برای تایید نهایی کلیک کنید',
+              icon : 'success',
+              confirmButtonText: 'تایید',
+          }).then((result)=>{
+              if (result.value) {
+                  redirect(`${backend_url}profile/delete`);
+              }
+          })
         }
       })
       return false
+}
+
+function redirect(url) {
+    location.href = url
 }

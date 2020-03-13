@@ -15,3 +15,36 @@ function categoryError() {
 
     }
 }
+
+// sweetalert
+
+function deleteCall(){
+    Swal.fire({
+        title: 'حذف دسته',
+        text: "آیا از حذف این دسته مطمئن هستید ؟ توجه داشته باشید که با حف دسته اصلی تمام زیر دسته های آن دسته هم حذف خواهند شد",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'بله',
+        cancelButtonText: 'خیر',
+    }).then((result) => {
+        if (result.value) {
+            Swal.fire({
+                title : 'حذف شد',
+                text : 'دسته مور نظر با موفقیت حذف شد برای تایید نهایی کلیک کنید',
+                icon : 'success',
+                confirmButtonText: 'تایید',
+            }).then((result)=>{
+                if (result.value) {
+                    redirect(`${backend_url}category/?del=${del_id}`);
+                }
+            })
+        }
+    })
+    return false
+}
+
+function redirect(url) {
+    location.href = url
+}
