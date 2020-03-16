@@ -3,6 +3,7 @@ const router = express.Router();
 router.get('/', async(req,res)=>{
 
     try{
+
         let delete_id = req.query.del;
 
         if(isObjectId(delete_id)){

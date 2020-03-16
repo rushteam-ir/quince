@@ -71,10 +71,9 @@
                             <td>{.parent.title}</td>
                         {/eq}
                         <td>
-                            <script>del_id = '{._id}'</script>
-                            <a href="" onclick="return deleteCall()" class="table_edit_and_delete">
+                            <span class="cat_del" name="{._id}" class="table_edit_and_delete">
                                 <i class="far fa-trash-alt"></i>
-                            </a>
+                            </span>
                         </td>
                     </tr>
                 {/list_all}

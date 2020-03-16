@@ -16,12 +16,15 @@ function categoryError() {
     }
 }
 
-// sweetalert
+// sweet alert
 
-function deleteCall(){
+$('.cat_del').on('click', function (e) {
+
+    let cat_id = $(e.currentTarget).attr('name');
+    
     Swal.fire({
         title: 'حذف دسته',
-        text: "آیا از حذف این دسته مطمئن هستید ؟ توجه داشته باشید که با حذف دسته اصلی تمام زیر دسته های آن دسته هم حذف خواهند شد",
+        text: "آیا از حذف این دسته مطمئن هستید ؟",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
@@ -37,13 +40,15 @@ function deleteCall(){
                 confirmButtonText: 'تایید',
             }).then((result)=>{
                 if (result.value) {
-                    redirect(`${backend_url}category/?del=${del_id}`);
+                    redirect(`${backend_url}category/?del=${cat_id}`);
                 }
             })
         }
     })
-    return false
-}
+})
+
+
+
 
 function redirect(url) {
     location.href = url
