@@ -41,7 +41,7 @@
 
                     <div class="form-group">
                         <label for="describe">توضیحات:</label>
-                        <textarea class="form-control" id="describe" rows="5" cols="50" name="describe" aria-describedby="emailHelp"></textarea>
+                        <textarea class="form-control" id="describe" rows="5" cols="50" name="describe_inp" aria-describedby="emailHelp"></textarea>
                         <small id="emailHelp" class="form-text text-muted">توضیحات نباید کم تر از 50 کلمه باشد.</small>
                     </div>
 
@@ -49,7 +49,7 @@
                         <label for="specifict">ویژگی های محصول:</label>
                         <div class="field_wrapper">
                             <div class="main_field_of_add_inp">
-                                <input class="form-control add_form_class" id="specifict" type="text" name="product_features_1" value="">
+                                <input class="form-control add_form_class" id="specifict" type="text" name="product_features_inp[]" value="">
                                 <a href="javascript:void(0);" class="add_button" title="Add field"><i class="fas fa-plus mt-2"></i></a>
                             </div>
                         </div>
@@ -62,12 +62,12 @@
 
                     <div class="form-group number_inp_store_add">
                         <label for="inventory_inp">موجودی فعلی انبار:</label>
-                        <input class="form-control" type="number" id="inventory_inp" name="inventory_inp" min="0" placeholder="0">
+                        <input class="form-control" type="number" id="inventory_inp" name="stock_inp" min="0" placeholder="0">
                     </div>
 
                     <div class="form-group number_inp_store_add number_inp_store_add_mr">
                         <label for="Discount_inp">تخفیف:</label>
-                        <input class="form-control" type="number" id="Discount_inp" name="Discount_inp" min="0" placeholder="0">
+                        <input class="form-control" type="number" id="Discount_inp" name="discount_inp" min="0" placeholder="0">
                     </div>
 
                     <div class="form-group">

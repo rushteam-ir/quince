@@ -73,17 +73,16 @@
                     
                     <div class="form-group d-inline-block">
                         <label for="avatar">تصویر پروفایل</label>
-                        <input class="form-control-file chose_file_pro" type="file" id="avatar" name="avatar">
+                        {@eq key="{admin_info.avatar}" value=""}
+                            <input class="form-control-file chose_file_pro" type="file" id="avatar" name="avatar">
+                        {:else}
+                            <br>
+                            <img src="media/avatars/{admin_info.avatar}" alt="Profile Avatar" height="130" width="130">
+                            <div class="form-group">
+                                <button type="submit" name="delete_avatar" class="btn profile_delete" onclick="return deleteCall()">حذف</button>
+                            </div>
+                        {/eq}
                     </div>
-
-                    {@eq key="{admin_info.avatar}" value=""}
-
-                    {:else}
-                        <div class="form-group">
-                            <button type="submit" name="delete_avatar" class="btn profile_delete" onclick="return deleteCall()">حذف</button>
-                        </div>
-                    {/eq}
-
 
                     <label class="checkbox_body">آیا تمایل دارید که نام کاربری به عنوان نام پروفایل انتخاب گردد؟
                         {@eq key="{admin_info.author_type}" value="name"}

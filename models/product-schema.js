@@ -1,27 +1,28 @@
 // MongoDB schema
-let productSchema = new mongoose.Schema({
+let product_schema = new mongoose.Schema({
 
     title : {type : String, unique : true},
     category : String,
     sub_category : String,
     describe : String,
-    stock : Number,
-    price : Number,
-    discount : Number,
+    stock : String,
+    price : String,
+    discount : String,
+    features : Array,
     images : Array,
-    purchases : Number,
-    points : Number,
-    last_edit : Date,
+    purchases : String,
+    points : String,
+    last_edit : String,
     comments : Array,
     author : String,
 
 });
 
-productSchema.statics = {
+product_schema.statics = {
 
     add : async function (product_data) {
 
-        let new_product = new product_model({product_data});
+        let new_product = new product_model(product_data);
         return await new_product.save();
 
     }
@@ -30,4 +31,4 @@ productSchema.statics = {
 
 
 
-module.exports = product_model = mongoose.model('product', productSchema);
+module.exports = product_model = mongoose.model('product', product_schema);
