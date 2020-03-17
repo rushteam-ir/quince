@@ -11,26 +11,12 @@ admin_change_pass.style.display = "none";
 
 if (sessionStorage.text == 2) {
     
-    admin_change_pass.style.display = "block";
-    admin_pro_edit.style.display = "none";
-    second_pro_box.style.backgroundColor = "white";
-    second_profile_header_number.style.backgroundColor ="#5D78FF";
-    second_profile_header_number.style.color = "white";
-    first_pro_box.style.backgroundColor = "#F7F8FB";
-    first_profile_header_number.style.color="#5D78FF"
-    first_profile_header_number.style.backgroundColor="#DFE2EE";
-
+    secondChangeDisplay()
 
 } else {
 
-    admin_pro_edit.style.display = "block"
-    admin_change_pass.style.display = "none";
-    second_pro_box.style.backgroundColor = "#F7F8FB";
-    second_profile_header_number.style.color = "#5D78FF";
-    second_profile_header_number.style.backgroundColor = "#DFE2EE";
-    first_pro_box.style.backgroundColor = "white";
-    first_profile_header_number.style.backgroundColor = "#5D78FF";
-    first_profile_header_number.style.color = "white";
+    firstChangeDisplay()
+
 }
 
 
@@ -71,9 +57,8 @@ function passerror() {
 
 
     var current_password = document.forms['admin_pro_pass_edit']['current_password'].value;
-
-    var new_password = document.forms['admin_pro_pass_edit']['new_password'].value;
     var confirm_password = document.forms['admin_pro_pass_edit']['confirm_password'].value;
+    var new_password = document.forms['admin_pro_pass_edit']['new_password'].value;
 
     if (current_password == '' || new_password == "" || confirm_password == "")
 
