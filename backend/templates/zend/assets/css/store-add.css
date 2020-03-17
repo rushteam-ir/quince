@@ -52,3 +52,13 @@ html {
     margin-right: 10%;
 }
 
+.field_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 103%;
+}
+
+.main_field_of_add_inp{
+    margin-left: 20px;
+    flex-grow: 1;
+}
