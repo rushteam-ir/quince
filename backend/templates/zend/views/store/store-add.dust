@@ -2,7 +2,7 @@
 {<css}
     <link rel="stylesheet" href="css/store-add.css">
 {/css}
-{<js} 
+{<js}
     <script src="js/store-add.js"></script>
 {/js}
 {<body}
@@ -47,7 +47,7 @@
 
                     <div class="form-group">
                         <label for="price_inp">قیمت:</label>
-                        <input class="form-control" type="text" id="price_inp" name="price_inp" placeholder="0"> 
+                        <input class="form-control" type="text" id="price_inp" name="price_inp" placeholder="0">
                     </div>
 
                     <div class="form-group number_inp_store_add">
@@ -57,7 +57,7 @@
 
                     <div class="form-group number_inp_store_add number_inp_store_add_mr">
                         <label for="Discount_inp">تخفیف:</label>
-                        <input class="form-control" type="number" id="Discount_inp" name="Discount_inp" min="0" placeholder="0"> 
+                        <input class="form-control" type="number" id="Discount_inp" name="Discount_inp" min="0" placeholder="0">
                     </div>
 
                     <div class="form-group">
@@ -71,7 +71,7 @@
                         <input class="d-inline-block chose_file_store_add" type="file" id="product_img" name="product_img" >
                         <input class="d-inline-block chose_file_store_add" type="file" id="product_img" name="product_img" >
                     </div>
-                    <button class="btn btn_of_store_add" type="submit" name="add_product">ثبت</button>  
+                    <button class="btn btn_of_store_add" type="submit" name="add_product">ثبت</button>
 
                 </form>
 
@@ -102,7 +102,7 @@
             else{
 
                 $('#select-sub-category').find('option:gt(0)').remove();
-                
+
             }
         })
     });

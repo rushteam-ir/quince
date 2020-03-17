@@ -21,7 +21,7 @@ function categoryError() {
 $('.cat_del').on('click', function (e) {
 
     let cat_id = $(e.currentTarget).attr('name');
-    
+
     Swal.fire({
         title: 'حذف دسته',
         text: "آیا از حذف این دسته مطمئن هستید ؟",
