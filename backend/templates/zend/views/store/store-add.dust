@@ -49,7 +49,7 @@
                         <label for="specifict">ویژگی های محصول:</label>
                         <div class="field_wrapper">
                             <div class="main_field_of_add_inp">
-                                <input class="form-control add_form_class" id="specifict" name="specifict-inp" type="text" name="field_name[]" value="">
+                                <input class="form-control add_form_class" id="specifict" type="text" name="product_features_1" value="">
                                 <a href="javascript:void(0);" class="add_button" title="Add field"><i class="fas fa-plus mt-2"></i></a>
                             </div>
                         </div>

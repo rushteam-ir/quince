@@ -90,17 +90,17 @@ function storeAddError() {
 
 $(document).ready(function(){
 
-    var maxField = 10;
-    var addButton = $('.add_button');
-    var wrapper = $('.field_wrapper');
-    var fieldHTML = '<div class="main_field_of_add_inp"><input class="form-control add_form_class" type="text" name="field_name[]" value=""/><a href="javascript:void(0);" class="remove_button"><i class="fas fa-minus mt-2"></i></a></div>'; 
-    var x = 1;
+    let maxField = 10;
+    let addButton = $('.add_button');
+    let wrapper = $('.field_wrapper');
+    let x = 1;
 
     $(addButton).click(function(){
 
         if(x < maxField){ 
 
             x++;
+            let fieldHTML = '<div class="main_field_of_add_inp"><input class="form-control add_form_class" name="product_features_'+ x.toString() +'" type="text" value=""/><a href="javascript:void(0);" class="remove_button"><i class="fas fa-minus mt-2"></i></a></div>';
             $(wrapper).append(fieldHTML);
 
         }
