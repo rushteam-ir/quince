@@ -21,6 +21,8 @@ if (sessionStorage.text == 2) {
 
 
 // switch tab js
+
+
 function firstChangeDisplay() {
 
     sessionStorage.text = 1;
@@ -32,7 +34,6 @@ function firstChangeDisplay() {
     first_pro_box.style.backgroundColor = "white";
     first_profile_header_number.style.color = "white";
     first_profile_header_number.style.backgroundColor = "#5D78FF";
-
 
 }
 

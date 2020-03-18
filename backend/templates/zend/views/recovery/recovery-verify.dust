@@ -15,46 +15,34 @@
   <section class="main_field_of_dashbord_login">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+        <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
           <div class="row row_of_dashbord_login_form">
 
-            <div class="col-12 col-md-7">
+            <div class="col-12 col-md-6 offset-md-1 col_of_log_custom">
               <div>
                 <p class="text-center header_of_dashbord_login">
-                  بازیابی رمز عبور
+                 بازیابی رمز عبور
                 </p>
               </div>
 
-              <div class="main_field_of_dashbord_login_form">
+              <div id="main_field_of_dashbord_login_form_id" class="main_field_of_dashbord_login_form">
 
-                {@alertError key="invalid-input" msg="مقادیر ورودی را دوباره بررسی کنید"}{/alertError}
-                {@alertError key="empty-input" msg="لطفا تمام ورودی ها را وارد کنید"}{/alertError}
-                {@alertError key="not-match" msg="رمز عبور و تکرار آن تشابه ندارند"}{/alertError}
-                {@alertError key="change-fail" msg="تعویض رمز عبور انجام نشد با پشتیبانی در ارتباط باشید"}{/alertError}
 
-                <form action="" method="post" name="dashbord_login_form"
-                  onsubmit="return adminlogerrors()">
-
-                  <label for="email-for-id" class="text-right d-block">رمز عبور شما بازیابی شد. برای عوض کردن رمز عبور خود لطفا رمز جدید خود را وارد کنید</label>
-                  <div class="form-group">
-                    <label for="email-for-id" class="text-right d-block">رمز عبور جدید</label>
-                    <input type="password" class="form-control dir-rtl dashbord_login_input" id="email-for-id"
-                           name="newpass_inp" autocomplete="off">
-                  </div>
+                <form action="" method="post" name="dashbord_login_form" onsubmit="return adminlogerrors()">
 
                   <div class="form-group">
-                    <label for="password-for-id" class="text-right d-block">تکرار رمز عبور</label>
-                    <input type="password" class="form-control dir-rtl dashbord_login_input" id="password-for-id"
-                           name="compass_inp" autocomplete="off">
+                    <label for="email-for-id" class="text-right d-block">:ایمیل خود را برای بازیابی رمز عبور وارد کنید</label>
+                    <input type="text" class="form-control dir-rtl dashbord_login_input" id="email-for-id"
+                      name="username_inp" value="{login_form.username_inp}" autocomplete="off">
                   </div>
-
-                  <button type="submit" class="btn sub_btn_of_dashbord_form ">تعویض رمز</button>
+                  
+                  <button type="submit" class="btn sub_btn_of_dashbord_form">ورود</button>
 
                 </form>
               </div>
             </div>
 
-            <div class="col-12 col-md-5 p-0 col_of_left_log_part">
+            <div class="col-12 col-md-4 p-0 col_of_left_log_part d-none d-md-block col_of_log_custom_second">
               <img class="w-100 blur_img_for_login_form" src="img/cms-login-img.jpg" alt="" title="">
 
               <div class="logo-field">
@@ -69,6 +57,7 @@
       </div>
     </div>
   </section>
+
 
 
 
