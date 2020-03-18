@@ -31,12 +31,18 @@
                 <form action="" method="post" name="dashbord_login_form" onsubmit="return adminlogerrors()">
 
                   <div class="form-group">
-                    <label for="email-for-id" class="text-right d-block">:ایمیل خود را برای بازیابی رمز عبور وارد کنید</label>
-                    <input type="text" class="form-control dir-rtl dashbord_login_input" id="email-for-id"
-                      name="username_inp" value="{login_form.username_inp}" autocomplete="off">
+                    <label for="password-for-id" class="text-right d-block">رمز عبور جدید</label>
+                    <input type="password" class="form-control dir-rtl dashbord_login_input" id="password-for-id"
+                           name="newpass_inp" autocomplete="off">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="password-for-id" class="text-right d-block">تکرار رمز عبور جدید</label>
+                    <input type="password" class="form-control dir-rtl dashbord_login_input" id="password-for-id"
+                           name="compass_inp" autocomplete="off">
                   </div>
                   
-                  <button type="submit" class="btn sub_btn_of_dashbord_form">ورود</button>
+                  <button type="submit" class="btn sub_btn_of_dashbord_form">تعویض رمز</button>
 
                 </form>
               </div>
