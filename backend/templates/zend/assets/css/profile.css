@@ -188,3 +188,46 @@
     top: 11px;
     margin-left: 30px;
 }
+
+
+.btn-tertiary {
+    color: #555;
+    padding: 0;
+    line-height: 40px;
+    width: 300px;
+    margin: auto;
+    display: block;
+    border: 1.3px solid #d6d6d6;;
+  }
+
+  .btn-tertiary:hover,
+  .btn-tertiary:focus {
+    color: #888888;
+    border-color: #888888;
+  }
+
+  .input-file-custom {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .input-file-custom+.js-labelFile {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 10px;
+    cursor: pointer;
+  }
+
+  .input-file-custom+.js-labelFile .icon:before {
+    content: "\f093";
+  }
+
+  .input-file-custom+.js-labelFile.has-file .icon:before {
+    content: "\f00c";
+    color: #5AAC7B;
+  }
