@@ -13,13 +13,9 @@
 
 <div class="main_filed_of_store_list">
 
-    <p class="category_title">
+    <p class="store_list_title">
         لیست محصولات
     </p>
-
-        <p class="category_title mt-5">
-            لیست دسته بندی ها
-        </p>
 
         <div class="input-group mb-3">
             <div class="input-group-prepend">

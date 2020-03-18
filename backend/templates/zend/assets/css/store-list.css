@@ -22,3 +22,9 @@
     border-right: 0px;
     border-radius: 4px 0px 0px 4px !important;
 }
+
+.store_list_title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
