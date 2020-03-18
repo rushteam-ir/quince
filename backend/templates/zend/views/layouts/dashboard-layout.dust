@@ -102,7 +102,7 @@
             </a>
 
             <a href="{backend_url}profile">
-                <div class="field_of_dashbord_partion text-right">
+                <div class="field_of_dashbord_partion text-right" onclick="profileBtn()">
                     <i class="fas fa-user-circle d-inline-block dashbord_tiny_icons"></i>
                     <p class="d-inline-block title_text_of_dashbord">پروفایل</p>
                 </div>
