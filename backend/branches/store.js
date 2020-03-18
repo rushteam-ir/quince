@@ -107,7 +107,7 @@ router.post('/add', async(req,res)=>{
         let result = await product_model.add(new_product);
 
         if(result){
-            log(req.files);
+
             if (req.files) {
 
                 let main_image = req.files.product_main_image;
@@ -127,7 +127,7 @@ router.post('/add', async(req,res)=>{
                         main_image.mv(main_image_path, (err)=>{});
                         product_images.push(`${result._id}_main.png`);
 
-                        if(typeof other_images == Array){
+                        if(Array.isArray(other_images)){
 
                             other_images.forEach((image)=>{
 
