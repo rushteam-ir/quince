@@ -112,11 +112,8 @@ router.post('/add', async(req,res)=>{
 
                 let main_image = req.files.product_main_image;
                 let other_images = req.files['product_images[]'];
-                log(req.files);
 
                 let other_image_counter = 0;
-                let other_image_name = '';
-                let main_image_name = '';
                 let product_images = [];
 
                 let file_format1 = main_image.name.slice(-3).toLowerCase();
@@ -128,8 +125,38 @@ router.post('/add', async(req,res)=>{
 
                         let main_image_path = `${backend_upload_dir}products/${result._id}_main.png`;
                         main_image.mv(main_image_path, (err)=>{});
-                        main_image_name = `${result._id}_main.png`;
-                        product_images.push(main_image_name);
+                        product_images.push(`${result._id}_main.png`);
+
+                        other_images.forEach((image)=>{
+
+                            let file_format3 = image.name.slice(-3).toLowerCase();
+                            let file_format4 = image.name.slice(-4).toLowerCase();
+                            other_image_counter += 1;
+
+                            if(backend_allowd_avatars.includes(file_format3) || backend_allowd_avatars.includes(file_format4)){
+
+                                if(image.size/1024 <= backend_limited_products_size){
+
+                                    let image_path = `${backend_upload_dir}products/${result._id}_${other_image_counter}.png`;
+                                    image.mv(image_path, (err)=>{});
+                                    product_images.push(`${result._id}_${other_image_counter}.png`);
+
+                                }
+                                else{
+
+                                    return res.redirect(`${config.backend_url}store/add/?msg=limited-avatar`);
+
+                                }
+
+                            }
+                            else{
+
+                                return res.redirect(`${config.backend_url}store/add/?msg=limited-avatar`);
+
+                            }
+
+                        });
+
                     }
                     else{
 
