@@ -78,15 +78,15 @@
                     <div class="form-group">
                         <label for="product_img">تصویر اصلی محصول:</label>
                         <small class="form-text text-muted">این تصویر به عنوان تصویر اصلی برای معرفی محصول در سایت نشان داده می شود</small>
-                        <input class="form-control-file add_store_file_custome" type="file" id="product_img" name="product_main_image" >
+                        <!-- <input class="form-control-file add_store_file_custome" type="file" id="product_img" name="product_main_image" > -->
 
 
 
-                                <!-- <input type="file" name="product_main_image" id="product_img" class="input-file-custom">
+                                <input type="file" name="product_main_image" id="product_img" class="input-file-custom">
                                 <label for="product_img" class="btn btn-tertiary js-labelFile">
                                   <i class="icon fa fa-check"></i>
                                   <span class="js-fileName mr-2">انتخاب عکس</span>
-                                </label> -->
+                                </label>
 
 
 
