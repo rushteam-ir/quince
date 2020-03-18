@@ -109,7 +109,7 @@ router.post('/add', async(req,res)=>{
         if(result){
 
             if (req.files) {
-                log(req.files);
+
                 let main_image = req.files.product_main_image;
                 let other_images = req.files['product_images[]'];
 
