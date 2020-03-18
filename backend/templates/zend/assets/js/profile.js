@@ -10,7 +10,7 @@ admin_pro_edit.style.display = "block";
 admin_change_pass.style.display = "none";
 
 if (sessionStorage.text == 2) {
-    
+
     secondChangeDisplay()
 
 } else {
@@ -43,13 +43,13 @@ function secondChangeDisplay() {
     admin_change_pass.style.display = "block";
     admin_pro_edit.style.display = "none";
     second_pro_box.style.backgroundColor = "white";
-    second_profile_header_number.style.backgroundColor ="#5D78FF";
+    second_profile_header_number.style.backgroundColor = "#5D78FF";
     second_profile_header_number.style.color = "white";
     first_pro_box.style.backgroundColor = "#F7F8FB";
-    first_profile_header_number.style.color="#5D78FF"
-    first_profile_header_number.style.backgroundColor="#DFE2EE";
+    first_profile_header_number.style.color = "#5D78FF"
+    first_profile_header_number.style.backgroundColor = "#DFE2EE";
 
-    
+
 }
 
 
@@ -110,7 +110,7 @@ function proError() {
 
 // sweetalert
 
-function deleteCall(){
+function deleteCall() {
     Swal.fire({
         title: 'حذف تصویر',
         text: "آیا از حذف تصویر پروفایل خود مطمئن هستید ؟",
@@ -120,21 +120,21 @@ function deleteCall(){
         cancelButtonColor: '#d33',
         confirmButtonText: 'بله',
         cancelButtonText: 'خیر',
-      }).then((result) => {
+    }).then((result) => {
         if (result.value) {
-          Swal.fire({
-              title : 'حذف شد',
-              text : 'تصویر پروفایل شما با موفقیت حذف شد برای تایید نهایی کلیک کنید',
-              icon : 'success',
-              confirmButtonText: 'تایید',
-          }).then((result)=>{
-              if (result.value) {
-                  redirect(`${backend_url}profile/delete`);
-              }
-          })
+            Swal.fire({
+                title: 'حذف شد',
+                text: 'تصویر پروفایل شما با موفقیت حذف شد برای تایید نهایی کلیک کنید',
+                icon: 'success',
+                confirmButtonText: 'تایید',
+            }).then((result) => {
+                if (result.value) {
+                    redirect(`${backend_url}profile/delete`);
+                }
+            })
         }
-      })
-      return false
+    })
+    return false
 }
 
 function redirect(url) {
@@ -146,16 +146,16 @@ function redirect(url) {
 (function () {
 
     $('.input-file-custom').each(function () {
-      var $input = $(this),
-        $label = $input.next('.js-labelFile'),
-        labelVal = $label.html();
+        var $input = $(this),
+            $label = $input.next('.js-labelFile'),
+            labelVal = $label.html();
 
-      $input.on('change', function (element) {
-        var fileName = '';
-        if (element.target.value) fileName = element.target.value.split('\\').pop();
-        fileName ? $label.addClass('has-file').find('.js-fileName').html(fileName) : $label.removeClass(
-          'has-file').html(labelVal);
-      });
+        $input.on('change', function (element) {
+            var fileName = '';
+            if (element.target.value) fileName = element.target.value.split('\\').pop();
+            fileName ? $label.addClass('has-file').find('.js-fileName').html(fileName) : $label.removeClass(
+                'has-file').html(labelVal);
+        });
     });
 
-  })();
+})();
