@@ -93,7 +93,7 @@ $(document).ready(function(){
     let maxField = 10;
     let addButton = $('.add_button');
     let wrapper = $('.field_wrapper');
-    let fieldHTML = '<div class="col-6 p-0"><input class="form-control width_inp_customize" name="product_features[]" type="text" value=""/><a href="javascript:void(0);" class="remove_button"><i class="fas fa-minus mt-2"></i></a></div>';
+    let fieldHTML = '<div class="col-6 p-0"><input class="form-control width_inp_customize" name="product_features_inp[]" type="text" value=""/><a href="javascript:void(0);" class="remove_button"><i class="fas fa-minus mt-2"></i></a></div>';
     let x = 1;
 
     $(addButton).click(function(){
@@ -127,7 +127,7 @@ $(document).ready(function(){
     let maxField = 6;
     let addButton = $('.file_add_button');
     let wrapper = $('.field_wrapper_file');
-    let fieldHTML = '<div class="col-6 p-0 mb-3"><input class="form-control-file add_store_file_custome_submain" name="product_features_file[]" type="file" value=""/><a href="javascript:void(0);" class="remove_button_file"><i class="fas fa-minus mt-2"></i></a></div>';
+    let fieldHTML = '<div class="col-6 p-0 mb-3"><input class="form-control-file add_store_file_custome_submain" name="product_images[]" type="file" value=""/><a href="javascript:void(0);" class="remove_button_file"><i class="fas fa-minus mt-2"></i></a></div>';
     let x = 1;
 
     $(addButton).click(function(){

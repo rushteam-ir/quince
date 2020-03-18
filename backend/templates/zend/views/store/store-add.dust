@@ -42,11 +42,14 @@
                     <div class="form-group">
                         <label for="describe">توضیحات:</label>
                         <textarea class="form-control" id="describe" rows="5" cols="50" name="describe_inp" aria-describedby="emailHelp"></textarea>
-                        <small id="emailHelp" class="form-text text-muted">توضیحات نباید کم تر از 50 کلمه باشد.</small>
+                        <small class="form-text text-muted">توضیحات نباید کم تر از 50 کلمه باشد.</small>
                     </div>
 
                     <div class="form-group">
-                        <label for="specifict">ویژگی های محصول:</label>
+                        <label for="specifict">مشخصات محصول:</label>
+                        <small class="form-text text-muted">لطفا اطلاعات زیر را به صورت زیر وارد کنید :</small>
+                        <small class="form-text text-muted">برای مثال اگر میخواهید مشخصه ی رنگ با دو زیر مجموعه ی آبی و قرمز را اضافه کنید باید به صورت رو به رو وارد نمایید : رنگ:آبی،قرمز</small>
+                        <br>
                         <div class="field_wrapper row">
                             <div class="col-6 p-0">
                                 <input class="form-control width_inp_customize" id="specifict" type="text" name="product_features_inp[]" value="">
@@ -57,22 +60,26 @@
 
                     <div class="form-group">
                         <label for="price_inp">قیمت:</label>
+                        <small class="form-text text-muted">قیمت به تومان می باشد.</small>
                         <input class="form-control" type="text" id="price_inp" name="price_inp" placeholder="0">
                     </div>
 
                     <div class="form-group number_inp_store_add">
                         <label for="inventory_inp">موجودی فعلی انبار:</label>
+                        <small class="form-text text-muted">&nbsp</small>
                         <input class="form-control" type="number" id="inventory_inp" name="stock_inp" min="0" placeholder="0">
                     </div>
 
                     <div class="form-group number_inp_store_add number_inp_store_add_mr">
                         <label for="Discount_inp">تخفیف:</label>
+                        <small class="form-text text-muted">عدد وارد شده به صورت درصد (%) محاسبه می شود</small>
                         <input class="form-control" type="number" id="Discount_inp" name="discount_inp" min="0" placeholder="0">
                     </div>
 
                     <div class="form-group">
                         <label for="product_img">تصویر اصلی محصول:</label>
-                        <input class="form-control-file add_store_file_custome" type="file" id="product_img" name="product_img" >
+                        <small class="form-text text-muted">این تصویر به عنوان تصویر اصلی برای معرفی محصول در سایت نشان داده می شود</small>
+                        <input class="form-control-file add_store_file_custome" type="file" id="product_img" name="product_main_image" >
                     </div>
 
                     <div class="form-group">
@@ -82,7 +89,7 @@
                         <div class="form-group">
                             <div class="field_wrapper_file row">
                                 <div class="col-6 p-0 mb-3">
-                                    <input class="form-control-file add_store_file_custome_submain" id="product_img_main" type="file" name="product_features_file[]" value="">
+                                    <input class="form-control-file add_store_file_custome_submain" id="product_img_main" type="file" name="product_images[]" value="">
                                     <a href="javascript:void(0);" class="file_add_button" title="Add field"><i class="fas fa-plus mt-2"></i></a>
                                 </div>
                             </div>
