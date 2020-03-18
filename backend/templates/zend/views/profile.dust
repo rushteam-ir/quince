@@ -75,7 +75,7 @@
                         <label for="avatar">تصویر پروفایل</label>
                         {@eq key="{admin_info.avatar}" value=""}
                             <input class="form-control-file chose_file_pro" type="file" id="avatar" name="avatar">
-                            <small id="avatar" class="form-text text-muted">حجم مجاز برای اپلود تصویر پروفایل 1 مگ است.</small>
+                            <small id="avatar" class="form-text text-muted">حجم مجاز برای اپلود تصویر پروفایل {limited_avatars_size} مگ است.</small>
                         {:else}
                             <br>
                             <img src="media/avatars/{admin_info.avatar}" alt="Profile Avatar" height="130" width="130">
