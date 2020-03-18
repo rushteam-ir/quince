@@ -39,26 +39,19 @@
     display: block;
 }
 
-
-html {
-    scroll-behavior: smooth;
-}
-
 .number_inp_store_add {
-    width: 45%;
+    width: 49%;
     display: inline-block;
 }
-.number_inp_store_add_mr{
-    margin-right: 10%;
+
+.number_inp_store_add_mr {
+    margin-right: 2%;
 }
 
-.field_wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    width: 103%;
+.field_wrapper {
+    width: 102.1%;
 }
 
-.main_field_of_add_inp{
-    margin-left: 20px;
-    flex-grow: 1;
+.width_inp_customize{
+    width: 96%;
 }

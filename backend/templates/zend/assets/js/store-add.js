@@ -87,13 +87,13 @@ function storeAddError() {
         }
 
 }   
-
+// input add & remove
 $(document).ready(function(){
 
     let maxField = 10;
     let addButton = $('.add_button');
     let wrapper = $('.field_wrapper');
-    let fieldHTML = '<div class="main_field_of_add_inp"><input class="form-control add_form_class" name="product_features[]" type="text" value=""/><a href="javascript:void(0);" class="remove_button"><i class="fas fa-minus mt-2"></i></a></div>';
+    let fieldHTML = '<div class="col-6 p-0"><input class="form-control width_inp_customize" name="product_features[]" type="text" value=""/><a href="javascript:void(0);" class="remove_button"><i class="fas fa-minus mt-2"></i></a></div>';
     let x = 1;
 
     $(addButton).click(function(){
@@ -108,6 +108,40 @@ $(document).ready(function(){
     });
 
     $(wrapper).on('click', '.remove_button', function(e){
+
+        e.preventDefault();
+        $(this).parent('div').remove();
+        x--;
+
+    });
+
+});
+
+
+
+
+// file add & remove
+
+$(document).ready(function(){
+
+    let maxField = 6;
+    let addButton = $('.file_add_button');
+    let wrapper = $('.field_wrapper_file');
+    let fieldHTML = '<div class="col-6 p-0 mb-3"><input class="form-control-file" name="product_features_file[]" type="file" value=""/><a href="javascript:void(0);" class="remove_button_file"><i class="fas fa-minus mt-2"></i></a></div>';
+    let x = 1;
+
+    $(addButton).click(function(){
+
+        if(x < maxField){ 
+
+            x++;
+            $(wrapper).append(fieldHTML);
+
+        }
+
+    });
+
+    $(wrapper).on('click', '.remove_button_file', function(e){
 
         e.preventDefault();
         $(this).parent('div').remove();

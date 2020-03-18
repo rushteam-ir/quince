@@ -5,6 +5,7 @@
     right: 0px;
     top: 0px;
     background-color: #1E1E2D;
+    z-index: 1000;
 }
 
 .field_of_zend_cms_img {
@@ -89,6 +90,7 @@
     background-color: white;
     box-shadow: 0px 0px 10px -6px black;
     position: fixed;
+    z-index: 100;
     top: 0px;
 }
 
