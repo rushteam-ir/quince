@@ -28,38 +28,29 @@
             <thead class="text-center">
               <tr>
                 <th scope="col">ردیف</th>
-                <th scope="col">عنوان دسته</th>
+                <th scope="col">تصویر</th>
+                <th scope="col">عنوان</th>
+                <th scope="col">دسته</th>
                 <th scope="col">والد دسته</th>
+                <th scope="col">موجودی انبار</th>
+                <th scope="col">تخفیف</th>
+                <th scope="col">قیمت</th>
+                <th scope="col">خرید ها</th>
+                <th scope="col">نظرات</th>
+                <th scope="col">آخرین تغییر</th>
+                <th scope="col">منتشر کننده</th>
+                <th scope="col">امتیاز</th>
+                <th scope="col">ویرایش</th>
                 <th scope="col">حذف</th>
               </tr>
             </thead>
             <tbody id="category_table" class="text-center">
-                <thead>
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">First</th>
-                      <th scope="col">Last</th>
-                      <th scope="col">Handle</th>
-                    </tr>
-                  </thead>
                   <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
                     <tr>
                       <th scope="row">2</th>
                       <td>Jacob</td>
                       <td>Thornton</td>
                       <td>@fat</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>@twitter</td>
                     </tr>
                   </tbody>
             </tbody>

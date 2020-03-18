@@ -27,6 +27,10 @@
 
               <div id="main_field_of_dashbord_login_form_id" class="main_field_of_dashbord_login_form">
 
+                {@alertError key="invalid-input" msg="ورودی های وارد شده معتبر نمی باشد"}{/alertError}
+                {@alertError key="empty-input" msg="لطفا تمام ورودی ها را وارد نمایید"}{/alertError}
+                {@alertError key="not-match" msg="رمز عبور و تکرار آن مشابه نمی باشند"}{/alertError}
+                {@alertError key="change-fail" msg="رمز عبور تعویض نشد. لطفا با پشتیبانی تماس حاصل فرمایید"}{/alertError}
 
                 <form action="" method="post" name="dashbord_login_form" onsubmit="return adminlogerrors()">
 
