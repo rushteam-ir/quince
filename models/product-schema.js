@@ -2,6 +2,7 @@
 let product_schema = new mongoose.Schema({
 
     title : {type : String, unique : true},
+    row : Number,
     category : String,
     sub_category : String,
     describe : String,
@@ -21,6 +22,9 @@ let product_schema = new mongoose.Schema({
 product_schema.statics = {
 
     add : async function (product_data) {
+
+        let list = await product_model.find();
+        product_data.row = list.length + 1;
 
         let new_product = new product_model(product_data);
         return await new_product.save();
@@ -42,7 +46,13 @@ product_schema.statics = {
 
         }
 
-    }
+    },
+
+    get : async function () {
+
+        return await product_model.find();
+
+    },
 
 };
 
