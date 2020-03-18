@@ -109,7 +109,7 @@ router.post('/add', async(req,res)=>{
         if(result){
 
             if (req.files) {
-
+                log(req.files);
                 let main_image = req.files.product_main_image;
                 let other_images = req.files['product_images[]'];
 
@@ -127,18 +127,51 @@ router.post('/add', async(req,res)=>{
                         main_image.mv(main_image_path, (err)=>{});
                         product_images.push(`${result._id}_main.png`);
 
-                        other_images.forEach((image)=>{
+                        if(typeof other_images == Array){
 
-                            let file_format3 = image.name.slice(-3).toLowerCase();
-                            let file_format4 = image.name.slice(-4).toLowerCase();
+                            other_images.forEach((image)=>{
+
+                                let file_format3 = image.name.slice(-3).toLowerCase();
+                                let file_format4 = image.name.slice(-4).toLowerCase();
+                                other_image_counter += 1;
+
+                                if(backend_allowd_avatars.includes(file_format3) || backend_allowd_avatars.includes(file_format4)){
+
+                                    if(image.size/1024 <= backend_limited_products_size){
+
+                                        let image_path = `${backend_upload_dir}products/${result._id}_${other_image_counter}.png`;
+                                        image.mv(image_path, (err)=>{});
+                                        product_images.push(`${result._id}_${other_image_counter}.png`);
+
+                                    }
+                                    else{
+
+                                        return res.redirect(`${config.backend_url}store/add/?msg=limited-avatar`);
+
+                                    }
+
+                                }
+                                else{
+
+                                    return res.redirect(`${config.backend_url}store/add/?msg=limited-avatar`);
+
+                                }
+
+                            });
+
+                        }
+                        else{
+
+                            let file_format3 = other_images.name.slice(-3).toLowerCase();
+                            let file_format4 = other_images.name.slice(-4).toLowerCase();
                             other_image_counter += 1;
 
                             if(backend_allowd_avatars.includes(file_format3) || backend_allowd_avatars.includes(file_format4)){
 
-                                if(image.size/1024 <= backend_limited_products_size){
+                                if(other_images.size/1024 <= backend_limited_products_size){
 
                                     let image_path = `${backend_upload_dir}products/${result._id}_${other_image_counter}.png`;
-                                    image.mv(image_path, (err)=>{});
+                                    other_images.mv(image_path, (err)=>{});
                                     product_images.push(`${result._id}_${other_image_counter}.png`);
 
                                 }
@@ -155,7 +188,8 @@ router.post('/add', async(req,res)=>{
 
                             }
 
-                        });
+                        }
+
 
                     }
                     else{

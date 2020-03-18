@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bd36d6d7-6b5a-4a74-b20a-025da208c5c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/views/recovery/recovery-verify.dust" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/views/recovery/recovery-verify.dust" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/branches/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/branches/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +147,8 @@
       <workItem from="1584445993515" duration="2684000" />
       <workItem from="1584458366161" duration="5409000" />
       <workItem from="1584515316679" duration="12309000" />
-      <workItem from="1584543353902" duration="528000" />
+      <workItem from="1584543353902" duration="596000" />
+      <workItem from="1584544421300" duration="733000" />
     </task>
     <servers />
   </component>
