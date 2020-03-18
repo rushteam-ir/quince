@@ -39,15 +39,6 @@
     display: block;
 }
 
-.number_inp_store_add {
-    width: 49%;
-    display: inline-block;
-}
-
-.number_inp_store_add_mr {
-    margin-right: 2%;
-}
-
 .field_wrapper {
     width: 102.1%;
 }
@@ -108,4 +99,34 @@
 
 .field_wrapper_file{
     width: 106%;
+}
+
+.alert_popup_circl{
+    color: #ffda64;
+    font-size: 1.2rem;
+    position: relative;
+    top: 4px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.alert_popup_circl_btn_class{
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+.span_sale_addon{
+    background-color: #ffffff00;
+    border-left: none;
+    border-radius: 0px .25rem .25rem 0px !important; 
+}
+
+.sale_inp_custome{
+    border-right: none;
+    border-radius: .25rem 0px 0px .25rem !important;
+}
+
+.sale_inp_custome:focus{
+    box-shadow: none;
 }

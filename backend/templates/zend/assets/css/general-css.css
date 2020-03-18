@@ -70,3 +70,17 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active  {
     -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
+
+.popover-header {
+    text-align: right;
+    font-family: second-font;
+}
+
+.popover-body {
+    text-align: right;
+    font-family: second-font;
+}
+
+label {
+    font-family: main-font;
+}
