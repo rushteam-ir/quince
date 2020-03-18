@@ -68,8 +68,7 @@
     color: #555;
     padding: 0;
     line-height: 40px;
-    width: 300px;
-    margin: auto;
+    width: 341px;
     display: block;
     border: 1.3px solid #d6d6d6;
     ;
@@ -105,4 +104,8 @@
 .input-file-custom+.js-labelFile.has-file .icon:before {
     content: "\f00c";
     color: #5AAC7B;
+}
+
+.field_wrapper_file{
+    width: 106%;
 }

@@ -107,7 +107,7 @@ router.post('/add', async(req,res)=>{
         let result = await product_model.add(new_product);
 
         if(result){
-
+            log(req.files);
             if (req.files) {
 
                 let main_image = req.files.product_main_image;
