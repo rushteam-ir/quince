@@ -25,6 +25,23 @@ product_schema.statics = {
         let new_product = new product_model(product_data);
         return await new_product.save();
 
+    },
+
+    edit : async function (product_id ,product_data) {
+
+        let find_product = await product_model.findByIdAndUpdate(product_id, {$set : product_data}, {new : true});
+
+        if(find_product){
+
+            return find_product;
+
+        }
+        else{
+
+            return null;
+
+        }
+
     }
 
 };

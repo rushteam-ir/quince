@@ -104,45 +104,72 @@ router.post('/add', async(req,res)=>{
 
         };
 
-        if (req.files) {
+        let result = await product_model.add(new_product);
 
-            let file_format1 = req.files.avatar.name.slice(-3).toLowerCase();
-            let file_format2 = req.files.avatar.name.slice(-4).toLowerCase();
+        if(result){
 
-            if(backend_allowd_avatars.includes(file_format1) || backend_allowd_avatars.includes(file_format2)){
+            if (req.files) {
 
-                if(req.files.avatar.size/1024 <= backend_limited_avatars_size){
+                let main_image = req.files.product_main_image;
+                let other_images = req.files['product_images[]'];
+                log(req.files);
 
-                    let avatar = req.files.avatar;
-                    let avatar_path = `${backend_upload_dir}products/${admin_id.toString()}.png`;
-                    avatar.mv(avatar_path, (err)=>{});
-                    admin_data.avatar = `${admin_id.toString()}.png`
+                let other_image_counter = 0;
+                let other_image_name = '';
+                let main_image_name = '';
+                let product_images = [];
+
+                let file_format1 = main_image.name.slice(-3).toLowerCase();
+                let file_format2 = main_image.name.slice(-4).toLowerCase();
+
+                if(backend_allowd_avatars.includes(file_format1) || backend_allowd_avatars.includes(file_format2)){
+
+                    if(main_image.size/1024 <= backend_limited_products_size){
+
+                        let main_image_path = `${backend_upload_dir}products/${result._id}_main.png`;
+                        main_image.mv(main_image_path, (err)=>{});
+                        main_image_name = `${result._id}_main.png`;
+                        product_images.push(main_image_name);
+                    }
+                    else{
+
+                        return res.redirect(`${config.backend_url}store/add/?msg=limited-avatar`);
+
+                    }
+
+                }
+                else {
+
+                    return res.redirect(`${config.backend_url}store/add/?msg=illegal-avatar`);
+
+                }
+
+                let additions = {
+
+                    images : product_images
+
+                };
+
+                let result2 = await product_model.edit(result._id, additions);
+
+                if(result2){
+
+                    return res.redirect(`${config.backend_url}store/add/?msg=add-success`)
 
                 }
                 else{
 
-                    return res.redirect(`${config.backend_url}store/add/?msg=limited-avatar`);
+                    return res.redirect(`${config.backend_url}store/add/?msg=add-fail`);
 
                 }
 
+            }
+            else{
+
+                return res.redirect(`${config.backend_url}store/add/?msg=add-fail`);
 
             }
-            else {
 
-                return res.redirect(`${config.backend_url}store/add/?msg=illegal-avatar`);
-
-            }
-
-        }
-
-
-        let result = await product_model.add(new_product);
-
-        if(result){
-            return res.redirect(`${config.backend_url}store/add/?msg=add-success`);
-        }
-        else{
-            return res.redirect(`${config.backend_url}store/add/?msg=add-fail`);
         }
 
     }

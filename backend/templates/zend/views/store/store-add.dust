@@ -79,7 +79,7 @@
                     <div class="form-group">
                         <label for="product_img">تصویر اصلی محصول:</label>
                         <small class="form-text text-muted">این تصویر به عنوان تصویر اصلی برای معرفی محصول در سایت نشان داده می شود</small>
-                        <input class="form-control-file add_store_file_custome" type="file" id="product_img" name="product_main_img" >
+                        <input class="form-control-file add_store_file_custome" type="file" id="product_img" name="product_main_image" >
                     </div>
 
                     <div class="form-group">
