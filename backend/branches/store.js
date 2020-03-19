@@ -101,6 +101,7 @@ router.post('/add', async(req,res)=>{
             features : product_features_inp,
             last_edit : getCurrentDate(),
             author : req.session.admin_info.username,
+            status : true
 
         };
 
@@ -123,9 +124,10 @@ router.post('/add', async(req,res)=>{
 
                     if(main_image.size/1024 <= backend_limited_products_size){
 
-                        let main_image_path = `${backend_upload_dir}products/${result._id}_main.png`;
+                        let _name = `${result.title}_main.png`;
+                        let main_image_path = `${backend_upload_dir}products/${_name}`;
                         main_image.mv(main_image_path, (err)=>{});
-                        product_images.push(`${result._id}_main.png`);
+                        product_images.push(`${_name}`);
 
                         if(Array.isArray(other_images)){
 
@@ -139,9 +141,10 @@ router.post('/add', async(req,res)=>{
 
                                     if(image.size/1024 <= backend_limited_products_size){
 
-                                        let image_path = `${backend_upload_dir}products/${result._id}_${other_image_counter}.png`;
+                                        let _name = `${result.title}_${other_image_counter}.png`;
+                                        let image_path = `${backend_upload_dir}products/${_name}`;
                                         image.mv(image_path, (err)=>{});
-                                        product_images.push(`${result._id}_${other_image_counter}.png`);
+                                        product_images.push(`${_name}`);
 
                                     }
                                     else{
@@ -170,9 +173,10 @@ router.post('/add', async(req,res)=>{
 
                                 if(other_images.size/1024 <= backend_limited_products_size){
 
-                                    let image_path = `${backend_upload_dir}products/${result._id}_${other_image_counter}.png`;
+                                    let _name = `${result.title}_${other_image_counter}.png`;
+                                    let image_path = `${backend_upload_dir}products/${_name}`;
                                     other_images.mv(image_path, (err)=>{});
-                                    product_images.push(`${result._id}_${other_image_counter}.png`);
+                                    product_images.push(`${_name}`);
 
                                 }
                                 else{

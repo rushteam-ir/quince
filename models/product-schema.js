@@ -16,6 +16,7 @@ let product_schema = new mongoose.Schema({
     last_edit : String,
     comments : Array,
     author : String,
+    status : Boolean
 
 });
 
