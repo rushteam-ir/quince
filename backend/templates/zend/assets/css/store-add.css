@@ -17,7 +17,6 @@
 
 .btn_of_store_add {
     width: 130px;
-    margin-top: 20px;
     background-color: #5D78FF;
     font-weight: bold;
     color: white;
@@ -119,14 +118,11 @@
 .span_sale_addon{
     background-color: #ffffff00;
     border-left: none;
-    border-radius: 0px .25rem .25rem 0px !important; 
+    border-radius: 0px .25rem .25rem 0px !important;
+    padding-left: 0px; 
 }
 
 .sale_inp_custome{
     border-right: none;
     border-radius: .25rem 0px 0px .25rem !important;
-}
-
-.sale_inp_custome:focus{
-    box-shadow: none;
 }

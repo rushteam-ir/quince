@@ -76,7 +76,7 @@
                             <div class="input-group-prepend">
                             <span class="input-group-text span_sale_addon" id="basic-addon1">%</span>
                             </div>  
-                            <input type="number" class="form-control sale_inp_custome" name="discount_inp" min="0" placeholder="0" aria-label="Username" aria-describedby="basic-addon1">
+                            <input type="number" class="form-control sale_inp_custome pr-1" name="discount_inp" min="0" placeholder="0" aria-label="Username" aria-describedby="basic-addon1">
                         </div>
                     </div>
                 </div>

@@ -1,15 +1,13 @@
 {>"layouts/dashboard-layout"/}
 
-{<css}
+{<css} 
     <link rel="stylesheet" href="css/store-list.css">
 {/css}
-{<js} 
-    <script src="js/store-list.js"></script>
+{<js}
+     <script src="js/store-list.js"></script>
 {/js}
 
-
 {<body}
-
 
 <div class="main_filed_of_store_list">
 
@@ -17,45 +15,38 @@
         لیست محصولات
     </p>
 
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <button class="btn search_btn_of_store_list"  type="button"><i class="fas fa-search"></i></button>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4">
+                <div class="col_field_of_product_list">
+                    <a class="main_anchor_of_col_product_list" href="">
+                        <div>
+                            <img class="w-100 img_of_product_list" src="img/sexy-socks.jpg" alt="">
+                        </div>
+                        <h3 class="title_of_product_cards mt-2 mr-2">سکسی ترین جوراب دنیا</h3>
+                        <div class=" mr-3">
+                            <p class="d-inline-block">دسته :</p>
+                            <p class="d-inline-block mr-1"> جوراب</p>
+                        </div>
+                        <div class=" mr-3">
+                            <p class="d-inline-block">زیر دسته : </p>
+                            <p class="d-inline-block mr-1">دختر سکسی</p>
+                        </div>
+                        <div class="mr-3">
+                            <p class="d-inline-block">وضعیت :</p>
+                            <p class="d-inline-block mr-1">موجود</p>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <input id="category_search" type="text" class="form-control search_store_list_inp" placeholder="جستجو دسته بندی">
-        </div>
+            <div class="col-4">
 
-        <table class="table table-bordered mt-4">
-            <thead class="text-center">
-              <tr>
-                <th scope="col">ردیف</th>
-                <th scope="col">تصویر</th>
-                <th scope="col">عنوان</th>
-                <th scope="col">دسته</th>
-                <th scope="col">والد دسته</th>
-                <th scope="col">موجودی انبار</th>
-                <th scope="col">تخفیف</th>
-                <th scope="col">قیمت</th>
-                <th scope="col">خرید ها</th>
-                <th scope="col">نظرات</th>
-                <th scope="col">آخرین تغییر</th>
-                <th scope="col">منتشر کننده</th>
-                <th scope="col">امتیاز</th>
-                <th scope="col">ویرایش</th>
-                <th scope="col">حذف</th>
-              </tr>
-            </thead>
-            <tbody id="category_table" class="text-center">
-                  <tbody>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                    </tr>
-                  </tbody>
-            </tbody>
-          </table>
+            </div>
+            <div class="col-4">
 
+            </div>
+         </div>
+    </div>
 
 </div>
 
