@@ -31,8 +31,16 @@
 
 .col_field_of_product_list{
     background-color: #F2F3F8;
+    border-radius: 3px;
 }
 
 .img_of_product_list{
     border-radius: 3px 3px 0px 0px;
+    height: 250px;
+}
+
+.author_field_text{
+    text-align: left;
+    color: #a5a5a5;
+    font-size: 0.8rem;
 }

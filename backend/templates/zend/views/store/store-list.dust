@@ -17,7 +17,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-4">
+            <div class="col-4 mt-4">
                 <div class="col_field_of_product_list">
                     <a class="main_anchor_of_col_product_list" href="">
                         <div>
@@ -26,24 +26,178 @@
                         <h3 class="title_of_product_cards mt-2 mr-2">سکسی ترین جوراب دنیا</h3>
                         <div class=" mr-3">
                             <p class="d-inline-block">دسته :</p>
-                            <p class="d-inline-block mr-1"> جوراب</p>
+                            <p class="d-inline-block mr-1"> ممه</p>
                         </div>
                         <div class=" mr-3">
                             <p class="d-inline-block">زیر دسته : </p>
-                            <p class="d-inline-block mr-1">دختر سکسی</p>
+                            <p class="d-inline-block mr-1">ممه گنده</p>
                         </div>
                         <div class="mr-3">
                             <p class="d-inline-block">وضعیت :</p>
                             <p class="d-inline-block mr-1">موجود</p>
                         </div>
+                        <div class="ml-3 author_field_text">
+                            <p class="d-inline-block">نویسنده :</p>
+                            <p class="d-inline-block mr-1">کسری حبیب بیگی</p>
+                        </div>
                     </a>
                 </div>
             </div>
-            <div class="col-4">
-
+            <div class="col-4 mt-4">
+                <div class="col_field_of_product_list">
+                    <a class="main_anchor_of_col_product_list" href="">
+                        <div>
+                            <img class="w-100 img_of_product_list" src="img/body-socks.jpg" alt="">
+                        </div>
+                        <h3 class="title_of_product_cards mt-2 mr-2">سکسی ترین جوراب دنیا</h3>
+                        <div class=" mr-3">
+                            <p class="d-inline-block">دسته :</p>
+                            <p class="d-inline-block mr-1"> ممه</p>
+                        </div>
+                        <div class=" mr-3">
+                            <p class="d-inline-block">زیر دسته : </p>
+                            <p class="d-inline-block mr-1">ممه گنده</p>
+                        </div>
+                        <div class="mr-3">
+                            <p class="d-inline-block">وضعیت :</p>
+                            <p class="d-inline-block mr-1">موجود</p>
+                        </div>
+                        <div class="ml-3 author_field_text">
+                            <p class="d-inline-block">نویسنده :</p>
+                            <p class="d-inline-block mr-1">کسری حبیب بیگی</p>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="col-4">
-
+            <div class="col-4 mt-4">
+                <div class="col_field_of_product_list">
+                    <a class="main_anchor_of_col_product_list" href="">
+                        <div>
+                            <img class="w-100 img_of_product_list" src="img/socks.jpg" alt="">
+                        </div>
+                        <h3 class="title_of_product_cards mt-2 mr-2">سکسی ترین جوراب دنیا</h3>
+                        <div class=" mr-3">
+                            <p class="d-inline-block">دسته :</p>
+                            <p class="d-inline-block mr-1"> ممه</p>
+                        </div>
+                        <div class=" mr-3">
+                            <p class="d-inline-block">زیر دسته : </p>
+                            <p class="d-inline-block mr-1">ممه گنده</p>
+                        </div>
+                        <div class="mr-3">
+                            <p class="d-inline-block">وضعیت :</p>
+                            <p class="d-inline-block mr-1">موجود</p>
+                        </div>
+                        <div class="ml-3 author_field_text">
+                            <p class="d-inline-block">نویسنده :</p>
+                            <p class="d-inline-block mr-1">کسری حبیب بیگی</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 mt-4">
+                <div class="col_field_of_product_list">
+                    <a class="main_anchor_of_col_product_list" href="">
+                        <div>
+                            <img class="w-100 img_of_product_list" src="img/sexy-socks.jpg" alt="">
+                        </div>
+                        <h3 class="title_of_product_cards mt-2 mr-2">سکسی ترین جوراب دنیا</h3>
+                        <div class=" mr-3">
+                            <p class="d-inline-block">دسته :</p>
+                            <p class="d-inline-block mr-1"> ممه</p>
+                        </div>
+                        <div class=" mr-3">
+                            <p class="d-inline-block">زیر دسته : </p>
+                            <p class="d-inline-block mr-1">ممه گنده</p>
+                        </div>
+                        <div class="mr-3">
+                            <p class="d-inline-block">وضعیت :</p>
+                            <p class="d-inline-block mr-1">موجود</p>
+                        </div>
+                        <div class="ml-3 author_field_text">
+                            <p class="d-inline-block">نویسنده :</p>
+                            <p class="d-inline-block mr-1">کسری حبیب بیگی</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 mt-4">
+                <div class="col_field_of_product_list">
+                    <a class="main_anchor_of_col_product_list" href="">
+                        <div>
+                            <img class="w-100 img_of_product_list" src="img/body-socks.jpg" alt="">
+                        </div>
+                        <h3 class="title_of_product_cards mt-2 mr-2">سکسی ترین جوراب دنیا</h3>
+                        <div class=" mr-3">
+                            <p class="d-inline-block">دسته :</p>
+                            <p class="d-inline-block mr-1"> ممه</p>
+                        </div>
+                        <div class=" mr-3">
+                            <p class="d-inline-block">زیر دسته : </p>
+                            <p class="d-inline-block mr-1">ممه گنده</p>
+                        </div>
+                        <div class="mr-3">
+                            <p class="d-inline-block">وضعیت :</p>
+                            <p class="d-inline-block mr-1">موجود</p>
+                        </div>
+                        <div class="ml-3 author_field_text">
+                            <p class="d-inline-block">نویسنده :</p>
+                            <p class="d-inline-block mr-1">کسری حبیب بیگی</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 mt-4">
+                <div class="col_field_of_product_list">
+                    <a class="main_anchor_of_col_product_list" href="">
+                        <div>
+                            <img class="w-100 img_of_product_list" src="img/socks.jpg" alt="">
+                        </div>
+                        <h3 class="title_of_product_cards mt-2 mr-2">سکسی ترین جوراب دنیا</h3>
+                        <div class=" mr-3">
+                            <p class="d-inline-block">دسته :</p>
+                            <p class="d-inline-block mr-1"> ممه</p>
+                        </div>
+                        <div class=" mr-3">
+                            <p class="d-inline-block">زیر دسته : </p>
+                            <p class="d-inline-block mr-1">ممه گنده</p>
+                        </div>
+                        <div class="mr-3">
+                            <p class="d-inline-block">وضعیت :</p>
+                            <p class="d-inline-block mr-1">موجود</p>
+                        </div>
+                        <div class="ml-3 author_field_text">
+                            <p class="d-inline-block">نویسنده :</p>
+                            <p class="d-inline-block mr-1">کسری حبیب بیگی</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 mt-4">
+                <div class="col_field_of_product_list">
+                    <a class="main_anchor_of_col_product_list" href="">
+                        <div>
+                            <img class="w-100 img_of_product_list" src="img/socks.jpg" alt="">
+                        </div>
+                        <h3 class="title_of_product_cards mt-2 mr-2">سکسی ترین جوراب دنیا</h3>
+                        <div class=" mr-3">
+                            <p class="d-inline-block">دسته :</p>
+                            <p class="d-inline-block mr-1"> ممه</p>
+                        </div>
+                        <div class=" mr-3">
+                            <p class="d-inline-block">زیر دسته : </p>
+                            <p class="d-inline-block mr-1">ممه گنده</p>
+                        </div>
+                        <div class="mr-3">
+                            <p class="d-inline-block">وضعیت :</p>
+                            <p class="d-inline-block mr-1">موجود</p>
+                        </div>
+                        <div class="ml-3 author_field_text">
+                            <p class="d-inline-block">نویسنده :</p>
+                            <p class="d-inline-block mr-1">کسری حبیب بیگی</p>
+                        </div>
+                    </a>
+                </div>
             </div>
          </div>
     </div>
