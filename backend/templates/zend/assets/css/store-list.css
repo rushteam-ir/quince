@@ -29,6 +29,7 @@
     border-radius: 5px;
     overflow: hidden;
     z-index: 0;
+    height: 300px;
 }
 
 .blog-card a {
@@ -123,6 +124,7 @@
 
 .blog-card .description .read-more {
     text-align: right;
+    margin-top: 100px;
 }
 
 .blog-card .description .read-more a {
@@ -173,6 +175,11 @@
 .angle_left_edit_cutom{
     position: relative;
     top: 5px;
+}
+
+.border_customize_and_padd{
+    border-right: 2px solid #e8e8e8;
+    padding-right: 25px;
 }
 
 @media (min-width: 640px) {
