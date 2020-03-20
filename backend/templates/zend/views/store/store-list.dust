@@ -17,32 +17,50 @@
 
             <div class="container-fluid">
                 <div class="row">
+
                     <div class="col-12 main_box_of_product_col">
                         <div class="blog-card alt">
+
                             <div class="meta">
                                 <div class="photo" style="background-image: url(img/sexy-socks.jpg)">
                                 </div>
+
                                 <ul class="details text-center ">
                                     <li class="mt-5">دسته بندی : <Span>جوراب</Span></li>
                                     <li class="mt-2">زیر دسته : <span>جوراب مردانه</span></li>
-                                    <li class="mt-2">وضعیت انتشار :  <span class="text-danger">غیر فعال</span></li>
                                     <li class="mt-2 ">قیمت : <span class="ml-1">12000</span>تومان</li>
                                     <li class="mt-2">موجودی : <span>12 جین</span></li>
                                     <li class="mt-2">تخفیف : <span> ندارد</span></li>
                                 </ul>
+
                             </div>
+
                             <div class="description text-right">
+
                                 <h1>جوراب مردانه کد 120-2</h1>
-                                <h2 class="mt-2 d-inline-block">اخرین اپدیت : <span>1398/12/24</span></h2>
+                                <h2 class="mt-2 d-inline-block position_customize_prozuct">اخرین اپدیت : <span>1398/12/24</span></h2>
                                 <h2 class="d-inline-block mr-4 border_customize_and_padd"> نویسنده : <span> کسری حبیب بیگی</span></h2>
-                                <p>پدر روزبه جوراب زنانه می پوشد اما او باید جوراب مردانه به پا کند در صورتی که اینطور
+                                <div class="situation_of_product_color mt-2 mb-0"></div>
+
+                                <p class="mt-2">پدر روزبه جوراب زنانه می پوشد اما او باید جوراب مردانه به پا کند در صورتی که اینطور
                                     نیست اما چرا ؟؟ به دلیل اینکه او مادر روزبه را نمیکند او گی است اما ممکن است اوبی هم
-                                    باشد باید بیشتر...</p>
-                                <p class="read-more dir-rtl text-left font-weight-bold">
+                                    باشد باید بیشتر...
+                                </p>
+
+                                    <p class="product_title_header_custom">مشخصات محصول :</p>
+
+                                    <ul class="mt-2 list-unstyled pr-4">
+                                        <li class="mt-2"><i class="fas fa-caret-left product_color_arrow"></i> رنگ : ابی و قرمز و سبزه ای</li>
+                                        <li  class="mt-2"><i class="fas fa-caret-left product_color_arrow"></i> سایز : 45 و 46</li>
+                                    </ul>
+
+                                <p class="read-more dir-rtl text-left font-weight-bold position-absolute">
                                     <a href="#">ویرایش</a>
                                     <i class="fas fa-angle-left mr-2 angle_left_edit_cutom font_info_color"></i>
                                 </p>
+                                
                             </div>
+
                         </div>
                     </div>
 
