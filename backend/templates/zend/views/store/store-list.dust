@@ -47,7 +47,7 @@
                     </div>
                     
                     <div class="col-12 main_box_of_product_col">
-                        <div class="blog-card alt">
+                        <div class="blog-card">
                             <div class="meta">
                                 <div class="photo" style="background-image: url(img/img-img.png)">
                                 </div>
@@ -74,64 +74,7 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="col-6 main_box_of_product_col">
-                        <div class="blog-card alt">
-                            <div class="meta">
-                                <div class="photo" style="background-image: url(img/socks-img.jpg)">
-                                </div>
-                                <ul class="details">
-                                    <li class="mt-2"><span><i class="fas fa-layer-group ml-2 font_info_color"></i></span> دسته بندی : <Span>جوراب</Span></li>
-                                    <li class="mt-2"><i class="fas fa-clone ml-2 font_info_color"></i> زیر دسته : <span>جوراب مردانه</span></li>
-                                    <li class="mt-2"><i class="fas fa-warehouse ml-2 font_info_color"></i>وضعیت محصول :  <span>موجود در انبار</span></li>
-                                    <li class="mt-2 "><i class="fas fa-dollar-sign ml-2 mr-1 font_info_color"></i>
-                                        قیمت : <span class="ml-1">12000</span>تومان
-                                    </li>
-                                    <li class="mt-2"><i class="fas fa-user ml-2 font_info_color"></i> نویسنده : <span> کسری حبیب بیگی</span></li>
-                                </ul>
-                            </div>
-                            <div class="description text-right">
-                                <h1>جوراب مردانه کد 120-2</h1>
-                                <h2 class="mt-2">اخرین اپدیت : <span>1398/12/24</span></h2>
-                                <p>پدر روزبه جوراب زنانه می پوشد اما او باید جوراب مردانه به پا کند در صورتی که اینطور
-                                    نیست اما چرا ؟؟ به دلیل اینکه او مادر روزبه را نمیکند او گی است اما ممکن است اوبی هم
-                                    باشد باید بیشتر...</p>
-                                <p class="read-more dir-rtl text-left font-weight-bold mt-5">
-                                    <a href="#">ویرایش</a>
-                                    <i class="fas fa-angle-left mr-2 angle_left_edit_cutom font_info_color"></i>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-6 main_box_of_product_col">
-                        <div class="blog-card alt">
-                            <div class="meta">
-                                <div class="photo" style="background-image: url(img/sexy-socks.jpg)">
-                                </div>
-                                <ul class="details">
-                                    <li class="mt-2"><span><i class="fas fa-layer-group ml-2 font_info_color"></i></span> دسته بندی : <Span>جوراب</Span></li>
-                                    <li class="mt-2"><i class="fas fa-clone ml-2 font_info_color"></i> زیر دسته : <span>جوراب مردانه</span></li>
-                                    <li class="mt-2"><i class="fas fa-warehouse ml-2 font_info_color"></i>وضعیت محصول :  <span>موجود در انبار</span></li>
-                                    <li class="mt-2 "><i class="fas fa-dollar-sign ml-2 mr-1 font_info_color"></i>
-                                        قیمت : <span class="ml-1">12000</span>تومان
-                                    </li>
-                                    <li class="mt-2"><i class="fas fa-user ml-2 font_info_color"></i> نویسنده : <span> کسری حبیب بیگی</span></li>
-                                </ul>
-                            </div>
-                            <div class="description text-right">
-                                <h1>جوراب مردانه کد 120-2</h1>
-                                <h2 class="mt-2">اخرین اپدیت : <span>1398/12/24</span></h2>
-                                <p>پدر روزبه جوراب زنانه می پوشد اما او باید جوراب مردانه به پا کند در صورتی که اینطور
-                                    نیست اما چرا ؟؟ به دلیل اینکه او مادر روزبه را نمیکند او گی است اما ممکن است اوبی هم
-                                    باشد باید بیشتر...</p>
-                                <p class="read-more dir-rtl text-left font-weight-bold mt-5">
-                                    <a href="#">ویرایش</a>
-                                    <i class="fas fa-angle-left mr-2 angle_left_edit_cutom font_info_color"></i>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
 
