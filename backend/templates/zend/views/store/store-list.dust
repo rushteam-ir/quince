@@ -60,7 +60,7 @@
 </div>
 
 
-        <section class="product_modal_box">
+        <section class="product_modal_box d-none">
             <div class="main_field_of_product_modal">
                 <div class="row">
                     <div class="col-4">
