@@ -158,7 +158,7 @@
                         <div class="col-4">
                             <div class="slick-field mt-4">
                                 {#.images}
-                                    <div>
+                                    <div id="sa">
                                         <img class="w-100 slider_img_product_modal" src="media/products/{.}">
                                     </div>
                                 {/.images}
