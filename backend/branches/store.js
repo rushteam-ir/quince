@@ -226,7 +226,7 @@ router.post('/add', async(req,res)=>{
 
                 if(result2){
 
-                    return res.redirect(`${config.backend_url}store/add/?msg=add-success`)
+                    return res.redirect(`${config.backend_url}store/list/?msg=add-success`)
 
                 }
                 else{
