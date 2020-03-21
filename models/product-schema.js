@@ -52,7 +52,7 @@ product_schema.statics = {
 
     get : async function () {
 
-        return await product_model.find();
+        return await product_model.find().sort([['row', -1]]);
 
     },
 
