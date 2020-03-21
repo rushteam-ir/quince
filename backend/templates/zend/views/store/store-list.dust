@@ -17,6 +17,8 @@
                 لیست محصولات
             </p>
 
+            {@alertSuccess key="add-success" msg="محصول جدید با موفقیت اضافه شد"}{/alertSuccess}
+
             <div class="container-fluid">
                 <div class="row">
 
