@@ -4,9 +4,6 @@
     <list default="true" id="bd36d6d7-6b5a-4a74-b20a-025da208c5c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/branches/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/branches/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e7615e5b21a9f2bdc7f3c8f_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e7615e5b21a9f2bdc7f3c8f_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/a.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/templates/zend/views/store/store-list.dust" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/views/store/store-list.dust" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +154,7 @@
       <workItem from="1584548401677" duration="2169000" />
       <workItem from="1584624339721" duration="3276000" />
       <workItem from="1584743806905" duration="537000" />
-      <workItem from="1584786700897" duration="8266000" />
+      <workItem from="1584786700897" duration="9208000" />
     </task>
     <servers />
   </component>

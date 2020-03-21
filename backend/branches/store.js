@@ -16,6 +16,8 @@ router.get('/list', async(req,res)=>{
 
         };
 
+        log(data.list);
+
         res.render('store/store-list', data);
 
     }

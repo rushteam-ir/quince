@@ -22,39 +22,44 @@
             <div class="container-fluid">
                 <div class="row">
 
-                    {#list}
-                        <div class="col-12 main_box_of_product_col">
-                            <div class="blog-card alt">
+                    {?list}
+                        {#list}
+                            <div class="col-12 main_box_of_product_col">
+                                <div class="blog-card alt">
 
-                                <div class="meta">
-                                    <div class="photo" style="background-image: url(media/products/{._id}_main.png)"></div>
+                                    <div class="meta">
+                                        <div class="photo" style="background-image: url(media/products/{._id}_main.png)"></div>
+                                    </div>
+
+                                    <div class="description text-right">
+
+                                        <h1>{.title}</h1>
+                                        <h2 class="mt-2 d-inline-block position_customize_prozuct">اخرین اپدیت : <span>{.last_edit}</span></h2>
+                                        {@eq key="{admin_info.author_type}" value="name"}
+                                            <h2 class="d-inline-block mr-4 border_customize_and_padd"> نویسنده : <span>{.author_name}</span></h2>
+                                        {:else}
+                                            <h2 class="d-inline-block mr-4 border_customize_and_padd"> نویسنده : <span>{.author_username}</span></h2>
+                                        {/eq}
+                                        <div class="situation_of_product_color mt-2 mb-0"></div>
+
+                                        <p class="mt-3">
+                                            {.describe}
+                                        </p>
+
+                                        <p class="read-more dir-rtl text-left font-weight-bold position-absolute" onclick="productModal()">
+                                            <span>مشاهده اصلاعات بیشتر</span>
+                                            <i class="fas fa-angle-left mr-2 font_info_color"></i>
+                                        </p>
+
+                                    </div>
+
                                 </div>
-
-                                <div class="description text-right">
-
-                                    <h1>{.title}</h1>
-                                    <h2 class="mt-2 d-inline-block position_customize_prozuct">اخرین اپدیت : <span>{.last_edit}</span></h2>
-                                    {@eq key="{admin_info.author_type}" value="name"}
-                                        <h2 class="d-inline-block mr-4 border_customize_and_padd"> نویسنده : <span>{.author_name}</span></h2>
-                                    {:else}
-                                        <h2 class="d-inline-block mr-4 border_customize_and_padd"> نویسنده : <span>{.author_username}</span></h2>
-                                    {/eq}
-                                    <div class="situation_of_product_color mt-2 mb-0"></div>
-
-                                    <p class="mt-3">
-                                        {.describe}
-                                    </p>
-
-                                <p class="read-more dir-rtl text-left font-weight-bold position-absolute" onclick="productModal()">
-                                    <span>مشاهده اصلاعات بیشتر</span>
-                                    <i class="fas fa-angle-left mr-2 font_info_color"></i>
-                                </p>
-                                
                             </div>
-
-                            </div>
-                        </div>
+                        {/list}
+                    {:else}
+                        محصولی جهت نمایش وجود ندارد !
                     {/list}
+
                 </div>
             </div>
 </div>
