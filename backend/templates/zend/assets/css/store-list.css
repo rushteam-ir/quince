@@ -173,6 +173,7 @@
     position: fixed;
     top: 80px;
     left: 15%;
+    overflow: hidden;
 }
 
 .product_modal_title{
@@ -222,15 +223,20 @@
 }
 
 .sale_offer_row{
-    width: 130px;
-    height: 20px;
+    width: 300px;
+    height: 57px;
     transform: rotate(45deg);
-    background-color: #ff8822;
+    background-color: #E84C3D;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: -97px;
+    top: 24px;
     z-index: 100;
     color: white;
+    line-height: 64px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: main-font;
 }
 
 
