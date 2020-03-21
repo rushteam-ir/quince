@@ -63,7 +63,9 @@
         <section class="product_modal_box wow fadeInDown " id="product_modal_id">
             <div class="main_field_of_product_modal">
                 <div class="row">
-                    
+                    <div class="sale_offer_row">
+                        20% تخفیف
+                    </div>
                     <div class="col-8 dir-rtl text-right">
                         <i class="fas fa-times exit_modal_fas" onclick="removeModal()"></i>
                         <div class="product_modal_title">
