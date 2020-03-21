@@ -10,7 +10,13 @@ router.get('/list', async(req,res)=>{
 
     try{
 
-        res.render('store/store-list');
+        let data = {
+
+            list : await product_model.get()
+
+        };
+
+        res.render('store/store-list', data);
 
     }
     catch (error) {
@@ -100,7 +106,8 @@ router.post('/add', async(req,res)=>{
             discount : discount_inp,
             features : product_features_inp,
             last_edit : getCurrentDate(),
-            author : req.session.admin_info.username,
+            author_username : req.session.admin_info.username,
+            author_name : `${req.session.admin_info.first_name}  ${req.session.admin_info.last_name}`,
             status : true
 
         };
@@ -124,7 +131,7 @@ router.post('/add', async(req,res)=>{
 
                     if(main_image.size/1024 <= backend_limited_products_size){
 
-                        let _name = `${result.title}_main.png`;
+                        let _name = `${result._id}_main.png`;
                         let main_image_path = `${backend_upload_dir}products/${_name}`;
                         main_image.mv(main_image_path, (err)=>{});
                         product_images.push(`${_name}`);
@@ -141,7 +148,7 @@ router.post('/add', async(req,res)=>{
 
                                     if(image.size/1024 <= backend_limited_products_size){
 
-                                        let _name = `${result.title}_${other_image_counter}.png`;
+                                        let _name = `${result._id}_${other_image_counter}.png`;
                                         let image_path = `${backend_upload_dir}products/${_name}`;
                                         image.mv(image_path, (err)=>{});
                                         product_images.push(`${_name}`);
@@ -173,7 +180,7 @@ router.post('/add', async(req,res)=>{
 
                                 if(other_images.size/1024 <= backend_limited_products_size){
 
-                                    let _name = `${result.title}_${other_image_counter}.png`;
+                                    let _name = `${result._id}_${other_image_counter}.png`;
                                     let image_path = `${backend_upload_dir}products/${_name}`;
                                     other_images.mv(image_path, (err)=>{});
                                     product_images.push(`${_name}`);

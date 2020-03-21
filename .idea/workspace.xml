@@ -4,6 +4,7 @@
     <list default="true" id="bd36d6d7-6b5a-4a74-b20a-025da208c5c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/branches/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/branches/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/zend/views/store/store-list.dust" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/views/store/store-list.dust" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/product-schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/product-schema.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +153,9 @@
       <workItem from="1584544421300" duration="1047000" />
       <workItem from="1584545486445" duration="19000" />
       <workItem from="1584548401677" duration="2169000" />
-      <workItem from="1584624339721" duration="1676000" />
+      <workItem from="1584624339721" duration="3276000" />
+      <workItem from="1584743806905" duration="537000" />
+      <workItem from="1584786700897" duration="4439000" />
     </task>
     <servers />
   </component>
