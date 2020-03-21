@@ -111,11 +111,11 @@
     left: 0%;
 }
 
-.main_box_of_product_col{
+.main_box_of_product_col {
     margin-top: 25px;
 }
 
-.font_info_color{
+.font_info_color {
     color: #5AD67D;
     text-align: center;
     font-size: 0.9rem;
@@ -123,38 +123,39 @@
     top: 2px;
 }
 
-.border_customize_and_padd{
+.border_customize_and_padd {
     border-right: 2px solid #e8e8e8;
     padding-right: 22px;
 }
 
-.position_customize_prozuct{
+.position_customize_prozuct {
     position: relative;
     top: 2.7px;
 }
 
-.situation_of_product_color{
+.situation_of_product_color {
     height: 5px;
     background: #5ad67d;
     width: 35px;
     border-radius: 3px;
 }
-.situation_of_product_color_2{
+
+.situation_of_product_color_2 {
     height: 5px;
     background: #FF0505;
     width: 35px;
     border-radius: 3px;
 }
 
-.product_color_arrow{
+.product_color_arrow {
     color: #5AD67D;
 }
 
-.product_title_header_custom{
+.product_title_header_custom {
     font-family: main-font;
 }
 
-.product_modal_box{
+.product_modal_box {
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -165,7 +166,7 @@
     display: none;
 }
 
-.main_field_of_product_modal{
+.main_field_of_product_modal {
     width: 70%;
     height: 600px;
     background-color: white;
@@ -176,13 +177,13 @@
     overflow: hidden;
 }
 
-.product_modal_title{
+.product_modal_title {
     font-size: 1.5rem;
     font-family: main-font;
     margin-top: 40px;
 }
 
-.exit_modal_fas{
+.exit_modal_fas {
     font-size: 1.3rem;
     color: #b7b7b7;
     position: absolute;
@@ -191,38 +192,39 @@
     cursor: pointer;
 }
 
-.star-rotate{
+.star-rotate {
     transform: rotateY(180deg);
 }
 
-.star_color_custome{
+.star_color_custome {
     color: #F6B014;
 }
 
-.slider_img_product_modal{
+.slider_img_product_modal {
     height: 320px;
     border-radius: 4px;
 }
 
-.sub_slider_modal{
+.sub_slider_modal {
     height: 70px;
     border-radius: 3px;
 }
 
-.title_of_specifict{
+.title_of_specifict {
     font-family: main-font;
 }
 
-.price_of_modal_product{
+.price_of_modal_product {
     color: #E84C3D;
     font-size: 2rem;
     font-family: main-font;
 }
-.color_of_sitoaytion{
+
+.color_of_sitoaytion {
     color: #E84C3D;
 }
 
-.sale_offer_row{
+.sale_offer_row {
     width: 300px;
     height: 57px;
     transform: rotate(45deg);
@@ -239,7 +241,26 @@
     font-family: main-font;
 }
 
+.remove_product_modal_btn {
+    background-color: #E84C3D;
+    width: 100%;
+    height: 45px;
+    border: none;
+    color: white;
+    font-family: main-font;
+}
 
+.remove_product_modal_btn:hover {
+    background-color: rgb(199, 65, 53);
+}
+
+.edit_product_modal_btn {
+    width: 100%;
+    height: 45px;
+    border: none;
+    color: white;
+    font-family: main-font;
+}
 
 
 

@@ -65,7 +65,7 @@
 </div>
 
 
-        <section class="product_modal_box wow fadeInDown " id="product_modal_id">
+        <section class="product_modal_box wow fadeInDown" id="product_modal_id">
             <div class="main_field_of_product_modal">
                 <div class="row">
                     <div class="sale_offer_row">
@@ -123,8 +123,17 @@
                                     <span class="mr-1 color_of_sitoaytion">غیر فعال</span>
                                 </div>
 
+                                <div>
+                                    <p class="d-inline-block title_of_specifict"> نویسنده :</p>
+                                    <span class="mr-1"> کسری حبیب بیگی</span>
+                                </div>
 
+                                <div>
+                                    <p class="d-inline-block title_of_specifict"> تعداد خرید :</p>
+                                    <span class="mr-1">20</span>
+                                </div>
                             </div>
+                                
                             <div class="col-6">
 
                                 <div>
@@ -201,6 +210,15 @@
                                 <img class="w-100 sub_slider_modal" src="img/img.png">
                             </div>
                             
+                        </div>
+
+                        <div>
+                            <button class="btn remove_product_modal_btn">
+                                حذف
+                            </button>
+                            <button class="btn btn-primary edit_product_modal_btn mt-3">
+                                ویرایش محصول
+                            </button>
                         </div>
 
                     </div>
