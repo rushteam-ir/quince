@@ -84,3 +84,11 @@ input:-webkit-autofill:active  {
 label {
     font-family: main-font;
 }
+
+::-moz-selection { /* Code for Firefox */
+    background: rgb(185, 197, 255);
+  }
+  
+  ::selection {
+    background: rgb(185, 197, 255);
+  }
