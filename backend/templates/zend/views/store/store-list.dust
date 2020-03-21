@@ -44,7 +44,7 @@
                                     </p>
 
                                 <p class="read-more dir-rtl text-left font-weight-bold position-absolute" onclick="productModal()">
-                                    <a  href="#">مشاهده اصلاعات بیشتر</a>
+                                    <span>مشاهده اصلاعات بیشتر</span>
                                     <i class="fas fa-angle-left mr-2 font_info_color"></i>
                                 </p>
                                 
@@ -53,16 +53,92 @@
                             </div>
                         </div>
                     {/list}
-
-
                 </div>
             </div>
 </div>
 
 
-        <section class="product_modal_box d-none">
+        <section class="product_modal_box wow fadeInDown " id="product_modal_id">
             <div class="main_field_of_product_modal">
                 <div class="row">
+                    <div class="col-8 dir-rtl text-right">
+                        <i class="fas fa-times exit_modal_fas" onclick="removeModal()"></i>
+                        <div class="product_modal_title">
+                            <p class="m-1">جوراب مردانه کد 120-2</p>
+                        </div>
+                        <div class="star_color_custome">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt star-rotate"></i>
+                            <i class="far fa-star mr-1"></i>
+                            <i class="far fa-star mr-1"></i>
+                            <span class="mr-2">134</span><span>رای</span>
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="price_of_modal_product">
+                                <span>12.500</span>
+                                تومان
+                            </p>
+                        </div>
+                        <hr>
+                        <div>
+                            <p>جوراب‌های کوتاه نخی یا ابریشمی هم چندین قرن در چین و ژاپن استفاده می‌شد. ا
+                                ین جوراب‌های ساق کوتاه در قرن دوازدهم در ارو
+                                پا به جوراب‌های ساق بلند تبدیل شد. شلوارهایی که مردان می‌پوش
+                                یدند، بسیار چسبنده و تنگ شد که از کمر تا پایین پا را می پوشاند، مانند ساق‌های امروزی.
+                                 زنان هم جوراب‌های بلندی می‌پوشیدند که در زانو با کش جوراب نگاه داشته می‌شد.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+
+                                <div>
+                                    <p class="d-inline-block title_of_specifict">دسته بندی : </p>
+                                    <span class="mr-1">جوراب</span>
+                                </div>
+
+                                <div>
+                                    <p class="d-inline-block title_of_specifict">زیر دسته :</p>
+                                    <span class="mr-1">جوراب مردانه </span>
+                                </div>  
+
+                                <div>
+                                    <p class="d-inline-block title_of_specifict">موجودی :</p>
+                                    <span class="mr-1">5 جین</span>
+                                </div>
+
+                                <div>
+                                    <p class="d-inline-block title_of_specifict">تعداد نظرات :</p>
+                                    <span class="mr-1">20</span>
+                                </div>
+
+
+                            </div>
+                            <div class="col-6">
+
+                                <div>
+                                    <p class="d-inline-block title_of_specifict">مشخصات محصول :</p>
+                                    <ul>
+                                        <li>
+                                           <span class="title_of_specifict"> رنگ :</span>
+                                            <span class="mr-1 ml-1">قرمز</span>,
+                                            <span class="mr-1 ml-1">ابی</span>,
+                                            <span class="mr-1 ml-1">زرد </span>,  
+                                            <span class="mr-1 ml-1">سفید</span>
+                                        </li>
+                                        <li class="mt-3">
+                                            <span class="title_of_specifict">سایز :</span>
+                                            <span class="mr-1 ml-1">45</span>,
+                                            <span class="mr-1 ml-1">46</span>,
+                                            <span class="mr-1 ml-1">38</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-4">
                         <div class="slick-field mt-4">
                             <div>
@@ -92,9 +168,6 @@
 
                         <div class="slick-field-1">
                             <div class="p-1 border">
-                                <img class="w-100 sub_slider_modal" src="img/img.png">
-                            </div>
-                            <div class="p-1 border">
                                 <img class="w-100 sub_slider_modal" src="img/a.jpg">
                             </div>
                             
@@ -105,33 +178,23 @@
                             <div class="p-1 border">
                                 <img class="w-100 sub_slider_modal" src="img/img2.jpg">
                             </div>
-
+                            
                             <div class="p-1 border">
                                 <img class="w-100 sub_slider_modal" src="img/img.png">
                             </div>
-
+                            
                             <div class="p-1 border">
                                 <img class="w-100 sub_slider_modal" src="img/a.jpg">
                             </div>
-
-
+                            
+                            <div class="p-1 border">
+                                <img class="w-100 sub_slider_modal" src="img/img.png">
+                            </div>
+                            
                         </div>
 
                     </div>
-                    <div class="col-8 dir-rtl text-right">
-                        <i class="fas fa-times exit_modal_fas"></i>
-                        <div class="product_modal_title">
-                            <p>جوراب مردانه کد 120-2</p>
-                        </div>
-                        <div class="star_color_custome">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt star-rotate"></i>
-                            <i class="far fa-star mr-1"></i>
-                            <i class="far fa-star mr-1"></i>
-                            <span class="mr-2">134</span><span>رای</span>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </section>

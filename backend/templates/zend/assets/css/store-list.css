@@ -92,12 +92,10 @@
 .blog-card .description .read-more {
     bottom: 20px;
     left: 20px;
-}
-
-.blog-card .description .read-more a {
     color: #5ad67d;
     display: inline-block;
     position: relative;
+    cursor: pointer;
 }
 
 .blog-card p {
@@ -164,6 +162,7 @@
     left: 0px;
     z-index: 10000000000;
     background-color: rgba(0, 0, 0, 0.486);
+    display: none;
 }
 
 .main_field_of_product_modal{
@@ -186,8 +185,9 @@
     font-size: 1.3rem;
     color: #b7b7b7;
     position: absolute;
-    right: 19px;
+    left: 19px;
     top: 13px;
+    cursor: pointer;
 }
 
 .star-rotate{
@@ -208,7 +208,15 @@
     border-radius: 3px;
 }
 
+.title_of_specifict{
+    font-family: main-font;
+}
 
+.price_of_modal_product{
+    color: #E84C3D;
+    font-size: 2rem;
+    font-family: main-font;
+}
 
 
 
