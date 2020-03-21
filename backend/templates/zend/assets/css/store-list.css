@@ -261,13 +261,6 @@
     font-family: main-font;
 }
 
-
-
-
-
-
-
-
 @media (min-width: 640px) {
     .blog-card {
         -webkit-box-orient: horizontal;
