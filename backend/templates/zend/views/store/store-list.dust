@@ -61,6 +61,7 @@
         <section class="product_modal_box wow fadeInDown " id="product_modal_id">
             <div class="main_field_of_product_modal">
                 <div class="row">
+                    
                     <div class="col-8 dir-rtl text-right">
                         <i class="fas fa-times exit_modal_fas" onclick="removeModal()"></i>
                         <div class="product_modal_title">
@@ -109,8 +110,8 @@
                                 </div>
 
                                 <div>
-                                    <p class="d-inline-block title_of_specifict">تعداد نظرات :</p>
-                                    <span class="mr-1">20</span>
+                                    <p class="d-inline-block title_of_specifict"> وضعیت :</p>
+                                    <span class="mr-1 color_of_sitoaytion">غیر فعال</span>
                                 </div>
 
 
