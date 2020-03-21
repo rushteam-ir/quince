@@ -52,22 +52,23 @@ button:focus {
     background: rgb(85, 94, 129);
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
+
 .row {
     margin-right: 0px !important;
     margin-left: 0px !important;
 }
 
-.alert{
+.alert {
     position: unset !important;
 }
 
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active  {
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
@@ -85,10 +86,15 @@ label {
     font-family: main-font;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+    /* Code for Firefox */
     background: rgb(185, 197, 255);
-  }
-  
-  ::selection {
+}
+
+::selection {
     background: rgb(185, 197, 255);
-  }
+}
+
+:focus {
+    outline: none;
+}

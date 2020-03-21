@@ -198,9 +198,15 @@
     color: #F6B014;
 }
 
+.slider_img_product_modal{
+    height: 320px;
+    border-radius: 4px;
+}
 
-
-
+.sub_slider_modal{
+    height: 70px;
+    border-radius: 3px;
+}
 
 
 
