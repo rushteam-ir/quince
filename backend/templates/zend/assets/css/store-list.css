@@ -121,11 +121,8 @@
     color: #5AD67D;
     text-align: center;
     font-size: 0.9rem;
-}
-
-.angle_left_edit_cutom{
     position: relative;
-    top: 5px;
+    top: 2px;
 }
 
 .border_customize_and_padd{
@@ -159,14 +156,47 @@
     font-family: main-font;
 }
 
+.product_modal_box{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10000000000;
+    background-color: rgba(0, 0, 0, 0.486);
+}
 
+.main_field_of_product_modal{
+    width: 70%;
+    height: 600px;
+    background-color: white;
+    border-radius: 4px;
+    position: fixed;
+    top: 80px;
+    left: 15%;
+}
 
+.product_modal_title{
+    font-size: 1.5rem;
+    font-family: main-font;
+    margin-top: 40px;
+}
 
+.exit_modal_fas{
+    font-size: 1.3rem;
+    color: #b7b7b7;
+    position: absolute;
+    right: 19px;
+    top: 13px;
+}
 
+.star-rotate{
+    transform: rotateY(180deg);
+}
 
-
-
-
+.star_color_custome{
+    color: #F6B014;
+}
 
 
 
