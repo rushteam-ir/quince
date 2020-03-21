@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="bd36d6d7-6b5a-4a74-b20a-025da208c5c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/branches/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/branches/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/views/store/store-list.dust" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/views/store/store-list.dust" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/product-schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/product-schema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/initializers/app-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/initializers/app-init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/initializers/lib.js" beforeDir="false" afterPath="$PROJECT_DIR$/initializers/lib.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +156,7 @@
       <workItem from="1584548401677" duration="2169000" />
       <workItem from="1584624339721" duration="3276000" />
       <workItem from="1584743806905" duration="537000" />
-      <workItem from="1584786700897" duration="4439000" />
+      <workItem from="1584786700897" duration="5840000" />
     </task>
     <servers />
   </component>

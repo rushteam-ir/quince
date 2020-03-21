@@ -10,6 +10,7 @@ mongo_store = require('connect-mongo')(session);
 express_validator = require('express-validator');
 mongoose = require('mongoose');
 nodemailer = require('nodemailer');
+JalaliDate = require('jalali-date');
 admin_model = require('../models/admin-schema');
 category_model = require('../models/category-schema');
 setting_model = require('../models/setting-schema');
