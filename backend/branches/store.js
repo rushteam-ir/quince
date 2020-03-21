@@ -14,9 +14,7 @@ router.get('/list', async(req,res)=>{
 
             list : await product_model.get()
 
-        };
-
-        log(data.list);
+        }
 
         res.render('store/store-list', data);
 

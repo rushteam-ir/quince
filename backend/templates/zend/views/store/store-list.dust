@@ -46,7 +46,7 @@
                                             {.describe}
                                         </p>
 
-                                        <p class="read-more dir-rtl text-left font-weight-bold position-absolute" onclick="productModal()">
+                                        <p class="read-more dir-rtl text-left font-weight-bold position-absolute" onclick="productModal({.row})">
                                             <span>مشاهده اصلاعات بیشتر</span>
                                             <i class="fas fa-angle-left mr-2 font_info_color"></i>
                                         </p>
@@ -65,14 +65,14 @@
 </div>
 
         {#list}
-            <section class="product_modal_box wow fadeInDown" id="product_modal_id">
+            <section class="product_modal_box wow fadeInDown" id="product_modal_id_{.row}">
                 <div class="main_field_of_product_modal">
                     <div class="row">
                         <div class="sale_offer_row">
                             {.discount}% تخفیف
                         </div>
                         <div class="col-8 dir-rtl text-right">
-                            <i class="fas fa-times exit_modal_fas" onclick="removeModal()"></i>
+                            <i class="fas fa-times exit_modal_fas" onclick="removeModal({.row})"></i>
                             <div class="product_modal_title">
                                 <p class="m-1">{.title}</p>
                             </div>
@@ -189,47 +189,50 @@
         {/list}
 
         <script>
-            var product_modal_id = document.getElementById('product_modal_id');
   
-  function productModal(){
+              function productModal(ID){
 
-    product_modal_id.style.display = "block";
+                let product_modal_id = document.getElementById('product_modal_id_' + ID.toString());
+                product_modal_id.style.display = "block";
 
-    new WOW().init();
+                new WOW().init();
 
-    $(document).ready(function(){
+                $(document).ready(function(){
 
-      $('.slick-field').slick({
-  
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false,
-          fade: true,
-          asNavFor: '.slick-field-1',
-          autoplay:false,
-  
-        });
-  
-        $('.slick-field-1').slick({
-  
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          asNavFor: '.slick-field',
-          autoplay:false,
-          focusOnSelect: true,
-          autoplaySpeed: 2000,
-          arrows:false,
-          centerMode: true,
-  
-        });
-                
-    });
+                  $('.slick-field').slick({
 
-  }
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                      arrows: false,
+                      fade: true,
+                      asNavFor: '.slick-field-1',
+                      autoplay:false,
 
-  function removeModal(){
-    product_modal_id.style.display = "none";
-  }
+                    });
+
+                    $('.slick-field-1').slick({
+
+                      slidesToShow: 2,
+                      slidesToScroll: 1,
+                      asNavFor: '.slick-field',
+                      autoplay:false,
+                      focusOnSelect: true,
+                      autoplaySpeed: 2000,
+                      arrows:false,
+                      centerMode: true,
+
+                    });
+
+                });
+
+              }
+
+              function removeModal(ID){
+
+                let product_modal_id = document.getElementById('product_modal_id_' + ID.toString());
+                product_modal_id.style.display = "none";
+
+              }
         </script>
 
 {/body}
