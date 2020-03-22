@@ -28,6 +28,9 @@
     .text-box-center-header{
         margin-top: 25%;
     }
+    .list_style_bottom {
+        font-size: 11pt;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -36,6 +39,9 @@
     }
     .text-box-center-header{
         margin-top: 30%;
+    }
+    .list_style_bottom {
+        font-size: 9pt;
     }
 }
 
