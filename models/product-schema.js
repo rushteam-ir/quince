@@ -56,6 +56,12 @@ product_schema.statics = {
 
     },
 
+    del : async function (product_id) {
+
+        return await product_model.findByIdAndDelete(product_id);
+
+    }
+
 };
 
 
