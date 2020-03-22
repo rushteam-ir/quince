@@ -44,9 +44,9 @@ frontend.get('/', async(req,res)=>{
 });
 
 // Frontend other routs
-//const dashboard = require('./branches/dashboard');
+const captcha = require('./branches/captcha');
 
-//frontend.use('/dashboard', dashboard);
+frontend.use('/captcha', captcha);
 
 // Frontend 404 page
 frontend.use(async(req,res,next)=>{
