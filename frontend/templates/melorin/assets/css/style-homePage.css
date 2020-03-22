@@ -184,16 +184,22 @@
 }
 
 /*slider*/
-#slick-slide-control01 , #slick-slide-control00, #slick-slide-control02 ,#slick-slide-control03,.slick-prev , .slick-next{
-    display: none !important;
-
-}
-.slick-dots{
-    list-style-type: none!important;
-}
 
 .slick-slide{
     height: 500px;
+}
+
+.slider_best_product , .slider_new_product{
+    margin: 50px 0px;
+}
+.bottom_of_see_all_product{
+    border:none;
+    background-color:rgb(192, 189, 189);
+    width: 50%;
+    height: 50px;
+    border-radius: 5px;
+   margin-bottom: 50px;
+    margin-left: 24%;
 }
 /*slider*/
 

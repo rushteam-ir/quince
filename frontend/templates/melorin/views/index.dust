@@ -159,13 +159,79 @@
             <div class="col-10 offset-1">
                 <div class="package_of_bottom_new_best">
                     <ul class="ul_style_of_bottom_list">
-                        <li class="list_style_bottom">محصولات جدید</li>
-                        <li class="list_style_bottom">برترین محصولات</li>
+                        <li class="list_style_bottom"  onclick="clickOnBottom1()">محصولات جدید</li>
+                        <li class="list_style_bottom"  onclick="clickOnBottom2()">برترین محصولات</li>
                     </ul>
                 </div>
             </div>
         </div>
         <!--Slider New Product & Best Product-->
+        <div id="new_product_click">
+            <div class="slider_new_product" >
+                <div>
+                    <img src="img/s1.png">
+                </div>
+                <div>
+                    <img src="img/s2.png">
+                </div>
+                <div>
+                    <img src="img/s3.jpg">
+                </div>
+                <div>
+                    <img src="img/s4.jpg">
+                </div>
+                <div>
+                    <img src="img/s5.jpg">
+                </div>
+                <div>
+                    <img src="img/s6.png">
+                </div>
+                <div>
+                    <img src="img/s7.jpg">
+                </div>
+                <div>
+                    <img src="img/s8.jpg">
+                </div>
+            </div>
+            <div class="w-100 ">
+                <button  class="bottom_of_see_all_product" dir="rtl">مشاهده همه...</button>
+            </div>
+
+        </div>
+
+        <div id="best_product_click">
+            <div class="slider_best_product" >
+                <div>
+                    <img src="img/s1.png">
+                </div>
+                <div>
+                    <img src="img/s3.jpg">
+                </div>
+                <div>
+                    <img src="img/s5.jpg">
+                </div>
+                <div>
+                    <img src="img/s7.jpg">
+                </div>
+                <div>
+                    <img src="img/s2.png">
+                </div>
+                <div>
+                    <img src="img/s4.jpg">
+                </div>
+                <div>
+                    <img src="img/s6.png">
+                </div>
+                <div>
+                    <img src="img/s8.jpg">
+                </div>
+            </div>
+            <div class="w-100">
+                <button class="bottom_of_see_all_product"  dir="rtl">مشاهده همه...</button>
+            </div>
+
+        </div>
+
         <!--End Slider New Product & Best Product-->
     </section>
 
