@@ -3,16 +3,6 @@ require('./initializers/app-config');
 require('./initializers/app-init');
 require('./initializers/lib');
 
-// Importing backend branches
-let branch_files = fs.readdirSync(__dirname + '/backend/branches/');
-branch_files.forEach((extracted_file)=>{
-
-    let new_branch = require(__dirname + '/backend/branches/' + extracted_file);
-    let branch_name = extracted_file.slice(0,-3);
-    backend_branches[branch_name] = new_branch;
-
-});
-
 // Creating Server
 const app = express();
 
@@ -39,8 +29,10 @@ app.use(session(session_options));
 
 // Server routs
 const backend = require('./backend/backend');
+const frontend = require('./frontend/frontend');
 
 app.use('/admin', backend);
+app.use('/', frontend);
 
 // App captcha generator
 app.get('/captcha', async(req, res)=>{

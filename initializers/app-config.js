@@ -14,11 +14,10 @@ module.exports = config = {
     captcha_url : `http://${address}:${app_port}/captcha`,
     app_dir : require.main.path + '/',
     backend_tmp : 'zend',
+    frontend_tmp : 'melorin',
     session_secret_key : 'polybiusmeganoob24',
     session_name : 'zend-cms',
     debug_mode : true,
     captcha_color : `#33228c`
 
 };
-
-module.exports = backend_branches = [];

@@ -8,23 +8,23 @@
     <!-- End Required meta tags -->
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- End Bootstrap CSS -->
 
     <!--  Main CSS -->
-    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <!-- End Main CSS -->
 
     <!-- Font-Awesome CSS -->
-    <link rel="stylesheet" href="../assets/css/all.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <!-- End Font-Awesome CSS -->
 
     <!-- Style CSS -->
-    <link rel="stylesheet" href="../assets/css/style-homePage.css">
+    <link rel="stylesheet" href="css/style-homePage.css">
     <!-- End Style CSS -->
 
     <!-- Responsive CSS -->
-    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <!-- End Responsive CSS -->
 
     <!--    name of web site    -->
@@ -40,7 +40,7 @@
                 <div class="background_of_header">
                     <div class="row m-0">
                         <div class="col-3 p-0">
-                            <img src="../assets/image/logo.png" alt="ملورین" class="logo_style_melorin_shop">
+                            <img src="img/logo.png" alt="ملورین" class="logo_style_melorin_shop">
                         </div>
                         <div class="col-9 p-0">
                             <nav dir="rtl" class="navbar navbar-expand-lg navbar-light bg-light nav_bar_style_fonts">
@@ -139,19 +139,19 @@
 
 
 <!--JQUERY Link-->
-<script src="../assets/js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
 <!--End JQUERY Link-->
 
 <!--Bootstrap Bundle link-->
-<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 <!--End Bootstrap Bundle link-->
 
 <!-- Bootstrap Min link-->
-<script src="../assets/js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <!--End Bootstrap Min link-->
 
 <!--My JS File-->
-<script src="../assets/js/js-homePage.js"></script>
+<script src="js/js-homePage.js"></script>
 <!--End My JS File-->
 
 </body>
