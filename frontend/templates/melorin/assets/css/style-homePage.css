@@ -1,11 +1,6 @@
 /*Header Style*/
-<<<<<<< HEAD:front-prototype/assets/css/style-homePage.css
 .background_of_header {
-    background: url("../image/7.jpg") no-repeat center;
-=======
-.background_of_header{
     background: url("../img/7.jpg") no-repeat center;
->>>>>>> 19e5233d33a2c4ba61f9a636767840dddc6692f4:frontend/templates/melorin/assets/css/style-homePage.css
     background-size: cover;
     width: 100%;
     height: 100vh;

@@ -38,17 +38,6 @@
 
 </head>
 <body>
-<<<<<<< HEAD:front-prototype/views/homePage.html
-<div class="container-fluid">
-    <!--Header-->
-    <div class="row">
-        <div class="col-12 p-0">
-            <div class="background_of_header">
-                <div class="row m-0">
-                    <div class="col-3 p-0">
-                        <img src="../assets/image/logo.png" alt="ملورین" class="logo_style_melorin_shop">
-=======
-<header>
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 p-0">
@@ -102,7 +91,6 @@
                                 </div>
                             </nav>
                         </div>
->>>>>>> 19e5233d33a2c4ba61f9a636767840dddc6692f4:frontend/templates/melorin/views/index.dust
                     </div>
                     <div class="col-9 p-0">
                         <nav dir="rtl" class="navbar navbar-expand-lg navbar-light bg-light nav_bar_style_fonts">
@@ -215,26 +203,26 @@
         <!--Slider New Product & Best Product-->
         <div class="slider_new_product">
 
-            <img src="../assets/image/s1.png">
-            <img src="../assets/image/s2.png">
-            <img src="../assets/image/s3.jpg">
-            <img src="../assets/image/s4.jpg">
-            <img src="../assets/image/s5.jpg">
-            <img src="../assets/image/s6.png">
-            <img src="../assets/image/s7.jpg">
-            <img src="../assets/image/s8.jpg">
+            <img src="img/s1.png">
+            <img src="img/s2.png">
+            <img src="img/s3.jpg">
+            <img src="img/s4.jpg">
+            <img src="img/s5.jpg">
+            <img src="img/s6.png">
+            <img src="img/s7.jpg">
+            <img src="img/s8.jpg">
 
         </div>
         <div class="slider_best_product">
 
-            <img src="../assets/image/s1.png">
-            <img src="../assets/image/s3.jpg">
-            <img src="../assets/image/s5.jpg">
-            <img src="../assets/image/s7.jpg">
-            <img src="../assets/image/s2.png">
-            <img src="../assets/image/s4.jpg">
-            <img src="../assets/image/s6.png">
-            <img src="../assets/image/s8.jpg">
+            <img src="img/s1.png">
+            <img src="img/s3.jpg">
+            <img src="img/s5.jpg">
+            <img src=".img/s7.jpg">
+            <img src="img/s2.png">
+            <img src=".img/s4.jpg">
+            <img src="img/s6.png">
+            <img src="img/s8.jpg">
         </div>
         <!--End Slider New Product & Best Product-->
     </div>
@@ -255,7 +243,7 @@
 <!--End Bootstrap Min link-->
 
 <!--Slick Slider-->
-<script src="../assets/js/slick.min.js"></script>
+<script src="js/slick.min.js"></script>
 <!--End Slick Slider-->
 
 <!--My JS File-->

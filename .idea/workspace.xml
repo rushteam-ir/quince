@@ -3,8 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="bd36d6d7-6b5a-4a74-b20a-025da208c5c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/frontend.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/frontend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-prototype/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/css/slick.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/css/style-homePage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/slick.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/melorin/assets/css/all.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/melorin/assets/css/all.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/melorin/assets/css/style-homePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/melorin/assets/css/style-homePage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/melorin/views/index.dust" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/melorin/views/index.dust" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/homePage.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +165,7 @@
       <workItem from="1584812461919" duration="3397000" />
       <workItem from="1584865792187" duration="686000" />
       <workItem from="1584905078384" duration="350000" />
-      <workItem from="1584906834092" duration="5094000" />
+      <workItem from="1584906834092" duration="5884000" />
     </task>
     <servers />
   </component>
