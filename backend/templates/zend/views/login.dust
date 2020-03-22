@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <base href="{backend_url}">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fontAwsome.css">
   <link rel="stylesheet" href="css/general-css.css">
   <link rel="stylesheet" href="css/login.css">
   <title>ورود به سیستم مدیریت محتوا</title>
 </head>
 
-<body dir="ltr">
-  <section class="main_field_of_dashbord_login">
+<body class="main_field_of_dashbord_login" dir="ltr">
+  <section>
     <div class="container-fluid">
       <div class="row">
         <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
@@ -102,7 +103,6 @@
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/wow.js"></script>
-  <script src="https://kit.fontawesome.com/1c750158b2.js" crossorigin="anonymous"></script>
   <script src="js/login.js"></script>
   <script>
     $(document).ready(function () {
