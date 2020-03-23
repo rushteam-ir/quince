@@ -3,8 +3,8 @@ let product_schema = new mongoose.Schema({
 
     title : {type : String, unique : true},
     row : Number,
-    category : String,
-    sub_category : String,
+    category : {type : 'ObjectId', ref : 'category'},
+    sub_category : {type : 'ObjectId', ref : 'category'},
     describe : String,
     stock : String,
     price : String,
@@ -15,8 +15,7 @@ let product_schema = new mongoose.Schema({
     points : String,
     last_edit : String,
     comments : Array,
-    author_username : String,
-    author_name : String,
+    author : {type : 'ObjectId', ref : 'admin'},
     status : Boolean
 
 });
@@ -52,7 +51,7 @@ product_schema.statics = {
 
     get : async function () {
 
-        return await product_model.find().sort([['row', -1]]);
+        return await product_model.find().sort([['row', -1]]).populate('category').populate('sub_category');
 
     },
 

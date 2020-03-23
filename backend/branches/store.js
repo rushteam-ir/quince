@@ -106,8 +106,7 @@ router.post('/add', async(req,res)=>{
             discount : discount_inp,
             features : product_features_inp,
             last_edit : getCurrentDate(),
-            author_username : req.session.admin_info.username,
-            author_name : `${req.session.admin_info.first_name}  ${req.session.admin_info.last_name}`,
+            author : req.session.admin_id,
             status : true
 
         };
