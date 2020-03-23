@@ -51,7 +51,7 @@ product_schema.statics = {
 
     get : async function () {
 
-        return await product_model.find().sort([['row', -1]]).populate('category').populate('sub_category');
+        return await product_model.find().sort([['row', -1]]).populate('category').populate('sub_category').populate('author');
 
     },
 
