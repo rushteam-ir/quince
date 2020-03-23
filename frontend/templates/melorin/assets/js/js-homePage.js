@@ -3,6 +3,7 @@
 var myOverlay = document.getElementById("myOverlay");
 var new_product_click = document.getElementById("new_product_click");
 var best_product_click = document.getElementById("best_product_click");
+new WOW().init();
 
 function openSearch() {
 
@@ -130,3 +131,4 @@ if (sessionStorage.text == 1) {
     clickOnBottom2();
 
 }
+
