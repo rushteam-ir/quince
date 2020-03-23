@@ -17,7 +17,7 @@
     font-family: vazir-fonts;
     /*width: 600px;*/
     border-radius: 30px;
-    background-color:#EEEEEE ;
+    background-color: #EEEEEE;
     position: absolute;
     right: 15px;
     top: 45px;
@@ -35,7 +35,7 @@
     font-size: 20pt;
     width: 40px;
     height: 40px;
-    background-color:rgba(57, 62, 70 , 0.8);
+    background-color: rgba(57, 62, 70, 0.8);
     border-radius: 50%;
     text-align: center;
     line-height: 40px;
@@ -188,28 +188,47 @@
 
 /*slider*/
 
-.slick-slide{
+.slick-slide {
     height: 500px;
 }
 
-.slider_best_product , .slider_new_product{
+.slider_best_product, .slider_new_product {
     margin: 50px 0px;
 }
-.bottom_of_see_all_product{
-    border:none;
-    background-color:#00ADB5;
+
+.bottom_of_see_all_product {
+    border: none;
+    background-color: #00ADB5;
     width: 50%;
     height: 50px;
     border-radius: 5px;
-   margin-bottom: 50px;
+    margin-bottom: 50px;
     margin-left: 24%;
 }
+
 /*slider*/
 
 /*End New Product & Best Product*/
 
 /*Products Categorization*/
-.z{
-    height: 200px;
+
+.box_of_product_category {
+    width: 80%;
+    height: 300px;
+    background-color: darkred;
+    position: relative;
+    margin: auto;
+    margin-bottom: 50px;
 }
+
+.img_of_product_category{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+}
+
+.text_of_product_category , .btn_of_product_category{
+    position: absolute;
+}
+
 /*End Products Categorization*/

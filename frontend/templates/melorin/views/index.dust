@@ -241,14 +241,48 @@
     <section>
         <div class="container-fluid">
             <div class="row mb-5">
-                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 offset-lg-0 bg-primary z"></div>
-                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 offset-lg-0  bg-info z"></div>
-                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 offset-lg-0 bg-danger z"></div>
-            </div>
-            <div class="row mb-5">
-                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 offset-lg-0 bg-primary z"></div>
-                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 offset-lg-0 bg-info z"></div>
-                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 offset-lg-0 bg-danger z"></div>
+                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 offset-lg-0">
+                    <div class="box_of_product_category">
+                        <img src="img/c4.png" alt="جوراب های زنانه" class="img_of_product_category">
+                        <h1 class="text_of_product_category">زنانه</h1>
+                        <button class="btn_of_product_category">بازدید از مجموعه</button>
+                    </div>
+                </div>
+                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 offset-lg-0">
+                    <div class="box_of_product_category">
+                        <img src="img/c6.jpg" alt="جوراب های مردانه" class="img_of_product_category">
+                        <h1 class="text_of_product_category">مردانه</h1>
+                        <button class="btn_of_product_category">بازدید از مجموعه</button>
+                    </div>
+                </div>
+                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 offset-lg-0">
+                    <div class="box_of_product_category">
+                        <img src="img/c3.jpg" alt="جوراب های بجگانه" class="img_of_product_category">
+                        <h1 class="text_of_product_category">بچگانه</h1>
+                        <button class="btn_of_product_category">بازدید از مجموعه</button>
+                    </div>
+                </div>
+                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 offset-lg-0">
+                    <div class="box_of_product_category">
+                        <img src="img/c5.jpg" alt="جوراب های رسمی" class="img_of_product_category">
+                        <h1 class="text_of_product_category">رسمی</h1>
+                        <button class="btn_of_product_category">بازدید از مجموعه</button>
+                    </div>
+                </div>
+                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 offset-lg-0">
+                    <div class="box_of_product_category">
+                        <img src="img/c1.jpg" alt="جوراب های اسپرت" class="img_of_product_category">
+                        <h1 class="text_of_product_category">اسپرت</h1>
+                        <button class="btn_of_product_category">بازدید از مجموعه</button>
+                    </div>
+                </div>
+                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 offset-lg-0">
+                    <div class="box_of_product_category">
+                        <img src="img/c2.jpg" alt="جوراب های کلاسیک" class="img_of_product_category">
+                        <h1 class="text_of_product_category">کلاسیک</h1>
+                        <button class="btn_of_product_category">بازدید از مجموعه</button>
+                    </div>
+                </div>
             </div>
            
         </div>
