@@ -13,6 +13,9 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 40px;
+    border-right: 5px solid #F03674;
+    padding-right: 18px;
+    margin-right: -25px;
 }
 
 .chose_file_pro {

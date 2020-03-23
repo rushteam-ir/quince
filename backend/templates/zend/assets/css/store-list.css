@@ -12,7 +12,9 @@
 .store_list_title {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 30px;
+    border-right: 5px solid #66D787;
+    padding-right: 18px;
+    margin-right: -14px;
 }
 
 .blog-card {
@@ -104,10 +106,6 @@
     left: 0%;
 }
 
-.main_box_of_product_col {
-    margin-top: 25px;
-}
-
 .font_info_color {
     color: #5AD67D;
     text-align: center;
@@ -186,7 +184,7 @@
 }
 
 .price_number_of_modal_product{
-    color:#E84C3D;
+    color:#FD397A;
     font-size: 2rem;
     font-family: main-font;
 }
@@ -203,8 +201,9 @@
 .modal-header .close {
     margin: 0px;
     position: absolute;
-    top: 5px;
+    top: 10px;
     left: 10px;
+    padding: 5px;
 }
 
 .half_star_custome{
