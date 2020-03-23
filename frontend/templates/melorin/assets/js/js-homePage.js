@@ -72,7 +72,7 @@ function clickOnBottom1() {
 }
 
 function clickOnBottom2() {
-    
+
     sessionStorage.text = 2;
     new_product_click.style.display = "none";
     best_product_click.style.display = "block";
@@ -82,7 +82,7 @@ function clickOnBottom2() {
         $('.slider_best_product').slick({
 
             dots: false,
-            infinite: false,
+            infinite: true,
             arrows: false,
             speed: 300,
             slidesToShow: 5,
