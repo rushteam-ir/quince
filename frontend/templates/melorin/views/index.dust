@@ -24,6 +24,11 @@
     <link rel="stylesheet" href="css/slick.css">
     <!-- End Slick Slider -->
 
+
+    <!--WOW-->
+    <link rel="stylesheet" href="css/animate.css">
+    <!--End WOW-->
+
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/style-homePage.css">
     <!-- End Style CSS -->
@@ -290,6 +295,28 @@
 
     </section>
     <!--End Products Categorization-->
+
+    <!--Parallax Pic-->
+    <div class="parallax">
+        <img src="img/logo.png" class="img_of_about_us">
+        <h3 class="name_ofy_about_us wow bounce">شرکت تولیدی ملورین</h3>
+        <p class="description_of_about_us wow fadeIn">این شرکت تولیدی به دلیل بهره مندی از تکنولوژی و ماشین آلات پیشرفته، استفاده از نیروی انسانی متخصص، بکارگیری با کیفیت ترین مواد اولیه و شکیل ترین بسته بندی مطابق با طراحی روز دنیا، توانسته است علاوه بر تأمین نیاز بازار داخلی، تولیدات خود را هم تراز با بزرگترین تولیدکنندگان جوراب بکند
+            از دیگر افتخارات این مجموعه کسب عناوین مدیران برتر کشوری در چند سال متوالی است که نمایانگر تلاشهای مستمر مدیریت و کارکنان شرکت (- ) در راستای رفاه حال مصرف کنندگان محترم می باشد.شرکت مهیار با رعایت شرایط استاندارد و در نهایت دقت و کنترل، محصولات خود را با برند A.H.A وارد بازار می نماید. این شرکت تولیدی به دلیل بهره مندی از تکنولوژی و ماشین آلات پیشرفته، استفاده از نیروی انسانی متخصص، بکارگیری با کیفیت ترین مواد اولیه و شکیل ترین بسته بندی مطابق با طراحی روز دنیا، توانسته است علاوه بر تأمین نیاز بازار داخلی، تولیدات خود را هم تراز با بزرگترین تولیدکنندگان جوراب، به بازارهای همسایه حوزه خلیج فارس از جمله عربستان، امارات، بحرین، عراق و ... عرضه نماید و اولین صادرکننده پوشاک در استان زنجان می باشد.
+            د.</p>
+    </div>
+    <!--End Parallax Pic-->
+
+    <!--Package Categorization-->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-4 offset-md-0"></div>
+                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-4 offset-md-0"></div>
+                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-4 offset-md-0"></div>
+            </div>
+        </div>
+    </section>
+    <!--End Package Categorization-->
 </main>
 <!--JQUERY Link-->
 <script src="js/jquery-3.4.1.min.js"></script>
@@ -306,6 +333,10 @@
 <!--Slick Slider-->
 <script src="js/slick.min.js"></script>
 <!--End Slick Slider-->
+
+<!--WOW-->
+<script src="js/wow.min.js"></script>
+<!--End WOW-->
 
 <!--My JS File-->
 <script src="js/js-homePage.js"></script>
