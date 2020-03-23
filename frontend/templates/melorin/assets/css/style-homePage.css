@@ -1,4 +1,3 @@
-/*Header Style*/
 .background_of_header {
     background: url("../img/7.jpg") no-repeat center;
     background-size: cover;
@@ -15,9 +14,8 @@
 
 .nav_bar_style_fonts {
     font-family: vazir-fonts;
-    /*width: 600px;*/
     border-radius: 30px;
-    background-color:#EEEEEE ;
+    background-color: #EEEEEE;
     position: absolute;
     right: 15px;
     top: 45px;
@@ -35,7 +33,7 @@
     font-size: 20pt;
     width: 40px;
     height: 40px;
-    background-color:rgba(57, 62, 70 , 0.8);
+    background-color: rgba(57, 62, 70, 0.8);
     border-radius: 50%;
     text-align: center;
     line-height: 40px;
@@ -156,10 +154,6 @@
     background: #bbb;
 }
 
-
-/*End Header Style*/
-
-/*New Product & Best Product*/
 .ul_style_of_bottom_list {
     list-style-type: none;
     cursor: pointer;
@@ -186,30 +180,25 @@
     height: 50px;
 }
 
-/*slider*/
-
-.slick-slide{
+.slick-slide {
     height: 500px;
 }
 
-.slider_best_product , .slider_new_product{
+.slider_best_product,
+.slider_new_product {
     margin: 50px 0px;
 }
-.bottom_of_see_all_product{
-    border:none;
-    background-color:#00ADB5;
+
+.bottom_of_see_all_product {
+    border: none;
+    background-color: #00ADB5;
     width: 50%;
     height: 50px;
     border-radius: 5px;
-   margin-bottom: 50px;
+    margin-bottom: 50px;
     margin-left: 24%;
 }
-/*slider*/
 
-/*End New Product & Best Product*/
-
-/*Products Categorization*/
-.z{
+.z {
     height: 200px;
 }
-/*End Products Categorization*/
