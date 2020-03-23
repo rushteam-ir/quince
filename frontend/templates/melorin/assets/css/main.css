@@ -3,3 +3,7 @@
     font-family:vazir-fonts;
     src:url("../font/Vazir.ttf");
 }
+
+body{
+    background-color: #EEEEEE;
+}

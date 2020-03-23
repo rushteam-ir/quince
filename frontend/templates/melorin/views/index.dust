@@ -51,7 +51,7 @@
                             </div>
                             <div class="col-9 p-0">
                                 <nav dir="rtl"
-                                     class="navbar navbar-expand-lg navbar-light bg-light nav_bar_style_fonts">
+                                     class="navbar navbar-expand-lg navbar-light nav_bar_style_fonts">
                                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                             aria-expanded="false" aria-label="Toggle navigation">

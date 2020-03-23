@@ -17,6 +17,7 @@
     font-family: vazir-fonts;
     /*width: 600px;*/
     border-radius: 30px;
+    background-color:#EEEEEE ;
     position: absolute;
     right: 15px;
     top: 45px;
@@ -24,7 +25,7 @@
 }
 
 .text-box-center-header {
-    color: white;
+    color: #EEEEEE;
     height: 100px;
     margin-top: 10%;
 }
@@ -34,7 +35,7 @@
     font-size: 20pt;
     width: 40px;
     height: 40px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color:rgba(57, 62, 70 , 0.8);
     border-radius: 50%;
     text-align: center;
     line-height: 40px;
@@ -51,27 +52,32 @@
 }
 
 .arrow_of_down_link_i {
-    color: rgb(192, 189, 189);
+    color: #EEEEEE;
+    font-style: normal !important;
 }
 
 .right_box_social_media i {
     font-size: 1.5rem;
-    color: white;
+    color: #EEEEEE;
     width: 30px;
     height: 30px;
+    font-style: normal;
+    display: inline-block;
 }
 
 .left_box_manage_site i {
     font-size: 1.5rem;
-    color: white;
+    color: #EEEEEE;
     width: 40px;
     height: 40px;
+    font-style: normal;
+    display: inline-block;
 }
 
 .style_btn_search {
     border: none;
     background-color: transparent;
-    color: white;
+    color: #EEEEEE;
     font-size: 1.5rem;
     margin-left: -10px;
 }
@@ -81,9 +87,6 @@
     cursor: pointer;
 }
 
-.openBtn:hover {
-    background: #bbb;
-}
 
 .border_radius_left_bottom {
     border-radius: 10px 0px 0px 10px;
@@ -119,7 +122,7 @@
     right: 45px;
     font-size: 60px;
     cursor: pointer;
-    color: white;
+    color: #EEEEEE;
 }
 
 .overlay .closebtn:hover {
@@ -132,7 +135,7 @@
     border: none;
     float: left;
     width: 80%;
-    background: white;
+    background: #EEEEEE;
 }
 
 .overlay input[type=text]:hover {
@@ -167,8 +170,8 @@
 }
 
 .list_style_bottom {
-    border-bottom: 1px solid rgb(77, 77, 77);
-    color: rgb(89, 89, 89);
+    border-bottom: 1px solid #222831;
+    color: #393E46;
     border-radius: 5px;
     display: inline-block;
     padding: 10px;
@@ -194,7 +197,7 @@
 }
 .bottom_of_see_all_product{
     border:none;
-    background-color:rgb(192, 189, 189);
+    background-color:#00ADB5;
     width: 50%;
     height: 50px;
     border-radius: 5px;
