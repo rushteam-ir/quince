@@ -7,7 +7,6 @@
 {<js} 
     <script src="js/store-list.js"></script>
     <script src="js/slick.js"></script>
-
 {/js}
 
 {<body} 
@@ -81,14 +80,7 @@
                                     <div class="title_of_modal_product">
                                         <p class="mb-0">{.title}</p>
                                     </div>
-
-                                    <div class="star_color_custme">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt half_star_custome"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
+                                    
 
                                     <hr>
                                     <div class="price_number_of_modal_product">
@@ -166,3 +158,29 @@
         {/list}
 
 {/body}
+
+<script>
+
+    function points(){
+        console.log({.points});
+        let division = Math.round(parseInt({.points})/10);
+        let html = `<div class="star_color_custme">`;
+
+        for(let i = 0; i < division; i++){
+
+            html += `<i class="fas fa-star-half-alt half_star_custome"></i>`;
+
+            if(division % 2 == 0 && i != 0){
+
+                html.replace(`<i class="fas fa-star-half-alt half_star_custome"></i>`, '');
+                html +=  `<i class="fas fa-star"></i>`;
+
+            }
+        }
+
+        html += `</div>`;
+
+        return html;
+    }
+
+</script>
