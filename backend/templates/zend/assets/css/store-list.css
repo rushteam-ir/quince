@@ -166,6 +166,22 @@
     -webkit-box-orient: vertical;  
 }
 
+.modal-dialog {
+    max-width: 1000px !important;
+    direction: rtl;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+
+
+
+
+
+
+
 
 
 
