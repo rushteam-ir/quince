@@ -184,7 +184,7 @@
 }
 
 .price_number_of_modal_product{
-    color:#FD397A;
+    color:#E13A58;
     font-size: 2rem;
     font-family: main-font;
 }
@@ -214,9 +214,24 @@
     color: #F6B014;
 }
 
+.offer_modal_product{
+    background-color: #E13A58;
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    color: white;
+    top: -31px;
+    right: -436px;
+    line-height: 60px;
+    font-family: main-font;
+    font-size: 1.1rem;
+    transform: rotate(41deg);
+}
 
-
-
+.modal.show .modal-dialog{
+    overflow: hidden;
+}
 
 
 
