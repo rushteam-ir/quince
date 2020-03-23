@@ -13,7 +13,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 40px;
-    border-right: 5px solid #F03674;
+    border-right: 5px solid #E13A58;
     padding-right: 18px;
     margin-right: -25px;
 }
@@ -54,7 +54,7 @@
 .profile_delete {
     width: 130px;
     margin-top: 20px;
-    background-color: #ff3748;
+    background-color: #E13A58;
     font-weight: bold;
     color: white;
 }

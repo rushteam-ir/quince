@@ -24,7 +24,10 @@
 .category_title {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    border-right: 5px solid #E13A58;
+    padding-right: 18px;
+    margin-right: -25px;
 }
 
 tbody tr td:last-child {
