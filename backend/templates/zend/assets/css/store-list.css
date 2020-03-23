@@ -149,10 +149,22 @@
     left: 15px;
 }
 
+.text_hidden_able{
+    width: 100%;
+    height: 152px;
+    margin: 0 0 1em 0;
+    overflow: hidden;
+}
 
+.text_hidden_able p{
+    margin: 0;
+}
 
-
-
+.line_clamp{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+}
 
 
 
