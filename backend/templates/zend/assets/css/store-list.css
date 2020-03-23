@@ -133,13 +133,6 @@
     border-radius: 3px;
 }
 
-.situation_of_product_color_2 {
-    height: 5px;
-    background: #FF0505;
-    width: 35px;
-    border-radius: 3px;
-}
-
 .product_color_arrow {
     color: #5AD67D;
 }
@@ -148,112 +141,31 @@
     font-family: main-font;
 }
 
-.product_modal_box {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 10000000000;
-    background-color: rgba(0, 0, 0, 0.603);
-    display: none;
-}
-
-.main_field_of_product_modal {
-    width: 70%;
-    background-color: white;
-    border-radius: 4px;
-    position: fixed;
-    top: 80px;
-    left: 15%;
-    overflow: hidden;
-    padding: 20px 10px;
-}
-
-.product_modal_title {
-    font-size: 1.5rem;
+.btn_of_show_more_product{
+    color: #5AD67D;
     font-family: main-font;
-    margin-top: 40px;
-}
-
-.exit_modal_fas {
-    font-size: 1.3rem;
-    color: #b7b7b7;
     position: absolute;
-    left: 19px;
-    top: 13px;
-    cursor: pointer;
+    bottom: 15px;
+    left: 15px;
 }
 
-.star-rotate {
-    transform: rotateY(180deg);
-}
 
-.star_color_custome {
-    color: #F6B014;
-}
 
-.slider_img_product_modal {
-    height: 320px;
-    border-radius: 4px;
-}
 
-.sub_slider_modal {
-    height: 70px;
-    border-radius: 3px;
-}
 
-.title_of_specifict {
-    font-family: main-font;
-}
 
-.price_of_modal_product {
-    color: #E84C3D;
-    font-size: 2rem;
-    font-family: main-font;
-}
 
-.color_of_sitoaytion {
-    color: #E84C3D;
-}
 
-.sale_offer_row {
-    width: 300px;
-    height: 57px;
-    transform: rotate(45deg);
-    background-color: #E84C3D;
-    position: absolute;
-    right: -97px;
-    top: 24px;
-    z-index: 100;
-    color: white;
-    line-height: 64px;
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-    font-family: main-font;
-}
 
-.remove_product_modal_btn {
-    background-color: #E84C3D;
-    width: 100%;
-    height: 45px;
-    border: none;
-    color: white;
-    font-family: main-font;
-}
 
-.remove_product_modal_btn:hover {
-    background-color: rgb(199, 65, 53);
-}
 
-.edit_product_modal_btn {
-    width: 100%;
-    height: 45px;
-    border: none;
-    color: white;
-    font-family: main-font;
-}
+
+
+
+
+
+
+
 
 @media (min-width: 640px) {
     .blog-card {
