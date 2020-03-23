@@ -209,23 +209,7 @@
 /*End New Product & Best Product*/
 
 /*Products Categorization*/
-
-.box_of_product_category{
-    width: 80%;
-    height: 300px;
-    background-color: darkred;
-    margin: auto;
-    position: relative;
+.z{
+    height: 200px;
 }
-
-.img_of_product_category{
-    width: 100%;
-    position: absolute;
-    height: 300px;
-}
-
-.btn_of_product_category , .text_of_product_category{
-position: absolute;
-}
-
 /*End Products Categorization*/
