@@ -48,7 +48,7 @@
                                             </p>
                                         </div>
 
-                                            <button type="button" class="btn btn_of_show_more_product line_clamp" data-toggle="modal" data-target="#exampleModal">
+                                            <button type="button" class="btn btn_of_show_more_product line_clamp" data-toggle="modal" data-target="#exampleModal_{.row}">
                                                 اطلاعات بیشتر
                                                 <i class="fas fa-angle-left left_angle_arrow_of_more_info"></i>
                                             </button>
@@ -65,112 +65,112 @@
                 </div>
             </div>
         </div>
-        
-        <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog " role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
+
+        {#list}
+            <div class="modal fade " id="exampleModal_{.row}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog " role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
-                    </div>
-                    <div class="modal-body">
-                        
-                        <div class="row">
-                            <div class="col-4">
-                            d
-                            </div>
-                            <div class="col-8 text-right">
-                                <div class="title_of_modal_product">
-                                    <p class="mb-0">جوراب مردانه مدل</p>
-                                </div>
+                        </div>
+                        <div class="modal-body">
 
-                                <div class="star_color_custme">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt half_star_custome"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
+                            <div class="row">
+                                <div class="col-4">
+                                    d
                                 </div>
+                                <div class="col-8 text-right">
+                                    <div class="title_of_modal_product">
+                                        <p class="mb-0">{.title}</p>
+                                    </div>
 
-                                <hr>
-                                <div class="price_number_of_modal_product">
-                                    <p class="d-inline-block m-0">14.500</p>
-                                    <span class="d-inline-block">تومان</span>
-                                </div>
-                                <hr>
+                                    <div class="star_color_custme">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt half_star_custome"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
 
-                                <div>
-                                    <p>زیرپیراهن یا زیرپوش (به انگلیسی: Undershirt) نوعی از انواع لباس زیر است که به نوعی نخستین لایه محافظتی از پوست د
-                                        ر برابر محیط اطراف می‌باشد. کاربرد غالب این تن‌پوش توسط آقایان به عنوا
-                                        ن ساده‌ترین بالاپوش شناخته می‌شود. تی‌شرت و ز
-                                        یرپیراهن رکابی دو نوع از زیرپیراهن‌ها
-                                        ی مرسوم هستند.زیرپیراهن یا زیرپوش (به انگلیسی: Undershirt) نوعی از انواع لباس زیر است که به نو
-                                        عی نخستین لایه محافظتی از پوست در برابر
-                                         محیط اطراف می‌باشد. کاربرد غالب این تن‌پوش توسط آقایان به عنوان ساده‌ترین بالاپوش شناخته می‌شود. تی‌شرت و 
-                                    </p>
-                                </div>
+                                    <hr>
+                                    <div class="price_number_of_modal_product">
+                                        <p class="d-inline-block m-0">{.price}</p>
+                                        <span class="d-inline-block">تومان</span>
+                                    </div>
+                                    <hr>
 
-                                <div class="row">
-                                    <div class="col-6 pr-0">
-                                        <div>
-                                            <p>
-                                                <span class="title_of_info_modal_product">دسته بندی : </span>
-                                                <span>جوراب</span>
-                                            </p>
+                                    <div>
+                                        <p>
+                                            {.describe}
+                                        </p>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-6 pr-0">
+                                            <div>
+                                                <p>
+                                                    <span class="title_of_info_modal_product">دسته بندی : </span>
+                                                    <span>جوراب</span>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p>
+                                                    <span class="title_of_info_modal_product">زیر دسته :</span>
+                                                    <span>جوراب مردانه</span>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p>
+                                                    <span class="title_of_info_modal_product">موجودی :</span>
+                                                    <span>{.stock}  عدد</span>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p>
+                                                    <span class="title_of_info_modal_product">وضعیت :</span>
+                                                    {@eq value="{.status}" key="true"}
+                                                        <span class="text-success">فعال</span>
+                                                    {:else}
+                                                        <span class="text-danger">غیر فعال</span>
+                                                    {/eq}
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p>
+                                                    <span class="title_of_info_modal_product">نویسنده :</span>
+                                                    {@eq key="{admin_info.author_type}" value="name"}
+                                                        <span>{.author_name}</span>
+                                                    {:else}
+                                                        <span>{.author_username}</span>
+                                                    {/eq}
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p>
+                                                    <span class="title_of_info_modal_product">تعداد خرید :</span>
+                                                    <span>{.purchases} عدد </span>
+                                                </p>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <p>
-                                                <span class="title_of_info_modal_product">زیر دسته :</span>
-                                                <span>جوراب مردانه</span>
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <p>
-                                                <span class="title_of_info_modal_product">موجودی :</span>
-                                                <span>12 جین</span>
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <p>
-                                                <span class="title_of_info_modal_product">وضعیت :</span>
-                                                <span class="text-danger">غیر فعال</span>
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <p>
-                                                <span class="title_of_info_modal_product">نویسنده :</span>
-                                                <span>کسری حبیب بیگی</span>
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <p>
-                                                <span class="title_of_info_modal_product">تعداد خرید :</span>
-                                                <span>20</span>
-                                            </p>
+                                        <div class="col-6 pr-0">
+                                            <div class="title_of_info_modal_product">ویژگی های محصول :</div>
+                                            <ul>
+                                                {#.features}
+                                                    <li class="mt-2">
+                                                        <span class="mr-1">{.}</span>
+                                                    </li>
+                                                {/.features}
+                                            </ul>
                                         </div>
                                     </div>
-                                    <div class="col-6 pr-0">
-                                        <div class="title_of_info_modal_product">ویژگی های محصول :</div>
-                                        <ul>
-                                            <li class="mt-2">
-                                                <span class="title_of_info_modal_product">سایز :</span>
-                                                <span class="mr-1">48 ، 47 ، 38</span>
-                                            </li>
-                                            <li class="mt-2">
-                                                <span class="title_of_info_modal_product">رنگ :</span>
-                                                <span class="mr-1">آبی ، سرخ ، سبز ، سفید</span>
-                                            </li>
-                                        </ul>
-                                    </div>
                                 </div>
-
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
-        </div>
+        {/list}
 
 {/body}
