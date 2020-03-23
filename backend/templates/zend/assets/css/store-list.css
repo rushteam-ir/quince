@@ -149,6 +149,10 @@
     left: 15px;
 }
 
+.btn_of_show_more_product:hover{
+    color: #5AD67D;
+}
+
 .text_hidden_able{
     width: 100%;
     height: 152px;
@@ -175,16 +179,41 @@
     border-bottom: none;
 }
 
+.left_angle_arrow_of_more_info{
+    position: relative;
+    top: 2px;
+    right: 5px;
+}
+
+.price_number_of_modal_product{
+    color:#E84C3D;
+    font-size: 2rem;
+    font-family: main-font;
+}
+
+.title_of_modal_product{
+    font-family: main-font;
+    font-size: 1.7rem;
+}
 
 
+.title_of_info_modal_product{
+    font-family: main-font;
+}
+.modal-header .close {
+    margin: 0px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
 
+.half_star_custome{
+    transform: rotateY(180deg);
+}
 
-
-
-
-
-
-
+.star_color_custme{
+    color: #F6B014;
+}
 
 
 
