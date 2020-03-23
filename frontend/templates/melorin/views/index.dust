@@ -116,7 +116,8 @@
                                 <div class="left_box_manage_site text-left">
                                     <i class="fas fa-shopping-cart"></i>
                                     <i class="fas fa-user"></i>
-                                    <button class="fa fa-search style_btn_search openBtn" onclick="openSearch()"></button>
+                                    <button class="fa fa-search style_btn_search openBtn"
+                                            onclick="openSearch()"></button>
                                 </div>
                             </div>
                             <div class="col-2 a">
@@ -159,15 +160,15 @@
             <div class="col-10 offset-1">
                 <div class="package_of_bottom_new_best">
                     <ul class="ul_style_of_bottom_list">
-                        <li class="list_style_bottom"  onclick="clickOnBottom1()">محصولات جدید</li>
-                        <li class="list_style_bottom"  onclick="clickOnBottom2()">برترین محصولات</li>
+                        <li class="list_style_bottom" onclick="clickOnBottom1()">محصولات جدید</li>
+                        <li class="list_style_bottom" onclick="clickOnBottom2()">برترین محصولات</li>
                     </ul>
                 </div>
             </div>
         </div>
         <!--Slider New Product & Best Product-->
         <div id="new_product_click">
-            <div class="slider_new_product" >
+            <div class="slider_new_product">
                 <div>
                     <img src="img/s1.png">
                 </div>
@@ -194,13 +195,13 @@
                 </div>
             </div>
             <div class="w-100 ">
-                <button  class="bottom_of_see_all_product" dir="rtl">مشاهده همه...</button>
+                <button class="bottom_of_see_all_product" dir="rtl">مشاهده همه...</button>
             </div>
 
         </div>
 
         <div id="best_product_click">
-            <div class="slider_best_product" >
+            <div class="slider_best_product">
                 <div>
                     <img src="img/s1.png">
                 </div>
@@ -227,17 +228,34 @@
                 </div>
             </div>
             <div class="w-100">
-                <button class="bottom_of_see_all_product"  dir="rtl">مشاهده همه...</button>
+                <button class="bottom_of_see_all_product" dir="rtl">مشاهده همه...</button>
             </div>
 
         </div>
 
         <!--End Slider New Product & Best Product-->
     </section>
-
     <!--End New Product & Best Product-->
-    </div>
 
+    <!--Products Categorization-->
+    <section>
+        <div class="container-fluid">
+            <div class="row mb-5">
+                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 offset-lg-0 bg-primary z"></div>
+                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 offset-lg-0  bg-info z"></div>
+                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 offset-lg-0 bg-danger z"></div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 offset-lg-0 bg-primary z"></div>
+                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 offset-lg-0 bg-info z"></div>
+                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 offset-lg-0 bg-danger z"></div>
+            </div>
+           
+        </div>
+
+
+    </section>
+    <!--End Products Categorization-->
 </main>
 <!--JQUERY Link-->
 <script src="js/jquery-3.4.1.min.js"></script>
