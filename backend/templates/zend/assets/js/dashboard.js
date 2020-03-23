@@ -41,9 +41,9 @@
 //     }
 // };
 
+
 var notif_drd_id = document.getElementById('notif_drd_id');
 notif_drd_id.style.display = "none";
-
 
 function shop_dropdown() {
 
@@ -73,8 +73,8 @@ function shop_dropdown() {
     }
 }
 
-
 function notifDropDown() {
+
 
     if (notif_drd_id.style.display === "none") {
 
@@ -90,6 +90,7 @@ function notifDropDown() {
 
 // when click on profile tab on dashbord , tab1 open 
 function profileBtn(){
+
     sessionStorage.text = 1;
     admin_pro_edit.style.display = "block"
     admin_change_pass.style.display = "none";
@@ -99,4 +100,6 @@ function profileBtn(){
     first_pro_box.style.backgroundColor = "white";
     first_profile_header_number.style.color = "white";
     first_profile_header_number.style.backgroundColor = "#5D78FF";
+
 }
+

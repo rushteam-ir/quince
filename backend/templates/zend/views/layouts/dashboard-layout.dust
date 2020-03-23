@@ -34,7 +34,7 @@
         </div>
         <div class="d-inline-block">
 
-            <button class="notification_btn_navbar" onclick="notifDropDown()">
+            <button class="notification_btn_navbar" id="salam" onclick="notifDropDown()">
                 <i class="fa fa-bell d-inline-block notification_bell_of_navbar"></i>
             </button>
 
@@ -42,7 +42,7 @@
                 <i class="fa fa-envelope d-inline-block notification_envelope_of_navbar"></i>
             </button>
 
-            <div id="notif_drd_id" class="main_field_of_notif_dropdown wow fadeInUp">
+            <div id="notif_drd_id" class="main_field_of_notif_dropdown">
 
                 <div class="row">
                     <img class="w-100 img_of_notif_field" src="img/notif-drd-img.jpg" alt="" title="">
