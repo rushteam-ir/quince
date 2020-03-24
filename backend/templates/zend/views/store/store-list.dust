@@ -85,9 +85,8 @@
                                 <div class="col-12 text-right">
 
                                     <div class="row">
-                                        <div class="col-5 pr-0" style="direction: ltr;">
+                                        <div class="col-5 pr-0 dir_of_slider">
 
-       
                                             <div class="main_slider">
 
                                                 <div class="main_box_of_modal_slider">

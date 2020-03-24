@@ -273,6 +273,10 @@
     margin-right: 3px;
 }
 
+.dir_of_slider{
+    direction: ltr;
+}
+
 @media (min-width: 640px) {
     .blog-card {
         -webkit-box-orient: horizontal;
