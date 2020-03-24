@@ -103,7 +103,7 @@
                                     <hr>
 
                                     <div>
-                                        <p class="text-break">
+                                        <p class="text-break modal_product_description">
                                             {.describe}
                                         </p>
                                     </div>
