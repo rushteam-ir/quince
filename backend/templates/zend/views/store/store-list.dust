@@ -87,7 +87,7 @@
                                 <div class="col-8 text-right">
 
                                     <div class="offer_modal_product">
-                                        تخفیف : 10%
+                                        تخفیف : {.discount}%
                                     </div>
 
                                     <div class="title_of_modal_product">

@@ -4,38 +4,7 @@
     <list default="true" id="bd36d6d7-6b5a-4a74-b20a-025da208c5c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/branches/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/branches/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e762609360030507c0b8336_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e762609360030507c0b8336_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e762609360030507c0b8336_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e76312ebf3f2e386cada5a3_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e76313dbf3f2e386cada5a4_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e76313dbf3f2e386cada5a4_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e766fcdd03a343898979850_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e766fcdd03a343898979850_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e766fcdd03a343898979850_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e766fcdd03a343898979850_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e76718b5a7aaa1c8c7a7813_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e76718b5a7aaa1c8c7a7813_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e76729362e1493944dd8479_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e76729362e1493944dd8479_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e77373e72c42a1598f6455d_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e77373e72c42a1598f6455d_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e77373e72c42a1598f6455d_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e77373e72c42a1598f6455d_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e77373e72c42a1598f6455d_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e773805a26f1514fc886295_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e773805a26f1514fc886295_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e773805a26f1514fc886295_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e773805a26f1514fc886295_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e773805a26f1514fc886295_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e773ccca26f1514fc886297_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e773d008fc1182960488d2e_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e773d1f8fc1182960488d2f_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e773d1f8fc1182960488d2f_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e78d1783111f23cb0af4386_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e78d1783111f23cb0af4386_main.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/templates/zend/views/store/store-list.dust" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/views/store/store-list.dust" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/product-schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/product-schema.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,6 +160,7 @@
       <workItem from="1584905078384" duration="350000" />
       <workItem from="1584906834092" duration="6034000" />
       <workItem from="1584949106268" duration="9977000" />
+      <workItem from="1585031706092" duration="2136000" />
     </task>
     <servers />
   </component>

@@ -2,7 +2,53 @@ const router = express.Router();
 
 router.get('/', async(req,res)=>{
 
-    res.redirect(`${config.backend_url}store/list`);
+    try{
+
+        let delete_id = req.query.del;
+
+        if(!req.query.del){
+            res.redirect(`${config.backend_url}store/list`)
+        }
+
+        if(isObjectId(delete_id)){
+
+            let result = await product_model.del(delete_id);
+
+            if(result){
+
+                let main_image = `${backend_upload_dir}products/${result._id}_main`;
+                fs.unlinkSync(main_image);
+
+                for(let i = 1; i < result.images.length - 1; i++){
+                    let other_image = `${backend_upload_dir}products/${result._id}_${i}`;
+                    fs.unlinkSync(other_image);
+                }
+
+                return res.redirect(`${config.backend_url}store/list/?msg=delete-success`);
+
+            }
+            else{
+
+                return res.redirect(`${config.backend_url}store/list/?msg=delete-fail`);
+
+            }
+
+        }
+
+        let data = {
+
+            list : await product_model.get(),
+
+        };
+
+        res.render('store/store-list', data);
+
+    }
+    catch (error) {
+
+        res.status(500).render('500', {error});
+
+    }
 
 });
 
