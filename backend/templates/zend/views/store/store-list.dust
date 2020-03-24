@@ -52,7 +52,7 @@
                                             ویرایش
                                         </button>
 
-                                        <button class="remove_of_product_list">
+                                        <button class="remove_of_product_list product_del" name="{._id}">
                                             حذف
                                         </button>
                                         

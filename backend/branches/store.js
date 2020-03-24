@@ -16,11 +16,11 @@ router.get('/', async(req,res)=>{
 
             if(result){
 
-                let main_image = `${backend_upload_dir}products/${result._id}_main`;
+                let main_image = `${backend_upload_dir}products/${result._id}_main.png`;
                 fs.unlinkSync(main_image);
 
                 for(let i = 1; i < result.images.length - 1; i++){
-                    let other_image = `${backend_upload_dir}products/${result._id}_${i}`;
+                    let other_image = `${backend_upload_dir}products/${result._id}_${i}.png`;
                     fs.unlinkSync(other_image);
                 }
 
