@@ -5,8 +5,9 @@
     <link rel="stylesheet" href="css/slick.css">
 {/css}
 {<js} 
-    <script src="js/store-list.js"></script>
     <script src="js/slick.js"></script>
+    <script src="js/store-list.js"></script>
+
 {/js}
 
 {<body} 
@@ -83,30 +84,154 @@
                             <div class="row">
                                 <div class="col-12 text-right">
 
+                                    <div class="row">
+                                        <div class="col-5 pr-0" style="direction: ltr;">
+
+       
+                                            <div class="main_slider">
+
+                                                <div class="main_box_of_modal_slider">
+
+                                                    <img class="w-100 h-100" src="img/img.png" alt="">
+
+                                                </div>
+
+                                                <div  class="main_box_of_modal_slider">
+
+                                                    <img class="w-100 h-100" src="img/b.jpg" alt="">
+
+                                                </div>       
+
+                                                <div  class="main_box_of_modal_slider">
+
+                                                    <img class="w-100 h-100" src="img/a.jpg" alt="">
+
+                                                </div>
+
+                                                <div  class="main_box_of_modal_slider">
+
+                                                    <img class="w-100 h-100" src="img/img.png" alt="">
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="slider-nav">
+
+                                                <div class="nav_slider_modal">
+
+                                                    <img class="w-100 h-100" src="img/img.png" alt="">
+
+                                                </div>
+
+                                                
+                                                <div class="nav_slider_modal">
+
+                                                    <img class="w-100 h-100" src="img/b.jpg" alt="">
+
+                                                </div>      
+
+                                                <div class="nav_slider_modal">
+
+                                                    <img class="w-100 h-100" src="img/a.jpg" alt="">
+
+                                                </div>
+
+                                                <div class="nav_slider_modal">
+
+                                                    <img class="w-100 h-100" src="img/img.png" alt="">
+
+                                                </div>
+                                            </div>
+                                        
+                                        
+                                        </div>
+                                        <div class="col-7">
+
+                                            <div class="title_of_modal_product">
+                                                <p class="mb-0">{.title}</p>
+        
+                                            </div>
+        
+                                            <div class="star_color_custme"> 
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star mr-1"></i>
+                                                <i class="fas fa-star-half-alt half_star_custome mr-1"></i>
+                                                <i class="far fa-star mr-1"></i>
+                                                <i class="far fa-star mr-1"></i>
+                                            </div>
+        
+        
+                                            <hr>
+                                            <div class="price_number_of_modal_product">
+                                                <p class="d-inline-block m-0">{.price}</p>
+                                                <span class="d-inline-block">تومان</span>
+                                            </div>
+                                            <hr>
+
+                                            <div class="row">
+                                                <div class="col-5 pr-0">
+                                                    <div>
+                                                        <p>
+                                                            <span class="title_of_info_modal_product">دسته بندی : </span>
+                                                            <span>{.category.title}</span>
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <p>
+                                                            <span class="title_of_info_modal_product">زیر دسته :</span>
+                                                            <span>{.sub_category.title}</span>
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <p>
+                                                            <span class="title_of_info_modal_product">موجودی :</span>
+                                                            <span>{.stock}  عدد</span>
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <p>
+                                                            <span class="title_of_info_modal_product">وضعیت :</span>
+                                                            {@eq value="{.status}" key="true"}
+                                                                <span class="text-success">فعال</span>
+                                                            {:else}
+                                                                <span class="text-danger">غیر فعال</span>
+                                                            {/eq}
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <p>
+                                                            <span class="title_of_info_modal_product">نویسنده :</span>
+                                                            <span>{.author.first_name} {.author.last_name}</span>
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <p>
+                                                            <span class="title_of_info_modal_product">تعداد خرید :</span>
+                                                            <span>{.purchases} عدد </span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-7 pr-0">
+                                                    <div class="title_of_info_modal_product">ویژگی های محصول :</div>
+                                                    <ul>
+                                                        {#.features}
+                                                            <li class="mt-2">
+                                                                <span class="mr-1">{.}</span>
+                                                            </li>
+                                                        {/.features}
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        
+                                    </div>
+
                                     <div class="offer_modal_product">
                                         تخفیف : {.discount}%
                                     </div>
 
-                                    <div class="title_of_modal_product">
-                                        <p class="mb-0">{.title}</p>
-
-                                    </div>
-
-                                    <div class="star_color_custme"> 
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt half_star_custome"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-
-
-                                    <hr>
-                                    <div class="price_number_of_modal_product">
-                                        <p class="d-inline-block m-0">{.price}</p>
-                                        <span class="d-inline-block">تومان</span>
-                                    </div>
-                                    <hr>
 
                                     <div>
                                         <p class="text-break modal_product_description">
@@ -114,60 +239,7 @@
                                         </p>
                                     </div>
 
-                                    <div class="row">
-                                        <div class="col-6 pr-0">
-                                            <div>
-                                                <p>
-                                                    <span class="title_of_info_modal_product">دسته بندی : </span>
-                                                    <span>{.category.title}</span>
-                                                </p>
-                                            </div>
-                                            <div>
-                                                <p>
-                                                    <span class="title_of_info_modal_product">زیر دسته :</span>
-                                                    <span>{.sub_category.title}</span>
-                                                </p>
-                                            </div>
-                                            <div>
-                                                <p>
-                                                    <span class="title_of_info_modal_product">موجودی :</span>
-                                                    <span>{.stock}  عدد</span>
-                                                </p>
-                                            </div>
-                                            <div>
-                                                <p>
-                                                    <span class="title_of_info_modal_product">وضعیت :</span>
-                                                    {@eq value="{.status}" key="true"}
-                                                        <span class="text-success">فعال</span>
-                                                    {:else}
-                                                        <span class="text-danger">غیر فعال</span>
-                                                    {/eq}
-                                                </p>
-                                            </div>
-                                            <div>
-                                                <p>
-                                                    <span class="title_of_info_modal_product">نویسنده :</span>
-                                                    <span>{.author.first_name} {.author.last_name}</span>
-                                                </p>
-                                            </div>
-                                            <div>
-                                                <p>
-                                                    <span class="title_of_info_modal_product">تعداد خرید :</span>
-                                                    <span>{.purchases} عدد </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 pr-0">
-                                            <div class="title_of_info_modal_product">ویژگی های محصول :</div>
-                                            <ul>
-                                                {#.features}
-                                                    <li class="mt-2">
-                                                        <span class="mr-1">{.}</span>
-                                                    </li>
-                                                {/.features}
-                                            </ul>
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -177,6 +249,8 @@
         {/list}
 
 {/body}
+
+
 
 <script>
 
@@ -200,6 +274,6 @@
         html += `</div>`;
 
         return html;
-    }
-
+       }
+        
 </script>

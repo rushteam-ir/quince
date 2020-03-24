@@ -171,7 +171,7 @@
 }
 
 .modal-dialog {
-    max-width: 1000px !important;
+    max-width: 1200px !important;
     direction: rtl;
 }
 
@@ -260,6 +260,17 @@
 .modal_product_description{
     line-height: 26px;
     text-align: justify;
+}
+
+.main_box_of_modal_slider{
+    height: 310px;
+}
+
+.nav_slider_modal{
+    height: 100px;
+    padding: 5px;
+    border: 1px solid #f1f1f1;
+    margin-right: 3px;
 }
 
 @media (min-width: 640px) {
