@@ -48,13 +48,13 @@
                                                 <i class="fas fa-angle-left left_angle_arrow_of_more_info"></i>
                                             </button>
 
-                                        <div class="edit_of_product_list">
+                                        <button class="edit_of_product_list">
                                             ویرایش
-                                        </div>
+                                        </button>
 
-                                        <div class="remove_of_product_list">
+                                        <button class="remove_of_product_list">
                                             حذف
-                                        </div>
+                                        </button>
                                         
                                     </div>
 
