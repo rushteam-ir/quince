@@ -43,7 +43,7 @@ function redirect(url) {
         autoplay:true
       });
       $('.slider-nav').slick({
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
         asNavFor: '.main_slider',
         dots: false,

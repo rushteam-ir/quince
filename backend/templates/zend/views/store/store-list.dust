@@ -36,8 +36,11 @@
                                         <h1>{.title}</h1>
                                         <h2 class="mt-2 d-inline-block position_customize_prozuct">اخرین اپدیت : <span>{.last_edit}</span></h2>
                                         <h2 class="d-inline-block mr-4 border_customize_and_padd"> نویسنده : <span>{.author.first_name} {.author.last_name}</span></h2>
-                                        <div class="situation_of_product_color mt-2 mb-0" style="background-color: #5ad67d;"></div>
-
+                                        {@eq value="{.status}" key="true"}
+                                            <div class="situation_of_product_color mt-2 mb-0" style="background-color: #5ad67d;"></div>
+                                        {:else}
+                                            <div class="situation_of_product_color mt-2 mb-0" style="background-color: #E13A58;"></div>
+                                        {/eq}
                                         <div class="text_hidden_able line_clamp text-right dir-rtl">
                                             <p class="text-break">
                                                     {.describe} 
@@ -87,63 +90,24 @@
                                     <div class="row">
                                         <div class="col-5 pr-0 dir_of_slider">
 
+
                                             <div class="main_slider">
-
-                                                <div class="main_box_of_modal_slider">
-
-                                                    <img class="w-100 h-100" src="img/img.png" alt="">
-
-                                                </div>
-
-                                                <div  class="main_box_of_modal_slider">
-
-                                                    <img class="w-100 h-100" src="img/b.jpg" alt="">
-
-                                                </div>       
-
-                                                <div  class="main_box_of_modal_slider">
-
-                                                    <img class="w-100 h-100" src="img/a.jpg" alt="">
-
-                                                </div>
-
-                                                <div  class="main_box_of_modal_slider">
-
-                                                    <img class="w-100 h-100" src="img/img.png" alt="">
-
-                                                </div>
-
+                                                {#.images}
+                                                    <div class="main_box_of_modal_slider">
+                                                        <img class="w-100 h-100" src="media/products/{.}" alt="">
+                                                    </div>
+                                                {/.images}
                                             </div>
 
                                             <div class="slider-nav">
-
-                                                <div class="nav_slider_modal">
-
-                                                    <img class="w-100 h-100" src="img/img.png" alt="">
-
-                                                </div>
-
-                                                
-                                                <div class="nav_slider_modal">
-
-                                                    <img class="w-100 h-100" src="img/b.jpg" alt="">
-
-                                                </div>      
-
-                                                <div class="nav_slider_modal">
-
-                                                    <img class="w-100 h-100" src="img/a.jpg" alt="">
-
-                                                </div>
-
-                                                <div class="nav_slider_modal">
-
-                                                    <img class="w-100 h-100" src="img/img.png" alt="">
-
-                                                </div>
+                                                {#.images}
+                                                    <div class="nav_slider_modal">
+                                                        <img class="w-100 h-100" src="media/products/{.}" alt="">
+                                                    </div>
+                                                {/.images}
                                             </div>
-                                        
-                                        
+
+
                                         </div>
                                         <div class="col-7">
 
@@ -152,13 +116,7 @@
         
                                             </div>
         
-                                            <div class="star_color_custme"> 
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star mr-1"></i>
-                                                <i class="fas fa-star-half-alt half_star_custome mr-1"></i>
-                                                <i class="far fa-star mr-1"></i>
-                                                <i class="far fa-star mr-1"></i>
-                                            </div>
+                                            <script>points({.points})</script>
         
         
                                             <hr>
@@ -178,19 +136,19 @@
                                                     </div>
                                                     <div>
                                                         <p>
-                                                            <span class="title_of_info_modal_product">زیر دسته :</span>
+                                                            <span class="title_of_info_modal_product">زیر دسته : </span>
                                                             <span>{.sub_category.title}</span>
                                                         </p>
                                                     </div>
                                                     <div>
                                                         <p>
-                                                            <span class="title_of_info_modal_product">موجودی :</span>
+                                                            <span class="title_of_info_modal_product"> موجودی :</span>
                                                             <span>{.stock}  عدد</span>
                                                         </p>
                                                     </div>
                                                     <div>
                                                         <p>
-                                                            <span class="title_of_info_modal_product">وضعیت :</span>
+                                                            <span class="title_of_info_modal_product">وضعیت : </span>
                                                             {@eq value="{.status}" key="true"}
                                                                 <span class="text-success">فعال</span>
                                                             {:else}
@@ -200,7 +158,7 @@
                                                     </div>
                                                     <div>
                                                         <p>
-                                                            <span class="title_of_info_modal_product">نویسنده :</span>
+                                                            <span class="title_of_info_modal_product"> نویسنده :</span>
                                                             <span>{.author.first_name} {.author.last_name}</span>
                                                         </p>
                                                     </div>
@@ -212,7 +170,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-7 pr-0">
-                                                    <div class="title_of_info_modal_product">ویژگی های محصول :</div>
+                                                    <div class="title_of_info_modal_product">ویژگی های محصول : </div>
                                                     <ul>
                                                         {#.features}
                                                             <li class="mt-2">
@@ -254,7 +212,7 @@
 <script>
 
     function points(){
-        console.log({.points});
+
         let division = Math.round(parseInt({.points})/10);
         let html = `<div class="star_color_custme">`;
 
