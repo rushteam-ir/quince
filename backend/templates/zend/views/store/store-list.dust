@@ -115,8 +115,10 @@
                                                 <p class="mb-0">{.title}</p>
         
                                             </div>
-        
-                                            <script>points({.points})</script>
+
+                                            <div class="star_color_custme">
+                                                <i class="fas fa-star"></i>
+                                            </div>
         
         
                                             <hr>
