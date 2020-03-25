@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- End Required meta tags -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- End Bootstrap CSS -->
+
+    <!--  Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- End Main CSS -->
+
+    <!-- Font-Awesome CSS -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- End Font-Awesome CSS -->
+
+
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- End Slick Slider -->
+
+
+    <!--WOW-->
+    <link rel="stylesheet" href="css/animate.css">
+    <!--End WOW-->
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/about-us.css">
+    <!-- End Style CSS -->
+
+
+    <!--    name of web site    -->
+    <title>درباره ما</title>
+    <!--   End Name Of WebSite    -->
+
+</head>
+<body>
+<header>
+   <div class="container-fluid">
+       <div class="row">
+           <nav dir="rtl"
+                class="navbar navbar-expand-lg navbar-light nav_bar_style_fonts">
+               <button class="navbar-toggler" type="button" data-toggle="collapse"
+                       data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                       aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" dir="rtl" id="navbarSupportedContent">
+                   <ul class="navbar-nav nav_bar_style_ul_size">
+                       <li class="nav-item active text-right">
+                           <a class="nav-link" href="#">صفحه اصلی</a>
+                       </li>
+                       <li class="nav-item dropdown text-right">
+                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                              role="button" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                               محصولات
+                           </a>
+                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                               <a class="dropdown-item text-center" href="#">زنانه</a>
+                               <div class="dropdown-divider"></div>
+                               <a class="dropdown-item text-center" href="#">مردانه</a>
+                               <div class="dropdown-divider"></div>
+                               <a class="dropdown-item text-center" href="#">بچگانه</a>
+                               <div class="dropdown-divider "></div>
+                               <a class="dropdown-item text-center" href="#">رسمی</a>
+                               <div class="dropdown-divider"></div>
+                               <a class="dropdown-item text-center" href="#">کلاسیک</a>
+                               <div class="dropdown-divider"></div>
+                               <a class="dropdown-item text-center" href="#">اسپرت</a>
+                           </div>
+                       </li>
+                       <li class="nav-item text-right">
+                           <a class="nav-link" href="#">پکیج ها</a>
+                       </li>
+                       <li class="nav-item text-right">
+                           <a class="nav-link" href="#">درباره ما</a>
+                       </li>
+                       <li class="nav-item text-right">
+                           <a class="nav-link" href="#">ارتباط با ما</a>
+                       </li>
+                       <li class="nav-item text-right">
+                           <a class="nav-link" href="#">پشتیبانی</a>
+                       </li>
+
+                   </ul>
+               </div>
+           </nav>
+       </div>
+   </div>
+</header>
+
+<!--JQUERY Link-->
+<script src="js/jquery-3.4.1.min.js"></script>
+<!--End JQUERY Link-->
+
+<!--Bootstrap Bundle link-->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!--End Bootstrap Bundle link-->
+
+<!-- Bootstrap Min link-->
+<script src="js/bootstrap.min.js"></script>
+<!--End Bootstrap Min link-->
+
+<!--Slick Slider-->
+<script src="js/slick.min.js"></script>
+<!--End Slick Slider-->
+
+<!--WOW-->
+<script src="js/wow.min.js"></script>
+<!--End WOW-->
+
+<!--My JS File-->
+<script src="js/js-about-us.js"></script>
+<!--End My JS File-->
+</body>
+</html>
