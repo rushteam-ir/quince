@@ -11,9 +11,9 @@
   <title>بازیابی رمز عبور</title>
 </head>
 
-<body dir="ltr">
+<body  class="main_field_of_dashbord_login" dir="ltr">
 
-  <section class="main_field_of_dashbord_login">
+  <section>
     <div class="container-fluid">
       <div class="row">
         <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
@@ -34,9 +34,11 @@
                 <form action="" method="post" name="dashbord_login_form" onsubmit="return adminlogerrors()">
 
                   <div class="form-group">
-                    <label for="email-for-id" class="text-right d-block">ایمیل خود را جهت بازیابی رمز عبور خود وارد نمایید. یک ایمیل حاوی لینک بازیابی رمز عبور به شما ارسال خواهد شد</label>
+                    <label for="email-for-id" class="text-right d-block"> : ایمیل خود را جهت بازیابی رمز عبور وارد نمایید</label>
+                    
                     <input type="text" class="form-control dir-rtl dashbord_login_input" id="email-for-id"
-                      name="email_inp" autocomplete="off">
+                      name="email_inp" aria-describedby="recovery_small_text" autocomplete="off">
+                      <small id="recovery_small_text" class="form-text text-muted text-right">اگر ایمیل حاوی بازیابی رمز عبور را دریافت نکرده اید <span>اینجا</span> کلیک کنید </small>
                   </div>
                   
                   <button type="submit" class="btn sub_btn_of_dashbord_form">بازیابی</button>
