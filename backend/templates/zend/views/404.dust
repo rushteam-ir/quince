@@ -17,7 +17,7 @@
 
 			<div class="central-body">
 				<img class="image-404" src="http://salehriaz.com/404Page/img/404.svg">
-				<a href="{backend_url}dashboard" class="btn-go-home">GO BACK HOME</a>
+				<a href="{backend_url}dashboard" class="btn-go-home">برگشت به خانه</a>
 			</div>
 			<div class="objects">
 				<img class="object_rocket" src="http://salehriaz.com/404Page/img/rocket.svg">
@@ -35,7 +35,6 @@
 				<div class="star"></div>
 				<div class="star"></div>
 				<div class="star"></div>
-
 			</div>
 
 		</div>
