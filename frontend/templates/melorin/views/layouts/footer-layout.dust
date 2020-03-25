@@ -1,0 +1,78 @@
+{>"index-layout"/}
+
+{<footer}
+    <footer>
+        <div class="container-fluid bg_of_footer">
+            <div class="row">
+                <div class="col-10 offset-1 col-md-6 offset-md-3">
+                    <div class="footer_first_box">
+                        <img src="img/logo.png" class="logo_of_footer">
+                        <p class="title_of_footer">فروشگاه ملورین</p>
+                        <p class="small_explain_of_footer">برترین تولید کننده سال با تولید بیش از 2000 مدل جوراب جدید در
+                            سال</p>
+                        <div class="social_media_in_footer">
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-telegram-plane"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10 offset-1 col-md-3 offset-md-0">
+                    <div class="left_box_of_footer">
+                        <h5 class="title_of_footer_right_box">شخصی سازی سفارشات</h5>
+                        <p class="explain_of_Customization_product">
+                            جون بچت بیا عکس بده ما برات عین همونو تولید میکنیم . بعد میدیم بهت توام برو حال کن بندههه خدا.کی میاد واست اینکارارو بکنه اسکل ببین قدر نمیدونی!!!!
+                        </p>
+                        <button class="btn_of_Customization_product">سفارش بده</button>
+                    </div>
+                </div>
+                <div class="col-10 offset-1 col-md-3 offset-md-0">
+                    <div class="center2_box_of_footer">
+                        <h5 class="title_of_footer_right_box"> نماد اعتمادالکترونیکی</h5>
+                        <img src="img/namad.png" class="namad_img_footer">
+                    </div>
+                </div>
+                <div class="col-10 offset-1 col-md-3 offset-md-0">
+                    <div class="center_box_of_footer">
+                        <h5 class="title_of_footer_right_box">دسترسی آسان</h5>
+                        <ul class="menu_in_footer">
+                            <a href="#" class="link_of_footer_menu">
+                                <li class="list_of_footer_menu">صفحه اصلی</li>
+                            </a>
+                            <a href="#" class="link_of_footer_menu">
+                                <li class="list_of_footer_menu">محصولات</li>
+                            </a>
+                            <a href="#" class="link_of_footer_menu">
+                                <li class="list_of_footer_menu">پکیج ها</li>
+                            </a>
+                            <a href="#" class="link_of_footer_menu">
+                                <li class="list_of_footer_menu">درباره ما</li>
+                            </a>
+                            <a href="#" class="link_of_footer_menu">
+                                <li class="list_of_footer_menu">تماس با ما</li>
+                            </a>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-10 offset-1 col-md-3 offset-md-0">
+                    <div class="right_box_of_footer">
+                        <h5 class="title_of_footer_right_box">پشتیبانی</h5>
+                        <p class="support_option">تلفن تماس :02144444 </p>
+                        <p class="support_option">ایمیل :test@example.com </p>
+                        <p class="support_option">ادرس :بازار - سلام - خوبی </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10 offset-1 col-md-6 offset-md-3 ">
+                    <div class="box_last_footer">
+                        <p class="footer-company-name"> &copy; 2020 - zend.cms</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+{/footer}
