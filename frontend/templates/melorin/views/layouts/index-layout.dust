@@ -13,9 +13,192 @@
     </head>
     <body>
         <main>
-            {+header/}
+            <header>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 p-0">
+                            <div class="background_of_header">
+                                <div class="row m-0">
+                                    <div class="col-3 p-0">
+                                        <img src="img/logo.png" alt="ملورین" class="logo_style_melorin_shop">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <nav dir="rtl"
+                                             class="navbar navbar-expand-lg navbar-light nav_bar_style_fonts">
+                                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                                    aria-expanded="false" aria-label="Toggle navigation">
+                                                <span class="navbar-toggler-icon"></span>
+                                            </button>
+                                            <div class="collapse navbar-collapse" dir="rtl" id="navbarSupportedContent">
+                                                <ul class="navbar-nav nav_bar_style_ul_size">
+                                                    <li class="nav-item active text-right">
+                                                        <a class="nav-link" href="{frontend_url}">صفحه اصلی</a>
+                                                    </li>
+                                                    <li class="nav-item dropdown text-right">
+                                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                                           role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                           aria-expanded="false">
+                                                            محصولات
+                                                        </a>
+                                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                            <a class="dropdown-item text-center" href="#">زنانه</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item text-center" href="#">مردانه</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item text-center" href="#">بچگانه</a>
+                                                            <div class="dropdown-divider "></div>
+                                                            <a class="dropdown-item text-center" href="#">رسمی</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item text-center" href="#">کلاسیک</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item text-center" href="#">اسپرت</a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="nav-item text-right">
+                                                        <a class="nav-link" href="">پکیج ها</a>
+                                                    </li>
+                                                    <li class="nav-item text-right">
+                                                        <a class="nav-link" href="{frontend_url}aboutus">درباره ما</a>
+                                                    </li>
+                                                    <li class="nav-item text-right">
+                                                        <a class="nav-link" href="#">ارتباط با ما</a>
+                                                    </li>
+                                                    <li class="nav-item text-right">
+                                                        <a class="nav-link" href="#">پشتیبانی</a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <div class="row m-0">
+                                    <div class="col-12">
+                                        <div class="text-box-center-header text-center" dir="rtl">
+                                            <h1 class="style_header_h1_design">
+                                                طراحی خودت را داشته باش!
+                                            </h1>
+                                            <p> ما با دریافت تصویر محصول مورد نظر شما آن را برایتان تولید میکنیم.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row mx-0 free_space_from_top_style">
+                                    <div class="col-5">
+                                        <div class="left_box_manage_site text-left">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <i class="fas fa-user"></i>
+                                            <button class="fa fa-search style_btn_search openBtn"
+                                                    onclick="openSearch()"></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 a">
+                                        <div class="arrow_of_down_link">
+                                            <a href="#"> <i class="fa fa-chevron-down arrow_of_down_link_i"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="right_box_social_media text-right">
+                                            <i class="fab fa-instagram"></i>
+                                            <i class="fab fa-facebook-f"></i>
+                                            <i class="fab fa-telegram-plane"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- search modal form-->
+                            <div id="myOverlay" class="overlay">
+                                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                                <div class="overlay-content">
+                                    <form action="/action_page.php">
+                                        <input type="text" placeholder="جستجو کنید..." dir="rtl"
+                                               class="border_radius_left_bottom text-right" name="search">
+                                        <button type="submit" class="border_radius_top_right"><i class="fa fa-search "></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
             {+body/}
-            {+footer/}
+            <footer>
+                <div class="container-fluid bg_of_footer">
+                    <div class="row">
+                        <div class="col-10 offset-1 col-md-6 offset-md-3">
+                            <div class="footer_first_box">
+                                <img src="img/logo.png" class="logo_of_footer">
+                                <p class="title_of_footer">فروشگاه ملورین</p>
+                                <p class="small_explain_of_footer">برترین تولید کننده سال با تولید بیش از 2000 مدل جوراب جدید در
+                                    سال</p>
+                                <div class="social_media_in_footer">
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-facebook-f"></i>
+                                    <i class="fab fa-telegram-plane"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-10 offset-1 col-md-3 offset-md-0">
+                            <div class="left_box_of_footer">
+                                <h5 class="title_of_footer_right_box">شخصی سازی سفارشات</h5>
+                                <p class="explain_of_Customization_product">
+                                    جون بچت بیا عکس بده ما برات عین همونو تولید میکنیم . بعد میدیم بهت توام برو حال کن بندههه خدا.کی میاد واست اینکارارو بکنه اسکل ببین قدر نمیدونی!!!!
+                                </p>
+                                <button class="btn_of_Customization_product">سفارش بده</button>
+                            </div>
+                        </div>
+                        <div class="col-10 offset-1 col-md-3 offset-md-0">
+                            <div class="center2_box_of_footer">
+                                <h5 class="title_of_footer_right_box"> نماد اعتمادالکترونیکی</h5>
+                                <img src="img/namad.png" class="namad_img_footer">
+                            </div>
+                        </div>
+                        <div class="col-10 offset-1 col-md-3 offset-md-0">
+                            <div class="center_box_of_footer">
+                                <h5 class="title_of_footer_right_box">دسترسی آسان</h5>
+                                <ul class="menu_in_footer">
+                                    <a href="#" class="link_of_footer_menu">
+                                        <li class="list_of_footer_menu">صفحه اصلی</li>
+                                    </a>
+                                    <a href="#" class="link_of_footer_menu">
+                                        <li class="list_of_footer_menu">محصولات</li>
+                                    </a>
+                                    <a href="#" class="link_of_footer_menu">
+                                        <li class="list_of_footer_menu">پکیج ها</li>
+                                    </a>
+                                    <a href="#" class="link_of_footer_menu">
+                                        <li class="list_of_footer_menu">درباره ما</li>
+                                    </a>
+                                    <a href="#" class="link_of_footer_menu">
+                                        <li class="list_of_footer_menu">تماس با ما</li>
+                                    </a>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col-10 offset-1 col-md-3 offset-md-0">
+                            <div class="right_box_of_footer">
+                                <h5 class="title_of_footer_right_box">پشتیبانی</h5>
+                                <p class="support_option">تلفن تماس :02144444 </p>
+                                <p class="support_option">ایمیل :test@example.com </p>
+                                <p class="support_option">ادرس :بازار - سلام - خوبی </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-10 offset-1 col-md-6 offset-md-3 ">
+                            <div class="box_last_footer">
+                                <p class="footer-company-name"> &copy; 2020 - zend.cms</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </main>
 
         <script src="js/jquery-3.4.1.min.js"></script>
