@@ -33,9 +33,6 @@
     <link rel="stylesheet" href="css/style-homePage.css">
     <!-- End Style CSS -->
 
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="css/responsive.css">
-    <!-- End Responsive CSS -->
 
     <!--    name of web site    -->
     <title>ملورین</title>
@@ -65,7 +62,7 @@
                                     <div class="collapse navbar-collapse" dir="rtl" id="navbarSupportedContent">
                                         <ul class="navbar-nav nav_bar_style_ul_size">
                                             <li class="nav-item active text-right">
-                                                <a class="nav-link" href="#">صفحه اصلی</a>
+                                                <a class="nav-link" href=" {frontend_url}">صفحه اصلی</a>
                                             </li>
                                             <li class="nav-item dropdown text-right">
                                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
@@ -88,10 +85,10 @@
                                                 </div>
                                             </li>
                                             <li class="nav-item text-right">
-                                                <a class="nav-link" href="#">پکیج ها</a>
+                                                <a class="nav-link" href="">پکیج ها</a>
                                             </li>
                                             <li class="nav-item text-right">
-                                                <a class="nav-link" href="#">درباره ما</a>
+                                                <a class="nav-link" href="{frontend_url}aboutus">درباره ما</a>
                                             </li>
                                             <li class="nav-item text-right">
                                                 <a class="nav-link" href="#">ارتباط با ما</a>
