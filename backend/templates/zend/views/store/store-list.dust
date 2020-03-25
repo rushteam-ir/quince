@@ -215,6 +215,7 @@
                                         تخفیف : {.discount}%
                                     </div>
 
+                                    <hr class="modal_hr_custom">
 
                                     <div>
                                         <p class="text-break modal_product_description">

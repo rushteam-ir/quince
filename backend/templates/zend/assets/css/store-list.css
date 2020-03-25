@@ -305,6 +305,15 @@
     background-color: #F8F9FA;
 }
 
+.modal_hr_custom{
+    margin-top: 30px !important ;
+    margin-bottom: 30px !important;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 @media (min-width: 640px) {
     .blog-card {
         -webkit-box-orient: horizontal;
