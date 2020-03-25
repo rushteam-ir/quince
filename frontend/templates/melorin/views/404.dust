@@ -1,1 +1,68 @@
-404
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- End Required meta tags -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- End Bootstrap CSS -->
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style-error-404.css">
+    <!-- End Style CSS -->
+
+    <!-- Style CSS CodePen -->
+    <link rel="stylesheet" href="css/font-codepen.css">
+    <!-- End Style CSS CodePen-->
+
+    <!--    name of web site    -->
+    <title>ملورین</title>
+    <!--   End Name Of WebSite    -->
+
+</head>
+
+<body class="error-404">
+
+<!--    ERROR PAGE 404! -->
+
+<div class="error">
+    <div class="container-floud">
+        <div class="col-xs-12 ground-color text-center">
+            <div class="container-error-404">
+                <div class="clip"><div class="shadows shadow1"><span class="digit thirdDigit"></span></div></div>
+                <div class="clip"><div class="shadows shadow2"><span class="digit secondDigit"></span></div></div>
+                <div class="clip"><div class="shadows shadow3"><span class="digit firstDigit"></span></div></div>
+
+            </div>
+            <h2 class="h2-404">متاسفانه صفحه مورد نظر یافت نشد!</h2>
+        </div>
+    </div>
+</div>
+
+<!--   / ERROR PAGE 404! -->
+
+<!-- script link -->
+<!--JQUERY Link-->
+<script src="js/jquery-3.4.1.min.js"></script>
+<!--End JQUERY Link-->
+
+<!--Bootstrap Bundle link-->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!--End Bootstrap Bundle link-->
+
+<!-- Bootstrap Min link-->
+<script src="js/bootstrap.min.js"></script>
+<!--End Bootstrap Min link-->
+
+
+<!--My JS File-->
+<script src="js/js-error-404.js"></script>
+<!--End My JS File-->
+
+
+</body>
+</html>
