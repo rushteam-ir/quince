@@ -32,7 +32,29 @@
                                         <div class="photo" style="background-image: url(media/products/{._id}_main.png)"></div>
                                     </div>
 
+
                                     <div class="description text-right">
+
+
+                                        
+
+
+                                        <div class="dropdown ">
+                                            <button class=" dropdown-toggle edit_remove_btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-bars"></i>
+                                            </button>
+
+                                            <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
+                                              <a class="dropdown-item" href="#">ویرایش</a>
+                                              <hr class="hr_custom">
+                                              <a class="dropdown-item" href="#">تعلیق</a>
+                                              <hr class="hr_custom">
+                                              <a class="dropdown-item" href="#">حذف</a>
+                                            </div>
+                                            
+                                        </div>
+
+
 
                                         <h1>{.title}</h1>
                                         <h2 class="mt-2 d-inline-block position_customize_prozuct">اخرین اپدیت : <span>{.last_edit}</span></h2>
