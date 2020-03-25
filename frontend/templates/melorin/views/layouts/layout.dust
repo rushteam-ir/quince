@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/slick.css">
         <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/header-footer-style.css">
         {+css/}
         {+title/}
     </head>

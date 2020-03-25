@@ -1,163 +1,4 @@
-/*Header Style*/
-.background_of_header {
-    background: url("../img/7.jpg") no-repeat center;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-}
 
-.logo_style_melorin_shop {
-    width: 170px;
-    height: 125px;
-    margin: 15px;
-    box-sizing: border-box;
-}
-
-.nav_bar_style_fonts {
-    font-family: vazir-fonts;
-    /*width: 600px;*/
-    border-radius: 30px;
-    background-color: #EEEEEE;
-    position: absolute;
-    right: 15px;
-    top: 45px;
-    padding-left: 50px;
-}
-
-.text-box-center-header {
-    color: #EEEEEE;
-    height: 100px;
-    margin-top: 10%;
-}
-
-
-.arrow_of_down_link {
-    font-size: 20pt;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(57, 62, 70, 0.8);
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    margin: auto;
-    position: relative;
-    bottom: 10px;
-
-}
-
-.free_space_from_top_style {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-}
-
-.arrow_of_down_link_i {
-    color: #EEEEEE;
-    font-style: normal !important;
-}
-
-.right_box_social_media i {
-    font-size: 1.5rem;
-    color: #EEEEEE;
-    width: 30px;
-    height: 30px;
-    font-style: normal;
-    display: inline-block;
-}
-
-.left_box_manage_site i {
-    font-size: 1.5rem;
-    color: #EEEEEE;
-    width: 40px;
-    height: 40px;
-    font-style: normal;
-    display: inline-block;
-}
-
-.style_btn_search {
-    border: none;
-    background-color: transparent;
-    color: #EEEEEE;
-    font-size: 1.5rem;
-    margin-left: -10px;
-}
-
-.openBtn {
-    border: none;
-    cursor: pointer;
-}
-
-
-.border_radius_left_bottom {
-    border-radius: 10px 0px 0px 10px;
-}
-
-.border_radius_top_right {
-    border-radius: 0px 10px 10px 0px;
-}
-
-.overlay {
-    height: 100%;
-    width: 100%;
-    display: none;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.9);
-}
-
-.overlay-content {
-    position: relative;
-    top: 46%;
-    width: 80%;
-    text-align: center;
-    margin-top: 30px;
-    margin: auto;
-}
-
-.overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-    cursor: pointer;
-    color: #EEEEEE;
-}
-
-.overlay .closebtn:hover {
-    color: #ccc;
-}
-
-.overlay input[type=text] {
-    padding: 15px;
-    font-size: 17px;
-    border: none;
-    float: left;
-    width: 80%;
-    background: #EEEEEE;
-}
-
-.overlay input[type=text]:hover {
-    background: #f1f1f1;
-}
-
-.overlay button {
-    float: left;
-    width: 20%;
-    padding: 15px;
-    background: #ddd;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-}
-
-.overlay button:hover {
-    background: #bbb;
-}
-
-
-/*End Header Style*/
 
 /*New Product & Best Product*/
 .ul_style_of_bottom_list {
@@ -363,104 +204,6 @@
 /*End Package Categorization*/
 
 
-/*Footer*/
-.bg_of_footer{
-    background-color: #222831;
-}
-
-.footer_first_box{
-    width: 100%;
-    height: 250px;
-}
-
-
-.logo_of_footer{
-    height: 120px;
-    width: 145px;
-    margin: 30px 38.5%;
-}
-
-.title_of_footer,.small_explain_of_footer{
-    color: #eee;
-    text-align: center;
-    margin-top: -25px;
-    font-size: 1.5rem;
-}
-.small_explain_of_footer{
-    font-size: 1rem;
-    margin-top: -10px;
-}
-.social_media_in_footer{
-    width: 100%;
-    height: 30px;
-    color: #EEEEEE;
-    text-align: center;
-    margin-top: -10px;
-}
-
-.social_media_in_footer i{
-    font-size: 1.5rem;
-    width: 30px;
-    height: 30px;
-    font-style: normal;
-    display: inline-block;
-}
-
-.center_box_of_footer,.center2_box_of_footer , .left_box_of_footer , .right_box_of_footer ,.box_last_footer
-{
-    width: 80%;
-    text-align: center;
-    color: #EEEEEE;
-    margin: auto;
-    margin-top: 60px;
-}
-
-.list_of_footer_menu{
-    list-style-type: none;
-    margin-right: 13%;
-}
-
-.title_of_footer_right_box{
-    font-size: 13pt;
-}
-
-.link_of_footer_menu{
-    color: #999;
-}
-.link_of_footer_menu:hover{
-    outline: none;
-    color: white;
-    text-decoration: none;
-    font-size: 1.05rem;
-}
-
-.right_box_of_footer{
-    direction: rtl;
-}
-.support_option{
-    color:#999 ;
-    font-size: 1.05rem;
-}
-
-.namad_img_footer{
-    width: 200px;
-    height: 120px;
-}
-
-.explain_of_Customization_product{
-    text-align: justify;
-    font-size: 0.8rem;
-    direction: rtl;
-    color: #999999;
-}
-
-.btn_of_Customization_product{
-    border: none;
-    border-radius: 10px;
-    width: 100px;
-    height: 30px;
-}
-/*End Footer*/
 
 
 /* Media Query*/
@@ -470,62 +213,22 @@
 }
 
 @media only screen and (max-width: 991px) {
-    .nav_bar_style_fonts {
-        padding: 0px;
-        border-radius: 8px;
-        top: 15px;
-        right: 15px;
-    }
 
-    .logo_style_melorin_shop {
-        width: 130px;
-        height: 95px;
-        box-sizing: border-box;
-    }
-    .text-box-center-header{
-        margin-top: 20%;
-    }
 }
 
 @media only screen and (max-width: 768px) {
-    .text-box-center-header{
-        margin-top: 25%;
-    }
     .list_style_bottom {
         font-size: 11pt;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .left_box_manage_site i, .right_box_social_media i , .arrow_of_down_link , .style_btn_search{
-        font-size: 1.2rem;
-    }
-    .text-box-center-header{
-        margin-top: 30%;
-    }
     .list_style_bottom {
         font-size: 9pt;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    .logo_style_melorin_shop {
-        width: 110px;
-        height: 75px;
-        margin: 5px;
-        box-sizing: border-box;
-    }
-
-    .text-box-center-header p {
-        font-size: 8pt;
-    }
-
-    .text-box-center-header h1 {
-        font-size: 20pt;
-    }
-    .text-box-center-header{
-        margin-top: 45%;
-    }
 
 }
 
