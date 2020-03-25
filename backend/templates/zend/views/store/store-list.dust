@@ -16,14 +16,16 @@
                 لیست محصولات
             </p>
 
-            {@alertSuccess key="add-success" msg="محصول جدید با موفقیت اضافه شد"}{/alertSuccess}
 
+            {@alertSuccess key="add-success" msg="محصول جدید با موفقیت اضافه شد"}{/alertSuccess}
             <div class="container-fluid">
+                
                 <div class="row">
 
                     {?list}
                         {#list}
                             <div class="col-12 main_box_of_product_col">
+
                                 <div class="blog-card alt">
 
                                     <div class="meta">
@@ -49,25 +51,17 @@
                                             <button onclick="calculatePoints({.points})" type="button" class="btn btn_of_show_more_product line_clamp" data-toggle="modal" data-target="#exampleModal_{.row}">
                                                 اطلاعات بیشتر
                                                 <i class="fas fa-angle-left left_angle_arrow_of_more_info"></i>
-                                            </button>
-
-                                        <button class="edit_of_product_list">
-                                            ویرایش
-                                        </button>
-
-                                        <button class="remove_of_product_list product_del" name="{._id}">
-                                            حذف
-                                        </button>
-                                        
+                                            </button>   
+                                                                                 
                                     </div>
 
                                 </div>
                             </div>
                         {/list}
                     {:else}
-                    <div class="nothing_to_see_box">
-                        محصولی جهت نمایش وجود ندارد !
-                    </div>  
+                        <div class="nothing_to_see_box">
+                            محصولی جهت نمایش وجود ندارد !
+                        </div>  
                     {/list}
 
                 </div>
