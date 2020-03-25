@@ -277,6 +277,15 @@
     direction: ltr;
 }
 
+.nothing_to_see_box{
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
 @media (min-width: 640px) {
     .blog-card {
         -webkit-box-orient: horizontal;
