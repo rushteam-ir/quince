@@ -47,7 +47,7 @@
                                             </p>
                                         </div>
 
-                                            <button type="button" class="btn btn_of_show_more_product line_clamp" data-toggle="modal" data-target="#exampleModal_{.row}">
+                                            <button onclick="calculatePoints({.points})" type="button" class="btn btn_of_show_more_product line_clamp" data-toggle="modal" data-target="#exampleModal_{.row}">
                                                 اطلاعات بیشتر
                                                 <i class="fas fa-angle-left left_angle_arrow_of_more_info"></i>
                                             </button>
@@ -116,9 +116,11 @@
         
                                             </div>
 
-                                            <div class="star_color_custme">
-                                                <i class="fas fa-star"></i>
+                                            <div class="star_color_custme d-inline-block star">
                                             </div>
+                                            <span class="d-inline-block">
+                                                (10/{.points})
+                                            </span>
         
         
                                             <hr>
@@ -208,31 +210,3 @@
         {/list}
 
 {/body}
-
-
-
-<script>
-
-    function points(){
-
-        let division = Math.round(parseInt({.points})/10);
-        let html = `<div class="star_color_custme">`;
-
-        for(let i = 0; i < division; i++){
-
-            html += `<i class="fas fa-star-half-alt half_star_custome"></i>`;
-
-            if(division % 2 == 0 && i != 0){
-
-                html.replace(`<i class="fas fa-star-half-alt half_star_custome"></i>`, '');
-                html +=  `<i class="fas fa-star"></i>`;
-
-            }
-        }
-
-        html += `</div>`;
-
-        return html;
-       }
-        
-</script>

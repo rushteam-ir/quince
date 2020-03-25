@@ -52,3 +52,88 @@ function redirect(url) {
         arrows:false
       });
   });
+
+
+function calculatePoints(points){
+
+    let division = Math.round(parseInt(points));
+
+    if(division == 0){
+        $( ".star" ).append( `<i class="far fa-star"></i>`);
+        $( ".star" ).append( `<i class="far fa-star"></i>`);
+        $( ".star" ).append( `<i class="far fa-star"></i>`);
+        $( ".star" ).append( `<i class="far fa-star"></i>`);
+        $( ".star" ).append( `<i class="far fa-star"></i>`);
+    }
+    else if(division == 1){
+        $( ".star" ).append( `<i class="fas fa-star-half-alt half_star_custome"></i>`);
+        $( ".star" ).append( `<i class="far fa-star"></i>`);
+        $( ".star" ).append( `<i class="far fa-star"></i>`);
+        $( ".star" ).append( `<i class="far fa-star"></i>`);
+        $( ".star" ).append( `<i class="far fa-star"></i>`);
+
+    }
+    else if(division == 2){
+        $( ".star" ).append( `<i class="fas fa-star"></i>`);
+        $( ".star" ).append( `<i class="far fa-star"></i>`);
+        $( ".star" ).append( `<i class="far fa-star"></i>`);
+        $( ".star" ).append( `<i class="far fa-star"></i>`);
+        $( ".star" ).append( `<i class="far fa-star"></i>`);
+    }
+    else if(division == 3){
+        $( ".star" ).append( `<i class="fas fa-star"></i>`);
+        $( ".star" ).append( `<i class="fas fa-star-half-alt half_star_custome"></i>`);
+        $( ".star" ).append( `<i class="far fa-star"></i>`);
+        $( ".star" ).append( `<i class="far fa-star"></i>`);
+        $( ".star" ).append( `<i class="far fa-star"></i>`);
+    }
+    else if(division == 4){
+        $( ".star" ).append( `<i class="fas fa-star"></i>`);
+        $( ".star" ).append( `<i class="fas fa-star"></i>`);
+        $( ".star" ).append( `<i class="far fa-star"></i>`);
+        $( ".star" ).append( `<i class="far fa-star"></i>`);
+        $( ".star" ).append( `<i class="far fa-star"></i>`);
+    }
+    else if(division == 5){
+        $( ".star" ).append( `<i class="fas fa-star"></i>`);
+        $( ".star" ).append( `<i class="fas fa-star"></i>`);
+        $( ".star" ).append( `<i class="fas fa-star-half-alt half_star_custome"></i>`);
+        $( ".star" ).append( `<i class="far fa-star"></i>`);
+        $( ".star" ).append( `<i class="far fa-star"></i>`);
+    }
+    else if(division == 6){
+        $( ".star" ).append( `<i class="fas fa-star"></i>`);
+        $( ".star" ).append( `<i class="fas fa-star"></i>`);
+        $( ".star" ).append( `<i class="fas fa-star"></i>`);
+        $( ".star" ).append( `<i class="far fa-star"></i>`);
+        $( ".star" ).append( `<i class="far fa-star"></i>`);
+    }
+    else if(division == 7){
+        $( ".star" ).append( `<i class="fas fa-star"></i>`);
+        $( ".star" ).append( `<i class="fas fa-star"></i>`);
+        $( ".star" ).append( `<i class="fas fa-star"></i>`);
+        $( ".star" ).append( `<i class="fas fa-star-half-alt half_star_custome"></i>`);
+        $( ".star" ).append( `<i class="far fa-star"></i>`);
+    }
+    else if(division == 8){
+        $( ".star" ).append( `<i class="fas fa-star"></i>`);
+        $( ".star" ).append( `<i class="fas fa-star"></i>`);
+        $( ".star" ).append( `<i class="fas fa-star"></i>`);
+        $( ".star" ).append( `<i class="fas fa-star"></i>`);
+        $( ".star" ).append( `<i class="far fa-star"></i>`);
+    }
+    else if(division == 9){
+        $( ".star" ).append( `<i class="fas fa-star"></i>`);
+        $( ".star" ).append( `<i class="fas fa-star"></i>`);
+        $( ".star" ).append( `<i class="fas fa-star"></i>`);
+        $( ".star" ).append( `<i class="fas fa-star"></i>`);
+        $( ".star" ).append( `<i class="fas fa-star-half-alt half_star_custome"></i>`);
+    }
+    else if(division == 10){
+        $( ".star" ).append( `<i class="fas fa-star"></i>`);
+        $( ".star" ).append( `<i class="fas fa-star"></i>`);
+        $( ".star" ).append( `<i class="fas fa-star"></i>`);
+        $( ".star" ).append( `<i class="fas fa-star"></i>`);
+        $( ".star" ).append( `<i class="fas fa-star"></i>`);
+    }
+};
