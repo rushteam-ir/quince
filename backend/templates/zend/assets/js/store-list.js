@@ -56,84 +56,84 @@ function redirect(url) {
 
 function calculatePoints(points){
 
-    let division = Math.round(parseInt(points));
+        let round_points = Math.round(parseInt(points));
 
-    if(division == 0){
-        $( ".star" ).append( `<i class="far fa-star"></i>`);
-        $( ".star" ).append( `<i class="far fa-star"></i>`);
-        $( ".star" ).append( `<i class="far fa-star"></i>`);
-        $( ".star" ).append( `<i class="far fa-star"></i>`);
-        $( ".star" ).append( `<i class="far fa-star"></i>`);
-    }
-    else if(division == 1){
-        $( ".star" ).append( `<i class="fas fa-star-half-alt half_star_custome"></i>`);
-        $( ".star" ).append( `<i class="far fa-star"></i>`);
-        $( ".star" ).append( `<i class="far fa-star"></i>`);
-        $( ".star" ).append( `<i class="far fa-star"></i>`);
-        $( ".star" ).append( `<i class="far fa-star"></i>`);
+        if(round_points == 0){
+            $("#star_1").removeAttr('class').attr('class', 'far fa-star');
+            $("#star_2").removeAttr('class').attr('class', 'far fa-star');
+            $("#star_3").removeAttr('class').attr('class', 'far fa-star');
+            $("#star_4").removeAttr('class').attr('class', 'far fa-star');
+            $("#star_5").removeAttr('class').attr('class', 'far fa-star');
+        }
+        else if(round_points == 1){
+            $("#star_1").removeAttr('class').attr('class', 'fas fa-star-half-alt half_star_custome');
+            $("#star_2").removeAttr('class').attr('class', 'far fa-star');
+            $("#star_3").removeAttr('class').attr('class', 'far fa-star');
+            $("#star_4").removeAttr('class').attr('class', 'far fa-star');
+            $("#star_5").removeAttr('class').attr('class', 'far fa-star');
+        }
+        else if(round_points == 2){
+            $("#star_1").removeClass().addClass('fas fa-star');
+            $("#star_2").removeClass().addClass('far fa-star');
+            $("#star_3").removeClass().addClass('far fa-star');
+            $("#star_4").removeClass().addClass('far fa-star');
+            $("#star_5").removeClass().addClass('far fa-star');
+        }
+        else if(round_points == 3){
+            $("#star_1").removeClass().addClass('fas fa-star');
+            $("#star_2").removeClass().addClass('fas fa-star-half-alt half_star_custome');
+            $("#star_3").removeClass().addClass('far fa-star');
+            $("#star_4").removeClass().addClass('far fa-star');
+            $("#star_5").removeClass().addClass('far fa-star');
+        }
+        else if(round_points == 4){
+            $("#star_1").removeClass().addClass('fas fa-star');
+            $("#star_2").removeClass().addClass('fas fa-star');
+            $("#star_3").removeClass().addClass('far fa-star');
+            $("#star_4").removeClass().addClass('far fa-star');
+            $("#star_5").removeClass().addClass('far fa-star');
+        }
+        else if(round_points == 5){
+            $("#star_1").removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_2").removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_3").removeAttr('class').attr('class', 'fas fa-star-half-alt half_star_custome');
+            $("#star_4").removeAttr('class').attr('class', 'far fa-star');
+            $("#star_5").removeAttr('class').attr('class', 'far fa-star');
+        }
+        else if(round_points == 6){
+            $("#star_1").removeClass().addClass('fas fa-star');
+            $("#star_2").removeClass().addClass('fas fa-star');
+            $("#star_3").removeClass().addClass('fas fa-star');
+            $("#star_4").removeClass().addClass('far fa-star');
+            $("#star_5").removeClass().addClass('far fa-star');
+        }
+        else if(round_points == 7){
+            $("#star_1").removeClass().addClass('fas fa-star');
+            $("#star_2").removeClass().addClass('fas fa-star');
+            $("#star_3").removeClass().addClass('fas fa-star');
+            $("#star_4").removeClass().addClass('fas fa-star-half-alt half_star_custome');
+            $("#star_5").removeClass().addClass('far fa-star');
+        }
+        else if(round_points == 8){
+            $("#star_1").removeClass().addClass('fas fa-star');
+            $("#star_2").removeClass().addClass('fas fa-star');
+            $("#star_3").removeClass().addClass('fas fa-star');
+            $("#star_4").removeClass().addClass('fas fa-star');
+            $("#star_5").removeClass().addClass('far fa-star');
+        }
+        else if(round_points == 9){
+            $("#star_1").removeClass().addClass('fas fa-star');
+            $("#star_2").removeClass().addClass('fas fa-star');
+            $("#star_3").removeClass().addClass('fas fa-star');
+            $("#star_4").removeClass().addClass('fas fa-star');
+            $("#star_5").removeClass().addClass('fas fa-star-half-alt half_star_custome');
+        }
+        else if(round_points == 10){
+            $("#star_1").removeClass().addClass('fas fa-star');
+            $("#star_2").removeClass().addClass('fas fa-star');
+            $("#star_3").removeClass().addClass('fas fa-star');
+            $("#star_4").removeClass().addClass('fas fa-star');
+            $("#star_5").removeClass().addClass('fas fa-star');
+        }
 
-    }
-    else if(division == 2){
-        $( ".star" ).append( `<i class="fas fa-star"></i>`);
-        $( ".star" ).append( `<i class="far fa-star"></i>`);
-        $( ".star" ).append( `<i class="far fa-star"></i>`);
-        $( ".star" ).append( `<i class="far fa-star"></i>`);
-        $( ".star" ).append( `<i class="far fa-star"></i>`);
-    }
-    else if(division == 3){
-        $( ".star" ).append( `<i class="fas fa-star"></i>`);
-        $( ".star" ).append( `<i class="fas fa-star-half-alt half_star_custome"></i>`);
-        $( ".star" ).append( `<i class="far fa-star"></i>`);
-        $( ".star" ).append( `<i class="far fa-star"></i>`);
-        $( ".star" ).append( `<i class="far fa-star"></i>`);
-    }
-    else if(division == 4){
-        $( ".star" ).append( `<i class="fas fa-star"></i>`);
-        $( ".star" ).append( `<i class="fas fa-star"></i>`);
-        $( ".star" ).append( `<i class="far fa-star"></i>`);
-        $( ".star" ).append( `<i class="far fa-star"></i>`);
-        $( ".star" ).append( `<i class="far fa-star"></i>`);
-    }
-    else if(division == 5){
-        $( ".star" ).append( `<i class="fas fa-star"></i>`);
-        $( ".star" ).append( `<i class="fas fa-star"></i>`);
-        $( ".star" ).append( `<i class="fas fa-star-half-alt half_star_custome"></i>`);
-        $( ".star" ).append( `<i class="far fa-star"></i>`);
-        $( ".star" ).append( `<i class="far fa-star"></i>`);
-    }
-    else if(division == 6){
-        $( ".star" ).append( `<i class="fas fa-star"></i>`);
-        $( ".star" ).append( `<i class="fas fa-star"></i>`);
-        $( ".star" ).append( `<i class="fas fa-star"></i>`);
-        $( ".star" ).append( `<i class="far fa-star"></i>`);
-        $( ".star" ).append( `<i class="far fa-star"></i>`);
-    }
-    else if(division == 7){
-        $( ".star" ).append( `<i class="fas fa-star"></i>`);
-        $( ".star" ).append( `<i class="fas fa-star"></i>`);
-        $( ".star" ).append( `<i class="fas fa-star"></i>`);
-        $( ".star" ).append( `<i class="fas fa-star-half-alt half_star_custome"></i>`);
-        $( ".star" ).append( `<i class="far fa-star"></i>`);
-    }
-    else if(division == 8){
-        $( ".star" ).append( `<i class="fas fa-star"></i>`);
-        $( ".star" ).append( `<i class="fas fa-star"></i>`);
-        $( ".star" ).append( `<i class="fas fa-star"></i>`);
-        $( ".star" ).append( `<i class="fas fa-star"></i>`);
-        $( ".star" ).append( `<i class="far fa-star"></i>`);
-    }
-    else if(division == 9){
-        $( ".star" ).append( `<i class="fas fa-star"></i>`);
-        $( ".star" ).append( `<i class="fas fa-star"></i>`);
-        $( ".star" ).append( `<i class="fas fa-star"></i>`);
-        $( ".star" ).append( `<i class="fas fa-star"></i>`);
-        $( ".star" ).append( `<i class="fas fa-star-half-alt half_star_custome"></i>`);
-    }
-    else if(division == 10){
-        $( ".star" ).append( `<i class="fas fa-star"></i>`);
-        $( ".star" ).append( `<i class="fas fa-star"></i>`);
-        $( ".star" ).append( `<i class="fas fa-star"></i>`);
-        $( ".star" ).append( `<i class="fas fa-star"></i>`);
-        $( ".star" ).append( `<i class="fas fa-star"></i>`);
-    }
 };

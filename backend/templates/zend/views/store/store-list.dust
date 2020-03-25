@@ -7,7 +7,6 @@
 {<js} 
     <script src="js/slick.js"></script>
     <script src="js/store-list.js"></script>
-
 {/js}
 
 {<body} 
@@ -113,6 +112,11 @@
                                             </div>
 
                                             <div class="star_color_custme d-inline-block star">
+                                                <i id="star_1" class="far fa-star"></i>
+                                                <i id="star_2" class="far fa-star"></i>
+                                                <i id="star_3" class="far fa-star"></i>
+                                                <i id="star_4" class="far fa-star"></i>
+                                                <i id="star_5" class="far fa-star"></i>
                                             </div>
                                             <span class="d-inline-block">
                                                 (10/{.points})
