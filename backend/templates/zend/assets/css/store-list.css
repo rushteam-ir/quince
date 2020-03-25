@@ -70,9 +70,9 @@
 }
 
 .blog-card .description h1 {
-    line-height: 1;
+    line-height: 40px;
     margin: 0;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-family: main-font;
 }
 
@@ -223,8 +223,8 @@
     height: 60px;
     text-align: center;
     color: white;
-    top: -31px;
-    right: -436px;
+    top: -33px;
+    right: -117px;
     line-height: 60px;
     font-family: main-font;
     font-size: 1.1rem;
