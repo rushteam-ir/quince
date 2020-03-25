@@ -1,21 +1,9 @@
 //modal search function
 
-var myOverlay = document.getElementById("myOverlay");
 var new_product_click = document.getElementById("new_product_click");
 var best_product_click = document.getElementById("best_product_click");
 new WOW().init();
 
-function openSearch() {
-
-    myOverlay.style.display = "block";
-
-}
-
-function closeSearch() {
-
-    myOverlay.style.display = "none";
-
-}
 
 //click on new or best product function
 

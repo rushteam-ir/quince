@@ -1,1 +1,17 @@
-asas
+{>"layouts/index-layout"/}
+
+{<title}
+    <title>درباره ما</title>
+{/title}
+{<css}
+    <link rel="stylesheet" href="css/about-us.css">
+{/css}
+{<js}
+    <script src="js/js-about-us.js"></script>
+    <script src="js/js-homePage.js"></script>
+{/js}
+
+
+{<body}
+
+{/body}
