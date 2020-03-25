@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bd36d6d7-6b5a-4a74-b20a-025da208c5c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/templates/melorin/views/layouts/footer-layout.dust" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/templates/melorin/views/layouts/header-layout.dust" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/templates/melorin/views/layouts/index-layout.dust" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/melorin/views/layouts/index-layout.dust" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +160,7 @@
       <workItem from="1584949106268" duration="9977000" />
       <workItem from="1585031706092" duration="5972000" />
       <workItem from="1585055603418" duration="3298000" />
-      <workItem from="1585141117776" duration="15453000" />
+      <workItem from="1585141117776" duration="19149000" />
     </task>
     <servers />
   </component>
