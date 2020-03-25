@@ -73,25 +73,25 @@ function calculatePoints(points){
             $("#star_5").removeAttr('class').attr('class', 'far fa-star');
         }
         else if(round_points == 2){
-            $("#star_1").removeClass().addClass('fas fa-star');
-            $("#star_2").removeClass().addClass('far fa-star');
-            $("#star_3").removeClass().addClass('far fa-star');
-            $("#star_4").removeClass().addClass('far fa-star');
-            $("#star_5").removeClass().addClass('far fa-star');
+            $("#star_1").removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_2").removeAttr('class').attr('class', 'far fa-star');
+            $("#star_3").removeAttr('class').attr('class', 'far fa-star');
+            $("#star_4").removeAttr('class').attr('class', 'far fa-star');
+            $("#star_5").removeAttr('class').attr('class', 'far fa-star');
         }
         else if(round_points == 3){
-            $("#star_1").removeClass().addClass('fas fa-star');
-            $("#star_2").removeClass().addClass('fas fa-star-half-alt half_star_custome');
-            $("#star_3").removeClass().addClass('far fa-star');
-            $("#star_4").removeClass().addClass('far fa-star');
-            $("#star_5").removeClass().addClass('far fa-star');
+            $("#star_1").removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_2").removeAttr('class').attr('class', 'fas fa-star-half-alt half_star_custome');
+            $("#star_3").removeAttr('class').attr('class', 'far fa-star');
+            $("#star_4").removeAttr('class').attr('class', 'far fa-star');
+            $("#star_5").removeAttr('class').attr('class', 'far fa-star');
         }
         else if(round_points == 4){
-            $("#star_1").removeClass().addClass('fas fa-star');
-            $("#star_2").removeClass().addClass('fas fa-star');
-            $("#star_3").removeClass().addClass('far fa-star');
-            $("#star_4").removeClass().addClass('far fa-star');
-            $("#star_5").removeClass().addClass('far fa-star');
+            $("#star_1").removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_2").removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_3").removeAttr('class').attr('class', 'far fa-star');
+            $("#star_4").removeAttr('class').attr('class', 'far fa-star');
+            $("#star_5").removeAttr('class').attr('class', 'far fa-star');
         }
         else if(round_points == 5){
             $("#star_1").removeAttr('class').attr('class', 'fas fa-star');
@@ -101,39 +101,39 @@ function calculatePoints(points){
             $("#star_5").removeAttr('class').attr('class', 'far fa-star');
         }
         else if(round_points == 6){
-            $("#star_1").removeClass().addClass('fas fa-star');
-            $("#star_2").removeClass().addClass('fas fa-star');
-            $("#star_3").removeClass().addClass('fas fa-star');
-            $("#star_4").removeClass().addClass('far fa-star');
-            $("#star_5").removeClass().addClass('far fa-star');
+            $("#star_1").removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_2").removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_3").removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_4").removeAttr('class').attr('class', 'far fa-star');
+            $("#star_5").removeAttr('class').attr('class', 'far fa-star');
         }
         else if(round_points == 7){
-            $("#star_1").removeClass().addClass('fas fa-star');
-            $("#star_2").removeClass().addClass('fas fa-star');
-            $("#star_3").removeClass().addClass('fas fa-star');
-            $("#star_4").removeClass().addClass('fas fa-star-half-alt half_star_custome');
-            $("#star_5").removeClass().addClass('far fa-star');
+            $("#star_1").removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_2").removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_3").removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_4").removeAttr('class').attr('class', 'fas fa-star-half-alt half_star_custome');
+            $("#star_5").removeAttr('class').attr('class', 'far fa-star');
         }
         else if(round_points == 8){
-            $("#star_1").removeClass().addClass('fas fa-star');
-            $("#star_2").removeClass().addClass('fas fa-star');
-            $("#star_3").removeClass().addClass('fas fa-star');
-            $("#star_4").removeClass().addClass('fas fa-star');
-            $("#star_5").removeClass().addClass('far fa-star');
+            $("#star_1").removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_2").removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_3").removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_4").removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_5").removeAttr('class').attr('class', 'far fa-star');
         }
         else if(round_points == 9){
-            $("#star_1").removeClass().addClass('fas fa-star');
-            $("#star_2").removeClass().addClass('fas fa-star');
-            $("#star_3").removeClass().addClass('fas fa-star');
-            $("#star_4").removeClass().addClass('fas fa-star');
-            $("#star_5").removeClass().addClass('fas fa-star-half-alt half_star_custome');
+            $("#star_1").removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_2").removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_3").removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_4").removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_5").removeAttr('class').attr('class', 'fas fa-star-half-alt half_star_custome');
         }
         else if(round_points == 10){
-            $("#star_1").removeClass().addClass('fas fa-star');
-            $("#star_2").removeClass().addClass('fas fa-star');
-            $("#star_3").removeClass().addClass('fas fa-star');
-            $("#star_4").removeClass().addClass('fas fa-star');
-            $("#star_5").removeClass().addClass('fas fa-star');
+            $("#star_1").removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_2").removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_3").removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_4").removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_5").removeAttr('class').attr('class', 'fas fa-star');
         }
 
 };
