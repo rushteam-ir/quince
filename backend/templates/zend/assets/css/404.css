@@ -1,3 +1,8 @@
+@font-face{
+  font-family: main-font;
+  src: url(../font/Vazir-Thin.ttf);
+}
+
 @-moz-keyframes rocket-movement {
   100% {
     -moz-transform: translate(1200px, -600px);
@@ -217,14 +222,13 @@ li a:hover {
   padding: 10px 15px;
   border: 1px solid #FFCB39;
   border-radius: 100px;
-  font-weight: 400;
   display: block;
   color: white;
   text-align: center;
   text-decoration: none;
-  letter-spacing: 2px;
   font-size: 11px;
-
+  font-weight: bold;
+  font-family: main-font;
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
   -ms-transition: all 0.3s ease-in;
