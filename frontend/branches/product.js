@@ -19,7 +19,8 @@ router.get('/:title', async(req,res)=>{
 
     try{
 
-        let product_title = req.params.title;
+        let param = req.params.title;
+        let product_title = param.trim().replace('_', ' ');
         let check_product = await product_model.check(product_title);
 
         if(check_product == false){

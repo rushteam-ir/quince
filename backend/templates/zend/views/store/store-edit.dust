@@ -18,7 +18,7 @@
 
                 <div class="form-group">
                     <label for="title_inp">عنوان محصول:</label>
-                    <input type="text" class="form-control" id="title_inp" name="title_inp">
+                    <input type="text" class="form-control" id="title_inp" name="title_inp" value="{product_form.title}">
                 </div>
 
                 <div class="form-group">
@@ -26,8 +26,12 @@
                     <select class="form-control" id="select-category" name="parent_inp">
                         <option value="">---</option>
                         {#list}
+                            {@eq key="{product_form.category.title}" value="{title}"}
+                                <option value="{_id}" selected>{title}</option>
+                            {:else}
                                 <option value="{_id}">{title}</option>
-                            {/list}
+                            {/eq}
+                        {/list}
                         </select>
                     </div>
 
@@ -40,21 +44,21 @@
 
                     <div class="form-group">
                         <label for="describe">توضیحات:</label>
-                        <textarea class="form-control" id="describe" rows="5" cols="50" name="describe_inp" aria-describedby="emailHelp"></textarea>
+                        <textarea class="form-control" id="describe" rows="5" cols="50" name="describe_inp" aria-describedby="emailHelp">{product_form.describe}</textarea>
                         <small class="form-text text-muted">توضیحات نباید کم تر از 50 کلمه باشد.</small>
                     </div>
 
                     <div class="form-group">
                         <label for="price_inp">قیمت:</label>
                         <small class="form-text text-muted">قیمت به تومان می باشد.</small>
-                        <input class="form-control" type="text" id="price_inp" name="price_inp" placeholder="0">
+                        <input class="form-control" type="text" id="price_inp" name="price_inp" placeholder="0" value="{product_form.price}">
                     </div>
 
                     <div class="row">
                         <div class="col-6 pr-0">
                             <div class="form-group number_inp_store_add">
                                 <label for="inventory_inp">موجودی فعلی انبار:</label>
-                                <input class="form-control" type="number" id="inventory_inp" name="stock_inp" min="0" placeholder="0">
+                                <input class="form-control" type="number" id="inventory_inp" name="stock_inp" min="0" placeholder="0" value="{product_form.stock}">
                             </div>
                         </div>
 
@@ -64,7 +68,7 @@
                             <div class="input-group-prepend">
                             <span class="input-group-text span_sale_addon" id="basic-addon1">%</span>
                             </div>  
-                            <input type="number" class="form-control sale_inp_custome pr-1" name="discount_inp" min="0" placeholder="0" aria-label="Username" aria-describedby="basic-addon1">
+                            <input type="number" class="form-control sale_inp_custome pr-1" name="discount_inp" min="0" placeholder="0" aria-label="Username" aria-describedby="basic-addon1" value="{product_form.discount}">
                         </div>
                     </div>
                 </div>
@@ -76,6 +80,8 @@
                     <div class="field_wrapper row">
                         <div class="col-6 p-0">
                             <input class="form-control width_inp_customize" id="specifict" type="text" name="product_features_inp[]" value="">
+                            {#product_form.features}
+                            {/product_form.features}
                             <a href="javascript:void(0);" class="add_button" title="Add field"><i class="fas fa-plus mt-2"></i></a>
                         </div>
                     </div>
@@ -114,7 +120,7 @@
 
 
                     </div>
-                    <button class="btn btn_of_store_add" type="submit" name="add_product">ثبت</button>
+                    <button class="btn btn_of_store_add" type="submit" name="add_product">ثبت تغییرات</button>
 
                 </form>
 

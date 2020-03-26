@@ -323,6 +323,7 @@ router.get('/edit', async(req,res)=>{
         if(!product_id || !isObjectId(product_id)){
             return res.redirect(`${config.backend_url}store/list`);
         }
+
         backend.locals.product_form = await product_model.getById(product_id);
 
         let data = {
