@@ -314,6 +314,10 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.product_status , .product_del{
+    cursor: pointer;
+}
+
 @media (min-width: 640px) {
     .blog-card {
         -webkit-box-orient: horizontal;

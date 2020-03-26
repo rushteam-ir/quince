@@ -1,19 +1,21 @@
 function storeAddError() {
-    var error_text = document.getElementById('store_add_error');
-    var title_inp = document.forms['store_add_form']['title_inp'].value;
-    var parent_inp = document.forms['store_add_form']['parent_inp'].value;
-    var child_inp = document.forms['store_add_form']['child_inp'].value;
-    var describe = document.forms['store_add_form']['describe'].value;
-    var price_inp = document.forms['store_add_form']['price_inp'].value;
-    var inventory_inp = document.forms['store_add_form']['inventory_inp'].value;
-    var Discount_inp = document.forms['store_add_form']['Discount_inp'].value;
+
+    let error_text = document.getElementById('store_add_error');
+    let title_inp = document.forms['store_add_form']['title_inp'].value;
+    let parent_inp = document.forms['store_add_form']['parent_inp'].value;
+    let child_inp = document.forms['store_add_form']['child_inp'].value;
+    let describe = document.forms['store_add_form']['describe'].value;
+    let price_inp = document.forms['store_add_form']['price_inp'].value;
+    let inventory_inp = document.forms['store_add_form']['inventory_inp'].value;
+    let discount_inp = document.forms['store_add_form']['discount_inp'].value;
+    let product_main_image = document.forms['store_add_form']['product_main_image'].value;
 
     if (title_inp === "") {
 
         error_text.style.display = "block";
-        error_text.innerHTML = "لطفا عنوان محصول را انتخاب کنید";
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
+        error_text.innerHTML = "لطفا عنوان محصول را انتخاب کنید";
         return false;
 
     } else if (parent_inp === "") {
@@ -56,10 +58,26 @@ function storeAddError() {
         document.documentElement.scrollTop = 0;
         return false;
 
-    } else if (Discount_inp === "") {
+    } else if (discount_inp === "") {
 
         error_text.style.display = "block";
         error_text.innerHTML = "لطفا تخفیف را وارد کنید";
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        return false;
+
+    } else if (product_main_image === "") {
+
+        error_text.style.display = "block";
+        error_text.innerHTML = "لطفا عکس اصلی را آپلود کنید";
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        return false;
+
+    } else if (product_main_image === "") {
+
+        error_text.style.display = "block";
+        error_text.innerHTML = "لطفا عکس اصلی را آپلود کنید";
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
         return false;
@@ -107,7 +125,7 @@ $(document).ready(function () {
     let maxField = 6;
     let addButton = $('.file_add_button');
     let wrapper = $('.field_wrapper_file');
-    
+
     let x = 1;
 
     $(addButton).click(function () {
@@ -117,12 +135,12 @@ $(document).ready(function () {
             x++;
             let fieldHTML = '<div class="col-6 p-0 mb-3"><input type="file" name="product_images[]" id="product_img_main_' + x.toString() + '" class="input-file-custom"><label for="product_img_main_' + x.toString() + '" class="btn btn-tertiary js-labelFile">  <i class="icon fa fa-check"></i><span class="js-fileName mr-2">انتخاب عکس</span></label><a href="javascript:void(0);" class="remove_button_file"><i class="fas fa-minus mt-2"></i></a></div>';
             $(wrapper).append(fieldHTML);
-        // chose file customize
+            // chose file customize
             $('.input-file-custom').each(function () {
                 var $input = $(this),
                     $label = $input.next('.js-labelFile'),
                     labelVal = $label.html();
-        
+
                 $input.on('change', function (element) {
                     var fileName = '';
                     if (element.target.value) fileName = element.target.value.split('\\').pop();
@@ -166,6 +184,6 @@ $(document).ready(function () {
 
 // pop over function
 
-  $(function () {
+$(function () {
     $('[data-toggle="popover"]').popover()
-  })
+})
