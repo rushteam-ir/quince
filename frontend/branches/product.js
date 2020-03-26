@@ -20,7 +20,7 @@ router.get('/:title', async(req,res)=>{
     try{
 
         let param = req.params.title;
-        let product_title = param.trim().replace('_', ' ');
+        let product_title = param.trim().replace('-', ' ');
         let check_product = await product_model.check(product_title);
 
         if(check_product == false){
