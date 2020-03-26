@@ -28,6 +28,43 @@ $('.product_del').on('click', function (e) {
     })
 });
 
+$('.product_status').on('click', function (e) {
+
+    let product_id = $(e.currentTarget).attr('name');
+    let sweet_alet_status = $(e.currentTarget).attr('value');
+    let product_status = '';
+    if(sweet_alet_status == 'فعال کردن'){
+        product_status = 'true';
+    }
+    else{
+        product_status = 'false';
+    }
+
+    Swal.fire({
+        title: sweet_alet_status + " محصول",
+        text: "آیا از " + sweet_alet_status + " این محصول مطمئن هستید ؟",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'بله',
+        cancelButtonText: 'خیر',
+    }).then((result) => {
+        if (result.value) {
+            Swal.fire({
+                title : 'انجام شد',
+                text : 'برای تایید نهایی کلیک کنید',
+                icon : 'success',
+                confirmButtonText: 'تایید',
+            }).then((result)=>{
+                if (result.value) {
+                    redirect(`${backend_url}store/?id=${product_id}&status=${product_status}`);
+                }
+            })
+        }
+    })
+});
+
 function redirect(url) {
     location.href = url
 }

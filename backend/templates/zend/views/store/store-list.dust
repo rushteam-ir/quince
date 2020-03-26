@@ -47,9 +47,13 @@
                                             <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
                                               <a class="dropdown-item" href="#">ویرایش</a>
                                               <hr class="hr_custom">
-                                              <a class="dropdown-item" href="#">تعلیق</a>
+                                                {@eq key="{.status}" value="true"}
+                                                    <a class="dropdown-item product_status" name="{._id}" value="غیر فعال کردن">غیر فعال کردن</a>
+                                                {:else}
+                                                    <a class="dropdown-item product_status" name="{._id}" value="فعال کردن">فعال کردن</a>
+                                                {/eq}
                                               <hr class="hr_custom">
-                                              <a class="dropdown-item" href="#">حذف</a>
+                                              <a class="dropdown-item product_del" name="{._id}">حذف</a>
                                             </div>
                                             
                                         </div>

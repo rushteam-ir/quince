@@ -5,9 +5,11 @@ router.get('/', async(req,res)=>{
     try{
 
         let delete_id = req.query.del;
+        let status_id = req.query.id;
+        let status_value = req.query.status;
 
-        if(!req.query.del){
-            res.redirect(`${config.backend_url}store/list`)
+        if(!req.query){
+            return res.redirect(`${config.backend_url}store/list`)
         }
 
         if(isObjectId(delete_id)){
@@ -31,6 +33,18 @@ router.get('/', async(req,res)=>{
 
                 return res.redirect(`${config.backend_url}store/list/?msg=delete-fail`);
 
+            }
+
+        }
+        if(isObjectId(status_id)){
+
+            let result = await product_model.edit(status_id, {status : status_value});
+
+            if(result){
+                return res.redirect(`${config.backend_url}store/list/?msg=edit-success`);
+            }
+            else{
+                return res.redirect(`${config.backend_url}store/list/?msg=edit-fail`);
             }
 
         }

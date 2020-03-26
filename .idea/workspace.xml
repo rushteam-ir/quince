@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="bd36d6d7-6b5a-4a74-b20a-025da208c5c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/branches/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/branches/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/js/store-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/assets/js/store-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e7b61f04c93d129c00acb57_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/zend/views/store/store-list.dust" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/views/store/store-list.dust" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +164,8 @@
       <workItem from="1584949106268" duration="9977000" />
       <workItem from="1585031706092" duration="5972000" />
       <workItem from="1585055603418" duration="3298000" />
-      <workItem from="1585141117776" duration="19149000" />
+      <workItem from="1585141117776" duration="19749000" />
+      <workItem from="1585215554049" duration="2354000" />
     </task>
     <servers />
   </component>
