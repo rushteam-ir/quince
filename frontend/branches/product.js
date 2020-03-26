@@ -22,15 +22,15 @@ router.get('/:title', async(req,res)=>{
         let product_title = req.params.title;
         let check_product = await product_model.check(product_title);
 
-        if(!check_product){
+        if(check_product == false){
             return res.redirect(`${config.frontend_url}product/?msg=not-found`);
         }
 
         let data = {
 
-            product : await product_model.getById(product_id)
+            product : check_product
 
-        }
+        };
 
         res.render('product');
 

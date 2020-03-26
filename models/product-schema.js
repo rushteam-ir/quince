@@ -66,7 +66,7 @@ product_schema.statics = {
         let result = await product_model.findOne({title : product_title});
 
         if(result && isObjectId(result._id)){
-            return true
+            return result;
         }
         else{
             return false

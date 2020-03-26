@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bd36d6d7-6b5a-4a74-b20a-025da208c5c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/branches/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/branches/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/frontend.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/frontend.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/templates/melorin/views/404.dust" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/melorin/views/404.dust" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/branches/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/branches/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/melorin/views/500.dust" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/melorin/views/500.dust" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/product-schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/product-schema.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -166,7 +165,7 @@
       <workItem from="1585055603418" duration="3298000" />
       <workItem from="1585141117776" duration="19749000" />
       <workItem from="1585215554049" duration="3976000" />
-      <workItem from="1585227154378" duration="3156000" />
+      <workItem from="1585227154378" duration="3670000" />
     </task>
     <servers />
   </component>
