@@ -1,1 +1,62 @@
-asdaddsdsd
+{>"layouts/layout"/}
+
+{<title}
+    <title>تماس با ما</title>
+{/title}
+{<css}
+    <link rel="stylesheet" href="css/contact-us.css">
+{/css}
+{<js}
+    <script src="js/contact-us.js"></script>
+{/js}
+
+{<body}
+
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="title_of_contact_us">
+                        تماس با ملورین
+                    </h2>
+                    <p dir="rtl" class="title_of_contact_us">برای پیگیری یا سوال درباره سفارش و ارسال پیام از فرم زیر استفاده کنید. </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 col-md-6 d-md-block d-none p-0">
+                       <img src="img/contactus.jpg" class="pic_of_contact_us_form">
+                </div>
+                <div class="col-lg-7 offset-lg-0 col-md-6 offset-md-0 col-10 offset-1">
+                    <div class="form_of_contact_melorin_shop">
+                        <form dir="rtl" class="form_style" name="myForm" action="" method="get" onsubmit="return validateForm()">
+                            <div class="form-group">
+                                <label for="userName" class="float-right">نام و نام خانوادگی:</label>
+                                <input type="text" class="form-control input_bg" id="userName" name="userName">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="float-right">ایمیل:</label>
+                                <input type="text" class="form-control input_bg" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="float-right">تلفن تماس:</label>
+                                <input type="password" class="form-control input_bg" id="phone" name="password">
+                            </div>
+                            <div class="form-group">
+                                <label for="numProduct" class="float-right"> شماره سفارش:</label>
+                                <input type="password" class="form-control input_bg" id="numProduct" name="configPassword">
+                            </div>
+                            <div class="form-group">
+                                <label for="textArea" class="float-right">متن پیام:</label>
+                                <textarea class="form-control input_bg" id="textArea" rows="4"></textarea>
+                            </div>
+
+                            <input type="submit" class="btn btn_style_of_contact_us" value="ثبت اطلاعات">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </section>
+
+{/body}
