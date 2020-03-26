@@ -23,10 +23,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-5 col-md-6 d-md-block d-none p-0">
+                <div class="col-lg-6 col-md-6 d-md-block d-none p-0">
                        <img src="img/contactus.jpg" class="pic_of_contact_us_form">
                 </div>
-                <div class="col-lg-7 offset-lg-0 col-md-6 offset-md-0 col-10 offset-1">
+                <div class="col-lg-6 offset-lg-0 col-md-6 offset-md-0 col-10 offset-1">
                     <div class="form_of_contact_melorin_shop">
                         <form dir="rtl" class="form_style" name="myForm" action="" method="get" onsubmit="return validateForm()">
                             <div class="form-group">
@@ -46,6 +46,10 @@
                                 <input type="password" class="form-control input_bg" id="numProduct" name="configPassword">
                             </div>
                             <div class="form-group">
+                                <label for="numProduct" class="float-right"> موضوع:</label>
+                                <input type="password" class="form-control input_bg" id="numProduct" name="configPassword">
+                            </div>
+                            <div class="form-group">
                                 <label for="textArea" class="float-right">متن پیام:</label>
                                 <textarea class="form-control input_bg" id="textArea" rows="4"></textarea>
                             </div>
@@ -56,6 +60,11 @@
                 </div>
             </div>
             <hr>
+            <div class="row">
+                <div class="col-10 offset-1">
+                    
+                </div>
+            </div>
         </div>
     </section>
 
