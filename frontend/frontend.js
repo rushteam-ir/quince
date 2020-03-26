@@ -47,10 +47,12 @@ frontend.get('/', async(req,res)=>{
 const captcha = require('./branches/captcha');
 const aboutus = require('./branches/aboutus');
 const contactus = require('./branches/contactus');
+const product = require('./branches/product');
 
 frontend.use('/captcha', captcha);
 frontend.use('/aboutus', aboutus);
 frontend.use('/contactus', contactus);
+frontend.use('/product', product);
 
 // Frontend 404 page
 frontend.use(async(req,res,next)=>{

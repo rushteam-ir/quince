@@ -4,9 +4,9 @@
     <list default="true" id="bd36d6d7-6b5a-4a74-b20a-025da208c5c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/branches/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/branches/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/js/store-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/assets/js/store-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e7b61f04c93d129c00acb57_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/views/store/store-list.dust" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/views/store/store-list.dust" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/frontend.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/frontend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/melorin/views/404.dust" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/melorin/views/404.dust" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/product-schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/product-schema.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,25 +34,25 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="13.3.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/templates/melorin/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/branches" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="ts.external.directory.path" value="F:\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Programming\Node Js Projects\Zend CMS\frontend\templates\melorin\views" />
-      <recent name="F:\Programming\Node Js Projects\Zend CMS\frontend\branches" />
-      <recent name="F:\Programming\Git projects\backend\branches" />
-      <recent name="F:\Programming\Git projects\models" />
-      <recent name="F:\Programming\Git projects\backend\templates\zend\views" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Programming\Node Js Projects\Zend CMS\frontend\templates\melorin\assets" />
       <recent name="F:\Programming\Node Js Projects\Zend CMS\frontend\templates\melorin\views" />
       <recent name="F:\Programming\Git projects\backend\templates\zend\views" />
       <recent name="F:\Programming\Git projects\backend\templates\zend\views\store" />
       <recent name="F:\Programming\Git projects\backend\templates\zend\views\recovery" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Programming\Node Js Projects\Zend CMS\frontend\branches" />
+      <recent name="F:\Programming\Node Js Projects\Zend CMS\backend\templates\zend\views\store" />
+      <recent name="F:\Programming\Node Js Projects\Zend CMS\frontend\templates\melorin\views" />
+      <recent name="F:\Programming\Git projects\backend\branches" />
+      <recent name="F:\Programming\Git projects\models" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -165,7 +165,8 @@
       <workItem from="1585031706092" duration="5972000" />
       <workItem from="1585055603418" duration="3298000" />
       <workItem from="1585141117776" duration="19749000" />
-      <workItem from="1585215554049" duration="2354000" />
+      <workItem from="1585215554049" duration="3976000" />
+      <workItem from="1585227154378" duration="3156000" />
     </task>
     <servers />
   </component>

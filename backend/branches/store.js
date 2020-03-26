@@ -314,4 +314,32 @@ router.post('/add', async(req,res)=>{
 
 });
 
+router.get('/edit', async(req,res)=>{
+
+    try{
+
+        let product_id = req.query.id;
+
+        if(!product_id || !isObjectId(product_id)){
+            return res.redirect(`${config.backend_url}store/list`);
+        }
+        backend.locals.product_form = await product_model.getById(product_id);
+
+        let data = {
+
+            list : await category_model.get(),
+
+        }
+
+        res.render('store/store-edit', data);
+
+    }
+    catch (error) {
+
+        res.status(500).render('500', {error});
+
+    }
+
+});
+
 module.exports = router;

@@ -55,6 +55,25 @@ product_schema.statics = {
 
     },
 
+    getById : async function (product_id) {
+
+        return await product_model.findById(product_id).populate('category').populate('sub_category').populate('author');
+
+    },
+
+    check : async function (product_title) {
+
+        let result = await product_model.findOne({title : product_title});
+
+        if(result && isObjectId(result._id)){
+            return true
+        }
+        else{
+            return false
+        }
+
+    },
+
     del : async function (product_id) {
 
         return await product_model.findByIdAndDelete(product_id);
