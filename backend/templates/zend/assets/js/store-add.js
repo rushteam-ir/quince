@@ -66,7 +66,7 @@ function storeAddError() {
         document.documentElement.scrollTop = 0;
         return false;
 
-    } else if (discount_inp.length > 3) {
+    } else if (discount_inp > 100) {
 
         error_text.style.display = "block";
         error_text.innerHTML = "تخفیف بیشتر از 100 درصد مجاز نمی باشد";
