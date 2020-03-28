@@ -87,13 +87,22 @@
 
                     <div class="form-group">
                         <label for="product_img">تصویر اصلی محصول:</label>
-                       
-                            <input type="file" name="product_main_image" id="product_img" class="input-file-custom">
-                            <label for="product_img" class="btn btn-tertiary js-labelFile">
-                              <i class="icon fa fa-check"></i>
-                              <span class="js-fileName mr-2">{product_form.images[0]}</span>
-                            </label>
-                            <small class="form-text text-muted">این تصویر به عنوان تصویر اصلی برای معرفی محصول در سایت نشان داده می شود.</small>
+
+                            {@eq key="{product_form.images[0]}" value=""}
+                                <input type="file" name="product_main_image" id="product_img" class="input-file-custom">
+                                <label for="product_img" class="btn btn-tertiary js-labelFile">
+                                    <i class="icon fa fa-check"></i>
+                                    <span class="js-fileName mr-2">انتخاب عکس</span>
+                                </label>
+                                <small class="form-text text-muted">این تصویر به عنوان تصویر اصلی برای معرفی محصول در سایت نشان داده می شود.</small>
+                            {:else}
+                                <br>
+                                <img src="media/products/{product_form.images[0]}" height="130" width="130">
+                                <div class="form-group">
+                                    <button id="main-image" type="submit" name="{product_form.images[0]}" class="btn profile_delete" onclick="return deleteCall()">حذف</button>
+                                </div>
+                            {/eq}
+
 
                     </div>
 
