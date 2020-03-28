@@ -314,17 +314,18 @@ router.post('/add', async(req,res)=>{
 
 });
 
-router.get('/edit', async(req,res)=>{
+router.get('/edit/:id', async(req,res)=>{
 
     try{
 
-        let product_id = req.query.id;
+        let product_id = req.params.id;
 
         if(!product_id || !isObjectId(product_id)){
             return res.redirect(`${config.backend_url}store/list`);
         }
 
-        backend.locals.product_form = await product_model.getById(product_id);
+        let edit_product = await product_model.getById(product_id);
+        backend.locals.product_form = edit_product;
 
         let data = {
 
@@ -340,6 +341,16 @@ router.get('/edit', async(req,res)=>{
         res.status(500).render('500', {error});
 
     }
+
+});
+
+router.get('/features', async(req,res)=>{
+
+    let product_id = req.query.id;
+    let product = await product_model.getById(product_id);
+    let product_features = product.features;
+
+    res.json(product_features);
 
 });
 

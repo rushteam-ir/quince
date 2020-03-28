@@ -27,7 +27,7 @@
                                 <div class="input-group-prepend">
                                   <button class="btn search_btn_of_category"  type="button"><i class="fas fa-search"></i></button>
                                 </div>
-                                <input id="category_search" type="text" class="form-control search_category_inp" placeholder="جستجو">
+                                <input id="store_search" type="text" class="form-control search_category_inp" placeholder="جستجو">
                             </div>
                         </form>
                     </div>
@@ -57,7 +57,7 @@
                                             </button>
 
                                             <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
-                                              <a class="dropdown-item" href="{backend_url}store/edit/?id={._id}">ویرایش</a>
+                                              <a class="dropdown-item" href="{backend_url}store/edit/{._id}">ویرایش</a>
                                               <hr class="hr_custom">
                                                 {@eq key="{.status}" value="true"}
                                                     <a class="dropdown-item product_status" name="{._id}" value="غیر فعال کردن">غیر فعال کردن</a>
@@ -249,3 +249,21 @@
         {/list}
 
 {/body}
+
+<script>
+    // $(document).ready(function(){
+    //
+    //     $("#store_search").on("keyup", function() {
+    //
+    //         let value = $(this).val().toLowerCase();
+    //
+    //         $("#store_list *").filter(function() {
+    //
+    //             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+    //
+    //         });
+    //
+    //     });
+    //
+    // });
+</script>
