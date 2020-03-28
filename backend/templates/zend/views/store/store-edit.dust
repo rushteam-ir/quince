@@ -3,9 +3,10 @@
     <link rel="stylesheet" href="css/store-add.css">
 {/css}
 {<js} 
-    <script src="js/store-add.js"></script>
+    <script src="js/store-edit.js"></script>
 {/js}
-        {<body} <div class="main_body_of_add_store_forms">
+        {<body}
+            <div class="main_body_of_add_store_forms">
 
             <p class="title_of_store_add">
                 ویرایش محصول
@@ -17,12 +18,12 @@
                 onsubmit="return storeAddError()">
 
                 <div class="form-group">
-                    <label for="title_inp">عنوان محصول:</label>
+                    <label id="product-id" value="{product_form._id}" for="title_inp">عنوان محصول:</label>
                     <input type="text" class="form-control" id="title_inp" name="title_inp" value="{product_form.title}">
                 </div>
 
                 <div class="form-group">
-                    <label for="select-category">دسته:</label>
+                    <label value="{product_form.sub_category.title}" id="sub-category-title" for="select-category">دسته:</label>
                     <select class="form-control" id="select-category" name="parent_inp">
                         <option value="">---</option>
                         {#list}
@@ -79,9 +80,6 @@
                     </label>
                     <div class="field_wrapper row">
                         <div class="col-6 p-0">
-                            <input class="form-control width_inp_customize" id="specifict" type="text" name="product_features_inp[]" value="">
-                            {#product_form.features}
-                            {/product_form.features}
                             <a href="javascript:void(0);" class="add_button" title="Add field"><i class="fas fa-plus mt-2"></i></a>
                         </div>
                     </div>
@@ -90,12 +88,12 @@
                     <div class="form-group">
                         <label for="product_img">تصویر اصلی محصول:</label>
                        
-                                <input type="file" name="product_main_image" id="product_img" class="input-file-custom">
-                                <label for="product_img" class="btn btn-tertiary js-labelFile">
-                                  <i class="icon fa fa-check"></i>
-                                  <span class="js-fileName mr-2">انتخاب عکس</span>
-                                </label>
-                                <small class="form-text text-muted">این تصویر به عنوان تصویر اصلی برای معرفی محصول در سایت نشان داده می شود.</small>
+                            <input type="file" name="product_main_image" id="product_img" class="input-file-custom">
+                            <label for="product_img" class="btn btn-tertiary js-labelFile">
+                              <i class="icon fa fa-check"></i>
+                              <span class="js-fileName mr-2">{product_form.images[0]}</span>
+                            </label>
+                            <small class="form-text text-muted">این تصویر به عنوان تصویر اصلی برای معرفی محصول در سایت نشان داده می شود.</small>
 
                     </div>
 
@@ -129,7 +127,36 @@
 {/body}
 
 <script>
+
     $(document).ready(function () {
+        let parent_id = $('#select-category').val();
+        let sub_category_title = $('#sub-category-title').attr('value');
+
+        if(parent_id != ""){
+            let p = {"id":parent_id};
+            $.get(`{backend_url}category/sub-category`, p, function (data) {
+
+                $('#select-sub-category').find('option:gt(0)').remove();
+                for(let i = 0; i < data.length; i++){
+
+                    let opt = '';
+                    if(data[i].title == sub_category_title){
+                        opt = '<option value="' + data[i]._id + '" selected>' + data[i].title + '</option>';
+                    }
+                    else{
+                        opt = '<option value="' + data[i]._id + '">' + data[i].title + '</option>';
+                    }
+                    $('#select-sub-category').append(opt);
+                }
+
+            })
+
+        }
+        else{
+
+            $('#select-sub-category').find('option:gt(0)').remove();
+
+        }
 
         $('#select-category').change(function () {
 
