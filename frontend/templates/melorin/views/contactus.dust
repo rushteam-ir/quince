@@ -52,8 +52,46 @@
 
                         </div>
 
-                        <div>
-                            salam
+                        <div id="main_field_of_forms" class="main_field_of_forms">
+
+                            <div class="box_of_form_contact">
+
+                                <p class="text-center title_of_contact_form wow fadeIn">
+                                    ارتباط با ما
+                                </p>
+                                
+                            <div class="card_contact">
+                                <form class="dir-rtl">
+                                   <div class="input-container wow fadeInLeft" data-wow-delay="0.1s">
+                                     <input class="text-right" type="#{type}" id="#{label}" required>
+                                     <label class="text-right" for="#{label}">نام</label>
+                                     <div class="bar"></div>
+                                   </div>
+
+                                    <div class="input-container wow fadeInLeft" data-wow-delay="0.3s">
+                                        <input class="text-right" type="#{type}" id="#{label}" required="required">
+                                        <label class="text-right" for="#{label}">نام خانوادگی</label>
+                                        <div class="bar"></div>
+                                    </div>     
+                                    
+                                    <div class="input-container wow fadeInLeft" data-wow-delay="0.5s">
+                                        <input class="text-right" type="#{type}" id="#{label}" required="required">
+                                        <label class="text-right" for="#{label}">ایمیل</label>
+                                        <div class="bar"></div>
+                                    </div>  
+
+                                    <div class="form-group text-right custom_margin  wow fadeInLeft" data-wow-delay="0.5s">
+                                        <label class="lable_of_description">توضیحات</label>
+                                        <textarea class="form-control text_area_of_contact text-right dir-rtl" class="text-right" type="text"></textarea>
+                                    </div>  
+                                    
+                                    <button class="btn  btn_of_contact_form wow fadeInLeft" data-wow-delay="0.6s">ارسال نظر</button>
+
+                                </form>
+                            </div>
+
+                            </div>
+
                         </div>
 
                     </div>
