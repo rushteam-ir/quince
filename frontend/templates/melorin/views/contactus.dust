@@ -14,55 +14,49 @@
 
     <section>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="title_of_contact_us">
-                        تماس با ملورین
-                    </h2>
-                    <p dir="rtl" class="title_of_contact_us">برای پیگیری یا سوال درباره سفارش و ارسال پیام از فرم زیر استفاده کنید. </p>
+            <div class="row mr_custom_contect">
+                <div class="col-12 col-xl-6 p-0">
+
+                    <iframe class="map_custom_size_contact" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.4317965008804!2d51.412076415328805!3d35.69099048019212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e0199eec860ed%3A0xeba5a8e97473ce9a!2sMelorin%20Socks%20Store!5e0!3m2!1sen!2snl!4v1585397895972!5m2!1sen!2snl" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-6 d-md-block d-none p-0">
-                       <img src="img/contactus.jpg" class="pic_of_contact_us_form">
-                </div>
-                <div class="col-lg-6 offset-lg-0 col-md-6 offset-md-0 col-10 offset-1">
-                    <div class="form_of_contact_melorin_shop">
-                        <form dir="rtl" class="form_style" name="myForm" action="" method="get" onsubmit="return validateForm()">
-                            <div class="form-group">
-                                <label for="userName" class="float-right">نام و نام خانوادگی:</label>
-                                <input type="text" class="form-control input_bg" id="userName" name="userName">
-                            </div>
-                            <div class="form-group">
-                                <label for="email" class="float-right">ایمیل:</label>
-                                <input type="text" class="form-control input_bg" id="email" name="email">
-                            </div>
-                            <div class="form-group">
-                                <label for="phone" class="float-right">تلفن تماس:</label>
-                                <input type="password" class="form-control input_bg" id="phone" name="password">
-                            </div>
-                            <div class="form-group">
-                                <label for="numProduct" class="float-right"> شماره سفارش:</label>
-                                <input type="password" class="form-control input_bg" id="numProduct" name="configPassword">
-                            </div>
-                            <div class="form-group">
-                                <label for="numProduct" class="float-right"> موضوع:</label>
-                                <input type="password" class="form-control input_bg" id="numProduct" name="configPassword">
-                            </div>
-                            <div class="form-group">
-                                <label for="textArea" class="float-right">متن پیام:</label>
-                                <textarea class="form-control input_bg" id="textArea" rows="4"></textarea>
+                <div class="col-12 col-xl-6 p-0">
+                    <div class="main_field_of_contact_us_right_col">
+
+                        <div id="main_box_content" class="pos_custom_content">
+
+                            <div>
+                                <h1 class="field_of_header_text_contact">
+                                    melorin
+                                </h1>
                             </div>
 
-                            <input type="submit" class="btn btn_style_of_contact_us" value="ثبت اطلاعات">
-                        </form>
+                            <div>
+                                <p class="small_of_contact">
+                                    <span>098-902 1414 866 / </span>
+                                    <span> info@melorin.com</span>
+                                </p>
+                            </div>
+
+                            <div class="addres_field_contact">
+                                <p>
+                                    خیابان جمهوری ، خیابان سی تیر ، بالا تز از کوچه سرهنگ سخایی
+                                </p>
+                            </div>
+
+                            <div class="field_of_btn_of_contact_us">
+                                <div class="btn_of_contact_us" onclick="fadeOut()">
+                                    سوالی داری ؟ کلیک کن
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            salam
+                        </div>
+
                     </div>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-10 offset-1">
-
                 </div>
             </div>
         </div>
