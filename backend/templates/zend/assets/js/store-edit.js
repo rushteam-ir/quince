@@ -105,7 +105,7 @@ $(document).ready(function () {
     let d = {"id": $('#product-id').attr('value') };
         $.get(`${backend_url}store/features`, d, function (data) {
 
-        for(let i = 0; i < data.length; i++){
+        for(let i = 1; i < data.length; i++){
 
             let fieldHTML2 = '<div class="col-6 p-0"><input class="form-control width_inp_customize" name="product_features_inp[]" type="text" value='+data[i]+'><a href="javascript:void(0);" class="remove_button"><i class="fas fa-minus mt-2"></i></a></div>';
 
