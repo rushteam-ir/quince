@@ -21,9 +21,6 @@
             </div>
 
             <div id="admin_pro_edit">
-                <p class="admin_profile_profile">
-                    تنظیمات پروفایل کاربری
-                </p>
 
                 {@alertError key="empty-input" msg="لطفا تمام ورودی ها را وارد کنید"}{/alertError}
                 {@alertError key="invalid-input" msg="ورودی های وارد شده نا معتبر می باشند"}{/alertError}
@@ -108,10 +105,6 @@
             </div>
 
             <div id="admin_change_pass">
-
-                <p class="admin_profile_profile">
-                    عوض کردن رمز عبور
-                </p>
 
                 {@alertError key="incorrect-input" msg="رمز فعلی اشتباه است و یا رمز جدید و تکرار آن مشابه نیستند"}{/alertError}
                 {@alertSuccess key="edit-success" msg="مشخصات پروفایل شما با موفقیت ثبت شد"}{/alertSuccess}

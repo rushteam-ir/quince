@@ -37,11 +37,12 @@
             <button class="notification_btn_navbar" id="salam" onclick="notifDropDown()">
                 <i class="fa fa-bell d-inline-block notification_bell_of_navbar"></i>
             </button>
-
-            <button class="notification_btn_navbar">
-                <i class="fa fa-envelope d-inline-block notification_envelope_of_navbar"></i>
-            </button>
-
+            <a href="{backend_url}messages">
+                <button class="notification_btn_navbar">
+                    <i class="fa fa-envelope d-inline-block notification_envelope_of_navbar"></i>
+                    <div class="red_dot"></div>
+                </button>
+            </a>
             <div id="notif_drd_id" class="main_field_of_notif_dropdown">
 
                 <div class="row">

@@ -1,10 +1,9 @@
 .main_filed_of_store_list {
     width: 76%;
-    background-color: #FFFFFF;
-    margin-top: 90px;
+    margin-top: 100px;
     margin-bottom: 30px;
     margin-left: 3.5%;
-    padding: 30px 30px 50px 30px;
+    padding: 20px 20px;
     direction: rtl;
     text-align: right;
 }
@@ -12,9 +11,12 @@
 .store_list_title {
     font-size: 1.5rem;
     font-weight: bold;
-    border-right: 5px solid #66D787;
+    margin-bottom: 15px;
+    border-right: 5px solid #E13A58;
     padding-right: 18px;
-    margin-right: -14px;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
 }
 
 .blog-card {
@@ -24,7 +26,7 @@
     -webkit-box-direction: normal;
     flex-direction: column;
     margin: 1rem auto;
-    box-shadow: 0 0px 15px -0px rgb(190, 190, 190);
+    box-shadow: 0 0px 15px -8px rgb(190, 190, 190);
     margin-bottom: 1.6%;
     background: #fff;
     line-height: 1.4;
@@ -145,7 +147,7 @@
     color: #5AD67D;
     font-family: main-font;
     position: absolute;
-    bottom: 15px;
+    bottom: 10px;
     left: 15px;
 }
 
@@ -293,20 +295,19 @@
     font-weight: bold;
 }
 
-.hr_custom{
-    margin-top: 0.3rem !important;
-    margin-bottom: 0.3rem !important;
-
+.hr_custom {
+    margin: 0px !important;
 }
 
-.dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active,
+.dropdown-item:active {
     color: #000000;
     font-weight: bold;
     background-color: #F8F9FA;
 }
 
-.modal_hr_custom{
-    margin-top: 30px !important ;
+.modal_hr_custom {
+    margin-top: 30px !important;
     margin-bottom: 30px !important;
     border: 0;
     height: 0;
@@ -314,7 +315,8 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.product_status , .product_del{
+.product_status,
+.product_del {
     cursor: pointer;
 }
 
@@ -357,6 +359,16 @@
     color: #272B2F;
     background-color: #ffffff;
     border-color: #CED4DA;
+}
+
+.dropdown-item {
+    padding: 0px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.dropdown-menu {
+    padding: 0px;
 }
 
 @media (min-width: 640px) {

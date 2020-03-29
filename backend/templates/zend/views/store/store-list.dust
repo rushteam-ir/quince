@@ -16,27 +16,15 @@
                 لیست محصولات
             </p>
 
-
-
             {@alertSuccess key="add-success" msg="محصول جدید با موفقیت اضافه شد"}{/alertSuccess}
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <form action="">
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                  <button class="btn search_btn_of_category"  type="button"><i class="fas fa-search"></i></button>
-                                </div>
-                                <input id="store_search" type="text" class="form-control search_category_inp" placeholder="جستجو">
-                            </div>
-                        </form>
-                    </div>
-                </div>
+
+            <div class="container-fluid p-0">
+
                 <div class="row">
 
                     {?list}
                         {#list}
-                            <div class="col-12 main_box_of_product_col">
+                            <div class="col-12 main_box_of_product_col p-0">
 
                                 <div class="blog-card alt">
 
@@ -46,11 +34,7 @@
 
 
                                     <div class="description text-right">
-
-
                                         
-
-
                                         <div class="dropdown ">
                                             <button class=" dropdown-toggle edit_remove_btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <i class="fas fa-bars"></i>
@@ -97,9 +81,12 @@
                             </div>
                         {/list}
                     {:else}
+                    <div class="col-12">
                         <div class="nothing_to_see_box">
                             محصولی جهت نمایش وجود ندارد !
-                        </div>  
+                        </div> 
+                    </div>
+ 
                     {/list}
 
                 </div>

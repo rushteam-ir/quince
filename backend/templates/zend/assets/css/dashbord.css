@@ -262,3 +262,13 @@
     position: relative;
     top: -3px;
 }
+
+.red_dot{
+    width: 7px;
+    height: 7px;
+    background-color: red;
+    position: relative;
+    border-radius: 50%;
+    top: -26px;
+    left: 26px;
+}

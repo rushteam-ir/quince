@@ -1,0 +1,82 @@
+.main_field_of_messages {
+    width: 76%;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    margin-left: 3.5%;
+    padding: 20px 20px;
+    direction: rtl;
+    text-align: right;
+}
+
+.messages_title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    border-right: 5px solid #E13A58;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.profile_message_img {
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+}
+
+.message_name_field {
+    position: relative;
+    top: 13px;
+    right: 12px;
+}
+
+.main_field_of_messages_text {
+    background-color: white;
+    padding: 50px;
+}
+
+.info_txt_message {
+    line-height: 30px;
+}
+
+.more_info_of_messages {
+    position: relative;
+    color: #E13A58;
+    font-weight: bold;
+    font-family: main-font;
+    left: -922px;
+    cursor: pointer;
+}
+
+.edit_remove_btn {
+    position: absolute;
+    left: 0px;
+    top: -100px;
+    color: #E13A58;
+    background-color: transparent;
+    border: none;
+
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-item {
+    padding: 0px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.dropdown-menu {
+    padding: 0px;
+}
+
+.product_del {
+    cursor: pointer;
+}
+
+.title_of_messages {
+    font-size: 1.5rem !important;
+    font-family: main-font;
+}
