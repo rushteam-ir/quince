@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="bd36d6d7-6b5a-4a74-b20a-025da208c5c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/js/store-edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/assets/js/store-edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e7a0adf501bb615a005e5c8_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e7a0adf501bb615a005e5c8_main.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/templates/zend/views/store/store-edit.dust" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/views/store/store-edit.dust" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,25 +34,25 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="13.3.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/templates/zend/assets/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/branches" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="ts.external.directory.path" value="F:\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Programming\Node Js Projects\Zend CMS\backend\templates\zend\assets\js" />
-      <recent name="F:\Programming\Node Js Projects\Zend CMS\frontend\branches" />
-      <recent name="F:\Programming\Node Js Projects\Zend CMS\backend\templates\zend\views\store" />
-      <recent name="F:\Programming\Node Js Projects\Zend CMS\frontend\templates\melorin\views" />
-      <recent name="F:\Programming\Git projects\backend\branches" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Programming\Node Js Projects\Zend CMS\frontend\templates\melorin\assets" />
       <recent name="F:\Programming\Node Js Projects\Zend CMS\frontend\templates\melorin\views" />
       <recent name="F:\Programming\Git projects\backend\templates\zend\views" />
       <recent name="F:\Programming\Git projects\backend\templates\zend\views\store" />
       <recent name="F:\Programming\Git projects\backend\templates\zend\views\recovery" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Programming\Node Js Projects\Zend CMS\backend\branches" />
+      <recent name="F:\Programming\Node Js Projects\Zend CMS\backend\templates\zend\assets\js" />
+      <recent name="F:\Programming\Node Js Projects\Zend CMS\frontend\branches" />
+      <recent name="F:\Programming\Node Js Projects\Zend CMS\backend\templates\zend\views\store" />
+      <recent name="F:\Programming\Node Js Projects\Zend CMS\frontend\templates\melorin\views" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -167,7 +169,8 @@
       <workItem from="1585227154378" duration="6159000" />
       <workItem from="1585259377781" duration="799000" />
       <workItem from="1585386853097" duration="14734000" />
-      <workItem from="1585410964958" duration="934000" />
+      <workItem from="1585410964958" duration="1351000" />
+      <workItem from="1585477315473" duration="1407000" />
     </task>
     <servers />
   </component>

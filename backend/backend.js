@@ -100,6 +100,7 @@ const recovery = require('./branches/recovery');
 const store = require('./branches/store');
 const settings = require('./branches/settings');
 const logout = require('./branches/logout');
+const messages = require('./branches/messages');
 
 backend.use('/dashboard', dashboard);
 backend.use('/login', login);
@@ -109,6 +110,7 @@ backend.use('/recovery', recovery);
 backend.use('/store', store);
 backend.use('/settings', settings);
 backend.use('/logout', logout);
+backend.use('/messages', messages);
 
 // Backend 404 page
 backend.use(async(req,res,next)=>{
