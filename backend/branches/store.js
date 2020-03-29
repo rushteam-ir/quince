@@ -354,6 +354,16 @@ router.get('/features', async(req,res)=>{
 
 });
 
+router.get('/images', async(req,res)=>{
+
+    let product_id = req.query.id;
+    let product = await product_model.getById(product_id);
+    let product_images = product.images;
+
+    res.json(product_images);
+
+});
+
 router.get('/delete', async(req,res)=>{
 
     let product_id = backend.locals.product_form._id;

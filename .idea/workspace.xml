@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="bd36d6d7-6b5a-4a74-b20a-025da208c5c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e7a0adf501bb615a005e5c8_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e7a0adf501bb615a005e5c8_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/branches/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/branches/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/js/store-edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/assets/js/store-edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e80693211153d0f7cfe0634_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e80693211153d0f7cfe0634_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/zend/assets/media/products/5e80693211153d0f7cfe0634_main.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/templates/zend/views/store/store-edit.dust" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/zend/views/store/store-edit.dust" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,7 +172,7 @@
       <workItem from="1585259377781" duration="799000" />
       <workItem from="1585386853097" duration="14734000" />
       <workItem from="1585410964958" duration="1351000" />
-      <workItem from="1585477315473" duration="1407000" />
+      <workItem from="1585477315473" duration="2575000" />
     </task>
     <servers />
   </component>

@@ -154,6 +154,36 @@ $(document).ready(function () {
 
     let x = 1;
 
+    let d = {"id": $('#product-id').attr('value') };
+    $.get(`${backend_url}store/images`, d, function (data) {
+
+        for(let i = 2; i < data.length; i++){
+
+            if (x < maxField) {
+
+                x++;
+                let fieldHTML = '<div class="col-6 p-0 mb-3"><img src="media/products/'+ data[i] +'" height="340" width="340"><input type="file" name="product_images[]" id="product_img_main_' + x.toString() + '" class="input-file-custom"><label for="product_img_main_' + x.toString() + '" class="btn btn-tertiary js-labelFile">  <i class="icon fa fa-check"></i><span class="js-fileName mr-2">انتخاب عکس</span></label><a href="javascript:void(0);" class="remove_button_file"><i class="fas fa-minus mt-2"></i></a></div>';
+                $(wrapper).append(fieldHTML);
+                // chose file customize
+                $('.input-file-custom').each(function () {
+                    var $input = $(this),
+                        $label = $input.next('.js-labelFile'),
+                        labelVal = $label.html();
+
+                    $input.on('change', function (element) {
+                        var fileName = '';
+                        if (element.target.value) fileName = element.target.value.split('\\').pop();
+                        fileName ? $label.addClass('has-file').find('.js-fileName').html(fileName) : $label.removeClass(
+                            'has-file').html(labelVal);
+                    });
+                });
+                // end chose file custome
+            }
+
+        }
+
+    });
+
     $(addButton).click(function () {
 
         if (x < maxField) {
