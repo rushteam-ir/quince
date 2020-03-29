@@ -63,6 +63,53 @@
 
             </div>
 
+            <div class="main_field_of_messages_text mt-3">
+
+                <div class="d-inline-block">
+                    <img class="profile_message_img" src="img/question-icon.png" alt="">
+                </div>
+
+                <div class="d-inline-block message_name_field">
+                    <p class="font-weight-bold mb-0">کسری حبیب بیگی</p>
+                    <small>2 روز پیش</small>
+                </div>
+
+                <div class="dropdown ">
+                    <button class=" dropdown-toggle edit_remove_btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+
+                    <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item product_del ">پروفایل</a>
+                        <hr class="m-0">
+                        <a class="dropdown-item product_del">حذف</a>
+                    </div>
+                    
+                </div>
+
+                <div>
+
+                    <p class="d-inline-block mt-3">ایمیل : kasrahabibbeygi@gmail.com</p>
+                    <p class="d-inline-block mr-5">شماره تلفن : 866 1414 0902  </p>
+
+                    <h3 class="title_of_messages">قدردانی از سایت خوبتون</h3>
+                    
+                    <p class="text-justify mt-3 info_txt_message">
+                        لپ تاپ UX433FA یکی از باریک ترین لپ تاپ های زنبوک پرو شرکت تایوانی ایسوس می باشد که در سال 2019
+                        رونمایی شد و یکی از ظریف ترین و سبک ترین لپ تاپ های 14 اینچی حال حاضر بازار می باشد که دارای
+                        کارت گرافیک مجزا می باشد. این لپ تاپ با الهام از لپ تاپ های UX391 و UX480 ساخته شده و از فناوری
+                        منحصر به فرد ایسوس که Num. Pad صفحه کلید را بر روی تاچ پد نمایش می دهد بهره می برد. ضخامت این
+                        دستگاه کمتر از 16میلی متر و وزن دستگاه تنها 1.09کیلوگرم می باشد که اعدادی فوق العاده برای یک لپ
+                        تاپ 14 اینچی بالارده محسوب می شوند و این لپ تاپ را به گزینه ای بسیار مناسب برای کسانی که حمل و
+                        نقل زیادی با دستگاه خود دارند بدل کرده است.
+                    </p>
+
+
+
+                </div>
+
+            </div>
+
 
             </div>
 
