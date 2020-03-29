@@ -86,7 +86,7 @@
                                             </p>
                                         </div>
 
-                                            <button onclick="calculatePoints({.points})" type="button" class="btn btn_of_show_more_product line_clamp" data-toggle="modal" data-target="#exampleModal_{.row}">
+                                            <button name="{.points}" value="{.row}" type="button" class="btn btn_of_show_more_product line_clamp" data-toggle="modal" data-target="#exampleModal_{.row}">
                                                 اطلاعات بیشتر
                                                 <i class="fas fa-angle-left left_angle_arrow_of_more_info"></i>
                                             </button>   
@@ -149,12 +149,12 @@
         
                                             </div>
 
-                                            <div class="star_color_custme d-inline-block star">
-                                                <i id="star_1" class="far fa-star"></i>
-                                                <i id="star_2" class="far fa-star"></i>
-                                                <i id="star_3" class="far fa-star"></i>
-                                                <i id="star_4" class="far fa-star"></i>
-                                                <i id="star_5" class="far fa-star"></i>
+                                            <div class="star_color_custme d-inline-block star" >
+                                                <i id="star_1_{.row}" class="far fa-star"></i>
+                                                <i id="star_2_{.row}" class="far fa-star"></i>
+                                                <i id="star_3_{.row}" class="far fa-star"></i>
+                                                <i id="star_4_{.row}" class="far fa-star"></i>
+                                                <i id="star_5_{.row}" class="far fa-star"></i>
                                             </div>
                                             <span class="d-inline-block">
                                                 (10/{.points})

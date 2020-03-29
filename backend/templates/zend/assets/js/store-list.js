@@ -91,86 +91,87 @@ function redirect(url) {
   });
 
 
-function calculatePoints(points){
+$('.btn_of_show_more_product').on('click', function (e) {
 
-        let round_points = Math.round(parseInt(points));
+        let round_points = Math.round(parseInt($(e.currentTarget).attr('name')));
+        let row = $(e.currentTarget).attr('value');
 
         if(round_points == 0){
-            $("#star_1").removeAttr('class').attr('class', 'far fa-star');
-            $("#star_2").removeAttr('class').attr('class', 'far fa-star');
-            $("#star_3").removeAttr('class').attr('class', 'far fa-star');
-            $("#star_4").removeAttr('class').attr('class', 'far fa-star');
-            $("#star_5").removeAttr('class').attr('class', 'far fa-star');
+            $("#star_1_"+row).removeAttr('class').attr('class', 'far fa-star');
+            $("#star_2_"+row).removeAttr('class').attr('class', 'far fa-star');
+            $("#star_3_"+row).removeAttr('class').attr('class', 'far fa-star');
+            $("#star_4_"+row).removeAttr('class').attr('class', 'far fa-star');
+            $("#star_5_"+row).removeAttr('class').attr('class', 'far fa-star');
         }
         else if(round_points == 1){
-            $("#star_1").removeAttr('class').attr('class', 'fas fa-star-half-alt half_star_custome');
-            $("#star_2").removeAttr('class').attr('class', 'far fa-star');
-            $("#star_3").removeAttr('class').attr('class', 'far fa-star');
-            $("#star_4").removeAttr('class').attr('class', 'far fa-star');
-            $("#star_5").removeAttr('class').attr('class', 'far fa-star');
+            $("#star_1_"+row).removeAttr('class').attr('class', 'fas fa-star-half-alt half_star_custome');
+            $("#star_2_"+row).removeAttr('class').attr('class', 'far fa-star');
+            $("#star_3_"+row).removeAttr('class').attr('class', 'far fa-star');
+            $("#star_4_"+row).removeAttr('class').attr('class', 'far fa-star');
+            $("#star_5_"+row).removeAttr('class').attr('class', 'far fa-star');
         }
         else if(round_points == 2){
-            $("#star_1").removeAttr('class').attr('class', 'fas fa-star');
-            $("#star_2").removeAttr('class').attr('class', 'far fa-star');
-            $("#star_3").removeAttr('class').attr('class', 'far fa-star');
-            $("#star_4").removeAttr('class').attr('class', 'far fa-star');
-            $("#star_5").removeAttr('class').attr('class', 'far fa-star');
+            $("#star_1_"+row).removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_2_"+row).removeAttr('class').attr('class', 'far fa-star');
+            $("#star_3_"+row).removeAttr('class').attr('class', 'far fa-star');
+            $("#star_4_"+row).removeAttr('class').attr('class', 'far fa-star');
+            $("#star_5_"+row).removeAttr('class').attr('class', 'far fa-star');
         }
         else if(round_points == 3){
-            $("#star_1").removeAttr('class').attr('class', 'fas fa-star');
-            $("#star_2").removeAttr('class').attr('class', 'fas fa-star-half-alt half_star_custome');
-            $("#star_3").removeAttr('class').attr('class', 'far fa-star');
-            $("#star_4").removeAttr('class').attr('class', 'far fa-star');
-            $("#star_5").removeAttr('class').attr('class', 'far fa-star');
+            $("#star_1_"+row).removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_2_"+row).removeAttr('class').attr('class', 'fas fa-star-half-alt half_star_custome');
+            $("#star_3_"+row).removeAttr('class').attr('class', 'far fa-star');
+            $("#star_4_"+row).removeAttr('class').attr('class', 'far fa-star');
+            $("#star_5_"+row).removeAttr('class').attr('class', 'far fa-star');
         }
         else if(round_points == 4){
-            $("#star_1").removeAttr('class').attr('class', 'fas fa-star');
-            $("#star_2").removeAttr('class').attr('class', 'fas fa-star');
-            $("#star_3").removeAttr('class').attr('class', 'far fa-star');
-            $("#star_4").removeAttr('class').attr('class', 'far fa-star');
-            $("#star_5").removeAttr('class').attr('class', 'far fa-star');
+            $("#star_1_"+row).removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_2_"+row).removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_3_"+row).removeAttr('class').attr('class', 'far fa-star');
+            $("#star_4_"+row).removeAttr('class').attr('class', 'far fa-star');
+            $("#star_5_"+row).removeAttr('class').attr('class', 'far fa-star');
         }
         else if(round_points == 5){
-            $("#star_1").removeAttr('class').attr('class', 'fas fa-star');
-            $("#star_2").removeAttr('class').attr('class', 'fas fa-star');
-            $("#star_3").removeAttr('class').attr('class', 'fas fa-star-half-alt half_star_custome');
-            $("#star_4").removeAttr('class').attr('class', 'far fa-star');
-            $("#star_5").removeAttr('class').attr('class', 'far fa-star');
+            $("#star_1_"+row).removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_2_"+row).removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_3_"+row).removeAttr('class').attr('class', 'fas fa-star-half-alt half_star_custome');
+            $("#star_4_"+row).removeAttr('class').attr('class', 'far fa-star');
+            $("#star_5_"+row).removeAttr('class').attr('class', 'far fa-star');
         }
         else if(round_points == 6){
-            $("#star_1").removeAttr('class').attr('class', 'fas fa-star');
-            $("#star_2").removeAttr('class').attr('class', 'fas fa-star');
-            $("#star_3").removeAttr('class').attr('class', 'fas fa-star');
-            $("#star_4").removeAttr('class').attr('class', 'far fa-star');
-            $("#star_5").removeAttr('class').attr('class', 'far fa-star');
+            $("#star_1_"+row).removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_2_"+row).removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_3_"+row).removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_4_"+row).removeAttr('class').attr('class', 'far fa-star');
+            $("#star_5_"+row).removeAttr('class').attr('class', 'far fa-star');
         }
         else if(round_points == 7){
-            $("#star_1").removeAttr('class').attr('class', 'fas fa-star');
-            $("#star_2").removeAttr('class').attr('class', 'fas fa-star');
-            $("#star_3").removeAttr('class').attr('class', 'fas fa-star');
-            $("#star_4").removeAttr('class').attr('class', 'fas fa-star-half-alt half_star_custome');
-            $("#star_5").removeAttr('class').attr('class', 'far fa-star');
+            $("#star_1_"+row).removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_2_"+row).removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_3_"+row).removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_4_"+row).removeAttr('class').attr('class', 'fas fa-star-half-alt half_star_custome');
+            $("#star_5_"+row).removeAttr('class').attr('class', 'far fa-star');
         }
         else if(round_points == 8){
-            $("#star_1").removeAttr('class').attr('class', 'fas fa-star');
-            $("#star_2").removeAttr('class').attr('class', 'fas fa-star');
-            $("#star_3").removeAttr('class').attr('class', 'fas fa-star');
-            $("#star_4").removeAttr('class').attr('class', 'fas fa-star');
-            $("#star_5").removeAttr('class').attr('class', 'far fa-star');
+            $("#star_1_"+row).removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_2_"+row).removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_3_"+row).removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_4_"+row).removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_5_"+row).removeAttr('class').attr('class', 'far fa-star');
         }
         else if(round_points == 9){
-            $("#star_1").removeAttr('class').attr('class', 'fas fa-star');
-            $("#star_2").removeAttr('class').attr('class', 'fas fa-star');
-            $("#star_3").removeAttr('class').attr('class', 'fas fa-star');
-            $("#star_4").removeAttr('class').attr('class', 'fas fa-star');
-            $("#star_5").removeAttr('class').attr('class', 'fas fa-star-half-alt half_star_custome');
+            $("#star_1_"+row).removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_2_"+row).removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_3_"+row).removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_4_"+row).removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_5_"+row).removeAttr('class').attr('class', 'fas fa-star-half-alt half_star_custome');
         }
         else if(round_points == 10){
-            $("#star_1").removeAttr('class').attr('class', 'fas fa-star');
-            $("#star_2").removeAttr('class').attr('class', 'fas fa-star');
-            $("#star_3").removeAttr('class').attr('class', 'fas fa-star');
-            $("#star_4").removeAttr('class').attr('class', 'fas fa-star');
-            $("#star_5").removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_1_"+row).removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_2_"+row).removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_3_"+row).removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_4_"+row).removeAttr('class').attr('class', 'fas fa-star');
+            $("#star_5_"+row).removeAttr('class').attr('class', 'fas fa-star');
         }
 
-};
+});
