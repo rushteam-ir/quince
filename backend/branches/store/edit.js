@@ -92,9 +92,6 @@ router.post('/:id', async(req,res)=>{
             features : product_features_inp,
             last_edit : getCurrentDate(),
             author : req.session.admin_id,
-            status : true,
-            purchases : '0',
-            points : '0'
 
         };
 

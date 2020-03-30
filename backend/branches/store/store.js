@@ -74,8 +74,8 @@ const list = require('./list');
 const edit = require('./edit');
 
 router.use('/api/delete-avatar', delete_image);
-router.use('/api/get_features', get_features);
-router.use('/api/get_images', get_images);
+router.use('/api/get-features', get_features);
+router.use('/api/get-images', get_images);
 router.use('/add', add);
 router.use('/list', list);
 router.use('/edit', edit);
