@@ -103,7 +103,7 @@ $(document).ready(function () {
     let x = 1;
 
     let d = {"id": $('#product-id').attr('value') };
-        $.get(`${backend_url}store/features`, d, function (data) {
+        $.get(`${backend_url}store/api/get-features`, d, function (data) {
 
         for(let i = 1; i < data.length; i++){
 
@@ -155,7 +155,7 @@ $(document).ready(function () {
     let x = 1;
 
     let d = {"id": $('#product-id').attr('value') };
-    $.get(`${backend_url}store/images`, d, function (data) {
+    $.get(`${backend_url}store/api/get-images`, d, function (data) {
 
         for(let i = 2; i < data.length; i++){
 

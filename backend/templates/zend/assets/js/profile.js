@@ -129,7 +129,7 @@ function deleteCall() {
                 confirmButtonText: 'تایید',
             }).then((result) => {
                 if (result.value) {
-                    redirect(`${backend_url}profile/delete`);
+                    redirect(`${backend_url}profile/api/delete-avatar`);
                 }
             })
         }

@@ -135,7 +135,7 @@
 
         let d = {"id": $('#product-id').attr('value') };
 
-        $.get('{backend_url}store/features', d, function (data) {
+        $.get('{backend_url}store/api/get-features', d, function (data) {
 
             $('#first-feature').attr('value', data[0]);
 
@@ -146,7 +146,7 @@
 
         if(parent_id != ""){
             let p = {"id":parent_id};
-            $.get(`{backend_url}category/sub-category`, p, function (data) {
+            $.get(`{backend_url}category/api/get-sub-category`, p, function (data) {
 
                 $('#select-sub-category').find('option:gt(0)').remove();
                 for(let i = 0; i < data.length; i++){
@@ -175,7 +175,7 @@
             let parent_id = $(this).val();
             if(parent_id != ""){
                 let p = {"id":parent_id};
-                $.get(`{backend_url}category/sub-category`, p, function (data) {
+                $.get(`{backend_url}category/api/get-sub-category`, p, function (data) {
 
                     $('#select-sub-category').find('option:gt(0)').remove();
                     for(let i = 0; i < data.length; i++){

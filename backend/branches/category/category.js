@@ -85,13 +85,8 @@ router.post('/', async(req,res)=>{
 
 });
 
-router.get('/sub-category', async(req,res)=>{
+const get_sub_category = require('./api/get-sub-category');
 
-    let parent_id = req.query.id;
-    let sub_category = await category_model.getSub(parent_id);
-
-    res.json(sub_category);
-
-});
+router.use('/api/get-sub-category', get_sub_category);
 
 module.exports = router;

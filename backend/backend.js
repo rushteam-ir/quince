@@ -94,10 +94,10 @@ backend.get('/', async(req,res)=>{
 // Backend other routs
 const dashboard = require('./branches/dashboard');
 const login = require('./branches/login');
-const profile = require('./branches/profile');
-const category = require('./branches/category');
-const recovery = require('./branches/recovery');
-const store = require('./branches/store');
+const profile = require('./branches/profile/profile');
+const category = require('./branches/category/category');
+const recovery = require('./branches/recovery/recovery');
+const store = require('./branches/store/store');
 const settings = require('./branches/settings');
 const logout = require('./branches/logout');
 const messages = require('./branches/messages');
