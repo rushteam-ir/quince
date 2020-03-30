@@ -90,7 +90,7 @@ function redirect(url) {
       });
   });
 
-
+// star piont render
 $('.btn_of_show_more_product').on('click', function (e) {
 
         let round_points = Math.round(parseInt($(e.currentTarget).attr('name')));

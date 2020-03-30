@@ -33,6 +33,8 @@
                     </button>
 
                     <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item product_del ">ارسال نظر</a>
+                        <hr class="m-0">
                         <a class="dropdown-item product_del ">پروفایل</a>
                         <hr class="m-0">
                         <a class="dropdown-item product_del">حذف</a>
