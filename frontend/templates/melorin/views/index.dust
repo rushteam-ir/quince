@@ -4,10 +4,10 @@
     <title>ملورین</title>
 {/title}
 {<css}
-    <link rel="stylesheet" href="css/style-homePage.css">
+    <link rel="stylesheet" href="css/homePage.css">
 {/css}
 {<js}
-    <script src="js/js-homePage.js"></script>
+    <script src="js/homePage.js"></script>
 {/js}
 
 {<body}

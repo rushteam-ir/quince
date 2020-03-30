@@ -1,0 +1,13 @@
+@font-face {
+    font-family: second-font;
+    src: url("../font/Vazir-Thin.ttf");
+}
+
+@font-face {
+    font-family: main-font;
+    src: url("../font/Vazir.ttf");
+}
+
+body {
+    font-family: main-font;
+}

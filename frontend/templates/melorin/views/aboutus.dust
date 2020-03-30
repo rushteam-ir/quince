@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/about-us.css">
 {/css}
 {<js}
-    <script src="js/js-about-us.js"></script>
+    <script src="js/about-us.js"></script>
 {/js}
 
 
