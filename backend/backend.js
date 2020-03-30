@@ -100,7 +100,7 @@ const recovery = require('./branches/recovery/recovery');
 const store = require('./branches/store/store');
 const settings = require('./branches/settings');
 const logout = require('./branches/logout');
-const messages = require('./branches/messages');
+const messages = require('./branches/messages/messages');
 
 backend.use('/dashboard', dashboard);
 backend.use('/login', login);
