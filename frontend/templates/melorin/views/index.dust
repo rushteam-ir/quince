@@ -4,13 +4,74 @@
     <title>ملورین</title>
 {/title}
 {<css}
-    <link rel="stylesheet" href="css/homePage.css">
+    <link rel="stylesheet" href="css/index.css">
 {/css}
 {<js}
-    <script src="js/homePage.js"></script>
+    <script src="js/index.js"></script>
 {/js}
 
 {<body}
+
+    <section>
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="background_of_header">
+
+                            <div class="row m-0">
+                                <div class="col-12">
+                                    <div class="text-box-center-header text-center" dir="rtl">
+                                        <h1 class="style_header_h1_design">
+                                            طراحی خودت را داشته باش!
+                                        </h1>
+                                        <p> ما با دریافت تصویر محصول مورد نظر شما آن را برایتان تولید میکنیم.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row mx-0 free_space_from_top_style">
+                                <div class="col-5">
+                                    <div class="left_box_manage_site text-left">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <i class="fas fa-user"></i>
+                                        <button class="fa fa-search style_btn_search openBtn"
+                                            onclick="openSearch()"></button>
+                                    </div>
+                                </div>
+                                <div class="col-2 a">
+                                    <div class="arrow_of_down_link">
+                                        <a href="#"> <i class="fa fa-chevron-down arrow_of_down_link_i"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="right_box_social_media text-right">
+                                        <i class="fab fa-instagram"></i>
+                                        <i class="fab fa-facebook-f"></i>
+                                        <i class="fab fa-telegram-plane"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- search modal form-->
+                        <div id="myOverlay" class="overlay">
+                            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                            <div class="overlay-content">
+                                <form action="/action_page.php">
+                                    <input type="text" placeholder="جستجو کنید..." dir="rtl"
+                                        class="border_radius_left_bottom text-right" name="search">
+                                    <button type="submit" class="border_radius_top_right"><i class="fa fa-search "></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+
     <section>
         <div class="row mr-0">
             <div class="col-10 offset-1">
