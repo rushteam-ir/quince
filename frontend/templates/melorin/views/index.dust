@@ -9,13 +9,14 @@
 {/css}
 {<js}
     <script src="js/index.js"></script>
-    <script src="js/jquery.particleground.js"></script>
+    <script src="js/particleground.js"></script>
 {/js}
 
 {<body}
 
     <section>
-        <header id="particles">
+        <header>
+            <div id="particle_ground_custom"></div>
             <div class="container-fluid" >
                 <div class="row">
                     <div class="col-12 p-0">

@@ -141,7 +141,11 @@
     background: #bbb;
 }
 
-
+#particle_ground_custom{
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+}
 /*End Header Style*/
 
 /*New Product & Best Product*/
