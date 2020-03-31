@@ -84,8 +84,9 @@
 
 
                        
-                        <div class="form-group">
-                            <label for="product_img">تصویر اصلی محصول:</label>
+                    <div class="form-group">
+                        <label for="product_img">تصویر اصلی محصول:</label>
+
                             <div class="field_of_img_template">
                                 <div class="row mb-5 mt-3 row_of_img_custom">
 
@@ -100,6 +101,13 @@
                                                 </label>
                                             </div>
 
+                                            <div>
+
+                                                <img class="uploading_img_from_brows" src="img/482969.jpg" alt="">
+                                                <div class="remove_img_icon"></div>
+        
+                                            </div>
+                                            
                                         </div>
                                     </div>
 
@@ -125,6 +133,13 @@
                                                   <i class="icon fa fa-check"></i>
                                                   <span class="js-fileName mr-2">انتخاب عکس</span>
                                                 </label>
+                                            </div>
+
+                                            <div>
+
+                                                <img class="uploading_img_from_brows" src="img/unnamed (1).jpg" alt="">
+                                                <div class="remove_img_icon"></div>
+        
                                             </div>
 
                                         </div>

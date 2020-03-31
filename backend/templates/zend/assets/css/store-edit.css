@@ -99,11 +99,11 @@
     color: #5AAC7B;
 }
 
-.field_wrapper_file{
+.field_wrapper_file {
     width: 106%;
 }
 
-.alert_popup_circl{
+.alert_popup_circl {
     color: #ffda64;
     font-size: 1.2rem;
     position: relative;
@@ -112,30 +112,30 @@
     cursor: pointer;
 }
 
-.alert_popup_circl_btn_class{
+.alert_popup_circl_btn_class {
     background-color: transparent;
     box-shadow: none;
     border: none;
 }
 
-.span_sale_addon{
+.span_sale_addon {
     background-color: #ffffff00;
     border-left: none;
     border-radius: 0px .25rem .25rem 0px !important;
-    padding-left: 0px; 
+    padding-left: 0px;
 }
 
-.sale_inp_custome{
+.sale_inp_custome {
     border-right: none;
     border-radius: .25rem 0px 0px .25rem !important;
 }
 
-.box_of_img_template{
+.box_of_img_template {
     width: 100%;
     height: 220px;
     border-radius: 6px;
     background-color: whitesmoke;
-    overflow: hidden;   
+    overflow: hidden;
 }
 
 .btn-tertiary2 {
@@ -148,8 +148,43 @@
     height: 100%;
     border-radius: 7px;
 }
+
 .btn-tertiary2:hover,
 .btn-tertiary2:focus {
     color: #888888;
     border-color: #888888;
+}
+
+.uploading_img_from_brows {
+    width: 95%;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.remove_img_icon {
+    width: 40px;
+    height: 40px;
+    background-color: #5D78FF;
+    position: absolute;
+    z-index: 10000;
+    top: 0px;
+    border-radius: 0px 6px 0px 5px;
+}
+
+.remove_img_icon::before,
+.remove_img_icon::after {
+    content: "";
+    width: 1.5px;
+    height: 21px;
+    background-color: #CFD7FF;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 18px;
+    top: 9px;
+}
+
+.remove_img_icon::after {
+    transform: rotate(-45deg);
 }

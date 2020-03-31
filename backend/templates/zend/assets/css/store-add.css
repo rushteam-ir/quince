@@ -154,3 +154,37 @@
     color: #888888;
     border-color: #888888;
 }
+
+.uploading_img_from_brows {
+    width: 95%;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.remove_img_icon {
+    width: 40px;
+    height: 40px;
+    background-color: #5D78FF;
+    position: absolute;
+    z-index: 10000;
+    top: 0px;
+    border-radius: 0px 6px 0px 5px;
+}
+
+.remove_img_icon::before,
+.remove_img_icon::after {
+    content: "";
+    width: 1.5px;
+    height: 21px;
+    background-color: #CFD7FF;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 18px;
+    top: 9px;
+}
+
+.remove_img_icon::after {
+    transform: rotate(-45deg);
+}
