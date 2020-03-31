@@ -136,7 +136,7 @@ function readURL(input) {
 
         let reader = new FileReader();
         let wrapper = $('.product-img-main-show');
-        let fieldHTML = '<img id="product-img-main" class="uploading_img_from_brows" src="#" alt=""><div class="remove_img_icon" onclick="removeImg()"></div>'
+        let fieldHTML = '<div id="kasra"><img id="product-img-main" class="uploading_img_from_brows" src="#" alt=""><div class="remove_img_icon" onclick="removeImg()"></div></div>'
 
         reader.onload = function (e) {
 
