@@ -156,7 +156,7 @@ function readURL(input) {
 
         let reader = new FileReader();
         let wrapper = $('.product-img-main-show');
-        let fieldHTML = '<div id="kasra"><img id="product-img-main" class="uploading_img_from_brows" src="#" alt=""><div class="remove_img_icon" onclick="removeImg()"></div></div>'
+        let fieldHTML = '<div id="product-main-img-show"><img id="product-img-main" class="uploading_img_from_brows" src="#" alt=""><div class="remove_img_icon" onclick="removeImg()"></div></div>'
 
         reader.onload = function (e) {
 
@@ -172,9 +172,8 @@ function readURL(input) {
 
 function removeImg(){
 
-    var kasra = document.getElementById('kasra');
-    kasra.parentNode.removeChild(kasra);
-     
+    let this_id = document.getElementById('product-main-img-show');
+    this_id.parentNode.removeChild(this_id);
     
 }
 
