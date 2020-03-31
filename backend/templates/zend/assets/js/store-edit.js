@@ -175,7 +175,7 @@ $(document).ready(function () {
                         if (element.target.value) fileName = element.target.value.split('\\').pop();
                         fileName ? $label.addClass('has-file').find('.js-fileName').html(fileName) : $label.removeClass(
                             'has-file').html(labelVal);
-                    });
+                        });
                 });
                 // end chose file custome
             }
