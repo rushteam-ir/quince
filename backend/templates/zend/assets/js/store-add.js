@@ -10,6 +10,7 @@ function storeAddError() {
     let discount_inp = document.forms['store_add_form']['discount_inp'].value;
     let product_main_image = document.forms['store_add_form']['product_main_image'].value;
 
+
     if (title_inp === "") {
 
         error_text.style.display = "block";
@@ -123,6 +124,25 @@ $(document).ready(function () {
 
 });
 
+
+// chose file customize
+(function () {
+
+    $('.input-file-custom').each(function () {
+        var $input = $(this),
+            $label = $input.next('.js-labelFile'),
+            labelVal = $label.html();
+
+        $input.on('change', function (element) {
+            var fileName = '';
+            if (element.target.value) fileName = element.target.value.split('\\').pop();
+            fileName ? $label.addClass('has-file').find('.js-fileName').html(fileName) : $label.removeClass(
+                'has-file').html(labelVal);
+        });
+    });
+
+})();
+
 // pop over function
 
 $(function () {
@@ -153,6 +173,9 @@ function readURL(input) {
 function removeImg(){
 
     var kasra = document.getElementById('kasra');
-    kasra.parentNode.removeChild(kasra); 
+    kasra.parentNode.removeChild(kasra);
+     
     
 }
+
+
