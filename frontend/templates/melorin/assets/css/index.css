@@ -145,6 +145,7 @@
     width: 100%;
     position: absolute;
     z-index: 1000;
+    background-color: rgba(254, 255, 223,0.25);
 }
 
 .pg-canvas{
