@@ -1,0 +1,68 @@
+{>"layouts/dashboard-layout"/}
+
+{<css} 
+    <link rel="stylesheet" href="css/messages-show.css">
+{/css}
+{<js} 
+    <script src="js/messages-show.js"></script>
+{/js}
+
+{<body} 
+<div class="main_field_of_messages">
+
+
+    <p class="messages_title">
+        ارسال نظر 
+    </p>
+
+
+
+    <div class="main_field_of_messages_text mt-3">
+
+        <div class="d-inline-block">
+            <img class="profile_message_img" src="img/sexy.jpg" alt="">
+        </div>
+
+        <div class="d-inline-block message_name_field">
+            <p class="font-weight-bold mb-0">کسری حبیب بیگی</p>
+            <small>2 روز پیش</small>
+        </div>
+
+        <div>
+
+            <p class="d-inline-block mt-3">ایمیل : kasrahabibbeygi@gmail.com</p>
+            <p class="d-inline-block mr-5">شماره تلفن : 866 1414 0902  </p>
+
+            <h3 class="title_of_messages">قدردانی از سایت خوبتون</h3>
+            
+            <p class="text-justify mt-3 info_txt_message">
+                لپ تاپ UX433FA یکی از باریک ترین لپ تاپ های زنبوک پرو شرکت تایوانی ایسوس می باشد که در سال 2019
+                رونمایی شد و یکی از ظریف ترین و سبک ترین لپ تاپ های 14 اینچی حال حاضر بازار می باشد که دارای
+                کارت گرافیک مجزا می باشد. این لپ تاپ با الهام از لپ تاپ های UX391 و UX480 ساخته شده و از فناوری
+                منحصر به فرد ایسوس که Num. Pad صفحه کلید را بر روی تاچ پد نمایش می دهد بهره می برد. ضخامت این
+                دستگاه کمتر از 16میلی متر و وزن دستگاه تنها 1.09کیلوگرم می باشد که اعدادی فوق العاده برای یک لپ
+                تاپ 14 اینچی بالارده محسوب می شوند و این لپ تاپ را به گزینه ای بسیار مناسب برای کسانی که حمل و
+                نقل زیادی با دستگاه خود دارند بدل کرده است.
+            </p>
+
+
+
+        </div>
+
+        <form autocomplete="off">
+            <div class="form-group">
+              <label for="title">عنوان</label>
+              <input type="text" class="form-control" id="title">
+            </div>
+            <div class="form-group">
+                <label for="answer">توضیحات</label>
+                <textarea class="form-control" id="answer" rows="3"></textarea>
+              </div>
+            <button type="submit" class="btn btn-primary Send_answear_btn">ارسال</button>
+          </form>
+
+    </div>
+
+    </div>
+
+{/body}
