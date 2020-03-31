@@ -123,75 +123,29 @@ $(document).ready(function () {
 
 });
 
-
-
-
-// file add & remove
-
-$(document).ready(function () {
-
-    let maxField = 6;
-    let addButton = $('.file_add_button');
-    let wrapper = $('.field_wrapper_file');
-
-    let x = 1;
-
-    $(addButton).click(function () {
-
-        if (x < maxField) {
-
-            x++;
-            let fieldHTML = '<div class="col-6 p-0 mb-3"><input type="file" name="product_images[]" id="product_img_main_' + x.toString() + '" class="input-file-custom"><label for="product_img_main_' + x.toString() + '" class="btn btn-tertiary js-labelFile">  <i class="icon fa fa-check"></i><span class="js-fileName mr-2">انتخاب عکس</span></label><a href="javascript:void(0);" class="remove_button_file"><i class="fas fa-minus mt-2"></i></a></div>';
-            $(wrapper).append(fieldHTML);
-            // chose file customize
-            $('.input-file-custom').each(function () {
-                var $input = $(this),
-                    $label = $input.next('.js-labelFile'),
-                    labelVal = $label.html();
-
-                $input.on('change', function (element) {
-                    var fileName = '';
-                    if (element.target.value) fileName = element.target.value.split('\\').pop();
-                    fileName ? $label.addClass('has-file').find('.js-fileName').html(fileName) : $label.removeClass(
-                        'has-file').html(labelVal);
-                });
-            });
-            // end chose file custome
-        }
-
-    });
-
-    $(wrapper).on('click', '.remove_button_file', function (e) {
-
-        e.preventDefault();
-        $(this).parent('div').remove();
-        x--;
-
-    });
-
-});
-
-
-// chose file customize
-(function () {
-
-    $('.input-file-custom').each(function () {
-        var $input = $(this),
-            $label = $input.next('.js-labelFile'),
-            labelVal = $label.html();
-
-        $input.on('change', function (element) {
-            var fileName = '';
-            if (element.target.value) fileName = element.target.value.split('\\').pop();
-            fileName ? $label.addClass('has-file').find('.js-fileName').html(fileName) : $label.removeClass(
-                'has-file').html(labelVal);
-        });
-    });
-
-})();
-
 // pop over function
 
 $(function () {
     $('[data-toggle="popover"]').popover()
 })
+
+// Uploaded file show
+function readURL(input) {
+
+    if (input.files && input.files[0]) {
+
+        let reader = new FileReader();
+        let wrapper = $('.product-img-main-show');
+        let fieldHTML = '<img id="product-img-main" class="uploading_img_from_brows" src="#" alt=""><div class="remove_img_icon"></div>'
+
+        reader.onload = function (e) {
+
+            $(wrapper).append(fieldHTML);
+            $('#product-img-main').attr('src', e.target.result);
+
+        };
+
+        reader.readAsDataURL(input.files[0]);
+
+    }
+}

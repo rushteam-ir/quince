@@ -94,18 +94,15 @@
                                         <div class="box_of_img_template ">
 
                                             <div class="box_of_img_template ">
-                                                <input type="file" name="product_images[]" id="product_img_main" class="input-file-custom ">
+                                                <input onchange="readURL(this)" type="file" name="product_images[]" id="product_img_main" class="input-file-custom ">
                                                 <label for="product_img_main" class="btn btn-tertiary2 js-labelFile ">
                                                   <i class="icon fa fa-check"></i>
                                                   <span class="js-fileName mr-2">انتخاب عکس</span>
                                                 </label>
                                             </div>
 
-                                            <div>
+                                            <div class="product-img-main-show">
 
-                                                <img class="uploading_img_from_brows" src="img/482969.jpg" alt="">
-                                                <div class="remove_img_icon"></div>
-        
                                             </div>
                                             
                                         </div>
@@ -137,7 +134,7 @@
 
                                             <div>
 
-                                                <img class="uploading_img_from_brows" src="img/unnamed (1).jpg" alt="">
+                                                <img class="uploading_img_from_brows" src="#" alt="">
                                                 <div class="remove_img_icon"></div>
         
                                             </div>
@@ -159,6 +156,13 @@
 
 <script>
     $(document).ready(function () {
+
+        // remove image button
+        $('.remove_img_icon').click(function () {
+
+            alert('hi')
+
+        });
 
         $('#select-category').change(function () {
 
