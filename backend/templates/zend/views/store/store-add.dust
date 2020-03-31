@@ -98,19 +98,101 @@
 
 
                         <div class="form-group">
-                            <div class="field_wrapper_file row">
-                                <div class="col-6 p-0 mb-3">
+                            
+                            <div class="field_of_img_template">
+                                <div class="row mb-5 mt-3 row_of_img_custom">
+                                    <div class="col-4 pr-0">
+                                        <div class="box_of_img_template ">
 
-                                    <input type="file" name="product_images[]" id="product_img_main" class="input-file-custom">
-                                    <label for="product_img_main" class="btn btn-tertiary js-labelFile">
-                                      <i class="icon fa fa-check"></i>
-                                      <span class="js-fileName mr-2">انتخاب عکس</span>
-                                    </label>
-                                    <a href="javascript:void(0);" class="file_add_button" title="Add field"><i class="fas fa-plus mt-2"></i></a>
+                                            <div class="box_of_img_template ">
+                                                <input type="file" name="product_images[]" id="product_img_main" class="input-file-custom ">
+                                                <label for="product_img_main" class="btn btn-tertiary2 js-labelFile ">
+                                                  <i class="icon fa fa-check"></i>
+                                                  <span class="js-fileName mr-2">انتخاب عکس</span>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4 pr-0">
+                                        <div class="box_of_img_template ">
+
+                                            <div class="box_of_img_template ">
+                                                <input type="file" name="product_images[]" id="product_img_main" class="input-file-custom ">
+                                                <label for="product_img_main" class="btn btn-tertiary2 js-labelFile ">
+                                                  <i class="icon fa fa-check"></i>
+                                                  <span class="js-fileName mr-2">انتخاب عکس</span>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4 pr-0 pl-0">
+                                        <div class="box_of_img_template ">
+
+                                            <div class="box_of_img_template ">
+                                                <input type="file" name="product_images[]" id="product_img_main" class="input-file-custom ">
+                                                <label for="product_img_main" class="btn btn-tertiary2 js-labelFile ">
+                                                  <i class="icon fa fa-check"></i>
+                                                  <span class="js-fileName mr-2">انتخاب عکس</span>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
 
                                 </div>
+                                
+
+                                <div class="row mb-5 mt-3 row_of_img_custom">
+
+                                    <div class="col-4 pr-0">
+                                        <div class="box_of_img_template ">
+
+                                            <div class="box_of_img_template ">
+                                                <input type="file" name="product_images[]" id="product_img_main" class="input-file-custom ">
+                                                <label for="product_img_main" class="btn btn-tertiary2 js-labelFile ">
+                                                  <i class="icon fa fa-check"></i>
+                                                  <span class="js-fileName mr-2">انتخاب عکس</span>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4 pr-0">
+                                        <div class="box_of_img_template ">
+
+                                            <div class="box_of_img_template ">
+                                                <input type="file" name="product_images[]" id="product_img_main" class="input-file-custom ">
+                                                <label for="product_img_main" class="btn btn-tertiary2 js-labelFile ">
+                                                  <i class="icon fa fa-check"></i>
+                                                  <span class="js-fileName mr-2">انتخاب عکس</span>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4 pr-0 pl-0">
+                                        <div class="box_of_img_template ">
+
+                                            <div class="box_of_img_template ">
+                                                <input type="file" name="product_images[]" id="product_img_main" class="input-file-custom ">
+                                                <label for="product_img_main" class="btn btn-tertiary2 js-labelFile ">
+                                                  <i class="icon fa fa-check"></i>
+                                                  <span class="js-fileName mr-2">انتخاب عکس</span>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
                             </div>
-                        </div>
 
 
                     </div>
