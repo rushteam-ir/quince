@@ -171,6 +171,7 @@
     z-index: 50;
     top: 0px;
     border-radius: 0px 6px 0px 5px;
+    cursor: pointer;
 }
 
 .remove_img_icon::before,
