@@ -136,7 +136,7 @@ function readURL(input) {
 
         let reader = new FileReader();
         let wrapper = $('.product-img-main-show');
-        let fieldHTML = '<img id="product-img-main" class="uploading_img_from_brows" src="#" alt=""><div class="remove_img_icon" onclick="dalam()"></div>'
+        let fieldHTML = '<img id="product-img-main" class="uploading_img_from_brows" src="#" alt=""><div class="remove_img_icon" onclick="removeImg()"></div>'
 
         reader.onload = function (e) {
 
@@ -150,3 +150,8 @@ function readURL(input) {
     }
 }
 
+function removeImg(){
+
+    this.parentNode.removeChild(this);
+
+}

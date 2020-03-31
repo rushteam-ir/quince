@@ -160,13 +160,6 @@
 <script>
     $(document).ready(function () {
 
-        // remove image button
-        $('.remove_img_icon').click(function () {
-
-            alert('hi')
-
-        });
-
         $('#select-category').change(function () {
 
             let parent_id = $(this).val();
@@ -191,11 +184,5 @@
             }
         })
     });
-
-    function dalam(){
-
-        alert('hi');
-        
-    }
 
 </script>
