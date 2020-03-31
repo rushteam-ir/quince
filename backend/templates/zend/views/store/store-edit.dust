@@ -86,25 +86,35 @@
                     </div>
                 </div>
 
-                    <div class="form-group">
-                        <label for="product_img">تصویر اصلی محصول:</label>
-                            <br>
-                            <img src="media/products/{product_form.images[0]}" height="340" width="340">
-                            <input type="file" name="product_main_image" id="product_img" class="input-file-custom">
-                            <label for="product_img" class="btn btn-tertiary js-labelFile">
-                                <i class="icon fa fa-check"></i>
-                                <span class="js-fileName mr-2">انتخاب عکس</span>
-                            </label>
-                            <small class="form-text text-muted">این تصویر به عنوان تصویر اصلی برای معرفی محصول در سایت نشان داده می شود.</small>
-                            <br>
-                    </div>
+                            <div class="form-group">
+                            
+                                <div class="field_of_img_template">
+                                    <div class="row mb-5 mt-3 row_of_img_custom">
+    
+                                        <div class="col-4 pr-0">
+                                            <div class="box_of_img_template ">
+    
+                                                <div class="box_of_img_template ">
+                                                    <input type="file" name="product_main_image[]" id="product_img_main" class="input-file-custom ">
+                                                    <label for="product_img_main" class="btn btn-tertiary2 js-labelFile ">
+                                                      <i class="icon fa fa-check"></i>
+                                                      <span class="js-fileName mr-2">انتخاب عکس</span>
+                                                    </label>
+                                                </div>
+    
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
 
                     <div class="form-group">
-                        <label for="pic">تصاویر دیگر محصول:</label>
+
 
 
                         <div class="form-group">
-                            
+                            <label for="pic">تصاویر دیگر محصول:</label>
                             <div class="field_of_img_template">
                                 <div class="row mb-5 mt-3 row_of_img_custom">
 
