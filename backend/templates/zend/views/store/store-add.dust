@@ -5,7 +5,8 @@
 {<js} 
     <script src="js/store-add.js"></script>
 {/js}
-        {<body} <div class="main_body_of_add_store_forms">
+        {<body} 
+<div class="main_body_of_add_store_forms">
 
             <p class="title_of_store_add">
                 اضافه کردن محصول
@@ -145,11 +146,11 @@
                                 </div>
                             </div>
                         </div>
-
+                    </div>
                     <button class="btn btn_of_store_add" type="submit" name="add_product">ثبت</button>
 
                 </form>
-
+                
     </div>
 
 {/body}
