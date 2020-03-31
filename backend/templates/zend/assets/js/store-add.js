@@ -152,6 +152,7 @@ function readURL(input) {
 
 function removeImg(){
 
-    this.parentNode.removeChild(this);
-
+    var kasra = document.getElementById('kasra');
+    kasra.parentNode.removeChild(kasra); 
+    
 }
