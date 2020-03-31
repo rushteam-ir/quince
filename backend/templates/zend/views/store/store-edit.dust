@@ -107,11 +107,12 @@
                             
                             <div class="field_of_img_template">
                                 <div class="row mb-5 mt-3 row_of_img_custom">
-                                    <div class="col-4 pr-0 pl-0">
+
+                                    <div class="col-4 pr-0">
                                         <div class="box_of_img_template ">
 
                                             <div class="box_of_img_template ">
-                                                <input type="file" name="product_images[]" id="product_img_other" class="input-file-custom ">
+                                                <input type="file" name="product_images[]" id="product_img_main" class="input-file-custom ">
                                                 <label for="product_img_main" class="btn btn-tertiary2 js-labelFile ">
                                                   <i class="icon fa fa-check"></i>
                                                   <span class="js-fileName mr-2">انتخاب عکس</span>
@@ -120,10 +121,10 @@
 
                                         </div>
                                     </div>
+
                                 </div>
-
                             </div>
-
+                        </div>
                     </div>
                     <button class="btn btn_of_store_add" type="submit" name="add_product">ثبت تغییرات</button>
 
