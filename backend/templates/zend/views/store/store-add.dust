@@ -136,7 +136,9 @@
                                             <div>
 
                                                 <img class="uploading_img_from_brows" src="#" alt="">
-                                                <div class="remove_img_icon"></div>
+                                                <div class="remove_img_icon" id="salam" >
+
+                                                </div>
         
                                             </div>
 
@@ -189,4 +191,11 @@
             }
         })
     });
+
+    function dalam(){
+
+        alert('hi');
+        
+    }
+
 </script>
