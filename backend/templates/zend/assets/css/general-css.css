@@ -98,3 +98,11 @@ label {
 :focus {
     outline: none;
 }
+
+.form-control{
+    height: 44px !important;
+}
+
+textarea.form-control {
+    height: 200px !important;
+}

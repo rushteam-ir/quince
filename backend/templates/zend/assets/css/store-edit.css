@@ -131,3 +131,10 @@
     border-radius: .25rem 0px 0px .25rem !important;
 }
 
+.box_of_img_template{
+    width: 100%;
+    height: 200px;
+    border-radius: 6px;
+    background-color: whitesmoke;
+    overflow: hidden;   
+}

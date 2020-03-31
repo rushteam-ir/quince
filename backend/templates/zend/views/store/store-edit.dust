@@ -1,6 +1,6 @@
 {>"layouts/dashboard-layout"/}
 {<css} 
-    <link rel="stylesheet" href="css/store-add.css">
+    <link rel="stylesheet" href="css/store-edit.css">
 {/css}
 {<js} 
     <script src="js/store-edit.js"></script>
@@ -104,7 +104,49 @@
 
 
                         <div class="form-group">
+                            
+                            <div class="field_of_img_template">
+                                <div class="row mb-5 mt-3 row_of_img_custom">
+                                    <div class="col-4">
+                                        <div class="box_of_img_template ">
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="box_of_img_template ">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="box_of_img_template ">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                                <div class="row mb-5 mt-3 row_of_img_custom">
+                                    <div class="col-4">
+                                        <div class="box_of_img_template ">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="box_of_img_template ">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="box_of_img_template ">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
                             <div class="field_wrapper_file row">
+
                                 <div class="col-6 p-0 mb-3">
 
                                     <img src="media/products/{product_form.images[1]}" height="340" width="340">
