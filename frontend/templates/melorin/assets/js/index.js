@@ -120,3 +120,14 @@ if (sessionStorage.text == 1) {
 
 }
 
+//particle_ground
+document.addEventListener('DOMContentLoaded', function () {
+    particleground(document.getElementById('particles'), {
+        dotColor: '#EFDFBF',
+        lineColor: '#EFDFBF',
+        density: 9000,
+        parallax:false,
+    });
+    var intro = document.getElementById('intro');
+    intro.style.marginTop = -intro.offsetHeight / 2 + 'px';
+}, false);

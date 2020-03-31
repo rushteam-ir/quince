@@ -4,21 +4,22 @@
     <title>ملورین</title>
 {/title}
 {<css}
-    <link rel="stylesheet" href="css/index.css">
+      <link rel="stylesheet" href="css/index.css">
+
 {/css}
 {<js}
     <script src="js/index.js"></script>
+    <script src="js/jquery.particleground.js"></script>
 {/js}
 
 {<body}
 
     <section>
-        <header>
-            <div class="container-fluid">
+        <header id="particles">
+            <div class="container-fluid" >
                 <div class="row">
                     <div class="col-12 p-0">
                         <div class="background_of_header">
-
                             <div class="row m-0">
                                 <div class="col-12">
                                     <div class="text-box-center-header text-center" dir="rtl">
