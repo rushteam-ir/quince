@@ -26,6 +26,7 @@ backend_upload_dir = `${config.app_dir}backend/templates/${config.backend_tmp}/a
 backend.locals.backend_url = config.backend_url;
 backend.locals.debug_mode = config.debug_mode;
 backend.locals.captcha_url = config.captcha_url;
+backend.locals.backend_product_other_images = [1,2,3,4,5,6];
 backend.locals.zend_cms_version = "1.0.0";
 backend.locals.limited_avatars_size = (backend_limited_avatars_size/1024).toString();
 backend.locals.limited_products_size = (backend_limited_products_size/1024).toString();

@@ -156,7 +156,7 @@ function readURL(input) {
 
         let reader = new FileReader();
         let wrapper = $('.product-img-main-show');
-        let fieldHTML = '<div id="product-main-img-show"><img id="product-img-main" class="uploading_img_from_brows" src="#" alt=""><div class="remove_img_icon" onclick="removeImg()"></div></div>'
+        let fieldHTML = '<div><img id="product-img-main" class="uploading_img_from_brows" src="#" alt=""><div class="remove_img_icon" onclick="removeImg()"></div></div>'
 
         reader.onload = function (e) {
 
@@ -172,11 +172,8 @@ function readURL(input) {
 
 function removeImg(){
 
-    let this_id = document.getElementById('product-main-img-show');
+    let this_id = document.getElementById('product-img-box-main');
     this_id.parentNode.removeChild(this_id);
-
-    let this_id_2 = document.getElementById('product-img-box-main');
-    this_id_2.parentNode.removeChild(this_id_2);
 
     let wrapper = $('#main_row');
     let fieldHTML = '<div class="col-4 pr-0" id="product-img-box-main"><div class="box_of_img_template "><div class="box_of_img_template "><input onchange="readURL(this)" type="file" name="product_main_image" id="product_img_main" class="input-file-custom "><label for="product_img_main" class="btn btn-tertiary2 js-labelFile "><i class="icon fa fa-check"></i><span class="js-fileName mr-2">انتخاب عکس</span></label></div><div class="product-img-main-show" ></div></div></div>'
