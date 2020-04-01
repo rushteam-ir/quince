@@ -90,7 +90,7 @@ router.post('/', async(req,res)=>{
 
         if(result){
 
-            if(req.files.product_main_image){
+            if(req.files){
 
                 let main_image = req.files.product_main_image;
                 let product_images = [];
@@ -102,7 +102,7 @@ router.post('/', async(req,res)=>{
 
                     if(main_image.size/1024 <= backend_limited_products_size){
 
-                        let _name = `${product_id}_main.png`;
+                        let _name = `${result._id}_main.png`;
                         let main_image_path = `${backend_upload_dir}products/${_name}`;
                         main_image.mv(main_image_path, (err)=>{});
                         product_images.push(`${_name}`);
@@ -122,6 +122,19 @@ router.post('/', async(req,res)=>{
                 }
 
                 new_product['images'] = product_images;
+
+            }
+
+            let final_result = await product_model.edit(result._id, new_product);
+
+            if(final_result){
+
+                return res.redirect(`${config.backend_url}store/list/?msg=add-success`);
+
+            }
+            else{
+
+                return res.redirect(`${config.backend_url}store/add/?msg=add-fail`);
 
             }
 

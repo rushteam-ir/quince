@@ -12,6 +12,8 @@
 
 <body>
 
+{error}
+
 	<body class="bg-purple">
 
 		<div class="stars">

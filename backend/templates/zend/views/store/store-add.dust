@@ -89,13 +89,13 @@
                         <label for="product_img">تصویر اصلی محصول:</label>
 
                             <div class="field_of_img_template">
-                                <div class="row mb-5 mt-3 row_of_img_custom">
+                                <div class="row mb-5 mt-3 row_of_img_custom_main" id="main_row">
 
-                                    <div class="col-4 pr-0">
+                                    <div class="col-4 pr-0" id="product-img-box-main">
                                         <div class="box_of_img_template ">
 
                                             <div class="box_of_img_template ">
-                                                <input onchange="readURL(this)" type="file" name="product_images[]" id="product_img_main" class="input-file-custom ">
+                                                <input onchange="readURL(this)" type="file" name="product_main_image" id="product_img_main" class="input-file-custom ">
                                                 <label for="product_img_main" class="btn btn-tertiary2 js-labelFile ">
                                                   <i class="icon fa fa-check"></i>
                                                   <span class="js-fileName mr-2">انتخاب عکس</span>

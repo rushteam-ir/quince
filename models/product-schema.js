@@ -1,7 +1,7 @@
 // MongoDB schema
 let product_schema = new mongoose.Schema({
 
-    title : {type : String, unique : true},
+    title : String,
     row : Number,
     category : {type : 'ObjectId', ref : 'category'},
     sub_category : {type : 'ObjectId', ref : 'category'},
