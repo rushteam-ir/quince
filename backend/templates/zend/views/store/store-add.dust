@@ -6,7 +6,7 @@
     <script src="js/store-add.js"></script>
 {/js}
         {<body} 
-<div class="main_body_of_add_store_forms">
+        <div class="main_body_of_add_store_forms">
 
             <p class="title_of_store_add">
                 اضافه کردن محصول
