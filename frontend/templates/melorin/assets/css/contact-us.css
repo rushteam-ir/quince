@@ -64,3 +64,9 @@ label {
 .error_custom{
     display: none;
 }
+
+@media only screen and (max-width: 992px) {
+    .img_of_contact_us {
+        height: 450px;
+    }
+}

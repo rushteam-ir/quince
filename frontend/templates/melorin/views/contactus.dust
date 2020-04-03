@@ -129,10 +129,11 @@
                 
                 </div>
 
-                    <p class="alert alert-info border border-info text-right mt-4">برای پیگیری سفارش یا سوال درباره سفارش می توانید از فرم زیر استفاده کنید.
+                    <p class="alert alert-info border border-info text-right mt-4 dir_rtl">برای پیگیری سفارش یا سوال درباره سفارش می توانید از فرم زیر استفاده کنید.
                     همچینی اگر پیشنهاد یا انتقادی در باره سایت و خدمات برای بهتر شدن کیفیت خدمات رسانی دارید خوشحال می شویم انها را با ما در میان بگذارید</p>
                  
                     <p class="alert alert-warning border border-warning text-right mt-4 error_custom dir_rtl" id="error_field"></p>
+
 
                 <div class="row">
 
