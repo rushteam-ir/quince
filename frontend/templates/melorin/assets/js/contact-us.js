@@ -28,6 +28,7 @@ function contactError(){
     var email_inp = document.forms['contactus_form']['email_inp'].value;
     var phonenumber_inp = document.forms['contactus_form']['phonenumber_inp'].value;
     var text_inp = document.forms['contactus_form']['text_inp'].value;
+    var title_inp = document.forms['contactus_form']['title_inp'].value;
 
     
 
@@ -82,6 +83,13 @@ function contactError(){
     else if(phonenumber_inp.length >= 12){
 
         error_field.innerHTML = "شماره تلفن وارد شده بیشتر تر از حد مجاز است."
+        return false;
+
+    }
+
+    else if(title_inp == ""){
+
+        error_field.innerHTML = "لطفا متن عنوان را وارد کنید."
         return false;
 
     }
