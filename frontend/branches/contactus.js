@@ -24,23 +24,23 @@ router.post('/', async(req,res)=>{
         let firstlastname_valid = validation.isSafe(firstlastname_inp);
         let email_valid = validation.isEmail(email_inp);
         let phonenumber_valid = validation.isPhonenumber(phonenumber_inp);
-        let title_valid = validation.isPhonenumber(title_inp);
+        let title_valid = validation.isSafe(title_inp);
         let text_valid = validation.isSafe(text_inp);
 
         if(firstlastname_valid != ''){
-            //return res.redirect(`${config.frontend_url}contactus/?msg=${firstlastname_valid}`);
+            return res.redirect(`${config.frontend_url}contactus/?msg=${firstlastname_valid}`);
         }
         else if(email_valid != ''){
-            //return res.redirect(`${config.frontend_url}contactus/?msg=${email_valid}`);
+            return res.redirect(`${config.frontend_url}contactus/?msg=${email_valid}`);
         }
         else if(phonenumber_valid != ''){
-            //return res.redirect(`${config.frontend_url}contactus/?msg=${phonenumber_valid}`);
+            return res.redirect(`${config.frontend_url}contactus/?msg=${phonenumber_valid}`);
         }
         else if(text_valid != ''){
-            //return res.redirect(`${config.frontend_url}contactus/?msg=${text_valid}`);
+            return res.redirect(`${config.frontend_url}contactus/?msg=${text_valid}`);
         }
         else if(title_valid != ''){
-            //return res.redirect(`${config.frontend_url}contactus/?msg=${text_valid}`);
+            return res.redirect(`${config.frontend_url}contactus/?msg=${title_valid}`);
         }
         else{
 
@@ -49,8 +49,8 @@ router.post('/', async(req,res)=>{
                 first_last_name : firstlastname_inp,
                 email : email_inp,
                 phone_number : phonenumber_inp,
+                title : title_inp,
                 text : text_inp,
-                title : title_inp
 
             }
 
