@@ -51,7 +51,7 @@
 
                     <h3 class="title_of_messages">{title}</h3>
                     
-                    <p class="text-justify mt-3 info_txt_message">
+                    <p class="text-justify text-break mt-3 info_txt_message">
                         {text}
                     </p>
 
