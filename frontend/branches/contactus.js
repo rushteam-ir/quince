@@ -56,6 +56,7 @@ router.post('/', async(req,res)=>{
                 phone_number : phonenumber_inp,
                 title : title_inp,
                 text : text_inp,
+                date : getCurrentDate()
 
             }
 

@@ -36,4 +36,8 @@ router.get('/:id', async(req,res)=>{
 
 });
 
+const delete_message = require('./api/delete-message');
+
+router.use('/api/delete-message', delete_message);
+
 module.exports = router;

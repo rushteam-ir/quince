@@ -15,7 +15,8 @@
                 پیام ها
             </p>
 
-
+        {@alertSuccess key="delete-success" msg="پیام موردنظر با موفقیت حذف گردید"}{/alertSuccess}
+        {@alertError key="delete-fail" msg="پیام موردنظر حذف نشد لطفا با پشتیبانی تماس حاصل فرمایید"}{/alertError}
 
             {#list}
             <div class="main_field_of_messages_text mt-3">
@@ -26,7 +27,7 @@
 
                 <div class="d-inline-block message_name_field">
                     <p class="font-weight-bold mb-0">{first_last_name}</p>
-                    <small>2 روز پیش</small>
+                    <small>{date}</small>
                 </div>
 
                 <div class="dropdown ">
@@ -39,7 +40,7 @@
                         <hr class="m-0">
                         <a class="dropdown-item product_del ">پروفایل</a>
                         <hr class="m-0">
-                        <a class="dropdown-item product_del">حذف</a>
+                        <a class="message_del dropdown-item" name="{._id}">حذف</a>
                     </div>
                     
                 </div>

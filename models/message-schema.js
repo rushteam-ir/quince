@@ -6,6 +6,7 @@ let message_schema = new mongoose.Schema({
     phone_number : String,
     title : String,
     text : String,
+    date : String,
     row : Number
 
 });
