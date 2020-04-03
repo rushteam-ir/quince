@@ -60,25 +60,22 @@ function passerror() {
     var current_password = document.forms['admin_pro_pass_edit']['current_password'].value;
     var confirm_password = document.forms['admin_pro_pass_edit']['confirm_password'].value;
     var new_password = document.forms['admin_pro_pass_edit']['new_password'].value;
+    admin_profile_error_field_pass.style.display = "block";
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 
     if (current_password == '' || new_password == "" || confirm_password == "")
 
     {
 
-        admin_profile_error_field_pass.style.display = "block";
         admin_profile_error_field_pass.innerHTML = "لطفا تمام ورودی ها را پر کنید";
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
         return false;
 
     } else if (new_password !== confirm_password)
 
     {
 
-        admin_profile_error_field_pass.style.display = "block";
         admin_profile_error_field_pass.innerHTML = "رمز جدید و تکرار آن مشابه نیستند";
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
         return false;
 
     }

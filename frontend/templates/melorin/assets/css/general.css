@@ -12,6 +12,29 @@ body {
     font-family: second-font;
 }
 
-.dir_rtl{
+.dir_rtl {
     direction: rtl;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    background: rgb(185, 197, 255);
+}
+
+::selection {
+    background: rgb(185, 197, 255);
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
 }

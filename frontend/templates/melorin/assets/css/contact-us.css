@@ -61,6 +61,6 @@ label {
     font-family: main-font;
 }
 
-.row{
-    margin: 0px !important;
+.error_custom{
+    display: none;
 }
