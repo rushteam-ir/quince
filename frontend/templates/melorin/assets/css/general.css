@@ -9,5 +9,9 @@
 }
 
 body {
-    font-family: main-font;
+    font-family: second-font;
+}
+
+.dir_rtl{
+    direction: rtl;
 }

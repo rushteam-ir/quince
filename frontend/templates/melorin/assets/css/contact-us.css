@@ -1,0 +1,62 @@
+.header_of_contact_us {
+    font-family: main-font;
+    font-size: 2rem;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border-right: 4px solid #E14C86;
+}
+
+.small_of_contact_us_header {
+    font-size: 1rem;
+}
+
+.main_body_of_collapse_question {
+    width: 100%;
+    height: auto;
+    padding: 30px 30px 0px 30px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header_of_collaps {
+    font-size: 1.2rem;
+    font-family: main-font;
+}
+
+.arrow_of_contact_collaps {
+    width: 25px;
+    height: 25px;
+    background-color: #f9f9f9;
+    border: 1px solid #8a8a8a;
+    color: #8a8a8a;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22px;
+    position: relative;
+    top: -28px;
+}
+
+.text_of_collaps{
+    display: none;
+}
+
+.img_of_contact_us{
+    height: 520px;
+}
+
+.contact_us_btn{
+    width: 150px;
+}
+
+.form-control:focus {
+    color: #495057;
+    border-color: unset;
+    outline: 0;
+    box-shadow: none;
+}
+
+label{
+    font-family: main-font;
+}

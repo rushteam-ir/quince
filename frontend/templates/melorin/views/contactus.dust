@@ -12,4 +12,168 @@
 
 {<body}
 
+    <main>
+        <section>
+            <div class="container">
+
+                <div class="text-right">
+                    <h1 class="header_of_contact_us text-right mt-5">سوالات متداول</h1>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-right small_of_contact_us_header">.شما می توانید سوالاتی که پر تکرار هستند را در زیر مشاهده کنید ، اگر به جواب سوالتان نرسیدید با ما تماس حاصل فرمایید</h2>
+                        
+                        <div class="main_body_of_collapse_question mt-5">
+                            <div class="header_and_angle_field">
+                                <h3 class="text-right header_of_collaps">
+                                    چطوری به شما اعتماد کنم؟
+                                </h3>
+    
+                                <span>
+                                    <i class="fas fa-angle-left arrow_of_contact_collaps"></i>
+                                </span>
+                            </div>
+
+
+                            <p class="text-right text_of_collaps">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex vero eius numquam tempore natus repellat aut corrupti consectetur dicta ad culpa delectus dolorum at, laudantium minus consequatur et quaerat?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex vero eius numquam tempore natus repellat aut corrupti consectetur dicta ad culpa delectus dolorum at, laudantium minus consequatur et quaerat?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex vero eius numquam tempore natus repellat aut corrupti consectetur dicta ad culpa delectus dolorum at, laudantium minus consequatur et quaerat?
+                            </p>
+
+                        </div>
+
+                        <div class="main_body_of_collapse_question mt-2">
+                            <div class="header_and_angle_field">
+                                <h3 class="text-right header_of_collaps">
+                                    چطوری از کیفیت کالا اطلاع پیدا کنم؟
+                                </h3>
+    
+                                <span>
+                                    <i class="fas fa-angle-left arrow_of_contact_collaps"></i>
+                                </span>
+                            </div>
+
+
+                            <p class="text-right text_of_collaps">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex vero eius numquam tempore natus repellat aut corrupti consectetur dicta ad culpa delectus dolorum at, laudantium minus consequatur et quaerat?
+                            </p>
+
+                        </div>
+
+                        <div class="main_body_of_collapse_question mt-2">
+                            <div class="header_and_angle_field">
+                                <h3 class="text-right header_of_collaps">
+                                    چرا انقدر گرونه؟
+                                </h3>
+    
+                                <span>
+                                    <i class="fas fa-angle-left arrow_of_contact_collaps"></i>
+                                </span>
+                            </div>
+
+
+                            <p class="text-right text_of_collaps">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex vero eius numquam tempore natus repellat aut corrupti consectetur dicta ad culpa delectus dolorum at, laudantium minus consequatur et quaerat?
+                            </p>
+
+                        </div>
+
+                        <div class="main_body_of_collapse_question mt-2">
+                            <div class="header_and_angle_field">
+                                <h3 class="text-right header_of_collaps">
+                                   چطوری مثل طالبی باشیم؟
+                                </h3>
+    
+                                <span>
+                                    <i class="fas fa-angle-left arrow_of_contact_collaps"></i>
+                                </span>
+                            </div>
+
+
+                            <p class="text-right text_of_collaps">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex vero eius numquam tempore natus repellat aut corrupti consectetur dicta ad culpa delectus dolorum at, laudantium minus consequatur et quaerat?
+                            </p>
+
+                        </div>
+
+                        <div class="main_body_of_collapse_question mt-2">
+                            <div class="header_and_angle_field">
+                                <h3 class="text-right header_of_collaps">
+                                    چطوری سلام کنم که دلام نباشه؟
+                                </h3>
+    
+                                <span>
+                                    <i class="fas fa-angle-left arrow_of_contact_collaps"></i>
+                                </span>
+                            </div>
+
+
+                            <p class="text-right text_of_collaps">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex vero eius numquam tempore natus repellat aut corrupti consectetur dicta ad culpa delectus dolorum at, laudantium minus consequatur et quaerat?
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="text-right dir_rtl">
+                    
+                     <h2 class="header_of_contact_us text-right mt-5">تماس با ما</h2>
+                
+                </div>
+
+                    <p class="alert alert-info border border-info text-right mt-4">برای پیگیری سفارش یا سوال درباره سفارش می توانید از فرم زیر استفاده کنید.
+                    همچینی اگر پیشنهاد یا انتقادی در باره سایت و خدمات برای بهتر شدن کیفیت خدمات رسانی دارید خوشحال می شویم انها را با ما در میان بگذارید</p>
+                 
+
+                <div class="row">
+
+                    <div class="col-5">
+
+                        <div>
+                            <img class="img_of_contact_us w-100" src="img/contact-us.png" alt="">
+                        </div>
+                        
+                    </div>
+                    <div class="col-7">
+
+                        <form class="text-right dir_rtl">
+
+                            <div class="form-group">
+                              <label for="lasta_and_name">نام و نام خانوادگی</label>
+                              <input type="text" class="form-control" id="lasta_and_name">
+                            </div>
+
+                            <div class="form-group">
+                              <label for="email_contact_us">ایمیل</label>
+                              <input type="email" class="form-control" id="email_contact_us">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email_contact_us">شماره تلفن</label>
+                                <input type="text" class="form-control" id="email_contact_us">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="text_of_contact_us">متن پیام</label>
+                                <textarea class="form-control" id="text_of_contact_us" rows="6"></textarea>
+                              </div>
+
+                            <button type="submit" class="btn btn-primary contact_us_btn mb-5 mt-4">ارسال</button>
+                          </form>
+
+                    </div>
+
+                </div>
+        </section>
+
+    </main>
+
 {/body}
