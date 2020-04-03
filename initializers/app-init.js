@@ -57,7 +57,7 @@ dust_options = {
 
                 if(msg_param === context.resolve(params.key)){
 
-                    let html = `<div id="dashbord_login_error" class="alert-success alert dashbord_login_server_error_class text-center">
+                    let html = `<div id="dashbord_login_error" class="alert-success alert dashbord_login_server_error_class border border-success text-center">
                     ${context.resolve(params.msg)}</div>`;
 
                     body = bodies.block;

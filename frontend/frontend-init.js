@@ -9,8 +9,9 @@ frontend.set('view engine', 'dust');
 frontend.set('views', `${config.app_dir}frontend/templates/${config.frontend_tmp}/views`);
 
 // Frontend body parser configuration
-frontend.use(body_parser.urlencoded({extended : false}));
-frontend.use(body_parser.json());
+frontend.use(body_parser.json({limit: '10mb', extended: true}))
+frontend.use(body_parser.urlencoded({limit: '10mb', extended: true}))
+
 
 // Frontend file uplaod
 frontend.use(file_upload());
