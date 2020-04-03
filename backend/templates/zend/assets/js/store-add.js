@@ -149,36 +149,38 @@ $(function () {
     $('[data-toggle="popover"]').popover()
 })
 
-// Uploaded file show
-function readURL(input) {
+$(document).ready(function() {
+    if (window.File && window.FileList && window.FileReader) {
+        $("#files").on("change", function(e) {
+            var files = e.target.files,
+                filesLength = files.length;
+            for (var i = 0; i < filesLength; i++) {
+                        var f = files[i]
+                        var fileReader = new FileReader();
+                        fileReader.onload = (function(e) {
+                            var file = e.target;
+                            $("<span class=\"pip\">" +
+                                "<img class=\"imageThumb\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
+                                "<br/><span class=\"remove\">Remove image</span>" +
+                                "</span>").insertAfter("#files");
+                            $(".remove").click(function(){
+                                $(this).parent(".pip").remove();
+                            });
 
-    if (input.files && input.files[0]) {
+                    // Old code here
+                    /*$("<img></img>", {
+                      class: "imageThumb",
+                      src: e.target.result,
+                      title: file.name + " | Click to remove"
+                    }).insertAfter("#files").click(function(){$(this).remove();});*/
 
-        let reader = new FileReader();
-        let wrapper = $('.product-img-main-show');
-        let fieldHTML = '<div><img id="product-img-main" class="uploading_img_from_brows" src="#" alt=""><div class="remove_img_icon" onclick="removeImg()"></div></div>'
-
-        reader.onload = function (e) {
-
-            $(wrapper).append(fieldHTML);
-            $('#product-img-main').attr('src', e.target.result);
-
-        };
-
-        reader.readAsDataURL(input.files[0]);
-
+                });
+                fileReader.readAsDataURL(f);
+            }
+        });
+    } else {
+        alert("Your browser doesn't support to File API")
     }
-}
-
-function removeImg(){
-
-    let this_id = document.getElementById('product-img-box-main');
-    this_id.parentNode.removeChild(this_id);
-
-    let wrapper = $('#main_row');
-    let fieldHTML = '<div class="col-4 pr-0" id="product-img-box-main"><div class="box_of_img_template "><div class="box_of_img_template "><input onchange="readURL(this)" type="file" name="product_main_image" id="product_img_main" class="input-file-custom "><label for="product_img_main" class="btn btn-tertiary2 js-labelFile "><i class="icon fa fa-check"></i><span class="js-fileName mr-2">انتخاب عکس</span></label></div><div class="product-img-main-show" ></div></div></div>'
-    $(wrapper).append(fieldHTML);
-    
-}
+});
 
 
