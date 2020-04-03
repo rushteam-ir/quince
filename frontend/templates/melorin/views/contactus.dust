@@ -133,6 +133,7 @@
                     همچینی اگر پیشنهاد یا انتقادی در باره سایت و خدمات برای بهتر شدن کیفیت خدمات رسانی دارید خوشحال می شویم انها را با ما در میان بگذارید</p>
                  
                     <p class="alert alert-warning border border-warning text-right mt-4 error_custom dir_rtl" id="error_field"></p>
+                    {@alertSuccess key="sent-success" msg="پیام شما با موفقیت ارسال شد. لطفا منتظر پاسخ همکاران ما از طریق ایمیل خود باشید"}{/alertSuccess}
 
                 <div class="row">
 
@@ -145,7 +146,7 @@
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-7 offset-lg-0">
 
-                        <form class="text-right dir_rtl" name="contactus_form" onsubmit="return contactError()" autocomplete="off" novalidate>
+                        <form method="post" class="text-right dir_rtl" name="contactus_form" onsubmit="return contactError()" autocomplete="off" novalidate>
 
                             <div class="form-group">
                               <label for="lasta_and_name">نام و نام خانوادگی</label>
@@ -161,6 +162,11 @@
                                 <label for="email_contact_us">شماره تلفن</label>
                                 <input type="text" class="form-control" id="email_contact_us" name="phonenumber_inp">
                                 <small class="text-danger">برای تلفن های ثابت حتما کد شهر خود را بنویسید برای مثال : 02144303785</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="title_contact_us">عنوان پیام</label>
+                                <input type="text" class="form-control" id="title_contact_us" name="title_inp">
                             </div>
 
                             <div class="form-group">

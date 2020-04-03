@@ -4,7 +4,13 @@ router.get('/', async(req,res)=>{
 
     try{
 
-        res.render('messages/messages');
+        let data = {
+
+            list : message_model.get()
+
+        }
+
+        res.render('messages/messages', data);
 
     }
     catch (error) {
