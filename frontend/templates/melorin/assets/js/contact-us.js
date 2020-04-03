@@ -101,4 +101,11 @@ function contactError(){
         
     }
 
+    else if(phonenumber_inp.length >= 1000){
+        
+        error_field.innerHTML = "متن پیام شما نمی تواند بیش از 1000 حرف باشد."
+        return false;
+    
+    }
+
 }
