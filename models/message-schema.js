@@ -7,6 +7,7 @@ let message_schema = new mongoose.Schema({
     title : String,
     text : String,
     date : String,
+    read : Boolean,
     row : Number
 
 });
@@ -39,7 +40,28 @@ message_schema.statics = {
 
         return await message_model.findByIdAndDelete(message_id);
 
-    }
+    },
+
+    read : async function(){
+
+        return await message_model.update({read : false}, {$set: {read : true}});
+
+    },
+
+    check : async function(){
+
+        let message_list =  await message_model.find({read : false});
+
+        log(message_list);
+
+        if(message_list.length == 0){
+            return false;
+        }
+        else{
+            return true;
+        }
+
+    },
 
 };
 
