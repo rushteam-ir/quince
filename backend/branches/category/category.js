@@ -4,25 +4,6 @@ router.get('/', async(req,res)=>{
 
     try{
 
-        let delete_id = req.query.del;
-
-        if(isObjectId(delete_id)){
-
-            let result = await category_model.del(delete_id);
-
-            if(result){
-
-                return res.redirect(`${config.backend_url}category/?msg=delete-success`);
-
-            }
-            else{
-
-                return res.redirect(`${config.backend_url}category/?msg=delete-fail`);
-
-            }
-
-        }
-
         let data = {
 
             list : await category_model.get(),
@@ -86,7 +67,9 @@ router.post('/', async(req,res)=>{
 });
 
 const get_sub_category = require('./api/get-sub-category');
+const delete_category = require('./api/delete-category');
 
 router.use('/api/get-sub-category', get_sub_category);
+router.use('/api/delete-category', delete_category);
 
 module.exports = router;

@@ -40,7 +40,7 @@ $('.cat_del').on('click', function (e) {
                 confirmButtonText: 'تایید',
             }).then((result)=>{
                 if (result.value) {
-                    redirect(`${backend_url}category/?del=${cat_id}`);
+                    redirect(`${backend_url}category/api/delete-category/?id=${cat_id}`);
                 }
             })
         }
