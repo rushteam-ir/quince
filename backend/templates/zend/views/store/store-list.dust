@@ -1,12 +1,12 @@
 {>"layouts/dashboard-layout"/}
 
 {<css} 
-    <link rel="stylesheet" href="css/store-list.css">
-    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/store/store-list.css">
+    <link rel="stylesheet" href="css/general/slick.css">
 {/css}
 {<js} 
-    <script src="js/slick.js"></script>
-    <script src="js/store-list.js"></script>
+    <script src="js/general/slick.js"></script>
+    <script src="js/store/store-list.js"></script>
 {/js}
 
 {<body} 
@@ -65,7 +65,7 @@
                                             <div class="situation_of_product_color mt-2 mb-0" style="background-color: #E13A58;"></div>
                                         {/eq}
                                         <div class="text_hidden_able line_clamp text-right dir-rtl">
-                                            <p class="text-break">
+                                            <p class="text-break block-with-text">
                                                     {.describe} 
                                             </p>
                                         </div>

@@ -1,9 +1,9 @@
 {>"layouts/dashboard-layout"/}
 {<css} 
-    <link rel="stylesheet" href="css/store-edit.css">
+    <link rel="stylesheet" href="css/store/store-edit.css">
 {/css}
 {<js} 
-    <script src="js/store-edit.js"></script>
+    <script src="js/store/store-edit.js"></script>
 {/js}
         {<body}
             <div class="main_body_of_add_store_forms">

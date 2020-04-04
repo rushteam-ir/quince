@@ -1,6 +1,6 @@
 /*Header Style*/
 .background_of_header {
-    background-image: url("../img/bg-header.jpg");
+    background-image: url("../../img/bg-header.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -264,7 +264,7 @@
 
 /*Parallax*/
 .parallax {
-    background-image: url("../img/parallax.jpg");
+    background-image: url("../../img/parallax.jpg");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;

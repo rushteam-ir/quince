@@ -4,10 +4,10 @@
     <title>درباره ما</title>
 {/title}
 {<css}
-    <link rel="stylesheet" href="css/about-us.css">
+    <link rel="stylesheet" href="css/front-end/about-us.css">
 {/css}
 {<js}
-    <script src="js/about-us.js"></script>
+    <script src="js/front-end/about-us.js"></script>
 {/js}
 
 

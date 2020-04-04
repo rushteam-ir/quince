@@ -5,12 +5,12 @@
     <base href="{frontend_url}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/fontawsome.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/general/bootstrap.css">
+    <link rel="stylesheet" href="css/general/fontawsome.css">
+    <link rel="stylesheet" href="css/general/slick.css">
+    <link rel="stylesheet" href="css/general/animate.css">
+    <link rel="stylesheet" href="css/general/layout.css">
+    <link rel="stylesheet" href="css/general/general.css">
     {+css/}
     {+title/}
 </head>
@@ -96,12 +96,12 @@
             </div>
         </footer>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/slick.js"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/layout.js"></script>
+    <script src="js/general/jquery.js"></script>
+    <script src="js/general/popper.js"></script>
+    <script src="js/general/bootstrap.js"></script>
+    <script src="js/general/slick.js"></script>
+    <script src="js/general/wow.js"></script>
+    <script src="js/general/layout.js"></script>
     {+js/}
 </body>
 

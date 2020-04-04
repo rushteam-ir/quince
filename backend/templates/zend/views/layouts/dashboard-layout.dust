@@ -7,12 +7,12 @@
     <base href="{backend_url}">
     <script>backend_url = '{backend_url}'</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/fontAwsome.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/general-css.css">
-    <link rel="stylesheet" href="css/dashbord.css">
-    <link rel="stylesheet" href="css/css-animate.css">
+    <link rel="stylesheet" href="css/general/fontAwsome.css">
+    <link rel="stylesheet" href="css/general/bootstrap.css">
+    <link rel="stylesheet" href="css/general/animate.css">
+    <link rel="stylesheet" href="css/general/general-css.css">
+    <link rel="stylesheet" href="css/cms/dashbord.css">
+    <link rel="stylesheet" href="css/cms/css-animate.css">
     {+css/}
     <title>پنل مدیریت</title>
 </head>
@@ -165,12 +165,12 @@
     </section>
 
     {+body/}
-    <script src="js/jquery.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/sweetAlert.js"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/dashboard.js"></script>
+    <script src="js/general/jquery.js"></script>
+    <script src="js/general/popper.js"></script>
+    <script src="js/general/bootstrap.js"></script>
+    <script src="js/general/sweetAlert.js"></script>
+    <script src="js/general/wow.js"></script>
+    <script src="js/general/dashboard.js"></script>
     {+js/}
 </body>
 

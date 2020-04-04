@@ -4,10 +4,10 @@
     <title>تماس با ما</title>
 {/title}
 {<css}
-    <link rel="stylesheet" href="css/contact-us.css">
+    <link rel="stylesheet" href="css/front-end/contact-us.css">
 {/css}
 {<js}
-    <script src="js/contact-us.js"></script>
+    <script src="js/front-end/contact-us.js"></script>
 {/js}
 
 {<body}
@@ -147,7 +147,7 @@
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-7 offset-lg-0">
 
-                        <form method="post" class="text-right dir_rtl" name="contactus_form" onsubmit="return contactError()" autocomplete="off" novalidate>
+                        <form method="post" class="text-right dir_rtl" name="contactus_form" onsubmit="return contactError()"  novalidate>
 
                             <div class="form-group">
                               <label for="lasta_and_name">نام و نام خانوادگی</label>

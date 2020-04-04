@@ -32,11 +32,16 @@
 
 .main_field_of_messages_text {
     background-color: white;
-    padding: 50px;
+    padding: 30px 50px;
 }
 
 .info_txt_message {
     line-height: 30px;
+    width: 100%;
+    margin: 0 0 2em 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .more_info_of_messages {
@@ -50,12 +55,11 @@
 
 .edit_remove_btn {
     position: absolute;
-    left: 0px;
-    top: -100px;
+    left: -20px;
+    top: -80px;
     color: #E13A58;
     background-color: transparent;
     border: none;
-
 }
 
 .dropdown-toggle::after {
@@ -81,7 +85,8 @@
     font-family: main-font;
 }
 
-.dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active,
+.dropdown-item:active {
     color: #6F7275;
     text-decoration: none;
     background-color: #FFFFFF;

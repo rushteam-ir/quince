@@ -1,8 +1,8 @@
 {>"layouts/dashboard-layout"/}
 
-{<css} <link rel="stylesheet" href="css/messages.css">
+{<css} <link rel="stylesheet" href="css/messages/messages.css">
     {/css}
-    {<js} <script src="js/messages.js">
+    {<js} <script src="js/messages/messages.js">
         </script>
         {/js}
 
@@ -61,8 +61,9 @@
                 </div>
 
             </div>
+            
+            {/list}
 
         </div>
-        {/list}
 
             {/body}

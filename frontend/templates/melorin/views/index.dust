@@ -4,12 +4,12 @@
     <title>ملورین</title>
 {/title}
 {<css}
-      <link rel="stylesheet" href="css/index.css">
+      <link rel="stylesheet" href="css/front-end/index.css">
 
 {/css}
 {<js}
-    <script src="js/index.js"></script>
-    <script src="js/particleground.js"></script>
+    <script src="js/front-end/index.js"></script>
+    <script src="js/general/particleground.js"></script>
 {/js}
 
 {<body}

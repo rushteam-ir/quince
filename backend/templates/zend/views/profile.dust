@@ -1,9 +1,9 @@
 {>"layouts/dashboard-layout"/}
 {<css}
-    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/cms/profile.css">
 {/css}
 {<js} 
-    <script src="js/profile.js"></script>
+    <script src="js/cms/profile.js"></script>
 {/js}
 {<body}
 

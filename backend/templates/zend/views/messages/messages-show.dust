@@ -1,10 +1,10 @@
 {>"layouts/dashboard-layout"/}
 
 {<css} 
-    <link rel="stylesheet" href="css/messages-show.css">
+    <link rel="stylesheet" href="css/messages/messages-show.css">
 {/css}
 {<js} 
-    <script src="js/messages-show.js"></script>
+    <script src="js/messages/messages-show.js"></script>
 {/js}
 
 {<body} 

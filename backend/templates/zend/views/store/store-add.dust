@@ -1,9 +1,9 @@
 {>"layouts/dashboard-layout"/}
 {<css} 
-    <link rel="stylesheet" href="css/store-add.css">
+    <link rel="stylesheet" href="css/store/store-add.css">
 {/css}
 {<js} 
-    <script src="js/store-add.js"></script>
+    <script src="js/store/store-add.js"></script>
 {/js}
 <style>
     input[type="file"] {
