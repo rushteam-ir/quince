@@ -21,7 +21,7 @@ router.get('/', async(req,res)=>{
 
         let data = {
 
-            list : message_model.get()
+            list : await message_model.get()
 
         }
 
