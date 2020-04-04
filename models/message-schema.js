@@ -52,8 +52,6 @@ message_schema.statics = {
 
         let message_list =  await message_model.find({read : false});
 
-        log(message_list);
-
         if(message_list.length == 0){
             return false;
         }
