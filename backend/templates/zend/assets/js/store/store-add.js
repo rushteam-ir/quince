@@ -150,6 +150,7 @@ $(function () {
     $('[data-toggle="popover"]').popover()
 })
 
+
 $(document).ready(function () {
 
     if (window.File && window.FileList && window.FileReader) {
