@@ -182,13 +182,6 @@ $(document).ready(function () {
                         $(this).parents(".col-4").remove();
                     });
 
-                    // Old code here
-                    /*$("<img></img>", {
-                      class: "imageThumb",
-                      src: e.target.result,
-                      title: file.name + " | Click to remove"
-                    }).insertAfter("#files").click(function(){$(this).remove();});*/
-
                 });
 
                 fileReader.readAsDataURL(f);

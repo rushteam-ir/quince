@@ -93,11 +93,14 @@ router.post('/', async(req,res)=>{
             if(req.files){
 
                 let main_image = req.files.product_main_image;
+                let other_images = req.files['product_images[]'];
+                let image_counter = 0;
                 let product_images = [];
 
                 let file_format1 = main_image.name.slice(-3).toLowerCase();
                 let file_format2 = main_image.name.slice(-4).toLowerCase();
 
+                // Check main image
                 if(backend_allowd_avatars.includes(file_format1) || backend_allowd_avatars.includes(file_format2)) {
 
                     if(main_image.size/1024 <= backend_limited_products_size){
@@ -121,8 +124,40 @@ router.post('/', async(req,res)=>{
 
                 }
 
-                new_product['images'] = product_images;
+                // Check other images
+                other_images.forEach((image)=>{
 
+                    let file_format3 = main_image.name.slice(-3).toLowerCase();
+                    let file_format4 = main_image.name.slice(-4).toLowerCase();
+
+                    if(backend_allowd_avatars.includes(file_format3) || backend_allowd_avatars.includes(file_format4)) {
+
+                        if(image.size/1024 <= backend_limited_products_size){
+
+                            image_counter += 1;
+                            let _name = `${result._id}_${image_counter}.png`;
+                            let other_image_path = `${backend_upload_dir}products/${_name}`;
+                            image.mv(other_image_path, (err)=>{});
+                            product_images.push(`${_name}`);
+
+                        }
+                        else{
+
+                            return res.redirect(`${config.backend_url}store/add/?msg=limited-image`);
+
+                        }
+
+                    }
+                    else{
+
+                        return res.redirect(`${config.backend_url}store/add/?msg=illegal-image`);
+
+                    }
+
+                })
+
+                new_product['images'] = product_images;
+                
             }
 
             let final_result = await product_model.edit(result._id, new_product);

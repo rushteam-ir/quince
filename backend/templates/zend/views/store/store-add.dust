@@ -5,33 +5,7 @@
 {<js} 
     <script src="js/store/store-add.js"></script>
 {/js}
-<style>
-    input[type="file"] {
-        display: block;
-    }
-    .imageThumb {
-        max-height: 75px;
-        border: 2px solid;
-        padding: 1px;
-        cursor: pointer;
-    }
-    .pip {
-        display: inline-block;
-        margin: 10px 10px 0 0;
-    }
-    .remove {
-        display: block;
-        background: #444;
-        border: 1px solid black;
-        color: white;
-        text-align: center;
-        cursor: pointer;
-    }
-    .remove:hover {
-        background: white;
-        color: black;
-    }
-</style>
+
         {<body} 
         <div class="main_body_of_add_store_forms">
 
@@ -128,7 +102,7 @@
                             </label>
 
                             <div class="row mt-4 mb-4">
-                            <input type="file" name="files[]" id="files"  class="input-file-custom" multiple>
+                            <input type="file" name="product_images[]" id="files"  class="input-file-custom" multiple>
                         </div>
                         
 
