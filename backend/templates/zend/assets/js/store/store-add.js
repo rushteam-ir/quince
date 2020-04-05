@@ -178,7 +178,7 @@ $(document).ready(function () {
                         "</div>").insertAfter("#files");
 
                     $(".remove").click(function () {
-                        $(this).parent(".pip").remove();
+                        $(this).parents(".col-4").remove();
                     });
 
                     // Old code here
