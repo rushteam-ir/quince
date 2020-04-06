@@ -1,0 +1,76 @@
+{>"layouts/dashboard-layout"/}
+
+{<css}
+    <link rel="stylesheet" href="css/cms/users-profile.css">
+{/css}
+{<js}
+    <script src="js/cms/users-profile.js"></script>
+{/js}
+
+{<body}
+
+    <div class="main_diled_of_category_field">
+
+        <p class="category_title mt-5">
+            لیست کاربران
+        </p>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <button class="btn search_btn_of_category"  type="button"><i class="fas fa-search"></i></button>
+            </div>
+            <input id="users_search" type="text" class="form-control search_category_inp" placeholder="جستجو">
+        </div>
+
+        <table class="table table-bordered mt-4">
+            <thead class="text-center">
+            <tr>
+                <th scope="col">ردیف</th>
+                <th scope="col">نام کاربری</th>
+                <th scope="col">نام</th>
+                <th scope="col">نام خانوادگی</th>
+                <th scope="col">نوع</th>
+                <th scope="col">حذف</th>
+            </tr>
+            </thead>
+            <tbody id="users_table" class="text-center">
+                {#list_all}
+                <tr>
+                    <th scope="row">{.row}</th>
+                    <td>{.title}</td>
+                    {@eq key="{.parent}" value="{null}"}
+                        <td>دسته اصلی</td>
+                    {:else}
+                        <td>{.parent.title}</td>
+                    {/eq}
+                    <td>
+                            <span class="cat_del" name="{._id}" class="table_edit_and_delete">
+                                <i class="far fa-trash-alt"></i>
+                            </span>
+                    </td>
+                </tr>
+                {/list_all}
+            </tbody>
+        </table>
+
+
+    </div>
+{/body}
+
+<script>
+    $(document).ready(function(){
+
+        $("#users_search").on("keyup", function() {
+
+            let value = $(this).val().toLowerCase();
+
+            $("#users_table tr").filter(function() {
+
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+
+            });
+
+        });
+
+    });
+</script>

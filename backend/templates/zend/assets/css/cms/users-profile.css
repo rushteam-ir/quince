@@ -1,0 +1,121 @@
+.main_diled_of_category_field {
+    width: 76%;
+    background-color: #FFFFFF;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    margin-left: 3.5%;
+    padding: 70px 220px;
+    direction: rtl;
+    text-align: right;
+}
+
+.btn_of_category {
+    width: 130px;
+    margin-top: 20px;
+    background-color: #5D78FF;
+    font-weight: bold;
+    color: white;
+}
+
+.btn_of_category:hover {
+    background-color: #3758FF;
+}
+
+.category_title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    border-right: 5px solid #E13A58;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+}
+
+tbody tr td:last-child {
+    width: 50px;
+}
+
+tbody tr td:nth-child(4) {
+    width: 50px;
+}
+
+.search_btn_of_category {
+    border-right: 1px solid #CED4DA;
+    border-top: 1px solid #CED4DA;
+    border-bottom: 1px solid #CED4DA;
+    border-left: 0px;
+    border-radius: 0px 4px 4px 0px !important;
+    color: rgb(138, 138, 138);
+}
+
+.search_btn_of_category:hover {
+    color: #272B2F;
+    background-color: white;
+    border-right: 1px solid #CED4DA;
+    border-top: 1px solid #CED4DA;
+    border-bottom: 1px solid #CED4DA;
+}
+
+.search_category_inp {
+    border-right: 0px;
+    border-radius: 4px 0px 0px 4px !important;
+}
+
+.search_category_inp:focus {
+    border-color: #CED4DA;
+    box-shadow: none;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-secondary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled).active,
+.btn-outline-secondary:not(:disabled):not(.disabled):active,
+.show>.btn-outline-secondary.dropdown-toggle {
+    color: #272B2F;
+    background-color: #ffffff;
+    border-color: #CED4DA;
+}
+
+.table_edit_and_delete {
+    color: black;
+}
+
+.edit_modal_btn {
+    color: black;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+.edit_modal_btn:hover {
+    color: #0056B3;
+}
+
+.modal_category_body {
+    width: 70%;
+    margin-right: 15%;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.modal-header .close {
+    padding: 1rem 1rem;
+    margin: 0px;
+}
+
+.modal-title {
+    line-height: 2.8;
+}
+
+#category_modal_error_field {
+    display: none;
+}
+
+.cat_del {
+    cursor: pointer;
+}

@@ -49,13 +49,7 @@ router.get('/', async(req,res)=>{
 
         }
 
-        let data = {
-
-            list : await product_model.get(),
-
-        };
-
-        res.render('store/store-list', data);
+        res.redirect(`${config.backend_url}store/list`);
 
     }
     catch (error) {

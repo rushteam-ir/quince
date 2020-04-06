@@ -151,6 +151,13 @@
                 </div>
             </a>
 
+            <a href="{backend_url}users">
+                <div class="field_of_dashbord_partion text-right">
+                    <i class="fas fa-users d-inline-block dashbord_tiny_icons"></i>
+                    <p class="d-inline-block title_text_of_dashbord">کاربران</p>
+                </div>
+            </a>
+
             <a href="{backend_url}settings">
                 <div class="field_of_dashbord_partion text-right">
                     <i class="fas fa-wrench d-inline-block dashbord_tiny_icons"></i>
