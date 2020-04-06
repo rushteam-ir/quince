@@ -4,7 +4,7 @@ router.get('/', async(req,res)=>{
 
     try{
 
-        res.render('contactus');
+        res.render('contact-us');
 
     }
     catch (error) {
@@ -30,22 +30,22 @@ router.post('/', async(req,res)=>{
         let text_valid = validation.isSafe(text_inp);
 
         if(firstlastname_valid != ''){
-            return res.redirect(`${config.frontend_url}contactus/?msg=${firstlastname_valid}`);
+            return res.redirect(`${config.frontend_url}contact-us/?msg=${firstlastname_valid}`);
         }
         else if(email_valid != ''){
-            return res.redirect(`${config.frontend_url}contactus/?msg=${email_valid}`);
+            return res.redirect(`${config.frontend_url}contact-us/?msg=${email_valid}`);
         }
         else if(phonenumber_valid != ''){
-            return res.redirect(`${config.frontend_url}contactus/?msg=${phonenumber_valid}`);
+            return res.redirect(`${config.frontend_url}contact-us/?msg=${phonenumber_valid}`);
         }
         else if(text_valid != ''){
-            return res.redirect(`${config.frontend_url}contactus/?msg=${text_valid}`);
+            return res.redirect(`${config.frontend_url}contact-us/?msg=${text_valid}`);
         }
         else if(title_valid != ''){
-            return res.redirect(`${config.frontend_url}contactus/?msg=${title_valid}`);
+            return res.redirect(`${config.frontend_url}contact-us/?msg=${title_valid}`);
         }
         else if(text_inp.length > 1000){
-            return res.redirect(`${config.frontend_url}contactus/?msg=limited-length`);
+            return res.redirect(`${config.frontend_url}contact-us/?msg=limited-length`);
         }
         else{
 
@@ -64,10 +64,10 @@ router.post('/', async(req,res)=>{
             let result = await message_model.add(new_message);
 
             if(result){
-                return res.redirect(`${config.frontend_url}contactus/?msg=sent-success`);
+                return res.redirect(`${config.frontend_url}contact-us/?msg=sent-success`);
             }
             else{
-                return res.redirect(`${config.frontend_url}contactus/?msg=sent-fail`);
+                return res.redirect(`${config.frontend_url}contact-us/?msg=sent-fail`);
             }
 
         }

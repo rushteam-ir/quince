@@ -4,7 +4,7 @@ router.get('/', async(req,res)=>{
 
     try{
 
-        res.render('aboutus');
+        res.render('about-us');
 
     }
     catch (error) {
