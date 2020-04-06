@@ -41,6 +41,11 @@ router.get('/:id', async(req,res)=>{
     try{
 
         let message_id = req.params.id
+
+        if(!isObjectId(message_id)){
+            return res.redirect(`${config.backend_url}messages`);
+        }
+
         let data = {
 
             info : await message_model.getById(message_id)
@@ -63,6 +68,11 @@ router.post('/:id', async(req,res)=>{
     try{
 
         let message_id = req.params.id
+
+        if(!isObjectId(message_id)){
+            return res.redirect(`${config.backend_url}messages`);
+        }
+
         let message_info = await message_model.getById(message_id);
         let {title_inp, text_inp} = req.body;
         let title_valid = validation.isSafe(title_inp);

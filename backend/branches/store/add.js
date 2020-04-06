@@ -157,7 +157,7 @@ router.post('/', async(req,res)=>{
                 })
 
                 new_product['images'] = product_images;
-                
+
             }
 
             let final_result = await product_model.edit(result._id, new_product);
