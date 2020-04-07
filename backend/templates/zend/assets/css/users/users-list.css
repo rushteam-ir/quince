@@ -23,13 +23,26 @@
     text-align: right;
 }
 
-.img_of_users_list{
+.img_of_users_list {
     width: 50px;
-    margin-top: -26px;
 }
 
-.name_user_list{
+.more_option_of_list {
+    color: #9b9b9b;
+}
 
+.header_list_custom {
+    padding: 20px .75rem !important;
+}
 
+.list_detail_custom {
+    padding-top: 24px !important;
+}
 
+.btn_padding_custm{
+    padding-top: 16px;
+}
+
+.img_padding_custom{
+    padding-top: 12px !important;
 }

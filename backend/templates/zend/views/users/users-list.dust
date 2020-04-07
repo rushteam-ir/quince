@@ -19,44 +19,331 @@
 
         <div class="main_field_of_users_profile">
             <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">دسترسی</th>
-                    <th scope="col">اخرین فعالیت</th>
-                    <th scope="col"></th>
+                <thead class="text-center">
+                  <tr >
+                    <th class="header_list_custom" scope="col">ردیف</th>
+                    <th class="header_list_custom" scope="col">عکس</th>
+                    <th class="header_list_custom" scope="col">نام کاربر</th>
+                    <th class="header_list_custom" scope="col">ایمیل</th>
+                    <th class="header_list_custom" scope="col">دسترسی</th>
+                    <th class="header_list_custom" scope="col">اخرین فعالیت</th>
+                    <th class="header_list_custom" scope="col"></th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>
-                        
+
+                  <tr class="dir-rtl text-center">
+
+                        <th class="list_detail_custom" scope="row">1</th>
+                        <td class="img_padding_custom">
+                            <img class="img_of_users_list" src="img/question-icon.png" alt="">
+                        </td>
+
+                        <td class="list_detail_custom">کسری حبیب بیگی</td>
+
+                        <td class="list_detail_custom">
+                            kasrahabibbeygi@gmail.com
+                        </td>
+
+                        <td class="list_detail_custom">عادی</td>
+                        <td class="list_detail_custom">1399/1/12</td>
+
+                        <td class="btn_padding_custm pl-0">
+                            <a class="btn btn-primary" href="">
+                                مشاهده پروفایل
+                            </a>
+                        </td>
+
+                  </tr>
+
+                  <tr class="dir-rtl text-center">
+
+                    <th class="list_detail_custom" scope="row">1</th>
+                    <td class="img_padding_custom">
                         <img class="img_of_users_list" src="img/question-icon.png" alt="">
-
-                        <div class="d-inline-block mr-2 name_user_list">
-                            <p class="mb-0">کسری حبیب بیگی</p>
-                            <p class="mb-0">نام کابری : meganoob</p>
-                        </div>
-
-
                     </td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+
+                    <td class="list_detail_custom">کسری حبیب بیگی</td>
+
+                    <td class="list_detail_custom">
+                        kasrahabibbeygi@gmail.com
+                    </td>
+
+                    <td class="list_detail_custom">عادی</td>
+                    <td class="list_detail_custom">1399/1/12</td>
+
+                    <td class="btn_padding_custm pl-0">
+                        <a class="btn btn-primary" href="">
+                            مشاهده پروفایل
+                        </a>
+                    </td>
+
+              </tr>                  <tr class="dir-rtl text-center">
+
+                <th class="list_detail_custom" scope="row">1</th>
+                <td class="img_padding_custom">
+                    <img class="img_of_users_list" src="img/question-icon.png" alt="">
+                </td>
+
+                <td class="list_detail_custom">کسری حبیب بیگی</td>
+
+                <td class="list_detail_custom">
+                    kasrahabibbeygi@gmail.com
+                </td>
+
+                <td class="list_detail_custom">عادی</td>
+                <td class="list_detail_custom">1399/1/12</td>
+
+                <td class="btn_padding_custm pl-0">
+                    <a class="btn btn-primary" href="">
+                        مشاهده پروفایل
+                    </a>
+                </td>
+
+          </tr>                  <tr class="dir-rtl text-center">
+
+                        <th class="list_detail_custom" scope="row">1</th>
+                        <td class="img_padding_custom">
+                            <img class="img_of_users_list" src="img/question-icon.png" alt="">
+                        </td>
+
+                        <td class="list_detail_custom">کسری حبیب بیگی</td>
+
+                        <td class="list_detail_custom">
+                            kasrahabibbeygi@gmail.com
+                        </td>
+
+                        <td class="list_detail_custom">عادی</td>
+                        <td class="list_detail_custom">1399/1/12</td>
+
+                        <td class="btn_padding_custm pl-0">
+                            <a class="btn btn-primary" href="">
+                                مشاهده پروفایل
+                            </a>
+                        </td>
+
+                  </tr>                  <tr class="dir-rtl text-center">
+
+                        <th class="list_detail_custom" scope="row">1</th>
+                        <td class="img_padding_custom">
+                            <img class="img_of_users_list" src="img/question-icon.png" alt="">
+                        </td>
+
+                        <td class="list_detail_custom">کسری حبیب بیگی</td>
+
+                        <td class="list_detail_custom">
+                            kasrahabibbeygi@gmail.com
+                        </td>
+
+                        <td class="list_detail_custom">عادی</td>
+                        <td class="list_detail_custom">1399/1/12</td>
+
+                        <td class="btn_padding_custm pl-0">
+                            <a class="btn btn-primary" href="">
+                                مشاهده پروفایل
+                            </a>
+                        </td>
+
+                  </tr>                  <tr class="dir-rtl text-center">
+
+                    <th class="list_detail_custom" scope="row">1</th>
+                    <td class="img_padding_custom">
+                        <img class="img_of_users_list" src="img/question-icon.png" alt="">
+                    </td>
+
+                    <td class="list_detail_custom">کسری حبیب بیگی</td>
+
+                    <td class="list_detail_custom">
+                        kasrahabibbeygi@gmail.com
+                    </td>
+
+                    <td class="list_detail_custom">عادی</td>
+                    <td class="list_detail_custom">1399/1/12</td>
+
+                    <td class="btn_padding_custm pl-0">
+                        <a class="btn btn-primary" href="">
+                            مشاهده پروفایل
+                        </a>
+                    </td>
+
+              </tr>                  <tr class="dir-rtl text-center">
+
+                <th class="list_detail_custom" scope="row">1</th>
+                <td class="img_padding_custom">
+                    <img class="img_of_users_list" src="img/question-icon.png" alt="">
+                </td>
+
+                <td class="list_detail_custom">کسری حبیب بیگی</td>
+
+                <td class="list_detail_custom">
+                    kasrahabibbeygi@gmail.com
+                </td>
+
+                <td class="list_detail_custom">عادی</td>
+                <td class="list_detail_custom">1399/1/12</td>
+
+                <td class="btn_padding_custm pl-0">
+                    <a class="btn btn-primary" href="">
+                        مشاهده پروفایل
+                    </a>
+                </td>
+
+          </tr>                  <tr class="dir-rtl text-center">
+
+            <th class="list_detail_custom" scope="row">1</th>
+            <td class="img_padding_custom">
+                <img class="img_of_users_list" src="img/question-icon.png" alt="">
+            </td>
+
+            <td class="list_detail_custom">کسری حبیب بیگی</td>
+
+            <td class="list_detail_custom">
+                kasrahabibbeygi@gmail.com
+            </td>
+
+            <td class="list_detail_custom">عادی</td>
+            <td class="list_detail_custom">1399/1/12</td>
+
+            <td class="btn_padding_custm pl-0">
+                <a class="btn btn-primary" href="">
+                    مشاهده پروفایل
+                </a>
+            </td>
+
+      </tr>                  <tr class="dir-rtl text-center">
+
+                        <th class="list_detail_custom" scope="row">1</th>
+                        <td class="img_padding_custom">
+                            <img class="img_of_users_list" src="img/question-icon.png" alt="">
+                        </td>
+
+                        <td class="list_detail_custom">کسری حبیب بیگی</td>
+
+                        <td class="list_detail_custom">
+                            kasrahabibbeygi@gmail.com
+                        </td>
+
+                        <td class="list_detail_custom">عادی</td>
+                        <td class="list_detail_custom">1399/1/12</td>
+
+                        <td class="btn_padding_custm pl-0">
+                            <a class="btn btn-primary" href="">
+                                مشاهده پروفایل
+                            </a>
+                        </td>
+
+                  </tr>                  <tr class="dir-rtl text-center">
+
+                        <th class="list_detail_custom" scope="row">1</th>
+                        <td class="img_padding_custom">
+                            <img class="img_of_users_list" src="img/question-icon.png" alt="">
+                        </td>
+
+                        <td class="list_detail_custom">کسری حبیب بیگی</td>
+
+                        <td class="list_detail_custom">
+                            kasrahabibbeygi@gmail.com
+                        </td>
+
+                        <td class="list_detail_custom">عادی</td>
+                        <td class="list_detail_custom">1399/1/12</td>
+
+                        <td class="btn_padding_custm pl-0">
+                            <a class="btn btn-primary" href="">
+                                مشاهده پروفایل
+                            </a>
+                        </td>
+
+                  </tr>                  <tr class="dir-rtl text-center">
+
+                        <th class="list_detail_custom" scope="row">1</th>
+                        <td class="img_padding_custom">
+                            <img class="img_of_users_list" src="img/question-icon.png" alt="">
+                        </td>
+
+                        <td class="list_detail_custom">کسری حبیب بیگی</td>
+
+                        <td class="list_detail_custom">
+                            kasrahabibbeygi@gmail.com
+                        </td>
+
+                        <td class="list_detail_custom">عادی</td>
+                        <td class="list_detail_custom">1399/1/12</td>
+
+                        <td class="btn_padding_custm pl-0">
+                            <a class="btn btn-primary" href="">
+                                مشاهده پروفایل
+                            </a>
+                        </td>
+
+                  </tr>                  <tr class="dir-rtl text-center">
+
+                    <th class="list_detail_custom" scope="row">1</th>
+                    <td class="img_padding_custom">
+                        <img class="img_of_users_list" src="img/question-icon.png" alt="">
+                    </td>
+
+                    <td class="list_detail_custom">کسری حبیب بیگی</td>
+
+                    <td class="list_detail_custom">
+                        kasrahabibbeygi@gmail.com
+                    </td>
+
+                    <td class="list_detail_custom">عادی</td>
+                    <td class="list_detail_custom">1399/1/12</td>
+
+                    <td class="btn_padding_custm pl-0">
+                        <a class="btn btn-primary" href="">
+                            مشاهده پروفایل
+                        </a>
+                    </td>
+
+              </tr>                  <tr class="dir-rtl text-center">
+
+                <th class="list_detail_custom" scope="row">1</th>
+                <td class="img_padding_custom">
+                    <img class="img_of_users_list" src="img/question-icon.png" alt="">
+                </td>
+
+                <td class="list_detail_custom">کسری حبیب بیگی</td>
+
+                <td class="list_detail_custom">
+                    kasrahabibbeygi@gmail.com
+                </td>
+
+                <td class="list_detail_custom">عادی</td>
+                <td class="list_detail_custom">1399/1/12</td>
+
+                <td class="btn_padding_custm pl-0">
+                    <a class="btn btn-primary" href="">
+                        مشاهده پروفایل
+                    </a>
+                </td>
+
+          </tr>                  <tr class="dir-rtl text-center">
+
+                        <th class="list_detail_custom" scope="row">1</th>
+                        <td class="img_padding_custom">
+                            <img class="img_of_users_list" src="img/question-icon.png" alt="">
+                        </td>
+
+                        <td class="list_detail_custom">کسری حبیب بیگی</td>
+
+                        <td class="list_detail_custom">
+                            kasrahabibbeygi@gmail.com
+                        </td>
+
+                        <td class="list_detail_custom">عادی</td>
+                        <td class="list_detail_custom">1399/1/12</td>
+
+                        <td class="btn_padding_custm pl-0">
+                            <a class="btn btn-primary" href="">
+                                مشاهده پروفایل
+                            </a>
+                        </td>
+
                   </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
+
                 </tbody>
               </table>
         </div>
