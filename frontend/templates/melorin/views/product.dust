@@ -30,85 +30,85 @@
                         </div>
                         <hr>
                         <div class="explain_about_product_details">
-                           <div class="row">
-                               <div class="col-md-6 col-12 order-1 order-md-0 px-0">
-                                   <div class="price_and_explain_of_product">
-                                       <ul class="pl-0 ul_size_price">
-                                           <li class="list_price_exp_product">
-                                               <i class="far fa-check-square mx-2"></i>
-                                               گارانتی اصالت و سلامت فیزیکی کالا
-                                           </li>
-                                           <hr class="my-0">
-                                           <li class="list_price_exp_product">
-                                               <i class="fas fa-store mx-2"></i>
-                                               موجود در انبار
-                                           </li>
-                                           <hr class="my-0">
-                                           <li class="list_price_exp_product">
-                                               <i class="fas fa-money-bill-wave mx-2"></i>
-                                               40.000 تومان
-                                           </li>
-                                           <hr class="my-0">
-                                       </ul>
-                                       <ul class="m-0 mt-1">
-                                           <li class="list_price_exp_product d-inline-block w-25 text-center mr-3 font_style_of_fontawsome">
-                                               <i class="fas fa-share-alt"></i>
-                                           </li>
-                                           <li class="list_price_exp_product d-inline-block w-25 text-center mr-3 font_style_of_fontawsome" >
-                                               <i class="far fa-heart"></i>
-                                           </li>
-                                           <li class="list_price_exp_product d-inline-block w-25 text-center mr-3 font_style_of_fontawsome">
-                                               <i class="far fa-comment-alt"></i>
-                                           </li>
-                                       </ul>
-                                       <button type="button" class="btn_of_add_product">افزودن به سبد خرید </button>
-                                   </div>
-                               </div>
-                               <div class="col-md-6 col-12 order-0 order-md-1">
-                                   <ul class="unordered_list_of_explain_details pl-0">
-                                       <li class="list_of_explain_details my-4">
-                                           <i class="fas fa-layer-group" aria-hidden="true">
-                                               &nbsp;
-                                               دسته بندی
-                                           </i>
-                                           <p class="mr-3"> جوراب زنانه</p>
+                            <div class="row">
+                                <div class="col-md-6 col-12 order-1 order-md-0 px-0">
+                                    <div class="price_and_explain_of_product">
+                                        <ul class="pl-0 ul_size_price">
+                                            <li class="list_price_exp_product">
+                                                <i class="far fa-check-square mx-2"></i>
+                                                گارانتی اصالت و سلامت فیزیکی کالا
+                                            </li>
+                                            <hr class="my-0">
+                                            <li class="list_price_exp_product">
+                                                <i class="fas fa-store mx-2"></i>
+                                                موجود در انبار
+                                            </li>
+                                            <hr class="my-0">
+                                            <li class="list_price_exp_product">
+                                                <i class="fas fa-money-bill-wave mx-2"></i>
+                                                40.000 تومان
+                                            </li>
+                                            <hr class="my-0">
+                                        </ul>
+                                        <ul class="m-0 mt-1">
+                                            <li class="list_price_exp_product d-inline-block w-25 text-center mr-3 font_style_of_fontawsome">
+                                                <i class="fas fa-share-alt"></i>
+                                            </li>
+                                            <li class="list_price_exp_product d-inline-block w-25 text-center mr-3 font_style_of_fontawsome">
+                                                <i class="far fa-heart"></i>
+                                            </li>
+                                            <li class="list_price_exp_product d-inline-block w-25 text-center mr-3 font_style_of_fontawsome">
+                                                <i class="far fa-comment-alt"></i>
+                                            </li>
+                                        </ul>
+                                        <button type="button" class="btn_of_add_product">افزودن به سبد خرید</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12 order-0 order-md-1">
+                                    <ul class="unordered_list_of_explain_details pl-0">
+                                        <li class="list_of_explain_details my-4">
+                                            <i class="fas fa-layer-group" aria-hidden="true">
+                                                &nbsp;
+                                                دسته بندی
+                                            </i>
+                                            <p class="mr-3"> جوراب زنانه</p>
 
-                                       </li>
-                                       <li class="list_of_explain_details mb-4">
-                                           <i class="fas fa-tasks">
-                                               &nbsp;
-                                               مشخصات محصول
-                                           </i>
+                                        </li>
+                                        <li class="list_of_explain_details mb-4">
+                                            <i class="fas fa-tasks">
+                                                &nbsp;
+                                                مشخصات محصول
+                                            </i>
 
-                                           <ul class="size_of_details ml-0">
-                                               <li class="p-1 size_of_details">
-                                                   جنس: نخ
-                                               </li>
-                                               <li class="p-1">
-                                                   طرح پارچه: طرح دار
-                                               </li>
-                                               <li class="p-1">
-                                                   ضخامت: ضخیم
-                                               </li>
-                                               <li class="p-1">
-                                                   نوع: ساق بلند
-                                               </li>
-                                               <li class="p-1">
-                                                   سایز: فری سایز
-                                               </li>
-                                               <li class="p-1">
-                                                   رنگ بندی:
-                                                   <button class="bg-green btn_color_of_product"></button>
-                                                   <button class="bg-pink btn_color_of_product"></button>
-                                                   <button class="bg-yellow btn_color_of_product"></button>
-                                                   <button class="bg-red btn_color_of_product"></button>
-                                               </li>
-                                           </ul>
-                                       </li>
+                                            <ul class="size_of_details ml-0">
+                                                <li class="p-1 size_of_details">
+                                                    جنس: نخ
+                                                </li>
+                                                <li class="p-1">
+                                                    طرح پارچه: طرح دار
+                                                </li>
+                                                <li class="p-1">
+                                                    ضخامت: ضخیم
+                                                </li>
+                                                <li class="p-1">
+                                                    نوع: ساق بلند
+                                                </li>
+                                                <li class="p-1">
+                                                    سایز: فری سایز
+                                                </li>
+                                                <li class="p-1">
+                                                    رنگ بندی:
+                                                    <button class="bg-green btn_color_of_product"></button>
+                                                    <button class="bg-pink btn_color_of_product"></button>
+                                                    <button class="bg-yellow btn_color_of_product"></button>
+                                                    <button class="bg-red btn_color_of_product"></button>
+                                                </li>
+                                            </ul>
+                                        </li>
 
-                                   </ul>
-                               </div>
-                           </div>
+                                    </ul>
+                                </div>
+                            </div>
                             <hr>
                             <ul>
                                 <li class="list_of_explain_details">
@@ -118,7 +118,13 @@
                                     </i>
                                     &nbsp;
                                     <p class="text-justify mr-3">
-                                        این محصول تمامی مراحل طراحی و تولید آن در کشور آلمان صورت گرفته است.جنس این محصول از با کیفیت ترین الیاف طبیعی بوده  که علاوه بر عمر بالای محصول و کیفیت در جنس آن باعث جلوگیری از هر گونه حساسیت در خانم ها می شود .این جوراب شلواری را می توان در تمامی مجالس خود استفاده کرداین جوراب برعکس موارد مشابه آن در بازار یک بار مصرف نبوده و از آن می توانید به دفعات زیاد استفاده کنید.این برند بزرگترین برند تولید جوراب و لباس زیر در دنیا است و اولین هدف آن رضایت مندی مشتریان خود بوده است.
+                                        این محصول تمامی مراحل طراحی و تولید آن در کشور آلمان صورت گرفته است.جنس این
+                                        محصول از با کیفیت ترین الیاف طبیعی بوده که علاوه بر عمر بالای محصول و کیفیت در
+                                        جنس آن باعث جلوگیری از هر گونه حساسیت در خانم ها می شود .این جوراب شلواری را می
+                                        توان در تمامی مجالس خود استفاده کرداین جوراب برعکس موارد مشابه آن در بازار یک
+                                        بار مصرف نبوده و از آن می توانید به دفعات زیاد استفاده کنید.این برند بزرگترین
+                                        برند تولید جوراب و لباس زیر در دنیا است و اولین هدف آن رضایت مندی مشتریان خود
+                                        بوده است.
                                     </p>
                                 </li>
                             </ul>
@@ -150,12 +156,87 @@
                 <div class="col-lg-6 offset-lg-0 col-sm-10 offset-sm-1 col-12">
                     <img src="img/111.png" class="pic_of_comment">
                 </div>
-                <div class="col-lg-6 offset-lg-0 col-sm-10 offset-sm-1 col-12  a bg-success">
-                    <h3 class="text-right mr-2" dir="rtl">نظرات خود را در جهت بهبود کیفیت با ما درمیان بگذارید.</h3>
+                <div class="col-lg-6 offset-lg-0 col-sm-10 offset-sm-1 col-12">
+                    <h3 class="text-right mr-2 mt-5" dir="rtl">نظرات خود را در جهت بهبود کیفیت با ما درمیان
+                        بگذارید.</h3>
+                    <form class="mt-5">
+
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="w-50">
+                                    <label class="float-right label_of_price" dir="rtl">کیفیت محصول</label>
+                                    <div class="rate_of_product_star font_size_star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="w-50">
+                                    <label class="float-right label_of_price mr-3" dir="rtl">ارزش خرید </label>
+                                    <div class="rate_of_product_star font_size_star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="title_of_comments" class="float-right" dir="rtl">عنوان نظر شما</label>
+                            <input type="text" class="form-control input_of_comment_page" id="title_of_comments"
+                                   name="title_of_comments">
+                        </div>
+                        <div class="form-group">
+                            <label class="float-right label_of_price" dir="rtl" for="text_of_contact_us">متن  پیام</label>
+                            <textarea class="form-control input_of_comment_page" id="text_of_contact_us" rows="6"
+                                      name="text_inp"></textarea>
+                        </div>
+
+                    </form>
                 </div>
             </div>
 
         </div>
+    </section>
+    <hr>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <h2 class="text-right mt-5 mr-4 mb-5 w-100">نظرات کاربران (25 نفر)</h2>
+            </div>
+            <div class="row">
+                    <div class="header_of_comment_box">
+                        <div class="w-25 d-inline-block">
+                            <i class="fas fa-reply text-right ml-5 mr-3"></i>
+                            <i class="fas fa-heart text-left"></i>
+                        </div>
+
+                        <div class=" d-inline-block">
+                            <p class="text-right w-75">نادیه</p>
+
+                        </div >
+                        <div class=" text-right d-inline-block">
+                            <img src="img/001.jpg" class="a mr-4">
+                        </div>
+
+                    </div>
+            </div>
+        </div>
+
+        {!        <div class="row">!}
+        {!            <div class="header_of_comment_box">!}
+        {!                <p class="w-50">نادیه</p>!}
+        {!                <i class="fas fa-heart w-25"></i>!}
+        {!            </div>!}
+        {!        </div>!}
+        {!        <div class="text_of_comment_box"></div>!}
     </section>
 
 {/body}
