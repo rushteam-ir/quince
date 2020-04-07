@@ -1,0 +1,24 @@
+.main_field_of_users_profile {
+    background-color: white;
+    padding: 30px 50px;
+}
+
+.users_list_title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    border-right: 5px solid #E13A58;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.main_field_of_users_list {
+    width: 76%;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    margin-left: 3.5%;
+    padding: 20px 20px;
+    direction: rtl;
+    text-align: right;
+}

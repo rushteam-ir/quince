@@ -16,6 +16,10 @@ body {
     direction: rtl;
 }
 
+.dir-ltr {
+    direction: ltr;
+}
+
 .btn:hover {
     color: #ffffff;
 }
@@ -87,7 +91,6 @@ label {
 }
 
 ::-moz-selection {
-    /* Code for Firefox */
     background: rgb(185, 197, 255);
 }
 
@@ -99,7 +102,7 @@ label {
     outline: none;
 }
 
-.form-control{
+.form-control {
     height: 44px !important;
 }
 
