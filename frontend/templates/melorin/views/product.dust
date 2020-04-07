@@ -69,16 +69,16 @@
                                         <li class="list_of_explain_details my-4">
                                             <i class="fas fa-layer-group" aria-hidden="true">
                                                 &nbsp;
-                                                دسته بندی
                                             </i>
+                                            <p class="d-inline-block p_font_family_style">دسته بندی</p>
                                             <p class="mr-3"> جوراب زنانه</p>
-
                                         </li>
                                         <li class="list_of_explain_details mb-4">
+
                                             <i class="fas fa-tasks">
                                                 &nbsp;
-                                                مشخصات محصول
                                             </i>
+                                            <p class="d-inline-block p_font_family_style">مشخصات محصول</p>
 
                                             <ul class="size_of_details ml-0">
                                                 <li class="p-1 size_of_details">
@@ -113,10 +113,8 @@
                             <ul>
                                 <li class="list_of_explain_details">
                                     <i class="fas fa-pen-alt ">
-                                        &nbsp;
-                                        توضیحات
                                     </i>
-                                    &nbsp;
+                                    <p class="d-inline-block p_font_family_style">توضیحات</p>
                                     <p class="text-justify mr-3">
                                         این محصول تمامی مراحل طراحی و تولید آن در کشور آلمان صورت گرفته است.جنس این
                                         محصول از با کیفیت ترین الیاف طبیعی بوده که علاوه بر عمر بالای محصول و کیفیت در
@@ -194,7 +192,7 @@
                                    name="title_of_comments">
                         </div>
                         <div class="form-group">
-                            <label class="float-right label_of_price" dir="rtl" for="text_of_contact_us">متن  پیام</label>
+                            <label class="float-right label_of_price" dir="rtl" for="text_of_contact_us">متن پیام</label>
                             <textarea class="form-control input_of_comment_page" id="text_of_contact_us" rows="6"
                                       name="text_inp"></textarea>
                         </div>
@@ -211,32 +209,54 @@
             <div class="row">
                 <h2 class="text-right mt-5 mr-4 mb-5 w-100">نظرات کاربران (25 نفر)</h2>
             </div>
-            <div class="row">
+            <div class="comment_user">
+                <div class="row">
                     <div class="header_of_comment_box">
-                        <div class="w-25 d-inline-block">
+                        <div class="w-50 d-inline-block">
                             <i class="fas fa-reply text-right ml-5 mr-3"></i>
                             <i class="fas fa-heart text-left"></i>
                         </div>
-
-                        <div class=" d-inline-block">
-                            <p class="text-right w-75">نادیه</p>
-
-                        </div >
-                        <div class=" text-right d-inline-block">
-                            <img src="img/001.jpg" class="a mr-4">
+                        <div class="w-50 text-right d-inline-block">
+                            <p class="text-right d-inline-block mr-3">نادیه</p>
+                            <img src="img/001.jpg" class="pic_of_user mr-4">
                         </div>
-
                     </div>
+                </div>
+                <div class="row">
+                    <div class="text_of_comment_box">
+                        <p class="text-right mr-3 mt-2">
+                            این محصول تمامی مراحل طراحی و تولید آن در کشور آلمان صورت گرفته است.جنس این
+                            محصول از با کیفیت ترین الیاف طبیعی بوده که علاوه بر عمر بالای محصول و کیفیت در
+                            جنس آن باعث جلوگیری از هر گونه حساسیت در خانم ها می شود
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reply_comment_user mb-5">
+                <div class="row mt-5">
+                    <div class="header_of_comment_box margin_reply margin_reply_color">
+                        <div class="w-50 d-inline-block">
+                            <i class="fas fa-reply text-right ml-5 mr-3"></i>
+                            <i class="fas fa-heart text-left"></i>
+                        </div>
+                        <div class="w-50 text-right d-inline-block ">
+                            <p class="text-right d-inline-block mr-3">نادیه</p>
+                            <img src="img/001.jpg" class="pic_of_user mr-4">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="text_of_comment_box margin_reply">
+                        <p class="text-right mr-3 mt-2">
+                            این محصول تمامی مراحل طراحی و تولید آن در کشور آلمان صورت گرفته است.جنس این
+                            محصول از با کیفیت ترین الیاف طبیعی بوده که علاوه بر عمر بالای محصول و کیفیت در
+                            جنس آن باعث جلوگیری از هر گونه حساسیت در خانم ها می شود
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-
-        {!        <div class="row">!}
-        {!            <div class="header_of_comment_box">!}
-        {!                <p class="w-50">نادیه</p>!}
-        {!                <i class="fas fa-heart w-25"></i>!}
-        {!            </div>!}
-        {!        </div>!}
-        {!        <div class="text_of_comment_box"></div>!}
     </section>
 
 {/body}
