@@ -22,14 +22,24 @@
                 <thead>
                   <tr>
                     <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">دسترسی</th>
+                    <th scope="col">اخرین فعالیت</th>
+                    <th scope="col"></th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">1</th>
+                    <td>
+                        
+                        <img class="img_of_users_list" src="img/question-icon.png" alt="">
+
+                        <div class="d-inline-block mr-2 name_user_list">
+                            <p class="mb-0">کسری حبیب بیگی</p>
+                            <p class="mb-0">نام کابری : meganoob</p>
+                        </div>
+
+
+                    </td>
                     <td>Mark</td>
                     <td>Otto</td>
                     <td>@mdo</td>
@@ -40,6 +50,7 @@
                     <td>Thornton</td>
                     <td>@fat</td>
                   </tr>
+                  
                   <tr>
                     <th scope="row">3</th>
                     <td>Larry</td>
@@ -49,5 +60,6 @@
                 </tbody>
               </table>
         </div>
+
     </div>
 {/body}
