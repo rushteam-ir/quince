@@ -96,13 +96,20 @@
                                                <li class="p-1">
                                                    سایز: فری سایز
                                                </li>
+                                               <li class="p-1">
+                                                   رنگ بندی:
+                                                   <button class="bg-green btn_color_of_product"></button>
+                                                   <button class="bg-pink btn_color_of_product"></button>
+                                                   <button class="bg-yellow btn_color_of_product"></button>
+                                                   <button class="bg-red btn_color_of_product"></button>
+                                               </li>
                                            </ul>
                                        </li>
 
                                    </ul>
                                </div>
                            </div>
-                            <hr class="w_hr">
+                            <hr>
                             <ul>
                                 <li class="list_of_explain_details">
                                     <i class="fas fa-pen-alt ">
@@ -130,6 +137,24 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section>
+        <div class="z">
+            محصولات مشابه
+        </div>
+    </section>
+    <section class="margin_top_section_comment">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-0 col-sm-10 offset-sm-1 col-12">
+                    <img src="img/111.png" class="pic_of_comment">
+                </div>
+                <div class="col-lg-6 offset-lg-0 col-sm-10 offset-sm-1 col-12  a bg-success">
+                    <h3 class="text-right mr-2" dir="rtl">نظرات خود را در جهت بهبود کیفیت با ما درمیان بگذارید.</h3>
+                </div>
+            </div>
+
         </div>
     </section>
 
