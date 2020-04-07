@@ -89,7 +89,15 @@
                        
                     <div class="form-group">
                         <label for="product_img">تصویر اصلی محصول:</label>
-
+                        <div class="row">
+                            <div class="col-4 pr-0 mt-3">
+                            <span class="pip">
+                                <img class="imageThumb" src="img/a.jpg">
+                                    <br>
+                                <span class="remove"><span>
+                            <span>
+                        <div>
+                        </div>
 
                         <input type="file" name="" id="main_pic_files"  class="input-file-custom" multiple>
                         <label for="main_pic_files" class="btn btn-tertiary js-labelFile">
@@ -102,7 +110,6 @@
                     <div class="form-group">
                         <label for="pic">تصاویر دیگر محصول:</label>
 
-
                         <label for="files" class="btn btn-tertiary js-labelFile">
                             <i class="icon fa fa-upload"></i>
                             <span class="js-fileName mr-2">انتخاب عکس</span>
@@ -111,9 +118,6 @@
                         <div class="row mt-4 mb-4">
                             <input type="file" name="product_images[]" id="files"  class="input-file-custom" multiple>
                         </div>
-                        
-
-
 
                     </div>
                     <button class="btn btn_of_store_add" type="submit" name="add_product">ثبت</button>
