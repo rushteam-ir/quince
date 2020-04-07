@@ -89,14 +89,18 @@
                        
                     <div class="form-group">
                         <label for="product_img">تصویر اصلی محصول:</label>
-                        <div class="row">
+                        <div class="row">   
+
                             <div class="col-4 pr-0 mt-3">
+
                             <span class="pip">
                                 <img class="imageThumb" src="img/a.jpg">
                                     <br>
                                 <span class="remove"><span>
                             <span>
-                        <div>
+                                
+                            </div>
+
                         </div>
 
                         <input type="file" name="" id="main_pic_files"  class="input-file-custom" multiple>
