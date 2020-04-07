@@ -187,6 +187,9 @@ $(document).ready(function () {
                 fileReader.readAsDataURL(f);
             }
         });
+
+
+
     } else {
 
         alert("Your browser doesn't support to File API")
