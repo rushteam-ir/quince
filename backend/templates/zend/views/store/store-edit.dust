@@ -51,8 +51,8 @@
 
                     <div class="form-group">
                         <label for="price_inp">قیمت:</label>
-                        <small class="form-text text-muted">قیمت به تومان می باشد.</small>
                         <input class="form-control" type="text" id="price_inp" name="price_inp" placeholder="0" value="{product_form.price}">
+                        <small class="form-text text-muted">قیمت به تومان می باشد.</small>
                     </div>
 
                     <div class="row">
@@ -67,10 +67,11 @@
                         <label for="inventory_inp">تخفیف :</label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                            <span class="input-group-text span_sale_addon" id="basic-addon1">%</span>
+                                <span class="input-group-text span_sale_addon" id="basic-addon1">%</span>
                             </div>  
                             <input type="number" class="form-control sale_inp_custome pr-1" name="discount_inp" min="0" placeholder="0" aria-label="Username" aria-describedby="basic-addon1" value="{product_form.discount}">
                         </div>
+                        <small class="form-text text-muted small_customize">توجه فرمایید که تخفیف روی قیمت لحاظ می شود.</small>
                     </div>
                 </div>
                 

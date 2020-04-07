@@ -166,7 +166,7 @@ $(document).ready(function () {
                 fileReader.onload = (function (e) {
 
                     var file = e.target;
-                    $("<div class=\"col-4 pr-0\">"+
+                    $("<div class=\"col-4 pr-0 mt-3\">"+
                         
                         "<span class=\"pip\">" +
 

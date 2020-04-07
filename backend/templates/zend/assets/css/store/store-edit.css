@@ -189,3 +189,6 @@
 .remove_img_icon::after {
     transform: rotate(-45deg);
 }
+.small_customize{
+    margin-top: -10px;
+}
