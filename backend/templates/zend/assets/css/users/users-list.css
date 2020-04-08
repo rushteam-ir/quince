@@ -69,3 +69,7 @@
     line-height: 28px;
     margin: 0 auto;
 }
+
+.padding_customize{
+    padding-left: 0px !important;
+}
