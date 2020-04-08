@@ -68,7 +68,7 @@ router.post('/', async(req,res)=>{
 
                 if(result){
 
-                    if(find_user.status){
+                    if(find_user.status && (find_user.access == "main_admin" || find_user.access == "normal_admin")){
 
                         // Login was successful
                         delete req.session.login_form;
