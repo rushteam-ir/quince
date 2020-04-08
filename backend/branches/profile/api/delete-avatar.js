@@ -12,7 +12,7 @@ router.get('/', async(req,res)=>{
 
     try {
 
-        await admin_model.editProfile(admin_id, admin_data, (result)=>{
+        await user_model.editProfile(admin_id, admin_data, (result)=>{
 
             if(result){
 

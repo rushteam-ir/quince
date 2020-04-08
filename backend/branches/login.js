@@ -64,7 +64,7 @@ router.post('/', async(req,res)=>{
         }
         else{
 
-            admin_model.login(username_inp, password_inp, (result, find_user)=>{
+            await user_model.login(username_inp, password_inp, (result, find_user)=>{
 
                 if(result){
 

@@ -62,7 +62,7 @@ router.post('/', async(req,res)=>{
 
             let admin_data = {password : newpass_inp};
 
-            admin_model.changePassword(req.session.saved_email, admin_data, (result)=>{
+            await user_model.changePassword(req.session.saved_email, admin_data, (result)=>{
 
                 if(result){
 

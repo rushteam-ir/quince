@@ -8,27 +8,35 @@ backend.use(async(req,res,next)=>{
     try{
 
         // Check last activity
-        let find_me = await admin_model.getById(req.session.admin_id);
+        let find_user = await user_model.getById(req.session.admin_id);
 
-        if(find_me){
+        if(find_user){
 
-            let admin_data = {
+            let user_data = {
+
                 last_activity : getCurrentDate()
+
             }
 
-            admin_model.editProfile(req.session.admin_id, admin_data, (result)=>{
+            await user_model.editProfile(req.session.admin_id, user_data, (result)=>{
 
                 if(result){
+
                     next();
+
                 }else{
+
                     next();
+
                 };
 
             });
 
         }
         else{
+
             next();
+
         }
 
     }

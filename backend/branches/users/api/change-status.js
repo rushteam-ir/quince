@@ -5,37 +5,35 @@ router.get('/', async(req,res)=>{
     try {
 
         let user_id = req.query.id;
-        let admin_find = await admin_model.getById(user_id);
-        //let user_find = await admin_model.getById(user_id);
+        let user_find = await user_model.getById(user_id);
 
         if(isObjectId(user_id)){
 
-            if(admin_find){
+            if(user_find){
 
-                // It is Admin
-                let admin_data = {status : true};
+                let user_data = {status : true};
 
-                if(admin_find.status){
+                if(user_find.status){
 
-                    admin_data.status = false;
+                    user_data.status = false;
 
                 }
                 else{
 
-                    admin_data.status = true;
+                    user_data.status = true;
 
                 }
 
-                admin_model.editProfile(admin_find._id, admin_data, (result)=>{
+                await user_model.editProfile(user_find._id, user_data, (result)=>{
 
                     if(result){
 
-                        res.redirect(`${config.backend_url}users/list/?msg=change-success`);
+                        return res.redirect(`${config.backend_url}users/list/?msg=change-success`);
 
                     }
                     else{
 
-                        res.redirect(`${config.backend_url}users/list/?msg=change-fail`);
+                        return res.redirect(`${config.backend_url}users/list/?msg=change-fail`);
 
                     }
 
@@ -44,12 +42,16 @@ router.get('/', async(req,res)=>{
             }
             else{
 
-                // Normal User
+                return res.redirect(`${config.backend_url}users/list/?msg=error`);
 
             }
 
         }
+        else{
 
+            return res.redirect(`${config.backend_url}users/list/?msg=error`);
+
+        }
 
     }
     catch(err) {

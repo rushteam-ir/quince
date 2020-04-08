@@ -14,7 +14,7 @@
     <div class="main_field_of_users_list">
 
         <p class="users_list_title">
-           لیست ادمین ها
+           لیست کاربران
         </p>
 
         <div class="main_field_of_users_profile">
@@ -33,7 +33,7 @@
                 </thead>
                 <tbody>
 
-                  {#admin_list}
+                  {#list}
                   <tr class="dir-rtl text-center">
 
                         <th class="list_detail_custom padding_customize" scope="row">{.row}</th>
@@ -97,7 +97,7 @@
                         </td>
 
                   </tr>
-                  {/admin_list}
+                  {/list}
 
                 </tbody>
               </table>

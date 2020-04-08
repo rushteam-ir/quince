@@ -6,28 +6,25 @@ router.get('/', async(req,res)=>{
 
     if(isObjectId(delete_id)){
 
-        let admin_find = await admin_model.getById(delete_id);
-        //let user_find = await user_model.getById(delete_id);
+        let admin_find = await user_model.getById(delete_id);
 
-        if(admin_find){
+        let result = await admin_model.del(delete_id);
 
-            let result = await admin_model.del(delete_id);
+        if(result){
 
-            if(result){
-
-                return res.redirect(`${config.backend_url}users/list/?msg=delete-success`);
-
-            }
-            else{
-
-                return res.redirect(`${config.backend_url}users/list/?msg=delete-fail`);
-
-            }
+            return res.redirect(`${config.backend_url}users/list/?msg=delete-success`);
 
         }
         else{
 
+            return res.redirect(`${config.backend_url}users/list/?msg=delete-fail`);
+
         }
+
+    }
+    else{
+
+        return res.redirect(`${config.backend_url}users/list/?msg=error`);
 
     }
 

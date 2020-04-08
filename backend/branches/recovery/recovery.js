@@ -29,7 +29,7 @@ router.post('/', async(req,res)=>{
         }
         else{
 
-            await admin_model.recoveryEmail(email_inp, (result)=>{
+            await user_model.recoveryEmail(email_inp, (result)=>{
 
                 if(result){
 

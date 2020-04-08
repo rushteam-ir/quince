@@ -133,7 +133,7 @@ router.post('/', async(req,res)=>{
 
             }
 
-            await admin_model.editProfile(admin_id, admin_data, (result)=>{
+            await user_model.editProfile(admin_id, admin_data, (result)=>{
 
                 if(result){
 
@@ -185,7 +185,7 @@ router.post('/', async(req,res)=>{
 
             if(current_password === req.session.admin_info.password && new_password === confirm_password && new_password != "" && confirm_password != ""){
 
-                await admin_model.editProfile(admin_id, admin_data, (result)=>{
+                await user_model.editProfile(admin_id, admin_data, (result)=>{
 
                     if(result){
 
