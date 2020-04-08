@@ -195,3 +195,30 @@ $(document).ready(function () {
         alert("Your browser doesn't support to File API")
     }
 });
+
+$(document).ready(function () {
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            let wrapper = $('.main-row');
+            let fieldHTML = '<div class="col-4 pr-0 mt-3 main-image-show"><span class="pip"><img id="main-image-show" class="imageThumb" src="#"><br><span class="remove"><span><span></div>'
+            reader.onload = function (e) {
+                if (!$(".main-image-show")[0]){
+                    $(wrapper).append(fieldHTML);
+                }
+                $('#main-image-show').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#main_pic_files").change(function () {
+        readURL(this);
+    });
+
+    $(".remove").click(function () {
+        $(this).parents(".col-4").remove();
+    });
+
+})
