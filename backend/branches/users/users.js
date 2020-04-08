@@ -17,11 +17,13 @@ router.get('/', async(req,res)=>{
 
 const list = require('./list');
 const profile = require('./profile');
+const add = require('./add');
 const change_status = require('./api/change-status');
 const delete_user = require('./api/delete-user');
 
 router.use('/list', list);
 router.use('/profile', profile);
+router.use('/add', add);
 router.use('/api/change-status', change_status);
 router.use('/api/delete-user', delete_user);
 
