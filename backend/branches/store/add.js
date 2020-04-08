@@ -25,6 +25,8 @@ router.post('/', async(req,res)=>{
 
     try{
 
+        log(req.files);
+
         let {title_inp, parent_inp, child_inp, describe_inp, price_inp, stock_inp, discount_inp} = req.body;
         let product_features_inp = req.body['product_features_inp[]'];
 
@@ -93,7 +95,7 @@ router.post('/', async(req,res)=>{
             if(req.files){
 
                 let main_image = req.files.product_main_image;
-                let other_images = req.files['product_images[]'];
+                let other_images = req.files['files[]'];
                 let image_counter = 0;
                 let product_images = [];
 
