@@ -41,7 +41,7 @@ user_schema.statics = {
 
     editProfile : async function(user_id, user_data, callback){
 
-        let find_user = await admin_model.findByIdAndUpdate(user_id, {$set : user_data}, {new : true});
+        let find_user = await user_model.findByIdAndUpdate(user_id, {$set : user_data}, {new : true});
 
         if(find_user){
 

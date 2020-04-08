@@ -8,7 +8,7 @@ router.get('/', async(req,res)=>{
 
         let admin_find = await user_model.getById(delete_id);
 
-        let result = await admin_model.del(delete_id);
+        let result = await user_model.del(delete_id);
 
         if(result){
 
