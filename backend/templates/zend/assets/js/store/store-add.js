@@ -50,6 +50,13 @@ $(document).ready(function () {
 
 })();
 
+// remove img of browse
+$(".remove"). click(function () {
+    $(this).parent(".remove_parent").remove();
+});
+
+
+
 // pop over function
 
 $(function () {

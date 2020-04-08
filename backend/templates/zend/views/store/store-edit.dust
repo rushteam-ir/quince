@@ -122,7 +122,6 @@
 
                 <div class="form-group">
 
-                    <div class="form-group">
                         <label for="pic">تصاویر دیگر محصول:</label>
                         <div class="field_of_img_template">
                             <div class="row mb-5 mt-3 row_of_img_custom">
@@ -150,7 +149,6 @@
 
                             </div>
                         </div>
-                    </div>
 
                 </div>
                 
