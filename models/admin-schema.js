@@ -9,7 +9,9 @@ let admin_schema = new mongoose.Schema({
    phone_number : String,
    status : Boolean,
    avatar : String,
-   author_type : String
+   author_type : String,
+   access : String,
+   last_activity : String
 
 });
 
@@ -84,6 +86,24 @@ admin_schema.statics = {
 
         }
     },
+
+    get : async function () {
+
+        return await admin_model.find();
+
+    },
+
+    getById : async function (admin_id) {
+
+        return await admin_model.findById(admin_id);
+
+    },
+
+    del : async function (user_id) {
+
+        return await admin_model.findByIdAndDelete(user_id);
+
+    }
 
 };
 

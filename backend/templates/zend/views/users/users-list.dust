@@ -14,7 +14,7 @@
     <div class="main_field_of_users_list">
 
         <p class="users_list_title">
-           لیست کاربران
+           لیست ادمین ها
         </p>
 
         <div class="main_field_of_users_profile">
@@ -23,7 +23,7 @@
                   <tr >
                     <th class="header_list_custom padding_customize" scope="col">ردیف</th>
                     <th class="header_list_custom" scope="col">عکس</th>
-                    <th class="header_list_custom" scope="col">نام کاربر</th>
+                    <th class="header_list_custom" scope="col">نام کاربری</th>
                     <th class="header_list_custom" scope="col">ایمیل</th>
                     <th class="header_list_custom" scope="col">دسترسی</th>
                     <th class="header_list_custom" scope="col">وضعیت</th>
@@ -33,26 +33,43 @@
                 </thead>
                 <tbody>
 
+                  {#admin_list}
                   <tr class="dir-rtl text-center">
 
-                        <th class="list_detail_custom padding_customize" scope="row">1</th>
+                        <th class="list_detail_custom padding_customize" scope="row">{.row}</th>
                         <td class="img_padding_custom">
-                            <img class="img_of_users_list" src="img/question-icon.png" alt="">
+                            {@eq key="{.avatar}" value=""}
+                                <img class="img_of_users_list" src="media/avatars/default.png" alt="">
+                            {:else}
+                                <img class="img_of_users_list" src="media/avatars/{.avatar}" alt="">
+                            {/eq}
                         </td>
 
-                        <td class="list_detail_custom">کسری حبیب بیگی</td>
+                        <td class="list_detail_custom">{.username}</td>
 
                         <td class="list_detail_custom">
-                            kasrahabibbeygi@gmail.com
+                            {.email}
                         </td>
 
-                        <td class="list_detail_custom">عادی</td>
                         <td class="list_detail_custom">
-                            <div class="situation_main_field">
+                            {@eq key="{.access}" value="main_admin"}
+                                ادمین اصلی
+                            {:else}
+                                ادمین عادی
+                            {/eq}
+                        </td>
+                        <td class="list_detail_custom">
+                            {@eq key="{.status}" value="true"}
+                            <div class="situation_main_field_true">
                                 فعال
                             </div>
+                            {:else}
+                            <div class="situation_main_field_false">
+                                غیر فعال
+                            </div>
+                            {/eq}
                         </td>
-                        <td class="list_detail_custom">1399/1/12</td>
+                        <td class="list_detail_custom">{.last_activity}</td>
 
                         <td class="btn_padding_custm pl-0">
 
@@ -63,13 +80,24 @@
                                 <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
                                     <a class="dropdown-item py-2 text-center" href="#">پروفایل</a>
                                     <hr class="m-0">
-                                    <a class="dropdown-item py-2 text-center" href="#">مسدود کردن</a>
+                                    {@eq key="{admin_info.access}" value="main_admin"}
+                                    {@eq key="{.username}" value="{admin_info.username}"}
+                                    {:else}
+                                        {@eq key="{.status}" value="true"}
+                                            <a value="مسدود کردن" name="{._id}" class="dropdown-item py-2 text-center user_status">مسدود کردن</a>
+                                        {:else}
+                                            <a value="فعال کردن" name="{._id}" class="dropdown-item py-2 text-center user_status">فعال کردن</a>
+                                        {/eq}
+                                        <a name="{._id}" class="dropdown-item py-2 text-center user_del">حذف</a>
+                                    {/eq}
+                                    {/eq}
                                 </div>
                             </div>
 
                         </td>
 
                   </tr>
+                  {/admin_list}
 
                 </tbody>
               </table>

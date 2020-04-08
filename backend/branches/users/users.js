@@ -16,7 +16,11 @@ router.get('/', async(req,res)=>{
 });
 
 const list = require('./list');
+const change_status = require('./api/change-status');
+const delete_user = require('./api/delete-user');
 
 router.use('/list', list);
+router.use('/api/change-status', change_status);
+router.use('/api/delete-user', delete_user);
 
 module.exports = router;

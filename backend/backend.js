@@ -2,6 +2,44 @@
 require('./backend-init');
 
 // Main rout
+
+backend.use(async(req,res,next)=>{
+
+    try{
+
+        // Check last activity
+        let find_me = await admin_model.getById(req.session.admin_id);
+
+        if(find_me){
+
+            let admin_data = {
+                last_activity : getCurrentDate()
+            }
+
+            admin_model.editProfile(req.session.admin_id, admin_data, (result)=>{
+
+                if(result){
+                    next();
+                }else{
+                    next();
+                };
+
+            });
+
+        }
+        else{
+            next();
+        }
+
+    }
+    catch (error) {
+
+        res.status(500).render('500', {error});
+
+    }
+
+});
+
 backend.use(async(req,res,next)=>{
 
     try{

@@ -4,7 +4,13 @@ router.get('/', async(req,res)=>{
 
     try{
 
-        res.render('users/users-list');
+        let data = {
+
+            admin_list : await admin_model.get()
+
+        }
+
+        res.render('users/users-list', data);
 
     }
     catch (error) {
