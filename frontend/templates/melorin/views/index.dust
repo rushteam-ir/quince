@@ -4,7 +4,7 @@
     <title>ملورین</title>
 {/title}
 {<css}
-      <link rel="stylesheet" href="css/front-end/index.css">
+    <link rel="stylesheet" href="css/front-end/index.css">
 
 {/css}
 {<js}
@@ -13,5 +13,100 @@
 {/js}
 
 {<body}
-    
+    <header class="">
+        {!    top of header    !}
+        <div class="container-fluid">
+            <div class="row bg-white">
+                <div class="col-lg-3  text-right">
+                    <div class="box_of_search_profile_shopping">
+                        <i class="fas fa-search mr-4 cursor_icon" onclick="openSearch()"></i>
+                        <i class="fas fa-user mr-4 cursor_icon"></i>
+                        <i class="fas fa-shopping-cart mr-4 cursor_icon"></i>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="nav_bar_header">
+                        <button class="btn_of_nav_bar_responsive_toggle" type="button">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <ul class="unordered_list_of_menu_nav_bar text-center mb-0">
+                            <a href="#" class="link_of_menu_nav_bar">
+                                <li class="list_of_menu_nav_bar d-inline-block">صفحه اصلی</li>
+                            </a>
+                            <a href="#" class="link_of_menu_nav_bar">
+                                <li class="list_of_menu_nav_bar d-inline-block mr-4">محصولات</li>
+                                <i class="fas fa-angle-down arrow_of_drop_down"></i>
+                            </a>
+                            <a href="#" class="link_of_menu_nav_bar">
+                                <li class="list_of_menu_nav_bar d-inline-block mr-4">پکیج ها</li>
+                                <i class="fas fa-angle-down arrow_of_drop_down"></i>
+                            </a>
+                            <a href="#" class="link_of_menu_nav_bar">
+                                <li class="list_of_menu_nav_bar d-inline-block mr-4">درباره ما</li>
+                            </a>
+                            <a href="#" class="link_of_menu_nav_bar">
+                                <li class="list_of_menu_nav_bar d-inline-block mr-4">تماس با ما</li>
+                            </a>
+                            <a href="#" class="link_of_menu_nav_bar" onclick="support_click_drop_down_menu()">
+                                <li class="list_of_menu_nav_bar d-inline-block mr-4">پشتیبانی</li>
+                                <i class="fas fa-angle-down arrow_of_drop_down"></i>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="box_of_img_of_logo">
+                        <img src="img/logo1.jpg" alt="ملورین" class="logo_of_index_page_melorin">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 p-0">
+                    <div class="box_of_drop_down wow fadeIn">
+                        <div class="box_of_support_list " id="box_of_support_list">
+                            <div class="d-inline-block w-50 text-center">
+                                <img src="img/support.jpg" class="img_of_support">
+                            </div>
+                            <ul class="unordered_support_list_drop_down d-inline-block w-50">
+                                <a href="#" class="link_of_menu_nav_bar_drop_down">
+                                    <li class="support_list_drop_down text-center">مرجوعی</li>
+                                </a>
+                                <a href="#" class="link_of_menu_nav_bar_drop_down">
+                                    <li class="support_list_drop_down text-center">پیگیری سفارش</li>
+                                </a>
+                                <a href="#"  class="link_of_menu_nav_bar_drop_down">
+                                    <li class="support_list_drop_down text-center">سوالی دارید؟</li>
+                                </a>
+                                <a href="#" class="link_of_menu_nav_bar_drop_down">
+                                    <li class="support_list_drop_down text-center">جوایز خرید</li>
+                                </a>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="img_of_header_box">
+                    <img src="img/Header-Desktop.jpg" class="img_of_header">
+                </div>
+            </div>
+        {!    search form    !}
+            <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                <div class="overlay-content">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="جستجو کنید..." dir="rtl"
+                               class="border_radius_left_bottom text-right" name="search">
+                        <button type="submit" class="border_radius_top_right"><i class="fa fa-search "></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        {!    end top of header    !}
+
+    </header>
 {/body}
+
