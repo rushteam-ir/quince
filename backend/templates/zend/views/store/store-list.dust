@@ -81,7 +81,7 @@
                             </div>
                         {/list}
                     {:else}
-                    <div class="col-12">
+                    <div class="col-12 p-0">
                         <div class="nothing_to_see_box">
                             محصولی جهت نمایش وجود ندارد !
                         </div> 
@@ -236,21 +236,3 @@
         {/list}
 
 {/body}
-
-<script>
-    // $(document).ready(function(){
-    //
-    //     $("#store_search").on("keyup", function() {
-    //
-    //         let value = $(this).val().toLowerCase();
-    //
-    //         $("#store_list *").filter(function() {
-    //
-    //             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
-    //
-    //         });
-    //
-    //     });
-    //
-    // });
-</script>
