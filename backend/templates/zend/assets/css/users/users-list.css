@@ -59,3 +59,13 @@
 .user_list_ellipsis{
     color: #7d7d7d;
 }
+
+.sitation_main_field{
+    background-color: #E6F8F3;
+    border-radius: 500px;
+    color: #0ABB87;
+    width: 99px;
+    height: 30px;
+    line-height: 28px;
+    margin: 0 auto;
+}

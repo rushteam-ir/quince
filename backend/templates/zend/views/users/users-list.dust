@@ -26,6 +26,7 @@
                     <th class="header_list_custom" scope="col">نام کاربر</th>
                     <th class="header_list_custom" scope="col">ایمیل</th>
                     <th class="header_list_custom" scope="col">دسترسی</th>
+                    <th class="header_list_custom" scope="col">وضعیت</th>
                     <th class="header_list_custom" scope="col">اخرین فعالیت</th>
                     <th class="header_list_custom" scope="col">تنظیمات</th>
                   </tr>
@@ -46,6 +47,11 @@
                         </td>
 
                         <td class="list_detail_custom">عادی</td>
+                        <td class="list_detail_custom">
+                            <div class="sitation_main_field">
+                                فعال
+                            </div>
+                        </td>
                         <td class="list_detail_custom">1399/1/12</td>
 
                         <td class="btn_padding_custm pl-0">
@@ -64,6 +70,7 @@
                         </td>
 
                   </tr>
+
                   <tr class="dir-rtl text-center">
 
                     <th class="list_detail_custom" scope="row">1</th>
@@ -78,6 +85,11 @@
                     </td>
 
                     <td class="list_detail_custom">عادی</td>
+                    <td class="list_detail_custom">
+                        <div class="sitation_main_field">
+                            فعال
+                        </div>
+                    </td>
                     <td class="list_detail_custom">1399/1/12</td>
 
                     <td class="btn_padding_custm pl-0">
@@ -109,223 +121,11 @@
                 </td>
 
                 <td class="list_detail_custom">عادی</td>
-                <td class="list_detail_custom">1399/1/12</td>
-
-                <td class="btn_padding_custm pl-0">
-
-                    <div class="dropdown">
-                        <button class="btn user_list_dropdown_btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-ellipsis-h user_list_ellipsis"></i>
-                        </button>
-                        <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item py-2 text-center" href="#">پروفایل</a>
-                            <hr class="m-0">
-                            <a class="dropdown-item py-2 text-center" href="#">مسدود کردن</a>
-                        </div>
-                    </div>
-
-                </td>
-
-          </tr>                  <tr class="dir-rtl text-center">
-
-                        <th class="list_detail_custom" scope="row">1</th>
-                        <td class="img_padding_custom">
-                            <img class="img_of_users_list" src="img/question-icon.png" alt="">
-                        </td>
-
-                        <td class="list_detail_custom">کسری حبیب بیگی</td>
-
-                        <td class="list_detail_custom">
-                            kasrahabibbeygi@gmail.com
-                        </td>
-
-                        <td class="list_detail_custom">عادی</td>
-                        <td class="list_detail_custom">1399/1/12</td>
-
-                        <td class="btn_padding_custm pl-0">
-
-                            <div class="dropdown">
-                                <button class="btn user_list_dropdown_btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fas fa-ellipsis-h user_list_ellipsis"></i>
-                                </button>
-                                <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item py-2 text-center" href="#">پروفایل</a>
-                                    <hr class="m-0">
-                                    <a class="dropdown-item py-2 text-center" href="#">مسدود کردن</a>
-                                </div>
-                            </div>
-
-                        </td>
-
-                  </tr>                  <tr class="dir-rtl text-center">
-
-                        <th class="list_detail_custom" scope="row">1</th>
-                        <td class="img_padding_custom">
-                            <img class="img_of_users_list" src="img/question-icon.png" alt="">
-                        </td>
-
-                        <td class="list_detail_custom">کسری حبیب بیگی</td>
-
-                        <td class="list_detail_custom">
-                            kasrahabibbeygi@gmail.com
-                        </td>
-
-                        <td class="list_detail_custom">عادی</td>
-                        <td class="list_detail_custom">1399/1/12</td>
-
-                        <td class="btn_padding_custm pl-0">
-
-                            <div class="dropdown">
-                                <button class="btn user_list_dropdown_btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fas fa-ellipsis-h user_list_ellipsis"></i>
-                                </button>
-                                <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item py-2 text-center" href="#">پروفایل</a>
-                                    <hr class="m-0">
-                                    <a class="dropdown-item py-2 text-center" href="#">مسدود کردن</a>
-                                </div>
-                            </div>
-
-                        </td>
-
-                  </tr>                  <tr class="dir-rtl text-center">
-
-                        <th class="list_detail_custom" scope="row">1</th>
-                        <td class="img_padding_custom">
-                            <img class="img_of_users_list" src="img/question-icon.png" alt="">
-                        </td>
-
-                        <td class="list_detail_custom">کسری حبیب بیگی</td>
-
-                        <td class="list_detail_custom">
-                            kasrahabibbeygi@gmail.com
-                        </td>
-
-                        <td class="list_detail_custom">عادی</td>
-                        <td class="list_detail_custom">1399/1/12</td>
-
-                        <td class="btn_padding_custm pl-0">
-
-                            <div class="dropdown">
-                                <button class="btn user_list_dropdown_btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fas fa-ellipsis-h user_list_ellipsis"></i>
-                                </button>
-                                <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item py-2 text-center" href="#">پروفایل</a>
-                                    <hr class="m-0">
-                                    <a class="dropdown-item py-2 text-center" href="#">مسدود کردن</a>
-                                </div>
-                            </div>
-
-                        </td>
-
-                  </tr>                  <tr class="dir-rtl text-center">
-
-                        <th class="list_detail_custom" scope="row">1</th>
-                        <td class="img_padding_custom">
-                            <img class="img_of_users_list" src="img/question-icon.png" alt="">
-                        </td>
-
-                        <td class="list_detail_custom">کسری حبیب بیگی</td>
-
-                        <td class="list_detail_custom">
-                            kasrahabibbeygi@gmail.com
-                        </td>
-
-                        <td class="list_detail_custom">عادی</td>
-                        <td class="list_detail_custom">1399/1/12</td>
-
-                        <td class="btn_padding_custm pl-0">
-
-                            <div class="dropdown">
-                                <button class="btn user_list_dropdown_btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fas fa-ellipsis-h user_list_ellipsis"></i>
-                                </button>
-                                <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item py-2 text-center" href="#">پروفایل</a>
-                                    <hr class="m-0">
-                                    <a class="dropdown-item py-2 text-center" href="#">مسدود کردن</a>
-                                </div>
-                            </div>
-
-                        </td>
-
-                  </tr>                  <tr class="dir-rtl text-center">
-
-                        <th class="list_detail_custom" scope="row">1</th>
-                        <td class="img_padding_custom">
-                            <img class="img_of_users_list" src="img/question-icon.png" alt="">
-                        </td>
-
-                        <td class="list_detail_custom">کسری حبیب بیگی</td>
-
-                        <td class="list_detail_custom">
-                            kasrahabibbeygi@gmail.com
-                        </td>
-
-                        <td class="list_detail_custom">عادی</td>
-                        <td class="list_detail_custom">1399/1/12</td>
-
-                        <td class="btn_padding_custm pl-0">
-
-                            <div class="dropdown">
-                                <button class="btn user_list_dropdown_btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fas fa-ellipsis-h user_list_ellipsis"></i>
-                                </button>
-                                <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item py-2 text-center" href="#">پروفایل</a>
-                                    <hr class="m-0">
-                                    <a class="dropdown-item py-2 text-center" href="#">مسدود کردن</a>
-                                </div>
-                            </div>
-
-                        </td>
-
-                  </tr>                  <tr class="dir-rtl text-center">
-
-                    <th class="list_detail_custom" scope="row">1</th>
-                    <td class="img_padding_custom">
-                        <img class="img_of_users_list" src="img/question-icon.png" alt="">
-                    </td>
-
-                    <td class="list_detail_custom">کسری حبیب بیگی</td>
-
-                    <td class="list_detail_custom">
-                        kasrahabibbeygi@gmail.com
-                    </td>
-
-                    <td class="list_detail_custom">عادی</td>
-                    <td class="list_detail_custom">1399/1/12</td>
-
-                    <td class="btn_padding_custm pl-0">
-
-                        <div class="dropdown">
-                            <button class="btn user_list_dropdown_btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-ellipsis-h user_list_ellipsis"></i>
-                            </button>
-                            <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item py-2 text-center" href="#">پروفایل</a>
-                                <hr class="m-0">
-                                <a class="dropdown-item py-2 text-center" href="#">مسدود کردن</a>
-                            </div>
-                        </div>
-
-                    </td>
-
-              </tr>                  <tr class="dir-rtl text-center">
-
-                <th class="list_detail_custom" scope="row">1</th>
-                <td class="img_padding_custom">
-                    <img class="img_of_users_list" src="img/question-icon.png" alt="">
-                </td>
-
-                <td class="list_detail_custom">کسری حبیب بیگی</td>
-
                 <td class="list_detail_custom">
-                    kasrahabibbeygi@gmail.com
+                    <div class="sitation_main_field">
+                        فعال
+                    </div>
                 </td>
-
-                <td class="list_detail_custom">عادی</td>
                 <td class="list_detail_custom">1399/1/12</td>
 
                 <td class="btn_padding_custm pl-0">
@@ -357,6 +157,11 @@
                         </td>
 
                         <td class="list_detail_custom">عادی</td>
+                        <td class="list_detail_custom">
+                            <div class="sitation_main_field">
+                                فعال
+                            </div>
+                        </td>
                         <td class="list_detail_custom">1399/1/12</td>
 
                         <td class="btn_padding_custm pl-0">
@@ -388,6 +193,11 @@
                         </td>
 
                         <td class="list_detail_custom">عادی</td>
+                        <td class="list_detail_custom">
+                            <div class="sitation_main_field">
+                                فعال
+                            </div>
+                        </td>
                         <td class="list_detail_custom">1399/1/12</td>
 
                         <td class="btn_padding_custm pl-0">
@@ -407,68 +217,6 @@
 
                   </tr>                  <tr class="dir-rtl text-center">
 
-                    <th class="list_detail_custom" scope="row">1</th>
-                    <td class="img_padding_custom">
-                        <img class="img_of_users_list" src="img/question-icon.png" alt="">
-                    </td>
-
-                    <td class="list_detail_custom">کسری حبیب بیگی</td>
-
-                    <td class="list_detail_custom">
-                        kasrahabibbeygi@gmail.com
-                    </td>
-
-                    <td class="list_detail_custom">عادی</td>
-                    <td class="list_detail_custom">1399/1/12</td>
-
-                    <td class="btn_padding_custm pl-0">
-
-                        <div class="dropdown">
-                            <button class="btn user_list_dropdown_btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-ellipsis-h user_list_ellipsis"></i>
-                            </button>
-                            <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item py-2 text-center" href="#">پروفایل</a>
-                                <hr class="m-0">
-                                <a class="dropdown-item py-2 text-center" href="#">مسدود کردن</a>
-                            </div>
-                        </div>
-
-                    </td>
-
-              </tr>                  <tr class="dir-rtl text-center">
-
-                <th class="list_detail_custom" scope="row">1</th>
-                <td class="img_padding_custom">
-                    <img class="img_of_users_list" src="img/question-icon.png" alt="">
-                </td>
-
-                <td class="list_detail_custom">کسری حبیب بیگی</td>
-
-                <td class="list_detail_custom">
-                    kasrahabibbeygi@gmail.com
-                </td>
-
-                <td class="list_detail_custom">عادی</td>
-                <td class="list_detail_custom">1399/1/12</td>
-
-                <td class="btn_padding_custm pl-0">
-
-                    <div class="dropdown">
-                        <button class="btn user_list_dropdown_btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-ellipsis-h user_list_ellipsis"></i>
-                        </button>
-                        <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item py-2 text-center" href="#">پروفایل</a>
-                            <hr class="m-0">
-                            <a class="dropdown-item py-2 text-center" href="#">مسدود کردن</a>
-                        </div>
-                    </div>
-
-                </td>
-
-          </tr>                  <tr class="dir-rtl text-center">
-
                         <th class="list_detail_custom" scope="row">1</th>
                         <td class="img_padding_custom">
                             <img class="img_of_users_list" src="img/question-icon.png" alt="">
@@ -481,6 +229,11 @@
                         </td>
 
                         <td class="list_detail_custom">عادی</td>
+                        <td class="list_detail_custom">
+                            <div class="sitation_main_field">
+                                فعال
+                            </div>
+                        </td>
                         <td class="list_detail_custom">1399/1/12</td>
 
                         <td class="btn_padding_custm pl-0">
@@ -512,6 +265,11 @@
                     </td>
 
                     <td class="list_detail_custom">عادی</td>
+                    <td class="list_detail_custom">
+                        <div class="sitation_main_field">
+                            فعال
+                        </div>
+                    </td>
                     <td class="list_detail_custom">1399/1/12</td>
 
                     <td class="btn_padding_custm pl-0">
@@ -543,6 +301,155 @@
                         </td>
 
                         <td class="list_detail_custom">عادی</td>
+                        <td class="list_detail_custom">
+                            <div class="sitation_main_field">
+                                فعال
+                            </div>
+                        </td>
+                        <td class="list_detail_custom">1399/1/12</td>
+
+                        <td class="btn_padding_custm pl-0">
+
+                            <div class="dropdown">
+                                <button class="btn user_list_dropdown_btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-h user_list_ellipsis"></i>
+                                </button>
+                                <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item py-2 text-center" href="#">پروفایل</a>
+                                    <hr class="m-0">
+                                    <a class="dropdown-item py-2 text-center" href="#">مسدود کردن</a>
+                                </div>
+                            </div>
+
+                        </td>
+
+                  </tr>                  <tr class="dir-rtl text-center">
+
+                        <th class="list_detail_custom" scope="row">1</th>
+                        <td class="img_padding_custom">
+                            <img class="img_of_users_list" src="img/question-icon.png" alt="">
+                        </td>
+
+                        <td class="list_detail_custom">کسری حبیب بیگی</td>
+
+                        <td class="list_detail_custom">
+                            kasrahabibbeygi@gmail.com
+                        </td>
+
+                        <td class="list_detail_custom">عادی</td>
+                        <td class="list_detail_custom">
+                            <div class="sitation_main_field">
+                                فعال
+                            </div>
+                        </td>
+                        <td class="list_detail_custom">1399/1/12</td>
+
+                        <td class="btn_padding_custm pl-0">
+
+                            <div class="dropdown">
+                                <button class="btn user_list_dropdown_btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-h user_list_ellipsis"></i>
+                                </button>
+                                <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item py-2 text-center" href="#">پروفایل</a>
+                                    <hr class="m-0">
+                                    <a class="dropdown-item py-2 text-center" href="#">مسدود کردن</a>
+                                </div>
+                            </div>
+
+                        </td>
+
+                  </tr>                  <tr class="dir-rtl text-center">
+
+                    <th class="list_detail_custom" scope="row">1</th>
+                    <td class="img_padding_custom">
+                        <img class="img_of_users_list" src="img/question-icon.png" alt="">
+                    </td>
+
+                    <td class="list_detail_custom">کسری حبیب بیگی</td>
+
+                    <td class="list_detail_custom">
+                        kasrahabibbeygi@gmail.com
+                    </td>
+
+                    <td class="list_detail_custom">عادی</td>
+                    <td class="list_detail_custom">
+                        <div class="sitation_main_field">
+                            فعال
+                        </div>
+                    </td>
+                    <td class="list_detail_custom">1399/1/12</td>
+
+                    <td class="btn_padding_custm pl-0">
+
+                        <div class="dropdown">
+                            <button class="btn user_list_dropdown_btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-ellipsis-h user_list_ellipsis"></i>
+                            </button>
+                            <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item py-2 text-center" href="#">پروفایل</a>
+                                <hr class="m-0">
+                                <a class="dropdown-item py-2 text-center" href="#">مسدود کردن</a>
+                            </div>
+                        </div>
+
+                    </td>
+
+              </tr>                  <tr class="dir-rtl text-center">
+
+                        <th class="list_detail_custom" scope="row">1</th>
+                        <td class="img_padding_custom">
+                            <img class="img_of_users_list" src="img/question-icon.png" alt="">
+                        </td>
+
+                        <td class="list_detail_custom">کسری حبیب بیگی</td>
+
+                        <td class="list_detail_custom">
+                            kasrahabibbeygi@gmail.com
+                        </td>
+
+                        <td class="list_detail_custom">عادی</td>
+                        <td class="list_detail_custom">
+                            <div class="sitation_main_field">
+                                فعال
+                            </div>
+                        </td>
+                        <td class="list_detail_custom">1399/1/12</td>
+
+                        <td class="btn_padding_custm pl-0">
+
+                            <div class="dropdown">
+                                <button class="btn user_list_dropdown_btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-h user_list_ellipsis"></i>
+                                </button>
+                                <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item py-2 text-center" href="#">پروفایل</a>
+                                    <hr class="m-0">
+                                    <a class="dropdown-item py-2 text-center" href="#">مسدود کردن</a>
+                                </div>
+                            </div>
+
+                        </td>
+
+                  </tr>                  <tr class="dir-rtl text-center">
+
+                        <th class="list_detail_custom" scope="row">1</th>
+                        <td class="img_padding_custom">
+                            <img class="img_of_users_list" src="img/question-icon.png" alt="">
+                        </td>
+
+                        <td class="list_detail_custom">کسری حبیب بیگی</td>
+
+                        <td class="list_detail_custom">
+                            kasrahabibbeygi@gmail.com
+                        </td>
+
+                        <td class="list_detail_custom">عادی</td>
+                        <td class="list_detail_custom">
+                            <div class="sitation_main_field">
+                                فعال
+                            </div>
+                        </td>
                         <td class="list_detail_custom">1399/1/12</td>
 
                         <td class="btn_padding_custm pl-0">
@@ -561,7 +468,6 @@
                         </td>
 
                   </tr>
-                  
 
                 </tbody>
               </table>
