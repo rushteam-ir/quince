@@ -15,7 +15,7 @@ let product_schema = new mongoose.Schema({
     points : String,
     last_edit : String,
     comments : Array,
-    author : {type : 'ObjectId', ref : 'admin'},
+    author : {type : 'ObjectId', ref : 'user'},
     status : Boolean
 
 });
