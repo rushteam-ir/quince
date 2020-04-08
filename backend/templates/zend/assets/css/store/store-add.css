@@ -62,10 +62,10 @@
     color: #555;
     padding: 0;
     line-height: 40px;
-    width: 419px;
+    width: 95%;
     display: block;
     border: 1.3px solid #d6d6d6;
-    ;
+    
 }
 
 .btn-tertiary:hover,
@@ -73,12 +73,6 @@
     color: #888888;
     border-color: #888888;
 }
-
-
-
-
-
-
 
 .input-file-custom {
     width: 0.1px;
@@ -105,10 +99,6 @@
     content: "\f00c";
     color: #5AAC7B;
 }
-
-
-
-
 
 .field_wrapper_file {
     width: 106%;
@@ -175,7 +165,7 @@
     position: relative;
 }
 
-.pip{
+.pip {
     width: 100%;
     margin: 0px !important;
 }
@@ -183,7 +173,7 @@
 .remove {
     display: block;
     background: #5D78FF !important;
-    border:none !important;
+    border: none !important;
     color: white;
     text-align: center;
     cursor: pointer;
@@ -195,7 +185,8 @@
     border-radius: 0px 6px 0px 6px;
 }
 
-.remove::before , .remove::after{
+.remove::before,
+.remove::after {
     content: "";
     width: 1.5px;
     height: 21px;
@@ -205,9 +196,11 @@
     right: 19px;
     top: 9px;
 }
+
 .remove::after {
     transform: rotate(-45deg);
 }
-.small_customize{
+
+.small_customize {
     margin-top: -10px;
 }
