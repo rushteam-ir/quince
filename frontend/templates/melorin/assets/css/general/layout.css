@@ -81,10 +81,6 @@
 
 /*End Footer*/
 
-body {
-    background-color: #f1f1f1;
-}
-
 .main_field_of_nav_menu {
     background-color: #ffffff;
     height: 125px;
@@ -157,6 +153,21 @@ body {
     font-size: 1.1rem;
     position: relative;
     top: 2px;
+}
+
+.icon_of_navbar_custom {
+    font-size: 1.4rem;
+    padding: 0px;
+    width: 113px;
+    margin: 0 auto;
+    margin-top: 12px;
+    color: #5a5a5a;
+}
+
+.border_of_li_custom{
+    border-right: 1px solid rgb(206, 206, 206);
+    padding-right: 10px;
+    height: 28px;
 }
 
 
