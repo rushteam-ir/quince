@@ -94,6 +94,9 @@
     .namad_img_footer{
         width: 90%;
     }
+    .explain_of_Customization_product{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
