@@ -30,6 +30,7 @@
 .figure_of_img_product_category{
     overflow: hidden;
     border-radius: 5px;
+    transition: border-radius 1.5s;
 }
 
 .btn_product_category{
@@ -55,7 +56,7 @@
 }
 
 .figure_of_img_product_category:hover{
-    border-radius: 0px 50px 0px 50px;
+    border-radius: 0px 70px 0px 70px;
 }
 
 .figure_of_img_product_category:hover .btn_product_category {
@@ -100,9 +101,9 @@
 }
 
 .animated {
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-fill-mode: both;
-    -webkit-animation-duration: 1s;
+    -webkit-animation-duration: 2s;
     -webkit-animation-fill-mode: both
 }
 
