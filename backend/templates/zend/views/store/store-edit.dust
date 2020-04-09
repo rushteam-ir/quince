@@ -91,26 +91,27 @@
                     <label for="product_img">تصویر اصلی محصول:</label>
                     <div class="field_of_img_template">
                         <div class="row mb-5 mt-3 row_of_img_custom">
-        
+
                             <div class="col-4 pr-0">
-                                <div class="box_of_img_template ">
-        
-                                    <div class="box_of_img_template ">
-                                        <input type="file" name="product_main_image[]" id="product_img_main" class="input-file-custom ">
+                                <div class="box_of_img_template">
+
+                                    <div class="box_of_img_template img-box">
+                                        <div class="img-show">
+                                            {@eq key="{product_form.images[0]}" value=""}
+
+                                            {:else}
+                                                <div class="remove_parent">
+                                                    <img class="uploading_img_from_brows" src="media/products/{product_form.images[0]}"><div name="0" class="remove_img_icon product_del"></div>
+                                                </div>
+                                            {/eq}
+                                        </div>
+                                        <input type="file" name="product_main_image" id="product_img_main" class="input-file-custom">
                                         <label for="product_img_main" class="btn btn-tertiary2 js-labelFile ">
-                                        <i class="icon fa fa-check"></i>
-                                        <span class="js-fileName mr-2">انتخاب عکس</span>
+                                            <i class="icon fa fa-check"></i>
+                                            <span class="js-fileName mr-2">انتخاب عکس</span>
                                         </label>
                                     </div>
-                                    
 
-                                    <div>
-
-                                        <img class="uploading_img_from_brows" src="img/sexy-knees-socks-porn-blogspot-3.jpg" alt="">
-                                        <div class="remove_img_icon"></div>
-
-                                    </div>
-                                    
                                 </div>
 
                             </div>
@@ -126,26 +127,50 @@
                         <div class="field_of_img_template">
                             <div class="row mb-5 mt-3 row_of_img_custom">
 
-                                <div class="col-4 pr-0">
-                                    <div class="box_of_img_template ">
+                                    {#product_form.images}
+                                        {@eq key="{$idx}" value="0"}
 
-                                        <div class="box_of_img_template ">
-                                            <input type="file" name="product_images[]" id="product_img_main" class="input-file-custom ">
-                                            <label for="product_img_main" class="btn btn-tertiary2 js-labelFile ">
-                                            <i class="icon fa fa-check"></i>
-                                            <span class="js-fileName mr-2">انتخاب عکس</span>
-                                            </label>
+                                        {:else}
+                                            <div class="col-4 pr-0 mt-3">
+                                                <div class="box_of_img_template">
+
+                                                    <div class="box_of_img_template img-box">
+                                                        <div class="img-show">
+                                                            {@eq key="{.}" value=""}
+
+                                                            {:else}
+                                                                <div class="remove_parent">
+                                                                    <img class="uploading_img_from_brows" src="media/products/{.}"><div name="{$idx}" class="remove_img_icon product_del"></div>
+                                                                </div>
+                                                            {/eq}
+                                                        </div>
+                                                        <input type="file" name="product_other_images[]" id="product_other_img_{$idx}" class="input-file-custom">
+                                                        <label for="product_other_img_{$idx}" class="btn btn-tertiary2 js-labelFile ">
+                                                            <i class="icon fa fa-check"></i>
+                                                            <span class="js-fileName mr-2">انتخاب عکس</span>
+                                                        </label>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        {/eq}
+                                    {/product_form.images}
+                                    {#store_image_slot}
+                                        <div class="col-4 pr-0 mt-3">
+                                            <div class="box_of_img_template">
+
+                                                <div class="box_of_img_template img-box">
+                                                    <div class="img-show"></div>
+                                                    <input type="file" name="product_other_images[]" id="product_other_img_{.}" class="input-file-custom">
+                                                    <label for="product_other_img_{.}" class="btn btn-tertiary2 js-labelFile ">
+                                                        <i class="icon fa fa-check"></i>
+                                                        <span class="js-fileName mr-2">انتخاب عکس</span>
+                                                    </label>
+                                                </div>
+
+                                            </div>
                                         </div>
-
-                                        <div>
-
-                                            <img class="uploading_img_from_brows" src="img/sexy.jpg" alt="">
-                                            <div class="remove_img_icon"></div>
-    
-                                        </div>
-
-                                    </div>
-                                </div>
+                                    {/store_image_slot}
 
                             </div>
                         </div>

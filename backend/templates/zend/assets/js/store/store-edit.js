@@ -93,6 +93,37 @@ function storeAddError() {
     }
 
 }
+
+// delete image sweet alert
+$('.product_del').on('click', function (e) {
+
+    let image_id = $(e.currentTarget).attr('name');
+
+    Swal.fire({
+        title: 'حذف تصویر',
+        text: "آیا از حذف این تصویر مطمئن هستید ؟",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'بله',
+        cancelButtonText: 'خیر',
+    }).then((result) => {
+        if (result.value) {
+            Swal.fire({
+                title : 'حذف شد',
+                text : 'تصویر مور نظر با موفقیت حذف شد برای تایید نهایی کلیک کنید',
+                icon : 'success',
+                confirmButtonText: 'تایید',
+            }).then((result)=>{
+                if (result.value) {
+                    redirect(`${backend_url}store/api/delete-image/?id=${image_id}`);
+                }
+            })
+        }
+    })
+});
+
 // input add & remove
 $(document).ready(function () {
 
@@ -149,51 +180,46 @@ $(document).ready(function () {
         var $input = $(this),
             $label = $input.next('.js-labelFile'),
             labelVal = $label.html();
-
-        $input.on('change', function (element) {
-            var fileName = '';
-            if (element.target.value) fileName = element.target.value.split('\\').pop();
-            fileName ? $label.addClass('has-file').find('.js-fileName').html(fileName) : $label.removeClass(
-                'has-file').html(labelVal);
-        });
     });
 
 })();
+
+$( document ).ready(function() {
+
+    // show img when browse
+    $(".input-file-custom").change(function() {
+
+        let input = this;
+
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+
+                let fieldHTML = '<div class="remove_parent"><img class="uploading_img_from_brows" src="'+e.target.result+'"> <div class="remove_img_icon remove"></div></div>';
+                $(input).prev().append(fieldHTML);
+
+            }
+
+            reader.readAsDataURL(input.files[0]); // convert to base64 string
+        }
+
+    });
+
+});
+
+$(document).on('click', '.remove', function(e) {
+
+    $(this).parents('.img-show').next().val('');
+    $(this).parent('.remove_parent').remove();
+
+});
 
 // pop over function
 
 $(function () {
     $('[data-toggle="popover"]').popover()
-});
-
-function deleteCall() {
-
-    let image_name = $('#main-image').attr('name').replace('.png', '');
-    Swal.fire({
-        title: 'حذف تصویر',
-        text: "آیا از حذف این تصویر مطمئن هستید ؟",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'بله',
-        cancelButtonText: 'خیر',
-    }).then((result) => {
-        if (result.value) {
-            Swal.fire({
-                title: 'حذف شد',
-                text: 'تصویر پروفایل شما با موفقیت حذف شد برای تایید نهایی کلیک کنید',
-                icon: 'success',
-                confirmButtonText: 'تایید',
-            }).then((result) => {
-                if (result.value) {
-                    redirect(`${backend_url}store/delete/?id=${image_name}`);
-                }
-            })
-        }
-    })
-    return false
-}
+})
 
 function redirect(url) {
     location.href = url

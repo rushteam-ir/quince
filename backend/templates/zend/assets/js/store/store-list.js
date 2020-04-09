@@ -21,7 +21,7 @@ $('.product_del').on('click', function (e) {
                 confirmButtonText: 'تایید',
             }).then((result)=>{
                 if (result.value) {
-                    redirect(`${backend_url}store/?del=${product_id}`);
+                    redirect(`${backend_url}store/api/delete-product/?id=${product_id}`);
                 }
             })
         }
@@ -58,7 +58,7 @@ $('.product_status').on('click', function (e) {
                 confirmButtonText: 'تایید',
             }).then((result)=>{
                 if (result.value) {
-                    redirect(`${backend_url}store/?id=${product_id}&status=${product_status}`);
+                    redirect(`${backend_url}store/api/change-status/?id=${product_id}`);
                 }
             })
         }

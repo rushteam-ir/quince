@@ -7,15 +7,27 @@ router.get('/:id', async(req,res)=>{
         let product_id = req.params.id;
 
         if(!product_id || !isObjectId(product_id)){
+
             return res.redirect(`${config.backend_url}store/list`);
+
         }
 
         let edit_product = await product_model.getById(product_id);
-        backend.locals.product_form = edit_product;
+        backend.locals.store_image_slot = backend.locals.store_image_slot_default;
+
+        for(let i = 1; i <= edit_product.images.length - 1; i++){
+
+            let index = backend.locals.store_image_slot.indexOf(i);
+            backend.locals.store_image_slot.splice(index, 1);
+
+        }
+        backend.locals.store_image_slot_default = [1,2,3,4,5,6];
+        backend.locals.product_edit_id = edit_product._id;
 
         let data = {
 
             list : await category_model.get(),
+            product_form : edit_product,
 
         }
 
@@ -95,9 +107,9 @@ router.post('/:id', async(req,res)=>{
             images : last_product.images
 
         };
+        if(typeof req.files.product_main_image != 'undefined'){
 
-        if(req.files.product_main_image){
-
+            log(req.files.product_main_image);
             let main_image = req.files.product_main_image;
             let product_images = [];
 
