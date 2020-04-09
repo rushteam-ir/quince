@@ -118,28 +118,21 @@
                         <div class="field_of_img_template">
                             <div class="row mb-5 mt-3 row_of_img_custom">
 
-                                <div class="col-4 pr-0 mt-3">
-                                    <div class="box_of_img_template ">
+                                <div class="col-4 pr-0">
+                                    <div class="box_of_img_template">
 
-                                        <div class="box_of_img_template ">
-                                            <input type="file" name="product_images[]" id="product_img_second" class="input-file-custom ">
-                                            <label for="product_img_second" class="btn btn-tertiary2 js-labelFile ">
-                                            <i class="icon fa fa-check"></i>
-                                            <span class="js-fileName mr-2">انتخاب عکس</span>
+                                        <div class="box_of_img_template img-box">
+                                            <div class="img-show"></div>
+                                            <input type="file" name="product_other_images[]" id="product_other_img" class="input-file-custom">
+                                            <label for="product_img_main" class="btn btn-tertiary2 js-labelFile ">
+                                                <i class="icon fa fa-check"></i>
+                                                <span class="js-fileName mr-2">انتخاب عکس</span>
                                             </label>
                                         </div>
 
-                                        <div class="remove_parent">
-
-                                            <img class="uploading_img_from_brows" src="img/a.jpg" alt="">
-                                            <div class="remove_img_icon remove"></div>
-    
-                                        </div>
-
                                     </div>
+
                                 </div>
-
-
 
                             </div>
                         </div>
