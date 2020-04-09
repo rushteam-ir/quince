@@ -16,6 +16,11 @@
     <section>
         <div class="container-fluid">
             <div class="row mt-5">
+                <div class="col-10 offset-1 text-center">
+                    <h3 class="title_part_of_page">دسته بندی محصولات</h3>
+                </div>
+            </div>
+            <div class="row mt-5">
                 <div class="col-12  col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-0 mb-5">
                     <div class="sale_product_category">
                         <figure class="figure_of_img_product_category">

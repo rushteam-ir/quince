@@ -5,7 +5,6 @@
     height: 300px;
 }
 
-
 /*delete after ok*/
 
 /*Sale Product Category*/
@@ -198,10 +197,33 @@
     .h3_style_of_parallax{
         font-size: 1.5rem;
     }
+    .title_part_of_page{
+        font-size: 1.4rem;
+    }
+    .title_part_of_page::before{
+        width: 140px !important;
+        left: -180px !important;
+    }
+    .title_part_of_page::after{
+        width: 140px !important;
+        right: -180px !important;
+    }
 }
 
 
 @media only screen and (max-width: 600px) {
+    .title_part_of_page{
+        font-size: 1.3rem;
+    }
+    .title_part_of_page::before{
+        width: 100px !important;
+        left: -120px !important;
+    }
+    .title_part_of_page::after{
+        width: 100px !important;
+        right: -120px !important;
+    }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -209,9 +231,41 @@
         width: 80%;
     }
 
+
 }
 
 
 
 
+.title_part_of_page{
+    color: #292929;
+    display: inline-block;
+    font-family: main-font;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0;
+    position: relative;
+}
+
+.title_part_of_page::before{
+    background-color: #292929;
+    content: "";
+    height: 1px;
+    left: -210px;
+    position: absolute;
+    top: 21px;
+    transition: all 0.4s ease 0s;
+    width: 160px;
+}
+
+.title_part_of_page::after{
+    background-color: #292929;
+    content: "";
+    height: 1px;
+    right: -210px;
+    position: absolute;
+    top: 21px;
+    transition: all 0.4s ease 0s;
+    width: 160px;
+}
 /*End Media Query*/
