@@ -28,6 +28,6 @@ backend.locals.debug_mode = config.debug_mode;
 backend.locals.captcha_url = config.captcha_url;
 backend.locals.zend_cms_version = "1.0.0";
 backend.locals.messages_status = false;
-backend.locals.store_image_slot = [1,2,3,4,5,6];
+backend.locals.store_image_slot_default = [1,2,3,4,5,6];
 backend.locals.limited_avatars_size = (backend_limited_avatars_size/1024).toString();
 backend.locals.limited_products_size = (backend_limited_products_size/1024).toString();
