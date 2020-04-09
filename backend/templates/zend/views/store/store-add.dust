@@ -124,7 +124,7 @@
                                         <div class="box_of_img_template img-box">
                                             <div class="img-show"></div>
                                             <input type="file" name="product_other_images[]" id="product_other_img" class="input-file-custom">
-                                            <label for="product_img_main" class="btn btn-tertiary2 js-labelFile ">
+                                            <label for="product_other_img" class="btn btn-tertiary2 js-labelFile ">
                                                 <i class="icon fa fa-check"></i>
                                                 <span class="js-fileName mr-2">انتخاب عکس</span>
                                             </label>
