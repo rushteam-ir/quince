@@ -12,6 +12,14 @@
 {/js}
 
 {<body}
-
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12  col-sm-8 offset-sm-2 col-lg-4 offset-lg-0 a bg-secondary"></div>
+                <div class="col-12  col-sm-8 offset-sm-2 col-lg-4 offset-lg-0 a bg-danger"></div>
+                <div class="col-12  col-sm-8 offset-sm-2 col-lg-4 offset-lg-0 a bg-success"></div>
+            </div>
+        </div>
+    </section>
 {/body}
 

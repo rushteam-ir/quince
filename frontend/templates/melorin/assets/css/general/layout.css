@@ -64,14 +64,16 @@
     font-size: .9rem;
 }
 
-.explain_of_Customization_product{
-    width: 80%;
-    margin: auto;
-    margin-bottom: 20px;
-}
 
 .footer_company_name{
     direction: ltr;
+}
+
+.about_melorin_connect{
+    width: 80%;
+    background: #999999;
+    text-align: right;
+    margin: auto;
 }
 /*End Footer*/
 
