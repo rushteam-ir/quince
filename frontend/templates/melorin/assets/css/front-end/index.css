@@ -23,13 +23,14 @@
     height: 350px;
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
 }
 
 .figure_of_img_product_category{
     overflow: hidden;
     border-radius: 5px;
+    transition: border-radius 1.5s;
 }
 
 .btn_product_category{
@@ -54,7 +55,16 @@
     transform: scale(1.3);
 }
 
-.figure_of_img_product_category:hover .btn_product_category {
+.figure_of_img_product_category:hover{
+    border-radius: 0px 70px 0px 70px;
+}
+
+.figure_of_img_product_category:hover .content-overlay{
+    opacity: 1;
+    border-radius: 0px 70px 0px 70px;
+}
+
+.figure_of_img_product_category:hover .btn_product_category{
     display: block;
 }
 
@@ -70,6 +80,21 @@
 
 .show_all_product_category:hover{
     color: black;
+}
+
+.content-overlay{
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s , border-radius 1.5s;
 }
 /* Animation For FadeInUp */
 
@@ -96,9 +121,9 @@
 }
 
 .animated {
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-fill-mode: both;
-    -webkit-animation-duration: 1s;
+    -webkit-animation-duration: 2s;
     -webkit-animation-fill-mode: both
 }
 
