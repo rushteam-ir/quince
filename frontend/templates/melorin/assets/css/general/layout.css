@@ -77,12 +77,28 @@
 
 
 .main_field_of_nav_menu{
-    background-color: rgb(148, 148, 148);
-    height: 100px;
+    background-color: #f0f0f0;
+    height: 105px;
     margin-bottom: 300px;
-    text-align: center;
+    text-align: right;
+    border-bottom: 1px solid #cacaca;
+    padding-right: 100px;
 }
 
+.ul_of_main_menu{
+    color: black;
+    font-size: 1.1rem;
+    font-family: main-font;
+    line-height: 100px;
+}
+
+.main_logo_field{
+    width: 110px;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+
+}
 
 
 

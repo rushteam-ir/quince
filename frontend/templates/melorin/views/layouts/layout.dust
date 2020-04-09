@@ -19,27 +19,7 @@
 
         {+body/}
 
-        <nav class="w-100">
-            
-            <div class="w-100 main_field_of_nav_menu">
-                <ul>
-                    <li class="d-inline-block">خانه</li>
-                    <li class="d-inline-block">محصولات</li>
-                    <li class="d-inline-block">درباره ما</li>
-                    <li class="d-inline-block">تماس با ما</li>
-                    <li class="d-inline-block">پشتیبانی</li>
-                </ul>
-            </div>
 
-            <div>
-
-            </div>
-
-            <div>
-
-            </div>
-
-        </nav>
 
 
         <footer class="footer_style">
