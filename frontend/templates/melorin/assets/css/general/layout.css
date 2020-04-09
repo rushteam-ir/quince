@@ -76,7 +76,12 @@
 /*End Footer*/
 
 
-
+.main_field_of_nav_menu{
+    background-color: rgb(148, 148, 148);
+    height: 100px;
+    margin-bottom: 300px;
+    text-align: center;
+}
 
 
 

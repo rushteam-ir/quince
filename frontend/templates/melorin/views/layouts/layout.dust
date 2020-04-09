@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/general/animate.css">
     <link rel="stylesheet" href="css/general/layout.css">
     <link rel="stylesheet" href="css/general/general.css">
-    <link rel="stylesheet" href="">
     {+css/}
     {+title/}
 </head>
@@ -20,10 +19,16 @@
 
         {+body/}
 
-        <nav>
+        <nav class="w-100">
             
-            <div>
-
+            <div class="w-100 main_field_of_nav_menu">
+                <ul>
+                    <li class="d-inline-block">خانه</li>
+                    <li class="d-inline-block">محصولات</li>
+                    <li class="d-inline-block">درباره ما</li>
+                    <li class="d-inline-block">تماس با ما</li>
+                    <li class="d-inline-block">پشتیبانی</li>
+                </ul>
             </div>
 
             <div>
@@ -31,7 +36,7 @@
             </div>
 
             <div>
-                
+
             </div>
 
         </nav>
