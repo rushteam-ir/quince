@@ -17,7 +17,7 @@
 
 <body>
 
-        {+body/}
+
 
         <nav class="w-100">
 
@@ -50,7 +50,8 @@
 
         </nav>
 
-
+        {+body/}
+        
         <footer class="footer_style">
             <div class="container-fluid">
                 <div class="row">
