@@ -118,21 +118,22 @@
                         <div class="field_of_img_template">
                             <div class="row mb-5 mt-3 row_of_img_custom">
 
+                                {#store_image_slot}
                                 <div class="col-4 pr-0">
                                     <div class="box_of_img_template">
 
                                         <div class="box_of_img_template img-box">
                                             <div class="img-show"></div>
-                                            <input type="file" name="product_other_images[]" id="product_other_img" class="input-file-custom">
-                                            <label for="product_other_img" class="btn btn-tertiary2 js-labelFile ">
+                                            <input type="file" name="product_other_images[]" id="product_other_img_{.}" class="input-file-custom">
+                                            <label for="product_other_img_{.}" class="btn btn-tertiary2 js-labelFile ">
                                                 <i class="icon fa fa-check"></i>
                                                 <span class="js-fileName mr-2">انتخاب عکس</span>
                                             </label>
                                         </div>
 
                                     </div>
-
                                 </div>
+                                {/store_image_slot}
 
                             </div>
                         </div>
