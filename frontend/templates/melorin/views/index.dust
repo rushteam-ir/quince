@@ -14,10 +14,31 @@
 {<body}
     <section>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-12  col-sm-8 offset-sm-2 col-lg-4 offset-lg-0 a bg-secondary"></div>
-                <div class="col-12  col-sm-8 offset-sm-2 col-lg-4 offset-lg-0 a bg-danger"></div>
-                <div class="col-12  col-sm-8 offset-sm-2 col-lg-4 offset-lg-0 a bg-success"></div>
+            <div class="row mt-5">
+                <div class="col-12  col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-0 mb-5">
+                    <div class="sale_product_category">
+                        <figure class="figure_of_img_product_category">
+                            <img src="img/man.jpg" class="sale_product_category_details_img"/>
+                            <button type="button" class="btn_product_category animated animatedFadeInUp fadeInUp">مردانه</button>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-12  col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-0 mb-5">
+                    <div class="sale_product_category">
+                        <figure class="figure_of_img_product_category">
+                            <img src="img/womman.jpg" class="sale_product_category_details_img"/>
+                            <button type="button" class="btn_product_category animated animatedFadeInUp fadeInUp">زنانه</button>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-12  col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-0 mb-5">
+                    <div class="sale_product_category">
+                        <figure class="figure_of_img_product_category">
+                            <img src="img/child.jpg" class="sale_product_category_details_img"/>
+                            <button type="button" class="btn_product_category animated animatedFadeInUp fadeInUp" data-wow-iteration="1">بچگانه</button>
+                        </figure>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
