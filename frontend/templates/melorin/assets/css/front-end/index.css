@@ -141,7 +141,45 @@
 
 /*End Sale Product Category*/
 
+/*Parallax*/
 
+.parallax_css_picture{
+    background-image: url("../../img/parallax.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.h2_style_of_parallax{
+    font-family: main-font;
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    color: white;
+    font-size: 3rem;
+}
+
+.h3_style_of_parallax{
+    top: 220px;
+    font-size: 2rem;
+}
+
+.btn_parallax_style{
+    top: 270px;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    font-family: main-font;
+    color: white;
+    background-color: rgba(46,248,255,0.55);
+}
+
+/*End Parallax*/
 
 /*Media Query*/
 
@@ -153,17 +191,24 @@
 
 @media only screen and (max-width: 991px) {}
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    .h2_style_of_parallax{
+        font-size: 2rem;
+    }
+    .h3_style_of_parallax{
+        font-size: 1.5rem;
+    }
+}
 
 
 @media only screen and (max-width: 600px) {
-
 }
 
 @media only screen and (max-width: 500px) {
     .sale_product_category{
         width: 80%;
     }
+
 }
 
 
