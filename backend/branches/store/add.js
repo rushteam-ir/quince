@@ -95,7 +95,7 @@ router.post('/', async(req,res)=>{
             if(req.files){
 
                 let main_image = req.files.product_main_image;
-                let other_images = req.files['files[]'];
+                let other_images = req.files['product_other_images[]'];
                 let image_counter = 0;
                 let product_images = [];
 
