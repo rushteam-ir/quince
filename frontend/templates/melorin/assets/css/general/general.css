@@ -8,12 +8,22 @@
     src: url("../../font/Vazir.ttf");
 }
 
+
+*{
+    direction: rtl;
+}
+
+
 body {
     font-family: second-font;
 }
 
 .dir_rtl {
     direction: rtl;
+}
+
+.dir_ltr{
+    direction: ltr;
 }
 
 ::-moz-selection {
