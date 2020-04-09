@@ -5,4 +5,143 @@
     height: 300px;
 }
 
+
 /*delete after ok*/
+
+/*Sale Product Category*/
+
+
+.sale_product_category{
+    width: 80%;
+    margin: auto;
+    position: relative;
+
+}
+
+.sale_product_category_details_img{
+    width: 100%;
+    height: 350px;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.figure_of_img_product_category{
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.btn_product_category{
+    position: absolute;
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+    left: 0px;
+    top: 44%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1.5rem;
+    font-family: main-font;
+    color: #45454d;
+}
+
+.figure_of_img_product_category:hover .sale_product_category_details_img{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.figure_of_img_product_category:hover .btn_product_category {
+    display: block;
+}
+
+.show_all_product_category{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    top:60%;
+    text-align: center;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.show_all_product_category:hover{
+    color: black;
+}
+/* Animation For FadeInUp */
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+/*End Animation For FadeInUp */
+
+
+/*End Sale Product Category*/
+
+
+
+/*Media Query*/
+
+@media only screen and (max-width: 1200px) {
+    .sale_product_category{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 991px) {}
+
+@media only screen and (max-width: 768px) {}
+
+
+@media only screen and (max-width: 600px) {
+
+}
+
+@media only screen and (max-width: 500px) {
+    .sale_product_category{
+        width: 80%;
+    }
+}
+
+
+
+
+/*End Media Query*/
