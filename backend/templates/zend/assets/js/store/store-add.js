@@ -72,12 +72,11 @@ $( document ).ready(function() {
     });
 
     // remove img of browse
-    $(".remove"). click(function () {
-        alert('hi')
-    });
+    // $("#salam"). click(function () {
+    //     alert('hi')
+    // });
 
 });
-
 
 // pop over function
 

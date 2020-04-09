@@ -5,6 +5,7 @@
 {/title}
 {<css}
     <link rel="stylesheet" href="css/front-end/index.css">
+    <link rel="stylesheet" href="css/general/navbar.css">
 
 {/css}
 {<js}
@@ -93,7 +94,7 @@
                 </div>
             </div>
         {!    search form    !}
-            <div id="myOverlay" class="overlay">
+            <!-- <div id="myOverlay" class="overlay">
                 <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
                 <div class="overlay-content">
                     <form action="/action_page.php">
@@ -104,9 +105,7 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </div> -->
         {!    end top of header    !}
-
-    </header>
 {/body}
 
