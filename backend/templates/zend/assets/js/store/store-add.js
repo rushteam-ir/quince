@@ -39,13 +39,6 @@ $(document).ready(function () {
         var $input = $(this),
             $label = $input.next('.js-labelFile'),
             labelVal = $label.html();
-
-        $input.on('change', function (element) {
-            var fileName = '';
-            if (element.target.value) fileName = element.target.value.split('\\').pop();
-            fileName ? $label.addClass('has-file').find('.js-fileName').html(fileName) : $label.removeClass('has-file').html(labelVal);
-
-        });
     });
 
 })();
@@ -62,7 +55,7 @@ $( document ).ready(function() {
             reader.onload = function(e) {
 
                 let fieldHTML = '<div class="remove_parent"><img class="uploading_img_from_brows" src="'+e.target.result+'"> <div class="remove_img_icon remove"></div></div>';
-                $('.img-box').append(fieldHTML);
+                $(input).prev().append(fieldHTML);
 
             }
 
@@ -71,13 +64,14 @@ $( document ).ready(function() {
 
     });
 
-    // remove img of browse
-    $(".remove"). click(function () {
-        alert('hi')
-    });
-
 });
 
+$(document).on('click', '.remove', function(e) {
+
+    $(this).parents('.img-show').next().val('');
+    $(this).parent('.remove_parent').remove();
+
+});
 
 // pop over function
 
