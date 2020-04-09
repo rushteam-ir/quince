@@ -8,12 +8,6 @@
     src: url("../../font/Vazir.ttf");
 }
 
-
-*{
-    direction: rtl;
-}
-
-
 body {
     font-family: second-font;
 }
@@ -22,12 +16,11 @@ body {
     direction: rtl;
 }
 
-.dir_ltr{
+.dir_ltr {
     direction: ltr;
 }
 
 ::-moz-selection {
-    /* Code for Firefox */
     background: rgb(185, 197, 255);
 }
 

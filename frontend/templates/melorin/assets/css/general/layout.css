@@ -78,31 +78,42 @@
 
 .main_field_of_nav_menu{
     background-color: #f0f0f0;
-    height: 105px;
+    height: 125px;
     margin-bottom: 300px;
     text-align: right;
     border-bottom: 1px solid #cacaca;
-    padding-right: 100px;
+    padding-right: 170px;
 }
 
 .ul_of_main_menu{
     color: black;
     font-size: 1.1rem;
     font-family: main-font;
-    line-height: 100px;
+    line-height: 150px;
+    padding: 0px !important;
 }
 
 .main_logo_field{
     width: 110px;
     position: absolute;
-    top: 7px;
+    top: 16px;
     right: 7px;
 
 }
 
+.main_field_of_enter_users {
+    position: absolute;
+    top: 29px;
+    left: 13px;
+    border: 1px solid #c9c9c9;
+    border-radius: 6px;
+    padding: 9px 11px;
+    padding-bottom: 11px;
+}
 
-
-
+.user_fontawsome_custom{
+    color: rgb(136, 136, 136);
+}
 
 
 
