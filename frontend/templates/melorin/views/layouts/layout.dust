@@ -20,45 +20,39 @@
 
         {+body/}
 
-        <footer>    
-            <div class="container-fluid bg_of_footer">
+        <footer class="footer_style">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-10 offset-1 col-md-6 offset-md-3">
-                        <div class="footer_first_box">
-                            <img src="img/logo.jpg" class="logo_of_footer">
-                            <p class="title_of_footer">فروشگاه ملورین</p>
-                            <p class="small_explain_of_footer">برترین تولید کننده سال با تولید بیش از 2000 مدل جوراب
-                                جدید در
-                                سال</p>
-                            <div class="social_media_in_footer">
-                                <i class="fab fa-instagram"></i>
-                                <i class="fab fa-facebook-f"></i>
-                                <i class="fab fa-telegram-plane"></i>
+                    <div class="col-12">
+                        <div class="header_of_footer_box">
+                            <div class="logo_of_footer_box text-center mt-5">
+                                <img src="img/logo1.jpg" alt="ملورین" class="logo_of_footer">
+                            </div>
+                            <div class="text_of_footer_box">
+                                <h4 class="text-center mt-3">فروشگاه ملورین</h4>
+                                <p class="text-center">برترین تولید کننده سال با تولید بیش از 2000 مدل جوراب جدید درسال</p>
+                            </div>
+                            <div class="social_media_box_in_footer text-center">
+                                <i class="fab fa-instagram "></i>
+                                <i class="fab fa-facebook-f mr-3"></i>
+                                <i class="fab fa-telegram-plane mr-3"></i>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-10 offset-1 col-md-3 offset-md-0">
-                        <div class="left_box_of_footer">
-                            <h5 class="title_of_footer_right_box">شخصی سازی سفارشات</h5>
-                            <p class="explain_of_Customization_product">
-                                جون بچت بیا عکس بده ما برات عین همونو تولید میکنیم . بعد میدیم بهت توام برو حال کن
-                                بندههه خدا.کی میاد واست اینکارارو بکنه اسکل ببین قدر نمیدونی!!!!
-                            </p>
-                            <button class="btn_of_Customization_product">سفارش بده</button>
+                <div class="row row_style_margin">
+                    <div class="col-12 col-md-3 offset-md-0 mb-5 mb-md-0">
+                        <div class="right_box_of_footer">
+                            <h6 class="title_of_footer_right_box mb-4">پشتیبانی</h6>
+                            <p class="support_option">تلفن تماس :02144444 </p>
+                            <p class="support_option">ایمیل :test@example.com </p>
+                            <p class="support_option">ادرس :بازار - سلام - خوبی </p>
                         </div>
                     </div>
-                    <div class="col-10 offset-1 col-md-3 offset-md-0">
-                        <div class="center2_box_of_footer">
-                            <h5 class="title_of_footer_right_box"> نماد اعتمادالکترونیکی</h5>
-                            <img src="img/namad.png" class="namad_img_footer">
-                        </div>
-                    </div>
-                    <div class="col-10 offset-1 col-md-3 offset-md-0">
+                    <div class="col-12 col-md-3 offset-md-0 mb-5 mb-md-0">
                         <div class="center_box_of_footer">
-                            <h5 class="title_of_footer_right_box">دسترسی آسان</h5>
-                            <ul class="menu_in_footer">
+                            <h6 class="title_of_footer_right_box">دسترسی آسان</h6>
+                            <ul class="menu_in_footer p-0">
                                 <a href="#" class="link_of_footer_menu">
                                     <li class="list_of_footer_menu">صفحه اصلی</li>
                                 </a>
@@ -78,19 +72,26 @@
 
                         </div>
                     </div>
-                    <div class="col-10 offset-1 col-md-3 offset-md-0">
-                        <div class="right_box_of_footer">
-                            <h5 class="title_of_footer_right_box">پشتیبانی</h5>
-                            <p class="support_option">تلفن تماس :02144444 </p>
-                            <p class="support_option">ایمیل :test@example.com </p>
-                            <p class="support_option">ادرس :بازار - سلام - خوبی </p>
+                    <div class="col-12 col-md-3 offset-md-0 mb-5 mb-md-0">
+                        <div class="center2_box_of_footer">
+                            <h6 class="title_of_footer_right_box"> نماد اعتمادالکترونیکی</h6>
+                            <img src="img/namad.jpg" class="namad_img_footer">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 offset-md-0 mb-5 mb-md-0">
+                        <div class="left_box_of_footer">
+                            <h6 class="title_of_footer_right_box text-center">شخصی سازی سفارشات</h6>
+                            <p class="explain_of_Customization_product text-justify">
+                              جون بچت بیا عکس بده ما برات عین همونو تولید میکنیم . بعد میدیم بهت توام برو حال کن بنده خدا.کی میاد واست اینکارارو بکنه اسکل ببین قدر نمیدونی!!!!
+                            </p>
+                            <button class="btn_of_Customization_product text-center ">سفارش بده</button>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-10 offset-1 col-md-6 offset-md-3 ">
-                        <div class="box_last_footer">
-                            <p class="footer-company-name"> &copy; 2020 - zend.cms</p>
+                    <div class="col-12 col-md-12 offset-md-0 ">
+                        <div class="box_last_footer" >
+                            <p class="footer_company_name"> &copy; 2020 - zend.cms</p>
                         </div>
                     </div>
                 </div>

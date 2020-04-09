@@ -14,7 +14,7 @@
 {/js}
 
 {<body}
-    <header class="">
+    <header>
         {!    top of header    !}
         <div class="container-fluid">
             <div class="row bg-white">
@@ -97,7 +97,7 @@
             <!-- <div id="myOverlay" class="overlay">
                 <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
                 <div class="overlay-content">
-                    <form action="/action_page.php">
+                    <form action="">
                         <input type="text" placeholder="جستجو کنید..." dir="rtl"
                                class="border_radius_left_bottom text-right" name="search">
                         <button type="submit" class="border_radius_top_right"><i class="fa fa-search "></i>
