@@ -45,7 +45,8 @@
 
 .namad_img_footer{
     margin: auto;
-    width: 275px;
+    width: 60%;
+    height: 150px;
 }
 
 .list_of_footer_menu{
@@ -82,18 +83,35 @@
 
 /* Media Query*/
 
-@media only screen and (max-width: 1200px) {}
+@media only screen and (max-width: 1200px) {
+
+    .namad_img_footer{
+        width: 70%;
+    }
+}
 
 @media only screen and (max-width: 991px) {
-
+    .namad_img_footer{
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
-
+    .namad_img_footer{
+        width: 25%;
+    }
 }
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    .namad_img_footer{
+        width: 30%;
+    }
+}
 
-@media only screen and (max-width: 500px) {}
+@media only screen and (max-width: 500px) {
+    .namad_img_footer{
+        width: 40%;
+    }
+}
 
 /*End Media Query*/
