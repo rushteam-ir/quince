@@ -30,7 +30,7 @@
 .figure_of_img_product_category{
     overflow: hidden;
     border-radius: 5px;
-    transition: border-radius 1.5s;
+    transition: border-radius 1s;
 }
 
 .btn_product_category{
@@ -94,7 +94,7 @@
     opacity: 0;
     -webkit-transition: all 0.4s ease-in-out 0s;
     -moz-transition: all 0.4s ease-in-out 0s;
-    transition: all 0.4s ease-in-out 0s , border-radius 1.5s;
+    transition: all 0.4s ease-in-out 0s , border-radius 1s;
 }
 /* Animation For FadeInUp */
 
@@ -121,9 +121,9 @@
 }
 
 .animated {
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: both;
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 1s;
     -webkit-animation-fill-mode: both
 }
 
