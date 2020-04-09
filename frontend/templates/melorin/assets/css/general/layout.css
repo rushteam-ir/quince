@@ -1,31 +1,34 @@
-
 /*Footer*/
 
-.footer_style{
-    color:#626677 ;
+.footer_style {
+    color: #626677;
     font-family: main-font;
 }
 
-.logo_of_footer{
+.logo_of_footer {
     width: 120px;
     height: 100px;
 }
 
-.social_media_box_in_footer{
+.social_media_box_in_footer {
     font-size: 1.5rem;
 }
 
-.left_box_of_footer , .center2_box_of_footer , .center_box_of_footer , .right_box_of_footer , .box_last_footer{
+.left_box_of_footer,
+.center2_box_of_footer,
+.center_box_of_footer,
+.right_box_of_footer,
+.box_last_footer {
     width: 80%;
     margin: auto;
     text-align: center;
 }
 
-.explain_of_Customization_product{
+.explain_of_Customization_product {
     font-size: 0.85rem;
 }
 
-.btn_of_Customization_product{
+.btn_of_Customization_product {
     border: none;
     border-radius: 5px;
     width: 130px;
@@ -33,69 +36,74 @@
     margin: auto;
 }
 
-.row_style_margin{
+.row_style_margin {
     margin-top: 100px;
     margin-bottom: 50px;
 }
 
-.namad_img_footer{
+.namad_img_footer {
     margin: auto;
     width: 60%;
     height: 150px;
 }
 
-.list_of_footer_menu{
+.list_of_footer_menu {
     list-style-type: none;
     margin-bottom: 5px;
 }
 
-.link_of_footer_menu{
+.link_of_footer_menu {
     color: #626677;
-    transition: font-size .5s , color .5s;
+    transition: font-size .5s, color .5s;
     font-size: .9rem;
 }
 
-.link_of_footer_menu:hover{
+.link_of_footer_menu:hover {
     color: black;
     font-size: 1.05rem;
 }
 
-.support_option{
+.support_option {
     font-size: .9rem;
 }
 
 
-.footer_company_name{
+.footer_company_name {
     direction: ltr;
 }
 
-.about_melorin_connect{
+.about_melorin_connect {
     width: 80%;
     background: #999999;
     text-align: right;
     margin: auto;
 }
+
 /*End Footer*/
 
+body {
+    background-color: #f1f1f1;
+}
 
-.main_field_of_nav_menu{
-    background-color: #f0f0f0;
+.main_field_of_nav_menu {
+    background-color: #ffffff;
     height: 125px;
     text-align: right;
     border-bottom: 1px solid #cacaca;
     padding-right: 170px;
+    box-shadow: 0px 0px 20px -10px black;
 }
 
-.ul_of_main_menu{
-    color: black;
-    font-size: 1.1rem;
+.ul_of_main_menu {
+    color: #696969;
+    font-size: 0.9rem;
     font-family: main-font;
     padding: 0px !important;
     line-height: 37px;
     margin: 0px;
 }
 
-.main_logo_field{
+.main_logo_field {
     width: 110px;
     position: absolute;
     top: 16px;
@@ -104,69 +112,91 @@
 }
 
 .main_field_of_enter_users {
-    position: absolute;
-    top: 15px;
-    left: 13px;
     border: 1px solid #c9c9c9;
     border-radius: 6px;
     padding: 9px 11px;
     padding-bottom: 11px;
 }
 
-.user_fontawsome_custom{
+.first_main_field_of_enter_users{
+    position: absolute;
+    top: 15px;
+    left: 13px;
+}
+
+.user_fontawsome_custom {
     color: rgb(136, 136, 136);
 }
 
-.row_of_search_inp_custom{
+.row_of_search_inp_custom {
     width: 400px;
     padding-top: 15px;
 }
 
-.search_inp_custom{
+.search_inp_custom {
     width: 350px;
     border-radius: 5px 0px 0px 5px;
-    border: 1px solid #b7b7b7;
-    border-right: none;
+    border: none;
+    padding-right: 10px;
+    height: 40px;
+    background-color: #efefef;
 }
 
+.search_inp_custom:focus {
+    outline: none;
+}
+
+.addon_of_search_inp {
+    background-color: #efefef;
+    border-radius: 0px 5px 5px 0px !important;
+    border: none;
+    border-left: 0px;
+}
+
+.triple_bars_of_nav {
+    font-size: 1.1rem;
+    position: relative;
+    top: 2px;
+}
 
 
 @media only screen and (max-width: 1200px) {
 
-    .namad_img_footer{
+    .namad_img_footer {
         width: 70%;
     }
 }
 
 @media only screen and (max-width: 991px) {
-    .namad_img_footer{
+    .namad_img_footer {
         width: 90%;
     }
-    .explain_of_Customization_product{
+
+    .explain_of_Customization_product {
         width: 100%;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .namad_img_footer{
+    .namad_img_footer {
         width: 25%;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .namad_img_footer{
+    .namad_img_footer {
         width: 30%;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    .namad_img_footer{
+    .namad_img_footer {
         width: 40%;
     }
 }
 
-@media only screen and  (max-width: 769px) and (min-width: 768px) {
-    .namad_img_footer{
+@media only screen and (max-width: 769px) and (min-width: 768px) {
+    .namad_img_footer {
         width: 90%;
     }
 }

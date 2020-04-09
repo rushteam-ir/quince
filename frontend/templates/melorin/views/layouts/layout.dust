@@ -27,9 +27,11 @@
                     <form action="">
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                              <span class="input-group-text" id="basic-addon1">@</span>
+                              <span class="input-group-text addon_of_search_inp" id="basic-addon1">
+                                  <i class="fas fa-search"></i>
+                              </span>
                             </div>
-                            <input class="search_inp_custom" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                            <input class="search_inp_custom" type="text" class="form-control" placeholder="جستجو" aria-label="Username" aria-describedby="basic-addon1">
                           </div>
                     </form>
                 </div>
@@ -37,8 +39,10 @@
                 <div class="row">
                     <div class="w-100 ">
                         <ul class="ul_of_main_menu">
-                            <li class="d-inline-block">خانه</li>
-                            <li class="d-inline-block mr-4">محصولات</li>
+                            <li class="d-inline-block">
+                                <i class="fas fa-bars ml-2 triple_bars_of_nav"></i>
+                                محصولات
+                            </li>
                             <li class="d-inline-block mr-4">درباره ما</li>
                             <li class="d-inline-block mr-4">تماس با ما</li>
                             <li class="d-inline-block mr-4">پشتیبانی</li>
@@ -49,15 +53,31 @@
             </div>
 
             <div class="main_logo_field">
-                <img class="w-100" src="img/logo.jpg" alt="">
+                <img class="w-100" src="img/logo1.jpg" alt="">
             </div>
 
-            <div class="main_field_of_enter_users">
+            <div class="first_main_field_of_enter_users">
 
-                <p class="m-0">
-                    ورود به حساب کاربری
-                    <i class="fas fa-user ml-2 user_fontawsome_custom"></i>
-                </p>
+                <div class="main_field_of_enter_users">
+                    <p class="m-0">
+                        ورود به حساب کاربری
+                        <i class="fas fa-user ml-2 user_fontawsome_custom"></i>
+                    </p>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>
+                            <i class="fas fa-cannabis"></i>
+                        </li>
+                        <li>
+                            <i class="far fa-hand-lizard"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-neos"></i>
+                    </ul>
+                </div>
+                
 
             </div>
 
