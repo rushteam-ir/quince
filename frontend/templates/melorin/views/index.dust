@@ -19,7 +19,11 @@
                     <div class="sale_product_category">
                         <figure class="figure_of_img_product_category">
                             <img src="img/man.jpg" class="sale_product_category_details_img"/>
-                            <button type="button" class="btn_product_category animated animatedFadeInUp fadeInUp">مردانه</button>
+                            <div class="content-overlay">
+                                <button type="button" class="btn_product_category animated animatedFadeInUp fadeInUp">
+                                    مردانه
+                                </button>
+                            </div>
                         </figure>
                     </div>
                 </div>
@@ -27,7 +31,11 @@
                     <div class="sale_product_category">
                         <figure class="figure_of_img_product_category">
                             <img src="img/womman.jpg" class="sale_product_category_details_img"/>
-                            <button type="button" class="btn_product_category animated animatedFadeInUp fadeInUp">زنانه</button>
+                            <div class="content-overlay">
+                                <button type="button" class="btn_product_category animated animatedFadeInUp fadeInUp">
+                                    زنانه
+                                </button>
+                            </div>
                         </figure>
                     </div>
                 </div>
@@ -35,7 +43,12 @@
                     <div class="sale_product_category">
                         <figure class="figure_of_img_product_category">
                             <img src="img/child.jpg" class="sale_product_category_details_img"/>
-                            <button type="button" class="btn_product_category animated animatedFadeInUp fadeInUp" data-wow-iteration="1">بچگانه</button>
+                            <div class="content-overlay">
+                                <button type="button" class="btn_product_category animated animatedFadeInUp fadeInUp"
+                                        data-wow-iteration="1">بچگانه
+                                </button>
+                            </div>
+
                         </figure>
                     </div>
                 </div>
