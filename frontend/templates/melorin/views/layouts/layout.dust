@@ -21,18 +21,31 @@
 
         <nav class="w-100">
 
-            <div class="container-fluid">
+            <div class="container-fluid main_field_of_nav_menu dir_rtl">
 
-            </div>
+                <div class="row row_of_search_inp_custom">
+                    <form action="">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1">@</span>
+                            </div>
+                            <input class="search_inp_custom" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                    </form>
+                </div>
 
-            <div class="w-100 main_field_of_nav_menu">
-                <ul class="ul_of_main_menu">
-                    <li class="d-inline-block">خانه</li>
-                    <li class="d-inline-block mr-4">محصولات</li>
-                    <li class="d-inline-block mr-4">درباره ما</li>
-                    <li class="d-inline-block mr-4">تماس با ما</li>
-                    <li class="d-inline-block mr-4">پشتیبانی</li>
-                </ul>
+                <div class="row">
+                    <div class="w-100 ">
+                        <ul class="ul_of_main_menu">
+                            <li class="d-inline-block">خانه</li>
+                            <li class="d-inline-block mr-4">محصولات</li>
+                            <li class="d-inline-block mr-4">درباره ما</li>
+                            <li class="d-inline-block mr-4">تماس با ما</li>
+                            <li class="d-inline-block mr-4">پشتیبانی</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
 
             <div class="main_logo_field">
@@ -42,8 +55,8 @@
             <div class="main_field_of_enter_users">
 
                 <p class="m-0">
-                    <i class="fas fa-user ml-2 user_fontawsome_custom"></i>
                     ورود به حساب کاربری
+                    <i class="fas fa-user ml-2 user_fontawsome_custom"></i>
                 </p>
 
             </div>
@@ -51,7 +64,7 @@
         </nav>
 
         {+body/}
-        
+
         <footer class="footer_style">
             <div class="container-fluid">
                 <div class="row">

@@ -90,8 +90,9 @@
     color: black;
     font-size: 1.1rem;
     font-family: main-font;
-    line-height: 150px;
     padding: 0px !important;
+    line-height: 37px;
+    margin: 0px;
 }
 
 .main_logo_field{
@@ -104,7 +105,7 @@
 
 .main_field_of_enter_users {
     position: absolute;
-    top: 29px;
+    top: 15px;
     left: 13px;
     border: 1px solid #c9c9c9;
     border-radius: 6px;
@@ -114,6 +115,18 @@
 
 .user_fontawsome_custom{
     color: rgb(136, 136, 136);
+}
+
+.row_of_search_inp_custom{
+    width: 400px;
+    padding-top: 15px;
+}
+
+.search_inp_custom{
+    width: 350px;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid #b7b7b7;
+    border-right: none;
 }
 
 
