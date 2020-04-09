@@ -78,7 +78,7 @@
                                     <i class="fas fa-ellipsis-h user_list_ellipsis"></i>
                                 </button>
                                 <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item py-2 text-center" href="#">پروفایل</a>
+                                    <a class="dropdown-item py-2 text-center" href="{backend_url}users/profile/{._id}">پروفایل</a>
                                     <hr class="m-0">
                                     {@eq key="{admin_info.access}" value="main_admin"}
                                     {@eq key="{.username}" value="{admin_info.username}"}

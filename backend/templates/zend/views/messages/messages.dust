@@ -37,7 +37,7 @@
                         </button>
 
                         <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
-                            <a href="{backend_url}messages/{._id}" class="dropdown-item product_del ">ارسال نظر</a>
+                            <a href="{backend_url}messages/reply/{._id}" class="dropdown-item product_del ">ارسال نظر</a>
                             <hr class="m-0">
                             <a class="dropdown-item product_del ">پروفایل</a>
                             <hr class="m-0">

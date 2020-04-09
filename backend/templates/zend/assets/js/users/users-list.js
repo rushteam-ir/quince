@@ -5,7 +5,7 @@ $('.user_status').on('click', function (e) {
 
     Swal.fire({
         title: sweet_alert_status + " کاربر",
-        text: "آیا از " + sweet_alert_status + "حساب این کاربر مطمئن هستید ؟",
+        text: "آیا از " + sweet_alert_status + " حساب این کاربر مطمئن هستید ؟",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',

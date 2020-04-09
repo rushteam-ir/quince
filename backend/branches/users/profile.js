@@ -4,7 +4,18 @@ router.get('/:id', async(req,res)=>{
 
     try{
 
-        res.render('users/users-profile');
+        let user_id = req.params.id;
+
+        if(isObjectId(user_id)){
+
+
+            res.render('users/users-profile');
+        }
+        else{
+
+            res.redirect(`${config.backend_url}users/list/?msg=error`);
+
+        }
 
     }
     catch (error) {
