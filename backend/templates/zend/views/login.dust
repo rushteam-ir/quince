@@ -55,7 +55,7 @@
 
                     <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeDangerError()"></i>
                     <i class="fal fa-exclamation-circle"></i>
-                    <div class="d-inline-block">
+                    <div class="d-inline-block mr-1">
                         لطفا نام و نام کاربری خود را وارد کنید
                     </div>
           
@@ -65,7 +65,7 @@
 
                   <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeWarningError()"></i>
                   <i class="fal fa-exclamation-circle"></i>
-                  <div class="d-inline-block">
+                  <div class="d-inline-block mr-1">
                       لطفا نام و نام کاربری خود را وارد کنید
                   </div>
         
