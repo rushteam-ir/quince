@@ -83,7 +83,7 @@
                     </div>
                   </div>
 
-                  <button type="submit" class="btn sub_btn_of_dashbord_form" onclick="salam()">ورود</button>
+                  <button type="submit" class="btn sub_btn_of_dashbord_form" onclick="removeQuery()">ورود</button>
 
                 </form>
               </div>

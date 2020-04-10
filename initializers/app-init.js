@@ -56,7 +56,7 @@ dust_options = {
 
                 if(msg_param === context.resolve(params.key)){
 
-                    let html = `<div class="error_success_alert text-right" id="error_field_success"> <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeSuccessError()"></i> <i class="fal fa-exclamation-circle alert_icon_error"></i> <div class="d-inline-block mr-1" id="error_text">${context.resolve(params.msg)}</div> </div>`;
+                    let html = `<div class="error_success_alert text-right" id="error_field_success"> <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeSuccessError()"></i> <i class="fal fa-exclamation-circle alert_icon_error"></i> <div class="d-inline-block mr-1">${context.resolve(params.msg)}</div> </div>`;
 
                     body = bodies.block;
                     chunk.write(html);

@@ -32,15 +32,32 @@ function adminlogerrors(){
 
     else if (captcha_inp !== "" && password_inp !== "" && username_inp !== ""){
 
-        error_field.style.display = "none"
+        error_field.style.display = "none";
 
     }
 
+    
+
+
 }
 
-function salam(){
+function removeQuery(){
 
+    var error_field_success = document.getElementById('error_field_success');
     var error_field_warning = document.getElementById('error_field_warning');
-    error_field_warning.style.display = "none";
-    
+
+    if(error_field_warning !== 'null'){
+
+        error_field_warning.style.display ="none";
+        return false;
+
+    }
+
+    else if(error_field_success !== "null"){
+
+        error_field_success.style.display = "none";
+        return false;
+
+    }
+
 }
