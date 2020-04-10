@@ -33,7 +33,16 @@
                 {@alertWarn key="invalid-email" msg="لطفا یک ایمیل معتبر وارد نمایید"}{/alertWarn}
                 {@alertError key="sent-fail" msg="ایمیل بازیابی ارسال نشد. لطفا مجددا تلاش فرمایید"}{/alertError}
 
-                <form action="" method="post" name="dashbord_login_form" onsubmit="return adminlogerrors()">
+                <div class="error_warning_alert text-right display_none" id="error_field_warning_front"> 
+
+                  <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeWarningErrorFront()"></i> 
+                  <i class="fal fa-exclamation-circle alert_icon_error"></i>
+
+                    <div class="d-inline-block mr-1" id="error_text"></div>
+
+                </div>
+
+                <form action="" method="post" name="dashbord_login_form" onsubmit="return recoveryfunc()">
 
                   <div class="form-group">
                     <label for="email-for-id" class="text-right d-block"> : ایمیل خود را جهت بازیابی رمز عبور وارد نمایید</label>
@@ -64,12 +73,16 @@
       </div>
     </div>
   </section>
+  
 
   <script src="js/general/jquery.js"></script>
   <script src="js/general/popper.js"></script>
   <script src="js/general/bootstrap.js"></script>
   <script src="js/general/wow.js"></script>
   <script src="js/general/error.js"></script>
+  <script src="js/cms/login.js"></script>
+
+
 </body>
 
 </html>

@@ -16,7 +16,7 @@
             </div>
 
             <div class="main_filed_of_profile_option_btn main_filed_of_profile_option_second_btn" id="second_pro_box" onclick="secondChangeDisplay()">
-                <div class="d-inline-block number_of_profile_header second_number_of_profile_header" id="second_profile_header_number"><i class="fas fa-key d-inline-block"></i></div>
+                <div class="d-inline-block number_of_profile_header second_number_of_profile_header" id="second_profile_header_number"><i class="fas fa-unlock-alt d-inline-block"></i></div>
                 <p class="d-inline-block profile_header_text">تغییر رمز عبور</p>
             </div>
 
@@ -28,8 +28,15 @@
                 {@alertSuccess key="edit-success" msg="مشخصات پروفایل شما با موفقیت ثبت شد"}{/alertSuccess}
                 {@alertError key="edit-fail" msg="مشخصات پروفایل شما تغییر نکرد. لطفا مجددا تلاش فرمایید"}{/alertError}
                 {@alertError key="incorrect-input" msg="رمز عبور فعلی اشتباه می باشد"}{/alertError}
+                
+                <div class="error_warning_alert text-right display_none" id="error_field_warning_front"> 
 
-                <div id="admin_profile_error_field" class="alert alert-warning text-center"></div>
+                    <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeWarningErrorFront()"></i> 
+                    <i class="fal fa-exclamation-circle alert_icon_error"></i>
+  
+                      <div class="d-inline-block mr-1" id="error_text"></div>
+  
+                  </div>
 
                 <form action="" method="post" autocomplete="off" enctype="multipart/form-data" name="pro_op_main_form" onsubmit="return proError()">
                     <div class="form-group">
@@ -103,7 +110,14 @@
                 {@alertError key="incorrect-input" msg="رمز فعلی اشتباه است و یا رمز جدید و تکرار آن مشابه نیستند"}{/alertError}
                 {@alertSuccess key="edit-success" msg="مشخصات پروفایل شما با موفقیت ثبت شد"}{/alertSuccess}
 
-                <div id="admin_profile_error_field_pass" class="alert alert-warning text-center"></div>
+                <div class="error_warning_alert text-right display_none" id="error_field_warning_front"> 
+
+                    <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeWarningErrorFront()"></i> 
+                    <i class="fal fa-exclamation-circle alert_icon_error"></i>
+  
+                      <div class="d-inline-block mr-1" id="error_text"></div>
+  
+                  </div>
 
                 <form action="" method="post" name="admin_pro_pass_edit" onsubmit="return passerror()" autocomplete="off">
 

@@ -1,3 +1,5 @@
+// login errors
+
 function adminlogerrors(){
 
     $('.alert_query').remove();
@@ -5,15 +7,14 @@ function adminlogerrors(){
     var username_inp = document.forms['dashbord_login_form']['username_inp'].value;
     var password_inp = document.forms['dashbord_login_form']['password_inp'].value;
     var captcha_inp = document.forms['dashbord_login_form']['captcha_inp'].value;
-
-    var error_field = document.getElementById('error_field_warning_front');
     var error_text = document.getElementById('error_text');
 
-    
-    error_field.style.display = " block";
+    var error_field = document.getElementById('error_field_warning_front');
+
 
     if(username_inp == ""){
 
+        error_field.style.display ="block";
         error_text.innerHTML ="لطفا نام کاربری خود را وارد کنید.";
         return false;
         
@@ -21,6 +22,7 @@ function adminlogerrors(){
     
     else if(password_inp == ""){
 
+        error_field.style.display ="block";
         error_text.innerHTML ="لطفا رمز عبور خود را وارد کنید.";
         return false;
 
@@ -28,35 +30,77 @@ function adminlogerrors(){
 
     else if(captcha_inp == ""){
 
+        error_field.style.display ="block";
         error_text.innerHTML = "لطفا کد امنیتی را وارد نمایید.";
         return false;
     }
 
-    else if (captcha_inp !== "" && password_inp !== "" && username_inp !== ""){
+}
 
-        error_field.style.display = "none";
+// recovery errors
+
+function recoveryfunc(){
+
+    $('.alert_query').remove();
+
+    var email_inp = document.forms['dashbord_login_form']['email_inp'].value;
+    var error_text = document.getElementById('error_text');
+    var error_field = document.getElementById('error_field_warning_front');
+
+    if(email_inp == ""){
+
+        error_field.style.display = "block";
+        error_text.innerHTML = "لطفا ایمیل خود را وارد کنید."
+        return false;
 
     }
 
-    
+    else if(email_inp.length <=11 || !email_inp.include("@") || !email_inp.include(".com")){
 
+        error_field.style.display = "block";
+        error_text.innerHTML = "لطفا یک ایمیل معتبر وارد نمایید ."
+        return false;
+
+    }
 
 }
 
-// function removeQuery(){
-//
-//     var error_field_success = document.getElementById('error_field_success');
-//     var error_field_warning = document.getElementById('error_field_warning');
-//
-//     if(error_field_warning != 'null'){
-//
-//         error_field_warning.style.display ="none";
-//
-//     }
-//     if(error_field_success != "null"){
-//
-//         error_field_success.style.display = "none";
-//
-//     }
-//
-// }
+// recovery-verify errors
+
+function recoveryVerify(){
+
+    $('.alert_query').remove();
+
+    var newpass_inp = document.forms['dashbord_login_form']['newpass_inp'].value;
+    var compass_inp = document.forms['dashbord_login_form']['compass_inp'].value;
+
+    var main_field = document.getElementById('error_field_warning_front');
+    var error_text = document.getElementById('error_text');
+
+    if(newpass_inp == ""){
+
+        main_field.style.display = "block";
+        error_text.innerHTML = "لطفا رمز عبور جدید خود را وارد نمایید."
+        return false;
+
+    }
+    
+    else if(compass_inp == ""){
+
+        main_field.style.display = "block";
+        error_text.innerHTML = "لطفا تکرار رمز عبور را وارد نمایید."
+        return false;
+
+    }
+
+    else if( newpass_inp !== compass_inp){
+
+        main_field.style.display = "block";
+        error_text.innerHTML = "رمز عبور جدید و تکرار آن یکی نیست."
+        return false;
+
+    }
+
+
+
+}
