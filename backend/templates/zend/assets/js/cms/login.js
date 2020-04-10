@@ -29,4 +29,10 @@ function adminlogerrors(){
         return false;
     }
 
+    else if (captcha_inp !== "" && password_inp !== "" && username_inp !== ""){
+
+        error_field.style.display = "none"
+
+    }
+
 }
