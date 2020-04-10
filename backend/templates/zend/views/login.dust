@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/general/fontAwsome.css">
   <link rel="stylesheet" href="css/general/general-css.css">
   <link rel="stylesheet" href="css/cms/login.css">
+  <link rel="stylesheet" href="css/general/error.css">
   <title>ورود به سیستم مدیریت محتوا</title>
 </head>
 
@@ -38,6 +39,16 @@
                 {@alertSuccess key="sent-success" msg="ایمیل بازیابی با موفقیت ارسال شد"}{/alertSuccess}
                 {@alertSuccess key="logout-success" msg="شما با موفقیت خارج شدید"}{/alertSuccess}
 
+                <div class="error_success_alert text-right" id="error_field">
+
+                  <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeError()"></i>
+                  <i class="fal fa-exclamation-circle"></i>
+                  <div class="d-inline-block mr-1" id="error_text">
+                    لطفا نام و نام کاربری خود را وارد کنید
+                  </div>
+
+                </div>
+
                 <form action="" method="post" name="dashbord_login_form" onsubmit="return adminlogerrors()">
 
                   
@@ -65,7 +76,7 @@
                       </div>
                     </div>
  
-                    <div class="col-6 pr-0 ">
+                    <div class="col-6 pr-0">
                       <div class="form-group">
                         <label for="captcha-for-id dir-rtl" class="text-right d-block">کد امنیتی</label>
                         <input type="text" class="form-control dashbord_login_input" id="captcha-for-id"
@@ -105,6 +116,7 @@
   <script src="js/general/popper.js"></script>
   <script src="js/general/bootstrap.js"></script>
   <script src="js/general/wow.js"></script>
+  <script src="js/general/error.js"></script>
   <script>
     $(document).ready(function () {
 
