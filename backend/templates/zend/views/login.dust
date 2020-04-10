@@ -40,7 +40,7 @@
 
                 <div class="error_warning_alert text-right display_none" id="error_field_warning_front"> 
 
-                  <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeWarningError()"></i> 
+                  <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeWarningErrorFront()"></i> 
                   <i class="fal fa-exclamation-circle alert_icon_error"></i>
 
                     <div class="d-inline-block mr-1" id="error_text"></div>

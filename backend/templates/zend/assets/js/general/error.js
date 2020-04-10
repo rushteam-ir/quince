@@ -21,19 +21,19 @@ function removeWarningError(){
 
 // remove front errors
 
-function removeSuccessError(){
+function removeSuccessErrorFront(){
 
     document.getElementById('error_field_success_front').style.display = "none";
     
 }
 
-function removeDangerError(){
+function removeDangerErrorFront(){
 
     document.getElementById('error_field_danger_front').style.display = "none";
     
 }
 
-function removeWarningError(){
+function removeWarningErrorFront(){
 
     document.getElementById('error_field_warning_front').style.display = "none";
     
