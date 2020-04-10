@@ -20,6 +20,7 @@
     padding: 10px 10px;
     position: relative;
     top: -20px;
+    display: none;
 }
 
 .error_success_alert{
@@ -39,4 +40,9 @@
     left: 15px;
     top: 14px;
     cursor: pointer;
+}
+
+.alert_icon_error{
+    position: relative;
+    top: 2px;
 }
