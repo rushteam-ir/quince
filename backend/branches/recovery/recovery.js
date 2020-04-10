@@ -31,6 +31,7 @@ router.post('/', async(req,res)=>{
 
             await user_model.recoveryEmail(email_inp, (result)=>{
 
+
                 if(result){
 
                     let verify_code = randomString(20);
@@ -64,6 +65,7 @@ router.post('/', async(req,res)=>{
                 }
                 else{
 
+                    log('sas')
                     res.redirect(`${config.backend_url}recovery/?msg=invalid-email`);
 
                 }
