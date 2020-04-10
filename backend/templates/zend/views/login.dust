@@ -35,7 +35,7 @@
                 {@alertSuccess key="change-success" msg="رمز عبور شما با موفقیت تعویض شد"}{/alertSuccess}
                 {@alertSuccess key="logout-success" msg="شما با موفقیت خارج شدید"}{/alertSuccess}
                 {@alertWarn key="captcha-error" msg="کد امنیتی وارد شده صحیح نمی باشد"}{/alertWarn}
-                {@alertError key="inactive-admin" msg="دسترسی شما به مسدود می باشد"}{/alertError}
+                {@alertError key="inactive-admin" msg="دسترسی شما مسدود می باشد"}{/alertError}
                 {@alertWarn key="incorrect-input" msg="نام کاربری یا رمز عبور صحیح نمی باشد"}{/alertWarn}
 
 
