@@ -19,8 +19,7 @@
     border: 1.5px solid #f1bf98;
     padding: 10px 10px;
     position: relative;
-    top: -20px;
-    display: none;
+    top: -20px; 
 }
 
 .error_success_alert{

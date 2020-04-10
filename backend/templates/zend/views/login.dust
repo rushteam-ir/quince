@@ -38,9 +38,9 @@
                 {@alertError key="inactive-admin" msg="دسترسی شما به سیستم مدیریت محتوا مسدود می باشد"}{/alertError}
                 {@alertWarn key="incorrect-input" msg="نام کاربری یا رمز عبور صحیح نمی باشد"}{/alertWarn}
 
-                <form action="" method="post" name="dashbord_login_form" onsubmit="return adminlogerrors()">
 
-                  
+
+                <form action="" method="post" name="dashbord_login_form" onsubmit="return adminlogerrors()">
 
                   <div class="form-group">
                     <label for="email-for-id" class="text-right d-block">نام کاربری</label>
