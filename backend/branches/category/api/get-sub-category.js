@@ -2,10 +2,29 @@ const router = express.Router();
 
 router.get('/', async(req,res)=>{
 
-    let parent_id = req.query.id;
-    let sub_category = await category_model.getSub(parent_id);
+    try{
 
-    res.json(sub_category);
+        let parent_id = req.query.id;
+
+        if(isObjectId(parent_id)){
+
+            let sub_category = await category_model.getSub(parent_id);
+
+            res.json(sub_category);
+
+        }
+        else{
+
+            return res.redirect(`${config.backend_url}category`);
+
+        }
+
+    }
+    catch (error) {
+
+        res.status(500).render('500', {error});
+
+    }
 
 });
 

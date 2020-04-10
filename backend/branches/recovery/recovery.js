@@ -24,7 +24,7 @@ router.post('/', async(req,res)=>{
 
         if(valid_email != ''){
 
-            res.redirect(`${config.backend_url}recovery/?msg=${valid_email}`);
+            res.redirect(`${config.backend_url}recovery`);
 
         }
         else{
@@ -33,7 +33,7 @@ router.post('/', async(req,res)=>{
 
                 if(result){
 
-                    let verify_code = randomString(10);
+                    let verify_code = randomString(20);
 
                     let mail_options = {
 

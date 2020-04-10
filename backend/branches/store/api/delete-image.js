@@ -30,14 +30,14 @@ router.get('/', async(req,res)=>{
             }
             else{
 
-                res.redirect(`${config.backend_url}store/edit/${backend.locals.product_edit_id}/?msg=delete-fail`);
+                res.redirect(`${config.backend_url}store/edit/${backend.locals.product_edit_id}`);
 
             }
 
         }
         else{
 
-            res.redirect(`${config.backend_url}store/edit/${backend.locals.product_edit_id}/?msg=delete-fail`);
+            res.redirect(`${config.backend_url}store/edit/${backend.locals.product_edit_id}`);
 
         }
 

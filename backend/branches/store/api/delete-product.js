@@ -35,14 +35,14 @@ router.get('/', async(req,res)=>{
             }
             else{
 
-                return res.redirect(`${config.backend_url}store/list/?msg=delete-fail`);
+                return res.redirect(`${config.backend_url}store/list`);
 
             }
 
         }
         else{
 
-            return res.redirect(`${config.backend_url}store/list/?msg=error`);
+            return res.redirect(`${config.backend_url}store/list`);
 
         }
 

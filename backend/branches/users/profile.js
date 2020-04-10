@@ -8,12 +8,11 @@ router.get('/:id', async(req,res)=>{
 
         if(isObjectId(user_id)){
 
-
             res.render('users/users-profile');
         }
         else{
 
-            res.redirect(`${config.backend_url}users/list/?msg=error`);
+            res.redirect(`${config.backend_url}users/list`);
 
         }
 

@@ -32,12 +32,12 @@ router.post('/', async(req,res)=>{
 
         if(valid_title != ''){
 
-            res.redirect(`${config.backend_url}category/?msg=${valid_title}`);
+            res.redirect(`${config.backend_url}category`);
 
         }
         else if(valid_parent != ''){
 
-            res.redirect(`${config.backend_url}category/?msg=${valid_parent}`);
+            res.redirect(`${config.backend_url}category`);
 
         }
         else{

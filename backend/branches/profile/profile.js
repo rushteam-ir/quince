@@ -55,27 +55,27 @@ router.post('/', async(req,res)=>{
 
             if(valid_username != ''){
 
-                return res.redirect(`${config.backend_url}profile/?msg=${valid_username}`);
+                return res.redirect(`${config.backend_url}profile`);
 
             }
             else if(valid_firstname != ''){
 
-                return res.redirect(`${config.backend_url}profile/?msg=${valid_firstname}`);
+                return res.redirect(`${config.backend_url}profile`);
 
             }
             else if(valid_lastname != ''){
 
-                return res.redirect(`${config.backend_url}profile/?msg=${valid_lastname}`);
+                return res.redirect(`${config.backend_url}profile`);
 
             }
             else if(valid_email != ''){
 
-                return res.redirect(`${config.backend_url}profile/?msg=${valid_email}`);
+                return res.redirect(`${config.backend_url}profile`);
 
             }
             else if(valid_phonenumber != ''){
 
-                return res.redirect(`${config.backend_url}profile/?msg=${valid_phonenumber}`);
+                return res.redirect(`${config.backend_url}profile`);
 
             }
 
@@ -161,17 +161,17 @@ router.post('/', async(req,res)=>{
 
             if(valid_currpass != ''){
 
-                return res.redirect(`${config.backend_url}profile/?msg=${valid_currpass}`);
+                return res.redirect(`${config.backend_url}profile`);
 
             }
             else if(valid_newpass != ''){
 
-                return res.redirect(`${config.backend_url}profile/?msg=${valid_newpass}`);
+                return res.redirect(`${config.backend_url}profile`);
 
             }
             else if(valid_conpass != ''){
 
-                return res.redirect(`${config.backend_url}profile/?msg=${valid_conpass}`);
+                return res.redirect(`${config.backend_url}profile`);
 
             }
 
@@ -212,7 +212,7 @@ router.post('/', async(req,res)=>{
         }
         else {
 
-            res.redirect(`${config.backend_url}profile/?msg=error`);
+            res.redirect(`${config.backend_url}profile`);
 
         }
 
