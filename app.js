@@ -15,7 +15,7 @@ app.listen(config.port, async(error)=>{
     }
     else {
 
-        log(`Server created successfuly on port ${config.port}.`);
+        log(`Server created successfully on port ${config.port}.`);
 
     }
 

@@ -1,3 +1,11 @@
 <component name="ProjectDictionaryState">
-  <dictionary name="MSI" />
+  <dictionary name="MSI">
+    <words>
+      <w>currpass</w>
+      <w>firstname</w>
+      <w>lastname</w>
+      <w>newpass</w>
+      <w>phonenumber</w>
+    </words>
+  </dictionary>
 </component>

@@ -2,36 +2,42 @@ const router = express.Router();
 
 router.get('/', async(req,res)=>{
 
-    let admin_id = req.session.admin_id;
-    let admin_data = {
-
-        avatar : '',
-
-    };
-    let avatar_path = `${backend_upload_dir}avatars/${req.session.admin_info.avatar}`;
-
     try {
+
+        let admin_id = req.session.admin_id;
+        let admin_data = {
+
+            avatar : '',
+
+        };
+        let avatar_path = `${backend_upload_dir}avatars/${req.session.admin_info.avatar}`;
 
         await user_model.editProfile(admin_id, admin_data, (result)=>{
 
             if(result){
 
-                fs.unlinkSync(avatar_path);
+                try{
+                    fs.unlinkSync(avatar_path);
+                }
+                catch(e){
+
+                }
                 req.session.admin_info.avatar = '';
                 res.redirect(`${config.backend_url}profile/?msg=delete-success`);
 
             }
             else{
 
-                res.redirect(`${config.backend_url}profile/?msg=delete-fail`);
+                res.redirect(`${config.backend_url}profile`);
 
             }
 
         })
 
-    } catch(err) {
+    }
+    catch(error) {
 
-        res.redirect(`${config.backend_url}profile/?msg=delete-fail`);
+        res.status(500).render('500', {error});
 
     }
 

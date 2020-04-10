@@ -13,7 +13,7 @@ router.get('/', async(req,res)=>{
             }
             else{
 
-                res.redirect(`${config.backend_url}dashboard/?msg=logout-fail`);
+                res.redirect(`${config.backend_url}dashboard`);
 
             }
 

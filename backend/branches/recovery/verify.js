@@ -45,17 +45,17 @@ router.post('/', async(req,res)=>{
 
         if(valid_newpass != ''){
 
-            res.redirect(`${config.backend_url}recovery/verify/?code=${req.session.saved_code}&msg=${valid_newpass}`);
+            res.redirect(`${config.backend_url}recovery/verify/?code=${req.session.saved_code}`);
 
         }
         else if(valid_compass != ''){
 
-            res.redirect(`${config.backend_url}recovery/verify/?code=${req.session.saved_code}&msg=${valid_compass}`);
+            res.redirect(`${config.backend_url}recovery/verify/?code=${req.session.saved_code}`);
 
         }
         else if(newpass_inp !== compass_inp){
 
-            res.redirect(`${config.backend_url}recovery/verify/?code=${req.session.saved_code}&msg=not-match`);
+            res.redirect(`${config.backend_url}recovery/verify/?code=${req.session.saved_code}`);
 
         }
         else{

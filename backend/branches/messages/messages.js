@@ -5,7 +5,6 @@ router.get('/', async(req,res)=>{
     try{
 
         let result = await message_model.read();
-        // Check if we have a new message
         let message_status = await message_model.check();
 
         if(message_status){

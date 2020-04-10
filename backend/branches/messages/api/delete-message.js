@@ -17,19 +17,16 @@ router.get('/', async(req,res)=>{
             }
             else{
 
-                return res.redirect(`${config.backend_url}messages/?msg=delete-fail`);
+                return res.redirect(`${config.backend_url}messages`);
 
             }
 
         }
+        else{
 
-        let data = {
+            return res.redirect(`${config.backend_url}messages`);
 
-            list : await message_model.get(),
-
-        };
-
-        res.render('messages/messages', data);
+        }
 
     }
     catch (error) {

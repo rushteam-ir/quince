@@ -34,13 +34,13 @@ router.get('/', async(req,res)=>{
                 return res.redirect(`${config.backend_url}store/list/?msg=change-success`);
             }
             else{
-                return res.redirect(`${config.backend_url}store/list/?msg=change-fail`);
+                return res.redirect(`${config.backend_url}store/list`);
             }
 
         }
         else{
 
-            return res.redirect(`${config.backend_url}store/list/?msg=error`);
+            return res.redirect(`${config.backend_url}store/list`);
 
         }
 

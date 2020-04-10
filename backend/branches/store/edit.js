@@ -66,28 +66,28 @@ router.post('/:id', async(req,res)=>{
         }
 
         if(valid_title != ''){
-            return res.redirect(`${config.backend_url}store/edit/${product_id}/?msg=${valid_title}`);
+            return res.redirect(`${config.backend_url}store/edit/${product_id}`);
         }
         else if(!valid_parent){
-            return res.redirect(`${config.backend_url}store/edit/${product_id}/?msg=invalid-input`);
+            return res.redirect(`${config.backend_url}store/edit/${product_id}`);
         }
         else if(!valid_child){
-            return res.redirect(`${config.backend_url}store/edit/${product_id}/?msg=invalid-input`);
+            return res.redirect(`${config.backend_url}store/edit/${product_id}`);
         }
         else if(valid_describe != ''){
-            return res.redirect(`${config.backend_url}store/edit/${product_id}/?msg=${valid_describe}`);
+            return res.redirect(`${config.backend_url}store/edit/${product_id}`);
         }
         else if(valid_stock != ''){
-            return res.redirect(`${config.backend_url}store/edit/${product_id}/?msg=${valid_stock}`);
+            return res.redirect(`${config.backend_url}store/edit/${product_id}`);
         }
         else if(valid_discount != ''){
-            return res.redirect(`${config.backend_url}store/edit/${product_id}/?msg=${valid_discount}`);
+            return res.redirect(`${config.backend_url}store/edit/${product_id}`);
         }
         else if(valid_price != ''){
-            return res.redirect(`${config.backend_url}store/edit/${product_id}/?msg=${valid_price}`);
+            return res.redirect(`${config.backend_url}store/edit/${product_id}`);
         }
         else if(!valid_product_features.includes('')){
-            return res.redirect(`${config.backend_url}store/edit/${product_id}/?msg=${valid_product_features[0]}`);
+            return res.redirect(`${config.backend_url}store/edit/${product_id}`);
         }
 
         let last_product = await product_model.getById(product_id);

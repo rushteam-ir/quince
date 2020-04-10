@@ -40,25 +40,21 @@ router.post('/', async(req,res)=>{
 
         if(valid_username != ''){
 
-            // Not valid username
-            res.redirect(`${config.backend_url}login/?msg=${valid_username}`);
+            res.redirect(`${config.backend_url}login`);
 
         }
         else if(valid_password != ''){
 
-            // Not valid password
-            res.redirect(`${config.backend_url}login/?msg=${valid_password}`);
+            res.redirect(`${config.backend_url}login`);
 
         }
         else if(valid_captcha != ''){
 
-            // Not valid captcha
-            res.redirect(`${config.backend_url}login/?msg=${valid_captcha}`);
+            res.redirect(`${config.backend_url}login`);
 
         }
         else if(captcha_inp.toLowerCase()!= req.session.captcha){
 
-            // Captcha Error
             res.redirect(`${config.backend_url}login/?msg=captcha-error`);
 
         }
@@ -70,7 +66,6 @@ router.post('/', async(req,res)=>{
 
                     if(find_user.status && (find_user.access == "main_admin" || find_user.access == "normal_admin")){
 
-                        // Login was successful
                         delete req.session.login_form;
                         delete req.session.captcha;
 
@@ -82,7 +77,6 @@ router.post('/', async(req,res)=>{
                     }
                     else {
 
-                        // User is banned
                         res.redirect(`${config.backend_url}login/?msg=inactive-admin`);
 
                     }
@@ -90,7 +84,6 @@ router.post('/', async(req,res)=>{
                 }
                 else{
 
-                    // Username or password is incorrect
                     res.redirect(`${config.backend_url}login/?msg=incorrect-input`);
 
                 }
