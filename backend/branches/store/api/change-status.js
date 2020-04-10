@@ -31,7 +31,7 @@ router.get('/', async(req,res)=>{
             let result = await product_model.edit(product_id, product_data);
 
             if(result){
-                return res.redirect(`${config.backend_url}store/list/?msg=change-success`);
+                return res.redirect(`${config.backend_url}store/list`);
             }
             else{
                 return res.redirect(`${config.backend_url}store/list`);

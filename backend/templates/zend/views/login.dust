@@ -31,45 +31,12 @@
 
               <div id="main_field_of_dashbord_login_form_id" class="main_field_of_dashbord_login_form">
 
-                {@alertError key="invalid-input" msg="مقادیر ورودی را دوباره بررسی کنید"}{/alertError}
-                {@alertError key="captcha-error" msg="کد امنیتی درست نمی باشد"}{/alertError}
-                {@alertError key="inactive-admin" msg="دسترسی شما مسدود می باشد"}{/alertError}
-                {@alertError key="incorrect-input" msg="نام کاربری یا رمز عبور صحیح نمی باشد"}{/alertError}
-                {@alertError key="short-input" msg="نام کاربری باید بیشتر از 4 حرف باشد"}{/alertError}
-                {@alertError key="empty-input" msg="لطفا تمام ورودی ها را وارد کنید"}{/alertError}
+                {@alertSuccess key="sent-success" msg="ایمیل بازیابی با موفیت برای شما ارسال شد"}{/alertSuccess}
                 {@alertSuccess key="change-success" msg="رمز عبور شما با موفقیت تعویض شد"}{/alertSuccess}
-                {@alertSuccess key="sent-success" msg="ایمیل بازیابی با موفقیت ارسال شد"}{/alertSuccess}
                 {@alertSuccess key="logout-success" msg="شما با موفقیت خارج شدید"}{/alertSuccess}
-
-                <div class="error_success_alert text-right" id="error_field_success">
-
-                  <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeSuccessError()"></i>
-                  <i class="fal fa-exclamation-circle"></i>
-                    <div class="d-inline-block mr-1" id="error_text">
-                      لطفا نام و نام کاربری خود را وارد کنید
-                    </div>
-
-                </div>
-
-                <div class="error_danger_alert text-right" id="error_field_danger">
-
-                    <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeDangerError()"></i>
-                    <i class="fal fa-exclamation-circle"></i>
-                    <div class="d-inline-block mr-1">
-                        لطفا نام و نام کاربری خود را وارد کنید
-                    </div>
-          
-                </div>
-
-              <div class="error_warning_alert text-right" id="error_field_warning">
-
-                  <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeWarningError()"></i>
-                  <i class="fal fa-exclamation-circle"></i>
-                  <div class="d-inline-block mr-1">
-                      لطفا نام و نام کاربری خود را وارد کنید
-                  </div>
-        
-              </div>
+                {@alertWarn key="captcha-error" msg="کد امنیتی وارد شده صحیح نمی باشد"}{/alertWarn}
+                {@alertError key="inactive-admin" msg="دسترسی شما به سیستم مدیریت محتوا مسدود می باشد"}{/alertError}
+                {@alertWarn key="incorrect-input" msg="نام کاربری یا رمز عبور صحیح نمی باشد"}{/alertWarn}
 
                 <form action="" method="post" name="dashbord_login_form" onsubmit="return adminlogerrors()">
 

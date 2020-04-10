@@ -28,8 +28,8 @@
 
               <div id="main_field_of_dashbord_login_form_id" class="main_field_of_dashbord_login_form">
 
-                {@alertError key="invalid-email" msg="لطفا یک ایمیل معتبر وارد نمایید"}{/alertError}
-                {@alertError key="sent-fail" msg="ایمیل بازیابی ارسال نشد. لطفا با پشتیبانی تماس حاصل فرمایید"}{/alertError}
+                {@alertWarn key="invalid-email" msg="لطفا یک ایمیل معتبر وارد نمایید"}{/alertWarn}
+                {@alertError key="sent-fail" msg="ایمیل بازیابی ارسال نشد. لطفا مجددا تلاش فرمایید"}{/alertError}
 
                 <form action="" method="post" name="dashbord_login_form" onsubmit="return adminlogerrors()">
 

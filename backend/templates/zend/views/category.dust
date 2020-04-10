@@ -15,10 +15,7 @@
             اضافه کردن دسته جدید
         </p>
 
-        {@alertError key="empty-input" msg="لطفا تمام ورودی ها را وار کنید"}{/alertError}
-        {@alertError key="invalid-input" msg="ورودی وارد شده نا معتبر می باشد"}{/alertError}
         {@alertError key="add-fail" msg="دسته جدید ثبت نشد. لطفا از نام های تکراری استفاده نکنید"}{/alertError}
-        {@alertError key="delete-fail" msg="حذف دسته انجام نشد. لطفا با پشتیبانی تماس بگیرید"}{/alertError}
         {@alertSuccess key="add-success" msg="دسته جدید با موفقیت ثبت شد"}{/alertSuccess}
 
             <form action="" method="post" autocomplete="off">

@@ -41,8 +41,7 @@ dust_options = {
 
                 if(msg_param === context.resolve(params.key)){
 
-                    let html = `<div id="dashbord_login_error" class="alert-warning alert dashbord_login_server_error_class text-center">
-                        ${context.resolve(params.msg)}</div>`;
+                    let html = `<div class="error_danger_alert text-right" id="error_field_danger"> <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeDangerError()"></i> <i class="fal fa-exclamation-circle"></i> <div class="d-inline-block mr-1">${context.resolve(params.msg)}</div> </div>`;
 
                     body = bodies.block;
                     chunk.write(html);
@@ -57,8 +56,22 @@ dust_options = {
 
                 if(msg_param === context.resolve(params.key)){
 
-                    let html = `<div id="dashbord_login_error" class="alert-success alert dashbord_login_server_error_class border border-success text-center">
-                    ${context.resolve(params.msg)}</div>`;
+                    let html = `<div class="error_success_alert text-right" id="error_field_success"> <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeSuccessError()"></i> <i class="fal fa-exclamation-circle"></i> <div class="d-inline-block mr-1" id="error_text">${context.resolve(params.msg)}</div> </div>`;
+
+                    body = bodies.block;
+                    chunk.write(html);
+                    chunk.render(body, context);
+                    return chunk;
+
+                }
+
+            },
+
+            dust.helpers.alertWarn = function (chunk, context, bodies, params) {
+
+                if(msg_param === context.resolve(params.key)){
+
+                    let html = `<div class="error_warning_alert text-right" id="error_field_warning"> <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeWarningError()"></i> <i class="fal fa-exclamation-circle"></i> <div class="d-inline-block mr-1">${context.resolve(params.msg)}</div> </div>`;
 
                     body = bodies.block;
                     chunk.write(html);

@@ -28,12 +28,12 @@ router.get('/', async(req,res)=>{
 
                     if(result){
 
-                        return res.redirect(`${config.backend_url}users/list/?msg=change-success`);
+                        return res.redirect(`${config.backend_url}users/list`);
 
                     }
                     else{
 
-                        return res.redirect(`${config.backend_url}users/list/?msg=change-fail`);
+                        return res.redirect(`${config.backend_url}users/list`);
 
                     }
 
@@ -42,21 +42,21 @@ router.get('/', async(req,res)=>{
             }
             else{
 
-                return res.redirect(`${config.backend_url}users/list/?msg=error`);
+                return res.redirect(`${config.backend_url}users/list`);
 
             }
 
         }
         else{
 
-            return res.redirect(`${config.backend_url}users/list/?msg=error`);
+            return res.redirect(`${config.backend_url}users/list`);
 
         }
 
     }
-    catch(err) {
+    catch(error) {
 
-        res.redirect(`${config.backend_url}profile/?msg=delete-fail`);
+        res.status(500).render('500', {error});
 
     }
 

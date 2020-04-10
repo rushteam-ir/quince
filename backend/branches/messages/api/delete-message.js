@@ -12,7 +12,7 @@ router.get('/', async(req,res)=>{
 
             if(result){
 
-                return res.redirect(`${config.backend_url}messages/?msg=delete-success`);
+                return res.redirect(`${config.backend_url}messages`);
 
             }
             else{

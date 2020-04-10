@@ -15,8 +15,7 @@
                 پیام ها
             </p>
 
-        {@alertSuccess key="delete-success" msg="پیام موردنظر با موفقیت حذف گردید"}{/alertSuccess}
-        {@alertError key="delete-fail" msg="پیام موردنظر حذف نشد لطفا با پشتیبانی تماس حاصل فرمایید"}{/alertError}
+        {@alertSuccess key="sent-success" msg="پیام شما با موفقیت ارسال شد"}{/alertSuccess}
 
             {?list}
                 {#list}

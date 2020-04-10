@@ -30,7 +30,7 @@ router.get('/', async(req,res)=>{
                     }
                 }
 
-                return res.redirect(`${config.backend_url}store/list/?msg=delete-success`);
+                return res.redirect(`${config.backend_url}store/list`);
 
             }
             else{

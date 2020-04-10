@@ -13,6 +13,11 @@
                 اضافه کردن محصول
             </p>
 
+            {@alertWarn key="limited-image" msg="حجم تصویر انتخاب شده بیشتر از حد مجاز است"}{/alertWarn}
+            {@alertWarn key="illegal-image" msg="پسوند تصویر انتخاب شده مجاز نمی باشد"}{/alertWarn}
+            {@alertError key="add-fail" msg="محصول جدید ثبت نشد لطفا مجددا تلاش فرمایید"}{/alertError}
+            {@alertSuccess key="add-success" msg="دسته جدید با موفقیت ثبت شد"}{/alertSuccess}
+
             <div id="store_add_error" class="alert alert-warning text-center"></div>
 
             <form action="" method="post" autocomplete="off" enctype="multipart/form-data" name="store_add_form"

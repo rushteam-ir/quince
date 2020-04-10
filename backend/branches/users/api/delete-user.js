@@ -2,29 +2,38 @@ const router = express.Router();
 
 router.get('/', async(req,res)=>{
 
-    let delete_id = req.query.id;
+    try{
 
-    if(isObjectId(delete_id)){
+        let delete_id = req.query.id;
 
-        let admin_find = await user_model.getById(delete_id);
+        if(isObjectId(delete_id)){
 
-        let result = await user_model.del(delete_id);
+            let admin_find = await user_model.getById(delete_id);
 
-        if(result){
+            let result = await user_model.del(delete_id);
 
-            return res.redirect(`${config.backend_url}users/list/?msg=delete-success`);
+            if(result){
+
+                return res.redirect(`${config.backend_url}users/list`);
+
+            }
+            else{
+
+                return res.redirect(`${config.backend_url}users/list`);
+
+            }
 
         }
         else{
 
-            return res.redirect(`${config.backend_url}users/list/?msg=delete-fail`);
+            return res.redirect(`${config.backend_url}users/list`);
 
         }
 
     }
-    else{
+    catch (error) {
 
-        return res.redirect(`${config.backend_url}users/list/?msg=error`);
+
 
     }
 

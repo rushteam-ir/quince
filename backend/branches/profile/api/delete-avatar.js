@@ -23,7 +23,7 @@ router.get('/', async(req,res)=>{
 
                 }
                 req.session.admin_info.avatar = '';
-                res.redirect(`${config.backend_url}profile/?msg=delete-success`);
+                res.redirect(`${config.backend_url}profile`);
 
             }
             else{

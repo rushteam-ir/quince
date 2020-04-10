@@ -17,6 +17,7 @@
             </p>
 
             {@alertSuccess key="add-success" msg="محصول جدید با موفقیت اضافه شد"}{/alertSuccess}
+            {@alertSuccess key="edit-success" msg="تغییرات اعمال شده روی محصول با موفقیت ثبت شد"}{/alertSuccess}
 
             <div class="container-fluid p-0">
 

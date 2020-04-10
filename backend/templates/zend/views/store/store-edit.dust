@@ -12,6 +12,10 @@
                 ویرایش محصول
             </p>
 
+            {@alertWarn key="limited-image" msg="حجم تصویر انتخاب شده بیشتر از حد مجاز است"}{/alertWarn}
+            {@alertWarn key="illegal-image" msg="پسوند تصویر انتخاب شده مجاز نمی باشد"}{/alertWarn}
+            {@alertError key="edit-fail" msg="تغییرات صورت گرفته ثبت نشد. لطفا مجددا نلاش فرمایید"}{/alertError}
+
             <div id="store_add_error" class="alert alert-warning text-center"></div>
 
             <form action="" method="post" autocomplete="off" enctype="multipart/form-data" name="store_edit_form"

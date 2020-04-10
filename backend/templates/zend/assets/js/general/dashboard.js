@@ -60,3 +60,26 @@ function profileBtn(){
 
 }
 
+$('.logout_cms').on('click', function (e) {
+
+    let cat_id = $(e.currentTarget).attr('name');
+
+    Swal.fire({
+        title: 'خروج',
+        text: "آیا برای خروج مطمئن هستید ؟",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'بله',
+        cancelButtonText: 'خیر',
+    }).then((result) => {
+        if (result.value) {
+            redirect(`${backend_url}logout`);
+        }
+    })
+})
+
+function redirect(url) {
+    location.href = url
+}

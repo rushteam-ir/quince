@@ -25,7 +25,7 @@ router.get('/', async(req,res)=>{
             if(result){
 
                 await fs.unlinkSync(`${backend_upload_dir}products/${find_image_name}`);
-                res.redirect(`${config.backend_url}store/edit/${backend.locals.product_edit_id}/?msg=delete-success`);
+                res.redirect(`${config.backend_url}store/edit/${backend.locals.product_edit_id}`);
 
             }
             else{

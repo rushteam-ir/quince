@@ -15,7 +15,7 @@
         ارسال نظر 
     </p>
 
-
+    {@alertError key="sent-fail" msg="پیام شما با موفقیت ارسال نشد لطفا مجدد تلاش فرمایید"}{/alertError}
 
     <div class="main_field_of_messages_text mt-3">
 

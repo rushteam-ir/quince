@@ -22,19 +22,13 @@
 
             <div id="admin_pro_edit">
 
-                {@alertError key="empty-input" msg="لطفا تمام ورودی ها را وارد کنید"}{/alertError}
-                {@alertError key="invalid-input" msg="ورودی های وارد شده نا معتبر می باشند"}{/alertError}
-                {@alertError key="short-input" msg="نام کاربری باید بیشتر از چهار حرف باشد"}{/alertError}
-                {@alertError key="invalid-email" msg="ایمیل وارد شده نا معتبر می باشد"}{/alertError}
-                {@alertError key="not-phonenumber" msg="شماره تلفن همراه باید یازده رقمی باشد"}{/alertError}
-                {@alertError key="limited-avatar" msg="حجم تصویر انتخاب شده بیشتر از حد مجاز است"}{/alertError}
-                {@alertError key="illegal-avatar" msg="فایل انتخابی شما با پسوند تصویر مجاز نمی باشد"}{/alertError}
-                {@alertError key="delete-fail" msg="در حذف تصویر شما مشکلی پیش آمده است لطفا با پشتیبانی تماس حاصل فرمایید"}{/alertError}
-                {@alertError key="edit-fail" msg="در تغییر مشخصات پروفایل شما مشکلی پیش آمده است لطفا با پشتیبانی تماس حاصل فرمایید"}{/alertError}
-                {@alertError key="error" msg="در ارتباط با سرور مشکلی پیش آمده است لطفا با پشتیبانی تماس حاصل فرمایید"}{/alertError}
-                {@alertError key="no-change" msg="تغییری در مشخصات پروفایل اعمال نشده است"}{/alertError}
+                {@alertWarn key="no-change" msg="تغییری در مشخصات پروفایل اعمال نشده است"}{/alertWarn}
+                {@alertWarn key="limited-avatar" msg="حجم تصویر انتخاب شده بیشتر از حد مجاز است"}{/alertWarn}
+                {@alertWarn key="illegal-avatar" msg="پسوند تصویر انتخاب شده مجاز نمی باشد"}{/alertWarn}
                 {@alertSuccess key="edit-success" msg="مشخصات پروفایل شما با موفقیت ثبت شد"}{/alertSuccess}
-                
+                {@alertError key="edit-fail" msg="مشخصات پروفایل شما تغییر نکرد. لطفا مجددا تلاش فرمایید"}{/alertError}
+                {@alertError key="incorrect-input" msg="رمز عبور فعلی اشتباه می باشد"}{/alertError}
+
                 <div id="admin_profile_error_field" class="alert alert-warning text-center"></div>
 
                 <form action="" method="post" autocomplete="off" enctype="multipart/form-data" name="pro_op_main_form" onsubmit="return proError()">
