@@ -4,9 +4,10 @@ function adminlogerrors(){
     var password_inp = document.forms['dashbord_login_form']['password_inp'].value;
     var captcha_inp = document.forms['dashbord_login_form']['captcha_inp'].value;
 
-    var error_field = document.getElementById('error_field_danger');
+    var error_field = document.getElementById('error_field_warning_front');
     var error_text = document.getElementById('error_text');
 
+    
     error_field.style.display = " block";
 
     if(username_inp == ""){
@@ -35,4 +36,11 @@ function adminlogerrors(){
 
     }
 
+}
+
+function salam(){
+
+    var error_field_warning = document.getElementById('error_field_warning');
+    error_field_warning.style.display = "none";
+    
 }

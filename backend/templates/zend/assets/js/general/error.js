@@ -1,17 +1,40 @@
+// remove back errors
+
 function removeSuccessError(){
 
-    var error_field_success = document.getElementById('error_field_success').style.display = "none";
+    document.getElementById('error_field_success').style.display = "none";
     
 }
 
 function removeDangerError(){
 
-    var error_field_danger = document.getElementById('error_field_danger').style.display = "none";
+    document.getElementById('error_field_danger').style.display = "none";
     
 }
 
 function removeWarningError(){
 
-    var error_field_warning = document.getElementById('error_field_warning').style.display = "none";
+    document.getElementById('error_field_warning').style.display = "none";
+    
+}
+
+
+// remove front errors
+
+function removeSuccessError(){
+
+    document.getElementById('error_field_success_front').style.display = "none";
+    
+}
+
+function removeDangerError(){
+
+    document.getElementById('error_field_danger_front').style.display = "none";
+    
+}
+
+function removeWarningError(){
+
+    document.getElementById('error_field_warning_front').style.display = "none";
     
 }
