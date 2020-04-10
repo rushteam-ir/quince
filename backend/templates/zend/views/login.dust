@@ -42,6 +42,17 @@
 
                 <form action="" method="post" name="dashbord_login_form" onsubmit="return adminlogerrors()">
 
+                  <div class="error_warning_alert text-right display_none" id="error_field_danger"> 
+
+                    <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeDangerError()"></i> 
+                    <i class="fal fa-exclamation-circle alert_icon_error"></i>
+  
+                      <div class="d-inline-block mr-1" id="error_text">
+                        شسیشسیشهیتخشهسی
+                      </div>
+  
+                  </div>
+
                   <div class="form-group">
                     <label for="email-for-id" class="text-right d-block">نام کاربری</label>
                     <input type="text" class="form-control dir-rtl dashbord_login_input" id="email-for-id"

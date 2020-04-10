@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <base href="{backend_url}">
   <link rel="stylesheet" href="css/general/bootstrap.css">
+  <link rel="stylesheet" href="css/general/fontAwsome.css">
   <link rel="stylesheet" href="css/general/general-css.css">
   <link rel="stylesheet" href="css/cms/login.css">
+  <link rel="stylesheet" href="css/general/error.css">
   <title>بازیابی رمز عبور</title>
 </head>
 
@@ -67,7 +69,7 @@
   <script src="js/general/popper.js"></script>
   <script src="js/general/bootstrap.js"></script>
   <script src="js/general/wow.js"></script>
-  <script src="https://kit.fontawesome.com/1c750158b2.js" crossorigin="anonymous"></script>
+  <script src="js/general/error.js"></script>
 </body>
 
 </html>
