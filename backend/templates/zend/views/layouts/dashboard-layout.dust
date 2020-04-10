@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/general/general-css.css">
     <link rel="stylesheet" href="css/cms/dashbord.css">
     <link rel="stylesheet" href="css/cms/css-animate.css">
+    <link rel="stylesheet" href="css/general/error.css">
     {+css/}
     <title>پنل مدیریت</title>
 </head>
@@ -182,6 +183,7 @@
     <script src="js/general/sweetAlert.js"></script>
     <script src="js/general/wow.js"></script>
     <script src="js/general/dashboard.js"></script>
+    <script src="js/general/error.js"></script>
     {+js/}
 </body>
 
