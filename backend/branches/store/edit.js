@@ -152,6 +152,9 @@ router.post('/:id', async(req,res)=>{
                 other_images.forEach((image)=>{
 
                     let empty_index = last_product.images.indexOf('');
+                    if(empty_index == -1){
+                        empty_index = last_product.images.length;
+                    }
                     let file_format3 = image.name.slice(-3).toLowerCase();
                     let file_format4 = image.name.slice(-4).toLowerCase();
 
@@ -187,6 +190,9 @@ router.post('/:id', async(req,res)=>{
 
                 let image = req.files['product_other_images[]'];
                 let empty_index = last_product.images.indexOf('');
+                if(empty_index == -1){
+                    empty_index = last_product.images.length;
+                }
                 let file_format3 = image.name.slice(-3).toLowerCase();
                 let file_format4 = image.name.slice(-4).toLowerCase();
 
