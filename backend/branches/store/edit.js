@@ -108,7 +108,7 @@ router.post('/:id', async(req,res)=>{
 
         };
 
-        if(typeof req.files.product_main_image != 'undefined'){
+        if(req.files && typeof req.files.product_main_image != 'undefined'){
 
             let main_image = req.files.product_main_image;
             let product_images = [];
@@ -143,7 +143,7 @@ router.post('/:id', async(req,res)=>{
 
         }
 
-        if(typeof req.files['product_other_images[]'] != 'undefined'){
+        if(req.files && typeof req.files['product_other_images[]'] != 'undefined'){
 
             let other_images = req.files['product_other_images[]'];
 
