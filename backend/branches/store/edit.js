@@ -107,9 +107,9 @@ router.post('/:id', async(req,res)=>{
             images : last_product.images
 
         };
+
         if(typeof req.files.product_main_image != 'undefined'){
 
-            log(req.files.product_main_image);
             let main_image = req.files.product_main_image;
             let product_images = [];
 
@@ -140,6 +140,83 @@ router.post('/:id', async(req,res)=>{
             }
 
             new_product['images'][0] = product_images;
+
+        }
+
+        if(typeof req.files['product_other_images[]'] != 'undefined'){
+
+            let other_images = req.files['product_other_images[]'];
+
+            if(Array.isArray(other_images)){
+
+                other_images.forEach((image)=>{
+
+                    let empty_index = last_product.images.indexOf('');
+                    let file_format3 = image.name.slice(-3).toLowerCase();
+                    let file_format4 = image.name.slice(-4).toLowerCase();
+
+                    if(backend_allowd_avatars.includes(file_format3) || backend_allowd_avatars.includes(file_format4)) {
+
+                        if(image.size/1024 <= backend_limited_products_size){
+
+                            let _name = `${product_id}_${empty_index}.png`;
+                            let other_image_path = `${backend_upload_dir}products/${_name}`;
+                            image.mv(other_image_path, (err)=>{});
+
+                            new_product['images'][empty_index] = `${_name}`;
+                            last_product['images'][empty_index] = `${_name}`;
+
+                        }
+                        else{
+
+                            return res.redirect(`${config.backend_url}store/edit/${product_id}/?msg=limited-image`);
+
+                        }
+
+                    }
+                    else{
+
+                        return res.redirect(`${config.backend_url}store/edit/${product_id}/?msg=illegal-image`);
+
+                    }
+
+                })
+
+            }
+            else{
+
+                let image = req.files['product_other_images[]'];
+                let empty_index = last_product.images.indexOf('');
+                let file_format3 = image.name.slice(-3).toLowerCase();
+                let file_format4 = image.name.slice(-4).toLowerCase();
+
+                if(backend_allowd_avatars.includes(file_format3) || backend_allowd_avatars.includes(file_format4)) {
+
+                    if(image.size/1024 <= backend_limited_products_size){
+
+                        let _name = `${product_id}_${empty_index}.png`;
+                        let other_image_path = `${backend_upload_dir}products/${_name}`;
+                        image.mv(other_image_path, (err)=>{});
+
+                        new_product['images'][empty_index] = `${_name}`;
+                        last_product['images'][empty_index] = `${_name}`;
+
+                    }
+                    else{
+
+                        return res.redirect(`${config.backend_url}store/edit/${product_id}/?msg=limited-image`);
+
+                    }
+
+                }
+                else{
+
+                    return res.redirect(`${config.backend_url}store/edit/${product_id}/?msg=illegal-image`);
+
+                }
+
+            }
+
 
         }
 
