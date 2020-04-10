@@ -38,7 +38,7 @@
                     
                     <input type="text" class="form-control dir-rtl dashbord_login_input" id="email-for-id"
                       name="email_inp" aria-describedby="recovery_small_text" autocomplete="off">
-                      <small id="recovery_small_text" class="form-text text-muted text-right">اگر ایمیل حاوی بازیابی رمز عبور را دریافت نکرده اید <span>اینجا</span> کلیک کنید </small>
+                      <small id="recovery_small_text" class="form-text text-muted text-right">یک ایمیل حاوی لینک بازیابی رمز عبور برای شما ارسال میشود . لطفا قسمت اسپم ایمیل خود را نیز بررسی فرمایید</small>
                   </div>
                   
                   <button type="submit" class="btn sub_btn_of_dashbord_form">بازیابی</button>
