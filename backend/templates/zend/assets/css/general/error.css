@@ -45,3 +45,7 @@
     position: relative;
     top: 2px;
 }
+
+.display_none{
+    display:none;
+}

@@ -55,8 +55,7 @@
 
                   <div class="form-group">
                     <label for="email-for-id" class="text-right d-block">نام کاربری</label>
-                    <input type="text" class="form-control dir-rtl dashbord_login_input" id="email-for-id"
-                      name="username_inp" value="{login_form.username_inp}" autocomplete="off">
+                    <input type="text" class="form-control dir-rtl dashbord_login_input" id="email-for-id" name="username_inp" value="{login_form.username_inp}" autocomplete="off">
                   </div>
 
                   <div class="form-group">
@@ -110,13 +109,12 @@
     </div>
   </section>
 
-
-
   <script src="js/general/jquery.js"></script>
   <script src="js/general/popper.js"></script>
   <script src="js/general/bootstrap.js"></script>
   <script src="js/general/wow.js"></script>
   <script src="js/general/error.js"></script>
+  <script src="js/cms/login.js"></script>
   <script>
     $(document).ready(function () {
 
