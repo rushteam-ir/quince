@@ -11,7 +11,8 @@ function categoryError(){
 
     if(title_inp == ""){
 
-
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
         error_field.style.display = "block";
         error_text.innerHTML = "لطفا عنوان دسته را وارد کنید.";
         return false;
