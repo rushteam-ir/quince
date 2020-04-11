@@ -103,7 +103,6 @@ router.post('/:id', async(req,res)=>{
             discount : discount_inp,
             features : product_features_inp,
             last_edit : getCurrentDate(),
-            author : req.session.admin_id,
             images : last_product.images
 
         };

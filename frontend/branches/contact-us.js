@@ -21,8 +21,6 @@ router.post('/', async(req,res)=>{
 
         let {firstlastname_inp, email_inp, phonenumber_inp, title_inp, text_inp} = req.body;
 
-        log(text_inp.length);
-
         let firstlastname_valid = validation.isSafe(firstlastname_inp);
         let email_valid = validation.isEmail(email_inp);
         let phonenumber_valid = validation.isPhonenumber(phonenumber_inp);
