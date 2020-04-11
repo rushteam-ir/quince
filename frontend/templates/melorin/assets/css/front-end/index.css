@@ -51,7 +51,7 @@
 .title_of_web_page {
     font-family: main-font;
     color: white;
-    top: 220px;
+    top: 250px;
     font-size: 3.5rem;
     position: relative;
     margin: auto;
@@ -60,7 +60,7 @@
 .explain_of_design_title {
     position: relative;
     color: white;
-    top: 240px;
+    top: 260px;
 }
 
 .btn_add_order {
@@ -70,7 +70,7 @@
     border-radius: 5px;
     background-color: rgba(123, 170, 123, 0.71);
     position: relative;
-    top: 260px;
+    top: 280px;
     color: white;
 }
 
