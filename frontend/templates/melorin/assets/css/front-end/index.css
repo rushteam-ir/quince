@@ -313,7 +313,47 @@
     animation-duration: 1s;
 }
 
+.slick-prev , .slick-next{
+    background-color: transparent;
+    border: none ;
+    color: transparent;
+    position: absolute;
+    top: 160px;
+}
 
+.slick-prev:focus , .slick-next:focus{
+    outline: none;
+}
+
+.slick-prev{
+    left: -60px;
+}
+
+.slick-next{
+    right: -60px;
+}
+
+.slick-prev::before{
+    content: "<";
+    color: black;
+    font-size: 4rem;
+}
+.slick-next::before{
+    content: ">";
+    color: black;
+    font-size: 4rem;
+}
+
+.title_part_of_page::before{
+    width: 100px !important;
+    left: -120px !important;
+    top: 13px !important;
+}
+.title_part_of_page::after{
+    width: 100px !important;
+    right: -120px !important;
+    top: 13px !important;
+}
 
 /*Fade In Left Animation*/
 
