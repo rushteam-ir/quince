@@ -2,9 +2,11 @@
 
 {<css}
     <link rel="stylesheet" href="css/cms/category.css">
+    <link rel="stylesheet" href="css/general/error.css">
 {/css}
 {<js} 
     <script src="js/cms/category.js"></script>
+    <script src="js/general/error.js"></script>
 {/js}
 
 {<body}
@@ -18,7 +20,16 @@
         {@alertError key="add-fail" msg="دسته جدید ثبت نشد. لطفا از نام های تکراری استفاده نکنید"}{/alertError}
         {@alertSuccess key="add-success" msg="دسته جدید با موفقیت ثبت شد"}{/alertSuccess}
 
-            <form action="" method="post" autocomplete="off">
+        <div class="error_warning_alert text-right display_none" id="error_field_warning_front"> 
+
+            <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeWarningErrorFront()"></i> 
+            <i class="fal fa-exclamation-circle alert_icon_error"></i>
+
+              <div class="d-inline-block mr-1" id="error_text"></div>
+
+          </div>
+
+            <form action="" name="form_of_category" method="post" autocomplete="off" onsubmit="categoryError()">
 
                 <div class="form-group">
                     <label for="title_inp">عنوان دسته:</label>

@@ -28,15 +28,6 @@
                 {@alertSuccess key="edit-success" msg="مشخصات پروفایل شما با موفقیت ثبت شد"}{/alertSuccess}
                 {@alertError key="edit-fail" msg="مشخصات پروفایل شما تغییر نکرد. لطفا مجددا تلاش فرمایید"}{/alertError}
                 {@alertError key="incorrect-input" msg="رمز عبور فعلی اشتباه می باشد"}{/alertError}
-                
-                <div class="error_warning_alert text-right display_none" id="error_field_warning_front"> 
-
-                    <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeWarningErrorFront()"></i> 
-                    <i class="fal fa-exclamation-circle alert_icon_error"></i>
-  
-                      <div class="d-inline-block mr-1" id="error_text"></div>
-  
-                  </div>
 
                 <form action="" method="post" autocomplete="off" enctype="multipart/form-data" name="pro_op_main_form" onsubmit="return proError()">
                     <div class="form-group">
@@ -109,15 +100,6 @@
 
                 {@alertError key="incorrect-input" msg="رمز فعلی اشتباه است و یا رمز جدید و تکرار آن مشابه نیستند"}{/alertError}
                 {@alertSuccess key="edit-success" msg="مشخصات پروفایل شما با موفقیت ثبت شد"}{/alertSuccess}
-
-                <div class="error_warning_alert text-right display_none" id="error_field_warning_front"> 
-
-                    <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeWarningErrorFront()"></i> 
-                    <i class="fal fa-exclamation-circle alert_icon_error"></i>
-  
-                      <div class="d-inline-block mr-1" id="error_text"></div>
-  
-                  </div>
 
                 <form action="" method="post" name="admin_pro_pass_edit" onsubmit="return passerror()" autocomplete="off">
 

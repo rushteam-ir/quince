@@ -53,27 +53,6 @@ function secondChangeDisplay() {
 
 }
 
-// profile error
-
-function passerror(){
-
-    var current_password = document.forms['admin_pro_pass_edit']['current_password'].value;
-    var new_password = document.forms['admin_pro_pass_edit']['new_password'].value;
-    var confirm_password = document.forms['admin_pro_pass_edit']['confirm_password'].value;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 // sweetalert
 
