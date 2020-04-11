@@ -12,6 +12,8 @@
 {/js}
 
 {<body}
+
+    <div class="pic"></div>
 {!Sale Product Category!}
     <section>
         <div class="container-fluid">
@@ -79,9 +81,9 @@
 {!Slid Of Product!}
     <section>
         <div class="container ">
-            <div class="row">
+            <div class="row mb-5">
                 <div class="col-10 offset-1 text-center">
-                    <h3 class="title_part_of_page">دسته بندی محصولات</h3>
+                    <h3 class="title_part_of_page">فروش ویژه</h3>
                 </div>
             </div>
             <div class="row mt-4 mb-5">
