@@ -94,7 +94,7 @@ function storeAddError(){
     // var discount_inp = document.forms['store_add_form']['discount_inp'].value;
     // var product_features_inp = document.forms['store_add_form']['product_features_inp[]'].value;
     // var product_img_main = document.forms['store_add_form']['product_img_main'].value;
-    var product_other_images = document.forms['store_add_form']['product_other_images[]'].value;
+    var product_other_images = document.forms['store_add_form']['product_other_images'].value;
 
     alert(product_other_images)
 
