@@ -29,7 +29,7 @@
 
           </div>
 
-            <form action="" name="form_of_category" method="post" autocomplete="off" onsubmit="categoryError()">
+            <form action="" name="form_of_category" method="post" autocomplete="off" onsubmit="return categoryError()">
 
                 <div class="form-group">
                     <label for="title_inp">عنوان دسته:</label>

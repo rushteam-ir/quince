@@ -1,23 +1,24 @@
 
 function categoryError(){
     
+    $('.alert_query').remove();
     
+    var title_inp = document.forms['form_of_category']['title_inp'].value;
+    var parent_inp = document.forms['form_of_category']['parent_inp'].value;
+
+    var error_field = document.getElementById('error_field_warning_front');
+    var error_text = document.getElementById('error_text');
+
+    if(title_inp == ""){
+
+
+        error_field.style.display = "block";
+        error_text.innerHTML = "لطفا عنوان دسته را وارد کنید.";
+        return false;
+
+    }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // sweet alert
 

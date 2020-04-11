@@ -1,9 +1,11 @@
 {>"layouts/dashboard-layout"/}
 {<css} 
     <link rel="stylesheet" href="css/store/store-add.css">
+    <link rel="stylesheet" href="css/general/error.css">
 {/css}
 {<js} 
     <script src="js/store/store-add.js"></script>
+    <script src="js/general/error.js"></script>
 {/js}
 
         {<body} 
@@ -17,6 +19,15 @@
             {@alertWarn key="illegal-image" msg="پسوند تصویر انتخاب شده مجاز نمی باشد"}{/alertWarn}
             {@alertError key="add-fail" msg="محصول جدید ثبت نشد لطفا مجددا تلاش فرمایید"}{/alertError}
             {@alertSuccess key="add-success" msg="دسته جدید با موفقیت ثبت شد"}{/alertSuccess}
+
+            <div class="error_warning_alert text-right display_none" id="error_field_warning_front"> 
+
+                <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeWarningErrorFront()"></i> 
+                <i class="fal fa-exclamation-circle alert_icon_error"></i>
+
+                  <div class="d-inline-block mr-1" id="error_text"></div>
+
+            </div>
 
             <div id="store_add_error" class="alert alert-warning text-center"></div>
 
