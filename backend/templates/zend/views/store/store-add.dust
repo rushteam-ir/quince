@@ -71,7 +71,7 @@
                         <div class="col-6 pr-0">
                             <div class="form-group number_inp_store_add">
                                 <label for="inventory_inp">موجودی فعلی انبار:</label>
-                                <input class="form-control" type="number" id="inventory_inp" name="stock_inp" min="0" placeholder="0">
+                                <input class="form-control" type="text" id="inventory_inp" name="stock_inp" min="0" placeholder="0">
                             </div>
                         </div>
 
@@ -81,7 +81,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text span_sale_addon" id="basic-addon1">%</span>
                             </div>  
-                            <input type="number" class="form-control sale_inp_custome pr-1" name="discount_inp" min="0" placeholder="0" aria-label="Username" aria-describedby="basic-addon1">
+                            <input type="text" class="form-control sale_inp_custome pr-1" name="discount_inp" min="0" placeholder="0" aria-label="Username" aria-describedby="basic-addon1">
                         </div>
                         <small class="form-text text-muted small_customize">توجه فرمایید که تخفیف روی قیمت لحاظ می شود.</small>
                     </div>
