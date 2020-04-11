@@ -25,8 +25,6 @@ router.post('/', async(req,res)=>{
 
     try{
 
-        log(req.files);
-
         let {title_inp, parent_inp, child_inp, describe_inp, price_inp, stock_inp, discount_inp} = req.body;
         let product_features_inp = req.body['product_features_inp[]'];
 

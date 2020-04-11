@@ -65,7 +65,6 @@ router.post('/', async(req,res)=>{
                 }
                 else{
 
-                    log('sas')
                     res.redirect(`${config.backend_url}recovery/?msg=invalid-email`);
 
                 }
