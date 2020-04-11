@@ -15,25 +15,35 @@ router.get('/', async(req,res)=>{
 
 });
 
-router.get('/:title', async(req,res)=>{
+router.get('/:code', async(req,res)=>{
 
     try{
 
-        let param = req.params.title;
-        let product_title = param.trim().replace('-', ' ');
-        let check_product = await product_model.check(product_title);
+        let param = req.params.code;
+        let product_code = parseInt(param.replace('sp-',''));
 
-        if(check_product == false){
+        if(Number.isNaN(product_code)){
+
             return res.redirect(`${config.frontend_url}product/?msg=not-found`);
+
         }
+        else{
 
-        let data = {
+            let check_product = await product_model.check(product_code);
 
-            product : check_product
+            if(check_product == false){
+                return res.redirect(`${config.frontend_url}product/?msg=not-found`);
+            }
 
-        };
+            let data = {
 
-        res.render('product');
+                product : check_product
+
+            };
+
+            res.render('product');
+
+        }
 
     }
     catch (error) {

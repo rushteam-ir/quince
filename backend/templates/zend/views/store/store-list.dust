@@ -58,6 +58,7 @@
 
 
                                         <h1>{.title}</h1>
+                                        <h6>کد محصول : {.code}</h6>
                                         <h2 class="mt-2 d-inline-block position_customize_prozuct">اخرین اپدیت : <span>{.last_edit}</span></h2>
                                         <h2 class="d-inline-block mr-4 border_customize_and_padd"> نویسنده : <span>{.author.first_name} {.author.last_name}</span></h2>
                                         {@eq value="{.status}" key="true"}
@@ -134,8 +135,12 @@
 
                                             <div class="title_of_modal_product">
                                                 <p class="mb-0">{.title}</p>
-        
                                             </div>
+                                            <div class="title_of_modal_product">
+                                                <h6 class="mb-0">کد محصول : {.code}</h6>
+                                            </div>
+
+                                            <br>
 
                                             <div class="star_color_custme d-inline-block star" >
                                                 <i id="star_1_{.row}" class="far fa-star"></i>
