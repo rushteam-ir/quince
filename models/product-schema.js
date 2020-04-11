@@ -16,15 +16,36 @@ let product_schema = new mongoose.Schema({
     last_edit : String,
     comments : Array,
     author : {type : 'ObjectId', ref : 'user'},
-    status : Boolean
+    status : Boolean,
+    code : Number
 
 });
 
 product_schema.statics = {
 
-    add : async function (product_data) {
+    add: async function (product_data) {
 
+        let can_do = true;
         let list = await product_model.find();
+        let new_generated_code = randomInt(100000, 999999);
+
+        while (can_do) {
+
+            let find_product = await product_model.find({code: new_generated_code});
+
+            if (find_product.length == 0) {
+
+                can_do = false;
+
+            } else {
+
+                can_do = true;
+
+            }
+
+        }
+
+        product_data.code = new_generated_code;
         product_data.row = list.length + 1;
 
         let new_product = new product_model(product_data);
@@ -61,9 +82,9 @@ product_schema.statics = {
 
     },
 
-    check : async function (product_title) {
+    check : async function (product_code) {
 
-        let result = await product_model.findOne({title : product_title});
+        let result = await product_model.findOne({code : product_code});
 
         if(result && isObjectId(result._id)){
             return result;
@@ -78,7 +99,7 @@ product_schema.statics = {
 
         return await product_model.findByIdAndDelete(product_id);
 
-    }
+    },
 
 };
 
