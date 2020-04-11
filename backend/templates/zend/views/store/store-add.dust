@@ -31,8 +31,7 @@
 
             <div id="store_add_error" class="alert alert-warning text-center"></div>
 
-            <form action="" method="post" autocomplete="off" enctype="multipart/form-data" name="store_add_form"
-                onsubmit="return storeAddError()">
+            <form action="" method="post" autocomplete="off" enctype="multipart/form-data" name="store_add_form" onsubmit="return storeAddError()">
 
                 <div class="form-group">
                     <label for="title_inp">عنوان محصول:</label>

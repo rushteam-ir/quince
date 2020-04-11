@@ -86,17 +86,19 @@ function storeAddError(){
     var error_text = document.getElementById('error_text');
 
     var title_inp = document.forms['store_add_form']['title_inp'].value;
-    var parent_inp = document.forms['store_add_form']['parent_inp'].value;
-    var child_inp = document.forms['store_add_form']['child_inp'].value;
-    var describe_inp = document.forms['store_add_form']['describe_inp'].value;
-    var price_inp = document.forms['store_add_form']['price_inp'].value;
-    var stock_inp = document.forms['store_add_form']['stock_inp'].value;
-    var discount_inp = document.forms['store_add_form']['discount_inp'].value;
-    var product_features_inp = document.forms['store_add_form']['product_features_inp'].value;
-    var product_img_main = document.forms['store_add_form']['product_img_main'].value;
+    // var parent_inp = document.forms['store_add_form']['parent_inp'].value;
+    // var child_inp = document.forms['store_add_form']['child_inp'].value;
+    // var describe_inp = document.forms['store_add_form']['describe_inp'].value;
+    // var price_inp = document.forms['store_add_form']['price_inp'].value;
+    // var stock_inp = document.forms['store_add_form']['stock_inp'].value;
+    // var discount_inp = document.forms['store_add_form']['discount_inp'].value;
+    // var product_features_inp = document.forms['store_add_form']['product_features_inp'].value;
+    // var product_img_main = document.forms['store_add_form']['product_img_main'].value;
 
     if(title_inp == ""){
 
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
         error_field.style.display = "block";
         error_text.innerHTML = "لطفا تمام فیلد ها را پر کنید.";
         return false;
