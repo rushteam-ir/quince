@@ -15,7 +15,7 @@
     {+title/}
 </head>
 
-<body>
+<body class="color_body">
 
 
 
@@ -76,6 +76,7 @@
                         <li class="d-inline-block ml-2">
                             <i class="far fa-shopping-cart"></i>
                         </i>
+                        </li>
                     </ul>
                 </div>
                 
