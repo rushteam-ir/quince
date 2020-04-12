@@ -1,8 +1,5 @@
 /*main after ok*/
 
-.color_body {
-    background-color: #F5F5F5;
-}
 
 .title_part_of_page {
     color: #292929;
@@ -88,7 +85,7 @@
 }
 
 .bg_user_support{
-    color: rgba(0,160,181);
+    color: rgb(0,160,181);
 }
 
 .bg_gift{

@@ -15,7 +15,7 @@
     {+title/}
 </head>
 
-<body class="color_body">
+<body>
 
 
 
@@ -111,7 +111,7 @@
                     <div class="col-12 col-md-3 offset-md-0 mb-5 mb-md-0">
                         <div class="left_box_of_footer">
                             <h6 class="title_of_footer_right_box text-center">شخصی سازی سفارشات</h6>
-                            <p class="explain_of_Customization_product text-justify">
+                            <p class="explain_of_Customization_product text-justify" dir="rtl">
                                 جون بچت بیا عکس بده ما برات عین همونو تولید میکنیم . بعد میدیم بهت توام برو حال کن بنده خدا.کی میاد واست اینکارارو بکنه اسکل ببین قدر نمیدونی!!!!
                             </p>
                             <button class="btn_of_Customization_product text-center ">سفارش بده</button>
