@@ -30,14 +30,15 @@ function contactError(){
     var text_inp = document.forms['contactus_form']['text_inp'].value;
     var title_inp = document.forms['contactus_form']['title_inp'].value;
 
-    var error_field = document.getElementById('error_field');
+    var error_field = document.getElementById('error_field_warning_front');
+    var error_text = document.getElementById('error_text');
 
     if(firstlastname_inp == ""){
 
         error_field.style.display = "block";
         document.body.scrollTop = 700;
         document.documentElement.scrollTop = 700;
-        error_field.innerHTML = "لطفا نام و نام خانوادگی خود را وارد کنید.";
+        error_text.innerHTML = "لطفا نام و نام خانوادگی خود را وارد کنید.";
         return false;
 
     }
@@ -47,7 +48,7 @@ function contactError(){
         error_field.style.display = "block";
         document.body.scrollTop = 700;
         document.documentElement.scrollTop = 700;
-        error_field.innerHTML = "لطفا ایمیل خود را وارد کنید ."
+        error_text.innerHTML = "لطفا ایمیل خود را وارد کنید ."
         return false;
 
     }
@@ -57,7 +58,7 @@ function contactError(){
         error_field.style.display = "block";
         document.body.scrollTop = 700;
         document.documentElement.scrollTop = 700;
-        error_field.innerHTML = "ایمیل وارد شده صحیح نمی باشد."
+        error_text.innerHTML = "ایمیل وارد شده صحیح نمی باشد."
         return false;
     
     }
@@ -67,7 +68,7 @@ function contactError(){
         error_field.style.display = "block";
         document.body.scrollTop = 700;
         document.documentElement.scrollTop = 700;
-        error_field.innerHTML = "لطفا شماره تلفن خود را وارد کنید."
+        error_text.innerHTML = "لطفا شماره تلفن خود را وارد کنید."
         return false;
 
     }
@@ -77,7 +78,7 @@ function contactError(){
         error_field.style.display = "block";
         document.body.scrollTop = 700;
         document.documentElement.scrollTop = 700;
-        error_field.innerHTML = "شماره تلفن وارد شده صحیح نمی باشد"
+        error_text.innerHTML = "شماره تلفن وارد شده صحیح نمی باشد"
         return false;
 
     }
@@ -87,7 +88,7 @@ function contactError(){
         error_field.style.display = "block";
         document.body.scrollTop = 700;
         document.documentElement.scrollTop = 700;
-        error_field.innerHTML = "شماره تلفن وارد شده کم تر از حد مجاز است."
+        error_text.innerHTML = "شماره تلفن وارد شده کم تر از حد مجاز است."
         return false;
 
     }
@@ -97,7 +98,7 @@ function contactError(){
         error_field.style.display = "block";
         document.body.scrollTop = 700;
         document.documentElement.scrollTop = 700;
-        error_field.innerHTML = "شماره تلفن وارد شده بیشتر تر از حد مجاز است."
+        error_text.innerHTML = "شماره تلفن وارد شده بیشتر تر از حد مجاز است."
         return false;
 
     }
@@ -107,7 +108,7 @@ function contactError(){
         error_field.style.display = "block";
         document.body.scrollTop = 700;
         document.documentElement.scrollTop = 700;
-        error_field.innerHTML = "لطفا متن عنوان را وارد کنید."
+        error_text.innerHTML = "لطفا متن عنوان را وارد کنید."
         return false;
 
     }
@@ -117,7 +118,7 @@ function contactError(){
         error_field.style.display = "block";
         document.body.scrollTop = 700;
         document.documentElement.scrollTop = 700;
-        error_field.innerHTML = "لطفا متن پیام خود را وارد کنید."
+        error_text.innerHTML = "لطفا متن پیام خود را وارد کنید."
         return false;
         
     }
@@ -127,7 +128,7 @@ function contactError(){
         error_field.style.display = "block";
         document.body.scrollTop = 700;
         document.documentElement.scrollTop = 700;
-        error_field.innerHTML = "متن پیام شما نمی تواند بیش از 1000 حرف باشد."
+        error_text.innerHTML = "متن پیام شما نمی تواند بیش از 1000 حرف باشد."
         return false;
     
     }
