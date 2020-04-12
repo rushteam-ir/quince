@@ -15,7 +15,7 @@
                 پیام ها
             </p>
 
-        {@alertSuccess key="sent-success" msg="پیام شما با موفقیت ارسال شد"}{/alertSuccess}
+            {@alertSuccess key="sent-success" msg="پیام شما با موفقیت ارسال شد"}{/alertSuccess}
 
             {?list}
                 {#list}

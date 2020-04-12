@@ -15,7 +15,7 @@
                 اضافه کردن محصول
             </p>
 
-            <div class="main_info_alert_box text-right mb-3">
+            <div class="main_info_alert_box text-right mb-3 mt-5">
 
                 <i class="fas fa-info d-inline-block"></i>
                 <p class="d-inline-block m-0 mr-2">
@@ -24,10 +24,10 @@
 
             </div>
 
-            {@alertWarn key="limited-image" msg="حجم تصویر انتخاب شده بیشتر از حد مجاز است"}{/alertWarn}
-            {@alertWarn key="illegal-image" msg="پسوند تصویر انتخاب شده مجاز نمی باشد"}{/alertWarn}
-            {@alertWarn key="few-images" msg="تصاویر دیگر محصول باید حداقل 3 یا بیشتر باشد"}{/alertWarn}
-            {@alertError key="add-fail" msg="محصول جدید ثبت نشد لطفا مجددا تلاش فرمایید"}{/alertError}
+            {@alertWarn key="limited-image" msg="حجم تصویر انتخاب شده بیشتر از حد مجاز است."}{/alertWarn}
+            {@alertWarn key="illegal-image" msg="پسوند تصویر انتخاب شده مجاز نمی باشد."}{/alertWarn}
+            {@alertWarn key="few-images" msg="تصاویر دیگر محصول باید حداقل 3 عکس یا بیشتر باشد."}{/alertWarn}
+            {@alertError key="add-fail" msg="محصول جدید ثبت نشد لطفا مجددا تلاش فرمایید."}{/alertError}
 
 
 
