@@ -71,6 +71,18 @@ label {
     text-align: right;
 }
 
+.main_info_alert_box {
+    direction: rtl;
+    width: 100%;
+    color: #2D5AAB;
+    background-color: #EFF2FB;
+    border-radius: 3px;
+    border: 1.5px solid #89A8E2;
+    padding: 15px 15px;
+    position: relative;
+    top: -20px;
+}
+
 
 @media only screen and (max-width: 992px) {
     .img_of_contact_us {
