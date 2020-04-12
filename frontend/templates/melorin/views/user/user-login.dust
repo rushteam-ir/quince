@@ -22,8 +22,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <form class="style_of_login_form mt-4" name="myForm" action="" method="get"
-                              onsubmit="return validateForm()">
+                        <form class="style_of_login_form mt-4" name="myForm" action="" method="get">
                             <div class="form-group a">
                                 <label for="email" class="w-100 text-right pr-3">ایمیل</label>
                                 <input type="email" class="form-control input_style_login_form" id="email" name="email">
@@ -35,6 +34,10 @@
                                 <a href="#"><small class="float-right mt-3 mr-3">!رمز عبور خود را فراموش کرده‌ام</small></a>
                             </div>
                             <button type="submit" class="btn_of_login">ورود</button>
+                            <div class="form-check dir_rtl">
+                                <input type="checkbox" class="form-check-input mr-3 input_style" id="remember_me">
+                                <label class="form-check-label w-100 text-right style_for_label_check" for="remember_me">مرا به خاطر داشته باش</label>
+                            </div>
                         </form>
 
                     </div>

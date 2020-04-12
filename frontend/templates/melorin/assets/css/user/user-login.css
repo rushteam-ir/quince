@@ -3,6 +3,10 @@ section{
 
 }
 
+label{
+    margin-bottom: 0px;
+}
+
 .login_img{
     background-image: url("../../img/4.jpg");
     background-size: cover;
@@ -55,10 +59,18 @@ section{
     transition: .5s;
 }
 
+.input_style{
+    width:20px;
+    height: 18px;
+}
+
 .btn_of_login:hover{
     background-position: right;
 }
 
+.style_for_label_check{
+    padding-right: 2.5rem;
+}
 /*Media Query*/
 @media only screen and (max-width: 1200px) {
     .box_of_login{
