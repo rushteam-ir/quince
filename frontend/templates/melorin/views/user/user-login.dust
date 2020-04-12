@@ -34,8 +34,9 @@
                                 <input type="password" class="form-control input_style_login_form" id="password"
                                        name="password">
                             </div>
+                            <button type="submit" class="btn_of_login">ورود</button>
                         </form>
-                        <button type="submit" class="btn_of_login">ورود</button>
+
                     </div>
                 </div>
                 <hr>

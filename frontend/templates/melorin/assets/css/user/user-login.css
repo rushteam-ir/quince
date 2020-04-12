@@ -1,5 +1,11 @@
 section{
     font-family: main-font;
+
+}
+
+.login_img{
+    background-image: url("../../img/4.jpg");
+    background-size: cover;
 }
 
 .box_of_login{
@@ -67,7 +73,7 @@ section{
 /*Media Query*/
 @media only screen and (max-width: 1200px) {
     .box_of_login{
-        width: 50%;
+        width: 45%;
     }
 }
 
