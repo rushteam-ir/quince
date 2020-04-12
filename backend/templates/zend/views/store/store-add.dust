@@ -156,11 +156,16 @@
                         </div>
                 </div>
 
-                    <div class="main_info_alert_box">
+                    <div class="main_info_alert_box text-right">
+
+                        <i class="fas fa-info d-inline-block"></i>
+                        <p class="d-inline-block m-0 mr-2">
+                            حتما به این مورد توجه بفرمایید که قبل از هر گونه اقدام به اضافه کردن محصول جدید حتما راهنما را مطالعه بفرمایید.
+                        </p>
 
                     </div>
 
-                    <button class="btn btn_of_store_add" type="submit" name="add_product">ثبت</button>
+                    <button class="btn btn_of_store_add mt-5" type="submit" name="add_product">ثبت</button>
 
                 </form>
                 

@@ -65,7 +65,7 @@
     width: 95%;
     display: block;
     border: 1.3px solid #d6d6d6;
-    
+
 }
 
 .btn-tertiary:hover,
@@ -208,4 +208,13 @@
 
 .remove_img_icon::after {
     transform: rotate(-45deg);
+}
+
+.main_info_alert_box {
+    width: 98.2%;
+    background-color: #EFF2FB;
+    color: #2F59AB;
+    border: 1px solid #89A8E2;
+    border-radius: 5px;
+    padding: 20px 10px;
 }
