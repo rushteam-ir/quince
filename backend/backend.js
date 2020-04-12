@@ -162,6 +162,7 @@ const settings = require('./branches/settings');
 const logout = require('./branches/logout');
 const messages = require('./branches/messages/messages');
 const users = require('./branches/users/users');
+const guide = require('./branches/guide');
 
 backend.use('/dashboard', dashboard);
 backend.use('/login', login);
@@ -173,6 +174,7 @@ backend.use('/settings', settings);
 backend.use('/logout', logout);
 backend.use('/messages', messages);
 backend.use('/users', users);
+backend.use('/guide', guide);
 
 // Backend 404 page
 backend.use(async(req,res,next)=>{
