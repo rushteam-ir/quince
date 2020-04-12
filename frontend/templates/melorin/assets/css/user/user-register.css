@@ -11,7 +11,7 @@ label{
 }
 
 .box_of_login{
-    width: 45%;
+    width: 40%;
     background-color: white;
     margin: 70px auto;
     border-radius: 5px;
@@ -64,29 +64,32 @@ label{
 /*Media Query*/
 @media only screen and (max-width: 1200px) {
     .box_of_login{
-        width: 55%;
+        width: 47%;
     }
 }
 
 @media only screen and (max-width: 991px) {
     .box_of_login{
-        width: 75%;
+        width: 65%;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .box_of_login{
-        width: 95%;
+        width: 87%;
     }
 }
 
 @media only screen and (max-width: 600px) {
     .box_of_login{
-        width: 100%;
+        width: 85%;
     }
 }
 
 @media only screen and (max-width: 500px) {
+    .box_of_login{
+        width: 95%;
+    }
 }
 
 @media only screen and (max-width: 769px) and (min-width: 768px) {
