@@ -1,0 +1,84 @@
+.main_body_of_add_store_forms {
+    width: 76%;
+    background-color: #FFFFFF;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    margin-left: 3.5%;
+    padding: 70px 150px;
+    direction: rtl;
+    text-align: right;
+}
+
+.title_of_store_add {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    border-right: 5px solid #E13A58;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.span_sale_addon {
+    background-color: #ffffff00;
+    border-left: none;
+    border-radius: 0px .25rem .25rem 0px !important;
+    padding-left: 0px;
+}
+
+.sale_inp_custome {
+    border-right: none;
+    border-radius: .25rem 0px 0px .25rem !important;
+}
+
+.btn_of_store_add {
+    width: 130px;
+    background-color: #5D78FF;
+    font-weight: bold;
+    color: white;
+}
+
+.btn_of_store_add:hover {
+    background-color: #3758FF;
+}
+
+.header_list_custom {
+    padding: 20px .75rem !important;
+}
+
+.padding_customize{
+    padding-left: 0px !important;
+}
+
+.list_detail_custom {
+    padding-top: 24px !important;
+}
+
+.situation_main_field_true{
+    background-color: #E6F8F3;
+    border-radius: 500px;
+    color: #0ABB87;
+    width: 99px;
+    height: 30px;
+    line-height: 28px;
+    margin: 0 auto;
+}
+
+.situation_main_field_false{
+    background-color: #F8D7DA;
+    border-radius: 500px;
+    color: #ff3748;
+    width: 99px;
+    height: 30px;
+    line-height: 28px;
+    margin: 0 auto;
+}
+
+.remove_discount{
+    color: #5D78FF;
+    padding: 0px;
+}
+
+.remove_discount:hover{
+    color: #494B74;
+}

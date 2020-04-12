@@ -1,0 +1,114 @@
+{>"layouts/dashboard-layout"/}
+{<css} 
+    <link rel="stylesheet" href="css/store/store-discount-codes.css">
+    <link rel="stylesheet" href="css/general/error.css">
+{/css}
+{<js} 
+    <script src="js/store/store-discount-codes.js"></script>
+    <script src="js/general/error.js"></script>
+{/js}
+
+{<body} 
+
+    <div class="main_body_of_add_store_forms">
+
+        <p class="title_of_store_add">
+            اضافه کردن محصول
+        </p>
+
+        <div class="error_warning_alert text-right display_none" id="error_field_warning_front"> 
+
+            <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeWarningErrorFront()"></i> 
+            <i class="fal fa-exclamation-circle alert_icon_error"></i>
+
+              <div class="d-inline-block mr-1" id="error_text"></div>
+
+        </div>
+
+        <form action="" onsubmit="return discountError()" name="discount_form">
+
+            <label for="inventory_inp">مقدار تخفیف :</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text span_sale_addon" id="basic-addon1">%</span>
+                </div>  
+                <input type="text" class="form-control sale_inp_custome pr-2" value="{product_add_from.discount_inp}" name="value_inp" min="0" placeholder="0" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+
+            <button class="btn btn_of_store_add mt-3" type="submit" name="add_product">تولید کد</button>
+
+        </form>
+
+        <p class="title_of_store_add mt-5">
+            کد های تخفیف
+        </p>
+
+
+            <table class="table">
+                <thead class="text-center">
+                  <tr >
+                    <th class="header_list_custom padding_customize" scope="col">ردیف</th>
+                    <th class="header_list_custom" scope="col">کد تخفیف</th>
+                    <th class="header_list_custom" scope="col">مقدار تخفیف</th>
+                    <th class="header_list_custom" scope="col">وضعیت</th>
+                    <th class="header_list_custom" scope="col">حذف</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr class="dir-rtl text-center">
+
+                        <th class="list_detail_custom padding_customize" scope="row">1</th>
+
+                        <td class="list_detail_custom">45s8-46at-2ac4</td>
+
+                        <td class="list_detail_custom">10%</td>
+
+                        <td class="list_detail_custom">
+
+                            <div class="situation_main_field_true">
+                                فعال
+                            </div>
+
+                        </td>
+
+                        <td class="list_detail_custom">
+
+                            <button class="btn remove_discount">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+
+                        </td>
+                  </tr>
+
+                  <tr class="dir-rtl text-center">
+
+                    <th class="list_detail_custom padding_customize" scope="row">1</th>
+
+                    <td class="list_detail_custom">45s8-46at-2ac4</td>
+
+                    <td class="list_detail_custom">10%</td>
+
+                    <td class="list_detail_custom">
+
+                        <div class="situation_main_field_false">
+                            غیر فعال
+                        </div>
+
+                    </td>
+
+                    <td class="list_detail_custom">
+
+                        <button class="btn remove_discount">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+
+                    </td>
+              </tr>
+
+                </tbody>
+              </table>
+
+    </div>
+
+{/body}
