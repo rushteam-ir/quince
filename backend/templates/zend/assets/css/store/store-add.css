@@ -211,10 +211,13 @@
 }
 
 .main_info_alert_box {
-    width: 98.2%;
+    direction: rtl;
+    width: 100%;
+    color: #2D5AAB;
     background-color: #EFF2FB;
-    color: #2F59AB;
-    border: 1px solid #89A8E2;
-    border-radius: 5px;
-    padding: 20px 10px;
+    border-radius: 3px;
+    border: 1.5px solid #89A8E2;
+    padding: 10px 10px;
+    position: relative;
+    top: -20px;
 }
