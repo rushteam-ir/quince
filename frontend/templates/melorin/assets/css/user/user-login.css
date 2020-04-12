@@ -25,16 +25,6 @@ section{
     margin: auto;
 }
 
-.error_box{
-    width: 80%;
-    height: 50px;
-    margin:auto;
-    border-radius: 5px;
-    background-color: rgba(244,244,38,0.84);
-    line-height: 50px;
-    display: none;
-}
-
 
 .input_style_login_form{
     border-bottom:1px solid #4d4d4d;
@@ -84,13 +74,13 @@ section{
 
 @media only screen and (max-width: 768px) {
     .box_of_login{
-        width: 85%;
+        width: 80%;
     }
 }
 
 @media only screen and (max-width: 600px) {
     .box_of_login{
-        width: 85%;
+        width: 75%;
     }
 }
 
@@ -99,5 +89,23 @@ section{
         width: 95%;
     }
 }
+
+@media only screen and (max-width: 769px) and (min-width: 768px) {
+    .box_of_login {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 520px) and (min-width: 501px) {
+    .box_of_login {
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 416px) and (min-width: 400px) {
+    .box_of_login {
+        width: 100%;
+    }
+}
+
 
 /*End Media Query*/

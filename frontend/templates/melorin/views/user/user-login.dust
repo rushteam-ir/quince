@@ -20,7 +20,6 @@
                         <h1 class="my-4 title_style">ورود به ملورین</h1>
                     </div>
                 </div>
-                <div class="error_box" id="text"></div>
                 <div class="row">
                     <div class="col-12">
                         <form class="style_of_login_form mt-4" name="myForm" action="" method="get"
