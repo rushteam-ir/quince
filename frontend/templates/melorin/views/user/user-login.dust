@@ -23,7 +23,7 @@
                 <div class="error_box" id="text"></div>
                 <div class="row">
                     <div class="col-12">
-                        <form class="style_of_login_form" name="myForm" action="" method="get"
+                        <form class="style_of_login_form mt-4" name="myForm" action="" method="get"
                               onsubmit="return validateForm()">
                             <div class="form-group a">
                                 <label for="email" class="w-100 text-right pr-3">ایمیل</label>
@@ -33,6 +33,7 @@
                                 <label for="password" class="w-100 text-right pr-3">رمز عبور</label>
                                 <input type="password" class="form-control input_style_login_form" id="password"
                                        name="password">
+                                <a href="#"><small class="float-right mt-3 mr-3">!رمز عبور خود را فراموش کرده‌ام</small></a>
                             </div>
                             <button type="submit" class="btn_of_login">ورود</button>
                         </form>
@@ -41,9 +42,9 @@
                 </div>
                 <hr>
                 <div class="row">
-                    <div class="col-12 text-right">
+                    <div class="col-12 text-center">
                         <div class="style_of_login_form">
-                            <a href="#"><p class="mr-3">!رمز عبور خود را فراموش کرده‌ام</p></a>
+                            <a href="#"><p class="mr-3 d-inline-block dir_rtl">در ملورین ثبت نام کنید.</p></a><p class="d-inline-block">کاربر جدید هستید؟</p>
                         </div>
 
                     </div>
