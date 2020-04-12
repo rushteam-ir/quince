@@ -22,6 +22,7 @@ const get_features = require('./api/get-features');
 const add = require('./add');
 const list = require('./list');
 const edit = require('./edit');
+const discount_codes = require('./discount-codes');
 
 router.use('/api/delete-product', delete_product);
 router.use('/api/delete-image', delete_image);
@@ -30,5 +31,6 @@ router.use('/api/get-features', get_features);
 router.use('/add', add);
 router.use('/list', list);
 router.use('/edit', edit);
+router.use('/discount-codes', discount_codes);
 
 module.exports = router;
