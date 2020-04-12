@@ -17,6 +17,7 @@
 
             {@alertWarn key="limited-image" msg="حجم تصویر انتخاب شده بیشتر از حد مجاز است"}{/alertWarn}
             {@alertWarn key="illegal-image" msg="پسوند تصویر انتخاب شده مجاز نمی باشد"}{/alertWarn}
+            {@alertWarn key="few-images" msg="تصاویر دیگر محصول باید حداقل 3 عدد یا بیشتر باشد"}{/alertWarn}
             {@alertError key="add-fail" msg="محصول جدید ثبت نشد لطفا مجددا تلاش فرمایید"}{/alertError}
             {@alertSuccess key="add-success" msg="دسته جدید با موفقیت ثبت شد"}{/alertSuccess}
 
@@ -124,7 +125,6 @@
                                 </div>
 
                             </div>
-        
                         </div>
                     </div>
                 </div>
