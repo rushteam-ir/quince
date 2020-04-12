@@ -81,6 +81,10 @@ dust_options = {
 
                 }
 
+            },
+
+            dust.helpers.count = function(chunk, context, bodies) {
+                return chunk.write(context.stack.index + 1);
             }
 
         }

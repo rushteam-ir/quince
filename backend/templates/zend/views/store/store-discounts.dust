@@ -1,10 +1,10 @@
 {>"layouts/dashboard-layout"/}
 {<css} 
-    <link rel="stylesheet" href="css/store/store-discount-codes.css">
+    <link rel="stylesheet" href="css/store/store-discounts.css">
     <link rel="stylesheet" href="css/general/error.css">
 {/css}
 {<js} 
-    <script src="js/store/store-discount-codes.js"></script>
+    <script src="js/store/store-discounts.js"></script>
     <script src="js/general/error.js"></script>
 {/js}
 
@@ -15,6 +15,9 @@
         <p class="title_of_store_add">
             تولید کد تخفیف جدید
         </p>
+
+        {@alertSuccess key="add-success" msg="کد تخفیف جدید با موفقیت تولید شد"}{/alertSuccess}
+        {@alertError key="add-fail" msg="کد تخفیف تولید نشد لطفا مجددا تلاش فرمایید"}{/alertError}
 
         <div class="error_warning_alert text-right display_none" id="error_field_warning_front"> 
 
@@ -59,7 +62,7 @@
                 {#list}
                   <tr class="dir-rtl text-center">
 
-                        <th class="list_detail_custom padding_customize" scope="row">{.row}</th>
+                        <th class="list_detail_custom padding_customize" scope="row">{$idx}</th>
 
                         <td class="list_detail_custom">{.code}</td>
 
@@ -81,7 +84,7 @@
 
                         <td class="list_detail_custom">
 
-                            <button class="btn remove_discount">
+                            <button class="btn remove_discount" name="{._id}">
                                 <i class="fas fa-trash-alt"></i>
                             </button>
 
