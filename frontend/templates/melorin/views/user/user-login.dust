@@ -22,7 +22,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <form class="style_of_login_form mt-4" name="myForm" action="" method="get">
+                        <form class="style_of_login_form mt-4" name="myForm" action="" method="get" autocomplete="off">
                             <div class="form-group a">
                                 <label for="email" class="w-100 text-right pr-3">ایمیل</label>
                                 <input type="email" class="form-control input_style_login_form" id="email" name="email">
