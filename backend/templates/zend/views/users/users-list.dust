@@ -36,7 +36,7 @@
                   {#list}
                   <tr class="dir-rtl text-center">
 
-                        <th class="list_detail_custom padding_customize" scope="row">{.row}</th>
+                        <th class="list_detail_custom padding_customize" scope="row">{$idx}</th>
                         <td class="img_padding_custom">
                             {@eq key="{.avatar}" value=""}
                                 <img class="img_of_users_list" src="media/avatars/default.png" alt="">
