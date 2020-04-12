@@ -27,7 +27,7 @@
 
               <div class="d-inline-block mr-1" id="error_text"></div>
 
-          </div>
+        </div>
 
             <form action="" name="form_of_category" method="post" autocomplete="off" onsubmit="return categoryError()">
 

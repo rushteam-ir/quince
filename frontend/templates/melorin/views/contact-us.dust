@@ -19,7 +19,7 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-12 p-0">
+                    <div class="col-12">
 
                         <div class="text-right">
                             <h1 class="header_of_contact_us text-right mt-5">سوالات متداول</h1>
@@ -142,9 +142,16 @@
     
                 </div>
 
-                    <p class="alert alert-warning border border-warning text-right mt-4 error_custom dir_rtl" id="error_field"></p>
                     {@alertSuccess key="sent-success" msg="پیام شما با موفقیت ارسال شد. لطفا منتظر پاسخ همکاران ما از طریق ایمیل خود باشید."}{/alertSuccess}
 
+                    <div class="error_warning_alert text-right display_none mt-3" id="error_field_warning_front"> 
+
+                        <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeWarningErrorFront()"></i> 
+                        <i class="fal fa-exclamation-circle alert_icon_error"></i>
+      
+                          <div class="d-inline-block mr-1" id="error_text"></div>
+      
+                      </div>
 
                 <div class="row">
 
