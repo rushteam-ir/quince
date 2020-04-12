@@ -1,9 +1,11 @@
 {>"layouts/dashboard-layout"/}
 {<css} 
     <link rel="stylesheet" href="css/store/store-edit.css">
+    <link rel="stylesheet" href="css/general/error.css">
 {/css}
 {<js} 
     <script src="js/store/store-edit.js"></script>
+    <script src="js/general/error.js"></script>
 {/js}
         {<body}
             <div class="main_body_of_add_store_forms">
@@ -15,6 +17,16 @@
             {@alertWarn key="limited-image" msg="حجم تصویر انتخاب شده بیشتر از حد مجاز است"}{/alertWarn}
             {@alertWarn key="illegal-image" msg="پسوند تصویر انتخاب شده مجاز نمی باشد"}{/alertWarn}
             {@alertError key="edit-fail" msg="تغییرات صورت گرفته ثبت نشد. لطفا مجددا نلاش فرمایید"}{/alertError}
+
+            <div class="error_warning_alert text-right display_none" id="error_field_warning_front"> 
+
+                <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeWarningErrorFront()"></i> 
+                <i class="fal fa-exclamation-circle alert_icon_error"></i>
+
+                  <div class="d-inline-block mr-1" id="error_text"></div>
+
+            </div>
+
 
             <div id="store_add_error" class="alert alert-warning text-center"></div>
 
@@ -63,7 +75,7 @@
                         <div class="col-6 pr-0">
                             <div class="form-group number_inp_store_add">
                                 <label for="inventory_inp">موجودی فعلی انبار:</label>
-                                <input class="form-control" type="number" id="inventory_inp" name="stock_inp" min="0" placeholder="0" value="{product_form.stock}">
+                                <input class="form-control" type="text" id="inventory_inp" name="stock_inp" min="0" placeholder="0" value="{product_form.stock}">
                             </div>
                         </div>
 
@@ -73,7 +85,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text span_sale_addon" id="basic-addon1">%</span>
                             </div>  
-                            <input type="number" class="form-control sale_inp_custome pr-1" name="discount_inp" min="0" placeholder="0" aria-label="Username" aria-describedby="basic-addon1" value="{product_form.discount}">
+                            <input type="text" class="form-control sale_inp_custome pr-1" name="discount_inp" min="0" placeholder="0" aria-label="Username" aria-describedby="basic-addon1" value="{product_form.discount}">
                         </div>
                         <small class="form-text text-muted small_customize">توجه فرمایید که تخفیف روی قیمت لحاظ می شود.</small>
                     </div>

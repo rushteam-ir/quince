@@ -1,93 +1,79 @@
+
+// errors
+
 function storeAddError() {
 
-    let error_text = document.getElementById('store_add_error');
-    let title_inp = document.forms['store_add_form']['title_inp'].value;
-    let parent_inp = document.forms['store_add_form']['parent_inp'].value;
-    let child_inp = document.forms['store_add_form']['child_inp'].value;
-    let describe = document.forms['store_add_form']['describe'].value;
-    let price_inp = document.forms['store_add_form']['price_inp'].value;
-    let inventory_inp = document.forms['store_add_form']['inventory_inp'].value;
-    let discount_inp = document.forms['store_add_form']['discount_inp'].value;
-    let product_main_image = document.forms['store_add_form']['product_main_image'].value;
+    $('.alert_query').remove();
 
-    if (title_inp === "") {
+    var error_field = document.getElementById('error_field_warning_front');
+    var error_text = document.getElementById('error_text');
 
-        error_text.style.display = "block";
+    var title_inp = document.forms['store_edit_form']['title_inp'].value;
+    var parent_inp = document.forms['store_edit_form']['parent_inp'].value;
+    var child_inp = document.forms['store_edit_form']['child_inp'].value;
+    var describe_inp = document.forms['store_edit_form']['describe_inp'].value;
+    var price_inp = document.forms['store_edit_form']['price_inp'].value;
+    var stock_inp = document.forms['store_edit_form']['stock_inp'].value;
+    var discount_inp = document.forms['store_edit_form']['discount_inp'].value;
+    var product_features_inp = document.forms['store_edit_form']['product_features_inp[]'].value;
+    var product_img_main = document.forms['store_edit_form']['product_img_main'].value;
+
+    if (title_inp == "" || parent_inp == "" || child_inp == "" || describe_inp == "" || price_inp == "" || stock_inp == "" || discount_inp == "") {
+
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
-        error_text.innerHTML = "لطفا عنوان محصول را انتخاب کنید";
+        error_field.style.display = "block";
+        error_text.innerHTML = "لطفا تمام فیلد ها را پر کنید.";
         return false;
 
-    } else if (parent_inp === "") {
+    } else if (product_features_inp == "") {
 
-        error_text.style.display = "block";
-        error_text.innerHTML = "لطفا دسته را انتخاب کنید";
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
+        error_field.style.display = "block";
+        error_text.innerHTML = "لطفا ویژگی های محصول را وارد کنید(حداقل یک فیلد باید پر باشد).";
         return false;
 
-    } else if (child_inp === "0") {
+    } else if (product_img_main == "") {
 
-        error_text.style.display = "block";
-        error_text.innerHTML = "لطفا زیر دسته را انتخاب کنید";
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
+        error_field.style.display = "block";
+        error_text.innerHTML = "لطفا تصویر اصلی محصول را بارگذاری نمایید."
         return false;
 
-    } else if (describe === "") {
+    } else if (isNaN(price_inp)) {
 
-        error_text.style.display = "block";
-        error_text.innerHTML = "لطفا توضیحات محصول را بنویسید";
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
+        error_field.style.display = "block";
+        error_text.innerHTML = "لطفا قیمت کالا را درست وارد کنید."
         return false;
 
-    } else if (price_inp === "") {
+    } else if (isNaN(stock_inp)) {
 
-        error_text.style.display = "block";
-        error_text.innerHTML = "لطفا قیمت محصول را وارد کنید";
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
+        error_field.style.display = "block";
+        error_text.innerHTML = "لطفا موجودی انبار را درست وارد کنید."
         return false;
 
-    } else if (inventory_inp === "") {
+    } else if (isNaN(discount_inp)) {
 
-        error_text.style.display = "block";
-        error_text.innerHTML = "لطفا موجودی انبار را وارد کنید";
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
+        error_field.style.display = "block";
+        error_text.innerHTML = "لطفا تخفیف را درست وارد کنید."
         return false;
 
-    } else if (discount_inp === "") {
+    }
 
-        error_text.style.display = "block";
-        error_text.innerHTML = "لطفا تخفیف را وارد کنید";
+    else if(discount_inp > 100){
+
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
-        return false;
-
-    } else if (discount_inp.length > 3) {
-
-        error_text.style.display = "block";
-        error_text.innerHTML = "تخفیف بیشتر از 100 درصد مجاز نمی باشد";
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-        return false;
-
-    } else if (product_main_image === "") {
-
-        error_text.style.display = "block";
-        error_text.innerHTML = "لطفا عکس اصلی را آپلود کنید";
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-        return false;
-
-    } else if (product_main_image === "") {
-
-        error_text.style.display = "block";
-        error_text.innerHTML = "لطفا عکس اصلی را آپلود کنید";
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+        error_field.style.display = "block";
+        error_text.innerHTML = "لطفا مقدار تخفیف را درست وارد کنید."
         return false;
 
     }
