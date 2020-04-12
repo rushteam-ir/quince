@@ -155,6 +155,11 @@
                             </div>
                         </div>
                 </div>
+
+                    <div class="main_info_alert_box">
+
+                    </div>
+
                     <button class="btn btn_of_store_add" type="submit" name="add_product">ثبت</button>
 
                 </form>
