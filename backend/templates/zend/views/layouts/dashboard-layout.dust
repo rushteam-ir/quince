@@ -166,6 +166,13 @@
                 </div>
             </a>
 
+            <a href="{backend_url}guide">
+                <div class="field_of_dashbord_partion text-right">
+                    <i class="fas fa-question d-inline-block dashbord_tiny_icons"></i>
+                    <p class="d-inline-block title_text_of_dashbord">راهنما</p>
+                </div>
+            </a>
+
             <a class="logout_cms">
                 <div class="field_of_dashbord_partion text-right">
                     <i class="fas fa-sign-out-alt d-inline-block dashbord_tiny_icons"></i>

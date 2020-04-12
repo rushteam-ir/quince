@@ -4,10 +4,25 @@ router.get('/', async(req,res)=>{
 
     try{
 
-        let data = {
+        let data = null;
 
-            list : await category_model.get(),
-            product_add_from : req.session.product_add_form,
+        if(Object.keys(req.query).length === 0){
+            delete req.session.product_add_from;
+
+            data = {
+
+                list : await category_model.get(),
+
+            }
+        }
+        else{
+
+            data = {
+
+                list : await category_model.get(),
+                product_add_from : req.session.product_add_form,
+
+            }
 
         }
 
@@ -44,6 +59,17 @@ router.post('/', async(req,res)=>{
         for(let i = 0; i < product_features_inp.length; i++){
 
             valid_product_features[i] = validation.isSafe(product_features_inp[i]);
+
+        }
+
+        if(!req.files['product_other_images[]']){
+
+            return res.redirect(`${config.backend_url}store/add/?msg=few-images`);
+
+        }
+        else if(req.files['product_other_images[]'].length < 3){
+
+            return res.redirect(`${config.backend_url}store/add/?msg=few-images`);
 
         }
 
@@ -98,17 +124,6 @@ router.post('/', async(req,res)=>{
 
                 let main_image = req.files.product_main_image;
                 let other_images = req.files['product_other_images[]'];
-
-                if(!req.files['product_other_images[]']){
-
-                    return res.redirect(`${config.backend_url}store/add/?msg=few-images`);
-
-                }
-                else if(other_images.length < 3){
-
-                    return res.redirect(`${config.backend_url}store/add/?msg=few-images`);
-
-                }
 
                 let image_counter = 0;
                 let product_images = [];
