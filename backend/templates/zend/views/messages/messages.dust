@@ -64,7 +64,7 @@
 
                 {/list}
             {:else}
-                <div class="col-12">
+                <div class="col-12 p-0">
                     <div class="nothing_to_see_box">
                         پیامی جهت نمایش وجود ندارد !
                     </div>
