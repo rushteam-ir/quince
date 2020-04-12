@@ -16,6 +16,7 @@ category_model = require('../models/category-schema');
 setting_model = require('../models/setting-schema');
 product_model = require('../models/product-schema');
 message_model = require('../models/message-schema');
+discount_model = require('../models/discount-schema');
 
 // Global variables
 msg_param = '';
