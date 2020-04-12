@@ -7,6 +7,7 @@ router.get('/', async(req,res)=>{
         let data = {
 
             list : await category_model.get(),
+            product_add_from : req.session.product_add_form,
 
         }
 
@@ -27,6 +28,9 @@ router.post('/', async(req,res)=>{
 
         let {title_inp, parent_inp, child_inp, describe_inp, price_inp, stock_inp, discount_inp} = req.body;
         let product_features_inp = req.body['product_features_inp[]'];
+        let product_form = {title_inp, describe_inp, price_inp, stock_inp, discount_inp};
+
+        req.session.product_add_form = product_form;
 
         let valid_title = validation.isSafe(title_inp);
         let valid_parent = isObjectId(parent_inp);
@@ -112,7 +116,6 @@ router.post('/', async(req,res)=>{
                 let file_format1 = main_image.name.slice(-3).toLowerCase();
                 let file_format2 = main_image.name.slice(-4).toLowerCase();
 
-                // Check main image
                 if(backend_allowd_avatars.includes(file_format1) || backend_allowd_avatars.includes(file_format2)) {
 
                     if(main_image.size/1024 <= backend_limited_products_size){
@@ -136,7 +139,6 @@ router.post('/', async(req,res)=>{
 
                 }
 
-                // Check other images
                 other_images.forEach((image)=>{
 
                     let file_format3 = main_image.name.slice(-3).toLowerCase();
@@ -176,6 +178,7 @@ router.post('/', async(req,res)=>{
 
             if(final_result){
 
+                delete req.session.product_add_form;
                 return res.redirect(`${config.backend_url}store/list/?msg=add-success`);
 
             }
