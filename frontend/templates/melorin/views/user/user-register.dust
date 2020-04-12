@@ -12,5 +12,51 @@
 
 
 {<body}
+    <section>
+        <div class="container">
+            <div class="box_of_login">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="my-4 title_style">ثبت‌نام در ملورین</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <form class="style_of_login_form mt-2" name="myForm" action="" method="get" autocomplete="off">
+                            <div class="form-group">
+                                <label for="email" class="w-100 text-right pr-3">ایمیل</label>
+                                <input type="email" class="form-control input_style_login_form" id="email" name="email">
+                            </div>
+                            <div class="form-group  mt-4">
+                                <label for="password" class="w-100 text-right pr-3">شماره تماس</label>
+                                <input type="tel" class="form-control input_style_login_form" id="password" name="password">
+                            </div>
+                            <div class="form-group  mt-4">
+                                <label for="password" class="w-100 text-right pr-3">رمز عبور</label>
+                                <input type="password" class="form-control input_style_login_form" id="password" name="password">
+                            </div>
+                            <div class="form-group  mt-4">
+                                <label for="password" class="w-100 text-right pr-3">تکرار رمز عبور</label>
+                                <input type="password" class="form-control input_style_login_form" id="password" name="password">
+                            </div>
+
+
+                            <button type="submit" class="btn_of_login">ثبت نام</button>
+                        </form>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="style_of_login_form">
+                            <a href="#"><p class="mr-3 d-inline-block dir_rtl">وارد شوید.</p></a><p class="d-inline-block">قبلا در ملورین  ثبت‌نام کرده‌اید؟</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 {/body}
 
