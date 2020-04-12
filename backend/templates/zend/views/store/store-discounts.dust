@@ -13,7 +13,7 @@
     <div class="main_body_of_add_store_forms">
 
         <p class="title_of_store_add">
-            اضافه کردن محصول
+            تولید کد تخفیف جدید
         </p>
 
         <div class="error_warning_alert text-right display_none" id="error_field_warning_front"> 
@@ -25,14 +25,14 @@
 
         </div>
 
-        <form action="" onsubmit="return discountError()" name="discount_form">
+        <form action="" method="post" onsubmit="return discountError()" name="discount_form">
 
             <label for="inventory_inp">مقدار تخفیف :</label>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text span_sale_addon" id="basic-addon1">%</span>
                 </div>  
-                <input type="text" class="form-control sale_inp_custome pr-2" value="{product_add_from.discount_inp}" name="value_inp" min="0" placeholder="0" aria-label="Username" aria-describedby="basic-addon1">
+                <input type="text" class="form-control sale_inp_custome pr-2" name="value_inp" min="0" placeholder="0" aria-label="Username" aria-describedby="basic-addon1">
             </div>
 
             <button class="btn btn_of_store_add mt-3" type="submit" name="add_product">تولید کد</button>
@@ -56,19 +56,26 @@
                 </thead>
                 <tbody>
 
+                {#list}
                   <tr class="dir-rtl text-center">
 
-                        <th class="list_detail_custom padding_customize" scope="row">1</th>
+                        <th class="list_detail_custom padding_customize" scope="row">{.row}</th>
 
-                        <td class="list_detail_custom">45s8-46at-2ac4</td>
+                        <td class="list_detail_custom">{.code}</td>
 
-                        <td class="list_detail_custom">10%</td>
+                        <td class="list_detail_custom">{.value}%</td>
 
                         <td class="list_detail_custom">
 
-                            <div class="situation_main_field_true">
-                                فعال
-                            </div>
+                            {@eq key="{.status}" value="true"}
+                                <div class="situation_main_field_true">
+                                    فعال
+                                </div>
+                            {:else}
+                                <div class="situation_main_field_false">
+                                    غیر فعال
+                                </div>
+                            {/eq}
 
                         </td>
 
@@ -80,34 +87,10 @@
 
                         </td>
                   </tr>
-
-                  <tr class="dir-rtl text-center">
-
-                    <th class="list_detail_custom padding_customize" scope="row">1</th>
-
-                    <td class="list_detail_custom">45s8-46at-2ac4</td>
-
-                    <td class="list_detail_custom">10%</td>
-
-                    <td class="list_detail_custom">
-
-                        <div class="situation_main_field_false">
-                            غیر فعال
-                        </div>
-
-                    </td>
-
-                    <td class="list_detail_custom">
-
-                        <button class="btn remove_discount">
-                            <i class="fas fa-trash-alt"></i>
-                        </button>
-
-                    </td>
-              </tr>
+                 {/list}
 
                 </tbody>
-              </table>
+            </table>
 
     </div>
 

@@ -10,17 +10,14 @@ let discount_schema = new mongoose.Schema({
 
 discount_schema.statics = {
 
-    add : async function (code_inp, value_inp) {
+    add : async function (discount_data) {
 
         let list = await discount_model.find();
-        let new_discount = new discounts_model({
 
-            code : code_inp,
-            value : value_inp,
-            row : list.length + 1,
-            status : true
+        discount_data.status = true;
+        discount_data.row = list.length + 1;
 
-        });
+        let new_discount = new discount_model(discount_data);
         
         return await new_discount.save();
 
