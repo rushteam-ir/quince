@@ -23,7 +23,7 @@ const delete_discount_code = require('./api/delete-discount-code');
 const add = require('./add');
 const list = require('./list');
 const edit = require('./edit');
-const discounts = require('./discounts');
+const discount = require('./discount');
 
 router.use('/api/delete-product', delete_product);
 router.use('/api/delete-image', delete_image);
@@ -33,6 +33,6 @@ router.use('/api/delete-discount-code', delete_discount_code);
 router.use('/add', add);
 router.use('/list', list);
 router.use('/edit', edit);
-router.use('/discounts', discounts);
+router.use('/discount', discount);
 
 module.exports = router;
