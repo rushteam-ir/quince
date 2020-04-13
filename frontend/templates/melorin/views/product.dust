@@ -13,7 +13,7 @@
 
 {<body}
 
-{!Slider Of Product!}
+    {!Slider Of Product!}
     <section class="bg-white">
         <div class="container-fluid">
             <div class="row mb-5">
@@ -358,38 +358,7 @@
     {!End Similar Product Slider!}
 
     {!Comments form!}
-    <section class="bg_of_comment_form">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="comments_form_box text-center">
-                        <h3 class="py-5 font_style_of_title">نظرات خود را درباره این محصول ثبت کنید</h3>
-
-                        <form class="style_of_comment_form mt-4 pb-5" name="myForm" action="" method="get"
-                              autocomplete="off">
-                            <div class="form-group a">
-                                <label for="label_of_comment" class="w-100 text-right pr-3">امتیاز دهید</label>
-                                <div class="box_of_rate">
-                                    <a href="#" class="style_of_rate"><i class="fas fa-star"></i></a>
-                                    <a href="#" class="style_of_rate"><i class="fas fa-star-half-alt"></i></a>
-                                    <a href="#" class="style_of_rate"><i class="far fa-star"></i></a>
-                                    <a href="#" class="style_of_rate"><i class="far fa-star"></i></a>
-                                    <a href="#" class="style_of_rate"><i class="far fa-star"></i></a>
-                                </div>
-                            </div>
-                            <div class="form-group mt-4">
-                                <label for="text_of_comment" class="w-100 text-right pr-3">متن پیام</label>
-                                <textarea class="form-control input_style_comment_form" id="text_of_comment"
-                                          name="text_of_comment" rows="4"></textarea>
-                            </div>
-                            <button type="submit" class="btn_of_comment_send">ثبت نظر</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-{!End Comments form!}
+    {!End Comments form!}
 
 
 
