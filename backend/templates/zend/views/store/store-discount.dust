@@ -29,22 +29,25 @@
         </div>
 
         <form action="" method="post" onsubmit="return discountError()" name="discount_form">
-            <div>
+            <div class="field_wrapper">
 
                 <div class="d-inline-block">
                     <label class="d-inline-block" for="">از</label>
-                    <input type="text" class="form-control d-inline-block discount_inp_custom mx-2">
+                    <input type="text" class="form-control d-inline-block discount_inp_custom ">
                 </div>
 
                 <div class="d-inline-block">
                     <label class="d-inline-block" for="">تا</label>
-                    <input type="text" class="form-control d-inline-block discount_inp_custom mx-2">
+                    <input type="text" class="form-control d-inline-block discount_inp_custom">
                 </div>
 
                 <div class="d-inline-block">
                     <label class="d-inline-block" for="">، میزان تخفیف :</label>
-                    <input type="text" class="form-control d-inline-block last_discount_inp_custom mx-2">
+                    <input type="text" class="form-control d-inline-block last_discount_inp_custom">
+                   
                 </div>
+
+                <a href="javascript:void(0);" class="add_button" title="Add field"><i class="fas fa-plus mt-2"></i></a>
 
             </div>             
         </form>
