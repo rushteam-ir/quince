@@ -399,7 +399,7 @@
 
 /*Comment*/
 .comments_form_box{
-    width: 55%;
+    width: 45%;
     background: white;
     margin:70px auto;
     border-radius: 5px;
@@ -454,6 +454,10 @@
     color: gold;
     font-size: 1.9rem;
 }
+
+.font_style_of_title{
+    font-size: 1.5rem;
+}
 /*End Comment*/
 
 /* Media Query*/
@@ -472,7 +476,9 @@
     .thumb {
         width: 20%;
     }
-
+    .comments_form_box{
+        width: 50%;
+    }
 }
 
 
@@ -488,7 +494,9 @@
 
     .price_and_explain_of_product {
         width: 320px;
-
+    }
+    .comments_form_box{
+        width: 70%;
     }
 }
 
@@ -527,6 +535,9 @@
         width: 140px !important;
         right: -180px !important;
         top: 15px !important;
+    }
+    .comments_form_box{
+        width: 95%;
     }
 }
 
@@ -575,6 +586,10 @@
     .pic_of_comment{
         height: 350px;
     }
+    .comments_form_box{
+        width: 100%;
+    }
+ 
 }
 
 @media only screen and  (max-width: 1030px) and (min-width: 990px) {

@@ -363,7 +363,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="comments_form_box text-center">
-                        <h3 class="py-5">نظرات خود را درباره این محصول ثبت کنید</h3>
+                        <h3 class="py-5 font_style_of_title">نظرات خود را درباره این محصول ثبت کنید</h3>
 
                         <form class="style_of_comment_form mt-4 pb-5" name="myForm" action="" method="get"
                               autocomplete="off">
