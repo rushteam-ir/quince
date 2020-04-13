@@ -60,10 +60,6 @@
     color: #494B74;
 }
 
-.discount_customize {
-    width: 262px !important;
-}
-
-.last_discount_customize {
-    width: 184px !important;
+.discount_inp_custom{
+    width: 200px;
 }
