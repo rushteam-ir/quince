@@ -74,8 +74,13 @@
     top: 280px;
     color: white;
     line-height: 45px;
+    transition: all linear 0.07s;
 }
 
+.btn_add_order:hover{
+    color: white;
+    transform: scale(1.1);
+}
 
 
 /*End Top Pic*/
@@ -409,6 +414,25 @@
     color: black;
     font-size: 4rem;
 }
+
+.service_title_of_img{
+    font-family: main-font;
+}
+
+.info_of_service{
+    width: 310px;
+    margin: 0 auto;
+    line-height: 26px;
+    text-align: center;
+    direction: rtl;
+}
+
+.margin_row_customize{
+    margin: 120px 0px;
+}
+
+
+
 
 /*Fade In Left Animation*/
 

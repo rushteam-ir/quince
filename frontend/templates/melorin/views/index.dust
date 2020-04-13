@@ -27,44 +27,55 @@
 {!Services!}
     <section>
         <div class="container-fluid">
-            <div class="row mt-5">
-                <div class="col-10 offset-1 text-center">
-                    <h3 class="title_part_of_page">خدمات ما</h3>
-                </div>
-            </div>
-            <div class="row mt-5">
+            <div class="row margin_row_customize">
                 <div class="col-10 offset-1 col-sm-6 offset-sm-0 col-lg-3 offset-lg-0">
                     <div class="text-center">
-                        <i class="fal fa-credit-card font_size_of_services mt-3 bg_credit_card"></i>
-                        <h5 class="mt-4 mb-3">
-                            پرداخت مطمئن
-                        </h5>
+                        <i class="far fa-shield-check font_size_of_services mt-3 bg_credit_card"></i>
+                        <h4 class="mt-4 mb-3 service_title_of_img">
+                            کیفیت بالا
+                        </h4>
+                        <p class="info_of_service">
+                            بهترین کیفیت با تضمین یک ساله برای کابران عزیز که از ما خرید میکنند این اطمینان را حاصل میفرمایید.بهترین جنس نخ و سوزن ،دوخت ریز و دقیق،تار و پود به هم میدوزیم عشق کنی.
+                        </p>
                     </div>
                 </div>
+
                 <div class="col-10 offset-1 col-sm-6 offset-sm-0 col-lg-3 offset-lg-0">
                     <div class="text-center">
                         <i class="fal fa-user-headset font_size_of_services mt-3 bg_user_support"></i>
-                        <h5 class="mt-4 mb-3">
+                        <h4 class="mt-4 mb-3 service_title_of_img">
                             پشتیبانی 24 ساعته
-                        </h5>
+                        </h4>
+                        <p class="info_of_service">
+                            در هر ساعت از شبانه رو ما همراه شما هستیم ، از شب تا ضب و از ضب تا شب هر تایمی عشقت کشید زنگ بزن ، خوابم بودم جوابتو میدم 
+                        </p>
                     </div>
                 </div>
+
                 <div class="col-10 offset-1 col-sm-6 offset-sm-0 col-lg-3 offset-lg-0">
                     <div class="text-center">
                         <i class="fal fa-gift font_size_of_services mt-3 bg_gift"></i>
-                        <h5 class="mt-4 mb-3">
+                        <h4 class="mt-4 mb-3 service_title_of_img">
                             کوپن های تخفیف
-                        </h5>
+                        </h4>
+                        <p class="info_of_service">
+                            اگه زیاد بخری بهت تخفیف میدیم عشق کنی هر چی بیشتر بخری تخفیفت بیشتر میشه از 30 درصد بگیر تا اصلا بردار و برئ.ما اینجوری مشتری مداری میکنیم دیه.
+                        </p>
                     </div>
                 </div>
+                
                 <div class="col-10 offset-1 col-sm-6 offset-sm-0 col-lg-3 offset-lg-0">
                     <div class="text-center ">
-                        <i class="fal fa-truck font_size_of_services mt-3 bg_truck"></i>
-                        <h5  class="mt-4 mb-3">
+                        <i class="fal fa-truck-moving font_size_of_services mt-3 bg_truck"></i>
+                        <h4  class="mt-4 mb-3 service_title_of_img">
                             ارسال رایگان
-                        </h5>
+                        </h4>
+                        <p class="info_of_service">
+                            ارسال رایگان برا همه نیست ، خوشحال نشو ، فقط واسه اونایی که 150 تومن به بالا خرید کینن ارسالشون رایگانه در غیر این صورت هزینش پا خودن به ما ربطی نداره
+                        </p>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
