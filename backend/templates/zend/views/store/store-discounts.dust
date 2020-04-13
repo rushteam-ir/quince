@@ -30,16 +30,26 @@
 
         <form action="" method="post" onsubmit="return discountError()" name="discount_form">
 
-            <label for="inventory_inp">مقدار تخفیف :</label>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text span_sale_addon" id="basic-addon1">%</span>
-                </div>  
-                <input type="text" class="form-control sale_inp_custome pr-2" name="value_inp" min="0" placeholder="0" aria-label="Username" aria-describedby="basic-addon1">
+            <div class="row">
+
+                <div class="col-3">
+                    <label>از</label>
+                    <input type="email" class="form-control discount_customize d-inline-block">
+                </div>
+
+                <div class="col-3">
+                    <label for="">از</label>
+                    <input type="email" class="form-control discount_customize d-inline-block">
+                </div>
+
+                <div class="col-3">
+                    <label for="">از</label>
+                    <input type="email" class="form-control discount_customize d-inline-block">
+                </div>
+
             </div>
 
-            <button class="btn btn_of_store_add mt-3" type="submit" name="add_product">تولید کد</button>
-
+              
         </form>
 
         <p class="title_of_store_add mt-5">

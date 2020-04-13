@@ -19,29 +19,6 @@
     border-radius: 3px;
 }
 
-.span_sale_addon {
-    background-color: #ffffff00;
-    border-left: none;
-    border-radius: 0px .25rem .25rem 0px !important;
-    padding-left: 0px;
-}
-
-.sale_inp_custome {
-    border-right: none;
-    border-radius: .25rem 0px 0px .25rem !important;
-}
-
-.btn_of_store_add {
-    width: 130px;
-    background-color: #5D78FF;
-    font-weight: bold;
-    color: white;
-}
-
-.btn_of_store_add:hover {
-    background-color: #3758FF;
-}
-
 .header_list_custom {
     padding: 20px .75rem !important;
 }
@@ -81,4 +58,8 @@
 
 .remove_discount:hover{
     color: #494B74;
+}
+
+.discount_customize{
+    width: 85% !important;
 }
