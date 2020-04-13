@@ -75,13 +75,12 @@
 
 .padding_of_title{
     padding-top: 50px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #6c757d;
+    padding-bottom: 10px;
 }
 
 /*End Explain Table*/
 
-/**/
+/*Our Office*/
 .bg_of_office{
     background-image: url("../../img/office.png");
     background-size: cover;
@@ -119,9 +118,9 @@
     transition: all 0.4s ease 0s;
     width: 160px;
 }
-/**/
+/*End Our Office*/
 
-/**/
+/*Why Us*/
 
 .title_of_Fields_of_activity_Melorin , .title_of_Site_Values_Melorin{
     text-align: right;
@@ -137,7 +136,7 @@
     width: 70%;
     margin: auto;
 }
-/**/
+/*End Why Us*/
 
 /*Media Query*/
 
