@@ -27,15 +27,14 @@
                 <div class="row">
 
                     <div class="col-12">
-                        <form class="style_of_login_form mt-4" name="myForm" action="" method="get" autocomplete="off">
+                        <form class="style_of_login_form mt-4" name="myForm" action="" method="post" autocomplete="off">
                             <div class="form-group a">
                                 <label for="email" class="w-100 text-right pr-3">ایمیل</label>
-                                <input type="email" class="form-control input_style_login_form" id="email" name="email">
+                                <input type="email" class="form-control input_style_login_form" id="email" name="email_inp">
                             </div>
                             <div class="form-group mt-4">
                                 <label for="password" class="w-100 text-right pr-3">رمز عبور</label>
-                                <input type="password" class="form-control input_style_login_form" id="password"
-                                       name="password">
+                                <input type="password" class="form-control input_style_login_form" id="password" name="password_inp">
                                 <a href="#"><small class="float-right mt-3 mr-3">!رمز عبور خود را فراموش کرده‌ام</small></a>
                             </div>
                             <button type="submit" class="btn_of_login">ورود</button>
@@ -51,7 +50,7 @@
                 <div class="row">
                     <div class="col-12 text-center">
                         <div class="style_of_login_form">
-                            <a href="#"><p class="mr-3 d-inline-block dir_rtl">در ملورین ثبت نام کنید.</p></a><p class="d-inline-block">کاربر جدید هستید؟</p>
+                            <a href="{frontend_url}user/register"><p class="mr-3 d-inline-block dir_rtl">در ملورین ثبت نام کنید.</p></a><p class="d-inline-block">کاربر جدید هستید؟</p>
                         </div>
 
                     </div>

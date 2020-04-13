@@ -92,12 +92,14 @@ const about_us = require('./branches/about-us');
 const contact_us = require('./branches/contact-us');
 const product = require('./branches/product');
 const user = require('./branches/user/user');
+const recovery = require('./branches/recovery/recovery');
 
 frontend.use('/captcha', captcha);
 frontend.use('/about-us', about_us);
 frontend.use('/contact-us', contact_us);
 frontend.use('/product', product);
 frontend.use('/user', user);
+frontend.use('/recovery', recovery);
 
 // Frontend 404 page
 frontend.use(async(req,res,next)=>{
