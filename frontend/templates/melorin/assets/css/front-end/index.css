@@ -423,16 +423,13 @@
     width: 310px;
     margin: 0 auto;
     line-height: 26px;
-    text-align: justify;
+    text-align: center;
     direction: rtl;
 }
 
 .margin_row_customize{
     margin: 120px 0px;
 }
-
-
-
 
 /*Fade In Left Animation*/
 
