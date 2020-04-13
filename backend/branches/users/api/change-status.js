@@ -24,20 +24,18 @@ router.get('/', async(req,res)=>{
 
                 }
 
-                await user_model.editProfile(user_find._id, user_data, (result)=>{
+                let result = user_model.editProfile(user_find._id, user_data);
 
-                    if(result){
+                if(result){
 
-                        return res.redirect(`${config.backend_url}users/list`);
+                    return res.redirect(`${config.backend_url}users/list`);
 
-                    }
-                    else{
+                }
+                else{
 
-                        return res.redirect(`${config.backend_url}users/list`);
+                    return res.redirect(`${config.backend_url}users/list`);
 
-                    }
-
-                })
+                }
 
             }
             else{
