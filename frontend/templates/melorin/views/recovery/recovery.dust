@@ -37,15 +37,6 @@
 
                     </div>
                 </div>
-                <hr>
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <div class="style_of_login_form">
-                            <a href="{frontend_url}user/register"><p class="mr-3 d-inline-block dir_rtl">در ملورین ثبت نام کنید.</p></a><p class="d-inline-block">کاربر جدید هستید؟</p>
-                        </div>
-
-                    </div>
-                </div>
             </div>
         </div>
     </section>
