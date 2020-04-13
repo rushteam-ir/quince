@@ -10,7 +10,7 @@ router.get('/', async(req,res)=>{
 
         }
 
-        res.render('store/store-discounts', data);
+        res.render('store/store-discount', data);
 
     }
     catch (error) {
@@ -31,7 +31,7 @@ router.post('/', async(req,res)=>{
         let valid_value = validation.isSafe(value_inp);
 
         if(valid_value != ''){
-            return res.redirect(`${config.backend_url}store/discounts`);
+            return res.redirect(`${config.backend_url}store/discount`);
         }
 
         while(can_do){
@@ -68,12 +68,12 @@ router.post('/', async(req,res)=>{
 
         if(result){
 
-            return res.redirect(`${config.backend_url}store/discounts/?msg=add-success`);
+            return res.redirect(`${config.backend_url}store/discount/?msg=add-success`);
 
         }
         else {
 
-            return res.redirect(`${config.backend_url}store/discounts/?msg=add-fail`);
+            return res.redirect(`${config.backend_url}store/discount/?msg=add-fail`);
 
         }
 

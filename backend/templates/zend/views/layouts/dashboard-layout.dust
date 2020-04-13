@@ -141,7 +141,7 @@
                         اضافه کردن محصول
                     </li>
                 </a>
-                <a href="{backend_url}store/discounts">
+                <a href="{backend_url}store/discount">
                     <li class="shop_list_text">
                        کد تخفیف
                     </li>
