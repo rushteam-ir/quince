@@ -52,15 +52,19 @@
     font-size: 3.5rem;
     position: relative;
     margin: auto;
+    line-height: 76px;
 }
 
 .explain_of_design_title {
     position: relative;
     color: white;
     top: 260px;
+    font-size: 1.2rem;
 }
 
 .btn_add_order {
+    display: block;
+    margin: 0 auto;
     width: 200px;
     height: 50px;
     border: none;
@@ -69,7 +73,10 @@
     position: relative;
     top: 280px;
     color: white;
+    line-height: 45px;
 }
+
+
 
 /*End Top Pic*/
 
@@ -455,6 +462,9 @@
         transform: translatex(0);
     }
 }
+
+
+
 
 
 /*EndFade In Left Animation*/

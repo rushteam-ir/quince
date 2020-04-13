@@ -16,8 +16,11 @@
     <section>
         <div class="pic_of_header_index_page">
             <h1 class="title_of_web_page"> طراحی خودت را داشته باش</h1>
-            <h5 class="explain_of_design_title">با دادن تصویرمحصول  مورد نظر خود به ما محصول را برایتان تولید میکنیم</h5>
-            <button class="btn_add_order" type="button">همین حالا سفارش دهید</button>
+            <h2 class="explain_of_design_title">با دادن تصویرمحصول  مورد نظر خود به ما محصول را برایتان تولید میکنیم</h2>
+
+            <a href="" class="btn_add_order">
+                همین حالا سفارش دهید
+            </a>
         </div>
     </section>
 {!End Top Of Pic!}
