@@ -248,7 +248,7 @@
 
 .parallax_css_picture {
     background-image: url("../../img/parallax.jpg");
-    height: 500px;
+    height: 350px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -260,19 +260,19 @@
 .h2_style_of_parallax {
     font-family: main-font;
     position: absolute;
-    top: 150px;
+    top: 86px;
     width: 100%;
     color: white;
     font-size: 3rem;
 }
 
 .h3_style_of_parallax {
-    top: 220px;
+    top: 157px;
     font-size: 2rem;
 }
 
 .btn_parallax_style {
-    top: 270px;
+    top: 210px;
     position: relative;
     width: 200px;
     height: 50px;
@@ -423,16 +423,13 @@
     width: 310px;
     margin: 0 auto;
     line-height: 26px;
-    text-align: justify;
+    text-align: center;
     direction: rtl;
 }
 
 .margin_row_customize{
     margin: 120px 0px;
 }
-
-
-
 
 /*Fade In Left Animation*/
 

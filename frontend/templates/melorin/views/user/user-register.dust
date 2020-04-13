@@ -50,7 +50,7 @@
                 <div class="row">
                     <div class="col-12 text-center">
                         <div class="style_of_login_form">
-                            <a href="#"><p class="mr-3 d-inline-block dir_rtl">وارد شوید.</p></a><p class="d-inline-block">قبلا در ملورین  ثبت‌نام کرده‌اید؟</p>
+                            <a href="{frontend_url}user/login"><p class="mr-3 d-inline-block dir_rtl">وارد شوید.</p></a><p class="d-inline-block">قبلا در ملورین  ثبت‌نام کرده‌اید؟</p>
                         </div>
 
                     </div>
