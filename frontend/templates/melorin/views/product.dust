@@ -1,7 +1,7 @@
 {>"layouts/layout"/}
 
 {<title}
-    <title>درباره ما</title>
+    <title>جوراب زنانه طرح میوه ای</title>
 {/title}
 {<css}
     <link rel="stylesheet" href="css/front-end/product.css">
@@ -12,7 +12,9 @@
 
 
 {<body}
-    <section>
+
+{!Slider Of Product!}
+    <section class="bg-white">
         <div class="container-fluid">
             <div class="row mb-5">
                 <div class="col-lg-7 offset-lg-0 col-10 offset-1 order-1 order-lg-0">
@@ -143,120 +145,252 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="z">
-            محصولات مشابه
-        </div>
-    </section>
-    <section class="margin_top_section_comment">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-0 col-sm-10 offset-sm-1 col-12">
-                    <img src="img/111.png" class="pic_of_comment">
-                </div>
-                <div class="col-lg-6 offset-lg-0 col-sm-10 offset-sm-1 col-12">
-                    <h3 class="text-right mr-2 mt-5" dir="rtl">نظرات خود را در جهت بهبود کیفیت با ما درمیان
-                        بگذارید.</h3>
-                    <form class="mt-5">
+    {!END Slider Of Product!}
 
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="w-50">
-                                    <label class="float-right label_of_price" dir="rtl">کیفیت محصول</label>
-                                    <div class="rate_of_product_star font_size_star">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
+    {!Similar Product Slider!}
+    <section>
+        <div class="container ">
+            <div class="row mb-5">
+                <div class="col-10 offset-1 text-center">
+                    <h3 class="title_part_of_page">محصولات مشابه</h3>
+                </div>
+            </div>
+            <div class="row mt-4 mb-5">
+                <div class="col-12">
+                    <div class="slick_slider_for_product">
+                        <div class="part_of_slider">
+                            <div class="img_of_slider_div">
+                                <img src="img/s1.jpg" class="img_of_slider">
+                                <div class="box_of_style_attention in_left">
+                                    <i class="fas fa-eye d-block attention_style_user"></i>
+                                    <i class="fas fa-heart d-block attention_style_user mt-2"></i>
+                                    <i class="fas fa-share-alt d-block attention_style_user mt-2"></i>
                                 </div>
-                                <div class="w-50">
-                                    <label class="float-right label_of_price mr-3" dir="rtl">ارزش خرید </label>
-                                    <div class="rate_of_product_star font_size_star">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
+                                <div class="btn_style_of_add_shopping_box_div">
+                                    <button type="button"
+                                            class="btn_style_of_add_shopping_box  animated animatedFadeInUp fadeInUp">
+                                        افزودن به سبد خرید
+                                    </button>
+                                </div>
+
+                            </div>
+                            <div class="explain_about_product_pic_slider">
+                                <p class="text-center category_title pt-3">جوراب . زنانه</p>
+                                <h5 class="text-center name_of_product mb-3 dir_rtl">طرح میوه ای کد k23</h5>
+                                <h5 class="text-center pb-3 dir_rtl">23,000 تومان</h5>
+                            </div>
+                        </div>
+                        <div class="part_of_slider">
+                            <div class="img_of_slider_div">
+                                <img src="img/s2.jpg" class="img_of_slider">
+                                <div class="box_of_style_attention in_left">
+                                    <i class="fas fa-eye d-block attention_style_user"></i>
+                                    <i class="fas fa-heart d-block attention_style_user mt-2"></i>
+                                    <i class="fas fa-share-alt d-block attention_style_user mt-2"></i>
+                                </div>
+                                <div class="btn_style_of_add_shopping_box_div">
+                                    <button type="button"
+                                            class="btn_style_of_add_shopping_box  animated animatedFadeInUp fadeInUp">
+                                        افزودن به سبد خرید
+                                    </button>
                                 </div>
                             </div>
-
-
+                            <div class="explain_about_product_pic_slider">
+                                <p class="text-center category_title pt-3">جوراب . زنانه</p>
+                                <h5 class="text-center name_of_product mb-3 dir_rtl">طرح میوه ای کد k23</h5>
+                                <h5 class="text-center pb-3 dir_rtl">23,000 تومان</h5>
+                            </div>
                         </div>
-
-                        <div class="form-group">
-                            <label for="title_of_comments" class="float-right" dir="rtl">عنوان نظر شما</label>
-                            <input type="text" class="form-control input_of_comment_page" id="title_of_comments"
-                                   name="title_of_comments">
+                        <div class="part_of_slider">
+                            <div class="img_of_slider_div">
+                                <img src="img/s3.jpg" class="img_of_slider">
+                                <div class="box_of_style_attention in_left">
+                                    <i class="fas fa-eye d-block attention_style_user"></i>
+                                    <i class="fas fa-heart d-block attention_style_user mt-2"></i>
+                                    <i class="fas fa-share-alt d-block attention_style_user mt-2"></i>
+                                </div>
+                                <div class="btn_style_of_add_shopping_box_div">
+                                    <button type="button"
+                                            class="btn_style_of_add_shopping_box animated animatedFadeInUp fadeInUp">
+                                        افزودن به سبد خرید
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="explain_about_product_pic_slider">
+                                <p class="text-center category_title pt-3">جوراب . زنانه</p>
+                                <h5 class="text-center name_of_product mb-3 dir_rtl">طرح میوه ای کد k23</h5>
+                                <h5 class="text-center pb-3 dir_rtl">23,000 تومان</h5>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label class="float-right label_of_price" dir="rtl" for="text_of_contact_us">متن پیام</label>
-                            <textarea class="form-control input_of_comment_page" id="text_of_contact_us" rows="6"
-                                      name="text_inp"></textarea>
+                        <div class="part_of_slider">
+                            <div class="img_of_slider_div">
+                                <img src="img/s4.jpg" class="img_of_slider">
+                                <div class="box_of_style_attention in_left">
+                                    <i class="fas fa-eye d-block attention_style_user"></i>
+                                    <i class="fas fa-heart d-block attention_style_user mt-2"></i>
+                                    <i class="fas fa-share-alt d-block attention_style_user mt-2"></i>
+                                </div>
+                                <div class="btn_style_of_add_shopping_box_div">
+                                    <button type="button"
+                                            class="btn_style_of_add_shopping_box  animated animatedFadeInUp fadeInUp">
+                                        افزودن به سبد خرید
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="explain_about_product_pic_slider">
+                                <p class="text-center category_title pt-3">جوراب . زنانه</p>
+                                <h5 class="text-center name_of_product mb-3 dir_rtl">طرح میوه ای کد k23</h5>
+                                <h5 class="text-center pb-3 dir_rtl">23,000 تومان</h5>
+                            </div>
                         </div>
-
-                    </form>
+                        <div class="part_of_slider">
+                            <div class="img_of_slider_div">
+                                <img src="img/s5.jpg" class="img_of_slider">
+                                <div class="box_of_style_attention in_left">
+                                    <i class="fas fa-eye d-block attention_style_user"></i>
+                                    <i class="fas fa-heart d-block attention_style_user mt-2"></i>
+                                    <i class="fas fa-share-alt d-block attention_style_user mt-2"></i>
+                                </div>
+                                <div class="btn_style_of_add_shopping_box_div">
+                                    <button type="button"
+                                            class="btn_style_of_add_shopping_box animated animatedFadeInUp fadeInUp">
+                                        افزودن به سبد خرید
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="explain_about_product_pic_slider">
+                                <p class="text-center category_title pt-3">جوراب . زنانه</p>
+                                <h5 class="text-center name_of_product mb-3 dir_rtl">طرح میوه ای کد k23</h5>
+                                <h5 class="text-center pb-3 dir_rtl">23,000 تومان</h5>
+                            </div>
+                        </div>
+                        <div class="part_of_slider">
+                            <div class="img_of_slider_div">
+                                <img src="img/s6.jpg" class="img_of_slider">
+                                <div class="box_of_style_attention in_left">
+                                    <i class="fas fa-eye d-block attention_style_user"></i>
+                                    <i class="fas fa-heart d-block attention_style_user mt-2"></i>
+                                    <i class="fas fa-share-alt d-block attention_style_user mt-2"></i>
+                                </div>
+                                <div class="btn_style_of_add_shopping_box_div">
+                                    <button type="button"
+                                            class="btn_style_of_add_shopping_box animated animatedFadeInUp fadeInUp">
+                                        افزودن به سبد خرید
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="explain_about_product_pic_slider">
+                                <p class="text-center category_title pt-3">جوراب . زنانه</p>
+                                <h5 class="text-center name_of_product mb-3 dir_rtl">طرح میوه ای کد k23</h5>
+                                <h5 class="text-center pb-3 dir_rtl">23,000 تومان</h5>
+                            </div>
+                        </div>
+                        <div class="part_of_slider">
+                            <div class="img_of_slider_div">
+                                <img src="img/s7.jpg" class="img_of_slider">
+                                <div class="box_of_style_attention in_left">
+                                    <i class="fas fa-eye d-block attention_style_user"></i>
+                                    <i class="fas fa-heart d-block attention_style_user mt-2"></i>
+                                    <i class="fas fa-share-alt d-block attention_style_user mt-2"></i>
+                                </div>
+                                <div class="btn_style_of_add_shopping_box_div">
+                                    <button type="button"
+                                            class="btn_style_of_add_shopping_box animated animatedFadeInUp fadeInUp">
+                                        افزودن به سبد خرید
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="explain_about_product_pic_slider">
+                                <p class="text-center category_title pt-3">جوراب . زنانه</p>
+                                <h5 class="text-center name_of_product mb-3 dir_rtl">طرح میوه ای کد k23</h5>
+                                <h5 class="text-center pb-3 dir_rtl">23,000 تومان</h5>
+                            </div>
+                        </div>
+                        <div class="part_of_slider">
+                            <div class="img_of_slider_div">
+                                <img src="img/s8.jpg" class="img_of_slider">
+                                <div class="box_of_style_attention in_left">
+                                    <i class="fas fa-eye d-block attention_style_user"></i>
+                                    <i class="fas fa-heart d-block attention_style_user mt-2"></i>
+                                    <i class="fas fa-share-alt d-block attention_style_user mt-2"></i>
+                                </div>
+                                <div class="btn_style_of_add_shopping_box_div">
+                                    <button type="button"
+                                            class="btn_style_of_add_shopping_box animated animatedFadeInUp fadeInUp">
+                                        افزودن به سبد خرید
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="explain_about_product_pic_slider">
+                                <p class="text-center category_title pt-3">جوراب . زنانه</p>
+                                <h5 class="text-center name_of_product mb-3 dir_rtl">طرح میوه ای کد k23</h5>
+                                <h5 class="text-center pb-3 dir_rtl">23,000 تومان</h5>
+                            </div>
+                        </div>
+                        <div class="part_of_slider">
+                            <div class="img_of_slider_div">
+                                <img src="img/s9.jpg" class="img_of_slider">
+                                <div class="box_of_style_attention in_left">
+                                    <i class="fas fa-eye d-block attention_style_user"></i>
+                                    <i class="fas fa-heart d-block attention_style_user mt-2"></i>
+                                    <i class="fas fa-share-alt d-block attention_style_user mt-2"></i>
+                                </div>
+                                <div class="btn_style_of_add_shopping_box_div">
+                                    <button type="button"
+                                            class="btn_style_of_add_shopping_box animated animatedFadeInUp fadeInUp">
+                                        افزودن به سبد خرید
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="explain_about_product_pic_slider">
+                                <p class="text-center category_title pt-3">جوراب . زنانه</p>
+                                <h5 class="text-center name_of_product mb-3 dir_rtl">طرح میوه ای کد k23</h5>
+                                <h5 class="text-center pb-3 dir_rtl">23,000 تومان</h5>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
+
+
     </section>
-    <hr>
-    <section>
-        <div class="container-fluid">
+    {!End Similar Product Slider!}
+
+    {!Comments form!}
+    <section class="bg_of_comment_form">
+        <div class="container">
             <div class="row">
-                <h2 class="text-right mt-5 mr-4 mb-5 w-100">نظرات کاربران (25 نفر)</h2>
-            </div>
-            <div class="comment_user">
-                <div class="row">
-                    <div class="header_of_comment_box">
-                        <div class="w-50 d-inline-block">
-                            <i class="fas fa-reply text-right ml-5 mr-3"></i>
-                            <i class="fas fa-heart text-left"></i>
-                        </div>
-                        <div class="w-50 text-right d-inline-block">
-                            <p class="text-right d-inline-block mr-3">نادیه</p>
-                            <img src="img/001.jpg" class="pic_of_user mr-4">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="text_of_comment_box">
-                        <p class="text-right mr-3 mt-2">
-                            این محصول تمامی مراحل طراحی و تولید آن در کشور آلمان صورت گرفته است.جنس این
-                            محصول از با کیفیت ترین الیاف طبیعی بوده که علاوه بر عمر بالای محصول و کیفیت در
-                            جنس آن باعث جلوگیری از هر گونه حساسیت در خانم ها می شود
-                        </p>
-                    </div>
-                </div>
-            </div>
+                <div class="col-12">
+                    <div class="comments_form_box text-center">
+                        <h3 class="py-5">نظرات خود را درباره این محصول ثبت کنید</h3>
 
-            <div class="reply_comment_user mb-5">
-                <div class="row mt-5">
-                    <div class="header_of_comment_box margin_reply margin_reply_color">
-                        <div class="w-50 d-inline-block">
-                            <i class="fas fa-reply text-right ml-5 mr-3"></i>
-                            <i class="fas fa-heart text-left"></i>
-                        </div>
-                        <div class="w-50 text-right d-inline-block ">
-                            <p class="text-right d-inline-block mr-3">نادیه</p>
-                            <img src="img/001.jpg" class="pic_of_user mr-4">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="text_of_comment_box margin_reply">
-                        <p class="text-right mr-3 mt-2">
-                            این محصول تمامی مراحل طراحی و تولید آن در کشور آلمان صورت گرفته است.جنس این
-                            محصول از با کیفیت ترین الیاف طبیعی بوده که علاوه بر عمر بالای محصول و کیفیت در
-                            جنس آن باعث جلوگیری از هر گونه حساسیت در خانم ها می شود
-                        </p>
+                        <form class="style_of_comment_form mt-4 pb-5" name="myForm" action="" method="get"
+                              autocomplete="off">
+                            <div class="form-group a">
+                                <label for="label_of_comment" class="w-100 text-right pr-3">امتیاز دهید</label>
+                                <div class="box_of_rate">
+                                    <a href="#" class="style_of_rate"><i class="fas fa-star"></i></a>
+                                    <a href="#" class="style_of_rate"><i class="fas fa-star-half-alt"></i></a>
+                                    <a href="#" class="style_of_rate"><i class="far fa-star"></i></a>
+                                    <a href="#" class="style_of_rate"><i class="far fa-star"></i></a>
+                                    <a href="#" class="style_of_rate"><i class="far fa-star"></i></a>
+                                </div>
+                            </div>
+                            <div class="form-group mt-4">
+                                <label for="text_of_comment" class="w-100 text-right pr-3">متن پیام</label>
+                                <textarea class="form-control input_style_comment_form" id="text_of_comment"
+                                          name="text_of_comment" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn_of_comment_send">ثبت نظر</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+{!End Comments form!}
+
+
 
 {/body}
