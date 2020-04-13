@@ -58,7 +58,7 @@ router.post('/', async(req, res)=>{
 
                 if(result){
 
-                    res.redirect(`${config.frontend_url}user/register/?msg=register-success`);
+                    res.redirect(`${config.frontend_url}user/login/?msg=register-success`);
 
                 }
                 else{
