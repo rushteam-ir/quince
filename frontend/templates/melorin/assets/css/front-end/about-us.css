@@ -47,7 +47,7 @@
     width: 300px;
     height: 250px;
     position: relative;
-    top: 75px;
+    top: 50px;
 }
 
 
@@ -59,8 +59,8 @@
     margin-top: 30px;
 }
 
-.explain_box_table , .support_option{
-    font-size: 1.5rem;
+.explain_box_table , .support_option_table{
+    font-size: 1.3rem;
 }
 
 .social_media_table{
@@ -167,7 +167,7 @@
         padding-top: 30px;
         font-size: 2rem;
     }
-    .explain_box_table , .support_option{
+    .explain_box_table , .support_option_table{
         font-size: 1.2rem;
     }
 
