@@ -29,47 +29,44 @@ router.post('/', async(req,res)=>{
         }
         else{
 
-            await user_model.recoveryEmail(email_inp, (result)=>{
+            let result = await user_model.recoveryEmail(email_inp);
 
+            if(result){
 
-                if(result){
+                let verify_code = randomString(20);
 
-                    let verify_code = randomString(20);
+                let mail_options = {
 
-                    let mail_options = {
+                    from: 'zendcms@zohomail.com',
+                    to: email_inp,
+                    subject: 'بازیابی حساب کاربری',
+                    text: `${config.backend_url}recovery/verify/?code=${verify_code}`
 
-                        from: 'zendcms@zohomail.com',
-                        to: email_inp,
-                        subject: 'بازیابی حساب کاربری',
-                        text: `${config.backend_url}recovery/verify/?code=${verify_code}`
+                };
 
-                    };
+                transporter.sendMail(mail_options, function(error, info){
 
-                    transporter.sendMail(mail_options, function(error, info){
+                    if (error) {
 
-                        if (error) {
+                        res.redirect(`${config.backend_url}recovery/?msg=sent-fail`);
 
-                            res.redirect(`${config.backend_url}recovery/?msg=sent-fail`);
+                    } else {
 
-                        } else {
+                        req.session.saved_email = email_inp;
+                        req.session.saved_code = verify_code;
 
-                            req.session.saved_email = email_inp;
-                            req.session.saved_code = verify_code;
+                        res.redirect(`${config.backend_url}login/?msg=sent-success`);
 
-                            res.redirect(`${config.backend_url}login/?msg=sent-success`);
+                    }
 
-                        }
+                });
 
-                    });
+            }
+            else{
 
-                }
-                else{
+                res.redirect(`${config.backend_url}recovery/?msg=invalid-email`);
 
-                    res.redirect(`${config.backend_url}recovery/?msg=invalid-email`);
-
-                }
-
-            });
+            }
 
         }
 

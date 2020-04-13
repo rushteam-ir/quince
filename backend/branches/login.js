@@ -29,28 +29,28 @@ router.post('/', async(req,res)=>{
 
     try{
 
-        let {username_inp, password_inp, captcha_inp} = req.body;
-        let login_form = {username_inp, password_inp, captcha_inp};
+        let {email_inp, password_inp, captcha_inp} = req.body;
+        let login_form = {email_inp, password_inp, captcha_inp};
 
         req.session.login_form = login_form;
 
-        let valid_username = validation.isUsername(username_inp);
+        let valid_email = validation.isEmail(email_inp);
         let valid_password = validation.isPassword(password_inp);
         let valid_captcha = validation.isCaptcha(captcha_inp);
 
-        if(valid_username != ''){
+        if(valid_email != ''){
 
-            res.redirect(`${config.backend_url}login`);
+            res.redirect(`${config.backend_url}login/?a=1`);
 
         }
         else if(valid_password != ''){
 
-            res.redirect(`${config.backend_url}login`);
+            res.redirect(`${config.backend_url}login/?a=2`);
 
         }
         else if(valid_captcha != ''){
 
-            res.redirect(`${config.backend_url}login`);
+            res.redirect(`${config.backend_url}login/?a=3`);
 
         }
         else if(captcha_inp.toLowerCase()!= req.session.captcha){
@@ -60,22 +60,24 @@ router.post('/', async(req,res)=>{
         }
         else{
 
-            await user_model.login(username_inp, password_inp, (result, find_user)=>{
+            let result = await user_model.login(email_inp, password_inp);
 
-                if(result){
+            if(result){
 
-                    if(find_user.status && (find_user.access == "main_admin" || find_user.access == "normal_admin")){
+                if(result.access == "main_admin" || result.access == "normal_admin"){
+
+                    if(result.status){
 
                         delete req.session.login_form;
                         delete req.session.captcha;
 
-                        req.session.admin_id = find_user._id;
-                        req.session.admin_info = find_user;
+                        req.session.admin_id = result._id;
+                        req.session.admin_info = result;
 
                         res.redirect(`${config.backend_url}dashboard`);
 
                     }
-                    else {
+                    else{
 
                         res.redirect(`${config.backend_url}login/?msg=inactive-admin`);
 
@@ -88,7 +90,12 @@ router.post('/', async(req,res)=>{
 
                 }
 
-            })
+            }
+            else{
+
+                res.redirect(`${config.backend_url}login/?msg=incorrect-input`);
+
+            }
 
         }
 

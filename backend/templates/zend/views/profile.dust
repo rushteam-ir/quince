@@ -30,10 +30,11 @@
                 {@alertError key="incorrect-input" msg="رمز عبور فعلی اشتباه می باشد"}{/alertError}
 
                 <form action="" method="post" autocomplete="off" enctype="multipart/form-data" name="pro_op_main_form" onsubmit="return proError()">
+
                     <div class="form-group">
-                        <label for="profile_username_inp">نام کاربری</label>
-                        <input type="text" class="form-control" id="username_inp" name="username_inp"
-                            value="{admin_info.username}">
+                        <label for="email_inp">ایمیل</label>
+                        <input type="text" id="email_inp" class="form-control" name="email_inp"
+                               value="{admin_info.email}">
                     </div>
 
                     <div class="form-group">
@@ -46,12 +47,6 @@
                         <label for="lastname_inp">نام خانوادگی</label>
                         <input type="text" class="form-control" id="lastname_inp" name="lastname_inp"
                             value="{admin_info.last_name}">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email_inp">ایمیل</label>
-                        <input type="text" id="email_inp" class="form-control" name="email_inp"
-                            value="{admin_info.email}">
                     </div>
 
                     <div class="form-group">
@@ -83,7 +78,7 @@
                         {/eq}
                     </div>
 
-                    <label class="checkbox_body">آیا تمایل دارید که نام کاربری به عنوان نام پروفایل انتخاب گردد؟
+                    <label class="checkbox_body">آیا تمایل دارید که ایمیل خود به عنوان نام پروفایل انتخاب گردد؟
                         {@eq key="{admin_info.author_type}" value="name"}
                             <input type="checkbox" name="author_type">
                         {:else}

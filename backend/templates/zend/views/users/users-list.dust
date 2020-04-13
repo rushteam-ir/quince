@@ -23,7 +23,6 @@
                   <tr >
                     <th class="header_list_custom padding_customize" scope="col">ردیف</th>
                     <th class="header_list_custom" scope="col">عکس</th>
-                    <th class="header_list_custom" scope="col">نام کاربری</th>
                     <th class="header_list_custom" scope="col">ایمیل</th>
                     <th class="header_list_custom" scope="col">دسترسی</th>
                     <th class="header_list_custom" scope="col">وضعیت</th>
@@ -45,8 +44,6 @@
                             {/eq}
                         </td>
 
-                        <td class="list_detail_custom">{.username}</td>
-
                         <td class="list_detail_custom">
                             {.email}
                         </td>
@@ -54,8 +51,12 @@
                         <td class="list_detail_custom">
                             {@eq key="{.access}" value="main_admin"}
                                 ادمین اصلی
-                            {:else}
+                            {/eq}
+                            {@eq key="{.access}" value="normal_admin"}
                                 ادمین عادی
+                            {/eq}
+                            {@eq key="{.access}" value="normal_user"}
+                                کاربر
                             {/eq}
                         </td>
                         <td class="list_detail_custom">
@@ -81,7 +82,7 @@
                                     <a class="dropdown-item py-2 text-center" href="{backend_url}users/profile/{._id}">پروفایل</a>
                                     <hr class="m-0">
                                     {@eq key="{admin_info.access}" value="main_admin"}
-                                    {@eq key="{.username}" value="{admin_info.username}"}
+                                    {@eq key="{.email}" value="{admin_info.email}"}
                                     {:else}
                                         {@eq key="{.status}" value="true"}
                                             <a value="مسدود کردن" name="{._id}" class="dropdown-item py-2 text-center user_status">مسدود کردن</a>
