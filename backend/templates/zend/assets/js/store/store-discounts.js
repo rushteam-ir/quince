@@ -8,7 +8,7 @@
 // input add & remove
 $(document).ready(function () {
 
-    let maxField = 10;
+    let maxField = 5;
     let addButton = $('.add_button');
     let wrapper = $('.field_wrapper');
     let fieldHTML = '<div class="my-5">    <div class="d-inline-block">    <label class="d-inline-block" for="">از</label>    <input type="text" class="form-control d-inline-block discount_inp_custom mx-2"></div><div class="d-inline-block">    <label class="d-inline-block mr-1" for="">تا</label>    <input type="text" class="form-control d-inline-block discount_inp_custom mx-2"></div><div class="d-inline-block">    <label class="d-inline-block mr-1" for="">، میزان تخفیف :</label>    <input type="text" class="form-control d-inline-block last_discount_inp_custom mx-2"></div>    </div>';
