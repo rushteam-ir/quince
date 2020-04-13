@@ -54,9 +54,9 @@
                     <div class="box_of_explain_table text-center">
                         <h1 class="text-center padding_of_title">ملورین</h1>
                         <div class="explain_box_table">
-                            <p class="support_option">021-44610035<i class="fa fa-phone ml-2"></i></p>
-                            <p class="support_option">test@example.com <i class="fas fa-envelope ml-2"></i></p>
-                            <p class="support_option">بازار - سلام - خوبی <i class="fas fa-map-marker-alt ml-2"></i></p>
+                            <p class="support_option_table">021-44610035<i class="fa fa-phone ml-2"></i></p>
+                            <p class="support_option_table">test@example.com <i class="fas fa-envelope ml-2"></i></p>
+                            <p class="support_option_table">بازار - سلام - خوبی <i class="fas fa-map-marker-alt ml-2"></i></p>
                             <i class="fab fa-telegram-plane mr-3 social_media_table"></i>
                             <i class="fab fa-facebook-f mr-3 social_media_table"></i>
                             <i class="fab fa-instagram social_media_table"></i>
@@ -72,6 +72,7 @@
         </div>
     </section>
 {!End Explain Table!}
+{!Our Office!}
     <section>
         <div class="container-fluid">
             <div class="row mt-5 mb-5">
@@ -86,6 +87,9 @@
             </div>
         </div>
     </section>
+{!End Our Office!}
+
+{!Why Us!}
     <section>
         <div class="container-fluid">
             <div class="row mt-5 mb-5">
@@ -121,6 +125,6 @@
             </div>
         </div>
     </section>
-
+{!End Why Us!}
 {/body}
 
