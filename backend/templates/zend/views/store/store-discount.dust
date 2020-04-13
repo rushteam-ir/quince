@@ -43,7 +43,6 @@
 
                 <div class="d-inline-block">
                     <label class="d-inline-block" for="">، میزان تخفیف :</label>
-
                     <input type="text" class="form-control d-inline-block last_discount_inp_custom mx-2">
                 </div>
 
