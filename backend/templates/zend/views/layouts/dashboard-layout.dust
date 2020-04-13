@@ -30,7 +30,7 @@
             {@eq key="{admin_info.author_type}" value="name"}
             <p class="d-inline-block nick_name_of_admin_dashbord">{admin_info.first_name} {admin_info.last_name}</p>
             {:else}
-            <p class="d-inline-block nick_name_of_admin_dashbord">{admin_info.username}</p>
+            <p class="d-inline-block nick_name_of_admin_dashbord">{admin_info.email}</p>
             {/eq}
         </div>
         <div class="d-inline-block">

@@ -62,22 +62,21 @@ router.post('/', async(req,res)=>{
 
             let admin_data = {password : newpass_inp};
 
-            await user_model.changePassword(req.session.saved_email, admin_data, (result)=>{
+            let result = await user_model.changePassword(req.session.saved_email, admin_data)
 
-                if(result){
+            if(result){
 
-                    delete req.session.saved_email;
-                    delete req.session.saved_code;
+                delete req.session.saved_email;
+                delete req.session.saved_code;
 
-                    res.redirect(`${config.backend_url}login/?msg=change-success`);
+                res.redirect(`${config.backend_url}login/?msg=change-success`);
 
-                }else{
+            }
+            else{
 
-                    res.redirect(`${config.backend_url}recovery/verify/?code=${req.session.saved_code}&msg=change-fail`);
+                res.redirect(`${config.backend_url}recovery/verify/?code=${req.session.saved_code}&msg=change-fail`);
 
-                }
-
-            });
+            }
 
         }
 

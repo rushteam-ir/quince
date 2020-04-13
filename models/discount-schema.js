@@ -35,6 +35,12 @@ discount_schema.statics = {
 
     },
 
+    check : async function (code_inp) {
+
+        return await discount_model.find({code : code_inp});
+
+    },
+
 };
 
 

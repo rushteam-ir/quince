@@ -12,18 +12,23 @@ frontend.use(async(req,res,next)=>{
         if(find_me){
 
             let admin_data = {
+
                 last_activity : getCurrentDate()
+
             }
 
-            await user_model.editProfile(req.session.admin_id, admin_data, (result)=>{
+            let result = await user_model.editProfile(req.session.admin_id, admin_data)
 
-                if(result){
-                    next();
-                }else{
-                    next();
-                };
+            if(result){
 
-            });
+                next();
+
+            }
+            else{
+
+                next();
+
+            };
 
         }
         else{

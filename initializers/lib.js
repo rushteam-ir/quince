@@ -95,7 +95,11 @@ validation = {
 
             if(!Array.isArray(password_inp)) {
 
-                return '';
+                if(password_inp.length >= 8) {
+
+                    return '';
+
+                }
 
             }
             else{

@@ -25,6 +25,7 @@ router.post('/', async(req,res)=>{
 
     try{
 
+        let can_do = true;
         let {value_inp} = req.body;
         let discount_code = '';
         let valid_value = validation.isSafe(value_inp);
@@ -33,14 +34,28 @@ router.post('/', async(req,res)=>{
             return res.redirect(`${config.backend_url}store/discounts`);
         }
 
-        for(let i = 0; i < 3; i++){
+        while(can_do){
 
-            let code_part = randomString(4) + '-';
-            discount_code += code_part.toLowerCase();
+            discount_code = '';
+
+            for(let i = 0; i < 3; i++){
+
+                let code_part = randomString(4) + '-';
+                discount_code += code_part.toLowerCase();
+
+            }
+
+            discount_code = discount_code.slice(0, -1);
+
+            let check_unique = await discount_model.check(discount_code);
+
+            if(check_unique.length == 0){
+
+                can_do = false;
+
+            }
 
         }
-
-        discount_code = discount_code.slice(0, -1);
 
         let discount_data = {
 

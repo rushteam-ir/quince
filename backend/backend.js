@@ -18,19 +18,18 @@ backend.use(async(req,res,next)=>{
 
             }
 
-            await user_model.editProfile(req.session.admin_id, user_data, (result)=>{
+            let result = await user_model.editProfile(req.session.admin_id, user_data);
 
-                if(result){
+            if(result){
 
-                    next();
+                next();
 
-                }else{
+            }
+            else{
 
-                    next();
+                next();
 
-                };
-
-            });
+            };
 
         }
         else{

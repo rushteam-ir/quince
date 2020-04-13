@@ -36,7 +36,7 @@
                 {@alertSuccess key="logout-success" msg="شما با موفقیت خارج شدید"}{/alertSuccess}
                 {@alertWarn key="captcha-error" msg="کد امنیتی وارد شده صحیح نمی باشد"}{/alertWarn}
                 {@alertError key="inactive-admin" msg="دسترسی شما مسدود می باشد"}{/alertError}
-                {@alertWarn key="incorrect-input" msg="نام کاربری یا رمز عبور صحیح نمی باشد"}{/alertWarn}
+                {@alertWarn key="incorrect-input" msg="ایمیل یا رمز عبور صحیح نمی باشد"}{/alertWarn}
 
                 <div class="error_warning_alert text-right display_none" id="error_field_warning_front"> 
 
@@ -50,8 +50,8 @@
                 <form action="" method="post" name="dashbord_login_form" onsubmit="return adminlogerrors()">
 
                   <div class="form-group">
-                    <label for="email-for-id" class="text-right d-block">نام کاربری</label>
-                    <input type="text" class="form-control dir-rtl dashbord_login_input" id="email-for-id" name="username_inp" value="{login_form.username_inp}" autocomplete="off">
+                    <label for="email-for-id" class="text-right d-block">ایمیل</label>
+                    <input type="text" class="form-control dir-rtl dashbord_login_input" id="email-for-id" name="email_inp" value="{login_form.email_inp}" autocomplete="off">
                   </div>
 
                   <div class="form-group">

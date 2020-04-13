@@ -21,14 +21,14 @@ router.post('/', async(req,res)=>{
 
         if(req.body.change_profile == ''){
 
-            let {username_inp, firstname_inp, lastname_inp, email_inp, phonenumber_inp} = req.body;
+            let {email_inp, firstname_inp, lastname_inp, phonenumber_inp} = req.body;
 
             let last_input = req.session.admin_info;
             let last_checkbox = '';
 
             if(req.body.author_type === 'on'){
 
-                last_checkbox = 'username';
+                last_checkbox = 'email';
 
             }
             else{
@@ -37,7 +37,7 @@ router.post('/', async(req,res)=>{
 
             }
 
-            if(last_input.username == username_inp && last_input.first_name == firstname_inp &&
+            if(last_input.first_name == firstname_inp &&
                 last_input.last_name == lastname_inp && last_input.email == email_inp &&
                 last_input.phone_number == phonenumber_inp && last_input.author_type == last_checkbox &&
                 !req.files){
@@ -46,19 +46,13 @@ router.post('/', async(req,res)=>{
 
             }
 
-            let valid_username = validation.isUsername(username_inp);
             let valid_firstname = validation.isSafe(firstname_inp);
             let valid_lastname = validation.isSafe(lastname_inp);
             let valid_email = validation.isEmail(email_inp);
             let valid_phonenumber = validation.isPhonenumber(phonenumber_inp);
             let author_type = 'name';
 
-            if(valid_username != ''){
-
-                return res.redirect(`${config.backend_url}profile`);
-
-            }
-            else if(valid_firstname != ''){
+            if(valid_firstname != ''){
 
                 return res.redirect(`${config.backend_url}profile`);
 
@@ -81,7 +75,7 @@ router.post('/', async(req,res)=>{
 
             if(req.body.author_type == 'on'){
 
-                author_type = 'username';
+                author_type = 'email';
 
             }
             else{
@@ -93,7 +87,6 @@ router.post('/', async(req,res)=>{
             let admin_id = req.session.admin_id;
             let admin_data = {
 
-                username : username_inp,
                 first_name : firstname_inp,
                 last_name : lastname_inp,
                 email : email_inp,
@@ -133,23 +126,21 @@ router.post('/', async(req,res)=>{
 
             }
 
-            await user_model.editProfile(admin_id, admin_data, (result)=>{
+            let result = await user_model.editProfile(admin_id, admin_data);
 
-                if(result){
+            if(result){
 
-                    req.session.admin_info = result;
-                    backend.locals.admin_info = req.session.admin_info;
+                req.session.admin_info = result;
+                backend.locals.admin_info = req.session.admin_info;
 
-                    res.redirect(`${config.backend_url}profile/?msg=edit-success`);
+                res.redirect(`${config.backend_url}profile/?msg=edit-success`);
 
-                }
-                else{
+            }
+            else{
 
-                    res.redirect(`${config.backend_url}profile/?msg=edit-fail`);
+                res.redirect(`${config.backend_url}profile/?msg=edit-fail`);
 
-                }
-
-            })
+            }
 
         }
         else if(req.body.change_password == ''){
@@ -185,22 +176,20 @@ router.post('/', async(req,res)=>{
 
             if(current_password === req.session.admin_info.password && new_password === confirm_password && new_password != "" && confirm_password != ""){
 
-                await user_model.editProfile(admin_id, admin_data, (result)=>{
+                let result = await user_model.editProfile(admin_id, admin_data);
+q
+                if(result){
 
-                    if(result){
+                    req.session.admin_info = result;
 
-                        req.session.admin_info = result;
+                    res.redirect(`${config.backend_url}profile/?msg=edit-success`);
 
-                        res.redirect(`${config.backend_url}profile/?msg=edit-success`);
+                }
+                else{
 
-                    }
-                    else{
+                    res.redirect(`${config.backend_url}profile/?msg=edit-fail`);
 
-                        res.redirect(`${config.backend_url}profile/?msg=edit-fail`);
-
-                    }
-
-                })
+                }
 
             }
             else{
