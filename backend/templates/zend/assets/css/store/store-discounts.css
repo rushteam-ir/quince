@@ -23,7 +23,7 @@
     padding: 20px .75rem !important;
 }
 
-.padding_customize{
+.padding_customize {
     padding-left: 0px !important;
 }
 
@@ -31,7 +31,7 @@
     padding-top: 24px !important;
 }
 
-.situation_main_field_true{
+.situation_main_field_true {
     background-color: #E6F8F3;
     border-radius: 500px;
     color: #0ABB87;
@@ -41,7 +41,7 @@
     margin: 0 auto;
 }
 
-.situation_main_field_false{
+.situation_main_field_false {
     background-color: #F8D7DA;
     border-radius: 500px;
     color: #ff3748;
@@ -51,15 +51,19 @@
     margin: 0 auto;
 }
 
-.remove_discount{
+.remove_discount {
     color: #5D78FF;
     padding: 0px;
 }
 
-.remove_discount:hover{
+.remove_discount:hover {
     color: #494B74;
 }
 
-.discount_customize{
-    width: 85% !important;
+.discount_customize {
+    width: 262px !important;
+}
+
+.last_discount_customize {
+    width: 184px !important;
 }
