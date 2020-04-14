@@ -87,9 +87,7 @@
                 <thead class="text-center">
                   <tr >
                     <th class="header_list_custom padding_customize" scope="col">ردیف</th>
-                    <th class="header_list_custom" scope="col">کد تخفیف</th>
-                    <th class="header_list_custom" scope="col">مقدار تخفیف</th>
-                    <th class="header_list_custom" scope="col">وضعیت</th>
+                    <th class="header_list_custom" scope="col">نام پکیج تخفیف</th>
                     <th class="header_list_custom" scope="col">حذف</th>
                   </tr>
                 </thead>
@@ -100,23 +98,7 @@
 
                         <th class="list_detail_custom padding_customize" scope="row">{$idx}</th>
 
-                        <td class="list_detail_custom">{.code}</td>
-
-                        <td class="list_detail_custom">{.value}%</td>
-
-                        <td class="list_detail_custom">
-
-                            {@eq key="{.status}" value="true"}
-                                <div class="situation_main_field_true">
-                                    فعال
-                                </div>
-                            {:else}
-                                <div class="situation_main_field_false">
-                                    غیر فعال
-                                </div>
-                            {/eq}
-
-                        </td>
+                        <td class="list_detail_custom">{.package_name}</td>
 
                         <td class="list_detail_custom">
 
