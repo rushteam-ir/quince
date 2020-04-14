@@ -2,6 +2,7 @@ $(document).on('change', '.end_class', function(e) {
 
     let index = parseInt($(this).attr('id')) + 1;
     $('.start_class_' + index.toString()).val($(this).val());
+    $('.start_class_' + index.toString()).attr('value', $(this).val());
 
     if($(this).val() != ''){
 

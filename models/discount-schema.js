@@ -1,10 +1,9 @@
 // MongoDB schema
 let discount_schema = new mongoose.Schema({
 
-    code : String,
-    value : String,
-    row : Number,
-    status : Boolean
+    code_id : String,
+    package_name : String,
+    values : Array
 
 });
 
@@ -35,9 +34,9 @@ discount_schema.statics = {
 
     },
 
-    check : async function (code_inp) {
+    checkId : async function (code_id) {
 
-        return await discount_model.find({code : code_inp});
+        return await discount_model.findOne({code_id : code_id});
 
     },
 

@@ -32,12 +32,12 @@
 
             <div class="form-group">
                 <label for="discount_name">نام پکیج تخفیف :</label>
-                <input type="email" name="package_name_inp" class="form-control" id="discount_name" >
+                <input type="text" name="package_name_inp" class="form-control" id="discount_name" >
             </div>
 
             <div class="form-group">
-                <label for="discont_count">تعداد کد ها :</label>
-                <input type="email" name="count_inp" class="form-control" id="discont_count" >
+                <label for="discount_count">تعداد کد ها :</label>
+                <input type="text" name="count_inp" class="form-control" id="discount_count" >
             </div>
 
             {#discount_slot_default}
@@ -64,9 +64,9 @@
                 <div class="d-inline-block">
                     <label class="d-inline-block" for="">، میزان تخفیف :</label>
                     {@eq key="{.}" value="1"}
-                        <input type="number" name="discount_inp" class="form-control d-inline-block last_discount_inp_custom discount_class_{.}">
+                        <input type="number" name="discount_inp[]" class="form-control d-inline-block last_discount_inp_custom discount_class_{.}">
                     {:else}
-                        <input type="number" name="discount_inp" class="form-control d-inline-block last_discount_inp_custom discount_class_{.}" disabled>
+                        <input type="number" name="discount_inp[]" class="form-control d-inline-block last_discount_inp_custom discount_class_{.}" disabled>
                     {/eq}
                 </div>
 
