@@ -12,19 +12,19 @@ router.get('/', async(req,res)=>{
 
             if(result){
 
-                return res.redirect(`${config.backend_url}store/discounts`);
+                return res.redirect(`${config.backend_url}store/discount`);
 
             }
             else{
 
-                return res.redirect(`${config.backend_url}store/discounts`);
+                return res.redirect(`${config.backend_url}store/discount`);
 
             }
 
         }
         else{
 
-            return res.redirect(`${config.backend_url}store/discounts`);
+            return res.redirect(`${config.backend_url}store/discount`);
 
         }
 
