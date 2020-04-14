@@ -82,15 +82,25 @@
                             <div class="box_of_img_template">
     
                                 <div class="box_of_img_template img-box">
-                                    <div class="img-show"></div>
-                                    <input type="file" name="product_main_image" id="product_img_main" class="input-file-custom">
-                                    <label for="product_img_main" class="btn btn-tertiary2 js-labelFile ">
+                                    <div class="img-show">
+                                        {@eq key="{admin_info.avatar}" value=""}
+
+                                        {:else}
+                                            <div class="remove_parent">
+                                                <img class="uploading_img_from_brows" src="media/avatars/{admin_info.avatar}"><div name="0" class="remove_img_icon avatar_del"></div>
+                                            </div>
+                                        {/eq}
+                                    </div>
+                                    <input type="file" name="avatar" id="avatar_img" class="input-file-custom">
+                                    <label for="avatar_img" class="btn btn-tertiary2 js-labelFile ">
                                         <i class="icon fa fa-check"></i>
                                         <span class="js-fileName mr-2">انتخاب عکس</span>
                                     </label>
                                 </div>
     
                             </div>
+
+                            <small id="avatar" class="form-text text-muted">حجم مجاز برای اپلود تصویر پروفایل {limited_avatars_size} مگابایت است.</small>
                         </div>
 
                     </div>
