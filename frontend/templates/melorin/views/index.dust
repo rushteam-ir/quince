@@ -31,7 +31,7 @@
                 <div class="col-10 offset-1 col-sm-6 offset-sm-0 col-lg-3 offset-lg-0">
                     <div class="text-center">
                         <i class="far fa-shield-check font_size_of_services mt-3 bg_credit_card"></i>
-                        <h4 class="mt-4 mb-3 service_title_of_img">
+                        <h4 class="mt-2 mb-3 service_title_of_img">
                             کیفیت بالا
                         </h4>
                         <p class="info_of_service">
@@ -43,7 +43,7 @@
                 <div class="col-10 offset-1 col-sm-6 offset-sm-0 col-lg-3 offset-lg-0">
                     <div class="text-center">
                         <i class="fal fa-user-headset font_size_of_services mt-3 bg_user_support"></i>
-                        <h4 class="mt-4 mb-3 service_title_of_img">
+                        <h4 class="mt-2 mb-3 service_title_of_img">
                             پشتیبانی 24 ساعته
                         </h4>
                         <p class="info_of_service">
@@ -55,7 +55,7 @@
                 <div class="col-10 offset-1 col-sm-6 offset-sm-0 col-lg-3 offset-lg-0">
                     <div class="text-center">
                         <i class="fal fa-gift font_size_of_services mt-3 bg_gift"></i>
-                        <h4 class="mt-4 mb-3 service_title_of_img">
+                        <h4 class="mt-2 mb-3 service_title_of_img">
                             کوپن های تخفیف
                         </h4>
                         <p class="info_of_service">
@@ -67,7 +67,7 @@
                 <div class="col-10 offset-1 col-sm-6 offset-sm-0 col-lg-3 offset-lg-0">
                     <div class="text-center ">
                         <i class="fal fa-truck-moving font_size_of_services mt-3 bg_truck"></i>
-                        <h4  class="mt-4 mb-3 service_title_of_img">
+                        <h4  class="mt-2 mb-3 service_title_of_img">
                             ارسال رایگان
                         </h4>
                         <p class="info_of_service">
@@ -82,13 +82,10 @@
 {!End Services!}
 {!Sale Product Category!}
     <section>
-        <div class="container-fluid">
-            <div class="row mt-5">
-                <div class="col-10 offset-1 text-center">
-                    <h3 class="title_part_of_page">دسته بندی محصولات</h3>
-                </div>
+        <div class="container">
+            <div class="row ">
             </div>
-            <div class="row mt-5">
+            <!-- <div class="row mt-5">
                 <div class="col-12  col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-0 mb-5">
                     <div class="sale_product_category">
                         <figure class="figure_of_img_product_category">
@@ -127,6 +124,21 @@
                     </div>
                 </div>
                 
+            </div> -->
+
+            <div class="row">
+                <div class="col-4">
+                    <div class="w-100 main_field_of_category">
+                        <img class="w-100 h-100 category_img_custom" src="img/category-1.jpg" alt="">
+                        <div class="field_of_category_info">
+
+                            <p class="header_of_category m-0">جوراب های زنانه</p>
+                            <small class="small_of_category">تا 10 درصد تخفیف</small>
+                            <a href="#" class="btn btn_of_category">همین الان بخر</a>
+
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
