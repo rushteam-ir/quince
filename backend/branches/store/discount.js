@@ -29,24 +29,48 @@ router.post('/', async(req,res)=>{
         let end_value = req.body['end_inp[]'];
         let discount_value = req.body['discount_inp[]'];
 
+        let code = '';
+        let code_id = '';
+
         let first_while = true;
 
+        // Generate Code Id
         while(first_while){
 
-            let code_id = '';
+            code_id = '';
             code_id = randomString(4).toLowerCase();
 
-            let result = await discount_model.checkId(code_id);
+            // let result = await discount_model.checkId(code_id);
+            //
+            // if(result){
+            //
+            //     code += code_id + '-';
+            //     first_while = false;
+            //
+            // }
 
-            if(result){
-
-                first_while = false;
-
-            }
+            first_while = false;
 
         }
 
+        // Generate Whole Code
+        for(let j = 0; j < parseInt(count_inp); j++){
 
+            code = code_id + '-';
+
+            for(let i = 0; i < 4; i++){
+
+                let code_part = '';
+                code_part = randomString(4).toLowerCase() + '-'
+                code += code_part;
+
+            }
+
+            code = code.slice(0, -1);
+
+            log(code);
+
+        }
 
 
 
