@@ -80,7 +80,7 @@
                         {/eq}
                         <td>
                             <span class="cat_del" name="{._id}" class="table_edit_and_delete">
-                                <i class="far fa-trash-alt"></i>
+                                <i class="fas fa-trash-alt"></i>
                             </span>
                         </td>
                     </tr>
