@@ -102,7 +102,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-8">
                     <div class="w-100 main_field_of_category">
                         <img class="w-100 h-100 category_img_custom" src="img/category-2.jpg" alt="">
                         <div class="field_of_category_info">
@@ -118,7 +118,23 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-6 mt-5">
+                    <div class="w-100 main_field_of_category">
+                        <img class="w-100 h-100 category_img_custom" src="img/child.jpg" alt="">
+                        <div class="field_of_category_info">
+
+                            <p class="header_of_category mb-2">جوراب های زنانه</p>
+                            <small class="small_of_category">تا 10 درصد تخفیف</small>   
+
+                            <div>
+                                <a href="#" class="btn btn_of_category">همین الان بخر</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 mt-5">
                     <div class="w-100 main_field_of_category">
                         <img class="w-100 h-100 category_img_custom" src="img/child.jpg" alt="">
                         <div class="field_of_category_info">
