@@ -126,19 +126,55 @@
                 
             </div> -->
 
-            <div class="row">
-                <div class="col-4">
+            <div class="row mt-5">
+                <div class="col-12 col-md-4">
                     <div class="w-100 main_field_of_category">
-                        <img class="w-100 h-100 category_img_custom" src="img/category-1.jpg" alt="">
+                        <img class="w-100 h-100 category_img_custom" src="img/womman.jpg" alt="">
                         <div class="field_of_category_info">
 
-                            <p class="header_of_category m-0">جوراب های زنانه</p>
-                            <small class="small_of_category">تا 10 درصد تخفیف</small>
-                            <a href="#" class="btn btn_of_category">همین الان بخر</a>
+                            <p class="header_of_category mb-2">جوراب های زنانه</p>
+                            <small class="small_of_category">تا 10 درصد تخفیف</small>   
+
+                            <div>
+                                <a href="#" class="btn btn_of_category">همین الان بخر</a>
+                            </div>
 
                         </div>
                     </div>
                 </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="w-100 main_field_of_category">
+                        <img class="w-100 h-100 category_img_custom" src="img/category-2.jpg" alt="">
+                        <div class="field_of_category_info">
+
+                            <p class="header_of_category mb-2">جوراب های زنانه</p>
+                            <small class="small_of_category">تا 10 درصد تخفیف</small>   
+
+                            <div>
+                                <a href="#" class="btn btn_of_category">همین الان بخر</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="w-100 main_field_of_category">
+                        <img class="w-100 h-100 category_img_custom" src="img/child.jpg" alt="">
+                        <div class="field_of_category_info">
+
+                            <p class="header_of_category mb-2">جوراب های زنانه</p>
+                            <small class="small_of_category">تا 10 درصد تخفیف</small>   
+
+                            <div>
+                                <a href="#" class="btn btn_of_category">همین الان بخر</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -149,7 +185,7 @@
         <div class="container ">
             <div class="row mb-5">
                 <div class="col-10 offset-1 text-center">
-                    <h3 class="title_part_of_page">آخرین محصولات</h3>
+                    <h3 class="title_part_of_page mt-5">آخرین محصولات</h3>
                 </div>
             </div>
             <div class="row mt-4 mb-5">

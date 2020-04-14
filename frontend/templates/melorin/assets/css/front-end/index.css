@@ -461,15 +461,29 @@
     background-color: #00000078;
     z-index: 10;
     border-radius: 10px;
+    padding-right: 40px;
 }
 
 .header_of_category {
     font-family: main-font;
     font-size: 1.7rem;
+    margin-top: 90px !important;
 }
 
 .btn_of_category {
-    
+    color: #F4BF0B;
+    font-family: main-font;
+    padding-right: 0px;
+    font-size: 1.1rem;
+
+}
+
+.btn_of_category:hover{
+    color: #F4BF0B;
+}
+
+.small_of_category{
+    font-size: 1.1rem;
 }
 
 /*Fade In Left Animation*/
