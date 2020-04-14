@@ -57,9 +57,8 @@
                     <input type="text" name="discount_inp" class="form-control d-inline-block last_discount_inp_custom">
                 </div>
 
-                <a href="javascript:void(0);" class="add_button" title="Add field" onclick="addInp()"><i class="fas fa-plus mt-2"></i></a>
-
             </div>    
+            
             
             <button type="submit" class="btn btn_of_discount">ثبت کد تخفیف</button>
 
