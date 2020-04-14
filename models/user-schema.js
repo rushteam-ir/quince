@@ -40,7 +40,7 @@ user_schema.statics = {
 
     get : async function () {
 
-        return await user_model.find();
+        return await user_model.find().sort({access : 1});
 
     },
 
@@ -62,8 +62,19 @@ user_schema.statics = {
 
         user_data.row = list.length + 1;
 
-        let new_user = new user_model(user_data);
-        return await new_user.save();
+        let find_user = await user_model.findOne({email : user_data.email});
+
+        if(!find_user){
+
+            let new_user = new user_model(user_data);
+            return await new_user.save();
+
+        }
+        else{
+
+            return null
+
+        }
 
     },
 

@@ -40,7 +40,7 @@ router.post('/', async(req,res)=>{
 
         if(valid_email != ''){
 
-            res.redirect(`${config.backend_url}login/`);
+            res.redirect(`${config.backend_url}login`);
 
         }
         else if(valid_password != ''){
