@@ -35,8 +35,20 @@ category_schema.statics = {
             parent : parent
 
         });
-        
-        return await new_category.save();
+
+        let find_cat = await category_model.findOne({title : title_inp});
+
+        if(!find_cat){
+
+            let new_cat = new category_model(new_category);
+            return await new_cat.save();
+
+        }
+        else{
+
+            return null
+
+        }
 
     },
 
