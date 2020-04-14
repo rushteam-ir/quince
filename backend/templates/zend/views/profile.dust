@@ -57,7 +57,7 @@
                     
                     <div class="form-group d-inline-block">
                         <label for="avatar">تصویر پروفایل</label>
-                        {@eq key="{admin_info.avatar}" value=""}
+                        <!-- {@eq key="{admin_info.avatar}" value=""}
                             
                             <div class="form-group">
                                 <input type="file" name="avatar" id="avatar" class="input-file-custom">
@@ -75,7 +75,24 @@
                             <div class="form-group">
                                 <button type="submit" name="delete_avatar" class="btn profile_delete" onclick="return deleteCall()">حذف</button>
                             </div>
-                        {/eq}
+                        {/eq} -->
+
+                        <div class="field_of_img_template">
+
+                            <div class="box_of_img_template">
+    
+                                <div class="box_of_img_template img-box">
+                                    <div class="img-show"></div>
+                                    <input type="file" name="product_main_image" id="product_img_main" class="input-file-custom">
+                                    <label for="product_img_main" class="btn btn-tertiary2 js-labelFile ">
+                                        <i class="icon fa fa-check"></i>
+                                        <span class="js-fileName mr-2">انتخاب عکس</span>
+                                    </label>
+                                </div>
+    
+                            </div>
+                        </div>
+
                     </div>
 
                     <label class="checkbox_body">آیا تمایل دارید که ایمیل خود به عنوان نام پروفایل انتخاب گردد؟

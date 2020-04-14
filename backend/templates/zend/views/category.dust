@@ -59,7 +59,7 @@
                 <input id="category_search" type="text" class="form-control search_category_inp" placeholder="جستجو">
             </div>
 
-            <table class="table table-bordered mt-4">
+            <table class="table mt-4">
                 <thead class="text-center">
                   <tr>
                     <th scope="col">ردیف</th>
