@@ -1,9 +1,11 @@
 // MongoDB schema
 let discount_schema = new mongoose.Schema({
 
-    code_id : String,
     package_name : String,
-    values : Array
+    code_id : String,
+    codes : Array,
+    values : Array,
+    row : Number
 
 });
 
@@ -12,12 +14,9 @@ discount_schema.statics = {
     add : async function (discount_data) {
 
         let list = await discount_model.find();
-
-        discount_data.status = true;
         discount_data.row = list.length + 1;
 
         let new_discount = new discount_model(discount_data);
-        
         return await new_discount.save();
 
     },

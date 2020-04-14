@@ -38,22 +38,21 @@ router.post('/', async(req,res)=>{
         while(first_while){
 
             code_id = '';
-            code_id = randomString(4).toLowerCase();
+            code_id = randomString(4);
 
-            // let result = await discount_model.checkId(code_id);
-            //
-            // if(result){
-            //
-            //     code += code_id + '-';
-            //     first_while = false;
-            //
-            // }
+            let result = await discount_model.checkId(code_id);
 
-            first_while = false;
+            if(!result){
+
+                code += code_id + '-';
+                first_while = false;
+
+            }
 
         }
 
         // Generate Whole Code
+        let codes = [];
         for(let j = 0; j < parseInt(count_inp); j++){
 
             code = code_id + '-';
@@ -61,21 +60,59 @@ router.post('/', async(req,res)=>{
             for(let i = 0; i < 4; i++){
 
                 let code_part = '';
-                code_part = randomString(4).toLowerCase() + '-'
+                code_part = randomString(4) + '-'
                 code += code_part;
 
             }
 
             code = code.slice(0, -1);
+            codes.push({
 
-            log(code);
+                code : code,
+                status : true
+
+            });
 
         }
 
+        // Generate Values for all price amounts
+        let amounts = [];
 
+        for(let i = 0; i < parseInt(end_value.length); i++){
 
-        return res.redirect(`${config.backend_url}store/discount/?msg=add-success`);
+            let amount_sample = {
 
+                start : end_value[i-1],
+                end : end_value[i],
+                value : discount_value[i],
+
+            }
+
+            amounts.push(amount_sample);
+
+        }
+
+        let new_discount = {
+
+            package_name : package_name_inp,
+            code_id : code_id,
+            codes : codes,
+            values : amounts
+
+        }
+
+        let result = await discount_model.add(new_discount);
+
+        if(result){
+
+            return res.redirect(`${config.backend_url}store/discount/?msg=add-success`);
+
+        }
+        else{
+
+            return res.redirect(`${config.backend_url}store/discount/?msg=add-fail`);
+
+        }
 
     }
     catch (error) {
