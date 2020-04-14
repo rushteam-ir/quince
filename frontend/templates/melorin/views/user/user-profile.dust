@@ -1,0 +1,17 @@
+{>"layouts/layout"/}
+
+{<title}
+    <title>پروفایل</title>
+{/title}
+{<css}
+    <link rel="stylesheet" href="css/user/user-profile.css">
+{/css}
+{<js}
+{/js}
+
+
+{<body}
+
+
+{/body}
+
