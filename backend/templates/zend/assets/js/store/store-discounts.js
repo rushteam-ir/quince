@@ -1,56 +1,9 @@
-// $(document).ready(function () {
+$(document).on('change', '.end_class', function(e) {
 
-//     let maxField = 5;
-//     let addButton = $('.add_button');
-//     let wrapper = $('.field_wrapper');
-//     let x = 1;
-//     var i;
+    let index = parseInt($(this).attr('id')) + 1;
+    $('.start_class_' + index.toString()).val($(this).val());
 
-//     $(addButton).click(function () {
-
-//         if (x < maxField) {
-
-//             x++;
-//             let fieldHTML = '<div class="my-5">    <div class="d-inline-block">    <label class="d-inline-block" for="">شروع تخفیف از :</label>    <input type="text"  name="start_inp[]" class="form-control d-inline-block discount_inp_custom mx-2 start_class"  disabled></div><div class="d-inline-block">    <label class="d-inline-block mr-1" for="">تا</label>    <input type="text" placeholder="&#8734" class="form-control d-inline-block discount_inp_custom mx-2 end_class"></div><div class="d-inline-block">    <label class="d-inline-block mr-1" for="">، میزان تخفیف :</label>    <input type="text" class="form-control d-inline-block last_discount_inp_custom mx-2"></div> <a href="javascript:void(0);" class="remove_button"><i class="fas fa-minus mt-2"></i></a>   </div>';
-//             $(wrapper).append(fieldHTML);
-
-//             var start = document.getElementsByClassName('start_class');
-//             var end = document.getElementsByClassName('end_class');
-
-
-//             for (i = 0; i <= start.length; i++) {
-
-//                 var end_val = end[i].value
-//                 start[i].setAttribute('value', end_val);
-
-//             }
-
-//         }
-
-//     });
-
-//     $(wrapper).on('click', '.remove_button', function (e) {
-
-//         e.preventDefault();
-//         $(this).parent('div').remove();
-//         x--;
-
-//     });
-
-// });
-
-
-// input add & remove
-// $(document).on('change', '.end_class', function(e) {
-//
-//     let index = parseInt($(this).attr('id')) + 1;
-//     $('.start_class_' + index.toString()).val($(this).val());
-//
-// });
-
-
-
-
+});
 
 
 
