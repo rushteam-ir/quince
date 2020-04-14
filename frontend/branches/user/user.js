@@ -24,6 +24,6 @@ const factor = require('./factor');
 router.use('/register', register);
 router.use('/login', login);
 router.use('/profile', profile);
-router.use('/factor', profile);
+router.use('/factor', factor);
 
 module.exports = router;
