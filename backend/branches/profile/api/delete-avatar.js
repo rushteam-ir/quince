@@ -12,27 +12,25 @@ router.get('/', async(req,res)=>{
         };
         let avatar_path = `${backend_upload_dir}avatars/${req.session.admin_info.avatar}`;
 
-        await user_model.editProfile(admin_id, admin_data, (result)=>{
+        let result =await user_model.editProfile(admin_id, admin_data)
 
-            if(result){
+        if(result){
 
-                try{
-                    fs.unlinkSync(avatar_path);
-                }
-                catch(e){
-
-                }
-                req.session.admin_info.avatar = '';
-                res.redirect(`${config.backend_url}profile`);
+            try{
+                fs.unlinkSync(avatar_path);
+            }
+            catch(e){
 
             }
-            else{
+            req.session.admin_info.avatar = '';
+            res.redirect(`${config.backend_url}profile`);
 
-                res.redirect(`${config.backend_url}profile`);
+        }
+        else{
 
-            }
+            res.redirect(`${config.backend_url}profile`);
 
-        })
+        }
 
     }
     catch(error) {
