@@ -19,9 +19,11 @@ router.get('/', async(req, res)=>{
 const register = require('./register');
 const login = require('./login');
 const profile = require('./profile');
+const factor = require('./factor');
 
 router.use('/register', register);
 router.use('/login', login);
 router.use('/profile', profile);
+router.use('/factor', profile);
 
 module.exports = router;
