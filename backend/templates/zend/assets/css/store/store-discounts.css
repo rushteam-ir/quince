@@ -60,11 +60,20 @@
     color: #494B74;
 }
 
-.discount_inp_custom{
+.discount_inp_custom {
     margin: 0 12px;
     width: 200px;
 }
-.last_discount_inp_custom{
+
+.last_discount_inp_custom {
     width: 100px;
     margin: 0 14px;
+}
+
+.btn_of_discount {
+    background-color: #5D78FF;
+    color: white;
+}
+.btn_of_discount:hover{
+    background-color: #3758FF;
 }
