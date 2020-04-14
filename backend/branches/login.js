@@ -40,17 +40,17 @@ router.post('/', async(req,res)=>{
 
         if(valid_email != ''){
 
-            res.redirect(`${config.backend_url}login`);
+            res.redirect(`${config.backend_url}login/?a=1`);
 
         }
         else if(valid_password != ''){
 
-            res.redirect(`${config.backend_url}login`);
+            res.redirect(`${config.backend_url}login/?a=2`);
 
         }
         else if(valid_captcha != ''){
 
-            res.redirect(`${config.backend_url}login`);
+            res.redirect(`${config.backend_url}login/?a=3`);
 
         }
         else if(captcha_inp.toLowerCase()!= req.session.captcha){
