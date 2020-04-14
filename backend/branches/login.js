@@ -40,6 +40,8 @@ router.post('/', async(req,res)=>{
 
         if(valid_email != ''){
 
+            log(valid_email);
+            log(email_inp);
             res.redirect(`${config.backend_url}login/?a=1`);
 
         }
