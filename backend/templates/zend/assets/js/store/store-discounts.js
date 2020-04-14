@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    let maxField = 10;
+    let maxField = 5;
     let addButton = $('.add_button');
     let wrapper = $('.field_wrapper');
     let x = 1;
@@ -11,10 +11,10 @@ $(document).ready(function () {
         if (x < maxField) {
 
             x++;
-            let fieldHTML = '<div class="my-5">    <div class="d-inline-block">    <label class="d-inline-block" for="">شروع تخفیف از قیمت :</label>    <input type="text"  name="start_inp[]" class="form-control d-inline-block discount_inp_custom mx-2 start_class_value start_class_'+ x.toString() +'"  disabled></div><div class="d-inline-block">    <label class="d-inline-block mr-1" for="">تا</label>    <input type="text" placeholder="&#8734" id="'+ x.toString() + '" class="form-control d-inline-block discount_inp_custom mx-2 end_class"></div><div class="d-inline-block">    <label class="d-inline-block mr-1" for="">، میزان تخفیف :</label>    <input type="text" class="form-control d-inline-block last_discount_inp_custom mx-2"></div> <a href="javascript:void(0);" class="remove_button"><i class="fas fa-minus mt-2"></i></a>   </div>';
+            let fieldHTML = '<div class="my-5">    <div class="d-inline-block">    <label class="d-inline-block" for="">شروع تخفیف از :</label>    <input type="text"  name="start_inp[]" class="form-control d-inline-block discount_inp_custom mx-2 start_class"  disabled></div><div class="d-inline-block">    <label class="d-inline-block mr-1" for="">تا</label>    <input type="text" placeholder="&#8734" class="form-control d-inline-block discount_inp_custom mx-2 end_class"></div><div class="d-inline-block">    <label class="d-inline-block mr-1" for="">، میزان تخفیف :</label>    <input type="text" class="form-control d-inline-block last_discount_inp_custom mx-2"></div> <a href="javascript:void(0);" class="remove_button"><i class="fas fa-minus mt-2"></i></a>   </div>';
             $(wrapper).append(fieldHTML);
 
-            var start = document.getElementsByClassName('start_class_value');
+            var start = document.getElementsByClassName('start_class');
             var end = document.getElementsByClassName('end_class');
 
 
@@ -37,21 +37,16 @@ $(document).ready(function () {
 
     });
 
-    $('.end_class').change(function() {
-        $('.start_class_2').val($(this).val());
-    });
-
-});
-
-$(document).on('change', '.end_class', function(e) {
-
-    let index = parseInt($(this).attr('id')) + 1;
-    $('.start_class_' + index.toString()).val($(this).val());
-
 });
 
 
 // input add & remove
+// $(document).on('change', '.end_class', function(e) {
+//
+//     let index = parseInt($(this).attr('id')) + 1;
+//     $('.start_class_' + index.toString()).val($(this).val());
+//
+// });
 
 
 

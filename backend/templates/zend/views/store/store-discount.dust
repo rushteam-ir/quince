@@ -43,13 +43,13 @@
             <div class="field_wrapper my-5">
 
                 <div class="d-inline-block">
-                    <label class="d-inline-block" for="">شروع تخفیف از قیمت : </label>
-                    <input type="text" value="0" name="start_inp[]" class="form-control d-inline-block discount_inp_custom start_class" disabled>
+                    <label class="d-inline-block" for="">شروع تخفیف از : </label>
+                    <input type="text" value="0" name="start_inp" class="form-control d-inline-block discount_inp_custom" disabled>
                 </div>
 
                 <div class="d-inline-block">
                     <label class="d-inline-block" for=""> تا </label>
-                    <input type="text" placeholder="&#8734" name="end_inp[]" class="form-control d-inline-block discount_inp_custom end_class">
+                    <input type="text" placeholder="&#8734" name="end_inp" class="form-control d-inline-block discount_inp_custom end_class">
                 </div>
 
                 <div class="d-inline-block">
