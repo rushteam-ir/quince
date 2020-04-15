@@ -116,7 +116,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 category_mt_custom">
+                <div class="col-12 col-md-8 category_mt_custom">
                     <div class="w-100 main_field_of_category">
                         <img class="w-100 h-100 category_img_custom" src="img/man-socks.jpg" alt="">
                         <div class="field_of_category_info">
@@ -132,7 +132,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 category_mt_custom">
+                <div class="col-12 col-md-4 category_mt_custom">
                     <div class="w-100 main_field_of_category">
                         <img class="w-100 h-100 category_img_custom" src="img/child.jpg" alt="">
                         <div class="field_of_category_info">
