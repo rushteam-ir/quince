@@ -30,20 +30,20 @@ $(document).on('change', '.end_class', function(e) {
 /*
 
                < 0
-                //>   Rush Team
+                //>   Polybius
                 \\
 
  */
 
 
-// Delete discount code
+//Delete discount code
 $('.remove_discount').on('click', function (e) {
 
     let discount_id = $(e.currentTarget).attr('name');
 
     Swal.fire({
-        title: 'حذف کد تخفیف',
-        text: "آیا از حذف این کد تخفیف مطمئن هستید ؟",
+        title: 'حذف کل پکیج تخفیف',
+        text: "آیا از حذف این پکیج تخفیف مطمئن هستید ؟ توجه فرمایید که ممکن هست هنوز کد های فعالی داخل پکیج وجود داشته باشند",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
@@ -54,7 +54,7 @@ $('.remove_discount').on('click', function (e) {
         if (result.value) {
             Swal.fire({
                 title: 'حذف شد',
-                text: 'کد تخفیف مور نظر با موفقیت حذف شد برای تایید نهایی کلیک کنید',
+                text: 'پکیج تخفیف مور نظر با موفقیت حذف شد برای تایید نهایی کلیک کنید',
                 icon: 'success',
                 confirmButtonText: 'تایید',
             }).then((result) => {

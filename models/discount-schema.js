@@ -5,6 +5,10 @@ let discount_schema = new mongoose.Schema({
     code_id : String,
     codes : Array,
     values : Array,
+    codes_number : Number,
+    codes_active : Number,
+    registration_date : String,
+    expiration_date : String,
     row : Number
 
 });
@@ -15,6 +19,7 @@ discount_schema.statics = {
 
         let list = await discount_model.find();
         discount_data.row = list.length + 1;
+        discount_data.registration_date = getCurrentDate();
 
         let new_discount = new discount_model(discount_data);
         return await new_discount.save();

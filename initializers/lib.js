@@ -9,7 +9,7 @@ getCurrentDate = function() {
 
     let jdate = new JalaliDate;
 
-    return(jdate.format('dddd DD MMMM YYYY'));
+    return(jdate.format('YYYY/MM/DD'));
 };
 
 isUndefined = function (obj) {
