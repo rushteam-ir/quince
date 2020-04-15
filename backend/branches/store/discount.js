@@ -68,8 +68,7 @@ router.post('/', async(req,res)=>{
             code = code.slice(0, -1);
             codes.push({
 
-                code : code,
-                status : true
+                code : code
 
             });
 
@@ -97,7 +96,9 @@ router.post('/', async(req,res)=>{
             package_name : package_name_inp,
             code_id : code_id,
             codes : codes,
-            values : amounts
+            values : amounts,
+            codes_number : parseInt(count_inp),
+            codes_active : parseInt(count_inp)
 
         }
 

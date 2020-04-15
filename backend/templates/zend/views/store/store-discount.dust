@@ -1,10 +1,10 @@
 {>"layouts/dashboard-layout"/}
 {<css} 
-    <link rel="stylesheet" href="css/store/store-discounts.css">
+    <link rel="stylesheet" href="css/store/store-discount.css">
     <link rel="stylesheet" href="css/general/error.css">
 {/css}
 {<js} 
-    <script src="js/store/store-discounts.js"></script>
+    <script src="js/store/store-discount.js"></script>
     <script src="js/general/error.js"></script>
 {/js}
 
@@ -88,6 +88,11 @@
                   <tr >
                     <th class="header_list_custom padding_customize" scope="col">ردیف</th>
                     <th class="header_list_custom" scope="col">نام پکیج تخفیف</th>
+                    <th class="header_list_custom" scope="col">کل کد ها</th>
+                    <th class="header_list_custom" scope="col">کد های فعال</th>
+                    <th class="header_list_custom" scope="col">تاریخ ثبت</th>
+                    <th class="header_list_custom" scope="col">تاریخ انقضا</th>
+                    <th class="header_list_custom" scope="col">چاپ</th>
                     <th class="header_list_custom" scope="col">حذف</th>
                   </tr>
                 </thead>
@@ -100,6 +105,22 @@
 
                         <td class="list_detail_custom">{.package_name}</td>
 
+                        <td class="list_detail_custom">{.codes_number}</td>
+
+                        <td class="list_detail_custom">{.codes_active}</td>
+
+                        <td class="list_detail_custom">{.registration_date}</td>
+
+                        <td class="list_detail_custom">{.expiration_date}</td>
+
+                        <td class="list_detail_custom">
+
+                            <button class="btn print_discount remove_discount" name="{._id}">
+                                <i class="fas fa-print"></i>
+                            </button>
+
+                        </td>
+
                         <td class="list_detail_custom">
 
                             <button class="btn remove_discount" name="{._id}">
@@ -107,6 +128,7 @@
                             </button>
 
                         </td>
+
                   </tr>
                  {/list}
 
