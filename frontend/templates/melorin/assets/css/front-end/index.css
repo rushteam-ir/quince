@@ -350,8 +350,7 @@
 }
 
 .main_product_slider:hover{
-    transform: scale(0.9);
-    border-radius: 10px;
+    transform: scale(0.97);
 }
 
 .info_box_slider{
