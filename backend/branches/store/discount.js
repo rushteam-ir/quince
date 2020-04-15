@@ -68,8 +68,7 @@ router.post('/', async(req,res)=>{
             code = code.slice(0, -1);
             codes.push({
 
-                code : code,
-                status : true
+                code : code
 
             });
 

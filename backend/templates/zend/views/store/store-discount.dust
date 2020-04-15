@@ -92,6 +92,7 @@
                     <th class="header_list_custom" scope="col">کد های فعال</th>
                     <th class="header_list_custom" scope="col">تاریخ ثبت</th>
                     <th class="header_list_custom" scope="col">تاریخ انقضا</th>
+                    <th class="header_list_custom" scope="col">چاپ</th>
                     <th class="header_list_custom" scope="col">حذف</th>
                   </tr>
                 </thead>
@@ -114,11 +115,20 @@
 
                         <td class="list_detail_custom">
 
+                            <button class="btn print_discount remove_discount" name="{._id}">
+                                <i class="fas fa-print"></i>
+                            </button>
+
+                        </td>
+
+                        <td class="list_detail_custom">
+
                             <button class="btn remove_discount" name="{._id}">
                                 <i class="fas fa-trash-alt"></i>
                             </button>
 
                         </td>
+
                   </tr>
                  {/list}
 
