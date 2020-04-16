@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/general/bootstrap.css">
     <link rel="stylesheet" href="css/general/fontawsome.css">
-    <link rel="stylesheet" href="css/general/slick.css">
     <link rel="stylesheet" href="css/general/animate.css">
     <link rel="stylesheet" href="css/general/layout.css">
     <link rel="stylesheet" href="css/general/general.css">
@@ -172,7 +171,6 @@
     <script src="js/general/jquery.js"></script>
     <script src="js/general/popper.js"></script>
     <script src="js/general/bootstrap.js"></script>
-    <script src="js/general/slick.js"></script>
     <script src="js/general/wow.js"></script>
     <script src="js/general/layout.js"></script>
     {+js/}

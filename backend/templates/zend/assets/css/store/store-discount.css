@@ -74,6 +74,17 @@
     background-color: #5D78FF;
     color: white;
 }
-.btn_of_discount:hover{
+
+.btn_of_discount:hover {
     background-color: #3758FF;
+}
+
+.data_inp_custom{
+    margin: 0 12px;
+    width: 90px;
+}
+
+.header_date{
+    font-family: main-font;
+    margin-bottom: .5rem;
 }

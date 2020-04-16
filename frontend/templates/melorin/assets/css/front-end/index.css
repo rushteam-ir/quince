@@ -345,7 +345,7 @@
 
     overflow: hidden;
     background-color: white;
-    padding: 80px 0px;
+    padding-top: 20px;
     transition: all linear 0.05s;
 }
 
@@ -412,6 +412,10 @@
     font-size: 1.8rem;
 }
 
+.swiper-container {
+    width: 600px;
+    height: 300px;
+}
 
 /*Fade In Left Animation*/
 

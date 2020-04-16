@@ -40,9 +40,28 @@
                 <input type="text" name="count_inp" class="form-control" id="discount_count" >
             </div>
 
-            <div class="form-group">
-                <label for="discount_date">تاریخ انقضا :</label>
-                <input type="text" name="date_inp" class="form-control" id="discount_date" >
+            <div class="header_date">
+                 تاریخ :
+            </div>
+            <div class="d-inline-block">
+               
+
+                    <input type="number" placeholder="0" name="start_inp[]" class="form-control d-inline-block data_inp_custom mr-0">
+
+            </div>
+
+            <div class="d-inline-block">
+                <label class="d-inline-block" for="">/</label>
+
+                    <input type="number" placeholder="0" name="start_inp[]" class="form-control d-inline-block data_inp_custom">
+                    
+            </div>
+
+            <div class="d-inline-block">
+                <label class="d-inline-block" for="">/ </label>
+
+                    <input type="number" placeholder="0" name="start_inp[]" class="form-control d-inline-block data_inp_custom">
+
             </div>
 
             {#discount_slot_default}
