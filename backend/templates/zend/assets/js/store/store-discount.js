@@ -7,7 +7,7 @@ $(document).on('change', '.end_class', function(e) {
     if($(this).val() != ''){
 
         $('.end_class_' + index.toString()).removeAttr('disabled', 'disabled');
-        $('.discount_class_' + index.toString()).removeAttr('disabled', 'disabled').val('0');
+        $('.discount_class_' + index.toString()).removeAttr('disabled', 'disabled').attr('placeholder', '0')
 
     }
     else{
@@ -19,6 +19,7 @@ $(document).on('change', '.end_class', function(e) {
             $('.end_class_' + i.toString()).val('');
             $('.start_class_' + i.toString()).val('');
             $('.discount_class_' + i.toString()).val('');
+            $('.discount_class_' + i.toString()).removeAttr('placeholder')
 
         }
 
