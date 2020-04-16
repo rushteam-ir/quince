@@ -25,7 +25,7 @@ router.post('/', async(req,res)=>{
 
     try{
 
-        let {package_name_inp, count_inp} = req.body;
+        let {package_name_inp, count_inp, day_inp, month_inp, year_inp} = req.body;
         let end_value = req.body['end_inp[]'];
         let discount_value = req.body['discount_inp[]'];
 
@@ -98,7 +98,8 @@ router.post('/', async(req,res)=>{
             codes : codes,
             values : amounts,
             codes_number : parseInt(count_inp),
-            codes_active : parseInt(count_inp)
+            codes_active : parseInt(count_inp),
+            expiration_date : `${year_inp}/${month_inp}/${day_inp}`
 
         }
 

@@ -41,26 +41,26 @@
             </div>
 
             <div class="header_date">
-                 تاریخ :
+                 تاریخ انقضا :
             </div>
             <div class="d-inline-block">
                
 
-                    <input type="number" placeholder="0" name="start_inp[]" class="form-control d-inline-block data_inp_custom mr-0">
+                    <input type="number" placeholder="00" name="day_inp" class="form-control d-inline-block data_inp_custom mr-0">
 
             </div>
 
             <div class="d-inline-block">
                 <label class="d-inline-block" for="">/</label>
 
-                    <input type="number" placeholder="0" name="start_inp[]" class="form-control d-inline-block data_inp_custom">
+                    <input type="number" placeholder="00" name="month_inp" class="form-control d-inline-block data_inp_custom">
                     
             </div>
 
             <div class="d-inline-block">
                 <label class="d-inline-block" for="">/ </label>
 
-                    <input type="number" placeholder="0" name="start_inp[]" class="form-control d-inline-block data_inp_custom">
+                    <input type="number" placeholder="0000" name="year_inp" class="form-control d-inline-block data_inp_custom">
 
             </div>
 
