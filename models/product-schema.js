@@ -45,11 +45,23 @@ product_schema.statics = {
 
         }
 
-        product_data.code = new_generated_code;
-        product_data.row = list.length + 1;
 
-        let new_product = new product_model(product_data);
-        return await new_product.save();
+        let find_product = await product_model.findOne({title : product_data.title});
+
+        if(!find_product){
+
+            product_data.code = new_generated_code;
+            product_data.row = list.length + 1;
+
+            let new_product = new product_model(product_data);
+            return await new_product.save();
+
+        }
+        else{
+
+            return null
+
+        }
 
     },
 

@@ -204,6 +204,11 @@ router.post('/', async(req,res)=>{
             }
 
         }
+        else{
+
+            return res.redirect(`${config.backend_url}store/add/?msg=add-fail`);
+
+        }
 
     }
     catch (error) {

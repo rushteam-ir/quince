@@ -4,7 +4,7 @@
     <title>فاکتور خرید</title>
 {/title}
 {<css}
-    <link rel="stylesheet" href="css/user/user-factor.css">
+    <link rel="stylesheet" href="css/invoices/invoices.css">
 {/css}
 
 
