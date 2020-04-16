@@ -26,7 +26,7 @@
                 {@alertWarn key="limited-avatar" msg="حجم تصویر انتخاب شده بیشتر از حد مجاز است"}{/alertWarn}
                 {@alertWarn key="illegal-avatar" msg="پسوند تصویر انتخاب شده مجاز نمی باشد"}{/alertWarn}
                 {@alertSuccess key="edit-success" msg="مشخصات پروفایل شما با موفقیت ثبت شد"}{/alertSuccess}
-                {@alertError key="edit-fail" msg="مشخصات پروفایل شما تغییر نکرد. لطفا مجددا تلاش فرمایید"}{/alertError}
+                {@alertError key="edit-fail" msg="مشخصات پروفایل شما تغییر نکرد. احتمال دارد ایمیل شما قبلا ثبت شده باشد. لطفا مجدد تلاش فرمایید"}{/alertError}
                 {@alertError key="incorrect-input" msg="رمز عبور فعلی اشتباه می باشد"}{/alertError}
 
                 <form action="" method="post" autocomplete="off" enctype="multipart/form-data" name="pro_op_main_form" onsubmit="return proError()">
