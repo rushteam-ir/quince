@@ -5,10 +5,11 @@
 {/title}
 {<css}
     <link rel="stylesheet" href="css/front-end/index.css">
-
+    <link rel="stylesheet" href="css/general/swimper.css">
 {/css}
 {<js}
     <script src="js/front-end/index.js"></script>
+    <script src="js/general/swimper.js"></script>
 {/js}
 
 {<body}
@@ -163,7 +164,9 @@
             </h3>
         </div>
         
-            <div class="fist_slider_index">
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
                 
                 <div class="main_product_slider">
                     <a href="" class="text-right dir_rtl ">
@@ -280,135 +283,24 @@
 
 
             </div>
-
+        </div>
     </div>
 </section>
+
 <section>
-    <div class="container">
+    <div class="main_sec_design_slider">
 
-        <div class="row_of_header_title">
-            <h3 class="header_info_customize m-0">
-                پرفروش ها
-            </h3>
-        </div>
-        
-            <div class="fist_slider_index">
-                
-                <div class="main_product_slider">
-                    <a href="" class="text-right dir_rtl ">
-                        <img class="img_of_product_slider" src="img/transparent2.png" alt="">
+        <div>
+            <img src="" alt="">
 
-                        <div class="info_box_slider">
-                            
-                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
-                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
-                        
-                        </div>
+            <div>
 
-                    </a>
-                </div>
-
-                <div class="main_product_slider">
-                    <a href="" class="text-right dir_rtl ">
-                        <img class="img_of_product_slider" src="img/transparent1.png" alt="">
-
-                        <div class="info_box_slider">
-                            
-                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
-                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
-                        
-                        </div>
-
-                    </a>
-                </div>
-
-                <div class="main_product_slider">
-                    <a href="" class="text-right dir_rtl ">
-                        <img class="img_of_product_slider" src="img/transparent3.png" alt="">
-
-                        <div class="info_box_slider">
-                            
-                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
-                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
-                        
-                        </div>
-
-                    </a>
-                </div>
-
-
-                <div class="main_product_slider">
-                    <a href="" class="text-right dir_rtl ">
-                        <img class="img_of_product_slider" src="img/transparent1.png" alt="">
-
-                        <div class="info_box_slider">
-                            
-                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
-                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
-                        
-                        </div>
-
-                    </a>
-                </div>
-                <div class="main_product_slider">
-                    <a href="" class="text-right dir_rtl ">
-                        <img class="img_of_product_slider" src="img/transparent2.png" alt="">
-
-                        <div class="info_box_slider">
-                            
-                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
-                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
-                        
-                        </div>
-
-                    </a>
-                </div>
-
-                <div class="main_product_slider">
-                    <a href="" class="text-right dir_rtl ">
-                        <img class="img_of_product_slider" src="img/transparent1.png" alt="">
-
-                        <div class="info_box_slider">
-                            
-                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
-                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
-                        
-                        </div>
-
-                    </a>
-                </div>
-
-                <div class="main_product_slider">
-                    <a href="" class="text-right dir_rtl ">
-                        <img class="img_of_product_slider" src="img/transparent3.png" alt="">
-
-                        <div class="info_box_slider">
-                            
-                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
-                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
-                        
-                        </div>
-
-                    </a>
-                </div>
-
-
-                <div class="main_product_slider">
-                    <a href="" class="text-right dir_rtl ">
-                        <img class="img_of_product_slider" src="img/transparent1.png" alt="">
-
-                        <div class="info_box_slider">
-                            
-                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
-                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
-                        
-                        </div>
-
-                    </a>
-                </div>
-
+                <p></p>
+                <p></p>
 
             </div>
+
+        </div>
 
     </div>
 </section>

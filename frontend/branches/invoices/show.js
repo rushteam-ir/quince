@@ -5,7 +5,7 @@ router.get('/', async(req, res)=>{
 
     try{
 
-        res.render('user/user-factor');
+        res.render('invoices/invoices-show');
 
     }
     catch (error) {
