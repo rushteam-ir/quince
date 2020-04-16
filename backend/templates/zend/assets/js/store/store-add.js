@@ -143,9 +143,7 @@ function storeAddError() {
         error_text.innerHTML = "لطفا تخفیف را درست وارد کنید."
         return false;
 
-    }
-
-    else if(discount_inp > 100){
+    } else if (discount_inp > 100) {
 
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;

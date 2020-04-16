@@ -40,6 +40,11 @@
                 <input type="text" name="count_inp" class="form-control" id="discount_count" >
             </div>
 
+            <div class="form-group">
+                <label for="discount_date">تاریخ انقضا :</label>
+                <input type="text" name="date_inp" class="form-control" id="discount_date" >
+            </div>
+
             {#discount_slot_default}
             <div class="field_wrapper my-5">
 
@@ -87,8 +92,8 @@
                 <thead class="text-center">
                   <tr >
                     <th class="header_list_custom padding_customize" scope="col">ردیف</th>
-                    <th class="header_list_custom" scope="col">نام پکیج تخفیف</th>
-                    <th class="header_list_custom" scope="col">کل کد ها</th>
+                    <th class="header_list_custom" scope="col">نام پکیج </th>
+                    <th class="header_list_custom" scope="col">تعداد کد ها</th>
                     <th class="header_list_custom" scope="col">کد های فعال</th>
                     <th class="header_list_custom" scope="col">تاریخ ثبت</th>
                     <th class="header_list_custom" scope="col">تاریخ انقضا</th>
