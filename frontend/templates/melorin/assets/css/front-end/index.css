@@ -342,7 +342,6 @@
 }
 
 .main_product_slider{
-
     overflow: hidden;
     background-color: white;
     padding-top: 20px;
@@ -379,42 +378,13 @@
     font-size: 1.4rem !important;
     font-family: main-font;
 }
-
-.slick-prev {
-    position: absolute;
-    top: -67px;
-    left: 11px;
-    background-color: transparent;
-    border: none;
-    color: transparent;
-}
-
-.slick-next {
-    position: absolute;
-    top: -67px;
-    left: 40px;
-    background-color: transparent;
-    border: none;   
-    color: transparent;
-}
-
-.slick-next::before{
-    content: "\f105";
-    color: #171717;
-    font-family: "Font Awesome 5 Pro";
-    font-size: 1.8rem;
-}
-
-.slick-prev:before{
-    content: "\f104";
-    color: #171717;
-    font-family: "Font Awesome 5 Pro";
-    font-size: 1.8rem;
-}
-
 .swiper-container {
-    width: 600px;
+    width: 100%;
     height: 300px;
+}
+
+.swiper-slide{
+    margin-right: 0px !important;
 }
 
 /*Fade In Left Animation*/
