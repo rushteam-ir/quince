@@ -66,6 +66,27 @@
     height: 65px;
 }
 
+.img_of_product_in_wish_list{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.padding_top_td{
+    padding-top: 25px!important;
+}
+
+.btn_of_delete_favorite{
+    color: #b21f2d;
+}
+.btn_of_delete_favorite:hover{
+    color: #960017;
+}
+
+.add_shopping_card{
+    color: green;
+}
+
 /* Media Query*/
 
 @media only screen and (max-width: 1200px) {
