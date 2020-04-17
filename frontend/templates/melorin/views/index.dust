@@ -195,7 +195,7 @@
                     
                     <div class="mx-2">
 
-                        <img class="img_of_product_slider mb-3" src="img/p-2.jpg" alt="">
+                        <img class="img_of_product_slider mb-3" src="img/transparent8.png" alt="">
 
                             <div class="star_product_slider">
                                 <i class="fas fa-star"></i>
@@ -218,7 +218,7 @@
                     
                     <div class="mx-2">
 
-                        <img class="img_of_product_slider mb-3" src="img/p-3.jpg" alt="">
+                        <img class="img_of_product_slider mb-3" src="img/transparent6.png" alt="">
 
                             <div class="star_product_slider">
                                 <i class="fas fa-star"></i>
@@ -241,7 +241,7 @@
                     
                     <div class="mx-2">
 
-                        <img class="img_of_product_slider mb-3" src="img/p-1.jpg" alt="">
+                        <img class="img_of_product_slider mb-3" src="img/transparent9.png" alt="">
 
                             <div class="star_product_slider">
                                 <i class="fas fa-star"></i>
@@ -264,7 +264,7 @@
                     
                     <div class="mx-2">
 
-                        <img class="img_of_product_slider mb-3" src="img/p-4.jpg" alt="">
+                        <img class="img_of_product_slider mb-3" src="img/transparent6.png" alt="">
 
                             <div class="star_product_slider">
                                 <i class="fas fa-star"></i>
@@ -287,7 +287,76 @@
                     
                     <div class="mx-2">
 
-                        <img class="img_of_product_slider mb-3" src="img/s5.jpg" alt="">
+                        <img class="img_of_product_slider mb-3" src="img/transparent8.png" alt="">
+
+                            <div class="star_product_slider">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="product_slider_info">
+                                <p class="mt-1">جوراب مردانه کد 1154</p>
+                                <hr>
+                                <p class="price_product_slider">25.000<span class="price_unic">تومان</span></p>
+                            </div>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide text-right slider_card_product">
+                    
+                    <div class="mx-2">
+
+                        <img class="img_of_product_slider mb-3" src="img/transparent6.png" alt="">
+
+                            <div class="star_product_slider">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="product_slider_info">
+                                <p class="mt-1">جوراب مردانه کد 1154</p>
+                                <hr>
+                                <p class="price_product_slider">25.000<span class="price_unic">تومان</span></p>
+                            </div>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide text-right slider_card_product">
+                    
+                    <div class="mx-2">
+
+                        <img class="img_of_product_slider mb-3" src="img/transparent9.png" alt="">
+
+                            <div class="star_product_slider">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="product_slider_info">
+                                <p class="mt-1">جوراب مردانه کد 1154</p>
+                                <hr>
+                                <p class="price_product_slider">25.000<span class="price_unic">تومان</span></p>
+                            </div>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide text-right slider_card_product">
+                    
+                    <div class="mx-2">
+
+                        <img class="img_of_product_slider mb-3" src="img/transparent6.png" alt="">
 
                             <div class="star_product_slider">
                                 <i class="fas fa-star"></i>
