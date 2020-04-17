@@ -15,14 +15,45 @@
 {<body}
 {!Top Of Pic!}
     <section>
-        <div class="pic_of_header_index_page">
-            <h1 class="title_of_web_page"> طراحی خودت را داشته باش</h1>
-            <h2 class="explain_of_design_title">با دادن تصویرمحصول  مورد نظر خود به ما محصول را برایتان تولید میکنیم</h2>
+        <div class="swiper-container main_slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div class="main_field_of_main_slider">
 
-            <a href="" class="btn_add_order">
-                همین حالا سفارش دهید
-            </a>
-        </div>
+                    <img class="main_slider_img" src="img/header.jpg" alt="">
+
+                    <div class="main_field_of_info_slider">
+
+                        <h1>
+                            طراحی خودت را داشته !
+                        </h1>
+
+                    </div>
+
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main_field_of_main_slider">
+
+                  <img class="main_slider_img" src="img/header.jpg" alt="">
+
+                  <div class="main_field_of_info_slider">
+
+                      <h1>
+                          طراحی خودت را داشته !
+                      </h1>
+
+                  </div>
+
+                </div>
+            </div>
+            </div>
+
+            <div class="swiper-pagination main_slider_pagination"></div>
+
+            <div class="swiper-button-next main_slider_next"></div>
+            <div class="swiper-button-prev main_slider_prev"></div>
+          </div>
     </section>
 {!End Top Of Pic!}
 {!Services!}
@@ -155,287 +186,151 @@
     </section>
 {!End Sale Product Category!}
 
-<section>
+<section class="mt-5">
+
     <div class="container">
+        <div class="swiper-container product_slider" dir="rtl">
+            <div class="swiper-wrapper product_slider" >
+                <div class="swiper-slide text-right slider_card_product">
+                    
+                    <div class="mx-2">
 
-        <div class="row_of_header_title">
-            <h3 class="header_info_customize m-0">
-                پرفروش ها
-            </h3>
-        </div>
-        
-        <div class="swiper-container" dir="rtl">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+                        <img class="img_of_product_slider mb-3" src="img/transparent6.png" alt="">
+
+                            <div class="star_product_slider">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="product_slider_info">
+                                <p class="mt-1">جوراب مردانه کد 1154</p>
+                                <hr>
+                                <p class="price_product_slider">25.000<span class="price_unic">تومان</span></p>
+                            </div>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide text-right slider_card_product">
+                    
+                    <div class="mx-2">
+
+                        <img class="img_of_product_slider mb-3" src="img/transparent8.png" alt="">
+
+                            <div class="star_product_slider">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="product_slider_info">
+                                <p class="mt-1">جوراب مردانه کد 1154</p>
+                                <hr>
+                                <p class="price_product_slider">25.000<span class="price_unic">تومان</span></p>
+                            </div>
+
+                    </div>
+
+                </div>
+                <div class="swiper-slide text-right slider_card_product">
+                    
+                    <div class="mx-2">
+
+                        <img class="img_of_product_slider mb-3" src="img/transparent9.png" alt="">
+
+                            <div class="star_product_slider">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="product_slider_info">
+                                <p class="mt-1">جوراب مردانه کد 1154</p>
+                                <hr>
+                                <p class="price_product_slider">25.000<span class="price_unic">تومان</span></p>
+                            </div>
+
+                    </div>
+
+                </div>                <div class="swiper-slide text-right slider_card_product">
+                    
+                    <div class="mx-2">
+
+                        <img class="img_of_product_slider mb-3" src="img/transparent6.png" alt="">
+
+                            <div class="star_product_slider">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="product_slider_info">
+                                <p class="mt-1">جوراب مردانه کد 1154</p>
+                                <hr>
+                                <p class="price_product_slider">25.000<span class="price_unic">تومان</span></p>
+                            </div>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide text-right slider_card_product">
+                    
+                    <div class="mx-2">
+
+                        <img class="img_of_product_slider mb-3" src="img/transparent8.png" alt="">
+
+                            <div class="star_product_slider">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="product_slider_info">
+                                <p class="mt-1">جوراب مردانه کد 1154</p>
+                                <hr>
+                                <p class="price_product_slider">25.000<span class="price_unic">تومان</span></p>
+                            </div>
+
+                    </div>
+
+                </div>
+                <div class="swiper-slide text-right slider_card_product">
+                    
+                    <div class="mx-2">
+
+                        <img class="img_of_product_slider mb-3" src="img/transparent9.png" alt="">
+
+                            <div class="star_product_slider">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="product_slider_info">
+                                <p class="mt-1">جوراب مردانه کد 1154</p>
+                                <hr>
+                                <p class="price_product_slider">25.000<span class="price_unic">تومان</span></p>
+                            </div>
+
+                    </div>
+
+                </div>
+
                 
-
-
-                <div class="swiper-slide first_slider_slide position-relative">
-
-                    <div class="dir_rtl text-right slider_bg_color">
-                        <img class="img_of_index_slider" src="img/transparent1.png" alt="">
-
-                        <div class="main_field_of_product_info">
-
-                            <div class="rating_of_product_slider">
-                                <i class="fas fa-star product_star"></i>
-                                <i class="fas fa-star product_star"></i>
-                                <i class="far fa-star product_star"></i>
-                                <i class="far fa-star product_star"></i>
-                                <i class="far fa-star product_star"></i>
-                            </div>
-
-                            <p class="mt-2 mb-2">جوراب مردانه اسکاچی  کد 22186</p>
-                            <p> 57.000 <span class="price_unit">تومان</span></p>
-
-                        </div>
-
-                        <a href="" class="btn btn_of_procuct">خرید</a>
-
-                    </div>
-
-                        <div class="info_btn_of_slider"><i class="fas fa-info icon_of_info_btn"></i></div>
-                        <div class="info_btn_of_slider hearth_info_box "><i class="fas fa-heart icon_of_hearth_btn"></i></div>
-
-                </div>
-
-                <div class="swiper-slide first_slider_slide position-relative">
-
-                    <div class="dir_rtl text-right slider_bg_color">
-                        <img class="img_of_index_slider" src="img/transparent2.png" alt="">
-
-                        <div class="main_field_of_product_info">
-
-                            <div class="rating_of_product_slider">
-                                <i class="fas fa-star product_star"></i>
-                                <i class="fas fa-star product_star"></i>
-                                <i class="far fa-star product_star"></i>
-                                <i class="far fa-star product_star"></i>
-                                <i class="far fa-star product_star"></i>
-                            </div>
-
-                            <p class="mt-2 mb-2">جوراب مردانه اسکاچی  کد 22186</p>
-                            <p> 57.000 <span class="price_unit">تومان</span></p>
-
-                        </div>
-
-                        <a href="" class="btn btn_of_procuct">خرید</a>
-
-                    </div>
-
-                        <div class="info_btn_of_slider"><i class="fas fa-info icon_of_info_btn"></i></div>
-                        <div class="info_btn_of_slider hearth_info_box "><i class="fas fa-heart icon_of_hearth_btn"></i></div>
-
-                </div>
-
-                <div class="swiper-slide first_slider_slide position-relative">
-
-                    <div class="dir_rtl text-right slider_bg_color">
-                        <img class="img_of_index_slider" src="img/transparent3.png" alt="">
-
-                        <div class="main_field_of_product_info">
-
-                            <div class="rating_of_product_slider">
-                                <i class="fas fa-star product_star"></i>
-                                <i class="fas fa-star product_star"></i>
-                                <i class="far fa-star product_star"></i>
-                                <i class="far fa-star product_star"></i>
-                                <i class="far fa-star product_star"></i>
-                            </div>
-
-                            <p class="mt-2 mb-2">جوراب مردانه اسکاچی  کد 22186</p>
-                            <p> 57.000 <span class="price_unit">تومان</span></p>
-
-                        </div>
-
-                        <a href="" class="btn btn_of_procuct">خرید</a>
-
-                    </div>
-
-                        <div class="info_btn_of_slider"><i class="fas fa-info icon_of_info_btn"></i></div>
-                        <div class="info_btn_of_slider hearth_info_box "><i class="fas fa-heart icon_of_hearth_btn"></i></div>
-
-                </div>
-                <div class="swiper-slide first_slider_slide position-relative">
-
-                    <div class="dir_rtl text-right slider_bg_color">
-                        <img class="img_of_index_slider" src="img/transparent1.png" alt="">
-
-                        <div class="main_field_of_product_info">
-
-                            <div class="rating_of_product_slider">
-                                <i class="fas fa-star product_star"></i>
-                                <i class="fas fa-star product_star"></i>
-                                <i class="far fa-star product_star"></i>
-                                <i class="far fa-star product_star"></i>
-                                <i class="far fa-star product_star"></i>
-                            </div>
-
-                            <p class="mt-2 mb-2">جوراب مردانه اسکاچی  کد 22186</p>
-                            <p> 57.000 <span class="price_unit">تومان</span></p>
-
-                        </div>
-
-                        <a href="" class="btn btn_of_procuct">خرید</a>
-
-                    </div>
-
-                        <div class="info_btn_of_slider"><i class="fas fa-info icon_of_info_btn"></i></div>
-                        <div class="info_btn_of_slider hearth_info_box "><i class="fas fa-heart icon_of_hearth_btn"></i></div>
-
-                </div>
-
-                <div class="swiper-slide first_slider_slide position-relative">
-
-                    <div class="dir_rtl text-right slider_bg_color">
-                        <img class="img_of_index_slider" src="img/transparent2.png" alt="">
-
-                        <div class="main_field_of_product_info">
-
-                            <div class="rating_of_product_slider">
-                                <i class="fas fa-star product_star"></i>
-                                <i class="fas fa-star product_star"></i>
-                                <i class="far fa-star product_star"></i>
-                                <i class="far fa-star product_star"></i>
-                                <i class="far fa-star product_star"></i>
-                            </div>
-
-                            <p class="mt-2 mb-2">جوراب مردانه اسکاچی  کد 22186</p>
-                            <p> 57.000 <span class="price_unit">تومان</span></p>
-
-                        </div>
-
-                        <a href="" class="btn btn_of_procuct">خرید</a>
-
-                    </div>
-
-                        <div class="info_btn_of_slider"><i class="fas fa-info icon_of_info_btn"></i></div>
-                        <div class="info_btn_of_slider hearth_info_box "><i class="fas fa-heart icon_of_hearth_btn"></i></div>
-
-                </div>
-
-                <div class="swiper-slide first_slider_slide position-relative">
-
-                    <div class="dir_rtl text-right slider_bg_color">
-                        <img class="img_of_index_slider" src="img/transparent3.png" alt="">
-
-                        <div class="main_field_of_product_info">
-
-                            <div class="rating_of_product_slider">
-                                <i class="fas fa-star product_star"></i>
-                                <i class="fas fa-star product_star"></i>
-                                <i class="far fa-star product_star"></i>
-                                <i class="far fa-star product_star"></i>
-                                <i class="far fa-star product_star"></i>
-                            </div>
-
-                            <p class="mt-2 mb-2">جوراب مردانه اسکاچی  کد 22186</p>
-                            <p> 57.000 <span class="price_unit">تومان</span></p>
-
-                        </div>
-
-                        <a href="" class="btn btn_of_procuct">خرید</a>
-
-                    </div>
-
-                        <div class="info_btn_of_slider"><i class="fas fa-info icon_of_info_btn"></i></div>
-                        <div class="info_btn_of_slider hearth_info_box "><i class="fas fa-heart icon_of_hearth_btn"></i></div>
-
-                </div>
-
-                <div class="swiper-slide first_slider_slide position-relative">
-
-                    <div class="dir_rtl text-right slider_bg_color">
-                        <img class="img_of_index_slider" src="img/transparent1.png" alt="">
-
-                        <div class="main_field_of_product_info">
-
-                            <div class="rating_of_product_slider">
-                                <i class="fas fa-star product_star"></i>
-                                <i class="fas fa-star product_star"></i>
-                                <i class="far fa-star product_star"></i>
-                                <i class="far fa-star product_star"></i>
-                                <i class="far fa-star product_star"></i>
-                            </div>
-
-                            <p class="mt-2 mb-2">جوراب مردانه اسکاچی  کد 22186</p>
-                            <p> 57.000 <span class="price_unit">تومان</span></p>
-
-                        </div>
-
-                        <a href="" class="btn btn_of_procuct">خرید</a>
-
-                    </div>
-
-                        <div class="info_btn_of_slider"><i class="fas fa-info icon_of_info_btn"></i></div>
-                        <div class="info_btn_of_slider hearth_info_box "><i class="fas fa-heart icon_of_hearth_btn"></i></div>
-
-                </div>
-
-                <div class="swiper-slide first_slider_slide position-relative">
-
-                    <div class="dir_rtl text-right slider_bg_color">
-                        <img class="img_of_index_slider" src="img/transparent2.png" alt="">
-
-                        <div class="main_field_of_product_info">
-
-                            <div class="rating_of_product_slider">
-                                <i class="fas fa-star product_star"></i>
-                                <i class="fas fa-star product_star"></i>
-                                <i class="far fa-star product_star"></i>
-                                <i class="far fa-star product_star"></i>
-                                <i class="far fa-star product_star"></i>
-                            </div>
-
-                            <p class="mt-2 mb-2">جوراب مردانه اسکاچی  کد 22186</p>
-                            <p> 57.000 <span class="price_unit">تومان</span></p>
-
-                        </div>
-
-                        <a href="" class="btn btn_of_procuct">خرید</a>
-
-                    </div>
-
-                        <div class="info_btn_of_slider"><i class="fas fa-info icon_of_info_btn"></i></div>
-                        <div class="info_btn_of_slider hearth_info_box "><i class="fas fa-heart icon_of_hearth_btn"></i></div>
-
-                </div>
-
-                <div class="swiper-slide first_slider_slide position-relative">
-
-                    <div class="dir_rtl text-right slider_bg_color">
-                        <img class="img_of_index_slider" src="img/transparent3.png" alt="">
-
-                        <div class="main_field_of_product_info">
-
-                            <div class="rating_of_product_slider">
-                                <i class="fas fa-star product_star"></i>
-                                <i class="fas fa-star product_star"></i>
-                                <i class="far fa-star product_star"></i>
-                                <i class="far fa-star product_star"></i>
-                                <i class="far fa-star product_star"></i>
-                            </div>
-
-                            <p class="mt-2 mb-2">جوراب مردانه اسکاچی  کد 22186</p>
-                            <p> 57.000 <span class="price_unit">تومان</span></p>
-
-                        </div>
-
-                        <a href="" class="btn btn_of_procuct">خرید</a>
-
-                    </div>
-
-                        <div class="info_btn_of_slider"><i class="fas fa-info icon_of_info_btn"></i></div>
-                        <div class="info_btn_of_slider hearth_info_box "><i class="fas fa-heart icon_of_hearth_btn"></i></div>
-
-                </div>
-
-
-
-
             </div>
         </div>
+        
     </div>
+
 </section>
 
 {!Parallax!}
@@ -450,6 +345,7 @@
         </div>
     </section>
 {!End Parallax!}
+
 
 {/body}
 
