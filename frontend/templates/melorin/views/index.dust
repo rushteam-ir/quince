@@ -164,157 +164,274 @@
             </h3>
         </div>
         
-        <div class="swiper-container">
+        <div class="swiper-container" dir="rtl">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 
-                <div class="main_product_slider swiper-slide">
-                    <a href="" class="text-right dir_rtl ">
-                        <img class="img_of_product_slider" src="img/transparent2.png" alt="">
 
-                        <div class="info_box_slider">
-                            
-                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
-                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
-                        
+
+                <div class="swiper-slide first_slider_slide position-relative">
+
+                    <div class="dir_rtl text-right slider_bg_color">
+                        <img class="img_of_index_slider" src="img/transparent1.png" alt="">
+
+                        <div class="main_field_of_product_info">
+
+                            <div class="rating_of_product_slider">
+                                <i class="fas fa-star product_star"></i>
+                                <i class="fas fa-star product_star"></i>
+                                <i class="far fa-star product_star"></i>
+                                <i class="far fa-star product_star"></i>
+                                <i class="far fa-star product_star"></i>
+                            </div>
+
+                            <p class="mt-2 mb-2">جوراب مردانه اسکاچی  کد 22186</p>
+                            <p> 57.000 <span class="price_unit">تومان</span></p>
+
                         </div>
 
-                    </a>
+                        <a href="" class="btn btn_of_procuct">خرید</a>
+
+                    </div>
+
+                        <div class="info_btn_of_slider"><i class="fas fa-info icon_of_info_btn"></i></div>
+                        <div class="info_btn_of_slider hearth_info_box "><i class="fas fa-heart icon_of_hearth_btn"></i></div>
+
                 </div>
 
-                <div class="main_product_slider swiper-slide">
-                    <a href="" class="text-right dir_rtl ">
-                        <img class="img_of_product_slider" src="img/transparent1.png" alt="">
+                <div class="swiper-slide first_slider_slide position-relative">
 
-                        <div class="info_box_slider">
-                            
-                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
-                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
-                        
+                    <div class="dir_rtl text-right slider_bg_color">
+                        <img class="img_of_index_slider" src="img/transparent2.png" alt="">
+
+                        <div class="main_field_of_product_info">
+
+                            <div class="rating_of_product_slider">
+                                <i class="fas fa-star product_star"></i>
+                                <i class="fas fa-star product_star"></i>
+                                <i class="far fa-star product_star"></i>
+                                <i class="far fa-star product_star"></i>
+                                <i class="far fa-star product_star"></i>
+                            </div>
+
+                            <p class="mt-2 mb-2">جوراب مردانه اسکاچی  کد 22186</p>
+                            <p> 57.000 <span class="price_unit">تومان</span></p>
+
                         </div>
 
-                    </a>
+                        <a href="" class="btn btn_of_procuct">خرید</a>
+
+                    </div>
+
+                        <div class="info_btn_of_slider"><i class="fas fa-info icon_of_info_btn"></i></div>
+                        <div class="info_btn_of_slider hearth_info_box "><i class="fas fa-heart icon_of_hearth_btn"></i></div>
+
                 </div>
 
-                <div class="main_product_slider swiper-slide">
-                    <a href="" class="text-right dir_rtl ">
-                        <img class="img_of_product_slider" src="img/transparent3.png" alt="">
+                <div class="swiper-slide first_slider_slide position-relative">
 
-                        <div class="info_box_slider">
-                            
-                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
-                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
-                        
+                    <div class="dir_rtl text-right slider_bg_color">
+                        <img class="img_of_index_slider" src="img/transparent3.png" alt="">
+
+                        <div class="main_field_of_product_info">
+
+                            <div class="rating_of_product_slider">
+                                <i class="fas fa-star product_star"></i>
+                                <i class="fas fa-star product_star"></i>
+                                <i class="far fa-star product_star"></i>
+                                <i class="far fa-star product_star"></i>
+                                <i class="far fa-star product_star"></i>
+                            </div>
+
+                            <p class="mt-2 mb-2">جوراب مردانه اسکاچی  کد 22186</p>
+                            <p> 57.000 <span class="price_unit">تومان</span></p>
+
                         </div>
 
-                    </a>
-                </div>
-                <div class="main_product_slider swiper-slide">
-                    <a href="" class="text-right dir_rtl ">
-                        <img class="img_of_product_slider" src="img/transparent2.png" alt="">
+                        <a href="" class="btn btn_of_procuct">خرید</a>
 
-                        <div class="info_box_slider">
-                            
-                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
-                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
-                        
+                    </div>
+
+                        <div class="info_btn_of_slider"><i class="fas fa-info icon_of_info_btn"></i></div>
+                        <div class="info_btn_of_slider hearth_info_box "><i class="fas fa-heart icon_of_hearth_btn"></i></div>
+
+                </div>
+                <div class="swiper-slide first_slider_slide position-relative">
+
+                    <div class="dir_rtl text-right slider_bg_color">
+                        <img class="img_of_index_slider" src="img/transparent1.png" alt="">
+
+                        <div class="main_field_of_product_info">
+
+                            <div class="rating_of_product_slider">
+                                <i class="fas fa-star product_star"></i>
+                                <i class="fas fa-star product_star"></i>
+                                <i class="far fa-star product_star"></i>
+                                <i class="far fa-star product_star"></i>
+                                <i class="far fa-star product_star"></i>
+                            </div>
+
+                            <p class="mt-2 mb-2">جوراب مردانه اسکاچی  کد 22186</p>
+                            <p> 57.000 <span class="price_unit">تومان</span></p>
+
                         </div>
 
-                    </a>
+                        <a href="" class="btn btn_of_procuct">خرید</a>
+
+                    </div>
+
+                        <div class="info_btn_of_slider"><i class="fas fa-info icon_of_info_btn"></i></div>
+                        <div class="info_btn_of_slider hearth_info_box "><i class="fas fa-heart icon_of_hearth_btn"></i></div>
+
                 </div>
 
-                <div class="main_product_slider swiper-slide">
-                    <a href="" class="text-right dir_rtl ">
-                        <img class="img_of_product_slider" src="img/transparent1.png" alt="">
+                <div class="swiper-slide first_slider_slide position-relative">
 
-                        <div class="info_box_slider">
-                            
-                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
-                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
-                        
+                    <div class="dir_rtl text-right slider_bg_color">
+                        <img class="img_of_index_slider" src="img/transparent2.png" alt="">
+
+                        <div class="main_field_of_product_info">
+
+                            <div class="rating_of_product_slider">
+                                <i class="fas fa-star product_star"></i>
+                                <i class="fas fa-star product_star"></i>
+                                <i class="far fa-star product_star"></i>
+                                <i class="far fa-star product_star"></i>
+                                <i class="far fa-star product_star"></i>
+                            </div>
+
+                            <p class="mt-2 mb-2">جوراب مردانه اسکاچی  کد 22186</p>
+                            <p> 57.000 <span class="price_unit">تومان</span></p>
+
                         </div>
 
-                    </a>
+                        <a href="" class="btn btn_of_procuct">خرید</a>
+
+                    </div>
+
+                        <div class="info_btn_of_slider"><i class="fas fa-info icon_of_info_btn"></i></div>
+                        <div class="info_btn_of_slider hearth_info_box "><i class="fas fa-heart icon_of_hearth_btn"></i></div>
+
                 </div>
 
-                <div class="main_product_slider swiper-slide">
-                    <a href="" class="text-right dir_rtl ">
-                        <img class="img_of_product_slider" src="img/transparent3.png" alt="">
+                <div class="swiper-slide first_slider_slide position-relative">
 
-                        <div class="info_box_slider">
-                            
-                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
-                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
-                        
+                    <div class="dir_rtl text-right slider_bg_color">
+                        <img class="img_of_index_slider" src="img/transparent3.png" alt="">
+
+                        <div class="main_field_of_product_info">
+
+                            <div class="rating_of_product_slider">
+                                <i class="fas fa-star product_star"></i>
+                                <i class="fas fa-star product_star"></i>
+                                <i class="far fa-star product_star"></i>
+                                <i class="far fa-star product_star"></i>
+                                <i class="far fa-star product_star"></i>
+                            </div>
+
+                            <p class="mt-2 mb-2">جوراب مردانه اسکاچی  کد 22186</p>
+                            <p> 57.000 <span class="price_unit">تومان</span></p>
+
                         </div>
 
-                    </a>
-                </div>
-                <div class="main_product_slider swiper-slide">
-                    <a href="" class="text-right dir_rtl ">
-                        <img class="img_of_product_slider" src="img/transparent2.png" alt="">
+                        <a href="" class="btn btn_of_procuct">خرید</a>
 
-                        <div class="info_box_slider">
-                            
-                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
-                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
-                        
+                    </div>
+
+                        <div class="info_btn_of_slider"><i class="fas fa-info icon_of_info_btn"></i></div>
+                        <div class="info_btn_of_slider hearth_info_box "><i class="fas fa-heart icon_of_hearth_btn"></i></div>
+
+                </div>
+                <div class="swiper-slide first_slider_slide position-relative">
+
+                    <div class="dir_rtl text-right slider_bg_color">
+                        <img class="img_of_index_slider" src="img/transparent1.png" alt="">
+
+                        <div class="main_field_of_product_info">
+
+                            <div class="rating_of_product_slider">
+                                <i class="fas fa-star product_star"></i>
+                                <i class="fas fa-star product_star"></i>
+                                <i class="far fa-star product_star"></i>
+                                <i class="far fa-star product_star"></i>
+                                <i class="far fa-star product_star"></i>
+                            </div>
+
+                            <p class="mt-2 mb-2">جوراب مردانه اسکاچی  کد 22186</p>
+                            <p> 57.000 <span class="price_unit">تومان</span></p>
+
                         </div>
 
-                    </a>
+                        <a href="" class="btn btn_of_procuct">خرید</a>
+
+                    </div>
+
+                        <div class="info_btn_of_slider"><i class="fas fa-info icon_of_info_btn"></i></div>
+                        <div class="info_btn_of_slider hearth_info_box "><i class="fas fa-heart icon_of_hearth_btn"></i></div>
+
                 </div>
 
-                <div class="main_product_slider swiper-slide">
-                    <a href="" class="text-right dir_rtl ">
-                        <img class="img_of_product_slider" src="img/transparent1.png" alt="">
+                <div class="swiper-slide first_slider_slide position-relative">
 
-                        <div class="info_box_slider">
-                            
-                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
-                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
-                        
+                    <div class="dir_rtl text-right slider_bg_color">
+                        <img class="img_of_index_slider" src="img/transparent2.png" alt="">
+
+                        <div class="main_field_of_product_info">
+
+                            <div class="rating_of_product_slider">
+                                <i class="fas fa-star product_star"></i>
+                                <i class="fas fa-star product_star"></i>
+                                <i class="far fa-star product_star"></i>
+                                <i class="far fa-star product_star"></i>
+                                <i class="far fa-star product_star"></i>
+                            </div>
+
+                            <p class="mt-2 mb-2">جوراب مردانه اسکاچی  کد 22186</p>
+                            <p> 57.000 <span class="price_unit">تومان</span></p>
+
                         </div>
 
-                    </a>
+                        <a href="" class="btn btn_of_procuct">خرید</a>
+
+                    </div>
+
+                        <div class="info_btn_of_slider"><i class="fas fa-info icon_of_info_btn"></i></div>
+                        <div class="info_btn_of_slider hearth_info_box "><i class="fas fa-heart icon_of_hearth_btn"></i></div>
+
                 </div>
 
-                <div class="main_product_slider swiper-slide">
-                    <a href="" class="text-right dir_rtl ">
-                        <img class="img_of_product_slider" src="img/transparent3.png" alt="">
+                <div class="swiper-slide first_slider_slide position-relative">
 
-                        <div class="info_box_slider">
-                            
-                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
-                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
-                        
+                    <div class="dir_rtl text-right slider_bg_color">
+                        <img class="img_of_index_slider" src="img/transparent3.png" alt="">
+
+                        <div class="main_field_of_product_info">
+
+                            <div class="rating_of_product_slider">
+                                <i class="fas fa-star product_star"></i>
+                                <i class="fas fa-star product_star"></i>
+                                <i class="far fa-star product_star"></i>
+                                <i class="far fa-star product_star"></i>
+                                <i class="far fa-star product_star"></i>
+                            </div>
+
+                            <p class="mt-2 mb-2">جوراب مردانه اسکاچی  کد 22186</p>
+                            <p> 57.000 <span class="price_unit">تومان</span></p>
+
                         </div>
 
-                    </a>
+                        <a href="" class="btn btn_of_procuct">خرید</a>
+
+                    </div>
+
+                        <div class="info_btn_of_slider"><i class="fas fa-info icon_of_info_btn"></i></div>
+                        <div class="info_btn_of_slider hearth_info_box "><i class="fas fa-heart icon_of_hearth_btn"></i></div>
+
                 </div>
-
-
 
 
             </div>
         </div>
-    </div>
-</section>
-
-<section>
-    <div class="main_sec_design_slider">
-
-        <div>
-            <img src="" alt="">
-
-            <div>
-
-                <p></p>
-                <p></p>
-
-            </div>
-
-        </div>
-
     </div>
 </section>
 
