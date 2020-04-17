@@ -352,7 +352,8 @@ nav {
 
 .img_of_product_slider {
     width: 100%;
-    height: 330px;
+    height: 230px;
+    border-radius: 3px;
 }
 
 .star_product_slider {
