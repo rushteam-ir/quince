@@ -17,7 +17,8 @@
         </p>
 
         {@alertSuccess key="add-success" msg="کد تخفیف جدید با موفقیت تولید شد"}{/alertSuccess}
-        {@alertError key="add-fail" msg="کد تخفیف تولید نشد لطفا مجددا تلاش فرمایید"}{/alertError}
+        {@alertError key="add-fail" msg="کد تخفیف تولید نشد لطفا از نام های تکراری استفاده نکنید و مجدد تلاش فرمایید"}{/alertError}
+        {@alertWarn key="date-error" msg="تاریخ انقضا"}{/alertWarn}
 
         <div class="error_warning_alert text-right display_none" id="error_field_warning_front"> 
 
@@ -28,7 +29,7 @@
 
         </div>
 
-        <form action="" method="post" onsubmit="return discountError()" name="discount_form">
+        <form action="" method="post" onsubmit="return discountError()" name="discount_form" autocomplete="off">
 
             <div class="form-group">
                 <label for="discount_name">نام پکیج تخفیف :</label>
@@ -37,7 +38,7 @@
 
             <div class="form-group">
                 <label for="discount_count">تعداد کد ها :</label>
-                <input type="text" name="count_inp" class="form-control" id="discount_count" >
+                <input type="number" name="count_inp" class="form-control" id="discount_count" >
             </div>
 
             <div class="header_date">
@@ -46,21 +47,21 @@
             <div class="d-inline-block">
                
 
-                    <input type="number" placeholder="00" name="day_inp" class="form-control d-inline-block data_inp_custom mr-0">
+                    <input type="number" placeholder="روز" name="day_inp" class="form-control d-inline-block data_inp_custom mr-0">
 
             </div>
 
             <div class="d-inline-block">
                 <label class="d-inline-block" for="">/</label>
 
-                    <input type="number" placeholder="00" name="month_inp" class="form-control d-inline-block data_inp_custom">
+                    <input type="number" placeholder="ماه" name="month_inp" class="form-control d-inline-block data_inp_custom">
                     
             </div>
 
             <div class="d-inline-block">
                 <label class="d-inline-block" for="">/ </label>
 
-                    <input type="number" placeholder="0000" name="year_inp" class="form-control d-inline-block data_inp_custom">
+                    <input type="number" placeholder="سال" name="year_inp" class="form-control d-inline-block data_inp_custom">
 
             </div>
 
@@ -135,7 +136,13 @@
 
                         <td class="list_detail_custom">{.registration_date}</td>
 
-                        <td class="list_detail_custom">{.expiration_date}</td>
+                        <td class="list_detail_custom">
+                            {@eq key="{.expiration_date}" value="0"}
+                                ندارد
+                            {:else}
+                                {.expiration_date}
+                            {/eq}
+                        </td>
 
                         <td class="list_detail_custom">
 

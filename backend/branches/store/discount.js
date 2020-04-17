@@ -30,9 +30,45 @@ router.post('/', async(req,res)=>{
         let {package_name_inp, count_inp, day_inp, month_inp, year_inp} = req.body;
         let end_value = req.body['end_inp[]'];
         let discount_value = req.body['discount_inp[]'];
+        let current_date = getCurrentDate().split('/');
+
+        let valid_package_name = validation.isSafe(package_name_inp);
+
+        if(valid_package_name != ''){
+
+            return res.redirect(`${config.backend_url}store/discount`);
+
+        }
+        else if(isNaN(parseInt(count_inp))){
+
+            return res.redirect(`${config.backend_url}store/discount`);
+
+        }
+        else if(isNaN(parseInt(day_inp)) || parseInt(day_inp) > 31 || parseInt(month_inp) > 12 || parseInt(year_inp) < 1399){
+
+            return res.redirect(`${config.backend_url}store/discount/?msg=date-error`);
+
+        }
+        else if(parseInt(current_date[0]) > parseInt(year_inp)){
+
+            return res.redirect(`${config.backend_url}store/discount/?msg=date-error`);
+
+        }
+        else if(parseInt(current_date[1]) > parseInt(month_inp)){
+
+            return res.redirect(`${config.backend_url}store/discount/?msg=date-error`);
+
+        }
+        else if(parseInt(current_date[2]) >= parseInt(day_inp)){
+
+            return res.redirect(`${config.backend_url}store/discount/?msg=date-error`);
+
+        }
+
 
         let code = '';
         let code_id = '';
+        let expiration_date = '';
 
         let first_while = true;
 
@@ -79,17 +115,47 @@ router.post('/', async(req,res)=>{
         // Generate Values for all price amounts
         let amounts = [];
 
-        for(let i = 0; i < parseInt(end_value.length); i++){
+        if(Array.isArray(end_value)){
+
+            for(let i = 0; i < parseInt(end_value.length); i++){
+
+                let amount_sample = {
+
+                    start : end_value[i-1],
+                    end : end_value[i],
+                    value : discount_value[i],
+
+                }
+
+                amounts.push(amount_sample);
+
+            }
+
+        }
+        else{
 
             let amount_sample = {
 
-                start : end_value[i-1],
-                end : end_value[i],
-                value : discount_value[i],
+                start : 0,
+                end : end_value,
+                value : discount_value,
 
             }
 
             amounts.push(amount_sample);
+
+        }
+
+        amounts[0].start = '0';
+
+        if(`${year_inp}/${month_inp}/${day_inp}` == '//'){
+
+            expiration_date = '0';
+
+        }
+        else{
+
+            expiration_date = `${year_inp}/${month_inp}/${day_inp}`;
 
         }
 
@@ -101,9 +167,11 @@ router.post('/', async(req,res)=>{
             values : amounts,
             codes_number : parseInt(count_inp),
             codes_active : parseInt(count_inp),
-            expiration_date : `${year_inp}/${month_inp}/${day_inp}`
+            expiration_date : expiration_date
 
         }
+
+        log(new_discount);
 
         let result = await discount_model.add(new_discount);
 

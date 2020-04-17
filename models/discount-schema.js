@@ -17,12 +17,25 @@ discount_schema.statics = {
 
     add : async function (discount_data) {
 
-        let list = await discount_model.find();
+        let find_discount = await discount_model.findOne({package_name : discount_data.package_name});
 
-        discount_data.row = list.length + 1;
-        discount_data.registration_date = getCurrentDate();
+        if(!find_discount){
 
-        let new_discount = new discount_model(discount_data);
+            let list = await discount_model.find();
+
+            discount_data.row = list.length + 1;
+            discount_data.registration_date = getCurrentDate();
+
+            let new_discount = new discount_model(discount_data);
+
+            return await new_discount.save();
+
+        }
+        else{
+
+            return null
+
+        }
 
         return await new_discount.save();
 
@@ -48,7 +61,36 @@ discount_schema.statics = {
 
     checkExpiration : async function () {
 
-        let find_discount = await discount_model.findOne({code_id : code_id});
+        log("DELETED!")
+
+        let find_discount = await discount_model.find();
+
+        find_discount.forEach(async(dis)=>{
+
+            if(dis.expiration_date != '0'){
+
+                let expiration_date = dis.expiration_date.split('/');
+                let current_date = getCurrentDate().split('/');
+
+                if(parseInt(current_date[0]) > parseInt(expiration_date[0])){
+
+                    await discount_model.findByIdAndDelete(dis._id);
+
+                }
+                else if(parseInt(current_date[1]) > parseInt(expiration_date[1])){
+
+                    await discount_model.findByIdAndDelete(dis._id);
+
+                }
+                else if(parseInt(current_date[2]) >= parseInt(expiration_date[2])){
+
+                    await discount_model.findByIdAndDelete(dis._id);
+
+                }
+
+            }
+
+        })
 
     },
 
