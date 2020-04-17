@@ -23,7 +23,7 @@
     </div>
 </section>
 
-<section class="d-none">
+<section class="d-block">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -79,7 +79,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <th scope="row" class="padding_top_td">1</th>
+                        <th scope="row" class="padding_top_td">2</th>
                         <td>
                             <img src="img/transparent1.png" class="img_of_product_in_wish_list">
                         </td>
