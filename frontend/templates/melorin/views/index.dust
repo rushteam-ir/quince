@@ -342,6 +342,7 @@
                         <div class="info_btn_of_slider hearth_info_box "><i class="fas fa-heart icon_of_hearth_btn"></i></div>
 
                 </div>
+
                 <div class="swiper-slide first_slider_slide position-relative">
 
                     <div class="dir_rtl text-right slider_bg_color">
@@ -428,6 +429,8 @@
                         <div class="info_btn_of_slider hearth_info_box "><i class="fas fa-heart icon_of_hearth_btn"></i></div>
 
                 </div>
+
+
 
 
             </div>
