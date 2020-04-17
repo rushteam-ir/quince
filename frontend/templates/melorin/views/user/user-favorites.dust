@@ -1,0 +1,40 @@
+{>"layouts/layout"/}
+
+{<title}
+    <title>لیست علاقه مندی ها</title>
+{/title}
+{<css}
+    <link rel="stylesheet" href="css/front-end/user-favorites.css">
+{/css}
+
+
+{<body}
+
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="bg_of_address_name text-center">
+                    <h1 class="title_of_wishList"> علاقه مندی ها</h1>
+                    <p class="address_of_wishList">صفحه اصلی/<a href="#" class="address_of_wishList_link">علاقه مندی ها</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="empty_wish_list text-center">
+                    <img src="img/empty-cart.png" class="py-5">
+                    <h2 class="explain_of_empty_wish_list">هیچ محصولی به لیست علاقه مندی اضافه نشده است</h2>
+                    <button type="button" class="btn_of_back_homePage">بازگشت به صفحه اصلی</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{/body}
+
