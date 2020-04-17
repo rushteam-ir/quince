@@ -77,13 +77,17 @@
 }
 
 .btn_of_delete_favorite{
-    color: #b21f2d;
+    color: red;
 }
 .btn_of_delete_favorite:hover{
-    color: #960017;
+    color: red;
 }
 
 .add_shopping_card{
+    color: forestgreen;
+}
+
+.add_shopping_card:hover{
     color: green;
 }
 
