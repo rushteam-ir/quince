@@ -36,7 +36,7 @@ category_schema.statics = {
 
         });
 
-        let find_cat = await category_model.findOne({title : title_inp, parent : null});
+        let find_cat = await category_model.findOne({title : title_inp, parent : parent});
 
         if(!find_cat){
 
@@ -49,6 +49,8 @@ category_schema.statics = {
             return null;
 
         }
+
+        return result;
 
     },
 

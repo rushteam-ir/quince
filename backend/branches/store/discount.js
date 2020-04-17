@@ -4,6 +4,8 @@ router.get('/', async(req,res)=>{
 
     try{
 
+        await discount_model.checkExpiration();
+
         let data = {
 
             list : await discount_model.get()
