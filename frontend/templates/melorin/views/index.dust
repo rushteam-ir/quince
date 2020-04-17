@@ -5,11 +5,11 @@
 {/title}
 {<css}
     <link rel="stylesheet" href="css/front-end/index.css">
-    <link rel="stylesheet" href="css/general/swimper.css">
+    <link rel="stylesheet" href="css/general/swiper.css">
 {/css}
 {<js}
+    <script src="js/general/swiper.js"></script>
     <script src="js/front-end/index.js"></script>
-    <script src="js/general/swimper.js"></script>
 {/js}
 
 {<body}
@@ -168,7 +168,7 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 
-                <div class="main_product_slider">
+                <div class="main_product_slider swiper-slide">
                     <a href="" class="text-right dir_rtl ">
                         <img class="img_of_product_slider" src="img/transparent2.png" alt="">
 
@@ -182,7 +182,7 @@
                     </a>
                 </div>
 
-                <div class="main_product_slider">
+                <div class="main_product_slider swiper-slide">
                     <a href="" class="text-right dir_rtl ">
                         <img class="img_of_product_slider" src="img/transparent1.png" alt="">
 
@@ -196,7 +196,89 @@
                     </a>
                 </div>
 
-                <div class="main_product_slider">
+                <div class="main_product_slider swiper-slide">
+                    <a href="" class="text-right dir_rtl ">
+                        <img class="img_of_product_slider" src="img/transparent3.png" alt="">
+
+                        <div class="info_box_slider">
+                            
+                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
+                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
+                        
+                        </div>
+
+                    </a>
+                </div>
+                <div class="main_product_slider swiper-slide">
+                    <a href="" class="text-right dir_rtl ">
+                        <img class="img_of_product_slider" src="img/transparent2.png" alt="">
+
+                        <div class="info_box_slider">
+                            
+                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
+                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
+                        
+                        </div>
+
+                    </a>
+                </div>
+
+                <div class="main_product_slider swiper-slide">
+                    <a href="" class="text-right dir_rtl ">
+                        <img class="img_of_product_slider" src="img/transparent1.png" alt="">
+
+                        <div class="info_box_slider">
+                            
+                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
+                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
+                        
+                        </div>
+
+                    </a>
+                </div>
+
+                <div class="main_product_slider swiper-slide">
+                    <a href="" class="text-right dir_rtl ">
+                        <img class="img_of_product_slider" src="img/transparent3.png" alt="">
+
+                        <div class="info_box_slider">
+                            
+                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
+                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
+                        
+                        </div>
+
+                    </a>
+                </div>
+                <div class="main_product_slider swiper-slide">
+                    <a href="" class="text-right dir_rtl ">
+                        <img class="img_of_product_slider" src="img/transparent2.png" alt="">
+
+                        <div class="info_box_slider">
+                            
+                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
+                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
+                        
+                        </div>
+
+                    </a>
+                </div>
+
+                <div class="main_product_slider swiper-slide">
+                    <a href="" class="text-right dir_rtl ">
+                        <img class="img_of_product_slider" src="img/transparent1.png" alt="">
+
+                        <div class="info_box_slider">
+                            
+                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
+                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
+                        
+                        </div>
+
+                    </a>
+                </div>
+
+                <div class="main_product_slider swiper-slide">
                     <a href="" class="text-right dir_rtl ">
                         <img class="img_of_product_slider" src="img/transparent3.png" alt="">
 
@@ -211,75 +293,6 @@
                 </div>
 
 
-                <div class="main_product_slider">
-                    <a href="" class="text-right dir_rtl ">
-                        <img class="img_of_product_slider" src="img/transparent1.png" alt="">
-
-                        <div class="info_box_slider">
-                            
-                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
-                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
-                        
-                        </div>
-
-                    </a>
-                </div>
-                <div class="main_product_slider">
-                    <a href="" class="text-right dir_rtl ">
-                        <img class="img_of_product_slider" src="img/transparent2.png" alt="">
-
-                        <div class="info_box_slider">
-                            
-                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
-                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
-                        
-                        </div>
-
-                    </a>
-                </div>
-
-                <div class="main_product_slider">
-                    <a href="" class="text-right dir_rtl ">
-                        <img class="img_of_product_slider" src="img/transparent1.png" alt="">
-
-                        <div class="info_box_slider">
-                            
-                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
-                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
-                        
-                        </div>
-
-                    </a>
-                </div>
-
-                <div class="main_product_slider">
-                    <a href="" class="text-right dir_rtl ">
-                        <img class="img_of_product_slider" src="img/transparent3.png" alt="">
-
-                        <div class="info_box_slider">
-                            
-                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
-                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
-                        
-                        </div>
-
-                    </a>
-                </div>
-
-
-                <div class="main_product_slider">
-                    <a href="" class="text-right dir_rtl ">
-                        <img class="img_of_product_slider" src="img/transparent1.png" alt="">
-
-                        <div class="info_box_slider">
-                            
-                            <p class="title_of_product_slider">جوراب زنانه مدل اسکاچی فری سایز کد 1276</p>
-                            <p class="price_custom text-left">15.000 <span class="price_unic">تومان</span></p>
-                        
-                        </div>
-
-                    </a>
-                </div>
 
 
             </div>

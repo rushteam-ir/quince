@@ -25,7 +25,18 @@ user_schema.statics = {
 
     editProfile : async function(user_id, user_data){
 
-        return await user_model.findByIdAndUpdate(user_id, {$set : user_data}, {new : true});
+        let find_user = await user_model.findOne({email : user_data.email});
+
+        if(!find_user || find_user._id == user_id){
+
+            return await user_model.findByIdAndUpdate(user_id, {$set : user_data}, {new : true});
+
+        }
+        else{
+
+            return null;
+
+        }
     },
 
     recoveryEmail : async function(user_email){

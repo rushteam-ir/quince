@@ -18,10 +18,12 @@ discount_schema.statics = {
     add : async function (discount_data) {
 
         let list = await discount_model.find();
+
         discount_data.row = list.length + 1;
         discount_data.registration_date = getCurrentDate();
 
         let new_discount = new discount_model(discount_data);
+
         return await new_discount.save();
 
     },
@@ -41,6 +43,12 @@ discount_schema.statics = {
     checkId : async function (code_id) {
 
         return await discount_model.findOne({code_id : code_id});
+
+    },
+
+    checkExpiration : async function () {
+
+        let find_discount = await discount_model.findOne({code_id : code_id});
 
     },
 

@@ -1,7 +1,7 @@
 // MongoDB schema
 let category_schema = new mongoose.Schema({
 
-    title : {type : String, unique : true},
+    title : String,
     row : Number,
     parent : {
         type : 'ObjectId',
@@ -36,7 +36,7 @@ category_schema.statics = {
 
         });
 
-        let find_cat = await category_model.findOne({title : title_inp});
+        let find_cat = await category_model.findOne({title : title_inp, parent : parent});
 
         if(!find_cat){
 
@@ -46,9 +46,11 @@ category_schema.statics = {
         }
         else{
 
-            return null
+            return null;
 
         }
+
+        return result;
 
     },
 
