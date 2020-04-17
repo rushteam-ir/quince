@@ -22,7 +22,8 @@
         </div>
     </div>
 </section>
-<section>
+
+<section class="d-none">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -36,5 +37,72 @@
     </div>
 </section>
 
+<section class="my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center py-4">
+                <h2 class="explain_of_empty_wish_list">لیست علاقه مندی</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-striped text-center" dir="rtl">
+                    <thead>
+                    <tr>
+                        <th scope="col">ردیف</th>
+                        <th scope="col">تصویر محصول</th>
+                        <th scope="col">نام محصول</th>
+                        <th scope="col">قیمت واحد(ریال)</th>
+                        <th scope="col">حذف</th>
+                        <th scope="col">افزودن به سبد خرید</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row" class="padding_top_td">1</th>
+                        <td>
+                            <img src="img/transparent1.png" class="img_of_product_in_wish_list">
+                        </td>
+                        <td class="padding_top_td">جوراب مردانه کد 1154</td>
+                        <td class="padding_top_td">
+                            120,000
+                        </td>
+                        <td class="padding_top_td">
+                            <a href="" class="btn_of_delete_favorite">
+                                <i class="fal fa-trash-alt"></i>
+                            </a>
+                        </td>
+                        <td class="padding_top_td">
+                            <a href="" class="add_shopping_card">
+                                <i class="fal fa-shopping-cart"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="padding_top_td">1</th>
+                        <td>
+                            <img src="img/transparent1.png" class="img_of_product_in_wish_list">
+                        </td>
+                        <td class="padding_top_td">جوراب مردانه کد 1154</td>
+                        <td class="padding_top_td">
+                            120,000
+                        </td>
+                        <td class="padding_top_td">
+                            <a href="" class="btn_of_delete_favorite">
+                                <i class="fal fa-trash-alt"></i>
+                            </a>
+                        </td>
+                        <td class="padding_top_td">
+                            <a href="" class="add_shopping_card">
+                                <i class="fal fa-shopping-cart"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
 {/body}
 
