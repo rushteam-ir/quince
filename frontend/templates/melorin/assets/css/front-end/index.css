@@ -410,6 +410,7 @@
     background-color: white;
     padding: 25px 20px 25px 20px;
     transition: all linear 0.08s;
+    text-align: center !important;
 }
 
 .rating_of_product_slider {
@@ -424,7 +425,6 @@
     color: white;
     background-color: #84C885;
     width: 30%;
-    margin-right: 70%;
 }
 
 .first_slider_slide{
