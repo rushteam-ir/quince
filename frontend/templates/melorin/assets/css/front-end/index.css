@@ -49,7 +49,7 @@ nav {
     transform: scale(1.1);
 }
 
-.field_of_second_slider{
+.field_of_second_slider {
     color: white;
     position: absolute;
     right: 92px;
@@ -59,18 +59,18 @@ nav {
     direction: rtl;
 }
 
-.header_of_sec_slider{
+.header_of_sec_slider {
     font-size: 2.9rem;
     width: 520px;
     font-family: main-font;
 }
 
-.small_of_sec_slider{
+.small_of_sec_slider {
     font-size: 1rem;
     width: 520px;
 }
 
-.btn_of_about_us_slider{
+.btn_of_about_us_slider {
     color: white;
     background-color: #EB7269;
     width: 149px;
@@ -79,9 +79,9 @@ nav {
     font-family: main-font;
 }
 
-.btn_of_contact_us_slider{
+.btn_of_contact_us_slider {
     color: white;
-    background-color:#007AFF;
+    background-color: #007AFF;
     width: 149px;
     height: 50px;
     margin-right: 20px;
@@ -89,9 +89,9 @@ nav {
     font-family: main-font;
 }
 
-.btn_of_first_slider{
+.btn_of_first_slider {
     color: white;
-    background-color:#EB7269;
+    background-color: #EB7269;
     width: 230px;
     height: 50px;
     margin-right: 20px;
@@ -321,7 +321,7 @@ nav {
 }
 
 .info_of_service {
-    width: 310px;
+    width: 100%;
     margin: 0 auto;
     line-height: 26px;
     text-align: center;
@@ -348,7 +348,7 @@ nav {
 
 .field_of_category_info {
     width: 100%;
-    height: 300px;
+    height: 100%;
     position: absolute;
     top: 0px;
     text-align: right;
@@ -574,23 +574,25 @@ nav {
 
 /* article */
 
-.index_article_img{
+.index_article_img {
     height: 283px;
 }
 
-.main_field_of_article_text{
+.main_field_of_article_text {
     color: #171717;
 }
-.header_of_article{
+
+.header_of_article {
     font-size: 1.3rem;
     font-family: main-font;
     font-weight: bold;
 }
-.col_of_article{
+
+.col_of_article {
     background-color: white;
 }
 
-.category_of_article{
+.category_of_article {
     position: absolute;
     top: 10px;
     right: 27px;
@@ -603,12 +605,16 @@ nav {
     line-height: 29px;
 }
 
-.view_box_article{
+.view_box_article {
     position: absolute;
     bottom: 6px;
     left: 42px;
     color: #adadad;
     font-size: 0.9rem;
+}
+
+.description_of_article {
+    line-height: 26px;
 }
 
 /*Media Query*/
@@ -617,6 +623,13 @@ nav {
     .sale_product_category {
         width: 100%;
     }
+    .main_field_of_category {
+        height: 250px;
+    }
+    .header_of_category {
+        margin-top: 70px !important;
+    }
+    
 }
 
 @media only screen and (max-width: 991px) {}
