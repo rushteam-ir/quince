@@ -61,8 +61,6 @@ discount_schema.statics = {
 
     checkExpiration : async function () {
 
-        log("DELETED!")
-
         let find_discount = await discount_model.find();
 
         find_discount.forEach(async(dis)=>{

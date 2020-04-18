@@ -39,31 +39,6 @@ router.post('/', async(req,res)=>{
             return res.redirect(`${config.backend_url}store/discount`);
 
         }
-        else if(isNaN(parseInt(count_inp))){
-
-            return res.redirect(`${config.backend_url}store/discount`);
-
-        }
-        else if(isNaN(parseInt(day_inp)) || parseInt(day_inp) > 31 || parseInt(month_inp) > 12 || parseInt(year_inp) < 1399){
-
-            return res.redirect(`${config.backend_url}store/discount/?msg=date-error`);
-
-        }
-        else if(parseInt(current_date[0]) > parseInt(year_inp)){
-
-            return res.redirect(`${config.backend_url}store/discount/?msg=date-error`);
-
-        }
-        else if(parseInt(current_date[1]) > parseInt(month_inp)){
-
-            return res.redirect(`${config.backend_url}store/discount/?msg=date-error`);
-
-        }
-        else if(parseInt(current_date[2]) >= parseInt(day_inp)){
-
-            return res.redirect(`${config.backend_url}store/discount/?msg=date-error`);
-
-        }
 
 
         let code = '';
