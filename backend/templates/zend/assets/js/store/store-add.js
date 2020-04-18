@@ -46,7 +46,7 @@ $(function () {
 })
 
 // errors
-
+/*
 function storeAddError() {
 
     $('.alert_query').remove();
@@ -123,3 +123,4 @@ function storeAddError() {
     }
 
 }
+*/
