@@ -1,7 +1,11 @@
 // product slider
 
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.main_product_swiper', {
   slidesPerView: 4,
+  navigation: {
+    nextEl: '.product_arrow_next',
+    prevEl: '.product_arrow_prev',
+  },
 });
 
 // headerslider
