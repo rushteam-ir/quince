@@ -1,0 +1,72 @@
+{>"layouts/layout"/}
+
+{<title}
+    <title>فاکتور خرید</title>
+{/title}
+{<css}
+    <link rel="stylesheet" href="css/user/invoices/invoices.css">
+{/css}
+
+
+
+{<body}
+<div class="container">
+    <table class="table table-hover dir_rtl text-center table_size my-5" >
+        <thead class="bg_of_heading">
+        <tr>
+            <th scope="col">ردیف</th>
+            <th scope="col">کد کالا</th>
+            <th scope="col">نام کالا</th>
+            <th scope="col">تعداد سفارش</th>
+            <th scope="col">قیمت</th>
+            <th scope="col">تاریخ</th>
+            <th scope="col">جزییات</th>
+        </tr>
+        </thead>
+        <tbody class="bg-white">
+        <tr>
+            <th scope="row">1</th>
+            <td>SP9038240</td>
+            <td>جوراب زنانه</td>
+            <td>2</td>
+            <td>24000تومان</td>
+            <td>1399/01/24</td>
+            <td>
+                <a href="" class="show_detail_of_factor">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            </td>
+
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>SP9038240</td>
+            <td>جوراب زنانه</td>
+            <td>2</td>
+            <td>24000تومان</td>
+            <td>1399/01/24</td>
+            <td>
+                <a href="" class="show_detail_of_factor">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>SP9038240</td>
+            <td>جوراب زنانه</td>
+            <td>2</td>
+            <td>24000تومان</td>
+            <td>1399/01/24</td>
+            <td>
+                <a href="" class="show_detail_of_factor">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            </td>
+
+        </tr>
+        </tbody>
+    </table>
+</div>
+{/body}
+
