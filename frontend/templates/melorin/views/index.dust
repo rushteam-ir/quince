@@ -472,6 +472,280 @@
 </section>
 
 
+<section class="mt-5">
+
+    <div class="container">
+
+        <div class="swiper-container main_product_swiper" dir="rtl">
+
+            <div class="header_of_sliders text-right dir-rtl mb-4">
+
+                <h3 class="header_info">
+                    پر فروش ترین ها
+                </h3>
+    
+            </div>
+            <div class="swiper-wrapper product_slider">
+
+                <div class="swiper-slide text-right slider_card_product">
+                    
+                    <div class="mx-2">
+
+                        <img class="img_of_product_slider mb-3" src="img/transparent10.png" alt="">
+
+                            <div class="main_field_of_product_assets">
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-eye eye_icon_custom"></i>
+                                </div>
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                
+                            </div>
+
+                            <div class="star_product_slider">
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                            </div>
+                            <div class="product_slider_info">
+                                <p class="mt-1">جوراب مردانه کد 1154</p>
+                                <hr>
+
+                                <div>
+                                    <p class="price_product_slider">25.000<span class="price_unic">تومان</span></p>
+                                </div>
+                                
+                            </div>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide text-right slider_card_product">
+                    
+                    <div class="mx-2">
+
+                        <img class="img_of_product_slider mb-3" src="img/transparent13.png" alt="">
+
+                            <div class="main_field_of_product_assets">
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-eye eye_icon_custom"></i>
+                                </div>
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                
+                            </div>
+
+                            <div class="star_product_slider">
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                            </div>
+                            <div class="product_slider_info">
+                                <p class="mt-1">جوراب مردانه کد 1154</p>
+                                <hr>
+
+                                <div class="d-inline-block">
+                                    <p class="price_product_slider ">25.000<span class="price_unic">تومان</span></p>
+                                </div>
+
+                                <div class="sale_price d-inline-block mr-3">
+                                    <p class="price_product_slider ">25.000<span class="price_unic">تومان</span></p>
+                                </div>
+                                
+                                <div class="d-inline-block mr-3">
+                                    <p class="num_of_sale">
+                                        30%-
+                                    </p>
+                                </div>
+
+                            </div>
+
+                    </div>
+
+                </div>
+                <div class="swiper-slide text-right slider_card_product">
+                    
+                    <div class="mx-2">
+
+                        <img class="img_of_product_slider mb-3" src="img/transparent10.png" alt="">
+
+                            <div class="main_field_of_product_assets">
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-eye eye_icon_custom"></i>
+                                </div>
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                
+                            </div>
+
+                            <div class="star_product_slider">
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                            </div>
+                            <div class="product_slider_info">
+                                <p class="mt-1">جوراب مردانه کد 1154</p>
+                                <hr>
+
+                                <div>
+                                    <p class="price_product_slider">25.000<span class="price_unic">تومان</span></p>
+                                </div>
+                                
+                            </div>
+
+                    </div>
+
+                </div>
+                
+
+                <div class="swiper-slide text-right slider_card_product">
+                    
+                    <div class="mx-2">
+
+                        <img class="img_of_product_slider mb-3" src="img/transparent13.png" alt="">
+
+                            <div class="main_field_of_product_assets">
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-eye eye_icon_custom"></i>
+                                </div>
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                
+                            </div>
+
+                            <div class="star_product_slider">
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                            </div>
+                            <div class="product_slider_info">
+                                <p class="mt-1">جوراب مردانه کد 1154</p>
+                                <hr>
+
+                                <div class="d-inline-block">
+                                    <p class="price_product_slider ">25.000<span class="price_unic">تومان</span></p>
+                                </div>
+
+                                <div class="sale_price d-inline-block mr-3">
+                                    <p class="price_product_slider ">25.000<span class="price_unic">تومان</span></p>
+                                </div>
+                                
+                                <div class="d-inline-block mr-3">
+                                    <p class="num_of_sale">
+                                        30%-
+                                    </p>
+                                </div>
+
+                            </div>
+
+                    </div>
+
+                </div>
+                
+                <div class="swiper-slide text-right slider_card_product">
+                    
+                    <div class="mx-2">
+
+                        <img class="img_of_product_slider mb-3" src="img/transparent13.png" alt="">
+
+                            <div class="main_field_of_product_assets">
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-eye eye_icon_custom"></i>
+                                </div>
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                
+                            </div>
+
+                            <div class="star_product_slider">
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                            </div>
+                            <div class="product_slider_info">
+                                <p class="mt-1">جوراب مردانه کد 1154</p>
+                                <hr>
+
+                                <div class="d-inline-block">
+                                    <p class="price_product_slider ">25.000<span class="price_unic">تومان</span></p>
+                                </div>
+
+                                <div class="sale_price d-inline-block mr-3">
+                                    <p class="price_product_slider ">25.000<span class="price_unic">تومان</span></p>
+                                </div>
+                                
+                                <div class="d-inline-block mr-3">
+                                    <p class="num_of_sale">
+                                        30%-
+                                    </p>
+                                </div>
+
+                            </div>
+
+                    </div>
+
+                </div>
+
+                
+
+            </div>
+
+            <div class="swiper-button-prev product_arrow_prev"></div>
+            <div class="swiper-button-next product_arrow_next"></div>
+
+        </div>
+        
+    </div>
+
+</section>
+
+
 {!Parallax!}
     <section>
         <div class="parallax_css_picture mt-5">
@@ -510,7 +784,7 @@
                             
                             <p class="mt-4 mb-0 header_of_article">سلام من به تو!</p>
                             <small>20 فروردین, 1398</small>
-                            <p class="mt-3">ارسال رایگان برا همه نیست ، خوشحال نشو ، فقط واسه اونایی که 150 تومن به بالا خرید کینن ارسالشون رایگانه در غیر این صورت هزینش پا خودن به ما ربطی نداره</p>
+                            <p class="mt-3 description_of_article">ارسال رایگان برا همه نیست ، خوشحال نشو ، فقط واسه اونایی که 150 تومن به بالا خرید کینن ارسالشون رایگانه در غیر این صورت هزینش پا خودن به ما ربطی نداره</p>
         
                             <p>کسری حبیب بیگی</p>
                             <p class="view_box_article">
@@ -536,7 +810,7 @@
                             
                             <p class="mt-4 mb-0 header_of_article">سلام من به تو!</p>
                             <small>20 فروردین, 1398</small>
-                            <p class="mt-3">ارسال رایگان برا همه نیست ، خوشحال نشو ، فقط واسه اونایی که 150 تومن به بالا خرید کینن ارسالشون رایگانه در غیر این صورت هزینش پا خودن به ما ربطی نداره</p>
+                            <p class="mt-3 description_of_article">ارسال رایگان برا همه نیست ، خوشحال نشو ، فقط واسه اونایی که 150 تومن به بالا خرید کینن ارسالشون رایگانه در غیر این صورت هزینش پا خودن به ما ربطی نداره</p>
         
                             <p>کسری حبیب بیگی</p>
                             <p class="view_box_article">
@@ -562,7 +836,7 @@
                             
                             <p class="mt-4 mb-0 header_of_article">سلام من به تو!</p>
                             <small>20 فروردین, 1398</small>
-                            <p class="mt-3">ارسال رایگان برا همه نیست ، خوشحال نشو ، فقط واسه اونایی که 150 تومن به بالا خرید کینن ارسالشون رایگانه در غیر این صورت هزینش پا خودن به ما ربطی نداره</p>
+                            <p class="mt-3 description_of_article">ارسال رایگان برا همه نیست ، خوشحال نشو ، فقط واسه اونایی که 150 تومن به بالا خرید کینن ارسالشون رایگانه در غیر این صورت هزینش پا خودن به ما ربطی نداره</p>
         
                             <p>کسری حبیب بیگی</p>
                             <p class="view_box_article">
@@ -575,6 +849,8 @@
                     </div>
                 </a>
             </div>
+
+
         </div>
     </div>
 </section>
