@@ -132,7 +132,9 @@
 
                         <td class="list_detail_custom">{.codes_number}</td>
 
-                        <td class="list_detail_custom">{.codes_active}</td>
+                        <td class="list_detail_custom ">
+                            <div class="active_code_discount">{.codes_active}</div>
+                        </td>
 
                         <td class="list_detail_custom">{.registration_date}</td>
 

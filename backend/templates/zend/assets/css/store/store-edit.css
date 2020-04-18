@@ -192,3 +192,7 @@
 .small_customize{
     margin-top: -10px;
 }
+
+textarea.form-control{
+    line-height: 26px;
+}

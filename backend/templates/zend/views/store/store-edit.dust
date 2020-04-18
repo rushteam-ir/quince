@@ -98,7 +98,6 @@
                     <div class="field_wrapper row">
                         <div class="col-6 p-0">
                             <input class="form-control width_inp_customize" id="first-feature" type="text" name="product_features_inp[]" value="">
-                            <a href="javascript:void(0);" class="add_button" title="Add field"><i class="fas fa-plus mt-2"></i></a>
                         </div>
                     </div>
                 </div>

@@ -110,55 +110,6 @@ $('.product_del').on('click', function (e) {
     })
 });
 
-// input add & remove
-$(document).ready(function () {
-
-    let maxField = 10;
-    let addButton = $('.add_button');
-    let wrapper = $('.field_wrapper');
-    let fieldHTML = '<div class="col-6 p-0"><input class="form-control width_inp_customize" name="product_features_inp[]" type="text" value=""><a href="javascript:void(0);" class="remove_button"><i class="fas fa-minus mt-2"></i></a></div>';
-    let x = 1;
-
-    let d = {"id": $('#product-id').attr('value') };
-        $.get(`${backend_url}store/api/get-features`, d, function (data) {
-
-        for(let i = 1; i < data.length; i++){
-
-            let fieldHTML2 = '<div class="col-6 p-0"><input class="form-control width_inp_customize" name="product_features_inp[]" type="text" value='+data[i]+'><a href="javascript:void(0);" class="remove_button"><i class="fas fa-minus mt-2"></i></a></div>';
-
-            if (x < maxField) {
-
-                x++;
-                $(wrapper).append(fieldHTML2);
-
-            }
-
-        }
-
-    });
-
-    $(addButton).click(function () {
-
-        if (x < maxField) {
-
-            x++;
-            $(wrapper).append(fieldHTML);
-
-        }
-
-    });
-
-    $(wrapper).on('click', '.remove_button', function (e) {
-
-        e.preventDefault();
-        $(this).parent('div').remove();
-        x--;
-
-    });
-
-});
-
-
 // chose file customize
 (function () {
 

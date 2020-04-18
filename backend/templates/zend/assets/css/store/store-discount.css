@@ -62,7 +62,7 @@
 
 .discount_inp_custom {
     margin: 0 12px;
-    width: 200px;
+    width: 140px;
 }
 
 .last_discount_inp_custom {
@@ -79,12 +79,23 @@
     background-color: #3758FF;
 }
 
-.data_inp_custom{
+.data_inp_custom {
     margin: 0 12px;
     width: 90px;
 }
 
-.header_date{
+.header_date {
     font-family: main-font;
     margin-bottom: .5rem;
+}
+
+.active_code_discount {
+    background-color: #E6F8F3;
+    border-radius: 500px;
+    color: #0ABB87;
+    width: 99px;
+    height: 30px;
+    line-height: 31px;
+    margin: 0 auto;
+    padding: 0px !important;
 }
