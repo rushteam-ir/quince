@@ -47,6 +47,13 @@ router.post('/', async(req,res)=>{
 
         req.session.product_add_form = product_form;
 
+        if(!Array.isArray(product_features_inp)){
+
+            product_features_inp = [];
+            product_features_inp.push('');
+
+        }
+
         let valid_title = validation.isSafe(title_inp);
         let valid_parent = isObjectId(parent_inp);
         let valid_child = isObjectId(child_inp);
@@ -54,24 +61,18 @@ router.post('/', async(req,res)=>{
         let valid_price = validation.isSafe(price_inp);
         let valid_stock = validation.isSafe(stock_inp);
         let valid_discount = validation.isSafe(discount_inp);
-        let valid_product_features = [];
 
         for(let i = 0; i < product_features_inp.length; i++){
 
-            valid_product_features[i] = validation.isSafe(product_features_inp[i]);
+            if(product_features_inp[i] == ''){
+
+                product_features_inp.splice(i , 1);
+
+            }
 
         }
 
-        if(!req.files['product_other_images[]']){
-
-            return res.redirect(`${config.backend_url}store/add/?msg=few-images`);
-
-        }
-        else if(req.files['product_other_images[]'].length < 3){
-
-            return res.redirect(`${config.backend_url}store/add/?msg=few-images`);
-
-        }
+        log(product_features_inp);
 
         if(valid_title != ''){
             return res.redirect(`${config.backend_url}store/add`);
@@ -94,8 +95,17 @@ router.post('/', async(req,res)=>{
         else if(valid_price != ''){
             return res.redirect(`${config.backend_url}store/add`);
         }
-        else if(!valid_product_features.includes('')){
+        else if(product_features_inp.length == 0){
             return res.redirect(`${config.backend_url}store/add`);
+        }
+        else if(!req.files){
+            return res.redirect(`${config.backend_url}store/add/?msg=few-images`);
+        }
+        else if(!req.files.product_main_image){
+            return res.redirect(`${config.backend_url}store/add/?msg=few-images`);
+        }
+        else if(req.files['product_other_images[]'].length < 3){
+            return res.redirect(`${config.backend_url}store/add/?msg=few-images`);
         }
 
         let new_product = {

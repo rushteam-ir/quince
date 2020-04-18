@@ -26,7 +26,7 @@
 
             {@alertWarn key="limited-image" msg="حجم تصویر انتخاب شده بیشتر از حد مجاز است."}{/alertWarn}
             {@alertWarn key="illegal-image" msg="پسوند تصویر انتخاب شده مجاز نمی باشد."}{/alertWarn}
-            {@alertWarn key="few-images" msg="تصاویر دیگر محصول باید حداقل 3 عکس یا بیشتر باشد."}{/alertWarn}
+            {@alertWarn key="few-images" msg="تصویر اصلی حتما باید اضافه شود و تصاویر دیگر محصول باید حداقل 3 عکس یا بیشتر باشد."}{/alertWarn}
             {@alertError key="add-fail" msg="محصول جدید ثبت نشد لطفا از نام های تکراری استفاده نکنید و مجدد تلاش فرمایید"}{/alertError}
 
 
@@ -103,9 +103,15 @@
                     </label>
                     <div class="field_wrapper row">
                         {#product_features_slot_default}
-                            <div class="col-6 mt-3 p-0">
-                                <input class="form-control width_inp_customize" id="specifict" type="text" name="product_features_inp[]" value="">
-                            </div>
+                            {@eq key="{.}" value="1"}
+                                <div class="col-6 mt-3 p-0">
+                                    <input class="form-control width_inp_customize features_class_{.}" id="{.}" type="text" name="product_features_inp[]" value="">
+                                </div>
+                            {:else}
+                                <div class="col-6 mt-3 p-0">
+                                    <input class="form-control width_inp_customize features_class_{.}" id="{.}" type="text" name="product_features_inp[]" value="" disabled>
+                                </div>
+                            {/eq}
                         {/product_features_slot_default}
                     </div>
                 </div>
