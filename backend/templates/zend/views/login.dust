@@ -51,12 +51,12 @@
 
                   <div class="form-group">
                     <label for="email-for-id" class="text-right d-block">ایمیل</label>
-                    <input type="text" class="form-control dir-rtl dashbord_login_input" id="email-for-id" name="email_inp" value="{login_form.email_inp}" autocomplete="off">
+                    <input type="text" class="form-control dashbord_login_input" id="email-for-id" name="email_inp" value="{login_form.email_inp}" autocomplete="off">
                   </div>
 
                   <div class="form-group">
                     <label for="password-for-id" class="text-right d-block">رمز عبور</label>
-                    <input type="password" class="form-control dir-rtl dashbord_login_input" id="password-for-id"
+                    <input type="password" class="form-control dashbord_login_input" id="password-for-id"
                       name="password_inp" autocomplete="off">
                   </div>
 

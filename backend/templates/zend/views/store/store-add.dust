@@ -15,15 +15,6 @@
                 اضافه کردن محصول
             </p>
 
-            <div class="main_info_alert_box text-right mb-3 mt-5">
-
-                <i class="fas fa-info d-inline"></i>
-                <p class="d-inline m-0 mr-2">
-                    حتما به این مورد توجه بفرمایید که قبل از هر گونه اقدام به اضافه کردن محصول جدید حتما <a href="{backend_url}guide" class="link_to_guid">راهنما</a> را مطالعه بفرمایید.
-                </p>
-
-            </div>
-
             {@alertWarn key="limited-image" msg="حجم تصویر انتخاب شده بیشتر از حد مجاز است."}{/alertWarn}
             {@alertWarn key="illegal-image" msg="پسوند تصویر انتخاب شده مجاز نمی باشد."}{/alertWarn}
             {@alertWarn key="few-images" msg="تصویر اصلی حتما باید اضافه شود و تصاویر دیگر محصول باید حداقل 3 عکس یا بیشتر باشد."}{/alertWarn}

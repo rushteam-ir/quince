@@ -186,6 +186,20 @@
             </a>
 
         </div>
+
+        <div class="guid_box_alert text-right dir_rtl wow fadeInUp" id="guid_alert_box">
+                
+            <div class="text_offuid_alert">
+                <i class="fas fa-exclamation mr-4"></i>
+                <p class="d-inline-block mr-2">لطفا قبل از استفاده از سیستم مدیریت محتوا <a href="" class="link_to_guid"> راهنما </a href="" class="link_to_guid">را مطالعه بفرمایید.</p>
+            </div>
+
+            <div class="remove_gild_alert" onclick="removeAlert()">
+                <i class="fas fa-times"></i>
+            </div>
+
+        </div>
+
     </section>
 
     {+body/}

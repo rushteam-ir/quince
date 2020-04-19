@@ -80,8 +80,12 @@
                                     </div>
 
                                 </div>
+
+
+                                
                             </div>
                         {/list}
+                          
                     {:else}
                     <div class="col-12 p-0">
                         <div class="nothing_to_see_box">

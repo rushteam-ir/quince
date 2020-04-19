@@ -28,7 +28,6 @@ var swiper = new Swiper('.main_product_swiper', {
 var swiper = new Swiper('.main_slider', {
   slidesPerView: 1,
   effect: 'fade',
-  loop: true,
   pagination: {
     el: '.main_slider_pagination',
     type: 'progressbar',

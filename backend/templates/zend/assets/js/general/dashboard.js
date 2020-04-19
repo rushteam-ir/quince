@@ -1,3 +1,6 @@
+// wow call
+new WOW().init();
+
 // ring ring notif
 var notif_drd_id = document.getElementById('notif_drd_id');
 notif_drd_id.style.display = "none";
@@ -82,4 +85,27 @@ $('.logout_cms').on('click', function (e) {
 
 function redirect(url) {
     location.href = url
+}
+
+
+
+var guid_box = document.getElementById('guid_alert_box');
+
+function removeAlert(){
+
+    new WOW().init();
+    guid_box.style.animationName = "fadeOutDown";
+
+    setTimeout(function(){
+
+        guid_box.classList.add('d-none')
+        sessionStorage.alert = 1;
+
+    },1000)
+
+
+}
+
+if(sessionStorage.alert == 1){
+    guid_box.classList.add('d-none');
 }

@@ -52,7 +52,7 @@
                 لیست دسته بندی ها
             </p>
 
-            <div class="input-group mb-3">
+            <div class="input-group mb-4">
                 <div class="input-group-prepend">
                   <button class="btn search_btn_of_category"  type="button"><i class="fas fa-search"></i></button>
                 </div>
@@ -87,6 +87,26 @@
                 {/list_all}
                 </tbody>
               </table>
+
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center p-0 dir-ltr mt-5">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+
+                        <span aria-hidden="true">&raquo;</span>
+
+                    </a>
+                  </li>
+                </ul>
+              </nav>
 
 
     </div>

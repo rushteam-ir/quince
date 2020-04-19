@@ -224,11 +224,6 @@
     font-size: 0.9rem;
 }
 
-.link_to_guid{
-    cursor: help;
-    border-bottom: 1px dashed #2D5AAB;
-}
-
 .textarea.form-control{
     line-height: 26px;
 }
