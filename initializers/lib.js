@@ -12,6 +12,14 @@ getCurrentDate = function() {
     return(jdate.format('YYYY/MM/DD'));
 };
 
+JalaliConvert = function(date_array){
+
+    let jdate = new JalaliDate(date_array);
+
+    return jdate._d
+
+}
+
 isUndefined = function (obj) {
 
     if(typeof obj == 'undefined'){
@@ -23,7 +31,7 @@ isUndefined = function (obj) {
 
 };
 
-randomInt = function(min, max) { // min and max included
+randomInt = function(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
