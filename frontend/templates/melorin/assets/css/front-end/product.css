@@ -34,41 +34,6 @@
 
 /**/
 
-/*Title of Section*/
-
-.title_part_of_page {
-    color: #292929;
-    display: inline-block;
-    font-family: main-font;
-    font-weight: 500;
-    line-height: 1;
-    margin: 0;
-    position: relative;
-}
-
-.title_part_of_page::before {
-    background-color: #292929;
-    content: "";
-    height: 1px;
-    left: -210px;
-    position: absolute;
-    top: 21px;
-    transition: all 0.4s ease 0s;
-    width: 160px;
-}
-
-.title_part_of_page::after {
-    background-color: #292929;
-    content: "";
-    height: 1px;
-    right: -210px;
-    position: absolute;
-    top: 21px;
-    transition: all 0.4s ease 0s;
-    width: 160px;
-}
-
-/*End Title of Section*/
 
 /*Slider Of Product*/
 .explain_about_product_box {
@@ -82,7 +47,7 @@
 }
 
 .title_of_product {
-    border-right: 4px solid #8D44AD;
+    border-right: 4px solid #EB7269;
     border-radius: 3px;
     padding: 10px 20px;
     height: 50px;
@@ -116,15 +81,15 @@
 }
 
 .img_of_gallery {
-    width: 80%;
-    height: 480px;
+    width: 90%;
+    height: 400px;
     margin: 20px;
     border-radius: 5px;
 }
 
 .thumb {
     width: 17%;
-    height: 100px;
+    height: 80px;
     margin: 4px;
     border-radius: 5px;
     cursor: pointer;
@@ -150,12 +115,11 @@
 }
 
 .price_and_explain_of_product {
-    width: 350px;
+    width: 300px;
     height: 305px;
     background-color: #F5F5F5;
     border-radius: 5px;
     margin-top: 30px;
-    margin-left: 10%;
 }
 
 .list_price_exp_product {
@@ -185,7 +149,7 @@
     border: none;
     border-radius: 5px;
     margin-left: 32px;
-    background: linear-gradient(120deg, #3494E6, #EC6EAD);
+    background: #EB7269;
     background-size: 200%;
     transition: .5s;
     color: white;

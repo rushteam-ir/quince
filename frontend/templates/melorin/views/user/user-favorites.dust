@@ -53,6 +53,7 @@
                         <th scope="col">تصویر محصول</th>
                         <th scope="col">نام محصول</th>
                         <th scope="col">قیمت واحد(ریال)</th>
+                        <th scope="col">وضعیت</th>
                         <th scope="col">حذف</th>
                         <th scope="col">افزودن به سبد خرید</th>
                     </tr>
@@ -66,6 +67,9 @@
                         <td class="padding_top_td">جوراب مردانه کد 1154</td>
                         <td class="padding_top_td">
                             120,000
+                        </td>
+                        <td class="padding_top_td">
+                            موجود
                         </td>
                         <td class="padding_top_td">
                             <a href="" class="btn_of_delete_favorite">
@@ -86,6 +90,9 @@
                         <td class="padding_top_td">جوراب مردانه کد 1154</td>
                         <td class="padding_top_td">
                             120,000
+                        </td>
+                        <td class="padding_top_td">
+                           نا موجود
                         </td>
                         <td class="padding_top_td">
                             <a href="" class="btn_of_delete_favorite">
