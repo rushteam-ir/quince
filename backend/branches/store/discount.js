@@ -31,31 +31,83 @@ router.post('/', async(req,res)=>{
         let {package_name_inp, count_inp, day_inp, month_inp, year_inp} = req.body;
 
         let valid_package_name = validation.isSafe(package_name_inp);
-        let valid_count =  validation.isSafe(count_inp);
         let end_value = req.body['end_inp[]'];
         let discount_value = req.body['discount_inp[]'];
         let exp_date = JalaliConvert([year_inp, month_inp, day_inp]);
         let curr_date = JalaliConvert(getCurrentDate().split('/'));
         let time_difference = exp_date.getTime() - curr_date.getTime();
+        let valid_end_inp = true;
+
+        if(!Array.isArray(end_value)){
+
+            end_value = [];
+            end_value.push('');
+
+        }
+
+        if(!Array.isArray(discount_value)){
+
+            discount_value = [];
+            discount_value.push('');
+
+        }
+
+        for(let i = 1; i < end_value.length - 1; i++){
+
+            let current_number = parseInt(end_value[i]);
+            let perv_number = parseInt(end_value[i-1]);
+
+            if(!isNaN(current_number) && !isNaN(perv_number)){
+
+                if(current_number <= perv_number){
+
+                    valid_end_inp = false;
+
+                }
+                if(current_number < 0 || perv_number < 0){
+
+                    valid_end_inp = false;
+
+                }
+
+            }
+            else{
+
+                valid_end_inp = false;
+
+            }
+        }
+
+        for(let i = 0; i < discount_value.length; i++){
+
+            if(isNaN(discount_value[i])){
+
+                discount_value.splice(i , 1);
+
+            }
+
+        }
 
         if(valid_package_name != ''){
-
             return res.redirect(`${config.backend_url}store/discount`);
-
         }
-        else if(isNaN(parseInt(valid_count))){
-
+        else if(isNaN(parseInt(count_inp))){
             return res.redirect(`${config.backend_url}store/discount`);
-
         }
         else if(time_difference < 0){
-
             return res.redirect(`${config.backend_url}store/discount/?msg=date-error`);
-
         }
-
-        
-
+        else if(end_value[0] != '' && end_value[end_value.length - 1] != ''){
+            if(isNaN(parseInt(end_value[0])) || isNaN(parseInt(end_value[end_value.length - 1]))){
+                return res.redirect(`${config.backend_url}store/discount/?msg=number-error`);
+            }
+        }
+        else if(!valid_end_inp){
+            return res.redirect(`${config.backend_url}store/discount/?msg=number-error`);
+        }
+        else if(discount_value.length == 0){
+            return res.redirect(`${config.backend_url}store/discount/?msg=discount-error`);
+        }
 
         let code = '';
         let code_id = '';
