@@ -8,6 +8,11 @@
     src: url("../../font/Vazir.ttf");
 }
 
+@font-face{
+    font-family: accent-font;
+    src: url("../../font/A.Rezvan.ttf");
+}
+
 body {
     font-family: second-font;
     background-color: #F5F5F5; ;

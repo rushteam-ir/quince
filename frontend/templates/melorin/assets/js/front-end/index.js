@@ -1,6 +1,6 @@
 // product slider
 
-var swiper = new Swiper('.main_product_swiper', {
+var product_swiper = new Swiper('.main_product_swiper', {
   slidesPerView: 4,
   navigation: {
     nextEl: '.product_arrow_next',
@@ -24,16 +24,18 @@ var swiper = new Swiper('.main_product_swiper', {
 
 // headerslider
 
-
-var swiper = new Swiper('.main_slider', {
+var main_swiper = new Swiper('.main_slider', {
   slidesPerView: 1,
+  loop:true,
   effect: 'fade',
   pagination: {
-    el: '.main_slider_pagination',
-    type: 'progressbar',
+    el: '.swiper-pagination',
+    clickable: true,
   },
   navigation: {
-    nextEl: '.main_slider_next',
-    prevEl: '.main_slider_prev',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 });
+
+new WOW().init();

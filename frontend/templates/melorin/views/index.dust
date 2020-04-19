@@ -12,6 +12,65 @@
 
 {<body}
 
+<section>
+
+        <div class="swiper-container main_slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide position-reletiv">
+
+                    <img class="w-100 img_of_main_slider "  src="img/big_slide1.jpg" alt="">
+
+                    <div class="firts_field_of_slider_info index_slider">
+
+                        <p class="mb-3 first_slider_text">برای اولین بار میتوانید</p>
+
+                        <p class="header_of_bog_slider">طرح دلخواه خودت را سفارش دهید !</p>
+
+                        <a href="#">
+                            اکنون سفارش بده
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide position-reletiv ">
+
+                    <img class="w-100 img_of_main_slider "  src="img/header.jpg" alt="">
+
+                    <div class="second_field_of_slider_info">
+
+                        <p class="header_of_bog_slider">انواع لباس زیر در طرح ها و رنگ های مختلف</p class="">
+                        <p class="mb-3 footer_text_of_slider ">با بیش از 100 مدل در بیش از 20 رنگ</p>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide position-reletiv ">
+
+                    <img class="w-100 img_of_main_slider "  src="img/big_slide2.jpg" alt="">
+
+                    <div class="third_field_of_slider_info">
+
+                        <p class="title_of_big_slide m-0">بیش از 50% تخفیف در راه است</p>
+                        <p class="header_of_bog_slider m-0">تخفیف های تابستانه را از دست ندهید</p>
+                        <p class="footer_text_of_slider">شروع تخفیف ها از 12 خرداد 1399</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination swiper-pagination-white"></div>
+
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+        </div>
+
+</section>
+
 {!Services!}
     <section>
         <div class="container-fluid">
