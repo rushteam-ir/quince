@@ -42,7 +42,7 @@
                         <div class="explain_about_product_details">
                             <div class="row">
                                 <div class="col-md-6 col-12 order-1 order-md-0 px-0">
-                                    <div class="price_and_explain_of_product">
+                                    <div class="price_and_explain_of_product mt-4">
                                         <ul class="pl-0 ul_size_price">
                                             <li class="list_price_exp_product">
                                                 <i class="far fa-check-square mx-2"></i>
@@ -86,7 +86,7 @@
                                             <p class="d-inline-block p_font_family_style">دسته بندی</p>
                                             <p class="mr-3"> جوراب زنانه</p>
                                         </li>
-                                        <li class="list_of_explain_details my-5">
+                                        <li class="list_of_explain_details my-2">
 
                                             <i class="fas fa-tasks">
                                                 &nbsp;
@@ -101,12 +101,22 @@
                                                     سایز: فری سایز
                                                 </li>
                                                 <li class="p-1">
+                                                    نوع: بدون ساق
+                                                </li>
+                                                <li class="p-1">
+                                                    طرح پارچه: ساده
+                                                </li>
+                                                <li class="p-1">
+                                                    ضخامت: نازک
+                                                </li>
+                                                <li class="p-1">
                                                     رنگ بندی:
                                                     <button class="bg-green btn_color_of_product"></button>
                                                     <button class="bg-pink btn_color_of_product"></button>
                                                     <button class="bg-yellow btn_color_of_product"></button>
                                                     <button class="bg-red btn_color_of_product"></button>
                                                 </li>
+
                                             </ul>
                                         </li>
 
@@ -142,7 +152,7 @@
                 <div class="header_of_sliders text-right dir-rtl mb-4">
 
                     <h3 class="header_info">
-                        پر فروش ترین ها
+                        محصولات مرتبط
                     </h3>
 
                 </div>
@@ -413,8 +423,6 @@
                 <div class="col-12">
                     <ul class="btn_ul_list text-right m-0 dir_rtl">
                         <li class="list_style_btn_click_to_show d-inline-block" onclick="explain()">توضیحات</li>
-                        <li class="list_style_btn_click_to_show d-inline-block" onclick="further_explain()">توضیحات تکمیلی
-                        </li>
                         <li class="list_style_btn_click_to_show d-inline-block" onclick="comments_product()">نظرات کاربران
                         </li>
                         <li class="list_style_btn_click_to_show d-inline-block" onclick="add_comments()">ثبت نظر</li>
@@ -435,39 +443,6 @@
                             سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته
                             اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
                         </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row mx-0">
-                <div class="col-12">
-                    <div class="explain_about_product" id="further_explain">
-                        <table class="table table-bordered dir_rtl text-right">
-                            <tbody>
-                            <tr>
-                                <th scope="row" class="th_style">جنس</th>
-                                <td>نخ</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="th_style">سایز</th>
-                                <td>فری سایز</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="th_style">نوع</th>
-                                <td> ساق دار</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="th_style">طرح پارچه</th>
-                                <td>ساده</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="th_style">ضخامت</th>
-                                <td>نازک</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="th_style">تکنولوژی</th>
-                                <td>آنتی باکتریال</td>
-                            </tr>
-                        </table>
                     </div>
                 </div>
             </div>
