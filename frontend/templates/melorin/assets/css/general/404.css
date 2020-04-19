@@ -33,7 +33,6 @@ body {
 .cont_error > p  {
     font-weight: 300;
     font-size:24px;
-    letter-spacing: 5px;
     color:#9294AE;
     position: relative;
     left:100%;
