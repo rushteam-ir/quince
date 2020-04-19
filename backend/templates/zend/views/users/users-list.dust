@@ -20,7 +20,7 @@
 
         <div class="main_field_of_users_profile">
 
-            <div class="input-group mb-4">
+            <div class="input-group mb-5">
                 <div class="input-group-prepend">
                   <button class="btn search_btn_of_category"  type="button"><i class="fas fa-search"></i></button>
                 </div>

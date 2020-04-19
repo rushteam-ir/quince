@@ -16,6 +16,13 @@
                 لیست محصولات
             </p>
 
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn search_btn_of_category"  type="button"><i class="fas fa-search"></i></button>
+                </div>
+                <input id="category_search" type="text" class="form-control search_category_inp" placeholder="جستجو">
+            </div>
+
             {@alertSuccess key="add-success" msg="محصول جدید با موفقیت اضافه شد"}{/alertSuccess}
             {@alertSuccess key="edit-success" msg="تغییرات اعمال شده روی محصول با موفقیت ثبت شد"}{/alertSuccess}
 
@@ -97,6 +104,27 @@
 
                 </div>
             </div>
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center p-0 dir-ltr mt-5">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+
+                        <span aria-hidden="true">&raquo;</span>
+
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+
         </div>
 
         {#list}
@@ -159,10 +187,14 @@
         
         
                                             <hr>
-                                            <div class="price_number_of_modal_product">
-                                                <p class="d-inline-block m-0">{.price}</p>
-                                                <span class="d-inline-block">تومان</span>
+                                            <div class="price_number_of_modal_product d-inline-block">
+                                                <p class="d-inline-block m-0">{.price}تومان</p>
                                             </div>
+
+                                            <div class="sale_price_number_of_modal_product d-inline-block mr-4">
+                                                <p class="d-inline-block m-0 line_through">{.price}تومان</p>
+                                            </div>
+
                                             <hr>
 
                                             <div class="row">
