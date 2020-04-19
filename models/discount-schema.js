@@ -67,20 +67,11 @@ discount_schema.statics = {
 
             if(dis.expiration_date != '0'){
 
-                let expiration_date = dis.expiration_date.split('/');
-                let current_date = getCurrentDate().split('/');
+                let expiration_date = JalaliConvert(dis.expiration_date.split('/'));
+                let current_date = JalaliConvert(getCurrentDate().split('/'));
+                let time_difference = expiration_date.getTime() - current_date.getTime();
 
-                if(parseInt(current_date[0]) > parseInt(expiration_date[0])){
-
-                    await discount_model.findByIdAndDelete(dis._id);
-
-                }
-                else if(parseInt(current_date[1]) > parseInt(expiration_date[1])){
-
-                    await discount_model.findByIdAndDelete(dis._id);
-
-                }
-                else if(parseInt(current_date[2]) >= parseInt(expiration_date[2])){
+                if(time_difference < 0){
 
                     await discount_model.findByIdAndDelete(dis._id);
 

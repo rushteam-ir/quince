@@ -57,25 +57,6 @@
                     
                     <div class="form-group d-inline-block">
                         <label for="avatar">تصویر پروفایل</label>
-                        <!-- {@eq key="{admin_info.avatar}" value=""}
-                            
-                            <div class="form-group">
-                                <input type="file" name="avatar" id="avatar" class="input-file-custom">
-                                <label for="avatar" class="btn btn-tertiary js-labelFile">
-                                  <i class="icon fa fa-check"></i>
-                                  <span class="js-fileName mr-2">انتخاب عکس</span>
-                                </label>
-                              </div>
-
-                            <small id="avatar" class="form-text text-muted">حجم مجاز برای اپلود تصویر پروفایل {limited_avatars_size} مگابایت است.</small>
-                            
-                        {:else}
-                            <br>
-                            <img src="media/avatars/{admin_info.avatar}" alt="Profile Avatar" height="130" width="130">
-                            <div class="form-group">
-                                <button type="submit" name="delete_avatar" class="btn profile_delete" onclick="return deleteCall()">حذف</button>
-                            </div>
-                        {/eq} -->
 
                         <div class="field_of_img_template">
 

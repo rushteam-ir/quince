@@ -8,7 +8,8 @@ router.get('/', async(req,res)=>{
 
         let data = {
 
-            list : await discount_model.get()
+            list : await discount_model.get(),
+            current_date : getCurrentDate()
 
         }
 
@@ -28,17 +29,32 @@ router.post('/', async(req,res)=>{
     try{
 
         let {package_name_inp, count_inp, day_inp, month_inp, year_inp} = req.body;
-        let end_value = req.body['end_inp[]'];
-        let discount_value = req.body['discount_inp[]'];
-        let current_date = getCurrentDate().split('/');
 
         let valid_package_name = validation.isSafe(package_name_inp);
+        let valid_count =  validation.isSafe(count_inp);
+        let end_value = req.body['end_inp[]'];
+        let discount_value = req.body['discount_inp[]'];
+        let exp_date = JalaliConvert([year_inp, month_inp, day_inp]);
+        let curr_date = JalaliConvert(getCurrentDate().split('/'));
+        let time_difference = exp_date.getTime() - curr_date.getTime();
 
         if(valid_package_name != ''){
 
             return res.redirect(`${config.backend_url}store/discount`);
 
         }
+        else if(isNaN(parseInt(valid_count))){
+
+            return res.redirect(`${config.backend_url}store/discount`);
+
+        }
+        else if(time_difference < 0){
+
+            return res.redirect(`${config.backend_url}store/discount/?msg=date-error`);
+
+        }
+
+        
 
 
         let code = '';
