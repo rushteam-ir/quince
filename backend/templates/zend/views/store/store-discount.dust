@@ -127,7 +127,7 @@
                     <th class="header_list_custom" scope="col">حذف</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody id="discount_table">
 
                 {#list}
                   <tr class="dir-rtl text-center">
@@ -197,3 +197,21 @@
     </div>
 
 {/body}
+
+<script>
+    $(document).ready(function(){
+
+        $("#discount_search").on("keyup", function() {
+
+            let value = $(this).val().toLowerCase();
+
+            $("#discount_table tr").filter(function() {
+
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+
+            });
+
+        });
+
+    });
+</script>

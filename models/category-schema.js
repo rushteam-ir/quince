@@ -74,9 +74,15 @@ category_schema.statics = {
 
     },
 
-    getAll : async function () {
+    getAll : async function (page) {
 
-        return await category_model.find().populate('parent');
+        let result = {}
+        let skip = page * backend.locals.limit_page - backend.locals.limit_page;
+        result.rows = await category_model.find().skip(skip).limit(backend.locals.limit_page).populate('parent').exec();
+        result.total_rows = result.rows.length;
+        result.total_pages = Math.ceil(result.total_rows / backend.locals.limit_page);
+
+        return result;
 
     },
 

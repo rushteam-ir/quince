@@ -1,10 +1,8 @@
-Profile Rout :
+Profile Rout (BACKEND FIXED):
 بررسی اینپوت ها سمت کلاینت
 
 Store List Rout : 
-درج نام ویرایش دهنده محصول 
 جستجو بین محصولات
-عوض کردن نام آپدیت با ویرایش
 فیکس شدن اسلایدر تصاویر محصول
 
 Store Add rout (BACKEND FIXED) :

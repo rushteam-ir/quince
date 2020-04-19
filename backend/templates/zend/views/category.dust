@@ -69,7 +69,7 @@
                   </tr>
                 </thead>
                 <tbody id="category_table" class="text-center">
-                {#list_all}
+                {#list_all.rows}
                     <tr>
                         <th scope="row">{$idx}</th>
                         <td>{.title}</td>
@@ -84,7 +84,7 @@
                             </span>
                         </td>
                     </tr>
-                {/list_all}
+                {/list_all.rows}
                 </tbody>
               </table>
 

@@ -108,6 +108,15 @@ router.post('/', async(req,res)=>{
         else if(discount_value.length == 0){
             return res.redirect(`${config.backend_url}store/discount/?msg=discount-error`);
         }
+        else if(parseInt(day_inp) < 0 || parseInt(day_inp) > 31){
+            return res.redirect(`${config.backend_url}store/discount/?msg=date-error`);
+        }
+        else if(parseInt(month_inp) < 0 || parseInt(month_inp) > 12){
+            return res.redirect(`${config.backend_url}store/discount/?msg=date-error`);
+        }
+        else if(parseInt(year_inp) < 1399){
+            return res.redirect(`${config.backend_url}store/discount/?msg=date-error`);
+        }
 
         let code = '';
         let code_id = '';
