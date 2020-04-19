@@ -24,7 +24,7 @@
     cursor: pointer;
     padding-top: 18px;
     transition: all linear 0.1s;
-    background-color: transparent;
+    background-color: transparent !;
 }
 
 .field_of_dashbord_partion:hover {
@@ -271,4 +271,38 @@
     border-radius: 50%;
     top: -26px;
     left: 26px;
+}
+
+.guid_box_alert{
+    width: 550px;
+    height: 60px;
+    border-radius: 14px;
+    background-color: #3a3a57;
+    position: absolute;
+    left: -1271px;
+    bottom: 20px;
+}
+
+.text_offuid_alert{
+    color: #ecefff;
+    position: relative;
+    top: 17px;
+}
+
+.remove_gild_alert{
+    position: absolute;
+    left: 20px;
+    color: #ECEFFF;
+    top: 18px;
+    cursor: pointer;
+}
+
+.link_to_guid{
+    border-bottom: 1px dashed #ECEFFF;
+    cursor: help;
+    color: rgb(151, 166, 255);
+}
+
+.link_to_guid:hover{
+    color: rgb(151, 166, 255);
 }
