@@ -36,8 +36,4 @@ var swiper = new Swiper('.main_slider', {
     nextEl: '.main_slider_next',
     prevEl: '.main_slider_prev',
   },
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
 });

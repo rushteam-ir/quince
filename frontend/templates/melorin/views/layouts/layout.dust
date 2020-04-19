@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/general/fontawsome.css">
     <link rel="stylesheet" href="css/general/animate.css">
     <link rel="stylesheet" href="css/general/layout.css">
+    <link rel="stylesheet" href="css/general/swiper.css">
     <link rel="stylesheet" href="css/general/general.css">
     {+css/}
     {+title/}
@@ -172,6 +173,7 @@
     <script src="js/general/popper.js"></script>
     <script src="js/general/bootstrap.js"></script>
     <script src="js/general/wow.js"></script>
+    <script src="js/general/swiper.js"></script>
     <script src="js/general/layout.js"></script>
     {+js/}
 </body>

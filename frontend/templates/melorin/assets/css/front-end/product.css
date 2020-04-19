@@ -109,6 +109,135 @@
     animation: show 1s linear;
 }
 
+
+
+/* slider */
+
+.img_of_product_slider {
+    width: 100%;
+    height: 330px;
+    border-radius: 3px;
+}
+
+.star_product_slider {
+    color: #F6B117;
+    font-size: 0.7rem;
+}
+
+.empty_slot {
+    color: #D9D9D9;
+}
+
+.product_slider_info {
+    font-family: main-font;
+    color: #8B8B8B;
+    font-size: 0.8rem;
+}
+
+.price_product_slider {
+    color: #1F1F1F;
+    font-family: main-font;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.price_unic {
+    font-size: 0.8rem;
+    margin-right: 5px;
+}
+
+.header_of_sliders {
+    width: 100%;
+    height: 40px;
+    color: #171717;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.header_info {
+    font-size: 1.3rem;
+    font-family: main-font;
+}
+
+.main_field_of_product_assets {
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    transition: all ease-out 0.2s;
+}
+
+.container_of_p_icon {
+    width: 30px;
+    height: 30px;
+    background-color: #EB7269;
+    border-radius: 50px;
+    margin-top: 3px;
+}
+
+.container_of_p_icon i {
+    color: white;
+    margin-right: 7px;
+    margin-top: 8px;
+}
+
+.eye_icon_custom {
+    margin-right: 6px !important;
+}
+
+.slider_card_product:hover .main_field_of_product_assets {
+    right: 10px;
+}
+
+.slider_card_product {
+    overflow: hidden;
+}
+
+.sale_price p {
+    color: #a5a5a5;
+}
+
+.sale_price::before {
+    content: "";
+    width: 91px;
+    height: 1px;
+    background-color: #a5a5a5;
+    position: absolute;
+    top: 428px;
+    right: 95px;
+}
+
+.num_of_sale {
+    color: red;
+}
+
+.product_arrow_prev,
+.product_arrow_next {
+    top: 16px !important;
+}
+
+.product_arrow_prev {
+    left: 50px !important;
+    right: unset !important;
+}
+
+
+.product_arrow_prev::after {
+    content: "\f138" !important;
+    position: relative;
+    font-family: "Font Awesome 5 Pro" !important;
+    font-weight: 300;
+    font-size: 2rem !important;
+    color: #EB7269 !important
+}
+
+.product_arrow_next::after {
+    content: "\f137" !important;
+    position: relative;
+    font-family: "Font Awesome 5 Pro" !important;
+    font-weight: 300;
+    font-size: 2rem !important;
+    color: #EB7269 !important
+}
+
 @keyframes show {
     0% {
         transform: scale(0);

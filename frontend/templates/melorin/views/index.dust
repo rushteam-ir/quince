@@ -5,69 +5,13 @@
 {/title}
 {<css}
     <link rel="stylesheet" href="css/front-end/index.css">
-    <link rel="stylesheet" href="css/general/swiper.css">
 {/css}
 {<js}
-    <script src="js/general/swiper.js"></script>
     <script src="js/front-end/index.js"></script>
 {/js}
 
 {<body}
-{!Top Of Pic!}
-    <section>
-        <div class="swiper-container main_slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                  <div class="main_field_of_main_slider">
 
-                    <img class="main_slider_img" src="img/header.jpg" alt="">
-
-                    <div class="main_field_of_info_slider text-center">
-
-                        <h1>
-                            طراحی خودت را داشته !
-                        </h1>
-                        <p>
-                            طرح مورد علاقه خود را به ما بفرست تا چاپ کنیم.
-                        </p>
-
-                        <a href="" class="btn btn_of_first_slider">
-                            همین حالا طرحتو ارسال کن
-                        </a>
-
-                    </div>
-
-                  </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="main_field_of_main_slider">
-
-                  <img class="main_slider_img" src="img/bg-.jpg" alt="">
-
-                  <div class="main_field_of_second_info_slider"></div>
-
-                  <div class="field_of_second_slider">
-                        <p class="header_of_sec_slider">
-                            بهترین با کیفت ترین جوراب ها را با ملورین تجربه کنید
-                        </p>
-                        <p class="small_of_sec_slider">
-                            بهترین کیفیت با مجرب ترین کارکنان همراه دستگاه های ایتالیایی، اصلا انگار تو ایتالیاییبهترین کیفیت با مجرب ترین کارکنان همراه دستگاه های ایتالیایی، اصلا انگار تو ایتالیایی
-                        </p>
-                        <a href="" class="btn btn_of_about_us_slider">درباره ما</a>
-                        <a href="" class="btn btn_of_contact_us_slider">تماس با ما</a>
-                  </div>
-
-                </div>
-            </div>
-            </div>
-
-            <div class="swiper-pagination main_slider_pagination"></div>
-
-            <div class="swiper-button-next main_slider_next"></div>
-            <div class="swiper-button-prev main_slider_prev"></div>
-          </div>
-    </section>
-{!End Top Of Pic!}
 {!Services!}
     <section>
         <div class="container-fluid">
