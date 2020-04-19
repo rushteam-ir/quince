@@ -14,6 +14,10 @@ thumbnails.forEach( (e)=> {
 
 //Similar Product Slider
 
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+
 
 
 

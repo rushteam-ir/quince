@@ -12,23 +12,31 @@
 
 
 {<body}
-
-    {!Slider Of Product!}
-    <section class="bg-white">
+    <section>
         <div class="container">
+            <div class="row">
+                <div class="col-12 text-right mt-5">
+                    <p class="rout_of_product"> صفحه اصلی / فروشگاه / زنانه / جوراب / طرح دار </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {!Slider Of Product!}
+    <section >
+        <div class="container bg-white mt-2">
             <div class="row mb-5">
                 <div class="col-lg-7 offset-lg-0 col-10 offset-1 order-1 order-lg-0">
                     <div class="explain_about_product_box">
                         <div class="row">
                             <div class="rate_of_product_star w-25">
                                 <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                <i class="far fa-star"></i>
                                 <i class="far fa-star"></i>
                                 <i class="far fa-star"></i>
                             </div>
                             <p class=" number_of_comments w-25" dir="rtl">54 دیدگاه/</p>
-                            <h4 class="text-right title_of_product w-50">جوراب زنانه طرح میوه ای</h4>
+                            <h4 class="text-right title_of_product w-50 dir_rtl">جوراب زنانه طرح k23</h4>
                         </div>
                         <hr>
                         <div class="explain_about_product_details">
@@ -42,25 +50,25 @@
                                             </li>
                                             <hr class="my-0">
                                             <li class="list_price_exp_product">
-                                                <i class="fas fa-store mx-2"></i>
+                                                <i class="far fa-store mx-2"></i>
                                                 موجود در انبار
                                             </li>
                                             <hr class="my-0">
                                             <li class="list_price_exp_product">
-                                                <i class="fas fa-money-bill-wave mx-2"></i>
+                                                <i class="fal fa-credit-card mx-2"></i>
                                                 40.000 تومان
                                             </li>
                                             <hr class="my-0">
                                         </ul>
                                         <ul class="m-0 mt-1">
                                             <li class="list_price_exp_product d-inline-block w-25 text-center mr-3 font_style_of_fontawsome">
-                                                <i class="fas fa-share-alt"></i>
+                                                <i class="fas fa-share-alt" data-toggle="tooltip" data-placement="bottom" title="اشتراک گذاری محصول"></i>
                                             </li>
                                             <li class="list_price_exp_product d-inline-block w-25 text-center mr-3 font_style_of_fontawsome">
-                                                <i class="far fa-heart"></i>
+                                                <i class="far fa-heart" data-toggle="tooltip" data-placement="bottom" title="افزودن به لیست علاقه مندی ها"></i>
                                             </li>
                                             <li class="list_price_exp_product d-inline-block w-25 text-center mr-3 font_style_of_fontawsome">
-                                                <i class="far fa-comment-alt"></i>
+                                                <i class="far fa-comment-alt" data-toggle="tooltip" data-placement="bottom" title="کامنت بگذارید"></i>
                                             </li>
                                         </ul>
                                         <button type="button" class="btn_of_add_product">افزودن به سبد خرید</button>
@@ -75,7 +83,7 @@
                                             <p class="d-inline-block p_font_family_style">دسته بندی</p>
                                             <p class="mr-3"> جوراب زنانه</p>
                                         </li>
-                                        <li class="list_of_explain_details mb-4">
+                                        <li class="list_of_explain_details my-5">
 
                                             <i class="fas fa-tasks">
                                                 &nbsp;
@@ -85,15 +93,6 @@
                                             <ul class="size_of_details ml-0">
                                                 <li class="p-1 size_of_details">
                                                     جنس: نخ
-                                                </li>
-                                                <li class="p-1">
-                                                    طرح پارچه: طرح دار
-                                                </li>
-                                                <li class="p-1">
-                                                    ضخامت: ضخیم
-                                                </li>
-                                                <li class="p-1">
-                                                    نوع: ساق بلند
                                                 </li>
                                                 <li class="p-1">
                                                     سایز: فری سایز
@@ -111,30 +110,13 @@
                                     </ul>
                                 </div>
                             </div>
-                            <hr>
-                            <ul>
-                                <li class="list_of_explain_details">
-                                    <i class="fas fa-pen-alt ">
-                                    </i>
-                                    <p class="d-inline-block p_font_family_style">توضیحات</p>
-                                    <p class="text-justify mr-3">
-                                        این محصول تمامی مراحل طراحی و تولید آن در کشور آلمان صورت گرفته است.جنس این
-                                        محصول از با کیفیت ترین الیاف طبیعی بوده که علاوه بر عمر بالای محصول و کیفیت در
-                                        جنس آن باعث جلوگیری از هر گونه حساسیت در خانم ها می شود .این جوراب شلواری را می
-                                        توان در تمامی مجالس خود استفاده کرداین جوراب برعکس موارد مشابه آن در بازار یک
-                                        بار مصرف نبوده و از آن می توانید به دفعات زیاد استفاده کنید.این برند بزرگترین
-                                        برند تولید جوراب و لباس زیر در دنیا است و اولین هدف آن رضایت مندی مشتریان خود
-                                        بوده است.
-                                    </p>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 offset-lg-0 col-10 offset-1 mt-5 p-0 order-0 order-lg-1 mb-lg-0 mb-5 ">
+                <div class="col-lg-5 offset-lg-0 col-10 offset-1 my-5 p-0 order-0 order-lg-1 mb-lg-0 mb-5 ">
                     <div id="wrap" class="gallery_of_product">
                         <img src="img/transparent8.png" alt="" id="current" class="img_of_gallery">
-                        <div class="thumb-wrap">
+                        <div class="thumb-wrap mb-5">
                             <img src="img/transparent7.png" alt="" class="thumb">
                             <img src="img/transparent6.png" alt="" class="thumb">
                             <img src="img/transparent9.png" alt="" class="thumb">
@@ -148,7 +130,6 @@
     {!END Slider Of Product!}
 
     {!Similar Product Slider!}
-
     {!End Similar Product Slider!}
 
     {!Comments form!}
