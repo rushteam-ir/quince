@@ -1,6 +1,5 @@
 
 body {
-    background-color: #D4D9ED;
     font-family: main-font;
     margin:0px auto;
     padding: 0px;
@@ -172,6 +171,11 @@ body {
 
 .style_of_404_text{
     margin-bottom: 0px;
+    font-size: 72px;
+    background: -webkit-linear-gradient(#cc99ff , #ff9999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 .style_of_not_found_text{
     margin-top: -30px;
@@ -193,3 +197,31 @@ body {
 .style_of_500_text{
     margin-top: 140px;
 }
+
+/* Media Query*/
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+
+@media only screen and (max-width: 991px) {
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+
+@media only screen and (max-width: 500px) {
+    .cont_aura_1 , .cont_aura_2{
+        display: none;
+    }
+}
+
+
+
+/*End Media Query*/
