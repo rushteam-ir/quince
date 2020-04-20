@@ -39,6 +39,7 @@
 
 .border_radius_of_box{
     border-radius: 5px;
+    background-color: #F5F5F5;
 }
 
 .rout_of_product{
@@ -254,7 +255,7 @@
 .price_and_explain_of_product {
     width: 300px;
     height: 305px;
-    background-color: #F5F5F5;
+    background-color: #EDEDED;
     border-radius: 5px;
     margin-left: 5%;
 }

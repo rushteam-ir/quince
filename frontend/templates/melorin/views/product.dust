@@ -23,7 +23,7 @@
     </section>
     {!Slider Of Product!}
     <section>
-        <div class="container bg-white mt-2 border_radius_of_box">
+        <div class="container mt-2 border_radius_of_box">
             <div class="row mb-5">
                 <div class="col-lg-7 offset-lg-0 col-10 offset-1 order-1 order-lg-0">
                     <div class="explain_about_product_box">
