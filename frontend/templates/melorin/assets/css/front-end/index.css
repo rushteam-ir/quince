@@ -339,7 +339,7 @@
 }
 
 .category_img_custom {
-    border-radius: 5    px;
+    border-radius: 5px;
 }
 
 .field_of_category_info {
@@ -351,7 +351,6 @@
     direction: rtl;
     right: 0px;
     color: white;
-    /* background-color: #00000078; */
     z-index: 10;
     border-radius: 10px;
     padding-right: 40px;
