@@ -306,17 +306,23 @@
     background-color: white;
     border-bottom: none;
     border-radius: 5px 5px 0px 0px;
-    margin-right: 10px;
-    width: 150px;
+    margin-right: 30px;
+    width: 100px;
     text-align: center;
     height: 50px;
     padding-top: 15px;
+    border-bottom: 1px solid #6c757d;
     cursor: pointer;
+}
+
+.list_style_btn_click_to_show:hover{
+    border-bottom: 1.5px solid #6c757d;
 }
 
 .th_style{
     width: 15%;
 }
+
 .explain_about_product{
     background-color: white;
     width: 100%;
