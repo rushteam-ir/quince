@@ -156,11 +156,7 @@ router.post('/', async(req,res)=>{
             }
 
             code = code.slice(0, -1);
-            codes.push({
-
-                code : code
-
-            });
+            codes.push(code);
 
         }
 
@@ -222,8 +218,6 @@ router.post('/', async(req,res)=>{
             expiration_date : expiration_date
 
         }
-
-        log(new_discount);
 
         let result = await discount_model.add(new_discount);
 

@@ -60,6 +60,15 @@
     color: #494B74;
 }
 
+.print_discount {
+    color: #5D78FF;
+    padding: 0px;
+}
+
+.print_discount:hover {
+    color: #494B74;
+}
+
 .discount_inp_custom {
     margin: 0 12px;
     width: 140px;

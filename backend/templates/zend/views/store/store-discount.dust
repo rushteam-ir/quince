@@ -13,7 +13,7 @@
     <div class="main_body_of_add_store_forms">
 
         <p class="title_of_store_add">
-            تولید کد تخفیف جدید
+            تولید بسته کد تخفیف جدید
         </p>
 
         {@alertSuccess key="add-success" msg="کد تخفیف جدید با موفقیت تولید شد"}{/alertSuccess}
@@ -32,7 +32,7 @@
         <form action="" method="post" onsubmit="return discountError()" name="discount_form" autocomplete="off">
 
             <div class="form-group">
-                <label for="discount_name">نام پکیج تخفیف :</label>
+                <label for="discount_name">نام بسته تخفیف :</label>
                 <input type="text" name="package_name_inp" class="form-control" id="discount_name" >
             </div>
 
@@ -105,14 +105,14 @@
         </form>
 
         <p class="title_of_store_add mt-5">
-            کد های تخفیف
+           لیست کد های تخفیف
         </p>
 
         <div class="input-group mb-4">
             <div class="input-group-prepend">
               <button class="btn search_btn_of_category"  type="button"><i class="fas fa-search"></i></button>
             </div>
-            <input id="category_search" type="text" class="form-control search_category_inp" placeholder="جستجو">
+            <input id="discount_search" type="text" class="form-control search_category_inp" placeholder="جستجو">
         </div>
             <table class="table">
                 <thead class="text-center">
@@ -154,9 +154,9 @@
 
                         <td class="list_detail_custom">
 
-                            <button class="btn print_discount remove_discount" name="{._id}">
+                            <a class="btn print_discount" href="{backend_url}store/api/get-discounts/?id={._id}">
                                 <i class="fas fa-print"></i>
-                            </button>
+                            </a>
 
                         </td>
 

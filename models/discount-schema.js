@@ -53,6 +53,12 @@ discount_schema.statics = {
 
     },
 
+    getById : async function (discount_id) {
+
+        return await discount_model.findById(discount_id);
+
+    },
+
     checkId : async function (code_id) {
 
         return await discount_model.findOne({code_id : code_id});

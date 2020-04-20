@@ -8,6 +8,7 @@ let product_schema = new mongoose.Schema({
     describe : String,
     stock : String,
     price : String,
+    price_discount : String,
     discount : String,
     features : Array,
     images : Array,
