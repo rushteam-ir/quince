@@ -17,27 +17,32 @@
 
 <body>
 
-        <header class="w-100 header_of_log_and_reg dir-rtl">
+        <header class="w-100 header_of_log_and_reg ">
             <div class="container">
-                <div class="row">
+                <div class="row ">
 
-                    <div>
-                        <ul>
-                            <li class="header_ul_account text-right">
-                                <a href="" class="header_link_to_account">
-                                    حساب من
-                                </a>
-                            </li>
-                            <li class="header_ul_account text-right">
-                                <a href="" class="header_link_to_account">
-                                    علاقه مندی ها
-                                </a>
-                            </li>
-                            <li class="header_ul_account text-right">
+                    <div class="col-4 mt-2 ">
+                        <p class="header_link_to_account">
+                            شماره تماس : 09021414866
+                        </p>
+                    </div>
+                    <div class="col-4 offset-4 text-right">
+                        <ul class="mt-2">
+                            <li class="text-right d-inline-block mr-4">
                                 <a href="" class="header_link_to_account">
                                     ورود / ثبت نام
                                 </a>
                             </li>
+                            <li class="text-right d-inline-block mr-4">
+                                <a href="" class="header_link_to_account">
+                                    علاقه مندی ها
+                                </a>
+                            </li>
+                            <li class="text-right d-inline-block">
+                                <a href="" class="header_link_to_account">
+                                    حساب من
+                                </a>
+                            </li>   
                         </ul>
                     </div>
                     <div></div>

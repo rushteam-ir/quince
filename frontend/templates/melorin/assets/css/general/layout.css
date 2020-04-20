@@ -86,7 +86,14 @@
     background-color: rgb(245, 245, 245);
     height: 40px;
 }
+.header_link_to_account{
+    color: #171717;
+    font-weight: bold;
+}
 
+.header_link_to_account:hover{
+    color: #171717;
+}
 
 
 
