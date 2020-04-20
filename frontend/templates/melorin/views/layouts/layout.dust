@@ -17,132 +17,155 @@
 
 <body>
 
-        <header class="w-100 header_of_log_and_reg ">
-            <div class="container">
-                <div class="row ">
+    <header class="header_of_navbar">
+        <div class="container">
+            <div class="row">
 
-                    <div class="col-4 mt-2 ">
-                        <p class="header_link_to_account phone_icon">
-                            شماره تماس : 09021414866
-                            <i class="fas fa-mobile-alt ml-1"></i>
+                <div class="col-6">
+                    <div class="input-group mb-3 box_of_search_header">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text btn_of_search_header" id="basic-addon1">جستجو</span>
+                        </div>
+                        <input type="text" class="form-control search_inp_header text-right" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                </div>
+
+                <div class="col-3  text-right dir-rtl">
+
+                    <div class="d-inline-block box_of_reg_log_header">
+                        <p>ورود / عضویت</p>
+                    </div>
+
+                    <i class="fas fa-shopping-cart shopping_card_header mr-3"></i>
+                    <p class="d-inline-block bag_heaer_text">سبـــد خــریــد</p>
+                    <div class="shopping_card_number">2</div>
+
+                </div>
+
+                <div class="col-3 dir_rtl ">
+                    <img class="d-inline-block main_logo mt-2" src="img/logo1.jpg" alt="">
+                    <p class="d-inline-block logo_shop_text mr-2 ">فروشگاه <span>ملورین</span></p>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <nav class="main_navbar">
+        <div class="container">
+            
+            <ul class="dir-rtl text-right mt-3">
+                <li class="menu_iteam_of_navbar mr-4 d-inline-block">
+                    <a href="" class="menu_links">پشتیبانی</a>
+                </li>
+                <li class="menu_iteam_of_navbar mr-4 d-inline-block">
+                    <a href="" class="menu_links">ارتباط با ما</a>
+                </li>
+                <li class="menu_iteam_of_navbar mr-4 d-inline-block">
+                    <a href="" class="menu_links">مقاله ها</a>
+                </li>
+                <li class="menu_iteam_of_navbar mr-4 d-inline-block">
+                    <a href="" class="menu_links">دسته بندی ها</a>
+                </li>
+                <li class="menu_iteam_of_navbar mr-4 d-inline-block">
+                    <a href="" class="menu_links">همه محصولات</a>
+                </li>
+                <li class="menu_iteam_of_navbar active_menu mr-4 d-inline-block">
+                    <a href="" class="menu_links">صفحه اصلی</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    {+body/}
+
+
+
+    <footer class="footer_style">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header_of_footer_box">
+                        <div class="logo_of_footer_box text-center mt-5">
+                            <img src="img/logo1.jpg" alt="ملورین" class="logo_of_footer">
+                        </div>
+                        <div class="text_of_footer_box">
+                            <h4 class="text-center mt-3">فروشگاه ملورین</h4>
+                            <p class="text-center">برترین تولید کننده سال با تولید بیش از 2000 مدل جوراب جدید درسال</p>
+                        </div>
+                        <div class="social_media_box_in_footer text-center">
+                            <i class="fab fa-telegram-plane mr-3"></i>
+                            <i class="fab fa-facebook-f mr-3"></i>
+                            <i class="fab fa-instagram "></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row_style_margin">
+                <div class="col-12 col-md-3 offset-md-0 mb-5 mb-md-0">
+                    <div class="left_box_of_footer">
+                        <h6 class="title_of_footer_right_box text-center">شخصی سازی سفارشات</h6>
+                        <p class="explain_of_Customization_product text-justify" dir="rtl">
+                            جون بچت بیا عکس بده ما برات عین همونو تولید میکنیم . بعد میدیم بهت توام برو حال کن بنده
+                            خدا.کی میاد واست اینکارارو بکنه اسکل ببین قدر نمیدونی!!!!
                         </p>
+                        <button class="btn_of_Customization_product text-center ">سفارش بده</button>
                     </div>
-
-                    <div class="col-4 offset-4 text-right">
-                        <ul class="mt-2">
-                            <li class="text-right d-inline-block mr-4">
-                                <a href="" class="header_link_to_account">
-                                    ورود / ثبت نام
-                                    <i class="fas fa-sign-in-alt  ml-1"></i>
-                                </a>
-                            </li>
-                            <li class="text-right d-inline-block">
-                                <a href="" class="header_link_to_account">
-                                    علاقه مندی ها
-                                    <i class="fas fa-heart ml-1"></i>
-                                </a>
-                            </li>
+                </div>
+                <div class="col-12 col-md-3 offset-md-0 mb-5 mb-md-0">
+                    <div class="center2_box_of_footer">
+                        <h6 class="title_of_footer_right_box"> نماد اعتمادالکترونیکی</h6>
+                        <img src="img/namad.jpg" class="namad_img_footer">
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 offset-md-0 mb-5 mb-md-0">
+                    <div class="center_box_of_footer">
+                        <h6 class="title_of_footer_right_box">دسترسی آسان</h6>
+                        <ul class="menu_in_footer p-0">
+                            <a href="#" class="link_of_footer_menu">
+                                <li class="list_of_footer_menu">صفحه اصلی</li>
+                            </a>
+                            <a href="#" class="link_of_footer_menu">
+                                <li class="list_of_footer_menu">محصولات</li>
+                            </a>
+                            <a href="#" class="link_of_footer_menu">
+                                <li class="list_of_footer_menu">پکیج ها</li>
+                            </a>
+                            <a href="#" class="link_of_footer_menu">
+                                <li class="list_of_footer_menu">درباره ما</li>
+                            </a>
+                            <a href="#" class="link_of_footer_menu">
+                                <li class="list_of_footer_menu">تماس با ما</li>
+                            </a>
                         </ul>
-                    </div>
 
+                    </div>
                 </div>
+                <div class="col-12 col-md-3 offset-md-0 mb-5 mb-md-0">
+                    <div class="right_box_of_footer">
+                        <h6 class="title_of_footer_right_box mb-4">پشتیبانی</h6>
+                        <div>
+                            <p class="support_option">021-44610035<i class="fa fa-phone ml-2"></i></p>
+                            <p class="support_option">test@example.com <i class="fas fa-envelope ml-2"></i></p>
+                            <p class="support_option">بازار - سلام - خوبی <i class="fas fa-map-marker-alt ml-2"></i></p>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
-        </header>
-        <nav class="w-100">
-            <div class="container">
-                <div class="row">
-
-                    <div>
-                        
-                    </div>
-
-                </div>
-            </div>
-        </nav>
-
-        {+body/}
-
-        <footer class="footer_style">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="header_of_footer_box">
-                            <div class="logo_of_footer_box text-center mt-5">
-                                <img src="img/logo1.jpg" alt="ملورین" class="logo_of_footer">
-                            </div>
-                            <div class="text_of_footer_box">
-                                <h4 class="text-center mt-3">فروشگاه ملورین</h4>
-                                <p class="text-center">برترین تولید کننده سال با تولید بیش از 2000 مدل جوراب جدید درسال</p>
-                            </div>
-                            <div class="social_media_box_in_footer text-center">
-                                <i class="fab fa-telegram-plane mr-3"></i>
-                                <i class="fab fa-facebook-f mr-3"></i>
-                                <i class="fab fa-instagram "></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row row_style_margin">
-                    <div class="col-12 col-md-3 offset-md-0 mb-5 mb-md-0">
-                        <div class="left_box_of_footer">
-                            <h6 class="title_of_footer_right_box text-center">شخصی سازی سفارشات</h6>
-                            <p class="explain_of_Customization_product text-justify" dir="rtl">
-                                جون بچت بیا عکس بده ما برات عین همونو تولید میکنیم . بعد میدیم بهت توام برو حال کن بنده خدا.کی میاد واست اینکارارو بکنه اسکل ببین قدر نمیدونی!!!!
-                            </p>
-                            <button class="btn_of_Customization_product text-center ">سفارش بده</button>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-3 offset-md-0 mb-5 mb-md-0">
-                        <div class="center2_box_of_footer">
-                            <h6 class="title_of_footer_right_box"> نماد اعتمادالکترونیکی</h6>
-                            <img src="img/namad.jpg" class="namad_img_footer">
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-3 offset-md-0 mb-5 mb-md-0">
-                        <div class="center_box_of_footer">
-                            <h6 class="title_of_footer_right_box">دسترسی آسان</h6>
-                            <ul class="menu_in_footer p-0">
-                                <a href="#" class="link_of_footer_menu">
-                                    <li class="list_of_footer_menu">صفحه اصلی</li>
-                                </a>
-                                <a href="#" class="link_of_footer_menu">
-                                    <li class="list_of_footer_menu">محصولات</li>
-                                </a>
-                                <a href="#" class="link_of_footer_menu">
-                                    <li class="list_of_footer_menu">پکیج ها</li>
-                                </a>
-                                <a href="#" class="link_of_footer_menu">
-                                    <li class="list_of_footer_menu">درباره ما</li>
-                                </a>
-                                <a href="#" class="link_of_footer_menu">
-                                    <li class="list_of_footer_menu">تماس با ما</li>
-                                </a>
-                            </ul>
-
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-3 offset-md-0 mb-5 mb-md-0">
-                        <div class="right_box_of_footer">
-                            <h6 class="title_of_footer_right_box mb-4">پشتیبانی</h6>
-                            <div>
-                                <p class="support_option">021-44610035<i class="fa fa-phone ml-2"></i></p>
-                                <p class="support_option">test@example.com <i class="fas fa-envelope ml-2"></i></p>
-                                <p class="support_option">بازار - سلام - خوبی <i class="fas fa-map-marker-alt ml-2"></i></p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-12 offset-md-0 ">
-                        <div class="box_last_footer" >
-                            <p class="footer_company_name"> &copy; 2020 - zend.cms</p>
-                        </div>
+            <div class="row">
+                <div class="col-12 col-md-12 offset-md-0 ">
+                    <div class="box_last_footer">
+                        <p class="footer_company_name"> &copy; 2020 - zend.cms</p>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
     <script src="js/general/jquery.js"></script>
     <script src="js/general/popper.js"></script>

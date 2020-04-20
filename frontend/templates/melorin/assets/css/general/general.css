@@ -45,3 +45,24 @@ html {
 button:focus {
     outline: none;
 }
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e2d00;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(197, 197, 197);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(85, 94, 129);
+}
+
+html {
+    scroll-behavior: smooth;
+}

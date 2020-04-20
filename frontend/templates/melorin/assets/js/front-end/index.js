@@ -36,10 +36,10 @@ var main_swiper = new Swiper('.main_slider', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 5000,
+  //   disableOnInteraction: false,
+  // },
 });
 
 new WOW().init();

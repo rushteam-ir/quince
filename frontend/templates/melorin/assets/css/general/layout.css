@@ -82,28 +82,95 @@
 
 /*End Footer*/
 
-.header_of_log_and_reg {
-    background-color: rgb(245, 245, 245);
-    height: 40px;
+.header_of_navbar {
+    width: 100%;
+    height: 100px;
+    background-color: white;
 }
 
-.header_link_to_account {
+.logo_shop_text {
+    font-family: accent-font;
+    font-size: 2.2rem;
     color: #171717;
+    position: relative;
+    top: 5px;
+}
+
+.logo_shop_text span {
+    color: #FF6B6B;
+}
+
+.main_logo {
+    width: 31%;
+}
+
+.bag_heaer_text {
+    color: #FF6B6B;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
-.header_link_to_account:hover {
+.shopping_card_header {
+    color: #FF6B6B;
+    font-size: 1.5rem;
+    position: relative;
+    top: 4px;
+    margin-top: 29px;
+
+}
+
+.shopping_card_number {
+    position: absolute;
+    top: 20px;
+    right: 102px;
+    width: 25px;
+    height: 25px;
+    background-color: #FF6B6B;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border: 3px solid white;
+    font-size: 0.9rem;
+}
+
+.box_of_reg_log_header {
+    border-right: 1px solid black;
+    margin-right: 15px;
+    padding-right: 15px;
+    height: 30px;
+}
+
+.btn_of_search_header{
+    background-color: #FF6B6B;
+    color: white;
+    border:0px
+}
+
+.box_of_search_header{
+    margin-top: 27px;
+}
+
+.search_inp_header:focus {
+    border-color: #CED4DA;
+    outline: 0;
+    box-shadow: none;
+}
+
+.main_navbar{
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #e7e7e7;
+}
+
+.menu_links{
     color: #171717;
 }
 
-.header_link_to_account i {
-    color: #EB7269;
-    position: relative;
-    top: 2px;
-}
-
-.phone_icon i{
-    top: 0px;
+.active_menu{
+    border-bottom: 3px solid #FF6B6B;
+    padding-bottom: 16px;
 }
 
 
@@ -112,6 +179,19 @@
 
 
 
+
+
+
+@media (min-width: 1200px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1250px;
+    }
+}
 
 
 @media only screen and (max-width: 1200px) {
@@ -154,5 +234,7 @@
         width: 90%;
     }
 }
+
+
 
 /*End Media Query*/
