@@ -328,6 +328,7 @@
 .margin_row_customize {
     padding: 50px 0px 65px 0px;
     box-shadow: 0px 20px 30px -30px #ababab;
+    background-color: white;
 }
 
 .main_field_of_category {
@@ -577,6 +578,12 @@
 
 .description_of_article {
     line-height: 26px;
+}
+
+.section_of_product_slider{
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* mainslider */
