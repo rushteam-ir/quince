@@ -23,7 +23,7 @@
     </section>
     {!Slider Of Product!}
     <section>
-        <div class="container mt-2 border_radius_of_box">
+        <div class="container mt-2 border_radius_of_box bg-white">
             <div class="row mb-5">
                 <div class="col-lg-7 offset-lg-0 col-10 offset-1 order-1 order-lg-0">
                     <div class="explain_about_product_box">
@@ -145,7 +145,7 @@
     {!Similar Product Slider!}
     <section class="my-5">
 
-        <div class="container">
+        <div class="container bg-white pt-4">
 
             <div class="swiper-container main_product_swiper" dir="rtl">
 
@@ -419,20 +419,20 @@
     {!Explain Product!}
     <section>
         <div class="container mb-5">
-            <div class="row">
+            <div class="row ">
                 <div class="col-12">
                     <ul class="btn_ul_list  text-right m-0 dir_rtl">
-                        <li class="list_style_btn_click_to_show d-inline-block" onclick="explain()">توضیحات</li>
-                        <li class="list_style_btn_click_to_show d-inline-block" onclick="comments_product()">نظرات کاربران
+                        <li class="list_style_btn_click_to_show d-inline-block bg-white" onclick="explain()">توضیحات</li>
+                        <li class="list_style_btn_click_to_show d-inline-block bg-white" onclick="comments_product()">نظرات کاربران
                         </li>
-                        <li class="list_style_btn_click_to_show d-inline-block" onclick="add_comments()">ثبت نظر</li>
+                        <li class="list_style_btn_click_to_show d-inline-block bg-white" onclick="add_comments()">ثبت نظر</li>
                     </ul>
                 </div>
 
             </div>
-            <div class="row mx-0">
+            <div class="row mx-0 ">
                 <div class="col-12">
-                    <div class="explain_about_product" id="explain">
+                    <div class="explain_about_product " id="explain">
                         <p class="text-justify dir_rtl">
                             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
                             چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
