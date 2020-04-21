@@ -1,4 +1,9 @@
 /**/
+
+.section_of_product_slider{
+ padding-bottom: 50px;
+}
+
 .bg-green {
     background-color: #4C532E;
 }
@@ -301,6 +306,9 @@
 /*END Slider Of Product*/
 
 /*Explain Product*/
+.row_of_btn{
+    top: -50px;
+}
 
 .list_style_btn_click_to_show{
     color: #4e555b ;
@@ -426,6 +434,10 @@ padding-bottom: 100px;
 
     .price_and_explain_of_product {
         margin-left: auto;
+    }
+
+    .list_style_btn_click_to_show{
+        width: 115px;
     }
 
 

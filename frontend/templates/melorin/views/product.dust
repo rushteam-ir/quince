@@ -459,9 +459,9 @@
     {!End Similar Product Slider!}
 
     {!Explain Product!}
-    <section>
-        <div class="container mb-5">
-            <div class="row ">
+    <section class="mt-5">
+        <div class="container mb-5 bg-white">
+            <div class="row position-relative row_of_btn">
                 <div class="col-12">
                     <ul class="btn_ul_list  text-right m-0 dir_rtl">
                         <li class="list_style_btn_click_to_show d-inline-block bg-white" onclick="explain()">توضیحات</li>
