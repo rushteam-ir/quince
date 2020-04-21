@@ -470,7 +470,6 @@
                         <li class="list_style_btn_click_to_show d-inline-block bg-white" onclick="add_comments()">ثبت نظر</li>
                     </ul>
                 </div>
-
             </div>
             <div class="row mx-0 ">
                 <div class="col-12">

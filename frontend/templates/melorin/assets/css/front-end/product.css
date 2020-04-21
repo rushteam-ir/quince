@@ -56,7 +56,7 @@
 }
 
 .title_of_product {
-    border-right: 4px solid #EB7269;
+    border-right: 4px solid #FF6B6B;
     border-radius: 3px;
     padding: 10px 20px;
     height: 50px;
@@ -255,7 +255,7 @@
 .price_and_explain_of_product {
     width: 300px;
     height: 305px;
-    background-color: #EDEDED;
+    background-color: #F5F5F5;
     border-radius: 5px;
     margin-left: 5%;
 }
@@ -287,7 +287,7 @@
     border: none;
     border-radius: 5px;
     margin-left: 32px;
-    background: #EB7269;
+    background: #FF6B6B;
     background-size: 200%;
     transition: .5s;
     color: white;
@@ -333,7 +333,7 @@
 
 .btn_of_send_comment{
     width: 150px;
-    background-color: #EB7269;
+    background-color: #FF6B6B;
     font-family: main-font;
     color: white;
     font-size: 1rem;
