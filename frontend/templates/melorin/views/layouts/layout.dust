@@ -45,7 +45,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-3  text-right dir-rtl">
+                <div class="col-3  text-left dir-rtl">
 
                     <button type="button" class="btn log_req_modal" data-toggle="modal" data-target="#log_reg_main_modal">
                         <div class="d-inline-block box_of_reg_log_header">
