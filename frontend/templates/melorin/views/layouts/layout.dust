@@ -24,9 +24,9 @@
                 <div class="col-6">
                     <div class="input-group mb-3 box_of_search_header">
                         <div class="input-group-prepend">
-                            <span class="input-group-text btn_of_search_header" id="basic-addon1">جستجو</span>
+                            <span class="input-group-text btn_of_search_header" id="basic-addon1"><i class="far fa-search"></i></span>
                         </div>
-                        <input type="text" class="form-control search_inp_header text-right" aria-label="Username"
+                        <input type="text" class="form-control search_inp_header text-right dir-rtl" aria-label="Username" placeholder="... جسنجو کنید"
                             aria-describedby="basic-addon1">
                     </div>
                 </div>
