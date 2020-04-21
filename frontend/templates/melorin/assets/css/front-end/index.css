@@ -272,7 +272,7 @@
 
 .parallax_css_picture {
     background-image: url("../../img/parallax.jpg");
-    height: 350px;
+    height: 400px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -284,19 +284,19 @@
 .h2_style_of_parallax {
     font-family: main-font;
     position: absolute;
-    top: 86px;
+    top: 110px;
     width: 100%;
     color: white;
     font-size: 3rem;
 }
 
 .h3_style_of_parallax {
-    top: 157px;
+    top: 185px;
     font-size: 2rem;
 }
 
 .btn_parallax_style {
-    top: 210px;
+    top: 240px;
     position: relative;
     width: 200px;
     height: 50px;
@@ -552,7 +552,7 @@
 }
 
 .col_of_article {
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .category_of_article {
@@ -581,7 +581,6 @@
 }
 
 .section_of_product_slider{
-    background-color: white;
     padding-top: 20px;
     padding-bottom: 20px;
 }

@@ -40,7 +40,7 @@
 
                     <div class="second_field_of_slider_info">
 
-                        <p class="header_of_bog_slider">انواع لباس زیر در طرح ها و رنگ های مختلف</p class="">
+                        <p class="header_of_bog_slider">انواع لباس زیر در طرح ها و رنگ های مختلف</p>
                         <p class="mb-3 footer_text_of_slider ">با بیش از 100 مدل در بیش از 20 رنگ</p>
 
                     </div>
@@ -135,7 +135,6 @@
                     <div class="w-100 main_field_of_category">
                         <img class="w-100 h-100 category_img_custom" src="img/womman.jpg" alt="">
                         <div class="field_of_category_info">
-
                             <p class="header_of_category mb-2">جوراب های زنانه</p>
                             <small class="small_of_category">تا 10 درصد تخفیف</small>   
 
@@ -203,7 +202,7 @@
 
 <section class="mt-5 section_of_product_slider">
 
-    <div class="container">
+    <div class="container bg-white py-4">
 
         <div class="swiper-container main_product_swiper" dir="rtl">
 
@@ -247,7 +246,6 @@
                             </div>
                             <div class="product_slider_info">
                                 <p class="mt-1">جوراب مردانه کد 1154</p>
-                                <hr>
 
                                 <div>
                                     <p class="price_product_slider">25.000<span class="price_unic">تومان</span></p>
@@ -518,7 +516,7 @@
 
 <section class="section_of_product_slider">
 
-    <div class="container">
+    <div class="container bg-white py-4">
 
         <div class="swiper-container main_product_swiper" dir="rtl">
 
@@ -833,7 +831,7 @@
 
 {!Parallax!}
     <section>
-        <div class="parallax_css_picture">
+        <div class="parallax_css_picture mt-5">
             <h2 class="text-center h2_style_of_parallax">حراج محصولات برتر برای آقایان</h2>
             <h3 class="text-center h2_style_of_parallax h3_style_of_parallax">تا سقف 30% تخفیف</h3>
             <div class="w-100 text-center">
@@ -845,8 +843,8 @@
 {!End Parallax!}
 
 
-<section>
-    <div class="container">
+<section >
+    <div class="container pb-4">
 
         <div class="header_of_sliders text-right dir-rtl mb-4">
 
