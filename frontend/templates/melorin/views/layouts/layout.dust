@@ -31,19 +31,7 @@
                     </div>
                 </div>
 
-                <div class="col-3  text-right dir-rtl">
-
-                    <div class="d-inline-block box_of_reg_log_header">
-                        <p>ورود / عضویت</p>
-                    </div>
-
-                    <i class="fas fa-shopping-cart shopping_card_header mr-3"></i>
-                    <p class="d-inline-block bag_heaer_text">سبـــد خــریــد</p>
-                    <div class="shopping_card_number">2</div>
-
-                </div>
-
-                <div class="col-3 dir_rtl ">
+                <div class="col-3 dir_rtl offset-3">
                     <img class="d-inline-block main_logo mt-2" src="img/logo1.jpg" alt="">
                     <p class="d-inline-block logo_shop_text mr-2 ">فروشگاه <span>ملورین</span></p>
 
@@ -55,27 +43,48 @@
 
     <nav class="main_navbar">
         <div class="container">
-            
-            <ul class="dir-rtl text-right mt-3">
-                <li class="menu_iteam_of_navbar mr-4 d-inline-block">
-                    <a href="" class="menu_links">پشتیبانی</a>
-                </li>
-                <li class="menu_iteam_of_navbar mr-4 d-inline-block">
-                    <a href="" class="menu_links">ارتباط با ما</a>
-                </li>
-                <li class="menu_iteam_of_navbar mr-4 d-inline-block">
-                    <a href="" class="menu_links">مقاله ها</a>
-                </li>
-                <li class="menu_iteam_of_navbar mr-4 d-inline-block">
-                    <a href="" class="menu_links">دسته بندی ها</a>
-                </li>
-                <li class="menu_iteam_of_navbar mr-4 d-inline-block">
-                    <a href="" class="menu_links">همه محصولات</a>
-                </li>
-                <li class="menu_iteam_of_navbar active_menu mr-4 d-inline-block">
-                    <a href="" class="menu_links">صفحه اصلی</a>
-                </li>
-            </ul>
+            <div class="row">
+
+                <div class="col-3  text-right dir-rtl">
+
+                    <div class="d-inline-block box_of_reg_log_header mt-3">
+                        <p>ورود / عضویت</p>
+                    </div>
+    
+                    <i class="fas fa-shopping-cart shopping_card_header mr-3"></i>
+                    <p class="d-inline-block bag_heaer_text">سبـــد خــریــد</p>
+                    <div class="shopping_card_number">2</div>
+    
+                </div>
+
+                <div class="col-9">
+
+                    <ul class="dir-rtl text-right mt-3">
+                        <li class="menu_iteam_of_navbar mr-4 d-inline-block">
+                            <a href="" class="menu_links">پشتیبانی</a>
+                        </li>
+                        <li class="menu_iteam_of_navbar mr-4 d-inline-block">
+                            <a href="" class="menu_links">ارتباط با ما</a>
+                        </li>
+                        <li class="menu_iteam_of_navbar mr-4 d-inline-block">
+                            <a href="" class="menu_links">مقاله ها</a>
+                        </li>
+                        <li class="menu_iteam_of_navbar mr-4 d-inline-block">
+                            <a href="" class="menu_links">دسته بندی ها</a>
+                        </li>
+                        <li class="menu_iteam_of_navbar mr-4 d-inline-block">
+                            <a href="" class="menu_links">همه محصولات</a>
+                        </li>
+                        <li class="menu_iteam_of_navbar active_menu mr-4 d-inline-block">
+                            <a href="" class="menu_links">صفحه اصلی</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+
 
         </div>
     </nav>

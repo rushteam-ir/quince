@@ -115,13 +115,11 @@
     font-size: 1.5rem;
     position: relative;
     top: 4px;
-    margin-top: 29px;
-
 }
 
 .shopping_card_number {
     position: absolute;
-    top: 20px;
+    top: 0px;
     right: 102px;
     width: 25px;
     height: 25px;
@@ -162,6 +160,9 @@
     width: 100%;
     background-color: white;
     border-top: 1px solid #e7e7e7;
+    position: relative;
+    box-shadow: 0px 10px 20px -10px #c5c5c5;
+    z-index: 20;
 }
 
 .menu_links{
