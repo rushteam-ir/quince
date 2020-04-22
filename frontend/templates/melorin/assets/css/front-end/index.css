@@ -387,13 +387,14 @@
 .btn_of_category{
     display: block;
     color: white;
-    width: 70%;
+    width: 62%;
     background: #FF6B6B;
     border-radius: 5px;
     text-align: center;
-    margin-left: 30%;
-    height: 50px;
-    line-height: 49px;
+    margin-left: 38%;
+    height: 40px;
+    line-height: 39px;
+    font-size: 1.2rem;
 }
 
 .category_info {
