@@ -21,7 +21,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-6">
+                <div class="col-6 pl-0">
                     <div class="input-group mb-3 box_of_search_header">
                         <div class="input-group-prepend">
                             <span class="input-group-text btn_of_search_header" id="basic-addon1"><i class="far fa-search"></i></span>
@@ -32,7 +32,8 @@
                 </div>
 
 
-                <div class="col-3 dir_rtl offset-3">
+                <div class="col-3 dir_rtl offset-3 pr-0">
+
                     <img class="d-inline-block main_logo mt-2" src="img/logo1.jpg" alt="">
                     <p class="d-inline-block logo_shop_text mr-2 ">فروشگاه <span>ملورین</span></p>
 
@@ -46,7 +47,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-3  text-left dir-rtl">
+                <div class="col-3  text-left dir-rtl pl-0">
 
                     <button type="button" class="btn log_req_modal" data-toggle="modal" data-target="#log_reg_main_modal">
                         <div class="d-inline-block box_of_reg_log_header" id="reg_log_modal">
@@ -60,7 +61,7 @@
 
                 </div>
 
-                <div class="col-9">
+                <div class="col-9 pr-0">
 
                     <ul class="dir-rtl text-right mt-4">
                         <li class="vip_offers_menu mr-4 d-inline-block">
@@ -205,91 +206,121 @@
 
     {+body/}
 
+    <footer class="main_footer">
 
-
-    <footer class="footer_style">
-        <div class="container-fluid">
+        <div class="container text-right">
             <div class="row">
-                <div class="col-12">
-                    <div class="header_of_footer_box">
-                        <div class="logo_of_footer_box text-center mt-5">
-                            <img src="img/logo1.jpg" alt="ملورین" class="logo_of_footer">
-                        </div>
-                        <div class="text_of_footer_box">
-                            <h4 class="text-center mt-3">فروشگاه ملورین</h4>
-                            <p class="text-center">برترین تولید کننده سال با تولید بیش از 2000 مدل جوراب جدید درسال</p>
-                        </div>
-                        <div class="social_media_box_in_footer text-center">
-                            <i class="fab fa-telegram-plane mr-3"></i>
-                            <i class="fab fa-facebook-f mr-3"></i>
-                            <i class="fab fa-instagram "></i>
-                        </div>
+                <div class="col-3 dir_rtl">
+
+                    <p class="header_of_footer mb-0">با ما در ارتباط باشید</p>
+                    <div class="border_title_footer"></div>
+
+                    <p class="footer_description dir-rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+
+                    <a href="" class="insta_direction_footer btn">در اینستاگرام ما عضو شوید</a>
+
+                </div>
+                <div class="col-2">
+
+                    <p class="header_of_footer mb-0">دسترسی سریع</p>
+                    <div class="border_title_footer_second"></div>
+
+                    <ul>
+                        <li class="mt-3">
+                            <a href="" class="link_of_footer">صفحه اصلی</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="" class="link_of_footer">دسته بندی محصولات</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="" class="link_of_footer">دسته بندی جوراب ها</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="" class="link_of_footer">دسته بندی لباس زیر</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="" class="link_of_footer">پشتیبانی</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="" class="link_of_footer">مقاله ها</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-2">
+
+                    <p class="header_of_footer mb-0">سوالات متداول</p>
+                    <div class="border_title_footer_second"></div>  
+
+                    <ul>
+                        <li class="mt-3">
+                            <a href="" class="link_of_footer">شرایط ارسال چطوره؟</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="" class="link_of_footer">چرا به شما اعتماد کنم؟</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="" class="link_of_footer">ضمانت چه شرایطی دارد؟</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="" class="link_of_footer">ایا امکان مرجوعی وجود دادرد</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="" class="link_of_footer">چطوری سلام کنم دلار نشه؟</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="" class="link_of_footer"></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="col-4 offset-1 text-right dir_rtl col_of_logo_custom">
+
+                    <img class="d-inline-block main_logo mt-2" src="img/logo1.jpg" alt="">
+                    <p class="d-inline-block logo_shop_text_footer mr-2 ">فروشگاه <span>ملورین</span></p>
+
+                    <p class="footer_description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+
+                    <div class="border_footer_customize"></div>
+
+                    <div>
+
+                        <p class="contact_text_footer mb-0">شماره تماس : 02144303785</p>
+                        <p class="contact_text_footer mb-0">ایمیل : melorin@gmail.com</p>
+                        <p class="contact_text_footer mb-0">ادرس:خیابان حافظ بالاتر از سخایی</p>
+                        
                     </div>
+                    
                 </div>
             </div>
-            <div class="row row_style_margin">
-                <div class="col-12 col-md-3 offset-md-0 mb-5 mb-md-0">
-                    <div class="left_box_of_footer">
-                        <h6 class="title_of_footer_right_box text-center">شخصی سازی سفارشات</h6>
-                        <p class="explain_of_Customization_product text-justify" dir="rtl">
-                            جون بچت بیا عکس بده ما برات عین همونو تولید میکنیم . بعد میدیم بهت توام برو حال کن بنده
-                            خدا.کی میاد واست اینکارارو بکنه اسکل ببین قدر نمیدونی!!!!
-                        </p>
-                        <button class="btn_of_Customization_product text-center ">سفارش بده</button>
-                    </div>
-                </div>
-                <div class="col-12 col-md-3 offset-md-0 mb-5 mb-md-0">
-                    <div class="center2_box_of_footer">
-                        <h6 class="title_of_footer_right_box"> نماد اعتمادالکترونیکی</h6>
-                        <img src="img/namad.jpg" class="namad_img_footer">
-                    </div>
-                </div>
-                <div class="col-12 col-md-3 offset-md-0 mb-5 mb-md-0">
-                    <div class="center_box_of_footer">
-                        <h6 class="title_of_footer_right_box">دسترسی آسان</h6>
 
-                        <ul class="menu_in_footer p-0">
-                            <a href="#" class="link_of_footer_menu">
-                                <li class="list_of_footer_menu">صفحه اصلی</li>
-                            </a>
-                            <a href="#" class="link_of_footer_menu">
-                                <li class="list_of_footer_menu">محصولات</li>
-                            </a>
-                            <a href="#" class="link_of_footer_menu">
-                                <li class="list_of_footer_menu">پکیج ها</li>
-                            </a>
-                            <a href="#" class="link_of_footer_menu">
-                                <li class="list_of_footer_menu">درباره ما</li>
-                            </a>
-                            <a href="#" class="link_of_footer_menu">
-                                <li class="list_of_footer_menu">تماس با ما</li>
-                            </a>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="col-12 col-md-3 offset-md-0 mb-5 mb-md-0">
-                    <div class="right_box_of_footer">
-                        <h6 class="title_of_footer_right_box mb-4">پشتیبانی</h6>
-                        <div>
-                            <p class="support_option">021-44610035<i class="fa fa-phone ml-2"></i></p>
-                            <p class="support_option">test@example.com <i class="fas fa-envelope ml-2"></i></p>
-                            <p class="support_option">بازار - سلام - خوبی <i class="fas fa-map-marker-alt ml-2"></i></p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
             <div class="row">
-                <div class="col-12 col-md-12 offset-md-0 ">
-                    <div class="box_last_footer">
-                        <p class="footer_company_name"> &copy; 2020 - zend.cms</p>
-                    </div>
+
+                <div class="col-3">
+
+                    <img class="enamad_footer" src="img/enamad2.png" alt="">
+
+                </div>
+                <div class="col-9 dir_rtl">
+
+                    <p class="header_of_footer mb-0">بهترین کیفیت را از ما بخواهید</p>
+                    <p class="footer_description mt-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+
                 </div>
             </div>
+
         </div>
+        <hr class="hr_footer_custom">
+        
+        <div class="container">
+
+            <p class="footer_copy_right">تمام حقوق مادی و معنوی این سایت متعلق به فروشگاه ملورین می باشد.</p>
+
+        </div>
+
     </footer>
+
 
     <script src="js/general/jquery.js"></script>
     <script src="js/general/popper.js"></script>
