@@ -49,7 +49,7 @@
                 <div class="col-3  text-left dir-rtl">
 
                     <button type="button" class="btn log_req_modal" data-toggle="modal" data-target="#log_reg_main_modal">
-                        <div class="d-inline-block box_of_reg_log_header">
+                        <div class="d-inline-block box_of_reg_log_header" id="reg_log_modal">
                             <p>ورود / عضویت</p>
                         </div>
                     </button>
@@ -94,8 +94,8 @@
 
     <div class="modal fade text-right" id="log_reg_main_modal" tabindex="-1" role="dialog" aria-labelledby="log_register_modal"
         aria-hidden="true">
-        <div class="modal-dialog dir_rtl text-right mt-5" role="document">
-            <div class="modal-content">
+        <div class="modal-dialog dir_rtl text-right" role="document">
+            <div class="modal-content" id="modal_height">
                 <div class="modal-header">
                     <h5 class="modal-title log_modal_title" id="log_register_modal">ورود به <span class="melorin_titile_modal">ملورین</span></h5>
                     <button type="button" class="close close_log_modal" data-dismiss="modal" aria-label="Close">
@@ -103,21 +103,21 @@
                     </button>
                 </div>
                 <div class="modal-body main_body_of_log_modal">
-                    <form>
+                    <form id="login_form">
 
                         <p class="welcom_text_of_log_modal">خوش امدید !</p>
 
                         <div class="form-group">
-                          <label for="email_log_modal">ایمیل</label>
-                          <input type="email" class="form-control text-left dir_ltr" id="email_log_modal" aria-describedby="emailHelp">
+                          <label for="email_log_modal" class="font-weight-bold">ایمیل</label>
+                          <input type="text" class="form-control text-left dir_ltr" id="email_log_modal">
                         </div>
 
                         <div class="form-group">
-                          <label for="pass_log_modal">رمز عبور  <a href="" class="forget_pass_box">رمز عبور خود را فراموش کرده ای؟</a href=""></label>
+                          <label for="pass_log_modal" class="font-weight-bold">رمز عبور  <span class="forget_pass_box" id="go_recovery">رمز عبور خود را فراموش کرده ای؟</span></label>
                           <input type="password" class="form-control text-left dir_ltr" id="pass_log_modal">
                         </div>
                   
-                        <label class="checkbox_body">مرا به خاطر داشته باش
+                        <label class="checkbox_body" class="font-weight-bold">مرا به خاطر داشته باش
                             <input type="checkbox" name="">
                             <span class="checkmark"></span>
                         </label>
@@ -126,10 +126,78 @@
 
                         <div class="text-center mt-3 field_of_register_link">
                             <p class="d-inline-block ">کاربر جدید هستید؟</p>
-                            <p class="d-inline-block register_link_modal">ایجاد حساب جدید</p>
+                            <p class="d-inline-block register_link_modal" id="go_register">ایجاد حساب جدید</p>
                         </div>
 
                       </form>
+
+                      <form id="register_form">
+                          
+                        <div class="form-group">
+                            <label for="name_reg_modal" class="font-weight-bold">نام و نام خانوادگی</label>
+                            <input type="text" class="form-control" id="name_reg_modal">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mobile_reg_modal" class="font-weight-bold">شماره تلفن</label>
+                            <input type="text" class="form-control" id="mobile_reg_modal">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email_reg_modal" class="font-weight-bold">ایمیل</label>
+                            <input type="text" class="form-control" id="email_reg_modal">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pass_reg_modal" class="font-weight-bold">رمز عبور</label>
+                            <input type="password" class="form-control" id="pass_reg_modal">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="repass_reg_modal" class="font-weight-bold">تکرار رمز عبور</label>
+                            <input type="password" class="form-control" id="repass_reg_modal">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6">
+
+                                <div class="form-group">
+                                    <label for="repass_reg_modal" class="font-weight-bold">کد امنیتی</label>
+                                    <input type="password" class="form-control" id="repass_reg_modal">
+                                </div>
+
+                            </div>
+                            <div class="col-6">
+
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-dark w-100 mt-3 ">ثبت نام در ملورین</button>
+
+                        <div class="text-center mt-3 field_of_register_link">
+                            <p class="d-inline-block ">حساب کاربری دارید؟</p>
+                            <p class="d-inline-block register_link_modal" id="go_login">ورود به حساب کاربری</p>
+                        </div>
+
+                      </form>
+
+                      <form id="recovery_form">
+
+                        <div class="form-group">
+                            <label for="repass_reg_modal" class="font-weight-bold">ایمیل</label>
+                            <input type="text" class="form-control" id="repass_reg_modal">
+                            <small>جهت باز یابی رمز عبور ایمیل مربوط به حساب کاربری خود را وارد کنید.</small>
+                        </div>
+
+                        <button type="submit" class="btn btn-dark w-100 mt-3 ">بازیابی رمز عبور</button>
+
+                        <div class="text-center mt-3 field_of_register_link mt-3">
+                            <p class="d-inline-block ">حساب کاربری دارید؟</p>
+                            <p class="d-inline-block register_link_modal" id="go_login_recovery">ورود به حساب کاربری</p>
+                        </div>
+
+                      </form>
+
                 </div>
             </div>
         </div>

@@ -188,7 +188,7 @@
     color: #FF6B6B;
     font-weight: bold;
     border-bottom: 3px solid #FF6B6B;
-    padding-bottom: 30px;
+    padding-bottom: 22px;
 }
 
 .vip_offers_menu_link {
@@ -205,7 +205,7 @@
 
 .active_menu {
     border-bottom: 3px solid #FF6B6B;
-    padding-bottom: 31px;
+    padding-bottom: 23px;
 }
 
 
@@ -225,46 +225,45 @@
     width: 100%;
 }
 
-.close_log_modal{
+.close_log_modal {
     position: absolute;
     left: 5px;
     top: 22px;
 }
 
-.log_modal_title{
+.log_modal_title {
     font-family: main-font;
     font-size: 1.5rem;
 }
 
-.melorin_titile_modal{
+.melorin_titile_modal {
     color: #FF6B6B;
 }
 
 .modal-content {
-    border:none;
+    border: none;
     border-radius: 0.2rem;
 }
 
-.main_body_of_log_modal{
+.main_body_of_log_modal {
     padding: 30px 85px;
 }
 
-.register_link_modal{
+.register_link_modal {
     color: #FF6B6B;
     cursor: pointer;
 }
 
-.field_of_register_link{
+.field_of_register_link {
     font-family: main-font;
 }
 
-.welcom_text_of_log_modal{
+.welcom_text_of_log_modal {
     text-align: center;
     font-weight: bold;
     font-size: 2rem;
 }
 
-/*  */
 .checkbox_body {
     display: block;
     position: relative;
@@ -328,19 +327,35 @@
     transform: rotate(45deg);
 }
 
-.forget_pass_box{
+.forget_pass_box {
     margin-right: 68px;
     color: #171717;
+    cursor: pointer;
 }
 
-.forget_pass_box:hover{
+.forget_pass_box:hover {
     color: #171717;
 }
 
+#login_form {
+    transition: opacity linear 0.3s;
+}
 
+#register_form {
+    transition: opacity linear 0.3s;
+    opacity: 0;
+    display: none;
+}
 
+#recovery_form {
+    display: none;
+    transition: all ease-out 0.7s;
+}
 
-
+#modal_height{
+    height: 510px;
+    transition: height ease-out 0.3s;
+}
 
 
 
