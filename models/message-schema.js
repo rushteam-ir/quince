@@ -8,6 +8,7 @@ let message_schema = new mongoose.Schema({
     text : String,
     date : String,
     read : Boolean,
+    reply : Boolean,
     row : Number
 
 });
@@ -45,6 +46,23 @@ message_schema.statics = {
     read : async function(){
 
         return await message_model.update({read : false}, {$set: {read : true}});
+
+    },
+
+    edit : async function (message_id ,message_data) {
+
+        let find_message = await message_model.findByIdAndUpdate(message_id, {$set : message_data}, {new : true});
+
+        if(find_message){
+
+            return find_message;
+
+        }
+        else{
+
+            return null;
+
+        }
 
     },
 

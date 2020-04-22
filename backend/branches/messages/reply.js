@@ -61,7 +61,7 @@ router.post('/:id', async(req,res)=>{
 
                 };
 
-                transporter.sendMail(mail_options, function(error, info){
+                transporter.sendMail(mail_options, async function(error, info){
 
                     if (error) {
 
@@ -69,7 +69,24 @@ router.post('/:id', async(req,res)=>{
 
                     } else {
 
-                        res.redirect(`${config.backend_url}messages/?msg=sent-success`);
+                        let message_data = {
+
+                            reply : true
+
+                        }
+
+                        let result = await message_model.edit(message_id, message_data);
+
+                        if(result){
+
+                            res.redirect(`${config.backend_url}messages/?msg=sent-success`);
+
+                        }
+                        else{
+
+                            res.redirect(`${config.backend_url}messages/reply/${message_id}/?msg=sent-fail`);
+
+                        }
 
                     }
 

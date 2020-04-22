@@ -55,7 +55,8 @@ router.post('/', async(req,res)=>{
                 title : title_inp,
                 text : text_inp,
                 date : getCurrentDate(),
-                read : false
+                read : false,
+                reply : false
 
             }
 

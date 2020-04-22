@@ -1,6 +1,7 @@
 
 // errors
 
+/*
 function storeAddError() {
 
     $('.alert_query').remove();
@@ -79,6 +80,7 @@ function storeAddError() {
     }
 
 }
+*/
 
 // delete image sweet alert
 $('.product_del').on('click', function (e) {
@@ -157,6 +159,28 @@ $(document).on('click', '.remove', function(e) {
 $(function () {
     $('[data-toggle="popover"]').popover()
 })
+
+$(document).on('change', '.width_inp_customize', function(e) {
+
+    let index = parseInt($(this).attr('id')) + 1;
+
+    if($(this).val() != ''){
+
+        $('.features_class_' + index.toString()).removeAttr('disabled', 'disabled');
+
+    }
+    else{
+
+        for(let i = index; i < 4; i++){
+
+            $('.features_class_' + i.toString()).attr('disabled', 'disabled');
+            $('.features_class_' + i.toString()).val('');
+
+        }
+
+    }
+
+});
 
 function redirect(url) {
     location.href = url

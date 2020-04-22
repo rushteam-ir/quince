@@ -47,7 +47,11 @@
 
                     <div>
 
-                        <p class="answer_or_now">پاسخ داده شد</p>
+                        {@eq key="{reply}" value="true"}
+                            <p class="answer_true">پاسخ داده شد</p>
+                        {:else}
+                            <p class="answer_false">پاسخ داده نشد</p>
+                        {/eq}
                         <p class="d-inline-block mt-3">ایمیل : {email}</p>
                         <p class="d-inline-block mr-5">شماره تلفن : {phone_number}  </p>
 

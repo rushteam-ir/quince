@@ -72,8 +72,6 @@ router.post('/', async(req,res)=>{
 
         }
 
-        log(product_features_inp);
-
         if(valid_title != ''){
             return res.redirect(`${config.backend_url}store/add`);
         }
@@ -108,6 +106,8 @@ router.post('/', async(req,res)=>{
             return res.redirect(`${config.backend_url}store/add/?msg=few-images`);
         }
 
+        let price_discount = Math.round(parseInt(price_inp) * (100 - parseInt(discount_inp)) / 100);
+
         let new_product = {
 
             title : title_inp,
@@ -116,6 +116,7 @@ router.post('/', async(req,res)=>{
             describe : describe_inp,
             stock : stock_inp,
             price : price_inp,
+            price_discount : price_discount,
             discount : discount_inp,
             features : product_features_inp,
             last_edit : getCurrentDate(),

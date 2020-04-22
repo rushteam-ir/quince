@@ -5,7 +5,7 @@ router.get('/', async(req,res)=>{
     try {
 
         let image_id = req.query.id;
-        let find_product = await product_model.getById(backend.locals.product_edit_id);
+        let find_product = await product_model.getById(req.session.product_edit_id);
 
         if(find_product){
 
@@ -20,24 +20,24 @@ router.get('/', async(req,res)=>{
 
             }
 
-            let result = await product_model.edit(backend.locals.product_edit_id, product_data);
+            let result = await product_model.edit(req.session.product_edit_id, product_data);
 
             if(result){
 
                 await fs.unlinkSync(`${backend_upload_dir}products/${find_image_name}`);
-                res.redirect(`${config.backend_url}store/edit/${backend.locals.product_edit_id}`);
+                res.redirect(`${config.backend_url}store/edit/${req.session.product_edit_id}`);
 
             }
             else{
 
-                res.redirect(`${config.backend_url}store/edit/${backend.locals.product_edit_id}`);
+                res.redirect(`${config.backend_url}store/edit/${req.session.product_edit_id}`);
 
             }
 
         }
         else{
 
-            res.redirect(`${config.backend_url}store/edit/${backend.locals.product_edit_id}`);
+            res.redirect(`${config.backend_url}store/edit/${req.session.product_edit_id}`);
 
         }
 

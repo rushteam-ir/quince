@@ -12,7 +12,7 @@ $(document).on('change', '.end_class', function(e) {
     }
     else{
 
-        for(let i = index; i <= 5; i++){
+        for(let i = index; i < 5; i++){
 
             $('.end_class_' + i.toString()).attr('disabled', 'disabled');
             $('.discount_class_' + i.toString()).attr('disabled', 'disabled');

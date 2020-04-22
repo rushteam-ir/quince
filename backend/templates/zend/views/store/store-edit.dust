@@ -16,6 +16,8 @@
 
             {@alertWarn key="limited-image" msg="حجم تصویر انتخاب شده بیشتر از حد مجاز است"}{/alertWarn}
             {@alertWarn key="illegal-image" msg="پسوند تصویر انتخاب شده مجاز نمی باشد"}{/alertWarn}
+            {@alertWarn key="few-images" msg="تصویر اصلی حتما باید اضافه شود و تصاویر دیگر محصول باید حداقل 3 عکس یا بیشتر باشد."}{/alertWarn}
+            {@alertWarn key="no-change" msg="تغییری در مشخصات محصول اعمال نشده است"}{/alertWarn}
             {@alertError key="edit-fail" msg="تغییرات صورت گرفته ثبت نشد. لطفا مجددا نلاش فرمایید"}{/alertError}
 
             <div class="error_warning_alert text-right display_none" id="error_field_warning_front"> 
@@ -97,10 +99,21 @@
                     </label>
                     <div class="field_wrapper row">
                         {#product_form.features}
-                            <div class="col-6 p-0 mt-3">
-                                <input class="form-control width_inp_customize" id="first-feature" type="text" name="product_features_inp[]" value="{.}">
+                            <div class="col-6 mt-3 p-0">
+                                <input class="form-control width_inp_customize features_class_{$idx}" id="{$idx}" type="text" name="product_features_inp[]" value="{.}">
                             </div>
                         {/product_form.features}
+                        {#store_features_slot}
+                            {@eq key="{$idx}" value="0"}
+                                <div class="col-6 mt-3 p-0">
+                                    <input class="form-control width_inp_customize features_class_{.}" id="{.}" type="text" name="product_features_inp[]" value="">
+                                </div>
+                            {:else}
+                                <div class="col-6 mt-3 p-0">
+                                    <input class="form-control width_inp_customize features_class_{.}" id="{.}" type="text" name="product_features_inp[]" value="" disabled>
+                                </div>
+                            {/eq}
+                        {/store_features_slot}
                     </div>
                 </div>
 

@@ -56,7 +56,7 @@ $(document).on('change', '.width_inp_customize', function(e) {
     }
     else{
 
-        for(let i = index; i <= 4; i++){
+        for(let i = index; i < 4; i++){
 
             $('.features_class_' + i.toString()).attr('disabled', 'disabled');
             $('.features_class_' + i.toString()).val('');

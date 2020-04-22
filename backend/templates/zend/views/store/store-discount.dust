@@ -71,7 +71,7 @@
 
                 <div class="d-inline-block">
                     <label class="d-inline-block" for="">شروع قیمت تخفیف از : </label>
-                    {@eq key="{.}" value="1"}
+                    {@eq key="{.}" value="0"}
                         <input type="number" value="0" name="start_inp[]" class="form-control d-inline-block discount_inp_custom start_class_{.}" disabled>
                     {:else}
                         <input type="number" name="start_inp[]" class="form-control d-inline-block discount_inp_custom start_class_{.}" disabled>
@@ -80,7 +80,7 @@
 
                 <div class="d-inline-block">
                     <label class="d-inline-block" for=""> تا </label>
-                    {@eq key="{.}" value="1"}
+                    {@eq key="{.}" value="0"}
                         <input type="number" placeholder="&#8734" name="end_inp[]" id="{.}" class="form-control d-inline-block discount_inp_custom end_class end_class_{.}">
                     {:else}
                         <input type="number" placeholder="&#8734" name="end_inp[]" id="{.}" class="form-control d-inline-block discount_inp_custom end_class end_class_{.}" disabled>
@@ -89,7 +89,7 @@
 
                 <div class="d-inline-block">
                     <label class="d-inline-block" for="">، میزان تخفیف :</label>
-                    {@eq key="{.}" value="1"}
+                    {@eq key="{.}" value="0"}
                         <input type="number" name="discount_inp[]" class="form-control d-inline-block last_discount_inp_custom discount_class_{.}">
                     {:else}
                         <input type="number" name="discount_inp[]" class="form-control d-inline-block last_discount_inp_custom discount_class_{.}" disabled>

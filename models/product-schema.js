@@ -68,11 +68,22 @@ product_schema.statics = {
 
     edit : async function (product_id ,product_data) {
 
-        let find_product = await product_model.findByIdAndUpdate(product_id, {$set : product_data}, {new : true});
+        let check_product_name = await product_model.findOne({title : product_data.title});
 
-        if(find_product){
+        if(check_product_name._id.toString() == product_id.toString()){
 
-            return find_product;
+            let find_product = await product_model.findByIdAndUpdate(product_id, {$set : product_data}, {new : true});
+
+            if(find_product){
+
+                return find_product;
+
+            }
+            else{
+
+                return null;
+
+            }
 
         }
         else{

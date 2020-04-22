@@ -93,8 +93,8 @@
                         <button type="button" class="alert_popup_circl_btn_class " data-toggle="popover" title="توجه" data-placement="left" data-content="برای مثال اگر می خواهید مشخصه ی رنگ با دو زیر مجموعه ی آبی و قرمز را اضافه کنید باید به صورت رو به رو وارد نمایید : رنگ:آبی،قرمز"><i class="fas fa-exclamation-circle alert_popup_circl"></i></button>
                     </label>
                     <div class="field_wrapper row">
-                        {#product_features_slot_default}
-                            {@eq key="{.}" value="1"}
+                        {#store_features_slot_default}
+                            {@eq key="{.}" value="0"}
                                 <div class="col-6 mt-3 p-0">
                                     <input class="form-control width_inp_customize features_class_{.}" id="{.}" type="text" name="product_features_inp[]" value="">
                                 </div>
@@ -103,7 +103,7 @@
                                     <input class="form-control width_inp_customize features_class_{.}" id="{.}" type="text" name="product_features_inp[]" value="" disabled>
                                 </div>
                             {/eq}
-                        {/product_features_slot_default}
+                        {/store_features_slot_default}
                     </div>
                 </div>
 

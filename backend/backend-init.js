@@ -12,7 +12,7 @@ backend.set('views', `${config.app_dir}backend/templates/${config.backend_tmp}/v
 backend.use(body_parser.urlencoded({extended : false}));
 backend.use(body_parser.json());
 
-// Backend file uplaod
+// Backend file upload
 backend.use(file_upload());
 
 // Backend other configs
@@ -29,8 +29,8 @@ backend.locals.captcha_url = config.captcha_url;
 backend.locals.zend_cms_version = "1.0.0";
 backend.locals.messages_status = false;
 backend.locals.store_image_slot_default = [1,2,3,4,5,6];
-backend.locals.discount_slot_default = [1,2,3,4,5];
-backend.locals.product_features_slot_default = [1,2,3,4];
+backend.locals.discount_slot_default = [0,1,2,3,4];
+backend.locals.store_features_slot_default = [0,1,2,3];
 backend.locals.limit_page = 10;
 backend.locals.limited_avatars_size = (backend_limited_avatars_size/1024).toString();
 backend.locals.limited_products_size = (backend_limited_products_size/1024).toString();

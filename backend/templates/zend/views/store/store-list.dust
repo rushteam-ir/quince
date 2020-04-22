@@ -188,7 +188,7 @@
         
                                             <hr>
                                             <div class="price_number_of_modal_product d-inline-block">
-                                                <p class="d-inline-block m-0">{.price}تومان</p>
+                                                <p class="d-inline-block m-0">{.price_discount}تومان</p>
                                             </div>
 
                                             <div class="sale_price_number_of_modal_product d-inline-block mr-4">
