@@ -47,6 +47,7 @@
 
                     <div>
 
+                        <p class="answer_or_now">پاسخ داده شد</p>
                         <p class="d-inline-block mt-3">ایمیل : {email}</p>
                         <p class="d-inline-block mr-5">شماره تلفن : {phone_number}  </p>
 

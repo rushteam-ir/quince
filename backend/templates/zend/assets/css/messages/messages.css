@@ -22,7 +22,6 @@
     width: 85px;
     height: 85px;
     border-radius: 50%;
-    border: 3px solid #E13A58; 
 }
 
 .message_name_field {
@@ -103,3 +102,14 @@
     border-radius: 5px;
 }
 
+.answer_or_now{
+    width: 130px;
+    text-align: center;
+    height: 35px;
+    background-color: #E6F8F3;
+    color: #0ABB87;
+    line-height: 35px;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
