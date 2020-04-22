@@ -19,9 +19,10 @@
 }
 
 .profile_message_img {
-    border-radius: 50%;
     width: 85px;
     height: 85px;
+    border-radius: 50%;
+    border: 3px solid #E13A58; 
 }
 
 .message_name_field {
@@ -101,3 +102,4 @@
     background-color: #0000000d;
     border-radius: 5px;
 }
+
