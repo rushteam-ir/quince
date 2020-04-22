@@ -42,7 +42,7 @@ router.post('/', async(req,res)=>{
         else if(title_valid != ''){
             return res.redirect(`${config.frontend_url}contact-us/?msg=${title_valid}`);
         }
-        else if(text_inp.length > 1000){
+        else if(text_inp.length > 2000){
             return res.redirect(`${config.frontend_url}contact-us/?msg=limited-length`);
         }
         else{
