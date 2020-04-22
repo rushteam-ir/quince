@@ -128,76 +128,57 @@
     </section>
 {!End Services!}
 {!Sale Product Category!}
+
     <section>
         <div class="container">
-            <div class="row mt-5">
-                <div class="col-12 col-md-4 pr-0">
-                    <div class="w-100 main_field_of_category">
-                        <img class="w-100 h-100 category_img_custom" src="img/womman.jpg" alt="">
-                        <div class="field_of_category_info">
-                            <p class="header_of_category mb-2">جوراب های زنانه</p>
-                            <small class="small_of_category">تا 10 درصد تخفیف</small>   
+            <div class="row">
+                <div class="col-8 pr-0">
+                    <img class="w-100 category_img_customize" src="img/category3.jpg" alt="">
 
-                            <div>
-                                <a href="#" class="btn btn_of_category">همین الان بخر</a>
+                    <div class="category_info">
+                        <p>انواع جوراب</p>
+                        <p>تا 20% تخفیف بهاره در تمام سایز ها</p>
+                        <a href="" class="btn_of_category">مشاهده دسته بندی</a>
+                    </div>
+
+                </div>
+                <div class="col-4 pl-1">
+
+                    <div class="row">
+                        <div class="col-12">
+
+                            <img class="sub_category_img_customize" src="img/category11.jpg" alt="">
+
+                            <div class="hover_category_iteam">
+
+                                <p class="mb-2">زیر پوش مردانه</p>
+                                <p>تا 15% تخفیف بهاره</p>
+                                <a href="" class="btn_of_subcategory">مشاهده دسته بندی</a>
+
                             </div>
 
                         </div>
-                    </div>
-                </div>
+                        
+                        <div class="col-12">
 
-                <div class="col-12 col-md-8">
-                    <div class="w-100 main_field_of_category">
-                        <img class="w-100 h-100 category_img_custom" src="img/category-2.jpg" alt="">
-                        <div class="field_of_category_info">
+                            <img class="sub_category_img_customize2" src="img/category2.jpg" alt="">
 
-                            <p class="header_of_category mb-2">جوراب های زنانه</p>
-                            <small class="small_of_category">تا 10 درصد تخفیف</small>   
+                            <div class="hover_category_iteam2">
 
-                            <div>
-                                <a href="#" class="btn btn_of_category">همین الان بخر</a>
+                                <p class="mb-2">زیر پوش مردانه</p>
+                                <p>تا 15% تخفیف بهاره</p>
+                                <a href="" class="btn_of_subcategory">مشاهده دسته بندی</a>
+
                             </div>
-
+                            
                         </div>
                     </div>
+
                 </div>
-
-                <div class="col-12 col-md-8 category_mt_custom">
-                    <div class="w-100 main_field_of_category">
-                        <img class="w-100 h-100 category_img_custom" src="img/man-socks.jpg" alt="">
-                        <div class="field_of_category_info">
-
-                            <p class="header_of_category mb-2">جوراب های زنانه</p>
-                            <small class="small_of_category">تا 10 درصد تخفیف</small>   
-
-                            <div>
-                                <a href="#" class="btn btn_of_category">همین الان بخر</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-4 category_mt_custom pl-0">
-                    <div class="w-100 main_field_of_category">
-                        <img class="w-100 h-100 category_img_custom" src="img/child.jpg" alt="">
-                        <div class="field_of_category_info">
-
-                            <p class="header_of_category mb-2">جوراب های زنانه</p>
-                            <small class="small_of_category">تا 10 درصد تخفیف</small>   
-
-                            <div>
-                                <a href="#" class="btn btn_of_category">همین الان بخر</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
             </div>
-
         </div>
     </section>
+
 {!End Sale Product Category!}
 
 <section class="mt-5 section_of_product_slider">
