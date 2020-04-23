@@ -814,8 +814,8 @@
 {!Parallax!}
     <section>
         <div class="parallax_css_picture mt-5">
-            <h2 class="text-center h2_style_of_parallax">حراج محصولات برتر برای آقایان</h2>
-            <h3 class="text-center h2_style_of_parallax h3_style_of_parallax">تا سقف 30% تخفیف</h3>
+            <h2 class="h2_style_of_parallax">حراج محصولات برتر بهاره</h2>
+            <h3 class="h2_style_of_parallax h3_style_of_parallax">تا سقف 30% تخفیف</h3>
             <div class="w-100 text-center">
                 <button type="button" class="btn_parallax_style">همین حالا خرید کنید</button>
             </div>
