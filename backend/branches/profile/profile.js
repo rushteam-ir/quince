@@ -177,7 +177,7 @@ router.post('/', async(req,res)=>{
             if(current_password === req.session.admin_info.password && new_password === confirm_password && new_password != "" && confirm_password != ""){
 
                 let result = await user_model.editProfile(admin_id, admin_data);
-q
+
                 if(result){
 
                     req.session.admin_info = result;

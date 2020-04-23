@@ -70,7 +70,32 @@ product_schema.statics = {
 
         let check_product_name = await product_model.findOne({title : product_data.title});
 
-        if(check_product_name._id.toString() == product_id.toString()){
+        if(check_product_name){
+
+            if(check_product_name._id.toString() == product_id.toString()){
+
+                let find_product = await product_model.findByIdAndUpdate(product_id, {$set : product_data}, {new : true});
+
+                if(find_product){
+
+                    return find_product;
+
+                }
+                else{
+
+                    return null;
+
+                }
+
+            }
+            else{
+
+                return null;
+
+            }
+
+        }
+        else{
 
             let find_product = await product_model.findByIdAndUpdate(product_id, {$set : product_data}, {new : true});
 
@@ -84,11 +109,6 @@ product_schema.statics = {
                 return null;
 
             }
-
-        }
-        else{
-
-            return null;
 
         }
 
