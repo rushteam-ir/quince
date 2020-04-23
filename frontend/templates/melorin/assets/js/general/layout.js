@@ -59,7 +59,7 @@ reg_log_modal.addEventListener('click', function () {
 
                 register_form.style.display = "block";
                 login_form.style.display = "none";
-                modal_height.style.height = "735px";
+                modal_height.style.height = "675px";
 
             }, 400)
 

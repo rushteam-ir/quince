@@ -28,7 +28,7 @@
 
 .shopping_card_header {
     color: #FF6B6B;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     position: relative;
     top: 4px;
     margin-top: 20px;
@@ -46,7 +46,8 @@
     color: white;
     font-weight: bold;
     border: 3px solid white;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
+    line-height: 22px;
 }
 
 .box_of_reg_log_header {
