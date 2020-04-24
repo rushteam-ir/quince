@@ -4,7 +4,7 @@
     background-color: white;
     border-radius: 12px;
     box-shadow: 0px 0px 10px 0px rgb(234, 234, 234);
-}   
+}
 
 .field_of_contact_icon {
     margin: 0 auto;
@@ -12,74 +12,73 @@
     text-align: center;
     height: 70px;
     line-height: 82px;
-    /* background-color: #FF464E; */
     color: #FE6B6B;
     border-radius: 50px;
     border: 2px solid #FE6B6B;
-    /* box-shadow: 0px 0px 10px 0px #7d7d7d; */
     text-shadow: 0 0 black;
     position: relative;
     top: 40px;
 }
+
 .field_of_contact_icon i {
     font-size: 1.8rem;
 }
 
-.title_of_contact_box:first-child{
+.title_of_contact_box:first-child {
     font-weight: bold;
     font-size: 1.5rem;
 }
 
-.title_of_contact_box:nth-child(2){
-    font-size: 1.2rem;
-    line-height: 31px; 
-}
-
-.title_of_contact_box:last-child{
+.title_of_contact_box:nth-child(2) {
     font-size: 1.2rem;
     line-height: 31px;
 }
 
-.field_of_contact_info{
+.title_of_contact_box:last-child {
+    font-size: 1.2rem;
+    line-height: 31px;
+}
+
+.field_of_contact_info {
     position: relative;
     top: 70px;
     text-align: center;
     padding: 0px 10px;
 }
 
-.main_field_of_contact_of_inp{
+.main_field_of_contact_of_inp {
     background-color: white;
 }
 
-.main_form_contact_us input{
+.main_form_contact_us input {
     height: 42px;
     text-align: right;
 }
 
-.main_form_contact_us label{
+.main_form_contact_us label {
     font-weight: bold;
 }
 
-.header_of_contact_text{
+.header_of_contact_text {
     color: #FF6B6B;
     font-size: 2rem;
     font-family: accent-font;
 }
 
-.small_of_contact_us{
+.small_of_contact_us {
     color: #171717;
     font-size: 1rem;
     line-height: 26px;
 }
 
-.sec_info_contact_us{
+.sec_info_contact_us {
     color: #171717;
     font-size: 1.3rem;
     line-height: 33px;
     font-weight: bold;
 }
 
-.btn_of_contact{
+.btn_of_contact {
     background-color: #FF6B6B;
     color: white;
     width: 30%;
@@ -87,6 +86,42 @@
     font-weight: bold;
 }
 
-.btn_of_contact:hover{
+.btn_of_contact:hover {
     color: white;
+}
+
+.header_img_contact {
+    background-image: url(../../img/c-bg-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.header_of_contact_us {
+    font-size: 2.3rem;
+    font-family: accent-font;
+}
+
+.header_img_of_question {
+    background-image: url(../../img/c-bg.jpg);
+    background-size: cover;
+}
+
+.header_and_angle_field {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
 }

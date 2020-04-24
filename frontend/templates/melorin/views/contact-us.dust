@@ -15,6 +15,15 @@
 {<body}
 
 
+
+    <div class="header_img_contact text-center py-3 dir_rtl">
+
+        <div class="container">
+            <h1 class="header_of_contact_us"> تماس با ما</h1>
+        </div>
+
+    </div> 
+
     <section class="main_field_of_contact_of_inp py-5">
         <div class="container">
             <div class="row mt-5">
@@ -40,6 +49,15 @@
                         <form class="main_form_contact_us">
                             <div class="row">
                                 <div class="col-6 text-right">
+                                    
+                                    <div class="form-group">
+                                        <label for="number_contact_inp">تلفن</label>
+                                        <input type="text" class="form-control" id="number_contact_inp">
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="col-6 text-right">
 
                                     <div class="form-group">
                                         <label for="name_contact_inp">نام و نام خانوادگی</label>
@@ -47,15 +65,6 @@
                                     </div>
                                     
                                 </div>
-                                <div class="col-6 text-right">
-
-                                    <div class="form-group">
-                                        <label for="number_contact_inp">تلفن</label>
-                                        <input type="text" class="form-control" id="number_contact_inp">
-                                    </div>
-                                    
-                                </div>
-
                             </div>
 
                             <div class="form-group text-right">
