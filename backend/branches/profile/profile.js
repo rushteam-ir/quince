@@ -124,6 +124,7 @@ router.post('/', async(req,res)=>{
 
                 }
 
+
             }
 
             let result = await user_model.editProfile(admin_id, admin_data);
