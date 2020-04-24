@@ -1,21 +1,5 @@
 const router = express.Router();
 
-router.get('/', async(req, res)=>{
-
-
-    try{
-
-        res.render('user/user-login');
-
-    }
-    catch (error) {
-
-        res.status(500).render('500', {error});
-
-    }
-
-});
-
 router.post('/', async(req,res)=>{
 
     try{
@@ -28,12 +12,12 @@ router.post('/', async(req,res)=>{
 
         if(valid_email != ''){
 
-            res.redirect(`${config.frontend_url}login`);
+            res.redirect(`${config.frontend_url}`);
 
         }
         else if(valid_password != ''){
 
-            res.redirect(`${config.frontend_url}login`);
+            res.redirect(`${config.frontend_url}`);
 
         }
         else{
@@ -54,14 +38,14 @@ router.post('/', async(req,res)=>{
                     }
                     else{
 
-                        res.redirect(`${config.frontend_url}user/login/?msg=inactive-user`);
+                        res.redirect(`${config.frontend_url}?msg=inactive-user`);
 
                     }
 
                 }
                 else{
 
-                    res.redirect(`${config.frontend_url}user/login/?msg=incorrect-input`);
+                    res.redirect(`${config.frontend_url}?msg=incorrect-input`);
 
                 }
 

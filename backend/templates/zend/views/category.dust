@@ -59,7 +59,7 @@
                 <input id="category_search" type="text" class="form-control search_category_inp" placeholder="جستجو">
             </div>
 
-            <table class="table mt-4">
+            <table class="table mt-4" id="myList">
                 <thead class="text-center">
                   <tr>
                     <th scope="col">ردیف</th>
@@ -69,7 +69,7 @@
                   </tr>
                 </thead>
                 <tbody id="category_table" class="text-center">
-                {#list_all.rows}
+                {#list_all}
                     <tr>
                         <th scope="row">{$idx}</th>
                         <td>{.title}</td>
@@ -84,7 +84,7 @@
                             </span>
                         </td>
                     </tr>
-                {/list_all.rows}
+                {/list_all}
                 </tbody>
               </table>
 

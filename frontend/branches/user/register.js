@@ -1,21 +1,5 @@
 const router = express.Router();
 
-router.get('/', async(req, res)=>{
-
-
-    try{
-
-        res.render('user/user-register');
-
-    }
-    catch (error) {
-
-        res.status(500).render('500', {error});
-
-    }
-
-});
-
 router.post('/', async(req, res)=>{
 
 
@@ -29,16 +13,16 @@ router.post('/', async(req, res)=>{
         let valid_password_confirm = validation.isPassword(password_confirm_inp);
 
         if(valid_email != ''){
-            res.redirect(`${config.frontend_url}user/register/`);
+            res.redirect(`${config.frontend_url}`);
         }
         else if(valid_phone_number != ''){
-            res.redirect(`${config.frontend_url}user/register/`);
+            res.redirect(`${config.frontend_url}`);
         }
         else if(valid_password != ''){
-            res.redirect(`${config.frontend_url}user/register/`);
+            res.redirect(`${config.frontend_url}`);
         }
         else if(valid_password_confirm != ''){
-            res.redirect(`${config.frontend_url}user/register/`);
+            res.redirect(`${config.frontend_url}`);
         }
         else{
 
@@ -58,19 +42,19 @@ router.post('/', async(req, res)=>{
 
                 if(result){
 
-                    res.redirect(`${config.frontend_url}user/login/?msg=register-success`);
+                    res.redirect(`${config.frontend_url}?msg=register-success`);
 
                 }
                 else{
 
-                    res.redirect(`${config.frontend_url}user/register/?msg=register-fail`);
+                    res.redirect(`${config.frontend_url}?msg=register-fail`);
 
                 }
 
             }
             else{
 
-                res.redirect(`${config.frontend_url}user/register/`);
+                res.redirect(`${config.frontend_url}`);
 
             }
 
