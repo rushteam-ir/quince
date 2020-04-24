@@ -14,197 +14,129 @@
 
 {<body}
 
-    <main>
-        <section>
-            <div class="container">
-                <div class="row">
 
-                    <div class="col-12">
+    <section class="main_field_of_contact_of_inp py-5">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-6">
 
-                        <div class="text-right">
-                            <h1 class="header_of_contact_us text-right mt-5">سوالات متداول</h1>
-                        </div>
+                    <div class="text-right dir_rtl">
 
-                        <h2 class="text-right small_of_contact_us_header">.شما می توانید سوالاتی که پر تکرار هستند را در زیر مشاهده کنید ، اگر به جواب سوالتان نرسیدید با ما تماس حاصل فرمایید</h2>
+                        <p class="header_of_contact_text">
+                            منتظر پیشنهادات و انتقادات شما هستیم
+                        </p>
+                        <p class="small_of_contact_us">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                        <p class="small_of_contact_us">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
                         
-                        <div class="main_body_of_collapse_question mt-5">
-                            <div class="header_and_angle_field">
-                                <h3 class="text-right header_of_collaps">
-                                    چطوری به شما اعتماد کنم؟
-                                </h3>
-    
-                                <span>
-                                    <i class="fas fa-angle-left arrow_of_contact_collaps"></i>
-                                </span>
-                            </div>
+                        <p class="sec_info_contact_us">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است                        </p>
 
-
-                            <p class="text-right text_of_collaps">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex vero eius numquam tempore natus repellat aut corrupti consectetur dicta ad culpa delectus dolorum at, laudantium minus consequatur et quaerat?
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex vero eius numquam tempore natus repellat aut corrupti consectetur dicta ad culpa delectus dolorum at, laudantium minus consequatur et quaerat?
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex vero eius numquam tempore natus repellat aut corrupti consectetur dicta ad culpa delectus dolorum at, laudantium minus consequatur et quaerat?
-                            </p>
-
-                        </div>
-
-                        <div class="main_body_of_collapse_question mt-2">
-                            <div class="header_and_angle_field">
-                                <h3 class="text-right header_of_collaps">
-                                    چطوری از کیفیت کالا اطلاع پیدا کنم؟
-                                </h3>
-    
-                                <span>
-                                    <i class="fas fa-angle-left arrow_of_contact_collaps"></i>
-                                </span>
-                            </div>
-
-
-                            <p class="text-right text_of_collaps">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex vero eius numquam tempore natus repellat aut corrupti consectetur dicta ad culpa delectus dolorum at, laudantium minus consequatur et quaerat?
-                            </p>
-
-                        </div>
-
-                        <div class="main_body_of_collapse_question mt-2">
-                            <div class="header_and_angle_field">
-                                <h3 class="text-right header_of_collaps">
-                                    چرا انقدر گرونه؟
-                                </h3>
-    
-                                <span>
-                                    <i class="fas fa-angle-left arrow_of_contact_collaps"></i>
-                                </span>
-                            </div>
-
-
-                            <p class="text-right text_of_collaps">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex vero eius numquam tempore natus repellat aut corrupti consectetur dicta ad culpa delectus dolorum at, laudantium minus consequatur et quaerat?
-                            </p>
-
-                        </div>
-
-                        <div class="main_body_of_collapse_question mt-2">
-                            <div class="header_and_angle_field">
-                                <h3 class="text-right header_of_collaps">
-                                   چطوری مثل طالبی باشیم؟
-                                </h3>
-    
-                                <span>
-                                    <i class="fas fa-angle-left arrow_of_contact_collaps"></i>
-                                </span>
-                            </div>
-
-
-                            <p class="text-right text_of_collaps">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex vero eius numquam tempore natus repellat aut corrupti consectetur dicta ad culpa delectus dolorum at, laudantium minus consequatur et quaerat?
-                            </p>
-
-                        </div>
-
-                        <div class="main_body_of_collapse_question mt-2">
-                            <div class="header_and_angle_field">
-                                <h3 class="text-right header_of_collaps">
-                                    چطوری سلام کنم که دلام نباشه؟
-                                </h3>
-    
-                                <span>
-                                    <i class="fas fa-angle-left arrow_of_contact_collaps"></i>
-                                </span>
-                            </div>
-
-
-                            <p class="text-right text_of_collaps">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex vero eius numquam tempore natus repellat aut corrupti consectetur dicta ad culpa delectus dolorum at, laudantium minus consequatur et quaerat?
-                            </p>
-
-                        </div>
+                        <p class="small_of_contact_us">از اعتماد شما سپاس گزارم</p>
 
                     </div>
+
                 </div>
-            </div>
-        </section>
+                <div class="col-6">
 
-        <section>
-            <div class="container">
-                <div class="text-right dir_rtl">
-                    
-                     <h2 class="header_of_contact_us text-right mt-5">تماس با ما</h2>
-                
-                </div>
+                        <form class="main_form_contact_us">
+                            <div class="row">
+                                <div class="col-6 text-right">
 
-                <div class="main_info_alert_box text-right mb-3 mt-5 ">
+                                    <div class="form-group">
+                                        <label for="name_contact_inp">نام و نام خانوادگی</label>
+                                        <input type="text" class="form-control" id="name_contact_inp">
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-6 text-right">
 
-                    <i class="fas fa-info d-inline"></i>
-                    <p class="d-inline m-0 mr-2">
-                        برای پیگیری سفارش یا سوال درباره سفارش می توانید از فرم زیر استفاده کنید.
-                        همچینی اگر پیشنهاد یا انتقادی در باره سایت و خدمات برای بهتر شدن کیفیت خدمات رسانی دارید خوشحال می شویم انها را با ما در میان بگذارید.
-                    </p>
-    
-                </div>
+                                    <div class="form-group">
+                                        <label for="number_contact_inp">تلفن</label>
+                                        <input type="text" class="form-control" id="number_contact_inp">
+                                    </div>
+                                    
+                                </div>
 
-                    {@alertSuccess key="sent-success" msg="پیام شما با موفقیت ارسال شد. لطفا منتظر پاسخ همکاران ما از طریق ایمیل خود باشید."}{/alertSuccess}
-
-                    <div class="error_warning_alert text-right display_none mt-3" id="error_field_warning_front"> 
-
-                        <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeWarningErrorFront()"></i> 
-                        <i class="fal fa-exclamation-circle alert_icon_error"></i>
-      
-                          <div class="d-inline-block mr-1" id="error_text"></div>
-      
-                      </div>
-
-                <div class="row">
-
-                    <div class="col-12 col-sm-12 col-md-8 offset-md-2 col-lg-5 offset-lg-0">
-
-                        <div>
-                            <img class="img_of_contact_us w-100" src="img/contact-us.png" alt="">
-                        </div>
-                        
-                    </div>
-
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-7 offset-lg-0">
-
-                        <form method="post" class="text-right dir_rtl" name="contactus_form" onsubmit="return contactError()"  novalidate>
-
-                            <div class="form-group">
-                              <label for="lasta_and_name">نام و نام خانوادگی</label>
-                              <input type="text" class="form-control" id="lasta_and_name" name="firstlastname_inp">
                             </div>
 
-                            <div class="form-group">
-                              <label for="email_contact_us">ایمیل</label>
-                              <input type="email" class="form-control" id="email_contact_us" name="email_inp" >
+                            <div class="form-group text-right">
+                                <label for="number_contact_inp">تلفن</label>
+                                <input type="text" class="form-control" id="number_contact_inp">
                             </div>
 
-                            <div class="form-group">
-                                <label for="email_contact_us">شماره تلفن</label>
-                                <input type="text" class="form-control" id="email_contact_us" name="phonenumber_inp">
-                                <small class="text-danger">برای تلفن های ثابت حتما کد شهر خود را بنویسید برای مثال : 02144303785</small>
+                            <div class="form-group text-right">
+                                <label for="exampleFormControlTextarea1">پیام</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
                             </div>
 
-                            <div class="form-group">
-                                <label for="title_contact_us">عنوان پیام</label>
-                                <input type="text" class="form-control" id="title_contact_us" name="title_inp">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="text_of_contact_us">متن پیام</label>
-                                <textarea class="form-control" id="text_of_contact_us" rows="6" name="text_inp"></textarea>
-                              </div>
-
-                            <button type="submit" class="btn btn-primary contact_us_btn mb-5 mt-4">ارسال</button>
+                            <button type="submit" class="btn btn_of_contact">ارسال</button>
 
                         </form>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <section class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+
+                    <div class="main_field_of_triple_box dir_rtl">
+
+                        <div class="field_of_contact_icon"><i class="fas fa-map-marked-alt"></i></div>
+
+                        <div class="field_of_contact_info">
+                            <p class="text-center title_of_contact_box">
+                                آدرس فروشگاه   
+                            </p>
+                            <p class="title_of_contact_box">میدان امام خمینی - خیابان حافظ - بالاتر از خیابان سخایی</p>
+
+                        </div>
 
                     </div>
 
+                </div>
 
+                <div class="col-4">
+
+                    <div class="main_field_of_triple_box dir_rtl">
+
+                        <div class="field_of_contact_icon"><i class="fas fa-phone"></i></div>
+
+                        <div class="field_of_contact_info">
+                            <p class="text-center title_of_contact_box">
+                                تلفن
+                            </p>
+                            <p class="title_of_contact_box m-0">1414866 - 0902</p>
+                            <p class="title_of_contact_box">44303785 - 021</p>
+
+                        </div>
+
+                    </div>
 
                 </div>
-            </div>
-        </section>
 
-    </main>
+                <div class="col-4">
+
+                    <div class="main_field_of_triple_box dir_rtl">
+
+                        <div class="field_of_contact_icon"><i class="far fa-at"></i></div>
+
+                        <div class="field_of_contact_info">
+                            <p class="text-center title_of_contact_box">
+                                 ایمیل   
+                            </p>
+                            <p class="title_of_contact_box m-0">kasrahabibeygi@gmail.com</p>
+                            <p class="title_of_contact_box">kasrahabibeygi@gmail.com</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 {/body}

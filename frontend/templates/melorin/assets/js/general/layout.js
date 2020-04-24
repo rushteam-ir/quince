@@ -149,3 +149,6 @@ reg_log_modal.addEventListener('click', function () {
     }
 
 });
+
+
+$('#myModal').modal('show')
