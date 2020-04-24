@@ -46,7 +46,7 @@
                 </div>
                 <div class="col-6">
 
-                        <form class="main_form_contact_us">
+                        <form class="main_form_contact_us" method="post" action="">
                             <div class="row">
                                 <div class="col-6 text-right">
                                     
@@ -74,7 +74,7 @@
 
                             <div class="form-group text-right">
                                 <label for="title_contact_inp">عنوان</label>
-                                <input type="text" class="form-control" id="title_contact_inp">
+                                <input type="text" class="form-control" id="title_contact_inp" name="title_inp">
                             </div>
 
                             <div class="form-group text-right">
