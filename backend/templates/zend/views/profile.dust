@@ -26,8 +26,8 @@
                 {@alertWarn key="no-change" msg="تغییری در مشخصات پروفایل اعمال نشده است."}{/alertWarn}
                 {@alertWarn key="limited-avatar" msg="حجم تصویر انتخاب شده بیشتر از حد مجاز است."}{/alertWarn}
                 {@alertWarn key="illegal-avatar" msg="پسوند تصویر انتخاب شده مجاز نمی باشد."}{/alertWarn}
-                {@alertSuccess key="edit-success" msg="مشخصات پروفایل شما با موفقیت ثبت شد."}{/alertSuccess}
-                {@alertError key="edit-fail" msg="مشخصات پروفایل شما تغییر نکرد. احتمال دارد ایمیل شما قبلا ثبت شده باشد. لطفا مجدد تلاش فرمایید."}{/alertError}
+                {@alertSuccess key="profile-success" msg="مشخصات پروفایل شما با موفقیت ثبت شد."}{/alertSuccess}
+                {@alertError key="profile-fail" msg="مشخصات پروفایل شما تغییر نکرد. احتمال دارد ایمیل شما قبلا ثبت شده باشد. لطفا مجدد تلاش فرمایید."}{/alertError}
 
                 <div class="error_warning_alert text-right display_none" id="error_field_warning_front"> 
 
@@ -111,7 +111,8 @@
             <div id="admin_change_pass">
 
                 {@alertError key="incorrect-input" msg="رمز فعلی اشتباه است و یا رمز جدید و تکرار آن مشابه نیستند."}{/alertError}
-                {@alertSuccess key="edit-success" msg="مشخصات پروفایل شما با موفقیت ثبت شد."}{/alertSuccess}
+                {@alertError key="password-fail" msg="رمز عبور شما تعویض نشد. لطفا مجدد تلاش فرمایید."}{/alertError}
+                {@alertSuccess key="password-success" msg="رمز عبور شما با موفقیت تعویض شد."}{/alertSuccess}
 
                 <div class="error_warning_alert text-right display_none" id="error_field_warning_password"> 
 

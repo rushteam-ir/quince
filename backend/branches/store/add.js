@@ -41,6 +41,7 @@ router.post('/', async(req,res)=>{
 
     try{
 
+        log(req.files);
         let {title_inp, parent_inp, child_inp, describe_inp, price_inp, stock_inp, discount_inp} = req.body;
         let product_features_inp = req.body['product_features_inp[]'];
         let product_form = {title_inp, describe_inp, price_inp, stock_inp, discount_inp};
@@ -94,7 +95,7 @@ router.post('/', async(req,res)=>{
             return res.redirect(`${config.backend_url}store/add`);
         }
         else if(product_features_inp.length == 0){
-            return res.redirect(`${config.backend_url}store/add`);
+            return res.redirect(`${config.backend_url}store/add/?msg=empty-field`);
         }
         else if(!req.files){
             return res.redirect(`${config.backend_url}store/add/?msg=few-images`);

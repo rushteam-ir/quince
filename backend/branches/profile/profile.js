@@ -133,12 +133,12 @@ router.post('/', async(req,res)=>{
                 req.session.admin_info = result;
                 backend.locals.admin_info = req.session.admin_info;
 
-                res.redirect(`${config.backend_url}profile/?msg=edit-success`);
+                res.redirect(`${config.backend_url}profile/?msg=profile-success`);
 
             }
             else{
 
-                res.redirect(`${config.backend_url}profile/?msg=edit-fail`);
+                res.redirect(`${config.backend_url}profile/?msg=profile-fail`);
 
             }
 
@@ -182,12 +182,12 @@ router.post('/', async(req,res)=>{
 
                     req.session.admin_info = result;
 
-                    res.redirect(`${config.backend_url}profile/?msg=edit-success`);
+                    res.redirect(`${config.backend_url}profile/?msg=password-success`);
 
                 }
                 else{
 
-                    res.redirect(`${config.backend_url}profile/?msg=edit-fail`);
+                    res.redirect(`${config.backend_url}profile/?msg=password-fail`);
 
                 }
 
