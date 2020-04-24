@@ -34,8 +34,11 @@
 
                 <div class="col-3 dir_rtl offset-3 pr-0">
 
-                    <img class="d-inline-block main_logo mt-2" src="img/logo1.jpg" alt="">
-                    <p class="d-inline-block logo_shop_text mr-2 ">فروشگاه <span>ملورین</span></p>
+                    <a href="{frontend_url}">
+                        <img class="d-inline-block main_logo mt-2" src="img/logo1.jpg" alt="">
+                        <p class="d-inline-block logo_shop_text mr-2 ">فروشگاه <span>ملورین</span></p>
+                    </a>
+
 
                 </div>
 
@@ -68,10 +71,10 @@
                             <a href="" class="menu_links vip_offers_menu_link">پیشهاد های ویژه</a>
                         </li>
                         <li class="mr-4 d-inline-block">
-                            <a href="" class="menu_links">پشتیبانی</a>
+                            <a href="{frontend_url}contact-us" class="menu_links">پشتیبانی</a>
                         </li>
                         <li class="mr-4 d-inline-block">
-                            <a href="" class="menu_links">ارتباط با ما</a>
+                            <a href="{frontend_url}about-us" class="menu_links">درباره ما</a>
                         </li>
                         <li class="mr-4 d-inline-block">
                             <a href="" class="menu_links">مقاله ها</a>
@@ -80,7 +83,7 @@
                             <a href="" class="menu_links">دسته بندی ها</a>
                         </li>
                         <li class="active_menu mr-4 d-inline-block">
-                            <a href="" class="menu_links">صفحه اصلی</a>
+                            <a href="{frontend_url}" class="menu_links">صفحه اصلی</a>
                         </li>
                     </ul>
 

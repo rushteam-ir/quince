@@ -70,7 +70,8 @@
 .btn_of_search_header {
     background-color: #FF6B6B;
     color: white;
-    border: 0px
+    border: 0px;
+    cursor: pointer;
 }
 
 .box_of_search_header {
