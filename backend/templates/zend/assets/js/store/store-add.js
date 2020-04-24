@@ -68,7 +68,7 @@ $(document).on('change', '.width_inp_customize', function(e) {
 });
 
 // errors
-/*
+
 function storeAddError() {
 
     $('.alert_query').remove();
@@ -83,61 +83,46 @@ function storeAddError() {
     var price_inp = document.forms['store_add_form']['price_inp'].value;
     var stock_inp = document.forms['store_add_form']['stock_inp'].value;
     var discount_inp = document.forms['store_add_form']['discount_inp'].value;
-    var product_features_inp = document.forms['store_add_form']['product_features_inp[]'].value;
     var product_img_main = document.forms['store_add_form']['product_img_main'].value;
 
     if (title_inp == "" || parent_inp == "" || child_inp == "" || describe_inp == "" || price_inp == "" || stock_inp == "" || discount_inp == "") {
 
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+        scrollTop()
         error_field.style.display = "block";
         error_text.innerHTML = "لطفا تمام فیلد ها را پر کنید.";
         return false;
 
-    } else if (product_features_inp == "") {
+    }else if (product_img_main == "") {
 
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-        error_field.style.display = "block";
-        error_text.innerHTML = "لطفا ویژگی های محصول را وارد کنید(حداقل یک فیلد باید پر باشد).";
-        return false;
-
-    } else if (product_img_main == "") {
-
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+        scrollTop()
         error_field.style.display = "block";
         error_text.innerHTML = "لطفا تصویر اصلی محصول را بارگذاری نمایید."
         return false;
 
     } else if (isNaN(price_inp)) {
 
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+        scrollTop()
         error_field.style.display = "block";
         error_text.innerHTML = "لطفا قیمت کالا را درست وارد کنید."
         return false;
 
     } else if (isNaN(stock_inp)) {
 
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+        scrollTop()
         error_field.style.display = "block";
         error_text.innerHTML = "لطفا موجودی انبار را درست وارد کنید."
         return false;
 
     } else if (isNaN(discount_inp)) {
 
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+        scrollTop()
         error_field.style.display = "block";
         error_text.innerHTML = "لطفا تخفیف را درست وارد کنید."
         return false;
 
     } else if (discount_inp > 100) {
 
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+        scrollTop()
         error_field.style.display = "block";
         error_text.innerHTML = "لطفا مقدار تخفیف را درست وارد کنید."
         return false;
@@ -145,4 +130,3 @@ function storeAddError() {
     }
 
 }
-*/

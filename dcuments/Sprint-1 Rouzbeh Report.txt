@@ -11,6 +11,10 @@ Store List Rout (BACKEND FIX) :
 Store Edit Rout (BACKEND FIX):
 بررسی اینپوت ها سمت کلاینت
 
+store add rout:
+چک شدن مشخصات محصول 
+و رفع ارور :cannot read property "lenght"
+
 Messages Rout (BACKEND FIXED):
 تعداد مجاز حرف توی کانتکت آس سمت کلاینت باید کمتر از 2000 تا باشد
 
