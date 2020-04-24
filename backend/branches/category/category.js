@@ -4,18 +4,10 @@ router.get('/', async(req,res)=>{
 
     try{
 
-        let page = '1';
-
-        if(req.query.page){
-
-            page = req.query.page;
-
-        }
-
         let data = {
 
             list : await category_model.get(),
-            list_all : await category_model.getAll(page),
+            list_all : await category_model.getAll(),
 
         };
 

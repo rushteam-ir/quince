@@ -31,6 +31,6 @@ backend.locals.messages_status = false;
 backend.locals.store_image_slot_default = [1,2,3,4,5,6];
 backend.locals.discount_slot_default = [0,1,2,3,4];
 backend.locals.store_features_slot_default = [0,1,2,3];
-backend.locals.limit_page = 10;
+backend.locals.limit_page = 5;
 backend.locals.limited_avatars_size = (backend_limited_avatars_size/1024).toString();
 backend.locals.limited_products_size = (backend_limited_products_size/1024).toString();

@@ -52,9 +52,6 @@ $('.cat_del').on('click', function (e) {
     })
 })
 
-
-
-
 function redirect(url) {
     location.href = url
 }
