@@ -102,6 +102,9 @@ router.post('/', async(req,res)=>{
         else if(!req.files.product_main_image){
             return res.redirect(`${config.backend_url}store/add/?msg=few-images`);
         }
+        else if(!req.files['product_other_images[]']){
+            return res.redirect(`${config.backend_url}store/add/?msg=few-images`);
+        }
         else if(req.files['product_other_images[]'].length < 3){
             return res.redirect(`${config.backend_url}store/add/?msg=few-images`);
         }

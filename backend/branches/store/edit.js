@@ -87,11 +87,18 @@ router.post('/:id', async(req,res)=>{
 
         }
 
-        if(last_product.title == title_inp && last_product.category._id == parent_inp && last_product.sub_category._id == child_inp &&
-            last_product.describe == describe_inp && last_product.stock == stock_inp && last_product.price == price_inp &&
-            last_product.discount == discount_inp && !req.files){
+        if(last_product.title == title_inp && last_product.describe == describe_inp && last_product.stock == stock_inp
+            && last_product.price == price_inp && last_product.discount == discount_inp && !req.files){
 
-            return res.redirect(`${config.backend_url}store/edit/${product_id}/?msg=no-change`);
+            if(last_product.category && last_product.sub_category){
+
+                if(last_product.category._id == parent_inp && last_product.sub_category._id == child_inp){
+
+                    return res.redirect(`${config.backend_url}store/edit/${product_id}/?msg=no-change`);
+
+                }
+
+            }
 
         }
 
