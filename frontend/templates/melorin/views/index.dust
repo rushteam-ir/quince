@@ -198,7 +198,7 @@
 
                 <div class="swiper-slide text-right slider_card_product">
                     
-                    <a href="{frontend_url}product-detail" class="mx-2">
+                    <a href="{frontend_url}product" class="mx-2">
                         
                         <img class="img_of_product_slider mb-3" src="img/transparent20.png" alt="">
 
@@ -241,7 +241,7 @@
 
                 <div class="swiper-slide text-right slider_card_product">
                     
-                    <a href="{frontend_url}product-detail" class="mx-2">
+                    <a href="{frontend_url}product" class="mx-2">
 
                         <img class="img_of_product_slider mb-3" src="img/transparent21.png" alt="">
 
@@ -293,7 +293,7 @@
                 </div>
                 <div class="swiper-slide text-right slider_card_product">
                     
-                    <a href="{frontend_url}product-detail" class="mx-2">
+                    <a href="{frontend_url}product" class="mx-2">
                         
                         <img class="img_of_product_slider mb-3" src="img/transparent20.png" alt="">
 
@@ -336,7 +336,7 @@
 
                 <div class="swiper-slide text-right slider_card_product">
                     
-                    <a href="{frontend_url}product-detail" class="mx-2">
+                    <a href="{frontend_url}product" class="mx-2">
 
                         <img class="img_of_product_slider mb-3" src="img/transparent21.png" alt="">
 
@@ -388,7 +388,7 @@
                 </div>
                 <div class="swiper-slide text-right slider_card_product">
                     
-                    <a href="{frontend_url}product-detail" class="mx-2">
+                    <a href="{frontend_url}product" class="mx-2">
                         
                         <img class="img_of_product_slider mb-3" src="img/transparent20.png" alt="">
 
@@ -431,7 +431,7 @@
 
                 <div class="swiper-slide text-right slider_card_product">
                     
-                    <a href="{frontend_url}product-detail" class="mx-2">
+                    <a href="{frontend_url}product" class="mx-2">
 
                         <img class="img_of_product_slider mb-3" src="img/transparent21.png" alt="">
 
@@ -483,7 +483,7 @@
                 </div>
                 <div class="swiper-slide text-right slider_card_product">
                     
-                    <a href="{frontend_url}product-detail" class="mx-2">
+                    <a href="{frontend_url}product" class="mx-2">
                         
                         <img class="img_of_product_slider mb-3" src="img/transparent20.png" alt="">
 
@@ -526,7 +526,7 @@
 
                 <div class="swiper-slide text-right slider_card_product">
                     
-                    <a href="{frontend_url}product-detail" class="mx-2">
+                    <a href="{frontend_url}product" class="mx-2">
 
                         <img class="img_of_product_slider mb-3" src="img/transparent21.png" alt="">
 
