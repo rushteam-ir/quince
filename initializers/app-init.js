@@ -1,6 +1,7 @@
 // Server all requirements
 express = require('express');
 dust_options = require('./dust-helpers');
+uploader = require('./uploader');
 fs = require('fs');
 adaro = require('adaro');
 svg_captcha = require('svg-captcha');

@@ -52,7 +52,7 @@
                                     
                                     <div class="form-group">
                                         <label for="number_contact_inp">تلفن</label>
-                                        <input type="text" class="form-control" id="number_contact_inp">
+                                        <input type="text" class="form-control" id="number_contact_inp" name="phonenumber_inp">
                                     </div>
                                     
                                 </div>
@@ -61,7 +61,7 @@
 
                                     <div class="form-group">
                                         <label for="name_contact_inp">نام و نام خانوادگی</label>
-                                        <input type="text" class="form-control" id="name_contact_inp">
+                                        <input type="text" class="form-control" id="name_contact_inp" name="firstlastname_inp">
                                     </div>
                                     
                                 </div>
@@ -69,12 +69,12 @@
 
                             <div class="form-group text-right">
                                 <label for="number_contact_inp">ایمیل</label>
-                                <input type="text" class="form-control" id="number_contact_inp">
+                                <input type="text" class="form-control" id="number_contact_inp" name="email_inp">
                             </div>
 
                             <div class="form-group text-right">
                                 <label for="exampleFormControlTextarea1">پیام</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" name="text_inp"></textarea>
                             </div>
 
                             <button type="submit" class="btn btn_of_contact">ارسال</button>
