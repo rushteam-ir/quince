@@ -1,12 +1,3 @@
-profile rout : 
-بررسی خالی یا پر بودن عکس سمت سرور
-
-Store Discount Rout:
-بررسی اینپوت ها سمت بک
-
-store add rout:
-چک شدن مشخصات محصول سمت بک
-
 Messages Rout (BACKEND FIXED):
 تعداد مجاز حرف توی کانتکت آس سمت کلاینت باید کمتر از 2000 تا باشد
 
