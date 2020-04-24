@@ -1,19 +1,14 @@
-Profile Rout (BACKEND FIXED):
-بررسی اینپوت ها سمت کلاینت
+profile rout : 
+بررسی خالی یا پر بودن عکس سمت سرور
 
-Store Add rout (BACKEND FIXED) :
-اضافه کردن متن حد مجاز برای آپلود عکس مثلا 1 مگابایت زیر انتخاب عکس اصلی
-لطفا ویژگی های محصول را وارد کنید(حداقل یک فیلد باید پر باشد).
-
-Store Discount Rout (BACKEND FIXED):
-بررسی اینپوت ها سمت کلاینت
-اضافه کردن مینیموم و ماکسیموم از قبل نوشته شده برای اینپوت های تخفیف
-
-Store List Rout (BACKEND FIX) :
-فیکس شدن اسلایدر تصاویر محصول
+Store Discount Rout:
+بررسی اینپوت ها سمت بک
 
 Store Edit Rout (BACKEND FIX):
 بررسی اینپوت ها سمت کلاینت
+
+store add rout:
+چک شدن مشخصات محصول سمت بک
 
 Messages Rout (BACKEND FIXED):
 تعداد مجاز حرف توی کانتکت آس سمت کلاینت باید کمتر از 2000 تا باشد

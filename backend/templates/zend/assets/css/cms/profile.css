@@ -237,8 +237,8 @@
 }
 
 .box_of_img_template {
-    width: 271px;
-    height: 220px;
+    width: 220px;
+    height: 210px;
     border-radius: 6px;
     background-color: whitesmoke;
     overflow: hidden;

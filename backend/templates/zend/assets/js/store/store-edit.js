@@ -1,7 +1,6 @@
-
 // errors
 
-/*
+
 function storeAddError() {
 
     $('.alert_query').remove();
@@ -16,8 +15,6 @@ function storeAddError() {
     var price_inp = document.forms['store_edit_form']['price_inp'].value;
     var stock_inp = document.forms['store_edit_form']['stock_inp'].value;
     var discount_inp = document.forms['store_edit_form']['discount_inp'].value;
-    var product_features_inp = document.forms['store_edit_form']['product_features_inp[]'].value;
-    var product_img_main = document.forms['store_edit_form']['product_img_main'].value;
 
     if (title_inp == "" || parent_inp == "" || child_inp == "" || describe_inp == "" || price_inp == "" || stock_inp == "" || discount_inp == "") {
 
@@ -80,7 +77,7 @@ function storeAddError() {
     }
 
 }
-*/
+
 
 // delete image sweet alert
 $('.product_del').on('click', function (e) {
@@ -99,11 +96,11 @@ $('.product_del').on('click', function (e) {
     }).then((result) => {
         if (result.value) {
             Swal.fire({
-                title : 'حذف شد',
-                text : 'تصویر مور نظر با موفقیت حذف شد برای تایید نهایی کلیک کنید',
-                icon : 'success',
+                title: 'حذف شد',
+                text: 'تصویر مور نظر با موفقیت حذف شد برای تایید نهایی کلیک کنید',
+                icon: 'success',
                 confirmButtonText: 'تایید',
-            }).then((result)=>{
+            }).then((result) => {
                 if (result.value) {
                     redirect(`${backend_url}store/api/delete-image/?id=${image_id}`);
                 }
@@ -123,19 +120,19 @@ $('.product_del').on('click', function (e) {
 
 })();
 
-$( document ).ready(function() {
+$(document).ready(function () {
 
     // show img when browse
-    $(".input-file-custom").change(function() {
+    $(".input-file-custom").change(function () {
 
         let input = this;
 
         if (input.files && input.files[0]) {
             var reader = new FileReader();
 
-            reader.onload = function(e) {
+            reader.onload = function (e) {
 
-                let fieldHTML = '<div class="remove_parent"><img class="uploading_img_from_brows" src="'+e.target.result+'"> <div class="remove_img_icon remove"></div></div>';
+                let fieldHTML = '<div class="remove_parent"><img class="uploading_img_from_brows" src="' + e.target.result + '"> <div class="remove_img_icon remove"></div></div>';
                 $(input).prev().append(fieldHTML);
 
             }
@@ -147,7 +144,7 @@ $( document ).ready(function() {
 
 });
 
-$(document).on('click', '.remove', function(e) {
+$(document).on('click', '.remove', function (e) {
 
     $(this).parents('.img-show').next().val('');
     $(this).parent('.remove_parent').remove();
@@ -160,18 +157,17 @@ $(function () {
     $('[data-toggle="popover"]').popover()
 })
 
-$(document).on('change', '.width_inp_customize', function(e) {
+$(document).on('change', '.width_inp_customize', function (e) {
 
     let index = parseInt($(this).attr('id')) + 1;
 
-    if($(this).val() != ''){
+    if ($(this).val() != '') {
 
         $('.features_class_' + index.toString()).removeAttr('disabled', 'disabled');
 
-    }
-    else{
+    } else {
 
-        for(let i = index; i < 4; i++){
+        for (let i = index; i < 4; i++) {
 
             $('.features_class_' + i.toString()).attr('disabled', 'disabled');
             $('.features_class_' + i.toString()).val('');

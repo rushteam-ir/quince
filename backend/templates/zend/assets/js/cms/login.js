@@ -18,7 +18,7 @@ function adminlogerrors() {
         error_text.innerHTML = "لطفا ایمیل خود را وارد کنید";
         return false;
 
-    } else if (!email_inp.includes('@') || !email_inp.includes(".com") || email_inp.length <= 9) {
+    } else if (!email_inp.includes('@') || !email_inp.includes(".com") || email_inp.length <= 11) {
 
         error_field.style.display = "block";
         error_text.innerHTML = "ایمیل وارد شده معتبر نمی باشد.";
@@ -30,17 +30,13 @@ function adminlogerrors() {
         error_text.innerHTML = "لطفا رمز عبور خود را وارد کنید.";
         return false;
 
-    } 
-    
-    else if(password_inp.length < 8){
+    } else if (password_inp.length < 8) {
 
         error_field.style.display = "block";
         error_text.innerHTML = "رمز عبور کم تر از حد مجاز است.";
         return false;
 
-    }
-
-    else if (captcha_inp == "") {
+    } else if (captcha_inp == "") {
 
         error_field.style.display = "block";
         error_text.innerHTML = "لطفا کد امنیتی را وارد نمایید.";
@@ -106,7 +102,5 @@ function recoveryVerify() {
         return false;
 
     }
-
-
 
 }

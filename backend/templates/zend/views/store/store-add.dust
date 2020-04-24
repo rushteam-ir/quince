@@ -92,6 +92,7 @@
                     <label for="specifict">مشخصات محصول:
                         <button type="button" class="alert_popup_circl_btn_class " data-toggle="popover" title="توجه" data-placement="left" data-content="برای مثال اگر می خواهید مشخصه ی رنگ با دو زیر مجموعه ی آبی و قرمز را اضافه کنید باید به صورت رو به رو وارد نمایید : رنگ:آبی،قرمز"><i class="fas fa-exclamation-circle alert_popup_circl"></i></button>
                     </label>
+                    <small class="d-block">لطفا حداقل یک فیلد از مشخصات محصول را پر کنید.</small>
                     <div class="field_wrapper row">
                         {#store_features_slot_default}
                             {@eq key="{.}" value="0"}
@@ -112,8 +113,9 @@
                        
                 <div class="form-group">
                     <label for="product_img">تصویر اصلی محصول:</label>
+                    <small class="d-block">حجم مجاز برای اپلود تصویر اصلی محصول 300 کیلو بایت است.</small>
                     <div class="field_of_img_template">
-                        <div class="row mb-5 mt-3 row_of_img_custom">
+                        <div class="row mb-2 mt-3 row_of_img_custom">
         
                             <div class="col-4 pr-0">
                                 <div class="box_of_img_template">
@@ -138,7 +140,8 @@
 
                 <div class="form-group">
 
-                        <label for="pic">تصاویر دیگر محصول:</label>
+                        <label for="pic">تصاویر دیگر محصول:</label> 
+                        <small class="d-block">حجم مجاز برای آپلود تصاویر دیگر محصول 300 کیلو بایت است.</small>
                         <div class="field_of_img_template">
                             <div class="row mb-5 mt-3 row_of_img_custom">
 

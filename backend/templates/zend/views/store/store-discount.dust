@@ -16,9 +16,9 @@
             تولید بسته کد تخفیف جدید
         </p>
 
-        {@alertSuccess key="add-success" msg="کد تخفیف جدید با موفقیت تولید شد"}{/alertSuccess}
-        {@alertError key="add-fail" msg="کد تخفیف تولید نشد لطفا از نام های تکراری استفاده نکنید و مجدد تلاش فرمایید"}{/alertError}
-        {@alertWarn key="date-error" msg="فرم تاریخ انقضا درست وارد نشده و یا تاریخ انقضا گذشته است و معتبر نیست"}{/alertWarn}
+        {@alertSuccess key="add-success" msg="کد تخفیف جدید با موفقیت تولید شد."}{/alertSuccess}
+        {@alertError key="add-fail" msg="کد تخفیف تولید نشد لطفا از نام های تکراری استفاده نکنید و مجدد تلاش فرمایید."}{/alertError}
+        {@alertWarn key="date-error" msg="فرم تاریخ انقضا درست وارد نشده و یا تاریخ انقضا گذشته است و معتبر نیست."}{/alertWarn}
 
         <div class="error_warning_alert text-right display_none" id="error_field_warning_front"> 
 
@@ -29,7 +29,7 @@
 
         </div>
 
-        <form action="" method="post" onsubmit="return discountError()" name="discount_form" autocomplete="off">
+        <form action="" method="post" onsubmit="return discountError()" name="discount_form" autocomplete="off" novalidate>
 
             <div class="form-group">
                 <label for="discount_name">نام بسته تخفیف :</label>
@@ -38,7 +38,7 @@
 
             <div class="form-group">
                 <label for="discount_count">تعداد کد ها :</label>
-                <input type="number" name="count_inp" class="form-control" id="discount_count" >
+                <input type="number" min="0" max="1000" name="count_inp" class="form-control" id="discount_count" >
             </div>
 
             <div class="header_date">
@@ -47,24 +47,24 @@
             <div class="d-inline-block">
                
 
-                    <input type="number" placeholder="روز" name="day_inp" class="form-control d-inline-block data_inp_custom mr-0">
+                    <input type="number" min="1" max="31" placeholder="روز" name="day_inp" class="form-control d-inline-block data_inp_custom mr-0">
 
             </div>
 
             <div class="d-inline-block">
                 <label class="d-inline-block" for="">/</label>
 
-                    <input type="number" placeholder="ماه" name="month_inp" class="form-control d-inline-block data_inp_custom">
+                    <input type="number" min="1" max="12" placeholder="ماه" name="month_inp" class="form-control d-inline-block data_inp_custom">
                     
             </div>
 
             <div class="d-inline-block">
                 <label class="d-inline-block" for="">/ </label>
 
-                    <input type="number" placeholder="سال" name="year_inp" class="form-control d-inline-block data_inp_custom">
+                    <input type="number" min="1399" placeholder="سال" name="year_inp" class="form-control d-inline-block data_inp_custom">
 
             </div>
-            <small id="avatar" class="form-text text-muted">تاریخ امروز : {.current_date}</small>
+            <small id="avatar" class="form-text text-muted mt-3">تاریخ امروز : {.current_date}</small>
 
             {#discount_slot_default}
             <div class="field_wrapper my-5">
