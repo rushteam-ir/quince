@@ -52,15 +52,6 @@ $('.cat_del').on('click', function (e) {
     })
 })
 
-$('table tr:first').addClass('active');
-
-$('a.load_more').on('click', function(e) {
-    e.preventDefault();
-    var $rows = $('table tr');
-    var lastActiveIndex = $rows.filter('.active:last').index();
-    $rows.filter(':lt(' + (lastActiveIndex + 3) + ')').addClass('active');
-});
-
 function redirect(url) {
     location.href = url
 }

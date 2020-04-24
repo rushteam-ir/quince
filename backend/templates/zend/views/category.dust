@@ -59,7 +59,7 @@
                 <input id="category_search" type="text" class="form-control search_category_inp" placeholder="جستجو">
             </div>
 
-            <table class="table mt-4" id="myList">
+            <table class="table mt-4" id="internalActivities">
                 <thead class="text-center">
                   <tr>
                     <th scope="col">ردیف</th>
@@ -88,11 +88,9 @@
                 </tbody>
               </table>
 
-              {@paginationRender url="{backend_url}category"}{/paginationRender}
-              
-              <div class="show_more_field mt-5">
+              <div class="show_more_field mt-5" id="seeMoreRecords">
                 <p>نمایش بیشتر</p>
-             </div>
+              </div>
 
 
     </div>

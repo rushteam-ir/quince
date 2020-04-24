@@ -47,40 +47,6 @@ module.exports = dust_options = {
 
                     }
 
-                },
-
-                dust.helpers.paginationRender = function (chunk, context, bodies, params) {
-
-                    if(msg_param === context.resolve(params.key)){
-
-                        let html = `
-                            
-                          <nav aria-label="Page navigation example">
-                              <ul class="pagination justify-content-center p-0 dir-ltr mt-5">
-                                  <li class="page-item">
-                                      <a class="page-link" href="${params.url}?page=${backend.locals.limit_page - 1}" aria-label="Previous">
-                                          <span aria-hidden="true">&laquo;</span>
-                                      </a>
-                                  </li>
-                                  <li class="page-item">
-                                      <a class="page-link" href="${params.url}?page=${backend.locals.limit_page + 1}" aria-label="Next">
-        
-                                          <span aria-hidden="true">&raquo;</span>
-        
-                                      </a>
-                                  </li>
-                              </ul>
-                          </nav>
-                            
-                        `;
-
-                        body = bodies.block;
-                        chunk.write(html);
-                        chunk.render(body, context);
-                        return chunk;
-
-                    }
-
                 }
 
         }
