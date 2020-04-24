@@ -115,3 +115,9 @@
     border-color: #CED4DA;
     box-shadow: none;
 }
+
+.show_more_field{
+    text-align: center;
+    color: #5D78FF;
+    cursor: pointer;
+}

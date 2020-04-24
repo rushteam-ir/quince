@@ -105,25 +105,9 @@
                 </div>
             </div>
 
-            <nav aria-label="Page navigation example">
-                <ul class="pagination justify-content-center p-0 dir-ltr mt-5">
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                    </a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-
-                        <span aria-hidden="true">&raquo;</span>
-
-                    </a>
-                  </li>
-                </ul>
-              </nav>
+            <div class="show_more_field mt-5">
+                <p>نمایش بیشتر</p>
+            </div>
 
         </div>
 

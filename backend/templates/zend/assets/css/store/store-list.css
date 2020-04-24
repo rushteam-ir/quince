@@ -409,6 +409,12 @@
     top: 0px;
 }
 
+.show_more_field{
+    text-align: center;
+    color: #5D78FF;
+    cursor: pointer;
+}
+
 @media (min-width: 640px) {
     .blog-card {
         -webkit-box-orient: horizontal;

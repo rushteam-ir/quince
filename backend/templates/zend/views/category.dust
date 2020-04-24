@@ -89,6 +89,10 @@
               </table>
 
               {@paginationRender url="{backend_url}category"}{/paginationRender}
+              
+              <div class="show_more_field mt-5">
+                <p>نمایش بیشتر</p>
+             </div>
 
 
     </div>

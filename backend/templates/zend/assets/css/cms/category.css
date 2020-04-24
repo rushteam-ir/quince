@@ -30,7 +30,6 @@
     padding: 10px 20px;
     border-radius: 3px;
 }
-}
 
 tbody tr td:last-child {
     width: 50px;
@@ -119,4 +118,10 @@ tbody tr td:nth-child(4) {
 .cat_del {
     cursor: pointer;
     color: #5D78FF;
+}
+
+.show_more_field{
+    text-align: center;
+    color: #5D78FF;
+    cursor: pointer;
 }
