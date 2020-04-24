@@ -1,18 +1,17 @@
-$(document).on('change', '.end_class', function(e) {
+$(document).on('change', '.end_class', function (e) {
 
     let index = parseInt($(this).attr('id')) + 1;
     $('.start_class_' + index.toString()).val($(this).val());
     $('.start_class_' + index.toString()).attr('value', $(this).val());
 
-    if($(this).val() != ''){
+    if ($(this).val() != '') {
 
         $('.end_class_' + index.toString()).removeAttr('disabled', 'disabled');
         $('.discount_class_' + index.toString()).removeAttr('disabled', 'disabled').attr('placeholder', '0')
 
-    }
-    else{
+    } else {
 
-        for(let i = index; i < 5; i++){
+        for (let i = index; i < 5; i++) {
 
             $('.end_class_' + i.toString()).attr('disabled', 'disabled');
             $('.discount_class_' + i.toString()).attr('disabled', 'disabled');
@@ -66,3 +65,57 @@ $('.remove_discount').on('click', function (e) {
         }
     })
 });
+
+// errors
+
+function discountError() {
+
+    $('.alert_query').remove();
+
+    let error_field = document.getElementById('error_field_warning_front');
+    let error_text = document.getElementById('error_text');
+
+    let package_name_inp = document.forms['discount_form']['package_name_inp'].value;
+    let count_inp = document.forms['discount_form']['count_inp'].value;
+    let day_inp = document.forms['discount_form']['day_inp'].value;
+    let month_inp = document.forms['discount_form']['month_inp'].value;
+    let year_inp = document.forms['discount_form']['year_inp'].value;
+
+    if (package_name_inp == "") {
+
+        scrollTop()
+        error_field.style.display = "block";
+        error_text.innerHTML = "لطفا نام پکیج را وارد کنید.";
+        return false;
+
+    } else if (count_inp == "" || count_inp == 0) {
+
+        scrollTop()
+        error_field.style.display = "block";
+        error_text.innerHTML = "لطفا تعداد کد های تخفیف را وارد کنید.";
+        return false;
+
+    } else if (count_inp > 1000) {
+
+        scrollTop()
+        error_field.style.display = "block";
+        error_text.innerHTML = "تعداد کد های وارد شده بیشتر از حد مجاز است."
+        return false;
+
+    } else if (day_inp == "" || month_inp == "" || year_inp == "") {
+
+        scrollTop()
+        error_field.style.display = "block";
+        error_text.innerHTML = "لطفا تاریخ انقضا را وارد کنید. ";
+        return false;
+
+    } else if (day_inp > 31 || day_inp < 1 || month_inp > 12 || month_inp < 1 || year_inp < 1399) {
+
+        scrollTop()
+        error_field.style.display = "block";
+        error_text.innerHTML = "تاریخ وارد شده اشتباه می باشد.";
+        return false;
+
+    }
+
+}

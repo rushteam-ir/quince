@@ -151,7 +151,7 @@ function proError() {
         return false;
 
 
-    } else if (!email_inp.includes("@") || email_inp.length < 13 || !email_inp.includes(".com")) {
+    } else if (!email_inp.includes("@") || email_inp.length < 11 || !email_inp.includes(".com")) {
 
         scrollTop();
         error_field.style.display = "block";
@@ -216,6 +216,13 @@ function passerror() {
         error_text.innerHTML = "لطفا رمز عبور جدید خود را وارد کنید."
         return false;
 
+    } else if (new_password.length < 8) {
+
+        scrollTop();
+        error_field.style.display = "block";
+        error_text.innerHTML = "رمز عبور نباید کم تر از 8 رقم باشد."
+        return false;
+
     } else if (confirm_password == "") {
 
         scrollTop();
@@ -235,8 +242,8 @@ function passerror() {
 }
 
 
-function removeWarningErrorFront(){
+function removeWarningErrorFront() {
 
     document.getElementById('error_field_warning_password').style.display = "none";
-    
+
 }
