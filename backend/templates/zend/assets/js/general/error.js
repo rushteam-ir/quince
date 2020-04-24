@@ -38,3 +38,10 @@ function removeWarningErrorFront(){
     document.getElementById('error_field_warning_front').style.display = "none";
     
 }
+
+function scrollTop(){
+
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+
+}

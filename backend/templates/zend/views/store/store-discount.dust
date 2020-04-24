@@ -64,7 +64,7 @@
                     <input type="number" placeholder="سال" name="year_inp" class="form-control d-inline-block data_inp_custom">
 
             </div>
-            <small id="avatar" class="form-text text-muted">تاریخ امروز : {.current_date}</small>
+            <small id="avatar" class="form-text text-muted mt-3">تاریخ امروز : {.current_date}</small>
 
             {#discount_slot_default}
             <div class="field_wrapper my-5">

@@ -21,13 +21,22 @@
             </div>
 
             <div id="admin_pro_edit">
+                
 
-                {@alertWarn key="no-change" msg="تغییری در مشخصات پروفایل اعمال نشده است"}{/alertWarn}
-                {@alertWarn key="limited-avatar" msg="حجم تصویر انتخاب شده بیشتر از حد مجاز است"}{/alertWarn}
-                {@alertWarn key="illegal-avatar" msg="پسوند تصویر انتخاب شده مجاز نمی باشد"}{/alertWarn}
-                {@alertSuccess key="edit-success" msg="مشخصات پروفایل شما با موفقیت ثبت شد"}{/alertSuccess}
-                {@alertError key="edit-fail" msg="مشخصات پروفایل شما تغییر نکرد. احتمال دارد ایمیل شما قبلا ثبت شده باشد. لطفا مجدد تلاش فرمایید"}{/alertError}
-                {@alertError key="incorrect-input" msg="رمز عبور فعلی اشتباه می باشد"}{/alertError}
+                {@alertWarn key="no-change" msg="تغییری در مشخصات پروفایل اعمال نشده است."}{/alertWarn}
+                {@alertWarn key="limited-avatar" msg="حجم تصویر انتخاب شده بیشتر از حد مجاز است."}{/alertWarn}
+                {@alertWarn key="illegal-avatar" msg="پسوند تصویر انتخاب شده مجاز نمی باشد."}{/alertWarn}
+                {@alertSuccess key="edit-success" msg="مشخصات پروفایل شما با موفقیت ثبت شد."}{/alertSuccess}
+                {@alertError key="edit-fail" msg="مشخصات پروفایل شما تغییر نکرد. احتمال دارد ایمیل شما قبلا ثبت شده باشد. لطفا مجدد تلاش فرمایید."}{/alertError}
+
+                <div class="error_warning_alert text-right display_none" id="error_field_warning_front"> 
+
+                    <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeWarningErrorFront()"></i> 
+                    <i class="fal fa-exclamation-circle alert_icon_error"></i>
+        
+                      <div class="d-inline-block mr-1" id="error_text"></div>
+        
+                </div>
 
                 <form action="" method="post" autocomplete="off" enctype="multipart/form-data" name="pro_op_main_form" onsubmit="return proError()">
 
@@ -51,7 +60,7 @@
 
                     <div class="form-group">
                         <label for="phonenumber_inp">شماره تلفن همراه</label>
-                        <input type="number" id="phonenumber_inp" class="form-control" name="phonenumber_inp"
+                        <input type="text" id="phonenumber_inp" class="form-control" name="phonenumber_inp"
                             value="{admin_info.phone_number}">
                     </div>
                     
@@ -81,7 +90,7 @@
     
                             </div>
 
-                            <small id="avatar" class="form-text text-muted">حجم مجاز برای اپلود تصویر پروفایل {limited_avatars_size} مگابایت است.</small>
+                            <small id="avatar" class="form-text text-muted mt-3">حجم مجاز برای اپلود تصویر پروفایل {limited_avatars_size} مگابایت است.</small>
                         </div>
 
                     </div>
@@ -101,8 +110,17 @@
 
             <div id="admin_change_pass">
 
-                {@alertError key="incorrect-input" msg="رمز فعلی اشتباه است و یا رمز جدید و تکرار آن مشابه نیستند"}{/alertError}
-                {@alertSuccess key="edit-success" msg="مشخصات پروفایل شما با موفقیت ثبت شد"}{/alertSuccess}
+                {@alertError key="incorrect-input" msg="رمز فعلی اشتباه است و یا رمز جدید و تکرار آن مشابه نیستند."}{/alertError}
+                {@alertSuccess key="edit-success" msg="مشخصات پروفایل شما با موفقیت ثبت شد."}{/alertSuccess}
+
+                <div class="error_warning_alert text-right display_none" id="error_field_warning_password"> 
+
+                    <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeWarningErrorFront()"></i> 
+                    <i class="fal fa-exclamation-circle alert_icon_error"></i>
+        
+                      <div class="d-inline-block mr-1" id="error_text_pass"></div>
+        
+                </div>
 
                 <form action="" method="post" name="admin_pro_pass_edit" onsubmit="return passerror()" autocomplete="off">
 
