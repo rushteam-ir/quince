@@ -284,8 +284,9 @@
 .h2_style_of_parallax {
     position: absolute;
     top: 110px;
+    right: 160px;
     color: white;
-    text-align: left;
+    text-align: right;
     font-size: 3rem;
     margin-left: 120px;
     font-family: accent-font;
@@ -298,7 +299,7 @@
 
 .btn_parallax_style {
     top: 240px;
-    left: 118px;
+    right: 158px;
     position: absolute;
     width: 200px;
     height: 50px;

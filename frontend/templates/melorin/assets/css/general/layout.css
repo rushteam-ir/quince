@@ -446,3 +446,16 @@
 
 
 /*End Media Query*/
+
+
+
+
+
+
+@media (max-width: 1200px) {
+
+    body{
+        display:none;
+    }
+
+}
