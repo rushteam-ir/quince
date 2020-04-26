@@ -15,8 +15,8 @@
                 اضافه کردن محصول
             </p>
 
-            {@alertWarn key="limited-image" msg="حجم تصویر انتخاب شده بیشتر از حد مجاز است."}{/alertWarn}
-            {@alertWarn key="illegal-image" msg="پسوند تصویر انتخاب شده مجاز نمی باشد."}{/alertWarn}
+            {@alertWarn key="limited-file" msg="حجم تصویر انتخاب شده بیشتر از حد مجاز است."}{/alertWarn}
+            {@alertWarn key="illegal-file" msg="پسوند تصویر انتخاب شده مجاز نمی باشد."}{/alertWarn}
             {@alertWarn key="few-images" msg="تصویر اصلی حتما باید اضافه شود و تصاویر دیگر محصول باید حداقل 3 عکس یا بیشتر باشد."}{/alertWarn}
             {@alertWarn key="empty-field" msg="لطفا یکی از مشخصات محصول را وارد نمایید."}{/alertWarn}
             {@alertError key="add-fail" msg="محصول جدید ثبت نشد لطفا از نام های تکراری استفاده نکنید و مجدد تلاش فرمایید"}{/alertError}

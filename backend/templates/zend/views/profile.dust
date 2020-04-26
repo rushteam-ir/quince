@@ -24,8 +24,8 @@
                 
 
                 {@alertWarn key="no-change" msg="تغییری در مشخصات پروفایل اعمال نشده است."}{/alertWarn}
-                {@alertWarn key="limited-avatar" msg="حجم تصویر انتخاب شده بیشتر از حد مجاز است."}{/alertWarn}
-                {@alertWarn key="illegal-avatar" msg="پسوند تصویر انتخاب شده مجاز نمی باشد."}{/alertWarn}
+                {@alertWarn key="limited-file" msg="حجم تصویر انتخاب شده بیشتر از حد مجاز است."}{/alertWarn}
+                {@alertWarn key="illegal-file" msg="پسوند تصویر انتخاب شده مجاز نمی باشد."}{/alertWarn}
                 {@alertSuccess key="profile-success" msg="مشخصات پروفایل شما با موفقیت ثبت شد."}{/alertSuccess}
                 {@alertError key="profile-fail" msg="مشخصات پروفایل شما تغییر نکرد. احتمال دارد ایمیل شما قبلا ثبت شده باشد. لطفا مجدد تلاش فرمایید."}{/alertError}
 

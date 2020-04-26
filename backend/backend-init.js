@@ -17,7 +17,6 @@ backend.use(file_upload());
 
 // Backend other configs
 backend_allowd_urls = ['/login/', '/recovery/', '/recovery/verify/'];
-backend_allowd_avatars = ['png', 'jpeg', 'jpg', 'gif'];
 backend_limited_avatars_size = 1024; // KB
 backend_limited_products_size = 100024; // KB
 backend_upload_dir = `${config.app_dir}backend/templates/${config.backend_tmp}/assets/media/`;

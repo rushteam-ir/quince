@@ -97,32 +97,25 @@ router.post('/', async(req,res)=>{
 
             if (req.files) {
 
-                let file_format1 = req.files.avatar.name.slice(-3).toLowerCase();
-                let file_format2 = req.files.avatar.name.slice(-4).toLowerCase();
+                let uploader_options = {
 
-                if(backend_allowd_avatars.includes(file_format1) || backend_allowd_avatars.includes(file_format2)){
-
-                    if(req.files.avatar.size/1024 <= backend_limited_avatars_size){
-
-                        let avatar = req.files.avatar;
-                        let avatar_path = `${backend_upload_dir}avatars/${admin_id.toString()}.png`;
-                        avatar.mv(avatar_path, (err)=>{});
-                        admin_data.avatar = `${admin_id.toString()}.png`
-
-                    }
-                    else{
-
-                        return res.redirect(`${config.backend_url}profile/?msg=limited-avatar`);
-
-                    }
-
+                    allowed_formats : 'image',
+                    limited_size : backend_limited_avatars_size,
+                    file_path : `${backend_upload_dir}avatars/`,
 
                 }
-                else {
 
-                    return res.redirect(`${config.backend_url}profile/?msg=illegal-avatar`);
+                let file_name = `${admin_id.toString()}.png`;
+                let new_uploader = new uploader(req.files.avatar, file_name, uploader_options);
+                let upload_result = new_uploader.upload();
+
+                if(upload_result){
+
+                    return res.redirect(`${config.backend_url}profile/?msg=${upload_result}`);
 
                 }
+
+                admin_data.avatar = file_name;
 
 
             }

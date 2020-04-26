@@ -145,121 +145,85 @@ router.post('/:id', async(req,res)=>{
 
         };
 
+        let uploader_options = {
+
+            allowed_formats : 'image',
+            limited_size : backend_limited_products_size,
+            file_path : `${backend_upload_dir}products/`,
+
+        }
+
         if(req.files && typeof req.files.product_main_image != 'undefined'){
 
-            let main_image = req.files.product_main_image;
-            let product_images = [];
+            let file_name = `${product_id}_main.png`;
+            let new_uploader = new uploader(req.files.product_main_image, file_name, uploader_options);
+            let upload_result = new_uploader.upload();
 
-            let file_format1 = main_image.name.slice(-3).toLowerCase();
-            let file_format2 = main_image.name.slice(-4).toLowerCase();
+            if(upload_result){
 
-            if(backend_allowd_avatars.includes(file_format1) || backend_allowd_avatars.includes(file_format2)) {
-
-                if(main_image.size/1024 <= backend_limited_products_size){
-
-                    let _name = `${product_id}_main.png`;
-                    let main_image_path = `${backend_upload_dir}products/${_name}`;
-                    main_image.mv(main_image_path, (err)=>{});
-                    product_images.push(`${_name}`);
-
-                }
-                else{
-
-                    return res.redirect(`${config.backend_url}store/edit/${product_id}/?msg=limited-image`);
-
-                }
-
-            }
-            else{
-
-                return res.redirect(`${config.backend_url}store/edit/${product_id}/?msg=illegal-image`);
+                return res.redirect(`${config.backend_url}store/edit/${product_id}/?msg=${upload_result}`);
 
             }
 
-            new_product['images'][0] = product_images;
+            new_product['images'][0] = `${file_name}`;
 
         }
 
         if(req.files && typeof req.files['product_other_images[]'] != 'undefined'){
 
-            let other_images = req.files['product_other_images[]'];
+            if(Array.isArray(req.files['product_other_images[]'])){
 
-            if(Array.isArray(other_images)){
-
-                other_images.forEach((image)=>{
+                for(let i = 0; i < req.files['product_other_images[]'].length; i++){
 
                     let empty_index = last_product.images.indexOf('');
+
                     if(empty_index == -1){
+
                         empty_index = last_product.images.length;
-                    }
-                    let file_format3 = image.name.slice(-3).toLowerCase();
-                    let file_format4 = image.name.slice(-4).toLowerCase();
-
-                    if(backend_allowd_avatars.includes(file_format3) || backend_allowd_avatars.includes(file_format4)) {
-
-                        if(image.size/1024 <= backend_limited_products_size){
-
-                            let _name = `${product_id}_${empty_index}.png`;
-                            let other_image_path = `${backend_upload_dir}products/${_name}`;
-                            image.mv(other_image_path, (err)=>{});
-
-                            new_product['images'][empty_index] = `${_name}`;
-                            last_product['images'][empty_index] = `${_name}`;
-
-                        }
-                        else{
-
-                            return res.redirect(`${config.backend_url}store/edit/${product_id}/?msg=limited-image`);
-
-                        }
-
-                    }
-                    else{
-
-                        return res.redirect(`${config.backend_url}store/edit/${product_id}/?msg=illegal-image`);
 
                     }
 
-                })
+                    let file_name = `${product_id}_${empty_index}.png`;
+                    let new_uploader = new uploader(req.files['product_other_images[]'][i], file_name, uploader_options);
+                    let upload_result = new_uploader.upload();
+
+                    if(upload_result){
+
+                        return res.redirect(`${config.backend_url}store/edit/${product_id}/?msg=${upload_result}`);
+                        break;
+
+                    }
+
+                    new_product['images'][empty_index] = `${file_name}`;
+                    last_product['images'][empty_index] = `${file_name}`;
+
+                }
 
             }
             else{
 
-                let image = req.files['product_other_images[]'];
                 let empty_index = last_product.images.indexOf('');
+
                 if(empty_index == -1){
+
                     empty_index = last_product.images.length;
-                }
-                let file_format3 = image.name.slice(-3).toLowerCase();
-                let file_format4 = image.name.slice(-4).toLowerCase();
-
-                if(backend_allowd_avatars.includes(file_format3) || backend_allowd_avatars.includes(file_format4)) {
-
-                    if(image.size/1024 <= backend_limited_products_size){
-
-                        let _name = `${product_id}_${empty_index}.png`;
-                        let other_image_path = `${backend_upload_dir}products/${_name}`;
-                        image.mv(other_image_path, (err)=>{});
-
-                        new_product['images'][empty_index] = `${_name}`;
-                        last_product['images'][empty_index] = `${_name}`;
-
-                    }
-                    else{
-
-                        return res.redirect(`${config.backend_url}store/edit/${product_id}/?msg=limited-image`);
-
-                    }
 
                 }
-                else{
 
-                    return res.redirect(`${config.backend_url}store/edit/${product_id}/?msg=illegal-image`);
+                let file_name = `${product_id}_${empty_index}.png`;
+                let new_uploader = new uploader(req.files['product_other_images[]'], file_name, uploader_options);
+                let upload_result = new_uploader.upload();
+
+                if(upload_result){
+
+                    return res.redirect(`${config.backend_url}store/edit/${product_id}/?msg=${upload_result}`);
 
                 }
+
+                new_product['images'][empty_index] = `${file_name}`;
+                last_product['images'][empty_index] = `${file_name}`;
 
             }
-
 
         }
 

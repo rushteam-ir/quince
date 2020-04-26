@@ -41,7 +41,6 @@ router.post('/', async(req,res)=>{
 
     try{
 
-        log(req.files);
         let {title_inp, parent_inp, child_inp, describe_inp, price_inp, stock_inp, discount_inp} = req.body;
         let product_features_inp = req.body['product_features_inp[]'];
         let product_form = {title_inp, describe_inp, price_inp, stock_inp, discount_inp};
@@ -137,69 +136,45 @@ router.post('/', async(req,res)=>{
 
             if(req.files){
 
-                let main_image = req.files.product_main_image;
-                let other_images = req.files['product_other_images[]'];
-
-                let image_counter = 0;
                 let product_images = [];
+                let uploader_options = {
 
-                let file_format1 = main_image.name.slice(-3).toLowerCase();
-                let file_format2 = main_image.name.slice(-4).toLowerCase();
-
-                if(backend_allowd_avatars.includes(file_format1) || backend_allowd_avatars.includes(file_format2)) {
-
-                    if(main_image.size/1024 <= backend_limited_products_size){
-
-                        let _name = `${result._id}_main.png`;
-                        let main_image_path = `${backend_upload_dir}products/${_name}`;
-                        main_image.mv(main_image_path, (err)=>{});
-                        product_images.push(`${_name}`);
-
-                    }
-                    else{
-
-                        return res.redirect(`${config.backend_url}store/add/?msg=limited-image`);
-
-                    }
-
-                }
-                else{
-
-                    return res.redirect(`${config.backend_url}store/add/?msg=illegal-image`);
+                    allowed_formats : 'image',
+                    limited_size : backend_limited_products_size,
+                    file_path : `${backend_upload_dir}products/`,
 
                 }
 
-                other_images.forEach((image)=>{
+                let file_name = `${result._id}_main.png`;
+                let new_uploader = new uploader(req.files.product_main_image, file_name, uploader_options);
+                let upload_result = new_uploader.upload();
 
-                    let file_format3 = main_image.name.slice(-3).toLowerCase();
-                    let file_format4 = main_image.name.slice(-4).toLowerCase();
+                if(upload_result){
 
-                    if(backend_allowd_avatars.includes(file_format3) || backend_allowd_avatars.includes(file_format4)) {
+                    return res.redirect(`${config.backend_url}store/add/?msg=${upload_result}`);
 
-                        if(image.size/1024 <= backend_limited_products_size){
+                }
 
-                            image_counter += 1;
-                            let _name = `${result._id}_${image_counter}.png`;
-                            let other_image_path = `${backend_upload_dir}products/${_name}`;
-                            image.mv(other_image_path, (err)=>{});
-                            product_images.push(`${_name}`);
+                product_images.push(`${file_name}`);
 
-                        }
-                        else{
+                for(let i = 0; i < req.files['product_other_images[]'].length; i++){
 
-                            return res.redirect(`${config.backend_url}store/add/?msg=limited-image`);
+                    let file_name = `${result._id}_${i+1}.png`;
+                    let new_uploader = new uploader(req.files['product_other_images[]'][i], file_name, uploader_options);
+                    let upload_result = new_uploader.upload();
 
-                        }
+                    if(upload_result){
 
-                    }
-                    else{
-
-                        return res.redirect(`${config.backend_url}store/add/?msg=illegal-image`);
+                        return res.redirect(`${config.backend_url}store/add/?msg=${upload_result}`);
+                        break;
 
                     }
 
-                })
+                    product_images.push(`${file_name}`);
 
+                }
+
+                log(product_images);
                 new_product['images'] = product_images;
 
             }
