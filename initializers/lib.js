@@ -61,6 +61,7 @@ JsonCount = function (obj) {
     return count;
 }
 
+/*
 validation = {
 
     isUsername : function (username_inp) {
@@ -234,3 +235,5 @@ validation = {
     },
 
 };
+
+ */

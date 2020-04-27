@@ -1,6 +1,7 @@
 // Server all requirements
 express = require('express');
 dust_options = require('./dust-helpers');
+validation = require('./validation');
 uploader = require('./uploader');
 fs = require('fs');
 adaro = require('adaro');
