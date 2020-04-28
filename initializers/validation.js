@@ -88,7 +88,7 @@ module.exports = class {
                 case 'phone':
                 {
 
-                    if(number_inp.length != 11){
+                    if(input.value.length != 11){
 
                         return 'not-phonenumber';
 
