@@ -37,62 +37,57 @@ router.post('/:id', async(req,res)=>{
 
             let message_info = await message_model.getById(message_id);
             let {title_inp, text_inp} = req.body;
-            let title_valid = validation.isSafe(title_inp);
-            let text_valid = validation.isSafe(text_inp);
 
-            if(title_valid != ''){
+            let validation_result = new validation([
+                {value : title_inp},
+                {value : text_inp}
+            ]).valid();
 
-                res.redirect(`${config.backend_url}messages/reply/${message_id}`);
+            if(validation_result){
 
-            }
-            else if(text_valid){
-
-                res.redirect(`${config.backend_url}messages/reply/${message_id}`);
+                return res.redirect(`${config.backend_url}messages/reply/${message_id}/?msg=${validation_result}`);
 
             }
-            else{
 
-                let mail_options = {
+            let mail_options = {
 
-                    from: 'zendcms@zohomail.com',
-                    to: message_info.email,
-                    subject: title_inp,
-                    text: text_inp
+                from: 'zendcms@zohomail.com',
+                to: message_info.email,
+                subject: title_inp,
+                text: text_inp
 
-                };
+            };
 
-                transporter.sendMail(mail_options, async function(error, info){
+            transporter.sendMail(mail_options, async function(error, info){
 
-                    if (error) {
+                if (error) {
 
-                        res.redirect(`${config.backend_url}messages/reply/${message_id}/?msg=sent-fail`);
+                    return res.redirect(`${config.backend_url}messages/reply/${message_id}/?msg=sent-fail`);
 
-                    } else {
+                } else {
 
-                        let message_data = {
+                    let message_data = {
 
-                            reply : true
-
-                        }
-
-                        let result = await message_model.edit(message_id, message_data);
-
-                        if(result){
-
-                            res.redirect(`${config.backend_url}messages/?msg=sent-success`);
-
-                        }
-                        else{
-
-                            res.redirect(`${config.backend_url}messages/reply/${message_id}/?msg=sent-fail`);
-
-                        }
+                        reply : true
 
                     }
 
-                });
+                    let result = await message_model.edit(message_id, message_data);
 
-            }
+                    if(result){
+
+                        return res.redirect(`${config.backend_url}messages/?msg=sent-success`);
+
+                    }
+                    else{
+
+                        return res.redirect(`${config.backend_url}messages/reply/${message_id}/?msg=sent-fail`);
+
+                    }
+
+                }
+
+            });
 
         }
         else{

@@ -45,7 +45,6 @@ function adminlogerrors() {
 
 }
 
-
 // recovery errors
 
 function recoveryfunc() {

@@ -40,43 +40,32 @@ router.post('/', async(req,res)=>{
 
         let {newpass_inp, compass_inp} = req.body;
 
-        let valid_newpass = validation.isPassword(newpass_inp);
-        let valid_compass = validation.isPassword(compass_inp);
+        let validation_result = new validation([
+            {value : newpass_inp, type : 'password'},
+            {value : compass_inp, type : 'password'}
+        ]).valid();
 
-        if(valid_newpass != ''){
+        if(validation_result){
 
-            res.redirect(`${config.backend_url}recovery/verify/?code=${req.session.saved_code}`);
-
-        }
-        else if(valid_compass != ''){
-
-            res.redirect(`${config.backend_url}recovery/verify/?code=${req.session.saved_code}`);
+            return res.redirect(`${config.backend_url}recovery/verify/?code=${req.session.saved_code}&msg=${validation_result}`);
 
         }
-        else if(newpass_inp !== compass_inp){
 
-            res.redirect(`${config.backend_url}recovery/verify/?code=${req.session.saved_code}`);
+        let admin_data = {password : newpass_inp};
+
+        let result = await user_model.changePassword(req.session.saved_email, admin_data)
+
+        if(result){
+
+            delete req.session.saved_email;
+            delete req.session.saved_code;
+
+            return res.redirect(`${config.backend_url}login/?msg=change-success`);
 
         }
         else{
 
-            let admin_data = {password : newpass_inp};
-
-            let result = await user_model.changePassword(req.session.saved_email, admin_data)
-
-            if(result){
-
-                delete req.session.saved_email;
-                delete req.session.saved_code;
-
-                res.redirect(`${config.backend_url}login/?msg=change-success`);
-
-            }
-            else{
-
-                res.redirect(`${config.backend_url}recovery/verify/?code=${req.session.saved_code}&msg=change-fail`);
-
-            }
+            return res.redirect(`${config.backend_url}recovery/verify/?code=${req.session.saved_code}&msg=change-fail`);
 
         }
 

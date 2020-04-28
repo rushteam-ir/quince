@@ -30,7 +30,6 @@ router.post('/', async(req,res)=>{
 
         let {package_name_inp, count_inp, day_inp, month_inp, year_inp} = req.body;
 
-        let valid_package_name = validation.isSafe(package_name_inp);
         let end_value = req.body['end_inp[]'];
         let discount_value = req.body['discount_inp[]'];
         let exp_date = JalaliConvert([year_inp, month_inp, day_inp]);
@@ -88,13 +87,7 @@ router.post('/', async(req,res)=>{
 
         }
 
-        if(valid_package_name != ''){
-            return res.redirect(`${config.backend_url}store/discount`);
-        }
-        else if(isNaN(parseInt(count_inp))){
-            return res.redirect(`${config.backend_url}store/discount`);
-        }
-        else if(time_difference < 0){
+        if(time_difference < 0){
             return res.redirect(`${config.backend_url}store/discount/?msg=date-error`);
         }
         else if(end_value[0] != '' && end_value[end_value.length - 1] != ''){
@@ -116,6 +109,17 @@ router.post('/', async(req,res)=>{
         }
         else if(parseInt(year_inp) < 1399){
             return res.redirect(`${config.backend_url}store/discount/?msg=date-error`);
+        }
+
+        let validation_result = new validation([
+            {value : package_name_inp},
+            {value : count_inp , type : 'number'},
+        ]).valid();
+
+        if(validation_result){
+
+            return res.redirect(`${config.backend_url}store/discount/?msg=${validation_result}`);
+
         }
 
         let code = '';

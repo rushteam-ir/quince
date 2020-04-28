@@ -47,56 +47,8 @@ router.post('/', async(req,res)=>{
 
         req.session.product_add_form = product_form;
 
-        if(!Array.isArray(product_features_inp)){
 
-            product_features_inp = [];
-            product_features_inp.push('');
-
-        }
-
-        let valid_title = validation.isSafe(title_inp);
-        let valid_parent = isObjectId(parent_inp);
-        let valid_child = isObjectId(child_inp);
-        let valid_describe = validation.isSafe(describe_inp);
-        let valid_price = validation.isSafe(price_inp);
-        let valid_stock = validation.isSafe(stock_inp);
-        let valid_discount = validation.isSafe(discount_inp);
-
-        for(let i = 0; i < product_features_inp.length; i++){
-
-            if(product_features_inp[i] == ''){
-
-                product_features_inp.splice(i , 1);
-
-            }
-
-        }
-
-        if(valid_title != ''){
-            return res.redirect(`${config.backend_url}store/add`);
-        }
-        else if(!valid_parent){
-            return res.redirect(`${config.backend_url}store/add`);
-        }
-        else if(!valid_child){
-            return res.redirect(`${config.backend_url}store/add`);
-        }
-        else if(valid_describe != ''){
-            return res.redirect(`${config.backend_url}store/add`);
-        }
-        else if(valid_stock != ''){
-            return res.redirect(`${config.backend_url}store/add`);
-        }
-        else if(valid_discount != ''){
-            return res.redirect(`${config.backend_url}store/add`);
-        }
-        else if(valid_price != ''){
-            return res.redirect(`${config.backend_url}store/add`);
-        }
-        else if(product_features_inp.length == 0){
-            return res.redirect(`${config.backend_url}store/add/?msg=empty-field`);
-        }
-        else if(!req.files){
+        if(!req.files){
             return res.redirect(`${config.backend_url}store/add/?msg=few-images`);
         }
         else if(!req.files.product_main_image){
@@ -107,6 +59,23 @@ router.post('/', async(req,res)=>{
         }
         else if(req.files['product_other_images[]'].length < 3){
             return res.redirect(`${config.backend_url}store/add/?msg=few-images`);
+        }
+
+        let validation_result = new validation([
+            {value : title_inp},
+            {value : parent_inp, type : 'objectId'},
+            {value : child_inp, type : 'objectId'},
+            {value : describe_inp},
+            {value : price_inp , type : 'number'},
+            {value : stock_inp , type : 'number'},
+            {value : discount_inp , type : 'number'},
+            {value : product_features_inp , type : 'array'},
+        ]).valid();
+
+        if(validation_result){
+
+            return res.redirect(`${config.backend_url}store/add/?msg=${validation_result}`);
+
         }
 
         let price_discount = Math.round(parseInt(price_inp) * (100 - parseInt(discount_inp)) / 100);
@@ -146,8 +115,7 @@ router.post('/', async(req,res)=>{
                 }
 
                 let file_name = `${result._id}_main.png`;
-                let new_uploader = new uploader(req.files.product_main_image, file_name, uploader_options);
-                let upload_result = new_uploader.upload();
+                let upload_result = new uploader(req.files.product_main_image, file_name, uploader_options).upload();
 
                 if(upload_result){
 
@@ -160,8 +128,7 @@ router.post('/', async(req,res)=>{
                 for(let i = 0; i < req.files['product_other_images[]'].length; i++){
 
                     let file_name = `${result._id}_${i+1}.png`;
-                    let new_uploader = new uploader(req.files['product_other_images[]'][i], file_name, uploader_options);
-                    let upload_result = new_uploader.upload();
+                    let upload_result = new uploader(req.files['product_other_images[]'][i], file_name, uploader_options).upload();
 
                     if(upload_result){
 
@@ -174,7 +141,6 @@ router.post('/', async(req,res)=>{
 
                 }
 
-                log(product_images);
                 new_product['images'] = product_images;
 
             }

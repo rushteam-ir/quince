@@ -46,30 +46,16 @@ router.post('/', async(req,res)=>{
 
             }
 
-            let valid_firstname = validation.isSafe(firstname_inp);
-            let valid_lastname = validation.isSafe(lastname_inp);
-            let valid_email = validation.isEmail(email_inp);
-            let valid_phonenumber = validation.isPhonenumber(phonenumber_inp);
-            let author_type = 'name';
+            let validation_result = new validation([
+                {value : email_inp, type : 'email'},
+                {value : firstname_inp},
+                {value : lastname_inp},
+                {value : phonenumber_inp , type : 'phone'},
+            ]).valid();
 
-            if(valid_firstname != ''){
+            if(validation_result){
 
-                return res.redirect(`${config.backend_url}profile`);
-
-            }
-            else if(valid_lastname != ''){
-
-                return res.redirect(`${config.backend_url}profile`);
-
-            }
-            else if(valid_email != ''){
-
-                return res.redirect(`${config.backend_url}profile`);
-
-            }
-            else if(valid_phonenumber != ''){
-
-                return res.redirect(`${config.backend_url}profile`);
+                return res.redirect(`${config.backend_url}profile/?msg=${validation_result}`);
 
             }
 
@@ -106,8 +92,7 @@ router.post('/', async(req,res)=>{
                 }
 
                 let file_name = `${admin_id.toString()}.png`;
-                let new_uploader = new uploader(req.files.avatar, file_name, uploader_options);
-                let upload_result = new_uploader.upload();
+                let upload_result = new uploader(req.files.avatar, file_name, uploader_options).upload();
 
                 if(upload_result){
 
@@ -127,12 +112,12 @@ router.post('/', async(req,res)=>{
                 req.session.admin_info = result;
                 backend.locals.admin_info = req.session.admin_info;
 
-                res.redirect(`${config.backend_url}profile/?msg=profile-success`);
+                return res.redirect(`${config.backend_url}profile/?msg=profile-success`);
 
             }
             else{
 
-                res.redirect(`${config.backend_url}profile/?msg=profile-fail`);
+                return res.redirect(`${config.backend_url}profile/?msg=profile-fail`);
 
             }
 
@@ -140,23 +125,16 @@ router.post('/', async(req,res)=>{
         else if(req.body.change_password == ''){
 
             let {current_password, new_password, confirm_password} = req.body;
-            let valid_currpass = validation.isPassword(current_password);
-            let valid_newpass = validation.isPassword(new_password);
-            let valid_conpass = validation.isPassword(confirm_password);
 
-            if(valid_currpass != ''){
+            let validation_result = new validation([
+                {value : current_password, type : 'password'},
+                {value : new_password, type : 'password'},
+                {value : confirm_password, type : 'password'}
+            ]).valid();
 
-                return res.redirect(`${config.backend_url}profile`);
+            if(validation_result){
 
-            }
-            else if(valid_newpass != ''){
-
-                return res.redirect(`${config.backend_url}profile`);
-
-            }
-            else if(valid_conpass != ''){
-
-                return res.redirect(`${config.backend_url}profile`);
+                return res.redirect(`${config.backend_url}profile/?msg=${validation_result}`);
 
             }
 
@@ -176,26 +154,26 @@ router.post('/', async(req,res)=>{
 
                     req.session.admin_info = result;
 
-                    res.redirect(`${config.backend_url}profile/?msg=password-success`);
+                    return res.redirect(`${config.backend_url}profile/?msg=password-success`);
 
                 }
                 else{
 
-                    res.redirect(`${config.backend_url}profile/?msg=password-fail`);
+                    return res.redirect(`${config.backend_url}profile/?msg=password-fail`);
 
                 }
 
             }
             else{
 
-                res.redirect(`${config.backend_url}profile/?msg=incorrect-input`);
+                return res.redirect(`${config.backend_url}profile/?msg=incorrect-input`);
 
             }
 
         }
         else {
 
-            res.redirect(`${config.backend_url}profile`);
+            return res.redirect(`${config.backend_url}profile`);
 
         }
 

@@ -9,100 +9,147 @@ module.exports = class {
     valid() {
 
         let validation_result = null;
-        let abort = false;
 
-        for(let i = 0; i < this.inputs.length && !abort;  i++){
+        for(let i = 0; i < this.inputs.length;  i++){
 
             let input = this.inputs[i];
+            validation_result = this.checkValidation(input);
 
-            if(input.value == ''){
+            if(validation_result){
 
-                validation_result = 'empty-input';
-                abort = true;
-
-            }
-            else if(Array.isArray(input.value) || input.value.constructor === ({}).constructor){
-
-                validation_result = 'invalid-input';
-                abort = true;
+                break;
 
             }
 
-            if(input.type && !abort){
+        }
 
-                switch(input.type){
+        return validation_result;
 
-                    case 'username':
-                    {
+    }
 
-                        if(input.value.length < 4) {
+    checkValidation(input){
 
-                            validation_result = 'short-input';
-                            abort = true;
+        if(input.value == ''){
 
-                        }
+            return 'empty-input';
 
-                        break;
+        }
+        else if(input.type != 'array' && (Array.isArray(input.value) || input.value.constructor === ({}).constructor)){
 
-                    }
+            return 'invalid-input';
 
-                    case 'password':
-                    {
+        }
 
-                        if(input.value.length < 8) {
+        if(input.type){
 
-                            validation_result = 'short-input';
-                            abort = true;
+            switch(input.type){
 
-                        }
+                case 'username':
+                {
 
-                        break;
+                    if(input.value.length < 4) {
 
-                    }
-
-                    case 'email':
-                    {
-
-                        let email_regexp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-
-                        if(!email_regexp.test(input.value)){
-
-                            validation_result = 'invalid-email';
-                            abort = true;
-
-                        }
-
-                        break;
+                        return 'short-input';
 
                     }
 
-                    case 'phone':
-                    {
+                    break;
 
-                        if(number_inp.length != 11){
+                }
 
-                            validation_result = 'not-phonenumber';
-                            abort = true;
+                case 'password':
+                {
 
-                        }
+                    if(input.value.length < 8) {
 
-                        break;
+                        return 'short-input';
+
+                    }
+
+                    break;
+
+                }
+
+                case 'email':
+                {
+
+                    let email_regexp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+
+                    if(!email_regexp.test(input.value)){
+
+                        return 'invalid-email';
 
                     }
 
-                    case 'number':
-                    {
+                    break;
 
-                        if(isNaN(parseInt(input.value))){
+                }
 
-                            validation_result = 'not-number';
-                            abort = true;
+                case 'phone':
+                {
+
+                    if(number_inp.length != 11){
+
+                        return 'not-phonenumber';
+
+                    }
+
+                    break;
+
+                }
+
+                case 'number':
+                {
+
+                    if(isNaN(parseInt(input.value))){
+
+                        return 'not-number';
+
+                    }
+
+                    break;
+
+                }
+
+                case 'objectId':
+                {
+
+                    if(!mongoose.Types.ObjectId.isValid(input.value)){
+
+                        return 'invalid-id';
+
+                    }
+
+                    break;
+
+                }
+
+                case 'array':
+                {
+
+                    if(!Array.isArray(input.value)){
+
+                        input.value = [''];
+
+                    }
+
+                    for(let i = 0; i < input.value.length; i++){
+
+                        if(input.value[i] == ''){
+
+                            input.value.splice(i , 1);
 
                         }
 
-                        break;
+                    }
+
+                    if(input.value.length == 0){
+
+                        return 'empty-input'
 
                     }
+
+                    break;
 
                 }
 
@@ -110,7 +157,7 @@ module.exports = class {
 
         }
 
-        return validation_result;
+        return null;
 
     }
 

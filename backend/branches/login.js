@@ -37,7 +37,7 @@ router.post('/', async(req,res)=>{
         let validation_result = new validation([
             {value : email_inp, type : 'email'},
             {value : password_inp, type : 'password'},
-            {value : captcha_inp},
+            {value : captcha_inp}
         ]).valid()
 
         if(validation_result){

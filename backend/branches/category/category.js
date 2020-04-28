@@ -27,33 +27,28 @@ router.post('/', async(req,res)=>{
     try{
 
         let {title_inp, parent_inp} = req.body;
-        let valid_title = validation.isSafe(title_inp);
-        let valid_parent = validation.isSafe(parent_inp);
 
-        if(valid_title != ''){
+        let validation_result = new validation([
+            {value : title_inp},
+            {value : parent_inp}
+        ]).valid();
 
-            res.redirect(`${config.backend_url}category`);
+        if(validation_result){
+
+            return res.redirect(`${config.backend_url}category/?msg=${validation_result}`);
 
         }
-        else if(valid_parent != ''){
 
-            res.redirect(`${config.backend_url}category`);
+        let result = await category_model.add(title_inp, parent_inp);
+
+        if(result && result != -1){
+
+            return res.redirect(`${config.backend_url}category/?msg=add-success`);
 
         }
         else{
 
-            let result = await category_model.add(title_inp, parent_inp);
-
-            if(result && result != -1){
-
-                res.redirect(`${config.backend_url}category/?msg=add-success`);
-
-            }
-            else{
-
-                res.redirect(`${config.backend_url}category/?msg=add-fail`);
-
-            }
+            return res.redirect(`${config.backend_url}category/?msg=add-fail`);
 
         }
 

@@ -62,33 +62,9 @@ router.post('/:id', async(req,res)=>{
 
         let last_product = await product_model.getById(product_id);
 
-        if(!Array.isArray(product_features_inp)){
-
-            product_features_inp = [];
-            product_features_inp.push('');
-
-        }
-
-        let valid_title = validation.isSafe(title_inp);
-        let valid_parent = isObjectId(parent_inp);
-        let valid_child = isObjectId(child_inp);
-        let valid_describe = validation.isSafe(describe_inp);
-        let valid_price = validation.isSafe(price_inp);
-        let valid_stock = validation.isSafe(stock_inp);
-        let valid_discount = validation.isSafe(discount_inp);
-
-        for(let i = 0; i < product_features_inp.length; i++){
-
-            if(product_features_inp[i] == ''){
-
-                product_features_inp.splice(i , 1);
-
-            }
-
-        }
-
         if(last_product.title == title_inp && last_product.describe == describe_inp && last_product.stock == stock_inp
-            && last_product.price == price_inp && last_product.discount == discount_inp && !req.files){
+            && last_product.price == price_inp && last_product.discount == discount_inp &&
+            last_product.features.push('') == product_features_inp && !req.files){
 
             if(last_product.category && last_product.sub_category){
 
@@ -102,29 +78,21 @@ router.post('/:id', async(req,res)=>{
 
         }
 
-        if(valid_title != ''){
-            return res.redirect(`${config.backend_url}store/edit/${product_id}`);
-        }
-        else if(!valid_parent){
-            return res.redirect(`${config.backend_url}store/edit/${product_id}`);
-        }
-        else if(!valid_child){
-            return res.redirect(`${config.backend_url}store/edit/${product_id}`);
-        }
-        else if(valid_describe != ''){
-            return res.redirect(`${config.backend_url}store/edit/${product_id}`);
-        }
-        else if(valid_stock != ''){
-            return res.redirect(`${config.backend_url}store/edit/${product_id}`);
-        }
-        else if(valid_discount != ''){
-            return res.redirect(`${config.backend_url}store/edit/${product_id}`);
-        }
-        else if(valid_price != ''){
-            return res.redirect(`${config.backend_url}store/edit/${product_id}`);
-        }
-        else if(product_features_inp.length == 0){
-            return res.redirect(`${config.backend_url}store/edit/${product_id}`);
+        let validation_result = new validation([
+            {value : title_inp},
+            {value : parent_inp, type : 'objectId'},
+            {value : child_inp, type : 'objectId'},
+            {value : describe_inp},
+            {value : price_inp , type : 'number'},
+            {value : stock_inp , type : 'number'},
+            {value : discount_inp , type : 'number'},
+            {value : product_features_inp , type : 'array'},
+        ]).valid();
+
+        if(validation_result){
+
+            return res.redirect(`${config.backend_url}store/edit/${product_id}/?msg=${validation_result}`);
+
         }
 
         let price_discount = Math.round(parseInt(price_inp) * (100 - parseInt(discount_inp)) / 100);
@@ -156,8 +124,7 @@ router.post('/:id', async(req,res)=>{
         if(req.files && typeof req.files.product_main_image != 'undefined'){
 
             let file_name = `${product_id}_main.png`;
-            let new_uploader = new uploader(req.files.product_main_image, file_name, uploader_options);
-            let upload_result = new_uploader.upload();
+            let upload_result = new uploader(req.files.product_main_image, file_name, uploader_options).upload();
 
             if(upload_result){
 
@@ -184,8 +151,7 @@ router.post('/:id', async(req,res)=>{
                     }
 
                     let file_name = `${product_id}_${empty_index}.png`;
-                    let new_uploader = new uploader(req.files['product_other_images[]'][i], file_name, uploader_options);
-                    let upload_result = new_uploader.upload();
+                    let upload_result = new uploader(req.files['product_other_images[]'][i], file_name, uploader_options).upload();
 
                     if(upload_result){
 
@@ -211,8 +177,7 @@ router.post('/:id', async(req,res)=>{
                 }
 
                 let file_name = `${product_id}_${empty_index}.png`;
-                let new_uploader = new uploader(req.files['product_other_images[]'], file_name, uploader_options);
-                let upload_result = new_uploader.upload();
+                let upload_result = new uploader(req.files['product_other_images[]'], file_name, uploader_options).upload();
 
                 if(upload_result){
 
