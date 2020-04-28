@@ -90,7 +90,7 @@
                 </div>
                 
                 <div class="form-group">
-                    <label for="specifict">مشخصات محصول:
+                    <label for="specifict">مشخصات قابل انتخاب محصول:
                         <button type="button" class="alert_popup_circl_btn_class " data-toggle="popover" title="توجه" data-placement="left" data-content="برای مثال اگر می خواهید مشخصه ی رنگ با دو زیر مجموعه ی آبی و قرمز را اضافه کنید باید به صورت رو به رو وارد نمایید : رنگ:آبی،قرمز"><i class="fas fa-exclamation-circle alert_popup_circl"></i></button>
                     </label>
                     <small class="d-block">لطفا حداقل یک فیلد از مشخصات محصول را پر کنید.</small>
