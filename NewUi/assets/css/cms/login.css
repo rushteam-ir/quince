@@ -1,4 +1,4 @@
-.cont_principal {
+/* .cont_principal {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -168,7 +168,7 @@ background: linear-gradient(45deg, rgba(54,40,137,1) 0%, rgba(80,96,223,1) 100%)
 .cont_aura_left {
     right: 57%;
     top: -135px;
-}
+} */
 
 
 /* login form */
@@ -179,8 +179,8 @@ body {
 }
 
 .main_filed_of_login {
-    width: 90%;
-    margin-left: 5%;
+    width: 400px;
+    margin: 0 auto;
     margin-top: 150px;
     padding: 50px 50px 40px 50px;
     background-color: rgb(255, 255, 255);
@@ -206,12 +206,16 @@ body {
 }
 
 .refresh_capthcha{
-    color: black;
-    position: absolute;
-    right: 157px;
-    top: 11px;
+
 }
 
 .refresh_capthcha:hover{
     color: black;
+}
+
+/* recovery */
+
+.header_of_recovery{
+    font-size: 0.9rem;
+    line-height: 23px;
 }
