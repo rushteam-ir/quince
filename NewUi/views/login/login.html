@@ -22,10 +22,12 @@
 
                     <img class="main_logo" src="../../assets/img/logo2.png" alt="">
 
+
+
                     <form class="text-right mt-4 log_form" autocomplete="off">
 
                         <div class="form-group">
-                            <input type="email" placeholder="ایمیل" class="form-control text-right login_inp">
+                            <input type="text" placeholder="ایمیل" class="form-control text-right login_inp">
                         </div>
 
                         <div class="form-group">
@@ -59,6 +61,9 @@
 
                     </form>
 
+
+
+
                     <form class="text-right mt-4 recovery_form" autocomplete="off">
 
                         <i class="fas fa-arrow-left back_btn_log"></i>
@@ -66,16 +71,36 @@
                         <div class="form-group">
                             <label for="recovery_inp" class="lable_of_recovery">ایمیل خود را جهت بازیابی رمز عبور وارد
                                 نمایید</label>
-                            <input type="email" placeholder="ایمیل" class="form-control text-right login_inp"
+                            <input type="text" placeholder="ایمیل" class="form-control text-right login_inp"
                                 id="recovery_inp">
                         </div>
 
                         <p class="text-justify dir-rtl header_of_recovery">یک ایمیل حاوی لینک بازیابی رمز عبور برای
                             شما ارسال خواهد شد.لطفا توجه بفرمایید ممکن است ایمیل به بخش spam ارسال شده باشد.</p>
 
-                        <button type="submit" class="btn btn_of_login">ورود به حساب کاربری</button>
+                        <button type="button" class="btn btn_of_login go_verify">دریافت کد بازیابی</button>
 
                     </form>
+
+
+
+
+
+                    <form class="text-right mt-4 recovery_verify_form" autocomplete="off">
+
+                        <i class="fas fa-arrow-left back_btn_recovery back_to_recovery"></i>
+
+                        <div class="form-group">
+                            <input type="text" placeholder="کد دریافت شده" class="form-control text-right login_inp"
+                                id="recovery_inp">
+                        </div>
+
+                        <button type="submit" class="btn btn_of_login">بازیای رمز عبور</button>
+
+                    </form>
+
+
+
 
                 </div>
 

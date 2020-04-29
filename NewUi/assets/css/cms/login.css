@@ -79,3 +79,18 @@ body {
     left: 90px;
     cursor: pointer;
 }
+
+/* recovery verify */
+
+.back_btn_recovery {
+    position: absolute;
+    top: 180px;
+    left: 90px;
+    cursor: pointer;
+}
+
+.recovery_verify_form {
+    display: none;
+    opacity: 0;
+    transition: all ease-out 0.2s;
+}
