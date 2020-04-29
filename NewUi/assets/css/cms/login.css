@@ -175,12 +175,13 @@ background: linear-gradient(45deg, rgba(54,40,137,1) 0%, rgba(80,96,223,1) 100%)
 
 body {
     background-color: #F0F3F7;
+
 }
 
 .main_filed_of_login {
     width: 90%;
     margin-left: 5%;
-    margin-top: 200px;
+    margin-top: 150px;
     padding: 50px 50px 30px 50px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
@@ -202,4 +203,15 @@ body {
 .login_inp {
     border: none;
     background: #F4F3F9;
+}
+
+.refresh_capthcha{
+    color: black;
+    position: absolute;
+    right: 157px;
+    top: 11px;
+}
+
+.refresh_capthcha:hover{
+    color: black;
 }
