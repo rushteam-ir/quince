@@ -60,3 +60,40 @@ JsonCount = function (obj) {
     }
     return count;
 }
+
+
+
+
+
+let code_takhfif = '';
+
+for(let i = 0; i < 4; i++){
+
+    code_takhfif += randomString(4) + '-';
+
+}
+
+code_takhfif = code_takhfif.slice(0, -1);
+
+log(code_takhfif)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
