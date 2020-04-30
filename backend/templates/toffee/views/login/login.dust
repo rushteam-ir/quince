@@ -2,13 +2,15 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/general/bootstrap.css">
     <link rel="stylesheet" href="css/general/fontAwsome.css">
     <link rel="stylesheet" href="css/general/general-css.css">
     <link rel="stylesheet" href="css/login/login.css">
-    <link rel="shortcut icon" href="img/img2.jpg" />
+    <link rel="shortcut icon" href="img/img2.jpg"/>
+
     <title>Rush Team CMS</title>
 </head>
 
@@ -36,8 +38,8 @@
 
                         <div class="row">
 
-                            <div class="col-6">
-
+                            <div class="col-6 pl-0">
+                                <img class="w-100" src="{captcha_url}">
                             </div>
 
                             <div class="col-6 pr-0">
@@ -48,7 +50,7 @@
                                     </a>
                                     <input type="text" placeholder="کد امنیتی"
                                         class="form-control text-right login_inp">
-                                    <img id="img-captcha" class="captcha_img_class" src="{captcha_url}" alt="captcha" title="captcha">
+
                                 </div>
 
                             </div>
