@@ -159,7 +159,7 @@ back_to_recovery.addEventListener('click', function () {
 
 // errors
 
-function loginError() {
+function loginError(error) {
 
     var email_inp = document.forms['login_form']['email_inp'].value;
     var password_inp = document.forms['login_form']['password_inp'].value;
@@ -263,5 +263,11 @@ function errorfunc() {
     error_box_1.style.display = 'block';
     mainBox.style.height = '500px';
     mainBox.style.transition = 'all ease-out 0.2s';
+
+}
+
+function salam() {
+
+    alert('salaaaaaaam')
 
 }

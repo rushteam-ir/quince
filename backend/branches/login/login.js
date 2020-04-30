@@ -2,19 +2,15 @@ const router = express.Router();
 
 router.get('/', async(req,res)=>{
 
-    try{
+    try {
 
-        if(req.session.login_form){
+        let data = {
 
-            let login_form = req.session.login_form;
-            res.render('login/login',{login_form})
-
-        }
-        else{
-
-            res.render('login/login');
+            login_form: req.session.login_form,
 
         }
+
+        res.render('login/login', data);
 
     }
     catch (error) {
