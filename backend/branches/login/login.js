@@ -12,7 +12,7 @@ router.get('/', async(req,res)=>{
         }
         else{
 
-            res.render('login');
+            res.render('login/login');
 
         }
 
