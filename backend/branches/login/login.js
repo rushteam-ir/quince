@@ -7,7 +7,7 @@ router.get('/', async(req,res)=>{
         if(req.session.login_form){
 
             let login_form = req.session.login_form;
-            res.render('login',{login_form})
+            res.render('login/login',{login_form})
 
         }
         else{

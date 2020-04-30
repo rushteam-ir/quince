@@ -29,11 +29,11 @@
                     <form class="text-right mt-4 log_form" autocomplete="off">
 
                         <div class="form-group">
-                            <input type="text" placeholder="ایمیل" class="form-control text-right login_inp">
+                            <input type="text" placeholder="ایمیل" class="form-control text-right login_inp" name="email_inp">
                         </div>
 
                         <div class="form-group">
-                            <input type="password" placeholder="رمز عبور" class="form-control text-right login_inp">
+                            <input type="password" placeholder="رمز عبور" class="form-control text-right login_inp" name="password_inp">
                         </div>
 
                         <div class="row">
@@ -48,8 +48,7 @@
                                     <button type="button" class="refresh_capthcha">
                                         <i class="fas fa-redo-alt"></i>
                                     </button>
-                                    <input type="text" placeholder="کد امنیتی"
-                                        class="form-control text-right login_inp">
+                                    <input type="text" placeholder="کد امنیتی" class="form-control text-right login_inp" name="captcha_inp">
 
                                 </div>
 
@@ -72,8 +71,7 @@
                         <i class="fas fa-arrow-left back_btn_log"></i>
 
                         <div class="form-group">
-                            <input type="text" placeholder="ایمیل" class="form-control text-right login_inp"
-                                id="recovery_inp">
+                            <input type="text" placeholder="ایمیل" class="form-control text-right login_inp" id="recovery_inp" name="recovery_email_inp">
                         </div>
 
                         <p class="text-justify dir-rtl header_of_recovery mb-2">ایمیل خود را جهت بازیابی رمز عبور خود وارد کنید.</p>
@@ -92,8 +90,7 @@
                         <i class="fas fa-arrow-left back_btn_recovery back_to_recovery"></i>
 
                         <div class="form-group">
-                            <input type="text" placeholder="رمز عبور جدید" class="form-control text-right login_inp"
-                                id="recovery_inp">
+                            <input type="text" placeholder="رمز عبور جدید" class="form-control text-right login_inp" id="recovery_inp" name="new_password_inp">
                         </div>
                         <p class="text-justify dir-rtl header_of_recovery mb-2">رمز عبور جدید ارسال شده به ایمیل خود را وارد نمایید و هر چه سریع تر نسبت به تغییر آن اقدام فرمایید.</p>
                         <button type="submit" class="btn btn_of_login mt-2">بازیای رمز عبور</button>
