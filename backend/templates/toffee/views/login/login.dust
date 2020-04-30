@@ -39,15 +39,15 @@
                         <div class="row">
 
                             <div class="col-6 pl-0">
-                                <img class="w-100" src="{captcha_url}">
+                                <img class="w-100 img_captcha" src="{captcha_url}">
                             </div>
 
                             <div class="col-6 pr-0">
 
                                 <div class="form-group">
-                                    <a href="" class="refresh_capthcha">
+                                    <button type="button" class="refresh_capthcha">
                                         <i class="fas fa-redo-alt"></i>
-                                    </a>
+                                    </button>
                                     <input type="text" placeholder="کد امنیتی"
                                         class="form-control text-right login_inp">
 
@@ -109,7 +109,15 @@
         </div>
     </div>
 
+    <script src="js/general/jquery.js"></script>
     <script src="js/login/login.js"></script>
+    <script>
+        $(document).on('click', '.refresh_capthcha', function(){
+
+            $('.img_captcha').attr('src',   '{captcha_url}?_' + Math.random());
+
+        });
+    </script>
 
 </body>
 
