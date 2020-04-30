@@ -44,11 +44,11 @@ body {
     position: absolute;
     right: 141px;
     top: 12px;
-    color: black;
+    color: #4C56D0;
 }
 
 .refresh_capthcha:hover {
-    color: black;
+    color: #5986d0;
 }
 
 .recovery_link {
