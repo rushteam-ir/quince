@@ -25,7 +25,7 @@ if(sessionStorage.recovery == 3){
     recovery_verify_form.style.display = "block";
     recovery_form.style.display = "none";
     recovery_verify_form.style.opacity = "1";
-    log_field.style.height = "290px";
+    log_field.style.height = "350px";
 
 }
 
@@ -89,7 +89,7 @@ go_verify.addEventListener('click',function(){
 
         recovery_form.style.display = "none";
         recovery_verify_form.style.display = "block";
-        log_field.style.height = "290px";
+        log_field.style.height = "350px";
 
     }, 400);
 
