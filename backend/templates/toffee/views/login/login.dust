@@ -5,6 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="{backend_url}">
     <link rel="stylesheet" href="css/general/bootstrap.css">
     <link rel="stylesheet" href="css/general/fontAwsome.css">
     <link rel="stylesheet" href="css/general/general-css.css">
@@ -25,7 +26,8 @@
                         <img class="main_logo" src="img/logo2.png" alt="">
                     </div>
 
-                    <form class="text-right mt-4 log_form" autocomplete="off" onsubmit="return loginError()" name="login_form">
+                    <form class="text-right mt-4 log_form" action="" method="post" autocomplete="off" onsubmit="return loginError()" name="login_form">
+
 
                         <div class="error_warning_alert text-right display_none" id="error_box_1">
 
@@ -149,6 +151,15 @@
             $('.img_captcha').attr('src', '{captcha_url}?_' + Math.random());
 
         });
+    </script>
+    <script>
+        {@alertWarn key="captcha-error" msg="کد امنیتی وارد شده صحیح نمی باشد"}{/alertWarn}
+        {@alertError key="inactive-admin" msg="دسترسی شما مسدود می باشد"}
+        salam();
+        {/alertError}
+        {@alertWarn key="incorrect-input" msg="ایمیل یا رمز عبور صحیح نمی باشد"}
+        salam();
+        {/alertWarn}
     </script>
 
 </body>
