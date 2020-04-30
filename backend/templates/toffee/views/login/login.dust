@@ -46,7 +46,7 @@
                                     <a href="" class="refresh_capthcha">
                                         <i class="fas fa-redo-alt"></i>
                                     </a>
-                                    <input type="password" placeholder="کد امنیتی"
+                                    <input type="text" placeholder="کد امنیتی"
                                         class="form-control text-right login_inp">
                                     <img id="img-captcha" class="captcha_img_class" src="{captcha_url}" alt="captcha" title="captcha">
                                 </div>
