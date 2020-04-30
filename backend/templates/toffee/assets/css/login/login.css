@@ -5,6 +5,11 @@ body {
 
 }
 
+.img_captcha{
+    position: relative;
+    top: -2px;
+}
+
 .main_filed_of_login {
     width: 400px;
     height: 450px;
@@ -15,7 +20,6 @@ body {
     border-radius: 10px;
     box-shadow: 0px 0px 40px -13px #35299362;
     display: block;
-    transition: all ease-out 0.2s;
 }
 
 .log_form {
@@ -45,10 +49,13 @@ body {
     right: 147px;
     top: 12px;
     color: #4C56D0;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
 }
 
 .refresh_capthcha:hover {
-    color: #5986d0;
+    color: #4C56D0;
 }
 
 .recovery_link {
