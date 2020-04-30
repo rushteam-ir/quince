@@ -1,7 +1,7 @@
 // Application configuration and settings
 let app_port = 3000;
 let mongodb_port = 27017;
-let address = `localhost`;
+let address = `192.168.1.100`;
 let db_name = `toffee`;
 BACK_URL = `http://${address}:${app_port}/admin/`;
 

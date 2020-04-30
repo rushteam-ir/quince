@@ -9,23 +9,32 @@
     <link rel="stylesheet" href="css/general/fontAwsome.css">
     <link rel="stylesheet" href="css/general/general-css.css">
     <link rel="stylesheet" href="css/login/login.css">
-    
+
     <title>Rush Team CMS</title>
 </head>
 
 <body>
 
     <div class="container-fluid ">
-        <div class="row">
-            <div class="col-12 col-md-4 offset-md-4">
+        <div class="row align-items-center log_row_mid">
+            <div class="col-12">
 
                 <div class="main_filed_of_login">
 
-                    <img class="main_logo" src="img/logo2.png" alt="">
+                    <div class="field_of_logo">
+                        <img class="main_logo" src="img/logo2.png" alt="">
+                    </div>
 
+                    <form class="text-right mt-4 log_form" autocomplete="off" onsubmit="return loginError()" name="login_form">
 
+                        <div class="error_warning_alert text-right display_none" id="error_box_1">
 
-                    <form class="text-right mt-4 log_form" autocomplete="off">
+                            <i class="fal fa-times d-inline-block remove_error_icon" onclick="errorBowRemove1()"></i>
+                            <i class="fal fa-exclamation-circle alert_icon_error"></i>
+
+                            <div class="d-inline-block mr-1" id="error_text"></div>
+
+                        </div>
 
                         <div class="form-group">
                             <input type="text" placeholder="ایمیل" class="form-control text-right login_inp"
@@ -68,9 +77,19 @@
 
 
 
-                    <form class="text-right mt-4 recovery_form" autocomplete="off">
+                    <form class="text-right recovery_form" autocomplete="off" name="recovery_form" >
 
                         <i class="fas fa-arrow-left back_btn_log"></i>
+
+
+                        <div class="error_warning_alert text-right display_none" id="error_box_2">
+
+                            <i class="fal fa-times d-inline-block remove_error_icon" onclick="errorBowRemove2()"></i>
+                            <i class="fal fa-exclamation-circle alert_icon_error"></i>
+
+                            <div class="d-inline-block mr-1" id="error_text_2"></div>
+
+                        </div>
 
                         <div class="form-group">
                             <input type="text" placeholder="ایمیل" class="form-control text-right login_inp"
@@ -90,9 +109,18 @@
 
 
 
-                    <form class="text-right mt-4 recovery_verify_form" autocomplete="off">
+                    <form class="text-right recovery_verify_form" autocomplete="off" onsubmit="return verifyError()" name="verify_form">
 
                         <i class="fas fa-arrow-left back_btn_recovery back_to_recovery"></i>
+
+                        <div class="error_warning_alert text-right display_none" id="error_box_3">
+
+                            <i class="fal fa-times d-inline-block remove_error_icon" onclick="errorBowRemove3()"></i>
+                            <i class="fal fa-exclamation-circle alert_icon_error"></i>
+
+                            <div class="d-inline-block mr-1" id="error_text_3"></div>
+
+                        </div>
 
                         <div class="form-group">
                             <input type="text" placeholder="رمز عبور جدید" class="form-control text-right login_inp"
@@ -116,13 +144,11 @@
     <script src="js/general/jquery.js"></script>
     <script src="js/login/login.js"></script>
     <script>
-
         $(document).on('click', '.refresh_capthcha', function () {
 
             $('.img_captcha').attr('src', '{captcha_url}?_' + Math.random());
 
         });
-
     </script>
 
 </body>
