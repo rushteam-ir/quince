@@ -39,12 +39,16 @@ router.post('/', async(req,res)=>{
 
         if(validation_result){
 
-            msg = validation_result;
+            if(msg != ''){
+                msg = validation_result;
+            }
 
         }
         else if(captcha_inp.toLowerCase()!= req.session.captcha){
 
-            msg = 'captcha-error';
+            if(msg != ''){
+                msg = 'captcha-error';
+            }
 
         }
 
@@ -67,21 +71,27 @@ router.post('/', async(req,res)=>{
                 }
                 else{
 
-                    msg = 'inactive-admin';
+                    if(msg != ''){
+                        msg = 'inactive-admin';
+                    }
 
                 }
 
             }
             else{
 
-                msg = 'incorrect-input';
+                if(msg != ''){
+                    msg = 'incorrect-input';
+                }
 
             }
 
         }
         else{
 
-            msg = 'incorrect-input';
+            if(msg != ''){
+                msg = 'incorrect-input';
+            }
 
         }
 
