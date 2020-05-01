@@ -1,0 +1,47 @@
+.dashboard_body {
+    background-color: #F0F3F7;
+}
+
+.dashboard {
+    width: 15%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    box-shadow: 0px 0px 10px 0px #e0e0e0;
+}
+
+.dashboard_logo {
+    width: 70%;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+.close_dashboard {
+    position: absolute;
+    left: 15px;
+    top: 25px;
+    color: #4C56D0;
+    font-size: 1.6rem;
+}
+
+.dashboard_ul {
+    list-style-type: none;
+}
+
+.dashboard_list {
+    color: black;
+    margin-top: 15px;
+}
+
+.dashboard_icon {
+    color: #4C56D0;
+}
+
+.angle_of_dashboard{
+    color: #4C56D0;
+    top: 22px;
+    left: 20px;
+    position: absolute;
+}

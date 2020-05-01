@@ -28,6 +28,18 @@
 
                     <form class="text-right mt-4 log_form" action="" method="post" autocomplete="off" onsubmit="return loginError()" name="login_form">
 
+                        {@eq key="{msg}" value=""}
+
+                        {:else}
+                        <div class="error_warning_alert text-right display_none server_error" name="{msg}" id="error_box_5">
+
+                            <i class="fal fa-times d-inline-block remove_error_icon" onclick="errorBowRemove1()"></i>
+                            <i class="fal fa-exclamation-circle alert_icon_error"></i>
+
+                            <div class="d-inline-block mr-1" id="error_text_5"></div>
+
+                        </div>
+                        {/eq}
 
                         <div class="error_warning_alert text-right display_none" id="error_box_1">
 
@@ -152,16 +164,6 @@
 
         });
     </script>
-    <script>
-        {@alertWarn key="captcha-error" msg="کد امنیتی وارد شده صحیح نمی باشد"}{/alertWarn}
-        {@alertError key="inactive-admin" msg="دسترسی شما مسدود می باشد"}
-        salam();
-        {/alertError}
-        {@alertWarn key="incorrect-input" msg="ایمیل یا رمز عبور صحیح نمی باشد"}
-        salam();
-        {/alertWarn}
-    </script>
-
 </body>
 
 </html>
