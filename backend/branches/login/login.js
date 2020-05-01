@@ -13,6 +13,7 @@ router.get('/', async(req,res)=>{
         }
 
         res.render('login/login', data);
+        msg = ''
 
     }
     catch (error) {
