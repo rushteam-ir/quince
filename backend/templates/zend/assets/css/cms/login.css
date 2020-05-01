@@ -1,0 +1,142 @@
+.sub_btn_of_dashbord_form {
+    width: 40%;
+    height: 45px;
+    border-radius: 200px;
+    margin-left: 30%;
+    background: linear-gradient(42deg, rgba(52, 34, 142, 1) 0%, rgba(76, 109, 210, 1) 100%);
+    color: white;
+    transition: all linear 0.1s;
+}
+
+.sub_btn_of_dashbord_form:hover {
+    transform: scale(1.05);
+}
+
+.main_field_of_dashbord_login_form {
+    margin-top: 40px;
+    margin-bottom: 38px;
+    width: 85%;
+    margin-left: 7%;
+}
+
+.row_of_dashbord_login_form {
+    margin-top: 90px;
+    overflow: hidden;
+    padding: 30px 0px;
+
+}
+
+.main_field_of_dashbord_login {
+    background-color:#eeeeee;
+}
+
+.blur_img_for_login_form {
+    border-radius: 0px 7px 7px 0px;
+    height: 553.2px;
+}
+
+.col_of_left_log_part {
+    overflow: hidden;
+}
+
+.logo-field {
+    position: absolute;
+    top: 0;
+}
+
+.zend_logo_of_dashbord_form {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 70px;
+}
+
+.description_of_zend_cms {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    padding: 0 15px
+}
+
+.description_of_zend_cms_acardion {
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
+    font-size: 12px;
+}
+
+.dashbord_login_error_class {
+    display: none;
+    padding-right: 40px;
+}
+
+.dashbord_login_server_error_class {
+    display: block;
+    padding-right: 40px;
+    margin-top: -30px;
+}
+
+.error_alert_img {
+    z-index: 1;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    right: 60px;
+    top: 80px;
+    display: none;
+}
+
+.read_more_dashbord_login {
+    color: white;
+    margin-bottom: 0px;
+}
+
+.arrow-read-more {
+    color: white;
+}
+
+.header_of_dashbord_login {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.dashbord_login_input {
+    height: 45px;
+}
+
+.small_of_logo {
+    color: #aaaaaa;
+    margin-top: 10px;
+}
+
+.captcha_img_class {
+    width: 80%;
+    height: 60px;
+}
+
+.captcha_refresh_btn {
+    width: 20%;
+    border: none;
+    background-color: transparent;
+    display: unset !important;
+}
+
+.fa-redo {
+    color: #4455bd;
+}
+
+.col_of_log_custom{
+    background-color: white;
+    border-radius: 7px 0px 0px 7px;    
+    box-shadow: 10px 12px 34px -21px black;
+}
+.col_of_log_custom_second{
+    box-shadow: 21px 18px 34px -21px black;
+    border-radius: 0px 7px 7px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    .captcha_img_class {
+        height: 80px;
+    }
+}
