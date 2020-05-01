@@ -39,14 +39,14 @@ router.post('/', async(req,res)=>{
 
         if(validation_result){
 
-            if(msg != ''){
+            if(msg == ''){
                 msg = validation_result;
             }
 
         }
         else if(captcha_inp.toLowerCase()!= req.session.captcha){
 
-            if(msg != ''){
+            if(msg == ''){
                 msg = 'کد امنیتی صحیح نمی باشد.';
             }
 
@@ -71,7 +71,7 @@ router.post('/', async(req,res)=>{
                 }
                 else{
 
-                    if(msg != ''){
+                    if(msg == ''){
                         msg = 'حساب شما مسدود می باشد.';
                     }
 
@@ -80,7 +80,7 @@ router.post('/', async(req,res)=>{
             }
             else{
 
-                if(msg != ''){
+                if(msg == ''){
                     msg = 'ایمیل و یا رمز عبور اشتباه می باشد.';
                 }
 
@@ -89,11 +89,13 @@ router.post('/', async(req,res)=>{
         }
         else{
 
-            if(msg != ''){
+            if(msg == ''){
                 msg = 'ایمیل و یا رمز عبور اشتباه می باشد.';
             }
 
         }
+
+        log(msg);
 
         let data = {
 
