@@ -1,4 +1,5 @@
 const router = express.Router();
+let msg = '';
 
 router.get('/', async(req,res)=>{
 
@@ -7,6 +8,7 @@ router.get('/', async(req,res)=>{
         let data = {
 
             login_form: req.session.login_form,
+            msg : msg
 
         }
 
@@ -27,7 +29,6 @@ router.post('/', async(req,res)=>{
 
         let {email_inp, password_inp, captcha_inp} = req.body;
         let login_form = {email_inp, password_inp, captcha_inp};
-        let msg = '';
 
         req.session.login_form = login_form;
 
@@ -95,15 +96,7 @@ router.post('/', async(req,res)=>{
 
         }
 
-        log(msg);
-
-        let data = {
-
-            msg : msg,
-
-        }
-
-        res.render('login/login', data);
+        res.redirect(`${config.backend_url}login`);
 
     }
     catch (error) {
