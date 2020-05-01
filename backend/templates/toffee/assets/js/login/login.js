@@ -161,6 +161,8 @@ back_to_recovery.addEventListener('click', function () {
 
 function loginError() {
 
+    $('.server_error').remove();
+
     let email_inp = document.forms['login_form']['email_inp'].value;
     let password_inp = document.forms['login_form']['password_inp'].value;
     let captcha_inp = document.forms['login_form']['captcha_inp'].value;
@@ -207,6 +209,8 @@ function loginError() {
         return false;
 
     }
+
+
 
     let error_box_5 = document.getElementById('error_box_5');
     let error_text_5 = document.getElementById('error_text_5');
