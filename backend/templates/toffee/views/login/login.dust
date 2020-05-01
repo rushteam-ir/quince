@@ -29,19 +29,24 @@
                     <form class="text-right mt-4 log_form" action="" method="post" autocomplete="off" onsubmit="return loginError()" name="login_form">
 
                         {@eq key="{msg}" value=""}
+                            <div class="error_warning_alert text-right display_none" id="error_box_1">
 
+                                <i class="fal fa-times d-inline-block remove_error_icon" onclick="errorBowRemove1()"></i>
+                                <i class="fal fa-exclamation-circle alert_icon_error"></i>
+
+                                <div class="d-inline-block mr-1" id="error_text"></div>
+
+                            </div>
                         {:else}
-                            {msg}
+                            <div class="error_warning_alert text-right" id="error_box_1">
+
+                                <i class="fal fa-times d-inline-block remove_error_icon" onclick="errorBowRemove1()"></i>
+                                <i class="fal fa-exclamation-circle alert_icon_error"></i>
+
+                                <div class="d-inline-block mr-1" id="error_text">{msg}</div>
+
+                            </div>
                         {/eq}
-
-                        <div class="error_warning_alert text-right display_none" id="error_box_1">
-
-                            <i class="fal fa-times d-inline-block remove_error_icon" onclick="errorBowRemove1()"></i>
-                            <i class="fal fa-exclamation-circle alert_icon_error"></i>
-
-                            <div class="d-inline-block mr-1" id="error_text"></div>
-
-                        </div>
 
                         <div class="form-group">
                             <input type="text" placeholder="ایمیل" class="form-control text-right login_inp"

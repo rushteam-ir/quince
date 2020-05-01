@@ -210,16 +210,6 @@ function loginError() {
 
     }
 
-
-
-    let error_box_5 = document.getElementById('error_box_5');
-    let error_text_5 = document.getElementById('error_text_5');
-    let server_msg = $('.server_error').attr('name');
-
-    error_box_5.style.display = 'block';
-    mainBox.style.height = '500px';
-    mainBox.style.transition = 'all ease-out 0.2s';
-    error_text_5.innerHTML = server_msg;
     return false;
 
 }
