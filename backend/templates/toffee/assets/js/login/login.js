@@ -168,47 +168,55 @@ function loginError() {
     let error_box_1 = document.getElementById('error_box_1');
     let error_text = document.getElementById('error_text');
 
-    // if (email_inp == '') {
 
-    //     errorfunc();
-    //     error_text.innerText = 'لطفا ایمیل خود را وارد کنید.';
-    //     return false;
 
-    // } else if (!email_inp.includes('@') || !email_inp.includes('.com') || email_inp.length < 9) {
+    if (email_inp == '') {
 
-    //     errorfunc();
-    //     error_text.innerText = 'ایمیل وارد شده صحیح نمی باشد.';
-    //     return false;
+        errorfunc();
+        error_text.innerText = 'لطفا ایمیل خود را وارد کنید.';
+        return false;
 
-    // } else if (password_inp == '') {
+    } else if (!email_inp.includes('@') || !email_inp.includes('.com') || email_inp.length < 9) {
 
-    //     errorfunc();
-    //     error_text.innerText = 'لطفا رمز عبور خود را وارد کنید.';
-    //     return false;
+        errorfunc();
+        error_text.innerText = 'ایمیل وارد شده صحیح نمی باشد.';
+        return false;
 
-    // } else if (password_inp.length < 8) {
+    } else if (password_inp == '') {
 
-    //     errorfunc();
-    //     error_text.innerText = 'رمز عبور کم تر از حد مجاز است.';
-    //     return false;
+        errorfunc();
+        error_text.innerText = 'لطفا رمز عبور خود را وارد کنید.';
+        return false;
 
-    // } else if (captcha_inp == '') {
+    } else if (password_inp.length < 8) {
 
-    //     errorfunc();
-    //     error_text.innerText = 'لطفا کد امنیتی را وارد کنید';
-    //     return false;
+        errorfunc();
+        error_text.innerText = 'رمز عبور کم تر از حد مجاز است.';
+        return false;
 
-    // } else if (captcha_inp.length < 5) {
+    } else if (captcha_inp == '') {
 
-    //     errorfunc();
-    //     error_text.innerText = 'کد امنیتی کم تر از حد مجاز است.';
-    //     return false;
+        errorfunc();
+        error_text.innerText = 'لطفا کد امنیتی را وارد کنید';
+        return false;
 
-    // }
+    } else if (captcha_inp.length < 5) {
 
-    if(test == true){
-        alert('salam')
+        errorfunc();
+        error_text.innerText = 'کد امنیتی کم تر از حد مجاز است.';
+        return false;
+
     }
+
+    let error_box_5 = document.getElementById('error_box_5');
+    let error_text_5 = document.getElementById('error_text_5');
+    let server_msg = $('.server_error').attr('name');
+
+    error_box_5.style.display = 'block';
+    mainBox.style.height = '500px';
+    mainBox.style.transition = 'all ease-out 0.2s';
+    error_text_5.innerHTML = server_msg;
+    return false;
 
 }
 
@@ -270,12 +278,14 @@ function errorfunc() {
 
 }
 
-function Errors(text){
+function Errors(){
 
-    let error_box_1 = document.getElementById('error_box_1');
-    let error_text = document.getElementById('error_text');
+    let error_box_5 = document.getElementById('error_box_5');
+    let error_text_5 = document.getElementById('error_text_5');
 
-    errorfunc();
+    error_box_5.style.display = 'block';
+    mainBox.style.height = '500px';
+    mainBox.style.transition = 'all ease-out 0.2s';
     error_box_1.style.display = 'block';
     error_text.innerHTML = text;
 }
