@@ -28,6 +28,11 @@
 
                     <form class="text-right mt-4 log_form" action="" method="post" autocomplete="off" onsubmit="return loginError()" name="login_form">
 
+                        {@eq key="{msg}" value=""}
+
+                        {:else}
+                            {msg}
+                        {/eq}
 
                         <div class="error_warning_alert text-right display_none" id="error_box_1">
 

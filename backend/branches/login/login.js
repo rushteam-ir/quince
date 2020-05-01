@@ -27,6 +27,7 @@ router.post('/', async(req,res)=>{
 
         let {email_inp, password_inp, captcha_inp} = req.body;
         let login_form = {email_inp, password_inp, captcha_inp};
+        let msg = '';
 
         req.session.login_form = login_form;
 
@@ -38,12 +39,12 @@ router.post('/', async(req,res)=>{
 
         if(validation_result){
 
-            return res.redirect(`${config.backend_url}login/?msg=${validation_result}`);
+            msg = validation_result;
 
         }
         else if(captcha_inp.toLowerCase()!= req.session.captcha){
 
-            return res.redirect(`${config.backend_url}login/?msg=captcha-error`);
+            msg = 'captcha-error';
 
         }
 
@@ -66,23 +67,31 @@ router.post('/', async(req,res)=>{
                 }
                 else{
 
-                    return res.redirect(`${config.backend_url}login/?msg=inactive-admin`);
+                    msg = 'inactive-admin';
 
                 }
 
             }
             else{
 
-                return res.redirect(`${config.backend_url}login/?msg=incorrect-input`);
+                msg = 'incorrect-input';
 
             }
 
         }
         else{
 
-            return res.redirect(`${config.backend_url}login/?msg=incorrect-input`);
+            msg = 'incorrect-input';
 
         }
+
+        let data = {
+
+            msg : msg,
+
+        }
+
+        res.render('login/login', data);
 
     }
     catch (error) {
