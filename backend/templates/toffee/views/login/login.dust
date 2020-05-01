@@ -153,12 +153,14 @@
         });
     </script>
     <script>
-        {@alertWarn key="captcha-error" msg="کد امنیتی وارد شده صحیح نمی باشد"}{/alertWarn}
-        {@alertError key="inactive-admin" msg="دسترسی شما مسدود می باشد"}
-        salam();
+        {@alertWarn key="captcha-error"}
+            Errors("کد امنیتی وارد شده صحیح نمی باشد");
+        {/alertWarn}
+        {@alertError key="inactive-admin"}
+            Errors("دسترسی شما مسدود می باشد");
         {/alertError}
-        {@alertWarn key="incorrect-input" msg="ایمیل یا رمز عبور صحیح نمی باشد"}
-        salam();
+        {@alertWarn key="incorrect-input"}
+            Errors("ایمیل یا رمز عبور صحیح نمی باشد");
         {/alertWarn}
     </script>
 
