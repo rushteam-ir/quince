@@ -67,7 +67,7 @@ router.post('/', async(req,res)=>{
                     req.session.admin_id = result._id;
                     req.session.admin_info = result;
 
-                    res.redirect(`${config.backend_url}dashboard`);
+                    return res.redirect(`${config.backend_url}dashboard`);
 
                 }
                 else{

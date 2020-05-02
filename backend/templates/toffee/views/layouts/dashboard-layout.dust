@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../assets/css/general/bootstrap.css">
-    <link rel="stylesheet" href="../../assets/css/general/fontAwsome.css">
-    <link rel="stylesheet" href="../../assets/css/general/general-css.css">
-    <link rel="stylesheet" href="../../assets/css/layout/dashboard.css">
+    <base href="{backend_url}">
+    <script>backend_url = '{backend_url}'</script>
+    <link rel="stylesheet" href="css/general/bootstrap.css">
+    <link rel="stylesheet" href="css/general/fontAwsome.css">
+    <link rel="stylesheet" href="css/general/general-css.css">
+    <link rel="stylesheet" href="css/layout/dashboard.css">
     <title>Rush Team CMS</title>
 </head>
 <body class="dashboard_body">
@@ -16,7 +18,7 @@
 
         <div class="dir-rtl text-right">
 
-            <img class="dashboard_logo" src="../../assets/img/logo2.png" alt="">
+            <img class="dashboard_logo" src="img/logo2.png" alt="">
             <i class="fad fa-angle-double-right close_dashboard"></i>
             
             <ul class="dashboard_ul">
@@ -69,10 +71,10 @@
         
     </aside>
 
-    <script src="../../assets/js/general/jquery.js"></script>
-    <script src="../../assets/js/general/bootstrap.js"></script>
-    <script src="../../assets/js/general/popper.js"></script>
-    <script src="../../assets/js/general/sweetAlert.js"></script>
-    <script src="../../assets/js/layout/dashboard.js"></script>
+    <script src="js/general/jquery.js"></script>
+    <script src="js/general/bootstrap.js"></script>
+    <script src="js/general/popper.js"></script>
+    <script src="js/general/sweetAlert.js"></script>
+    <script src="js/layout/dashboard.js"></script>
 </body>
 </html>

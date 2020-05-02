@@ -4,7 +4,14 @@ router.get('/', async(req,res)=>{
 
     try{
 
-        res.render('recovery/recovery-verify');
+        let data = {
+
+            msg : req.session.msg
+
+        }
+
+        res.render('recovery/recovery-verify', data);
+        req.session.msg = '';
 
     }
     catch (error) {
@@ -19,36 +26,79 @@ router.post('/', async(req,res)=>{
 
     try{
 
-        let {newpass_inp, compass_inp} = req.body;
+        let {new_password_inp} = req.body;
 
         let validation_result = new validation([
-            {value : newpass_inp, type : 'password'},
-            {value : compass_inp, type : 'password'}
+            {value : new_password_inp}
         ]).valid();
 
         if(validation_result){
 
-            return res.redirect(`${config.backend_url}recovery/verify/?code=${req.session.saved_code}&msg=${validation_result}`);
+            if(req.session.msg == ''){
+                req.session.msg = validation_result;
+            }
 
         }
 
-        let admin_data = {password : newpass_inp};
+        let result_verify = await user_model.verifyPendingPassword(req.session.saved_email, new_password_inp, {
+            pending_password : randomString(6),
+            password : new_password_inp
+        })
 
-        let result = await user_model.changePassword(req.session.saved_email, admin_data)
+        if(result_verify){
 
-        if(result){
+            let result = await user_model.login(req.session.saved_email, new_password_inp);
 
-            delete req.session.saved_email;
-            delete req.session.saved_code;
+            if(result){
 
-            return res.redirect(`${config.backend_url}login/?msg=change-success`);
+                if(result.access == "main_admin" || result.access == "normal_admin"){
+
+                    if(result.status){
+
+                        req.session.admin_id = result._id;
+                        req.session.admin_info = result;
+
+                        return res.redirect(`${config.backend_url}dashboard`);
+
+                    }
+                    else{
+
+                        if(req.session.msg == ''){
+                            req.session.msg = 'حساب شما مسدود می باشد.';
+                        }
+
+                    }
+
+                }
+                else{
+
+                    if(req.session.msg == ''){
+                        req.session.msg = 'ایمیل و یا رمز عبور اشتباه می باشد.';
+                    }
+
+                }
+
+            }
+            else{
+
+                if(req.session.msg == ''){
+                    req.session.msg = 'ایمیل و یا رمز عبور اشتباه می باشد.';
+                }
+
+            }
 
         }
         else{
 
-            return res.redirect(`${config.backend_url}recovery/verify/?code=${req.session.saved_code}&msg=change-fail`);
+            if(req.session.msg == ''){
+                req.session.msg = "رمز عبور وارد شده صحیح نمی باشد.";
+            }
+
+            return res.redirect(`${config.backend_url}recovery/verify`);
 
         }
+
+
 
     }
     catch (error) {
