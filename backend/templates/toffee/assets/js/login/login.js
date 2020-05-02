@@ -161,56 +161,53 @@ back_to_recovery.addEventListener('click', function () {
 
 function loginError() {
 
-    $('.server_error').remove();
 
-    let email_inp = document.forms['login_form']['email_inp'].value;
-    let password_inp = document.forms['login_form']['password_inp'].value;
-    let captcha_inp = document.forms['login_form']['captcha_inp'].value;
+//     let email_inp = document.forms['login_form']['email_inp'].value;
+//     let password_inp = document.forms['login_form']['password_inp'].value;
+//     let captcha_inp = document.forms['login_form']['captcha_inp'].value;
 
-    let error_box_1 = document.getElementById('error_box_1');
-    let error_text = document.getElementById('error_text');
-
+//     let error_box_1 = document.getElementById('error_box_1');
+//     let error_text = document.getElementById('error_text');
 
 
-    if (email_inp == '') {
 
-        errorfunc();
-        error_text.innerText = 'لطفا ایمیل خود را وارد کنید.';
-        return false;
+//     if (email_inp == '') {
 
-    } else if (!email_inp.includes('@') || !email_inp.includes('.com') || email_inp.length < 9) {
+//         errorfunc();
+//         error_text.innerText = 'لطفا ایمیل خود را وارد کنید.';
+//         return false;
 
-        errorfunc();
-        error_text.innerText = 'ایمیل وارد شده صحیح نمی باشد.';
-        return false;
+//     } else if (!email_inp.includes('@') || !email_inp.includes('.com') || email_inp.length < 9) {
 
-    } else if (password_inp == '') {
+//         errorfunc();
+//         error_text.innerText = 'ایمیل وارد شده صحیح نمی باشد.';
+//         return false;
 
-        errorfunc();
-        error_text.innerText = 'لطفا رمز عبور خود را وارد کنید.';
-        return false;
+//     } else if (password_inp == '') {
 
-    } else if (password_inp.length < 8) {
+//         errorfunc();
+//         error_text.innerText = 'لطفا رمز عبور خود را وارد کنید.';
+//         return false;
 
-        errorfunc();
-        error_text.innerText = 'رمز عبور کم تر از حد مجاز است.';
-        return false;
+//     } else if (password_inp.length < 8) {
 
-    } else if (captcha_inp == '') {
+//         errorfunc();
+//         error_text.innerText = 'رمز عبور کم تر از حد مجاز است.';
+//         return false;
 
-        errorfunc();
-        error_text.innerText = 'لطفا کد امنیتی را وارد کنید';
-        return false;
+//     } else if (captcha_inp == '') {
 
-    } else if (captcha_inp.length < 5) {
+//         errorfunc();
+//         error_text.innerText = 'لطفا کد امنیتی را وارد کنید';
+//         return false;
 
-        errorfunc();
-        error_text.innerText = 'کد امنیتی کم تر از حد مجاز است.';
-        return false;
+//     } else if (captcha_inp.length < 5) {
 
-    }
+//         errorfunc();
+//         error_text.innerText = 'کد امنیتی کم تر از حد مجاز است.';
+//         return false;
 
-    return false;
+//     }
 
 }
 
@@ -238,7 +235,6 @@ function errorBowRemove1() {
 
     document.getElementById('error_box_1').style.display = 'none';
     mainBox.style.height = '450px';
-    boxHeight();
 
 }
 
@@ -246,7 +242,6 @@ function errorBowRemove2() {
 
     document.getElementById('error_box_2').style.display = 'none';
     mainBox.style.height = '410px';
-    boxHeight();
 
 }
 
@@ -254,13 +249,6 @@ function errorBowRemove3() {
 
     document.getElementById('error_box_3').style.display = 'none';
     mainBox.style.height = '350px';
-    boxHeight();
-
-}
-
-function boxHeight() {
-
-    mainBox.style.transition = 'all ease-out 0.2s';
 
 }
 
@@ -275,7 +263,6 @@ function errorfunc() {
 function Errors(){
 
     let error_box_5 = document.getElementById('error_box_5');
-    let error_text_5 = document.getElementById('error_text_5');
 
     error_box_5.style.display = 'block';
     mainBox.style.height = '500px';
