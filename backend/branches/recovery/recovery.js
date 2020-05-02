@@ -19,6 +19,7 @@ router.post('/', async(req,res)=>{
 
     try{
 
+        /*
         let {email_inp} = req.body;
         let valid_email = validation.isEmail(email_inp);
 
@@ -76,6 +77,9 @@ router.post('/', async(req,res)=>{
             return res.redirect(`${config.backend_url}recovery/?msg=invalid-email`);
 
         }
+        */
+
+        res.redirect(`${config.backend_url}recovery/verify`);
 
     }
     catch (error) {

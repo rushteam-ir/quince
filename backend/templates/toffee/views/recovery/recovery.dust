@@ -26,13 +26,11 @@
                         <img class="main_logo" src="img/logo2.png" alt="">
                     </div>
 
-                    <form class="text-right" autocomplete="off" name="recovery_form" onsubmit="return recoveryError()">
+                    <form class="text-right" method="post" action="" autocomplete="off" name="recovery_form" onsubmit="return recoveryError()">
                         
                         <a href="{backend_url}login back_btn_log">
                             <i class="fas fa-arrow-left back_btn_log"></i>
                         </a>
-
-
 
                         <div class="error_warning_alert text-right display_none" id="error_field_warning_front">
 
@@ -54,7 +52,7 @@
                             خواهد شد . لطفا توجه فرمایید که ممکن است ایمیل به بخش spam ارسال شده باشد.</p>
 
                         <button type="submit" class="btn btn_of_login">
-                            <a href="{backend_url}recovery/verify" class="go_verify">دریافت رمز عبور جدید</a>
+                            دریافت رمز عبور جدید
                         </button>
 
                     </form> 

@@ -81,12 +81,6 @@ function recoveryError(){
         return false;
 
     }
-    
-    else{
-
-        window.location.href = "http://www.w3schools.com";
-
-    }
 
 }
 
@@ -94,4 +88,8 @@ function removeWarningErrorFront(){
 
     document.getElementById('error_field_warning_front').style.display = "none";
     
+}
+
+function redirect(url) {
+    location.href = url
 }
