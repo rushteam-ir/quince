@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="{backend_url}">
+    <link rel="stylesheet" href="css/general/bootstrap.css">
+    <link rel="stylesheet" href="css/general/fontAwsome.css">
+    <link rel="stylesheet" href="css/general/general-css.css">
+    <link rel="stylesheet" href="css/login/login.css">
+
+    <title>Rush Team CMS</title>
+</head>
+
+<body>
+
+    <div class="container-fluid ">
+        <div class="row align-items-center log_row_mid">
+            <div class="col-12">
+
+                <div class="main_filed_of_login">
+
+                    <div class="field_of_logo">
+                        <img class="main_logo" src="img/logo2.png" alt="">
+                    </div>
+
+                    <form class="text-right" autocomplete="off" onsubmit="return verifyError()"
+                        name="verify_form">
+
+                        <i class="fas fa-arrow-left back_btn_recovery back_to_recovery"></i>
+
+                        <div class="error_warning_alert text-right display_none" id="error_box_3">
+
+                            <i class="fal fa-times d-inline-block remove_error_icon" onclick="errorBowRemove3()"></i>
+                            <i class="fal fa-exclamation-circle alert_icon_error"></i>
+
+                            <div class="d-inline-block mr-1" id="error_text_3"></div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" placeholder="رمز عبور جدید" class="form-control text-right login_inp"
+                                id="recovery_inp" name="new_password_inp">
+                        </div>
+                        <p class="text-justify dir-rtl header_of_recovery mb-2">رمز عبور جدید ارسال شده به ایمیل خود را
+                            وارد نمایید و هر چه سریع تر نسبت به تغییر آن اقدام فرمایید.</p>
+
+                        <button type="submit" class="btn btn_of_login mt-2">
+                            بازیابی رمز عبور
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/general/jquery.js"></script>
+    <script src="js/login/login.js"></script>
+</body>
+
+</html>

@@ -76,6 +76,10 @@ body {
     line-height: 23px;
 }
 
+.go_verify{
+    color: white;
+}
+
 .lable_of_recovery {
     font-size: 0.9rem;
 }
@@ -84,11 +88,8 @@ body {
     top: -90px;
     left: -299px;
     cursor: pointer;
+    color: black;
 }
-
-/* recovery verify */
-
-
 /* errors */
 
 .error_warning_alert{
