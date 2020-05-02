@@ -20,53 +20,10 @@
 
             <img class="dashboard_logo" src="img/logo2.png" alt="">
             <i class="fad fa-angle-double-right close_dashboard"></i>
+            <i class="fad fa-angle-double-left open_dashboard display_none"></i>
             
-            <ul class="dashboard_ul">
+             
 
-                <li class="position-relative">
-                    <i class="fad fa-home-lg-alt dashboard_icon d-inline-block"></i>
-                    <a href="" class="dashboard_list d-inline-block">داشبور</a>
-                    <i class="fas fa-angle-left angle_of_dashboard"></i>
-                </li>
-
-                <li class="position-relative">
-                    <i class="fad fa-layer-group dashboard_icon d-inline-block"></i>
-                    <a href="" class="dashboard_list d-inline-block">دسته بندی ها</a>
-                    <i class="fas fa-angle-left angle_of_dashboard"></i>
-                </li>
-                
-                <li class="position-relative">
-                    <i class="fad fa-store dashboard_icon d-inline-block"></i>
-                    <a href="" class="dashboard_list d-inline-block">فروشگاه</a>
-                    <i class="fas fa-angle-left angle_of_dashboard"></i>
-                </li>
-
-                <li class="position-relative">
-                    <i class="fad fa-newspaper dashboard_icon d-inline-block"></i>
-                    <a href="" class="dashboard_list d-inline-block">مطالب</a>
-                    <i class="fas fa-angle-left angle_of_dashboard"></i>
-                </li>
-
-                <li class="position-relative">
-                    <i class="far fa-question-circle dashboard_icon d-inline-block"></i>
-                    <a href="" class="dashboard_list d-inline-block">راهنما</a>
-                    <i class="fas fa-angle-left angle_of_dashboard"></i>
-                </li>
-
-                <li class="position-relative">
-                    <i class="fad fa-users dashboard_icon d-inline-block"></i>
-                    <a href="" class="dashboard_list d-inline-block">کاربران</a>
-                    <i class="fas fa-angle-left angle_of_dashboard"></i>
-                </li>
-
-                <li class="position-relative">
-                    <i class="fad fa-sign-out-alt dashboard_icon d-inline-block"></i>
-                    <a href="" class="dashboard_list d-inline-block">خروج</a>
-                    <i class="fas fa-angle-left angle_of_dashboard"></i>
-                </li>
-
-            </ul>
-            
         </div>
         
     </aside>

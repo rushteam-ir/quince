@@ -18,30 +18,15 @@
     padding-top: 10px;
 }
 
-.close_dashboard {
+.close_dashboard ,.open_dashboard {
     position: absolute;
     left: 15px;
     top: 25px;
     color: #4C56D0;
     font-size: 1.6rem;
+    cursor: pointer;
 }
 
-.dashboard_ul {
-    list-style-type: none;
-}
-
-.dashboard_list {
-    color: black;
-    margin-top: 15px;
-}
-
-.dashboard_icon {
-    color: #4C56D0;
-}
-
-.angle_of_dashboard{
-    color: #4C56D0;
-    top: 22px;
-    left: 20px;
-    position: absolute;
+.display_none {
+    display: none;
 }
