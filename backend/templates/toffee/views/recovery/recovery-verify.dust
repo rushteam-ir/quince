@@ -20,20 +20,21 @@
         <div class="row align-items-center log_row_mid">
             <div class="col-12">
 
-                <div class="main_filed_of_login">
+                <div class="main_filed_of_login verify_box">
 
                     <div class="field_of_logo">
                         <img class="main_logo" src="img/logo2.png" alt="">
                     </div>
 
-                    <form class="text-right" autocomplete="off" onsubmit="return verifyError()"
-                        name="verify_form">
+                    <form class="text-right mt-2" autocomplete="off" onsubmit="return verifyError()" name="verify_form">
 
-                        <i class="fas fa-arrow-left back_btn_recovery back_to_recovery"></i>
+                        <a href="{backend_url}recovery" class="back_to_recovery">
+                            <i class="fas fa-arrow-left back_btn_recovery back_to_recovery"></i>
+                        </a>
 
-                        <div class="error_warning_alert text-right display_none" id="error_box_3">
+                        <div class="error_warning_alert text-right display_none" id="error_field_warning_front">
 
-                            <i class="fal fa-times d-inline-block remove_error_icon" onclick="errorBowRemove3()"></i>
+                            <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeWarningErrorFront()"></i>
                             <i class="fal fa-exclamation-circle alert_icon_error"></i>
 
                             <div class="d-inline-block mr-1" id="error_text_3"></div>

@@ -80,7 +80,7 @@
 
                         </div>
 
-                        <button type="submit" class="btn btn_of_login">ورود به حساب کاربری</button>
+                        <button type="submit" class="btn btn_of_login mt-2">ورود به حساب کاربری</button>
 
                         <a href="{backend_url}recovery" class="mt-4 d-inline-block recovery_link" id="recovery_page">آیا رمز عبور خود را
                             فراموش کرده اید؟</a>

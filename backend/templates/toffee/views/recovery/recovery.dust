@@ -20,7 +20,7 @@
         <div class="row align-items-center log_row_mid">
             <div class="col-12">
 
-                <div class="main_filed_of_login">
+                <div class="main_filed_of_login recovery_box">
 
                     <div class="field_of_logo">
                         <img class="main_logo" src="img/logo2.png" alt="">

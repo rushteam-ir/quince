@@ -21,6 +21,14 @@ body {
     display: block;
 }
 
+.verify_box{
+    height: 400px;
+}
+
+.recovery_box{
+    height: 450px;
+}
+
 .log_row_mid{
     height: 100vh;
 }
