@@ -26,20 +26,31 @@
                         <img class="main_logo" src="img/logo2.png" alt="">
                     </div>
 
-                    <form class="text-right mt-2" autocomplete="off" onsubmit="return verifyError()" name="verify_form">
+                    <form class="text-right mt-2" method="post" action="" autocomplete="off" onsubmit="return verifyError()" name="verify_form">
 
                         <a href="{backend_url}recovery" class="back_to_recovery">
                             <i class="fas fa-arrow-left back_btn_recovery back_to_recovery"></i>
                         </a>
 
-                        <div class="error_warning_alert text-right display_none" id="error_field_warning_front">
+                        {@eq key="{msg}" value=""}
+                            <div class="error_warning_alert text-right display_none" id="error_field_warning_front">
 
-                            <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeWarningErrorFront()"></i>
-                            <i class="fal fa-exclamation-circle alert_icon_error"></i>
+                                <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeWarningErrorFront()"></i>
+                                <i class="fal fa-exclamation-circle alert_icon_error"></i>
 
-                            <div class="d-inline-block mr-1" id="error_text_3"></div>
+                                <div class="d-inline-block mr-1" id="error_text"></div>
 
-                        </div>
+                            </div>
+                        {:else}
+                            <div class="error_warning_alert text-right" id="error_field_warning_front">
+
+                                <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeWarningErrorFront()"></i>
+                                <i class="fal fa-exclamation-circle alert_icon_error"></i>
+
+                                <div class="d-inline-block mr-1" id="error_text">{msg}</div>
+
+                            </div>
+                        {/eq}
 
                         <div class="form-group">
                             <input type="text" placeholder="رمز عبور جدید" class="form-control text-right login_inp"

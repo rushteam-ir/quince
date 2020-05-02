@@ -11,6 +11,7 @@ let user_schema = new mongoose.Schema({
    author_type : String,
    access : String,
    last_activity : String,
+   pending_password : String,
    row : Number
 
 });
@@ -44,9 +45,14 @@ user_schema.statics = {
         return await user_model.findOne({email : user_email});
     },
 
-    changePassword : async function(user_email, user_data){
+    setPendingPassword : async function(user_email, user_data){
 
         return await user_model.findOneAndUpdate({email : user_email}, {$set : user_data}, {new : true});
+    },
+
+    verifyPendingPassword : async function(user_email, user_pending_password, user_data){
+
+        return await user_model.findOneAndUpdate({email : user_email, pending_password : user_pending_password}, {$set : user_data}, {new : true});
     },
 
     get : async function () {

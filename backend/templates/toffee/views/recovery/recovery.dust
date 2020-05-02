@@ -42,7 +42,7 @@
                         </div>
 
                         <div class="form-group">
-                            <input type="text" placeholder="ایمیل" class="form-control text-right login_inp" name="recovery_email_inp">
+                            <input type="text" placeholder="ایمیل" class="form-control text-right login_inp" name="email_inp">
                         </div>
 
                         <p class="text-justify dir-rtl header_of_recovery mb-2">ایمیل خود را جهت بازیابی رمز عبور خود

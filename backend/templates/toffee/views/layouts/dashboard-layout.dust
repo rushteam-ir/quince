@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="{backend_url}">
+    <script>backend_url = '{backend_url}'</script>
+    <link rel="stylesheet" href="css/general/bootstrap.css">
+    <link rel="stylesheet" href="css/general/fontAwsome.css">
+    <link rel="stylesheet" href="css/general/general-css.css">
+    <link rel="stylesheet" href="css/layout/dashboard.css">
+    <title>Rush Team CMS</title>
+</head>
+<body class="dashboard_body">
+    
+
+    <aside class="dashboard">
+
+        <div class="dir-rtl text-right">
+
+            <img class="dashboard_logo" src="img/logo2.png" alt="">
+            <i class="fad fa-angle-double-right close_dashboard"></i>
+            <i class="fad fa-angle-double-left open_dashboard display_none"></i>
+            
+             
+
+        </div>
+        
+    </aside>
+
+    <script src="js/general/jquery.js"></script>
+    <script src="js/general/bootstrap.js"></script>
+    <script src="js/general/popper.js"></script>
+    <script src="js/general/sweetAlert.js"></script>
+    <script src="js/layout/dashboard.js"></script>
+</body>
+</html>
