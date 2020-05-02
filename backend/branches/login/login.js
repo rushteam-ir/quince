@@ -45,11 +45,12 @@ router.post('/', async(req,res)=>{
             }
 
         }
-        else if(captcha_inp.toLowerCase()!= req.session.captcha){
+        else if(captcha_inp.toLowerCase() != req.session.captcha){
 
             if(req.session.msg == ''){
                 req.session.msg = 'کد امنیتی صحیح نمی باشد.';
             }
+            return res.redirect(`${config.backend_url}login`);
 
         }
 
@@ -75,6 +76,7 @@ router.post('/', async(req,res)=>{
                     if(req.session.msg == ''){
                         req.session.msg = 'حساب شما مسدود می باشد.';
                     }
+                    return res.redirect(`${config.backend_url}login`);
 
                 }
 
@@ -84,6 +86,7 @@ router.post('/', async(req,res)=>{
                 if(req.session.msg == ''){
                     req.session.msg = 'ایمیل و یا رمز عبور اشتباه می باشد.';
                 }
+                return res.redirect(`${config.backend_url}login`);
 
             }
 
@@ -93,10 +96,9 @@ router.post('/', async(req,res)=>{
             if(req.session.msg == ''){
                 req.session.msg = 'ایمیل و یا رمز عبور اشتباه می باشد.';
             }
+            return res.redirect(`${config.backend_url}login`);
 
         }
-
-        res.redirect(`${config.backend_url}login`);
 
     }
     catch (error) {
