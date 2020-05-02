@@ -30,8 +30,6 @@ body {
 }
 
 .log_form {
-    opacity: 1;
-    transition: all ease-out 0.2s;
     margin-top: 35px;
 }
 
@@ -81,13 +79,6 @@ body {
 .lable_of_recovery {
     font-size: 0.9rem;
 }
-
-.recovery_form {
-    display: none;
-    opacity: 0;
-    transition: all ease-out 0.2s;
-}
-
 .back_btn_log ,.back_btn_recovery{
     position: relative;
     top: -90px;
@@ -97,11 +88,6 @@ body {
 
 /* recovery verify */
 
-.recovery_verify_form {
-    display: none;
-    opacity: 0;
-    transition: all ease-out 0.2s;
-}
 
 /* errors */
 

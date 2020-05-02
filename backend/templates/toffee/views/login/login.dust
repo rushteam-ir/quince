@@ -113,7 +113,7 @@
                         <p class="text-justify dir-rtl header_of_recovery">یک ایمیل حاوی رمز عبور جدید برای شما ارسال
                             خواهد شد . لطفا توجه فرمایید که ممکن است ایمیل به بخش spam ارسال شده باشد.</p>
 
-                        <button type="button" class="btn btn_of_login go_verify">دریافت رمز عبور جدید</button>
+                        <button type="button" class="btn btn_of_login go_verify" id="test2">دریافت رمز عبور جدید</button>
 
                     </form>
 
