@@ -1,5 +1,4 @@
 const router = express.Router();
-let msg = '';
 
 router.get('/', async(req,res)=>{
 
@@ -8,12 +7,12 @@ router.get('/', async(req,res)=>{
         let data = {
 
             login_form: req.session.login_form,
-            msg : msg
+            msg : req.session.msg
 
         }
 
         res.render('login/login', data);
-        msg = ''
+        req.session.msg = '';
 
     }
     catch (error) {
@@ -41,15 +40,15 @@ router.post('/', async(req,res)=>{
 
         if(validation_result){
 
-            if(msg == ''){
-                msg = validation_result;
+            if(req.session.msg == ''){
+                req.session.msg = validation_result;
             }
 
         }
         else if(captcha_inp.toLowerCase()!= req.session.captcha){
 
-            if(msg == ''){
-                msg = 'کد امنیتی صحیح نمی باشد.';
+            if(req.session.msg == ''){
+                req.session.msg = 'کد امنیتی صحیح نمی باشد.';
             }
 
         }
@@ -73,8 +72,8 @@ router.post('/', async(req,res)=>{
                 }
                 else{
 
-                    if(msg == ''){
-                        msg = 'حساب شما مسدود می باشد.';
+                    if(req.session.msg == ''){
+                        req.session.msg = 'حساب شما مسدود می باشد.';
                     }
 
                 }
@@ -82,8 +81,8 @@ router.post('/', async(req,res)=>{
             }
             else{
 
-                if(msg == ''){
-                    msg = 'ایمیل و یا رمز عبور اشتباه می باشد.';
+                if(req.session.msg == ''){
+                    req.session.msg = 'ایمیل و یا رمز عبور اشتباه می باشد.';
                 }
 
             }
@@ -91,8 +90,8 @@ router.post('/', async(req,res)=>{
         }
         else{
 
-            if(msg == ''){
-                msg = 'ایمیل و یا رمز عبور اشتباه می باشد.';
+            if(req.session.msg == ''){
+                req.session.msg = 'ایمیل و یا رمز عبور اشتباه می باشد.';
             }
 
         }
