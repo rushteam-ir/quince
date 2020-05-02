@@ -28,7 +28,6 @@
 
                     <form class="text-right mt-4" action="" method="post" autocomplete="off"
                         onsubmit="return loginError()" name="login_form">
-                        {msg}
                         {@eq key="{msg}" value=""}
                             <div class="error_warning_alert text-right display_none" id="error_field_warning_front">
 
