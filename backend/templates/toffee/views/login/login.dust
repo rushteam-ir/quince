@@ -38,7 +38,7 @@
 
                             </div>
                         {:else}
-                            <div class="error_warning_alert text-right " id="error_box_5">
+                            <div class="error_warning_alert text-right " id="error_box_1">
 
                                 <i class="fal fa-times d-inline-block remove_error_icon" onclick="errorBowRemove1()"></i>
                                 <i class="fal fa-exclamation-circle alert_icon_error"></i>

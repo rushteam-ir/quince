@@ -60,7 +60,7 @@ recovery_page.addEventListener('click', function () {
 
 back_btn_log.addEventListener('click', function () {
 
-    document.getElementById('error_box_1').style.display = 'none';
+    // document.getElementById('error_box_1').style.display = 'none';
     sessionStorage.recovery = 1;
     recovery_form.style.opacity = '0';
     mainBox.style.transition = 'all ease-out 0.2s';
