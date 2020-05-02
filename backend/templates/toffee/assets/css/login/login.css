@@ -21,6 +21,14 @@ body {
     display: block;
 }
 
+.verify_box{
+    height: 400px;
+}
+
+.recovery_box{
+    height: 450px;
+}
+
 .log_row_mid{
     height: 100vh;
 }
@@ -30,8 +38,6 @@ body {
 }
 
 .log_form {
-    opacity: 1;
-    transition: all ease-out 0.2s;
     margin-top: 35px;
 }
 
@@ -78,31 +84,20 @@ body {
     line-height: 23px;
 }
 
+.go_verify{
+    color: white;
+}
+
 .lable_of_recovery {
     font-size: 0.9rem;
 }
-
-.recovery_form {
-    display: none;
-    opacity: 0;
-    transition: all ease-out 0.2s;
-}
-
 .back_btn_log ,.back_btn_recovery{
     position: relative;
     top: -90px;
     left: -299px;
     cursor: pointer;
+    color: black;
 }
-
-/* recovery verify */
-
-.recovery_verify_form {
-    display: none;
-    opacity: 0;
-    transition: all ease-out 0.2s;
-}
-
 /* errors */
 
 .error_warning_alert{
