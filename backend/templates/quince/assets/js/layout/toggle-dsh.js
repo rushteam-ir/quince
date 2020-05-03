@@ -8,18 +8,18 @@ var dashboard_text = document.querySelectorAll('.dashboard_text');
 close_dashboard.addEventListener('click', closeDsh);
 open_dashboard.addEventListener('click', openDsh);
 
-if(localStorage.close == 'open'){
+// if(localStorage.close == 'open'){
 
-    openDsh();
+//     openDsh();
 
-}
+// }
 
-if(localStorage.close == 'close'){
+// if(localStorage.close == 'close'){
 
-    closeDsh();
-    dashboard.style.transition = 'none';
+//     closeDsh();
+//     dashboard.style.transition = 'none';
 
-}
+// }
 
 function closeDsh() {
 
