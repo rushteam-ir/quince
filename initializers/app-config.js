@@ -18,6 +18,6 @@ module.exports = config = {
     session_secret_key : 'rushteamquince',
     session_name : 'quince',
     debug_mode : true,
-    captcha_color : `#33228c`
+    captcha_color : `#ff6398`
 
 };
