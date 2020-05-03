@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="{backend_url}">
-    <script>backend_url = '{backend_url}'</script>
+    <script>
+        backend_url = '{backend_url}'
+    </script>
     <link rel="stylesheet" href="css/general/bootstrap.css">
     <link rel="stylesheet" href="css/general/fontAwsome.css">
     <link rel="stylesheet" href="css/general/general-css.css">
     <link rel="stylesheet" href="css/layout/dashboard.css">
     <title>Rush Team CMS</title>
 </head>
+
 <body class="dashboard_body">
-    
+
 
     <aside class="dashboard">
 
@@ -21,17 +25,81 @@
             <img class="dashboard_logo" src="img/logo2.png" alt="">
             <i class="fad fa-angle-double-right close_dashboard"></i>
             <i class="fad fa-angle-double-left open_dashboard display_none"></i>
-            
-             
+
+            <ul class="pr-0 mt-4 dashboard_ul">
+
+                <a href="" class="d-block position-relative dashboard_links">
+
+                    <i class="fas fa-home-lg d-inline-block dashboard_icons mr-3"></i>
+                    <li class="mr-2 dashboard_text">داشبورد</li>
+                    <i class="fas fa-angle-left d-inline-block dashboard_angle"></i>
+
+                </a>
+
+                <a href="" class="d-block position-relative dashboard_links">
+
+                    <i class="fas fa-home-lg d-inline-block dashboard_icons mr-3"></i>
+                    <li class="mr-2 dashboard_text">دسته بندی</li>
+                    <i class="fas fa-angle-left d-inline-block dashboard_angle"></i>
+
+                </a>
+
+                <div class="d-block position-relative dashboard_links dashboard_collaps">
+
+                    <i class="fas fa-home-lg d-inline-block dashboard_icons mr-3"></i>
+                    <li class="mr-2 dashboard_text">فروشگاه</li>
+                    <i class="fas fa-angle-left d-inline-block dashboard_angle"></i>
+
+                </div>
+                
+                <ul id="sub_collaps">
+                    <a href="" class="sub_dashboard_link">
+                        <li>لیست فروشگاه</li>
+                    </a>
+                    <a href="" class="sub_dashboard_link">
+                        <li>اضافه کردن محصول</li>
+                    </a>
+                    <a href="" class="sub_dashboard_link">
+                        <li>کد تخفیف</li>
+                    </a>
+                </ul>                
+
+                <a href="" class="d-block position-relative dashboard_links">
+
+                    <i class="fas fa-home-lg d-inline-block dashboard_icons mr-3"></i>
+                    <li class="mr-2 dashboard_text">مقاله</li>
+                    <i class="fas fa-angle-left d-inline-block dashboard_angle"></i>
+
+                </a>
+
+                <a href="" class="d-block position-relative dashboard_links">
+
+                    <i class="fas fa-home-lg d-inline-block dashboard_icons mr-3"></i>
+                    <li class="mr-2 dashboard_text">کاربران</li>
+                    <i class="fas fa-angle-left d-inline-block dashboard_angle"></i>
+
+                </a>
+
+                <a href="" class="d-block position-relative dashboard_links">
+
+                    <i class="fas fa-home-lg d-inline-block dashboard_icons mr-3"></i>
+                    <li class="mr-2 dashboard_text">خروج</li>
+                    <i class="fas fa-angle-left d-inline-block dashboard_angle"></i>
+
+                </a>
+
+            </ul>
 
         </div>
-        
+
     </aside>
 
     <script src="js/general/jquery.js"></script>
     <script src="js/general/bootstrap.js"></script>
     <script src="js/general/popper.js"></script>
     <script src="js/general/sweetAlert.js"></script>
-    <script src="js/layout/dashboard.js"></script>
+    <script src="js/layout/toggle-dsh.js"></script>
+    <script src="js/layout/collaps-menu.js"></script>
 </body>
+
 </html>
