@@ -10,6 +10,8 @@
     right: 0px;
     top: 0px;
     box-shadow: 0px 0px 10px 0px #e0e0e0;
+    overflow: auto;
+    transition: all ease-out 0.5s;
 }
 
 .dashboard_logo {
@@ -29,4 +31,55 @@
 
 .display_none {
     display: none;
+}
+
+.dashboard_angle{
+    position: absolute;
+    left: 16px;
+    top: 20px;
+}
+
+.dashboard_links{
+    color: #000000;
+    font-size: 1.1rem;
+    padding: 12px 0px;
+    width: 232px;
+}
+
+.dashboard_links:hover{
+    color: #444444;
+    background-color: #f7f7f7;
+}
+
+.dashboard_ul{
+    position: absolute;
+    width: 100%;
+    top: 55px;
+}
+
+.dashboard_text{
+    display: inline-block;
+}
+
+#sub_collaps{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    padding: 0px;
+}
+
+.dashboard_collaps{
+    cursor: pointer;
+}
+
+.sub_dashboard_link{
+    color: black;
+    padding: 8px 0px;
+    display: block;
+    padding-right: 50px;
+}
+
+.sub_dashboard_link:hover{
+    color: black;
+    background-color: #F7F7F7;
 }

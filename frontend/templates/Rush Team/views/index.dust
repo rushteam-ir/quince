@@ -13,7 +13,11 @@
 </head>
 <body>
 
-ضصثصض
+   <footer class="footer_style">
+       <div class="container-fluid">
+            <div class=></div>
+       </div>
+   </footer>
     <script src="js/general/jquery.js"></script>
     <script src="js/general/popper.js"></script>
     <script src="js/general/bootstrap.js"></script>
