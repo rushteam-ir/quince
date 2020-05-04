@@ -1,31 +1,7 @@
-let dashboard_angle = document.querySelectorAll('.dashboard_angle');
-let dashboard_text = document.querySelectorAll('.dashboard_text');
-let close_dashboard = document.querySelector('.close_dashboard');
-let open_dashboard = document.querySelector('.open_dashboard');
-let dashboard_logo = document.querySelector('.dashboard_logo');
-let dashboard_main = document.querySelector('.dashboard_main');
-let sub_collaps = document.querySelectorAll('.sub_collaps');
-let hover_menu = document.querySelectorAll('.hover_menu');
-let dashboard = document.querySelector('.dashboard');
-
-
 close_dashboard.addEventListener('click', closeDsh);
 open_dashboard.addEventListener('click', openDsh);
 
-if (localStorage.close == 'open') {
-
-    openDsh();
-
-}
-
-if (localStorage.close == 'close') {
-
-    closeDsh();
-    dashboard.style.transition = 'none';
-    dashboard_main.style.transition = 'none';
-
-}
-
+// close dashboard
 function closeDsh() {
 
     dashboard_main.style.transition = 'all ease-out 0.5s';
@@ -69,8 +45,11 @@ function closeDsh() {
 
     }
 
+    closeCollapse();
+
 }
 
+// open dashboard
 function openDsh() {
 
     dashboard_main.style.transition = 'all ease-out 0.5s';
@@ -97,7 +76,7 @@ function openDsh() {
 
         }
 
-    }, 140);
+    }, 150);
 
 
     while (y < dashboard_angle.length) {
@@ -120,5 +99,37 @@ function openDsh() {
         e++
 
     }
+
+    closeCollapse();
+
+}
+
+// close collapse when toogle menue
+function closeCollapse(){
+
+
+
+    for(let k = 0 ; k < dashboard_collaps.length ; k++){
+
+        dashboard_collaps[k].classList.remove('active_collapse');
+        dashboard_collaps[k].nextElementSibling.style.maxHeight = null;
+        dashboard_collaps[k].childNodes[2].style.transform = "rotate(0deg)"
+
+    }
+    
+}
+
+// keep menu open or close after refresh
+if (localStorage.close == 'open') {
+
+    openDsh();
+
+}
+
+if (localStorage.close == 'close') {
+
+    closeDsh();
+    dashboard.style.transition = 'none';
+    dashboard_main.style.transition = 'none';
 
 }

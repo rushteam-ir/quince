@@ -1,7 +1,5 @@
-let dashboard_collaps = document.getElementsByClassName('dashboard_collaps');
-let angle_rotate = document.getElementsByClassName('angle_rotate');
+//collapse menu 
 let i;
-
 for (i = 0; i < dashboard_collaps.length; i++) {
 
     dashboard_collaps[i].addEventListener('click', function () {
@@ -13,13 +11,13 @@ for (i = 0; i < dashboard_collaps.length; i++) {
         if (panel.style.maxHeight) {
 
             panel.style.maxHeight = null;
-            panelChildNode[2].style.transform ='rotate(0deg)';
+            panelChildNode[2].style.transform = 'rotate(0deg)';
 
         } else {
 
             panel.style.maxHeight = panel.scrollHeight + 'px';
-            panelChildNode[2].style.transform ='rotate(-90deg)';
-            
+            panelChildNode[2].style.transform = 'rotate(-90deg)';
+
         }
 
     });
