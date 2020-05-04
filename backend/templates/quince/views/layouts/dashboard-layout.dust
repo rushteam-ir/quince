@@ -30,25 +30,33 @@
 
                 <a href="" class="d-block position-relative dashboard_links">
 
-                    <i class="fas fa-home-lg d-inline-block dashboard_icons mr-3"></i>
+                    <i class="fas fa-home-lg d-inline-block dashboard_icons"></i>
                     <li class="mr-2 dashboard_text">داشبورد</li>
-                    <i class="fas fa-angle-left d-inline-block dashboard_angle"></i>
+                    <i class="fas fa-angle-left dashboard_angle"></i>
 
                 </a>
 
                 <a href="" class="d-block position-relative dashboard_links">
 
-                    <i class="fas fa-home-lg d-inline-block dashboard_icons mr-3"></i>
+                    <i class="fas fa-user-circle d-inline-block dashboard_icons"></i>
+                    <li class="mr-2 dashboard_text">پروفایل</li>
+                    <i class="fas fa-angle-left dashboard_angle"></i>
+
+                </a>
+
+                <a href="" class="d-block position-relative dashboard_links">
+
+                    <i class="fad fa-layer-group d-inline-block dashboard_icons"></i>
                     <li class="mr-2 dashboard_text">دسته بندی</li>
-                    <i class="fas fa-angle-left d-inline-block dashboard_angle"></i>
+                    <i class="fas fa-angle-left dashboard_angle"></i>
 
                 </a>
 
                 <div class="d-block position-relative dashboard_links dashboard_collaps">
 
-                    <i class="fas fa-home-lg d-inline-block dashboard_icons mr-3"></i>
+                    <i class="fas fa-shopping-cart d-inline-block dashboard_icons"></i>
                     <li class="mr-2 dashboard_text">فروشگاه</li>
-                    <i class="fas fa-angle-left d-inline-block dashboard_angle"></i>
+                    <i class="fas fa-angle-left dashboard_angle"></i>
 
                 </div>
                 
@@ -62,29 +70,38 @@
                     <a href="" class="sub_dashboard_link">
                         <li>کد تخفیف</li>
                     </a>
-                </ul>                
+                </ul>       
 
-                <a href="" class="d-block position-relative dashboard_links">
+                <div href="" class="d-block position-relative dashboard_links dashboard_collaps">
 
-                    <i class="fas fa-home-lg d-inline-block dashboard_icons mr-3"></i>
+                    <i class="fas fa-newspaper d-inline-block dashboard_icons"></i>
                     <li class="mr-2 dashboard_text">مقاله</li>
-                    <i class="fas fa-angle-left d-inline-block dashboard_angle"></i>
+                    <i class="fas fa-angle-left dashboard_angle"></i>
 
-                </a>
+                </div>
+
+                <ul id="sub_collaps">
+                    <a href="" class="sub_dashboard_link">
+                        <li>افزودن مقاله جدید</li>
+                    </a>
+                    <a href="" class="sub_dashboard_link">
+                        <li>لیست مقالات</li>
+                    </a>
+                </ul>   
 
                 <a href="" class="d-block position-relative dashboard_links">
 
-                    <i class="fas fa-home-lg d-inline-block dashboard_icons mr-3"></i>
+                    <i class="fad fa-users d-inline-block dashboard_icons"></i>
                     <li class="mr-2 dashboard_text">کاربران</li>
-                    <i class="fas fa-angle-left d-inline-block dashboard_angle"></i>
+                    <i class="fas fa-angle-left dashboard_angle"></i>
 
                 </a>
 
                 <a href="" class="d-block position-relative dashboard_links">
 
-                    <i class="fas fa-home-lg d-inline-block dashboard_icons mr-3"></i>
+                    <i class="fas fa-sign-out-alt d-inline-block dashboard_icons"></i>
                     <li class="mr-2 dashboard_text">خروج</li>
-                    <i class="fas fa-angle-left d-inline-block dashboard_angle"></i>
+                    <i class="fas fa-angle-left dashboard_angle"></i>
 
                 </a>
 
@@ -93,6 +110,13 @@
         </div>
 
     </aside>
+
+
+    <div class="dashboard_main">
+
+
+
+    </div>
 
     <script src="js/general/jquery.js"></script>
     <script src="js/general/bootstrap.js"></script>
