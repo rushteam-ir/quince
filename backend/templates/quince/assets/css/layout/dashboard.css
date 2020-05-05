@@ -5,7 +5,6 @@
 }
 
 .dashboard {
-    width: 12%;
     height: 100vh;
     background-color: rgb(255, 255, 255);
     position: fixed;
@@ -181,3 +180,73 @@
     border: 2px solid white;
     cursor: pointer;
   }
+
+
+
+
+@media only screen and (max-width: 1300px) {
+    .dashboard_links {
+        font-size: 0.9rem;
+    }
+    .dashboard_icons {
+        font-size: 1rem;
+    }
+    .dashboard_angle {
+        left: 14px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .dashboard_icons {
+        font-size: 0.9rem;
+    }
+    .dashboard_links {
+        font-size: 0.8rem;
+    }
+    .dashboard_logo {
+        width: 100px;
+        padding-top: 12px;
+    }
+    .close_dashboard, .open_dashboard {
+        top: 19px;
+        font-size: 1.2rem;
+    }
+    .sub_dashboard_link {
+        font-size: 0.7rem;
+    }
+    .dashboard_collaps:hover .hover_menu {
+        width: 170px;
+    }
+}
+
+@media only screen and (max-width: 1010px) {
+    .dashboard_logo {
+        width: 85px;
+        padding-top: 15px;
+    }
+    .sub_dashboard_link {
+        font-size: 0.65rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+      
+}
+@media only screen and (max-width: 600px) {
+      
+}
+@media only screen and (max-width: 600px) {
+      
+}
+@media only screen and (max-width: 600px) {
+      
+}
+@media only screen and (max-width: 600px) {
+      
+}
+@media only screen and (max-width: 600px) {
+      
+}
+@media only screen and (max-width: 600px) {
+      
+}

@@ -1,7 +1,16 @@
 close_dashboard.addEventListener('click', closeDsh);
 open_dashboard.addEventListener('click', openDsh);
 
+dashboard.style.width = "12%";
+
+if(window.innerWidth < 1200){
+
+    dashboard.style.width = "15%";
+
+}
+
 // close dashboard
+
 function closeDsh() {
 
     dashboard_main.style.transition = 'all ease-out 0.5s';
@@ -10,8 +19,16 @@ function closeDsh() {
     open_dashboard.style.display = 'block';
     dashboard_logo.style.display = 'none';
     dashboard_main.style.width = '97.1%';
-    dashboard.style.width = '2.9%';
-    localStorage.close = 'close';
+    dashboard.style.width = '45px';
+    localStorage.toggle = 'close';
+
+    if(window.innerWidth < 1200){
+
+        dashboard_main.style.width = '97.1%';
+        dashboard.style.width = '45px';
+    
+    }
+
     let i = 0;
     let y = 0;
     let z = 0;
@@ -59,7 +76,14 @@ function openDsh() {
     open_dashboard.style.display = 'none';
     dashboard_main.style.width = '88%';
     dashboard.style.width = '12%';
-    localStorage.close = 'open';
+    localStorage.toggle = 'open';
+
+    if(window.innerWidth < 1200){
+
+        dashboard_main.style.width = '85%';
+        dashboard.style.width = '15%';
+    
+    }
 
     let y = 0;
     let z = 0;
@@ -93,16 +117,31 @@ function openDsh() {
 
     }
 
-    while (e < hover_menu.length) {
 
+
+    while (e < hover_menu.length) {
+    
         hover_menu[e].style.display = 'none';
         e++
-
+    
     }
 
     closeCollapse();
 
 }
+
+// display none hover iteam 
+
+
+
+    let e = 0;
+
+    while (e < hover_menu.length) {
+    
+        hover_menu[e].style.display = 'none';
+        e++
+    
+    }
 
 // close collapse when toogle menue
 function closeCollapse(){
@@ -120,16 +159,21 @@ function closeCollapse(){
 }
 
 // keep menu open or close after refresh
-if (localStorage.close == 'open') {
+
+if (localStorage.toggle == 'open') {
 
     openDsh();
 
 }
 
-if (localStorage.close == 'close') {
+if (localStorage.toggle == 'close') {
 
     closeDsh();
     dashboard.style.transition = 'none';
     dashboard_main.style.transition = 'none';
 
 }
+
+
+// responsive dashboard
+
