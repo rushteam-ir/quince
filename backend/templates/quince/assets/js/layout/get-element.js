@@ -14,4 +14,7 @@ let dashboard = document.querySelector('.dashboard');
 let dashboard_collaps = document.getElementsByClassName('dashboard_collaps');
 let angle_rotate = document.getElementsByClassName('angle_rotate');
 
-
+//mobile menu
+let mobile_fade_layout = document.querySelector('.mobile_fade_layout');
+let close_mobile_dsh = document.querySelector('.close_mobile_dsh');
+let mobile_bar = document.querySelector('.mobile_bar');

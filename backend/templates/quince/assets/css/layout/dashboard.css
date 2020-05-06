@@ -5,12 +5,17 @@
 }
 
 .dashboard {
+    width: 12%;
     height: 100vh;
     background-color: rgb(255, 255, 255);
     position: fixed;
     right: 0px;
     top: 0px;
     box-shadow: 0px 0px 10px 0px #e0e0e0;
+}
+
+.header_of_dashboard {
+    width: 100%;
 }
 
 .dashboard_logo {
@@ -122,35 +127,35 @@
     border-right: 2px solid #FFB731;
 }
 
-.active_collapse{
-    background-color:#F7F7F7;
+.active_collapse {
+    background-color: #F7F7F7;
 }
 
 /* navbar */
 
 
-.dashboard_navbar{
+.dashboard_navbar {
     width: 100%;
     height: 50px;
     background-color: white;
     box-shadow: 0px 0px 10px 0px #e0e0e0;
 }
 
-.dashboard_user_img{
+.dashboard_user_img {
     padding-top: 5px;
     border-right: 1px solid #e0e0e0;
     height: 100%;
 }
 
-.admin_img_dashboard{
+.admin_img_dashboard {
     border-radius: 50%;
     height: 40px;
     width: 40px;
 
 }
 
-.bell{
-    display:inline-block;
+.bell {
+    display: inline-block;
     width: 16px;
     height: 16px;
     font-size: 1.1rem;
@@ -162,14 +167,14 @@
     animation: ring 4s .7s ease-in-out infinite;
     transform-origin: 50% 4px;
     cursor: pointer;
-  }
+}
 
-  .envelope_navbar{
-      display: inline-block;
-      font-size: 1.1rem;
-  }
+.envelope_navbar {
+    display: inline-block;
+    font-size: 1.1rem;
+}
 
-  .messages_alert{
+.messages_alert {
     width: 12px;
     height: 12px;
     background-color: red;
@@ -179,7 +184,7 @@
     left: 45px;
     border: 2px solid white;
     cursor: pointer;
-  }
+}
 
 
 
@@ -188,9 +193,11 @@
     .dashboard_links {
         font-size: 0.9rem;
     }
+
     .dashboard_icons {
         font-size: 1rem;
     }
+
     .dashboard_angle {
         left: 14px;
     }
@@ -200,20 +207,26 @@
     .dashboard_icons {
         font-size: 0.9rem;
     }
+
     .dashboard_links {
         font-size: 0.8rem;
     }
+
     .dashboard_logo {
         width: 100px;
         padding-top: 12px;
     }
-    .close_dashboard, .open_dashboard {
+
+    .close_dashboard,
+    .open_dashboard {
         top: 19px;
         font-size: 1.2rem;
     }
+
     .sub_dashboard_link {
         font-size: 0.7rem;
     }
+
     .dashboard_collaps:hover .hover_menu {
         width: 170px;
     }
@@ -224,29 +237,117 @@
         width: 85px;
         padding-top: 15px;
     }
+
     .sub_dashboard_link {
         font-size: 0.65rem;
     }
 }
 
-@media only screen and (max-width: 600px) {
-      
+@media only screen and (max-width: 992px) {
+    .dashboard_icons {
+        display: none !important;
+    }
+
+    .dashboard_links {
+        font-size: 0.9rem;
+        border-top: 1px solid #e7e7e7;
+        height: 48px;
+    }
+
+    .dashboard_ul:last-child {
+        border-bottom: 1px solid #e7e7e7;
+        ;
+    }
+    .dashboard_ul{
+        font-weight: bold;
+    }
+
+    .hover_menu {
+        display: none;
+    }
+
+    .dashboard_angle {
+        position: absolute;
+        left: 10px;
+        top: 17px;
+        font-size: 0.7rem;
+        transition: all linear 0.1s;
+    }
+
+    .dashboard {
+        width: 0%;
+        display: none;
+        z-index: 1000;
+        transition: all ease-out 0.5s;
+        box-shadow: none;
+        overflow: auto;
+    }
+
+    .close_dashboard,
+    .open_dashboard {
+        display: none;
+    }
+
+    .close_mobile_dsh {
+        display: block !important;
+        position: absolute;
+        left: 11px;
+        top: 18px;
+        cursor: pointer;
+    }
+
+    .dashboard_main {
+        width: 100%;
+    }
+
+    .dashboard_navbar {
+        height: 55px;
+    }
+
+    .sub_dashboard_link {
+        font-size: 0.8rem;
+        border-top: 1px solid #e5e5e5;
+        padding: 12px 30px;
+    }
+
+    .sub_collaps {
+        font-weight: bold;
+    }
+
+    .mobile_bar {
+        position: fixed;
+        right: 20px;
+        top: 13px;
+        font-size: 1.3rem;
+        background: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 3px;
+        line-height: 30px;
+        padding-left: 6px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .dashboard_logo {
+        width: 45%;
+        padding-top: 12px;
+    }
+
+    .dashboard_text {
+        display: none;
+    }
+
+    .mobile_fade_layout {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background-color: #0000008e;
+        display: none;
+    }
 }
-@media only screen and (max-width: 600px) {
-      
-}
-@media only screen and (max-width: 600px) {
-      
-}
-@media only screen and (max-width: 600px) {
-      
-}
-@media only screen and (max-width: 600px) {
-      
-}
-@media only screen and (max-width: 600px) {
-      
-}
-@media only screen and (max-width: 600px) {
-      
-}
+
+@media only screen and (max-width: 600px) {}

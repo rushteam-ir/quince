@@ -1,6 +1,5 @@
 //collapse menu 
-let i;
-for (i = 0; i < dashboard_collaps.length; i++) {
+for (let i = 0; i < dashboard_collaps.length; i++) {
 
     dashboard_collaps[i].addEventListener('click', function () {
 
