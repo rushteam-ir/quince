@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/general/fontAwsome.css">
     <link rel="stylesheet" href="css/general/general-css.css">
     <link rel="stylesheet" href="css/layout/dashboard.css">
+    <link rel="stylesheet" href="css/general/css-animate.css">
     <title>Rush Team CMS</title>
 </head>
 
@@ -26,33 +27,53 @@
             <i class="fad fa-angle-double-right close_dashboard"></i>
             <i class="fad fa-angle-double-left open_dashboard display_none"></i>
 
-            <ul class="pr-0 mt-4 dashboard_ul">
+            <ul class="pr-0 dashboard_ul">
 
                 <a href="" class="d-block position-relative dashboard_links">
 
-                    <i class="fas fa-home-lg d-inline-block dashboard_icons mr-3"></i>
+                    <i class="fas fa-home-lg d-inline-block dashboard_icons"></i>
                     <li class="mr-2 dashboard_text">داشبورد</li>
-                    <i class="fas fa-angle-left d-inline-block dashboard_angle"></i>
+                    <i class="fas fa-angle-left dashboard_angle"></i>
 
                 </a>
 
                 <a href="" class="d-block position-relative dashboard_links">
 
-                    <i class="fas fa-home-lg d-inline-block dashboard_icons mr-3"></i>
+                    <i class="fas fa-user-circle d-inline-block dashboard_icons"></i>
+                    <li class="mr-2 dashboard_text">پروفایل</li>
+                    <i class="fas fa-angle-left dashboard_angle"></i>
+
+                </a>
+
+                <a href="" class="d-block position-relative dashboard_links">
+
+                    <i class="fad fa-layer-group d-inline-block dashboard_icons"></i>
                     <li class="mr-2 dashboard_text">دسته بندی</li>
-                    <i class="fas fa-angle-left d-inline-block dashboard_angle"></i>
+                    <i class="fas fa-angle-left dashboard_angle"></i>
 
                 </a>
 
                 <div class="d-block position-relative dashboard_links dashboard_collaps">
 
-                    <i class="fas fa-home-lg d-inline-block dashboard_icons mr-3"></i>
+                    <i class="fas fa-shopping-cart d-inline-block dashboard_icons"></i>
                     <li class="mr-2 dashboard_text">فروشگاه</li>
-                    <i class="fas fa-angle-left d-inline-block dashboard_angle"></i>
+                    <i class="fas fa-angle-left dashboard_angle"></i>
+
+                    <ul class="hover_menu">
+                        <a href="" class="sub_dashboard_link">
+                            <li>لیست فروشگاه</li>
+                        </a>
+                        <a href="" class="sub_dashboard_link">
+                            <li>اضافه کردن محصول</li>
+                        </a>
+                        <a href="" class="sub_dashboard_link">
+                            <li>کد تخفیف</li>
+                        </a>
+                    </ul>
 
                 </div>
-                
-                <ul id="sub_collaps">
+
+                <ul class="sub_collaps">
                     <a href="" class="sub_dashboard_link">
                         <li>لیست فروشگاه</li>
                     </a>
@@ -62,29 +83,54 @@
                     <a href="" class="sub_dashboard_link">
                         <li>کد تخفیف</li>
                     </a>
-                </ul>                
+                </ul>
 
-                <a href="" class="d-block position-relative dashboard_links">
 
-                    <i class="fas fa-home-lg d-inline-block dashboard_icons mr-3"></i>
+
+                <div href="" class="d-block position-relative dashboard_links dashboard_collaps">
+
+                    <i class="fas fa-newspaper d-inline-block dashboard_icons"></i>
                     <li class="mr-2 dashboard_text">مقاله</li>
-                    <i class="fas fa-angle-left d-inline-block dashboard_angle"></i>
+                    <i class="fas fa-angle-left dashboard_angle"></i>
 
-                </a>
+                    <ul class="hover_menu">
+                        <a href="" class="sub_dashboard_link">
+                            <li>لیست فروشگاه</li>
+                        </a>
+                        <a href="" class="sub_dashboard_link">
+                            <li>اضافه کردن محصول</li>
+                        </a>
+                        <a href="" class="sub_dashboard_link">
+                            <li>کد تخفیف</li>
+                        </a>
+                    </ul>
+
+                </div>
+
+                <ul class="sub_collaps">
+                    <a href="" class="sub_dashboard_link">
+                        <li>افزودن مقاله جدید</li>
+                    </a>
+                    <a href="" class="sub_dashboard_link">
+                        <li>لیست مقالات</li>
+                    </a>
+                </ul>
+
+
 
                 <a href="" class="d-block position-relative dashboard_links">
 
-                    <i class="fas fa-home-lg d-inline-block dashboard_icons mr-3"></i>
+                    <i class="fad fa-users d-inline-block dashboard_icons"></i>
                     <li class="mr-2 dashboard_text">کاربران</li>
-                    <i class="fas fa-angle-left d-inline-block dashboard_angle"></i>
+                    <i class="fas fa-angle-left dashboard_angle"></i>
 
                 </a>
 
                 <a href="" class="d-block position-relative dashboard_links">
 
-                    <i class="fas fa-home-lg d-inline-block dashboard_icons mr-3"></i>
+                    <i class="fas fa-sign-out-alt d-inline-block dashboard_icons"></i>
                     <li class="mr-2 dashboard_text">خروج</li>
-                    <i class="fas fa-angle-left d-inline-block dashboard_angle"></i>
+                    <i class="fas fa-angle-left dashboard_angle"></i>
 
                 </a>
 
@@ -94,10 +140,37 @@
 
     </aside>
 
+
+    <div class="dashboard_main">
+
+        <nav class="dashboard_navbar">
+
+            <div class="d-inline-block dashboard_user_img">
+
+                <img class="admin_img_dashboard d-inline-block ml-3" src="img/img2.jpg" alt="">
+                <p class="d-inline-block ml-3 mr-3">کسری حبیب بیگی</p>
+
+            </div>
+            <div class="d-inline-block ml-2 position-relative">
+
+                <i class="bell fa fa-bell"></i>
+
+                <i class="fas fa-envelope envelope_navbar ml-3"></i>
+
+                <div class="messages_alert"></div>
+
+            </div>
+
+
+        </nav>
+
+    </div>
+
     <script src="js/general/jquery.js"></script>
     <script src="js/general/bootstrap.js"></script>
     <script src="js/general/popper.js"></script>
     <script src="js/general/sweetAlert.js"></script>
+    <script src="js/layout/get-element.js"></script>
     <script src="js/layout/toggle-dsh.js"></script>
     <script src="js/layout/collaps-menu.js"></script>
 </body>
