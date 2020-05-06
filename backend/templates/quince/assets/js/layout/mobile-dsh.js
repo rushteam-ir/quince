@@ -9,24 +9,24 @@ if (window.innerWidth < 992) {
         dashboard.style.display = 'block';
 
         setTimeout(function () {
-            
+
             dashboard.style.width = '23%';
-            
-            if(window.innerWidth <850){
 
-                dashboard.style.width = '30%'; 
+            if (window.innerWidth < 850) {
 
-            }
-
-            if(window.innerWidth <650){
-
-                dashboard.style.width = '40%'; 
+                dashboard.style.width = '30%';
 
             }
 
-            if(window.innerWidth <500){
+            if (window.innerWidth < 650) {
 
-                dashboard.style.width = '55%'; 
+                dashboard.style.width = '40%';
+
+            }
+
+            if (window.innerWidth < 500) {
+
+                dashboard.style.width = '55%';
 
             }
 
@@ -44,7 +44,7 @@ if (window.innerWidth < 992) {
 
     }
 
-    function mobileClose(){
+    function mobileClose() {
 
         mobile_fade_layout.style.display = 'none';
         dashboard.style.width = '0%';

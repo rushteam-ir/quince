@@ -55,11 +55,13 @@
     font-size: 1rem;
     padding: 12px 0px;
     width: 100%;
+    font-weight: bold;
 }
 
 .dashboard_links:hover {
-    color: #444444;
+    color: #4C56D0;
     background-color: #f7f7f7;
+    border-right: 3px solid #4C56D0;
 }
 
 .dashboard_ul {
@@ -89,6 +91,7 @@
     display: block;
     padding-right: 50px;
     font-size: 0.85rem;
+    font-weight: bold;
 }
 
 .sub_dashboard_link:hover {
@@ -128,7 +131,9 @@
 }
 
 .active_collapse {
-    background-color: #F7F7F7;
+    color: #4C56D0;
+    background-color: #f7f7f7;
+    border-right: 3px solid #4C56D0;
 }
 
 /* navbar */
@@ -349,5 +354,3 @@
         display: none;
     }
 }
-
-@media only screen and (max-width: 600px) {}

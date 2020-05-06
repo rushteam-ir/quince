@@ -143,5 +143,10 @@ body {
     .refresh_capthcha {
         right: 98%;
     }
-
+    #error_text{
+        font-size: 0.8rem;
+    }
+    .main_filed_of_login {
+        padding: 50px 30px 40px 30px;
+    }
 }
