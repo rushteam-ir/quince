@@ -1,26 +1,19 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>صفحه اصلی</title>
-    <link rel="stylesheet" href="css/general/bootstrap.css">
-    <link rel="stylesheet" href="css/general/fontawsome.css">
-    <link rel="stylesheet" href="css/general/layout.css">
-    <link rel="stylesheet" href="css/general/general.css">
-</head>
-<body>
+{>"layouts/index-layout"/}
 
-   <footer class="footer_style">
-       <div class="container-fluid">
-            <div class=></div>
-       </div>
-   </footer>
-    <script src="js/general/jquery.js"></script>
-    <script src="js/general/popper.js"></script>
-    <script src="js/general/bootstrap.js"></script>
-    <script src="js/general/layout.js"></script>
-</body>
-</html>
+{<title}
+    <title>
+
+    </title>
+{/title}
+
+{<css}
+    <link rel="stylesheet" href="">
+{/css}
+
+{<js}
+    <script src=""></script>
+{/js}
+
+{<body}
+    
+{/body}
