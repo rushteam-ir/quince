@@ -7,13 +7,52 @@
 {/title}
 
 {<css}
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/front-end/index.css">
 {/css}
 
 {<js}
-    <script src=""></script>
+    <script src="js/front-end/index.js"></script>
 {/js}
 
 {<body}
-    
+
+{!!}
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 p-0"></div>
+                <div class="col-12 col-lg-6 p-0">
+                    <div class="Property_of_rush_team">
+                        <div class="circle_of_property">
+                            <div class="text_of_property">
+                                <p class="category_of_property">ریسپانسیو</p>
+                                <h4 class="title_of_explain_property">طراحی واکنش گرا</h4>
+                                <p class="explain_about_property dir_rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                            </div>
+                        </div>
+                        <div class="Property_of_rush_team_item" id="property_1">
+                            <i class="far fa-desktop text-center icons_of_property"></i>
+                        </div>
+                        <div class="Property_of_rush_team_item" id="property_2">
+                            <i class="far fa-desktop text-center icons_of_property"></i>
+                        </div>
+                        <div class="Property_of_rush_team_item" id="property_3">
+                            <i class="far fa-desktop text-center icons_of_property"></i>
+                        </div>
+                        <div class="Property_of_rush_team_item" id="property_4">
+                            <i class="far fa-desktop text-center icons_of_property"></i>
+                        </div>
+                        <div class="Property_of_rush_team_item" id="property_5">
+                            <i class="far fa-desktop text-center icons_of_property"></i>
+                        </div>
+                        <div class="Property_of_rush_team_item" id="property_6">
+                            <i class="far fa-desktop text-center icons_of_property"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{!!}
+
 {/body}
