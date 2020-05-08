@@ -14,7 +14,8 @@ if(window.innerWidth > 1200){
         dashboard_main.style.width = '97.1%';
         dashboard.style.width = '45px';
         localStorage.toggle = 'close';
-    
+        dashboard.classList.remove('open_dsh');
+
         if(window.innerWidth < 1200){
     
             dashboard_main.style.width = '97.1%';
@@ -54,6 +55,7 @@ if(window.innerWidth > 1200){
             e++
     
         }
+        
         closeCollapse();
     
     }
@@ -69,6 +71,7 @@ if(window.innerWidth > 1200){
         dashboard_main.style.width = '86%';
         dashboard.style.width = '14%';
         localStorage.toggle = 'open';
+        dashboard.classList.add('open_dsh');
     
         if(window.innerWidth < 1200){
     

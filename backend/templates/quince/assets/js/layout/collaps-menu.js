@@ -4,7 +4,12 @@
 
         dashboard_collaps[i].addEventListener('click', function () {
     
-            this.classList.toggle('active_collapse');
+            if(window.innerWidth > 992){
+
+                this.classList.toggle('active_collapse');
+
+            }
+
             let panel = this.nextElementSibling;
             let panelChildNode = this.childNodes;
     
@@ -20,12 +25,20 @@
     
                 panel.style.maxHeight = panel.scrollHeight + 'px';
                 panelChildNode[2].style.transform = 'rotate(-90deg)';
-                panelChildNode[2].style.color = "#F64E60";
-                panelChildNode[0].style.color = "#F64E60";
-                panelChildNode[1].style.color = "#F64E60";
+
+                if(window.innerWidth > 992){
+
+                    panelChildNode[2].style.color = "#FFBC00";
+                    panelChildNode[0].style.color = "#FFBC00";
+                    panelChildNode[1].style.color = "#FFBC00";
+
+                }
     
             }
     
         });
     
     }
+
+
+
