@@ -54,7 +54,6 @@ if(window.innerWidth > 1200){
             e++
     
         }
-    
         closeCollapse();
     
     }
@@ -67,7 +66,7 @@ if(window.innerWidth > 1200){
         close_dashboard.style.display = 'block';
         dashboard_logo.style.display = 'block';
         open_dashboard.style.display = 'none';
-        dashboard_main.style.width = '88%';
+        dashboard_main.style.width = '86%';
         dashboard.style.width = '14%';
         localStorage.toggle = 'open';
     
@@ -171,4 +170,7 @@ if(window.innerWidth > 1200){
     
     }   
 
+
+
 }
+
