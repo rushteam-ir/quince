@@ -29,25 +29,26 @@
                                 <h4 class="title_of_explain_property">طراحی واکنش گرا</h4>
                                 <p class="explain_about_property dir_rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
                             </div>
+                            <div class="Property_of_rush_team_item" id="property_1">
+                                <i class="far fa-desktop text-center icons_of_property"></i>
+                            </div>
+                            <div class="Property_of_rush_team_item" id="property_2">
+                                <i class="far fa-desktop text-center icons_of_property"></i>
+                            </div>
+                            <div class="Property_of_rush_team_item" id="property_3">
+                                <i class="far fa-desktop text-center icons_of_property"></i>
+                            </div>
+                            <div class="Property_of_rush_team_item" id="property_4">
+                                <i class="far fa-desktop text-center icons_of_property"></i>
+                            </div>
+                            <div class="Property_of_rush_team_item" id="property_5">
+                                <i class="far fa-desktop text-center icons_of_property"></i>
+                            </div>
+                            <div class="Property_of_rush_team_item" id="property_6">
+                                <i class="far fa-desktop text-center icons_of_property"></i>
+                            </div>
                         </div>
-                        <div class="Property_of_rush_team_item" id="property_1">
-                            <i class="far fa-desktop text-center icons_of_property"></i>
-                        </div>
-                        <div class="Property_of_rush_team_item" id="property_2">
-                            <i class="far fa-desktop text-center icons_of_property"></i>
-                        </div>
-                        <div class="Property_of_rush_team_item" id="property_3">
-                            <i class="far fa-desktop text-center icons_of_property"></i>
-                        </div>
-                        <div class="Property_of_rush_team_item" id="property_4">
-                            <i class="far fa-desktop text-center icons_of_property"></i>
-                        </div>
-                        <div class="Property_of_rush_team_item" id="property_5">
-                            <i class="far fa-desktop text-center icons_of_property"></i>
-                        </div>
-                        <div class="Property_of_rush_team_item" id="property_6">
-                            <i class="far fa-desktop text-center icons_of_property"></i>
-                        </div>
+
                     </div>
                 </div>
             </div>

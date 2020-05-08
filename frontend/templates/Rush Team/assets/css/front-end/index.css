@@ -1,19 +1,17 @@
-
 .Property_of_rush_team {
     width: 100%;
     height: 500px;
-    position: relative;
     margin-top: 100px;
 }
 
 .circle_of_property {
-    width: 70%;
-    height: 85%;
+    width: 80%;
+    height: 90%;
     border-radius: 50%;
     border: 1px solid #d2d2d2;
-    left: 15%;
+    left: 10%;
     top: 7.5%;
-    position: absolute;
+    position: relative;
 }
 
 .Property_of_rush_team_item {
@@ -27,33 +25,33 @@
 }
 
 #property_1 {
-    left: 24.5%;
-    top: 5%;
+    top: -2%;
+    left: 10%;
 }
 
 #property_2 {
-    left: 8%;
-    top: 41%;
+    top: -2%;
+    right: 10%;
 }
 
 #property_3 {
-    top: 41%;
-    right: 8%;
+    top: 37%;
+    right: -11%;
 }
 
 #property_4 {
-    bottom: 5%;
-    right: 25.5%;
+    bottom: -1%;
+    right: 10%;
 }
 
 #property_5 {
-    top: 5%;
-    right: 25.5%;
+    bottom: -1%;
+    left: 10%;
 }
 
 #property_6 {
-    left: 25.5%;
-    bottom: 5%;
+    top: 37%;
+    left: -11%;
 }
 
 .icons_of_property {
@@ -65,7 +63,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 
 .text_of_property {
     width: 55%;
@@ -93,9 +90,8 @@
     text-align: justify;
 }
 
-/*Media Query*/
-
 @media only screen and (max-width: 1200px) {
+
     .container,
     .container-lg,
     .container-md,
@@ -103,6 +99,7 @@
     .container-xl {
         max-width: 1250px;
     }
+
     .text_of_property {
         margin: 28% auto;
     }
@@ -110,377 +107,32 @@
 
 @media only screen and (max-width: 991px) {
     .circle_of_property {
-        width: 55%;
-        height: 100%;
-        left: 22.5%;
-        top: -9%;
-    }
-
-    #property_2 , #property_3  {
-        top: 34%;
-    }
-
-    #property_3 {
-        right: 18%;
-    }
-
-    #property_2{
-        left: 18%;
-    }
-
-    #property_1 , #property_6 {
-        left: 32.5%;
-    }
-
-    #property_4, #property_6 {
-        bottom: 5%;
-    }
-
-    #property_4, #property_5 {
-        right: 32.5%;
-    }
-
-    #property_5, #property_1 {
-        top: -14%;
-    }
-
-    .text_of_property {
-        margin: 32% auto;
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
+        left: unset;
+        top: unset;
     }
 }
-
-@media only screen and (max-width: 768px) {
-    .circle_of_property {
-        width: 66%;
-        height: 90%;
-        left: 17%;
-        top: -5%;
-    }
-
-    .Property_of_rush_team_item {
-        width: 85px;
-        height: 85px;
-    }
-
-    .icons_of_property {
-        font-size: 1.6rem;
-        left: 25px;
-        top: 28px;
-    }
-
-    #property_1, #property_5 {
-        top: -8%;
-    }
-
-    #property_2 {
-        left: 11%;
-        top: 34%;
-    }
-
-    #property_3 {
-        right: 11%;
-        top: 34%;
-    }
-
-    #property_4, #property_6 {
-        bottom: 12%;
-    }
-
-    .text_of_property {
-        margin: 28% auto;
-    }
-}
-
 
 @media only screen and (max-width: 600px) {
     .circle_of_property {
-        width: 82%;
-        height: 88%;
-        left: 9%;
-        top: -5%;
+        width: 80vw;
+        height: 80vw;
+        margin: 0 auto;
+        left: unset;
+        top: unset;
     }
+}
 
+@media only screen and (max-width: 550px) {
     .Property_of_rush_team_item {
         width: 80px;
         height: 80px;
     }
 
     .icons_of_property {
-        font-size: 1.5rem;
-        left: 24px;
-        top: 27px;
-    }
-
-    #property_1, #property_5 {
-        top: -7%;
-    }
-
-    #property_2 {
-        left: 3%;
-        top: 34%;
-    }
-
-    #property_3 {
-        right: 3%;
-        top: 34%;
-    }
-
-    #property_4, #property_6 {
-        bottom: 13%;
-    }
-
-    #property_4, #property_5 {
-        right: 27.5%;
-    }
-
-    #property_6, #property_1 {
-        left: 25.5%;
+        left: 23px;
+        top: 25px;
     }
 }
-
-@media only screen and (max-width: 500px) {
-    .circle_of_property {
-        width: 70%;
-        height: 70%;
-        left: 15%;
-        top: 4%;
-    }
-
-    .Property_of_rush_team_item {
-        width: 70px;
-        height: 70px;
-    }
-
-    .icons_of_property {
-        font-size: 1.3rem;
-        left: 21px;
-        top: 23px;
-    }
-
-    #property_2 {
-        left: 8%;
-    }
-
-    #property_3 {
-        right: 8%;
-    }
-
-    #property_4, #property_6 {
-        bottom: 23%;
-    }
-
-    #property_1, #property_5 {
-        top: 1%;
-    }
-
-    #property_6, #property_1 {
-        left: 26%;
-    }
-
-    #property_4, #property_5 {
-        right: 25%;
-    }
-
-    .text_of_property {
-        margin: 22% auto;
-    }
-
-}
-
-@media only screen and  (max-width: 500px) and (min-width: 499px) {
-    #property_1, #property_5 {
-        top: -4%;
-    }
-
-    #property_4, #property_6 {
-        bottom: 23%;
-    }
-
-    #property_2 {
-        left: 3%;
-    }
-
-    #property_3 {
-        right: 3%;
-    }
-}
-
-@media only screen and  (max-width: 535px) and (min-width: 500px) {
-    .circle_of_property {
-        width: 80%;
-        height: 80%;
-        left: 10%;
-        top: -3%;
-    }
-
-    #property_4, #property_6 {
-        bottom: 19%;
-    }
-
-    #property_2, #property_3 {
-        top: 32%;
-    }
-
-    #property_6, #property_1 {
-        left: 23%;
-    }
-
-    #property_4, #property_5 {
-        right: 25%;
-    }
-
-    .text_of_property {
-        margin: 26% auto;
-    }
-
-}
-
-@media only screen and  (max-width: 720px) and (min-width: 600px) {
-    .circle_of_property {
-        width: 70%;
-        height: 85%;
-        left: 15%;
-        top: -3%;
-    }
-
-    .Property_of_rush_team_item {
-        width: 80px;
-        height: 80px;
-    }
-
-    .icons_of_property {
-        font-size: 1.5rem;
-        left: 24px;
-        top: 27px;
-    }
-
-    #property_1, #property_5 {
-        top: -7%;
-    }
-
-    #property_2 {
-        left: 9%;
-        top: 34%;
-    }
-
-    #property_3 {
-        right: 9%;
-        top: 34%;
-    }
-
-    #property_4, #property_6 {
-        bottom: 15%;
-    }
-
-    #property_4, #property_5 {
-        right: 29.5%;
-    }
-
-    #property_6, #property_1 {
-        left: 27.5%;
-    }
-
-    .text_of_property {
-        margin: 26% auto;
-    }
-
-}
-
-@media only screen and  (max-width: 835px) and (min-width: 768px) {
-    .circle_of_property {
-        width: 58%;
-        height: 85%;
-        left: 21%;
-        top: -2%;
-    }
-
-    .Property_of_rush_team_item {
-        width: 80px;
-        height: 80px;
-    }
-
-    .icons_of_property {
-        font-size: 1.5rem;
-        left: 24px;
-        top: 27px;
-    }
-
-    #property_1, #property_5 {
-        top: -4%;
-    }
-
-    #property_2 {
-        left: 16%;
-        top: 34%;
-    }
-
-    #property_3 {
-        right: 16%;
-        top: 34%;
-    }
-
-    #property_4, #property_6 {
-        bottom: 15%;
-    }
-
-    .text_of_property {
-        margin: 28% auto;
-    }
-
-}
-
-@media only screen and  (max-width: 1180px) and (min-width: 992px) {
-    .circle_of_property {
-        width: 75%;
-        height: 85%;
-        left: 10%;
-        top: 0%;
-    }
-
-    .Property_of_rush_team_item {
-        width: 80px;
-        height: 80px;
-    }
-
-    .icons_of_property {
-        font-size: 1.5rem;
-        left: 24px;
-        top: 27px;
-    }
-
-    #property_1, #property_5 {
-        top: -2%;
-    }
-
-    #property_2 {
-        left: 4%;
-        top: 34%;
-    }
-
-    #property_3 {
-        right: 8%;
-        top: 34%;
-    }
-
-    #property_4, #property_6 {
-        bottom: 13%;
-    }
-
-    .text_of_property {
-        margin: 29% auto;
-    }
-
-}
-
-@media (min-width: 1200px) {
-    .container,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container-xl {
-        max-width: 1250px;
-    }
-}
-
-
-/*End Media Query*/
