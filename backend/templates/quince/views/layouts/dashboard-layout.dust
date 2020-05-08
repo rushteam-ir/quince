@@ -152,7 +152,7 @@
 
                 <i class="bell fa fa-bell"></i>
 
-                <i class="fas fa-envelope envelope_navbar ml-3"></i>
+                <i class="fad fa-comments-alt  envelope_navbar ml-3"></i>
 
                 <div class="messages_alert"></div>
 

@@ -1,14 +1,7 @@
-if(window.innerWidth > 992){
+if(window.innerWidth > 1200){
 
     close_dashboard.addEventListener('click', closeDsh);
     open_dashboard.addEventListener('click', openDsh);
-    
-
-    if(window.innerWidth < 1200){
-
-        dashboard.style.width = "15%";
-    
-    }
     
     // close dashboard
     function closeDsh() {
@@ -75,7 +68,7 @@ if(window.innerWidth > 992){
         dashboard_logo.style.display = 'block';
         open_dashboard.style.display = 'none';
         dashboard_main.style.width = '88%';
-        dashboard.style.width = '12%';
+        dashboard.style.width = '14%';
         localStorage.toggle = 'open';
     
         if(window.innerWidth < 1200){
@@ -125,6 +118,8 @@ if(window.innerWidth > 992){
             e++
         
         }
+
+
     
         closeCollapse();
     
@@ -146,13 +141,14 @@ if(window.innerWidth > 992){
     // close collapse when toogle menue
     function closeCollapse(){
     
-    
-    
         for(let k = 0 ; k < dashboard_collaps.length ; k++){
     
             dashboard_collaps[k].classList.remove('active_collapse');
             dashboard_collaps[k].nextElementSibling.style.maxHeight = null;
-            dashboard_collaps[k].childNodes[2].style.transform = "rotate(0deg)"
+            dashboard_collaps[k].childNodes[2].style.transform = 'rotate(0deg)';
+            dashboard_collaps[k].childNodes[0].style.color = '#B5B5C3';
+            dashboard_collaps[k].childNodes[1].style.color = '#808080';
+            dashboard_collaps[k].childNodes[2].style.color = '#B5B5C3';
     
         }
         

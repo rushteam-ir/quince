@@ -1,3 +1,9 @@
+if(window.innerWidth < 1200){
+
+    dashboard.style.width = '17%';
+
+}
+
 if (window.innerWidth < 992) {
 
     mobile_bar.addEventListener('click', mobileOpen);

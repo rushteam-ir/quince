@@ -8,8 +8,13 @@
     src: url(../../font/Vazir-Thin.ttf);
 }
 
+@font-face {
+    font-family: iransans-font;
+    src: url(../../font/IRANSans_Light.ttf);
+}
+
 body {
-    font-family: second-font;
+    font-family: iransans-font;
 }
 
 .dir-rtl {

@@ -5,9 +5,9 @@
 }
 
 .dashboard {
-    width: 12%;
+    width: 14%;
     height: 100vh;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     position: fixed;
     right: 0px;
     top: 0px;
@@ -48,21 +48,30 @@
     top: 18px;
     font-size: 0.85rem;
     transition: all linear 0.1s;
+    color: #B5B5C3;
 }
 
 .dashboard_links {
-    color: #000000;
+    color: #808080;
     font-size: 1rem;
     padding: 12px 0px;
     width: 100%;
-    font-weight: bold;
+    transition: all linear .2s;
 }
 
 .dashboard_links:hover {
-    color: #4C56D0;
-    background-color: #f7f7f7;
-    border-right: 3px solid #4C56D0;
+    color: #F64E60 !important;
+    background-color: #F3F6F9;
+    border-right: 3px solid #F64E60 !important;
 }
+
+.dashboard_links:hover .dashboard_icons{
+    color: #F64E60;
+}
+.dashboard_links:hover .dashboard_angle{
+    color: #F64E60;
+}
+
 
 .dashboard_ul {
     position: absolute;
@@ -86,22 +95,22 @@
 }
 
 .sub_dashboard_link {
-    color: black;
+    color: #4e4e52;
     padding: 8px 0px;
     display: block;
     padding-right: 50px;
     font-size: 0.85rem;
-    font-weight: bold;
 }
 
 .sub_dashboard_link:hover {
-    color: black;
+    color: #F64E60;
     background-color: #F7F7F7;
 }
 
 .dashboard_icons {
     font-size: 1.1rem;
     margin-right: 13px;
+    color: #B5B5C3;
 }
 
 .dashboard_main {
@@ -127,13 +136,14 @@
     height: unset;
     overflow: unset;
     color: black;
-    border-right: 2px solid #FFB731;
+    border-right: 2px solid #F64E60;
+    padding-right: 1px;
 }
 
 .active_collapse {
-    color: #4C56D0;
+    color: #F64E60;
     background-color: #f7f7f7;
-    border-right: 3px solid #4C56D0;
+    border-right: 3px solid #F64E60;
 }
 
 /* navbar */
@@ -164,7 +174,7 @@
     width: 16px;
     height: 16px;
     font-size: 1.1rem;
-    color: #000000;
+    color: #FAA503;
     -webkit-animation: ring 4s .7s ease-in-out infinite;
     -webkit-transform-origin: 50% 4px;
     -moz-animation: ring 4s .7s ease-in-out infinite;
