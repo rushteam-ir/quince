@@ -146,8 +146,8 @@
     <section>
         <div class="container-fluid mt_of_this_box">
             <div class="row mr-0">
-                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-0 mb-5 mb-lg-0">
-                    <div class="our_team">
+                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-0  mb-5 mb-lg-0">
+                    <div class="our_team ">
                         <img src="img/1.jpg" alt="" class="img_of_each_person">
                         <div class="team_content text-right">
                             <h3 class="name_of_team">نادیه نجم آبادی</h3>
@@ -195,29 +195,30 @@
                     </div>
                 </div>
                 <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-0  mb-5 mb-lg-0">
-                    <div class="our_team">
+                    <div class="our_team ">
                         <img src="img/1.jpg" alt="" class="img_of_each_person">
-                        <div class="team_content">
-                            <h3 class="name_of_team text-right">نادیه نجم آبادی</h3>
-                            <span class="rule_of_pearson_in_team this_one d-inline-block">طراح و توسعه دهنده وب سایت</span>
+                        <div class="team_content text-right">
+                            <h3 class="name_of_team">نادیه نجم آبادی</h3>
+                            <span class="rule_of_pearson_in_team  d-inline-block">طراح و توسعه دهنده وب سایت</span>
                             <p class="about_the_person_in_team text-justify dir_rtl">لورم ایپسوم متن ساختگی با تولید
                                 سادگی نامفهوماز صنعت چاپ و با استفاده از طراحان گرافیک است</p>
                             <ul class="social_media_for_each_person p-0">
-                                <li class="d-inline-block pr-2">
-                                    <a href="#" class="fab fa-facebook-f link_of_social_media"></a>
+                                <li class="d-inline-block pr-2"><a href="#"
+                                                                   class="fab fa-facebook-f link_of_social_media"></a>
                                 </li>
-                                <li class="d-inline-block pr-2">
-                                    <a href="#" class="fab fa-google-plus-g link_of_social_media"></a>
+                                <li class="d-inline-block pr-2"><a href="#"
+                                                                   class="fab fa-google-plus-g link_of_social_media"></a>
                                 </li>
-                                <li class="d-inline-block pr-2">
-                                    <a href="#" class="fab fa-youtube link_of_social_media"></a></li>
-                                <li class="d-inline-block pr-2">
-                                    <a href="#" class="fab fa-linkedin-in link_of_social_media"></a>
+                                <li class="d-inline-block pr-2"><a href="#"
+                                                                   class="fab fa-youtube link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-2"><a href="#"
+                                                                   class="fab fa-linkedin-in link_of_social_media"></a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
