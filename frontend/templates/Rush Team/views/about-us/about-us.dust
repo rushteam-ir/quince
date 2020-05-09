@@ -25,7 +25,7 @@
                     <div class="background_img_as_about_us"></div>
                     <div class="cover_of_img text-center">
                         <h1 class="style_of_title_about_us">RUSH TEAM</h1>
-                        <h4 class="pb-4">
+                        <h4 class="pb-4 font_size_of_little_title">
                             گروهی کوچک میتواند تاثیری بزرگ داشته باشد
                         </h4>
                         <p class="explain_about_Rush_team">
@@ -36,17 +36,37 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-8 offset-2 col-md-4 offset-md-0 aaa bg-danger"></div>
-                <div class="col-8 offset-2 col-md-4 offset-md-0 aaa bg-secondary"></div>
-                <div class="col-8 offset-2 col-md-4 offset-md-0 aaa bg-primary"></div>
+        </div>
+        <div class="container">
+            <div class="row position-relative row_of_property">
+                <div class="col-8 offset-2 col-md-4 offset-md-0">
+                    <div class="box_of_property_rush_team text-center">
+                        <i class="far fa-grin-beam icons_of_property_rush_team"></i>
+                        <h2 class="title_of_property_rush_team">گرم و صمیمی</h2>
+                        <p class="explain_about_property_rush_team dir_rtl">ارتباط ميان اعضاء صميمانه است و آنان براي بيان ايده‌ها، عقايد و نقطه‌‌نظرات خود احساس راحتي و آزادي مي‌كنند.</p>
+                    </div>
+                </div>
+                <div class="col-8 offset-2 col-md-4 offset-md-0">
+                    <div class="box_of_property_rush_team text-center pb-5">
+                        <i class="fas fa-unicorn icons_of_property_rush_team"></i>
+                        <h2 class="title_of_property_rush_team">گرم و صمیمی</h2>
+                        <p class="explain_about_property_rush_team dir_rtl">ارتباط ميان اعضاء صميمانه است و آنان براي بيان ايده‌ها، عقايد و نقطه‌‌نظرات خود احساس راحتي و آزادي مي‌كنند.</p>
+                    </div>
+                </div>
+                <div class="col-8 offset-2 col-md-4 offset-md-0">
+                    <div class="box_of_property_rush_team text-center pb-5 pb-md-0">
+                        <i class="fas fa-cat icons_of_property_rush_team"></i>
+                        <h2 class="title_of_property_rush_team">گرم و صمیمی</h2>
+                        <p class="explain_about_property_rush_team dir_rtl">ارتباط ميان اعضاء صميمانه است و آنان براي بيان ايده‌ها، عقايد و نقطه‌‌نظرات خود احساس راحتي و آزادي مي‌كنند.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     {!/header!}
     {!!}
     <section>
-        <div class="container">
+        <div class="container mt-n5">
             <div class="row">
                 <div class="col-sm-8 offset-sm-2 col-lg-6 offset-lg-0 p-0 order-1 order-lg-0">
                     <div class="counter_of_number">
@@ -119,5 +139,60 @@
         </div>
     </section>
 {!!}
+
+    <section>
+        <div class="container-fluid mt_of_this_box">
+            <div class="row mr-0">
+                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-0 mb-5 mb-lg-0">
+                    <div class="our_team">
+                        <img src="img/1.jpg" alt="" class="img_of_each_person">
+                        <div class="team_content text-right">
+                            <h3 class="name_of_team">نادیه نجم آبادی</h3>
+                            <span class="rule_of_pearson_in_team  d-inline-block">طراح و توسعه دهنده وب سایت</span>
+                            <p class="about_the_person_in_team text-justify dir_rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوماز صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                            <ul class="social_media_for_each_person">
+                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-facebook-f link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-google-plus-g link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-youtube link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-linkedin-in link_of_social_media"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-0  mb-5 mb-lg-0">
+                    <div class="our_team ">
+                        <img src="img/1.jpg" alt="" class="img_of_each_person">
+                        <div class="team_content text-right">
+                            <h3 class="name_of_team">نادیه نجم آبادی</h3>
+                            <span class="rule_of_pearson_in_team  d-inline-block">طراح و توسعه دهنده وب سایت</span>
+                            <p class="about_the_person_in_team text-justify dir_rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوماز صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                            <ul class="social_media_for_each_person">
+                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-facebook-f link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-google-plus-g link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-youtube link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-linkedin-in link_of_social_media"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-0  mb-5 mb-lg-0">
+                    <div class="our_team">
+                        <img src="img/1.jpg" alt="" class="img_of_each_person">
+                        <div class="team_content">
+                            <h3 class="name_of_team text-right">نادیه نجم آبادی</h3>
+                            <span class="rule_of_pearson_in_team this_one d-inline-block">طراح و توسعه دهنده وب سایت</span>
+                            <p class="about_the_person_in_team text-justify dir_rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوماز صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                            <ul class="social_media_for_each_person">
+                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-facebook-f link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-google-plus-g link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-youtube link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-linkedin-in link_of_social_media"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 {/body}

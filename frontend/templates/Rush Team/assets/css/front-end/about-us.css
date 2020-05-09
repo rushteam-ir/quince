@@ -151,12 +151,148 @@
     margin: auto;
 }
 
-.aaa{
-    width: 200px;
-    background: #20c997;
-    width: 100%;
+.title_of_property_rush_team{
+    font-size: 1.2rem;
 }
-/*a*/
+
+.explain_about_property_rush_team{
+    color: #4e555b;
+    width: 75%;
+    margin: auto;
+}
+
+.icons_of_property_rush_team{
+    font-size: 3rem;
+    background-image: linear-gradient(to right, #FF7300, #FFC200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+
+.row_of_property{
+    top: -150px;
+    box-shadow: 5px 7px 30px rgba(72, 73, 121, 0.15);
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+/*aa*/
+
+.mt_of_this_box{
+    padding: 100px 0px;
+    background-color: #f4f6fd;
+    margin-top: 100px;
+}
+
+.our_team{
+    overflow: hidden;
+    border-radius: 0px 40px 0px 40px;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    box-shadow:5px 7px 30px rgba(72, 73, 121, 0.15);
+}
+
+.img_of_each_person{
+    width: 100%;
+    height: auto;
+    position: relative;
+    right: 0px;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.our_team:hover .img_of_each_person{
+    right: 60%;
+}
+
+.team_content{
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    padding:20% 30px 0;
+    top: 0;
+    right: -80%;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.our_team:hover .team_content{
+    right: 0;
+}
+
+.name_of_team{
+    font-size: 1.5rem;
+}
+
+.social_media_for_each_person{
+    width: 100%;
+    text-align: center;
+    color: #4e555b;
+}
+
+.link_of_social_media{
+    color: #6c757d;
+    display: block;
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 36px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.link_of_social_media:hover{
+    color: white;
+}
+
+.link_of_social_media.fa-facebook-f:hover {
+    background-color: #3E5C9A;
+}
+
+.link_of_social_media.fa-google-plus-g:hover {
+    background-color: #D74937;
+}
+
+.link_of_social_media.fa-youtube:hover {
+    background-color: #F80000;
+}
+
+.link_of_social_media.fa-linkedin-in:hover {
+    background-color: #0271AE;
+}
+
+
+.social_media_for_each_person{
+    padding-top: 20px;
+}
+
+
+
+.rule_of_pearson_in_team{
+    font-weight: bold;
+}
+
+.about_the_person_in_team{
+    padding-top: 30px;
+    color: #323232;
+
+}
+
+.this_one{
+    position: relative;
+    left: 8%;
+}
+
+.name_of_team{
+    background-image: linear-gradient(to right, #FF7300, #FFC200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*aa*/
 @media only screen and (max-width: 1200px) {
 
     .container,
@@ -169,6 +305,9 @@
 
     .text_of_property {
         margin: 28% auto;
+    }
+    .style_of_title_about_us{
+        padding-top: 70px;
     }
 }
 
@@ -192,6 +331,10 @@
         margin: 0 auto;
         left: unset;
         top: unset;
+    }
+
+    .explain_about_Rush_team{
+        width: 85%;
     }
 }
 
@@ -227,6 +370,16 @@
     .title_of_counter{
         font-size: 1rem;
     }
+
+    .font_size_of_little_title{
+        font-size: 1rem;
+    }
+
+    .explain_about_Rush_team{
+        font-size: 0.9rem;
+    }
+
+
 }
 
 @media only screen and (max-width: 450px) {
@@ -307,6 +460,10 @@
     }
     .Property_of_rush_team{
         height: 270px;
+    }
+
+    .explain_about_Rush_team{
+        font-size: 0.8rem;
     }
 
 
