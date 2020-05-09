@@ -1,0 +1,280 @@
+.Property_of_rush_team {
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+}
+
+.circle_of_property {
+    width: 80%;
+    height: 90%;
+    border-radius: 50%;
+    border: 1px solid #d2d2d2;
+    left: 10%;
+    top: 7.5%;
+    position: relative;
+}
+
+.Property_of_rush_team_item {
+    width: 95px;
+    height: 95px;
+    background-color: white;
+    box-shadow: 5px 7px 30px rgba(72, 73, 121, 0.15);
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#property_1 {
+    top: -3%;
+    left: 14%;
+}
+
+#property_2 {
+    top: -3%;
+    right: 14%;
+}
+
+#property_3 {
+    top: 40%;
+    right: -11%;
+}
+
+#property_4 {
+    bottom: -3%;
+    right: 14%;
+}
+
+#property_5 {
+    bottom: -3%;
+    left: 14%;
+}
+
+#property_6 {
+    top: 40%;
+    left: -11%;
+}
+
+.icons_of_property {
+    position: relative;
+    font-size: 1.7rem;
+    left: 30px;
+    top: 31px;
+    background-image: linear-gradient(to right, #3D52EF, #55B9FC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text_of_property {
+    width: 55%;
+    height: 55%;
+    margin: 25% auto;
+    text-align: center;
+}
+
+.category_of_property {
+    font-size: .8rem;
+    font-weight: bold;
+    color: #FF7D00;
+    padding-top: 20px;
+}
+
+.title_of_explain_property {
+    font-size: 1.2rem;
+
+}
+
+.explain_about_property {
+    color: #6E6E6E;
+    font-size: .9rem;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+
+/**/
+.counter_of_number{
+    width: 80%;
+    margin:120px auto;
+    text-align: center;
+}
+
+.counter-count
+{
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    color: #000000;
+    text-align: center;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+
+.title_of_counter{
+    font-size: 1.2rem;
+    color: #4e555b;
+}
+
+.plus_of_counter{
+    font-size: 1.5rem;
+    position: relative;
+    top: -10px;
+    color: #fd7e14;
+    font-weight: bold;
+}
+/**/
+
+@media only screen and (max-width: 1200px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1250px;
+    }
+
+    .text_of_property {
+        margin: 28% auto;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .circle_of_property {
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
+        left: unset;
+        top: unset;
+    }
+    .counter_of_number{
+        margin:50px auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .circle_of_property {
+        width: 80vw;
+        height: 80vw;
+        margin: 0 auto;
+        left: unset;
+        top: unset;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .Property_of_rush_team_item {
+        width: 80px;
+        height: 80px;
+    }
+
+    .icons_of_property {
+        left: 23px;
+        top: 25px;
+    }
+    .text_of_property{
+        margin: 20% auto;
+    }
+
+    .counter_of_number{
+        margin:0px auto;
+    }
+
+    .Property_of_rush_team{
+        height: 450px;
+    }
+    .counter-count{
+        font-size: 2rem;
+    }
+
+    .plus_of_counter{
+        font-size: 1.2rem;
+    }
+
+    .title_of_counter{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .Property_of_rush_team_item{
+        width: 65px;
+        height: 65px;
+    }
+
+    .icons_of_property{
+        font-size: 1.3rem;
+        left: 18px;
+        top: 20px;
+    }
+
+    .text_of_property{
+        margin: 18% auto;
+    }
+
+    .title_of_explain_property{
+        font-size: 1rem;
+    }
+
+    .explain_about_property{
+        font-size: .8rem;
+    }
+
+    .Property_of_rush_team{
+        height: 380px;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    .Property_of_rush_team_item{
+        width: 50px;
+        height: 50px;
+    }
+    .icons_of_property{
+        font-size: 1.2rem;
+        left: 12px;
+        top: 13px;
+    }
+
+    .explain_about_property{
+        font-size: .8rem;
+        padding-top: 10px;
+    }
+
+    .title_of_explain_property{
+        font-size: .9rem;
+    }
+    .Property_of_rush_team{
+        height: 300px;
+    }
+    .counter-count{
+        font-size: 1.7rem;
+    }
+
+    .plus_of_counter{
+        font-size: 1rem;
+    }
+
+    .title_of_counter{
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+    .category_of_property{
+        padding-top: 10px;
+    }
+    .explain_about_property{
+        font-size: .7rem;
+    }
+    .title_of_explain_property{
+        font-size: .8rem;
+    }
+    .Property_of_rush_team{
+        height: 270px;
+    }
+
+
+}

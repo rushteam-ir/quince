@@ -1,0 +1,94 @@
+{>"layouts/index-layout"/}
+
+{<title}
+    <title>
+
+    </title>
+{/title}
+
+{<css}
+    <link rel="stylesheet" href="css/front-end/about-us.css">
+{/css}
+
+{<js}
+    <script src="js/front-end/about-us.js"></script>
+{/js}
+
+{<body}
+
+{!!}
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 offset-sm-2 col-lg-6 offset-lg-0 p-0 order-1 order-lg-0">
+                    <div class="counter_of_number">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="count-up">
+                                    <span class="plus_of_counter">+</span>
+                                    <p class="counter-count">10</p>
+                                    <h3 class="title_of_counter">سال ها تجربه</h3>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="count-up">
+                                    <span class="plus_of_counter">+</span>
+                                    <p class="counter-count">200</p>
+                                    <h3  class="title_of_counter">ساعات کار</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-4">
+                            <div class="col-6">
+                                <div class="count-up">
+                                    <span class="plus_of_counter">+</span>
+                                    <p class="counter-count">35</p>
+                                    <h3 class="title_of_counter">تعداد پروژه ها</h3>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="count-up">
+                                    <span class="plus_of_counter">+</span>
+                                    <p class="counter-count">20</p>
+                                    <h3 class="title_of_counter">مشتریان خوشحال</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 p-0 order-0 order-lg-1">
+                    <div class="Property_of_rush_team">
+                        <div class="circle_of_property">
+                            <div class="text_of_property">
+                                <p class="category_of_property">ریسپانسیو</p>
+                                <h4 class="title_of_explain_property">طراحی واکنش گرا</h4>
+                                <p class="explain_about_property dir_rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                            </div>
+                            <div class="Property_of_rush_team_item" id="property_1">
+                                <i class="far fa-desktop text-center icons_of_property"></i>
+                            </div>
+                            <div class="Property_of_rush_team_item" id="property_2">
+                                <i class="far fa-desktop text-center icons_of_property"></i>
+                            </div>
+                            <div class="Property_of_rush_team_item" id="property_3">
+                                <i class="far fa-desktop text-center icons_of_property"></i>
+                            </div>
+                            <div class="Property_of_rush_team_item" id="property_4">
+                                <i class="far fa-desktop text-center icons_of_property"></i>
+                            </div>
+                            <div class="Property_of_rush_team_item" id="property_5">
+                                <i class="far fa-desktop text-center icons_of_property"></i>
+                            </div>
+                            <div class="Property_of_rush_team_item" id="property_6">
+                                <i class="far fa-desktop text-center icons_of_property"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{!!}
+
+{/body}
