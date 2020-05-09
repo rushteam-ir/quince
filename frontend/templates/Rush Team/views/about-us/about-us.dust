@@ -150,11 +150,11 @@
                             <h3 class="name_of_team">نادیه نجم آبادی</h3>
                             <span class="rule_of_pearson_in_team  d-inline-block">طراح و توسعه دهنده وب سایت</span>
                             <p class="about_the_person_in_team text-justify dir_rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوماز صنعت چاپ و با استفاده از طراحان گرافیک است</p>
-                            <ul class="social_media_for_each_person">
-                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-facebook-f link_of_social_media"></a></li>
-                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-google-plus-g link_of_social_media"></a></li>
-                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-youtube link_of_social_media"></a></li>
-                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-linkedin-in link_of_social_media"></a></li>
+                            <ul class="social_media_for_each_person p-0">
+                                <li class="d-inline-block pr-1"><a href="#" class="fab fa-facebook-f link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-1"><a href="#" class="fab fa-google-plus-g link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-1"><a href="#" class="fab fa-youtube link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-1"><a href="#" class="fab fa-linkedin-in link_of_social_media"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -166,11 +166,11 @@
                             <h3 class="name_of_team">نادیه نجم آبادی</h3>
                             <span class="rule_of_pearson_in_team  d-inline-block">طراح و توسعه دهنده وب سایت</span>
                             <p class="about_the_person_in_team text-justify dir_rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوماز صنعت چاپ و با استفاده از طراحان گرافیک است</p>
-                            <ul class="social_media_for_each_person">
-                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-facebook-f link_of_social_media"></a></li>
-                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-google-plus-g link_of_social_media"></a></li>
-                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-youtube link_of_social_media"></a></li>
-                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-linkedin-in link_of_social_media"></a></li>
+                            <ul class="social_media_for_each_person p-0">
+                                <li class="d-inline-block pr-1"><a href="#" class="fab fa-facebook-f link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-1"><a href="#" class="fab fa-google-plus-g link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-1"><a href="#" class="fab fa-youtube link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-1"><a href="#" class="fab fa-linkedin-in link_of_social_media"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -182,11 +182,11 @@
                             <h3 class="name_of_team text-right">نادیه نجم آبادی</h3>
                             <span class="rule_of_pearson_in_team this_one d-inline-block">طراح و توسعه دهنده وب سایت</span>
                             <p class="about_the_person_in_team text-justify dir_rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوماز صنعت چاپ و با استفاده از طراحان گرافیک است</p>
-                            <ul class="social_media_for_each_person">
-                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-facebook-f link_of_social_media"></a></li>
-                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-google-plus-g link_of_social_media"></a></li>
-                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-youtube link_of_social_media"></a></li>
-                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-linkedin-in link_of_social_media"></a></li>
+                            <ul class="social_media_for_each_person p-0">
+                                <li class="d-inline-block pr-1"><a href="#" class="fab fa-facebook-f link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-1"><a href="#" class="fab fa-google-plus-g link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-1"><a href="#" class="fab fa-youtube link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-1"><a href="#" class="fab fa-linkedin-in link_of_social_media"></a></li>
                             </ul>
                         </div>
                     </div>

@@ -224,13 +224,14 @@
 }
 
 .name_of_team{
-    font-size: 1.5rem;
+    font-size: 1.5vw;
 }
 
 .social_media_for_each_person{
-    width: 100%;
+    width: 160px;
     text-align: center;
     color: #4e555b;
+    margin: 0 auto;
 }
 
 .link_of_social_media{
@@ -238,7 +239,7 @@
     display: block;
     width: 36px;
     height: 36px;
-    font-size: 14px;
+    font-size: 1.5rem;
     border-radius: 5px;
     text-align: center;
     line-height: 36px;
@@ -279,12 +280,13 @@
 .about_the_person_in_team{
     padding-top: 30px;
     color: #323232;
-
+    font-size: 0.9vw;
 }
 
 .this_one{
     position: relative;
     left: 8%;
+    font-size: 1vw;
 }
 
 .name_of_team{

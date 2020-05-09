@@ -114,3 +114,22 @@ label {
 textarea.form-control {
     height: 200px !important;
 }
+
+.main_form_design{
+    background-color: #F3F6F9;
+    border: none;
+}
+
+.main_form_design:focus {
+    color: #495057 !important;
+    background-color: #ECF0F3;
+    border-color: unset !important;
+    outline: 0;
+    box-shadow: unset !important;
+}
+
+.main_lable_design{
+    color: #464E5F;
+    font-weight: normal;
+    font-size: 0.9rem;
+}
