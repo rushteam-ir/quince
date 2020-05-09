@@ -43,21 +43,24 @@
                     <div class="box_of_property_rush_team text-center">
                         <i class="far fa-grin-beam icons_of_property_rush_team"></i>
                         <h2 class="title_of_property_rush_team">گرم و صمیمی</h2>
-                        <p class="explain_about_property_rush_team dir_rtl">ارتباط ميان اعضاء صميمانه است و آنان براي بيان ايده‌ها، عقايد و نقطه‌‌نظرات خود احساس راحتي و آزادي مي‌كنند.</p>
+                        <p class="explain_about_property_rush_team dir_rtl">ارتباط ميان اعضاء صميمانه است و آنان براي
+                            بيان ايده‌ها، عقايد و نقطه‌‌نظرات خود احساس راحتي و آزادي مي‌كنند.</p>
                     </div>
                 </div>
                 <div class="col-8 offset-2 col-md-4 offset-md-0">
                     <div class="box_of_property_rush_team text-center pb-5">
                         <i class="fas fa-unicorn icons_of_property_rush_team"></i>
                         <h2 class="title_of_property_rush_team">گرم و صمیمی</h2>
-                        <p class="explain_about_property_rush_team dir_rtl">ارتباط ميان اعضاء صميمانه است و آنان براي بيان ايده‌ها، عقايد و نقطه‌‌نظرات خود احساس راحتي و آزادي مي‌كنند.</p>
+                        <p class="explain_about_property_rush_team dir_rtl">ارتباط ميان اعضاء صميمانه است و آنان براي
+                            بيان ايده‌ها، عقايد و نقطه‌‌نظرات خود احساس راحتي و آزادي مي‌كنند.</p>
                     </div>
                 </div>
                 <div class="col-8 offset-2 col-md-4 offset-md-0">
                     <div class="box_of_property_rush_team text-center pb-5 pb-md-0">
                         <i class="fas fa-cat icons_of_property_rush_team"></i>
                         <h2 class="title_of_property_rush_team">گرم و صمیمی</h2>
-                        <p class="explain_about_property_rush_team dir_rtl">ارتباط ميان اعضاء صميمانه است و آنان براي بيان ايده‌ها، عقايد و نقطه‌‌نظرات خود احساس راحتي و آزادي مي‌كنند.</p>
+                        <p class="explain_about_property_rush_team dir_rtl">ارتباط ميان اعضاء صميمانه است و آنان براي
+                            بيان ايده‌ها، عقايد و نقطه‌‌نظرات خود احساس راحتي و آزادي مي‌كنند.</p>
                     </div>
                 </div>
             </div>
@@ -138,7 +141,7 @@
             </div>
         </div>
     </section>
-{!!}
+    {!!}
 
     <section>
         <div class="container-fluid mt_of_this_box">
@@ -149,12 +152,20 @@
                         <div class="team_content text-right">
                             <h3 class="name_of_team">نادیه نجم آبادی</h3>
                             <span class="rule_of_pearson_in_team  d-inline-block">طراح و توسعه دهنده وب سایت</span>
-                            <p class="about_the_person_in_team text-justify dir_rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوماز صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                            <p class="about_the_person_in_team text-justify dir_rtl">لورم ایپسوم متن ساختگی با تولید
+                                سادگی نامفهوماز صنعت چاپ و با استفاده از طراحان گرافیک است</p>
                             <ul class="social_media_for_each_person">
-                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-facebook-f link_of_social_media"></a></li>
-                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-google-plus-g link_of_social_media"></a></li>
-                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-youtube link_of_social_media"></a></li>
-                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-linkedin-in link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-2"><a href="#"
+                                                                   class="fab fa-facebook-f link_of_social_media"></a>
+                                </li>
+                                <li class="d-inline-block pr-2"><a href="#"
+                                                                   class="fab fa-google-plus-g link_of_social_media"></a>
+                                </li>
+                                <li class="d-inline-block pr-2"><a href="#"
+                                                                   class="fab fa-youtube link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-2"><a href="#"
+                                                                   class="fab fa-linkedin-in link_of_social_media"></a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -165,12 +176,20 @@
                         <div class="team_content text-right">
                             <h3 class="name_of_team">نادیه نجم آبادی</h3>
                             <span class="rule_of_pearson_in_team  d-inline-block">طراح و توسعه دهنده وب سایت</span>
-                            <p class="about_the_person_in_team text-justify dir_rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوماز صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                            <p class="about_the_person_in_team text-justify dir_rtl">لورم ایپسوم متن ساختگی با تولید
+                                سادگی نامفهوماز صنعت چاپ و با استفاده از طراحان گرافیک است</p>
                             <ul class="social_media_for_each_person">
-                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-facebook-f link_of_social_media"></a></li>
-                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-google-plus-g link_of_social_media"></a></li>
-                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-youtube link_of_social_media"></a></li>
-                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-linkedin-in link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-2"><a href="#"
+                                                                   class="fab fa-facebook-f link_of_social_media"></a>
+                                </li>
+                                <li class="d-inline-block pr-2"><a href="#"
+                                                                   class="fab fa-google-plus-g link_of_social_media"></a>
+                                </li>
+                                <li class="d-inline-block pr-2"><a href="#"
+                                                                   class="fab fa-youtube link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-2"><a href="#"
+                                                                   class="fab fa-linkedin-in link_of_social_media"></a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -181,12 +200,20 @@
                         <div class="team_content">
                             <h3 class="name_of_team text-right">نادیه نجم آبادی</h3>
                             <span class="rule_of_pearson_in_team this_one d-inline-block">طراح و توسعه دهنده وب سایت</span>
-                            <p class="about_the_person_in_team text-justify dir_rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوماز صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                            <p class="about_the_person_in_team text-justify dir_rtl">لورم ایپسوم متن ساختگی با تولید
+                                سادگی نامفهوماز صنعت چاپ و با استفاده از طراحان گرافیک است</p>
                             <ul class="social_media_for_each_person">
-                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-facebook-f link_of_social_media"></a></li>
-                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-google-plus-g link_of_social_media"></a></li>
-                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-youtube link_of_social_media"></a></li>
-                                <li class="d-inline-block pr-3"><a href="#" class="fab fa-linkedin-in link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-2">
+                                    <a href="#" class="fab fa-facebook-f link_of_social_media"></a>
+                                </li>
+                                <li class="d-inline-block pr-2">
+                                    <a href="#" class="fab fa-google-plus-g link_of_social_media"></a>
+                                </li>
+                                <li class="d-inline-block pr-2">
+                                    <a href="#" class="fab fa-youtube link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-2">
+                                    <a href="#" class="fab fa-linkedin-in link_of_social_media"></a>
+                                </li>
                             </ul>
                         </div>
                     </div>
