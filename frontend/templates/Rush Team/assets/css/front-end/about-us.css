@@ -224,7 +224,7 @@
 }
 
 .name_of_team{
-    font-size: 1.5vw;
+    font-size: 1.5rem;
 }
 
 .social_media_for_each_person{
@@ -284,9 +284,7 @@
 }
 
 .this_one{
-    position: relative;
-    left: 8%;
-    font-size: 1vw;
+    text-align: right;
 }
 
 .name_of_team{
