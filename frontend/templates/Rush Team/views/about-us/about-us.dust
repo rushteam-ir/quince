@@ -37,15 +37,9 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
-                    <div class="property_of_rush_team">
-                        <div class="row">
-                            <div class="col-10 offset-1 col-md-4 offset-md-0 a bg-success"></div>
-                            <div class="col-10 offset-1 col-md-4 offset-md-0 a bg-secondary"></div>
-                            <div class="col-10 offset-1 col-md-4 offset-md-0 a bg-danger"></div>
-                        </div>
-                    </div>
-                </div>
+                <div class="col-8 offset-2 col-md-4 offset-md-0 aaa bg-danger"></div>
+                <div class="col-8 offset-2 col-md-4 offset-md-0 aaa bg-secondary"></div>
+                <div class="col-8 offset-2 col-md-4 offset-md-0 aaa bg-primary"></div>
             </div>
         </div>
     </section>
