@@ -176,15 +176,24 @@
         top: 13px;
     }
 
-    .category_of_property{
-        padding-top: 0px;
-    }
-
     .explain_about_property{
-        font-size: .7rem;
+        font-size: .8rem;
         padding-top: 10px;
     }
 
+    .title_of_explain_property{
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+    .category_of_property{
+        padding-top: 10px;
+    }
+    .explain_about_property{
+        font-size: .7rem;
+    }
     .title_of_explain_property{
         font-size: .8rem;
     }
