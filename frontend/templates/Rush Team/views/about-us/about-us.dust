@@ -16,7 +16,41 @@
 
 {<body}
 
-{!!}
+
+{!header!}
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 px-0">
+                    <div class="background_img_as_about_us"></div>
+                    <div class="cover_of_img text-center">
+                        <h1 class="style_of_title_about_us">RUSH TEAM</h1>
+                        <h4 class="pb-4">
+                            گروهی کوچک میتواند تاثیری بزرگ داشته باشد
+                        </h4>
+                        <p class="explain_about_Rush_team">
+                            رسانه دیجیتال میتواند تاثیری مثبت روی زندگی ما بگذارد . کسب و کار ها از این رسانه ها
+                            میتوانند برای شفافیت بیشتر، خدمت رسانی بهتر و صمیمت بیشتر با مشتری ها استفاده کند . ما
+                            میخواهیم در این مسیر تاثیری کوچک داشته باشیم.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="property_of_rush_team">
+                        <div class="row">
+                            <div class="col-10 offset-1 col-md-4 offset-md-0 a bg-success"></div>
+                            <div class="col-10 offset-1 col-md-4 offset-md-0 a bg-secondary"></div>
+                            <div class="col-10 offset-1 col-md-4 offset-md-0 a bg-danger"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {!/header!}
+    {!!}
     <section>
         <div class="container">
             <div class="row">
@@ -34,7 +68,7 @@
                                 <div class="count-up">
                                     <span class="plus_of_counter">+</span>
                                     <p class="counter-count">200</p>
-                                    <h3  class="title_of_counter">ساعات کار</h3>
+                                    <h3 class="title_of_counter">ساعات کار</h3>
                                 </div>
                             </div>
                         </div>
@@ -62,7 +96,8 @@
                             <div class="text_of_property">
                                 <p class="category_of_property">ریسپانسیو</p>
                                 <h4 class="title_of_explain_property">طراحی واکنش گرا</h4>
-                                <p class="explain_about_property dir_rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                <p class="explain_about_property dir_rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                    از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
                             </div>
                             <div class="Property_of_rush_team_item" id="property_1">
                                 <i class="far fa-desktop text-center icons_of_property"></i>
