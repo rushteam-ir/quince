@@ -1,0 +1,145 @@
+{>"layouts/dashboard-layout"/}
+
+{<css}
+    <link rel="stylesheet" href="css/profile/profile.css">
+{/css}
+{<js} 
+    <script src="js/profile/profile.js"></script>
+{/js}
+
+
+{<body}
+
+    <section>
+        <div class="main_field_of_profile mt-4">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-9 pl-0 pr-0">
+                        <div class="main_field_of_left_pro dir-rtl text-right p-4">
+
+                            <header>
+                                    <p class="header_of_tabs">اطلاعات شخصی</p>
+                                    <p class="small_of_tabs">اطلاعات شخصی خود را به روز رسانی کنید!</p>
+ 
+                                    <div class="field_of_pr_btn">
+                                        <button class="btn btn_of_save_changes">ثبت تغییرات</button>
+                                        <button class="btn btn_of_cancel_changes mr-2">لغو</button>
+                                    </div>
+
+                                    <hr>
+
+                            </header>
+
+                            <div class="main_div_of_personal_form">
+
+                                <form>
+
+                                    <div class="form-group mt-4 row">
+                                      <label for="user_name" class="col-sm-2 col-form-label main_lable_design">نام</label>
+                                        <div class="col-sm-10">
+                                            <input type="password" class="form-control main_form_design" id
+                                            ="user_name">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group mt-4 row">
+                                        <label for="user_name" class="col-sm-2 col-form-label main_lable_design">ایمیل</label>
+                                          <div class="col-sm-10">
+                                              <input type="password" class="form-control main_form_design" id="user_name">
+                                          </div>
+                                      </div>
+                                      
+                                    <div class="form-group mt-4 row">
+                                        <label for="user_name" class="col-sm-2 col-form-label main_lable_design">نام کاربری</label>
+                                          <div class="col-sm-10">
+                                              <input type="password" class="form-control main_form_design" id="user_name">
+                                          </div>
+                                      </div>
+                                      
+                                    <div class="form-group mt-4 row">
+                                        <label for="user_name" class="col-sm-2 col-form-label main_lable_design">شماره تماس</label>
+                                          <div class="col-sm-10">
+                                              <input type="password" class="form-control main_form_design" id="user_name">
+                                          </div>
+                                      </div>
+                                      
+                                    <div class="form-group mt-4 row">
+                                        <label for="user_name" class="col-sm-2 col-form-label main_lable_design">نام خانوادگی</label>
+                                          <div class="col-sm-10">
+                                              <input type="password" class="form-control main_form_design" id="user_name">
+                                          </div>
+                                      </div>
+                                      
+                                    <div class="form-group mt-4 row">
+                                        <label for="user_name" class="col-sm-2 col-form-label main_lable_design"></label>
+                                          <div class="col-sm-10">
+                                              <input type="password" class="form-control main_form_design" id="user_name">
+                                          </div>
+                                      </div>
+
+                                  </form>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-3 pr-0 dir-rtl text-right">
+
+                        <div class="prodile_tabs p-4">
+
+                            <div class="field_of_pro_img">
+                                <img class="d-inline-block pro_logo" src="img/img2.jpg">
+
+                                <div class="d-inline-block field_of_user_name mr-3">
+                                    <h2  class="user_name_pro_page mb-1">کسری حبیب بیگی</h2>
+                                    <h3  class="user_access_pro">ادمین اصلی </h3>
+                                    <button class="btn pro_chat_btn mt-2">ارسال پیام</button>
+                                </div>
+
+                            </div>
+
+                            <div class="field_of_tab_info mt-4">
+
+                                <div class="position-relative">
+                                    <p class="d-inline-block text-right mb-1">ایمیل:</p>
+                                    <p class="d-inline-block left_text_info mb-1">kasra@gmail.com</p>
+                                </div>
+                                <div class="position-relative">
+                                    <p class="d-inline-block text-right mb-1">شماره تماس:</p>
+                                    <p class="d-inline-block dir-ltr left_text_info mb-1">+989021414866</p>
+                                </div>
+                                <div class="position-relative">
+                                    <p class="d-inline-block text-right mb-1">شهر:</p>
+                                    <p class="d-inline-block left_text_info mb-1">تهران</p>
+                                </div>
+
+                            </div>
+
+                            <div class="profile_tab mt-4">
+
+                                <i class="fas fa-user-tie"></i>
+                                <p class="d-inline-block mr-3 mt-3">پروفایل کاربری</p>
+
+                            </div>
+
+                            <div class="profile_tab">
+
+                                <i class="fas fa-shield-alt"></i>
+                                <p class="d-inline-block mr-3 mt-3">تعویض رمز عبور</p>
+
+                            </div>                            
+
+                        </div> 
+ 
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="js/profile/profile.js"></script>
+{/body}

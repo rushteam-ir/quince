@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/general/general-css.css">
     <link rel="stylesheet" href="css/layout/dashboard.css">
     <link rel="stylesheet" href="css/general/css-animate.css">
+    {+css/}
     <title>Rush Team CMS</title>
 </head>
 
@@ -162,6 +163,8 @@
 
         </nav>
 
+        {+body/}
+
     </div>
 
     <script src="js/general/jquery.js"></script>
@@ -172,6 +175,7 @@
     <script src="js/layout/toggle-dsh.js"></script>
     <script src="js/layout/collaps-menu.js"></script>
     <script src="js/layout/mobile-dsh.js"></script>
+    {+js/}
 </body>
 
 </html>
