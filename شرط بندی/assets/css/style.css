@@ -1,0 +1,33 @@
+.main_box{
+    background-color: rgb(218, 218, 218);
+    padding: 10px;
+}
+
+.lable_of_register{
+    font-weight: bold;
+}
+
+.header_of_reg_log{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.btn_of_reg_log{
+    margin-top: 10px;
+    width: 85%;
+    height: 45px;
+}
+
+.inp_of_log_reg{
+    width: 85%;
+}
+
+.margin_top_btn_custom{
+    margin-top: 72px;
+}
+
+
+.border_custom{
+    border: 2px solid black;
+    padding: 20px;
+}
