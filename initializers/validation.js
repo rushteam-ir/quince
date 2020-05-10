@@ -34,7 +34,7 @@ module.exports = class {
             return 'empty-input';
 
         }
-        else if(input.type != 'array' && (Array.isArray(input.value) || input.value.constructor === ({}).constructor)){
+        else if(input.type != 'array' && (Array.isArray(input.value))){
 
             return 'invalid-input';
 

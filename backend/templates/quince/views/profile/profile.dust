@@ -29,7 +29,7 @@
 
                             <div class="main_div_of_personal_form">
 
-                                <form>
+                                <form method="post" action="" enctype="multipart/form-data" autocomplete="off">
 
                                     <div class="form-group row">
                                         <label for="avatar" class="col-sm-2 col-form-label main_lable_design">تصویر پروفایل</label>
@@ -69,27 +69,27 @@
                                     <div class="form-group mt-4 row">
                                       <label for="user_name" class="col-sm-2 col-form-label main_lable_design">نام</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control main_form_design" id="user_name">
+                                            <input type="text" class="form-control main_form_design" id="user_name" name="first_name_inp" value="{admin_info.first_name}">
                                         </div>
                                     </div>
                                     <div class="form-group mt-4 row">
                                       <label for="user_lastname" class="col-sm-2 col-form-label main_lable_design">نام خانوادگی</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control main_form_design" id="user_lastname">
+                                            <input type="text" class="form-control main_form_design" id="user_lastname" name="last_name_inp" value="{admin_info.last_name}">
                                         </div>
                                     </div>
                                     
                                     <div class="form-group mt-4 row">
                                         <label for="user_username" class="col-sm-2 col-form-label main_lable_design">نام مستعار</label>
                                           <div class="col-sm-10">
-                                              <input type="text" class="form-control main_form_design" id="user_username">
+                                              <input type="text" class="form-control main_form_design" id="user_username" name="nick_name_inp" value="{admin_info.nick_name}">
                                           </div>
                                       </div>
 
                                     <div class="form-group mt-4 row">
                                         <label for="user_email" class="col-sm-2 col-form-label main_lable_design">ایمیل</label>
                                           <div class="col-sm-10">
-                                              <input type="text" class="form-control main_form_design" id="user_email">
+                                              <input type="text" class="form-control main_form_design" id="user_email" name="email_inp" value="{admin_info.email}">
                                           </div>
                                       </div>
                                       
@@ -97,7 +97,7 @@
                                     <div class="form-group mt-4 row">
                                         <label for="user_phone" class="col-sm-2 col-form-label main_lable_design">شماره تماس</label>
                                           <div class="col-sm-10">
-                                              <input type="text" class="form-control main_form_design" id="user_phone">
+                                              <input type="text" class="form-control main_form_design" id="user_phone" name="phone_number_inp" value="{admin_info.phone_number}">
                                           </div>
                                       </div>
 

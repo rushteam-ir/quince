@@ -21,25 +21,27 @@ router.post('/', async(req,res)=>{
 
         if(req.body.profile_info == ''){
 
-            let {email_inp, firstname_inp, lastname_inp, phonenumber_inp} = req.body;
+            log(req.body);
+            let {first_name_inp, last_name_inp, nick_name_inp, email_inp, phone_number_inp} = req.body;
 
             let last_input = req.session.admin_info;
-            let last_checkbox = '';
+            let last_check_box = '';
+            let author_type = '';
 
             if(req.body.author_type === 'on'){
 
-                last_checkbox = 'email';
+                last_check_box = 'nick_name';
 
             }
             else{
 
-                last_checkbox = 'name';
+                last_check_box = 'name';
 
             }
 
-            if(last_input.first_name == firstname_inp &&
-                last_input.last_name == lastname_inp && last_input.email == email_inp &&
-                last_input.phone_number == phonenumber_inp && last_input.author_type == last_checkbox &&
+            if(last_input.first_name == first_name_inp && last_input.nick_name == nick_name_inp &&
+                last_input.last_name == last_name_inp && last_input.email == email_inp &&
+                last_input.phone_number == phone_number_inp && last_input.author_type == last_check_box &&
                 !req.files){
 
                 return res.redirect(`${config.backend_url}profile/?msg=no-change`);
@@ -48,9 +50,10 @@ router.post('/', async(req,res)=>{
 
             let validation_result = new validation([
                 {value : email_inp, type : 'email'},
-                {value : firstname_inp},
-                {value : lastname_inp},
-                {value : phonenumber_inp , type : 'phone'},
+                {value : first_name_inp},
+                {value : last_name_inp},
+                {value : nick_name_inp},
+                {value : phone_number_inp , type : 'phone'},
             ]).valid();
 
             if(validation_result){
@@ -61,7 +64,7 @@ router.post('/', async(req,res)=>{
 
             if(req.body.author_type == 'on'){
 
-                author_type = 'email';
+                author_type = 'nick_name';
 
             }
             else{
@@ -73,10 +76,11 @@ router.post('/', async(req,res)=>{
             let admin_id = req.session.admin_id;
             let admin_data = {
 
-                first_name : firstname_inp,
-                last_name : lastname_inp,
+                first_name : first_name_inp,
+                last_name : last_name_inp,
+                nick_name : nick_name_inp,
                 email : email_inp,
-                phone_number : phonenumber_inp,
+                phone_number : phone_number_inp,
                 author_type : author_type
 
             };

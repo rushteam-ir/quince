@@ -3,6 +3,7 @@ let user_schema = new mongoose.Schema({
 
    first_name : String,
    last_name : String,
+   nick_name : String,
    password : String,
    email : {type : String, unique : true},
    phone_number : String,
