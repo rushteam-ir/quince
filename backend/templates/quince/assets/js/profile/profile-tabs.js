@@ -12,16 +12,16 @@ $(document).ready(function () {
 
     profile_tab.eq('0').click(function () {
 
-        pro_field.css('display', 'none');
-        pro_field.eq('0').css('display', 'block');
+        pro_field.hide();
+        pro_field.eq('0').fadeIn();
         sessionStorage.profileTab = '1';
 
     });
 
     profile_tab.eq('1').click(function () {
 
-        pro_field.css('display', 'none')
-        pro_field.eq('1').css('display', 'block');
+        pro_field.hide()
+        pro_field.eq('1').fadeIn();
         sessionStorage.profileTab = '2';
 
     });
@@ -29,17 +29,18 @@ $(document).ready(function () {
 
     profile_tab.eq('2').click(function () {
 
-        pro_field.css('display', 'none');
-        pro_field.eq('2').css('display', 'block');
+        pro_field.hide();
+        pro_field.eq('2').fadeIn();
         sessionStorage.profileTab = '3';
 
     });
+
 
     if(sessionStorage.profileTab =='1'){
 
         profile_tab.removeClass('profile_tab_active');
         profile_tab.eq('0').addClass('profile_tab_active');
-        pro_field.css('display', 'none')
+        pro_field.hide()
         pro_field.eq('0').css('display', 'block');
 
     }
@@ -48,7 +49,7 @@ $(document).ready(function () {
 
         profile_tab.removeClass('profile_tab_active');
         profile_tab.eq('1').addClass('profile_tab_active');
-        pro_field.css('display', 'none')
+        pro_field.hide()
         pro_field.eq('1').css('display', 'block');
     
     }
@@ -57,7 +58,7 @@ $(document).ready(function () {
 
         profile_tab.removeClass('profile_tab_active');
         profile_tab.eq('2').addClass('profile_tab_active');
-        pro_field.css('display', 'none')
+        pro_field.hide()
         pro_field.eq('2').css('display', 'block');
     
     }
