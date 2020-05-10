@@ -5,6 +5,7 @@
 {/css}
 {<js} 
     <script src="js/profile/profile.js"></script>
+    <script src="js/profile/profile-tabs.js"></script>
 {/js}
 
 
@@ -16,7 +17,7 @@
                 <div class="row">
 
                     <div class="col-9 pl-0 pr-0">
-                        <div class="main_field_of_left_pro dir-rtl text-right p-4">
+                        <div class="main_field_of_left_pro dir-rtl text-right p-4 display_none" id="first_tab">
 
                             <header>
                                     <p class="header_of_tabs">اطلاعات پروفایل</p>
@@ -84,7 +85,7 @@
                                     </div>
                                     
                                     <div class="form-group mt-4 row">
-                                        <label for="user_username" class="col-sm-2 col-form-label main_lable_design">نام کاربری</label>
+                                        <label for="user_username" class="col-sm-2 col-form-label main_lable_design">نام مستعار</label>
                                           <div class="col-sm-10">
                                               <input type="text" class="form-control main_form_design" id="user_username">
                                           </div>
@@ -118,7 +119,7 @@
 
 
 
-                        <div class="main_field_of_left_pro dir-rtl text-right p-4">
+                        <div class="main_field_of_left_pro dir-rtl text-right p-4 display_none">
 
                             <header>
                                     <p class="header_of_tabs">اطلاعات شخصی</p>
@@ -183,7 +184,7 @@
 
 
 
-                        <div class="main_field_of_left_pro dir-rtl text-right p-4">
+                        <div class="main_field_of_left_pro dir-rtl text-right p-4 display_none">
 
                             <header>
                                     <p class="header_of_tabs">تغییر رمز عبور</p>
@@ -233,7 +234,7 @@
                                       </div>
 
                                       <div class="form-group mt-4 row">
-                                        <label for="user_rep_new_pass" class="col-sm-2 col-form-label main_lable_design">تکرار رمز عبور جدید</label>
+                                        <label for="user_rep_new_pass" class="col-sm-2 col-form-label main_lable_design">تکرار رمز عبور</label>
                                           <div class="col-sm-10">
                                             <input type="password" class="form-control main_form_design" id="user_rep_new_pass">
                                           </div>
@@ -300,7 +301,8 @@
                                 <i class="fas fa-shield-alt"></i>
                                 <p class="d-inline-block mr-3 mt-3">تعویض رمز عبور</p>
 
-                            </div>                            
+                            </div>       
+                                                 
 
                         </div> 
  
@@ -312,5 +314,4 @@
 
     </section>
 
-    <script src="js/profile/profile.js"></script>
 {/body}
