@@ -36,7 +36,6 @@
                                         <div class="col-sm-10">
 
                                             <div class="field_of_img_template">
-                
                                                 <div class="box_of_img_template">
                                                     <div class="box_of_img_template img-box">
                                                         <div class="img-show">
@@ -57,7 +56,6 @@
                                                     </div>
                         
                                                 </div>
-                                            
                                             </div>
 
                                             <p class="alert_pro_descripion mb-1">حجم مجاز برای آپلود عکس یک مگابایت است و همچنین پسوند های مجاز برای آپلود عکس .jpg , .png , .asp , .php می باشد.</p>
@@ -208,11 +206,8 @@
                                             <i class="fad fa-exclamation-circle password_alert_pro"></i>
                                         </div>
                                         <div class="col-11">
-                                            <p class="mb-1">
-                                                همچنین توجه فرمایید که بهتر است برای جلو گیری از لو رفتن پسورد خود هر چند وقت یک بار آن را تعویض کنید.
-                                            </p>
-                                            <p class="mb-0">
-                                                توجه داشته باشید حاما رمز عبور باید بیشتر از 8 رقم یا حرف باید . 
+                                            <p class="mb-1 alert_pro_text">
+                                                لطفا توجه داشته باشید که رمز عبور شما حداقل باید شامل 8 عدد یا حرف باشد . همچنین با عوض کردن رمز عبور خود امنیت حساب خود را بالا تر ببرید.
                                             </p>
                                         </div>
 

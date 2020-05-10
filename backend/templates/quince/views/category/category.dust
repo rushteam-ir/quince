@@ -1,0 +1,15 @@
+{>"layouts/dashboard-layout"/}
+
+{<css}
+    <link rel="stylesheet" href="css/category/category.css">
+{/css}
+{<js} 
+    <script src="js/category/category.js"></script>
+    <script src="js/category/category-tabs.js"></script>
+{/js}
+
+
+{<body}
+
+
+{/body}

@@ -40,7 +40,7 @@
 
                 </a>
 
-                <a href="" class="d-block position-relative dashboard_links">
+                <a href="{backend_url}profile" class="d-block position-relative dashboard_links">
 
                     <i class="fas fa-user-circle d-inline-block dashboard_icons"></i>
                     <li class="mr-2 dashboard_text">پروفایل</li>
@@ -167,6 +167,7 @@
 
     </div>
 
+
     <script src="js/general/jquery.js"></script>
     <script src="js/general/bootstrap.js"></script>
     <script src="js/general/popper.js"></script>
@@ -179,3 +180,5 @@
 </body>
 
 </html>
+
+

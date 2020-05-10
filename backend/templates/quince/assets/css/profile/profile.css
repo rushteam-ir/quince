@@ -99,13 +99,13 @@
 }
 
 .btn_of_cancel_changes:hover {
-    color: #F64E60;
-    background-color: rgb(255, 200, 206);
+    color: rgb(255, 255, 255);
+    background-color: #F64E60;
 }
 
 .btn_of_save_changes:hover {
-    color: #1BC5BD;
-    background-color: rgb(164, 235, 232);
+    color: rgb(255, 255, 255);
+    background-color: #1BC5BD;
 }
 
 .main_div_of_personal_form {
@@ -129,7 +129,7 @@
 
 .box_of_pass_alert_pro{
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     background-color: #FFE2E5;
     color: #F64E60;
     border-radius: 5px;
@@ -138,7 +138,11 @@
 
 .password_alert_pro{
     font-size: 2rem;
-    margin: 20px 0px;
+    margin: 7px 0px;
+}
+
+.alert_pro_text{
+    font-size: 0.9rem;
 }
 
 
@@ -187,17 +191,18 @@
 }
 
 .box_of_img_template {
-    width: 220px;
-    height: 210px;
+    width: 160px;
+    height: 160px;
     border-radius: 6px;
     background:linear-gradient(45deg, rgb(255, 255, 255) 0%, rgb(230, 230, 230) 100%);
     position: relative;
 }
 
 .btn-tertiary2 {
+    font-size: 0.9rem;
     color: #555;
     padding: 0;
-    line-height: 215px;
+    line-height: 160px;
     width: 100%;
     display: block;
     border: 1.3px solid #d6d6d6;
