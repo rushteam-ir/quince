@@ -22,11 +22,6 @@
                             <header>
                                     <p class="header_of_tabs">اطلاعات پروفایل</p>
                                     <p class="small_of_tabs mt-2">اطلاعات پروفایل خود را به روز رسانی کنید!</p>
- 
-                                    <div class="field_of_pr_btn">
-                                        <button type="submit" class="btn btn_of_save_changes" name="profile_info">ثبت تغییرات</button>
-                                        <button class="btn btn_of_cancel_changes mr-2">لغو</button>
-                                    </div>
 
                                     <hr>
 
@@ -110,6 +105,11 @@
                                           <input type="checkbox" class="option-input checkbox" checked />
                                             <p class="mr-2 mb-0 checkbox_pro_text d-inline-block">استفاده نام کاربری به عنوام نام پروفایل .</p>
                                         </label>
+
+                                        <div class="field_of_pr_btn">
+                                            <button type="submit" class="btn btn_of_save_changes" name="profile_info">ثبت تغییرات</button>
+                                            <button class="btn btn_of_cancel_changes mr-2">لغو</button>
+                                        </div>
                                 
                                   </form>
 
@@ -125,10 +125,7 @@
                                     <p class="header_of_tabs">اطلاعات شخصی</p>
                                     <p class="small_of_tabs mt-2">اطلاعات شخصی خود را به روز رسانی کنید!</p>
  
-                                    <div class="field_of_pr_btn">
-                                        <button class="btn btn_of_save_changes">ثبت تغییرات</button>
-                                        <button class="btn btn_of_cancel_changes mr-2">لغو</button>
-                                    </div>
+
 
                                     <hr>
 
@@ -175,6 +172,11 @@
                                           </div>
                                       </div>
                                 
+                                      <div class="field_of_pr_btn">
+                                        <button class="btn btn_of_save_changes">ثبت تغییرات</button>
+                                        <button class="btn btn_of_cancel_changes mr-2">لغو</button>
+                                    </div>
+
                                   </form>
 
                             </div>
@@ -190,10 +192,7 @@
                                     <p class="header_of_tabs">تغییر رمز عبور</p>
                                     <p class="small_of_tabs mt-2">با تغییر مداوم رمز عبور اکانت خود را امن نگاه دارید!</p>
  
-                                    <div class="field_of_pr_btn">
-                                        <button class="btn btn_of_save_changes">ثبت تغییرات</button>
-                                        <button class="btn btn_of_cancel_changes mr-2">لغو</button>
-                                    </div>
+
 
                                     <hr>
 
@@ -239,6 +238,11 @@
                                             <input type="password" class="form-control main_form_design" id="user_rep_new_pass">
                                           </div>
                                       </div>
+
+                                      <div class="field_of_pr_btn">
+                                        <button class="btn btn_of_save_changes">ثبت تغییرات</button>
+                                        <button class="btn btn_of_cancel_changes mr-2">لغو</button>
+                                    </div>
 
                                   </form>
 
