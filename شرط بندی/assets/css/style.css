@@ -31,3 +31,47 @@
     border: 2px solid black;
     padding: 20px;
 }
+
+.main_table{
+    background-color: white;
+}
+
+.test{
+    position: absolute;
+    bottom: 0px;
+    font-size: 0.5rem;
+    color: transparent;
+}
+
+.main_field_of_shart{
+    text-align: center;
+}
+
+.main_field_of_shart .text_of_shart:nth-child(1){
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.ratio_class{
+    color: red;
+}
+
+.main_field_of_shart .text_of_shart:nth-child(3){
+    color: green;
+    font-weight: bold;
+}
+
+.main_field_of_shart .text_of_shart:nth-child(5){
+    color: red;
+    font-weight: bold;
+}
+
+.ratio_btn{
+    display: block;
+    width: 53.5%;
+    margin: 0 auto;
+}
+
+.user_info{
+    font-weight: bold;
+}
