@@ -24,7 +24,7 @@
                                     <p class="small_of_tabs mt-2">اطلاعات پروفایل خود را به روز رسانی کنید!</p>
  
                                     <div class="field_of_pr_btn">
-                                        <button class="btn btn_of_save_changes">ثبت تغییرات</button>
+                                        <button type="submit" class="btn btn_of_save_changes" name="profile_info">ثبت تغییرات</button>
                                         <button class="btn btn_of_cancel_changes mr-2">لغو</button>
                                     </div>
 
