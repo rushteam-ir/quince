@@ -75,3 +75,11 @@
 .user_info{
     font-weight: bold;
 }
+
+.logout_btn{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 130px;
+    height: 50px;
+}
