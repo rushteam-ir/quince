@@ -22,6 +22,19 @@
                                 <p class="header_of_tabs">دسته بندی ها</p>
                                 <p class="small_of_tabs mt-2">دسته بندی های سایت را بسازید !</p>
 
+                                <div class="input-group search_inp_category mb-3 dir-ltr">
+
+                                    <input type="text" class="form-control main_form_design text-right category_search dir-rtl" placeholder="جستجو" 
+                                    aria-label="Recipient's username" aria-describedby="button-addon2">
+
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary btn_of_search" type="button" id="button-addon2">
+                                          <i class="fal fa-search"></i>
+                                        </button>
+                                    </div>
+
+                                </div>
+
                                   <div class="form-group select_of_category">
 
                                       <p class="d-inline-block">تعداد ردیف ها :</p>
