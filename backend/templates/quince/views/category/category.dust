@@ -5,11 +5,125 @@
 {/css}
 {<js} 
     <script src="js/category/category.js"></script>
-    <script src="js/category/category-tabs.js"></script>
 {/js}
 
 
 {<body}
 
+    <section>
+        <div class="main_field_of_category mt-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-9 pl-0 pr-0">
+
+                        <div class="main_field_of_right_col px-5 py-4 text-right dir-rtl">
+
+                            <header>
+                                <p class="header_of_tabs">دسته بندی ها</p>
+                                <p class="small_of_tabs mt-2">دسته بندی های سایت را بسازید !</p>
+
+                                  <div class="form-group select_of_category">
+
+                                      <p class="d-inline-block">تعداد ردیف ها :</p>
+
+                                      <select class="form-control main_form_design count_row_table_of_category mr-2">
+                                        <option>10</option>
+                                        <option>25</option>
+                                        <option>50</option>
+                                      </select>
+
+                                  </div>
+
+
+                                <button class="btn remove_category_table">
+                                    <i class="fal fa-trash-alt delete_all_category"></i>
+                                </button>
+
+                            </header>
+
+                            <table class="table text-center category_table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">
+                                      <label class="checkbox_of_category">
+                                        <input type="checkbox" class="option-input checkbox">
+                                    </label>
+                                    </th>
+                                    <th scope="col">ردیف</th>
+                                    <th scope="col">نام دسته</th>
+                                    <th scope="col">زیر دسته</th>
+                                    <th scope="col">تعداد زیر دسته</th>
+                                    <th scope="col">تنظیمات</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+
+                                  <tr>
+                                    <td class="category_table_customize">
+
+                                        <label class="checkbox_of_category">
+                                            <input type="checkbox" class="option-input checkbox">
+                                        </label>
+
+                                    </td>
+                                    <th class="category_table_customize" scope="row">1</th>
+                                    <td class="category_table_customize">Mark</td>
+                                    <td class="category_table_customize">Otto</td>
+                                    <td class="category_table_customize">
+
+                                        <p class="number_of_child_category">3</p>
+
+                                    </td>
+                                    <td class="category_table_customize">
+
+                                        <button class="btn category_btn">
+                                            <i class="fal fa-edit"></i>
+                                        </button>
+                                        
+                                    </td>
+                                  </tr>
+                                  
+
+                                </tbody>
+                              </table>
+
+                        </div>
+
+                    </div>
+                    <div class="col-3 pr-0">
+
+                        <div class="main_field_of_right_col p-4 text-right dir-rtl">
+
+                            <form>
+                                <div class="form-group">
+                                  <label class="main_lable_design" for="category_name">نام دسته</label>
+                                  <input type="text" class="form-control main_form_design" id="category_name">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="main_lable_design" for="parent_category">دسته اصلی</label>
+                                    <select class="form-control main_form_design" id="parent_category">
+                                      <option>...</option>
+                                    </select>
+                                  </div>
+
+                                  <div class="form-group">
+                                    <label class="main_lable_design" for="child_category">زیر دسته</label>
+                                    <select class="form-control main_form_design" id="child_category">
+                                      <option>...</option>
+                                    </select>
+                                  </div>
+
+                                  <button class="btn_of_save_changes btn" type="submit">ثبت دسته بندی جدید</button>
+
+                              </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 {/body}

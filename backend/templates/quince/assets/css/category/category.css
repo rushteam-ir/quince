@@ -1,0 +1,165 @@
+.main_field_of_category{
+    width: 98%;
+    margin-left: 1%;
+}
+
+.main_field_of_right_col{
+    background-color: white;
+    border-radius: 7px;
+}
+
+.btn_of_save_changes {
+    color: #1BC5BD;
+    background-color: #C9F7F5;
+    height: 50px;
+}
+
+.btn_of_save_changes:hover {
+    color: rgb(255, 255, 255);
+    background-color: #1BC5BD;
+}
+.header_of_tabs {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.small_of_tabs {
+    font-size: 0.8rem;
+    color: #B9B9B9;
+}
+
+
+.category_btn{
+    width: 35px;
+    height: 35px;
+    padding: 0px;
+    padding-top: 2px;
+    padding-left: 2px;
+    background-color:#FFE2E5;
+    color: #F64E60;
+}
+
+.category_btn:hover{
+    background-color:#F64E60;
+    color: rgb(255, 255, 255);
+}
+
+.table td, .table th {
+    vertical-align: unset;
+}
+
+.category_table_customize{
+    padding: 17px 0px 10px 0px !important;
+}
+
+.checkbox_of_category{
+    height: 22px;
+    margin: 0px;
+    position: relative;
+    top: 5px;
+}
+.remove_category_table{
+    position: absolute;
+    left: 50px;
+    top: 30px;
+    font-size: 1rem;
+    height: 30px;
+    padding: 0px;
+    width: 30px;
+    padding-top: 4px;
+}
+
+.remove_category_table{
+    color: #6993FF;
+    background-color: #E1E9FF;
+}
+
+.remove_category_table:hover{
+    color: white;
+    background-color: #6993FF;
+}
+
+.select_of_category{
+    position: absolute;
+    top: 30px;
+    left: 90px;
+}
+
+.count_row_table_of_category{
+    font-size: 0.7rem;
+    height: 30px !important;
+    width: 60px;
+    display: inline-block;    
+}
+
+.select_of_category p {
+    font-size: 0.8rem;
+}
+
+.number_of_child_category{
+    width: 70px;
+    margin: 0 auto;
+    border-radius: 50px;
+    background-color: #EEE5FF;
+    height: 30px;
+    line-height: 34px;
+    color: #8950FC;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* check box custm */
+
+.option-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    transition: all 0.15s ease-out 0s;
+    background: #cbd1d8;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 0.5rem;
+    outline: none;
+    position: relative;
+    z-index: 1000;
+    border-radius: 4px;
+}
+
+.option-input:hover {
+    background: #9faab7;
+}
+
+.option-input:checked {
+    background: #40e0d0;
+}
+
+.option-input:checked::before {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    content: '✔';
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    line-height: 24px;
+}
