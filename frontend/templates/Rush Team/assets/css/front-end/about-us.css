@@ -213,7 +213,7 @@
     height: 100%;
     background-color: white;
     position: absolute;
-    padding:20% 30px 0;
+    padding:65px 30px 0;
     top: 0;
     right: -80%;
     transition: all 0.4s ease-in-out 0s;
@@ -239,7 +239,7 @@
     display: block;
     width: 36px;
     height: 36px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     border-radius: 5px;
     text-align: center;
     line-height: 36px;
@@ -275,6 +275,7 @@
 
 .rule_of_pearson_in_team{
     font-weight: bold;
+    font-size: .8rem;
 }
 
 .about_the_person_in_team{
@@ -293,6 +294,19 @@
     -webkit-text-fill-color: transparent;
 }
 /*aa*/
+@media only screen and (max-width: 1250px) and  (min-width: 1200px){
+    .rule_of_pearson_in_team{
+        font-size: .7rem;
+    }
+    .team_content{
+        padding:65px 30px 0;
+    }
+
+    .about_the_person_in_team {
+        padding-top: 15px;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
 
     .container,
@@ -309,6 +323,21 @@
     .style_of_title_about_us{
         padding-top: 70px;
     }
+
+    .our_team{
+        width: 95%;
+    }
+
+    .about_the_person_in_team {
+        font-size: 1.3vw;
+        padding-top: 20px;
+    }
+
+    .team_content{
+        width: 95%;
+        right: -95%;
+        padding: 50px 30px 0;
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -321,6 +350,34 @@
     }
     .counter_of_number{
         margin:50px auto;
+    }
+
+    .our_team{
+        width: 80%;
+    }
+
+    .about_the_person_in_team {
+        font-size: 1.5vw;
+
+    }
+
+    .team_content{
+        width: 80%;
+        right: -80%;
+        padding: 20% 30px 0;
+    }
+
+    .rule_of_pearson_in_team {
+        font-size: 1.5vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about_the_person_in_team {
+        font-size: 2vw;
+    }
+    .rule_of_pearson_in_team {
+        font-size: 1.8vw;
     }
 }
 
@@ -335,6 +392,15 @@
 
     .explain_about_Rush_team{
         width: 85%;
+    }
+
+    .our_team{
+        width: 90%;
+    }
+
+    .team_content{
+        width: 90%;
+        right: -90%;
     }
 }
 
@@ -465,6 +531,4 @@
     .explain_about_Rush_team{
         font-size: 0.8rem;
     }
-
-
 }
