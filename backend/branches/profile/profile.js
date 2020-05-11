@@ -126,6 +126,20 @@ router.post('/', async(req,res)=>{
             }
 
         }
+        else if(req.body.change_private == ''){
+
+            let {day_inp, month_inp, year_inp, country_inp, city_inp, bio_inp} = req.body;
+
+            let validation_result = new validation([
+                {value : day_inp},
+                {value : month_inp},
+                {value : year_inp},
+                {value : country_inp},
+                {value : city_inp},
+                {value : bio_inp},
+            ]).valid();
+
+        }
         else if(req.body.change_password == ''){
 
             let {current_password, new_password, confirm_password} = req.body;

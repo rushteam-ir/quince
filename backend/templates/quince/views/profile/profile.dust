@@ -58,7 +58,7 @@
                                                 </div>
                                             </div>
 
-                                            <p class="alert_pro_descripion mb-1">حجم مجاز برای آپلود عکس یک مگابایت است و همچنین پسوند های مجاز برای آپلود عکس .jpg , .png , .asp , .php می باشد.</p>
+                                            <p class="alert_pro_descripion mb-1">حجم مجاز برای آپلود تصویر حداکثر {limited_avatars_size} مگابایت و فرمت های مجاز .png ، .jpg ، .jpeg و .gif می باشد.</p>
                                         </div>
 
                 
@@ -100,8 +100,12 @@
                                       </div>
 
                                         <label>
-                                          <input type="checkbox" class="option-input checkbox" checked />
-                                            <p class="mr-2 mb-0 checkbox_pro_text d-inline-block">استفاده نام کاربری به عنوام نام پروفایل .</p>
+                                            {@eq key="{admin_info.author_type}" value="name"}
+                                                <input type="checkbox" class="option-input checkbox" name="author_type">
+                                            {:else}
+                                                <input type="checkbox" class="option-input checkbox" checked="checked" name="author_type">
+                                            {/eq}
+                                            <p class="mr-2 mb-0 checkbox_pro_text d-inline-block">نام مستعار به جای نام و نام خانوادگی من انتخاب شود.</p>
                                         </label>
 
                                         <div class="field_of_pr_btn">
@@ -137,41 +141,41 @@
                                     <div class="form-group mt-4 row">
                                       <label for="user_birthday" class="col-sm-2 col-form-label main_lable_design">تاریخ تولد</label>
                                         <div class="col-sm-2">
-                                            <input type="text" class="form-control main_form_design" id="user_birthday" placeholder="dd">
+                                            <input type="text" class="form-control main_form_design" id="user_birthday" placeholder="dd" name="day_inp">
                                         </div>
                                         <div class="col-sm-2">
                                             <span class="birth_day_backslash">/</span>
-                                           <input type="text" class="form-control main_form_design" placeholder="mm">
+                                           <input type="text" class="form-control main_form_design" placeholder="mm" name="month_inp">
                                         </div>
                                         <div class="col-sm-2">
                                             <span class="birth_day_backslash">/</span>
-                                            <input type="text" class="form-control main_form_design" placeholder="yy">
+                                            <input type="text" class="form-control main_form_design" placeholder="yy" name="year_inp">
                                         </div>
                                     </div>
                                     
                                     <div class="form-group mt-4 row">
                                         <label for="user_country" class="col-sm-2 col-form-label main_lable_design">کشور</label>
                                           <div class="col-sm-10">
-                                              <input type="text" class="form-control main_form_design" id="user_country">
+                                              <input type="text" class="form-control main_form_design" id="user_country" name="country_inp">
                                           </div>
                                       </div>
 
                                     <div class="form-group mt-4 row">
                                         <label for="user_city" class="col-sm-2 col-form-label main_lable_design">شهر</label>
                                           <div class="col-sm-10">
-                                            <input type="text" class="form-control main_form_design" id="user_city">
+                                            <input type="text" class="form-control main_form_design" id="user_city" name="city_inp">
                                           </div>
                                       </div>
 
                                       <div class="form-group mt-4 row">
                                         <label for="user_about" class="col-sm-2 col-form-label main_lable_design">درباره من</label>
                                           <div class="col-sm-10">
-                                            <textarea class="form-control main_form_design user_text_area" id="user_about" rows="3"></textarea>
+                                            <textarea class="form-control main_form_design user_text_area" id="user_about" rows="3" name="bio_inp"></textarea>
                                           </div>
                                       </div>
                                 
                                       <div class="field_of_pr_btn">
-                                        <button class="btn btn_of_save_changes">ثبت تغییرات</button>
+                                        <button class="btn btn_of_save_changes" name="change_private">ثبت تغییرات</button>
                                         <button class="btn btn_of_cancel_changes mr-2">لغو</button>
                                     </div>
 
@@ -198,7 +202,7 @@
 
                             <div class="main_div_of_personal_form">
 
-                                <form>
+                                <form method="post" action="" autocomplete="off">
 
                                     <div class="box_of_pass_alert_pro row">
 
@@ -216,26 +220,26 @@
                                     <div class="form-group mt-4 row">
                                         <label for="user_old_pass" class="col-sm-2 col-form-label main_lable_design">رمز عبور فعلی</label>
                                           <div class="col-sm-10">
-                                            <input type="password" class="form-control main_form_design" id="user_old_pass">
+                                            <input type="password" class="form-control main_form_design" id="user_old_pass" name="current_password">
                                           </div>
                                       </div>
 
                                       <div class="form-group mt-4 row">
                                         <label for="user_new_pass" class="col-sm-2 col-form-label main_lable_design">رمز عبور جدید</label>
                                           <div class="col-sm-10">
-                                            <input type="password" class="form-control main_form_design" id="user_new_pass">
+                                            <input type="password" class="form-control main_form_design" id="user_new_pass" name="new_password">
                                           </div>
                                       </div>
 
                                       <div class="form-group mt-4 row">
                                         <label for="user_rep_new_pass" class="col-sm-2 col-form-label main_lable_design">تکرار رمز عبور</label>
                                           <div class="col-sm-10">
-                                            <input type="password" class="form-control main_form_design" id="user_rep_new_pass">
+                                            <input type="password" class="form-control main_form_design" id="user_rep_new_pass" name="confirm_password">
                                           </div>
                                       </div>
 
                                       <div class="field_of_pr_btn">
-                                        <button class="btn btn_of_save_changes">ثبت تغییرات</button>
+                                        <button class="btn btn_of_save_changes" name="change_password">ثبت تغییرات</button>
                                         <button class="btn btn_of_cancel_changes mr-2">لغو</button>
                                     </div>
 
@@ -255,11 +259,25 @@
                         <div class="prodile_tabs p-4">
 
                             <div class="field_of_pro_img">
-                                <img class="d-inline-block pro_logo" src="img/img2.jpg">
+                                {@eq key="{admin_info.avatar}" value=""}
+
+                                {:else}
+                                    <img class="d-inline-block pro_logo" src="media/avatars/{admin_info.avatar}">
+                                {/eq}
 
                                 <div class="d-inline-block mr-3">
-                                    <h2  class="user_name_pro_page mb-1">کسری حبیب بیگی</h2>
-                                    <h3  class="user_access_pro">ادمین اصلی </h3>
+                                    {@eq key="{admin_info.author_type}" value="name"}
+                                        <h2  class="user_name_pro_page mb-1">{admin_info.first_name} {admin_info.last_name}</h2>
+                                    {:else}
+                                        <h2  class="user_name_pro_page mb-1">{admin_info.nick_name}</h2>
+                                    {/eq}
+                                    <h3  class="user_access_pro">
+                                        {@eq key="{admin_info.access}" value="main_admin"}
+                                            ادمین اصلی
+                                        {:else}
+                                            ادمین عادی
+                                        {/eq}
+                                    </h3>
                                 </div>
 
                             </div>
@@ -268,15 +286,15 @@
 
                                 <div class="position-relative">
                                     <p class="d-inline-block text-right mb-1">ایمیل:</p>
-                                    <p class="d-inline-block left_text_info mb-1">kasra@gmail.com</p>
+                                    <p class="d-inline-block left_text_info mb-1">{admin_info.email}</p>
                                 </div>
                                 <div class="position-relative">
                                     <p class="d-inline-block text-right mb-1">شماره تماس:</p>
-                                    <p class="d-inline-block dir-ltr left_text_info mb-1">+989021414866</p>
+                                    <p class="d-inline-block dir-ltr left_text_info mb-1">{admin_info.phone_number}</p>
                                 </div>
                                 <div class="position-relative">
                                     <p class="d-inline-block text-right mb-1">شهر:</p>
-                                    <p class="d-inline-block left_text_info mb-1">تهران</p>
+                                    <p class="d-inline-block left_text_info mb-1">{admin_info.city}</p>
                                 </div>
 
                             </div>
