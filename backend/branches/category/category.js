@@ -11,7 +11,7 @@ router.get('/', async(req,res)=>{
 
         };
 
-        res.render('category', data);
+        res.render('category/category', data);
 
     }
     catch (error) {
