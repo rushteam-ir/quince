@@ -305,6 +305,7 @@
     .about_the_person_in_team {
         padding-top: 15px;
     }
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -334,9 +335,12 @@
     }
 
     .team_content{
-        width: 95%;
-        right: -95%;
         padding: 50px 30px 0;
+    }
+
+
+    .rule_of_pearson_in_team{
+        font-size: 1.2vw;
     }
 }
 
@@ -362,8 +366,6 @@
     }
 
     .team_content{
-        width: 80%;
-        right: -80%;
         padding: 20% 30px 0;
     }
 
@@ -398,11 +400,22 @@
         width: 90%;
     }
 
-    .team_content{
-        width: 90%;
-        right: -90%;
+}
+
+@media only screen and (max-width: 575px){
+    .our_team{
+        width: 75%;
+    }
+
+    .rule_of_pearson_in_team {
+        font-size: 2.4vw;
+    }
+
+    .about_the_person_in_team {
+        font-size: 2.3vw;
     }
 }
+
 
 @media only screen and (max-width: 550px) {
     .Property_of_rush_team_item {
@@ -446,6 +459,26 @@
     }
 
 
+}
+
+@media only screen and (max-width: 475px) {
+    .our_team{
+        width: 90%;
+    }
+
+    .rule_of_pearson_in_team {
+        font-size: 2.9vw;
+    }
+    .about_the_person_in_team {
+        font-size: 2.7vw;
+    }
+
+    .name_of_team{
+        font-size: 5vw;
+    }
+    .link_of_social_media {
+        font-size: 1.1rem;
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -511,6 +544,10 @@
     .title_of_counter{
         font-size: .8rem;
     }
+
+    .team_content {
+        padding: 15% 30px 0;
+    }
 }
 
 @media only screen and (max-width: 350px) {
@@ -530,5 +567,17 @@
 
     .explain_about_Rush_team{
         font-size: 0.8rem;
+    }
+
+    .link_of_social_media {
+        font-size: .8rem;
+        width: 25px;
+        height: 25px;
+        padding-right: 35px;
+
+    }
+
+    .social_media_for_each_person li{
+        padding-right: 0px !important;
     }
 }
