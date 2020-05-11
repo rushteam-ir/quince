@@ -59,7 +59,7 @@
                                   <tr>
                                     <th scope="col">
                                       <label class="checkbox_of_category">
-                                        <input type="checkbox" class="option-input checkbox">
+                                        <input type="checkbox" class="option-input checkbox" id="selectall">
                                     </label>
                                     </th>
                                     <th scope="col">ردیف</th>
@@ -75,18 +75,14 @@
                                     <td class="category_table_customize">
 
                                         <label class="checkbox_of_category">
-                                            <input type="checkbox" class="option-input checkbox">
+                                            <input type="checkbox" class="table_checkbox option-input checkbox">
                                         </label>
 
                                     </td>
                                     <th class="category_table_customize" scope="row">1</th>
-                                    <td class="category_table_customize">Mark</td>
-                                    <td class="category_table_customize">Otto</td>
-                                    <td class="category_table_customize">
-
-                                        <p class="number_of_child_category">3</p>
-
-                                    </td>
+                                    <td class="category_table_customize">جوراب</td>
+                                    <td class="category_table_customize">مردونه</td>
+                                    <td class="category_table_customize">جوراب ، مردانه ، زنانه،بچه گانه</td>
                                     <td class="category_table_customize">
 
                                         <button class="btn category_btn">
@@ -95,10 +91,30 @@
                                         
                                     </td>
                                   </tr>
+
+                                  
                                   
 
                                 </tbody>
                               </table>
+
+                              <nav aria-label="Page navigation dir-ltr text-center">
+                                <ul class="pagination category_pagination">
+                                  <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                      <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                  </li>
+                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                      <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </nav>
 
                         </div>
 
