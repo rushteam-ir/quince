@@ -118,7 +118,6 @@ backend.use(async(req, res, next)=>{
     else{
 
         // Admin is already logged in
-        backend.locals.admin_info = req.session.admin_info;
         if(backend_allowd_urls.includes(parsed_url)){
 
             res.redirect(`${config.backend_url}dashboard`);
@@ -162,6 +161,7 @@ const logout = require('./branches/logout');
 const messages = require('./branches/messages/messages');
 const users = require('./branches/users/users');
 const guide = require('./branches/guide');
+const article = require('./branches/article/article');
 
 backend.use('/dashboard', dashboard);
 backend.use('/login', login);
@@ -174,6 +174,7 @@ backend.use('/logout', logout);
 backend.use('/messages', messages);
 backend.use('/users', users);
 backend.use('/guide', guide);
+backend.use('/article', article);
 
 // Backend 404 page
 backend.use(async(req,res,next)=>{
