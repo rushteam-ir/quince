@@ -129,15 +129,48 @@
     border-radius: 3px;
 }
 
+.remove_table_btn {
+    background-color: #E1E9FF;
+    color: #6993FF;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    padding-left: 1px;
+    padding-top: 4px;
+    font-size: 0.9rem;
+}
 
+.edit_table_btn {
+    background-color: #FFE2E5;
+    color: #F64E60;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    padding-left: 2px;
+    padding-top: 3px;
+    font-size: 0.9rem;
+}
 
+.remove_table_btn:hover{
+    background-color: #6993FF;
+    color: white;
+}
 
+.edit_table_btn:hover{
+    background-color: #F64E60;
+    color: white;
+}
 
-
-
-
-
-
+.sub_category_count{
+    width: 70px;
+    margin: 0 auto;
+    height: 26px;
+    background-color: #C9F7F5;
+    color: #1BC5BD;
+    border-radius: 70px;
+    line-height: 28px;
+    font-size: 0.8rem;
+}
 
 
 

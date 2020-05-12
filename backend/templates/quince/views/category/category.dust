@@ -70,7 +70,6 @@
                                   </tr>
                                 </thead>
                                 <tbody>
-
                                   <tr>
                                     <td class="category_table_customize">
 
@@ -82,174 +81,20 @@
                                     <th class="category_table_customize" scope="row">1</th>
                                     <td class="category_table_customize">جوراب</td>
                                     <td class="category_table_customize">مردونه</td>
-                                    <td class="category_table_customize">10</td>
+                                    <td class="category_table_customize">
+                                        <p class="sub_category_count">10</p>
+                                    </td>
                                     <td class="category_table_customize">
                                       
-                                        
+                                      <button class="edit_table_btn btn">
+                                        <i class="far fa-pencil-alt"></i>
+                                      </button>
+
+                                      <button class="btn remove_table_btn mr-2">
+                                        <i class="fal fa-trash-alt"></i>
+                                      </button>
                                     </td>
                                   </tr>
-                                  <tr>
-                                    <td class="category_table_customize">
-
-                                        <label class="checkbox_of_category">
-                                            <input type="checkbox" class="table_checkbox option-input checkbox">
-                                        </label>
-
-                                    </td>
-                                    <th class="category_table_customize" scope="row">1</th>
-                                    <td class="category_table_customize">جوراب</td>
-                                    <td class="category_table_customize">مردونه</td>
-                                    <td class="category_table_customize">10</td>
-                                    <td class="category_table_customize">
-                                      
-                                        
-                                    </td>
-                                  </tr>                                  <tr>
-                                    <td class="category_table_customize">
-
-                                        <label class="checkbox_of_category">
-                                            <input type="checkbox" class="table_checkbox option-input checkbox">
-                                        </label>
-
-                                    </td>
-                                    <th class="category_table_customize" scope="row">1</th>
-                                    <td class="category_table_customize">جوراب</td>
-                                    <td class="category_table_customize">مردونه</td>
-                                    <td class="category_table_customize">10</td>
-                                    <td class="category_table_customize">
-                                      
-                                        
-                                    </td>
-                                  </tr>                                  <tr>
-                                    <td class="category_table_customize">
-
-                                        <label class="checkbox_of_category">
-                                            <input type="checkbox" class="table_checkbox option-input checkbox">
-                                        </label>
-
-                                    </td>
-                                    <th class="category_table_customize" scope="row">1</th>
-                                    <td class="category_table_customize">جوراب</td>
-                                    <td class="category_table_customize">مردونه</td>
-                                    <td class="category_table_customize">10</td>
-                                    <td class="category_table_customize">
-                                      
-                                        
-                                    </td>
-                                  </tr>                                  <tr>
-                                    <td class="category_table_customize">
-
-                                        <label class="checkbox_of_category">
-                                            <input type="checkbox" class="table_checkbox option-input checkbox">
-                                        </label>
-
-                                    </td>
-                                    <th class="category_table_customize" scope="row">1</th>
-                                    <td class="category_table_customize">جوراب</td>
-                                    <td class="category_table_customize">مردونه</td>
-                                    <td class="category_table_customize">10</td>
-                                    <td class="category_table_customize">
-                                      
-                                        
-                                    </td>
-                                  </tr>                                  <tr>
-                                    <td class="category_table_customize">
-
-                                        <label class="checkbox_of_category">
-                                            <input type="checkbox" class="table_checkbox option-input checkbox">
-                                        </label>
-
-                                    </td>
-                                    <th class="category_table_customize" scope="row">1</th>
-                                    <td class="category_table_customize">جوراب</td>
-                                    <td class="category_table_customize">مردونه</td>
-                                    <td class="category_table_customize">10</td>
-                                    <td class="category_table_customize">
-                                      
-                                        
-                                    </td>
-                                  </tr>                                  <tr>
-                                    <td class="category_table_customize">
-
-                                        <label class="checkbox_of_category">
-                                            <input type="checkbox" class="table_checkbox option-input checkbox">
-                                        </label>
-
-                                    </td>
-                                    <th class="category_table_customize" scope="row">1</th>
-                                    <td class="category_table_customize">جوراب</td>
-                                    <td class="category_table_customize">مردونه</td>
-                                    <td class="category_table_customize">10</td>
-                                    <td class="category_table_customize">
-                                      
-                                        
-                                    </td>
-                                  </tr>                                  <tr>
-                                    <td class="category_table_customize">
-
-                                        <label class="checkbox_of_category">
-                                            <input type="checkbox" class="table_checkbox option-input checkbox">
-                                        </label>
-
-                                    </td>
-                                    <th class="category_table_customize" scope="row">1</th>
-                                    <td class="category_table_customize">جوراب</td>
-                                    <td class="category_table_customize">مردونه</td>
-                                    <td class="category_table_customize">10</td>
-                                    <td class="category_table_customize">
-                                      
-                                        
-                                    </td>
-                                  </tr>                                  <tr>
-                                    <td class="category_table_customize">
-
-                                        <label class="checkbox_of_category">
-                                            <input type="checkbox" class="table_checkbox option-input checkbox">
-                                        </label>
-
-                                    </td>
-                                    <th class="category_table_customize" scope="row">1</th>
-                                    <td class="category_table_customize">جوراب</td>
-                                    <td class="category_table_customize">مردونه</td>
-                                    <td class="category_table_customize">10</td>
-                                    <td class="category_table_customize">
-                                      
-                                        
-                                    </td>
-                                  </tr>                                  <tr>
-                                    <td class="category_table_customize">
-
-                                        <label class="checkbox_of_category">
-                                            <input type="checkbox" class="table_checkbox option-input checkbox">
-                                        </label>
-
-                                    </td>
-                                    <th class="category_table_customize" scope="row">1</th>
-                                    <td class="category_table_customize">جوراب</td>
-                                    <td class="category_table_customize">مردونه</td>
-                                    <td class="category_table_customize">10</td>
-                                    <td class="category_table_customize">
-                                      
-                                        
-                                    </td>
-                                  </tr>                                  <tr>
-                                    <td class="category_table_customize">
-
-                                        <label class="checkbox_of_category">
-                                            <input type="checkbox" class="table_checkbox option-input checkbox">
-                                        </label>
-
-                                    </td>
-                                    <th class="category_table_customize" scope="row">1</th>
-                                    <td class="category_table_customize">جوراب</td>
-                                    <td class="category_table_customize">مردونه</td>
-                                    <td class="category_table_customize">10</td>
-                                    <td class="category_table_customize">
-                                      
-                                        
-                                    </td>
-                                  </tr>
-                                  
                                   
 
                                 </tbody>
