@@ -171,9 +171,22 @@ if(window.innerWidth > 1200){
         dashboard.style.transition = 'none';
         dashboard_main.style.transition = 'none';
     
-    }   
-
-
+    }
 
 }
 
+
+
+
+// function resize(){
+//     if(innerWidth < 600){
+
+//         alert('asdasd')
+
+//     }
+// }
+
+// $(document).ready(function(){
+//     resize();
+//     $(window).resize(resize);
+// });
