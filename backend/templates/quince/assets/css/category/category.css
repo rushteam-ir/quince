@@ -30,22 +30,6 @@
     color: #B9B9B9;
 }
 
-
-.category_btn {
-    width: 35px;
-    height: 35px;
-    padding: 0px;
-    padding-top: 2px;
-    padding-left: 2px;
-    background-color: #FFE2E5;
-    color: #F64E60;
-}
-
-.category_btn:hover {
-    background-color: #F64E60;
-    color: rgb(255, 255, 255);
-}
-
 .table td,
 .table th {
     vertical-align: unset;

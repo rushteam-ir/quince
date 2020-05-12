@@ -64,7 +64,7 @@
                                     </th>
                                     <th scope="col">ردیف</th>
                                     <th scope="col">نام دسته</th>
-                                    <th scope="col">زیر دسته</th>
+                                    <th scope="col">والد دسته</th>
                                     <th scope="col">تعداد زیر دسته</th>
                                     <th scope="col">تنظیمات</th>
                                   </tr>
@@ -82,12 +82,9 @@
                                     <th class="category_table_customize" scope="row">1</th>
                                     <td class="category_table_customize">جوراب</td>
                                     <td class="category_table_customize">مردونه</td>
-                                    <td class="category_table_customize">جوراب ، مردانه ، زنانه،بچه گانه</td>
+                                    <td class="category_table_customize">10</td>
                                     <td class="category_table_customize">
-
-                                        <button class="btn category_btn">
-                                            <i class="fal fa-edit"></i>
-                                        </button>
+                                      
                                         
                                     </td>
                                   </tr>
@@ -130,15 +127,8 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="main_lable_design" for="parent_category">دسته اصلی</label>
+                                    <label class="main_lable_design" for="parent_category">والد دسته</label>
                                     <select class="form-control main_form_design" id="parent_category">
-                                      <option>...</option>
-                                    </select>
-                                  </div>
-
-                                  <div class="form-group">
-                                    <label class="main_lable_design" for="child_category">زیر دسته</label>
-                                    <select class="form-control main_form_design" id="child_category">
                                       <option>...</option>
                                     </select>
                                   </div>
