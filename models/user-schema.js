@@ -12,6 +12,12 @@ let user_schema = new mongoose.Schema({
    author_type : String,
    access : String,
    last_activity : String,
+   birth_day : String,
+   birth_month : String,
+   birth_year : String,
+   biography : String,
+   country : String,
+   city : String,
    pending_password : String,
    row : Number
 

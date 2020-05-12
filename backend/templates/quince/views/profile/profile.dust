@@ -110,7 +110,7 @@
 
                                         <div class="field_of_pr_btn">
                                             <button type="submit" class="btn btn_of_save_changes" name="profile_info">ثبت تغییرات</button>
-                                            <button class="btn btn_of_cancel_changes mr-2">لغو</button>
+                                            <button class="btn btn_of_cancel_changes mr-2" name="profile_reset">لغو</button>
                                         </div>
                                 
                                   </form>
@@ -135,48 +135,48 @@
 
                             <div class="main_div_of_personal_form">
 
-                                <form>
+                                <form method="post" action="" autocomplete="off">
 
 
                                     <div class="form-group mt-4 row">
                                       <label for="user_birthday" class="col-sm-2 col-form-label main_lable_design">تاریخ تولد</label>
                                         <div class="col-sm-2">
-                                            <input type="text" class="form-control main_form_design" id="user_birthday" placeholder="dd" name="day_inp">
+                                            <input type="text" class="form-control main_form_design" id="user_birthday" placeholder="dd" name="day_inp" value="{admin_info.birth_day}">
                                         </div>
                                         <div class="col-sm-2">
                                             <span class="birth_day_backslash">/</span>
-                                           <input type="text" class="form-control main_form_design" placeholder="mm" name="month_inp">
+                                           <input type="text" class="form-control main_form_design" placeholder="mm" name="month_inp" value="{admin_info.birth_month}">
                                         </div>
                                         <div class="col-sm-2">
                                             <span class="birth_day_backslash">/</span>
-                                            <input type="text" class="form-control main_form_design" placeholder="yy" name="year_inp">
+                                            <input type="text" class="form-control main_form_design" placeholder="yy" name="year_inp" value="{admin_info.birth_year}">
                                         </div>
                                     </div>
                                     
                                     <div class="form-group mt-4 row">
                                         <label for="user_country" class="col-sm-2 col-form-label main_lable_design">کشور</label>
                                           <div class="col-sm-10">
-                                              <input type="text" class="form-control main_form_design" id="user_country" name="country_inp">
+                                              <input type="text" class="form-control main_form_design" id="user_country" name="country_inp" value="{admin_info.country}">
                                           </div>
                                       </div>
 
                                     <div class="form-group mt-4 row">
                                         <label for="user_city" class="col-sm-2 col-form-label main_lable_design">شهر</label>
                                           <div class="col-sm-10">
-                                            <input type="text" class="form-control main_form_design" id="user_city" name="city_inp">
+                                            <input type="text" class="form-control main_form_design" id="user_city" name="city_inp" value="{admin_info.city}">
                                           </div>
                                       </div>
 
                                       <div class="form-group mt-4 row">
                                         <label for="user_about" class="col-sm-2 col-form-label main_lable_design">درباره من</label>
                                           <div class="col-sm-10">
-                                            <textarea class="form-control main_form_design user_text_area" id="user_about" rows="3" name="bio_inp"></textarea>
+                                            <textarea class="form-control main_form_design user_text_area" id="user_about" rows="3" name="bio_inp">{admin_info.biography}</textarea>
                                           </div>
                                       </div>
                                 
                                       <div class="field_of_pr_btn">
-                                        <button class="btn btn_of_save_changes" name="change_private">ثبت تغییرات</button>
-                                        <button class="btn btn_of_cancel_changes mr-2">لغو</button>
+                                        <button class="btn btn_of_save_changes" name="profile_private">ثبت تغییرات</button>
+                                        <button class="btn btn_of_cancel_changes mr-2" name="profile_reset">لغو</button>
                                     </div>
 
                                   </form>
@@ -240,7 +240,7 @@
 
                                       <div class="field_of_pr_btn">
                                         <button class="btn btn_of_save_changes" name="change_password">ثبت تغییرات</button>
-                                        <button class="btn btn_of_cancel_changes mr-2">لغو</button>
+                                        <button class="btn btn_of_cancel_changes mr-2" name="profile_reset">لغو</button>
                                     </div>
 
                                   </form>

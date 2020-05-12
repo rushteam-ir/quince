@@ -153,6 +153,58 @@ module.exports = class {
 
                 }
 
+                case 'date':
+                {
+
+                    let date = input.value.split('/');
+                    let day = parseInt(date[2]);
+                    let month = parseInt(date[1]);
+                    let year = parseInt(date[0]);
+
+                    if(day < 0 || day > 31){
+                        return 'date-input'
+                    }
+                    else if(month < 0 || month > 12){
+                        return 'date-input'
+                    }
+                    else if(year < 1300){
+                        return 'date-input'
+                    }
+
+                    break;
+
+                }
+
+                case 'date-exp':
+                {
+
+                    let date = input.value.split('/');
+                    let day = parseInt(date[2]);
+                    let month = parseInt(date[1]);
+                    let year = parseInt(date[0]);
+
+                    if(day < 0 || day > 31){
+                        return 'date-error'
+                    }
+                    else if(month < 0 || month > 12){
+                        return 'date-error'
+                    }
+                    else if(year < 1300){
+                        return 'date-error'
+                    }
+
+                    let exp_date = JalaliConvert([year, month, day]);
+                    let curr_date = JalaliConvert(getCurrentDate().split('/'));
+                    let time_difference = exp_date.getTime() - curr_date.getTime();
+
+                    if(time_difference < 0){
+                        return 'date-error';
+                    }
+
+                    break;
+
+                }
+
             }
 
         }

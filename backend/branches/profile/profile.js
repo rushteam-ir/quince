@@ -4,6 +4,12 @@ router.get('/', async(req,res)=>{
 
     try{
 
+        let data = {
+
+            admin_info : req.session.admin_info,
+
+        }
+
         res.render('profile/profile');
 
     }
@@ -19,12 +25,14 @@ router.post('/', async(req,res)=>{
 
     try{
 
+        let admin_id = req.session.admin_id;
+        let last_input = req.session.admin_info;
+
         if(req.body.profile_info == ''){
 
             log(req.body);
             let {first_name_inp, last_name_inp, nick_name_inp, email_inp, phone_number_inp} = req.body;
 
-            let last_input = req.session.admin_info;
             let last_check_box = '';
             let author_type = '';
 
@@ -73,7 +81,6 @@ router.post('/', async(req,res)=>{
 
             }
 
-            let admin_id = req.session.admin_id;
             let admin_data = {
 
                 first_name : first_name_inp,
@@ -114,8 +121,6 @@ router.post('/', async(req,res)=>{
             if(result){
 
                 req.session.admin_info = result;
-                backend.locals.admin_info = req.session.admin_info;
-
                 return res.redirect(`${config.backend_url}profile/?msg=profile-success`);
 
             }
@@ -126,18 +131,57 @@ router.post('/', async(req,res)=>{
             }
 
         }
-        else if(req.body.change_private == ''){
+        else if(req.body.profile_private == ''){
 
             let {day_inp, month_inp, year_inp, country_inp, city_inp, bio_inp} = req.body;
+            let date = `${year_inp}/${month_inp}/${day_inp}`;
+
+            if(last_input.birth_day == day_inp && last_input.birth_month == month_inp &&
+                last_input.birth_year == year_inp && last_input.country == country_inp &&
+                last_input.city == city_inp && last_input.biography == bio_inp){
+
+                return res.redirect(`${config.backend_url}profile/?msg=no-change`);
+
+            }
 
             let validation_result = new validation([
-                {value : day_inp},
-                {value : month_inp},
-                {value : year_inp},
+                {value : date , type : 'date'},
                 {value : country_inp},
                 {value : city_inp},
                 {value : bio_inp},
             ]).valid();
+
+            if(validation_result){
+
+                return res.redirect(`${config.backend_url}profile/?msg=${validation_result}`);
+
+            }
+
+            let admin_data = {
+
+                birth_day : day_inp,
+                birth_month : month_inp,
+                birth_year : year_inp,
+                country : country_inp,
+                city : city_inp,
+                biography : bio_inp,
+
+            };
+
+            let result = await user_model.editProfile(admin_id, admin_data);
+
+            if(result){
+
+                req.session.admin_info = result;
+                return res.redirect(`${config.backend_url}profile/?msg=profile-success`);
+
+            }
+            else{
+
+                return res.redirect(`${config.backend_url}profile/?msg=profile-fail`);
+
+            }
+
 
         }
         else if(req.body.change_password == ''){
@@ -171,7 +215,6 @@ router.post('/', async(req,res)=>{
                 if(result){
 
                     req.session.admin_info = result;
-
                     return res.redirect(`${config.backend_url}profile/?msg=password-success`);
 
                 }
@@ -187,6 +230,11 @@ router.post('/', async(req,res)=>{
                 return res.redirect(`${config.backend_url}profile/?msg=incorrect-input`);
 
             }
+
+        }
+        else if(req.body.profile_reset == ''){
+
+            return res.redirect(`${config.backend_url}profile`);
 
         }
         else {
