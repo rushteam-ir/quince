@@ -10,7 +10,7 @@ router.get('/', async(req,res)=>{
 
         }
 
-        res.render('profile/profile');
+        res.render('profile/profile', data);
 
     }
     catch (error) {
