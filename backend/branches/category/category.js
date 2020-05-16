@@ -6,8 +6,8 @@ router.get('/', async(req,res)=>{
 
         let data = {
 
-            list : await category_model.get(),
-            list_all : await category_model.getAll(),
+            parent_list : await category_model.getParent(),
+            category_list : await category_model.getAll(),
 
         };
 

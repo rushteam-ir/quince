@@ -6,7 +6,8 @@ let category_schema = new mongoose.Schema({
     parent : {
         type : 'ObjectId',
         ref : 'category'
-    }
+    },
+    child_number : Number,
 
 });
 
@@ -40,6 +41,17 @@ category_schema.statics = {
 
         if(!find_cat){
 
+            if(parent_inp != '0'){
+
+                await category_model.findByIdAndUpdate(parent_inp, { $inc: {child_number : 1 } });
+
+            }
+            else{
+
+                new_category.child_number = 0;
+
+            }
+
             let new_cat = new category_model(new_category);
             return await new_cat.save();
 
@@ -54,7 +66,7 @@ category_schema.statics = {
 
     },
 
-    get : async function () {
+    getParent : async function () {
 
         return await category_model.find({
 
