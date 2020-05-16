@@ -11,8 +11,9 @@
 }
 
 .pro_logo {
-    width: 40%;
+    width: 110px;
     border-radius: 7px;
+    height: 110px;
 }
 
 .user_name_pro_page {
@@ -93,9 +94,9 @@
 }
 
 .field_of_pr_btn {
-    position: absolute;
+    position: relative;
     top: 30px;
-    left: 23px;
+    right: 526px;
 }
 
 .btn_of_cancel_changes:hover {
