@@ -1,4 +1,4 @@
-if(window.innerWidth > 1200){
+if(window.innerWidth > 992){
 
     close_dashboard.addEventListener('click', closeDsh);
     open_dashboard.addEventListener('click', openDsh);
@@ -174,19 +174,3 @@ if(window.innerWidth > 1200){
     }
 
 }
-
-
-
-
-// function resize(){
-//     if(innerWidth < 600){
-
-//         alert('asdasd')
-
-//     }
-// }
-
-// $(document).ready(function(){
-//     resize();
-//     $(window).resize(resize);
-// });

@@ -7,11 +7,11 @@
 {/title}
 
 {<css}
-    <link rel="stylesheet" href="css/front-end/about-us.css">
+    <link rel="stylesheet" href="css/about-us/about-us.css">
 {/css}
 
 {<js}
-    <script src="js/front-end/about-us.js"></script>
+    <script src="js/about-us/about-us.js"></script>
 {/js}
 
 {<body}
@@ -155,16 +155,12 @@
                             <p class="about_the_person_in_team text-justify dir_rtl">لورم ایپسوم متن ساختگی با تولید
                                 سادگی نامفهوماز صنعت چاپ و با استفاده از طراحان گرافیک است</p>
                             <ul class="social_media_for_each_person p-0 mt-4">
-                                <li class="d-inline-block pr-2"><a href="#"
-                                                                   class="fab fa-facebook-f link_of_social_media"></a>
+                                <li class="d-inline-block pr-2"><a href="#" class="fab fa-facebook-f link_of_social_media"></a>
                                 </li>
-                                <li class="d-inline-block pr-2"><a href="#"
-                                                                   class="fab fa-google-plus-g link_of_social_media"></a>
+                                <li class="d-inline-block pr-2"><a href="#" class="fab fa-google-plus-g link_of_social_media"></a>
                                 </li>
-                                <li class="d-inline-block pr-2"><a href="#"
-                                                                   class="fab fa-youtube link_of_social_media"></a></li>
-                                <li class="d-inline-block pr-2"><a href="#"
-                                                                   class="fab fa-linkedin-in link_of_social_media"></a>
+                                <li class="d-inline-block pr-2"><a href="#" class="fab fa-youtube link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-2"><a href="#" class="fab fa-linkedin-in link_of_social_media"></a>
                                 </li>
                             </ul>
                         </div>
@@ -179,16 +175,12 @@
                             <p class="about_the_person_in_team text-justify dir_rtl">لورم ایپسوم متن ساختگی با تولید
                                 سادگی نامفهوماز صنعت چاپ و با استفاده از طراحان گرافیک است</p>
                             <ul class="social_media_for_each_person p-0 mt-4">
-                                <li class="d-inline-block pr-2"><a href="#"
-                                                                   class="fab fa-facebook-f link_of_social_media"></a>
+                                <li class="d-inline-block pr-2"><a href="#" class="fab fa-facebook-f link_of_social_media"></a>
                                 </li>
-                                <li class="d-inline-block pr-2"><a href="#"
-                                                                   class="fab fa-google-plus-g link_of_social_media"></a>
+                                <li class="d-inline-block pr-2"><a href="#" class="fab fa-google-plus-g link_of_social_media"></a>
                                 </li>
-                                <li class="d-inline-block pr-2"><a href="#"
-                                                                   class="fab fa-youtube link_of_social_media"></a></li>
-                                <li class="d-inline-block pr-2"><a href="#"
-                                                                   class="fab fa-linkedin-in link_of_social_media"></a>
+                                <li class="d-inline-block pr-2"><a href="#" class="fab fa-youtube link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-2"><a href="#" class="fab fa-linkedin-in link_of_social_media"></a>
                                 </li>
                             </ul>
                         </div>
@@ -203,16 +195,12 @@
                             <p class="about_the_person_in_team text-justify dir_rtl">لورم ایپسوم متن ساختگی با تولید
                                 سادگی نامفهوماز صنعت چاپ و با استفاده از طراحان گرافیک است</p>
                             <ul class="social_media_for_each_person p-0 mt-4">
-                                <li class="d-inline-block pr-2"><a href="#"
-                                                                   class="fab fa-facebook-f link_of_social_media"></a>
+                                <li class="d-inline-block pr-2"><a href="#" class="fab fa-facebook-f link_of_social_media"></a>
                                 </li>
-                                <li class="d-inline-block pr-2"><a href="#"
-                                                                   class="fab fa-google-plus-g link_of_social_media"></a>
+                                <li class="d-inline-block pr-2"><a href="#" class="fab fa-google-plus-g link_of_social_media"></a>
                                 </li>
-                                <li class="d-inline-block pr-2"><a href="#"
-                                                                   class="fab fa-youtube link_of_social_media"></a></li>
-                                <li class="d-inline-block pr-2"><a href="#"
-                                                                   class="fab fa-linkedin-in link_of_social_media"></a>
+                                <li class="d-inline-block pr-2"><a href="#" class="fab fa-youtube link_of_social_media"></a></li>
+                                <li class="d-inline-block pr-2"><a href="#" class="fab fa-linkedin-in link_of_social_media"></a>
                                 </li>
                             </ul>
                         </div>
