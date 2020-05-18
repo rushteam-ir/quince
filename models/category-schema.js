@@ -85,8 +85,14 @@ category_schema.statics = {
 
     getAll : async function (page_number, page_limit) {
 
+        let result = {}
         let category_skip = page_number * page_limit - page_limit;
-        return await category_model.find().skip(category_skip).limit(page_limit).populate('parent').exec();
+
+        result.rows_begin_number = category_skip + 1;
+        result.list =  await category_model.find().skip(category_skip).limit(page_limit).populate('parent').exec();
+        result.total_pages = Math.ceil(await category_model.find().countDocuments() / page_limit);
+
+        return result;
 
     },
 

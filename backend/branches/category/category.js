@@ -18,15 +18,21 @@ router.get('/', async(req,res)=>{
             }
 
         }
+        if(!req.session.limit){
 
-        let rows_begin_number = (page_number * page_limit - page_limit) + 1;
+            page_limit = 10;
+
+        }
+
+        let category_list = await category_model.getAll(page_number, page_limit)
 
         let data = {
 
             parent_list : await category_model.getParent(),
-            category_list : await category_model.getAll(page_number, page_limit),
+            category_list : category_list.list,
             page_number : page_number,
-            rows_begin_number : rows_begin_number
+            rows_begin_number : category_list.rows_begin_number,
+            total_pages : category_list.total_pages,
 
         };
 
