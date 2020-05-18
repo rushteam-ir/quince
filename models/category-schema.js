@@ -32,7 +32,6 @@ category_schema.statics = {
         let new_category = new category_model({
 
             title : title_inp,
-            row : list.length + 1,
             parent : parent
 
         });
@@ -62,8 +61,6 @@ category_schema.statics = {
 
         }
 
-        return result;
-
     },
 
     getParent : async function () {
@@ -86,13 +83,22 @@ category_schema.statics = {
 
     },
 
-    getAll : async function (page) {
+    getAll : async function (page_number, page_limit) {
 
-        return await category_model.find().populate('parent').exec();
+        let category_skip = page_number * page_limit - page_limit;
+        return await category_model.find().skip(category_skip).limit(page_limit).populate('parent').exec();
 
     },
 
     del : async function (category_id) {
+
+        let parent_inp = await category_model.findById(category_id);
+
+        if(parent_inp.parent != null){
+
+            await category_model.findByIdAndUpdate(parent_inp.parent._id, { $inc: {child_number : -1 } });
+
+        }
 
         return await category_model.findByIdAndDelete(category_id);
 
