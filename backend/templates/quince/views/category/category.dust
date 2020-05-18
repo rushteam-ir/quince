@@ -79,7 +79,7 @@
                                         </label>
 
                                     </td>
-                                    <th class="category_table_customize" scope="row">{$idx}</th>
+                                    <th class="category_table_customize" scope="row">{@math key="{rows_begin_number}" method="add" operand="{$idx}"/}</th>
                                     <td class="category_table_customize">{.title}</td>
                                     {@eq key="{.parent}" value="{null}"}
                                         <td class="category_table_customize">دسته اصلی</td>
@@ -101,7 +101,7 @@
                                         <i class="far fa-pencil-alt"></i>
                                       </button>
 
-                                      <button class="btn remove_table_btn mr-2">
+                                      <button class="btn remove_table_btn mr-2" name="{._id}">
                                         <i class="fal fa-trash-alt"></i>
                                       </button>
                                     </td>
@@ -114,7 +114,13 @@
                               <nav aria-label="Page navigation dir-ltr text-center">
                                 <ul class="pagination category_pagination">
                                   <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
+                                    <a class="page-link" href="{backend_url}category/?page=
+                                    {@eq key="{page_number}" value="1"}
+                                        1
+                                    {:else}
+                                        {@math key="{page_number}" method="add" operand="-1"/}
+                                    {/eq}
+                                    " aria-label="Previous">
                                       <span aria-hidden="true">&laquo;</span>
                                     </a>
                                   </li>
@@ -122,7 +128,7 @@
                                   <li class="page-item"><a class="page-link" href="#">2</a></li>
                                   <li class="page-item"><a class="page-link" href="#">3</a></li>
                                   <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
+                                    <a class="page-link" href="{backend_url}category/?page={@math key="{page_number}" method="add" operand="1"/}" aria-label="Next">
                                       <span aria-hidden="true">&raquo;</span>
                                     </a>
                                   </li>

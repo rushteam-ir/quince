@@ -4,10 +4,29 @@ router.get('/', async(req,res)=>{
 
     try{
 
+        let page_number = 1;
+        let page_limit = req.session.limit;
+
+        if(req.query.page){
+
+            page_number = parseInt(req.query.page);
+
+            if(page_number <= 0){
+
+                page_number = 1;
+
+            }
+
+        }
+
+        let rows_begin_number = (page_number * page_limit - page_limit) + 1;
+
         let data = {
 
             parent_list : await category_model.getParent(),
-            category_list : await category_model.getAll(),
+            category_list : await category_model.getAll(page_number, page_limit),
+            page_number : page_number,
+            rows_begin_number : rows_begin_number
 
         };
 

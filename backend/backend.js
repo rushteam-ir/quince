@@ -162,6 +162,7 @@ const messages = require('./branches/messages/messages');
 const users = require('./branches/users/users');
 const guide = require('./branches/guide');
 const article = require('./branches/article/article');
+const api = require('./api/api');
 
 backend.use('/dashboard', dashboard);
 backend.use('/login', login);
@@ -175,6 +176,7 @@ backend.use('/messages', messages);
 backend.use('/users', users);
 backend.use('/guide', guide);
 backend.use('/article', article);
+backend.use('/api', api);
 
 // Backend 404 page
 backend.use(async(req,res,next)=>{
