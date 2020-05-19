@@ -19,7 +19,14 @@ $(document).ready(function () {
     $('.count_row_table_of_category').change(function () {
 
         let page_limit = $(this).val();
-        redirect(`${backend_url}api/get-page-limit`);
+        $.post(`${backend_url}api/get-page-limit`, {
+            limit : page_limit,
+            url : `${backend_url}category`,
+        }, function (data, status) {
+
+            redirect(`${backend_url}category`);
+
+        })
 
     })
 

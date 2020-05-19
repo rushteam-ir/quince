@@ -1,12 +1,12 @@
 const router = express.Router();
 
-router.use(async(req, res, next)=>{
+router.post('/', async(req,res)=>{
 
     try{
 
-        req.session.limit = parseInt(req.query.limit);
+        req.session.limit = parseInt(req.body.limit);
 
-        next();
+        res.redirect(req.body.url);
 
     }
     catch (error) {

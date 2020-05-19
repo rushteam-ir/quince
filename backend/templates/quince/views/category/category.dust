@@ -40,9 +40,13 @@
                                       <p class="d-inline-block">تعداد ردیف ها :</p>
 
                                       <select class="form-control main_form_design count_row_table_of_category mr-2">
-                                        <option>10</option>
-                                        <option>25</option>
-                                        <option>50</option>
+                                        {#page_limit_slot}
+                                            {@eq key="{.}" value="{page_limit}"}
+                                                <option selected>{.}</option>
+                                            {:else}
+                                                <option>{.}</option>
+                                            {/eq}
+                                        {/page_limit_slot}
                                       </select>
 
                                   </div>
@@ -112,27 +116,7 @@
                               </table>
 
                               <nav aria-label="Page navigation dir-ltr text-center">
-                                <ul class="pagination category_pagination">
-                                  <li class="page-item">
-                                    <a class="page-link" href="{backend_url}category/?page=
-                                    {@eq key="{page_number}" value="1"}
-                                        1
-                                    {:else}
-                                        {@math key="{page_number}" method="add" operand="-1"/}
-                                    {/eq}
-                                    " aria-label="Previous">
-                                      <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                  </li>
-                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                  <li class="page-item">
-                                    <a class="page-link" href="{backend_url}category/?page={@math key="{page_number}" method="add" operand="1"/}" aria-label="Next">
-                                      <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                  </li>
-                                </ul>
+                                  {@page number="{total_pages}" current="{page_number}" url="{backend_url}category"/}
                               </nav>
 
                         </div>
