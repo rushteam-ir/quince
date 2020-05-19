@@ -108,7 +108,26 @@ category_schema.statics = {
 
         return await category_model.findByIdAndDelete(category_id);
 
-    }
+    },
+
+    search : async function (search_value) {
+
+        let find_list = await category_model.find().populate('parent').exec();
+        let result_list = [];
+
+        for(let i = 0; i < find_list.length; i++){
+
+            if(find_list[i].title.includes(search_value) || find_list[i].parent.title.includes(search_value)){
+
+                result_list.push(find_list[i]);
+
+            }
+
+        }
+
+        return  result_list;
+
+    },
 
 };
 
