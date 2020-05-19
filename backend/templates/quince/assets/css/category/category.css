@@ -112,7 +112,7 @@
 
 .category_pagination {
     margin: 0 auto;
-    width: 210px;
+    width: 40%;
 }
 
 .page-link {
@@ -177,11 +177,19 @@
     font-weight: bold;
 }
 
+.current_page_color{
+    background-color: #E9ECEF;
+}
 
+.page-link:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: none;
+}
 
-
-
-
+.page-link{
+    margin: 0px 2px;
+}
 
 
 
