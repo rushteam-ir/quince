@@ -31,6 +31,7 @@ router.get('/', async(req,res)=>{
             parent_list : await category_model.getParent(),
             category_list : category_list.list,
             page_number : page_number,
+            page_limit : page_limit,
             rows_begin_number : category_list.rows_begin_number,
             total_pages : category_list.total_pages,
 

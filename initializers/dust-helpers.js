@@ -49,7 +49,7 @@ module.exports = dust_options = {
 
             },
 
-            dust.helpers.pageRender = function (chunk, context, bodies, params) {
+            dust.helpers.page = function (chunk, context, bodies, params) {
 
                 let pages_number = parseInt(context.resolve(params.number));
                 let url_pagination = context.resolve(params.url);
@@ -83,23 +83,52 @@ module.exports = dust_options = {
                         html += `<li class="page-item"><a class="page-link" href="${url_pagination}/?page=${i}">${i}</a></li>`;
 
                     }
-                    else if(i == current_page - 1 || i == current_page + 1){
+                    if(current_page != 1 && current_page != pages_number){
 
-                        html += `<li class="page-item"><a class="page-link" href="${url_pagination}/?page=${i}">${i}</a></li>`;
+                        if(i == current_page - 1 || i == current_page + 1){
+
+                            html += `<li class="page-item"><a class="page-link" href="${url_pagination}/?page=${i}">${i}</a></li>`;
+
+                        }
+                        else{
+
+                            if(i < current_page && !prev_etc){
+
+                                html += '...';
+                                prev_etc = true;
+
+                            }
+                            if(i > current_page && !next_etc){
+
+                                html += '...';
+                                next_etc = true;
+
+                            }
+
+                        }
 
                     }
                     else{
 
-                        if(i < current_page && !prev_etc){
+                        if(i >= current_page - 2 && i <= current_page + 2){
 
-                            html += '...';
-                            prev_etc = true;
+                            html += `<li class="page-item"><a class="page-link" href="${url_pagination}/?page=${i}">${i}</a></li>`;
 
                         }
-                        if(i > current_page && !next_etc){
+                        else{
 
-                            html += '...';
-                            next_etc = true;
+                            if(i < current_page && !prev_etc){
+
+                                html += '...';
+                                prev_etc = true;
+
+                            }
+                            if(i > current_page && !next_etc){
+
+                                html += '...';
+                                next_etc = true;
+
+                            }
 
                         }
 

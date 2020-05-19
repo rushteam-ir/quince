@@ -40,11 +40,13 @@
                                       <p class="d-inline-block">تعداد ردیف ها :</p>
 
                                       <select class="form-control main_form_design count_row_table_of_category mr-2">
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>5</option>
-                                        <option>10</option>
-                                        <option>20</option>
+                                        {#page_limit_slot}
+                                            {@eq key="{.}" value="{page_limit}"}
+                                                <option selected>{.}</option>
+                                            {:else}
+                                                <option>{.}</option>
+                                            {/eq}
+                                        {/page_limit_slot}
                                       </select>
 
                                   </div>
@@ -114,7 +116,7 @@
                               </table>
 
                               <nav aria-label="Page navigation dir-ltr text-center">
-                                  {@pageRender number="{total_pages}" current="{page_number}" url="{backend_url}category"/}
+                                  {@page number="{total_pages}" current="{page_number}" url="{backend_url}category"/}
                               </nav>
 
                         </div>
