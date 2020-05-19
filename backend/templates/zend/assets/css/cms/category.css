@@ -125,3 +125,7 @@ tbody tr td:nth-child(4) {
     color: #5D78FF;
     cursor: pointer;
 }
+
+.test{
+    background-color: red;
+}
