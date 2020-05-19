@@ -74,7 +74,17 @@ module.exports = dust_options = {
 
                     if(i == 1 || i == pages_number){
 
-                        html += `<li class="page-item"><a class="page-link" href="${url_pagination}/?page=${i}">${i}</a></li>`;
+                        if(i == current_page){
+
+                            html += `<li class="page-item"><a class="page-link current_page_color" href="${url_pagination}/?page=${i}">${i}</a></li>`;
+
+                        }
+                        else{
+
+                            html += `<li class="page-item"><a class="page-link" href="${url_pagination}/?page=${i}">${i}</a></li>`;
+
+                        }
+
                         continue;
 
                     }
