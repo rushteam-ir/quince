@@ -56,6 +56,8 @@ module.exports = dust_options = {
                 let current_page = parseInt(context.resolve(params.current));
 
                 let html = `<ul class="pagination category_pagination">`;
+                let prev_etc = false;
+                let next_etc = false;
 
                 if(current_page == 1){
 
@@ -70,14 +72,36 @@ module.exports = dust_options = {
 
                 for(let i = 1; i <= pages_number; i++){
 
+                    if(i == 1 || i == pages_number){
+
+                        html += `<li class="page-item"><a class="page-link" href="${url_pagination}/?page=${i}">${i}</a></li>`;
+                        continue;
+
+                    }
                     if(i == current_page){
 
-                        html += `<li class="page-item"><a class="page-link" href="${url_pagination}/?page=${i}">${i}</a></li>`
+                        html += `<li class="page-item"><a class="page-link" href="${url_pagination}/?page=${i}">${i}</a></li>`;
+
+                    }
+                    else if(i == current_page - 1 || i == current_page + 1){
+
+                        html += `<li class="page-item"><a class="page-link" href="${url_pagination}/?page=${i}">${i}</a></li>`;
 
                     }
                     else{
 
-                        html += `<li class="page-item"><a class="page-link" href="${url_pagination}/?page=${i}">${i}</a></li>`
+                        if(i < current_page && !prev_etc){
+
+                            html += '...';
+                            prev_etc = true;
+
+                        }
+                        if(i > current_page && !next_etc){
+
+                            html += '...';
+                            next_etc = true;
+
+                        }
 
                     }
 
