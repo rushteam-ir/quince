@@ -110,23 +110,36 @@ category_schema.statics = {
 
     },
 
-    search : async function (search_value) {
+    search : async function (search_value, page_number, page_limit) {
 
         let find_list = await category_model.find().populate('parent').exec();
-        let result_list = [];
+        let category_skip = page_number * page_limit - page_limit;
+        let search_list = [];
+        let result = {};
 
         for(let i = 0; i < find_list.length; i++){
 
-            log(i)
-            if(find_list[i].title.includes(search_value) || find_list[i].parent.title.includes(search_value)){
+            let title = find_list[i].title.toLowerCase();
+            let parent_title = "دسته اصلی";
 
-                result_list.push(find_list[i]);
+            if(find_list[i].parent != null){
+
+                parent_title = find_list[i].parent.title.toLowerCase();
+
+            }
+            if(title.includes(search_value.toLowerCase()) || parent_title.includes(search_value.toLowerCase())){
+
+                search_list.push(find_list[i]);
 
             }
 
         }
 
-        return  result_list;
+        result.rows_begin_number = category_skip + 1;
+        result.list = search_list.slice(category_skip, page_limit);
+        result.total_pages = Math.ceil(search_list.length / page_limit);
+
+        return result;
 
     },
 

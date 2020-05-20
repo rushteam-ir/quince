@@ -25,11 +25,11 @@
                                 <div class="input-group search_inp_category mb-3 dir-ltr">
 
                                     <input type="text" class="form-control main_form_design text-right category_search dir-rtl" placeholder="جستجو"
-                                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                                           aria-label="Recipient's username" aria-describedby="button-addon2" name="search_inp">
 
                                     <div class="input-group-append">
                                         <button class="btn btn-outline-secondary btn_of_search" type="button" id="button-addon2">
-                                          <i class="fal fa-search"></i>
+                                            <i class="fal fa-search"></i>
                                         </button>
                                     </div>
 
@@ -116,7 +116,11 @@
                               </table>
 
                               <nav aria-label="Page navigation dir-ltr text-center">
-                                  {@page number="{total_pages}" current="{page_number}" url="{backend_url}category"/}
+                                  {@eq key="{search}" value="true"}
+                                      {@page number="{total_pages}" current="{page_number}" url="{backend_url}category/search/{search_value}"/}
+                                  {:else}
+                                      {@page number="{total_pages}" current="{page_number}" url="{backend_url}category"/}
+                                  {/eq}
                               </nav>
 
                         </div>
@@ -125,7 +129,7 @@
                     <div class="col-3 pr-0">
 
                         <div class="main_field_of_right_col p-4 text-right dir-rtl">
-                            <form method="post" action="" autocomplete="off">
+                            <form method="post" action="{backend_url}category" autocomplete="off">
                                 <div class="form-group">
                             <form>
 

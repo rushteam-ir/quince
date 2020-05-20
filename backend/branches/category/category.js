@@ -34,6 +34,7 @@ router.get('/', async(req,res)=>{
             page_limit : page_limit,
             rows_begin_number : category_list.rows_begin_number,
             total_pages : category_list.total_pages,
+            search : false,
 
         };
 
@@ -89,8 +90,10 @@ router.post('/', async(req,res)=>{
 
 const get_sub_category = require('./api/get-sub-category');
 const delete_category = require('./api/delete-category');
+const search = require('./search');
 
 router.use('/api/get-sub-category', get_sub_category);
 router.use('/api/delete-category', delete_category);
+router.use('/search', search);
 
 module.exports = router;
