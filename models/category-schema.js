@@ -117,6 +117,7 @@ category_schema.statics = {
 
         for(let i = 0; i < find_list.length; i++){
 
+            log(i)
             if(find_list[i].title.includes(search_value) || find_list[i].parent.title.includes(search_value)){
 
                 result_list.push(find_list[i]);

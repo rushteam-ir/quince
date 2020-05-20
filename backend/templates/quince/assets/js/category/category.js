@@ -67,6 +67,21 @@ $('.remove_category_table').on('click', function (e) {
 
 })
 
+$('.btn_of_search').on('click', function (e) {
+
+    let search_value = $('.category_search').val();
+    $.post(`${backend_url}api/search-engine`, {
+        search_value : search_value,
+        url : `${backend_url}category`,
+        database : `category`,
+    }, function (data, status) {
+
+        alert(data)
+
+    })
+
+})
+
 function redirect(url) {
     location.href = url
 }

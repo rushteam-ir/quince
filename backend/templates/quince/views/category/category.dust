@@ -24,7 +24,7 @@
 
                                 <div class="input-group search_inp_category mb-3 dir-ltr">
 
-                                    <input type="text" class="form-control main_form_design text-right category_search dir-rtl" placeholder="جستجو" 
+                                    <input type="text" class="form-control main_form_design text-right category_search dir-rtl" placeholder="جستجو"
                                     aria-label="Recipient's username" aria-describedby="button-addon2">
 
                                     <div class="input-group-append">

@@ -4,7 +4,7 @@ router.post('/', async(req,res)=>{
 
     try{
 
-        let {search_value, search_url, database} = req.body;
+        let {search_value, url, database} = req.body;
         let result_list = [];
 
         switch(database){
@@ -20,7 +20,11 @@ router.post('/', async(req,res)=>{
 
         }
 
-        res.redirect(search_url)
+        log(result_list);
+
+        res.json({
+            result_list : result_list
+        });
 
 
     }
