@@ -192,8 +192,40 @@
     margin: 0px 2px;
 }
 
+.search_remove_field{
+    position: absolute;
+    z-index: 10;
+    background-color: #FFF4DE;
+    color: #FFA800;
+    width: 90px;
+    height: 80%;
+    margin-top: 1%;
+    direction: rtl;
+    border-radius: 50px;
+    left: 10px;
+    padding-right: 5px;
+    border: 1px solid #FFA800;
+}
 
+.search_remove_field_text{
+    font-size: 0.8rem;
+    line-height: 29px;
+    width: 55px;
+    height: 100%;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
+.remove_search_box_icon{
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    cursor: pointer;
+    font-size: 0.8rem;
+
+}
 
 /* check box custm */
 
