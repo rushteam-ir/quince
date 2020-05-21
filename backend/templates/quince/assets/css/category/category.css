@@ -58,8 +58,8 @@
 }
 
 .remove_category_table {
-    color: #6993FF;
-    background-color: #E1E9FF;
+    background-color: #FFE2E5;
+    color: #F64E60;
 }
 
 .remove_category_table:hover {
@@ -88,7 +88,7 @@
     position: absolute;
     width: 280px;
     top: 30px;
-    left: 280px;
+    left: 270px ;
 }
 
 .category_search {
@@ -130,8 +130,8 @@
 }
 
 .remove_table_btn {
-    background-color: #E1E9FF;
-    color: #6993FF;
+    background-color: #FFE2E5;
+    color: #F64E60;
     width: 30px;
     height: 30px;
     padding: 0;
@@ -141,8 +141,9 @@
 }
 
 .edit_table_btn {
-    background-color: #FFE2E5;
-    color: #F64E60;
+
+    background-color: #E1E9FF;
+    color: #6993FF;
     width: 30px;
     height: 30px;
     padding: 0px;
@@ -190,6 +191,7 @@
 .page-link{
     margin: 0px 2px;
 }
+
 
 
 
