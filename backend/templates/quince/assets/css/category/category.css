@@ -64,7 +64,7 @@
 
 .remove_category_table:hover {
     color: white;
-    background-color: #6993FF;
+    background-color: #F64E60;
 }
 
 .select_of_category {
@@ -153,12 +153,12 @@
 }
 
 .remove_table_btn:hover{
-    background-color: #6993FF;
+    background-color: #F64E60;
     color: white;
 }
 
 .edit_table_btn:hover{
-    background-color: #F64E60;
+    background-color: #6993FF;
     color: white;
 }
 
@@ -192,39 +192,18 @@
     margin: 0px 2px;
 }
 
-.search_remove_field{
+.remove_search_icon{
     position: absolute;
     z-index: 10;
-    background-color: #FFF4DE;
-    color: #FFA800;
-    width: 90px;
-    height: 80%;
-    margin-top: 1%;
-    direction: rtl;
-    border-radius: 50px;
-    left: 10px;
-    padding-right: 5px;
-    border: 1px solid #FFA800;
-}
-
-.search_remove_field_text{
-    font-size: 0.8rem;
-    line-height: 29px;
-    width: 55px;
-    height: 100%;
-    text-align: right;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.remove_search_box_icon{
-    position: absolute;
-    left: 10px;
-    top: 7px;
+    font-size: 1rem;
+    top: 0;
+    left: 0;
     cursor: pointer;
-    font-size: 0.8rem;
-
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    padding-right: 12px;
+    background-color: #F3F6F9;
 }
 
 /* check box custm */

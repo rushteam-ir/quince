@@ -24,14 +24,7 @@
 
                                 <div class="input-group search_inp_category mb-3 dir-ltr">
 
-                                    <div class="search_remove_field">
-                                        <div class="remove_search_box_icon">
-                                            <i class="fal fa-times"></i>
-                                        </div>
-                                        <p class="search_remove_field_text mr-1">
-                                            سلام سلام کلوچه
-                                        </p>
-                                    </div>
+                                    <i class="fal fa-times remove_search_icon"></i>
 
                                     <input type="text" class="form-control main_form_design text-right category_search dir-rtl" placeholder="جستجو"
                                            aria-label="Recipient's username" aria-describedby="button-addon2" name="search_inp" value="{search_value}">
