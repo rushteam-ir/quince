@@ -74,6 +74,12 @@ $('.btn_of_search').on('click', function (e) {
 
 })
 
+$('.remove_search_icon').on('click', function (e) {
+
+    redirect(`${backend_url}category`);
+
+})
+
 function redirect(url) {
     location.href = url
 }

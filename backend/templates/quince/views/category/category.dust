@@ -24,7 +24,9 @@
 
                                 <div class="input-group search_inp_category mb-3 dir-ltr">
 
-                                    <i class="fal fa-times remove_search_icon"></i>
+                                    {@eq key="{search}" value="true"}
+                                        <i class="fal fa-times remove_search_icon"></i>
+                                    {/eq}
 
                                     <input type="text" class="form-control main_form_design text-right category_search dir-rtl" placeholder="جستجو"
                                            aria-label="Recipient's username" aria-describedby="button-addon2" name="search_inp" value="{search_value}">
@@ -53,8 +55,7 @@
 
                                   </div>
 
-
-                                <button class="btn remove_category_table">
+                                <button class="btn remove_category_table btn_of_remove_search">
                                     <i class="fal fa-trash-alt delete_all_category"></i>
                                 </button>
 
