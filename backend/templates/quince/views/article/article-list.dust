@@ -22,6 +22,10 @@
                                 <p class="header_of_article_list">لیست مقالات</p>
                                 <p class="small_of_article_list">لیست مقالات سایت را در جدول زیر مشاهده کنید</p>
 
+                              <button class="multi_remove btn">
+                                <i class="fal fa-trash-alt"></i>
+                              </button>
+
                             </header>
 
                             <table class="table text-center table_of_article_list">
@@ -56,22 +60,47 @@
                                         طالبی بیشرف نمیخوایم نمیخوایم
                                       </p>
                                     </td>
-                                    <td>فعال</td>
+                                    <td>
+                                      <div class="table_pill_article">
+                                        فعال
+                                      </div>
+                                    </td>
                                     <td>MegaNoob</td>
                                     <td>1/1/1398</td>
-                                    <td>10546</td>
-                                    <td>53512</td>
+                                    <td>
+                                      <div class="table_pill_see_article">
+                                        10546
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <div class="table_pill_comment_article">
+                                        53512
+                                      </div>
+                                    </td>
                                     <td>
 
                                       <div class="dropdown">
-                                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                          Dropdown link
-                                        </a>
-                                      
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                          <a class="dropdown-item" href="#">Action</a>
-                                          <a class="dropdown-item" href="#">Another action</a>
-                                          <a class="dropdown-item" href="#">Something else here</a>
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                        <div class="dropdown-menu text-right dir-rtl" aria-labelledby="dropdownMenuButton">
+
+                                          <a class="dropdown-item" href="#">
+                                            <i class="far fa-align-slash"></i>
+                                            غیر فعال کردن مقاله</a>
+
+                                          <a class="dropdown-item" href="#">
+                                            <i class="fal fa-comment-alt-slash"></i>
+                                            غیر فعال کردن نظرات</a>
+
+                                          <a class="dropdown-item" href="#">
+                                            <i class="fal fa-edit"></i>
+                                            ویرایش</a>
+
+                                          <a class="dropdown-item" href="#">
+                                            <i class="fal fa-trash-alt"></i>
+                                            حذف</a>
+
                                         </div>
                                       </div>
 
