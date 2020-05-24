@@ -61,9 +61,39 @@ $('.remove_table_btn').on('click', function (e) {
     })
 })
 
-$('.remove_category_table').on('click', function (e) {
+$('.btn_delete_all_category').on('click', function (e) {
 
+    let query = ''
 
+    $(':checkbox:checked').each(function(i){
+        if($(this).attr('name') != 'select_all'){
+            query += '&id[]=' + $(this).val();
+        }
+    });
+
+    Swal.fire({
+        title: 'حذف دسته',
+        text: "آیا از حذف دسته های انتخاب شده مطمئن هستید ؟",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'بله',
+        cancelButtonText: 'خیر',
+    }).then((result) => {
+        if (result.value) {
+            Swal.fire({
+                title : 'حذف شد',
+                text : 'دسته های انتخاب شده با موفقیت حذف شد برای تایید نهایی کلیک کنید',
+                icon : 'success',
+                confirmButtonText: 'تایید',
+            }).then((result)=>{
+                if (result.value) {
+                    redirect(`${backend_url}category/api/delete-select-category/?${query}`);
+                }
+            })
+        }
+    })
 
 })
 

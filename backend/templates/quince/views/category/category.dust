@@ -55,7 +55,7 @@
 
                                   </div>
 
-                                <button class="btn remove_category_table btn_of_remove_search">
+                                <button class="btn remove_category_table btn_delete_all_category">
                                     <i class="fal fa-trash-alt delete_all_category"></i>
                                 </button>
 
@@ -66,7 +66,7 @@
                                   <tr>
                                     <th scope="col">
                                       <label class="checkbox_of_category">
-                                        <input type="checkbox" class="option-input checkbox" id="selectall">
+                                        <input type="checkbox" class="option-input checkbox" id="selectall" name="select_all">
                                     </label>
                                     </th>
                                     <th scope="col">ردیف</th>
@@ -82,7 +82,7 @@
                                     <td class="category_table_customize">
 
                                         <label class="checkbox_of_category">
-                                            <input type="checkbox" class="table_checkbox option-input checkbox">
+                                            <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
                                         </label>
 
                                     </td>
