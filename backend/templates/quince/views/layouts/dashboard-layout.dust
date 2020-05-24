@@ -169,8 +169,8 @@
 
 
     <script src="js/general/jquery.js"></script>
-    <script src="js/general/bootstrap.js"></script>
     <script src="js/general/popper.js"></script>
+    <script src="js/general/bootstrap.js"></script>
     <script src="js/general/sweetAlert.js"></script>
     <script src="js/layout/get-element.js"></script>
     <script src="js/layout/toggle-dsh.js"></script>

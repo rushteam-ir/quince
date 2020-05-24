@@ -1,0 +1,91 @@
+{>"layouts/dashboard-layout"/}
+
+{<css}
+    <link rel="stylesheet" href="css/article/article-list.css">
+{/css}
+{<js} 
+    <script src="js/article/article-list.js"></script> 
+{/js}
+
+
+{<body}
+
+    <section>
+        <div class="main_filed_of_article_list">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="main_filed_of_main_col">
+
+                            <header>
+
+                                <p class="header_of_article_list">لیست مقالات</p>
+                                <p class="small_of_article_list">لیست مقالات سایت را در جدول زیر مشاهده کنید</p>
+
+                            </header>
+
+                            <table class="table text-center table_of_article_list">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">
+                                    <label class="checkbox_of_category">
+                                        <input type="checkbox" class="option-input checkbox" id="selectall" name="select_all">
+                                    </label>
+                                    </th>
+                                    <th scope="col">ردیف</th>
+                                    <th scope="col">نام مقاله</th>
+                                    <th scope="col">وضعیت</th>
+                                    <th scope="col">نویسنده</th>
+                                    <th scope="col">آخرین تغییرات</th>
+                                    <th scope="col">تعداد بازدید ها</th>
+                                    <th scope="col">تعداد نطرات</th>
+                                    <th scope="col">تنظیمات</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">
+
+                                    <label class="checkbox_of_category">
+                                        <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                    </label>
+                                    </th>
+                                    <td>1</td>
+                                    <td class="articel_name_td">
+                                      <p class="name_ofarticle">
+                                        طالبی بیشرف نمیخوایم نمیخوایم
+                                      </p>
+                                    </td>
+                                    <td>فعال</td>
+                                    <td>MegaNoob</td>
+                                    <td>1/1/1398</td>
+                                    <td>10546</td>
+                                    <td>53512</td>
+                                    <td>
+
+                                      <div class="dropdown">
+                                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Dropdown link
+                                        </a>
+                                      
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                          <a class="dropdown-item" href="#">Action</a>
+                                          <a class="dropdown-item" href="#">Another action</a>
+                                          <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                      </div>
+
+                                    </td>
+                                  </tr>
+                                  
+                                </tbody>
+                              </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{/body}
