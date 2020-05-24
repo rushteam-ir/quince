@@ -71,36 +71,41 @@ $('.btn_delete_all_category').on('click', function (e) {
         }
     });
 
-    Swal.fire({
-        title: 'حذف دسته',
-        text: "آیا از حذف دسته های انتخاب شده مطمئن هستید ؟",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'بله',
-        cancelButtonText: 'خیر',
-    }).then((result) => {
-        if (result.value) {
-            Swal.fire({
-                title : 'حذف شد',
-                text : 'دسته های انتخاب شده با موفقیت حذف شد برای تایید نهایی کلیک کنید',
-                icon : 'success',
-                confirmButtonText: 'تایید',
-            }).then((result)=>{
-                if (result.value) {
-                    redirect(`${backend_url}category/api/delete-select-category/?${query}`);
-                }
-            })
-        }
-    })
+    if(query != ''){
+        Swal.fire({
+            title: 'حذف دسته',
+            text: "آیا از حذف دسته های انتخاب شده مطمئن هستید ؟",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'بله',
+            cancelButtonText: 'خیر',
+        }).then((result) => {
+            if (result.value) {
+                Swal.fire({
+                    title : 'حذف شد',
+                    text : 'دسته های انتخاب شده با موفقیت حذف شد برای تایید نهایی کلیک کنید',
+                    icon : 'success',
+                    confirmButtonText: 'تایید',
+                }).then((result)=>{
+                    if (result.value) {
+                        redirect(`${backend_url}category/api/delete-select-category/?${query}`);
+                    }
+                })
+            }
+        })
+    }
+
 
 })
 
 $('.btn_of_search').on('click', function (e) {
 
     let search_value = $('.category_search').val();
-    redirect(`${backend_url}category/search/${search_value}`);
+    if(search_value != ""){
+        redirect(`${backend_url}category/search/${search_value}`);
+    }
 
 })
 
