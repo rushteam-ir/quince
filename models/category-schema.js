@@ -139,9 +139,6 @@ category_schema.statics = {
         result.list = search_list.slice(category_skip, page_limit + category_skip);
         result.total_pages = Math.ceil(search_list.length / page_limit);
 
-        log(category_skip)
-        log(result);
-
         return result;
 
     },
