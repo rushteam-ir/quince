@@ -120,3 +120,60 @@
     }
 
 }
+
+.count_row_table_of_category {
+    font-size: 0.7rem;
+    height: 35px !important;
+    width: 60px;
+    display: inline-block;
+}
+
+.select_of_category {
+    position: absolute;
+    top: 30px;
+    left: 95px;
+}
+
+.select_of_category p {
+    font-size: 0.8rem;
+}
+
+.search_inp_category {
+    position: absolute;
+    width: 280px;
+    top: 30px;
+    left: 270px ;
+}
+
+.remove_search_icon{
+    position: absolute;
+    z-index: 10;
+    font-size: 1rem;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    padding-right: 12px;
+    background-color: #F3F6F9;
+}
+
+.category_search {
+    height: 35px !important;
+    font-size: 0.8rem;
+}
+
+.btn_of_search {
+    height: 35px;
+    background-color: #F3F6F9;
+    border: none;
+}
+
+.btn_of_search:hover i {
+    color: #F64E60;
+}
+
+.btn_of_search:hover {
+    background-color: #F3F6F9;
+}

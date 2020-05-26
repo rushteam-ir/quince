@@ -2,6 +2,7 @@
 
 {<css}
     <link rel="stylesheet" href="css/profile/profile.css">
+    <link rel="stylesheet" href="css/profile/profile-media-query.css">
 {/css}
 {<js} 
     <script src="js/profile/profile.js"></script>
@@ -16,7 +17,7 @@
             <div class="container-fluid">
                 <div class="row">
 
-                    <div class="col-9 pl-0 pr-0">
+                    <div class="col-12 col-lg-8 col-xl-9 order-2 order-lg-1 mt-4 mt-lg-0 pl-0 pr-0">
                         <div class="main_field_of_left_pro dir-rtl text-right p-4 display_none" id="first_tab">
 
                             <header>
@@ -140,14 +141,14 @@
 
                                     <div class="form-group mt-4 row">
                                       <label for="user_birthday" class="col-sm-2 col-form-label main_lable_design">تاریخ تولد</label>
-                                        <div class="col-sm-2">
+                                        <div class="col-4 col-sm-3 col-md-2">
                                             <input type="text" class="form-control main_form_design" id="user_birthday" placeholder="dd" name="day_inp" value="{admin_info.birth_day}">
                                         </div>
-                                        <div class="col-sm-2">
+                                        <div class="col-4 col-sm-3 col-md-2">
                                             <span class="birth_day_backslash">/</span>
                                            <input type="text" class="form-control main_form_design" placeholder="mm" name="month_inp" value="{admin_info.birth_month}">
                                         </div>
-                                        <div class="col-sm-2">
+                                        <div class="col-4 col-sm-3 col-md-2">
                                             <span class="birth_day_backslash">/</span>
                                             <input type="text" class="form-control main_form_design" placeholder="yy" name="year_inp" value="{admin_info.birth_year}">
                                         </div>
@@ -191,10 +192,10 @@
                         <div class="main_field_of_left_pro dir-rtl text-right p-4 display_none">
 
                             <header>
+
+
                                     <p class="header_of_tabs">تغییر رمز عبور</p>
                                     <p class="small_of_tabs mt-2">با تغییر مداوم رمز عبور اکانت خود را امن نگاه دارید!</p>
- 
-
 
                                     <hr>
 
@@ -206,10 +207,10 @@
 
                                     <div class="box_of_pass_alert_pro row">
 
-                                        <div class="col-1">
+                                        <div class="col-2">
                                             <i class="fad fa-exclamation-circle password_alert_pro"></i>
                                         </div>
-                                        <div class="col-11">
+                                        <div class="col-10">
                                             <p class="mb-1 alert_pro_text">
                                                 لطفا توجه داشته باشید که رمز عبور شما حداقل باید شامل 8 عدد یا حرف باشد . همچنین با عوض کردن رمز عبور خود امنیت حساب خود را بالا تر ببرید.
                                             </p>
@@ -254,7 +255,7 @@
 
                     </div>
 
-                    <div class="col-3 pr-0 dir-rtl text-right">
+                    <div class="col-12 col-lg-4 col-xl-3 order-1 order-lg-2 pr-0 pl-0 pl-lg-3  dir-rtl text-right">
 
                         <div class="prodile_tabs p-4">
 
@@ -262,10 +263,13 @@
                                 {@eq key="{admin_info.avatar}" value=""}
 
                                 {:else}
+                                <div class="field_of_pro_img_mobile d-block d-sm-inline-block">
                                     <img class="d-inline-block pro_logo" src="media/avatars/{admin_info.avatar}">
+                                </div>
+                                   
                                 {/eq}
 
-                                <div class="d-inline-block mr-3">
+                                <div class="mr-sm-3 d-block d-sm-inline-block prrofile_name_field">
                                     {@eq key="{admin_info.author_type}" value="name"}
                                         <h2  class="user_name_pro_page mb-1">{admin_info.first_name} {admin_info.last_name}</h2>
                                     {:else}

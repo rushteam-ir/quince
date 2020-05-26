@@ -98,7 +98,7 @@
                         <a href="" class="sub_dashboard_link">
                             <li>افزودن مقاله جدید</li>
                         </a>
-                        <a href="" class="sub_dashboard_link">
+                        <a href="{backend_url}article/list" class="sub_dashboard_link">
                             <li>لیست مقالات</li>
                         </a>
                     </ul>
@@ -109,7 +109,7 @@
                     <a href="" class="sub_dashboard_link">
                         <li>افزودن مقاله جدید</li>
                     </a>
-                    <a href="" class="sub_dashboard_link">
+                    <a href="{backend_url}article/list" class="sub_dashboard_link">
                         <li>لیست مقالات</li>
                     </a>
                 </ul>

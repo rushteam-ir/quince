@@ -1,0 +1,180 @@
+@media only screen and (max-width: 1340px) {
+    .user_name_pro_page {
+        font-size: 1.1vw;
+    }
+
+    .user_access_pro {
+        font-size: 1vw;
+        ;
+    }
+
+    .pro_logo {
+        width: 90px;
+        height: 90px;
+    }
+
+    .field_of_tab_info {
+        font-size: 0.8rem;
+    }
+
+    .profile_tab {
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .main_div_of_personal_form {
+        padding: 20px 20px;
+    }
+
+    .main_lable_design {
+        font-size: 0.8rem;
+    }
+
+    .main_form_design {
+        font-size: 0.88rem;
+    }
+
+    .checkbox_pro_text {
+        font-size: 0.88rem;
+    }
+
+    .alert_pro_text {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .profile_tab {
+        font-size: 0.8rem;
+        text-align: right;
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .pro_logo {
+        width: 160px;
+        height: 160px;
+    }
+
+    .user_name_pro_page {
+        font-size: 2.5vw;
+    }
+
+    .user_access_pro {
+        font-size: 1.5vw;
+    }
+
+    .field_of_tab_info {
+        font-size: 1.2rem;
+    }
+
+    .profile_tab {
+        font-size: 1.1rem;
+        text-align: center;
+        padding-right: 10px;
+    }
+
+    .main_lable_design {
+        font-size: 1rem;
+    }
+
+    .main_form_design {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .field_of_tab_info {
+        font-size: 1.1rem;
+    }
+
+    .main_lable_design {
+        font-size: 0.9rem;
+    }
+
+    .main_form_design {
+        font-size: 0.9rem;
+    }
+
+    .field_of_pr_btn {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main_lable_design {
+        font-size: 0.8rem;
+    }
+
+    .profile_tab {
+        font-size: 1rem;
+        text-align: center;
+        padding-right: 10px;
+    }
+
+    .field_of_tab_info {
+        font-size: 1rem;
+    }
+
+    .user_access_pro {
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .user_access_pro {
+        font-size: 2.5vw;
+    }
+
+    .user_name_pro_page {
+        font-size: 3vw;
+    }
+
+    .small_of_tabs {
+        font-size: 0.9rem;
+    }
+
+    .main_lable_design {
+        font-size: 1rem;
+    }
+
+    .password_alert_pro {
+        margin: 15px 0px;
+    }
+
+    .prrofile_name_field {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .field_of_pro_img_mobile {
+        width: 160px;
+        margin: 0 auto;
+    }
+
+    .box_of_img_template {
+        margin: 0 auto;
+    }
+
+    .checkbox_pro_text {
+        font-size: 0.7rem;
+    }
+
+    .option-input {
+        height: 25px;
+        width: 25px;
+    }
+
+    .option-input:checked::before {
+        height: 25px;
+        width: 25px;
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .btn {
+        font-size: 0.8rem;
+    }
+}
