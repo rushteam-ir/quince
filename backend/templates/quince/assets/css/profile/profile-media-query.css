@@ -96,7 +96,7 @@
     }
 
     .main_form_design {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
     .field_of_pr_btn {
@@ -126,11 +126,11 @@
 
 @media only screen and (max-width: 576px) {
     .user_access_pro {
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
 
     .user_name_pro_page {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     .small_of_tabs {
@@ -160,7 +160,7 @@
     }
 
     .checkbox_pro_text {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .option-input {
@@ -177,4 +177,8 @@
     .btn {
         font-size: 0.8rem;
     }
+    .main_div_of_personal_form {
+        padding: 20px 0px;
+    }
+
 }
