@@ -61,7 +61,8 @@
             div {
                 height: 50px;
                 line-height: 50px;
-                padding-right: 15px;
+                padding-right: 17px;
+                @include transition(ease-out, 0.2s);
 
                 &:hover {
                     background-color: $dsh_bg_dark;
@@ -111,7 +112,7 @@
             color: $dsh_color;
             height: 50px;
             line-height: 50px;
-            padding-right: 15px;
+            padding-right: 17px;
             @include transition(linear, 0.2s);
 
 
@@ -208,18 +209,22 @@
 
 }
 
-
+// close and open classes
 .close_dsh{
-    width: 3.5%;
+    width: 3.8%;
 
     a :nth-child(2){
         display: none;
     }
 
-    .dashboard_body_collaps :nth-child(2), .dashboard_body_collaps :nth-child(3) {
+    .dashboard_body_collaps :nth-child(2){
         display: none;
     }
 
+    .dashboard_body_collaps :nth-child(3) {
+        display: none;
+    }
+    
     .dashboard_header{
         p{
             display: none;
@@ -232,13 +237,33 @@
 
     .open_dsh_btn{
         display: block;
+        left: 19px;
+    }
+}
+
+.open_dsh{
+    width: 15%;
+
+    .close_dsh_btn{
+        display: block;
+    }
+    
+    a :nth-child(2){
+        display: inline-block;
+    }
+
+    .dashboard_body_collaps :nth-child(2), .dashboard_body_collaps :nth-child(3) {
+        display: inline-block;
+    }
+
+    .dashboard_header{
+        p{
+            display: inline-block;
+        }
+    }
+
+    .open_dsh_btn{
+        display: none;
     }
 
 }
-
-
-.open_dsh_btn{
-    width: 15%;
-    
-}
-

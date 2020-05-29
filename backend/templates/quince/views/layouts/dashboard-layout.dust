@@ -19,7 +19,6 @@
 
 <body class="main_body_tag">
 
-
     <aside class="dashboard">
 
         <div class="dashboard_header">
@@ -124,12 +123,6 @@
         {+body/}
         
     </main>
-
-
-
-
-
-
 
     <script src="js/general/jquery.js"></script>
     <script src="js/general/popper.js"></script>
