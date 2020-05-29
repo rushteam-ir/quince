@@ -1,0 +1,244 @@
+@import '../general/main_color';
+@import '../../css/general/general-scss';
+.display_none{
+    display: none;
+}
+
+.main_cms_field{
+    width: 85%;
+    @include transition(ease-out, 0.5s);
+
+}
+
+.main_body_tag{
+    background-color: #E7E8F2;
+}
+
+
+
+.dashboard {
+
+    width: 15%;
+    height: 100vh;
+    background-color: $dsh_bg;
+    position: fixed;
+    right: 0;
+    top: 0;
+    direction: rtl;
+    text-align: right;
+    @include transition(ease-out, 0.5s);
+
+    &_header {
+
+        padding: 10px 10px;
+        background-color: $dsh_bg_dark;
+        height: 65px;
+
+        p {
+            color: white;
+            font-size: 2rem;
+            margin: 0px;
+        }
+
+        i {
+            color: $dsh_color;
+            position: absolute;
+            top: 22px;
+            left: 14px;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+    }
+
+    &_body {
+
+        &_sub {
+            color: $dsh_color;
+            font-size: 1rem;
+            margin-top: 20px;
+
+            div {
+                height: 50px;
+                line-height: 50px;
+                padding-right: 15px;
+
+                &:hover {
+                    background-color: $dsh_bg_dark;
+                    border-right: 3px solid #3699FF;
+
+                    i:first-child {
+                        color: $dsh_color_light;
+                    }
+
+                    i:last-child {
+                        color: white;
+                    }
+
+                    p {
+                        color: white;
+                    }
+
+                }
+
+                p {
+                    display: inline-block;
+                    color: $dsh_text_color;
+                    margin: 0px;
+                    margin-right: 10px;
+                    @include transition(linear, 0.2s);
+                    font-size: 0.9rem;
+                }
+
+                i {
+                    display: inline-block;
+                    @include transition(linear, 0.2s);
+                    font-size: 1.2rem;
+
+                    &:last-child {
+                        position: absolute;
+                        left: 20px;
+                        top: 16px;
+                    }
+                }
+
+            }
+        }
+
+        &_collaps{
+            
+            cursor: pointer;
+            color: $dsh_color;
+            height: 50px;
+            line-height: 50px;
+            padding-right: 15px;
+            @include transition(linear, 0.2s);
+
+
+            &:hover {
+                background-color: $dsh_bg_dark;
+                border-right: 3px solid #3699FF;
+
+                i:first-child {
+                    color: $dsh_color_light;
+                }
+
+                i:last-child {
+                    color: white;
+                }
+
+                p {
+                    color: white;
+                }
+            }
+
+            p {
+                display: inline-block;
+                color: $dsh_text_color;
+                margin: 0px;
+                margin-right: 10px;
+                @include transition(linear, 0.2s);
+
+            }
+
+            i {
+                display: inline-block;
+                @include transition(linear, 0.2s);
+                font-size: 1.2rem;
+
+                &:last-child {
+                    position: absolute;
+                    left: 20px;
+                    top: 16px;
+                    font-size: 0.8rem;
+                }
+            }
+
+        }
+
+    }
+
+    .collaps_field{
+        color: $dsh_text_color;
+        font-size: 0.8rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+
+        a{
+            color: $dsh_text_color;
+        }
+
+        p{
+
+            height: 40px;
+            line-height: 40px;
+            @include transition(linear, 0.2s);
+            margin: 0;
+            padding-right: 40px;
+            cursor: pointer;
+
+            &:hover{
+                color: white;
+                background-color: $dsh_bg_dark;
+
+            }
+        }
+    }
+
+}
+
+.collaps_on{
+
+    background-color: $dsh_bg_dark;
+    border-right: 3px solid #3699FF;
+
+    & :last-child{
+        color: white;
+        @include transform(rotate(-90deg));
+    }
+
+    & :first-child{
+        color: $dsh_color_light;
+    }
+
+    & :nth-child(2){
+        color: white;
+    }
+
+}
+
+
+.close_dsh{
+    width: 3.5%;
+
+    a :nth-child(2){
+        display: none;
+    }
+
+    .dashboard_body_collaps :nth-child(2), .dashboard_body_collaps :nth-child(3) {
+        display: none;
+    }
+
+    .dashboard_header{
+        p{
+            display: none;
+        }
+    }
+
+    .close_dsh_btn{
+        display: none;
+    }
+
+    .open_dsh_btn{
+        display: block;
+    }
+
+}
+
+
+.open_dsh_btn{
+    width: 15%;
+    
+}
+

@@ -1,5 +1,6 @@
 @import '../general/general-scss';
 @import '../general/checkbox-design';
+@import '../general/main_coloro.scss';
 
 .main_filed_of_article_list {
     @include main_field;
@@ -74,7 +75,7 @@
 .dropdown-item {
     transition: all linear .2s;
     i {
-        color: rgb(0, 0, 0);
+        color: #000000;
         margin-left: 10px;
         transition: all linear .2s;
     }
@@ -92,7 +93,7 @@
 
 .dropdown-item.active, .dropdown-item:active {
     color: $d_purple;
-    background-color: #F8F9FA;
+    background-color:  $form_color;
 }
 
 .table_pill_article{
@@ -156,7 +157,7 @@
     height: 35px;
     line-height: 35px;
     padding-right: 12px;
-    background-color: #F3F6F9;
+    background-color: $form_color;
 }
 
 .category_search {
@@ -166,14 +167,23 @@
 
 .btn_of_search {
     height: 35px;
-    background-color: #F3F6F9;
+    background-color: $form_color;
     border: none;
 }
 
 .btn_of_search:hover i {
-    color: #F64E60;
+    color: $d_red;
 }
 
 .btn_of_search:hover {
-    background-color: #F3F6F9;
+    background-color: $form_color;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled).active:focus, .btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-outline-secondary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled).active, .btn-outline-secondary:not(:disabled):not(.disabled):active, .show>.btn-outline-secondary.dropdown-toggle {
+    background-color: $form_color;
+    border-color: $form_color;
 }

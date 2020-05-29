@@ -17,155 +17,118 @@
     <title>Rush Team CMS</title>
 </head>
 
-<body class="dashboard_body">
+<body class="main_body_tag">
 
 
-    <aside class="dashboard open_dsh">
+    <aside class="dashboard">
 
-        <div class="dir-rtl text-right">
+        <div class="dashboard_header">
 
-            <div class="header_of_dashboard">
-                <img class="dashboard_logo" src="img/logo2.png" alt="">
-                <i class="fad fa-angle-double-right close_dashboard"></i>
-                <i class="fad fa-angle-double-left open_dashboard display_none"></i>
-                <i class="far fa-times close_mobile_dsh display_none"></i>
+            <p>𝓠𝓾𝓲𝓷𝓬𝓮</p>
+            <i class="fad fa-angle-double-right close_dsh_btn "></i>
+            <i class="fad fa-angle-double-left open_dsh_btn display_none"></i>
+
+        </div>
+
+        <div class="dashboard_body">
+            <a href="" class="dashboard_body_sub">
+                <div class="position-relative">
+                    <i class="fad fa-analytics"></i>
+                    <p>داشبورد</p>
+                </div>
+            </a>
+
+            <a href="{backend_url}profile" class="dashboard_body_sub">
+                <div class="position-relative">
+                    <i class="fad fa-id-card"></i>
+                    <p>پروفایل</p>
+                </div>
+            </a>
+
+            <a href="{backend_url}category" class="dashboard_body_sub">
+                <div class="position-relative">
+                    <i class="fad fa-layer-plus"></i>
+                    <p>دسته بندی</p>
+                </div>
+            </a>
+
+
+            <div class="position-relative dashboard_body_collaps">
+                <i class="fad fa-coins"></i>
+                <p>فروشگاه</p>
+                <i class="fas fa-angle-left"></i>
             </div>
 
-            <ul class="pr-0 dashboard_ul">
+            <div class="collaps_field">
 
-                <a href="" class="d-block position-relative dashboard_links">
-
-                    <i class="fas fa-home-lg d-inline-block dashboard_icons"></i>
-                    <li class="mr-2 dashboard_text">داشبورد</li>
-
+                <a href="">
+                    <p>- لیست محصولات</p>
                 </a>
 
-                <a href="{backend_url}profile" class="d-block position-relative dashboard_links">
-
-                    <i class="fas fa-user-circle d-inline-block dashboard_icons"></i>
-                    <li class="mr-2 dashboard_text">پروفایل</li>
-
+                <a href="">
+                    <p>- افزودن محصول</p>
                 </a>
 
-                <a href="{backend_url}category" class="d-block position-relative dashboard_links">
-
-                    <i class="fad fa-layer-group d-inline-block dashboard_icons"></i>
-                    <li class="mr-2 dashboard_text">دسته بندی</li>
-
+                <a href="">
+                    <p>- کد تخفیف</p>
                 </a>
 
-                <div class="d-block position-relative dashboard_links dashboard_collaps">
+            </div>
 
-                    <i class="fas fa-shopping-cart d-inline-block dashboard_icons"></i>
-                    <li class="mr-2 dashboard_text">فروشگاه</li>
-                    <i class="fas fa-angle-left dashboard_angle"></i>
+            <div class="position-relative dashboard_body_collaps">
+                <i class="fad fa-newspaper"></i>
+                <p>مقاله ها</p>
+                <i class="fas fa-angle-left"></i>
+            </div>
 
-                    <ul class="hover_menu">
-                        <a href="" class="sub_dashboard_link">
-                            <li>لیست فروشگاه</li>
-                        </a>
-                        <a href="" class="sub_dashboard_link">
-                            <li>اضافه کردن محصول</li>
-                        </a>
-                        <a href="" class="sub_dashboard_link">
-                            <li>کد تخفیف</li>
-                        </a>
-                    </ul>
+            <div class="collaps_field">
 
+                <a href="{backend_url}article/list">
+                    <p>- لیست مقالات</p>
+                </a>
+
+                <a href="">
+                    <p>- افزودن مقاله</p>
+                </a>
+
+            </div>
+
+            <a href="" class="dashboard_body_sub">
+                <div class="position-relative">
+                    <i class="fad fa-users-crown"></i>
+                    <p>لیست کاربران</p>
                 </div>
+            </a>
 
-                <ul class="sub_collaps">
-                    <a href="" class="sub_dashboard_link">
-                        <li>لیست فروشگاه</li>
-                    </a>
-                    <a href="" class="sub_dashboard_link">
-                        <li>اضافه کردن محصول</li>
-                    </a>
-                    <a href="" class="sub_dashboard_link">
-                        <li>کد تخفیف</li>
-                    </a>
-                </ul>
-
-
-
-                <div href="" class="d-block position-relative dashboard_links dashboard_collaps">
-
-                    <i class="fas fa-newspaper d-inline-block dashboard_icons"></i>
-                    <li class="mr-2 dashboard_text">مقاله</li>
-                    <i class="fas fa-angle-left dashboard_angle"></i>
-
-                    <ul class="hover_menu">
-                        <a href="" class="sub_dashboard_link">
-                            <li>افزودن مقاله جدید</li>
-                        </a>
-                        <a href="{backend_url}article/list" class="sub_dashboard_link">
-                            <li>لیست مقالات</li>
-                        </a>
-                    </ul>
-
+            <a href="" class="dashboard_body_sub">
+                <div class="position-relative">
+                    <i class="fad fa-question-circle"></i>
+                    <p>راهنما</p>
                 </div>
+            </a>
 
-                <ul class="sub_collaps">
-                    <a href="" class="sub_dashboard_link">
-                        <li>افزودن مقاله جدید</li>
-                    </a>
-                    <a href="{backend_url}article/list" class="sub_dashboard_link">
-                        <li>لیست مقالات</li>
-                    </a>
-                </ul>
+            <a href="" class="dashboard_body_sub">
+                <div class="position-relative">
+                    <i class="fad fa-portal-exit"></i>
+                    <p>خروج</p>
+                </div>
+            </a>
 
-
-
-                <a href="" class="d-block position-relative dashboard_links">
-
-                    <i class="fad fa-users d-inline-block dashboard_icons"></i>
-                    <li class="mr-2 dashboard_text">کاربران</li>
-
-                </a>
-
-                <a href="" class="d-block position-relative dashboard_links">
-
-                    <i class="fas fa-sign-out-alt d-inline-block dashboard_icons"></i>
-                    <li class="mr-2 dashboard_text">خروج</li>
-
-                </a>
-
-            </ul>
 
         </div>
 
     </aside>
 
-
-    <div class="dashboard_main">
-
-        <div class="mobile_fade_layout display_none"></div>
-
-        <nav class="dashboard_navbar">
-
-            <div class="d-inline-block dashboard_user_img">
-
-                <img class="admin_img_dashboard d-inline-block ml-3" src="img/img2.jpg" alt="">
-                <p class="d-inline-block ml-3 mr-3">کسری حبیب بیگی</p>
-
-            </div>
-            <div class="d-inline-block ml-2 position-relative">
-
-                <i class="bell fa fa-bell"></i>
-
-                <i class="fad fa-comments-alt  envelope_navbar ml-3"></i>
-
-                <div class="messages_alert"></div>
-
-            </div>
-
-            <i class="fas fa-bars mobile_bar display_none"></i>
-
-        </nav>
+    <main class="main_cms_field">
 
         {+body/}
+        
+    </main>
 
-    </div>
+
+
+
+
 
 
     <script src="js/general/jquery.js"></script>
@@ -173,12 +136,10 @@
     <script src="js/general/bootstrap.js"></script>
     <script src="js/general/sweetAlert.js"></script>
     <script src="js/layout/get-element.js"></script>
-    <script src="js/layout/toggle-dsh.js"></script>
     <script src="js/layout/collaps-menu.js"></script>
-    <script src="js/layout/mobile-dsh.js"></script>
+    <script src="js/layout/toggle-dsh.js"></script>
+
     {+js/}
 </body>
 
 </html>
-
-

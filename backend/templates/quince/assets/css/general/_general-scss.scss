@@ -1,13 +1,3 @@
-$d_red : #F64E60;
-$d_purple : #6993FF;
-$d_green : #1BC5BD;
-$d_yellow : #FFA800;
-
-$l_red : #FFE2E5;
-$l_purple: #E1E9FF;
-$l_green : #C9F7F5;
-$l_yellow: #FFF4DE;
-
 $b_radius: 7px;
 
 @mixin main_field {
@@ -62,4 +52,19 @@ $b_radius: 7px;
     line-height: 30px;
     margin: 0 auto;
     margin-top: 4px;
+}
+
+
+@mixin transition($type, $time) {
+    transition: all $type $time;
+    -webkit-transition:  all $type $time;
+    -o-transition: all $type $time;
+    -moz-transition: all $type $time;
+}
+
+@mixin transform($type) {
+    transform: $type;
+    -webkit-transform: $type;
+    -o-transform: $type;
+    -moz-transform: $type;
 }
