@@ -1,47 +1,30 @@
 $(document).ready(function(){
 
-    function close_dsh(){
+    $(document).on('click','.close_dsh_btn',function(){
 
-        dashboard_collaps.removeClass('collaps_on');
+        dashboard_collaps_jq.removeClass('collaps_on');
         dashboard.removeClass('open_dsh');
         dashboard.addClass('close_dsh');
         main_cms_field.css('width','96.2%');
-        localStorage.collaps_dsh = close_dsh;
 
-    }
+        for (let i = 0; i < dashboard_collaps.length; i++) {
 
-    function open_dsh(){
+           var test = dashboard_collaps[i].nextElementSibling;
+           test.style.maxHeight = null;
 
-        dashboard.removeClass('close_dsh');
-        dashboard.addClass('open_dsh');
-        main_cms_field.css('width','85%');
-        localStorage.collaps_dsh = open_dsh;
+        }
 
-    }
-
-    $(document).on('click','.close_dsh_btn',function(){
-
-        close_dsh()
+        hover_field.css('display','block');
 
     });
 
     $(document).on('click','.open_dsh_btn',function(){
 
-
-        open_dsh();
+        dashboard.removeClass('close_dsh');
+        dashboard.addClass('open_dsh');
+        main_cms_field.css('width','85%');
+        hover_field.css('display','none');
 
     });
-
-    if(localStorage.collaps_dsh == open_dsh){
-
-        open_dsh();
-    
-    }
-    
-    else{
-    
-        close_dsh()
-    
-    }
 
 });

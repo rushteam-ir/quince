@@ -56,6 +56,23 @@
                 <i class="fad fa-coins"></i>
                 <p>فروشگاه</p>
                 <i class="fas fa-angle-left"></i>
+
+                <div class="hover_field">
+
+                    <a href="">
+                        <p>- لیست محصولات</p>
+                    </a>
+    
+                    <a href="">
+                        <p>- افزودن محصول</p>
+                    </a>
+    
+                    <a href="">
+                        <p>- کد تخفیف</p>
+                    </a>
+    
+                </div>
+
             </div>
 
             <div class="collaps_field">
@@ -78,6 +95,19 @@
                 <i class="fad fa-newspaper"></i>
                 <p>مقاله ها</p>
                 <i class="fas fa-angle-left"></i>
+
+                <div class="hover_field">
+
+                    <a href="{backend_url}article/list">
+                        <p>- لیست مقالات</p>
+                    </a>
+    
+                    <a href="">
+                        <p>- افزودن مقاله</p>
+                    </a>
+    
+                </div>
+
             </div>
 
             <div class="collaps_field">

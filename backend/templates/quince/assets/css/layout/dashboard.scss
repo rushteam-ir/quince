@@ -1,16 +1,17 @@
 @import '../general/main_color';
 @import '../../css/general/general-scss';
-.display_none{
+
+.display_none {
     display: none;
 }
 
-.main_cms_field{
+.main_cms_field {
     width: 85%;
     @include transition(ease-out, 0.5s);
 
 }
 
-.main_body_tag{
+.main_body_tag {
     background-color: #E7E8F2;
 }
 
@@ -106,8 +107,8 @@
             }
         }
 
-        &_collaps{
-            
+        &_collaps {
+
             cursor: pointer;
             color: $dsh_color;
             height: 50px;
@@ -133,6 +134,17 @@
                 }
             }
 
+            &:hover .hover_field{
+                background-color: $dsh_bg;
+                border-right: 3px solid $dsh_color_light;
+                width: 160px;
+                
+                p{
+                    color: $dsh_text_color;
+                }
+
+            }
+
             p {
                 display: inline-block;
                 color: $dsh_text_color;
@@ -147,7 +159,7 @@
                 @include transition(linear, 0.2s);
                 font-size: 1.2rem;
 
-                &:last-child {
+                &:nth-child(3) {
                     position: absolute;
                     left: 20px;
                     top: 16px;
@@ -155,22 +167,40 @@
                 }
             }
 
+            .hover_field {
+                width: 0px;
+                overflow: hidden;
+                background: #1e1e2d00;
+                position: absolute;
+                padding-bottom: 15px;
+                right: 55px;
+                top: 0;
+                border-radius: 3px 0px 0px 3px;
+                border-right: 3px solid #494b7400;
+                display: none;
+                @include transition(ease-out, 0.3s);
+
+                p{
+                    color: #ff000000;
+                }
+            }
+
         }
 
     }
 
-    .collaps_field{
+    .collaps_field {
         color: $dsh_text_color;
         font-size: 0.8rem;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
 
-        a{
+        a {
             color: $dsh_text_color;
         }
 
-        p{
+        p {
 
             height: 40px;
             line-height: 40px;
@@ -179,7 +209,7 @@
             padding-right: 40px;
             cursor: pointer;
 
-            &:hover{
+            &:hover {
                 color: white;
                 background-color: $dsh_bg_dark;
 
@@ -191,36 +221,36 @@
 
 // collapse on
 
-.collaps_on{
+.collaps_on {
 
     background-color: $dsh_bg_dark;
     border-right: 3px solid #3699FF;
 
-    & :last-child{
+    & :last-child {
         color: white;
         @include transform(rotate(-90deg));
     }
 
-    & :first-child{
+    & :first-child {
         color: $dsh_color_light;
     }
 
-    & :nth-child(2){
+    & :nth-child(2) {
         color: white;
     }
 
 }
 
 // close and open classes
-.close_dsh{
+.close_dsh {
     width: 3.8%;
 
-    a :nth-child(2){
+    a :nth-child(2) {
         font-size: 0rem;
         color: transparent;
     }
 
-    .dashboard_body_collaps :nth-child(2){
+    .dashboard_body_collaps :nth-child(2) {
         font-size: 0rem;
         color: transparent;
     }
@@ -229,48 +259,69 @@
         font-size: 0rem;
         color: transparent;
     }
-    
-    .dashboard_header{
-        p{
+
+    .dashboard_body_collaps{
+
+        .hover_field :nth-child(2),.hover_field :nth-child(3){
+            font-size: 0.9rem;
+            color: $dsh_text_color;
+        }
+
+        .hover_field{
+            
+            a{
+                font-size: 0.9rem;
+                height: 35px;
+                display: block;
+            }
+
+        }
+        
+    }
+
+    .dashboard_header {
+        p {
             display: none;
         }
     }
 
-    .close_dsh_btn{
+    .close_dsh_btn {
         display: none;
     }
 
-    .open_dsh_btn{
+    .open_dsh_btn {
         display: block;
         left: 19px;
     }
-    .collaps_field{
+
+    .collaps_field {
         display: none;
     }
 }
 
-.open_dsh{
+.open_dsh {
     width: 15%;
 
-    .close_dsh_btn{
+    .close_dsh_btn {
         display: block;
     }
-    
-    a :nth-child(2){
+
+    a :nth-child(2) {
         display: inline-block;
     }
 
-    .dashboard_body_collaps :nth-child(2), .dashboard_body_collaps :nth-child(3) {
+    .dashboard_body_collaps :nth-child(2),
+    .dashboard_body_collaps :nth-child(3) {
         display: inline-block;
     }
 
-    .dashboard_header{
-        p{
+    .dashboard_header {
+        p {
             display: inline-block;
         }
     }
 
-    .open_dsh_btn{
+    .open_dsh_btn {
         display: none;
     }
 

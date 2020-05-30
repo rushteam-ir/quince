@@ -22,15 +22,6 @@ for (let i = 0; i < dashboard_collaps.length; i++) {
 
         }
 
-        else{
-
-            panel.style.maxHeight = null;
-
-        }
-
-
     });
 
 }
-
-
