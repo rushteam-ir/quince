@@ -214,15 +214,18 @@
     width: 3.8%;
 
     a :nth-child(2){
-        display: none;
+        font-size: 0rem;
+        color: transparent;
     }
 
     .dashboard_body_collaps :nth-child(2){
-        display: none;
+        font-size: 0rem;
+        color: transparent;
     }
 
     .dashboard_body_collaps :nth-child(3) {
-        display: none;
+        font-size: 0rem;
+        color: transparent;
     }
     
     .dashboard_header{
@@ -238,6 +241,9 @@
     .open_dsh_btn{
         display: block;
         left: 19px;
+    }
+    .collaps_field{
+        display: none;
     }
 }
 

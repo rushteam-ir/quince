@@ -6,8 +6,9 @@ $(document).ready(function(){
         dashboard.addClass('close_dsh');
         main_cms_field.css('width','96.2%');
 
-    });
+        
 
+    });
 
     $(document).on('click','.open_dsh_btn',function(){
 
