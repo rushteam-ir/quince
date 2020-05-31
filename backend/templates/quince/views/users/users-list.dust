@@ -72,7 +72,7 @@
                                     </label>
                                 </th>
                                 <th scope="col">ردیف</th>
-                                <th scope="col">ردیف</th>
+                                <th scope="col">عکس پروفایل</th>
                                 <th scope="col">نام کاربر</th>
                                 <th scope="col">ایمیل</th>
                                 <th scope="col">وضعیت</th>
@@ -89,7 +89,7 @@
                                     </label>    
                                 </td>
                                 <td scope="row">1</td>
-                                <td scope="row">
+                                <td class="padding_custom_img">
                                     <img class="img_of_user" src="img/test.jpg" alt="">
                                 </td>
                                 <td>کسری حبیب بیگی</td>
@@ -112,26 +112,26 @@
                                         <div class="dropdown-menu text-right dir-rtl" aria-labelledby="dropdownMenuButton">
 
                                           <a class="dropdown-item" href="#">
-                                            <i class="far fa-align-slash"></i>
-                                            غیر فعال کردن مقاله</a>
+                                            <i class="fal fa-address-card"></i>
+                                            مشاهده پروفایل</a>
 
                                           <a class="dropdown-item" href="#">
-                                            <i class="fal fa-comment-alt-slash"></i>
-                                            غیر فعال کردن نظرات</a>
+                                            <i class="far fa-ban"></i>
+                                            مسدود کردن حساب</a>
 
                                           <a class="dropdown-item" href="#">
-                                            <i class="fal fa-edit"></i>
-                                            ویرایش</a>
+                                            <i class="fas fa-exchange-alt"></i>
+                                            تغییر دسترسی</a>
 
                                           <a class="dropdown-item" href="#">
                                             <i class="fal fa-trash-alt"></i>
                                             حذف</a>
 
                                         </div>
-                                      </div>
+                                  </div>
                                 </td>
                               </tr>
-
+                              
                             </tbody>
                           </table>
 

@@ -35,6 +35,10 @@
     vertical-align: unset;
 }
 
+.category_table{
+    font-size: 0.9rem;
+}
+
 .category_table_customize {
     padding: 17px 0px 17px 0px !important;
 }
@@ -252,3 +256,4 @@
     text-align: center;
     line-height: 24px;
 }
+
