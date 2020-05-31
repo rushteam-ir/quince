@@ -1,0 +1,14 @@
+{>"layouts/dashboard-layout"/}
+
+{<css}
+    <link rel="stylesheet" href="css/article/article-add.css">
+{/css}
+{<js} 
+    <script src="js/article/article-add.js"></script> 
+{/js}
+
+
+{<body}
+
+
+{/body}

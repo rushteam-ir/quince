@@ -102,7 +102,7 @@
                         <p>- لیست مقالات</p>
                     </a>
     
-                    <a href="">
+                    <a href="{backend_url}article/add">
                         <p>- افزودن مقاله</p>
                     </a>
     
@@ -116,13 +116,13 @@
                     <p>- لیست مقالات</p>
                 </a>
 
-                <a href="">
+                <a href="{backend_url}article/add">
                     <p>- افزودن مقاله</p>
                 </a>
 
             </div>
 
-            <a href="" class="dashboard_body_sub">
+            <a href="{backend_url}users/list" class="dashboard_body_sub">
                 <div class="position-relative">
                     <i class="fad fa-users-crown"></i>
                     <p>لیست کاربران</p>

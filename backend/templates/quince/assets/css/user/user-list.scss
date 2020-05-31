@@ -1,0 +1,49 @@
+@import '../../css/general/main_color';
+@import '../../css/general/general-scss';
+@import '../../css/general/checkbox-design';
+@import '../../css/general/table_header';
+
+.main_filed_of_article_list {
+    @include main_field;
+}
+
+.main_filed_of_main_col {
+    @include main_col;
+}
+
+.option-input {
+    top: 0px;
+}
+
+table {
+    thead {
+        tr {
+            th {
+
+                padding: 6px 0px 20px 0px !important;
+
+                label {
+
+                    .option-input {
+                        top: 15px;
+                    }
+
+                }
+
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            td {
+                padding: 20px 0px 5px 0px !important;
+            }
+        }
+    }
+}
+
+.sitoation_pill{
+    @include table_pill($d_green, $l_green);
+    margin-top: -4px;
+}

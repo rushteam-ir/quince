@@ -23,6 +23,7 @@
     height: 100vh;
     background-color: $dsh_bg;
     position: fixed;
+    z-index: 1000000;
     right: 0;
     top: 0;
     direction: rtl;
@@ -138,7 +139,7 @@
                 background-color: $dsh_bg;
                 border-right: 3px solid $dsh_color_light;
                 width: 160px;
-                
+
                 p{
                     color: $dsh_text_color;
                 }
@@ -172,9 +173,9 @@
                 overflow: hidden;
                 background: #1e1e2d00;
                 position: absolute;
-                padding-bottom: 15px;
                 right: 55px;
                 top: 0;
+                z-index: 100000;
                 border-radius: 3px 0px 0px 3px;
                 border-right: 3px solid #494b7400;
                 display: none;
@@ -182,6 +183,17 @@
 
                 p{
                     color: #ff000000;
+                }
+
+                a{
+                    height: 40px;
+                    line-height: 40px;
+                    &:hover{
+                        background-color: $dsh_bg_dark;
+                        p   {
+                            color: white;
+                        }
+                    }
                 }
             }
 
@@ -271,7 +283,6 @@
             
             a{
                 font-size: 0.9rem;
-                height: 35px;
                 display: block;
             }
 

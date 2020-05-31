@@ -129,11 +129,11 @@
                         </div>
 
                     </div>
-                    <div class="col-3 pr-0">
+                <div class="col-3 pr-0">
 
-                        <div class="main_field_of_right_col p-4 text-right dir-rtl">
-                            <form method="post" action="{backend_url}category" autocomplete="off">
-                                <div class="form-group">
+                    <div class="main_field_of_right_col p-4 text-right dir-rtl">
+                        <form method="post" action="{backend_url}category" autocomplete="off">
+                        <div class="form-group">
                             <form>
 
                               <p class="header_of_creat_category">ثبت دسته بندی جدید</p>
@@ -151,7 +151,7 @@
                                             <option value="{_id}">{title}</option>
                                         {/parent_list}
                                     </select>
-                                  </div>
+                                </div>
 
                                   <button class="btn_of_save_changes btn mt-3" type="submit">ثبت دسته بندی جدید</button>
 
