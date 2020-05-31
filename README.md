@@ -1,3 +1,4 @@
-![Quince Logo](http://s10.picofile.com/file/8395872126/Untitled_1.png)
+![Quince Logo](http://s13.picofile.com/file/8398770276/Quince2.png)
 
+# Information
 Quince is an open source content management system
