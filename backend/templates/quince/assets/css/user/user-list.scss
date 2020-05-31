@@ -56,6 +56,13 @@ table {
     @include table_pill($d_purple, $l_purple, 110px, 30px, 30px, -4px);
 }
 
+.img_of_user{
+    width: 50px;
+    height: 50px;
+    border-radius: 500px;
+}
+
+
 // option drop down
 
 .dropdown-toggle::after {

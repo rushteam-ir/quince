@@ -72,6 +72,7 @@
                                     </label>
                                 </th>
                                 <th scope="col">ردیف</th>
+                                <th scope="col">ردیف</th>
                                 <th scope="col">نام کاربر</th>
                                 <th scope="col">ایمیل</th>
                                 <th scope="col">وضعیت</th>
@@ -88,53 +89,9 @@
                                     </label>    
                                 </td>
                                 <td scope="row">1</td>
-                                <td>کسری حبیب بیگی</td>
-                                <td>kasra@gmail.com</td>
-                                <td>
-                                    <div class="sitoation_pill">
-                                        فعال
-                                    </div>
+                                <td scope="row">
+                                    <img class="img_of_user" src="img/test.jpg" alt="">
                                 </td>
-                                <td>
-                                    <div class="data_pill">
-                                        1399/1/1
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="dropdown">
-                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                          <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                        <div class="dropdown-menu text-right dir-rtl" aria-labelledby="dropdownMenuButton">
-
-                                          <a class="dropdown-item" href="#">
-                                            <i class="far fa-align-slash"></i>
-                                            غیر فعال کردن مقاله</a>
-
-                                          <a class="dropdown-item" href="#">
-                                            <i class="fal fa-comment-alt-slash"></i>
-                                            غیر فعال کردن نظرات</a>
-
-                                          <a class="dropdown-item" href="#">
-                                            <i class="fal fa-edit"></i>
-                                            ویرایش</a>
-
-                                          <a class="dropdown-item" href="#">
-                                            <i class="fal fa-trash-alt"></i>
-                                            حذف</a>
-
-                                        </div>
-                                      </div>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <td>
-                                    <label class="checkbox_of_category">
-                                        <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
-                                    </label>    
-                                </td>
-                                <td scope="row">1</td>
                                 <td>کسری حبیب بیگی</td>
                                 <td>kasra@gmail.com</td>
                                 <td>
