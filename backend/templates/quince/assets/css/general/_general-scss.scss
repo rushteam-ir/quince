@@ -43,15 +43,15 @@ $b_radius: 7px;
     font-size: $f_size;
 }
 
-@mixin table_pill($color, $bg_color) {
+@mixin table_pill($color, $bg_color, $width, $height, $line-height, $mt) {
     color: $color;
     background-color: $bg_color;
-    width: 90px;
-    height: 30px;
+    width: $width;
+    height: $height;
     border-radius: 50px;
-    line-height: 30px;
+    line-height: $line-height;
     margin: 0 auto;
-    margin-top: 4px;
+    margin-top: $mt;
 }
 
 

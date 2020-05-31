@@ -1,6 +1,6 @@
-@import '../general/general-scss';
-@import '../general/checkbox-design';
-@import '../general/main_coloro.scss';
+@import '../../css/general/general-scss';
+@import '../../css/general/checkbox-design';
+@import '../../css/general/main_color';
 
 .main_filed_of_article_list {
     @include main_field;
@@ -100,15 +100,18 @@
 }
 
 .table_pill_article {
-    @include table_pill($d_green, $l_green);
+
+    @include table_pill($d_green, $l_green, 90px, 30px, 30px, 4px)
 }
 
 .table_pill_see_article {
-    @include table_pill($d_purple, $l_purple);
+
+    @include table_pill($d_purple, $l_purple, 90px, 30px, 30px, 4px)
 }
 
 .table_pill_comment_article {
-    @include table_pill($d_yellow, $l_yellow);
+
+    @include table_pill($d_yellow, $l_yellow, 90px, 30px, 30px, 4px)
 }
 
 .multi_remove {

@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/user/user-list.css">
 {/css}
 {<js} 
-    <script src="js/user/user-list.js"></script> 
+    <script src="js/users/user-list.js"></script> 
 {/js}
 
 
@@ -84,8 +84,8 @@
                               <tr>
                                 <td>
                                     <label class="checkbox_of_category">
-                                        <input type="checkbox" class="option-input checkbox" id="selectall" name="select_all">
-                                    </label>
+                                        <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                    </label>    
                                 </td>
                                 <td scope="row">1</td>
                                 <td>کسری حبیب بیگی</td>
@@ -95,22 +95,84 @@
                                         فعال
                                     </div>
                                 </td>
-                                <td>1399/1/1</td>
-                                <td></td>
+                                <td>
+                                    <div class="data_pill">
+                                        1399/1/1
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                        <div class="dropdown-menu text-right dir-rtl" aria-labelledby="dropdownMenuButton">
+
+                                          <a class="dropdown-item" href="#">
+                                            <i class="far fa-align-slash"></i>
+                                            غیر فعال کردن مقاله</a>
+
+                                          <a class="dropdown-item" href="#">
+                                            <i class="fal fa-comment-alt-slash"></i>
+                                            غیر فعال کردن نظرات</a>
+
+                                          <a class="dropdown-item" href="#">
+                                            <i class="fal fa-edit"></i>
+                                            ویرایش</a>
+
+                                          <a class="dropdown-item" href="#">
+                                            <i class="fal fa-trash-alt"></i>
+                                            حذف</a>
+
+                                        </div>
+                                      </div>
+                                </td>
                               </tr>
 
                               <tr>
                                 <td>
                                     <label class="checkbox_of_category">
-                                        <input type="checkbox" class="option-input checkbox" id="selectall" name="select_all">
-                                    </label>
+                                        <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                    </label>    
                                 </td>
                                 <td scope="row">1</td>
                                 <td>کسری حبیب بیگی</td>
                                 <td>kasra@gmail.com</td>
-                                <td>فعال</td>
-                                <td>1399/1/1</td>
-                                <td></td>
+                                <td>
+                                    <div class="sitoation_pill">
+                                        فعال
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="data_pill">
+                                        1399/1/1
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                        <div class="dropdown-menu text-right dir-rtl" aria-labelledby="dropdownMenuButton">
+
+                                          <a class="dropdown-item" href="#">
+                                            <i class="far fa-align-slash"></i>
+                                            غیر فعال کردن مقاله</a>
+
+                                          <a class="dropdown-item" href="#">
+                                            <i class="fal fa-comment-alt-slash"></i>
+                                            غیر فعال کردن نظرات</a>
+
+                                          <a class="dropdown-item" href="#">
+                                            <i class="fal fa-edit"></i>
+                                            ویرایش</a>
+
+                                          <a class="dropdown-item" href="#">
+                                            <i class="fal fa-trash-alt"></i>
+                                            حذف</a>
+
+                                        </div>
+                                      </div>
+                                </td>
                               </tr>
 
                             </tbody>
