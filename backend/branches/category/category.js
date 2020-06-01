@@ -4,6 +4,8 @@ router.get('/', async(req,res)=>{
 
     try{
 
+        //log(req.connection.remoteAddress);
+
         let page_number = 1;
         let page_limit = req.session.limit;
 
