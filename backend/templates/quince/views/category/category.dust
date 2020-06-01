@@ -86,7 +86,7 @@
                                         </label>
 
                                     </td>
-                                    <th class="category_table_customize" scope="row">{@math key="{rows_begin_number}" method="add" operand="{$idx}"/}</th>
+                                    <td class="category_table_customize" scope="row">{@math key="{rows_begin_number}" method="add" operand="{$idx}"/}</td>
                                     <td class="category_table_customize">{.title}</td>
                                     {@eq key="{.parent}" value="{null}"}
                                         <td class="category_table_customize">دسته اصلی</td>

@@ -42,7 +42,7 @@ table {
         font-size: 0.9rem;
         tr {
             td {
-                padding: 20px 0px 5px 0px !important;
+                padding: 30px 0px 17px 0px !important;
             }
         }
     }
@@ -59,8 +59,68 @@ table {
 .img_of_user{
     width: 50px;
     height: 50px;
-    border-radius: 500px;
+    border-radius: 4px;
+    cursor: pointer;
 }
+
+.padding_custom_img{
+    padding-top: 15px !important;
+}
+
+
+// img modal
+
+.img_modal_field{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1000000000000;
+    top: 0;
+    left: 0;
+    background-color: #0000008f;
+    display: none;
+}
+
+.row_modal_custom{
+    height: 100vh;
+}
+
+.modal_img_show{
+    border: 5px solid white;
+    border-radius: 2px;
+    width: 100%;
+}
+
+.img_modal_field_second{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.remove_img_modal{
+    width: 50px;
+    height: 50px;
+    background: white;
+    position: absolute;
+    right: -22px;
+    top: -23px;
+    border-radius: 44px;
+    cursor: pointer;
+}
+
+.remove_img_modal{
+    i{
+        font-size: 1.8rem;
+        margin-left: 16px;
+        margin-top: 11px;
+    }
+}
+
+
+
+
+
+
+
 
 
 // option drop down
@@ -95,6 +155,9 @@ table {
         color: #000000;
         margin-left: 10px;
         transition: all linear .2s;
+    }
+    & :first-child{
+        font-size: 1.1rem;
     }
 
 }
