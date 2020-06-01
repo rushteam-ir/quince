@@ -140,6 +140,27 @@
             </div>
         </div>
     </div>
+
+
+    <div class="img_modal_field">
+        <div class="container-fluid">
+          <div class="row align-items-center row_modal_custom">
+            <div class="col-12">
+              
+              <div class="img_modal_field_second position-relative">
+
+                <div class="remove_img_modal">
+                  <i class="fal fa-times"></i>
+                </div>
+
+                <img class="modal_img_show" src="img/test.jpg" alt="">
+              </div>
+
+            </div>
+          </div>
+        </div>
+    </div>
+
 </section>
 
 {/body}
