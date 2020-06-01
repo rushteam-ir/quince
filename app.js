@@ -31,5 +31,5 @@ app.use(session(session_options));
 const backend = require('./backend/backend');
 const frontend = require('./frontend/frontend');
 
-app.use('/admin', backend);
+app.use('/quince', backend);
 app.use('/', frontend);
