@@ -148,7 +148,37 @@
 
     </aside>
 
+
+
     <main class="main_cms_field">
+
+        <nav class="navbar">
+
+            <div class="navbar_profile">
+                <div class="d-inline-block">
+                    <div class="field_of_name">R</div>
+                </div>
+                <div class="d-inline-block hi_user_text">
+                    <span> سلام</span>
+                    <span> دوستم !</span>
+                </div>
+
+                <div class="d-inline-block messages_icon">
+                    <i class="fad fa-comments-alt"></i>
+                </div>
+
+                <div class="d-inline-block messages_icon">
+                    <i class="fad fa-bell bell"></i>
+                </div>
+
+                <div class="d-inline-block messages_icon">
+                    <i class="fal fa-search"></i>
+                </div>
+
+
+            </div>
+
+        </nav>
 
         {+body/}
         

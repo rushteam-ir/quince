@@ -1,3 +1,14 @@
+.bell{
+    width: 20px;
+    height: 20px;
+    color: #9e9e9e;
+    -webkit-animation: ringRinging 4s .7s ease-in-out infinite;
+    -webkit-transform-origin: 50% 4px;
+    -moz-animation: ringRinging 4s .7s ease-in-out infinite;
+    -moz-transform-origin: 50% 4px;
+    animation: ringRinging 4s .7s ease-in-out infinite;
+    transform-origin: 50% 4px;
+  }
 
 @keyframes ringRinging {
 

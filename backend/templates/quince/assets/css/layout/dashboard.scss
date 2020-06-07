@@ -15,8 +15,6 @@
     background-color: #E7E8F2;
 }
 
-
-
 .dashboard {
 
     width: 15%;
@@ -68,7 +66,7 @@
 
                 &:hover {
                     background-color: $dsh_bg_dark;
-                    border-right: 3px solid #3699FF;
+                    border-right: 3px solid $dsh_color_light;
 
                     i:first-child {
                         color: $dsh_color_light;
@@ -120,7 +118,7 @@
 
             &:hover {
                 background-color: $dsh_bg_dark;
-                border-right: 3px solid #3699FF;
+                border-right: 3px solid $dsh_color_light;
 
                 i:first-child {
                     color: $dsh_color_light;
@@ -135,12 +133,12 @@
                 }
             }
 
-            &:hover .hover_field{
+            &:hover .hover_field {
                 background-color: $dsh_bg;
                 border-right: 3px solid $dsh_color_light;
                 width: 160px;
 
-                p{
+                p {
                     color: $dsh_text_color;
                 }
 
@@ -181,16 +179,18 @@
                 display: none;
                 @include transition(ease-out, 0.3s);
 
-                p{
+                p {
                     color: #ff000000;
                 }
 
-                a{
+                a {
                     height: 40px;
                     line-height: 40px;
-                    &:hover{
+
+                    &:hover {
                         background-color: $dsh_bg_dark;
-                        p   {
+
+                        p {
                             color: white;
                         }
                     }
@@ -236,7 +236,7 @@
 .collaps_on {
 
     background-color: $dsh_bg_dark;
-    border-right: 3px solid #3699FF;
+    border-right: 3px solid $dsh_color_light;
 
     & :last-child {
         color: white;
@@ -272,16 +272,17 @@
         color: transparent;
     }
 
-    .dashboard_body_collaps{
+    .dashboard_body_collaps {
 
-        .hover_field :nth-child(2),.hover_field :nth-child(3){
+        .hover_field :nth-child(2),
+        .hover_field :nth-child(3) {
             font-size: 0.9rem;
             color: $dsh_text_color;
         }
 
-        .hover_field{
+        .hover_field {
 
-            a{
+            a {
                 font-size: 0.9rem;
                 display: block;
             }
@@ -334,6 +335,66 @@
 
     .open_dsh_btn {
         display: none;
+    }
+
+}
+
+// navbar
+
+.navbar {
+    width: 100%;
+    height: 55px;
+    background-color: white;
+    box-shadow: 0px 0px 20px -5px #cacaca;
+
+    &_profile {
+
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-top: 7.5px;
+        padding-right: 10px;
+        text-align: right;
+        direction: rtl;
+
+        .field_of_name {
+            width: 40px;
+            height: 40px;
+            background-color: $l_red;
+            color: $d_red;
+            line-height: 0;
+            font-weight: bold;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.15rem;
+        }
+
+        .hi_user_text{
+            & :first-child{
+                color: #bbbbbb;
+                margin-right: 6px;
+            }
+            & :last-child{
+                color: $d_red;
+            }
+        }
+
+        .messages_icon{
+            margin-right: 25px;
+            color: #3699FF;
+            font-size: 1.2rem;
+            position: relative;
+            top: 4px;
+            cursor: pointer;
+        }
+
+        .bell{
+            color: $dsh_color_light;
+            cursor: pointer;
+        }
+
     }
 
 }
