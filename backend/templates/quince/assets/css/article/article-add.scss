@@ -8,6 +8,7 @@
 
 .main_col{
     @include main_col;
+    padding-bottom: 60px !important;
 }
 
 .header_of_add_article{
@@ -16,4 +17,25 @@
 
 .small_of_header_add_article{
     @include small_of_header;
+}
+
+.btn_of_save_changes{
+    background-color: $l_green;
+    color: $d_green;
+    position: absolute;
+    left: 0;
+}
+
+.main_lable_design {
+    font-size: 1rem;
+}
+
+.box_of_img_template {
+    width: 376px;
+    height: 230px;
+}
+
+.btn-tertiary2 {
+    font-size: 1.2rem;
+    line-height: 230px;
 }
