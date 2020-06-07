@@ -164,7 +164,7 @@
                 </div>
 
                 <div class="d-inline-block messages_icon">
-                    <i class="fad fa-comments-alt"></i>
+                    <i class="fad fa-envelope"></i>
                 </div>
 
                 <div class="d-inline-block messages_icon">
@@ -172,7 +172,7 @@
                 </div>
 
                 <div class="d-inline-block messages_icon">
-                    <i class="fal fa-search"></i>
+                    <i class="far fa-search"></i>
                 </div>
 
 
