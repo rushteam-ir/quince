@@ -17,25 +17,18 @@ $(document).ready(function () {
 
 // img modal
 
-
 $(document).ready(function () {
 
     $('.img_of_user').click(function () {
 
         $('.img_modal_field').fadeIn();
 
-    })
-
-    $('.img_modal_field').click(function () {
-
-        $('.img_modal_field').fadeOut();
-
-    })
+    });
 
     $('.remove_img_modal').click(function () {
 
         $('.img_modal_field').fadeOut();
 
-    })
+    });
 
 });

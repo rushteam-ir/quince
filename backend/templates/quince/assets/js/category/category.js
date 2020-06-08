@@ -20,8 +20,8 @@ $(document).ready(function () {
 
         let page_limit = $(this).val();
         $.post(`${backend_url}api/get-page-limit`, {
-            limit : page_limit,
-            url : `${backend_url}category`,
+            limit: page_limit,
+            url: `${backend_url}category`,
         }, function (data, status) {
 
             redirect(`${backend_url}category`);
@@ -48,11 +48,11 @@ $('.remove_table_btn').on('click', function (e) {
     }).then((result) => {
         if (result.value) {
             Swal.fire({
-                title : 'حذف شد',
-                text : 'دسته مور نظر با موفقیت حذف شد برای تایید نهایی کلیک کنید',
-                icon : 'success',
+                title: 'حذف شد',
+                text: 'دسته مور نظر با موفقیت حذف شد برای تایید نهایی کلیک کنید',
+                icon: 'success',
                 confirmButtonText: 'تایید',
-            }).then((result)=>{
+            }).then((result) => {
                 if (result.value) {
                     redirect(`${backend_url}category/api/delete-category/?id=${cat_id}`);
                 }
@@ -65,13 +65,13 @@ $('.btn_delete_all_category').on('click', function (e) {
 
     let query = ''
 
-    $(':checkbox:checked').each(function(i){
-        if($(this).attr('name') != 'select_all'){
+    $(':checkbox:checked').each(function (i) {
+        if ($(this).attr('name') != 'select_all') {
             query += '&id[]=' + $(this).val();
         }
     });
 
-    if(query != ''){
+    if (query != '') {
         Swal.fire({
             title: 'حذف دسته',
             text: "آیا از حذف دسته های انتخاب شده مطمئن هستید ؟",
@@ -84,11 +84,11 @@ $('.btn_delete_all_category').on('click', function (e) {
         }).then((result) => {
             if (result.value) {
                 Swal.fire({
-                    title : 'حذف شد',
-                    text : 'دسته های انتخاب شده با موفقیت حذف شد برای تایید نهایی کلیک کنید',
-                    icon : 'success',
+                    title: 'حذف شد',
+                    text: 'دسته های انتخاب شده با موفقیت حذف شد برای تایید نهایی کلیک کنید',
+                    icon: 'success',
                     confirmButtonText: 'تایید',
-                }).then((result)=>{
+                }).then((result) => {
                     if (result.value) {
                         redirect(`${backend_url}category/api/delete-select-category/?${query}`);
                     }
@@ -103,7 +103,7 @@ $('.btn_delete_all_category').on('click', function (e) {
 $('.btn_of_search').on('click', function (e) {
 
     let search_value = $('.category_search').val();
-    if(search_value != ""){
+    if (search_value != "") {
         redirect(`${backend_url}category/search/${search_value}`);
     }
 
@@ -118,3 +118,21 @@ $('.remove_search_icon').on('click', function (e) {
 function redirect(url) {
     location.href = url
 }
+
+// modal
+
+$(document).ready(function () {
+
+    $('.edit_table_btn').click(function () {
+
+        $('.modal_of_category').fadeIn();
+
+    });
+
+    $('.btn_of_cancel_changes').click(function () {
+
+        $('.modal_of_category').fadeOut();
+
+    });
+
+});

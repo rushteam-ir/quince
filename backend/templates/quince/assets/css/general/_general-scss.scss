@@ -67,4 +67,21 @@ $b_radius: 7px;
     -webkit-transform: $type;
     -o-transform: $type;
     -moz-transform: $type;
+
+}
+
+@mixin remove_modal {
+    width: 50px;
+    height: 50px;
+    background: white;
+    position: absolute;
+    right: -22px;
+    top: -23px;
+    border-radius: 44px;
+    cursor: pointer;
+    i{
+        font-size: 1.8rem;
+        margin-left: 16px;
+        margin-top: 11px;
+    }
 }
