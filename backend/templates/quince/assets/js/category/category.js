@@ -125,6 +125,9 @@ $(document).ready(function () {
 
     $('.edit_table_btn').click(function () {
 
+        let category_title = $('.category_table_customize').eq(2).text();
+        $('.category_edit_title').val(category_title)
+
         $('.modal_of_category').fadeIn();
 
     });

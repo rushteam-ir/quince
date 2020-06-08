@@ -2,7 +2,6 @@
 let category_schema = new mongoose.Schema({
 
     title : String,
-    row : Number,
     parent : {
         type : 'ObjectId',
         ref : 'category'
@@ -140,6 +139,32 @@ category_schema.statics = {
         result.total_pages = Math.ceil(search_list.length / page_limit);
 
         return result;
+
+    },
+
+    edit : async function (category_id, title_inp, parent_inp) {
+
+        let parent = parent_inp;
+
+        if(parent_inp == '0'){
+
+            parent = null;
+
+        }
+
+        let find_cat = await category_model.findOne({title : title_inp, parent : parent});
+
+        if(!find_cat){
+
+            return await category_model.findByIdAndUpdate(category_id, { title : title_inp, parent : parent});
+
+        }
+        else{
+
+            return null
+
+        }
+
 
     },
 
