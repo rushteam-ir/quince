@@ -138,9 +138,13 @@ $(document).ready(function () {
 
             );
 
-            let get_option = $(this).parent().parent().children().eq(3).text();
+            
 
-            $(".category_edit_parent").children().eq(0).text(get_option);
+            $(".category_edit_parent").children().eq(0).text(
+
+                $(this).parent().parent().children().eq(3).text()
+
+            );
 
             $('.modal_of_category').fadeIn();
 
