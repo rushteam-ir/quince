@@ -212,7 +212,7 @@
                                             </select>
                                         </div>
 
-                                        <input type="hidden" name="category_id" value="CAT_ID">
+                                        <input class="category_edit_id" type="hidden" name="category_id" value="CAT_ID">
 
                                         <button class="btn_of_save_changes btn mt-3 w-25" type="submit">ثبت</button>
                                         <button class="btn_of_cancel_changes btn mt-3 w-25 mr-2" type="button">لغو
