@@ -132,11 +132,15 @@ $(document).ready(function () {
 
         $('.edit_table_btn').eq(i).click(function () {
 
-            $('.category_edit_title').val( 
+            $('.category_edit_title').val(
 
                 $(this).parent().parent().children().eq(2).text()
 
             );
+
+            let get_option = $(this).parent().parent().children().eq(3).text()
+
+            $(".category_edit_parent").find("option[text=get_option]").attr('selected', true)
 
             $('.modal_of_category').fadeIn();
 
