@@ -152,9 +152,18 @@ category_schema.statics = {
 
         }
 
+        let this_category = await category_model.findById(category_id)
         let find_cat = await category_model.findOne({title : title_inp, parent : parent});
 
         if(!find_cat){
+
+            await category_model.findByIdAndUpdate(parent, { $inc: {child_number : 1 } });
+
+            if(this_category.parent){
+
+                await category_model.findByIdAndUpdate(this_category.parent, { $inc: {child_number : -1 } });
+
+            }
 
             return await category_model.findByIdAndUpdate(category_id, { title : title_inp, parent : parent});
 

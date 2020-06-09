@@ -137,11 +137,17 @@ $(document).ready(function () {
                 $(this).parent().parent().children().eq(2).text()
 
             );
-
             
             $(".category_edit_parent").children().eq(0).text(
 
                 $(this).parent().parent().children().eq(3).text()
+
+            );
+
+
+            $('.category_edit_id').val(
+
+                $(this).parent().parent().children().eq(0).children().children().val()
 
             );
 

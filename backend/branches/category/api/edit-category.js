@@ -6,7 +6,7 @@ router.post('/', async(req,res)=>{
 
         let {category_id, title_inp, parent_inp} = req.body;
 
-        let result = categoty_model.edit(category_id, category_title, category_parent);
+        let result = await category_model.edit(category_id, title_inp, parent_inp);
 
         if(result){
 
