@@ -164,8 +164,13 @@ category_schema.statics = {
                 await category_model.findByIdAndUpdate(this_category.parent, { $inc: {child_number : -1 } });
 
             }
+            else{
 
-            return await category_model.findByIdAndUpdate(category_id, { title : title_inp, parent : parent});
+                await category_model.updateMany({parent : this_category._id}, {parent : null , child_number : 0})
+
+            }
+
+            return await category_model.findByIdAndUpdate(category_id, { title : title_inp, parent : parent, child_number : 0});
 
         }
         else{
