@@ -203,8 +203,7 @@
 
                                         <div class="form-group">
                                             <label class="main_lable_design" for="parent_category">والد دسته</label>
-                                            <select class="form-control main_form_design category_edit_parent" id="parent_category"
-                                                    name="parent_inp">
+                                            <select class="form-control main_form_design category_edit_parent" id="parent_category" name="parent_inp">
                                                 <option value="0">دسته اصلی</option>
                                                 {#parent_list}
                                                     <option value="{_id}">{title}</option>

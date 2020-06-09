@@ -138,15 +138,16 @@ $(document).ready(function () {
 
             );
 
-            let get_option = $(this).parent().parent().children().eq(3).text()
+            let get_option = $(this).parent().parent().children().eq(3).text();
 
-            $(".category_edit_parent").find("option[text=get_option]").attr('selected', true)
+            $(".category_edit_parent").children().eq(0).text(get_option);
 
             $('.modal_of_category').fadeIn();
 
         });
 
     }
+
     $('.btn_of_cancel_changes').click(function () {
 
         $('.modal_of_category').fadeOut();
