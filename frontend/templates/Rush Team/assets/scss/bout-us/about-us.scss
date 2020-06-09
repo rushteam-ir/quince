@@ -44,13 +44,13 @@ $color_black: #000;
     }
 
     .sub_name_of_team {
-      @include text_of_title($color_white, 2rem, 0px);
+      @include text_of_title($color_white, 1.5rem, 0px);
     }
 
     .explain_about_Rush_team {
       width: 60%;
       margin: auto;
-      @include text_of_title($color_white, 1.2rem, 50px);
+      @include text_of_title($color_white, 1rem, 50px);
 
     }
   }
@@ -74,11 +74,13 @@ $color_black: #000;
       display: inline-block;
     }
     .title_of_property_rush_team{
-      font-size: 1.5rem;
+      font-size: 1.3rem;
+      padding-top: 10px;
     }
     .explain_about_property_of_rush{
       width: 80%;
       margin: auto;
+      font-size: .9rem;
     }
   }
 

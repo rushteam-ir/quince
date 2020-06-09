@@ -18,7 +18,7 @@
 .header_of_about_us .box_of_img_header .sub_name_of_team {
   text-align: center;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding-top: 0px;
 }
 .header_of_about_us .box_of_img_header .explain_about_Rush_team {
@@ -26,7 +26,7 @@
   margin: auto;
   text-align: center;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding-top: 50px;
 }
 
@@ -53,11 +53,13 @@
   display: inline-block;
 }
 .box_of_property_of_Rush_team .box_of_property .title_of_property_rush_team {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  padding-top: 10px;
 }
 .box_of_property_of_Rush_team .box_of_property .explain_about_property_of_rush {
   width: 80%;
   margin: auto;
+  font-size: 0.9rem;
 }
 
 /*# sourceMappingURL=about-us.css.map */
