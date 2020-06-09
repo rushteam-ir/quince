@@ -7,7 +7,7 @@
 {/title}
 
 {<css}
-    <link rel="stylesheet" href="css/about-us/about-us.css">
+    <link rel="stylesheet" href="scss/bout-us/about-us.css">
 {/css}
 
 {<js}
@@ -16,199 +16,60 @@
 
 {<body}
 
-
-{!header!}
-    <section>
+{!Header Of About Us Page!}
+    <section class="header_of_about_us">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 px-0">
-                    <div class="background_img_as_about_us"></div>
-                    <div class="cover_of_img text-center">
-                        <h1 class="style_of_title_about_us">RUSH TEAM</h1>
-                        <h4 class="pb-4 font_size_of_little_title">
-                            گروهی کوچک میتواند تاثیری بزرگ داشته باشد
-                        </h4>
+                <div class="col-lg-12 px-0">
+                    <div class="box_of_img_header">
+                        <h1 class="name_of_team">Rush Team</h1>
+                        <h2 class="sub_name_of_team">گروهی کوچک میتواند تاثیری بزرگ داشته باشد</h2>
                         <p class="explain_about_Rush_team">
-                            رسانه دیجیتال میتواند تاثیری مثبت روی زندگی ما بگذارد . کسب و کار ها از این رسانه ها
-                            میتوانند برای شفافیت بیشتر، خدمت رسانی بهتر و صمیمت بیشتر با مشتری ها استفاده کند . ما
-                            میخواهیم در این مسیر تاثیری کوچک داشته باشیم.
+                            رسانه دیجیتال میتواند تاثیری مثبت روی زندگی ما بگذارد . کسب و کار ها از این رسانه هامیتوانند
+                            برای شفافیت بیشتر، خدمت رسانی بهتر و صمیمت بیشتر با مشتری ها استفاده کند . مامیخواهیم در این
+                            مسیر تاثیری کوچک داشته باشیم.
                         </p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row position-relative row_of_property">
-                <div class="col-8 offset-2 col-md-4 offset-md-0">
-                    <div class="box_of_property_rush_team text-center">
-                        <i class="far fa-grin-beam icons_of_property_rush_team"></i>
-                        <h2 class="title_of_property_rush_team">گرم و صمیمی</h2>
-                        <p class="explain_about_property_rush_team dir_rtl">ارتباط ميان اعضاء صميمانه است و آنان براي
-                            بيان ايده‌ها، عقايد و نقطه‌‌نظرات خود احساس راحتي و آزادي مي‌كنند.</p>
-                    </div>
-                </div>
-                <div class="col-8 offset-2 col-md-4 offset-md-0">
-                    <div class="box_of_property_rush_team text-center pb-5">
-                        <i class="fas fa-unicorn icons_of_property_rush_team"></i>
-                        <h2 class="title_of_property_rush_team">گرم و صمیمی</h2>
-                        <p class="explain_about_property_rush_team dir_rtl">ارتباط ميان اعضاء صميمانه است و آنان براي
-                            بيان ايده‌ها، عقايد و نقطه‌‌نظرات خود احساس راحتي و آزادي مي‌كنند.</p>
-                    </div>
-                </div>
-                <div class="col-8 offset-2 col-md-4 offset-md-0">
-                    <div class="box_of_property_rush_team text-center pb-5 pb-md-0">
-                        <i class="fas fa-cat icons_of_property_rush_team"></i>
-                        <h2 class="title_of_property_rush_team">گرم و صمیمی</h2>
-                        <p class="explain_about_property_rush_team dir_rtl">ارتباط ميان اعضاء صميمانه است و آنان براي
-                            بيان ايده‌ها، عقايد و نقطه‌‌نظرات خود احساس راحتي و آزادي مي‌كنند.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    {!/header!}
-    {!!}
-    <section>
-        <div class="container mt-n5">
             <div class="row">
-                <div class="col-sm-8 offset-sm-2 col-lg-6 offset-lg-0 p-0 order-1 order-lg-0">
-                    <div class="counter_of_number">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="box_of_property_of_Rush_team">
                         <div class="row">
-                            <div class="col-6">
-                                <div class="count-up">
-                                    <span class="plus_of_counter">+</span>
-                                    <p class="counter-count">10</p>
-                                    <h3 class="title_of_counter">سال ها تجربه</h3>
+                            <div class="col-lg-4">
+                                <div class="box_of_property">
+                                    <i class="fas fa-cat icons_of_property_rush_team"></i>
+                                    <h3 class="title_of_property_rush_team">گرم و صمیمی</h3>
+                                    <p class="explain_about_property_of_rush dir_rtl">ارتباط میان اعضا صمیمانه است و آنها برای
+                                        بیان
+                                        ایده ها،عقاید و نقطه نظرات خود احساس راحتی و آزادی میکنند.</p>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="count-up">
-                                    <span class="plus_of_counter">+</span>
-                                    <p class="counter-count">200</p>
-                                    <h3 class="title_of_counter">ساعات کار</h3>
+                            <div class="col-lg-4">
+                                <div class="box_of_property">
+                                    <i class="fas fa-unicorn icons_of_property_rush_team"></i>
+                                    <h3 class="title_of_property_rush_team">گرم و صمیمی</h3>
+                                    <p class="explain_about_property_of_rush dir_rtl">ارتباط میان اعضا صمیمانه است و آنها برای
+                                        بیان
+                                        ایده ها،عقاید و نقطه نظرات خود احساس راحتی و آزادی میکنند.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row my-4">
-                            <div class="col-6">
-                                <div class="count-up">
-                                    <span class="plus_of_counter">+</span>
-                                    <p class="counter-count">35</p>
-                                    <h3 class="title_of_counter">تعداد پروژه ها</h3>
+                            <div class="col-lg-4">
+                                <div class="box_of_property">
+                                    <i class="fas fa-dog icons_of_property_rush_team"></i>
+                                    <h3 class="title_of_property_rush_team">گرم و صمیمی</h3>
+                                    <p class="explain_about_property_of_rush dir_rtl">ارتباط میان اعضا صمیمانه است و آنها برای
+                                        بیان
+                                        ایده ها،عقاید و نقطه نظرات خود احساس راحتی و آزادی میکنند.</p>
                                 </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="count-up">
-                                    <span class="plus_of_counter">+</span>
-                                    <p class="counter-count">20</p>
-                                    <h3 class="title_of_counter">مشتریان خوشحال</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 p-0 order-0 order-lg-1">
-                    <div class="Property_of_rush_team">
-                        <div class="circle_of_property">
-                            <div class="text_of_property">
-                                <p class="category_of_property">ریسپانسیو</p>
-                                <h4 class="title_of_explain_property">طراحی واکنش گرا</h4>
-                                <p class="explain_about_property dir_rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-                                    از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
-                            </div>
-                            <div class="Property_of_rush_team_item" id="property_1">
-                                <i class="far fa-desktop text-center icons_of_property"></i>
-                            </div>
-                            <div class="Property_of_rush_team_item" id="property_2">
-                                <i class="far fa-desktop text-center icons_of_property"></i>
-                            </div>
-                            <div class="Property_of_rush_team_item" id="property_3">
-                                <i class="far fa-desktop text-center icons_of_property"></i>
-                            </div>
-                            <div class="Property_of_rush_team_item" id="property_4">
-                                <i class="far fa-desktop text-center icons_of_property"></i>
-                            </div>
-                            <div class="Property_of_rush_team_item" id="property_5">
-                                <i class="far fa-desktop text-center icons_of_property"></i>
-                            </div>
-                            <div class="Property_of_rush_team_item" id="property_6">
-                                <i class="far fa-desktop text-center icons_of_property"></i>
-                            </div>
-                        </div>
 
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    {!!}
-
-    <section>
-        <div class="container-fluid mt_of_this_box">
-            <div class="row mr-0">
-                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-0  mb-5 mb-lg-0">
-                    <div class="our_team ">
-                        <img src="img/1.jpg" alt="" class="img_of_each_person">
-                        <div class="team_content text-right">
-                            <h3 class="name_of_team">نادیه نجم آبادی</h3>
-                            <span class="rule_of_pearson_in_team  d-inline-block">طراح و توسعه دهنده وب سایت</span>
-                            <p class="about_the_person_in_team text-justify dir_rtl">لورم ایپسوم متن ساختگی با تولید
-                                سادگی نامفهوماز صنعت چاپ و با استفاده از طراحان گرافیک است</p>
-                            <ul class="social_media_for_each_person p-0 mt-4">
-                                <li class="d-inline-block pr-2"><a href="#" class="fab fa-facebook-f link_of_social_media"></a>
-                                </li>
-                                <li class="d-inline-block pr-2"><a href="#" class="fab fa-google-plus-g link_of_social_media"></a>
-                                </li>
-                                <li class="d-inline-block pr-2"><a href="#" class="fab fa-youtube link_of_social_media"></a></li>
-                                <li class="d-inline-block pr-2"><a href="#" class="fab fa-linkedin-in link_of_social_media"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-0  mb-5 mb-lg-0">
-                    <div class="our_team ">
-                        <img src="img/1.jpg" alt="" class="img_of_each_person">
-                        <div class="team_content text-right">
-                            <h3 class="name_of_team">نادیه نجم آبادی</h3>
-                            <span class="rule_of_pearson_in_team  d-inline-block">طراح و توسعه دهنده وب سایت</span>
-                            <p class="about_the_person_in_team text-justify dir_rtl">لورم ایپسوم متن ساختگی با تولید
-                                سادگی نامفهوماز صنعت چاپ و با استفاده از طراحان گرافیک است</p>
-                            <ul class="social_media_for_each_person p-0 mt-4">
-                                <li class="d-inline-block pr-2"><a href="#" class="fab fa-facebook-f link_of_social_media"></a>
-                                </li>
-                                <li class="d-inline-block pr-2"><a href="#" class="fab fa-google-plus-g link_of_social_media"></a>
-                                </li>
-                                <li class="d-inline-block pr-2"><a href="#" class="fab fa-youtube link_of_social_media"></a></li>
-                                <li class="d-inline-block pr-2"><a href="#" class="fab fa-linkedin-in link_of_social_media"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-0  mb-5 mb-lg-0">
-                    <div class="our_team ">
-                        <img src="img/1.jpg" alt="" class="img_of_each_person">
-                        <div class="team_content text-right">
-                            <h3 class="name_of_team">نادیه نجم آبادی</h3>
-                            <span class="rule_of_pearson_in_team  d-inline-block">طراح و توسعه دهنده وب سایت</span>
-                            <p class="about_the_person_in_team text-justify dir_rtl">لورم ایپسوم متن ساختگی با تولید
-                                سادگی نامفهوماز صنعت چاپ و با استفاده از طراحان گرافیک است</p>
-                            <ul class="social_media_for_each_person p-0 mt-4">
-                                <li class="d-inline-block pr-2"><a href="#" class="fab fa-facebook-f link_of_social_media"></a>
-                                </li>
-                                <li class="d-inline-block pr-2"><a href="#" class="fab fa-google-plus-g link_of_social_media"></a>
-                                </li>
-                                <li class="d-inline-block pr-2"><a href="#" class="fab fa-youtube link_of_social_media"></a></li>
-                                <li class="d-inline-block pr-2"><a href="#" class="fab fa-linkedin-in link_of_social_media"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
+{!End Header Of About Us Page!}
 
 {/body}
