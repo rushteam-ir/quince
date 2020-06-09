@@ -30,7 +30,7 @@
   padding-top: 50px;
 }
 
-.box_of_property_of_Rush_team {
+.box_of_Principles_of_Rush_team {
   width: 100%;
   height: 250px;
   background: #fff;
@@ -40,10 +40,10 @@
   border-radius: 5px;
   animation: 2s ease-out 0s 1 slideInFromTop;
 }
-.box_of_property_of_Rush_team .box_of_property {
+.box_of_Principles_of_Rush_team .box_of_Principles {
   text-align: center;
 }
-.box_of_property_of_Rush_team .box_of_property .icons_of_property_rush_team {
+.box_of_Principles_of_Rush_team .box_of_Principles .icons_of_Principles_rush_team {
   text-align: center;
   color: transparent;
   font-size: 3rem;
@@ -53,11 +53,11 @@
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
-.box_of_property_of_Rush_team .box_of_property .title_of_property_rush_team {
+.box_of_Principles_of_Rush_team .box_of_Principles .title_of_Principles_rush_team {
   font-size: 1.3rem;
   padding-top: 10px;
 }
-.box_of_property_of_Rush_team .box_of_property .explain_about_property_of_rush {
+.box_of_Principles_of_Rush_team .box_of_Principles .explain_about_Principles_of_rush {
   width: 80%;
   margin: auto;
   font-size: 0.9rem;
@@ -65,13 +65,25 @@
 
 @keyframes slideInFromTop {
   0% {
-    top: -792px;
+    top: -250px;
     opacity: 0;
   }
   100% {
     top: -125px;
     opacity: 1;
   }
+}
+.a {
+  height: 500px;
+}
+
+.aa {
+  height: 225px;
+}
+
+.row_of_property {
+  margin: 270px 0px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=about-us.css.map */

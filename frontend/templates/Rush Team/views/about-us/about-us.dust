@@ -34,31 +34,31 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
-                    <div class="box_of_property_of_Rush_team">
+                    <div class="box_of_Principles_of_Rush_team">
                         <div class="row">
                             <div class="col-lg-4">
-                                <div class="box_of_property">
-                                    <i class="fas fa-cat icons_of_property_rush_team"></i>
-                                    <h3 class="title_of_property_rush_team">گرم و صمیمی</h3>
-                                    <p class="explain_about_property_of_rush dir_rtl">ارتباط میان اعضا صمیمانه است و آنها برای
+                                <div class="box_of_Principles">
+                                    <i class="fas fa-unicorn icons_of_Principles_rush_team"></i>
+                                    <h3 class="title_of_Principles_rush_team">گرم و صمیمی</h3>
+                                    <p class="explain_about_Principles_of_rush dir_rtl">ارتباط میان اعضا صمیمانه است و آنها برای
                                         بیان
                                         ایده ها،عقاید و نقطه نظرات خود احساس راحتی و آزادی میکنند.</p>
                                 </div>
                             </div>
                             <div class="col-lg-4">
-                                <div class="box_of_property">
-                                    <i class="fas fa-unicorn icons_of_property_rush_team"></i>
-                                    <h3 class="title_of_property_rush_team">گرم و صمیمی</h3>
-                                    <p class="explain_about_property_of_rush dir_rtl">ارتباط میان اعضا صمیمانه است و آنها برای
+                                <div class="box_of_Principles">
+                                    <i class="fas fa-unicorn icons_of_Principles_rush_team"></i>
+                                    <h3 class="title_of_Principles_rush_team">گرم و صمیمی</h3>
+                                    <p class="explain_about_Principles_of_rush dir_rtl">ارتباط میان اعضا صمیمانه است و آنها برای
                                         بیان
                                         ایده ها،عقاید و نقطه نظرات خود احساس راحتی و آزادی میکنند.</p>
                                 </div>
                             </div>
                             <div class="col-lg-4">
-                                <div class="box_of_property">
-                                    <i class="fas fa-dog icons_of_property_rush_team"></i>
-                                    <h3 class="title_of_property_rush_team">گرم و صمیمی</h3>
-                                    <p class="explain_about_property_of_rush dir_rtl">ارتباط میان اعضا صمیمانه است و آنها برای
+                                <div class="box_of_Principles">
+                                    <i class="fas fa-unicorn icons_of_Principles_rush_team"></i>
+                                    <h3 class="title_of_Principles_rush_team">گرم و صمیمی</h3>
+                                    <p class="explain_about_Principles_of_rush dir_rtl">ارتباط میان اعضا صمیمانه است و آنها برای
                                         بیان
                                         ایده ها،عقاید و نقطه نظرات خود احساس راحتی و آزادی میکنند.</p>
                                 </div>
@@ -71,5 +71,49 @@
         </div>
     </section>
 {!End Header Of About Us Page!}
+
+{!Property Of Rush Team!}
+    <section class="box_of_property_of_rush_team">
+        <div class="container">
+            <div class="row row_of_property">
+                <div class="col-lg-6 a bg-secondary">
+                    <div class="w-50 mt-4 aa bg-primary d-inline-block">
+                        <i class="fal fa-handshake-alt"></i>
+                        <div class="counter_of_number">
+                            <span class="plus_of_counter">+</span>
+                            <p class="counter_of_number">35</p>
+                        </div>
+                    </div>
+                    <div class="w-50 aa bg-success d-inline-block">
+                        <i class="fal fa-calendar-check"></i>
+                        <div class="counter_of_number">
+                            <span class="plus_of_counter">+</span>
+                            <p class="counter_of_number">10</p>
+                        </div>
+                    </div>
+                    <div class="w-50 aa bg-warning d-inline-block">
+                        <i class="fal fa-clock"></i>
+                        <div class="counter_of_number">
+                            <div class="counter_of_number">
+                                <span class="plus_of_counter">+</span>
+                                <p class="counter_of_number">200</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-50 aa bg-info d-inline-block">
+                        <i class="fal fa-laugh-beam"></i>
+                        <div class="counter_of_number">
+                            <span class="plus_of_counter">+</span>
+                            <p class="counter_of_number">20</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 a bg-danger">
+
+                </div>
+            </div>
+        </div>
+    </section>
+{!End Property Of Rush Team!}
 
 {/body}
