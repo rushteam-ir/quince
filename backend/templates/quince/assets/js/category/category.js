@@ -119,19 +119,30 @@ function redirect(url) {
     location.href = url
 }
 
+
+
+
 // modal
 
 $(document).ready(function () {
 
-    $('.edit_table_btn').click(function () {
+    let category_row = $('.category_row');
 
-        let category_title = $('.category_table_customize').eq(2).text();
-        $('.category_edit_title').val(category_title)
+    for (let i = 0; i < category_row.length; i++) {
 
-        $('.modal_of_category').fadeIn();
+        $('.edit_table_btn').eq(i).click(function () {
 
-    });
+            $('.category_edit_title').val( 
 
+                $(this).parent().parent().children().eq(2).text()
+
+            );
+
+            $('.modal_of_category').fadeIn();
+
+        });
+
+    }
     $('.btn_of_cancel_changes').click(function () {
 
         $('.modal_of_category').fadeOut();

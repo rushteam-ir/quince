@@ -83,32 +83,40 @@
                                 </thead>
                                 <tbody>
                                     {#category_list}
-                                    <tr>
+                                    <tr class="category_row">
                                         <td class="category_table_customize">
 
                                             <label class="checkbox_of_category">
-                                                <input type="checkbox" name="delete_checkbox[]"
-                                                       class="table_checkbox option-input checkbox" value="{._id}">
+                                                <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
                                             </label>
 
                                         </td>
-                                        <td class="category_table_customize"
-                                            scope="row">{@math key="{rows_begin_number}" method="add" operand="{$idx}"/}</td>
+
+                                        <td class="category_table_customize" scope="row">{@math key="{rows_begin_number}" method="add" operand="{$idx}"/}</td>
+
                                         <td class="category_table_customize">{.title}</td>
+
                                         {@eq key="{.parent}" value="{null}"}
                                             <td class="category_table_customize">دسته اصلی</td>
                                         {:else}
+
                                             <td class="category_table_customize">{.parent.title}</td>
                                         {/eq}
+
                                         {@eq key="{.parent}" value="{null}"}
+
                                             <td class="category_table_customize">
                                                 <p class="sub_category_count">{.child_number}</p>
                                             </td>
+
                                         {:else}
+
                                             <td class="category_table_customize">
                                                 <p class="sub_category_count">0</p>
                                             </td>
+
                                         {/eq}
+
                                         <td class="category_table_customize">
 
                                             <button class="edit_table_btn btn">
