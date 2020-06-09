@@ -128,21 +128,17 @@ $(document).ready(function () {
 
     let category_row = $('.category_row');
 
+
     for (let i = 0; i < category_row.length; i++) {
 
         $('.edit_table_btn').eq(i).click(function () {
 
-            $('.category_edit_title').val(
+            let parent_category = $(this).parent().parent().children().eq(3).text();
+            let category_name = $(this).parent().parent().children().eq(2).text();
 
-                $(this).parent().parent().children().eq(2).text()
+            $('.category_edit_title').val(category_name);
 
-            );
-            
-            $(".category_edit_parent").children().eq(0).text(
-
-                $(this).parent().parent().children().eq(3).text()
-
-            );
+            $(".category_edit_parent").children().eq(0).text(parent_category);
 
 
             $('.category_edit_id').val(
@@ -150,6 +146,28 @@ $(document).ready(function () {
                 $(this).parent().parent().children().eq(0).children().children().val()
 
             );
+
+
+            if(parent_category == "دسته اصلی"){
+
+                for(let j = 0 ; j < $('.modal_opion').length ; j++){
+
+                    if($('.modal_opion').eq(i).text() == category_name){
+
+                        $('.modal_opion').eq(i).css('display','none');
+
+                        $('.btn_of_cancel_changes').click(function () {
+
+                            $('.modal_opion').eq(i).css('display','block');
+                    
+                        });
+                    
+
+                    }
+
+                }
+
+            }
 
             $('.modal_of_category').fadeIn();
 

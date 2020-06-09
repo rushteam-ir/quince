@@ -197,17 +197,17 @@
 
                                         <div class="form-group mt-4">
                                             <label class="main_lable_design" for="category_name">نام دسته</label>
-                                            <input type="text" class="form-control main_form_design category_edit_title" id="category_name"
+                                            <input type="text" class="form-control main_form_design category_edit_title" id="category_name_modal"
                                                    name="title_inp">
                                         </div>
 
                                         <div class="form-group">
                                             <label class="main_lable_design" for="parent_category">والد دسته</label>
-                                            <select class="form-control main_form_design category_edit_parent" id="parent_category" name="parent_inp">
+                                            <select class="form-control main_form_design category_edit_parent" id="parent_category_modal" name="parent_inp">
                                                 <option class="d-none"></option>
                                                 <option value="0">دسته اصلی</option>
                                                 {#parent_list}
-                                                    <option value="{_id}">{title}</option>
+                                                    <option class="modal_opion" value="{_id}">{title}</option>
                                                 {/parent_list}
 
                                             </select>
