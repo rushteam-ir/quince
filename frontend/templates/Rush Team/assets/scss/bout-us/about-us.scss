@@ -1,0 +1,103 @@
+//var
+
+$color_white: #fff;
+$orange_color_gradient: linear-gradient(to right, #FF7300, #FFC200);
+$blue_color_gradient: linear-gradient(to right, #3D52EF, #55B9FC);
+$color_light_orange: #FFC200;
+$color_light_blue: #59CAFE;
+$color_orange: #FF7300;
+$color_blue: #3633EB;
+$color_ghost_white: #F4F6FD;
+$color_black: #000;
+
+//mixin
+
+@mixin text_of_title($color-value,$font-value ,$padding_t_value) {
+  text-align: center;
+  color: $color-value;
+  font-size: $font_value;
+  padding-top: $padding_t_value;
+}
+
+@mixin text_color_gradient($value_of_color) {
+  background-image: $value_of_color;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+//codding
+
+.header_of_about_us {
+  position: relative;
+
+  .box_of_img_header {
+    background: url("../../img/2.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 75vh;
+    opacity: 0.93;
+
+    .name_of_team {
+      @include text_of_title($color_white, 3.5rem, 100px);
+      font-family: rush-team-font;
+    }
+
+    .sub_name_of_team {
+      @include text_of_title($color_white, 1.5rem, 0px);
+    }
+
+    .explain_about_Rush_team {
+      width: 60%;
+      margin: auto;
+      @include text_of_title($color_white, 1rem, 50px);
+
+    }
+  }
+}
+
+.box_of_property_of_Rush_team {
+  width: 100%;
+  height: 250px;
+  background: $color_white;
+  position: absolute;
+  top: -125px;
+  box-shadow: 5px 7px 30px rgba(72, 73, 121, 0.15);
+  border-radius: 5px;
+  animation: 2s ease-out 0s 1 slideInFromTop;
+
+
+  .box_of_property {
+    text-align: center;
+
+    .icons_of_property_rush_team {
+      @include text_of_title(transparent, 3rem, 40px);
+      @include text_color_gradient($orange_color_gradient);
+      display: inline-block;
+    }
+
+    .title_of_property_rush_team {
+      font-size: 1.3rem;
+      padding-top: 10px;
+    }
+
+    .explain_about_property_of_rush {
+      width: 80%;
+      margin: auto;
+      font-size: .9rem;
+    }
+  }
+
+}
+
+@keyframes slideInFromTop {
+  0% {
+    top: -792px;
+    opacity: 0;
+  }
+  100% {
+    top: -125px;
+    opacity: 1;
+  }
+}
+

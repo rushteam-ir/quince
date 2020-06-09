@@ -3,6 +3,10 @@
     src: url("../../fonts/IranianSans.ttf");
 }
 
+@font-face {
+    font-family: rush-team-font;
+    src: url("../../fonts/Minbus_Personal-use.otf");
+}
 
 body {
     font-family: second-font;
