@@ -139,7 +139,6 @@ $(document).ready(function () {
             );
 
             
-
             $(".category_edit_parent").children().eq(0).text(
 
                 $(this).parent().parent().children().eq(3).text()
