@@ -73,17 +73,39 @@
     opacity: 1;
   }
 }
-.a {
-  height: 500px;
-}
-
-.aa {
-  height: 225px;
-}
-
-.row_of_property {
+.box_of_property_of_rush_team .row_of_property {
   margin: 270px 0px;
   text-align: center;
+  height: 500px;
+}
+.box_of_property_of_rush_team .row_of_property .box_of_number {
+  height: 225px;
+}
+.box_of_property_of_rush_team .row_of_property .box_of_number .icon_of_counter {
+  text-align: center;
+  color: transparent;
+  font-size: 3rem;
+  padding-top: 40px;
+  background-image: linear-gradient(to right, #3D52EF, #55B9FC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.box_of_property_of_rush_team .row_of_property .box_of_number .box_counter_of_number {
+  padding-top: 10px;
+}
+.box_of_property_of_rush_team .row_of_property .box_of_number .box_counter_of_number .plus_of_counter {
+  position: relative;
+  top: -6px;
+  left: -5px;
+  background-image: linear-gradient(to right, #FF7300, #FFC200);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.2rem;
+}
+.box_of_property_of_rush_team .row_of_property .box_of_number .box_counter_of_number .counter_of_number {
+  font-size: 1.6rem;
+  position: relative;
+  left: -5px;
 }
 
 /*# sourceMappingURL=about-us.css.map */

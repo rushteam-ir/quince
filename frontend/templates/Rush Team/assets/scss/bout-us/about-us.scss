@@ -93,7 +93,6 @@ $color_black: #000;
 }
 
 
-
 //Animation
 
 @keyframes slideInFromTop {
@@ -113,18 +112,46 @@ $color_black: #000;
 
 
 //Property Of Rush Team
-.a{
-  height: 500px;
+
+.box_of_property_of_rush_team {
+  .row_of_property {
+    margin: 270px 0px;
+    text-align: center;
+    height: 500px;
+
+    .box_of_number {
+      height: 225px;
+
+      .icon_of_counter {
+        @include text_of_title(transparent, 3rem, 40px);
+        @include text_color_gradient($blue_color_gradient);
+      }
+
+      .box_counter_of_number {
+        padding-top: 10px;
+
+        .plus_of_counter {
+          position: relative;
+          top: -6px;
+          left: -5px;
+          @include text_color_gradient($orange_color_gradient);
+          font-size: 1.2rem;
+        }
+
+        .counter_of_number {
+          font-size: 1.6rem;
+          position: relative;
+          left: -5px;
+        }
+
+
+      }
+    }
+
+
+  }
 }
 
-.aa{
-  height: 225px;
-}
 
-.row_of_property{
-  margin: 270px 0px;
-  text-align: center;
-
-}
 //EndProperty Of Rush Team
 

@@ -40,7 +40,8 @@
                                 <div class="box_of_Principles">
                                     <i class="fas fa-unicorn icons_of_Principles_rush_team"></i>
                                     <h3 class="title_of_Principles_rush_team">گرم و صمیمی</h3>
-                                    <p class="explain_about_Principles_of_rush dir_rtl">ارتباط میان اعضا صمیمانه است و آنها برای
+                                    <p class="explain_about_Principles_of_rush dir_rtl">ارتباط میان اعضا صمیمانه است و
+                                        آنها برای
                                         بیان
                                         ایده ها،عقاید و نقطه نظرات خود احساس راحتی و آزادی میکنند.</p>
                                 </div>
@@ -49,7 +50,8 @@
                                 <div class="box_of_Principles">
                                     <i class="fas fa-unicorn icons_of_Principles_rush_team"></i>
                                     <h3 class="title_of_Principles_rush_team">گرم و صمیمی</h3>
-                                    <p class="explain_about_Principles_of_rush dir_rtl">ارتباط میان اعضا صمیمانه است و آنها برای
+                                    <p class="explain_about_Principles_of_rush dir_rtl">ارتباط میان اعضا صمیمانه است و
+                                        آنها برای
                                         بیان
                                         ایده ها،عقاید و نقطه نظرات خود احساس راحتی و آزادی میکنند.</p>
                                 </div>
@@ -58,7 +60,8 @@
                                 <div class="box_of_Principles">
                                     <i class="fas fa-unicorn icons_of_Principles_rush_team"></i>
                                     <h3 class="title_of_Principles_rush_team">گرم و صمیمی</h3>
-                                    <p class="explain_about_Principles_of_rush dir_rtl">ارتباط میان اعضا صمیمانه است و آنها برای
+                                    <p class="explain_about_Principles_of_rush dir_rtl">ارتباط میان اعضا صمیمانه است و
+                                        آنها برای
                                         بیان
                                         ایده ها،عقاید و نقطه نظرات خود احساس راحتی و آزادی میکنند.</p>
                                 </div>
@@ -70,42 +73,52 @@
             </div>
         </div>
     </section>
-{!End Header Of About Us Page!}
+    {!End Header Of About Us Page!}
 
-{!Property Of Rush Team!}
+    {!Property Of Rush Team!}
     <section class="box_of_property_of_rush_team">
         <div class="container">
             <div class="row row_of_property">
-                <div class="col-lg-6 a bg-secondary">
-                    <div class="w-50 mt-4 aa bg-primary d-inline-block">
-                        <i class="fal fa-handshake-alt"></i>
-                        <div class="counter_of_number">
+                <div class="col-lg-6">
+                    <div class="box_of_number w-50 mt-4 d-inline-block">
+                        <i class="fal fa-handshake-alt icon_of_counter"></i>
+                        <div class="box_counter_of_number">
                             <span class="plus_of_counter">+</span>
-                            <p class="counter_of_number">35</p>
+                            <p class="counter_of_number d-inline-block">35</p>
                         </div>
+                        <p class="title_of_counter">
+                            تعداد پروژه ها
+                        </p>
                     </div>
-                    <div class="w-50 aa bg-success d-inline-block">
-                        <i class="fal fa-calendar-check"></i>
-                        <div class="counter_of_number">
+                    <div class="w-50 box_of_number d-inline-block">
+                        <i class="fal fa-calendar-check icon_of_counter"></i>
+                        <div class="box_counter_of_number">
                             <span class="plus_of_counter">+</span>
-                            <p class="counter_of_number">10</p>
+                            <p class="counter_of_number d-inline-block">10</p>
                         </div>
+                        <p class="title_of_counter">
+                            سال ها تجربه
+                        </p>
                     </div>
-                    <div class="w-50 aa bg-warning d-inline-block">
-                        <i class="fal fa-clock"></i>
-                        <div class="counter_of_number">
-                            <div class="counter_of_number">
-                                <span class="plus_of_counter">+</span>
-                                <p class="counter_of_number">200</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-50 aa bg-info d-inline-block">
-                        <i class="fal fa-laugh-beam"></i>
-                        <div class="counter_of_number">
+                    <div class="w-50 box_of_number d-inline-block">
+                        <i class="fal fa-clock icon_of_counter"></i>
+                        <div class="box_counter_of_number">
                             <span class="plus_of_counter">+</span>
-                            <p class="counter_of_number">20</p>
+                            <p class="counter_of_number d-inline-block">200</p>
                         </div>
+                        <p class="title_of_counter">
+                            ساعات کار
+                        </p>
+                    </div>
+                    <div class="w-50 box_of_number d-inline-block">
+                        <i class="fal fa-laugh-beam icon_of_counter"></i>
+                        <div class="box_counter_of_number">
+                            <span class="plus_of_counter">+</span>
+                            <p class="counter_of_number d-inline-block">20</p>
+                        </div>
+                        <p class="title_of_counter">
+                            مشتریان خوشحال
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-6 a bg-danger">
