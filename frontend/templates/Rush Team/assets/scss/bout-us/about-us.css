@@ -121,6 +121,7 @@
   top: 130px;
   right: 140px;
   text-align: center;
+  display: none;
 }
 .property_of_rush_team .row_of_property .box_of_property_of_rush_team .inside_of_circle .title_of_property_rush_team {
   font-size: 0.9rem;
@@ -142,6 +143,7 @@
   margin-top: 25px;
 }
 .property_of_rush_team .row_of_property .box_of_property_of_rush_team .icons_of_property_rush_team_box {
+  cursor: pointer;
   box-shadow: 5px 7px 30px rgba(72, 73, 121, 0.15);
   width: 80px;
   height: 80px;
@@ -186,6 +188,11 @@
   position: absolute;
   top: 170px;
   right: 25px;
+}
+
+.mouseover_change_color_icon_of_property {
+  background-image: none !important;
+  -webkit-text-fill-color: white !important;
 }
 
 /*# sourceMappingURL=about-us.css.map */
