@@ -144,6 +144,8 @@ category_schema.statics = {
 
     edit : async function (category_id, title_inp, parent_inp) {
 
+        let this_category = await category_model.findById(category_id)
+
         let parent = parent_inp;
 
         if(parent_inp == '0'){
@@ -151,8 +153,12 @@ category_schema.statics = {
             parent = null;
 
         }
+        else if(parent_inp == '-1'){
 
-        let this_category = await category_model.findById(category_id)
+            parent = this_category.parent
+
+        }
+
         let find_cat = await category_model.findOne({title : title_inp, parent : parent});
 
         if(this_category._id != parent) {

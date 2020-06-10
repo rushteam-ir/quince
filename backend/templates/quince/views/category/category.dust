@@ -204,7 +204,7 @@
                                         <div class="form-group">
                                             <label class="main_lable_design" for="parent_category">والد دسته</label>
                                             <select class="form-control main_form_design category_edit_parent" id="parent_category_modal" name="parent_inp">
-                                                <option class="d-none"></option>
+                                                <option value="-1" class="d-none"></option>
                                                 <option value="0">دسته اصلی</option>
                                                 {#parent_list}
                                                     <option class="modal_opion" value="{_id}">{title}</option>
