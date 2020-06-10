@@ -123,7 +123,7 @@ $color_black: #000;
       height: 225px;
 
       .icon_of_counter {
-        @include text_of_title(transparent, 3rem, 40px);
+        @include text_of_title(transparent, 2.5rem, 40px);
         @include text_color_gradient($blue_color_gradient);
       }
 

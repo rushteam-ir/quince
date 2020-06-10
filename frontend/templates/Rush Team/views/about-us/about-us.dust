@@ -38,7 +38,7 @@
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="box_of_Principles">
-                                    <i class="fas fa-unicorn icons_of_Principles_rush_team"></i>
+                                    <i class="fas fa-cat icons_of_Principles_rush_team"></i>
                                     <h3 class="title_of_Principles_rush_team">گرم و صمیمی</h3>
                                     <p class="explain_about_Principles_of_rush dir_rtl">ارتباط میان اعضا صمیمانه است و
                                         آنها برای
@@ -58,7 +58,7 @@
                             </div>
                             <div class="col-lg-4">
                                 <div class="box_of_Principles">
-                                    <i class="fas fa-unicorn icons_of_Principles_rush_team"></i>
+                                    <i class="fas fa-dog icons_of_Principles_rush_team"></i>
                                     <h3 class="title_of_Principles_rush_team">گرم و صمیمی</h3>
                                     <p class="explain_about_Principles_of_rush dir_rtl">ارتباط میان اعضا صمیمانه است و
                                         آنها برای
@@ -126,74 +126,74 @@
 
                         <div class="circle_of_property"></div>
 
-                        <label class="inside_of_circle position-absolute d-none" for="property_1">
+                        <div class="inside_of_circle position-absolute">
                             <h3 class="title_of_property_rush_team">ریسپانسیو</h3>
                             <h4 class="sub_title_of_property_rush_team">طراحی واکنش گرا</h4>
                             <p class="explain_about_property_rush_team">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
                                 صنعت چاپ، و با استفاده از طراحان گرافیک
                                 است.
                             </p>
-                        </label>
+                        </div>
                         <div class="icons_of_property_rush_team_box" id="property_1">
                             <i class="fal fa-laptop-code icons_of_property_rush_team "></i>
                         </div>
 
-                        <label class="inside_of_circle position-absolute" for="property_2">
+                        <div class="inside_of_circle position-absolute d-none">
                             <h3 class="title_of_property_rush_team">ریسپانسیو</h3>
                             <h4 class="sub_title_of_property_rush_team">طراحی واکنش گرا</h4>
                             <p class="explain_about_property_rush_team">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
                                 صنعت چاپ، و با استفاده از طراحان گرافیک
                                 است.
                             </p>
-                        </label>
+                        </div>
                         <div class="icons_of_property_rush_team_box" id="property_2">
                             <i class="fal fa-laptop-code icons_of_property_rush_team "></i>
                         </div>
 
-                        <label class="inside_of_circle position-absolute" for="property_3">
+                        <div class="inside_of_circle position-absolute d-none">
                             <h3 class="title_of_property_rush_team">ریسپانسیو</h3>
                             <h4 class="sub_title_of_property_rush_team">طراحی واکنش گرا</h4>
                             <p class="explain_about_property_rush_team">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
                                 صنعت چاپ، و با استفاده از طراحان گرافیک
                                 است.
                             </p>
-                        </label>
+                        </div>
                         <div class="icons_of_property_rush_team_box" id="property_3">
                             <i class="fal fa-laptop-code icons_of_property_rush_team "></i>
                         </div>
 
-                        <label class="inside_of_circle position-absolute" for="property_4">
+                        <div class="inside_of_circle position-absolute d-none">
                             <h3 class="title_of_property_rush_team">ریسپانسیو</h3>
                             <h4 class="sub_title_of_property_rush_team">طراحی واکنش گرا</h4>
                             <p class="explain_about_property_rush_team">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
                                 صنعت چاپ، و با استفاده از طراحان گرافیک
                                 است.
                             </p>
-                        </label>
+                        </div>
                         <div class="icons_of_property_rush_team_box" id="property_4">
                             <i class="fal fa-laptop-code icons_of_property_rush_team "></i>
                         </div>
 
-                        <label class="inside_of_circle position-absolute" for="property_5">
+                        <div class="inside_of_circle position-absolute d-none">
                             <h3 class="title_of_property_rush_team">ریسپانسیو</h3>
                             <h4 class="sub_title_of_property_rush_team">طراحی واکنش گرا</h4>
                             <p class="explain_about_property_rush_team">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
                                 صنعت چاپ، و با استفاده از طراحان گرافیک
                                 است.
                             </p>
-                        </label>
+                        </div>
                         <div class="icons_of_property_rush_team_box" id="property_5">
                             <i class="fal fa-laptop-code icons_of_property_rush_team "></i>
                         </div>
 
-                        <label class="inside_of_circle position-absolute" for="property_6">
+                        <div class="inside_of_circle position-absolute d-none">
                             <h3 class="title_of_property_rush_team">ریسپانسیو</h3>
                             <h4 class="sub_title_of_property_rush_team">طراحی واکنش گرا</h4>
                             <p class="explain_about_property_rush_team">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
                                 صنعت چاپ، و با استفاده از طراحان گرافیک
                                 است.
                             </p>
-                        </label>
+                        </div>
                         <div class="icons_of_property_rush_team_box" id="property_6">
                             <i class="fal fa-laptop-code icons_of_property_rush_team "></i>
                         </div>
