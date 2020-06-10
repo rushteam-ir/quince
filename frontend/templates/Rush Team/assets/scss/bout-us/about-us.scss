@@ -113,9 +113,9 @@ $color_black: #000;
 
 //Property Of Rush Team
 
-.box_of_property_of_rush_team {
+.property_of_rush_team {
   .row_of_property {
-    margin: 270px 0px;
+    margin: 250px 0px 120px 0px;
     text-align: center;
     height: 500px;
 
@@ -148,7 +148,92 @@ $color_black: #000;
       }
     }
 
+    .box_of_property_of_rush_team {
+      position: relative;
 
+      .circle_of_property {
+        margin: 50px auto;
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        border: 1px solid #cccbcb;
+      }
+
+      .inside_of_circle {
+        top: 130px;
+        right: 140px;
+        text-align: center;
+
+        .title_of_property_rush_team {
+          font-size: .9rem;
+          margin-bottom: 15px;
+          @include text_color_gradient($orange_color_gradient);
+        }
+
+        .sub_title_of_property_rush_team{
+          font-size: 1.1rem;
+        }
+
+        .explain_about_property_rush_team{
+          font-size: .8rem;
+          width: 250px;
+          height: 200px;
+          color: #7f7e7e;
+          text-align: justify;
+          direction: rtl;
+          margin-top: 25px;
+        }
+      }
+
+      .icons_of_property_rush_team_box{
+        box-shadow: 5px 7px 30px rgba(72, 73, 121, 0.15);
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: white;
+
+        .icons_of_property_rush_team{
+          @include text_of_title(transparent, 2rem, 22px);
+          @include text_color_gradient($blue_color_gradient);
+        }
+      }
+
+      #property_1 {
+        position: absolute;
+        top: -5px;
+        left: 120px;
+      }
+
+      #property_2 {
+        position: absolute;
+        bottom: -5px;
+        left: 120px;
+      }
+
+      #property_3 {
+        position: absolute;
+        top: -5px;
+        right: 120px;
+      }
+
+      #property_4 {
+        position: absolute;
+        bottom: -5px;
+        right: 120px;
+      }
+
+      #property_5 {
+        position: absolute;
+        top: 170px;
+        left: 25px;
+      }
+
+      #property_6 {
+        position: absolute;
+        top: 170px;
+        right: 25px;
+      }
+    }
   }
 }
 
