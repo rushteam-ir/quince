@@ -148,7 +148,7 @@ $(document).ready(function () {
             );
 
 
-            if(parent_category == "دسته اصلی"){
+            /*if(parent_category == "دسته اصلی"){
 
                 for(let j = 0 ; j < $('.modal_opion').length ; j++){
 
@@ -167,7 +167,7 @@ $(document).ready(function () {
 
                 }
 
-            }
+            }*/
 
             $('.modal_of_category').fadeIn();
 

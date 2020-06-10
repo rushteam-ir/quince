@@ -155,22 +155,33 @@ category_schema.statics = {
         let this_category = await category_model.findById(category_id)
         let find_cat = await category_model.findOne({title : title_inp, parent : parent});
 
-        if(!find_cat){
+        if(this_category._id != parent) {
 
-            await category_model.findByIdAndUpdate(parent, { $inc: {child_number : 1 } });
+            if (!find_cat) {
 
-            if(this_category.parent){
+                await category_model.findByIdAndUpdate(parent, {$inc: {child_number: 1}});
 
-                await category_model.findByIdAndUpdate(this_category.parent, { $inc: {child_number : -1 } });
+                if (this_category.parent) {
+
+                    await category_model.findByIdAndUpdate(this_category.parent, {$inc: {child_number: -1}});
+
+                } else {
+
+                    await category_model.updateMany({parent: this_category._id}, {parent: null, child_number: 0})
+
+                }
+
+                return await category_model.findByIdAndUpdate(category_id, {
+                    title: title_inp,
+                    parent: parent,
+                    child_number: 0
+                });
+
+            } else {
+
+                return null
 
             }
-            else{
-
-                await category_model.updateMany({parent : this_category._id}, {parent : null , child_number : 0})
-
-            }
-
-            return await category_model.findByIdAndUpdate(category_id, { title : title_inp, parent : parent, child_number : 0});
 
         }
         else{
@@ -178,7 +189,6 @@ category_schema.statics = {
             return null
 
         }
-
 
     },
 
