@@ -104,6 +104,12 @@ category_schema.statics = {
             await category_model.findByIdAndUpdate(parent_inp.parent._id, { $inc: {child_number : -1 } });
 
         }
+        else{
+
+            log('hi')
+            await category_model.updateMany({parent: parent_inp._id}, {parent: null, child_number: 0})
+
+        }
 
         return await category_model.findByIdAndDelete(category_id);
 
