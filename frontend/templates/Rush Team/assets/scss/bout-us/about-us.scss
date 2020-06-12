@@ -180,7 +180,6 @@ $color_black: #000;
         .explain_about_property_rush_team {
           font-size: .8rem;
           width: 250px;
-          height: 200px;
           color: #7f7e7e;
           text-align: justify;
           direction: rtl;
@@ -195,6 +194,7 @@ $color_black: #000;
         height: 80px;
         border-radius: 50%;
         background-color: white;
+        border: 2px solid white;
 
         .icons_of_property_rush_team {
           @include text_of_title(transparent, 2rem, 22px);
@@ -243,8 +243,7 @@ $color_black: #000;
 }
 
 .mouseover_change_color_icon_of_property {
-  background-image: linear-gradient(to right, #3D52EF, #55B9FC);
-  border: 2px solid white;
+  background: linear-gradient(90deg, rgba(62,88,240,1) 0%, rgba(84,182,252,1) 100%) !important;
 
   .icons_of_property_rush_team {
     background-image: none !important;
