@@ -12,7 +12,7 @@ $color_black: #000;
 
 //mixin
 
-@mixin text_of_title($color-value,$font-value ,$padding_t_value) {
+@mixin text_of_title($color-value, $font-value, $padding_t_value) {
   text-align: center;
   color: $color-value;
   font-size: $font_value;
@@ -100,6 +100,7 @@ $color_black: #000;
     top: -250px;
     opacity: 0;
   }
+
   100% {
     top: -125px;
     opacity: 1;
@@ -172,14 +173,13 @@ $color_black: #000;
           @include text_color_gradient($orange_color_gradient);
         }
 
-        .sub_title_of_property_rush_team{
+        .sub_title_of_property_rush_team {
           font-size: 1.1rem;
         }
 
-        .explain_about_property_rush_team{
+        .explain_about_property_rush_team {
           font-size: .8rem;
           width: 250px;
-          height: 200px;
           color: #7f7e7e;
           text-align: justify;
           direction: rtl;
@@ -187,15 +187,16 @@ $color_black: #000;
         }
       }
 
-      .icons_of_property_rush_team_box{
+      .icons_of_property_rush_team_box {
         cursor: pointer;
         box-shadow: 5px 7px 30px rgba(72, 73, 121, 0.15);
         width: 80px;
         height: 80px;
         border-radius: 50%;
         background-color: white;
+        border: 2px solid white;
 
-        .icons_of_property_rush_team{
+        .icons_of_property_rush_team {
           @include text_of_title(transparent, 2rem, 22px);
           @include text_color_gradient($blue_color_gradient);
         }
@@ -241,23 +242,32 @@ $color_black: #000;
   }
 }
 
+<<<<<<< HEAD
 .mouseover_change_color_icon_of_property{
   background-image: linear-gradient(to right, #3D52EF, #55B9FC);
   border: 2px solid white;
 
   .icons_of_property_rush_team{
+=======
+.mouseover_change_color_icon_of_property {
+  background: linear-gradient(90deg, rgba(62,88,240,1) 0%, rgba(84,182,252,1) 100%) !important;
+
+  .icons_of_property_rush_team {
+>>>>>>> 2c00b58700e7d5ebc73c06e7b2f3dad9f8667b9f
     background-image: none !important;
     -webkit-text-fill-color: white !important;
   }
 }
 
+<<<<<<< HEAD
 .display_of_explain_about_property_rush_team{
   display: block !important;
 }
 
-
+=======
+.display_show{
+  display: block !important;
+}
+>>>>>>> 2c00b58700e7d5ebc73c06e7b2f3dad9f8667b9f
 
 //EndProperty Of Rush Team
-
-
-

@@ -125,8 +125,13 @@
                     <div class="box_of_property_of_rush_team">
 
                         <div class="circle_of_property"></div>
+<<<<<<< HEAD
                         <span class="property_of_rush_team_jquery">
                             <div class="inside_of_circle position-absolute property_1 display_of_explain_about_property_rush_team">
+=======
+                        <span class="test">
+                            <div class="inside_of_circle position-absolute property_1 display_show">
+>>>>>>> 2c00b58700e7d5ebc73c06e7b2f3dad9f8667b9f
                                 <h3 class="title_of_property_rush_team">ریسپانسیو1</h3>
                                 <h4 class="sub_title_of_property_rush_team">طراحی واکنش گرا</h4>
                                 <p class="explain_about_property_rush_team">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
