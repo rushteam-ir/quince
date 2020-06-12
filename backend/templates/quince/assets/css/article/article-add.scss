@@ -50,12 +50,10 @@
 }
 
 .fr-box.fr-basic .fr-element {
-    min-height: 300px;
-}
-
-.fr-box.fr-basic .fr-element {
     text-align: right;
     direction: rtl;
+    font-family: main-font;
+    min-height: 300px;
 }
 
 .fr-toolbar .fr-more-toolbar {
