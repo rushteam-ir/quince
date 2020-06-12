@@ -125,8 +125,8 @@
                     <div class="box_of_property_of_rush_team">
 
                         <div class="circle_of_property"></div>
-                        <span class="test">
-                            <div class="inside_of_circle position-absolute property_1">
+                        <span class="property_of_rush_team_jquery">
+                            <div class="inside_of_circle position-absolute property_1 display_of_explain_about_property_rush_team">
                                 <h3 class="title_of_property_rush_team">ریسپانسیو1</h3>
                                 <h4 class="sub_title_of_property_rush_team">طراحی واکنش گرا</h4>
                                 <p class="explain_about_property_rush_team">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
@@ -134,12 +134,12 @@
                                     است.
                                 </p>
                             </div>
-                            <div class="icons_of_property_rush_team_box property_1" id="property_1">
+                            <div class="icons_of_property_rush_team_box property_1 mouseover_change_color_icon_of_property" id="property_1">
                                 <i class="fal fa-laptop-code icons_of_property_rush_team "></i>
                             </div>
                         </span>
 
-                        <span class="test">
+                        <span class="property_of_rush_team_jquery">
                             <div class="inside_of_circle position-absolute property_2">
                                 <h3 class="title_of_property_rush_team">ریسپانسیو2</h3>
                                 <h4 class="sub_title_of_property_rush_team">طراحی واکنش گرا</h4>
@@ -154,7 +154,7 @@
                         </span>
 
 
-                        <span  class="test">
+                        <span class="property_of_rush_team_jquery">
                             <div class="inside_of_circle position-absolute  property_3">
                                 <h3 class="title_of_property_rush_team">ریسپانسیو3</h3>
                                 <h4 class="sub_title_of_property_rush_team">طراحی واکنش گرا</h4>
@@ -168,7 +168,7 @@
                             </div>
                         </span>
 
-                        <span class="test">
+                        <span class="property_of_rush_team_jquery">
                             <div class="inside_of_circle position-absolute  property_4">
                                 <h3 class="title_of_property_rush_team">ریسپانسیو4</h3>
                                 <h4 class="sub_title_of_property_rush_team">طراحی واکنش گرا</h4>
@@ -182,7 +182,7 @@
                             </div>
                         </span>
 
-                        <span class="test">
+                        <span class="property_of_rush_team_jquery">
                             <div class="inside_of_circle position-absolute  property_5">
                                 <h3 class="title_of_property_rush_team">ریسپانسیو5</h3>
                                 <h4 class="sub_title_of_property_rush_team">طراحی واکنش گرا</h4>
@@ -196,7 +196,7 @@
                             </div>
                         </span>
 
-                        <span class="test">
+                        <span class="property_of_rush_team_jquery">
                             <div class="inside_of_circle position-absolute property_6">
                                 <h3 class="title_of_property_rush_team">ریسپانسیو6</h3>
                                 <h4 class="sub_title_of_property_rush_team">طراحی واکنش گرا</h4>

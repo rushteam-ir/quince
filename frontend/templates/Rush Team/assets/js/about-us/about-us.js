@@ -13,18 +13,19 @@ $('.counter_of_number').each(function () {
 
 for(let i = 0 ; i <= 6 ; i++){
 
-    $('.test').eq(i).children().eq(1).mouseover(function(){
+    $('.property_of_rush_team_jquery').eq(i).children().eq(1).mouseover(function(){
 
         for(let j = 0 ; j <= 6 ; j++){
 
-            $('.test').eq(j).children().eq(1).removeClass('mouseover_change_color_icon_of_property');
-            $('.test').eq(j).children().eq (0).fadeIn();
+            $('.property_of_rush_team_jquery').eq(j).children().eq(1).removeClass('mouseover_change_color_icon_of_property');
+            $('.property_of_rush_team_jquery').eq(j).children().eq(0).removeClass('display_of_explain_about_property_rush_team');
 
         }
 
         $(this).addClass('mouseover_change_color_icon_of_property');
-        $('.test').eq(j).children().eq (0).fadeOut();
-        
+        $(this).prev().addClass('display_of_explain_about_property_rush_team');
+
+
     });
 
 
