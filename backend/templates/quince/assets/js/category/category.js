@@ -147,28 +147,6 @@ $(document).ready(function () {
 
             );
 
-
-            if(parent_category == "دسته اصلی"){
-
-                for(let j = 0 ; j < $('.modal_opion').length ; j++){
-
-                    if($('.modal_opion').eq(i).text() == category_name){
-
-                        $('.modal_opion').eq(i).css('display','none');
-
-                        $('.btn_of_cancel_changes').click(function () {
-
-                            $('.modal_opion').eq(i).css('display','block');
-                    
-                        });
-                    
-
-                    }
-
-                }
-
-            }
-
             $('.modal_of_category').fadeIn();
 
         });
