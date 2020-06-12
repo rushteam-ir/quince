@@ -18,17 +18,14 @@ for(let i = 0 ; i <= 6 ; i++){
         for(let j = 0 ; j <= 6 ; j++){
 
             $('.test').eq(j).children().eq(1).removeClass('mouseover_change_color_icon_of_property');
-            $('.test').eq(j).children().eq (0).fadeIn();
+            $('.test').eq(j).children().eq(0).removeClass('display_show');
 
         }
 
         $(this).addClass('mouseover_change_color_icon_of_property');
-        $('.test').eq(j).children().eq (0).fadeOut();
-        
+        $(this).prev().addClass('display_show');
+
+
     });
-
-
-
-
 
 }

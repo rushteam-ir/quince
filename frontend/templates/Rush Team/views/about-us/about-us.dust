@@ -126,7 +126,7 @@
 
                         <div class="circle_of_property"></div>
                         <span class="test">
-                            <div class="inside_of_circle position-absolute property_1">
+                            <div class="inside_of_circle position-absolute property_1 display_show">
                                 <h3 class="title_of_property_rush_team">ریسپانسیو1</h3>
                                 <h4 class="sub_title_of_property_rush_team">طراحی واکنش گرا</h4>
                                 <p class="explain_about_property_rush_team">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
@@ -134,7 +134,7 @@
                                     است.
                                 </p>
                             </div>
-                            <div class="icons_of_property_rush_team_box property_1" id="property_1">
+                            <div class="icons_of_property_rush_team_box property_1 mouseover_change_color_icon_of_property" id="property_1">
                                 <i class="fal fa-laptop-code icons_of_property_rush_team "></i>
                             </div>
                         </span>
