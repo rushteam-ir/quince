@@ -240,15 +240,18 @@ $color_black: #000;
     }
   }
 }
+
 .mouseover_change_color_icon_of_property{
-  background-image: none !important;
-  -webkit-text-fill-color: white !important;
+  background-image: linear-gradient(to right, #3D52EF, #55B9FC);
+  .icons_of_property_rush_team{
+    background-image: none !important;
+    -webkit-text-fill-color: white !important;
+  }
 }
+
+
 
 //EndProperty Of Rush Team
 
 
 
-.test_class{
-   background-color: red !important;
-}
