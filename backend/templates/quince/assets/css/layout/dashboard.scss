@@ -51,6 +51,10 @@
 
     }
 
+    &_logo{
+        width: 60%;
+    }
+
     &_body {
 
         &_sub {
@@ -256,7 +260,7 @@
 // close and open classes
 .close_dsh {
     width: 3.8%;
-
+    
     a :nth-child(2) {
         font-size: 0rem;
         color: transparent;

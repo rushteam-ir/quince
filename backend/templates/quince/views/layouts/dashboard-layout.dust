@@ -23,7 +23,7 @@
 
         <div class="dashboard_header">
 
-            <p>𝓠𝓾𝓲𝓷𝓬𝓮</p>
+            <img class="dashboard_logo" src="img/logo2.png" alt="">
             <i class="fad fa-angle-double-right close_dsh_btn "></i>
             <i class="fad fa-angle-double-left open_dsh_btn display_none"></i>
 
