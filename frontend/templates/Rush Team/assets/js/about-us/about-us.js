@@ -11,17 +11,18 @@ $('.counter_of_number').each(function () {
 });
 
 
-$(document).ready(function () {
-    $('.property_1')
-        .eq(1)
-        .mouseover(function () {
-            $('.property_1').eq(0).fadeIn();
-            $('.property_1').eq(1).css('background-image', 'linear-gradient(to right, #3D52EF, #55B9FC)');
-            $(' .icons_of_property_rush_team').eq(0).addClass('mouseover_change_color_icon_of_property');
-        })
-        .mouseout(function () {
-            $('.property_1').eq(0).fadeOut();
-            $('.property_1').eq(1).css('background-image', 'none');
-            $(' .icons_of_property_rush_team').eq(0).removeClass('mouseover_change_color_icon_of_property');
-        })
-});
+for(let i = 0 ; i <= 6 ; i++){
+
+    $('.test').eq(i).children().eq(1).mouseover(function(){
+
+        for(let j = 0 ; j <= 6 ; j++){
+
+            $('.test').eq(j).children().eq(1).removeClass('test_class');
+
+        }
+
+        $(this).addClass('test_class');
+        
+    });
+
+}
