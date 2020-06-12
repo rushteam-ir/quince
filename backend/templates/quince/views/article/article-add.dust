@@ -52,7 +52,7 @@
   
                                     <div class="form-group">
                                         <label for="article_textarea">توضیحات مقاله</label>
-                                        <textarea class="form-control main_form_design" id="article_textarea" rows="7" placeholder="متن خود را بنویسید !"></textarea>
+                                        <textarea class="form-control main_form_design" id="article_textarea" rows="7"></textarea>
                                     </div>
 
                                     <div class="form-group">
