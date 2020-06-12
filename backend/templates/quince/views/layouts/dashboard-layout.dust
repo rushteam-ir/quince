@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/layout/dashboard.css">
     <link rel="stylesheet" href="css/general/css-animate.css">
     {+css/}
-    <title>Rush Team CMS</title>
+    <title>Quince</title>
 </head>
 
 <body class="main_body_tag">

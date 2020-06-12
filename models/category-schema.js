@@ -106,7 +106,6 @@ category_schema.statics = {
         }
         else{
 
-            log('hi')
             await category_model.updateMany({parent: parent_inp._id}, {parent: null, child_number: 0})
 
         }
