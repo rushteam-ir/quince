@@ -71,3 +71,5 @@ $('.avatar_del').on('click', function (e) {
 function redirect(url) {
     location.href = url
 }
+
+new FroalaEditor('textarea');

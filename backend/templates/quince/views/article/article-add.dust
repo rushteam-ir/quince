@@ -1,15 +1,16 @@
 {>"layouts/dashboard-layout"/}
 
 {<css}
+
+    <link rel="stylesheet" href="css/article/froala-editor.css">
     <link rel="stylesheet" href="css/article/article-add.css">
-    <link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+
 {/css}
 {<js} 
+
+    <script src="js/article/froala-editor.js"></script>
     <script src="js/article/article-add.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
-    <script>
-        new FroalaEditor('textarea');
-    </script>
+
 {/js}
 
 {<body}
@@ -35,28 +36,28 @@
                                 <form class="text-right dir-rtl">
 
                                     <div class="form-group">
-                                      <label for="exampleInputEmail1">نام مقاله</label>
-                                      <input type="email" class="form-control main_form_design" id="exampleInputEmail1">
+                                      <label for="article_name">نام مقاله</label>
+                                      <input type="email" class="form-control main_form_design" id="article_name">
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">دسته اصلی</label>
-                                        <input type="email" class="form-control main_form_design" id="exampleInputEmail1">
+                                        <label for="article_parent">دسته اصلی</label>
+                                        <input type="email" class="form-control main_form_design" id="article_parent">
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">زیر دسته</label>
-                                        <input type="email" class="form-control main_form_design" id="exampleInputEmail1">
+                                        <label for="article_child">زیر دسته</label>
+                                        <input type="email" class="form-control main_form_design" id="article_child">
                                     </div>
   
                                     <div class="form-group">
-                                        <label for="exampleFormControlTextarea1">توضیحات مقاله</label>
-                                        <textarea class="form-control main_form_design" id="exampleFormControlTextarea1" rows="7"></textarea>
+                                        <label for="article_textarea">توضیحات مقاله</label>
+                                        <textarea class="form-control main_form_design" id="article_textarea" rows="7" placeholder="متن خود را بنویسید !"></textarea>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">کلمات کلیدی مقاله</label>
-                                        <input type="email" class="form-control main_form_design" id="exampleInputEmail1">
+                                        <label for="article_keyword">کلمات کلیدی مقاله</label>
+                                        <input type="email" class="form-control main_form_design" id="article_keyword">
                                     </div>
 
                                     <div class="form-group">

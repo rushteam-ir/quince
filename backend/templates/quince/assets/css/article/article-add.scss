@@ -39,3 +39,25 @@
     font-size: 1.2rem;
     line-height: 230px;
 }
+
+
+
+// editor customize
+
+.fr-toolbar ,.second-toolbar , .fr-box.fr-basic .fr-wrapper{
+    background-color: #F3F6F9 ;
+    border: none ;
+}
+
+.fr-box.fr-basic .fr-element{
+    min-height: 300px ;
+}
+
+.fr-box.fr-basic .fr-element{
+    text-align: right ;
+    direction: rtl ;
+}
+
+.fr-toolbar .fr-more-toolbar{
+    background-color: #F3F6F9 ;
+}
