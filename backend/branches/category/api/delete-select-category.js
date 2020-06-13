@@ -5,6 +5,7 @@ router.get('/', async(req,res)=>{
     try{
 
         let id_list = req.query.id;
+        let back_url = req.header('Referer') || '/';
 
         for(let i = 0; i < id_list.length; i++){
 
@@ -29,7 +30,7 @@ router.get('/', async(req,res)=>{
 
         }
 
-        return res.redirect(`${config.backend_url}category`);
+        return res.redirect(back_url);
 
     }
     catch (error) {

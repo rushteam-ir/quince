@@ -5,6 +5,7 @@ router.get('/', async(req,res)=>{
     try{
 
         let category_id = req.query.id;
+        let back_url = req.header('Referer') || '/';
 
         if(isObjectId(category_id)){
 
@@ -12,19 +13,19 @@ router.get('/', async(req,res)=>{
 
             if(result){
 
-                return res.redirect(`${config.backend_url}category`);
+                return res.redirect(back_url);
 
             }
             else{
 
-                return res.redirect(`${config.backend_url}category`);
+                return res.redirect(back_url);
 
             }
 
         }
         else{
 
-            return res.redirect(`${config.backend_url}category`);
+            return res.redirect(back_url);
 
         }
 
