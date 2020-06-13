@@ -26,6 +26,10 @@ for(let i = 0 ; i <= 6 ; i++){
         $(this).prev().addClass('display_of_explain_about_property_rush_team');
 
 
+
     });
 
 }
+
+
+prompt('متن پیام');
