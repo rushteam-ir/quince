@@ -264,12 +264,12 @@ $color_black: #000;
 .introduction_our_team_box {
   background-color: $color_ghost_white;
   padding: 120px 0;
-  cursor: pointer;
 
   .introduction_our_team {
     overflow: hidden;
     border-radius: 0px 40px 0px 40px;
     position: relative;
+    cursor: pointer;
 
     .image_of_our_team {
       width: 100%;
