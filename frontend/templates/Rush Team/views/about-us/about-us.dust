@@ -134,7 +134,8 @@
                                     است.
                                 </p>
                             </div>
-                            <div class="icons_of_property_rush_team_box property_1 mouseover_change_color_icon_of_property" id="property_1">
+                            <div class="icons_of_property_rush_team_box property_1 mouseover_change_color_icon_of_property"
+                                 id="property_1">
                                 <i class="fal fa-laptop-code icons_of_property_rush_team "></i>
                             </div>
                         </span>
@@ -216,6 +217,93 @@
             </div>
         </div>
     </section>
-{!End Property Of Rush Team!}
+    {!End Property Of Rush Team!}
+
+    {!Introduction Our Team!}
+    <section class="introduction_our_team_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="introduction_our_team">
+                        <img src="../../img/bradpitt.png" alt="تیم ما" class="image_of_our_team">
+                        <div class="content_of_our_team_person">
+                            <h3 class="name_of_person">کسری حبیب بیگی</h3>
+                            <span class="role_of_person_in_our_team">طراح و توسعه دهنده سایت</span>
+                            <p class="description_of_person_in_our_team dir_rtl">
+                                رسانه دیجیتال میتواند تاثیری مثبت روی زندگی ما بگذارد . کسب و کار ها از این رسانه هامیتوانند.
+                            </p>
+                            <ul class="social_media_our_team_box">
+                                <li class="list_of_social_media">
+                                    <a href="#" class="fab fa-facebook-f social_media_link"></a>
+                                </li>
+                                <li class="list_of_social_media">
+                                    <a href="#" class="fab fa-telegram-plane social_media_link"></a>
+                                </li>
+                                <li class="list_of_social_media">
+                                    <a href="#" class="fab fa-linkedin-in social_media_link"></a>
+                                </li>
+                                <li class="list_of_social_media">
+                                    <a href="#" class="fab fa-twitter social_media_link"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="introduction_our_team">
+                        <img src="../../img/robbie.png" alt="تیم ما" class="image_of_our_team">
+                        <div class="content_of_our_team_person">
+                            <h3 class="name_of_person">نادیه نجم آبادی</h3>
+                            <span class="role_of_person_in_our_team">طراح و توسعه دهنده سایت</span>
+                            <p class="description_of_person_in_our_team dir_rtl">
+                                رسانه دیجیتال میتواند تاثیری مثبت روی زندگی ما بگذارد . کسب و کار ها از این رسانه هامیتوانند.
+                            </p>
+                            <ul class="social_media_our_team_box">
+                                <li class="list_of_social_media">
+                                    <a href="#" class="fab fa-facebook-f social_media_link"></a>
+                                </li>
+                                <li class="list_of_social_media">
+                                    <a href="#" class="fab fa-telegram-plane social_media_link"></a>
+                                </li>
+                                <li class="list_of_social_media">
+                                    <a href="#" class="fab fa-linkedin-in social_media_link"></a>
+                                </li>
+                                <li class="list_of_social_media">
+                                    <a href="#" class="fab fa-twitter social_media_link"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="introduction_our_team">
+                        <img src="../../img/leo-dec.jpg" alt="تیم ما" class="image_of_our_team">
+                        <div class="content_of_our_team_person">
+                            <h3 class="name_of_person">روزبه سبزه ای</h3>
+                            <span class="role_of_person_in_our_team">طراح و توسعه دهنده سایت</span>
+                            <p class="description_of_person_in_our_team dir_rtl">
+                                رسانه دیجیتال میتواند تاثیری مثبت روی زندگی ما بگذارد . کسب و کار ها از این رسانه هامیتوانند.
+                            </p>
+                            <ul class="social_media_our_team_box">
+                                <li class="list_of_social_media">
+                                    <a href="#" class="fab fa-facebook-f social_media_link"></a>
+                                </li>
+                                <li class="list_of_social_media">
+                                    <a href="#" class="fab fa-telegram-plane social_media_link"></a>
+                                </li>
+                                <li class="list_of_social_media">
+                                    <a href="#" class="fab fa-linkedin-in social_media_link"></a>
+                                </li>
+                                <li class="list_of_social_media">
+                                    <a href="#" class="fab fa-twitter social_media_link"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{!End Introduction Our Team!}
 
 {/body}
