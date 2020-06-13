@@ -10,16 +10,18 @@ session = require('express-session');
 body_parser = require('body-parser');
 file_upload = require('express-fileupload');
 mongo_store = require('connect-mongo')(session);
-express_validator = require('express-validator');
 mongoose = require('mongoose');
 nodemailer = require('nodemailer');
 JalaliDate = require('jalali-date');
+FroalaEditor = require('wysiwyg-editor-node-sdk');
+
 user_model = require('../models/user-schema');
 category_model = require('../models/category-schema');
 setting_model = require('../models/setting-schema');
 product_model = require('../models/product-schema');
 message_model = require('../models/message-schema');
 discount_model = require('../models/discount-schema');
+article_model = require('../models/article-schema');
 
 // Global variables
 msg_param = '';

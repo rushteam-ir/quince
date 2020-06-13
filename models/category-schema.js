@@ -14,7 +14,6 @@ category_schema.statics = {
 
     add : async function (title_inp, parent_inp) {
 
-        let list = await category_model.find();
         let parent = parent_inp;
 
         if(parent_inp == '0'){
