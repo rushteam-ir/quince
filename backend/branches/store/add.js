@@ -4,6 +4,7 @@ router.get('/', async(req,res)=>{
 
     try{
 
+        /*
         let data = null;
 
         if(Object.keys(req.query).length === 0){
@@ -25,8 +26,9 @@ router.get('/', async(req,res)=>{
             }
 
         }
+         */
 
-        res.render('store/store-add', data);
+        res.render('store/store-add');
 
     }
     catch (error) {
