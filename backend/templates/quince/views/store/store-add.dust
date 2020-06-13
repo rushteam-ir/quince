@@ -1,0 +1,298 @@
+{>"layouts/dashboard-layout"/}
+
+{<css}
+
+    <link rel="stylesheet" href="css/store/store-add.css">
+
+{/css}
+{<js} 
+
+    <script src="js/store/store-add.js"></script>
+
+{/js}
+
+{<body}
+
+    <section>
+        <div class="main_bodu_of_store_add mb-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 main_col_of_store_add">
+
+                        <header>
+
+                            <p class="header_of_store_add">افزودن محصول جدید</p>
+                            <p class="small_of_header_store_add">محصول های سایت را در اینجا ایجاد کنید!</p>
+
+                            <hr>
+
+                        </header>
+
+
+                        <div class="row dir-ltr">
+                            <div class="col-8 offset-2">
+
+                                <form class="text-right dir-rtl">
+
+                                    <div class="form-group">
+                                        <label for="article_name">نام محصول</label>
+                                        <input type="text" class="form-control main_form_design" id="article_name">
+                                    </div>
+
+                                    <div class="form-group">
+                                          <label class="main_lable_design" for="store_add_select">والد دسته</label>
+                                            <select class="form-control main_form_design category_edit_title" id="store_add_select ">
+                                                <option>شما چند وقته کد میزنی؟</option>
+                                            </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                         <label class="main_lable_design" for="store_add_select">نام دسته</label>
+                                            <select class="form-control main_form_design category_edit_title" id="store_add_select ">
+                                                <option>طالبی</option>
+                                            </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="article_name">توضیحات</label>
+                                        <textarea type="text" class="form-control main_form_design" id="article_name"></textarea>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="article_name">قیمت <span class="description_of_label">(تومان)</span></label>
+                                        <input type="text" class="form-control main_form_design" id="article_name">
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col pr-0">
+                                            
+                                            <label for="article_name">تخفیف</label>
+                                            <div class="input-group mb-3">
+
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="Sale_addon">%</span>
+                                                </div>
+                                                
+                                                <input type="number" class="form-control main_form_design sale_inp_custom" aria-label="Username" aria-describedby="Sale_addon">
+                                            </div>
+
+                                        </div>
+                                        <div class="col pl-0">
+
+                                            <div class="form-group">
+                                                <label for="article_name">موجودی انبار</label>
+                                                <input type="number" class="form-control main_form_design" id="article_name">
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="article_name">کلمات کلیدی</label>
+                                        <input type="text" class="form-control main_form_design" id="article_name">
+                                        <small>قالب استاندارد : <span class="key_word_custom">جوراب ، جوراب مردانه ، ...</span></small>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="article_name">توصیافات لینک </label>
+                                        <textarea type="text" class="form-control main_form_design" id="article_name"></textarea>
+                                    </div>
+
+                                    <label for="avatar" class=" col-form-label main_lable_design">تصویر پروفایل</label>
+
+                                    <div class="row">
+
+                                        <div class="col-4 pr-0">
+                                            <div class="form-group">
+        
+                                                    <div class="field_of_img_template">
+                                                        <div class="box_of_img_template">
+                                                            <div class="box_of_img_template img-box">
+                                                                <div class="img-show">
+                                                                    {@eq key="{admin_info.avatar}" value=""}
+                            
+                                                                    {:else}
+                                                                        <div class="remove_parent">
+                                                                            <img class="uploading_img_from_brows" src="media/avatars/{admin_info.avatar}">
+                                                                            <div name="0" class="remove_img_icon avatar_del"></div>
+                                                                        </div>
+                                                                    {/eq}
+                                                                </div>
+                                                                <input type="file" name="avatar" id="avatar_img" class="input-file-custom">
+                                                                <label for="avatar_img" class="btn btn-tertiary2 js-labelFile ">
+                                                                    <i class="icon fa fa-check"></i>
+                                                                    <span class="js-fileName mr-2">انتخاب عکس</span>
+                                                                </label>
+                                                            </div>
+                                
+                                                        </div>
+                                                    </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-4 pr-2 pl-2">
+                                            <div class="form-group">
+        
+                                                    <div class="field_of_img_template">
+                                                        <div class="box_of_img_template">
+                                                            <div class="box_of_img_template img-box">
+                                                                <div class="img-show">
+                                                                    {@eq key="{admin_info.avatar}" value=""}
+                            
+                                                                    {:else}
+                                                                        <div class="remove_parent">
+                                                                            <img class="uploading_img_from_brows" src="media/avatars/{admin_info.avatar}">
+                                                                            <div name="0" class="remove_img_icon avatar_del"></div>
+                                                                        </div>
+                                                                    {/eq}
+                                                                </div>
+                                                                <input type="file" name="avatar" id="avatar_img" class="input-file-custom">
+                                                                <label for="avatar_img" class="btn btn-tertiary2 js-labelFile ">
+                                                                    <i class="icon fa fa-check"></i>
+                                                                    <span class="js-fileName mr-2">انتخاب عکس</span>
+                                                                </label>
+                                                            </div>
+                                
+                                                        </div>
+                                                    </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-4 pl-0">
+                                            <div class="form-group ">
+        
+                                                    <div class="field_of_img_template">
+                                                        <div class="box_of_img_template">
+                                                            <div class="box_of_img_template img-box">
+                                                                <div class="img-show">
+                                                                    {@eq key="{admin_info.avatar}" value=""}
+                            
+                                                                    {:else}
+                                                                        <div class="remove_parent">
+                                                                            <img class="uploading_img_from_brows" src="media/avatars/{admin_info.avatar}">
+                                                                            <div name="0" class="remove_img_icon avatar_del"></div>
+                                                                        </div>
+                                                                    {/eq}
+                                                                </div>
+                                                                <input type="file" name="avatar" id="avatar_img" class="input-file-custom">
+                                                                <label for="avatar_img" class="btn btn-tertiary2 js-labelFile ">
+                                                                    <i class="icon fa fa-check"></i>
+                                                                    <span class="js-fileName mr-2">انتخاب عکس</span>
+                                                                </label>
+                                                            </div>
+                                
+                                                        </div>
+                                                    </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="col-4 pr-0">
+                                            <div class="form-group">
+        
+                                                    <div class="field_of_img_template">
+                                                        <div class="box_of_img_template">
+                                                            <div class="box_of_img_template img-box">
+                                                                <div class="img-show">
+                                                                    {@eq key="{admin_info.avatar}" value=""}
+                            
+                                                                    {:else}
+                                                                        <div class="remove_parent">
+                                                                            <img class="uploading_img_from_brows" src="media/avatars/{admin_info.avatar}">
+                                                                            <div name="0" class="remove_img_icon avatar_del"></div>
+                                                                        </div>
+                                                                    {/eq}
+                                                                </div>
+                                                                <input type="file" name="avatar" id="avatar_img" class="input-file-custom">
+                                                                <label for="avatar_img" class="btn btn-tertiary2 js-labelFile ">
+                                                                    <i class="icon fa fa-check"></i>
+                                                                    <span class="js-fileName mr-2">انتخاب عکس</span>
+                                                                </label>
+                                                            </div>
+                                
+                                                        </div>
+                                                    </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-4 pr-2 pl-2">
+                                            <div class="form-group">
+        
+                                                    <div class="field_of_img_template">
+                                                        <div class="box_of_img_template">
+                                                            <div class="box_of_img_template img-box">
+                                                                <div class="img-show">
+                                                                    {@eq key="{admin_info.avatar}" value=""}
+                            
+                                                                    {:else}
+                                                                        <div class="remove_parent">
+                                                                            <img class="uploading_img_from_brows" src="media/avatars/{admin_info.avatar}">
+                                                                            <div name="0" class="remove_img_icon avatar_del"></div>
+                                                                        </div>
+                                                                    {/eq}
+                                                                </div>
+                                                                <input type="file" name="avatar" id="avatar_img" class="input-file-custom">
+                                                                <label for="avatar_img" class="btn btn-tertiary2 js-labelFile ">
+                                                                    <i class="icon fa fa-check"></i>
+                                                                    <span class="js-fileName mr-2">انتخاب عکس</span>
+                                                                </label>
+                                                            </div>
+                                
+                                                        </div>
+                                                    </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-4 pl-0">
+                                            <div class="form-group ">
+        
+                                                    <div class="field_of_img_template">
+                                                        <div class="box_of_img_template">
+                                                            <div class="box_of_img_template img-box">
+                                                                <div class="img-show">
+                                                                    {@eq key="{admin_info.avatar}" value=""}
+                            
+                                                                    {:else}
+                                                                        <div class="remove_parent">
+                                                                            <img class="uploading_img_from_brows" src="media/avatars/{admin_info.avatar}">
+                                                                            <div name="0" class="remove_img_icon avatar_del"></div>
+                                                                        </div>
+                                                                    {/eq}
+                                                                </div>
+                                                                <input type="file" name="avatar" id="avatar_img" class="input-file-custom">
+                                                                <label for="avatar_img" class="btn btn-tertiary2 js-labelFile ">
+                                                                    <i class="icon fa fa-check"></i>
+                                                                    <span class="js-fileName mr-2">انتخاب عکس</span>
+                                                                </label>
+                                                            </div>
+                                
+                                                        </div>
+                                                    </div>
+
+                                            </div>
+                                        </div>
+
+                                        <p class="alert_pro_descripion mb-1">حجم مجاز برای آپلود تصویر حداکثر {limited_avatars_size} مگابایت و همچنین فرمت های مجاز .png ، .jpg ، .jpeg و .gif می باشد.</p>
+
+                                    </div>
+                                    
+                                </form>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{/body}

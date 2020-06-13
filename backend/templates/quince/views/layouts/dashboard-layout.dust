@@ -59,11 +59,11 @@
 
                 <div class="hover_field">
 
-                    <a href="">
+                    <a href="{backend_url}store/list">
                         <p>- لیست محصولات</p>
                     </a>
     
-                    <a href="">
+                    <a href="{backend_url}store/add">
                         <p>- افزودن محصول</p>
                     </a>
     
@@ -77,11 +77,11 @@
 
             <div class="collaps_field">
 
-                <a href="">
+                <a href="{backend_url}store/list">
                     <p>- لیست محصولات</p>
                 </a>
 
-                <a href="">
+                <a href="{backend_url}store/add">
                     <p>- افزودن محصول</p>
                 </a>
 
@@ -152,7 +152,7 @@
 
     <main class="main_cms_field">
 
-        <!-- <nav class="navbar">
+        <nav class="navbar">
 
             <div class="navbar_profile">
                 <div class="d-inline-block">
@@ -178,7 +178,7 @@
 
             </div>
 
-        </nav> -->
+        </nav>
 
         {+body/}
         
