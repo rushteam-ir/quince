@@ -7,7 +7,7 @@
 {/title}
 
 {<css}
-    <link rel="stylesheet" href="scss/bout-us/about-us.css">
+    <link rel="stylesheet" href="scss/about-us/about-us.css">
 {/css}
 
 {<js}
