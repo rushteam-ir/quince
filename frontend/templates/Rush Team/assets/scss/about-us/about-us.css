@@ -74,7 +74,7 @@
   }
 }
 .property_of_rush_team .row_of_property {
-  margin: 250px 0px 120px 0px;
+  margin: 200px 0px 100px 0px;
   text-align: center;
   height: 500px;
 }
@@ -203,6 +203,11 @@
   display: block !important;
 }
 
+.introduction_our_team_box {
+  background-color: #F4F6FD;
+  padding: 120px 0;
+  cursor: pointer;
+}
 .introduction_our_team_box .introduction_our_team {
   overflow: hidden;
   border-radius: 0px 40px 0px 40px;
@@ -214,6 +219,76 @@
   position: relative;
   right: 0px;
   transition: all 0.5s ease-in-out 0s;
+}
+.introduction_our_team_box .introduction_our_team:hover .image_of_our_team {
+  right: 60%;
+}
+.introduction_our_team_box .introduction_our_team .content_of_our_team_person {
+  width: 80%;
+  height: 100%;
+  background-color: #fff;
+  padding: 20% 30px 0;
+  position: absolute;
+  top: 0;
+  right: -80%;
+  transition: all 0.5s ease-in-out;
+  text-align: right;
+}
+.introduction_our_team_box .introduction_our_team .content_of_our_team_person .name_of_person {
+  font-size: 1.5rem;
+  background-image: linear-gradient(to right, #FF7300, #FFC200);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.introduction_our_team_box .introduction_our_team .content_of_our_team_person .role_of_person_in_our_team {
+  font-size: 1.1rem;
+  background-image: linear-gradient(to right, #3D52EF, #55B9FC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.introduction_our_team_box .introduction_our_team .content_of_our_team_person .description_of_person_in_our_team {
+  text-align: justify;
+  font-size: 0.8rem;
+  color: #4e555b;
+  margin: 30px 0px;
+}
+.introduction_our_team_box .introduction_our_team .content_of_our_team_person .social_media_our_team_box {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.introduction_our_team_box .introduction_our_team .content_of_our_team_person .social_media_our_team_box .list_of_social_media {
+  display: inline-block;
+  margin-right: 10px;
+}
+.introduction_our_team_box .introduction_our_team .content_of_our_team_person .social_media_our_team_box .social_media_link {
+  display: block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 15px;
+  border-radius: 4px;
+  text-align: center;
+  color: #4e555b;
+  transition: all 0.3s ease-in-out;
+}
+.introduction_our_team_box .introduction_our_team .content_of_our_team_person .social_media_our_team_box .social_media_link:hover {
+  color: white;
+}
+.introduction_our_team_box .introduction_our_team .content_of_our_team_person .fa-facebook-f:hover {
+  background-color: #4064AD;
+}
+.introduction_our_team_box .introduction_our_team .content_of_our_team_person .fa-telegram-plane:hover {
+  background-color: #2CA0DB;
+}
+.introduction_our_team_box .introduction_our_team .content_of_our_team_person .fa-linkedin-in:hover {
+  background-color: #0078B1;
+}
+.introduction_our_team_box .introduction_our_team .content_of_our_team_person .fa-twitter:hover {
+  background-color: #35B4F8;
+}
+.introduction_our_team_box .introduction_our_team:hover .content_of_our_team_person {
+  right: 0;
 }
 
 /*# sourceMappingURL=about-us.css.map */
