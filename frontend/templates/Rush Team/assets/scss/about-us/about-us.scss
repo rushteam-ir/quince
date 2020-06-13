@@ -242,19 +242,40 @@ $color_black: #000;
   }
 }
 
-.mouseover_change_color_icon_of_property{
+.mouseover_change_color_icon_of_property {
   background-image: linear-gradient(to right, #3D52EF, #55B9FC);
   border: 2px solid white;
 
-  .icons_of_property_rush_team{
+  .icons_of_property_rush_team {
     background-image: none !important;
     -webkit-text-fill-color: white !important;
   }
 }
 
-.display_of_explain_about_property_rush_team{
+.display_of_explain_about_property_rush_team {
   display: block !important;
 }
 
 
-//EndProperty Of Rush Team
+//End Property Of Rush Team
+
+//Introduction Our Team
+
+.introduction_our_team_box {
+  .introduction_our_team {
+    overflow: hidden;
+    border-radius: 0px 40px 0px 40px;
+    position: relative;
+
+    .image_of_our_team {
+      width: 100%;
+      height: 350px;
+      position: relative;
+      right: 0px;
+      transition: all 0.5s ease-in-out 0s;
+    }
+  }
+}
+
+//End Introduction Our Team
+
