@@ -1,35 +1,11 @@
-//var
+//import file
 
-$color_white: #fff;
-$orange_color_gradient: linear-gradient(to right, #FF7300, #FFC200);
-$blue_color_gradient: linear-gradient(to right, #3D52EF, #55B9FC);
-$color_light_orange: #FFC200;
-$color_light_blue: #59CAFE;
-$color_orange: #FF7300;
-$color_blue: #3633EB;
-$color_ghost_white: #F4F6FD;
-$color_black: #000;
-
-//mixin
-
-@mixin text_of_title($color-value, $font-value, $padding_t_value) {
-  text-align: center;
-  color: $color-value;
-  font-size: $font_value;
-  padding-top: $padding_t_value;
-}
-
-@mixin text_color_gradient($value_of_color) {
-  background-image: $value_of_color;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-
-//codding
+@import "../../scss/mixin/about-us-mixin";
+@import "../../scss/variable/color";
 
 
 //Header Of About Us Page
+
 .header_of_about_us {
   position: relative;
 
@@ -256,14 +232,13 @@ $color_black: #000;
   display: block !important;
 }
 
-
 //End Property Of Rush Team
 
 //Introduction Our Team
 
 .introduction_our_team_box {
   background-color: $color_ghost_white;
-  padding: 120px 0;
+  padding: 100px 0;
 
   .introduction_our_team {
     overflow: hidden;
@@ -369,7 +344,6 @@ $color_black: #000;
     &:hover .content_of_our_team_person {
       right: 0;
     }
-
 
   }
 }
