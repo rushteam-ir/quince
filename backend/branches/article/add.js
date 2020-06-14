@@ -40,13 +40,16 @@ router.post('/', async(req,res)=>{
 
        }
 
+       let article_url = title_inp.replace(' ', '_')
+
        let article_data = {
 
            title : title_inp,
            category_parent : parent_inp,
            category_child : child_inp,
            describe : describe_inp,
-           keys : keys_inp
+           keys : keys_inp,
+           url : `${config.frontend_url}article/${article_url}`
 
        }
 

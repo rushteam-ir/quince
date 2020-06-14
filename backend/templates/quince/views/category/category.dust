@@ -87,12 +87,14 @@
                                         <td class="category_table_customize">
 
                                             <label class="checkbox_of_category">
-                                                <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                                <input type="checkbox" name="delete_checkbox[]"
+                                                       class="table_checkbox option-input checkbox" value="{._id}">
                                             </label>
 
                                         </td>
 
-                                        <td class="category_table_customize" scope="row">{@math key="{rows_begin_number}" method="add" operand="{$idx}"/}</td>
+                                        <td class="category_table_customize"
+                                            scope="row">{@math key="{rows_begin_number}" method="add" operand="{$idx}"/}</td>
 
                                         <td class="category_table_customize">{.title}</td>
 
@@ -197,13 +199,15 @@
 
                                         <div class="form-group mt-4">
                                             <label class="main_lable_design" for="category_name">نام دسته</label>
-                                            <input type="text" class="form-control main_form_design category_edit_title" id="category_name_modal"
+                                            <input type="text" class="form-control main_form_design category_edit_title"
+                                                   id="category_name_modal"
                                                    name="title_inp">
                                         </div>
 
                                         <div class="form-group">
                                             <label class="main_lable_design" for="parent_category">والد دسته</label>
-                                            <select class="form-control main_form_design category_edit_parent" id="parent_category_modal" name="parent_inp">
+                                            <select class="form-control main_form_design category_edit_parent"
+                                                    id="parent_category_modal" name="parent_inp">
                                                 <option value="-1" class="d-none"></option>
                                                 <option value="0">دسته اصلی</option>
                                                 {#parent_list}

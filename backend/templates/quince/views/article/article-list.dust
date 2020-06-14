@@ -87,68 +87,76 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <th scope="row">
+                                    {#article_list}
+                                    <tr>
+                                        <th scope="row">
 
-                                        <label class="checkbox_of_category">
-                                            <input type="checkbox" name="delete_checkbox[]"
-                                                   class="table_checkbox option-input checkbox" value="{._id}">
-                                        </label>
-                                    </th>
-                                    <td>1</td>
-                                    <td class="articel_name_td">
-                                        <p class="name_ofarticle">
-                                            طالبی بیشرف نمیخوایم نمیخوایم
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <div class="table_pill_article">
-                                            فعال
-                                        </div>
-                                    </td>
-                                    <td>MegaNoob</td>
-                                    <td>1/1/1398</td>
-                                    <td>
-                                        <div class="table_pill_see_article">
-                                            10546
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="table_pill_comment_article">
-                                            53512
-                                        </div>
-                                    </td>
-                                    <td>
-
-                                        <div class="dropdown">
-                                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i class="fas fa-ellipsis-v"></i>
-                                            </button>
-                                            <div class="dropdown-menu text-right dir-rtl"
-                                                 aria-labelledby="dropdownMenuButton">
-
-                                                <a class="dropdown-item" href="#">
-                                                    <i class="far fa-align-slash"></i>
-                                                    غیر فعال کردن مقاله</a>
-
-                                                <a class="dropdown-item" href="#">
-                                                    <i class="fal fa-comment-alt-slash"></i>
-                                                    غیر فعال کردن نظرات</a>
-
-                                                <a class="dropdown-item" href="#">
-                                                    <i class="fal fa-edit"></i>
-                                                    ویرایش</a>
-
-                                                <a class="dropdown-item" href="#">
-                                                    <i class="fal fa-trash-alt"></i>
-                                                    حذف</a>
-
+                                            <label class="checkbox_of_category">
+                                                <input type="checkbox" name="delete_checkbox[]"
+                                                       class="table_checkbox option-input checkbox" value="{._id}">
+                                            </label>
+                                        </th>
+                                        <td>{@math key="{rows_begin_number}" method="add" operand="{$idx}"/}</td>
+                                        <td class="articel_name_td">
+                                            <p class="name_ofarticle">
+                                                <a href="{url}">{title}</a>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <div class="table_pill_article">
+                                                {@eq key="{status}" value="true"}
+                                                    فعال
+                                                {:else}
+                                                    غیر فعال
+                                                {/eq}
                                             </div>
-                                        </div>
+                                        </td>
+                                        <td>{author.nick_name}</td>
+                                        <td>{last_edit}</td>
+                                        <td>
+                                            <div class="table_pill_see_article">
+                                                {views_number}
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table_pill_comment_article">
+                                                {comments_number}
+                                            </div>
+                                        </td>
+                                        <td>
 
-                                    </td>
-                                </tr>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button"
+                                                        id="dropdownMenuButton"
+                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </button>
+                                                <div class="dropdown-menu text-right dir-rtl"
+                                                     aria-labelledby="dropdownMenuButton">
+
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="far fa-align-slash"></i>
+                                                        غیر فعال کردن مقاله</a>
+
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="fal fa-comment-alt-slash"></i>
+                                                        غیر فعال کردن نظرات</a>
+
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="fal fa-edit"></i>
+                                                        ویرایش</a>
+
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="fal fa-trash-alt"></i>
+                                                        حذف</a>
+
+                                                </div>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                    {/article_list}
 
                                 </tbody>
                             </table>

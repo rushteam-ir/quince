@@ -28,7 +28,7 @@ router.get('/', async(req,res)=>{
 
         if(article_list.list.length == 0 && article_list.total_pages != 0){
 
-            return res.redirect(`${config.backend_url}article/list/?page=${category_list.total_pages}`)
+            return res.redirect(`${config.backend_url}article/list/?page=${article_list.total_pages}`)
 
         }
 

@@ -18,7 +18,8 @@ let article_schema = new mongoose.Schema({
     },
     last_edit : String,
     views_number : Number,
-    comments_number : Number
+    comments_number : Number,
+    url : String,
 
 })
 
