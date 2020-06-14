@@ -169,9 +169,9 @@
 
                             <nav aria-label="Page navigation dir-ltr text-center">
                                 {@eq key="{search}" value="true"}
-                                    {@page number="{total_pages}" current="{page_number}" url="{backend_url}article/list/search/{search_value}"/}
+                                    {@page number="{total_pages}" current="{page_number}" url="{backend_url}article/search/{search_value}"/}
                                 {:else}
-                                    {@page number="{total_pages}" current="{page_number}" url="{backend_url}article"/}
+                                    {@page number="{total_pages}" current="{page_number}" url="{backend_url}article/list"/}
                                 {/eq}
                             </nav>
 

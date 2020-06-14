@@ -97,6 +97,36 @@ article_schema.statics = {
 
     },
 
+    search : async function (search_value, page_number, page_limit) {
+
+        let find_list = await article_model.find().populate('category_parent').populate('category_child').populate('author').exec();
+        let article_skip = page_number * page_limit - page_limit;
+        let search_list = [];
+        let result = {};
+
+        for(let i = 0; i < find_list.length; i++){
+
+            let title = find_list[i].title.toLowerCase();
+            let author_first_name = find_list[i].author.first_name.toLowerCase();
+            let author_last_name = find_list[i].author.last_name.toLowerCase();
+            let author_nick_name = find_list[i].author.nick_name.toLowerCase();
+
+            if(title.includes(search_value.toLowerCase()) || author_first_name.includes(search_value.toLowerCase()) || author_last_name.includes(search_value.toLowerCase()) || author_nick_name.includes(search_value.toLowerCase())){
+
+                search_list.push(find_list[i]);
+
+            }
+
+        }
+
+        result.rows_begin_number = article_skip + 1;
+        result.list = search_list.slice(article_skip, page_limit + article_skip);
+        result.total_pages = Math.ceil(search_list.length / page_limit);
+
+        return result;
+
+    },
+
 }
 
 module.exports = article_model = mongoose.model('article', article_schema);
