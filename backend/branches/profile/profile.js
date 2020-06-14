@@ -98,11 +98,11 @@ router.post('/', async(req,res)=>{
 
                     allowed_formats : 'image',
                     limited_size : backend_limited_images_size,
-                    file_path : `${backend_upload_dir}avatars/`,
+                    file_path : `${backend_upload_dir}images/`,
 
                 }
 
-                let file_name = `${admin_id.toString()}.png`;
+                let file_name = `${randomSha1String()}.${req.files.avatar.name.split(".").pop()}`;
                 let upload_result = new uploader(req.files.avatar, file_name, uploader_options).upload();
 
                 if(upload_result){

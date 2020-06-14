@@ -44,7 +44,7 @@
                     
                                                             {:else}
                                                                 <div class="remove_parent">
-                                                                    <img class="uploading_img_from_brows" src="media/avatars/{admin_info.avatar}">
+                                                                    <img class="uploading_img_from_brows" src="media/images/{admin_info.avatar}">
                                                                     <div name="0" class="remove_img_icon avatar_del"></div>
                                                                 </div>
                                                             {/eq}
@@ -264,7 +264,7 @@
 
                                 {:else}
                                 <div class="field_of_pro_img_mobile d-block d-sm-inline-block">
-                                    <img class="d-inline-block pro_logo" src="media/avatars/{admin_info.avatar}">
+                                    <img class="d-inline-block pro_logo" src="media/images/{admin_info.avatar}">
                                 </div>
                                    
                                 {/eq}

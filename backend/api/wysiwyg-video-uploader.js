@@ -8,7 +8,7 @@ router.post('/', function (req, res) {
 
             allowed_formats : 'video',
             limited_size : backend_limited_videos_size,
-            file_path : `${backend_upload_dir}articles/videos`,
+            file_path : `${backend_upload_dir}videos/`,
 
         }
 
@@ -21,7 +21,7 @@ router.post('/', function (req, res) {
 
         }
 
-        let data= {"link":`${config.backend_url}media/articles/videos/${file_name}`}
+        let data= {"link":`${config.backend_url}media/videos/${file_name}`}
         res.send(data)
 
     }
