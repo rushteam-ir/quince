@@ -33,31 +33,37 @@
                         <div class="row dir-ltr">
                             <div class="col-8 offset-2">
 
-                                <form class="text-right dir-rtl">
+                                <form method="post" action=""autocomplete="off" class="text-right dir-rtl">
 
                                     <div class="form-group">
                                       <label for="article_name">نام مقاله</label>
-                                      <input type="email" class="form-control main_form_design" id="article_name">
+                                      <input type="text" class="form-control main_form_design" id="article_name" name="title_inp">
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="article_parent">دسته اصلی</label>
-                                        <input type="email" class="form-control main_form_design" id="article_parent">
+                                        <label for="article_parent">دسته</label>
+                                        <select class="form-control main_form_design select-category" id="article_parent" name="parent_inp">
+                                            <option value="0">دسته اصلی</option>
+                                            {#parent_list}
+                                                <option value="{_id}">{title}</option>
+                                            {/parent_list}
+                                        </select>
                                     </div>
 
                                     <div class="form-group">
                                         <label for="article_child">زیر دسته</label>
-                                        <input type="email" class="form-control main_form_design" id="article_child">
+                                        <select class="form-control main_form_design select-sub-category" id="article_child" name="child_inp">
+                                        </select>
                                     </div>
   
                                     <div class="form-group">
                                         <label for="article_textarea">توضیحات مقاله</label>
-                                        <textarea class="form-control main_form_design" id="article_textarea" rows="7"></textarea>
+                                        <textarea class="form-control main_form_design" id="article_textarea" rows="7" name="describe_inp"></textarea>
                                     </div>
 
                                     <div class="form-group">
                                         <label for="article_keyword">کلمات کلیدی مقاله</label>
-                                        <input type="email" class="form-control main_form_design" id="article_keyword">
+                                        <input type="text" class="form-control main_form_design" id="article_keyword" name="keys_inp">
                                     </div>
 
                                     <div class="form-group">

@@ -3,8 +3,8 @@
 {<css}
     <link rel="stylesheet" href="css/article/article-list.css">
 {/css}
-{<js} 
-    <script src="js/article/article-list.js"></script> 
+{<js}
+    <script src="js/article/article-list.js"></script>
 {/js}
 
 
@@ -25,51 +25,56 @@
 
                                 <div class="input-group search_inp_category mb-3 dir-ltr">
 
-                                  {@eq key="{search}" value="true"}
-                                      <i class="fal fa-times remove_search_icon"></i>
-                                  {/eq}
+                                    {@eq key="{search}" value="true"}
+                                        <i class="fal fa-times remove_search_icon"></i>
+                                    {/eq}
 
-                                  <input type="text" class="form-control main_form_design text-right category_search dir-rtl" placeholder="جستجو"
-                                         aria-label="Recipient's username" aria-describedby="button-addon2" name="search_inp" value="{search_value}">
+                                    <input type="text"
+                                           class="form-control main_form_design text-right category_search dir-rtl"
+                                           placeholder="جستجو"
+                                           aria-label="Recipient's username" aria-describedby="button-addon2"
+                                           name="search_inp" value="{search_value}">
 
-                                  <div class="input-group-append">
-                                      <button class="btn btn-outline-secondary btn_of_search" type="button" id="button-addon2">
-                                          <i class="fal fa-search"></i>
-                                      </button>
-                                  </div>
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary btn_of_search" type="button"
+                                                id="button-addon2">
+                                            <i class="fal fa-search"></i>
+                                        </button>
+                                    </div>
 
-                              </div>
-                              
+                                </div>
+
 
                                 <div class="form-group select_of_category">
 
-                                  <p class="d-inline-block">تعداد ردیف ها :</p>
+                                    <p class="d-inline-block">تعداد ردیف ها :</p>
 
-                                  <select class="form-control main_form_design count_row_table_of_category mr-2">
-                                    {#page_limit_slot}
-                                        {@eq key="{.}" value="{page_limit}"}
-                                            <option selected>{.}</option>
-                                        {:else}
-                                            <option>{.}</option>
-                                        {/eq}
-                                    {/page_limit_slot}
-                                  </select>
+                                    <select class="form-control main_form_design count_row_table_of_category mr-2">
+                                        {#page_limit_slot}
+                                            {@eq key="{.}" value="{page_limit}"}
+                                                <option selected>{.}</option>
+                                            {:else}
+                                                <option>{.}</option>
+                                            {/eq}
+                                        {/page_limit_slot}
+                                    </select>
 
-                              </div>
+                                </div>
 
-                              <button class="multi_remove btn">
-                                <i class="fal fa-trash-alt"></i>
-                              </button>
+                                <button class="multi_remove btn">
+                                    <i class="fal fa-trash-alt"></i>
+                                </button>
 
                             </header>
 
                             <table class="table text-center table_of_article_list">
                                 <thead>
-                                  <tr>
+                                <tr>
                                     <th scope="col">
-                                    <label class="checkbox_of_category">
-                                        <input type="checkbox" class="option-input checkbox" id="selectall" name="select_all">
-                                    </label>
+                                        <label class="checkbox_of_category">
+                                            <input type="checkbox" class="option-input checkbox" id="selectall"
+                                                   name="select_all">
+                                        </label>
                                     </th>
                                     <th scope="col">ردیف</th>
                                     <th scope="col">نام مقاله</th>
@@ -79,71 +84,82 @@
                                     <th scope="col">تعداد بازدید ها</th>
                                     <th scope="col">تعداد نطرات</th>
                                     <th scope="col">تنظیمات</th>
-                                  </tr>
+                                </tr>
                                 </thead>
                                 <tbody>
-                                  <tr>
+                                <tr>
                                     <th scope="row">
 
-                                    <label class="checkbox_of_category">
-                                        <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
-                                    </label>
+                                        <label class="checkbox_of_category">
+                                            <input type="checkbox" name="delete_checkbox[]"
+                                                   class="table_checkbox option-input checkbox" value="{._id}">
+                                        </label>
                                     </th>
                                     <td>1</td>
                                     <td class="articel_name_td">
-                                      <p class="name_ofarticle">
-                                        طالبی بیشرف نمیخوایم نمیخوایم
-                                      </p>
+                                        <p class="name_ofarticle">
+                                            طالبی بیشرف نمیخوایم نمیخوایم
+                                        </p>
                                     </td>
                                     <td>
-                                      <div class="table_pill_article">
-                                        فعال
-                                      </div>
+                                        <div class="table_pill_article">
+                                            فعال
+                                        </div>
                                     </td>
                                     <td>MegaNoob</td>
                                     <td>1/1/1398</td>
                                     <td>
-                                      <div class="table_pill_see_article">
-                                        10546
-                                      </div>
-                                    </td>
-                                    <td>
-                                      <div class="table_pill_comment_article">
-                                        53512
-                                      </div>
-                                    </td>
-                                    <td>
-
-                                      <div class="dropdown">
-                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                          <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                        <div class="dropdown-menu text-right dir-rtl" aria-labelledby="dropdownMenuButton">
-
-                                          <a class="dropdown-item" href="#">
-                                            <i class="far fa-align-slash"></i>
-                                            غیر فعال کردن مقاله</a>
-
-                                          <a class="dropdown-item" href="#">
-                                            <i class="fal fa-comment-alt-slash"></i>
-                                            غیر فعال کردن نظرات</a>
-
-                                          <a class="dropdown-item" href="#">
-                                            <i class="fal fa-edit"></i>
-                                            ویرایش</a>
-
-                                          <a class="dropdown-item" href="#">
-                                            <i class="fal fa-trash-alt"></i>
-                                            حذف</a>
-
+                                        <div class="table_pill_see_article">
+                                            10546
                                         </div>
-                                      </div>
+                                    </td>
+                                    <td>
+                                        <div class="table_pill_comment_article">
+                                            53512
+                                        </div>
+                                    </td>
+                                    <td>
+
+                                        <div class="dropdown">
+                                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                            <div class="dropdown-menu text-right dir-rtl"
+                                                 aria-labelledby="dropdownMenuButton">
+
+                                                <a class="dropdown-item" href="#">
+                                                    <i class="far fa-align-slash"></i>
+                                                    غیر فعال کردن مقاله</a>
+
+                                                <a class="dropdown-item" href="#">
+                                                    <i class="fal fa-comment-alt-slash"></i>
+                                                    غیر فعال کردن نظرات</a>
+
+                                                <a class="dropdown-item" href="#">
+                                                    <i class="fal fa-edit"></i>
+                                                    ویرایش</a>
+
+                                                <a class="dropdown-item" href="#">
+                                                    <i class="fal fa-trash-alt"></i>
+                                                    حذف</a>
+
+                                            </div>
+                                        </div>
 
                                     </td>
-                                  </tr>
-                                  
+                                </tr>
+
                                 </tbody>
-                              </table>
+                            </table>
+
+                            <nav aria-label="Page navigation dir-ltr text-center">
+                                {@eq key="{search}" value="true"}
+                                    {@page number="{total_pages}" current="{page_number}" url="{backend_url}article/list/search/{search_value}"/}
+                                {:else}
+                                    {@page number="{total_pages}" current="{page_number}" url="{backend_url}article"/}
+                                {/eq}
+                            </nav>
 
                         </div>
                     </div>

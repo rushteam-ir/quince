@@ -72,6 +72,7 @@ function redirect(url) {
     location.href = url
 }
 
+// Froala Editor Options
 new FroalaEditor('textarea', {
 
     imageUploadURL: `${backend_url}api/wysiwyg-image-uploader`,
@@ -113,3 +114,31 @@ new FroalaEditor('textarea', {
     }
 
 })
+
+// Get Sub Categories
+$(document).ready(function () {
+
+    $('.select-category').change(function () {
+
+        let parent_id = $(this).val();
+        if(parent_id != ""){
+            let p = {"id":parent_id};
+            $.get(`${backend_url}category/api/get-sub-category`, p, function (data) {
+
+                $('#select-sub-category').find('option:gt(0)').remove();
+                for(let i = 0; i < data.length; i++){
+
+                    let opt = '<option value="' + data[i]._id + '">' + data[i].title + '</option>';
+                    $('.select-sub-category').append(opt);
+                }
+
+            })
+
+        }
+        else{
+
+            $('.select-sub-category').find('option:gt(0)').remove();
+
+        }
+    })
+});
