@@ -20,7 +20,7 @@ module.exports = class {
             case 'file':
             {
 
-                this.allowed_formats = ['rar', 'zip', 'pdf', 'txt'];
+                this.allowed_formats = ['rar', 'zip', 'pdf', 'txt', 'mp3'];
                 break;
 
             }

@@ -3,7 +3,7 @@ const router = express.Router();
 router.post('/', function (req, res) {
 
     try{
-        log(req.files)
+
         let uploader_options = {
 
             allowed_formats : 'video',
