@@ -114,3 +114,26 @@
 
     @include table_pill($d_yellow, $l_yellow, 90px, 30px, 30px, 4px)
 }
+
+.category_pagination {
+    margin: 0 auto;
+    width: 40%;
+}
+
+.page-link {
+    border: none;
+    border-radius: 3px !important;
+}
+
+.page-link:hover {
+    z-index: 2;
+    color: #0056b3;
+    text-decoration: none;
+    background-color: #e9ecef;
+    border-color: none;
+    border-radius: 3px;
+}
+
+.current_page_color{
+    background-color: #E9ECEF;
+}
