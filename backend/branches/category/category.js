@@ -26,7 +26,7 @@ router.get('/', async(req,res)=>{
 
         let category_list = await category_model.getAll(page_number, page_limit)
 
-        if(category_list.list.length == 0){
+        if(category_list.list.length == 0 && category_list.total_pages != 0){
 
             return res.redirect(`${config.backend_url}category/?page=${category_list.total_pages}`)
 
