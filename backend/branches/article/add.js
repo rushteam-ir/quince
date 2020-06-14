@@ -40,7 +40,7 @@ router.post('/', async(req,res)=>{
 
        }
 
-       let article_url = title_inp.replace(' ', '_')
+       let article_url = title_inp.split(' ').join('_')
 
        let article_data = {
 
