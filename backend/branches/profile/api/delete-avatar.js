@@ -12,7 +12,7 @@ router.get('/', async(req,res)=>{
         };
         let avatar_path = `${backend_upload_dir}avatars/${req.session.admin_info.avatar}`;
 
-        let result =await user_model.editProfile(admin_id, admin_data)
+        let result = await user_model.editProfile(admin_id, admin_data)
 
         if(result){
 

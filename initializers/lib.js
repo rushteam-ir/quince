@@ -61,6 +61,12 @@ JsonCount = function (obj) {
     return count;
 }
 
+randomSha1String = function () {
+
+    return `${sha1(new Date().getTime())}`
+
+}
+
 
 
 

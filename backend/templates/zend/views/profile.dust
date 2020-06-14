@@ -90,7 +90,7 @@
     
                             </div>
 
-                            <small id="avatar" class="form-text text-muted mt-3">حجم مجاز برای اپلود تصویر پروفایل {limited_avatars_size} مگابایت است.</small>
+                            <small id="avatar" class="form-text text-muted mt-3">حجم مجاز برای اپلود تصویر پروفایل {limited_images_size} مگابایت است.</small>
                         </div>
 
                     </div>

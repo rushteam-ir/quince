@@ -59,7 +59,7 @@
                                                 </div>
                                             </div>
 
-                                            <p class="alert_pro_descripion mb-1">حجم مجاز برای آپلود تصویر حداکثر {limited_avatars_size} مگابایت و همچنین فرمت های مجاز .png ، .jpg ، .jpeg و .gif می باشد.</p>
+                                            <p class="alert_pro_descripion mb-1">حجم مجاز برای آپلود تصویر حداکثر {limited_images_size} مگابایت و همچنین فرمت های مجاز .png ، .jpg ، .jpeg و .gif می باشد.</p>
                                         </div>
 
                                         

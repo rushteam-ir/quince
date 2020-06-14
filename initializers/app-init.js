@@ -13,7 +13,7 @@ mongo_store = require('connect-mongo')(session);
 mongoose = require('mongoose');
 nodemailer = require('nodemailer');
 JalaliDate = require('jalali-date');
-FroalaEditor = require('wysiwyg-editor-node-sdk');
+sha1 = require('sha1');
 
 user_model = require('../models/user-schema');
 category_model = require('../models/category-schema');

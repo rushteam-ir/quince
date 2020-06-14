@@ -72,7 +72,11 @@ function redirect(url) {
     location.href = url
 }
 
-new FroalaEditor('textarea', {
-    // Set the image upload URL.
-    imageUploadURL: '/api/wysiwyg-uploader'
+let editor = new FroalaEditor('textarea', {
+
+    imageUploadURL: `${backend_url}api/wysiwyg-image-uploader`,
+    fileUploadURL: `${backend_url}api/wysiwyg-file-uploader`,
+    videoUploadURL: `${backend_url}api/wysiwyg-video-uploader`,
+    imageManagerDeleteURL: `${backend_url}api/wysiwyg-delete`,
+
 })
