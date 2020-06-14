@@ -141,13 +141,21 @@
                                                 <div class="dropdown-menu text-right dir-rtl"
                                                      aria-labelledby="dropdownMenuButton">
 
-                                                    <a class="dropdown-item" href="#">
-                                                        <i class="far fa-align-slash"></i>
-                                                        غیر فعال کردن مقاله</a>
+                                                    <button class="dropdown-item change_status_btn" value="{status}" name="{._id}"><i class="far fa-align-slash"></i>
+                                                        {@eq key="{status}" value="true"}
+                                                            غیر فعال کردن مقاله
+                                                        {:else}
+                                                            فعال کردن مقاله
+                                                        {/eq}
+                                                    </button>
 
-                                                    <a class="dropdown-item" href="#">
-                                                        <i class="fal fa-comment-alt-slash"></i>
-                                                        غیر فعال کردن نظرات</a>
+                                                    <button class="dropdown-item change_comments_status_btn" value="{status}" name="{._id}"><i class="fal fa-comment-alt-slash"></i>
+                                                        {@eq key="{comments_status}" value="true"}
+                                                            غیر فعال کردن نظرات
+                                                        {:else}
+                                                            فعال کردن نظرات
+                                                        {/eq}
+                                                    </button>
 
                                                     <a class="dropdown-item" href="#">
                                                         <i class="fal fa-edit"></i>

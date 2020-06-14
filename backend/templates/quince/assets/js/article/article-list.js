@@ -35,7 +35,7 @@ $(document).ready(function () {
 // Delete article
 $('.remove_table_btn').on('click', function (e) {
 
-    let cat_id = $(e.currentTarget).attr('name');
+    let article_id = $(e.currentTarget).attr('name');
 
     Swal.fire({
         title: 'حذف دسته',
@@ -55,7 +55,7 @@ $('.remove_table_btn').on('click', function (e) {
                 confirmButtonText: 'تایید',
             }).then((result) => {
                 if (result.value) {
-                    redirect(`${backend_url}article/api/delete-article/?id=${cat_id}`);
+                    redirect(`${backend_url}article/api/delete-article/?id=${article_id}`);
                 }
             })
         }
@@ -99,6 +99,90 @@ $('.btn_delete_all_article').on('click', function (e) {
         })
     }
 
+})
+
+// Change article status
+$('.change_status_btn').on('click', function (e) {
+
+    let article_id = $(e.currentTarget).attr('name');
+    let article_status = $(e.currentTarget).attr('value');
+
+    if(article_status == 'true'){
+
+        article_status = 'غیر فعال';
+
+    }
+    else{
+
+        article_status = 'فعال';
+
+    }
+
+    Swal.fire({
+        title: `${article_status} کردن مقاله`,
+        text: `آیا از ${article_status} کردن این مقاله مطمئن هستید؟`,
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'بله',
+        cancelButtonText: 'خیر',
+    }).then((result) => {
+        if (result.value) {
+            Swal.fire({
+                title: `${article_status} شد`,
+                text: `مقاله مور نظر با موفقیت ${article_status} شد برای تایید نهایی کلیک کنید`,
+                icon: 'success',
+                confirmButtonText: 'تایید',
+            }).then((result) => {
+                if (result.value) {
+                    redirect(`${backend_url}article/api/change-status-article/?id=${article_id}`);
+                }
+            })
+        }
+    })
+})
+
+// Change article comments status
+$('.change_comments_status_btn').on('click', function (e) {
+
+    let article_id = $(e.currentTarget).attr('name');
+    let article_status = $(e.currentTarget).attr('value');
+
+    if(article_status == 'true'){
+
+        article_status = 'غیر فعال';
+
+    }
+    else{
+
+        article_status = 'فعال';
+
+    }
+
+    Swal.fire({
+        title: `${article_status} کردن نظرات`,
+        text: `آیا از ${article_status} کردن نظرات این مقاله مطمئن هستید؟`,
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'بله',
+        cancelButtonText: 'خیر',
+    }).then((result) => {
+        if (result.value) {
+            Swal.fire({
+                title: `${article_status} شد`,
+                text: `نظرات مقاله مور نظر با موفقیت ${article_status} شد برای تایید نهایی کلیک کنید`,
+                icon: 'success',
+                confirmButtonText: 'تایید',
+            }).then((result) => {
+                if (result.value) {
+                    redirect(`${backend_url}article/api/change-comments-status-article/?id=${article_id}`);
+                }
+            })
+        }
+    })
 })
 
 function redirect(url) {

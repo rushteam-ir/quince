@@ -14,6 +14,7 @@ let article_schema = new mongoose.Schema({
     main_image : String,
     internal_files : Array,
     status : Boolean,
+    comments_status : Boolean,
     author : {
         type : 'ObjectId',
         ref : 'user'
@@ -38,6 +39,7 @@ article_schema.statics = {
             article_data.comments_number = 0;
             article_data.last_edit = getCurrentDate();
             article_data.status = true;
+            article_data.comments_status = true;
 
             let new_article = new article_model(article_data);
             return await new_article.save();
@@ -124,6 +126,46 @@ article_schema.statics = {
         result.total_pages = Math.ceil(search_list.length / page_limit);
 
         return result;
+
+    },
+
+    changeStatus : async function (article_id) {
+
+        let find_article = await article_model.findById(article_id);
+        let new_status = true;
+
+        if(find_article.status){
+
+            new_status = false;
+
+        }
+        else{
+
+            new_status = true;
+
+        }
+
+        return await article_model.findByIdAndUpdate(article_id, {status : new_status})
+
+    },
+
+    changeCommentsStatus : async function (article_id) {
+
+        let find_article = await article_model.findById(article_id);
+        let new_status = true;
+
+        if(find_article.comments_status){
+
+            new_status = false;
+
+        }
+        else{
+
+            new_status = true;
+
+        }
+
+        return await article_model.findByIdAndUpdate(article_id, {comments_status : new_status})
 
     },
 
