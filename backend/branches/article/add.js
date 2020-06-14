@@ -10,6 +10,8 @@ router.get('/', async(req,res)=>{
 
         }
 
+        req.session.article_internal_files = []
+
         res.render('article/article-add', data);
 
     }
@@ -41,7 +43,7 @@ router.post('/', async(req,res)=>{
        }
 
        let article_url = title_inp.split(' ').join('_')
-
+        log(req.session.article_internal_files)
        let article_data = {
 
            title : title_inp,
@@ -49,11 +51,36 @@ router.post('/', async(req,res)=>{
            category_child : child_inp,
            describe : describe_inp,
            keys : keys_inp,
-           url : `${config.frontend_url}article/${article_url}`
+           url : `${config.frontend_url}article/${article_url}`,
+           internal_files : req.session.article_internal_files
 
        }
 
-        let result = await article_model.add(article_data, req.session.admin_id);
+       if (req.files) {
+
+           let main_image = req.files.main_image;
+           let uploader_options = {
+
+               allowed_formats : 'image',
+               limited_size : backend_limited_images_size,
+               file_path : `${backend_upload_dir}images/`,
+
+           }
+
+           let file_name = `${randomSha1String()}.${main_image.name.split(".").pop()}`;
+           let upload_result = new uploader(main_image, file_name, uploader_options).upload();
+
+           if(upload_result){
+
+               return res.redirect(`${config.backend_url}article/add/?msg=${upload_result}`);
+
+           }
+
+           article_data.main_image = file_name;
+
+       }
+
+       let result = await article_model.add(article_data, req.session.admin_id);
 
        if(result){
 

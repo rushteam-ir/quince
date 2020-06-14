@@ -11,6 +11,8 @@ let article_schema = new mongoose.Schema({
     },
     describe : String,
     keys : String,
+    main_image : String,
+    internal_files : Array,
     status : Boolean,
     author : {
         type : 'ObjectId',
@@ -59,6 +61,39 @@ article_schema.statics = {
         result.total_pages = Math.ceil(await article_model.find().countDocuments() / page_limit);
 
         return result;
+
+    },
+
+    del : async function (article_id) {
+
+        let find_article = await article_model.findById(article_id)
+        let internal_files_path = find_article.internal_files;
+
+        for(let i = 0; i < internal_files_path.length; i++){
+
+            let file_path = `${backend_upload_dir}${internal_files_path[i]}`
+
+            try{
+
+                fs.unlinkSync(file_path);
+
+            }
+            catch (e) {
+                //error
+            }
+
+        }
+
+        try{
+
+            fs.unlinkSync(`${backend_upload_dir}images/${find_article.main_image}`);
+
+        }
+        catch (e) {
+            //error
+        }
+
+        return await article_model.findByIdAndDelete(article_id);
 
     },
 

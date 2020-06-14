@@ -97,7 +97,6 @@ $('.btn_delete_all_category').on('click', function (e) {
         })
     }
 
-
 })
 
 $('.btn_of_search').on('click', function (e) {

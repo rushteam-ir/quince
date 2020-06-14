@@ -22,6 +22,7 @@ router.post('/', function (req, res) {
         }
 
         let data= {"link":`${config.backend_url}media/images/${file_name}`}
+        req.session.article_internal_files.push(`images/${file_name}`)
         res.send(data)
 
     }

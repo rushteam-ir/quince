@@ -61,7 +61,7 @@
 
                                 </div>
 
-                                <button class="multi_remove btn">
+                                <button class="multi_remove btn btn_delete_all_article">
                                     <i class="fal fa-trash-alt"></i>
                                 </button>
 
@@ -111,7 +111,13 @@
                                                 {/eq}
                                             </div>
                                         </td>
-                                        <td>{author.nick_name}</td>
+                                        <td>
+                                            {@eq key="{author.author_type}" value="name"}
+                                                {author.first_name} {author.last_name}
+                                            {:else}
+                                                {author.nick_name}
+                                            {/eq}
+                                        </td>
                                         <td>{last_edit}</td>
                                         <td>
                                             <div class="table_pill_see_article">
@@ -147,9 +153,9 @@
                                                         <i class="fal fa-edit"></i>
                                                         ویرایش</a>
 
-                                                    <a class="dropdown-item" href="#">
+                                                    <button class="dropdown-item remove_table_btn" name="{._id}">
                                                         <i class="fal fa-trash-alt"></i>
-                                                        حذف</a>
+                                                        حذف</button>
 
                                                 </div>
                                             </div>

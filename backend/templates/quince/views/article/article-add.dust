@@ -33,7 +33,7 @@
                         <div class="row dir-ltr">
                             <div class="col-8 offset-2">
 
-                                <form method="post" action=""autocomplete="off" class="text-right dir-rtl">
+                                <form method="post" action=""autocomplete="off" enctype="multipart/form-data" class="text-right dir-rtl">
 
                                     <div class="form-group">
                                       <label for="article_name">نام مقاله</label>
@@ -67,22 +67,14 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="avatar" class=" col-form-label main_lable_design">تصویر مقاله</label>
+                                        <label for="avatar" class=" col-form-label main_lable_design">تصویر اصلی مقاله</label>
 
                                             <div class="field_of_img_template">
                                                 <div class="box_of_img_template">
                                                     <div class="box_of_img_template img-box">
                                                         <div class="img-show">
-                                                            {@eq key="{admin_info.avatar}" value=""}
-                    
-                                                            {:else}
-                                                                <div class="remove_parent">
-                                                                    <img class="uploading_img_from_brows" src="media/avatars/{admin_info.avatar}">
-                                                                    <div name="0" class="remove_img_icon avatar_del"></div>
-                                                                </div>
-                                                            {/eq}
                                                         </div>
-                                                        <input type="file" name="avatar" id="avatar_img" class="input-file-custom">
+                                                        <input type="file" name="main_image" id="avatar_img" class="input-file-custom">
                                                         <label for="avatar_img" class="btn btn-tertiary2 js-labelFile ">
                                                             <i class="icon fa fa-check"></i>
                                                             <span class="js-fileName mr-2">انتخاب عکس</span>

@@ -1,6 +1,6 @@
 const router = express.Router();
 
-router.post('/', function (req, res) {
+router.post('/', async function (req, res) {
 
     try{
 
@@ -11,7 +11,15 @@ router.post('/', function (req, res) {
 
 
         try{
+
             fs.unlinkSync(file_path);
+
+            const index = req.session.article_internal_files.indexOf(`${type_inp}/${file_name}`);
+
+            if (index > -1) {
+                req.session.article_internal_files.splice(index, 1);
+            }
+
         }
         catch (e) {
             //error
