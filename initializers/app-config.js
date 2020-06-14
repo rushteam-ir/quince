@@ -19,5 +19,4 @@ module.exports = config = {
     session_name : 'quince',
     debug_mode : true,
     captcha_color : `#0096ff`
-
 };
