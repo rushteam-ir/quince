@@ -100,9 +100,14 @@
     background-color: $form_color;
 }
 
-.table_pill_article {
+.table_pill_article_true {
 
     @include table_pill($d_green, $l_green, 90px, 30px, 30px, 4px)
+}
+
+.table_pill_article_false {
+
+    @include table_pill($d_red, $l_red, 90px, 30px, 30px, 4px)
 }
 
 .table_pill_see_article {

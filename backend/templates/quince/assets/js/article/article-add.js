@@ -73,6 +73,7 @@ function redirect(url) {
 }
 
 // Froala Editor Options
+/*
 new FroalaEditor('textarea', {
 
     imageUploadURL: `${backend_url}api/wysiwyg-image-uploader`,
@@ -114,6 +115,12 @@ new FroalaEditor('textarea', {
     }
 
 })
+*/
+
+tinymce.init({
+    selector: 'textarea'
+});
+
 
 // Get Sub Categories
 $(document).ready(function () {

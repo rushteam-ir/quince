@@ -103,13 +103,15 @@
                                             </p>
                                         </td>
                                         <td>
-                                            <div class="table_pill_article">
-                                                {@eq key="{status}" value="true"}
+                                            {@eq key="{status}" value="true"}
+                                                <div class="table_pill_article_true">
                                                     فعال
-                                                {:else}
+                                                </div>
+                                            {:else}
+                                                <div class="table_pill_article_false">
                                                     غیر فعال
-                                                {/eq}
-                                            </div>
+                                                </div>
+                                            {/eq}
                                         </td>
                                         <td>
                                             {@eq key="{author.author_type}" value="name"}
@@ -149,7 +151,7 @@
                                                         {/eq}
                                                     </button>
 
-                                                    <button class="dropdown-item change_comments_status_btn" value="{status}" name="{._id}"><i class="fal fa-comment-alt-slash"></i>
+                                                    <button class="dropdown-item change_comments_status_btn" value="{comments_status}" name="{._id}"><i class="fal fa-comment-alt-slash"></i>
                                                         {@eq key="{comments_status}" value="true"}
                                                             غیر فعال کردن نظرات
                                                         {:else}

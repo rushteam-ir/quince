@@ -8,7 +8,7 @@
 {/css}
 {<js} 
 
-    <script src="js/article/froala-editor.js"></script>
+    <script src="js/article/wysiwyg-editor.js"></script>
     <script src="js/article/article-add.js"></script>
 
 {/js}
