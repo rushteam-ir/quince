@@ -59,6 +59,12 @@ module.exports = dust_options = {
                 let prev_etc = false;
                 let next_etc = false;
 
+                if(pages_number == 0){
+
+                    chunk.write(html);
+                    return chunk;
+
+                }
                 if(current_page == 1){
 
                     html += `<li class="page-item"><a class="page-link" href="${url_pagination}/?page=1" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>`

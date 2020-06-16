@@ -51,6 +51,36 @@
                 </div>
             </a>
 
+            <div class="position-relative dashboard_body_collaps">
+                <i class="fad fa-newspaper"></i>
+                <p>مقاله ها</p>
+                <i class="fas fa-angle-left"></i>
+
+                <div class="hover_field">
+
+                    <a href="{backend_url}article/list">
+                        <p>- لیست مقالات</p>
+                    </a>
+
+                    <a href="{backend_url}article/add">
+                        <p>- افزودن مقاله</p>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="collaps_field">
+
+                <a href="{backend_url}article/list">
+                    <p>- لیست مقالات</p>
+                </a>
+
+                <a href="{backend_url}article/add">
+                    <p>- افزودن مقاله</p>
+                </a>
+
+            </div>
 
             <div class="position-relative dashboard_body_collaps">
                 <i class="fad fa-coins"></i>
@@ -87,37 +117,6 @@
 
                 <a href="">
                     <p>- کد تخفیف</p>
-                </a>
-
-            </div>
-
-            <div class="position-relative dashboard_body_collaps">
-                <i class="fad fa-newspaper"></i>
-                <p>مقاله ها</p>
-                <i class="fas fa-angle-left"></i>
-
-                <div class="hover_field">
-
-                    <a href="{backend_url}article/list">
-                        <p>- لیست مقالات</p>
-                    </a>
-    
-                    <a href="{backend_url}article/add">
-                        <p>- افزودن مقاله</p>
-                    </a>
-    
-                </div>
-
-            </div>
-
-            <div class="collaps_field">
-
-                <a href="{backend_url}article/list">
-                    <p>- لیست مقالات</p>
-                </a>
-
-                <a href="{backend_url}article/add">
-                    <p>- افزودن مقاله</p>
                 </a>
 
             </div>
