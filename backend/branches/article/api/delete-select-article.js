@@ -4,7 +4,6 @@ router.get('/', async(req,res)=>{
 
     try{
 
-        log('salam')
         let id_list = req.query.id;
         let back_url = req.header('Referer') || '/';
 
