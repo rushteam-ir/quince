@@ -260,14 +260,13 @@
                         <div class="prodile_tabs p-4">
 
                             <div class="field_of_pro_img">
-                                {@eq key="{admin_info.avatar}" value=""}
-
-                                {:else}
                                 <div class="field_of_pro_img_mobile d-block d-sm-inline-block">
-                                    <img class="d-inline-block pro_logo" src="media/images/{admin_info.avatar}">
+                                    {@eq key="{admin_info.avatar}" value=""}
+                                        <img class="d-inline-block pro_logo" src="img/default-profile-picture.png">
+                                    {:else}
+                                        <img class="d-inline-block pro_logo" src="media/images/{admin_info.avatar}">
+                                    {/eq}
                                 </div>
-                                   
-                                {/eq}
 
                                 <div class="mr-sm-3 d-block d-sm-inline-block prrofile_name_field">
                                     {@eq key="{admin_info.author_type}" value="name"}

@@ -8,6 +8,7 @@
 {<js} 
 
     <script src="js/article/wysiwyg-editor.js"></script>
+    <script src="js/article/test.js"></script>
     <script src="js/article/article-add.js"></script>
 
 {/js}
@@ -58,6 +59,7 @@
                                     <div class="form-group">
                                         <label for="article_textarea">توضیحات مقاله</label>
                                         <textarea class="form-control main_form_design" id="article_textarea" rows="7" name="describe_inp"></textarea>
+                                        <input type='file' name='fileupload' id='fileupload' style='display: none;'>
                                     </div>
 
                                     <div class="form-group">
