@@ -2,8 +2,8 @@
 
 {<css}
 
+<link rel="stylesheet" href="css/article/wysiwyg-editor.css">
     <link rel="stylesheet" href="css/article/article-add.css">
-    <link rel="stylesheet" href="css/article/wysiwyg-editor.css">
 
 {/css}
 {<js} 
@@ -16,7 +16,7 @@
 {<body}
 
     <section>
-        <div class="main_field_of_add_article">
+        <div class="main_field_of_add_article mb-5">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 main_col">
