@@ -73,7 +73,7 @@
     .header_text {
         font-size: 0.9rem;
         margin-top: 20px;
-        color: #b8b8b8;
+        color: $l_gray;
     }
 
     .main_fs_field {
@@ -88,12 +88,12 @@
     .bordered_box {
         width: 150px;
         height: 390px;
-        border: 5px solid #CAAB68;
+        border: 5px solid $d_gold;
     }
 
     .fs_btn {
         color: white;
-        background-color: #CAAB68;
+        background-color: $d_gold;
         border-radius: 500px;
         width: 198px;
         text-align: right;
@@ -101,7 +101,7 @@
             position: relative;
             top: 2px;
             right: 0px;
-            @include transition(linear, 0.1s)
+            @include transition(0.1s, linear, 0s);
         }
         &:hover i{
             right: 4px;
@@ -111,13 +111,42 @@
 
 
 // slider animation
-.header_title {
+
+.fs_t_1 {
     opacity: 0;
-    transition: all .6s cubic-bezier(0.215, 0.61, 0.355, 1) 1.4s;
+    @include transition(0.61s, cubic-bezier(0.215, 0.61, 0.355, 1), 0.5s);
     transform: translate3d(0, -20px, 0);
 }
 
-.swiper-slide.swiper-slide-active .header_title {
-    transform: translate3d(0, 0, 0);
+.fs_s_1{
+    opacity: 0;
+    @include transition(0.61s, cubic-bezier(0.215, 0.61, 0.355, 1), 0.8s);
+    transform: translate3d(0px, -20px, 0);
+}
+
+.fs_te_1{
+    opacity: 0;
+    @include transition(0.61s, cubic-bezier(0.215, 0.61, 0.355, 1), 1s);
+    transform: translate3d(0px, -20px, 0);
+}
+
+.fs_btn_1{
+    opacity: 0;
+    @include transition(0.61s, cubic-bezier(0.215, 0.61, 0.355, 1), 1s);
+    transform: translate3d(0px, -20px, 0);
+}
+
+.bordered_box{
+    opacity: 0;
+    @include transition(0.61s, cubic-bezier(0.215, 0.61, 0.355, 1), 1s);
+    transform: translate3d(20px, 0px, 0);
+}
+
+.swiper-slide-active .fs_t_1,
+.swiper-slide-active .fs_s_1,
+.swiper-slide-active .fs_te_1,
+.swiper-slide-active .fs_btn_1,
+.swiper-slide-active .bordered_box{
+    @include transform(translate3d(0, 0, 0));
     opacity: 1;
 }
