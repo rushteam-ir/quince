@@ -2,7 +2,6 @@
 
 {<css}
 
-    <link rel="stylesheet" href="css/article/froala-editor.css">
     <link rel="stylesheet" href="css/article/article-add.css">
 
 {/css}

@@ -8,8 +8,18 @@
     src: url("../../fonts/Minbus_Personal-use.otf");
 }
 
+@font-face {
+    font-family: accent-font;
+    src: url("../../fonts/A.Rezvan.ttf");
+}
+
+@font-face{
+    font-family: main-font;
+    src: url("../../fonts/Vazir.ttf");
+}
+
 body {
-    font-family: second-font;
+    font-family: main-font;
 }
 
 .dir_rtl {
@@ -52,4 +62,9 @@ button:focus {
 
 html {
     scroll-behavior: smooth;
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
 }
