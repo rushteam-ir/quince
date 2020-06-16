@@ -43,7 +43,7 @@ router.post('/', async(req,res)=>{
        }
 
        let article_url = title_inp.split(' ').join('_')
-        log(req.session.article_internal_files)
+
        let article_data = {
 
            title : title_inp,
