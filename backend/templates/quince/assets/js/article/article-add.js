@@ -143,18 +143,3 @@ $(document).ready(function () {
         }
     })
 });
-
-// close web page trigger
-window.onbeforeunload = function(){
-    if(!window.isRefresh) {
-
-        $.post(`${backend_url}api/web-closed`,
-            {
-                delete_temp : true,
-            },
-            function(data, status){});
-
-    }
-
-    window.isRefresh = false;
-}
