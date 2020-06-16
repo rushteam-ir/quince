@@ -30,7 +30,6 @@ router.post('/', async(req,res)=>{
 
         if(req.body.profile_info == ''){
 
-            log(req.body);
             let {first_name_inp, last_name_inp, nick_name_inp, email_inp, phone_number_inp} = req.body;
 
             let last_check_box = '';
