@@ -3,12 +3,12 @@
 {<css}
 
     <link rel="stylesheet" href="css/article/article-add.css">
+    <link rel="stylesheet" href="css/article/wysiwyg-editor.css">
 
 {/css}
 {<js} 
 
     <script src="js/article/wysiwyg-editor.js"></script>
-    <script src="js/article/test.js"></script>
     <script src="js/article/article-add.js"></script>
 
 {/js}
