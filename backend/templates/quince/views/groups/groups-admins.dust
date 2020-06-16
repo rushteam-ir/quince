@@ -1,0 +1,166 @@
+{>"layouts/dashboard-layout"/}
+
+{<css}
+    <link rel="stylesheet" href="css/groups/groups-admins.css">
+{/css}
+{<js} 
+    <script src="js/groups/groups-admins.js"></script>
+{/js}
+
+
+{<body}
+
+<section>
+    <div class="main_filed_of_article_list">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 p-0">
+                    <div class="main_filed_of_main_col">
+
+                        <header>
+
+                            <p class="header_of_article_list">لیست کاربران</p>
+                            <p class="small_of_article_list">لیست کاربران سایت را در جدول زیر مشاهده کنید.</p>
+
+
+                            <div class="input-group search_inp_category mb-3 dir-ltr">
+
+                              {@eq key="{search}" value="true"}
+                                  <i class="fal fa-times remove_search_icon"></i>
+                              {/eq}
+
+                              <input type="text" class="form-control main_form_design text-right category_search dir-rtl" placeholder="جستجو"
+                                     aria-label="Recipient's username" aria-describedby="button-addon2" name="search_inp" value="{search_value}">
+
+                              <div class="input-group-append">
+                                  <button class="btn btn-outline-secondary btn_of_search" type="button" id="button-addon2">
+                                      <i class="fal fa-search"></i>
+                                  </button>
+                              </div>
+
+                          </div>
+                          
+
+                            <div class="form-group select_of_category">
+
+                              <p class="d-inline-block">تعداد ردیف ها :</p>
+
+                              <select class="form-control main_form_design count_row_table_of_category mr-2">
+                                {#page_limit_slot}
+                                    {@eq key="{.}" value="{page_limit}"}
+                                        <option selected>{.}</option>
+                                    {:else}
+                                        <option>{.}</option>
+                                    {/eq}
+                                {/page_limit_slot}
+                              </select>
+
+                          </div>
+
+                          <button class="multi_remove btn">
+                            <i class="fal fa-trash-alt"></i>
+                          </button>
+
+                        </header>
+
+                        <table class="table dir-rtl text-center">
+                            <thead>
+                              <tr>
+                                <th scope="col">
+                                    <label class="checkbox_of_category">
+                                        <input type="checkbox" class="option-input checkbox" id="selectall" name="select_all">
+                                    </label>
+                                </th>
+                                <th scope="col">ردیف</th>
+                                <th scope="col">عکس پروفایل</th>
+                                <th scope="col">نام کاربر</th>
+                                <th scope="col">ایمیل</th>
+                                <th scope="col">وضعیت</th>
+                                <th scope="col">آخرین فعالیت</th>
+                                <th scope="col">تنظیمات</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+
+                              <tr>
+                                <td>
+                                    <label class="checkbox_of_category">
+                                        <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                    </label>    
+                                </td>
+                                <td scope="row">1</td>
+                                <td class="padding_custom_img">
+                                    <img class="img_of_user" src="img/test.jpg" alt="">
+                                </td>
+                                <td>کسری حبیب بیگی</td>
+                                <td>kasra@gmail.com</td>
+                                <td>
+                                    <div class="sitoation_pill">
+                                        فعال
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="data_pill">
+                                        1399/1/1
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                        <div class="dropdown-menu text-right dir-rtl" aria-labelledby="dropdownMenuButton">
+
+                                          <a class="dropdown-item" href="#">
+                                            <i class="fal fa-address-card"></i>
+                                            مشاهده پروفایل</a>
+
+                                          <a class="dropdown-item" href="#">
+                                            <i class="far fa-ban"></i>
+                                            مسدود کردن حساب</a>
+
+                                          <a class="dropdown-item" href="#">
+                                            <i class="fas fa-exchange-alt"></i>
+                                            تغییر دسترسی</a>
+
+                                          <a class="dropdown-item" href="#">
+                                            <i class="fal fa-trash-alt"></i>
+                                            حذف</a>
+
+                                        </div>
+                                  </div>
+                                </td>
+                              </tr>
+                              
+                            </tbody>
+                          </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="img_modal_field">
+        <div class="container-fluid">
+          <div class="row align-items-center row_modal_custom">
+            <div class="col-12">
+              
+              <div class="img_modal_field_second position-relative">
+
+                <div class="remove_img_modal">
+                  <i class="fal fa-times"></i>
+                </div>
+
+                <img class="modal_img_show" src="img/test.jpg" alt="">
+              </div>
+
+            </div>
+          </div>
+        </div>
+    </div>
+
+</section>
+
+{/body}

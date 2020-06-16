@@ -15,8 +15,42 @@
     {+title/}
 </head>
 <body>
-    <header></header>
+    <nav>
+        
+        <div class="navbar_field">
+
+            <ul>
+                <li class="navbar_iteam">
+                    <a class="active_navbar" href="">خانه</a>
+                </li>
+                <li class="navbar_iteam">
+                    <a href="">خدمات ما</a>
+                </li>
+                <li class="navbar_iteam">
+                    <a href="">نمونه کار ها</a>
+                </li>
+                <li class="navbar_iteam">
+                    <a href="">درباره ما</a>
+                </li>
+                <li class="navbar_iteam">
+                    <a href="">تماس با ما</a>
+                </li>
+                <li class="navbar_iteam">
+                    <a href="">وبلاگ</a>
+                </li>
+
+                <div class="field_of_navbar_ltr">
+                    <img class="main_logo" src="img/RT-logo.PNG" alt="">
+                </div>
+
+            </ul>
+            
+        </div>
+
+    </nav>
+
          {+body/}
+
     <footer>
 
         

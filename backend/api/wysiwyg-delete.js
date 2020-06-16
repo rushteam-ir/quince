@@ -9,7 +9,6 @@ router.post('/', async function (req, res) {
         let file_name = link_split[link_split.length - 1]
         let file_path = `${backend_upload_dir}${type_inp}/${file_name}`
 
-
         try{
 
             fs.unlinkSync(file_path);

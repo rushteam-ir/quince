@@ -8,11 +8,11 @@ router.get('/:id', async(req,res)=>{
 
         if(isObjectId(user_id)){
 
-            res.render('users/users-profile');
+            res.render('groups/groups-profile');
         }
         else{
 
-            res.redirect(`${config.backend_url}users/list`);
+            res.redirect(`${config.backend_url}groups/admins`);
 
         }
 

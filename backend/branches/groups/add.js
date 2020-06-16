@@ -4,13 +4,7 @@ router.get('/', async(req,res)=>{
 
     try{
 
-        let data = {
-
-            list : await user_model.get()
-
-        }
-
-        res.render('users/users-list', data);
+        res.render('groups/groups-add');
 
     }
     catch (error) {
