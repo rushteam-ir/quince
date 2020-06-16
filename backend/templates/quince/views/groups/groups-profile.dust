@@ -1,0 +1,13 @@
+{>"layouts/dashboard-layout"/}
+
+{<css}
+    <link rel="stylesheet" href="css/groups/groups-profile.css">
+{/css}
+{<js}
+    <script src="js/groups/groups-profile.js"></script>
+{/js}
+
+
+{<body}
+
+{/body}

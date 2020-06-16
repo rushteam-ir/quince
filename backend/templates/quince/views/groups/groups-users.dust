@@ -1,10 +1,10 @@
 {>"layouts/dashboard-layout"/}
 
 {<css}
-    <link rel="stylesheet" href="css/user/user-list.css">
+    <link rel="stylesheet" href="css/groups/groups-users.css">
 {/css}
-{<js} 
-    <script src="js/users/user-list.js"></script> 
+{<js}
+    <script src="js/groups/groups-users.js"></script>
 {/js}
 
 
