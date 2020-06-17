@@ -2,6 +2,7 @@
 frontend = express();
 frontend.disable('x-powered-by');
 frontend.use(express.static(`${config.app_dir}frontend/templates/${config.frontend_tmp}/assets`));
+frontend.use(compression());
 
 // Frontend Dust configuration
 frontend.engine('dust', adaro.dust(dust_options));
