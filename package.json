@@ -1,12 +1,12 @@
 {
   "name": "quince",
   "version": "1.0.0",
-  "description": "",
+  "description": "Quince CMS created by Rush Team",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Rush Team",
   "license": "ISC",
   "dependencies": {
     "adaro": "^1.0.4",

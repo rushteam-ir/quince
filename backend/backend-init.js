@@ -17,7 +17,7 @@ backend.use(file_upload());
 
 // Backend other configs
 backend_allowd_urls = ['/login/', '/recovery/', '/recovery/verify/'];
-backend_limited_images_size = 1024; // KB
+backend_limited_images_size = 5120; // KB
 backend_limited_videos_size = 10024; // KB
 backend_limited_files_size = 10024; // KB
 backend_limited_products_size = 100024; // KB
