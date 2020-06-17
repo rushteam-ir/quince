@@ -27,6 +27,9 @@ app.disable('x-powered-by');
 // Server session configuration
 app.use(session(session_options));
 
+// Server Compression
+app.use(compression());
+
 // Server routs
 const backend = require('./backend/backend');
 const frontend = require('./frontend/frontend');
