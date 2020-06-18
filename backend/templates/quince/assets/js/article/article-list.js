@@ -185,6 +185,27 @@ $('.change_comments_status_btn').on('click', function (e) {
     })
 })
 
+// Edit article
+$('.edit_btn').on('click', function (e) {
+
+    let article_id = $(e.currentTarget).attr('name');
+
+    Swal.fire({
+        title: 'ویرایش دسته',
+        text: "آیا از ویرایش این مقاله مطمئن هستید ؟",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'بله',
+        cancelButtonText: 'خیر',
+    }).then((result) => {
+        if (result.value) {
+            redirect(`${backend_url}article/edit/${article_id}`);
+        }
+    })
+})
+
 function redirect(url) {
     location.href = url
 }

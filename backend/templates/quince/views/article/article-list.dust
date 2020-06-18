@@ -159,9 +159,9 @@
                                                         {/eq}
                                                     </button>
 
-                                                    <a class="dropdown-item" href="#">
+                                                    <button class="dropdown-item edit_btn" name="{._id}">
                                                         <i class="fal fa-edit"></i>
-                                                        ویرایش</a>
+                                                        ویرایش</button>
 
                                                     <button class="dropdown-item remove_table_btn" name="{._id}">
                                                         <i class="fal fa-trash-alt"></i>
