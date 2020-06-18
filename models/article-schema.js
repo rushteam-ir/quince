@@ -169,6 +169,12 @@ article_schema.statics = {
 
     },
 
+    getById : async function(article_id){
+
+        return await article_model.findById(article_id).populate('category_parent').populate('category_child').populate('author').exec();
+
+    }
+
 }
 
 module.exports = article_model = mongoose.model('article', article_schema);

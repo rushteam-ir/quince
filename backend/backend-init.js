@@ -2,6 +2,7 @@
 backend = express();
 backend.disable('x-powered-by');
 backend.use(express.static(`${config.app_dir}backend/templates/${config.backend_tmp}/assets`));
+backend.use(compression());
 
 // Backend Dust configuration
 backend.engine('dust', adaro.dust(dust_options));

@@ -14,6 +14,7 @@ mongoose = require('mongoose');
 nodemailer = require('nodemailer');
 JalaliDate = require('jalali-date');
 sha1 = require('sha1');
+compression = require('compression')
 
 user_model = require('../models/user-schema');
 category_model = require('../models/category-schema');
