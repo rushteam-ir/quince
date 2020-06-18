@@ -77,26 +77,11 @@ article_schema.statics = {
         for(let i = 0; i < internal_files_path.length; i++){
 
             let file_path = `${backend_upload_dir}${internal_files_path[i]}`
-
-            try{
-
-                fs.unlinkSync(file_path);
-
-            }
-            catch (e) {
-                //error
-            }
+            fs.unlink(file_path, function(err) {})
 
         }
 
-        try{
-
-            fs.unlinkSync(`${backend_upload_dir}images/${find_article.main_image}`);
-
-        }
-        catch (e) {
-            //error
-        }
+        fs.unlink(`${backend_upload_dir}images/${find_article.main_image}`, function(err) {})
 
         return await article_model.findByIdAndDelete(article_id);
 

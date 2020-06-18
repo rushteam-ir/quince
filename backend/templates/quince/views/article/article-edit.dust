@@ -10,7 +10,7 @@
 
     <script src="js/general/wysiwyg-editor.js"></script>
     <script src="js/general/wysiwyg-custom.js"></script>
-    <script src="js/article/article-add.js"></script>
+    <script src="js/article/article-edit.js"></script>
 
 {/js}
 
@@ -46,7 +46,11 @@
                                         <select class="form-control main_form_design select-category" id="article_parent" name="parent_inp">
                                             <option value="0">دسته اصلی</option>
                                             {#parent_list}
-                                                <option value="{_id}">{title}</option>
+                                                {@eq key="{title}" value="{article_info.category_parent.title}"}
+                                                    <option selected value="{_id}">{article_info.category_parent.title}</option>
+                                                {:else}
+                                                    <option value="{_id}">{title}</option>
+                                                {/eq}
                                             {/parent_list}
                                         </select>
                                     </div>
@@ -54,6 +58,13 @@
                                     <div class="form-group">
                                         <label for="article_child">زیر دسته</label>
                                         <select class="form-control main_form_design select-sub-category" id="article_child" name="child_inp">
+                                            {#child_list}
+                                                {@eq key="{title}" value="{article_info.category_child.title}"}
+                                                    <option selected value="{_id}">{article_info.category_child.title}</option>
+                                                {:else}
+                                                    <option value="{_id}">{title}</option>
+                                                {/eq}
+                                            {/child_list}
                                         </select>
                                     </div>
   

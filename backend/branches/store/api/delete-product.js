@@ -13,21 +13,11 @@ router.get('/', async(req,res)=>{
             if(result){
 
                 let main_image = `${backend_upload_dir}products/${result._id}_main.png`;
-                try{
-                    fs.unlinkSync(main_image);
-                }
-                catch (e) {
-                    // can't find file
-                }
+                fs.unlink(main_image, function(err) {})
 
                 for(let i = 1; i < result.images.length; i++){
                     let other_image = `${backend_upload_dir}products/${result._id}_${i}.png`;
-                    try{
-                        fs.unlinkSync(other_image);
-                    }
-                    catch (e) {
-                        // can't find file
-                    }
+                    fs.unlink(other_image, function(err) {})
                 }
 
                 return res.redirect(`${config.backend_url}store/list`);

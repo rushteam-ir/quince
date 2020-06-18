@@ -17,6 +17,7 @@ router.get('/:id', async(req,res)=>{
 
             article_info : find_article,
             parent_list : await category_model.getParent(),
+            child_list : await category_model.getSub(find_article.category_parent._id),
 
         }
 
