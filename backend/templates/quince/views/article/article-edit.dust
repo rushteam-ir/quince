@@ -86,6 +86,14 @@
                                                 <div class="box_of_img_template">
                                                     <div class="box_of_img_template img-box">
                                                         <div class="img-show">
+                                                            {@eq key="{article_info.main_image}" value=""}
+
+                                                            {:else}
+                                                                <div class="remove_parent">
+                                                                    <img class="uploading_img_from_brows" src="media/images/{article_info.main_image}">
+                                                                    <div name="{.article_info.unique_id}" class="remove_img_icon image_del"></div>
+                                                                </div>
+                                                            {/eq}
                                                         </div>
                                                         <input type="file" name="main_image" id="avatar_img" class="input-file-custom">
                                                         <label for="avatar_img" class="btn btn-tertiary2 js-labelFile ">

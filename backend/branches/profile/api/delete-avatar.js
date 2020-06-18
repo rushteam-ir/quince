@@ -18,14 +18,10 @@ router.get('/', async(req,res)=>{
 
             fs.unlink(avatar_path, function(err) {})
             req.session.admin_info.avatar = '';
-            res.redirect(`${config.backend_url}profile`);
 
         }
-        else{
 
-            res.redirect(`${config.backend_url}profile`);
-
-        }
+        res.redirect(`${config.backend_url}profile`);
 
     }
     catch(error) {

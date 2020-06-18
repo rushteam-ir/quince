@@ -161,7 +161,23 @@ article_schema.statics = {
 
         return await article_model.findOne({unique_id : article_id}).populate('category_parent').populate('category_child').populate('author').exec();
 
-    }
+    },
+
+    edit : async function(article_id, article_data){
+
+        let find_article = await article_model.findOne({unique_id : article_id});
+
+        if(find_article){
+
+            return await article_model.findByIdAndUpdate(find_article._id, {$set : article_data}, {new : true});
+
+        }
+        else{
+
+            return null;
+
+        }
+    },
 
 }
 
