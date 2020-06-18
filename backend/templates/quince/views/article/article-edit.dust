@@ -34,7 +34,7 @@
                         <div class="row dir-ltr">
                             <div class="col-8 offset-2">
 
-                                <form method="post" action=""autocomplete="off" enctype="multipart/form-data" class="text-right dir-rtl">
+                                <form method="post" action="" autocomplete="off" enctype="multipart/form-data" class="text-right dir-rtl">
 
                                     <div class="form-group">
                                       <label for="article_name">نام مقاله</label>
