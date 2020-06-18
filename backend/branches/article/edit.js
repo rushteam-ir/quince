@@ -5,8 +5,9 @@ router.get('/:id', async(req,res)=>{
     try{
 
         let article_id = req.params.id
+        let find_article = await article_model.getByUniqueId(article_id);
 
-        if(!isObjectId(article_id)){
+        if(!find_article){
 
             return res.status(404).render('404');
 
@@ -14,7 +15,7 @@ router.get('/:id', async(req,res)=>{
 
         let data = {
 
-            article_info : await article_model.getById(article_id),
+            article_info : find_article,
             parent_list : await category_model.getParent(),
 
         }

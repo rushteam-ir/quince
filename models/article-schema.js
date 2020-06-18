@@ -1,6 +1,7 @@
 let article_schema = new mongoose.Schema({
 
     title : String,
+    unique_id : String,
     category_parent : {
         type : 'ObjectId',
         ref : 'category'
@@ -30,7 +31,8 @@ article_schema.statics = {
 
     add : async function (article_data, author_id) {
 
-        let find_article = await article_model.findOne({title : article_data.title})
+        let find_article = await article_model.findOne({title : article_data.title});
+        let new_id = randomSha1String();
 
         if(!find_article){
 
@@ -40,6 +42,7 @@ article_schema.statics = {
             article_data.last_edit = getCurrentDate();
             article_data.status = true;
             article_data.comments_status = true;
+            article_data.unique_id = new_id
 
             let new_article = new article_model(article_data);
             return await new_article.save();
@@ -169,9 +172,9 @@ article_schema.statics = {
 
     },
 
-    getById : async function(article_id){
+    getByUniqueId : async function(article_id){
 
-        return await article_model.findById(article_id).populate('category_parent').populate('category_child').populate('author').exec();
+        return await article_model.findOne({unique_id : article_id}).populate('category_parent').populate('category_child').populate('author').exec();
 
     }
 

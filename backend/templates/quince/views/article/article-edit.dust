@@ -25,7 +25,7 @@
                         <header>
 
                             <p class="header_of_add_article">ویرایش مقاله</p>
-                            <p class="small_of_header_add_article">شما در حال ویرایش مقاله ی "{article_info.title}" هستید</p>
+                            <p class="small_of_header_add_article">شما در حال ویرایش مقاله <b>{article_info.title}</b> هستید</p>
 
                             <hr>
 
