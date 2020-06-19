@@ -1,13 +1,12 @@
-@mixin transition($time ,$type, $delay) {
-    transition: all $time $type $delay;
-    -webkit-transition:  all $time $type $delay;
-    -o-transition: all $time $type $delay;
-    -moz-transition: all $time $type $delay;
+@mixin text_of_title($color-value, $font-value, $padding_t_value) {
+  text-align: center;
+  color: $color-value;
+  font-size: $font_value;
+  padding-top: $padding_t_value;
 }
 
-@mixin transform($type) {
-    transform: $type;
-    -webkit-transform: $type;
-    -o-transform: $type;
-    -moz-transform: $type;
+@mixin text_color_gradient($value_of_color) {
+  background-image: $value_of_color;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

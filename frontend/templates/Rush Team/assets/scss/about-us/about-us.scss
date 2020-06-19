@@ -1,6 +1,6 @@
 //import file
 
-@import "../../scss/mixin/about-us-mixin";
+@import "../../scss/mixin/main-mixin";
 @import "../../scss/variable/color";
 
 
@@ -17,18 +17,18 @@
     opacity: 0.93;
 
     .name_of_team {
-      @include text_of_title($color_white, 3.5rem, 100px);
+      @include text_of_title($white, 3.5rem, 100px);
       font-family: rush-team-font;
     }
 
     .sub_name_of_team {
-      @include text_of_title($color_white, 1.5rem, 0px);
+      @include text_of_title($white, 1.5rem, 0px);
     }
 
     .explain_about_Rush_team {
       width: 60%;
       margin: auto;
-      @include text_of_title($color_white, 1rem, 50px);
+      @include text_of_title($white, 1rem, 50px);
 
     }
   }
@@ -37,7 +37,7 @@
 .box_of_Principles_of_Rush_team {
   width: 100%;
   height: 250px;
-  background: $color_white;
+  background: $white;
   position: absolute;
   top: -125px;
   box-shadow: 5px 7px 30px rgba(72, 73, 121, 0.15);
@@ -50,7 +50,7 @@
 
     .icons_of_Principles_rush_team {
       @include text_of_title(transparent, 3rem, 40px);
-      @include text_color_gradient($orange_color_gradient);
+      @include text_color_gradient($orange_gradient);
       display: inline-block;
     }
 
@@ -101,7 +101,7 @@
 
       .icon_of_counter {
         @include text_of_title(transparent, 2.5rem, 40px);
-        @include text_color_gradient($blue_color_gradient);
+        @include text_color_gradient($blue_gradient);
       }
 
       .box_counter_of_number {
@@ -111,7 +111,7 @@
           position: relative;
           top: -6px;
           left: -5px;
-          @include text_color_gradient($orange_color_gradient);
+          @include text_color_gradient($orange_gradient);
           font-size: 1.2rem;
         }
 
@@ -146,7 +146,7 @@
         .title_of_property_rush_team {
           font-size: .9rem;
           margin-bottom: 15px;
-          @include text_color_gradient($orange_color_gradient);
+          @include text_color_gradient($orange_gradient);
         }
 
         .sub_title_of_property_rush_team {
@@ -174,7 +174,7 @@
 
         .icons_of_property_rush_team {
           @include text_of_title(transparent, 2rem, 22px);
-          @include text_color_gradient($blue_color_gradient);
+          @include text_color_gradient($blue_gradient);
         }
 
       }
@@ -237,7 +237,7 @@
 //Introduction Our Team
 
 .introduction_our_team_box {
-  background-color: $color_ghost_white;
+  background-color: $ghost_white;
   padding: 100px 0;
 
   .introduction_our_team {
@@ -261,7 +261,7 @@
     .content_of_our_team_person {
       width: 80%;
       height: 100%;
-      background-color: $color_white;
+      background-color: $white;
       padding: 20% 30px 0;
       position: absolute;
       top: 0;
@@ -271,12 +271,12 @@
 
       .name_of_person {
         font-size: 1.5rem;
-        @include text_color_gradient($orange_color_gradient);
+        @include text_color_gradient($orange_gradient);
       }
 
       .role_of_person_in_our_team {
         font-size: 1.1rem;
-        @include text_color_gradient($blue_color_gradient);
+        @include text_color_gradient($blue_gradient);
       }
 
       .description_of_person_in_our_team {
