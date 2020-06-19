@@ -68,8 +68,6 @@ router.post('/:id', async(req,res)=>{
 
        }
 
-       log(article_data)
-
        if (req.files) {
 
            let main_image = req.files.main_image;

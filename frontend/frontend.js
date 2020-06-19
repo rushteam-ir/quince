@@ -89,7 +89,7 @@ frontend.get('/', async(req,res)=>{
 // Frontend other routs
 const captcha = require('./branches/captcha');
 const about_us = require('./branches/about-us/about-us');
-const contact_us = require('./branches/contact-us');
+const contact_us = require('./branches/contact-us/contact-us');
 const product = require('./branches/product');
 const user = require('./branches/user/user');
 const recovery = require('./branches/recovery/recovery');
