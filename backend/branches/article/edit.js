@@ -17,7 +17,12 @@ router.get('/:id', async(req,res)=>{
 
             article_info : find_article,
             parent_list : await category_model.getParent(),
-            child_list : await category_model.getSub(find_article.category_parent._id),
+
+        }
+
+        if(find_article.category_parent != null){
+
+            data.child_list = await category_model.getSub(find_article.category_parent._id);
 
         }
 
@@ -38,7 +43,7 @@ router.post('/:id', async(req,res)=>{
 
    try{
 
-       let article_id = req.params.id
+       let article_id = req.params.id;
        let {title_inp, parent_inp, child_inp, describe_inp, keys_inp} = req.body;
        let validation_result = new validation([
            {value : title_inp},
@@ -92,16 +97,16 @@ router.post('/:id', async(req,res)=>{
 
        }
 
-       let result = await article_model.edit(req.session.article_edit_id, article_data);
+       let result = await article_model.edit(article_id, article_data);
 
        if(result){
 
-           return res.redirect(`${config.backend_url}article/edit/${article_id}/?msg=add-success`)
+           return res.redirect(`${config.backend_url}article/list/?msg=edit-success`)
 
        }
        else{
 
-           return res.redirect(`${config.backend_url}article/edit/${article_id}/?msg=add-fail`)
+           return res.redirect(`${config.backend_url}article/edit/${article_id}/?msg=edit-fail`)
 
        }
 

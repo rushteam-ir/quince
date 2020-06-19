@@ -77,6 +77,7 @@ $(document).ready(function () {
 
     $('.select-category').change(function () {
 
+        $('.select-sub-category').find('option').remove()
         let parent_id = $(this).val();
         if(parent_id != ""){
             let p = {"id":parent_id};
