@@ -150,17 +150,17 @@ backend.get('/', async(req,res)=>{
 });
 
 // Backend other routs
-const dashboard = require('./branches/dashboard');
+const dashboard = require('./branches/dashboard/dashboard');
 const login = require('./branches/login/login');
 const profile = require('./branches/profile/profile');
 const category = require('./branches/category/category');
 const recovery = require('./branches/recovery/recovery');
 const store = require('./branches/store/store');
-const settings = require('./branches/settings');
-const logout = require('./branches/logout');
+const settings = require('./branches/settings/settings');
+const logout = require('./branches/logout/logout');
 const messages = require('./branches/messages/messages');
 const groups = require('./branches/groups/groups');
-const guide = require('./branches/guide');
+const guide = require('./branches/guide/guide');
 const article = require('./branches/article/article');
 const api = require('./api/api');
 

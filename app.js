@@ -1,9 +1,7 @@
-// Importing all requirements
-require('./initializers/app-config');
-require('./initializers/app-init');
-require('./initializers/lib');
+require('./initializers/requirements');
+require('./initializers/config');
+require('./initializers/library');
 
-// Creating Server
 const app = express();
 
 app.listen(config.port, async(error)=>{
@@ -21,13 +19,10 @@ app.listen(config.port, async(error)=>{
 
 });
 
-// Server settings
 app.disable('x-powered-by');
 
-// Server session configuration
 app.use(session(session_options));
 
-// Server routs
 const backend = require('./backend/backend');
 const frontend = require('./frontend/frontend');
 

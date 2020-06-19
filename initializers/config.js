@@ -21,3 +21,37 @@ module.exports = config = {
     captcha_color : `#0096ff`
 
 };
+
+// Global variables
+msg_param = '';
+
+// Connect to MongoDB
+mongoose.connect(config.mongodb_url, {
+
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify : false,
+    useCreateIndex : true
+
+});
+
+// Session configuration
+session_options = {
+
+    store : new mongo_store({url : config.mongodb_url}),
+    secret: config.session_secret_key,
+    name : config.session_name,
+    resave: false,
+    saveUninitialized: true,
+    cookie: {maxAge: 365*24*60*60}
+
+};
+
+// Mail transporter
+transporter = nodemailer.createTransport({
+    service: 'Zoho',
+    auth: {
+        user: 'zendcms@zohomail.com',
+        pass: 'rsabz1999'
+    }
+});

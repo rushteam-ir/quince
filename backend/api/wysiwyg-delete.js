@@ -1,6 +1,6 @@
 const router = express.Router();
 
-router.post('/', async function (req, res) {
+router.post('/', async (req, res)=> {
 
     try{
 

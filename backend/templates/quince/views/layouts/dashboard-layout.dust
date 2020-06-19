@@ -136,7 +136,7 @@
                 </div>
             </a>
 
-            <a href="" class="dashboard_body_sub">
+            <a href="{backend_url}logout" class="dashboard_body_sub">
                 <div class="position-relative">
                     <i class="fad fa-portal-exit"></i>
                     <p>خروج</p>
