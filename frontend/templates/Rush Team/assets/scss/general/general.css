@@ -1,9 +1,4 @@
 @font-face {
-    font-family: second-font;
-    src: url("../../fonts/IranianSans.ttf");
-}
-
-@font-face {
     font-family: rush-team-font;
     src: url("../../fonts/Minbus_Personal-use.otf");
 }
@@ -58,10 +53,6 @@ button:focus {
 
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(85, 94, 129);
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 .btn.focus, .btn:focus {
