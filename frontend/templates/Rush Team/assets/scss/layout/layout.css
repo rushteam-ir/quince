@@ -1,17 +1,50 @@
-/* Error: Undefined mixin.
- *    ,
- * 37 |                 @include transition(0.2s, linear, 0s);
- *    |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   layout.scss 37:17  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 37 \2502                  @include transition(0.2s, linear, 0s);\d\a    \2502                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   layout.scss 37:17  root stylesheet";
+.navbar_field {
+  width: 100%;
+  height: 70px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000000000;
+  direction: rtl;
+  text-align: right;
 }
+.navbar_field ul {
+  list-style-type: none;
+  padding: 0px;
+  padding-right: 20px;
+}
+.navbar_field ul li {
+  display: inline-block;
+}
+.navbar_field ul li .active_navbar {
+  border-bottom: 3px solid #CAAB68;
+}
+.navbar_field ul li a {
+  color: white;
+  width: 110px;
+  display: inline-block;
+  text-align: center;
+  height: 70px;
+  line-height: 70px;
+  border-bottom: 0px solid #CAAB68;
+  transition: all 0.2s linear 0s;
+  -webkit-transition: all 0.2s linear 0s;
+  -o-transition: all 0.2s linear 0s;
+  -moz-transition: all 0.2s linear 0s;
+}
+.navbar_field ul li a:hover {
+  border-bottom: 3px solid #CAAB68;
+}
+.navbar_field ul .field_of_navbar_ltr {
+  display: inline-block;
+  direction: ltr;
+  text-align: left;
+  position: absolute;
+  left: 10px;
+}
+.navbar_field ul .field_of_navbar_ltr .main_logo {
+  width: 110px;
+}
+
+/*# sourceMappingURL=layout.css.map */
