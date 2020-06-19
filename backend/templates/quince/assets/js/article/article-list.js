@@ -38,7 +38,7 @@ $('.remove_table_btn').on('click', function (e) {
     let article_id = $(e.currentTarget).attr('name');
 
     Swal.fire({
-        title: 'حذف دسته',
+        title: 'حذف مقاله',
         text: "آیا از حذف این مقاله مطمئن هستید ؟",
         icon: 'warning',
         showCancelButton: true,
@@ -191,7 +191,7 @@ $('.edit_btn').on('click', function (e) {
     let article_id = $(e.currentTarget).attr('name');
 
     Swal.fire({
-        title: 'ویرایش دسته',
+        title: 'ویرایش مقاله',
         text: "آیا از ویرایش این مقاله مطمئن هستید ؟",
         icon: 'warning',
         showCancelButton: true,

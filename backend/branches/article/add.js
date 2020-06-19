@@ -10,7 +10,7 @@ router.get('/', async(req,res)=>{
 
         }
 
-        req.session.article_internal_files = []
+        req.session.temp_files = []
 
         res.render('article/article-add', data);
 
@@ -42,7 +42,7 @@ router.post('/', async(req,res)=>{
 
        }
 
-       let article_url = title_inp.split(' ').join('_')
+       let article_url = title_inp.split(' ').join('-')
 
        let article_data = {
 
@@ -52,7 +52,7 @@ router.post('/', async(req,res)=>{
            describe : describe_inp,
            keys : keys_inp,
            url : `${config.frontend_url}article/${article_url}`,
-           internal_files : req.session.article_internal_files
+           internal_files : req.session.temp_files
 
        }
 

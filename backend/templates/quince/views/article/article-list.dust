@@ -159,7 +159,7 @@
                                                         {/eq}
                                                     </button>
 
-                                                    <button class="dropdown-item edit_btn" name="{._id}">
+                                                    <button class="dropdown-item edit_btn" name="{.unique_id}">
                                                         <i class="fal fa-edit"></i>
                                                         ویرایش</button>
 

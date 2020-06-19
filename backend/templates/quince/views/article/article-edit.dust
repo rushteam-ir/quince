@@ -10,7 +10,7 @@
 
     <script src="js/general/wysiwyg-editor.js"></script>
     <script src="js/general/wysiwyg-custom.js"></script>
-    <script src="js/article/article-add.js"></script>
+    <script src="js/article/article-edit.js"></script>
 
 {/js}
 
@@ -25,7 +25,7 @@
                         <header>
 
                             <p class="header_of_add_article">ویرایش مقاله</p>
-                            <p class="small_of_header_add_article">شما در حال ویرایش مقاله ی "{article_info.title}" هستید</p>
+                            <p class="small_of_header_add_article">شما در حال ویرایش مقاله <b>{article_info.title}</b> هستید</p>
 
                             <hr>
 
@@ -34,7 +34,7 @@
                         <div class="row dir-ltr">
                             <div class="col-8 offset-2">
 
-                                <form method="post" action=""autocomplete="off" enctype="multipart/form-data" class="text-right dir-rtl">
+                                <form method="post" action="" autocomplete="off" enctype="multipart/form-data" class="text-right dir-rtl">
 
                                     <div class="form-group">
                                       <label for="article_name">نام مقاله</label>
@@ -46,7 +46,11 @@
                                         <select class="form-control main_form_design select-category" id="article_parent" name="parent_inp">
                                             <option value="0">دسته اصلی</option>
                                             {#parent_list}
-                                                <option value="{_id}">{title}</option>
+                                                {@eq key="{title}" value="{article_info.category_parent.title}"}
+                                                    <option selected value="{_id}">{article_info.category_parent.title}</option>
+                                                {:else}
+                                                    <option value="{_id}">{title}</option>
+                                                {/eq}
                                             {/parent_list}
                                         </select>
                                     </div>
@@ -54,6 +58,13 @@
                                     <div class="form-group">
                                         <label for="article_child">زیر دسته</label>
                                         <select class="form-control main_form_design select-sub-category" id="article_child" name="child_inp">
+                                            {#child_list}
+                                                {@eq key="{title}" value="{article_info.category_child.title}"}
+                                                    <option selected value="{_id}">{article_info.category_child.title}</option>
+                                                {:else}
+                                                    <option value="{_id}">{title}</option>
+                                                {/eq}
+                                            {/child_list}
                                         </select>
                                     </div>
   
@@ -75,6 +86,14 @@
                                                 <div class="box_of_img_template">
                                                     <div class="box_of_img_template img-box">
                                                         <div class="img-show">
+                                                            {@eq key="{article_info.main_image}" value=""}
+
+                                                            {:else}
+                                                                <div class="remove_parent">
+                                                                    <img class="uploading_img_from_brows" src="media/images/{article_info.main_image}">
+                                                                    <div name="{.article_info.unique_id}" class="remove_img_icon image_del"></div>
+                                                                </div>
+                                                            {/eq}
                                                         </div>
                                                         <input type="file" name="main_image" id="avatar_img" class="input-file-custom">
                                                         <label for="avatar_img" class="btn btn-tertiary2 js-labelFile ">
