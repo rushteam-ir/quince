@@ -20,7 +20,7 @@ module.exports = class {
             case 'file':
             {
 
-                this.allowed_formats = ['rar', 'zip', 'pdf', 'txt', 'mp3'];
+                this.allowed_formats = ['*'];
                 break;
 
             }
@@ -39,8 +39,8 @@ module.exports = class {
     upload() {
 
         let file_format = this.file.name.split('.').pop();
-
-        if(this.allowed_formats.includes(file_format)){
+        log(file_format)
+        if(this.allowed_formats.includes(file_format) || this.allowed_formats[0] == '*'){
 
             if(this.file.size/1024 <= this.limited_size){
 
@@ -48,7 +48,7 @@ module.exports = class {
 
                     if(err){
 
-                        throw err;
+                        return 'upload-fail';
 
                     }
                     else{

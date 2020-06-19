@@ -2,9 +2,9 @@
 
 new FroalaEditor('textarea', {
 
-    imageUploadURL: `${backend_url}api/wysiwyg-image-uploader`,
-    fileUploadURL: `${backend_url}api/wysiwyg-file-uploader`,
-    videoUploadURL: `${backend_url}api/wysiwyg-video-uploader`,
+    imageUploadURL: `${backend_url}api/wysiwyg-uploader`,
+    fileUploadURL: `${backend_url}api/wysiwyg-uploader`,
+    videoUploadURL: `${backend_url}api/wysiwyg-uploader`,
     events : {
         'image.removed' : function ($img) {
 

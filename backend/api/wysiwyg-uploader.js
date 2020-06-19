@@ -4,11 +4,19 @@ router.post('/', function (req, res) {
 
     try{
 
+        let file_type = req.files.file.mimetype.split('/')[0]
+
+        if(file_type != 'image' && file_type != 'video'){
+
+            file_type = 'file';
+
+        }
+
         let uploader_options = {
 
-            allowed_formats : 'video',
-            limited_size : backend_limited_videos_size,
-            file_path : `${backend_upload_dir}videos/`,
+            allowed_formats : file_type,
+            limited_size : backend_limited_files_size,
+            file_path : `${backend_upload_dir}${file_type}s/`,
 
         }
 
@@ -21,8 +29,8 @@ router.post('/', function (req, res) {
 
         }
 
-        let data= {"link":`${config.backend_url}media/videos/${file_name}`}
-        req.session.temp_files.push(`videos/${file_name}`)
+        let data= {"link":`${config.backend_url}media/${file_type}s/${file_name}`}
+        req.session.temp_files.push(`${file_type}s/${file_name}`)
         res.send(data)
 
     }
