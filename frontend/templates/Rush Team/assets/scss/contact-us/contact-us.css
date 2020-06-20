@@ -1,3 +1,55 @@
+.header_of_contact_us_page .got_question {
+  color: #CAAB68;
+}
+.header_of_contact_us_page .explain_contact_us {
+  color: #7f7e7e;
+}
 
+.contact_us_form_and_explain .box_of_contact_us {
+  width: 150%;
+  height: 1000px;
+  background-color: #F7F8FC;
+  transform: rotate(-3deg);
+  margin-top: 7%;
+}
+.contact_us_form_and_explain .box_of_contact_us .form_of_contact_us {
+  background-color: #fff;
+  position: relative;
+  transform: rotate(3deg);
+  border-radius: 5px;
+  box-shadow: 5px 7px 30px rgba(72, 73, 121, 0.15);
+  left: -55%;
+  width: 80%;
+  padding: 60px 40px;
+  top: -3%;
+}
+.contact_us_form_and_explain .box_of_contact_us .form_of_contact_us .label_of_form {
+  direction: rtl;
+  float: right;
+}
+.contact_us_form_and_explain .box_of_contact_us .form_of_contact_us .inline_form_class {
+  width: 45%;
+}
+.contact_us_form_and_explain .box_of_contact_us .form_of_contact_us .m_r_form_inline {
+  margin-right: 10%;
+}
+.contact_us_form_and_explain .box_of_contact_us .form_of_contact_us .should_be_fill {
+  color: red;
+}
+.contact_us_form_and_explain .box_of_contact_us .form_of_contact_us .btn_of_contact_us {
+  background-color: #CAAB68;
+  color: white;
+}
+.contact_us_form_and_explain .box_of_contact_us .form_of_contact_us .focus_on_form:focus {
+  border: 1px solid #CAAB68;
+  box-shadow: 0 0 0 0.2rem rgba(202, 171, 104, 0.3);
+}
+.contact_us_form_and_explain .box_of_contact_us .form_of_contact_us .contact_information .contact_information_title {
+  font-size: 1.15rem;
+  padding: 20px 0px;
+}
+.contact_us_form_and_explain .box_of_contact_us .form_of_contact_us .contact_information .contact_information_us {
+  color: #6D6D7A;
+}
 
 /*# sourceMappingURL=contact-us.css.map */

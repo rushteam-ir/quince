@@ -17,9 +17,96 @@
 {<body}
 
 {!Header Of Contact Us Page!}
+    <section class="header_of_contact_us_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="got_question dir_rtl">سوالی دارید؟</p>
+                    <h1 class="contact-us-title">
+                        با ما در تماس باشید
+                    </h1>
+                    <p class="explain_contact_us dir_rtl">
+                        ما در اینجا هستیم تا به هر سؤالی که بپرسید پاسخ دهیم.امیدواریم که بتوانیم به شما کمک کنیم🙂
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {!End Header Of Contact Us Page!}
 
-{!End Header Of Contact Us Page!}
+    {!Contact Us Form And Explain!}
+    <section class="contact_us_form_and_explain">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 px-0 overflow-hidden">
+                    <div class="box_of_contact_us">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <form class="form_of_contact_us dir_rtl">
+                                        <div class="form-group  d-inline-block  inline_form_class">
+                                            <label for="fn" class="label_of_form">
+                                                نام
+                                                <span class="should_be_fill">*</span>
+                                            </label>
+                                            <input type="text" class="form-control focus_on_form" id="fn">
+                                        </div>
+                                        <div class="form-group d-inline-block inline_form_class m_r_form_inline">
+                                            <label for="ln" class="label_of_form">
+                                                نام خانوادگی
+                                                <span class="should_be_fill">*</span>
+                                            </label>
+                                            <input type="text" class="form-control focus_on_form" id="ln">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email" class="label_of_form">
+                                                ایمیل
+                                                <span class="should_be_fill">*</span>
+                                            </label>
+                                            <input type="email" class="form-control focus_on_form" id="email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="message_title" class="label_of_form" >
+                                                عنوان پیام
+                                                <span class="should_be_fill">*</span>
+                                            </label>
+                                            <input type="text" class="form-control focus_on_form" id="message_title">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="textarea" class="label_of_form">
+                                                متن پیام
+                                                <span class="should_be_fill">*</span>
+                                            </label>
+                                            <textarea class="form-control focus_on_form" id="textarea" rows="3"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn w-100 mt-2 btn_of_contact_us">ارسال</button>
+                                        <hr class="mt-4">
+                                        <div class="contact_information">
+                                            <h3 class="contact_information_title w-100 text-right ">
+                                                اطلاعات تماس
+                                            </h3>
+                                            <div class="location_of_us  contact_information_us text-right">
+                                                <i class="fas fa-map-marker-smile"></i>
+                                            </div>
+                                            <div class="contact_of_us contact_information_us text-right">
+                                                <i class="fas fa-phone"></i>
+                                            </div>
+                                            <div class="email_of_us contact_information_us text-right">
+                                                <i class="fas fa-envelope"></i>
+                                            </div>
+                                        </div>
+                                    </form>
 
-
+                                </div>
+                                <div class="col-lg-6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{!End Contact Us Form And Explain!}
 
 {/body}
