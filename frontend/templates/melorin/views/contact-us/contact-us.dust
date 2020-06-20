@@ -5,11 +5,11 @@
 {/title}
 {<css}
     <link rel="stylesheet" href="css/front-end/contact-us.css">
-    <link rel="stylesheet" href="css/general/error.css">
+    <link rel="stylesheet" href="assets/css/general/error.css">
 {/css}
 {<js}
     <script src="js/front-end/contact-us.js"></script>
-    <script src="js/general/error.js"></script>
+    <script src="assets/js/general/error.js"></script>
 {/js}
 
 {<body}
