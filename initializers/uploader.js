@@ -39,7 +39,7 @@ module.exports = class {
     upload() {
 
         let file_format = this.file.name.split('.').pop();
-        log(file_format)
+
         if(this.allowed_formats.includes(file_format) || this.allowed_formats[0] == '*'){
 
             if(this.file.size/1024 <= this.limited_size){

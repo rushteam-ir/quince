@@ -11,13 +11,11 @@ router.post('/', async(req,res)=>{
             case 'delete':
             {
 
-                log('im in delete')
                 let {link_inp, type_inp} = req.body;
                 let file_name = link_inp.split('/').slice(-1)[0]
                 let file_type = link_inp.split('/').slice(-2)[0]
                 let file_path = `${backend_upload_dir}${file_type}/${file_name}`;
 
-                log(file_type)
                 fs.unlink(file_path, function(err) {})
 
                 let index = req.session.temp_files.indexOf(`${file_type}/${file_name}`);
@@ -56,7 +54,7 @@ router.post('/', async(req,res)=>{
 
                 if(upload_result){
 
-                    return res.json({ status : false});
+                    return res.end()
 
                 }
 

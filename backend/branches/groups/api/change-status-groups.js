@@ -24,7 +24,7 @@ router.get('/', async(req,res)=>{
 
                 }
 
-                let result = user_model.editProfile(user_find._id, user_data);
+                let result = user_model.edit(user_find._id, user_data);
 
                 if(result){
 

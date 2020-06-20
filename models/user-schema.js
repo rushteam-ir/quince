@@ -31,7 +31,7 @@ user_schema.statics = {
 
     },
 
-    editProfile : async function(user_id, user_data){
+    edit : async function(user_id, user_data){
 
         let find_user = await user_model.findOne({email : user_data.email});
 

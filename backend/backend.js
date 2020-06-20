@@ -18,7 +18,7 @@ backend.use(async(req,res,next)=>{
 
             }
 
-            let result = await user_model.editProfile(req.session.admin_id, user_data);
+            let result = await user_model.edit(req.session.admin_id, user_data);
 
             if(result){
 

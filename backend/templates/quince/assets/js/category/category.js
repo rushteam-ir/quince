@@ -55,6 +55,10 @@ $('.remove_table_btn').on('click', function (e) {
             }).then((result) => {
                 if (result.value) {
                     redirect(`${backend_url}category/api/delete-category/?id=${cat_id}`);
+                    // apiTableManager({
+                    //     do_inp : 'delete',
+                    //     rows_inp : [${cat_id}]
+                    // })
                 }
             })
         }
