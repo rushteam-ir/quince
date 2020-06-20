@@ -1,0 +1,95 @@
+//import file
+
+@import "../../scss/mixin/main-mixin";
+@import "../../scss/variable/color";
+
+
+//Header Of Contact Us Page
+.header_of_contact_us_page {
+  .got_question {
+    color: $d_gold;
+  }
+
+  .explain_contact_us {
+    color: $gray;
+  }
+
+}
+
+//End Header Of Contact Us Page
+
+//Contact Us Form And Explain
+
+.contact_us_form_and_explain {
+  .box_of_contact_us {
+    width: 150%;
+    height: 1000px;
+    background-color: $second_gray;
+    transform: rotate(-3deg);
+    margin-top: 7%;
+
+
+    .form_of_contact_us {
+      background-color: $white;
+      position: relative;
+      transform: rotate(3deg);
+      border-radius: 5px;
+      box-shadow: 5px 7px 30px rgba(72, 73, 121, 0.15);
+      left: -55%;
+      width: 80%;
+      padding: 60px 40px;
+      top: -3%;
+
+      .label_of_form {
+        direction: rtl;
+        float: right;
+      }
+
+
+      .inline_form_class {
+        width: 45%;
+      }
+
+      .m_r_form_inline {
+        margin-right: 10%;
+      }
+
+
+      .should_be_fill {
+        color: red;
+      }
+
+      .btn_of_contact_us {
+        background-color: $d_gold;
+        color: white;
+      }
+
+      .focus_on_form {
+        &:focus {
+          border: 1px solid $d_gold;
+          box-shadow: 0 0 0 0.2rem rgba(202, 171, 104, 0.3);
+        }
+      }
+
+
+      .contact_information {
+
+        .contact_information_title {
+          font-size: 1.15rem;
+          padding: 20px 0px;
+        }
+
+        .contact_information_us{
+          color: #6D6D7A;
+        }
+      }
+
+    }
+
+  }
+
+
+}
+
+
+//End Contact Us Form And Explain
