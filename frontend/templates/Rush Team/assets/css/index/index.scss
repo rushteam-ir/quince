@@ -216,6 +216,7 @@
             font-family: accent-font;
         }
     }
+
     .service_text {
         color: red;
         text-align: right;
@@ -223,9 +224,11 @@
         position: absolute;
         z-index: 10;
         right: -100%;
+        top: 50px;
         display: none;
     }
-    .active_text{
+
+    .active_text {
         display: block;
     }
 }
