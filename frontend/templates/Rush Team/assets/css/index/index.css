@@ -7,7 +7,6 @@
 .swiper-slide {
   font-size: 18px;
   color: #fff;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 40px 60px;
 }
@@ -18,7 +17,6 @@
   top: 0;
   width: 130%;
   height: 100%;
-  -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
 }
@@ -55,18 +53,22 @@
 .swiper-slide .row {
   height: 100%;
 }
+
 .swiper-slide .header_title {
   font-size: 2.5rem;
   color: white;
 }
+
 .swiper-slide .header_subtitle {
   font-size: 1.2rem;
 }
+
 .swiper-slide .header_text {
   font-size: 0.9rem;
   margin-top: 20px;
   color: #b8b8b8;
 }
+
 .swiper-slide .main_fs_field {
   width: 80%;
   height: 370px;
@@ -75,11 +77,13 @@
   padding-top: 20px;
   border-radius: 7px;
 }
+
 .swiper-slide .bordered_box {
   width: 150px;
   height: 390px;
   border: 5px solid #CAAB68;
 }
+
 .swiper-slide .fs_btn {
   color: white;
   background-color: #CAAB68;
@@ -87,6 +91,7 @@
   width: 198px;
   text-align: right;
 }
+
 .swiper-slide .fs_btn i {
   position: relative;
   top: 2px;
@@ -96,6 +101,7 @@
   -o-transition: all 0.1s linear 0s;
   -moz-transition: all 0.1s linear 0s;
 }
+
 .swiper-slide .fs_btn:hover i {
   right: 4px;
 }
@@ -179,9 +185,11 @@
   background-size: cover;
   padding: 10px;
 }
+
 .left_service_side .service_border_custom {
   height: 100%;
 }
+
 .left_service_side .service_border_custom .service_col_template {
   cursor: pointer;
   border: 1px solid #ffffff00;
@@ -194,6 +202,7 @@
 .left_service_side .service_border_custom .active_template {
   border: 1px solid #CAAB68;
 }
+
 .left_service_side .dark_layer {
   width: 100%;
   height: 100%;
@@ -202,28 +211,34 @@
   top: 0;
   left: 0;
 }
+
 .left_service_side i {
   font-size: 2rem;
   color: #585858a1;
 }
+
 .left_service_side .title {
   color: #CAAB68;
   font-weight: bold;
 }
+
 .left_service_side .sub_tutle {
   color: white;
 }
+
 .left_service_side .header_of_levels {
   width: 100%;
   position: relative;
   margin-top: 30px;
   margin-bottom: 50px;
 }
+
 .left_service_side .header_of_levels p {
   color: #CAAB68;
   font-size: 3rem;
   font-family: accent-font;
 }
+
 .left_service_side .service_text {
   text-align: justify;
   direction: rtl;
@@ -266,5 +281,3 @@
 .left_service_side .active_text {
   display: block;
 }
-
-/*# sourceMappingURL=index.css.map */

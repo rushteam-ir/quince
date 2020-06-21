@@ -134,5 +134,12 @@
   font-size: .9rem;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: all 0.2s ease-out 0s;
+  -webkit-transition: all 0.2s ease-out 0s;
+  -o-transition: all 0.2s ease-out 0s;
+  -moz-transition: all 0.2s ease-out 0s;
+}
+
+.contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .active_collaps {
+  max-height: 200px;
 }
