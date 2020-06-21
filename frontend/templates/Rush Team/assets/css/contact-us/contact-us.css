@@ -7,11 +7,9 @@
   border-radius: 6px;
   margin-bottom: 50px;
 }
-
 .main_contact_form label span {
   color: red;
 }
-
 .main_contact_form button {
   color: white;
   background-color: #CAAB68;
@@ -19,11 +17,11 @@
   width: 100%;
   margin-top: 10px;
 }
-
 .main_contact_form .contact_way_part :first-child {
   color: #171717;
   font-size: 1.3rem;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 .contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you {
   transform: rotate(3deg);
@@ -85,11 +83,14 @@
 >>>>>>> f91563ff136b42798b6694e9b6351528ca36cb40
 =======
 
+=======
+>>>>>>> de3d856f8779ad63afabece35937d6f6765ab474
 .main_contact_form .contact_way_part .info_of_contact_way {
   color: #878791;
 >>>>>>> 2b8bdc8b6c31ea2c49e919d7caa46bee9e132d38
 }
-
 .main_contact_form .contact_way_part .info_of_contact_way i {
   color: #878791;
 }
+
+/*# sourceMappingURL=contact-us.css.map */
