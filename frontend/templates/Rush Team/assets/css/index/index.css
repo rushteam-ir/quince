@@ -182,13 +182,6 @@
 .left_service_side .service_border_custom {
   height: 100%;
 }
-<<<<<<< HEAD
-.left_service_side .service_border_custom .active_template {
-  border: 1px solid #CAAB68;
-}
-=======
-
->>>>>>> 7ecfcf812a9c99e70d65ff8a03e034a843dc9d9c
 .left_service_side .service_border_custom .service_col_template {
   cursor: pointer;
   border: 1px solid #ffffff00;
@@ -241,8 +234,6 @@
   width: 550px;
   display: none;
 }
-<<<<<<< HEAD
-=======
 
 .left_service_side .service_text :nth-child(1) {
   color: #CAAB68;
@@ -272,7 +263,6 @@
   background-color: #CAAB68;
 }
 
->>>>>>> 7ecfcf812a9c99e70d65ff8a03e034a843dc9d9c
 .left_service_side .active_text {
   display: block;
 }
