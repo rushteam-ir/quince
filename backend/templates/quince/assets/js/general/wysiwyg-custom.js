@@ -2,9 +2,9 @@
 
 new FroalaEditor('textarea', {
 
-    imageUploadURL: `${backend_url}api/file-manager`,
-    fileUploadURL: `${backend_url}api/file-manager`,
-    videoUploadURL: `${backend_url}api/file-manager`,
+    imageUploadURL: `${backend_url}api/wysiwyg-manager`,
+    fileUploadURL: `${backend_url}api/wysiwyg-manager`,
+    videoUploadURL: `${backend_url}api/wysiwyg-manager`,
     imageUploadParams: {
         do_inp : 'upload'
     },
@@ -45,3 +45,14 @@ new FroalaEditor('textarea', {
     }
 
 })
+
+function apiFileManager(this_data){
+
+    $.post(`${backend_url}api/wysiwyg-manager`, this_data, (data, status)=>{
+
+        console.log(status);
+        console.log(data);
+
+    });
+
+}

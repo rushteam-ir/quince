@@ -21,73 +21,8 @@
   color: #171717;
   font-size: 1.3rem;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-.contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you {
-  transform: rotate(3deg);
-  -webkit-transform: rotate(3deg);
-  -o-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
-  position: relative;
-  right: 60%;
-  top: 150px;
-  width: 90%;
-}
-.contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .title_of_help_question {
-  color: #CAAB68;
-}
-.contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .explain_of_help_question {
-  color: #7f7e7e;
-}
-.contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .repetitive_questions_box {
-  position: relative;
-  cursor: pointer;
-}
-.contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .repetitive_questions_box:hover .fa-angle-left {
-  left: 5px;
-}
-.contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .repetitive_questions_box .title_of_repetitive_question {
-  font-size: 1.1rem;
-}
-.contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .repetitive_questions_box .explain_of_repetitive_question {
-  width: 80%;
-  margin-left: 20%;
-  font-size: 0.8rem;
-  color: #7f7e7e;
-  text-align: right;
-  direction: rtl;
-}
-.contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .repetitive_questions_box .fa-angle-left {
-  position: absolute;
-  left: 10px;
-  font-size: 1.2rem;
-  color: #7f7e7e;
-  top: 30px;
-  transition: all 0.17s linear 0s;
-  -webkit-transition: all 0.17s linear 0s;
-  -o-transition: all 0.17s linear 0s;
-  -moz-transition: all 0.17s linear 0s;
-}
-<<<<<<< HEAD
-
-.content_of_repetitive_question {
-  font-size: 0.9rem;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-=======
-.contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .content_of_repetitive_question {
-  font-size: 0.9rem;
-  overflow: hidden;
-  display: none;
->>>>>>> f91563ff136b42798b6694e9b6351528ca36cb40
-=======
-
-=======
->>>>>>> de3d856f8779ad63afabece35937d6f6765ab474
 .main_contact_form .contact_way_part .info_of_contact_way {
   color: #878791;
->>>>>>> 2b8bdc8b6c31ea2c49e919d7caa46bee9e132d38
 }
 .main_contact_form .contact_way_part .info_of_contact_way i {
   color: #878791;
