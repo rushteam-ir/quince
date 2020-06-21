@@ -6,8 +6,7 @@ $(document).ready(function(){
 
         q_box.eq(i).click(function(){
 
-            q_box.next().slideUp();
-            $(this).next().slideDown();
+            $(this).next().slideToggle();
 
         });
 x
