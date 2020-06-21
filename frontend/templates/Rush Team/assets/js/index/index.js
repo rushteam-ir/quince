@@ -17,16 +17,15 @@ var swiper = new Swiper('.swiper-container', {
 
 // service js
 
-$(document).ready(function(){
+$(document).ready(function () {
 
-  $(document).on('click','.service_col_template',function(){
+  $(document).on('click', '.service_col_template', function () {
 
     $('.service_col_template').removeClass('active_template');
     $(this).addClass('active_template');
-    $('.service_col_template').next().removeClass('active_text');
-    $(this).next().addClass('active_text');
+    $('.service_col_template').next().fadeOut();
+    $(this).next().fadeIn();
 
   });
 
 });
-

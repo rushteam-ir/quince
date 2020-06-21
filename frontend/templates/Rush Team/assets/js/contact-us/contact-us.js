@@ -1,22 +1,16 @@
+$(document).ready(function(){
 
-var coll_content = document.getElementsByClassName("repetitive_questions_box");
+    let q_box = $('.repetitive_questions_box');
 
-for (var i = 0; i < coll_content.length; i++) {
+    for(let i = 0 ; i < q_box.length ; i++){
 
-    coll_content[i].addEventListener("click", function() {
+        q_box.eq(i).click(function(){
 
-        var content = this.nextElementSibling;
+            $(this).next().slideToggle();
 
-        if (content.style.maxHeight) {
+        });
 
-            content.style.maxHeight = null;
+    }
 
-        } else {
 
-            content.style.maxHeight = content.scrollHeight + 'px';
-
-        }
-
-    });
-
-}
+});

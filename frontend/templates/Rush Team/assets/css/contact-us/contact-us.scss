@@ -145,18 +145,22 @@
 
       }
 
+      .content_of_repetitive_question {
+        font-size: .9rem;
+        //max-height: 0;
+        overflow: hidden;
+        display: none;
+        //@include transition(0.2s ,ease-out , 0s);
+      }
+
+      //.active_collapse{
+      //  max-height: 200px;
+      //}
 
     }
   }
 
 
-}
-
-.content_of_repetitive_question{
-  font-size: .9rem;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
 }
 
 

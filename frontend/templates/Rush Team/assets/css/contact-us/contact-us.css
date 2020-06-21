@@ -109,12 +109,19 @@
   -o-transition: all 0.17s linear 0s;
   -moz-transition: all 0.17s linear 0s;
 }
+<<<<<<< HEAD
 
 .content_of_repetitive_question {
   font-size: 0.9rem;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+=======
+.contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .content_of_repetitive_question {
+  font-size: 0.9rem;
+  overflow: hidden;
+  display: none;
+>>>>>>> f91563ff136b42798b6694e9b6351528ca36cb40
 }
 
 /*# sourceMappingURL=contact-us.css.map */
