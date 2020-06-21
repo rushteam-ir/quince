@@ -141,6 +141,15 @@
           top: 30px;
           @include transition(0.17s, linear, 0s)
         }
+
+        .content_of_repetitive_question{
+          font-size: .9rem;
+          direction: rtl;
+          text-align: justify;
+          display: none;
+          overflow: hidden;
+
+        }
       }
 
 
