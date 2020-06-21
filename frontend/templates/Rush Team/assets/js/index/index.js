@@ -23,6 +23,7 @@ $(document).ready(function () {
 
     $('.service_col_template').removeClass('active_template');
     $(this).addClass('active_template');
+    
     $('.service_col_template').next().fadeOut();
     $(this).next().fadeIn();
 
