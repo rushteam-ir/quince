@@ -111,8 +111,6 @@
 }
 .contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .repetitive_questions_box .content_of_repetitive_question {
   font-size: 0.9rem;
-  direction: rtl;
-  text-align: justify;
   display: none;
   overflow: hidden;
 }
