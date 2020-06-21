@@ -107,12 +107,17 @@
                                         <h3 class="title_of_help_question dir_rtl w-100 text-center">سوالات متداول!</h3>
                                         <p class="explain_of_help_question dir_rtl mb-5">سوالاتی که معمولا شما عزیزان
                                             پرسیده اید را اینجا جمع کرده ایم تا باعث سهولت کار شما دوستان شویم.</p>
+
                                         <div class="repetitive_questions_box">
                                             <h4 class="title_of_repetitive_question">درباره ما</h4>
                                             <p class="explain_of_repetitive_question">لورم ایپسوم متن ساختگی با تولید
                                                 سادگی نامفهوم ازصنعت چاپ.</p>
+
                                             <i class="far fa-angle-left"></i>
                                         </div>
+                                        <p class="content_of_repetitive_question">
+                                            رسانه دیجیتال میتواند تاثیری مثبت روی زندگی ما بگذارد . کسب و کار ها از این رسانه هامیتوانندبرای شفافیت بیشتر، خدمت رسانی بهتر و صمیمت بیشتر با مشتری ها استفاده کند . مامیخواهیم در اینمسیر تاثیری کوچک داشته باشیم.
+                                        </p>
                                         <hr>
                                         <div class="repetitive_questions_box">
                                             <h4 class="title_of_repetitive_question">هزینه های ما</h4>
@@ -120,6 +125,9 @@
                                                 سادگی نامفهوم ازصنعت چاپ.</p>
                                             <i class="far fa-angle-left"></i>
                                         </div>
+                                        <p class="content_of_repetitive_question">
+                                            رسانه دیجیتال میتواند تاثیری مثبت روی زندگی ما بگذارد . کسب و کار ها از این رسانه هامیتوانندبرای شفافیت بیشتر، خدمت رسانی بهتر و صمیمت بیشتر با مشتری ها استفاده کند . مامیخواهیم در اینمسیر تاثیری کوچک داشته باشیم.
+                                        </p>
                                         <hr>
                                         <div class="repetitive_questions_box">
                                             <h4 class="title_of_repetitive_question">نمونه کار های ما</h4>
@@ -127,13 +135,20 @@
                                                 سادگی نامفهوم ازصنعت چاپ.</p>
                                             <i class="far fa-angle-left"></i>
                                         </div>
+                                        <p class="content_of_repetitive_question">
+                                            رسانه دیجیتال میتواند تاثیری مثبت روی زندگی ما بگذارد . کسب و کار ها از این رسانه هامیتوانندبرای شفافیت بیشتر، خدمت رسانی بهتر و صمیمت بیشتر با مشتری ها استفاده کند . مامیخواهیم در اینمسیر تاثیری کوچک داشته باشیم.
+                                        </p>
                                         <hr>
                                         <div class="repetitive_questions_box">
                                             <h4 class="title_of_repetitive_question">درباره سئو</h4>
                                             <p class="explain_of_repetitive_question">لورم ایپسوم متن ساختگی با تولید
                                                 سادگی نامفهوم ازصنعت چاپ.</p>
+
                                             <i class="far fa-angle-left"></i>
                                         </div>
+                                        <p class="content_of_repetitive_question">
+                                            رسانه دیجیتال میتواند تاثیری مثبت روی زندگی ما بگذارد . کسب و کار ها از این رسانه هامیتوانندبرای شفافیت بیشتر، خدمت رسانی بهتر و صمیمت بیشتر با مشتری ها استفاده کند . مامیخواهیم در اینمسیر تاثیری کوچک داشته باشیم.
+                                        </p>
                                         <hr>
 
                                     </div>
