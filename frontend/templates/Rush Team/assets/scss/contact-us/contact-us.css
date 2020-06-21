@@ -7,10 +7,11 @@
 
 .contact_us_form_and_explain .box_of_contact_us {
   width: 150%;
-  height: 1000px;
+  height: auto;
   background-color: #F7F8FC;
   transform: rotate(-3deg);
   margin-top: 7%;
+  padding-bottom: 100px;
 }
 .contact_us_form_and_explain .box_of_contact_us .form_of_contact_us {
   background-color: #fff;
@@ -40,9 +41,12 @@
   background-color: #CAAB68;
   color: white;
 }
-.contact_us_form_and_explain .box_of_contact_us .form_of_contact_us .focus_on_form:focus {
+.contact_us_form_and_explain .box_of_contact_us .form_of_contact_us .focus_on_form {
   border: 1px solid #CAAB68;
-  box-shadow: 0 0 0 0.2rem rgba(202, 171, 104, 0.3);
+}
+.contact_us_form_and_explain .box_of_contact_us .form_of_contact_us .focus_on_form:focus {
+  border: none;
+  box-shadow: 0 0 0 0.15rem rgba(202, 171, 104, 0.3);
 }
 .contact_us_form_and_explain .box_of_contact_us .form_of_contact_us .contact_information .contact_information_title {
   font-size: 1.15rem;
@@ -50,6 +54,52 @@
 }
 .contact_us_form_and_explain .box_of_contact_us .form_of_contact_us .contact_information .contact_information_us {
   color: #6D6D7A;
+}
+.contact_us_form_and_explain .box_of_contact_us .form_of_contact_us .contact_information .font_size_of_icon_in_contact_information {
+  font-size: 1.1rem;
+}
+.contact_us_form_and_explain .box_of_contact_us .form_of_contact_us .contact_information .fa-map-marker-smile {
+  font-size: 1.3rem;
+}
+.contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you {
+  transform: rotate(3deg);
+  position: relative;
+  right: 60%;
+  top: 150px;
+  width: 90%;
+}
+.contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .title_of_help_question {
+  color: goldenrod;
+}
+.contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .explain_of_help_question {
+  color: #7f7e7e;
+}
+.contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .repetitive_questions_box {
+  position: relative;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+.contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .repetitive_questions_box:hover .fa-angle-left {
+  left: 5px;
+  font-weight: bold;
+}
+.contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .repetitive_questions_box .title_of_repetitive_question {
+  font-size: 1.1rem;
+}
+.contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .repetitive_questions_box .explain_of_repetitive_question {
+  width: 80%;
+  margin-left: 20%;
+  font-size: 0.8rem;
+  color: #7f7e7e;
+  text-align: right;
+  direction: rtl;
+}
+.contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .repetitive_questions_box .fa-angle-left {
+  position: absolute;
+  left: 10px;
+  font-size: 1.2rem;
+  color: #7f7e7e;
+  top: 30px;
 }
 
 /*# sourceMappingURL=contact-us.css.map */

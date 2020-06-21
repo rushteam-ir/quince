@@ -85,20 +85,52 @@
                                             <h3 class="contact_information_title w-100 text-right ">
                                                 اطلاعات تماس
                                             </h3>
-                                            <div class="location_of_us  contact_information_us text-right">
-                                                <i class="fas fa-map-marker-smile"></i>
+                                            <div class="location_of_us  contact_information_us text-right mb-3">
+                                                <i class="fas fa-map-marker-smile ml-2 font_size_of_icon_in_contact_information"></i>
+                                                <span class="text_of_contact_information">خونه کسری اینا</span>
                                             </div>
-                                            <div class="contact_of_us contact_information_us text-right">
-                                                <i class="fas fa-phone"></i>
+                                            <div class="contact_of_us contact_information_us text-right mb-3">
+                                                <i class="fas fa-phone ml-2 font_size_of_icon_in_contact_information"></i>
+                                                <span class="text_of_contact_information">09021414866</span>
                                             </div>
                                             <div class="email_of_us contact_information_us text-right">
-                                                <i class="fas fa-envelope"></i>
+                                                <i class="fas fa-envelope ml-2 font_size_of_icon_in_contact_information"></i>
+                                                <span class="text_of_contact_information">RushTeam.web@gmail.com</span>
                                             </div>
                                         </div>
                                     </form>
 
                                 </div>
                                 <div class="col-lg-6">
+                                    <div class="how_can_we_help_you text-right">
+                                        <h3 class="title_of_help_question dir_rtl w-100 text-center">سوالات متداول!</h3>
+                                        <p class="explain_of_help_question dir_rtl mb-5">سوالاتی که معمولا شما عزیزان پرسیده اید را اینجا جمع کرده ایم تا باعث سهولت کار شما دوستان شویم.</p>
+                                        <div class="repetitive_questions_box">
+                                            <h4 class="title_of_repetitive_question">درباره ما</h4>
+                                            <p class="explain_of_repetitive_question">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم ازصنعت چاپ.</p>
+                                            <i class="far fa-angle-left"></i>
+                                        </div>
+                                        <hr>
+                                        <div class="repetitive_questions_box">
+                                            <h4 class="title_of_repetitive_question">هزینه های ما</h4>
+                                            <p class="explain_of_repetitive_question">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم ازصنعت چاپ.</p>
+                                            <i class="far fa-angle-left"></i>
+                                        </div>
+                                        <hr>
+                                        <div class="repetitive_questions_box">
+                                            <h4 class="title_of_repetitive_question">نمونه کار های ما</h4>
+                                            <p class="explain_of_repetitive_question">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم ازصنعت چاپ.</p>
+                                            <i class="far fa-angle-left"></i>
+                                        </div>
+                                        <hr>
+                                        <div class="repetitive_questions_box">
+                                            <h4 class="title_of_repetitive_question">درباره سئو</h4>
+                                            <p class="explain_of_repetitive_question">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم ازصنعت چاپ.</p>
+                                            <i class="far fa-angle-left"></i>
+                                        </div>
+                                        <hr>
+
+                                   </div>
                                 </div>
                             </div>
                         </div>

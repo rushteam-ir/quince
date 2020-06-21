@@ -23,10 +23,12 @@
 .contact_us_form_and_explain {
   .box_of_contact_us {
     width: 150%;
-    height: 1000px;
+    height: auto;
     background-color: $second_gray;
     transform: rotate(-3deg);
     margin-top: 7%;
+    padding-bottom: 100px;
+
 
 
     .form_of_contact_us {
@@ -65,9 +67,10 @@
       }
 
       .focus_on_form {
+        border: 1px solid $d_gold;
         &:focus {
-          border: 1px solid $d_gold;
-          box-shadow: 0 0 0 0.2rem rgba(202, 171, 104, 0.3);
+          border: none;
+          box-shadow: 0 0 0 0.15rem rgba(202, 171, 104, 0.3);
         }
       }
 
@@ -79,13 +82,68 @@
           padding: 20px 0px;
         }
 
-        .contact_information_us{
+        .contact_information_us {
           color: #6D6D7A;
+        }
+
+        .font_size_of_icon_in_contact_information {
+          font-size: 1.1rem;
+        }
+
+        .fa-map-marker-smile {
+          font-size: 1.3rem;
         }
       }
 
     }
 
+    .how_can_we_help_you{
+      transform: rotate(3deg);
+      position: relative;
+      right: 60%;
+      top: 150px;
+      width: 90%;
+
+      .title_of_help_question{
+        color: goldenrod;
+      }
+
+      .explain_of_help_question{
+        color: $gray;
+      }
+
+      .repetitive_questions_box{
+        position: relative;
+        cursor: pointer;
+        transition: all 1s ease-in-out;
+        &:hover .fa-angle-left{
+          left: 5px;
+          font-weight: bold;
+        }
+        .title_of_repetitive_question{
+          font-size: 1.1rem;
+        }
+
+        .explain_of_repetitive_question{
+          width: 80%;
+          margin-left: 20%;
+          font-size: .8rem;
+          color: $gray;
+          text-align: right;
+          direction: rtl;
+        }
+
+        .fa-angle-left{
+          position: absolute;
+          left: 10px;
+          font-size: 1.2rem;
+          color:$gray ;
+          top: 30px;
+        }
+      }
+
+
+    }
   }
 
 
