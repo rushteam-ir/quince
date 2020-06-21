@@ -163,7 +163,6 @@
   background-color: #282828;
   padding: 10px;
 }
-
 .right_service_side .border_custom {
   border: 1px solid #CAAB68;
   height: 100%;
@@ -190,7 +189,6 @@
   -o-transition: all 0.2s linear 0s;
   -moz-transition: all 0.2s linear 0s;
 }
-
 .left_service_side .service_border_custom .active_template {
   border: 1px solid #CAAB68;
 }
@@ -234,35 +232,29 @@
   width: 550px;
   display: none;
 }
-
 .left_service_side .service_text :nth-child(1) {
   color: #CAAB68;
   font-size: 3rem;
   margin-bottom: 0px;
 }
-
 .left_service_side .service_text :nth-child(2) {
   color: white;
   font-size: 1.3rem;
 }
-
 .left_service_side .service_text :nth-child(3) {
   color: #808080;
   font-size: 0.9rem;
   line-height: 25px;
 }
-
 .left_service_side .service_text .btn_of_service {
   color: #CAAB68;
   border: 1px solid #CAAB68;
   border-radius: 50px;
 }
-
 .left_service_side .service_text .btn_of_service:hover {
   color: white;
   background-color: #CAAB68;
 }
-
 .left_service_side .active_text {
   display: block;
 }
