@@ -23,6 +23,8 @@ $(document).ready(function(){
 
     $('.service_col_template').removeClass('active_template');
     $(this).addClass('active_template');
+    $('.service_col_template').next().removeClass('active_text');
+    $(this).next().addClass('active_text');
 
   });
 

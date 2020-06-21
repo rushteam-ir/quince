@@ -216,4 +216,16 @@
             font-family: accent-font;
         }
     }
+    .service_text {
+        color: red;
+        text-align: right;
+        direction: rtl;
+        position: absolute;
+        z-index: 10;
+        right: -100%;
+        display: none;
+    }
+    .active_text{
+        display: block;
+    }
 }
