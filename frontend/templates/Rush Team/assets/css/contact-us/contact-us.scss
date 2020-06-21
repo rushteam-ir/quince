@@ -1,7 +1,8 @@
 //import file
 
-@import "../../scss/mixin/main-mixin";
-@import "../../scss/variable/color";
+@import "../../css/mixin/main-mixin";
+@import "../../css/mixin/cb-mixin";
+@import "../../css/variable/color";
 
 
 //Header Of Contact Us Page
@@ -25,18 +26,17 @@
     width: 150%;
     height: auto;
     background-color: $second_gray;
-    transform: rotate(-3deg);
+
+    @include transform(rotate(-3deg));
     margin-top: 7%;
     padding-bottom: 100px;
-
-
 
     .form_of_contact_us {
       background-color: $white;
       position: relative;
-      transform: rotate(3deg);
+      @include transform(rotate(3deg));
       border-radius: 5px;
-      box-shadow: 5px 7px 30px rgba(72, 73, 121, 0.15);
+      box-shadow: 5px 7px 30px #48497926;
       left: -55%;
       width: 80%;
       padding: 60px 40px;
@@ -67,10 +67,10 @@
       }
 
       .focus_on_form {
-        border: 1px solid $d_gold;
+
         &:focus {
           border: none;
-          box-shadow: 0 0 0 0.15rem rgba(202, 171, 104, 0.3);
+          box-shadow: 0 0 0 0.15rem #caab684d;
         }
       }
 
@@ -97,34 +97,34 @@
 
     }
 
-    .how_can_we_help_you{
-      transform: rotate(3deg);
+    .how_can_we_help_you {
+      @include transform(rotate(3deg));
       position: relative;
       right: 60%;
       top: 150px;
       width: 90%;
 
-      .title_of_help_question{
-        color: goldenrod;
+      .title_of_help_question {
+        color: $d_gold;
       }
 
-      .explain_of_help_question{
+      .explain_of_help_question {
         color: $gray;
       }
 
-      .repetitive_questions_box{
+      .repetitive_questions_box {
         position: relative;
         cursor: pointer;
-        transition: all 1s ease-in-out;
-        &:hover .fa-angle-left{
+
+        &:hover .fa-angle-left {
           left: 5px;
-          font-weight: bold;
         }
-        .title_of_repetitive_question{
+
+        .title_of_repetitive_question {
           font-size: 1.1rem;
         }
 
-        .explain_of_repetitive_question{
+        .explain_of_repetitive_question {
           width: 80%;
           margin-left: 20%;
           font-size: .8rem;
@@ -133,12 +133,13 @@
           direction: rtl;
         }
 
-        .fa-angle-left{
+        .fa-angle-left {
           position: absolute;
           left: 10px;
           font-size: 1.2rem;
-          color:$gray ;
+          color: $gray;
           top: 30px;
+          @include transition(0.17s, linear, 0s)
         }
       }
 

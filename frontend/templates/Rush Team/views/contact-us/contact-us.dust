@@ -7,7 +7,7 @@
 {/title}
 
 {<css}
-    <link rel="stylesheet" href="scss/contact-us/contact-us.css">
+    <link rel="stylesheet" href="css/contact-us/contact-us.css">
 {/css}
 
 {<js}
@@ -43,7 +43,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <form class="form_of_contact_us dir_rtl">
+                                    <form class="form_of_contact_us dir_rtl" autocomplete="off">
                                         <div class="form-group  d-inline-block  inline_form_class">
                                             <label for="fn" class="label_of_form">
                                                 نام
@@ -66,7 +66,7 @@
                                             <input type="email" class="form-control focus_on_form" id="email">
                                         </div>
                                         <div class="form-group">
-                                            <label for="message_title" class="label_of_form" >
+                                            <label for="message_title" class="label_of_form">
                                                 عنوان پیام
                                                 <span class="should_be_fill">*</span>
                                             </label>
@@ -77,7 +77,8 @@
                                                 متن پیام
                                                 <span class="should_be_fill">*</span>
                                             </label>
-                                            <textarea class="form-control focus_on_form" id="textarea" rows="3"></textarea>
+                                            <textarea class="form-control focus_on_form" id="textarea"
+                                                      rows="3"></textarea>
                                         </div>
                                         <button type="submit" class="btn w-100 mt-2 btn_of_contact_us">ارسال</button>
                                         <hr class="mt-4">
@@ -104,33 +105,38 @@
                                 <div class="col-lg-6">
                                     <div class="how_can_we_help_you text-right">
                                         <h3 class="title_of_help_question dir_rtl w-100 text-center">سوالات متداول!</h3>
-                                        <p class="explain_of_help_question dir_rtl mb-5">سوالاتی که معمولا شما عزیزان پرسیده اید را اینجا جمع کرده ایم تا باعث سهولت کار شما دوستان شویم.</p>
+                                        <p class="explain_of_help_question dir_rtl mb-5">سوالاتی که معمولا شما عزیزان
+                                            پرسیده اید را اینجا جمع کرده ایم تا باعث سهولت کار شما دوستان شویم.</p>
                                         <div class="repetitive_questions_box">
                                             <h4 class="title_of_repetitive_question">درباره ما</h4>
-                                            <p class="explain_of_repetitive_question">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم ازصنعت چاپ.</p>
+                                            <p class="explain_of_repetitive_question">لورم ایپسوم متن ساختگی با تولید
+                                                سادگی نامفهوم ازصنعت چاپ.</p>
                                             <i class="far fa-angle-left"></i>
                                         </div>
                                         <hr>
                                         <div class="repetitive_questions_box">
                                             <h4 class="title_of_repetitive_question">هزینه های ما</h4>
-                                            <p class="explain_of_repetitive_question">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم ازصنعت چاپ.</p>
+                                            <p class="explain_of_repetitive_question">لورم ایپسوم متن ساختگی با تولید
+                                                سادگی نامفهوم ازصنعت چاپ.</p>
                                             <i class="far fa-angle-left"></i>
                                         </div>
                                         <hr>
                                         <div class="repetitive_questions_box">
                                             <h4 class="title_of_repetitive_question">نمونه کار های ما</h4>
-                                            <p class="explain_of_repetitive_question">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم ازصنعت چاپ.</p>
+                                            <p class="explain_of_repetitive_question">لورم ایپسوم متن ساختگی با تولید
+                                                سادگی نامفهوم ازصنعت چاپ.</p>
                                             <i class="far fa-angle-left"></i>
                                         </div>
                                         <hr>
                                         <div class="repetitive_questions_box">
                                             <h4 class="title_of_repetitive_question">درباره سئو</h4>
-                                            <p class="explain_of_repetitive_question">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم ازصنعت چاپ.</p>
+                                            <p class="explain_of_repetitive_question">لورم ایپسوم متن ساختگی با تولید
+                                                سادگی نامفهوم ازصنعت چاپ.</p>
                                             <i class="far fa-angle-left"></i>
                                         </div>
                                         <hr>
 
-                                   </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
