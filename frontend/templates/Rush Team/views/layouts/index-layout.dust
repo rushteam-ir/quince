@@ -1,66 +1,67 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <base href="{frontend_url}">
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="scss/general/bootstrap.css">
-    <link rel="stylesheet" href="scss/general/Swiper.css">
-    <link rel="stylesheet" href="scss/general/fontawsome.css">
-    <link rel="stylesheet" href="scss/general/general.css">
-    <link rel="stylesheet" href="scss/layout/layout.css">
+    <link rel="stylesheet" href="css/general/bootstrap.css">
+    <link rel="stylesheet" href="css/general/Swiper.css">
+    <link rel="stylesheet" href="css/general/fontawsome.css">
+    <link rel="stylesheet" href="css/general/general.css">
+    <link rel="stylesheet" href="css/layout/layout.css">
     {+css/}
     {+title/}
 </head>
+
 <body>
-    <nav>
-        
-        <div class="navbar_field">
+<nav>
 
-            <ul>
-                <li class="navbar_iteam">
-                    <a class="active_navbar" href="">خانه</a>
-                </li>
-                <li class="navbar_iteam">
-                    <a href="">خدمات ما</a>
-                </li>
-                <li class="navbar_iteam">
-                    <a href="">نمونه کار ها</a>
-                </li>
-                <li class="navbar_iteam">
-                    <a href="">درباره ما</a>
-                </li>
-                <li class="navbar_iteam">
-                    <a href="">تماس با ما</a>
-                </li>
-                <li class="navbar_iteam">
-                    <a href="">وبلاگ</a>
-                </li>
+    <div class="navbar_field">
 
-                <div class="field_of_navbar_ltr">
-                    <img class="main_logo" src="img/RT-logo.PNG" alt="">
-                </div>
+        <ul>
+            <li class="navbar_iteam">
+                <a class="active_navbar" href="">خانه</a>
+            </li>
+            <li class="navbar_iteam">
+                <a href="">خدمات ما</a>
+            </li>
+            <li class="navbar_iteam">
+                <a href="">نمونه کار ها</a>
+            </li>
+            <li class="navbar_iteam">
+                <a href="">درباره ما</a>
+            </li>
+            <li class="navbar_iteam">
+                <a href="">تماس با ما</a>
+            </li>
+            <li class="navbar_iteam">
+                <a href="">وبلاگ</a>
+            </li>
 
-            </ul>
-            
-        </div>
+            <div class="field_of_navbar_ltr">
+                <img class="main_logo" src="img/RT-logo.PNG" alt="">
+            </div>
 
-    </nav>
+        </ul>
 
-         {+body/}
+    </div>
 
-    <footer>
+</nav>
 
-        
+    {+body/}
 
-    </footer>
-    <script src="js/general/jquery.js"></script>
-    <script src="js/general/popper.js"></script>
-    <script src="js/general/bootstrap.js"></script>
-    <script src="js/general/Swiper.js"></script>
-    <script src="js/layout/layout.js"></script>
+<footer>
+
+
+</footer>
+<script src="js/general/jquery.js"></script>
+<script src="js/general/popper.js"></script>
+<script src="js/general/bootstrap.js"></script>
+<script src="js/general/Swiper.js"></script>
+<script src="js/layout/layout.js"></script>
     {+js/}
 </body>
+
 </html>

@@ -10,6 +10,9 @@
   height: auto;
   background-color: #F7F8FC;
   transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
   margin-top: 7%;
   padding-bottom: 100px;
 }
@@ -17,8 +20,11 @@
   background-color: #fff;
   position: relative;
   transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
   border-radius: 5px;
-  box-shadow: 5px 7px 30px rgba(72, 73, 121, 0.15);
+  box-shadow: 5px 7px 30px #48497926;
   left: -55%;
   width: 80%;
   padding: 60px 40px;
@@ -41,12 +47,9 @@
   background-color: #CAAB68;
   color: white;
 }
-.contact_us_form_and_explain .box_of_contact_us .form_of_contact_us .focus_on_form {
-  border: 1px solid #CAAB68;
-}
 .contact_us_form_and_explain .box_of_contact_us .form_of_contact_us .focus_on_form:focus {
   border: none;
-  box-shadow: 0 0 0 0.15rem rgba(202, 171, 104, 0.3);
+  box-shadow: 0 0 0 0.15rem #caab684d;
 }
 .contact_us_form_and_explain .box_of_contact_us .form_of_contact_us .contact_information .contact_information_title {
   font-size: 1.15rem;
@@ -63,13 +66,16 @@
 }
 .contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you {
   transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
   position: relative;
   right: 60%;
   top: 150px;
   width: 90%;
 }
 .contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .title_of_help_question {
-  color: goldenrod;
+  color: #CAAB68;
 }
 .contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .explain_of_help_question {
   color: #7f7e7e;
@@ -80,7 +86,6 @@
 }
 .contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .repetitive_questions_box:hover .fa-angle-left {
   left: 5px;
-  font-weight: bold;
 }
 .contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .repetitive_questions_box .title_of_repetitive_question {
   font-size: 1.1rem;
@@ -99,6 +104,10 @@
   font-size: 1.2rem;
   color: #7f7e7e;
   top: 30px;
+  transition: all 0.17s linear 0s;
+  -webkit-transition: all 0.17s linear 0s;
+  -o-transition: all 0.17s linear 0s;
+  -moz-transition: all 0.17s linear 0s;
 }
 
 /*# sourceMappingURL=contact-us.css.map */

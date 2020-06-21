@@ -7,7 +7,7 @@
 {/title}
 
 {<css}
-    <link rel="stylesheet" href="scss/index/index.css">
+    <link rel="stylesheet" href="css/index/index.css">
 {/css}
 
 {<js}
