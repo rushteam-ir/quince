@@ -34,15 +34,19 @@
   direction: rtl;
   float: right;
 }
+
 .contact_us_form_and_explain .box_of_contact_us .form_of_contact_us .inline_form_class {
   width: 45%;
 }
+
 .contact_us_form_and_explain .box_of_contact_us .form_of_contact_us .m_r_form_inline {
   margin-right: 10%;
 }
+
 .contact_us_form_and_explain .box_of_contact_us .form_of_contact_us .should_be_fill {
   color: red;
 }
+
 .contact_us_form_and_explain .box_of_contact_us .form_of_contact_us .btn_of_contact_us {
   background-color: #CAAB68;
   color: white;
@@ -55,15 +59,19 @@
   font-size: 1.15rem;
   padding: 20px 0px;
 }
+
 .contact_us_form_and_explain .box_of_contact_us .form_of_contact_us .contact_information .contact_information_us {
   color: #6D6D7A;
 }
+
 .contact_us_form_and_explain .box_of_contact_us .form_of_contact_us .contact_information .font_size_of_icon_in_contact_information {
   font-size: 1.1rem;
 }
+
 .contact_us_form_and_explain .box_of_contact_us .form_of_contact_us .contact_information .fa-map-marker-smile {
   font-size: 1.3rem;
 }
+
 .contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you {
   transform: rotate(3deg);
   -webkit-transform: rotate(3deg);
@@ -74,26 +82,32 @@
   top: 150px;
   width: 90%;
 }
+
 .contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .title_of_help_question {
   color: #CAAB68;
 }
+
 .contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .explain_of_help_question {
   color: #7f7e7e;
 }
+
 .contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .repetitive_questions_box {
   position: relative;
   cursor: pointer;
 }
+
 .contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .repetitive_questions_box:hover .fa-angle-left {
   left: 5px;
 }
+
 .contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .repetitive_questions_box .title_of_repetitive_question {
   font-size: 1.1rem;
 }
+
 .contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .repetitive_questions_box .explain_of_repetitive_question {
   width: 80%;
   margin-left: 20%;
-  font-size: 0.8rem;
+  font-size: .8rem;
   color: #7f7e7e;
   text-align: right;
   direction: rtl;
@@ -109,11 +123,10 @@
   -o-transition: all 0.17s linear 0s;
   -moz-transition: all 0.17s linear 0s;
 }
-.contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .content_of_repetitive_question {
-  font-size: 0.9rem;
+
+.content_of_repetitive_question {
+  font-size: .9rem;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
-
-/*# sourceMappingURL=contact-us.css.map */
