@@ -1,3 +1,30 @@
+body {
+  overflow-x: hidden;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #caab683a;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem #caab683a;
+}
+
+.rotate_layer {
+  background-color: #F7F8FC;
+  width: 150%;
+  height: 120px;
+  transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  top: 180px;
+  left: -290px;
+  width: 150%;
+  position: absolute;
+  height: 1000px;
+}
+
 .main_contact_form {
   margin-top: 200px;
   width: 100%;
