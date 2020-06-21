@@ -77,7 +77,6 @@
 .contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .repetitive_questions_box {
   position: relative;
   cursor: pointer;
-  transition: all 1s ease-in-out;
 }
 .contact_us_form_and_explain .box_of_contact_us .how_can_we_help_you .repetitive_questions_box:hover .fa-angle-left {
   left: 5px;
