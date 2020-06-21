@@ -9,8 +9,7 @@ $(document).ready(function(){
             $(this).next().slideToggle();
 
         });
-x
-    }
 
+    }
 
 });

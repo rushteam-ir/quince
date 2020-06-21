@@ -16,162 +16,72 @@
 
 {<body}
 
-{!Header Of Contact Us Page!}
-    <section class="header_of_contact_us_page">
+    <section>
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center">
-                    <p class="got_question dir_rtl">سوالی دارید؟</p>
-                    <h1 class="contact-us-title">
-                        با ما در تماس باشید
-                    </h1>
-                    <p class="explain_contact_us dir_rtl">
-                        ما در اینجا هستیم تا به هر سؤالی که بپرسید پاسخ دهیم.امیدواریم که بتوانیم به شما کمک کنیم🙂
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    {!End Header Of Contact Us Page!}
-
-    {!Contact Us Form And Explain!}
-    <section class="contact_us_form_and_explain">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 px-0 overflow-hidden">
-                    <div class="box_of_contact_us">
-                        <div class="container">
+                <div class="col-5">
+                    <div class="main_contact_form">
+                        <form action="" class="dir_rtl text-right">
                             <div class="row">
-                                <div class="col-lg-6">
-                                    <form class="form_of_contact_us dir_rtl" autocomplete="off">
-                                        <div class="form-group  d-inline-block  inline_form_class">
-                                            <label for="fn" class="label_of_form">
-                                                نام
-                                                <span class="should_be_fill">*</span>
-                                            </label>
-                                            <input type="text" class="form-control focus_on_form" id="fn">
-                                        </div>
-                                        <div class="form-group d-inline-block inline_form_class m_r_form_inline">
-                                            <label for="ln" class="label_of_form">
-                                                نام خانوادگی
-                                                <span class="should_be_fill">*</span>
-                                            </label>
-                                            <input type="text" class="form-control focus_on_form" id="ln">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="email" class="label_of_form">
-                                                ایمیل
-                                                <span class="should_be_fill">*</span>
-                                            </label>
-                                            <input type="email" class="form-control focus_on_form" id="email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="message_title" class="label_of_form">
-                                                عنوان پیام
-                                                <span class="should_be_fill">*</span>
-                                            </label>
-                                            <input type="text" class="form-control focus_on_form" id="message_title">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="textarea" class="label_of_form">
-                                                متن پیام
-                                                <span class="should_be_fill">*</span>
-                                            </label>
-                                            <textarea class="form-control focus_on_form" id="textarea"
-                                                      rows="3"></textarea>
-                                        </div>
-                                        <button type="submit" class="btn w-100 mt-2 btn_of_contact_us">ارسال</button>
-                                        <hr class="mt-4">
-                                        <div class="contact_information">
-                                            <h3 class="contact_information_title w-100 text-right ">
-                                                اطلاعات تماس
-                                            </h3>
-                                            <div class="location_of_us  contact_information_us text-right mb-3">
-                                                <i class="fas fa-map-marker-smile ml-2 font_size_of_icon_in_contact_information"></i>
-                                                <span class="text_of_contact_information">خونه کسری اینا</span>
-                                            </div>
-                                            <div class="contact_of_us contact_information_us text-right mb-3">
-                                                <i class="fas fa-phone ml-2 font_size_of_icon_in_contact_information"></i>
-                                                <span class="text_of_contact_information">09021414866</span>
-                                            </div>
-                                            <div class="email_of_us contact_information_us text-right">
-                                                <i class="fas fa-envelope ml-2 font_size_of_icon_in_contact_information"></i>
-                                                <span class="text_of_contact_information">RushTeam.web@gmail.com</span>
-                                            </div>
-                                        </div>
-                                    </form>
-
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="contact_name">نام
+                                            <span>*</span>
+                                        </label>
+                                        <input type="text" class="form-control" id="contact_name">
+                                    </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="how_can_we_help_you text-right">
-                                        <h3 class="title_of_help_question dir_rtl w-100 text-center">سوالات متداول!</h3>
-                                        <p class="explain_of_help_question dir_rtl mb-5">سوالاتی که معمولا شما عزیزان
-                                            پرسیده اید را اینجا جمع کرده ایم تا باعث سهولت کار شما دوستان شویم.</p>
-
-                                        <div class="repetitive_questions_box">
-                                            <h4 class="title_of_repetitive_question">درباره ما</h4>
-                                            <p class="explain_of_repetitive_question">لورم ایپسوم متن ساختگی با تولید
-                                                سادگی نامفهوم ازصنعت چاپ.</p>
-
-                                            <i class="far fa-angle-left"></i>
-                                        </div>
-                                        <div  class="content_of_repetitive_question dir_rtl text-justify">
-                                            <p>
-                                                رسانه دیجیتال میتواند تاثیری مثبت روی زندگی ما بگذارد . کسب و کار ها از این رسانه هامیتوانندبرای شفافیت بیشتر، خدمت رسانی بهتر و صمیمت بیشتر با مشتری ها استفاده کند . مامیخواهیم در اینمسیر تاثیری کوچک داشته باشیم.
-                                            </p>
-                                        </div>
-                                        <hr>
-
-                                        <div class="repetitive_questions_box">
-                                            <h4 class="title_of_repetitive_question">هزینه های ما</h4>
-                                            <p class="explain_of_repetitive_question">لورم ایپسوم متن ساختگی با تولید
-                                                سادگی نامفهوم ازصنعت چاپ.</p>
-                                            <i class="far fa-angle-left"></i>
-                                        </div>
-                                        <div  class="content_of_repetitive_question dir_rtl text-justify">
-                                            <p>
-                                                رسانه دیجیتال میتواند تاثیری مثبت روی زندگی ما بگذارد . کسب و کار ها از این رسانه هامیتوانندبرای شفافیت بیشتر، خدمت رسانی بهتر و صمیمت بیشتر با مشتری ها استفاده کند . مامیخواهیم در اینمسیر تاثیری کوچک داشته باشیم.
-                                            </p>
-                                        </div>
-                                        <hr>
-
-                                        <div class="repetitive_questions_box">
-                                            <h4 class="title_of_repetitive_question">نمونه کار های ما</h4>
-                                            <p class="explain_of_repetitive_question">لورم ایپسوم متن ساختگی با تولید
-                                                سادگی نامفهوم ازصنعت چاپ.</p>
-                                            <i class="far fa-angle-left"></i>
-                                        </div>
-                                        <div  class="content_of_repetitive_question dir_rtl text-justify">
-                                            <p>
-                                                رسانه دیجیتال میتواند تاثیری مثبت روی زندگی ما بگذارد . کسب و کار ها از این رسانه هامیتوانندبرای شفافیت بیشتر، خدمت رسانی بهتر و صمیمت بیشتر با مشتری ها استفاده کند . مامیخواهیم در اینمسیر تاثیری کوچک داشته باشیم.
-                                            </p>
-                                        </div>
-                                        <hr>
-
-                                        <div class="repetitive_questions_box">
-                                            <h4 class="title_of_repetitive_question">درباره سئو</h4>
-                                            <p class="explain_of_repetitive_question">لورم ایپسوم متن ساختگی با تولید
-                                                سادگی نامفهوم ازصنعت چاپ.</p>
-
-                                            <i class="far fa-angle-left"></i>
-                                        </div>
-                                        <div  class="content_of_repetitive_question dir_rtl text-justify">
-                                            <p>
-                                                رسانه دیجیتال میتواند تاثیری مثبت روی زندگی ما بگذارد . کسب و کار ها از این رسانه هامیتوانندبرای شفافیت بیشتر، خدمت رسانی بهتر و صمیمت بیشتر با مشتری ها استفاده کند . مامیخواهیم در اینمسیر تاثیری کوچک داشته باشیم.
-                                            </p>
-                                        </div>
-                                        <hr>
-
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="contact_lastname">نام خانوادگی
+                                            <span>*</span>
+                                        </label>
+                                        <input type="text" class="form-control" id="contact_lastname">
                                     </div>
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <label for="contact_email">نام خانوادگی
+                                    <span>*</span>
+                                </label>
+                                <input type="text" class="form-control" id="contact_email">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact_phone">نام خانوادگی
+                                    <span>*</span>
+                                </label>
+                                <input type="text" class="form-control" id="contact_phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact_area">نام خانوادگی
+                                    <span>*</span>
+                                </label>
+                                <textarea class="form-control" id="contact_area" rows="3"></textarea>
+                            </div>
+                            <button class="btn" type="submit">ارسال</button>
+                        </form>
+                        <hr>
+                        
+                        <div class="contact_way_part dir_rtl text-right">
+                            <p>اطلاعات تماس</p>
+                            <p class="info_of_contact_way">
+                                <i class="fas fa-map-marker-smile ml-3"></i>
+                                لای موهای طالبی
+                            </p>
+                            <p class="info_of_contact_way">
+                                <i class="fas fa-phone ml-3"></i>
+                                0902-1414866
+                            </p>
+                            <p class="info_of_contact_way">
+                                <i class="fas fa-envelope ml-3"></i>
+                                rushteam@gmail.com
+                            </p>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-{!End Contact Us Form And Explain!}
 
 {/body}
