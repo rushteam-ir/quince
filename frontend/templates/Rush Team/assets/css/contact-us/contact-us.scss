@@ -142,12 +142,7 @@
           @include transition(0.17s, linear, 0s)
         }
 
-        .content_of_repetitive_question{
-          font-size: .9rem;
-          display: none;
-          overflow: hidden;
 
-        }
       }
 
 
@@ -155,6 +150,13 @@
   }
 
 
+}
+
+.content_of_repetitive_question{
+  font-size: .9rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 
