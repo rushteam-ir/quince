@@ -2,7 +2,7 @@
 @import "../../css/mixin/cb-mixin";
 @import "../../css/variable/color";
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -14,7 +14,7 @@ body{
   box-shadow: 0 0 0 0.2rem #caab683a;
 }
 
-.rotate_layer{
+.rotate_layer {
   background-color: #F7F8FC;
   width: 150%;
   height: 120px;
@@ -47,7 +47,8 @@ body{
     text-align: center;
     width: 100%;
     margin-top: 10px;
-    &:hover{
+
+    &:hover {
       color: white;
       background-color: $hover_gold;
     }
@@ -65,6 +66,72 @@ body{
       i {
         color: #878791;
       }
+    }
+  }
+}
+
+.main_field_of_quest {
+  margin-top: 200px;
+  direction: rtl;
+  text-align: right;
+
+  .title_of_quest {
+    color: $d_gold;
+    font-size: 2rem;
+    margin-bottom: 0px;
+  }
+
+  .sub_title_of_quest {
+    font-size: 0.9rem;
+    color: #878791;
+  }
+
+  .main_field_of_collaps {
+    width: 500px;
+    margin-top: 50px;
+
+    .title_of_collapse {
+      border-bottom: 1px solid rgb(194, 194, 194);
+      cursor: pointer;
+      position: relative;
+      margin-top: 20px;
+
+      &:hover {
+        i {
+          left: 25px;
+        }
+      }
+
+      i {
+        color: #878791;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        @include transition(0.2s, linear, 0s)
+      }
+
+      & :first-child {
+        color: #171717;
+        font-size: 1.2rem;
+        margin-bottom: 0px;
+
+      }
+
+      & :nth-child(2) {
+        font-size: 0.9rem;
+        color: #878791;
+      }
+    }
+  }
+
+  .sub_title_collapse {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    p {
+      color: #171717;
+      font-size: 0.9rem;
+      margin-top: 15px;
     }
   }
 }
