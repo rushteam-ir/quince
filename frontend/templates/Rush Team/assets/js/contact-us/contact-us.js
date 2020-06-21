@@ -6,8 +6,7 @@ $(document).ready(function(){
 
         q_box.eq(i).click(function(){
 
-            q_box.next().removeClass('active_collaps');
-            $(this).next().addClass('active_collaps');
+            $(this).next().slideDown();
 
         });
 
