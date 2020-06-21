@@ -7,11 +7,9 @@
   border-radius: 6px;
   margin-bottom: 50px;
 }
-
 .main_contact_form label span {
   color: red;
 }
-
 .main_contact_form button {
   color: white;
   background-color: #CAAB68;
@@ -19,16 +17,15 @@
   width: 100%;
   margin-top: 10px;
 }
-
 .main_contact_form .contact_way_part :first-child {
   color: #171717;
   font-size: 1.3rem;
 }
-
 .main_contact_form .contact_way_part .info_of_contact_way {
   color: #878791;
 }
-
 .main_contact_form .contact_way_part .info_of_contact_way i {
   color: #878791;
 }
+
+/*# sourceMappingURL=contact-us.css.map */
