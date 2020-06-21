@@ -185,6 +185,7 @@
     </main>
 
     <script src="js/general/jquery.js"></script>
+    <script src="js/general/jquery-form.js"></script>
     <script src="js/general/popper.js"></script>
     <script src="js/general/bootstrap.js"></script>
     <script src="js/general/sweetAlert.js"></script>
