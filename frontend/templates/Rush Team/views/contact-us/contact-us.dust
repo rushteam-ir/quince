@@ -62,7 +62,6 @@
                             <button class="btn" type="submit">ارسال</button>
                         </form>
                         <hr>
-                        
                         <div class="contact_way_part dir_rtl text-right">
                             <p>اطلاعات تماس</p>
                             <p class="info_of_contact_way">
@@ -78,10 +77,58 @@
                                 rushteam@gmail.com
                             </p>
                         </div>
-
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-7">
+                    <div class="main_field_of_quest">
+                        <p class="title_of_quest">سوالات متداول</p>
+                        <p class="sub_title_of_quest">ببین سوال نپرس خب؟ سفارش بده درجا این مسخره بازیا رو نداریما بوشه
+                            ؟</p>
+
+                        <div class="main_field_of_collaps">
+                            <div class="title_of_collapse">
+                                <p>درباره ما</p>
+                                <p>ما چیزی نداریم به جز چند تا قرار داد کنسیلی </p>
+                                <i class="fas fa-angle-left"></i>
+                            </div>
+                            <div class="sub_title_collapse">
+                                <p>اره خلاصه دیگه ما رزومه نداریم ولی در عوض جات خالی کلی برات قرار داد دارم که روش با
+                                    میژیک گنده نوشتم کنسسسسلللل افتاد عمو؟ اره خاتصه دیگه یه یادی هم از طالبی بکنیم در
+                                    اخر ثواب داره </p>
+                            </div>
+                            <div class="title_of_collapse">
+                                <p>درباره شما</p>
+                                <p>ما چیزی نداریم به جز چند تا قرار داد کنسیلی </p>
+                                <i class="fas fa-angle-left"></i>
+                            </div>
+                            <div class="sub_title_collapse">
+                                <p>اره خلاصه دیگه ما رزومه نداریم ولی در عوض جات خالی کلی برات قرار داد دارم که روش با
+                                    میژیک گنده نوشتم کنسسسسلللل افتاد عمو؟ اره خاتصه دیگه یه یادی هم از طالبی بکنیم در
+                                    اخر ثواب داره </p>
+                            </div>
+                            <div class="title_of_collapse">
+                                <p>خوبی یا بدی؟</p>
+                                <p>ما چیزی نداریم به جز چند تا قرار داد کنسیلی </p>
+                                <i class="fas fa-angle-left"></i>
+                            </div>
+                            <div class="sub_title_collapse">
+                                <p>اره خلاصه دیگه ما رزومه نداریم ولی در عوض جات خالی کلی برات قرار داد دارم که روش با
+                                    میژیک گنده نوشتم کنسسسسلللل افتاد عمو؟ اره خاتصه دیگه یه یادی هم از طالبی بکنیم در
+                                    اخر ثواب داره </p>
+                            </div>
+                            <div class="title_of_collapse">
+                                <p>ایولل همینه ها</p>
+                                <p>ما چیزی نداریم به جز چند تا قرار داد کنسیلی </p>
+                                <i class="fas fa-angle-left"></i>
+                            </div>
+                            <div class="sub_title_collapse">
+                                <p>اره خلاصه دیگه ما رزومه نداریم ولی در عوض جات خالی کلی برات قرار داد دارم که روش با
+                                    میژیک گنده نوشتم کنسسسسلللل افتاد عمو؟ اره خاتصه دیگه یه یادی هم از طالبی بکنیم در
+                                    اخر ثواب داره </p>
+                            </div>
+                        </div>
+
+                    </div>
 
                 </div>
             </div>
