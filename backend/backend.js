@@ -58,14 +58,14 @@ backend.get('/', async(req,res)=>{
 // Backend 404 page
 backend.use(async (req, res, next)=>{
 
-    res.status(404).render('404');
+    res.status(404).render('errors/404');
 
 });
 
 // Backend 500 page
 backend.use(async (error, req, res, next)=>{
 
-    res.status(500).render('500', {error});
+    res.status(500).render('errors/500', {error});
 
 });
 

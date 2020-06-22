@@ -4,7 +4,7 @@ router.get('/', async(req, res, next)=>{
 
     try{
 
-        res.render('dashboard');
+        res.render('dashboard/dashboard');
 
     }
     catch (error) {
