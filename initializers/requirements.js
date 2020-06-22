@@ -1,6 +1,6 @@
 // Server all requirements and modules
 express = require('express');
-dust_options = require('./dust');
+dust_options = require('./dust-helpers');
 validation = require('./validation');
 uploader = require('./uploader');
 fs = require('fs');

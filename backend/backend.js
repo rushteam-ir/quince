@@ -2,12 +2,10 @@
 require('./backend-init');
 
 // Backend Middlewares
-//const error_handler = require('./middlewares/error-handler');
 const check_login = require('./middlewares/check-login');
 const check_message = require('./middlewares/check-message');
 const check_activity = require('./middlewares/check-activity');
 
-//backend.use(error_handler);
 backend.use(check_login);
 backend.use(check_message);
 backend.use(check_activity);
@@ -58,9 +56,16 @@ backend.get('/', async(req,res)=>{
 });
 
 // Backend 404 page
-backend.use(async(req,res,next)=>{
+backend.use(async (req, res, next)=>{
 
     res.status(404).render('404');
+
+});
+
+// Backend 500 page
+backend.use(async (error, req, res, next)=>{
+
+    res.status(500).render('500', {error});
 
 });
 

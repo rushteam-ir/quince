@@ -1,6 +1,6 @@
 const router = express.Router();
 
-router.post('/', async(req,res)=>{
+router.post('/', async(req, res, next)=>{
 
     try{
 
@@ -23,7 +23,7 @@ router.post('/', async(req,res)=>{
     }
     catch (error) {
 
-        res.status(500).render('500', {error});
+        next(error);
 
     }
 

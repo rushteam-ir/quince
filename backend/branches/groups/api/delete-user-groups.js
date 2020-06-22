@@ -1,6 +1,6 @@
 const router = express.Router();
 
-router.get('/', async(req,res)=>{
+router.get('/', async(req, res, next)=>{
 
     try{
 
@@ -33,7 +33,7 @@ router.get('/', async(req,res)=>{
     }
     catch (error) {
 
-
+        next(error);
 
     }
 

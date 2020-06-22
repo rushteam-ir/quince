@@ -7,6 +7,13 @@ const app = express();
 app.disable('x-powered-by');
 
 app.use(session(session_options));
+app.use(compression());
+app.use(body_parser.urlencoded({extended : false}));
+app.use(body_parser.json());
+app.use(file_upload());
+
+app.engine('dust', adaro.dust(dust_options));
+app.set('view engine', 'dust');
 
 const backend = require('./backend/backend');
 const frontend = require('./frontend/frontend');
@@ -28,3 +35,4 @@ app.listen(config.port, async(error)=>{
     }
 
 });
+

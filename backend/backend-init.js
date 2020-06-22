@@ -2,19 +2,9 @@
 backend = express();
 backend.disable('x-powered-by');
 backend.use(express.static(`${config.app_dir}backend/templates/${config.backend_tmp}/assets`));
-backend.use(compression());
 
 // Backend Dust configuration
-backend.engine('dust', adaro.dust(dust_options));
-backend.set('view engine', 'dust');
 backend.set('views', `${config.app_dir}backend/templates/${config.backend_tmp}/views`);
-
-// Backend body parser configuration
-backend.use(body_parser.urlencoded({extended : false}));
-backend.use(body_parser.json());
-
-// Backend file upload
-backend.use(file_upload());
 
 // Backend other configs
 backend_allowd_urls = ['/login/', '/recovery/', '/recovery/verify/'];

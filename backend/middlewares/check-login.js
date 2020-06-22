@@ -2,40 +2,49 @@ const router = express.Router();
 
 router.use(async(req, res, next)=>{
 
-    let parsed_url = req._parsedUrl.pathname;
+    try{
 
-    if(!parsed_url.endsWith('/')){
+        let parsed_url = req._parsedUrl.pathname;
 
-        parsed_url += '/';
+        if(!parsed_url.endsWith('/')){
 
-    }
+            parsed_url += '/';
 
-    if(isUndefined(req.session.admin_id)){
+        }
 
-        if(backend_allowd_urls.includes(parsed_url)){
+        if(isUndefined(req.session.admin_id)){
 
-            next();
+            if(backend_allowd_urls.includes(parsed_url)){
+
+                next();
+
+            }
+            else{
+
+                return res.redirect(`${config.backend_url}login`);
+
+            }
 
         }
         else{
 
-            return res.redirect(`${config.backend_url}login`);
+            if(backend_allowd_urls.includes(parsed_url)){
+
+                return res.redirect(`${config.backend_url}dashboard`);
+
+            }
+            else{
+
+                next();
+
+            }
 
         }
 
     }
-    else{
+    catch (error) {
 
-        if(backend_allowd_urls.includes(parsed_url)){
-
-            return res.redirect(`${config.backend_url}dashboard`);
-
-        }
-        else{
-
-            next();
-
-        }
+        next(error);
 
     }
 

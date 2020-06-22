@@ -1,21 +1,8 @@
 // Frontend Initializer and settings
 frontend = express();
-frontend.disable('x-powered-by');
 frontend.use(express.static(`${config.app_dir}frontend/templates/${config.frontend_tmp}/assets`));
-frontend.use(compression());
 
-// Frontend Dust configuration
-frontend.engine('dust', adaro.dust(dust_options));
-frontend.set('view engine', 'dust');
 frontend.set('views', `${config.app_dir}frontend/templates/${config.frontend_tmp}/views`);
-
-// Frontend body parser configuration
-frontend.use(body_parser.json({limit: '10mb', extended: true}))
-frontend.use(body_parser.urlencoded({limit: '10mb', extended: true}))
-
-
-// Frontend file uplaod
-frontend.use(file_upload());
 
 // Frontend other configs
 //frontend_allowd_urls = ['/login/', '/recovery/', '/recovery/verify/'];

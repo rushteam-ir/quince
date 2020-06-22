@@ -1,6 +1,6 @@
 const router = express.Router();
 
-router.use(async(req,res,next)=>{
+router.use(async(req, res, next)=>{
 
     try{
 
@@ -35,7 +35,7 @@ router.use(async(req,res,next)=>{
     }
     catch (error) {
 
-        res.status(500).render('500', {error});
+        next(error);
 
     }
 

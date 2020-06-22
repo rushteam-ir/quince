@@ -1,6 +1,6 @@
 const router = express.Router();
 
-router.get('/', async(req,res)=>{
+router.get('/', async(req, res, next)=>{
 
     try{
 
@@ -49,13 +49,13 @@ router.get('/', async(req,res)=>{
     }
     catch (error) {
 
-        res.status(500).render('500', {error});
+        next(error);
 
     }
 
 });
 
-router.post('/', async(req,res)=>{
+router.post('/', async(req, res, next)=>{
 
     try{
 
@@ -88,7 +88,7 @@ router.post('/', async(req,res)=>{
     }
     catch (error) {
 
-        res.status(500).render('500', {error});
+        next(error);
 
     }
 
