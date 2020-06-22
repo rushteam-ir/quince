@@ -2,10 +2,12 @@
 require('./backend-init');
 
 // Backend Middlewares
+//const error_handler = require('./middlewares/error-handler');
 const check_login = require('./middlewares/check-login');
 const check_message = require('./middlewares/check-message');
 const check_activity = require('./middlewares/check-activity');
 
+//backend.use(error_handler);
 backend.use(check_login);
 backend.use(check_message);
 backend.use(check_activity);

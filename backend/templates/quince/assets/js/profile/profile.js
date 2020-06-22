@@ -61,7 +61,7 @@ $('.avatar_del').on('click', function (e) {
                 confirmButtonText: 'تایید',
             }).then((result) => {
                 if (result.value) {
-                    redirect(`${backend_url}profile/api/delete-avatar`);
+                    redirect(`${backend_url}profile/api/delete-avatar-profile`);
                 }
             })
         }

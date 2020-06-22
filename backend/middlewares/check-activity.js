@@ -1,6 +1,6 @@
 const router = express.Router()
 
-backend.use(async(req,res,next)=>{
+router.use(async(req,res,next)=>{
 
     try{
 

@@ -12,7 +12,6 @@ router.use(async(req, res, next)=>{
 
     if(isUndefined(req.session.admin_id)){
 
-        // Admin is not logged in
         if(backend_allowd_urls.includes(parsed_url)){
 
             next();
@@ -20,19 +19,16 @@ router.use(async(req, res, next)=>{
         }
         else{
 
-            res.redirect(`${config.backend_url}login`);
-            return;
+            return res.redirect(`${config.backend_url}login`);
 
         }
 
     }
     else{
 
-        // Admin is already logged in
         if(backend_allowd_urls.includes(parsed_url)){
 
-            res.redirect(`${config.backend_url}dashboard`);
-            return;
+            return res.redirect(`${config.backend_url}dashboard`);
 
         }
         else{

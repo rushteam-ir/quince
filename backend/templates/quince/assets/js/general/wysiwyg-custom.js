@@ -1,6 +1,6 @@
 // WYSIWYG Editor Options
 
-new FroalaEditor('textarea', {
+new FroalaEditor('#article_textarea', {
 
     imageUploadURL: `${backend_url}api/wysiwyg-manager`,
     fileUploadURL: `${backend_url}api/wysiwyg-manager`,

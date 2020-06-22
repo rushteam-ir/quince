@@ -251,8 +251,8 @@ router.post('/', async(req,res)=>{
 
 });
 
-const delete_avatar = require('./api/delete-avatar');
+const delete_avatar_profile = require('./api/delete-avatar-profile');
 
-router.use('/api/delete-avatar', delete_avatar);
+router.use('/api/delete-avatar-profile', delete_avatar_profile);
 
 module.exports = router;

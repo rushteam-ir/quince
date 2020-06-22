@@ -11,7 +11,8 @@ let article_schema = new mongoose.Schema({
         ref : 'category'
     },
     describe : String,
-    keys : String,
+    meta_keys : String,
+    meta_describe : String,
     main_image : String,
     internal_files : Array,
     status : Boolean,

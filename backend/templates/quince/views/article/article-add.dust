@@ -56,7 +56,7 @@
                                         <select class="form-control main_form_design select-sub-category" id="article_child" name="child_inp">
                                         </select>
                                     </div>
-  
+
                                     <div class="form-group">
                                         <label for="article_textarea">توضیحات مقاله</label>
                                         <textarea class="form-control main_form_design" id="article_textarea" rows="7" name="describe_inp"></textarea>
@@ -66,6 +66,11 @@
                                     <div class="form-group">
                                         <label for="article_keyword">کلمات کلیدی مقاله</label>
                                         <input type="text" class="form-control main_form_design" id="article_keyword" name="keys_inp">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="article_describe">توضیحات کلیدی مقاله</label>
+                                        <textarea class="form-control main_form_design" id="article_describe" rows="7" name="meta_describe_inp"></textarea>
                                     </div>
 
                                     <div class="form-group">
