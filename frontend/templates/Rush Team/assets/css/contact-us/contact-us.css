@@ -34,11 +34,9 @@ body {
   border-radius: 6px;
   margin-bottom: 50px;
 }
-
 .main_contact_form label span {
   color: red;
 }
-
 .main_contact_form button {
   color: white;
   background-color: #CAAB68;
@@ -46,27 +44,17 @@ body {
   width: 100%;
   margin-top: 10px;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> c51d45ba4586b0df53ce00f3366221e46f5bf06c
 .main_contact_form button:hover {
   color: white;
   background-color: #b89c5f;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> c51d45ba4586b0df53ce00f3366221e46f5bf06c
 .main_contact_form .contact_way_part :first-child {
   color: #171717;
   font-size: 1.3rem;
 }
-
 .main_contact_form .contact_way_part .info_of_contact_way {
   color: #878791;
 }
-
 .main_contact_form .contact_way_part .info_of_contact_way i {
   color: #878791;
 }
@@ -76,34 +64,28 @@ body {
   direction: rtl;
   text-align: right;
 }
-
 .main_field_of_quest .title_of_quest {
   color: #CAAB68;
   font-size: 2rem;
   margin-bottom: 0px;
 }
-
 .main_field_of_quest .sub_title_of_quest {
   font-size: 0.9rem;
   color: #878791;
 }
-
 .main_field_of_quest .main_field_of_collaps {
   width: 500px;
   margin-top: 50px;
 }
-
 .main_field_of_quest .main_field_of_collaps .title_of_collapse {
   border-bottom: 1px solid #c2c2c2;
   cursor: pointer;
   position: relative;
   margin-top: 20px;
 }
-
 .main_field_of_quest .main_field_of_collaps .title_of_collapse:hover i {
   left: 25px;
 }
-
 .main_field_of_quest .main_field_of_collaps .title_of_collapse i {
   color: #878791;
   position: absolute;
@@ -114,26 +96,24 @@ body {
   -o-transition: all 0.2s linear 0s;
   -moz-transition: all 0.2s linear 0s;
 }
-
 .main_field_of_quest .main_field_of_collaps .title_of_collapse :first-child {
   color: #171717;
   font-size: 1.2rem;
   margin-bottom: 0px;
 }
-
 .main_field_of_quest .main_field_of_collaps .title_of_collapse :nth-child(2) {
   font-size: 0.9rem;
   color: #878791;
 }
-
 .main_field_of_quest .sub_title_collapse {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
-
 .main_field_of_quest .sub_title_collapse p {
   color: #171717;
   font-size: 0.9rem;
   margin-top: 15px;
 }
+
+/*# sourceMappingURL=contact-us.css.map */
