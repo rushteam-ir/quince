@@ -44,6 +44,10 @@ body {
   width: 100%;
   margin-top: 10px;
 }
+.main_contact_form button:hover {
+  color: white;
+  background-color: #b89c5f;
+}
 .main_contact_form .contact_way_part :first-child {
   color: #171717;
   font-size: 1.3rem;
