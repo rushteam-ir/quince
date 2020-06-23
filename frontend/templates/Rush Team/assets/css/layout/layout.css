@@ -17,18 +17,22 @@
   direction: rtl;
   text-align: right;
 }
+
 .navbar_field ul {
   list-style-type: none;
   padding: 0px;
   padding-right: 20px;
 }
+
 .navbar_field ul li {
   display: inline-block;
 }
+
 .navbar_field ul li .active_navbar {
   border-bottom: 3px solid #CAAB68;
   color: #CAAB68;
 }
+
 .navbar_field ul li a {
   color: white;
   width: 110px;
@@ -38,9 +42,11 @@
   line-height: 70px;
   border-bottom: 0px solid #CAAB68;
 }
+
 .navbar_field ul li a:hover {
   border-bottom: 3px solid #CAAB68;
 }
+
 .navbar_field ul .field_of_navbar_ltr {
   display: inline-block;
   direction: ltr;
@@ -48,11 +54,12 @@
   position: absolute;
   left: 10px;
 }
+
 .navbar_field ul .field_of_navbar_ltr .main_logo {
   width: 110px;
 }
 
-.kasra {
+.main_gsap_field {
   height: 100%;
   display: flex;
   justify-content: center;
