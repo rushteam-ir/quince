@@ -7,6 +7,11 @@
 
 @mixin text_color_gradient($value_of_color) {
   background-image: $value_of_color;
+  background-clip: text;
   -webkit-background-clip: text;
+  -o-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }

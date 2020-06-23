@@ -234,7 +234,14 @@
 }
 
 .left_service_side .header_of_levels p {
-  color: #CAAB68;
+  background-image: linear-gradient(to right, #EEC782, #B9A05B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -o-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
   font-size: 3rem;
   font-family: accent-font;
 }
@@ -251,9 +258,17 @@
 }
 
 .left_service_side .service_text :nth-child(1) {
-  color: #CAAB68;
+  background-image: linear-gradient(to right, #EEC782, #B9A05B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -o-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
   font-size: 3rem;
   margin-bottom: 0px;
+  font-weight: bold;
 }
 
 .left_service_side .service_text :nth-child(2) {

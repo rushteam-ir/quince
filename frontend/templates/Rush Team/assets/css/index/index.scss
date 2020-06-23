@@ -1,5 +1,6 @@
 @import '../../css/variable/color';
 @import '../../css/mixin/cb-mixin';
+@import '../../css/mixin/main-mixin';
 
 // header slider
 .swiper-container {
@@ -220,7 +221,7 @@
         margin-bottom: 50px;
 
         p {
-            color: $d_gold;
+            @include text_color_gradient($fold_gradient);
             font-size: 3rem;
             font-family: accent-font;
         }
@@ -237,9 +238,10 @@
         display: none;
 
         & :nth-child(1) {
-            color: $d_gold;
+            @include text_color_gradient($fold_gradient);
             font-size: 3rem;
             margin-bottom: 0px;
+            font-weight: bold;
         }
 
         & :nth-child(2) {

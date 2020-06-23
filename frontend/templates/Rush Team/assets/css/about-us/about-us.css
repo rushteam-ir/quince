@@ -55,8 +55,13 @@
   font-size: 3rem;
   padding-top: 40px;
   background-image: linear-gradient(to right, #FF7300, #FFC200);
+  background-clip: text;
   -webkit-background-clip: text;
+  -o-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
   display: inline-block;
 }
 
@@ -98,8 +103,13 @@
   font-size: 2.5rem;
   padding-top: 40px;
   background-image: linear-gradient(to right, #3D52EF, #55B9FC);
+  background-clip: text;
   -webkit-background-clip: text;
+  -o-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .property_of_rush_team .row_of_property .box_of_number .box_counter_of_number {
@@ -111,8 +121,13 @@
   top: -6px;
   left: -5px;
   background-image: linear-gradient(to right, #FF7300, #FFC200);
+  background-clip: text;
   -webkit-background-clip: text;
+  -o-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
   font-size: 1.2rem;
 }
 
@@ -145,8 +160,13 @@
   font-size: .9rem;
   margin-bottom: 15px;
   background-image: linear-gradient(to right, #FF7300, #FFC200);
+  background-clip: text;
   -webkit-background-clip: text;
+  -o-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .property_of_rush_team .row_of_property .box_of_property_of_rush_team .inside_of_circle .sub_title_of_property_rush_team {
@@ -178,8 +198,13 @@
   font-size: 2rem;
   padding-top: 22px;
   background-image: linear-gradient(to right, #3D52EF, #55B9FC);
+  background-clip: text;
   -webkit-background-clip: text;
+  -o-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .property_of_rush_team .row_of_property .box_of_property_of_rush_team #property_1 {
@@ -271,15 +296,25 @@
 .introduction_our_team_box .introduction_our_team .content_of_our_team_person .name_of_person {
   font-size: 1.5rem;
   background-image: linear-gradient(to right, #FF7300, #FFC200);
+  background-clip: text;
   -webkit-background-clip: text;
+  -o-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .introduction_our_team_box .introduction_our_team .content_of_our_team_person .role_of_person_in_our_team {
   font-size: 1.1rem;
   background-image: linear-gradient(to right, #3D52EF, #55B9FC);
+  background-clip: text;
   -webkit-background-clip: text;
+  -o-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .introduction_our_team_box .introduction_our_team .content_of_our_team_person .description_of_person_in_our_team {
