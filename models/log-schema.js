@@ -2,16 +2,30 @@
 let log_schema = new mongoose.Schema({
 
     type : String,
-
+    text : String,
+    date : String,
+    url : String,
+    who : {
+        type : 'ObjectId',
+        ref : 'user'
+    },
+    remote_address : String,
+    request_headers : Object,
 
 });
 
-setting_schema.statics = {
+log_schema.statics = {
 
+    add : async function(log_data){
 
+        log_data.date = `${getCurrentDate()} - ${getCurrentTime()}`;
+        let new_log = new log_model(log_data);
+        return await new_log.save();
+
+    }
 
 };
 
 
 
-module.exports = setting_model = mongoose.model('setting', setting_schema);
+module.exports = log_model = mongoose.model('log', log_schema);

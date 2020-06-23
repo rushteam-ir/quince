@@ -1,6 +1,4 @@
 require('./initializers/requirements');
-require('./initializers/config');
-require('./initializers/library');
 
 const app = express();
 
@@ -12,7 +10,7 @@ app.use(body_parser.urlencoded({extended : false}));
 app.use(body_parser.json());
 app.use(file_upload());
 
-app.engine('dust', adaro.dust(dust_options));
+app.engine('dust', adaro.dust(dust_helpers));
 app.set('view engine', 'dust');
 
 const backend = require('./backend/backend');
