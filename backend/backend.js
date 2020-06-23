@@ -40,7 +40,7 @@ backend.use('/article', article);
 backend.use('/api', api);
 
 // Redirect to dashboard rout
-backend.get('/', async(req,res)=>{
+backend.get('/', async(req, res, next)=>{
 
     try{
 
@@ -49,7 +49,7 @@ backend.get('/', async(req,res)=>{
     }
     catch (error) {
 
-        res.status(500).render('500', {error});
+        next(error);
 
     }
 

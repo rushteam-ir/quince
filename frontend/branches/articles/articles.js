@@ -4,7 +4,7 @@ router.get('/', async(req,res)=>{
 
     try{
 
-        res.render('articles/articles');
+        res.render('articles/articles-list');
 
     }
     catch (error) {
@@ -20,7 +20,7 @@ router.get('/:name', async(req,res)=>{
     try{
 
         let article_name = req.params.name;
-        res.render('articles/articles');
+        res.render('articles/articles-show');
 
     }
     catch (error) {
