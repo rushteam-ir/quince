@@ -1,9 +1,8 @@
 // Backend Initializer and settings
 backend = express();
+
 backend.disable('x-powered-by');
 backend.use(express.static(`${config.app_dir}backend/templates/${config.backend_tmp}/assets`));
-
-// Backend Dust configuration
 backend.set('views', `${config.app_dir}backend/templates/${config.backend_tmp}/views`);
 
 // Backend other configs

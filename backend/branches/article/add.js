@@ -53,7 +53,7 @@ router.post('/', async(req, res, next)=>{
            describe : describe_inp,
            meta_keys : keys_inp,
            meta_describe : meta_describe_inp,
-           url : `${config.frontend_url}article/${article_url}`,
+           url : `${config.frontend_url}articles/${article_url}`,
            internal_files : req.session.temp_files
 
        }

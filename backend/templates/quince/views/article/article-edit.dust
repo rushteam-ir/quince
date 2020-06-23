@@ -76,7 +76,7 @@
 
                                     <div class="form-group">
                                         <label for="article_keyword">کلمات کلیدی مقاله</label>
-                                        <input type="text" class="form-control main_form_design" id="article_keyword" name="keys_inp" value="{article_info.keys}">
+                                        <input type="text" class="form-control main_form_design" id="article_keyword" name="keys_inp" value="{article_info.meta_keys}">
                                     </div>
 
                                     <div class="form-group">
