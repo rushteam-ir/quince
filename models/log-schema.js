@@ -22,6 +22,12 @@ log_schema.statics = {
         let new_log = new log_model(log_data);
         return await new_log.save();
 
+    },
+
+    getLogs : async function(){
+
+        return await log_model.find();
+
     }
 
 };
