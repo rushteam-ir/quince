@@ -1,4 +1,4 @@
-module.exports = class {
+module.exports = validation =  class {
 
     constructor(inputs) {
 

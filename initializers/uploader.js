@@ -1,4 +1,4 @@
-module.exports = class {
+module.exports = uploader =  class {
 
     constructor(file, file_name, options) {
 

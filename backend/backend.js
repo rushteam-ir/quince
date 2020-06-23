@@ -65,6 +65,17 @@ backend.use(async (req, res, next)=>{
 // Backend 500 page
 backend.use(async (error, req, res, next)=>{
 
+    let new_log = {
+        type : '500',
+        text : error,
+        url : req._parsedOriginalUrl.path,
+        who : req.session.admin_id,
+        remote_address : req.connection.remoteAddress,
+        request_headers : req.headers
+    }
+
+    await log_model.add(new_log);
+
     res.status(500).render('errors/500', {error});
 
 });

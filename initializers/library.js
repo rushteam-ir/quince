@@ -12,6 +12,18 @@ getCurrentDate = function() {
     return(jdate.format('YYYY/MM/DD'));
 };
 
+getCurrentTime = function() {
+
+    let date = new Date;
+
+    let seconds = date.getSeconds();
+    let minutes = date.getMinutes();
+    let hour = date.getHours();
+
+    return `${hour}:${minutes}:${seconds}`;
+
+}
+
 JalaliConvert = function(date_array){
 
     let jdate = new JalaliDate(date_array);

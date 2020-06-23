@@ -1,4 +1,4 @@
-module.exports = dust_options = {
+module.exports = dust_helpers = {
 
     cache : false,
     helpers : ['dustjs-helpers',
