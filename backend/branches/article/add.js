@@ -10,7 +10,7 @@ router.get('/', async(req, res, next)=>{
 
         }
 
-        req.session.temp_files = []
+        req.session.temp_files = [];
 
         res.render('article/article-add', data);
 

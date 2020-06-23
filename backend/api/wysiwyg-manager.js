@@ -60,7 +60,8 @@ router.post('/', async(req, res, next)=>{
 
                 let data= {"link":`${config.backend_url}media/${file_mime_type}s/${file_name}`};
 
-                req.session.temp_files.push(`${file_mime_type}s/${file_name}`)
+                req.session.temp_files.push(`${file_mime_type}s/${file_name}`);
+
                 res.json(data)
                 break;
 

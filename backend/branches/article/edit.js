@@ -9,7 +9,7 @@ router.get('/:id', async(req, res, next)=>{
 
         if(!find_article){
 
-            return res.status(404).render('404');
+            return res.status(404).render('errors/404');
 
         }
 
@@ -44,12 +44,13 @@ router.post('/:id', async(req, res, next)=>{
    try{
 
        let article_id = req.params.id;
-       let {title_inp, parent_inp, child_inp, describe_inp, keys_inp} = req.body;
+       let {title_inp, parent_inp, child_inp, describe_inp, keys_inp, meta_describe_inp} = req.body;
        let validation_result = new validation([
            {value : title_inp},
            {value : parent_inp, type : 'objectId'},
            {value : child_inp, type : 'objectId'},
            {value : describe_inp},
+           {value : meta_describe_inp},
            {value : keys_inp}
        ]).valid()
 
@@ -67,9 +68,10 @@ router.post('/:id', async(req, res, next)=>{
            category_parent : parent_inp,
            category_child : child_inp,
            describe : describe_inp,
-           keys : keys_inp,
+           meta_keys : keys_inp,
+           meta_describe : keys_inp,
            url : `${config.frontend_url}article/${article_url}`,
-           internal_files : req.session.temp_files
+           internal_files : req.session.temp_files,
 
        }
 
