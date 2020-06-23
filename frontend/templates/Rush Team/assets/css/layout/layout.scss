@@ -24,6 +24,7 @@
 
             .active_navbar {
                 border-bottom: 3px solid $d_gold;
+                color: $d_gold;
             }
 
             a {
@@ -34,7 +35,6 @@
                 height: 70px;
                 line-height: 70px;
                 border-bottom: 0px solid $d_gold;
-                @include transition(0.2s, linear, 0s);
 
                 &:hover {
                     border-bottom: 3px solid $d_gold;
