@@ -5,16 +5,16 @@
 // header slider
 .swiper-container {
     width: 100%;
-    height: 100%;
+}
+
+.header_slider {
     background-color: black;
+    height: 100vh;
 }
 
 .swiper-slide {
-    font-size: 18px;
-    color: #fff;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 40px 60px;
 }
 
 .parallax-bg {
@@ -53,10 +53,6 @@
     font-family: accent-font;
 }
 
-.swiper-container {
-    height: 100vh;
-}
-
 .swiper-slide {
     .row {
         height: 100%;
@@ -69,6 +65,7 @@
 
     .header_subtitle {
         font-size: 1.2rem;
+        color: white;
     }
 
     .header_text {
@@ -154,14 +151,15 @@
     opacity: 1;
 }
 
-// service part
+// work levels part
 
 .right_service_side {
     width: 100%;
     height: 100vh;
     background-color: #282828;
     padding: 10px;
-    .border_custom{
+
+    .border_custom {
         border: 1px solid $d_gold;
         height: 100%;
         width: 100%;
@@ -179,12 +177,13 @@
 
     .service_border_custom {
         height: 100%;
-        
+
         .service_col_template {
             cursor: pointer;
             border: 1px solid #ffffff00;
             @include transition(0.2s, linear, 0s);
         }
+
         .active_template {
             border: 1px solid $d_gold;
         }
@@ -254,11 +253,13 @@
             font-size: 0.9rem;
             line-height: 25px;
         }
-        .btn_of_service{
+
+        .btn_of_service {
             color: $d_gold;
             border: 1px solid $d_gold;
             border-radius: 50px;
-            &:hover{
+
+            &:hover {
                 color: white;
                 background-color: $d_gold;
             }
@@ -267,5 +268,67 @@
 
     .active_text {
         display: block;
+    }
+}
+
+// article slider
+
+.article_slider{
+    .swiper-wrapper{
+        .swiper-slide{
+            padding: 40px 20px;
+            .main_field_of_articel_card{
+                width: 100%;
+                border-radius: 4px;
+                box-shadow: 0px 0px 10px 5px #e6e6e6;
+                padding: 0px 25px 25px 25px;
+                position: relative;
+                top: 0px;
+                @include transition(0.1s , linear , 0s);
+                &:hover{
+                    position: relative;
+                    top: -10px;
+                }
+                img{
+                    width: 100%;
+                    position: relative;
+                    top: -15px;
+                    border-radius: 4px;
+                    box-shadow: 0px 0px 10px 5px #c5c5c5;
+                }
+                & p:nth-child(2){
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    color: $d_gold;
+                    margin-top: 5px;
+                    text-align: justify;
+                }
+                & p:nth-child(3){
+                    font-size: 0.9rem;
+                    line-height: 25px;
+                    color: $d_text;
+
+                }
+                button{
+                    color: $d_gold;
+                    border: 1px solid $d_gold;
+
+                }
+                .v_c_article{
+                    display: inline-block;
+                    position: relative;
+                    right: 35px;
+                    ul{
+                        list-style-type: none;
+                        padding: 0px;
+                        li{
+                            display: inline-block;
+                            font-size: 0.8rem;
+                            color: $l_text;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
