@@ -99,7 +99,7 @@
                                         <td>{@math key="{rows_begin_number}" method="add" operand="{$idx}"/}</td>
                                         <td class="articel_name_td">
                                             <p class="name_ofarticle">
-                                                <a href="{url}">{title}</a>
+                                                <a href="{url}" target="_blank">{title}</a>
                                             </p>
                                         </td>
                                         <td>
