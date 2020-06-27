@@ -1,1 +1,10 @@
 {>"layouts/dashboard-layout"/}
+{<js}
+
+    <script src="js/general/fingerprint.js"></script>
+    <script>
+        var fingerprint = new Fingerprint().get();
+        console.log(fingerprint)
+    </script>
+
+{/js}
