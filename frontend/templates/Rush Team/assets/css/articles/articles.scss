@@ -2,9 +2,6 @@
 @import "../../css/mixin/cb-mixin";
 @import "../../css/variable/color";
 
-nav {
-  display: none;
-}
 
 
 header{
@@ -42,13 +39,14 @@ header{
       font-size: .85rem;
       height: 30px;
     }
-    .article_list_small_txt{
-
-    }
 
   }
 
-
+  .page-link{
+    color: $d_gold !important;
+    background-color: $d-bg;
+    border: none;
+  }
 }
 
 // article slider
