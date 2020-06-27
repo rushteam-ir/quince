@@ -56,3 +56,5 @@ function apiFileManager(this_data){
     });
 
 }
+
+console.log(navigator)
