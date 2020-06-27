@@ -153,10 +153,10 @@
 
 // work levels part
 
-.right_service_side {
+.right_POW_side {
     width: 100%;
     height: 100vh;
-    background-color: #282828;
+    background-color: $d_bg;
     padding: 10px;
 
     .border_custom {
@@ -167,7 +167,7 @@
     }
 }
 
-.left_service_side {
+.left_POW_side {
     text-align: center;
     width: 100%;
     height: 100vh;
@@ -175,10 +175,10 @@
     background-size: cover;
     padding: 10px;
 
-    .service_border_custom {
+    .POW_border_custom {
         height: 100%;
 
-        .service_col_template {
+        .POW_col_template {
             cursor: pointer;
             border: 1px solid #ffffff00;
             @include transition(0.2s, linear, 0s);
@@ -226,7 +226,7 @@
         }
     }
 
-    .service_text {
+    .POW_text {
         text-align: justify;
         direction: rtl;
         position: absolute;
@@ -254,7 +254,7 @@
             line-height: 25px;
         }
 
-        .btn_of_service {
+        .btn_of_POW {
             color: $d_gold;
             border: 1px solid $d_gold;
             border-radius: 50px;
@@ -273,55 +273,69 @@
 
 // article slider
 
-.article_slider{
-    .swiper-wrapper{
-        .swiper-slide{
+.articel_header {
+    @include text_header;
+}
+
+.article_slider {
+    .swiper-wrapper {
+        .swiper-slide {
             padding: 40px 20px;
-            .main_field_of_articel_card{
+
+            .main_field_of_articel_card {
+                background-color: white;
                 width: 100%;
                 border-radius: 4px;
-                box-shadow: 0px 0px 10px 5px #e6e6e6;
+                box-shadow: 0px 0px 10px 5px $box_shadow;
                 padding: 0px 25px 25px 25px;
                 position: relative;
                 top: 0px;
-                @include transition(0.1s , linear , 0s);
-                &:hover{
+                @include transition(0.1s, linear, 0s);
+
+                &:hover {
                     position: relative;
                     top: -10px;
                 }
-                img{
+
+                img {
                     width: 100%;
                     position: relative;
                     top: -15px;
                     border-radius: 4px;
                     box-shadow: 0px 0px 10px 5px #c5c5c5;
                 }
-                & p:nth-child(2){
+
+                & p:nth-child(2) {
                     font-weight: bold;
                     font-size: 1.2rem;
                     color: $d_gold;
                     margin-top: 5px;
                     text-align: justify;
                 }
-                & p:nth-child(3){
+
+                & p:nth-child(3) {
                     font-size: 0.9rem;
                     line-height: 25px;
                     color: $d_text;
 
                 }
-                button{
+
+                button {
                     color: $d_gold;
                     border: 1px solid $d_gold;
 
                 }
-                .v_c_article{
+
+                .v_c_article {
                     display: inline-block;
                     position: relative;
                     right: 35px;
-                    ul{
+
+                    ul {
                         list-style-type: none;
                         padding: 0px;
-                        li{
+
+                        li {
                             display: inline-block;
                             font-size: 0.8rem;
                             color: $l_text;
@@ -330,5 +344,96 @@
                 }
             }
         }
+    }
+}
+
+// packages part
+
+.packages_header {
+    direction: rtl;
+    text-align: center;
+    width: 100%;
+
+    h3 {
+        color: #171717;
+    }
+
+    p {
+        color: $d_text;
+        font-size: 0.85rem;
+        width: 800px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
+.packages_field {
+    width: 100%;
+    height: 550px;
+    border: 1px solid #dadada;
+    border-radius: 7px;
+    text-align: center;
+    direction: rtl;
+    padding-top: 50px;
+
+    .packages_price {
+        width: 170px;
+        margin: 0 auto;
+        background-color: $d_gold;
+        color: white;
+        border-radius: 50px;
+        height: 30px;
+        font-size: small;
+        line-height: 28px;
+    }
+
+    .packages_title {
+        font-size: 2rem;
+        margin-top: 25px;
+        font-weight: bold;
+    }
+
+    .packages_subtitle {
+        i {
+            color: #49C610;
+        }
+
+        button {
+            color: $d_gold;
+            border: 1px solid $d_gold;
+            border-radius: 50px;
+            margin-top: 50px;
+        }
+    }
+}
+
+// service part
+
+.service_info_text {
+    margin-top: 250px;
+    direction: rtl;
+    text-align: right;
+
+    & :first-child {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    & :nth-child(2) {
+        font-size: 1.5rem;
+    }
+
+    & :nth-child(3) {
+        font-size: 0.9rem;
+        color: $d_text;
+        line-height: 25px;
+        text-align: justify;
+    }
+    button{
+        color: white;
+        background-color: $d_gold;
+        height: 50px;
+        border-radius: 50px;
+
     }
 }
