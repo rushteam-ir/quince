@@ -43,7 +43,7 @@ router.post('/', async(req, res, next)=>{
 
        }
 
-       let article_url = title_inp.split(' ').join('-')
+       let article_url = title_inp.split(' ').join('-').toLowerCase()
 
        let article_data = {
 
