@@ -75,6 +75,6 @@ JsonCount = function (obj) {
 
 randomSha1String = function () {
 
-    return `${sha1(new Date().getTime())}`
+    return `${sha1(new Date().getTime() + Math.random())}`
 
 }
