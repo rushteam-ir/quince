@@ -17,289 +17,302 @@
 {/js}
 
 {<body}
-<header>
+    <header>
 
 
-</header>
+    </header>
 
-<section class="article_list_box">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-9 a">
-                <div class="container">
-                    <div class="row row_of_article_list_box mt-5">
-                        <div class="col-lg-8 pr-4">
-                            <h3 class="text-right title_of_article_list_post mt-4">از همین جا دلام میکنم به طالبی جون </h3>
-                            <div class="dir-rtl article_list_post_info_box mt-2">
-                                <i class="fas fa-user-edit mt-1"></i>
-                                <p class="mr-2">نویسنده :</p>
-                                <p class="mr-1">طالبی جونم</p>
+    <section class="article_list_box">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-9 a">
+                    <div class="container">
+                        <div class="row row_of_article_list_box mt-5">
+                            <div class="col-lg-8 pr-4">
+                                <h3 class="text-right title_of_article_list_post mt-4">از همین جا دلام میکنم به طالبی
+                                    جون </h3>
+                                <div class="dir-rtl article_list_post_info_box mt-2">
+                                    <i class="fas fa-user-edit mt-1"></i>
+                                    <p class="mr-2">نویسنده :</p>
+                                    <p class="mr-1">طالبی جونم</p>
+                                </div>
+                                <div class="dir-rtl article_list_post_info_box">
+                                    <i class="fas fa-calendar-alt mt-1 mr-1"></i>
+                                    <p class="mr-2">تاریخ انتشار پست :</p>
+                                    <p class="mr-1">1399/10/5</p>
+                                </div>
+                                <div class="dir-rtl article_list_post_info_box">
+                                    <i class="fas fa-comments mr-1 mt-1"></i>
+                                    <p class="mr-2">نظرات :</p>
+                                    <p class="mr-1">0</p>
+
+                                    <i class="fas fa-thumbs-up mt-1 mr-3"></i>
+                                    <p class="mr-2">لایک :</p>
+                                    <p class="mr-1">0</p>
+                                </div>
+                                <p class="text-right article_list_small_txt dir_rtl">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                    برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                                    می باشد. شما جمع‌آوری کرده‌ایم.
+                                </p>
                             </div>
-                            <div class="dir-rtl article_list_post_info_box">
-                                <i class="fas fa-calendar-alt mt-1 mr-1"></i>
-                                <p class="mr-2">تاریخ انتشار پست :</p>
-                                <p class="mr-1">1399/10/5</p>
+                            <div class="col-lg-4 px-0">
+                                <img src="../../img/slider2.jpg" class="img_of_article_list">
                             </div>
-                            <div class="dir-rtl article_list_post_info_box">
-                                <i class="fas fa-comments mr-1 mt-1"></i>
-                                <p class="mr-2">نظرات :</p>
-                                <p class="mr-1">0</p>
 
-                                <i class="fas fa-thumbs-up mt-1 mr-3"></i>
-                                <p class="mr-2">لایک :</p>
-                                <p class="mr-1">0</p>
-                            </div>
-                            <p class="text-right article_list_small_txt dir_rtl">
-                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. شما جمع‌آوری کرده‌ایم.
-                            </p>
                         </div>
-                        <div class="col-lg-4 px-0">
-                            <img src="../../img/slider2.jpg" class="img_of_article_list">
-                        </div>
+                        <div class="row row_of_article_list_box mt-5">
+                            <div class="col-lg-8 pr-4">
+                                <h3 class="text-right title_of_article_list_post mt-4">از همین جا دلام میکنم به طالبی
+                                    جون </h3>
+                                <div class="dir-rtl article_list_post_info_box mt-2">
+                                    <i class="fas fa-user-edit mt-1"></i>
+                                    <p class="mr-2">نویسنده :</p>
+                                    <p class="mr-1">طالبی جونم</p>
+                                </div>
+                                <div class="dir-rtl article_list_post_info_box">
+                                    <i class="fas fa-calendar-alt mt-1 mr-1"></i>
+                                    <p class="mr-2">تاریخ انتشار پست :</p>
+                                    <p class="mr-1">1399/10/5</p>
+                                </div>
+                                <div class="dir-rtl article_list_post_info_box">
+                                    <i class="fas fa-comments mr-1 mt-1"></i>
+                                    <p class="mr-2">نظرات :</p>
+                                    <p class="mr-1">0</p>
 
+                                    <i class="fas fa-thumbs-up mt-1 mr-3"></i>
+                                    <p class="mr-2">لایک :</p>
+                                    <p class="mr-1">0</p>
+                                </div>
+                                <p class="text-right article_list_small_txt dir_rtl">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                    برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                                    می باشد. شما جمع‌آوری کرده‌ایم.
+                                </p>
+                            </div>
+                            <div class="col-lg-4 px-0">
+                                <img src="../../img/article1.jpg" class="img_of_article_list">
+                            </div>
+
+                        </div>
+                        <div class="row row_of_article_list_box my-5">
+                            <div class="col-lg-8 pr-4">
+                                <h3 class="text-right title_of_article_list_post mt-4">از همین جا دلام میکنم به طالبی
+                                    جون </h3>
+                                <div class="dir-rtl article_list_post_info_box mt-2">
+                                    <i class="fas fa-user-edit mt-1"></i>
+                                    <p class="mr-2">نویسنده :</p>
+                                    <p class="mr-1">طالبی جونم</p>
+                                </div>
+                                <div class="dir-rtl article_list_post_info_box">
+                                    <i class="fas fa-calendar-alt mt-1 mr-1"></i>
+                                    <p class="mr-2">تاریخ انتشار پست :</p>
+                                    <p class="mr-1">1399/10/5</p>
+                                </div>
+                                <div class="dir-rtl article_list_post_info_box">
+                                    <i class="fas fa-comments mr-1 mt-1"></i>
+                                    <p class="mr-2">نظرات :</p>
+                                    <p class="mr-1">0</p>
+
+                                    <i class="fas fa-thumbs-up mt-1 mr-3"></i>
+                                    <p class="mr-2">لایک :</p>
+                                    <p class="mr-1">0</p>
+                                </div>
+                                <p class="text-right article_list_small_txt dir_rtl">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                    برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                                    می باشد. شما جمع‌آوری کرده‌ایم.
+                                </p>
+                            </div>
+                            <div class="col-lg-4 px-0">
+                                <img src="../../img/article2.jpg" class="img_of_article_list">
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="row row_of_article_list_box mt-5">
-                        <div class="col-lg-8 pr-4">
-                            <h3 class="text-right title_of_article_list_post mt-4">از همین جا دلام میکنم به طالبی جون </h3>
-                            <div class="dir-rtl article_list_post_info_box mt-2">
-                                <i class="fas fa-user-edit mt-1"></i>
-                                <p class="mr-2">نویسنده :</p>
-                                <p class="mr-1">طالبی جونم</p>
-                            </div>
-                            <div class="dir-rtl article_list_post_info_box">
-                                <i class="fas fa-calendar-alt mt-1 mr-1"></i>
-                                <p class="mr-2">تاریخ انتشار پست :</p>
-                                <p class="mr-1">1399/10/5</p>
-                            </div>
-                            <div class="dir-rtl article_list_post_info_box">
-                                <i class="fas fa-comments mr-1 mt-1"></i>
-                                <p class="mr-2">نظرات :</p>
-                                <p class="mr-1">0</p>
-
-                                <i class="fas fa-thumbs-up mt-1 mr-3"></i>
-                                <p class="mr-2">لایک :</p>
-                                <p class="mr-1">0</p>
-                            </div>
-                            <p class="text-right article_list_small_txt dir_rtl">
-                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. شما جمع‌آوری کرده‌ایم.
-                            </p>
-                        </div>
-                        <div class="col-lg-4 px-0">
-                            <img src="../../img/article1.jpg" class="img_of_article_list">
-                        </div>
-
-                    </div>
-                    <div class="row row_of_article_list_box my-5">
-                        <div class="col-lg-8 pr-4">
-                            <h3 class="text-right title_of_article_list_post mt-4">از همین جا دلام میکنم به طالبی جون </h3>
-                            <div class="dir-rtl article_list_post_info_box mt-2">
-                                <i class="fas fa-user-edit mt-1"></i>
-                                <p class="mr-2">نویسنده :</p>
-                                <p class="mr-1">طالبی جونم</p>
-                            </div>
-                            <div class="dir-rtl article_list_post_info_box">
-                                <i class="fas fa-calendar-alt mt-1 mr-1"></i>
-                                <p class="mr-2">تاریخ انتشار پست :</p>
-                                <p class="mr-1">1399/10/5</p>
-                            </div>
-                            <div class="dir-rtl article_list_post_info_box">
-                                <i class="fas fa-comments mr-1 mt-1"></i>
-                                <p class="mr-2">نظرات :</p>
-                                <p class="mr-1">0</p>
-
-                                <i class="fas fa-thumbs-up mt-1 mr-3"></i>
-                                <p class="mr-2">لایک :</p>
-                                <p class="mr-1">0</p>
-                            </div>
-                            <p class="text-right article_list_small_txt dir_rtl">
-                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. شما جمع‌آوری کرده‌ایم.
-                            </p>
-                        </div>
-                        <div class="col-lg-4 px-0">
-                            <img src="../../img/article2.jpg" class="img_of_article_list">
-                        </div>
-
-                    </div>
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination">
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
                 </div>
-
+                <div class="col-lg-3"></div>
             </div>
-            <div class="col-lg-3"></div>
+            <div class="row  justify-content-center">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+
         </div>
+    </section>
 
+    <section class="mt-5">
+        <div>
+            <h4 class="w-100 text-center">
+                _بهترین مقالات هفته_
+            </h4>
+        </div>
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="swiper-container article_slider">
 
-    </div>
-</section>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="main_field_of_articel_card dir_rtl text-right">
+                                    <img src="img/slider3.jpg" alt="">
+                                    <p>بهترین بازی سال</p>
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                                        است</p>
+                                    <button class="btn">مطالعه بیشتر</button>
+                                    <div class="v_c_article">
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-eye ml-1"></i>
+                                                15468
+                                            </li>
+                                            <li class="mr-2">
+                                                <i class="fas fa-clock ml-1"></i>
+                                                15/10/1399
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main_field_of_articel_card dir_rtl text-right">
+                                    <img src="img/slider1.jpg" alt="">
+                                    <p>بهترین بازی سال</p>
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                                        است</p>
+                                    <button class="btn">مطالعه بیشتر</button>
+                                    <div class="v_c_article">
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-eye ml-1"></i>
+                                                15468
+                                            </li>
+                                            <li class="mr-2">
+                                                <i class="fas fa-clock ml-1"></i>
+                                                15/10/1399
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main_field_of_articel_card dir_rtl text-right">
+                                    <img src="img/slider2.jpg" alt="">
+                                    <p>بهترین بازی سال</p>
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                                        است</p>
+                                    <button class="btn">مطالعه بیشتر</button>
+                                    <div class="v_c_article">
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-eye ml-1"></i>
+                                                15468
+                                            </li>
+                                            <li class="mr-2">
+                                                <i class="fas fa-clock ml-1"></i>
+                                                15/10/1399
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main_field_of_articel_card dir_rtl text-right">
+                                    <img src="img/slider3.jpg" alt="">
+                                    <p>بهترین بازی سال</p>
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                                        است</p>
+                                    <button class="btn">مطالعه بیشتر</button>
+                                    <div class="v_c_article">
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-eye ml-1"></i>
+                                                15468
+                                            </li>
+                                            <li class="mr-2">
+                                                <i class="fas fa-clock ml-1"></i>
+                                                15/10/1399
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main_field_of_articel_card dir_rtl text-right">
+                                    <img src="img/slider1.jpg" alt="">
+                                    <p>بهترین بازی سال</p>
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                                        است</p>
+                                    <button class="btn">مطالعه بیشتر</button>
+                                    <div class="v_c_article">
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-eye ml-1"></i>
+                                                15468
+                                            </li>
+                                            <li class="mr-2">
+                                                <i class="fas fa-clock ml-1"></i>
+                                                15/10/1399
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main_field_of_articel_card dir_rtl text-right">
+                                    <img src="img/slider2.jpg" alt="">
+                                    <p>بهترین بازی سال</p>
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                                        است</p>
+                                    <button class="btn">مطالعه بیشتر</button>
+                                    <div class="v_c_article">
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-eye ml-1"></i>
+                                                15468
+                                            </li>
+                                            <li class="mr-2">
+                                                <i class="fas fa-clock ml-1"></i>
+                                                15/10/1399
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
 
-<section class="mt-5">
-    <div>
-        <h4 class="w-100 text-center">
-        _بهترین مقالات هفته_
-        </h4>
-    </div>
-    <div class="container mt-5 mb-5">
-        <div class="row">
-            <div class="col-12">
-                <div class="swiper-container article_slider">
-
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="main_field_of_articel_card dir_rtl text-right">
-                                <img src="img/slider3.jpg" alt="">
-                                <p>بهترین بازی سال</p>
-                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                    گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
-                                    است</p>
-                                <button class="btn">مطالعه بیشتر</button>
-                                <div class="v_c_article">
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-eye ml-1"></i>
-                                            15468
-                                        </li>
-                                        <li class="mr-2">
-                                            <i class="fas fa-clock ml-1"></i>
-                                            15/10/1399
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="main_field_of_articel_card dir_rtl text-right">
-                                <img src="img/slider1.jpg" alt="">
-                                <p>بهترین بازی سال</p>
-                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                    گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
-                                    است</p>
-                                <button class="btn">مطالعه بیشتر</button>
-                                <div class="v_c_article">
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-eye ml-1"></i>
-                                            15468
-                                        </li>
-                                        <li class="mr-2">
-                                            <i class="fas fa-clock ml-1"></i>
-                                            15/10/1399
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="main_field_of_articel_card dir_rtl text-right">
-                                <img src="img/slider2.jpg" alt="">
-                                <p>بهترین بازی سال</p>
-                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                    گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
-                                    است</p>
-                                <button class="btn">مطالعه بیشتر</button>
-                                <div class="v_c_article">
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-eye ml-1"></i>
-                                            15468
-                                        </li>
-                                        <li class="mr-2">
-                                            <i class="fas fa-clock ml-1"></i>
-                                            15/10/1399
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="main_field_of_articel_card dir_rtl text-right">
-                                <img src="img/slider3.jpg" alt="">
-                                <p>بهترین بازی سال</p>
-                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                    گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
-                                    است</p>
-                                <button class="btn">مطالعه بیشتر</button>
-                                <div class="v_c_article">
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-eye ml-1"></i>
-                                            15468
-                                        </li>
-                                        <li class="mr-2">
-                                            <i class="fas fa-clock ml-1"></i>
-                                            15/10/1399
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="main_field_of_articel_card dir_rtl text-right">
-                                <img src="img/slider1.jpg" alt="">
-                                <p>بهترین بازی سال</p>
-                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                    گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
-                                    است</p>
-                                <button class="btn">مطالعه بیشتر</button>
-                                <div class="v_c_article">
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-eye ml-1"></i>
-                                            15468
-                                        </li>
-                                        <li class="mr-2">
-                                            <i class="fas fa-clock ml-1"></i>
-                                            15/10/1399
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="main_field_of_articel_card dir_rtl text-right">
-                                <img src="img/slider2.jpg" alt="">
-                                <p>بهترین بازی سال</p>
-                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                    گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
-                                    است</p>
-                                <button class="btn">مطالعه بیشتر</button>
-                                <div class="v_c_article">
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-eye ml-1"></i>
-                                            15468
-                                        </li>
-                                        <li class="mr-2">
-                                            <i class="fas fa-clock ml-1"></i>
-                                            15/10/1399
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
 
                     </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
-
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 {/body}
