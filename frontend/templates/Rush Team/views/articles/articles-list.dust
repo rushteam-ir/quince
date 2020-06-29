@@ -13,7 +13,7 @@
 
 {<js}
     <script src="js/general/Swiper.js"></script>
-    <script src="js/articles/articles.js"></script>
+    <script src="js/articles/articles-list.js"></script>
 {/js}
 
 {<body}
