@@ -2,9 +2,9 @@
 
 new FroalaEditor('#article_textarea', {
 
-    imageUploadURL: `${backend_url}api/wysiwyg-manager`,
-    fileUploadURL: `${backend_url}api/wysiwyg-manager`,
-    videoUploadURL: `${backend_url}api/wysiwyg-manager`,
+    imageUploadURL: `${backend_url}api/wysiwyg-file-manager`,
+    fileUploadURL: `${backend_url}api/wysiwyg-file-manager`,
+    videoUploadURL: `${backend_url}api/wysiwyg-file-manager`,
     imageUploadParams: {
         do_inp : 'upload'
     },
@@ -48,7 +48,7 @@ new FroalaEditor('#article_textarea', {
 
 function apiFileManager(this_data){
 
-    $.post(`${backend_url}api/wysiwyg-manager`, this_data, (data, status)=>{
+    $.post(`${backend_url}api/wysiwyg-file-manager`, this_data, (data, status)=>{
 
         console.log(status);
         console.log(data);

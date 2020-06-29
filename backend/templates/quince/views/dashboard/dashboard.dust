@@ -3,7 +3,7 @@
 
     <script src="js/general/fingerprint.js"></script>
     <script>
-        var fingerprint = new Fingerprint().get();
+        var fingerprint = new Fingerprint({screen_resolution: true}).get();
         console.log(fingerprint)
     </script>
 
