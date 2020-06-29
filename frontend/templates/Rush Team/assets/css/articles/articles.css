@@ -28,12 +28,15 @@ header {
   font-size: 0.85rem;
   height: 30px;
 }
+<<<<<<< HEAD
 .article_list_box .page-link {
   color: #CAAB68 !important;
   background-color: #282828;
   border: none;
 }
 
+=======
+>>>>>>> 98b6d9b9943e80949035cd28e141a485c55adfe6
 .article_slider .swiper-wrapper .swiper-slide {
   padding: 40px 20px;
 }
