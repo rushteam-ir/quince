@@ -1,1 +1,65 @@
 {>"layouts/index-layout"/}
+
+{<title}
+    <title>
+
+    </title>
+{/title}
+
+{<css}
+    <link rel="stylesheet" href="css/articles/articles-show.css">
+    <link rel="stylesheet" href="css/general/Swiper.css">
+{/css}
+
+{<js}
+    <script src="js/general/Swiper.js"></script>
+    <script src="js/articles/articles-show.js"></script>
+{/js}
+
+{<body}
+
+<section class="articles_show_main_info">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6">
+                <div class="box_main_info">
+                    <h2 class="title_of_article_show_main_info">از همین جا دلام میکنم به طالبی جون</h2>
+                    <div class="box_of_info">
+                        <div class="dir-rtl article_show_main_info_box mt-2">
+                            <i class="fas fa-user-edit mt-1"></i>
+                            <p class="mr-2 dir_rtl">نویسنده :</p>
+                            <p class="mr-1">طالبی جونم</p>
+                        </div>
+                        <div class="dir-rtl article_show_main_info_box">
+                            <i class="fas fa-calendar-alt mt-1 mr-1"></i>
+                            <p class="mr-2 dir_rtl">تاریخ انتشار پست :</p>
+                            <p class="mr-1">1399/10/5</p>
+                        </div>
+                        <div class="dir-rtl article_show_main_info_box">
+                            <i class="fas fa-comments mr-1 mt-1"></i>
+                            <p class="mr-2 dir_rtl">نظرات :</p>
+                            <p class="mr-1">0</p>
+
+                            <i class="fas fa-thumbs-up mt-1 mr-3"></i>
+                            <p class="mr-2 dir_rtl">لایک :</p>
+                            <p class="mr-1">0</p>
+                        </div>
+                        <div class="dir-rtl article_show_main_info_box">
+                            <i class="far fa-eye mr-1"></i>
+                            <p class="mr-2 dir_rtl">بازدیدها :</p>
+                            <p class="mr-1">1,232</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="../../img/article1.jpg" class="main_image_of_article_show">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{/body}
