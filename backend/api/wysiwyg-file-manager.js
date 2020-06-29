@@ -11,7 +11,7 @@ router.post('/', async(req, res, next)=>{
             case 'delete':
             {
 
-                let {link_inp, type_inp} = req.body;
+                let {link_inp} = req.body;
                 let file_name = link_inp.split('/').slice(-1)[0]
                 let file_type = link_inp.split('/').slice(-2)[0]
                 let file_path = `${backend_upload_dir}${file_type}/${file_name}`;
