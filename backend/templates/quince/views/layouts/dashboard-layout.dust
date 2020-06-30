@@ -129,7 +129,7 @@
                 </div>
             </a>
 
-            <a href="" class="dashboard_body_sub">
+            <a href="#" class="dashboard_body_sub">
                 <div class="position-relative">
                     <i class="fad fa-question-circle"></i>
                     <p>راهنما</p>

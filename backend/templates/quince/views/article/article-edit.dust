@@ -9,6 +9,7 @@
 {<js} 
 
     <script src="js/general/wysiwyg-editor.js"></script>
+    <script src="js/general/wysiwyg-image-manager.js"></script>
     <script src="js/general/wysiwyg-custom.js"></script>
     <script src="js/article/article-edit.js"></script>
 
@@ -44,7 +45,6 @@
                                     <div class="form-group">
                                         <label for="article_parent">دسته</label>
                                         <select class="form-control main_form_design select-category" id="article_parent" name="parent_inp">
-                                            <option value="0">دسته اصلی</option>
                                             {#parent_list}
                                                 {@eq key="{title}" value="{article_info.category_parent.title}"}
                                                     <option selected value="{_id}">{article_info.category_parent.title}</option>

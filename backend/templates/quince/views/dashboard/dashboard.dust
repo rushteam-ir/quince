@@ -3,8 +3,11 @@
 
     <script src="js/general/fingerprint.js"></script>
     <script>
-        var fingerprint = new Fingerprint().get();
-        console.log(fingerprint)
+        Fingerprint2.getV18({}, function (result, com) {
+
+            console.log(result)
+
+        })
     </script>
 
 {/js}

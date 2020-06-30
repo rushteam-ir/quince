@@ -4,8 +4,7 @@
 <head>
     <base href="{frontend_url}">
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/general/bootstrap.css">
     <link rel="stylesheet" href="css/general/fontawsome.css">
@@ -14,9 +13,8 @@
     {+css/}
     {+title/}
 </head>
-
 <body>
-    <nav>
+    <nav id="navbar">
 
         <div class="navbar_field">
 
@@ -39,9 +37,24 @@
                 <li class="navbar_iteam">
                     <a href="">وبلاگ</a>
                 </li>
+                <li class="navbar_iteam ">
+                    <a href="" class="special_one">
+                        <span>
+                            سفارش سایت
+                        </span>
+                    </a>
+                </li>
 
                 <div class="field_of_navbar_ltr">
-                    <img class="main_logo" src="img/RT-logo.PNG" alt="">
+                   <p class="nav_logo d-inline-block">
+                       rush teram
+                   </p>
+                   <div class="d-inline-block login_text">
+                        ورود | عضویت
+                   </div>
+                   <div class="d-inline-block search_box">
+                        <i class="fal fa-search"></i>
+                   </div>
                 </div>
 
             </ul>

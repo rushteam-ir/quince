@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base href="{backend_url}">
+    <link rel="stylesheet" href="css/general/bootstrap.css">
+    <title>Reports List</title>
+</head>
+<body>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Type</th>
+            <th scope="col">Text</th>
+            <th scope="col">URL</th>
+            <th scope="col">WHO</th>
+            <th scope="col">Remote Address</th>
+            <th scope="col">Date</th>
+        </tr>
+    </thead>
+    <tbody>
+    {#reports_list}
+    <tr>
+        <th scope="row">{@math key="1" method="add" operand="{$idx}"/}</th>
+        <td>{type}</td>
+        <td>{text}</td>
+        <td>{url}</td>
+        <td>
+            {@eq key="{who.author_type}" value="name"}
+                {who.first_name} {who.last_name}
+            {:else}
+                {who.nick_name}
+            {/eq}
+        </td>
+        <td>{remote_address}</td>
+        <td>{date}</td>
+    </tr>
+    {/reports_list}
+    </tbody>
+</table>
+</body>
+</html>

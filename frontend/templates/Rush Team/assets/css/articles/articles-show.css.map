@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["articles-show.scss"],"names":[],"mappings":"AAKA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA","file":"articles-show.css"}
+{"version":3,"sourceRoot":"","sources":["articles-show.scss","../variable/_color.scss"],"names":[],"mappings":"AAKA;EACE,kBCCI;EDAJ;EACA","file":"articles-show.css"}
