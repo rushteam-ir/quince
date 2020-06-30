@@ -54,3 +54,27 @@
   -moz-transform: translate3d(0, 0, 0);
   opacity: 1;
 }
+
+.header_img {
+  height: 700px;
+}
+
+.header_layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 700px;
+  width: 100%;
+  background: radial-gradient(circle, rgba(208, 143, 225, 0.4) 0%, rgba(110, 171, 241, 0.4) 100%);
+}
+
+.header_service_field {
+  width: 80%;
+  margin-left: 10%;
+  height: 400px;
+  background-color: white;
+  border-radius: 15px;
+  position: absolute;
+  bottom: -280px;
+  z-index: 150;
+}
