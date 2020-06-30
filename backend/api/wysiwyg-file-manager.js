@@ -4,16 +4,16 @@ router.post('/', async(req, res, next)=>{
 
     try{
 
-        let do_inp = req.body.do_inp;
+        let do_inp = req.body.do;
 
         switch (do_inp) {
 
             case 'delete':
             {
 
-                let {link_inp} = req.body;
-                let file_name = link_inp.split('/').slice(-1)[0]
-                let file_type = link_inp.split('/').slice(-2)[0]
+                let {src} = req.body;
+                let file_name = src.split('/').slice(-1)[0]
+                let file_type = src.split('/').slice(-2)[0]
                 let file_path = `${backend_upload_dir}${file_type}/${file_name}`;
 
                 fs.unlink(file_path, function(err) {})
@@ -63,6 +63,33 @@ router.post('/', async(req, res, next)=>{
                 req.session.temp_files.push(`${file_mime_type}s/${file_name}`);
 
                 res.json(data)
+                break;
+
+            }
+
+            case 'load':
+            {
+
+                let images_list = [];
+
+                fs.readdir(`${backend_upload_dir}images/`, (err, files)=>{
+
+                    for(let file of files){
+
+                        images_list.push({
+
+                            "url" : `${config.backend_url}media/images/${file}`,
+                            "thumb": `${config.backend_url}media/images/${file}`,
+                            "tag" : "image"
+
+                        })
+
+                    }
+
+                    res.json(images_list)
+
+                })
+
                 break;
 
             }

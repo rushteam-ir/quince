@@ -2,13 +2,14 @@
 
 {<css}
 
-<link rel="stylesheet" href="css/article/wysiwyg-editor.css">
+    <link rel="stylesheet" href="css/article/wysiwyg-editor.css">
     <link rel="stylesheet" href="css/article/article-add.css">
 
 {/css}
 {<js} 
 
     <script src="js/general/wysiwyg-editor.js"></script>
+    <script src="js/general/wysiwyg-image-manager.js"></script>
     <script src="js/general/wysiwyg-custom.js"></script>
     <script src="js/article/article-add.js"></script>
 
