@@ -177,10 +177,23 @@ category_schema.statics = {
 
                 }
 
-                return await category_model.findByIdAndUpdate(category_id, {
-                    title: title_inp,
-                    parent: parent,
-                });
+                if(parent == null){
+
+                    return await category_model.findByIdAndUpdate(category_id, {
+                        title: title_inp,
+                        parent: parent,
+                        child_number : 0,
+                    });
+
+                }
+                else{
+
+                    return await category_model.findByIdAndUpdate(category_id, {
+                        title: title_inp,
+                        parent: parent,
+                    });
+
+                }
 
             } else {
 
