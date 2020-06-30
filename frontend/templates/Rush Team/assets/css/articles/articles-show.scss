@@ -3,9 +3,13 @@
 @import "../../css/variable/color";
 
 
-.navbar_field {
+.header_of_articles_show {
+  width: 100%;
+  height: 100vh;
   background-color: $d_bg;
-  position: relative;
-  margin-bottom: 50px;
+  padding-top: 150px;
+  color: white;
+  font-family:accent-font;
+  direction: rtl;
+  text-align: right;
 }
-
