@@ -45,7 +45,7 @@
     opacity: 1;
 }
 
-
+// header
 .header_video_player {
     width: 100%;
     height: 100%;
@@ -74,7 +74,8 @@
             font-size: 1.2rem;
         }
     }
-    .btn_n1{
+
+    .btn_n1 {
         border: 2px solid white;
         color: white;
         height: 70px;
@@ -84,7 +85,8 @@
         margin-right: 20px;
         margin-top: 20px;
     }
-    .btn_n2{
+
+    .btn_n2 {
         background-color: $d_gold;
         color: white;
         height: 70px;
@@ -96,11 +98,127 @@
     }
 }
 
-.header_layer{
+.header_layer {
     position: absolute;
     top: 0;
     left: 0;
     background-color: #00000063;
     height: 861px;
     width: 100%;
+}
+
+// why chose us
+.why_chose_us {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+
+    .why_chose_us_field {
+        text-align: right;
+        direction: rtl;
+        width: 90%;
+        margin-left: 5%;
+
+        h3 {
+            font-weight: bold;
+            font-size: 2.7vw;
+            line-height: 70px;
+        }
+
+        .main_title_of_wcuf {
+            text-align: justify;
+            margin-top: 30px;
+            color: $d_text;
+            line-height: 30px;
+        }
+
+        .subset_wcu_p1,
+        .subset_wcu_p2,
+        .subset_wcu_p3 {
+            width: 100%;
+
+            .left_subset_wcu {
+                width: 80px;
+                height: 80px;
+                border: 10px solid #FFDC25;
+                position: relative;
+                top: 20px;
+
+                p {
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                    background-color: white;
+                    width: 40px;
+                    height: 40px;
+                    position: relative;
+                    right: -21px;
+                    top: -19px;
+                    line-height: 40px;
+                    text-align: center;
+                }
+
+                i {
+                    font-size: 3rem;
+                    position: relative;
+                    left: -20px;
+                    top: -30px;
+                }
+            }
+
+            .right_subset_wcu {
+                width: 310px;
+                margin-right: 40px;
+
+                & :first-child {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+
+                }
+
+                & :last-child {
+                    color: $d_text;
+                }
+            }
+        }
+
+        .wcu_p_btn {
+            color: black;
+            background-color: #FFDC25;
+            font-weight: bold;
+            padding: 16px 60px;
+            font-size: 1.2rem;
+            width: 70%;
+            margin-right: 15%;
+            margin-top: 70px;
+        }
+    }
+
+    .wcu_side_img_field {
+        position: relative;
+
+        .wcu_side_img_p2 {
+            position: absolute;
+            top: -50px;
+            right: 100px;
+            width: 60%;
+        }
+
+        .wcu_side_img_p1 {
+            position: absolute;
+            top: 320px;
+            left: -50px;
+        }
+
+        .wcu_side_img_p3 {
+            position: absolute;
+            top: 520px;
+            left: 245px;
+        }
+
+        .wcu_side_img_p4 {
+            position: absolute;
+            top: 0px;
+            left: -50px;
+        }
+    }
 }

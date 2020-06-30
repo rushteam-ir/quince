@@ -39,6 +39,7 @@
             .active_navbar {
                 border-bottom: 3px solid $d_gold;
                 color: $d_gold;
+                font-weight: bold;
             }
 
             a {
@@ -50,9 +51,9 @@
                 line-height: 70px;
                 border-bottom: 0px solid $d_gold;
 
-
                 &:hover {
                     border-bottom: 3px solid $d_gold;
+                    font-weight: bold;
                 }
 
             }

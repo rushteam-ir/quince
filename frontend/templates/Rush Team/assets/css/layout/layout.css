@@ -37,6 +37,7 @@
 .navbar_field ul li .active_navbar {
   border-bottom: 3px solid #F64E60;
   color: #F64E60;
+  font-weight: bold;
 }
 
 .navbar_field ul li a {
@@ -51,6 +52,7 @@
 
 .navbar_field ul li a:hover {
   border-bottom: 3px solid #F64E60;
+  font-weight: bold;
 }
 
 .navbar_field ul li .special_one {
