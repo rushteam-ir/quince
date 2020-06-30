@@ -106,3 +106,12 @@
   margin-right: 20px;
   margin-top: 20px;
 }
+
+.header_layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #00000063;
+  height: 861px;
+  width: 100%;
+}

@@ -18,7 +18,9 @@
 
 {<body}
 
-    <section>
+    <section class="position-relative">
+
+        <div class="header_layer"></div>
 
         <video class="header_video_player" autoplay loop muted>
             <source src="img/bg-vido.mp4" type="video/mp4">
