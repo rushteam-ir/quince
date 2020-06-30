@@ -28,4 +28,4 @@ product_model = require('../models/product-schema');
 message_model = require('../models/message-schema');
 discount_model = require('../models/discount-schema');
 article_model = require('../models/article-schema');
-log_model = require('../models/log-schema');
+report_model = require('../models/report-schema');

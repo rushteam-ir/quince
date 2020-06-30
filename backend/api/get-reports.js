@@ -3,8 +3,9 @@ const router = express.Router();
 router.get('/', async(req, res, next)=>{
 
     try{
-        
-        res.render('files/files');
+
+        let reports_list = await report_model.getAll();
+        res.render('api/get-reports', {reports_list});
 
     }
     catch (error) {

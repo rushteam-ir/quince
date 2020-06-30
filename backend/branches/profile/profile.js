@@ -97,7 +97,7 @@ router.post('/', async(req, res, next)=>{
 
                     allowed_formats : 'image',
                     limited_size : backend_limited_images_size,
-                    file_path : `${backend_upload_dir}images/`,
+                    file_path : `${backend_upload_dir}avatars/`,
 
                 }
 
