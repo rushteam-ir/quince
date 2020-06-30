@@ -23,7 +23,6 @@ const messages = require('./branches/messages/messages');
 const groups = require('./branches/groups/groups');
 const guide = require('./branches/guide/guide');
 const article = require('./branches/article/article');
-const files = require('./branches/files/files');
 const api = require('./api/api');
 
 backend.use('/dashboard', dashboard);
@@ -38,7 +37,6 @@ backend.use('/messages', messages);
 backend.use('/groups', groups);
 backend.use('/guide', guide);
 backend.use('/article', article);
-backend.use('/files', files);
 backend.use('/api', api);
 
 // Redirect to dashboard rout
@@ -67,16 +65,15 @@ backend.use(async (req, res, next)=>{
 // Backend 500 page
 backend.use(async (error, req, res, next)=>{
 
-    let new_log = {
+    let new_report = {
         type : '500',
         text : error,
         url : req._parsedOriginalUrl.path,
         who : req.session.admin_id,
         remote_address : req.connection.remoteAddress,
-        request_headers : req.headers
     }
 
-    await log_model.add(new_log);
+    await report_model.add(new_report);
 
     res.status(500).render('errors/500', {error});
 
