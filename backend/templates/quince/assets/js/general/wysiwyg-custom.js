@@ -5,31 +5,33 @@ new FroalaEditor('#article_textarea', {
     imageUploadURL: `${backend_url}api/wysiwyg-file-manager`,
     fileUploadURL: `${backend_url}api/wysiwyg-file-manager`,
     videoUploadURL: `${backend_url}api/wysiwyg-file-manager`,
+    imageManagerLoadURL: `${backend_url}api/wysiwyg-file-manager`,
+    imageManagerDeleteURL : `${backend_url}api/wysiwyg-file-manager`,
     imageUploadParams: {
-        do_inp : 'upload'
+        do : 'upload'
     },
     fileUploadParams: {
-        do_inp : 'upload'
+        do : 'upload'
     },
     videoUploadParams: {
-        do_inp : 'upload'
+        do : 'upload'
     },
+    imageManagerLoadParams: {
+        do : 'load'
+    },
+    imageManagerDeleteParams : {
+        do : 'delete'
+    },
+    imageManagerLoadMethod: 'POST',
+    imageManagerDeleteMethod : 'POST',
 
     events : {
-        'image.removed' : function ($img) {
-
-            apiFileManager({
-                do_inp : 'delete',
-                link_inp : $img.attr('src')
-            })
-
-        },
 
         'file.unlink' : function (file) {
 
             apiFileManager({
-                do_inp : 'delete',
-                link_inp : file.attr('src')
+                do : 'delete',
+                src : file.attr('src')
             })
 
         },
@@ -37,8 +39,8 @@ new FroalaEditor('#article_textarea', {
         'video.removed' : function ($video) {
 
             apiFileManager({
-                do_inp : 'delete',
-                link_inp : $video.attr('src')
+                do : 'delete',
+                src : $video.attr('src')
             })
 
         }
