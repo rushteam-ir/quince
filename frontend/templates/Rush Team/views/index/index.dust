@@ -18,5 +18,32 @@
 
 {<body}
 
+    <section>
+
+        <video class="header_video_player" autoplay loop muted>
+            <source src="img/bg-vido.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="text_of_header">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-6 offset-3 text-center info_header_text">
+                        <h1>کسب کار خود را بالا ببرید</h1>
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                        </p>
+                        <button class="btn btn_n1">
+                            تعرفه های طراحی سایت 
+                        </button>
+                        <button class="btn btn_n2">
+                            همین الان شروع کن !
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
 
 {/body}
