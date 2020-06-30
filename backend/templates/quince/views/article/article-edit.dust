@@ -44,7 +44,6 @@
                                     <div class="form-group">
                                         <label for="article_parent">دسته</label>
                                         <select class="form-control main_form_design select-category" id="article_parent" name="parent_inp">
-                                            <option value="0">دسته اصلی</option>
                                             {#parent_list}
                                                 {@eq key="{title}" value="{article_info.category_parent.title}"}
                                                     <option selected value="{_id}">{article_info.category_parent.title}</option>

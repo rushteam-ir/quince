@@ -44,7 +44,7 @@
                                     <div class="form-group">
                                         <label for="article_parent">دسته</label>
                                         <select class="form-control main_form_design select-category" id="article_parent" name="parent_inp">
-                                            <option value="0">دسته اصلی</option>
+                                            <option value="0">-----</option>
                                             {#parent_list}
                                                 <option value="{_id}">{title}</option>
                                             {/parent_list}
@@ -54,6 +54,7 @@
                                     <div class="form-group">
                                         <label for="article_child">زیر دسته</label>
                                         <select class="form-control main_form_design select-sub-category" id="article_child" name="child_inp">
+                                            <option value="0">-----</option>
                                         </select>
                                     </div>
 
