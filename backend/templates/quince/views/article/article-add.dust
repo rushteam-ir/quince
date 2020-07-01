@@ -38,6 +38,29 @@
                                 <form method="post" action=""autocomplete="off" enctype="multipart/form-data" class="text-right dir-rtl">
 
                                     <div class="form-group">
+                                        <label for="avatar" class=" col-form-label main_lable_design">تصویر اصلی مقاله</label>
+
+                                        <div class="field_of_img_template">
+                                            <div class="box_of_img_template">
+                                                <div class="box_of_img_template img-box">
+                                                    <div class="img-show">
+                                                    </div>
+                                                    <input type="file" name="main_image" id="avatar_img" class="input-file-custom">
+                                                    <label for="avatar_img" class="btn btn-tertiary2 js-labelFile ">
+                                                        <i class="icon fa fa-check"></i>
+                                                        <span class="js-fileName mr-2">انتخاب عکس</span>
+                                                    </label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <p class="alert_pro_descripion mb-1">حجم مجاز برای آپلود تصویر حداکثر {limited_images_size} مگابایت و همچنین فرمت های مجاز .png ، .jpg ، .jpeg و .gif می باشد.</p>
+
+
+                                    </div>
+
+                                    <div class="form-group">
                                       <label for="article_name">نام مقاله</label>
                                       <input type="text" class="form-control main_form_design" id="article_name" name="title_inp">
                                     </div>
@@ -73,29 +96,6 @@
                                     <div class="form-group">
                                         <label for="article_describe">توضیحات کلیدی مقاله</label>
                                         <textarea class="form-control main_form_design" id="article_describe" rows="7" name="meta_describe_inp"></textarea>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="avatar" class=" col-form-label main_lable_design">تصویر اصلی مقاله</label>
-
-                                            <div class="field_of_img_template">
-                                                <div class="box_of_img_template">
-                                                    <div class="box_of_img_template img-box">
-                                                        <div class="img-show">
-                                                        </div>
-                                                        <input type="file" name="main_image" id="avatar_img" class="input-file-custom">
-                                                        <label for="avatar_img" class="btn btn-tertiary2 js-labelFile ">
-                                                            <i class="icon fa fa-check"></i>
-                                                            <span class="js-fileName mr-2">انتخاب عکس</span>
-                                                        </label>
-                                                    </div>
-                        
-                                                </div>
-                                            </div>
-
-                                            <p class="alert_pro_descripion mb-1">حجم مجاز برای آپلود تصویر حداکثر {limited_images_size} مگابایت و همچنین فرمت های مجاز .png ، .jpg ، .jpeg و .gif می باشد.</p>
-
-                                        
                                     </div>
 
                                     <button class="btn btn_of_save_changes" name="profile_private">ثبت تغییرات</button>

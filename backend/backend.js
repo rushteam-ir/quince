@@ -23,6 +23,7 @@ const messages = require('./branches/messages/messages');
 const groups = require('./branches/groups/groups');
 const guide = require('./branches/guide/guide');
 const article = require('./branches/article/article');
+const files = require('./branches/files/files');
 const api = require('./api/api');
 
 backend.use('/dashboard', dashboard);
@@ -37,6 +38,7 @@ backend.use('/messages', messages);
 backend.use('/groups', groups);
 backend.use('/guide', guide);
 backend.use('/article', article);
+backend.use('/files', files);
 backend.use('/api', api);
 
 // Redirect to dashboard rout

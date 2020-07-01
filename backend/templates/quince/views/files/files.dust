@@ -1,0 +1,16 @@
+{>"layouts/dashboard-layout"/}
+{<css}
+
+    <link rel="stylesheet" href="css/files/files.css">
+
+{/css}
+{<js}
+
+    <script src="js/general/fingerprint.js"></script>
+
+{/js}
+{<body}
+
+
+
+{/body}

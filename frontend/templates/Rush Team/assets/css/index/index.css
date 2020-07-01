@@ -65,26 +65,21 @@
   top: 0;
   width: 100%;
 }
-
 .text_of_header .row {
   height: 100vh;
 }
-
 .text_of_header .info_header_text {
   direction: rtl;
 }
-
 .text_of_header .info_header_text h1 {
   color: white;
   margin-bottom: 50px;
 }
-
 .text_of_header .info_header_text p {
   color: #b4b4b4;
   line-height: 40px;
   font-size: 1.2rem;
 }
-
 .text_of_header .btn_n1 {
   border: 2px solid white;
   color: white;
@@ -95,7 +90,6 @@
   margin-right: 20px;
   margin-top: 20px;
 }
-
 .text_of_header .btn_n2 {
   background-color: #F64E60;
   color: white;
@@ -120,33 +114,28 @@
   padding-top: 100px;
   padding-bottom: 100px;
 }
-
 .why_chose_us .why_chose_us_field {
   text-align: right;
   direction: rtl;
   width: 90%;
   margin-left: 5%;
 }
-
 .why_chose_us .why_chose_us_field h3 {
   font-weight: bold;
   font-size: 2.7vw;
   line-height: 70px;
 }
-
 .why_chose_us .why_chose_us_field .main_title_of_wcuf {
   text-align: justify;
   margin-top: 30px;
   color: #808080;
   line-height: 30px;
 }
-
 .why_chose_us .why_chose_us_field .subset_wcu_p1,
 .why_chose_us .why_chose_us_field .subset_wcu_p2,
 .why_chose_us .why_chose_us_field .subset_wcu_p3 {
   width: 100%;
 }
-
 .why_chose_us .why_chose_us_field .subset_wcu_p1 .left_subset_wcu,
 .why_chose_us .why_chose_us_field .subset_wcu_p2 .left_subset_wcu,
 .why_chose_us .why_chose_us_field .subset_wcu_p3 .left_subset_wcu {
@@ -156,7 +145,6 @@
   position: relative;
   top: 20px;
 }
-
 .why_chose_us .why_chose_us_field .subset_wcu_p1 .left_subset_wcu p,
 .why_chose_us .why_chose_us_field .subset_wcu_p2 .left_subset_wcu p,
 .why_chose_us .why_chose_us_field .subset_wcu_p3 .left_subset_wcu p {
@@ -171,7 +159,6 @@
   line-height: 40px;
   text-align: center;
 }
-
 .why_chose_us .why_chose_us_field .subset_wcu_p1 .left_subset_wcu i,
 .why_chose_us .why_chose_us_field .subset_wcu_p2 .left_subset_wcu i,
 .why_chose_us .why_chose_us_field .subset_wcu_p3 .left_subset_wcu i {
@@ -180,27 +167,23 @@
   left: -20px;
   top: -30px;
 }
-
 .why_chose_us .why_chose_us_field .subset_wcu_p1 .right_subset_wcu,
 .why_chose_us .why_chose_us_field .subset_wcu_p2 .right_subset_wcu,
 .why_chose_us .why_chose_us_field .subset_wcu_p3 .right_subset_wcu {
   width: 310px;
   margin-right: 40px;
 }
-
 .why_chose_us .why_chose_us_field .subset_wcu_p1 .right_subset_wcu :first-child,
 .why_chose_us .why_chose_us_field .subset_wcu_p2 .right_subset_wcu :first-child,
 .why_chose_us .why_chose_us_field .subset_wcu_p3 .right_subset_wcu :first-child {
   font-size: 1.5rem;
   font-weight: bold;
 }
-
 .why_chose_us .why_chose_us_field .subset_wcu_p1 .right_subset_wcu :last-child,
 .why_chose_us .why_chose_us_field .subset_wcu_p2 .right_subset_wcu :last-child,
 .why_chose_us .why_chose_us_field .subset_wcu_p3 .right_subset_wcu :last-child {
   color: #808080;
 }
-
 .why_chose_us .why_chose_us_field .wcu_p_btn {
   color: black;
   background-color: #FFDC25;
@@ -211,32 +194,29 @@
   margin-right: 15%;
   margin-top: 70px;
 }
-
 .why_chose_us .wcu_side_img_field {
   position: relative;
 }
-
 .why_chose_us .wcu_side_img_field .wcu_side_img_p2 {
   position: absolute;
   top: -50px;
   right: 100px;
   width: 60%;
 }
-
 .why_chose_us .wcu_side_img_field .wcu_side_img_p1 {
   position: absolute;
   top: 320px;
   left: -50px;
 }
-
 .why_chose_us .wcu_side_img_field .wcu_side_img_p3 {
   position: absolute;
   top: 520px;
   left: 245px;
 }
-
 .why_chose_us .wcu_side_img_field .wcu_side_img_p4 {
   position: absolute;
   top: 0px;
   left: -50px;
 }
+
+/*# sourceMappingURL=index.css.map */
