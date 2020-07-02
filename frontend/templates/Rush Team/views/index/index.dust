@@ -100,4 +100,100 @@
         </div>
     </section>
 
+    <section class="test1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper ">
+                          <div class="swiper-slide">
+                              <div class="row p-5">
+                                <div class="col-7">
+                                    <div class="main_field_of_pack_info">
+                                        <div class="header_number_of_ip">01</div>
+                                        <h3>بالا ترین کارایی سایت را داشته باشید .</h3>
+                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چدهاد.</p>
+                                        <button class="btn">مشاوره رایگان</button>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="main_field_of_price dir_rtl text-right">
+                                        <h3>وب سایت شخصی</h3>
+                                        <p class="subtitle_of_pack">شروع قیمت از </p>
+                                        <p class="price_of_pack">2 میلون تومان</p>
+                                        <p>
+                                           <i class="fas fa-check"></i>
+                                            طراحی UI  حرفه ای
+                                        </p>
+                                        <p>
+                                           <i class="fas fa-check"></i>
+                                            پشتیبانی تا 3 ماه
+                                        </p>
+                                        <p>
+                                           <i class="fas fa-check"></i>
+                                            به صرفه 
+                                        </p>
+                                        <p class="mb-2">
+                                           <i class="fas fa-check"></i>
+                                            مدیریت محتوی کویینس
+                                        </p>
+
+                                        <p class="complete_inco_of_pack">برای اطلاعات تکمیلی روی دکمه زیر کلیک کنید</p>
+                                        <button class="btn">
+                                            مشاهده پکیچ
+                                        </button>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="row p-5">
+                                <div class="col-7">
+                                    <div class="main_field_of_pack_info">
+                                        <div class="header_number_of_ip">02</div>
+                                        <h3>بالا ترین کارایی سایت را داشته باشید .</h3>
+                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چدهاد.</p>
+                                        <button class="btn">مشاوره رایگان</button>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="main_field_of_price dir_rtl text-right">
+                                        <h3>وب سایت شخصی</h3>
+                                        <p class="subtitle_of_pack">شروع قیمت از </p>
+                                        <p class="price_of_pack">2 میلون تومان</p>
+                                        <p>
+                                           <i class="fas fa-check"></i>
+                                            طراحی UI  حرفه ای
+                                        </p>
+                                        <p>
+                                           <i class="fas fa-check"></i>
+                                            پشتیبانی تا 3 ماه
+                                        </p>
+                                        <p>
+                                           <i class="fas fa-check"></i>
+                                            به صرفه 
+                                        </p>
+                                        <p class="mb-2">
+                                           <i class="fas fa-check"></i>
+                                            مدیریت محتوی کویینس
+                                        </p>
+
+                                        <p class="complete_inco_of_pack">برای اطلاعات تکمیلی روی دکمه زیر کلیک کنید</p>
+                                        <button class="btn">
+                                            مشاهده پکیچ
+                                        </button>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next swiper-button-white"></div>
+                        <div class="swiper-button-prev swiper-button-white"></div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 {/body}

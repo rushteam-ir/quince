@@ -29,7 +29,7 @@ header {
   height: 30px;
 }
 .article_list_box .page-link {
-  color: #F64E60 !important;
+  color: #EF394E !important;
   background-color: #282828;
   border: none;
 }
@@ -63,7 +63,7 @@ header {
 .article_slider .swiper-wrapper .swiper-slide .main_field_of_articel_card p:nth-child(2) {
   font-weight: bold;
   font-size: 1.2rem;
-  color: #F64E60;
+  color: #EF394E;
   margin-top: 5px;
   text-align: justify;
 }
@@ -73,8 +73,8 @@ header {
   color: #808080;
 }
 .article_slider .swiper-wrapper .swiper-slide .main_field_of_articel_card button {
-  color: #F64E60;
-  border: 1px solid #F64E60;
+  color: #EF394E;
+  border: 1px solid #EF394E;
 }
 .article_slider .swiper-wrapper .swiper-slide .main_field_of_articel_card .v_c_article {
   display: inline-block;

@@ -39,7 +39,7 @@ body {
 }
 .main_contact_form button {
   color: white;
-  background-color: #F64E60;
+  background-color: #EF394E;
   text-align: center;
   width: 100%;
   margin-top: 10px;
@@ -65,7 +65,7 @@ body {
   text-align: right;
 }
 .main_field_of_quest .title_of_quest {
-  color: #F64E60;
+  color: #EF394E;
   font-size: 2rem;
   margin-bottom: 0px;
 }
