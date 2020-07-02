@@ -20,7 +20,7 @@
 
                             <header>
                                 <p class="header_of_tabs">لیست دسته بندی ها</p>
-                                <p class="small_of_tabs mt-2">لیست تمام دسته بندی های سایت ، در جدول زیر</p>
+                                <p class="small_of_tabs">لیست تمام دسته بندی های سایت ، در جدول زیر</p>
 
                                 <div class="input-group search_inp_category mb-3 dir-ltr">
 

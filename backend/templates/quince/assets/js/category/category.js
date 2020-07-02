@@ -122,9 +122,6 @@ function redirect(url) {
     location.href = url
 }
 
-
-
-
 // modal
 
 $(document).ready(function () {

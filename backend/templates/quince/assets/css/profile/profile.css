@@ -1,1 +1,307 @@
-.btn-tertiary{color:#555;padding:0;line-height:40px;width:300px;margin:auto;display:block;border:1.3px solid #d6d6d6}.btn-tertiary:hover,.btn-tertiary:focus{color:#888888;border-color:#888888}.input-file-custom{width:0.1px;height:0.1px;opacity:0;overflow:hidden;position:absolute;z-index:-1}.input-file-custom+.js-labelFile{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:0 10px;cursor:pointer}.input-file-custom+.js-labelFile .icon:before{content:"\f093"}.input-file-custom+.js-labelFile.has-file .icon:before{content:"\f00c";color:#5AAC7B}.box_of_img_template{width:160px;height:160px;border-radius:6px;background:#F3F6F9;position:relative}.btn-tertiary2{font-size:0.9rem;color:#555;padding:0;line-height:160px;width:100%;display:block;border:1.3px solid #d6d6d6;height:100%;border-radius:7px}.btn-tertiary2:hover,.btn-tertiary2:focus{color:#888888;border-color:#888888}.remove_img_icon{width:25px;height:25px;background-color:#ffffff;position:absolute;z-index:50;top:-10px;border-radius:50px;cursor:pointer;right:-10px;box-shadow:0px 0px 10px -3px #515151}.remove_img_icon::before,.remove_img_icon::after{content:"";width:1.5px;height:13px;background-color:#909090;position:absolute;transform:rotate(45deg);right:12px;top:6px}.remove_img_icon::after{transform:rotate(-45deg)}.uploading_img_from_brows{width:100%;position:absolute;top:0px;height:100%;border-radius:7px}.alert_pro_descripion{font-size:0.8rem;margin-top:20px;color:#F64E60;line-height:22px}.option-input{appearance:none;-o-appearance:none;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;position:relative;top:15px;right:0;bottom:0;left:0;height:20px;width:20px;transition:all 0.15s ease-out 0s;background:#cbd1d8;border:none;color:#fff;cursor:pointer;display:inline-block;margin-right:0.5rem;outline:none;position:relative;z-index:1000;border-radius:4px}.option-input:hover{background:#9faab7}.option-input:checked{background:#40e0d0}.option-input:checked::before{height:20px;width:20px;position:absolute;content:'✔';display:inline-block;font-size:14px;text-align:center;line-height:24px}.main_field_of_profile{width:98%;margin-left:1%}.prodile_tabs{background-color:white;width:100%;border-radius:7px;box-shadow:0px 0px 10px -5px #c9c9c9}.pro_logo{width:110px;border-radius:7px;height:110px}.user_name_pro_page{font-size:1rem;font-weight:bold}.user_access_pro{font-size:0.9rem;color:#ababab}.left_text_info{position:absolute;left:0;color:#B6B6B6}.field_of_tab_info{font-size:0.9rem}.profile_tab{cursor:pointer;width:100%;background-color:white;border-radius:5px;padding-right:10px;margin-top:10px}.profile_tab_active{background-color:#F3F6F9;color:#F64E60}.profile_tab:hover{background-color:#F3F6F9}.profile_tab:hover p,.profile_tab:hover i{color:#F64E60}.profile_tab i{display:inline-block;font-size:1.5rem}.main_field_of_left_pro{background-color:white;width:100%;border-radius:7px;box-shadow:0px 0px 10px -5px #c9c9c9;position:relative}.header_of_tabs{font-size:1.3rem;font-weight:bold;margin-bottom:0px}.small_of_tabs{font-size:0.8rem;color:#B9B9B9}.btn_of_save_changes{color:#1BC5BD;background-color:#C9F7F5;position:absolute;left:70px}.btn_of_cancel_changes{color:#F64E60;background-color:#FFE2E5;position:absolute;left:16px}.field_of_pr_btn{position:relative}.btn_of_cancel_changes:hover{color:#fff;background-color:#F64E60}.btn_of_save_changes:hover{color:#fff;background-color:#1BC5BD}.main_div_of_personal_form{padding:20px 100px}.checkbox_pro_text{position:relative;top:9px}.birth_day_backslash{position:absolute;right:-2%;top:10px}.user_text_area{line-height:30px}.box_of_pass_alert_pro{width:100%;padding:10px;background-color:#FFE2E5;color:#F64E60;border-radius:5px;border:1px solid #F64E60}.password_alert_pro{font-size:2rem;margin:7px 0px}.alert_pro_text{font-size:0.9rem}
+@charset "UTF-8";
+.btn-tertiary {
+  color: #555;
+  padding: 0;
+  line-height: 40px;
+  width: 300px;
+  margin: auto;
+  display: block;
+  border: 1.3px solid #d6d6d6;
+}
+
+.btn-tertiary:hover,
+.btn-tertiary:focus {
+  color: #888888;
+  border-color: #888888;
+}
+
+.input-file-custom {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.input-file-custom + .js-labelFile {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.input-file-custom + .js-labelFile .icon:before {
+  content: "\f093";
+}
+
+.input-file-custom + .js-labelFile.has-file .icon:before {
+  content: "\f00c";
+  color: #5AAC7B;
+}
+
+.box_of_img_template {
+  width: 160px;
+  height: 160px;
+  border-radius: 6px;
+  background: #F3F6F9;
+  position: relative;
+}
+
+.btn-tertiary2 {
+  font-size: 0.9rem;
+  color: #555;
+  padding: 0;
+  line-height: 160px;
+  width: 100%;
+  display: block;
+  border: 1.3px solid #d6d6d6;
+  height: 100%;
+  border-radius: 7px;
+}
+
+.btn-tertiary2:hover,
+.btn-tertiary2:focus {
+  color: #888888;
+  border-color: #888888;
+}
+
+.remove_img_icon {
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 50;
+  top: -10px;
+  border-radius: 50px;
+  cursor: pointer;
+  right: -10px;
+  box-shadow: 0px 0px 10px -3px #515151;
+}
+
+.remove_img_icon::before,
+.remove_img_icon::after {
+  content: "";
+  width: 1.5px;
+  height: 13px;
+  background-color: #909090;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 12px;
+  top: 6px;
+}
+
+.remove_img_icon::after {
+  transform: rotate(-45deg);
+}
+
+.uploading_img_from_brows {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  border-radius: 7px;
+}
+
+.alert_pro_descripion {
+  font-size: 0.8rem;
+  margin-top: 20px;
+  color: #F64E60;
+  line-height: 22px;
+}
+
+.option-input {
+  appearance: none;
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  position: relative;
+  top: 15px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+  border-radius: 4px;
+}
+
+.option-input:hover {
+  background: #9faab7;
+}
+
+.option-input:checked {
+  background: #40e0d0;
+}
+
+.option-input:checked::before {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  content: '✔';
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
+  line-height: 24px;
+}
+
+.main_field_of_profile {
+  width: 98%;
+  margin-left: 1%;
+}
+
+.prodile_tabs {
+  background-color: white;
+  width: 100%;
+  border-radius: 7px;
+  box-shadow: 0px 0px 10px -5px #c9c9c9;
+}
+
+.pro_logo {
+  width: 110px;
+  border-radius: 7px;
+  height: 110px;
+}
+
+.user_name_pro_page {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.user_access_pro {
+  font-size: 0.9rem;
+  color: #ababab;
+}
+
+.left_text_info {
+  position: absolute;
+  left: 0;
+  color: #B6B6B6;
+}
+
+.field_of_tab_info {
+  font-size: 0.9rem;
+}
+
+.profile_tab {
+  cursor: pointer;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+
+.profile_tab_active {
+  background-color: #F3F6F9;
+  color: #F64E60;
+}
+
+.profile_tab:hover {
+  background-color: #F3F6F9;
+}
+
+.profile_tab:hover p,
+.profile_tab:hover i {
+  color: #F64E60;
+}
+
+.profile_tab i {
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.main_field_of_left_pro {
+  background-color: white;
+  width: 100%;
+  border-radius: 7px;
+  box-shadow: 0px 0px 10px -5px #c9c9c9;
+  position: relative;
+}
+
+.header_of_tabs {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.small_of_tabs {
+  font-size: 0.8rem;
+  color: #B9B9B9;
+}
+
+.btn_of_save_changes {
+  color: #1BC5BD;
+  background-color: #C9F7F5;
+  position: absolute;
+  left: 70px;
+}
+
+.btn_of_cancel_changes {
+  color: #F64E60;
+  background-color: #FFE2E5;
+  position: absolute;
+  left: 16px;
+}
+
+.field_of_pr_btn {
+  position: relative;
+}
+
+.btn_of_cancel_changes:hover {
+  color: white;
+  background-color: #F64E60;
+}
+
+.btn_of_save_changes:hover {
+  color: white;
+  background-color: #1BC5BD;
+}
+
+.main_div_of_personal_form {
+  padding: 20px 100px;
+}
+
+.checkbox_pro_text {
+  position: relative;
+  top: 9px;
+}
+
+.birth_day_backslash {
+  position: absolute;
+  right: -2%;
+  top: 10px;
+}
+
+.user_text_area {
+  line-height: 30px;
+}
+
+.box_of_pass_alert_pro {
+  width: 100%;
+  padding: 10px;
+  background-color: #FFE2E5;
+  color: #F64E60;
+  border-radius: 5px;
+  border: 1px solid #F64E60;
+}
+
+.password_alert_pro {
+  font-size: 2rem;
+  margin: 7px 0px;
+}
+
+.alert_pro_text {
+  font-size: 0.9rem;
+}

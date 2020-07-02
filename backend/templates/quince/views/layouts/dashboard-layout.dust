@@ -131,7 +131,7 @@
 
             <a href="{backend_url}files" class="dashboard_body_sub">
                 <div class="position-relative">
-                    <i class="fas fa-folder"></i>
+                    <i class="fad fa-folder-open"></i>
                     <p>مدیریت فایل ها</p>
                 </div>
             </a>

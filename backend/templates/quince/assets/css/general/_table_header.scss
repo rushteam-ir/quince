@@ -1,11 +1,3 @@
-.header_of_article_list {
-    @include header_custom
-}
-
-.small_of_article_list {
-    @include small_of_header
-}
-
 .multi_remove {
     @include action_btn($d_red, $l_red, 35px, 1rem);
     position: absolute;
@@ -88,4 +80,25 @@
 .show>.btn-outline-secondary.dropdown-toggle {
     background-color: $form_color;
     border-color: $form_color;
+}
+
+.remove_category_table {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+    font-size: 1rem;
+    height: 35px;
+    padding: 0px;
+    width: 35px;
+    padding-top: 4px;
+}
+
+.remove_category_table {
+    background-color: $l_red;
+    color: $d_red;
+}
+
+.remove_category_table:hover {
+    color: white;
+    background-color: $d_red;
 }
