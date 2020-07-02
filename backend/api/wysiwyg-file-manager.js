@@ -16,7 +16,7 @@ router.post('/', async(req, res, next)=>{
                 let file_type = src.split('/').slice(-2)[0]
                 let file_path = `${backend_upload_dir}${file_type}/${file_name}`;
 
-                fs.unlink(file_path, function(err) {})
+                await fs.unlink(file_path, function(err) {})
 
                 let index = req.session.temp_files.indexOf(`${file_type}/${file_name}`);
 
@@ -72,7 +72,7 @@ router.post('/', async(req, res, next)=>{
 
                 let images_list = [];
 
-                fs.readdir(`${backend_upload_dir}images/`, (err, files)=>{
+                await fs.readdir(`${backend_upload_dir}images/`, (err, files)=>{
 
                     for(let file of files){
 
