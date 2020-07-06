@@ -1,264 +1,233 @@
 {>"layouts/dashboard-layout"/}
-
 {<css}
     <link rel="stylesheet" href="css/profile/profile.css">
     <link rel="stylesheet" href="css/profile/profile-media-query.css">
 {/css}
-{<js} 
+{<js}
     <script src="js/profile/profile.js"></script>
     <script src="js/profile/profile-tabs.js"></script>
 {/js}
-
-
 {<body}
-
     <section>
-        <div class="main_field_of_profile mt-4 mb-4">
+        <div class="main_field mt-4 mb-4">
             <div class="container-fluid">
                 <div class="row">
-
                     <div class="col-12 col-lg-8 col-xl-9 order-2 order-lg-1 mt-4 mt-lg-0 pl-0 pr-0">
                         <div class="main_field_of_left_pro dir-rtl text-right p-4 display_none" id="first_tab">
-
-                            <header>
-                                    <p class="header_of_tabs">اطلاعات پروفایل</p>
-                                    <p class="small_of_tabs mt-2">اطلاعات پروفایل خود را به روز رسانی کنید!</p>
-
-                                    <hr>
-
+                            <header class="header_field">
+                                <h1>لیست محصولات</h1>
+                                <h2>لیست محصولات را در جذول زیر مشاهده کنید</h2>
+                                <hr>
                             </header>
-
                             <div class="main_div_of_personal_form">
-
                                 <form method="post" action="" enctype="multipart/form-data" autocomplete="off">
-
                                     <div class="form-group row">
-                                        <label for="avatar" class="col-sm-2 col-form-label main_lable_design">تصویر پروفایل</label>
+                                        <label for="avatar" class="col-sm-2 col-form-label main_lable_design">تصویر
+                                            پروفایل</label>
                                         <div class="col-sm-10">
-
                                             <div class="field_of_img_template">
                                                 <div class="box_of_img_template">
                                                     <div class="box_of_img_template img-box">
                                                         <div class="img-show">
                                                             {@eq key="{admin_info.avatar}" value=""}
-                    
+
                                                             {:else}
                                                                 <div class="remove_parent">
-                                                                    <img class="uploading_img_from_brows" src="media/avatars/{admin_info.avatar}">
-                                                                    <div name="0" class="remove_img_icon avatar_del"></div>
+                                                                    <img class="uploading_img_from_brows"
+                                                                         src="media/avatars/{admin_info.avatar}">
+                                                                    <div name="0"
+                                                                         class="remove_img_icon avatar_del"></div>
                                                                 </div>
                                                             {/eq}
                                                         </div>
-                                                        <input type="file" name="avatar" id="avatar_img" class="input-file-custom">
+                                                        <input type="file" name="avatar" id="avatar_img"
+                                                               class="input-file-custom">
                                                         <label for="avatar_img" class="btn btn-tertiary2 js-labelFile ">
                                                             <i class="icon fa fa-check"></i>
                                                             <span class="js-fileName mr-2">انتخاب عکس</span>
                                                         </label>
                                                     </div>
-                        
                                                 </div>
                                             </div>
-
-                                            <p class="alert_pro_descripion mb-1">حجم مجاز برای آپلود تصویر حداکثر {limited_images_size} مگابایت و همچنین فرمت های مجاز .png ، .jpg ، .jpeg و .gif می باشد.</p>
+                                            <p class="alert_pro_descripion mb-1">حجم مجاز برای آپلود تصویر
+                                                حداکثر {limited_images_size} مگابایت و همچنین فرمت های مجاز .png ، .jpg
+                                                ، .jpeg و .gif می باشد.</p>
                                         </div>
-
-                                        
                                     </div>
-
                                     <div class="form-group mt-4 row">
-                                      <label for="user_name" class="col-sm-2 col-form-label main_lable_design">نام</label>
+                                        <label for="user_name"
+                                               class="col-sm-2 col-form-label main_lable_design">نام</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control main_form_design" id="user_name" name="first_name_inp" value="{admin_info.first_name}">
+                                            <input type="text" class="form-control main_form_design" id="user_name"
+                                                   name="first_name_inp" value="{admin_info.first_name}">
                                         </div>
                                     </div>
                                     <div class="form-group mt-4 row">
-                                      <label for="user_lastname" class="col-sm-2 col-form-label main_lable_design">نام خانوادگی</label>
+                                        <label for="user_lastname" class="col-sm-2 col-form-label main_lable_design">نام
+                                            خانوادگی</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control main_form_design" id="user_lastname" name="last_name_inp" value="{admin_info.last_name}">
+                                            <input type="text" class="form-control main_form_design" id="user_lastname"
+                                                   name="last_name_inp" value="{admin_info.last_name}">
                                         </div>
                                     </div>
-                                    
                                     <div class="form-group mt-4 row">
-                                        <label for="user_username" class="col-sm-2 col-form-label main_lable_design">نام مستعار</label>
-                                          <div class="col-sm-10">
-                                              <input type="text" class="form-control main_form_design" id="user_username" name="nick_name_inp" value="{admin_info.nick_name}">
-                                          </div>
-                                      </div>
-
-                                    <div class="form-group mt-4 row">
-                                        <label for="user_email" class="col-sm-2 col-form-label main_lable_design">ایمیل</label>
-                                          <div class="col-sm-10">
-                                              <input type="text" class="form-control main_form_design" id="user_email" name="email_inp" value="{admin_info.email}">
-                                          </div>
-                                      </div>
-                                      
-                                      
-                                    <div class="form-group mt-4 row">
-                                        <label for="user_phone" class="col-sm-2 col-form-label main_lable_design">شماره تماس</label>
-                                          <div class="col-sm-10">
-                                              <input type="text" class="form-control main_form_design" id="user_phone" name="phone_number_inp" value="{admin_info.phone_number}">
-                                          </div>
-                                      </div>
-
-                                        <label>
-                                            {@eq key="{admin_info.author_type}" value="name"}
-                                                <input type="checkbox" class="option-input checkbox" name="author_type">
-                                            {:else}
-                                                <input type="checkbox" class="option-input checkbox" checked="checked" name="author_type">
-                                            {/eq}
-                                            <p class="mr-2 mb-0 checkbox_pro_text d-inline-block">نام مستعار به جای نام و نام خانوادگی من انتخاب شود.</p>
-                                        </label>
-
-                                        <div class="field_of_pr_btn mb-5">
-                                            <button type="submit" class="btn btn_of_save_changes" name="profile_info">ثبت تغییرات</button>
-                                            <button class="btn btn_of_cancel_changes mr-2" name="profile_reset">لغو</button>
+                                        <label for="user_username" class="col-sm-2 col-form-label main_lable_design">نام
+                                            مستعار</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control main_form_design" id="user_username"
+                                                   name="nick_name_inp" value="{admin_info.nick_name}">
                                         </div>
-                                
-                                  </form>
-
+                                    </div>
+                                    <div class="form-group mt-4 row">
+                                        <label for="user_email"
+                                               class="col-sm-2 col-form-label main_lable_design">ایمیل</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control main_form_design" id="user_email"
+                                                   name="email_inp" value="{admin_info.email}">
+                                        </div>
+                                    </div>
+                                    <div class="form-group mt-4 row">
+                                        <label for="user_phone" class="col-sm-2 col-form-label main_lable_design">شماره
+                                            تماس</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control main_form_design" id="user_phone"
+                                                   name="phone_number_inp" value="{admin_info.phone_number}">
+                                        </div>
+                                    </div>
+                                    <label>
+                                        {@eq key="{admin_info.author_type}" value="name"}
+                                            <input type="checkbox" class="option-input checkbox" name="author_type">
+                                        {:else}
+                                            <input type="checkbox" class="option-input checkbox" checked="checked"
+                                                   name="author_type">
+                                        {/eq}
+                                        <p class="mr-2 mb-0 checkbox_pro_text d-inline-block">نام مستعار به جای نام و
+                                            نام خانوادگی من انتخاب شود.</p>
+                                    </label>
+                                    <div class="field_of_pr_btn mb-5">
+                                        <button type="submit" class="btn green_btn mt-3" name="profile_reset">ثبت
+                                            تغییرات
+                                        </button>
+                                        <button class="btn red_btn mt-3" name="profile_info">لغو</button>
+                                    </div>
+                                </form>
                             </div>
-
                         </div>
-
-
-
                         <div class="main_field_of_left_pro dir-rtl text-right p-4 display_none">
-
-                            <header>
-                                    <p class="header_of_tabs">اطلاعات شخصی</p>
-                                    <p class="small_of_tabs mt-2">اطلاعات شخصی خود را به روز رسانی کنید!</p>
- 
-
-
-                                    <hr>
-
+                            <header class="header_field">
+                                <h1>لیست محصولات</h1>
+                                <h2>لیست محصولات را در جذول زیر مشاهده کنید</h2>
+                                <hr>
                             </header>
-
                             <div class="main_div_of_personal_form">
-
                                 <form method="post" action="" autocomplete="off">
-
-
                                     <div class="form-group mt-4 row">
-                                      <label for="user_birthday" class="col-sm-2 col-form-label main_lable_design">تاریخ تولد</label>
+                                        <label for="user_birthday" class="col-sm-2 col-form-label main_lable_design">تاریخ
+                                            تولد</label>
                                         <div class="col-4 col-sm-3 col-md-2">
-                                            <input type="text" class="form-control main_form_design" id="user_birthday" placeholder="dd" name="day_inp" value="{admin_info.birth_day}">
+                                            <input type="text" class="form-control main_form_design" id="user_birthday"
+                                                   placeholder="dd" name="day_inp" value="{admin_info.birth_day}">
                                         </div>
                                         <div class="col-4 col-sm-3 col-md-2">
                                             <span class="birth_day_backslash">/</span>
-                                           <input type="text" class="form-control main_form_design" placeholder="mm" name="month_inp" value="{admin_info.birth_month}">
+                                            <input type="text" class="form-control main_form_design" placeholder="mm"
+                                                   name="month_inp" value="{admin_info.birth_month}">
                                         </div>
                                         <div class="col-4 col-sm-3 col-md-2">
                                             <span class="birth_day_backslash">/</span>
-                                            <input type="text" class="form-control main_form_design" placeholder="yy" name="year_inp" value="{admin_info.birth_year}">
+                                            <input type="text" class="form-control main_form_design" placeholder="yy"
+                                                   name="year_inp" value="{admin_info.birth_year}">
                                         </div>
                                     </div>
-                                    
                                     <div class="form-group mt-4 row">
-                                        <label for="user_country" class="col-sm-2 col-form-label main_lable_design">کشور</label>
-                                          <div class="col-sm-10">
-                                              <input type="text" class="form-control main_form_design" id="user_country" name="country_inp" value="{admin_info.country}">
-                                          </div>
-                                      </div>
-
-                                    <div class="form-group mt-4 row">
-                                        <label for="user_city" class="col-sm-2 col-form-label main_lable_design">شهر</label>
-                                          <div class="col-sm-10">
-                                            <input type="text" class="form-control main_form_design" id="user_city" name="city_inp" value="{admin_info.city}">
-                                          </div>
-                                      </div>
-
-                                      <div class="form-group mt-4 row">
-                                        <label for="user_about" class="col-sm-2 col-form-label main_lable_design">درباره من</label>
-                                          <div class="col-sm-10">
-                                            <textarea class="form-control main_form_design user_text_area" id="user_about" rows="3" name="bio_inp">{admin_info.biography}</textarea>
-                                          </div>
-                                      </div>
-                                
-                                      <div class="field_of_pr_btn mb-5">
-                                        <button class="btn btn_of_save_changes" name="profile_private">ثبت تغییرات</button>
-                                        <button class="btn btn_of_cancel_changes mr-2" name="profile_reset">لغو</button>
+                                        <label for="user_country"
+                                               class="col-sm-2 col-form-label main_lable_design">کشور</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control main_form_design" id="user_country"
+                                                   name="country_inp" value="{admin_info.country}">
+                                        </div>
                                     </div>
-
-                                  </form>
-
+                                    <div class="form-group mt-4 row">
+                                        <label for="user_city"
+                                               class="col-sm-2 col-form-label main_lable_design">شهر</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control main_form_design" id="user_city"
+                                                   name="city_inp" value="{admin_info.city}">
+                                        </div>
+                                    </div>
+                                    <div class="form-group mt-4 row">
+                                        <label for="user_about" class="col-sm-2 col-form-label main_lable_design">درباره
+                                            من</label>
+                                        <div class="col-sm-10">
+                                            <textarea class="form-control main_form_design user_text_area"
+                                                      id="user_about" rows="3"
+                                                      name="bio_inp">{admin_info.biography}</textarea>
+                                        </div>
+                                    </div>
+                                    <div class="field_of_pr_btn mb-5">
+                                        <button type="submit" class="btn green_btn mt-3" name="profile_reset">ثبت
+                                            تغییرات
+                                        </button>
+                                        <button class="btn red_btn mt-3" name="profile_info">لغو</button>
+                                    </div>
+                                </form>
                             </div>
-
                         </div>
-
-
-
-
                         <div class="main_field_of_left_pro dir-rtl text-right p-4 display_none">
-
-                            <header>
-
-
-                                    <p class="header_of_tabs">تغییر رمز عبور</p>
-                                    <p class="small_of_tabs mt-2">با تغییر مداوم رمز عبور اکانت خود را امن نگاه دارید!</p>
-
-                                    <hr>
-
+                            <header class="header_field">
+                                <h1>لیست محصولات</h1>
+                                <h2>لیست محصولات را در جذول زیر مشاهده کنید</h2>
+                                <hr>
                             </header>
-
                             <div class="main_div_of_personal_form">
-
                                 <form method="post" action="" autocomplete="off">
-
                                     <div class="box_of_pass_alert_pro row">
-
                                         <div class="col-2">
                                             <i class="fad fa-exclamation-circle password_alert_pro"></i>
                                         </div>
                                         <div class="col-10">
                                             <p class="mb-1 alert_pro_text">
-                                                لطفا توجه داشته باشید که رمز عبور شما حداقل باید شامل 8 عدد یا حرف باشد . همچنین با عوض کردن رمز عبور خود امنیت حساب خود را بالا تر ببرید.
+                                                لطفا توجه داشته باشید که رمز عبور شما حداقل باید شامل 8 عدد یا حرف باشد
+                                                . همچنین با عوض کردن رمز عبور خود امنیت حساب خود را بالا تر ببرید.
                                             </p>
                                         </div>
-
                                     </div>
-
                                     <div class="form-group mt-4 row">
-                                        <label for="user_old_pass" class="col-sm-2 col-form-label main_lable_design">رمز عبور فعلی</label>
-                                          <div class="col-sm-10">
-                                            <input type="password" class="form-control main_form_design" id="user_old_pass" name="current_password">
-                                          </div>
-                                      </div>
-
-                                      <div class="form-group mt-4 row">
-                                        <label for="user_new_pass" class="col-sm-2 col-form-label main_lable_design">رمز عبور جدید</label>
-                                          <div class="col-sm-10">
-                                            <input type="password" class="form-control main_form_design" id="user_new_pass" name="new_password">
-                                          </div>
-                                      </div>
-
-                                      <div class="form-group mt-4 row">
-                                        <label for="user_rep_new_pass" class="col-sm-2 col-form-label main_lable_design">تکرار رمز عبور</label>
-                                          <div class="col-sm-10">
-                                            <input type="password" class="form-control main_form_design" id="user_rep_new_pass" name="confirm_password">
-                                          </div>
-                                      </div>
-
-                                      <div class="field_of_pr_btn mb-5">
-                                        <button class="btn btn_of_save_changes" name="change_password">ثبت تغییرات</button>
-                                        <button class="btn btn_of_cancel_changes mr-2" name="profile_reset">لغو</button>
+                                        <label for="user_old_pass" class="col-sm-2 col-form-label main_lable_design">رمز
+                                            عبور فعلی</label>
+                                        <div class="col-sm-10">
+                                            <input type="password" class="form-control main_form_design"
+                                                   id="user_old_pass" name="current_password">
+                                        </div>
                                     </div>
-
-                                  </form>
-
+                                    <div class="form-group mt-4 row">
+                                        <label for="user_new_pass" class="col-sm-2 col-form-label main_lable_design">رمز
+                                            عبور جدید</label>
+                                        <div class="col-sm-10">
+                                            <input type="password" class="form-control main_form_design"
+                                                   id="user_new_pass" name="new_password">
+                                        </div>
+                                    </div>
+                                    <div class="form-group mt-4 row">
+                                        <label for="user_rep_new_pass"
+                                               class="col-sm-2 col-form-label main_lable_design">تکرار رمز عبور</label>
+                                        <div class="col-sm-10">
+                                            <input type="password" class="form-control main_form_design"
+                                                   id="user_rep_new_pass" name="confirm_password">
+                                        </div>
+                                    </div>
+                                    <div class="field_of_pr_btn mb-5">
+                                        <button type="submit" class="btn green_btn mt-3" name="profile_reset">ثبت
+                                            تغییرات
+                                        </button>
+                                        <button class="btn red_btn mt-3" name="profile_info">لغو</button>
+                                    </div>
+                                </form>
                             </div>
-
                         </div>
-
-
-
-
                     </div>
-
                     <div class="col-12 col-lg-4 col-xl-3 order-1 order-lg-2 pr-0 pl-0 pl-lg-3  dir-rtl text-right">
-
                         <div class="prodile_tabs p-4">
-
                             <div class="field_of_pro_img">
                                 <div class="field_of_pro_img_mobile d-block d-sm-inline-block">
                                     {@eq key="{admin_info.avatar}" value=""}
@@ -267,14 +236,13 @@
                                         <img class="d-inline-block pro_logo" src="media/avatars/{admin_info.avatar}">
                                     {/eq}
                                 </div>
-
                                 <div class="mr-sm-3 d-block d-sm-inline-block prrofile_name_field">
                                     {@eq key="{admin_info.author_type}" value="name"}
-                                        <h2  class="user_name_pro_page mb-1">{admin_info.first_name} {admin_info.last_name}</h2>
+                                        <h2 class="user_name_pro_page mb-1">{admin_info.first_name} {admin_info.last_name}</h2>
                                     {:else}
-                                        <h2  class="user_name_pro_page mb-1">{admin_info.nick_name}</h2>
+                                        <h2 class="user_name_pro_page mb-1">{admin_info.nick_name}</h2>
                                     {/eq}
-                                    <h3  class="user_access_pro">
+                                    <h3 class="user_access_pro">
                                         {@eq key="{admin_info.access}" value="main_admin"}
                                             ادمین اصلی
                                         {:else}
@@ -282,11 +250,8 @@
                                         {/eq}
                                     </h3>
                                 </div>
-
                             </div>
-
                             <div class="field_of_tab_info mt-4">
-
                                 <div class="position-relative">
                                     <p class="d-inline-block text-right mb-1">ایمیل:</p>
                                     <p class="d-inline-block left_text_info mb-1">{admin_info.email}</p>
@@ -299,39 +264,23 @@
                                     <p class="d-inline-block text-right mb-1">شهر:</p>
                                     <p class="d-inline-block left_text_info mb-1">{admin_info.city}</p>
                                 </div>
-
                             </div>
-
                             <div class="profile_tab mt-4 profile_tab_active">
-
                                 <i class="fas fa-user-tie"></i>
                                 <p class="d-inline-block mr-3 mt-3">اطلاعات پروفایل</p>
-
                             </div>
-
                             <div class="profile_tab">
-
                                 <i class="far fa-info-circle"></i>
                                 <p class="d-inline-block mr-3 mt-3">اطلاعات شخصی</p>
-
                             </div>
-
                             <div class="profile_tab">
-
                                 <i class="fas fa-shield-alt"></i>
                                 <p class="d-inline-block mr-3 mt-3">تعویض رمز عبور</p>
-
-                            </div>       
-                                                 
-
-                        </div> 
- 
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
-
     </section>
-
 {/body}

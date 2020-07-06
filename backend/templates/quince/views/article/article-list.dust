@@ -11,180 +11,130 @@
 {<body}
 
     <section>
-        <div class="main_filed_of_article_list">
+        <div class="main_body">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 p-0">
-                        <div class="main_filed_of_main_col">
-
-                            <header>
-
-                                <p class="header_of_article_list">لیست مقالات</p>
-                                <p class="small_of_article_list">لیست مقالات سایت را در جدول زیر مشاهده کنید</p>
-
-
-                                <div class="input-group search_inp_category mb-3 dir-ltr">
-
-                                    {@eq key="{search}" value="true"}
-                                        <i class="fal fa-times remove_search_icon"></i>
-                                    {/eq}
-
-                                    <input type="text"
-                                           class="form-control main_form_design text-right category_search dir-rtl"
-                                           placeholder="جستجو"
-                                           aria-label="Recipient's username" aria-describedby="button-addon2"
-                                           name="search_inp" value="{search_value}">
-
-                                    <div class="input-group-append">
-                                        <button class="btn btn-outline-secondary btn_of_search" type="button"
-                                                id="button-addon2">
-                                            <i class="fal fa-search"></i>
-                                        </button>
+                    <div class="col-12 main_col">
+                        <header class="header_field">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 col-lg-7">
+                                        <div class="d-inline-block field_of_ht">
+                                            <h1>لیست محصولات</h1>
+                                            <h2>لیست محصولات را در جذول زیر مشاهده کنید</h2>
+                                        </div>
                                     </div>
-
+                                    <div class="col-12 col-lg-5">
+                                        <div class="table_header">
+                                            <form action="">
+                                                <div class="input-group mb-3 t_search">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="basic-addon1"><i
+                                                                class="fal fa-search"></i></span>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="جستجو"
+                                                           aria-describedby="basic-addon1">
+                                                </div>
+                                                <div class="form-group tr_select">
+                                                    <label for="t_row_select" class="d-inline-block select_lable">تعداد
+                                                        ردیف ها :</label>
+                                                    <select class="form-control" id="t_row_select">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                            </form>
+                                            <button class="btn table_delete_btn">
+                                                <i class="fal fa-trash-alt"></i>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
-
-
-                                <div class="form-group select_of_category">
-
-                                    <p class="d-inline-block">تعداد ردیف ها :</p>
-
-                                    <select class="form-control main_form_design count_row_table_of_category mr-2">
-                                        {#page_limit_slot}
-                                            {@eq key="{.}" value="{page_limit}"}
-                                                <option selected>{.}</option>
-                                            {:else}
-                                                <option>{.}</option>
-                                            {/eq}
-                                        {/page_limit_slot}
-                                    </select>
-
-                                </div>
-
-                                <button class="multi_remove btn btn_delete_all_article">
-                                    <i class="fal fa-trash-alt"></i>
-                                </button>
-
-                            </header>
-
-                            <table class="table text-center table_of_article_list">
-                                <thead>
-                                <tr>
-                                    <th scope="col">
+                            </div>
+                        </header>
+                        <div class="QTR">
+                            <table class="Q_table">
+                                <tr class="TQ_hr">
+                                    <th>
                                         <label class="checkbox_of_category">
                                             <input type="checkbox" class="option-input checkbox" id="selectall"
                                                    name="select_all">
                                         </label>
                                     </th>
-                                    <th scope="col">ردیف</th>
-                                    <th scope="col">نام مقاله</th>
-                                    <th scope="col">وضعیت</th>
-                                    <th scope="col">نویسنده</th>
-                                    <th scope="col">آخرین تغییرات</th>
-                                    <th scope="col">تعداد بازدید ها</th>
-                                    <th scope="col">تعداد نطرات</th>
-                                    <th scope="col">تنظیمات</th>
+                                    <th>ردیف</th>
+                                    <th>نام مقاله</th>
+                                    <th>وضعیت</th>
+                                    <th>نویسنده</th>
+                                    <th>آخرین تغییرات</th>
+                                    <th>تعداد بازدید</th>
+                                    <th>تعداد نظرات</th>
+                                    <th>تنظیمات</th>
                                 </tr>
-                                </thead>
-                                <tbody>
-                                    {#article_list}
-                                    <tr>
-                                        <th scope="row">
-
-                                            <label class="checkbox_of_category">
-                                                <input type="checkbox" name="delete_checkbox[]"
-                                                       class="table_checkbox option-input checkbox" value="{._id}">
-                                            </label>
-                                        </th>
-                                        <td>{@math key="{rows_begin_number}" method="add" operand="{$idx}"/}</td>
-                                        <td class="articel_name_td">
-                                            <p class="name_ofarticle">
-                                                <a href="{url}" target="_blank">{title}</a>
-                                            </p>
-                                        </td>
-                                        <td>
-                                            {@eq key="{status}" value="true"}
-                                                <div class="table_pill_article_true">
-                                                    فعال
-                                                </div>
-                                            {:else}
-                                                <div class="table_pill_article_false">
-                                                    غیر فعال
-                                                </div>
-                                            {/eq}
-                                        </td>
-                                        <td>
-                                            {@eq key="{author.author_type}" value="name"}
-                                                {author.first_name} {author.last_name}
-                                            {:else}
-                                                {author.nick_name}
-                                            {/eq}
-                                        </td>
-                                        <td>{last_edit}</td>
-                                        <td>
-                                            <div class="table_pill_see_article">
-                                                {views_number}
+                                <tr>
+                                    <td>
+                                        <label class="checkbox_of_category">
+                                            <input type="checkbox" name="delete_checkbox[]"
+                                                   class="table_checkbox option-input checkbox"
+                                                   value="{._id}">
+                                        </label>
+                                    </td>
+                                    <td>1</td>
+                                    <td class="QT_truncate">
+                                        <div>
+                                            <a href="">
+                                                سلام عزیزم چطوری دوبی؟
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td class="QT_green_pill">
+                                        <div>
+                                            فعال
+                                        </div>
+                                    </td>
+                                    <td>
+                                        MegaNoob
+                                    </td>
+                                    <td>
+                                        1399.10.30
+                                    </td>
+                                    <td class="QT_purple_pill QT_truncate">
+                                        <div>
+                                            4852
+                                        </div>
+                                    </td>
+                                    <td class="QT_yellow_pill">
+                                        <div>
+                                            10
+                                        </div>
+                                    </td>
+                                    <td class="table_option">
+                                        <div class="dropdown">
+                                            <button class="btn  dropdown-toggle" type="button" id="table_option"
+                                                    data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="table_option">
+                                                <a class="dropdown-item" href="#">
+                                                    <i class="fal fa-align-slash"></i>
+                                                    غیر فعال کردن
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <i class="fal fa-asterisk"></i>
+                                                    افزودن وی ای پی
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <i class="fal fa-assistive-listening-systems"></i>
+                                                    افزودن گوش و چشم
+                                                </a>
                                             </div>
-                                        </td>
-                                        <td>
-                                            <div class="table_pill_comment_article">
-                                                {comments_number}
-                                            </div>
-                                        </td>
-                                        <td>
-
-                                            <div class="dropdown">
-                                                <button class="btn dropdown-toggle" type="button"
-                                                        id="dropdownMenuButton"
-                                                        data-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">
-                                                    <i class="fas fa-ellipsis-v"></i>
-                                                </button>
-                                                <div class="dropdown-menu text-right dir-rtl"
-                                                     aria-labelledby="dropdownMenuButton">
-
-                                                    <button class="dropdown-item change_status_btn" value="{status}" name="{._id}"><i class="far fa-align-slash"></i>
-                                                        {@eq key="{status}" value="true"}
-                                                            غیر فعال کردن مقاله
-                                                        {:else}
-                                                            فعال کردن مقاله
-                                                        {/eq}
-                                                    </button>
-
-                                                    <button class="dropdown-item change_comments_status_btn" value="{comments_status}" name="{._id}"><i class="fal fa-comment-alt-slash"></i>
-                                                        {@eq key="{comments_status}" value="true"}
-                                                            غیر فعال کردن نظرات
-                                                        {:else}
-                                                            فعال کردن نظرات
-                                                        {/eq}
-                                                    </button>
-
-                                                    <button class="dropdown-item edit_btn" name="{.unique_id}">
-                                                        <i class="fal fa-edit"></i>
-                                                        ویرایش</button>
-
-                                                    <button class="dropdown-item remove_table_btn" name="{._id}">
-                                                        <i class="fal fa-trash-alt"></i>
-                                                        حذف</button>
-
-                                                </div>
-                                            </div>
-
-                                        </td>
-                                    </tr>
-                                    {/article_list}
-
-                                </tbody>
+                                        </div>
+                                    </td>
+                                </tr>
                             </table>
-
-                            <nav aria-label="Page navigation dir-ltr text-center">
-                                {@eq key="{search}" value="true"}
-                                    {@page number="{total_pages}" current="{page_number}" url="{backend_url}article/search/{search_value}"/}
-                                {:else}
-                                    {@page number="{total_pages}" current="{page_number}" url="{backend_url}article/list"/}
-                                {/eq}
-                            </nav>
-
                         </div>
                     </div>
                 </div>

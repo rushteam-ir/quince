@@ -1,7 +1,11 @@
-@import '../../css/general/chose-file-design';
-@import '../../css/general/checkbox-design';
+@import '../mixin/main-color';
+@import '../mixin/mixin';
+@import '../mixin/header-text';
+@import '../mixin/uploader';
+@import '../mixin/checkbox-design';
+@import '../mixin/btn';
 
-.main_field_of_profile {
+.main_field {
     width: 98%;
     margin-left: 1%;
 }
@@ -50,7 +54,7 @@
 
 .profile_tab_active {
     background-color: #F3F6F9;
-    color: #F64E60;
+    color: $d_red;
 }
 
 .profile_tab:hover {
@@ -59,7 +63,7 @@
 
 .profile_tab:hover p,
 .profile_tab:hover i {
-    color: #F64E60;
+    color: $d_red;
 }
 
 .profile_tab i {
@@ -71,83 +75,55 @@
     background-color: white;
     width: 100%;
     border-radius: 7px;
-    box-shadow: 0px 0px 10px -5px rgb(201, 201, 201);
+    box-shadow: 0px 0px 10px -5px #c9c9c9;
     position: relative;
-}
-
-.header_of_tabs {
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin-bottom: 0px;
-}
-
-.small_of_tabs {
-    font-size: 0.8rem;
-    color: #B9B9B9;
-}
-
-.btn_of_save_changes {
-    color: #1BC5BD;
-    background-color: #C9F7F5;
-    position: absolute;
-    left: 70px;
-}
-
-.btn_of_cancel_changes {
-    color: #F64E60;
-    background-color: #FFE2E5;
-    position: absolute;
-    left: 16px;
 }
 
 .field_of_pr_btn {
     position: relative;
-}
-
-.btn_of_cancel_changes:hover {
-    color: rgb(255, 255, 255);
-    background-color: #F64E60;
-}
-
-.btn_of_save_changes:hover {
-    color: rgb(255, 255, 255);
-    background-color: #1BC5BD;
-
+    & :first-child{
+        left: 69px;
+        position: absolute;
+    }
+    & :last-child{
+        left: 16px;
+        position: absolute;
+    }
 }
 
 .main_div_of_personal_form {
     padding: 20px 100px;
 }
 
-.checkbox_pro_text{
+.checkbox_pro_text {
     position: relative;
-    top: 9px;    
+    top: 9px;
 }
 
-.birth_day_backslash{
+.birth_day_backslash {
     position: absolute;
     right: -2%;
     top: 10px;
 }
 
-.user_text_area{
+.user_text_area {
     line-height: 30px;
 }
 
-.box_of_pass_alert_pro{
+.box_of_pass_alert_pro {
     width: 100%;
     padding: 10px;
-    background-color: #FFE2E5;
-    color: #F64E60;
+    background-color: $l_red;
+    color: $d_red;
     border-radius: 5px;
-    border: 1px solid #F64E60;
+    border: 1px solid $d_red;
 }
 
-.password_alert_pro{
+.password_alert_pro {
     font-size: 2rem;
     margin: 7px 0px;
 }
 
-.alert_pro_text{
+.alert_pro_text {
     font-size: 0.9rem;
 }
