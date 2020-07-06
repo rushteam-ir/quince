@@ -1,8 +1,8 @@
-@import '../mixin/main-color';
-@import '../mixin/mixin';
-@import '../mixin/checkbox-design';
-@import '../mixin/header-text';
-@import '../mixin/table-header';
+@import '../Partials/main-color';
+@import '../Partials/mixin';
+@import '../Partials/checkbox-design';
+@import '../Partials/header-text';
+@import '../Partials/table-header';
 
 .main_field {
     @include main_field;

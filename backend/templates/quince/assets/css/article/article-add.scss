@@ -1,8 +1,8 @@
-@import '../mixin/main-color';
-@import '../mixin/mixin';
-@import '../mixin/btn';
-@import '../mixin/header-text';
-@import '../mixin/uploader';
+@import '../Partials/main-color';
+@import '../Partials/mixin';
+@import '../Partials/btn';
+@import '../Partials/header-text';
+@import '../Partials/uploader';
 
 .main_field {
     @include main_field;

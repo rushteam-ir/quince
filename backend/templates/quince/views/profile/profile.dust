@@ -105,8 +105,8 @@
                                             نام خانوادگی من انتخاب شود.</p>
                                     </label>
                                     <div class="field_of_pr_btn mb-5">
-                                        <button type="submit" class="btn green_btn mt-3" name="profile_reset">ثبت
-                                            تغییرات
+                                        <button type="submit" class="btn green_btn mt-3" name="profile_reset">
+                                            ثبت تغییرات
                                         </button>
                                         <button class="btn red_btn mt-3" name="profile_info">لغو</button>
                                     </div>
@@ -165,8 +165,8 @@
                                         </div>
                                     </div>
                                     <div class="field_of_pr_btn mb-5">
-                                        <button type="submit" class="btn green_btn mt-3" name="profile_reset">ثبت
-                                            تغییرات
+                                        <button type="submit" class="btn green_btn mt-3" name="profile_reset">
+                                            ثبت تغییرات  
                                         </button>
                                         <button class="btn red_btn mt-3" name="profile_info">لغو</button>
                                     </div>
@@ -217,8 +217,8 @@
                                         </div>
                                     </div>
                                     <div class="field_of_pr_btn mb-5">
-                                        <button type="submit" class="btn green_btn mt-3" name="profile_reset">ثبت
-                                            تغییرات
+                                        <button type="submit" class="btn green_btn mt-3" name="profile_reset">
+                                            ثبت تغییرات
                                         </button>
                                         <button class="btn red_btn mt-3" name="profile_info">لغو</button>
                                     </div>

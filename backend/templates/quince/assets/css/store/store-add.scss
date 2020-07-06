@@ -1,8 +1,8 @@
-@import '../mixin/main-color';
-@import '../mixin/mixin';
-@import '../mixin/btn';
-@import '../mixin/uploader';
-@import '../mixin/header-text';
+@import '../Partials/main-color';
+@import '../Partials/mixin';
+@import '../Partials/btn';
+@import '../Partials/uploader';
+@import '../Partials/header-text';
 
 .main_bodu_of_store_add {
     @include main_field;
