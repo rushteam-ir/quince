@@ -14,7 +14,7 @@ router.get('/', async(req, res, next)=>{
 
                     if(stats.isDirectory()){
 
-                        log(file)
+                        directories.push(file);
 
                     }
 
@@ -23,6 +23,8 @@ router.get('/', async(req, res, next)=>{
             }
 
         })
+
+        log(directories)
 
         res.render('files/files');
 

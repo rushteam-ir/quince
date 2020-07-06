@@ -37,7 +37,7 @@
   height: 20px;
   width: 20px;
   position: absolute;
-  content: '✔';
+  content: "✔";
   display: inline-block;
   font-size: 14px;
   text-align: center;
@@ -57,7 +57,6 @@
   top: 30px;
   line-height: 37px;
 }
-
 .multi_remove:hover {
   color: white;
   background-color: #F64E60;
@@ -180,15 +179,12 @@
 table thead tr th {
   padding: 6px 0px 20px 0px !important;
 }
-
 table thead tr th label .option-input {
   top: 15px;
 }
-
 table tbody {
   font-size: 0.9rem;
 }
-
 table tbody tr td {
   padding: 30px 0px 17px 0px !important;
 }
@@ -262,7 +258,6 @@ table tbody tr td {
   border-radius: 44px;
   cursor: pointer;
 }
-
 .remove_img_modal i {
   font-size: 1.8rem;
   margin-left: 16px;
@@ -292,15 +287,13 @@ table tbody tr td {
 }
 
 .dropdown-item {
-  transition: all linear .2s;
+  transition: all linear 0.2s;
 }
-
 .dropdown-item i {
   color: #000000;
   margin-left: 10px;
-  transition: all linear .2s;
+  transition: all linear 0.2s;
 }
-
 .dropdown-item :first-child {
   font-size: 1.1rem;
 }
@@ -320,3 +313,5 @@ table tbody tr td {
   color: #6993FF;
   background-color: #F3F6F9;
 }
+
+/*# sourceMappingURL=groups-users.css.map */

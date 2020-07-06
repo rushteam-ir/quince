@@ -185,42 +185,35 @@ body {
   border-radius: 7px;
   padding: 80px 0px;
 }
-
 .main_field_of_price h3 {
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
 }
-
 .main_field_of_price .subtitle_of_pack {
   text-align: center;
   font-size: 0.7rem;
   margin-bottom: 10px;
 }
-
 .main_field_of_price .price_of_pack {
   font-size: 2.5rem;
   font-weight: bold;
   color: #EF394E;
 }
-
 .main_field_of_price p {
   text-align: center;
   margin-bottom: 30px;
   font-family: second-font;
 }
-
 .main_field_of_price p i {
   color: #61CE70;
   margin-left: 10px;
 }
-
 .main_field_of_price .complete_inco_of_pack {
   font-size: 0.8rem;
   padding: 0px 90px;
   line-height: 29px;
 }
-
 .main_field_of_price button {
   background-color: #EF394E;
   color: white;
@@ -236,16 +229,14 @@ body {
   padding-top: 30px;
   padding-right: 100px;
 }
-
 .main_field_of_pack_info .header_number_of_ip {
   font-weight: bold;
   font-size: 2rem;
   color: #EF394E;
   position: relative;
 }
-
 .main_field_of_pack_info .header_number_of_ip::before {
-  content: '';
+  content: "";
   width: 40px;
   height: 7px;
   position: absolute;
@@ -254,13 +245,11 @@ body {
   right: 44px;
   border-radius: 31px;
 }
-
 .main_field_of_pack_info h3 {
   font-weight: bold;
   font-size: 3rem;
   width: 90%;
 }
-
 .main_field_of_pack_info p {
   font-size: 1rem;
   line-height: 30px;
@@ -268,7 +257,6 @@ body {
   text-align: justify;
   font-family: second-font;
 }
-
 .main_field_of_pack_info button {
   border: 2px solid #EF394E;
   color: #EF394E;
@@ -287,3 +275,5 @@ body {
   padding: 70px 0;
   background-color: white;
 }
+
+/*# sourceMappingURL=index.css.map */

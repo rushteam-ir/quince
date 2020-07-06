@@ -37,7 +37,7 @@
   height: 20px;
   width: 20px;
   position: absolute;
-  content: '✔';
+  content: "✔";
   display: inline-block;
   font-size: 14px;
   text-align: center;
@@ -57,7 +57,6 @@
   top: 30px;
   line-height: 37px;
 }
-
 .multi_remove:hover {
   color: white;
   background-color: #F64E60;
@@ -208,7 +207,6 @@
 .files_table_row {
   cursor: pointer;
 }
-
 .files_table_row:hover {
   background-color: #F2F2F2;
 }
@@ -224,3 +222,5 @@
 .zero_custom {
   width: 40px;
 }
+
+/*# sourceMappingURL=files.css.map */

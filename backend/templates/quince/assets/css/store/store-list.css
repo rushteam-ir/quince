@@ -37,7 +37,7 @@
   height: 20px;
   width: 20px;
   position: absolute;
-  content: '✔';
+  content: "✔";
   display: inline-block;
   font-size: 14px;
   text-align: center;
@@ -57,7 +57,6 @@
   top: 30px;
   line-height: 37px;
 }
-
 .multi_remove:hover {
   color: white;
   background-color: #F64E60;
@@ -186,11 +185,9 @@
   padding-top: 17px !important;
   padding-bottom: 0px !important;
 }
-
 .table_of_article_list tr td:nth-child(3) {
   width: 150px;
 }
-
 .table_of_article_list tr th {
   line-height: 40px;
   padding-top: 5px;
@@ -230,13 +227,12 @@
 }
 
 .dropdown-item {
-  transition: all linear .2s;
+  transition: all linear 0.2s;
 }
-
 .dropdown-item i {
   color: #000000;
   margin-left: 10px;
-  transition: all linear .2s;
+  transition: all linear 0.2s;
 }
 
 .dropdown-item:hover,
@@ -302,3 +298,5 @@
   margin: 0 auto;
   margin-top: 4px;
 }
+
+/*# sourceMappingURL=store-list.css.map */
