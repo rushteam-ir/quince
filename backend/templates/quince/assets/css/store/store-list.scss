@@ -1,119 +1,15 @@
-@import '../../css/general/checkbox-design';
-@import '../../css/general/general-scss';
-@import '../../css/general/main_color';
-@import '../../css/general/table_header';
+@import '../Partials/main-color';
+@import '../Partials/mixin';
+@import '../Partials/checkbox-design';
+@import '../Partials/header-text';
+@import '../Partials/table-header';
+@import '../Partials/table-option';
+@import '../Partials/table';
 
-.main_body_store_list {
+.main_body {
     @include main_field
 }
 
-.main_store_list_col {
+.main_col {
     @include main_col;
-}
-
-.header_of_store_list {
-    @include header_custom;
-}
-
-.small_of_header_store_list {
-    @include small_of_header;
-}
-
-
-.table_of_article_list {
-
-    tr {
-
-        td {
-            line-height: 40px;
-            font-size: 0.9rem;
-            padding-top: 17px !important;
-            padding-bottom: 0px !important;
-
-            &:nth-child(3) {
-                width: 150px;
-            }
-        }
-
-        th {
-            line-height: 40px;
-            padding-top: 5px;
-        }
-    }
-
-}
-
-.table td {
-    padding: 0px !important;
-}
-
-.name_ofarticle {
-    @include text_truncate(150px)
-}
-
-.dropdown-toggle::after {
-    display: none !important;
-}
-
-.btn:hover {
-    color: #000000;
-}
-
-.dropdown-toggle {
-    padding: 0px 5px;
-}
-
-.dropdown-item {
-    font-size: 0.9rem !important;
-    height: 40px;
-    line-height: 34px;
-
-}
-
-.dropdown-menu {
-    padding: 0px;
-}
-
-.dropdown-item {
-    transition: all linear .2s;
-
-    i {
-        color: #000000;
-        margin-left: 10px;
-        transition: all linear .2s;
-    }
-
-}
-
-.dropdown-item:hover,
-.dropdown-item:hover i {
-    color: $d_purple;
-}
-
-.dropdown-item:focus {
-    background-color: white;
-    color: black;
-}
-
-.dropdown-item.active,
-.dropdown-item:active {
-    color: $d_purple;
-    background-color: $form_color;
-}
-
-.table_pill_article {
-    @include table_pill($d_red, $l_red, 90px, 30px, 30px, 4px);
-    @include text_truncate(85px);
-}
-
-.table_pill_see_article {
-    @include table_pill($d_green, $l_green, 90px, 30px, 30px, 4px);
-}
-
-.table_pill_comment_article {
-    @include table_pill($d_yellow, $l_yellow, 90px, 30px, 30px, 4px);
-}
-
-.table_pill_sale{
-    @include table_pill($d_purple, $l_purple, 90px, 30px, 30px, 4px);
 }

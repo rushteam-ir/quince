@@ -107,10 +107,6 @@ label {
     outline: none;
 }
 
-.form-control {
-    height: 44px !important;
-}
-
 textarea.form-control {
     height: 200px !important;
 }
@@ -118,11 +114,12 @@ textarea.form-control {
 .main_form_design{
     background-color: #F3F6F9;
     border: none;
+    height: 44px !important;
 }
 
 .main_form_design:focus {
     color: #495057 !important;
-    background-color: #ECF0F3;
+    background-color: #ECF0F3 !important;
     border-color: unset !important;
     outline: 0;
     box-shadow: unset !important;

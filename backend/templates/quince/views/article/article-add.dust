@@ -1,114 +1,96 @@
 {>"layouts/dashboard-layout"/}
 
 {<css}
-
     <link rel="stylesheet" href="css/article/wysiwyg-editor.css">
     <link rel="stylesheet" href="css/article/article-add.css">
-
 {/css}
-{<js} 
-
+{<js}
     <script src="js/general/wysiwyg-editor.js"></script>
     <script src="js/general/wysiwyg-image-manager.js"></script>
     <script src="js/general/wysiwyg-custom.js"></script>
     <script src="js/article/article-add.js"></script>
-
 {/js}
-
 {<body}
-
     <section>
-        <div class="main_field_of_add_article mb-5">
+        <div class="main_field mb-5">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 main_col">
-
-                        <header>
-
-                            <p class="header_of_add_article">افزودن مقاله</p>
-                            <p class="small_of_header_add_article">مقاله های سایت را در اینجا ایجاد کنید!</p>
-
+                        <header class="header_field">
+                            <h1>لیست محصولات</h1>
+                            <h2>لیست محصولات را در جذول زیر مشاهده کنید</h2>
                             <hr>
-
                         </header>
-
                         <div class="row dir-ltr">
                             <div class="col-8 offset-2">
-
-                                <form method="post" action=""autocomplete="off" enctype="multipart/form-data" class="text-right dir-rtl">
-
+                                <form method="post" action="" autocomplete="off" enctype="multipart/form-data"
+                                      class="text-right dir-rtl">
                                     <div class="form-group">
-                                        <label for="avatar" class=" col-form-label main_lable_design">تصویر اصلی مقاله</label>
-
-                                        <div class="field_of_img_template">
-                                            <div class="box_of_img_template">
-                                                <div class="box_of_img_template img-box">
-                                                    <div class="img-show">
-                                                    </div>
-                                                    <input type="file" name="main_image" id="avatar_img" class="input-file-custom">
-                                                    <label for="avatar_img" class="btn btn-tertiary2 js-labelFile ">
-                                                        <i class="icon fa fa-check"></i>
-                                                        <span class="js-fileName mr-2">انتخاب عکس</span>
-                                                    </label>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                        <p class="alert_pro_descripion mb-1">حجم مجاز برای آپلود تصویر حداکثر {limited_images_size} مگابایت و همچنین فرمت های مجاز .png ، .jpg ، .jpeg و .gif می باشد.</p>
-
-
+                                        <label for="article_name">نام مقاله</label>
+                                        <input type="text" class="form-control main_form_design" id="article_name"
+                                               name="title_inp">
                                     </div>
-
-                                    <div class="form-group">
-                                      <label for="article_name">نام مقاله</label>
-                                      <input type="text" class="form-control main_form_design" id="article_name" name="title_inp">
-                                    </div>
-
                                     <div class="form-group">
                                         <label for="article_parent">دسته</label>
-                                        <select class="form-control main_form_design select-category" id="article_parent" name="parent_inp">
+                                        <select class="form-control main_form_design select-category"
+                                                id="article_parent" name="parent_inp">
                                             <option value="0">-----</option>
                                             {#parent_list}
                                                 <option value="{_id}">{title}</option>
                                             {/parent_list}
                                         </select>
                                     </div>
-
                                     <div class="form-group">
                                         <label for="article_child">زیر دسته</label>
-                                        <select class="form-control main_form_design select-sub-category" id="article_child" name="child_inp">
+                                        <select class="form-control main_form_design select-sub-category"
+                                                id="article_child" name="child_inp">
                                             <option value="0">-----</option>
                                         </select>
                                     </div>
-
                                     <div class="form-group">
                                         <label for="article_textarea">توضیحات مقاله</label>
-                                        <textarea class="form-control main_form_design" id="article_textarea" rows="7" name="describe_inp"></textarea>
+                                        <textarea class="form-control main_form_design" id="article_textarea" rows="7"
+                                                  name="describe_inp"></textarea>
                                         <input type='file' name='fileupload' id='fileupload' style='display: none;'>
                                     </div>
-
                                     <div class="form-group">
                                         <label for="article_keyword">کلمات کلیدی مقاله</label>
-                                        <input type="text" class="form-control main_form_design" id="article_keyword" name="keys_inp">
+                                        <input type="text" class="form-control main_form_design" id="article_keyword"
+                                               name="keys_inp">
                                     </div>
-
                                     <div class="form-group">
                                         <label for="article_describe">توضیحات کلیدی مقاله</label>
-                                        <textarea class="form-control main_form_design" id="article_describe" rows="7" name="meta_describe_inp"></textarea>
+                                        <textarea class="form-control main_form_design" id="article_describe" rows="7"
+                                                  name="meta_describe_inp"></textarea>
                                     </div>
-
-                                    <button class="btn btn_of_save_changes" name="profile_private">ثبت تغییرات</button>
-                                    
-                                  </form>
-
+                                    <div class="form-group">
+                                        <label for="avatar" class=" col-form-label main_lable_design">تصویر اصلی
+                                            مقاله</label>
+                                        <div class="field_of_img_template">
+                                            <div class="box_of_img_template">
+                                                <div class="box_of_img_template img-box">
+                                                    <div class="img-show">
+                                                    </div>
+                                                    <input type="file" name="main_image" id="avatar_img"
+                                                           class="input-file-custom">
+                                                    <label for="avatar_img" class="btn btn-tertiary2 js-labelFile ">
+                                                        <i class="icon fa fa-check"></i>
+                                                        <span class="js-fileName mr-2">انتخاب عکس</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="alert_pro_descripion mb-1">حجم مجاز برای آپلود تصویر
+                                            حداکثر {limited_images_size} مگابایت و همچنین فرمت های مجاز .png ، .jpg ،
+                                            .jpeg و .gif می باشد.</p>
+                                    </div>
+                                    <button class="btn green_btn" name="profile_private">ثبت مقاله جدید</button>
+                                </form>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
 {/body}

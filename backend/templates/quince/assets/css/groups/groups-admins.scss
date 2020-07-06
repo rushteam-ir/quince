@@ -1,164 +1,17 @@
-@import '../../css/general/main_color';
-@import '../../css/general/general-scss';
-@import '../../css/general/checkbox-design';
-@import '../../css/general/table_header';
+@import '../Partials/main-color';
+@import '../Partials/mixin';
+@import '../Partials/checkbox-design';
+@import '../Partials/header-text';
+@import '../Partials/table-header';
+@import '../Partials/table-option';
+@import '../Partials/table_image';
+@import '../Partials/table';
 
-.main_filed_of_article_list {
-    @include main_field;
+
+.main_body {
+    @include main_field
 }
 
-.main_filed_of_main_col {
+.main_col {
     @include main_col;
-}
-
-.option-input {
-    top: 0px;
-}
-
-.date_pill {
-    top: 0px;
-}
-
-table { 
-    thead {
-        tr {
-            th {
-
-                padding: 6px 0px 20px 0px !important;
-
-                label {
-
-                    .option-input {
-                        top: 15px;
-                    }
-
-                }
-
-            }
-        }
-    }
-
-    tbody {
-        font-size: 0.9rem;
-        tr {
-            td {
-                padding: 30px 0px 17px 0px !important;
-            }
-        }
-    }
-}
-
-.sitoation_pill {
-    @include table_pill($d_green, $l_green, 90px, 30px, 30px, -4px);
-}
-
-.data_pill{
-    @include table_pill($d_purple, $l_purple, 110px, 30px, 30px, -4px);
-}
-
-.img_of_user{
-    width: 50px;
-    height: 50px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.padding_custom_img{
-    padding-top: 15px !important;
-}
-
-
-// img modal
-
-.img_modal_field{
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    z-index: 1000000000000;
-    top: 0;
-    left: 0;
-    background-color: #0000008f;
-    display: none;
-}
-
-.row_modal_custom{
-    height: 100vh;
-}
-
-.modal_img_show{
-    border: 5px solid white;
-    border-radius: 2px;
-    width: 100%;
-}
-
-.img_modal_field_second{
-    width: 600px;
-    margin: 0 auto;
-}
-
-.remove_img_modal{
-    @include remove_modal;
-}
-
-
-
-
-
-
-
-
-
-// option drop down
-
-.dropdown-toggle::after {
-    display: none !important;
-}
-
-.btn:hover {
-    color: #000000;
-}
-
-.dropdown-toggle {
-    padding: 0px 5px;
-}
-
-.dropdown-item {
-    font-size: 0.9rem !important;
-    height: 40px;
-    line-height: 34px;
-
-}
-
-.dropdown-menu {
-    padding: 0px;
-}
-
-.dropdown-item {
-    transition: all linear .2s;
-
-    i {
-        color: #000000;
-        margin-left: 10px;
-        transition: all linear .2s;
-    }
-    & :first-child{
-        font-size: 1.1rem;
-    }
-
-}
-
-.dropdown-item:hover,
-.dropdown-item:hover i {
-    color: $d_purple;
-}
-
-.dropdown-item:focus {
-    background-color: white;
-    color: black;
-}
-
-.dropdown-item.active,
-.dropdown-item:active {
-    color: $d_purple;
-    background-color: $form_color;
 }
