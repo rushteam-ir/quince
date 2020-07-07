@@ -10,13 +10,13 @@ router.get('/', async(req, res, next)=>{
             avatar : '',
 
         };
-        let avatar_path = `${backend_upload_dir}images/${req.session.admin_info.avatar}`;
+        let avatar_path = `${backend_upload_dir}avatars/${req.session.admin_info.avatar}`;
 
         let result = await user_model.edit(admin_id, admin_data)
 
         if(result){
 
-            fs.unlink(avatar_path, function(err) {})
+            fileManager.delete(avatar_path);
             req.session.admin_info.avatar = '';
 
         }

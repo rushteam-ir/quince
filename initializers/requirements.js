@@ -1,5 +1,6 @@
 // Importing NPM Modules
 express = require('express');
+util = require('util');
 fs = require('fs');
 adaro = require('adaro');
 svg_captcha = require('svg-captcha');
@@ -18,7 +19,8 @@ require('./config');
 require('./library');
 dust_helpers = require('./dust-helpers');
 validation = require('./validation');
-uploader = require('./uploader');
+fileManager_class = require('./file-manager');
+fileManager = new fileManager_class();
 
 // Importing Database Models
 user_model = require('../models/user-schema');
