@@ -105,7 +105,7 @@
                                             نام خانوادگی من انتخاب شود.</p>
                                     </label>
                                     <div class="field_of_pr_btn mb-5">
-                                        <button type="submit" class="btn green_btn mt-3" name="profile_reset">
+                                        <button type="submit" class="btn green_btn mt-3" name="profile_info">
                                             ثبت تغییرات
                                         </button>
                                         <button class="btn red_btn mt-3" name="profile_info">لغو</button>

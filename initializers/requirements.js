@@ -18,7 +18,7 @@ require('./config');
 require('./library');
 dust_helpers = require('./dust-helpers');
 validation = require('./validation');
-uploader = require('./uploader');
+fileManager = require('./file-manager');
 
 // Importing Database Models
 user_model = require('../models/user-schema');

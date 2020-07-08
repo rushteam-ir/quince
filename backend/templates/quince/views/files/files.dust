@@ -75,111 +75,40 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr class="files_table_row">
-                                <td>
-                                    <label class="checkbox_of_category">
-                                        <input type="checkbox" name="delete_checkbox[]"
-                                               class="table_checkbox option-input checkbox" value="{._id}">
-                                    </label>
-                                </td>
-                                <td class="pl-0 text-center">
-                                    <img class="image_of_folders" src="img/folder-img.png" alt="">
-                                </td>
-                                <td class="pr-0 folder_name_custom table_data">تصاویر</td>
-                                <td class="table_data">1399/10/30</td>
-                                <td class="table_data padding_custom_f">20M</td>
-                                <td class="table_data pr-3">file</td>
-                            </tr>
-                            <tr class="files_table_row">
-                                <td>
-                                    <label class="checkbox_of_category">
-                                        <input type="checkbox" name="delete_checkbox[]"
-                                               class="table_checkbox option-input checkbox" value="{._id}">
-                                    </label>
-                                </td>
-                                <td class="pl-0 text-center">
-                                    <img class="image_of_folders" src="img/folder-img.png" alt="">
-                                </td>
-                                <td class="pr-0 folder_name_custom table_data">تصاویر</td>
-                                <td class="table_data">1399/10/30</td>
-                                <td class="table_data padding_custom_f">20M</td>
-                                <td class="table_data pr-3">file</td>
-                            </tr>
-                            <tr class="files_table_row">
-                                <td>
-                                    <label class="checkbox_of_category">
-                                        <input type="checkbox" name="delete_checkbox[]"
-                                               class="table_checkbox option-input checkbox" value="{._id}">
-                                    </label>
-                                </td>
-                                <td class="pl-0 text-center">
-                                    <img class="image_of_folders" src="img/folder-img.png" alt="">
-                                </td>
-                                <td class="pr-0 folder_name_custom table_data">تصاویر</td>
-                                <td class="table_data">1399/10/30</td>
-                                <td class="table_data padding_custom_f">20M</td>
-                                <td class="table_data pr-3">file</td>
-                            </tr>
-                            <tr class="files_table_row">
-                                <td>
-                                    <label class="checkbox_of_category">
-                                        <input type="checkbox" name="delete_checkbox[]"
-                                               class="table_checkbox option-input checkbox" value="{._id}">
-                                    </label>
-                                </td>
-                                <td class="pl-0 text-center">
-                                    <img class="image_of_folders" src="img/folder-img.png" alt="">
-                                </td>
-                                <td class="pr-0 folder_name_custom table_data">تصاویر</td>
-                                <td class="table_data">1399/10/30</td>
-                                <td class="table_data padding_custom_f">20M</td>
-                                <td class="table_data pr-3">file</td>
-                            </tr>
-                            <tr class="files_table_row">
-                                <td>
-                                    <label class="checkbox_of_category">
-                                        <input type="checkbox" name="delete_checkbox[]"
-                                               class="table_checkbox option-input checkbox" value="{._id}">
-                                    </label>
-                                </td>
-                                <td class="pl-0 text-center">
-                                    <img class="image_of_folders" src="img/document-img.png" alt="">
-                                </td>
-                                <td class="pr-0 folder_name_custom table_data">تصاویر</td>
-                                <td class="table_data">1399/10/30</td>
-                                <td class="table_data padding_custom_f">20M</td>
-                                <td class="table_data pr-3">file</td>
-                            </tr>
-                            <tr class="files_table_row">
-                                <td>
-                                    <label class="checkbox_of_category">
-                                        <input type="checkbox" name="delete_checkbox[]"
-                                               class="table_checkbox option-input checkbox" value="{._id}">
-                                    </label>
-                                </td>
-                                <td class="pl-0 text-center">
-                                    <img class="image_of_folders" src="img/document-img.png" alt="">
-                                </td>
-                                <td class="pr-0 folder_name_custom table_data">تصاویر</td>
-                                <td class="table_data">1399/10/30</td>
-                                <td class="table_data padding_custom_f">20M</td>
-                                <td class="table_data pr-3">file</td>
-                            </tr>
-                            <tr class="files_table_row">
-                                <td>
-                                    <label class="checkbox_of_category">
-                                        <input type="checkbox" name="delete_checkbox[]"
-                                               class="table_checkbox option-input checkbox" value="{._id}">
-                                    </label>
-                                </td>
-                                <td class="pl-0 text-center">
-                                    <img class="image_of_folders" src="img/document-img.png" alt="">
-                                </td>
-                                <td class="pr-0 folder_name_custom table_data">تصاویر</td>
-                                <td class="table_data">1399/10/30</td>
-                                <td class="table_data padding_custom_f">20M</td>
-                                <td class="table_data pr-3">file</td>
-                            </tr>
+                            {#directories_list}
+                                <tr class="files_table_row">
+                                    <td>
+                                        <label class="checkbox_of_category">
+                                            <input type="checkbox" name="delete_checkbox[]"
+                                                   class="table_checkbox option-input checkbox" value="{._id}">
+                                        </label>
+                                    </td>
+                                    <td class="pl-0 text-center">
+                                        <img class="image_of_folders" src="img/folder-img.png" alt="">
+                                    </td>
+                                    <td class="pr-0 folder_name_custom table_data">{.}</td>
+                                    <td class="table_data">1399/10/30</td>
+                                    <td class="table_data padding_custom_f">20M</td>
+                                    <td class="table_data pr-3">file</td>
+                                </tr>
+                            {/directories_list}
+                            {#files_list}
+                                <tr class="files_table_row">
+                                    <td>
+                                        <label class="checkbox_of_category">
+                                            <input type="checkbox" name="delete_checkbox[]"
+                                                   class="table_checkbox option-input checkbox" value="{._id}">
+                                        </label>
+                                    </td>
+                                    <td class="pl-0 text-center">
+                                        <img class="image_of_folders" src="img/document-img.png" alt="">
+                                    </td>
+                                    <td class="pr-0 folder_name_custom table_data">تصاویر</td>
+                                    <td class="table_data">1399/10/30</td>
+                                    <td class="table_data padding_custom_f">20M</td>
+                                    <td class="table_data pr-3">file</td>
+                                </tr>
+                            {/files_list}
                             </tbody>
                         </table>
                     </div>
