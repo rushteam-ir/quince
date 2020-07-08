@@ -32,8 +32,9 @@
                                             <form action="">
                                                 <div class="input-group mb-3 t_search">
                                                     <div class="input-group-prepend">
-                                                        <span class="input-group-text" id="basic-addon1"><i
-                                                                class="fal fa-search"></i></span>
+                                                        <button class="input-group-text btn search_btn" id="basic-addon1">
+                                                            <i class="fal fa-search"></i>
+                                                        </button>
                                                     </div>
                                                     <input type="text" class="form-control" placeholder="جستجو"
                                                            aria-describedby="basic-addon1">
@@ -55,62 +56,113 @@
                                             </button>
                                         </div>
                                     </div>
+                                    <nav class="QT_breadcrumb" aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                          <li class="breadcrumb-item"><a href="#">طالبی</a></li>
+                                          <li class="breadcrumb-item"><a href="#">کونش</a></li>
+                                          <li class="breadcrumb-item active" aria-current="page">موهای کونش</li>
+                                        </ol>
+                                    </nav>
                                 </div>
                             </div>
                         </header>
-                        <table class="table table-borderless text-right dir_rtl mt-4">
-                            <thead class="border-top border-bottom">
-                            <tr>
-                                <th scope="col" class="zero_custom">
-                                    <label class="checkbox_of_category">
-                                        <input type="checkbox" class="option-input checkbox" id="selectall"
-                                               name="select_all">
-                                    </label>
-                                </th>
-                                <th scope="col" class="fr_custom text-center pl-0">نام پوشه</th>
-                                <th scope="col" class="sr_custom"></th>
-                                <th scope="col" class="thr_custom">آخرین تغییرات</th>
-                                <th scope="col" class="fthr_cutom">حجم پوشه</th>
-                                <th>فرمت</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            {#directories_list}
-                                <tr class="files_table_row">
-                                    <td>
+                        <div class="QT_file mt-3">
+                            <table class="table table-borderless text-right dir_rtl mt-4">
+                                <thead class="border-top border-bottom">
+                                <tr>
+                                    <th class="zero_custom">
                                         <label class="checkbox_of_category">
-                                            <input type="checkbox" name="delete_checkbox[]"
-                                                   class="table_checkbox option-input checkbox" value="{._id}">
+                                            <input type="checkbox" class="option-input checkbox" id="selectall"
+                                                   name="select_all">
                                         </label>
-                                    </td>
-                                    <td class="pl-0 text-center">
-                                        <img class="image_of_folders" src="img/folder-img.png" alt="">
-                                    </td>
-                                    <td class="pr-0 folder_name_custom table_data">{.}</td>
-                                    <td class="table_data">1399/10/30</td>
-                                    <td class="table_data padding_custom_f">20M</td>
-                                    <td class="table_data pr-3">file</td>
+                                    </th>
+                                    <th class="fr_custom text-center pl-0">نام پوشه</th>
+                                    <th class="sr_custom"></th>
+                                    <th class="thr_custom">آخرین تغییرات</th>
+                                    <th class="fthr_cutom">حجم پوشه</th>
+                                    <th>تنظیمات</th>
                                 </tr>
-                            {/directories_list}
-                            {#files_list}
-                                <tr class="files_table_row">
-                                    <td>
-                                        <label class="checkbox_of_category">
-                                            <input type="checkbox" name="delete_checkbox[]"
-                                                   class="table_checkbox option-input checkbox" value="{._id}">
-                                        </label>
-                                    </td>
-                                    <td class="pl-0 text-center">
-                                        <img class="image_of_folders" src="img/document-img.png" alt="">
-                                    </td>
-                                    <td class="pr-0 folder_name_custom table_data">{.}</td>
-                                    <td class="table_data">1399/10/30</td>
-                                    <td class="table_data padding_custom_f">20M</td>
-                                    <td class="table_data pr-3">file</td>
-                                </tr>
-                            {/files_list}
-                            </tbody>
-                        </table>
+                                </thead>
+                                <tbody>
+                                {#directories_list}
+                                    <tr class="files_table_row">
+                                        <td>
+                                            <label class="checkbox_of_category">
+                                                <input type="checkbox" name="delete_checkbox[]"
+                                                       class="table_checkbox option-input checkbox" value="{._id}">
+                                            </label>
+                                        </td>
+                                        <td class="pl-0 text-center">
+                                            <img class="image_of_folders" src="img/folder-img.png" alt="">
+                                        </td>
+                                        <td class="pr-0 folder_name_custom table_data">{.}</td>
+                                        <td class="table_data">1399/10/30</td>
+                                        <td class="table_data padding_custom_f">20M</td>
+                                        <td class="table_option">
+                                            <div class="dropdown">
+                                                <button class="btn  dropdown-toggle" type="button" id="table_option" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="table_option">
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="fal fa-align-slash"></i>
+                                                        غیر فعال کردن
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="fal fa-asterisk"></i>
+                                                        افزودن وی ای پی
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="fal fa-assistive-listening-systems"></i>
+                                                        افزودن گوش و چشم
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                {/directories_list}
+                                {#files_list}
+                                    <tr class="files_table_row">
+                                        <td>
+                                            <label class="checkbox_of_category">
+                                                <input type="checkbox" name="delete_checkbox[]"
+                                                       class="table_checkbox option-input checkbox" value="{._id}">
+                                            </label>
+                                        </td>
+                                        <td class="pl-0 text-center">
+                                            <img class="image_of_folders" src="img/document-img.png" alt="">
+                                        </td>
+                                        <td class="pr-0 folder_name_custom table_data">{.}</td>
+                                        <td class="table_data">1399/10/30</td>
+                                        <td class="table_data padding_custom_f">20M</td>
+                                        <td class="table_option">
+                                            <div class="dropdown">
+                                                <button class="btn  dropdown-toggle" type="button" id="table_option" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="table_option">
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="fal fa-align-slash"></i>
+                                                        غیر فعال کردن
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="fal fa-asterisk"></i>
+                                                        افزودن وی ای پی
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="fal fa-assistive-listening-systems"></i>
+                                                        افزودن گوش و چشم
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                {/files_list}
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
