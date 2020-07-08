@@ -23,17 +23,14 @@
                         </header>
                         <div class="row dir-ltr">
                             <div class="col-8 offset-2">
-                                <form method="post" action="" autocomplete="off" enctype="multipart/form-data"
-                                      class="text-right dir-rtl">
+                                <form method="post" action="" autocomplete="off" enctype="multipart/form-data" class="text-right dir-rtl">
                                     <div class="form-group">
                                         <label for="article_name">نام مقاله</label>
-                                        <input type="text" class="form-control main_form_design" id="article_name"
-                                               name="title_inp">
+                                        <input type="text" class="form-control main_form_design" id="article_name"  name="title_inp">
                                     </div>
                                     <div class="form-group">
                                         <label for="article_parent">دسته</label>
-                                        <select class="form-control main_form_design select-category"
-                                                id="article_parent" name="parent_inp">
+                                        <select class="form-control main_form_design select-category" id="article_parent" name="parent_inp">
                                             <option value="0">-----</option>
                                             {#parent_list}
                                                 <option value="{_id}">{title}</option>
@@ -42,37 +39,33 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="article_child">زیر دسته</label>
-                                        <select class="form-control main_form_design select-sub-category"
-                                                id="article_child" name="child_inp">
+                                        <select class="form-control main_form_design select-sub-category" id="article_child" name="child_inp">
                                             <option value="0">-----</option>
                                         </select>
                                     </div>
                                     <div class="form-group">
                                         <label for="article_textarea">توضیحات مقاله</label>
-                                        <textarea class="form-control main_form_design" id="article_textarea" rows="7"
-                                                  name="describe_inp"></textarea>
+                                        <textarea class="form-control main_form_design" id="article_textarea" rows="7" name="describe_inp"></textarea>
                                         <input type='file' name='fileupload' id='fileupload' style='display: none;'>
                                     </div>
                                     <div class="form-group">
                                         <label for="article_keyword">کلمات کلیدی مقاله</label>
-                                        <input type="text" class="form-control main_form_design" id="article_keyword"
-                                               name="keys_inp">
+                                        <input type="text" class="form-control main_form_design" id="article_keyword" name="keys_inp">
                                     </div>
                                     <div class="form-group">
                                         <label for="article_describe">توضیحات کلیدی مقاله</label>
-                                        <textarea class="form-control main_form_design" id="article_describe" rows="7"
-                                                  name="meta_describe_inp"></textarea>
+                                        <textarea class="form-control main_form_design" id="article_describe" rows="7" name="meta_describe_inp"></textarea>
                                     </div>
                                     <div class="form-group">
-                                        <label for="avatar" class=" col-form-label main_lable_design">تصویر اصلی
-                                            مقاله</label>
+                                        <label for="avatar" class="col-form-label main_lable_design">تصویر اصلی
+                                            مقاله
+                                        </label>
                                         <div class="field_of_img_template">
                                             <div class="box_of_img_template">
                                                 <div class="box_of_img_template img-box">
                                                     <div class="img-show">
                                                     </div>
-                                                    <input type="file" name="main_image" id="avatar_img"
-                                                           class="input-file-custom">
+                                                    <input type="file" name="main_image" id="avatar_img" class="input-file-custom">
                                                     <label for="avatar_img" class="btn btn-tertiary2 js-labelFile ">
                                                         <i class="icon fa fa-check"></i>
                                                         <span class="js-fileName mr-2">انتخاب عکس</span>

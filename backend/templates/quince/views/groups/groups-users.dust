@@ -20,8 +20,8 @@
                                 <div class="row">
                                     <div class="col-12 col-lg-7">
                                         <div class="d-inline-block field_of_ht">
-                                            <h1>لیست محصولات</h1>
-                                            <h2>لیست محصولات را در جذول زیر مشاهده کنید</h2>
+                                            <h1>لیست کاربران</h1>
+                                            <h2>لیست کاربران را در جدول زیر مشاهده کنید</h2>
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-5">
@@ -29,15 +29,14 @@
                                             <form action="">
                                                 <div class="input-group mb-3 t_search">
                                                     <div class="input-group-prepend">
-                                                        <span class="input-group-text" id="basic-addon1"><i
-                                                                class="fal fa-search"></i></span>
+                                                        <button class="input-group-text btn search_btn" id="basic-addon1">
+                                                            <i class="fal fa-search"></i>
+                                                        </button>
                                                     </div>
-                                                    <input type="text" class="form-control" placeholder="جستجو"
-                                                           aria-describedby="basic-addon1">
+                                                    <input type="text" class="form-control" placeholder="جستجو" aria-describedby="basic-addon1">
                                                 </div>
-                                                <div class="form-group tr_select">
-                                                    <label for="t_row_select" class="d-inline-block select_lable">تعداد
-                                                        ردیف ها :</label>
+                                                  <div class="form-group tr_select">
+                                                    <label for="t_row_select" class="d-inline-block select_lable">تعداد ردیف ها :</label>
                                                     <select class="form-control" id="t_row_select">
                                                         <option>1</option>
                                                         <option>2</option>

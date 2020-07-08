@@ -20,8 +20,8 @@
                                 <div class="row">
                                     <div class="col-12 col-lg-7">
                                         <div class="d-inline-block field_of_ht">
-                                            <h1>لیست محصولات</h1>
-                                            <h2>لیست محصولات را در جذول زیر مشاهده کنید</h2>
+                                            <h1>لیست مقالات</h1>
+                                            <h2>لیست مقالات را در جدول زیر مشاهده کنید</h2>
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-5">
@@ -29,15 +29,14 @@
                                             <form action="">
                                                 <div class="input-group mb-3 t_search">
                                                     <div class="input-group-prepend">
-                                                        <span class="input-group-text" id="basic-addon1"><i
-                                                                class="fal fa-search"></i></span>
+                                                        <button class="input-group-text btn search_btn" id="basic-addon1">
+                                                            <i class="fal fa-search"></i>
+                                                        </button>
                                                     </div>
-                                                    <input type="text" class="form-control" placeholder="جستجو"
-                                                           aria-describedby="basic-addon1">
+                                                    <input type="text" class="form-control" placeholder="جستجو" aria-describedby="basic-addon1">
                                                 </div>
-                                                <div class="form-group tr_select">
-                                                    <label for="t_row_select" class="d-inline-block select_lable">تعداد
-                                                        ردیف ها :</label>
+                                                  <div class="form-group tr_select">
+                                                    <label for="t_row_select" class="d-inline-block select_lable">تعداد ردیف ها :</label>
                                                     <select class="form-control" id="t_row_select">
                                                         <option>1</option>
                                                         <option>2</option>
@@ -60,8 +59,7 @@
                                 <tr class="TQ_hr">
                                     <th>
                                         <label class="checkbox_of_category">
-                                            <input type="checkbox" class="option-input checkbox" id="selectall"
-                                                   name="select_all">
+                                            <input type="checkbox" class="option-input checkbox" id="selectall" name="select_all">
                                         </label>
                                     </th>
                                     <th>ردیف</th>
@@ -76,9 +74,7 @@
                                 <tr>
                                     <td>
                                         <label class="checkbox_of_category">
-                                            <input type="checkbox" name="delete_checkbox[]"
-                                                   class="table_checkbox option-input checkbox"
-                                                   value="{._id}">
+                                            <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
                                         </label>
                                     </td>
                                     <td>1</td>
@@ -112,9 +108,7 @@
                                     </td>
                                     <td class="table_option">
                                         <div class="dropdown">
-                                            <button class="btn  dropdown-toggle" type="button" id="table_option"
-                                                    data-toggle="dropdown"
-                                                    aria-haspopup="true" aria-expanded="false">
+                                            <button class="btn  dropdown-toggle" type="button" id="table_option" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <i class="fas fa-ellipsis-v"></i>
                                             </button>
                                             <div class="dropdown-menu" aria-labelledby="table_option">
