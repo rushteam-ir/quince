@@ -37,7 +37,7 @@ router.post('/', async(req, res, next)=>{
 
                 if(file_mime_type != 'image' && file_mime_type != 'video'){
 
-                    file_mime_type = 'file';
+                    file_mime_type = 'other';
 
                 }
 
@@ -45,11 +45,11 @@ router.post('/', async(req, res, next)=>{
 
                 let upload_result = fileManager.upload(file, file_name,{
 
-                    allowed_formats : 'image',
-                    limited_size : backend_limited_images_size,
+                    allowed_formats : `${file_mime_type}`,
                     file_path : `${backend_upload_dir}${file_mime_type}s/`,
 
                 });
+
 
                 if(upload_result){
 

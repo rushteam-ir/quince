@@ -2,19 +2,22 @@ class fileManager {
 
     upload(file, file_name, options) {
 
+        let limited_size = 0;
         switch(options.allowed_formats){
 
             case 'image':
             {
 
                 options.allowed_formats = ['png', 'jpeg', 'jpg', 'gif'];
+                limited_size = config.image_limited_size;
                 break;
 
             }
-            case 'file':
+            case 'other':
             {
 
                 options.allowed_formats = ['*'];
+                limited_size = config.other_limited_size;
                 break;
 
             }
@@ -22,6 +25,7 @@ class fileManager {
             {
 
                 options.allowed_formats = ['mp4', 'webm', 'ogg', 'mkv'];
+                limited_size = config.video_limited_size;
                 break;
 
             }
@@ -32,7 +36,7 @@ class fileManager {
 
         if(options.allowed_formats.includes(file_extension) || options.allowed_formats[0] == '*'){
 
-            if(file.size/1024 <= options.limited_size){
+            if(file.size/1024 <= limited_size){
 
                 file.mv(options.file_path + `/${file_name}`, (err)=>{
 

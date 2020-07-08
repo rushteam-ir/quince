@@ -18,7 +18,10 @@ module.exports = config = {
     session_secret_key : 'rushteamquince',
     session_name : 'quince',
     debug_mode : true,
-    captcha_color : `#0096ff`
+    captcha_color : `#0096ff`,
+    image_limited_size : 5120,
+    video_limited_size : 10024,
+    other_limited_size : 100000024,
 
 };
 

@@ -12,6 +12,7 @@ nodemailer = require('nodemailer');
 JalaliDate = require('jalali-date');
 sha1 = require('sha1');
 compression = require('compression');
+crypto = require('crypto');
 
 // Importing Initializers
 require('./config');

@@ -21,7 +21,7 @@
                                         <div class="col-12 col-lg-7">
                                             <div class="d-inline-block field_of_ht">
                                                 <h1>لیست دسته بندی ها</h1>
-                                                <h2>لیست دسته بندی های سایت را در جدول زیر مشاهده کنید</h2>
+                                                <h2>لیست دسته بندی های موجود در سایت</h2>
                                             </div>
                                         </div>
                                         <div class="col-12 col-lg-5">
@@ -111,11 +111,7 @@
                                 <div class="form-group">
                                     <label for="category_parent">والد دسته</label>
                                     <select class="form-control main_form_design" id="category_parent">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                                        {}
                                     </select>
                                 </div>
                                 <button class="btn green_btn py-2 mt-3">ثبت دسته بندی جدید</button>
