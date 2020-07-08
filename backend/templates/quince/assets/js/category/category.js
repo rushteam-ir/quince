@@ -16,7 +16,7 @@ $(document).ready(function () {
 
     $('#selectall').trigger('change');
 
-    $('.count_row_table_of_category').change(function () {
+    $('.limit_row').change(function () {
 
         let page_limit = $(this).val();
         $.post(`${backend_url}api/get-page-limit`, {
@@ -30,7 +30,7 @@ $(document).ready(function () {
 
     });
 
-$('.remove_table_btn').on('click', function (e) {
+$('.delete_category').on('click', function (e) {
 
     let cat_id = $(e.currentTarget).attr('name');
 
@@ -53,19 +53,15 @@ $('.remove_table_btn').on('click', function (e) {
             }).then((result) => {
                 if (result.value) {
                     redirect(`${backend_url}category/api/delete-category/?id=${cat_id}`);
-                    // apiTableManager({
-                    //     do_inp : 'delete',
-                    //     rows_inp : [${cat_id}]
-                    // })
                 }
             })
         }
     })
 })
 
-$('.btn_delete_all_category').on('click', function (e) {
+$('.table_delete_btn').on('click', function (e) {
 
-    let query = ''
+    let query = '';
 
     $(':checkbox:checked').each(function (i) {
         if ($(this).attr('name') != 'select_all') {
@@ -101,9 +97,9 @@ $('.btn_delete_all_category').on('click', function (e) {
 
 })
 
-$('.btn_of_search').on('click', function (e) {
+$('.search_btn').on('click', function (e) {
 
-    let search_value = $('.category_search').val();
+    let search_value = $('.search_table').val();
     if (search_value != "") {
         redirect(`${backend_url}category/search/${search_value}`);
     }
@@ -115,10 +111,6 @@ $('.remove_search_icon').on('click', function (e) {
     redirect(`${backend_url}category`);
 
 })
-
-function redirect(url) {
-    location.href = url
-}
 
 // modal
 
@@ -162,3 +154,7 @@ function redirect(url) {
     });
 
 });
+
+function redirect(url) {
+    location.href = url
+}

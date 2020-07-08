@@ -26,26 +26,26 @@
                                         </div>
                                         <div class="col-12 col-lg-5">
                                             <div class="table_header">
-                                                <form action="">
-                                                    <div class="input-group mb-3 t_search">
-                                                        <div class="input-group-prepend">
-                                                            <button class="input-group-text btn search_btn" id="basic-addon1">
-                                                                <i class="fal fa-search"></i>
-                                                            </button>
-                                                        </div>
-                                                        <input type="text" class="form-control" placeholder="جستجو" aria-describedby="basic-addon1">
+                                                <div class="input-group mb-3 t_search">
+                                                    <div class="input-group-prepend">
+                                                        <button class="input-group-text btn search_btn" id="basic-addon1">
+                                                            <i class="fal fa-search"></i>
+                                                        </button>
                                                     </div>
-                                                      <div class="form-group tr_select">
-                                                        <label for="t_row_select" class="d-inline-block select_lable">تعداد ردیف ها :</label>
-                                                        <select class="form-control" id="t_row_select">
-                                                            <option>1</option>
-                                                            <option>2</option>
-                                                            <option>3</option>
-                                                            <option>4</option>
-                                                            <option>5</option>
-                                                        </select>
-                                                    </div>
-                                                </form>
+                                                    <input type="text" class="form-control search_table" placeholder="جستجو ..." aria-describedby="basic-addon1" value="{search_value}">
+                                                </div>
+                                                  <div class="form-group tr_select">
+                                                    <label for="t_row_select" class="d-inline-block select_lable">تعداد ردیف ها :</label>
+                                                    <select class="form-control limit_row" id="t_row_select">
+                                                        {#page_limit_slot}
+                                                            {@eq key="{.}" value="{page_limit}"}
+                                                                <option selected>{.}</option>
+                                                            {:else}
+                                                                <option>{.}</option>
+                                                            {/eq}
+                                                        {/page_limit_slot}
+                                                    </select>
+                                                </div>
                                                 <button class="btn table_delete_btn">
                                                     <i class="fal fa-trash-alt"></i>
                                                 </button>
@@ -68,32 +68,38 @@
                                         <th>تعداد زیر دسته</th>
                                         <th>تنظیمات</th>
                                     </tr>
-                                    <tr>
-                                        <td>
-                                            <label class="checkbox_of_category">
-                                                <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
-                                            </label>
-                                        </td>
-                                        <td>1</td>
-                                        <td class="QT_truncate">
-                                            <div>
-                                                طالبی
-                                            </div>
-                                        </td>
-                                        <td>
-                                            روزبه
-                                        </td>
-                                        <td class="QT_green_pill">
-                                            <div>
-                                                52
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <button class="btn blue_btn edit_category"><i class="fal fa-pencil-alt"></i>
-                                            </button>
-                                            <button class="btn red_btn mr-2"><i class="fal fa-trash-alt"></i></button>
-                                        </td>
-                                    </tr>
+                                    {#category_list}
+                                        <tr>
+                                            <td>
+                                                <label class="checkbox_of_category">
+                                                    <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                                </label>
+                                            </td>
+                                            <td>{@math key="{rows_begin_number}" method="add" operand="{$idx}"/}</td>
+                                            <td class="QT_truncate">
+                                                <div>
+                                                    {title}
+                                                </div>
+                                            </td>
+                                            <td>
+                                                {@eq key="{parent.title}" value="{null}"}
+                                                    دسته اصلی
+                                                {:else}
+                                                    {parent.title}
+                                                {/eq}
+                                            </td>
+                                            <td class="QT_green_pill">
+                                                <div>
+                                                    {child_number}
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <button class="btn blue_btn edit_category"><i class="fal fa-pencil-alt"></i>
+                                                </button>
+                                                <button class="btn red_btn mr-2 delete_category" name="{.id}"><i class="fal fa-trash-alt"></i></button>
+                                            </td>
+                                        </tr>
+                                    {/category_list}
                                 </table>
                             </div>
                         </div>
@@ -101,17 +107,20 @@
                     <div class="col-3 pr-0">
                         <div class="main_col pr-4 pl-4">
                             <header class="header_field">
-                                <h1>ثبت دسته بندی جدید</h1>
+                                <h1>ثبت دسته جدید</h1>
                             </header>
-                            <form action="">
+                            <form action="" method="post" autocomplete="off">
                                 <div class="form-group mt-4">
                                     <label for="category_name">نام دسته</label>
-                                    <input type="text" class="form-control main_form_design" id="category_name">
+                                    <input type="text" class="form-control main_form_design" id="category_name" name="title_inp">
                                 </div>
                                 <div class="form-group">
                                     <label for="category_parent">والد دسته</label>
-                                    <select class="form-control main_form_design" id="category_parent">
-                                        {}
+                                    <select class="form-control main_form_design" id="category_parent" name="parent_inp">
+                                        <option value="0">دسته اصلی</option>
+                                        {#parent_list}
+                                            <option value="{_id}">{title}</option>
+                                        {/parent_list}
                                     </select>
                                 </div>
                                 <button class="btn green_btn py-2 mt-3">ثبت دسته بندی جدید</button>
@@ -121,6 +130,11 @@
                 </div>
             </div>
         </div>
+        {@eq key="{search}" value="true"}
+            {@page number="{total_pages}"  url="{backend_url}category/search" current="{page_number}"/}
+        {:else}
+            {@page number="{total_pages}"  url="{backend_url}category" current="{page_number}"/}
+        {/eq}
         <!-- modal -->
         <div class="category_modal">
             <div class="container">
