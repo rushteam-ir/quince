@@ -1,4 +1,4 @@
-module.exports = fileManager = class {
+class fileManager {
 
     upload(file, file_name, options) {
 
@@ -65,9 +65,9 @@ module.exports = fileManager = class {
 
     }
 
-    async delete(file_path){
+    delete(file_path){
 
-        await fs.unlink(file_path, function(err) {
+        fs.unlink(file_path, function(err) {
 
             if(err){
 
@@ -83,7 +83,7 @@ module.exports = fileManager = class {
 
         return new Promise((resolve, reject)=>{
 
-            fs.readdir(file_path, (err, files)=>{
+            fs.readdir(file_path, {withFileTypes : true}, (err, files)=>{
 
                 if(err){
 
@@ -92,7 +92,7 @@ module.exports = fileManager = class {
                 }
                 else{
 
-                    resolve(files);
+                    resolve(files.filter(dirent => dirent.isFile()).map(dirent => dirent.name));
 
                 }
 
@@ -102,29 +102,20 @@ module.exports = fileManager = class {
 
     }
 
-    loadDirectory(file_path){
+    loadDirectories(file_path){
 
         return new Promise((resolve, reject)=>{
 
-            fs.stat(file_path, async (err, stats)=>{
+            fs.readdir(file_path, {withFileTypes : true}, (err, files)=>{
 
                 if(err){
 
-                    reject(err)
+                    reject(err);
 
                 }
                 else{
 
-                    if(stats.isDirectory()){
-
-                        resolve(true)
-
-                    }
-                    else{
-
-                        resolve(false)
-
-                    }
+                    resolve(files.filter(dirent => dirent.isDirectory()).map(dirent => dirent.name));
 
                 }
 
@@ -141,3 +132,5 @@ module.exports = fileManager = class {
     }
 
 }
+
+module.exports = new fileManager()

@@ -43,7 +43,7 @@ router.post('/', async(req, res, next)=>{
 
                 let file_name = `${randomSha1String()}.${file.name.split(".").pop()}`
 
-                let upload_result = fileManager.upload(req.files.avatar, file_name,{
+                let upload_result = fileManager.upload(file, file_name,{
 
                     allowed_formats : 'image',
                     limited_size : backend_limited_images_size,

@@ -4,29 +4,14 @@ router.get('/', async(req, res, next)=>{
 
     try{
 
-        let directories = [];
+        let data = {
 
-        await fs.readdir(`${backend_upload_dir}`,  (err, files)=>{
+            directories_list : await fileManager.loadDirectories(`${backend_upload_dir}`),
+            files_list : await fileManager.loadFiles(`${backend_upload_dir}`)
 
-            for(let file of files){
+        }
 
-                fs.stat(`${backend_upload_dir}/${file}`, async (err, stats)=>{
-
-                    if(stats.isDirectory()){
-
-                        directories.push(file);
-
-                    }
-
-                })
-
-            }
-
-        })
-
-        log(directories)
-
-        res.render('files/files');
+        res.render('files/files', data);
 
     }
     catch (error) {
