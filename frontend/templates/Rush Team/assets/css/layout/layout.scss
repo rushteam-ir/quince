@@ -1,17 +1,6 @@
 @import '../../css/variable/color';
 @import '../../css/mixin/cb-mixin';
 
-@media (min-width: 1200px) {}
-
-.container,
-.container-lg,
-.container-md,
-.container-sm,
-.container-xl {
-    max-width: 1250px;
-}
-
-
 // navbar
 
 .navbar_field {
@@ -57,17 +46,20 @@
                 }
 
             }
+
             .special_one {
                 width: 130px;
 
-                &:hover{
+                &:hover {
                     border-bottom: none;
                     font-size: 1.05rem;
-                    span{
+
+                    span {
                         border: 1px solid white;
                     }
                 }
-                span{
+
+                span {
                     background-color: $d_gold;
                     border-radius: 50px;
                     padding: 5px 15px;
@@ -118,7 +110,7 @@
     z-index: 10000000000;
 
     .navbar_field {
-        background-color: rgb(255, 255, 255);
+        background-color: #222222;
 
         ul {
             li {
@@ -128,23 +120,26 @@
                 }
 
                 a {
-                    color: #171717;
+                    color: white;
                 }
-                .special_one {    
-                    &:hover{
-                        span{
+
+                .special_one {
+                    &:hover {
+                        span {
                             border: 1px solid rgb(0, 0, 0);
                         }
                     }
-                    span{
+
+                    span {
                         color: white;
                     }
                 }
             }
         }
     }
+
     .field_of_navbar_ltr {
-        color: #171717 !important;
+        color: white !important;
     }
 }
 

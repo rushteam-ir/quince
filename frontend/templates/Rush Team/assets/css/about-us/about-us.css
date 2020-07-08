@@ -1,7 +1,6 @@
 .header_of_about_us {
   position: relative;
 }
-
 .header_of_about_us .box_of_img_header {
   background: url("../../img/2.jpg") no-repeat;
   background-size: cover;
@@ -9,7 +8,6 @@
   height: 75vh;
   opacity: 0.93;
 }
-
 .header_of_about_us .box_of_img_header .name_of_team {
   text-align: center;
   color: #fff;
@@ -17,14 +15,12 @@
   padding-top: 100px;
   font-family: rush-team-font;
 }
-
 .header_of_about_us .box_of_img_header .sub_name_of_team {
   text-align: center;
   color: #fff;
   font-size: 1.5rem;
   padding-top: 0px;
 }
-
 .header_of_about_us .box_of_img_header .explain_about_Rush_team {
   width: 60%;
   margin: auto;
@@ -44,11 +40,9 @@
   border-radius: 5px;
   animation: 2s ease-out 0s 1 slideInFromTop;
 }
-
 .box_of_Principles_of_Rush_team .box_of_Principles {
   text-align: center;
 }
-
 .box_of_Principles_of_Rush_team .box_of_Principles .icons_of_Principles_rush_team {
   text-align: center;
   color: transparent;
@@ -64,16 +58,14 @@
   -o-text-fill-color: transparent;
   display: inline-block;
 }
-
 .box_of_Principles_of_Rush_team .box_of_Principles .title_of_Principles_rush_team {
   font-size: 1.3rem;
   padding-top: 10px;
 }
-
 .box_of_Principles_of_Rush_team .box_of_Principles .explain_about_Principles_of_rush {
   width: 80%;
   margin: auto;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 @keyframes slideInFromTop {
@@ -86,17 +78,14 @@
     opacity: 1;
   }
 }
-
 .property_of_rush_team .row_of_property {
   margin: 200px 0px 100px 0px;
   text-align: center;
   height: 500px;
 }
-
 .property_of_rush_team .row_of_property .box_of_number {
   height: 225px;
 }
-
 .property_of_rush_team .row_of_property .box_of_number .icon_of_counter {
   text-align: center;
   color: transparent;
@@ -111,11 +100,9 @@
   -moz-text-fill-color: transparent;
   -o-text-fill-color: transparent;
 }
-
 .property_of_rush_team .row_of_property .box_of_number .box_counter_of_number {
   padding-top: 10px;
 }
-
 .property_of_rush_team .row_of_property .box_of_number .box_counter_of_number .plus_of_counter {
   position: relative;
   top: -6px;
@@ -130,17 +117,14 @@
   -o-text-fill-color: transparent;
   font-size: 1.2rem;
 }
-
 .property_of_rush_team .row_of_property .box_of_number .box_counter_of_number .counter_of_number {
   font-size: 1.6rem;
   position: relative;
   left: -5px;
 }
-
 .property_of_rush_team .row_of_property .box_of_property_of_rush_team {
   position: relative;
 }
-
 .property_of_rush_team .row_of_property .box_of_property_of_rush_team .circle_of_property {
   margin: 50px auto;
   width: 400px;
@@ -148,16 +132,14 @@
   border-radius: 50%;
   border: 1px solid #cccbcb;
 }
-
 .property_of_rush_team .row_of_property .box_of_property_of_rush_team .inside_of_circle {
   top: 130px;
   right: 140px;
   text-align: center;
   display: none;
 }
-
 .property_of_rush_team .row_of_property .box_of_property_of_rush_team .inside_of_circle .title_of_property_rush_team {
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin-bottom: 15px;
   background-image: linear-gradient(to right, #FF7300, #FFC200);
   background-clip: text;
@@ -168,20 +150,17 @@
   -moz-text-fill-color: transparent;
   -o-text-fill-color: transparent;
 }
-
 .property_of_rush_team .row_of_property .box_of_property_of_rush_team .inside_of_circle .sub_title_of_property_rush_team {
   font-size: 1.1rem;
 }
-
 .property_of_rush_team .row_of_property .box_of_property_of_rush_team .inside_of_circle .explain_about_property_rush_team {
-  font-size: .8rem;
+  font-size: 0.8rem;
   width: 250px;
   color: #7f7e7e;
   text-align: justify;
   direction: rtl;
   margin-top: 25px;
 }
-
 .property_of_rush_team .row_of_property .box_of_property_of_rush_team .icons_of_property_rush_team_box {
   cursor: pointer;
   box-shadow: 5px 7px 30px rgba(72, 73, 121, 0.15);
@@ -191,7 +170,6 @@
   background-color: white;
   border: 2px solid white;
 }
-
 .property_of_rush_team .row_of_property .box_of_property_of_rush_team .icons_of_property_rush_team_box .icons_of_property_rush_team {
   text-align: center;
   color: transparent;
@@ -206,37 +184,31 @@
   -moz-text-fill-color: transparent;
   -o-text-fill-color: transparent;
 }
-
 .property_of_rush_team .row_of_property .box_of_property_of_rush_team #property_1 {
   position: absolute;
   top: -5px;
   left: 120px;
 }
-
 .property_of_rush_team .row_of_property .box_of_property_of_rush_team #property_2 {
   position: absolute;
   bottom: -5px;
   left: 120px;
 }
-
 .property_of_rush_team .row_of_property .box_of_property_of_rush_team #property_3 {
   position: absolute;
   top: -5px;
   right: 120px;
 }
-
 .property_of_rush_team .row_of_property .box_of_property_of_rush_team #property_4 {
   position: absolute;
   bottom: -5px;
   right: 120px;
 }
-
 .property_of_rush_team .row_of_property .box_of_property_of_rush_team #property_5 {
   position: absolute;
   top: 170px;
   left: 25px;
 }
-
 .property_of_rush_team .row_of_property .box_of_property_of_rush_team #property_6 {
   position: absolute;
   top: 170px;
@@ -247,7 +219,6 @@
   background-image: linear-gradient(to right, #3D52EF, #55B9FC);
   border: 2px solid white;
 }
-
 .mouseover_change_color_icon_of_property .icons_of_property_rush_team {
   background-image: none !important;
   -webkit-text-fill-color: white !important;
@@ -261,14 +232,12 @@
   background-color: #F4F6FD;
   padding: 100px 0;
 }
-
 .introduction_our_team_box .introduction_our_team {
   overflow: hidden;
   border-radius: 0px 40px 0px 40px;
   position: relative;
   cursor: pointer;
 }
-
 .introduction_our_team_box .introduction_our_team .image_of_our_team {
   width: 100%;
   height: 350px;
@@ -276,11 +245,9 @@
   right: 0px;
   transition: all 0.5s ease-in-out 0s;
 }
-
 .introduction_our_team_box .introduction_our_team:hover .image_of_our_team {
   right: 60%;
 }
-
 .introduction_our_team_box .introduction_our_team .content_of_our_team_person {
   width: 80%;
   height: 100%;
@@ -289,10 +256,9 @@
   position: absolute;
   top: 0;
   right: -80%;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   text-align: right;
 }
-
 .introduction_our_team_box .introduction_our_team .content_of_our_team_person .name_of_person {
   font-size: 1.5rem;
   background-image: linear-gradient(to right, #FF7300, #FFC200);
@@ -304,7 +270,6 @@
   -moz-text-fill-color: transparent;
   -o-text-fill-color: transparent;
 }
-
 .introduction_our_team_box .introduction_our_team .content_of_our_team_person .role_of_person_in_our_team {
   font-size: 1.1rem;
   background-image: linear-gradient(to right, #3D52EF, #55B9FC);
@@ -316,25 +281,21 @@
   -moz-text-fill-color: transparent;
   -o-text-fill-color: transparent;
 }
-
 .introduction_our_team_box .introduction_our_team .content_of_our_team_person .description_of_person_in_our_team {
   text-align: justify;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: #4e555b;
   margin: 30px 0px;
 }
-
 .introduction_our_team_box .introduction_our_team .content_of_our_team_person .social_media_our_team_box {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-
 .introduction_our_team_box .introduction_our_team .content_of_our_team_person .social_media_our_team_box .list_of_social_media {
   display: inline-block;
   margin-right: 10px;
 }
-
 .introduction_our_team_box .introduction_our_team .content_of_our_team_person .social_media_our_team_box .social_media_link {
   display: block;
   width: 36px;
@@ -346,27 +307,23 @@
   color: #4e555b;
   transition: all 0.3s ease-in-out;
 }
-
 .introduction_our_team_box .introduction_our_team .content_of_our_team_person .social_media_our_team_box .social_media_link:hover {
   color: white;
 }
-
 .introduction_our_team_box .introduction_our_team .content_of_our_team_person .fa-facebook-f:hover {
   background-color: #4064AD;
 }
-
 .introduction_our_team_box .introduction_our_team .content_of_our_team_person .fa-telegram-plane:hover {
   background-color: #2CA0DB;
 }
-
 .introduction_our_team_box .introduction_our_team .content_of_our_team_person .fa-linkedin-in:hover {
   background-color: #0078B1;
 }
-
 .introduction_our_team_box .introduction_our_team .content_of_our_team_person .fa-twitter:hover {
   background-color: #35B4F8;
 }
-
 .introduction_our_team_box .introduction_our_team:hover .content_of_our_team_person {
   right: 0;
 }
+
+/*# sourceMappingURL=about-us.css.map */

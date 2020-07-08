@@ -20,58 +20,44 @@
 
 <body class="main_body_tag">
 
-    <aside class="dashboard">
+<aside class="dashboard">
 
-        <div class="dashboard_header">
+    <div class="dashboard_header">
 
-            <img class="dashboard_logo" src="img/logo2.png" alt="">
-            <i class="fad fa-angle-double-right close_dsh_btn "></i>
-            <i class="fad fa-angle-double-left open_dsh_btn display_none"></i>
+        <img class="dashboard_logo" src="img/logo2.png" alt="">
+        <i class="fad fa-angle-double-right close_dsh_btn "></i>
+        <i class="fad fa-angle-double-left open_dsh_btn display_none"></i>
 
-        </div>
+    </div>
 
-        <div class="dashboard_body">
-            <a href="" class="dashboard_body_sub">
-                <div class="position-relative">
-                    <i class="fad fa-analytics"></i>
-                    <p>داشبورد</p>
-                </div>
-            </a>
-
-            <a href="{backend_url}profile" class="dashboard_body_sub">
-                <div class="position-relative">
-                    <i class="fad fa-id-card"></i>
-                    <p>پروفایل</p>
-                </div>
-            </a>
-
-            <a href="{backend_url}category" class="dashboard_body_sub">
-                <div class="position-relative">
-                    <i class="fad fa-layer-plus"></i>
-                    <p>دسته بندی</p>
-                </div>
-            </a>
-
-            <div class="position-relative dashboard_body_collaps">
-                <i class="fad fa-newspaper"></i>
-                <p>مقاله ها</p>
-                <i class="fas fa-angle-left"></i>
-
-                <div class="hover_field">
-
-                    <a href="{backend_url}article/list">
-                        <p>- لیست مقالات</p>
-                    </a>
-
-                    <a href="{backend_url}article/add">
-                        <p>- افزودن مقاله</p>
-                    </a>
-
-                </div>
-
+    <div class="dashboard_body">
+        <a href="" class="dashboard_body_sub">
+            <div class="position-relative">
+                <i class="fad fa-analytics"></i>
+                <p>داشبورد</p>
             </div>
+        </a>
 
-            <div class="collaps_field">
+        <a href="{backend_url}profile" class="dashboard_body_sub">
+            <div class="position-relative">
+                <i class="fad fa-id-card"></i>
+                <p>پروفایل</p>
+            </div>
+        </a>
+
+        <a href="{backend_url}category" class="dashboard_body_sub">
+            <div class="position-relative">
+                <i class="fad fa-layer-plus"></i>
+                <p>دسته بندی</p>
+            </div>
+        </a>
+
+        <div class="position-relative dashboard_body_collaps">
+            <i class="fad fa-newspaper"></i>
+            <p>مقاله ها</p>
+            <i class="fas fa-angle-left"></i>
+
+            <div class="hover_field">
 
                 <a href="{backend_url}article/list">
                     <p>- لیست مقالات</p>
@@ -83,30 +69,26 @@
 
             </div>
 
-            <div class="position-relative dashboard_body_collaps">
-                <i class="fad fa-coins"></i>
-                <p>فروشگاه</p>
-                <i class="fas fa-angle-left"></i>
+        </div>
 
-                <div class="hover_field">
+        <div class="collaps_field">
 
-                    <a href="{backend_url}store/list">
-                        <p>- لیست محصولات</p>
-                    </a>
-    
-                    <a href="{backend_url}store/add">
-                        <p>- افزودن محصول</p>
-                    </a>
-    
-                    <a href="">
-                        <p>- کد تخفیف</p>
-                    </a>
-    
-                </div>
+            <a href="{backend_url}article/list">
+                <p>- لیست مقالات</p>
+            </a>
 
-            </div>
+            <a href="{backend_url}article/add">
+                <p>- افزودن مقاله</p>
+            </a>
 
-            <div class="collaps_field">
+        </div>
+
+        <div class="position-relative dashboard_body_collaps">
+            <i class="fad fa-coins"></i>
+            <p>فروشگاه</p>
+            <i class="fas fa-angle-left"></i>
+
+            <div class="hover_field">
 
                 <a href="{backend_url}store/list">
                     <p>- لیست محصولات</p>
@@ -122,75 +104,97 @@
 
             </div>
 
-            <a href="{backend_url}users/list" class="dashboard_body_sub">
-                <div class="position-relative">
-                    <i class="fad fa-users-crown"></i>
-                    <p>لیست کاربران</p>
-                </div>
+        </div>
+
+        <div class="collaps_field">
+
+            <a href="{backend_url}store/list">
+                <p>- لیست محصولات</p>
             </a>
 
-            <a href="#" class="dashboard_body_sub">
-                <div class="position-relative">
-                    <i class="fad fa-question-circle"></i>
-                    <p>راهنما</p>
-                </div>
+            <a href="{backend_url}store/add">
+                <p>- افزودن محصول</p>
             </a>
 
-            <a href="{backend_url}logout" class="dashboard_body_sub">
-                <div class="position-relative">
-                    <i class="fad fa-portal-exit"></i>
-                    <p>خروج</p>
-                </div>
+            <a href="">
+                <p>- کد تخفیف</p>
             </a>
-
 
         </div>
 
-    </aside>
+        <a href="{backend_url}groups/admins" class="dashboard_body_sub">
+            <div class="position-relative">
+                <i class="fad fa-users-crown"></i>
+                <p>کاربران</p>
+            </div>
+        </a>
+
+        <a href="{backend_url}files" class="dashboard_body_sub">
+            <div class="position-relative">
+                <i class="fad fa-folder-open"></i>
+                <p>مدیریت فایل ها</p>
+            </div>
+        </a>
+
+        <a href="#" class="dashboard_body_sub">
+            <div class="position-relative">
+                <i class="fad fa-question-circle"></i>
+                <p>راهنما</p>
+            </div>
+        </a>
+
+        <a href="{backend_url}logout" class="dashboard_body_sub">
+            <div class="position-relative">
+                <i class="fad fa-portal-exit"></i>
+                <p>خروج</p>
+            </div>
+        </a>
+
+    </div>
+
+</aside>
 
 
+<main class="main_cms_field">
 
-    <main class="main_cms_field">
+    <nav class="navbar">
 
-        <nav class="navbar">
-
-            <div class="navbar_profile">
-                <div class="d-inline-block">
-                    <div class="field_of_name">R</div>
-                </div>
-                <div class="d-inline-block hi_user_text">
-                    <span> سلام</span>
-                    <span> دوستم !</span>
-                </div>
-
-                <div class="d-inline-block messages_icon">
-                    <i class="fad fa-envelope"></i>
-                </div>
-
-                <div class="d-inline-block messages_icon">
-                    <i class="fad fa-bell bell"></i>
-                </div>
-
-                <div class="d-inline-block messages_icon">
-                    <i class="far fa-search"></i>
-                </div>
-
-
+        <div class="navbar_profile">
+            <div class="d-inline-block">
+                <div class="field_of_name">R</div>
+            </div>
+            <div class="d-inline-block hi_user_text">
+                <span> سلام</span>
+                <span> دوستم !</span>
             </div>
 
-        </nav>
+            <div class="d-inline-block messages_icon">
+                <i class="fad fa-envelope"></i>
+            </div>
 
-        {+body/}
-        
-    </main>
+            <div class="d-inline-block messages_icon">
+                <i class="fad fa-bell bell"></i>
+            </div>
 
-    <script src="js/general/jquery.js"></script>
-    <script src="js/general/popper.js"></script>
-    <script src="js/general/bootstrap.js"></script>
-    <script src="js/general/sweetAlert.js"></script>
-    <script src="js/layout/get-element.js"></script>
-    <script src="js/layout/collaps-menu.js"></script>
-    <script src="js/layout/toggle-dsh.js"></script>
+            <div class="d-inline-block messages_icon">
+                <i class="far fa-search"></i>
+            </div>
+
+        </div>
+
+    </nav>
+
+    {+body/}
+
+</main>
+
+<script src="js/general/jquery.js"></script>
+<script src="js/general/popper.js"></script>
+<script src="js/general/bootstrap.js"></script>
+<script src="js/general/sweetAlert.js"></script>
+<script src="js/layout/get-element.js"></script>
+<script src="js/layout/collaps-menu.js"></script>
+<script src="js/layout/toggle-dsh.js"></script>
 
     {+js/}
 </body>

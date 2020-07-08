@@ -8,9 +8,14 @@
     src: url("../../fonts/A.Rezvan.ttf");
 }
 
-@font-face{
+@font-face {
     font-family: main-font;
     src: url("../../fonts/Vazir.ttf");
+}
+
+@font-face {
+    font-family: second-font;
+    src: url("../../fonts/Vazir-Thin.ttf");
 }
 
 body {
@@ -55,7 +60,8 @@ button:focus {
     background: rgb(85, 94, 129);
 }
 
-.btn.focus, .btn:focus {
+.btn.focus,
+.btn:focus {
     outline: 0;
     box-shadow: none;
 }

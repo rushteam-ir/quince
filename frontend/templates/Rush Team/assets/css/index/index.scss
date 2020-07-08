@@ -6,34 +6,38 @@
 
 // slider animation
 
-.fs_t_1 {
-    opacity: 0;
-    @include transition(0.61s, cubic-bezier(0.215, 0.61, 0.355, 1), 0.5s);
-    transform: translate3d(0, -20px, 0);
-}
+// .fs_t_1 {
+//     opacity: 0;
+//     @include transition(0.61s, cubic-bezier(0.215, 0.61, 0.355, 1), 0.5s);
+//     transform: translate3d(0, -20px, 0);
+// }
 
-.fs_s_1 {
-    opacity: 0;
-    @include transition(0.61s, cubic-bezier(0.215, 0.61, 0.355, 1), 0.8s);
-    transform: translate3d(0px, -20px, 0);
-}
+// .fs_s_1 {
+//     opacity: 0;
+//     @include transition(0.61s, cubic-bezier(0.215, 0.61, 0.355, 1), 0.8s);
+//     transform: translate3d(0px, -20px, 0);
+// }
 
-.fs_te_1 {
-    opacity: 0;
-    @include transition(0.61s, cubic-bezier(0.215, 0.61, 0.355, 1), 1s);
-    transform: translate3d(0px, -20px, 0);
-}
+// .fs_te_1 {
+//     opacity: 0;
+//     @include transition(0.61s, cubic-bezier(0.215, 0.61, 0.355, 1), 1s);
+//     transform: translate3d(0px, -20px, 0);
+// }
 
-.fs_btn_1 {
-    opacity: 0;
-    @include transition(0.61s, cubic-bezier(0.215, 0.61, 0.355, 1), 1s);
-    transform: translate3d(0px, -20px, 0);
-}
+// .fs_btn_1 {
+//     opacity: 0;
+//     @include transition(0.61s, cubic-bezier(0.215, 0.61, 0.355, 1), 1s);
+//     transform: translate3d(0px, -20px, 0);
+// }
 
-.bordered_box {
-    opacity: 0;
-    @include transition(0.61s, cubic-bezier(0.215, 0.61, 0.355, 1), 1s);
-    transform: translate3d(20px, 0px, 0);
+// .bordered_box {
+//     opacity: 0;
+//     @include transition(0.61s, cubic-bezier(0.215, 0.61, 0.355, 1), 1s);
+//     transform: translate3d(20px, 0px, 0);
+// }
+
+body{
+    background-color: #f7f7f7;
 }
 
 .swiper-slide-active .fs_t_1,
@@ -140,7 +144,7 @@
             .left_subset_wcu {
                 width: 80px;
                 height: 80px;
-                border: 10px solid #FFDC25;
+                border: 10px solid $d_gold;
                 position: relative;
                 top: 20px;
 
@@ -183,7 +187,7 @@
 
         .wcu_p_btn {
             color: black;
-            background-color: #FFDC25;
+            background-color: $d_gold;
             font-weight: bold;
             padding: 16px 60px;
             font-size: 1.2rem;
@@ -221,4 +225,117 @@
             left: -50px;
         }
     }
+}
+
+// price and pack
+
+
+.main_field_of_price {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 20px 1px #e7e7e7;
+    border-radius: 7px;
+    padding: 80px 0px;
+
+    h3 {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .subtitle_of_pack {
+        text-align: center;
+        font-size: 0.7rem;
+        margin-bottom: 10px;
+    }
+
+    .price_of_pack {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: $d_gold;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 30px;
+        font-family: second-font;
+
+        i {
+            color: #61CE70;
+            margin-left: 10px;
+        }
+    }
+
+    .complete_inco_of_pack {
+        font-size: 0.8rem;
+        padding: 0px 90px;
+        line-height: 29px;
+    }
+
+    button {
+        background-color: $d_gold;
+        color: white;
+        width: 50%;
+        margin-right: 25%;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+}
+
+.main_field_of_pack_info {
+    text-align: right;
+    direction: rtl;
+    padding-top: 30px;
+    padding-right: 100px;
+
+    .header_number_of_ip {
+        font-weight: bold;
+        font-size: 2rem;
+        color: $d_gold;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 40px;
+            height: 7px;
+            position: absolute;
+            background-color: $d_gold;
+            top: 18px;
+            right: 44px;
+            border-radius: 31px;
+        }
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 3rem;
+        width: 90%;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 30px;
+        color: $d_text;
+        text-align: justify;
+        font-family: second-font;
+    }
+
+    button {
+        border: 2px solid $d_gold;
+        color: $d_gold;
+        width: 200px;
+        height: 55px;
+        font-size: 1.3rem;
+    }
+}
+
+.swiper-button-next.swiper-button-white,
+.swiper-button-prev.swiper-button-white {
+    --swiper-navigation-color: #000000 !important;
+}
+
+.test1{
+    width: 100%;
+    padding: 70px 0;
+    background-color: white;
 }

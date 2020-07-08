@@ -12,13 +12,14 @@ nodemailer = require('nodemailer');
 JalaliDate = require('jalali-date');
 sha1 = require('sha1');
 compression = require('compression');
+crypto = require('crypto');
 
 // Importing Initializers
 require('./config');
 require('./library');
 dust_helpers = require('./dust-helpers');
 validation = require('./validation');
-uploader = require('./uploader');
+fileManager = require('./file-manager');
 
 // Importing Database Models
 user_model = require('../models/user-schema');

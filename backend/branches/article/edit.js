@@ -81,7 +81,7 @@ router.post('/:id', async(req, res, next)=>{
            let uploader_options = {
 
                allowed_formats : 'image',
-               limited_size : backend_limited_images_size,
+               limited_size : config.image_limited_size,
                file_path : `${backend_upload_dir}images/`,
 
            }

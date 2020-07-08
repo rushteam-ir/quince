@@ -43,11 +43,8 @@ category_schema.statics = {
                 await category_model.findByIdAndUpdate(parent_inp, { $inc: {child_number : 1 } });
 
             }
-            else{
 
-                new_category.child_number = 0;
-
-            }
+            new_category.child_number = 0;
 
             let new_cat = new category_model(new_category);
             return await new_cat.save();

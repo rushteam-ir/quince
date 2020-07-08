@@ -16,7 +16,7 @@ $(document).ready(function () {
 
     $('#selectall').trigger('change');
 
-    $('.count_row_table_of_category').change(function () {
+    $('.limit_row').change(function () {
 
         let page_limit = $(this).val();
         $.post(`${backend_url}api/get-page-limit`, {
@@ -33,7 +33,7 @@ $(document).ready(function () {
 });
 
 // Delete article
-$('.remove_table_btn').on('click', function (e) {
+$('.delete_article').on('click', function (e) {
 
     let article_id = $(e.currentTarget).attr('name');
 
@@ -63,7 +63,7 @@ $('.remove_table_btn').on('click', function (e) {
 })
 
 // Delete Selected article
-$('.btn_delete_all_article').on('click', function (e) {
+$('.table_delete_btn').on('click', function (e) {
 
     let query = ''
 

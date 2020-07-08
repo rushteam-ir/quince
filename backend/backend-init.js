@@ -7,9 +7,6 @@ backend.set('views', `${config.app_dir}backend/templates/${config.backend_tmp}/v
 
 // Backend other configs
 backend_allowd_urls = ['/login/', '/recovery/', '/recovery/verify/'];
-backend_limited_images_size = 5120; // KB
-backend_limited_videos_size = 10024; // KB
-backend_limited_files_size = 100000024; // KB
 backend_limited_products_size = 100024; // KB
 backend_upload_dir = `${config.app_dir}backend/templates/${config.backend_tmp}/assets/media/`;
 
@@ -23,5 +20,5 @@ backend.locals.store_image_slot_default = [1,2,3,4,5,6,7,8,9];
 backend.locals.discount_slot_default = [0,1,2,3,4];
 backend.locals.store_features_slot_default = [0,1,2,3];
 backend.locals.limit_page = 5;
-backend.locals.limited_images_size = (backend_limited_images_size/1024).toString();
+backend.locals.limited_images_size = (config.image_limited_size/1024).toString();
 backend.locals.limited_products_size = (backend_limited_products_size/1024).toString();

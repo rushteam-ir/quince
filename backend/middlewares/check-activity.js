@@ -7,33 +7,15 @@ router.use(async(req, res, next)=>{
         // Check last activity
         let find_user = await user_model.getById(req.session.admin_id);
 
-        if(find_user){
+        let user_data = {
 
-            let user_data = {
-
-                last_activity : getCurrentDate()
-
-            }
-
-            let result = await user_model.edit(req.session.admin_id, user_data);
-
-            if(result){
-
-                next();
-
-            }
-            else{
-
-                next();
-
-            };
+            last_activity : getCurrentDate()
 
         }
-        else{
 
-            next();
+        let result = await user_model.edit(req.session.admin_id, user_data);
 
-        }
+        next()
 
     }
     catch (error) {

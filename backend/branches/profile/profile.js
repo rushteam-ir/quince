@@ -93,16 +93,14 @@ router.post('/', async(req, res, next)=>{
 
             if (req.files) {
 
-                let uploader_options = {
+                let file_name = `${randomSha1String()}.${req.files.avatar.name.split(".").pop()}`;
+
+                let upload_result = fileManager.upload(req.files.avatar, file_name,{
 
                     allowed_formats : 'image',
-                    limited_size : backend_limited_images_size,
                     file_path : `${backend_upload_dir}avatars/`,
 
-                }
-
-                let file_name = `${randomSha1String()}.${req.files.avatar.name.split(".").pop()}`;
-                let upload_result = new uploader(req.files.avatar, file_name, uploader_options).upload();
+                });
 
                 if(upload_result){
 
@@ -112,10 +110,10 @@ router.post('/', async(req, res, next)=>{
 
                 admin_data.avatar = file_name;
 
-
             }
 
             let result = await user_model.edit(admin_id, admin_data);
+            log(result)
 
             if(result){
 

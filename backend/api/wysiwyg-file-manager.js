@@ -16,7 +16,7 @@ router.post('/', async(req, res, next)=>{
                 let file_type = src.split('/').slice(-2)[0]
                 let file_path = `${backend_upload_dir}${file_type}/${file_name}`;
 
-                fs.unlink(file_path, function(err) {})
+                await fileManager.delete(file_path);
 
                 let index = req.session.temp_files.indexOf(`${file_type}/${file_name}`);
 
@@ -37,20 +37,19 @@ router.post('/', async(req, res, next)=>{
 
                 if(file_mime_type != 'image' && file_mime_type != 'video'){
 
-                    file_mime_type = 'file';
-
-                }
-
-                let uploader_options = {
-
-                    allowed_formats : file_mime_type,
-                    limited_size : backend_limited_files_size,
-                    file_path : `${backend_upload_dir}${file_mime_type}s/`,
+                    file_mime_type = 'other';
 
                 }
 
                 let file_name = `${randomSha1String()}.${file.name.split(".").pop()}`
-                let upload_result = new uploader(file, file_name, uploader_options).upload();
+
+                let upload_result = fileManager.upload(file, file_name,{
+
+                    allowed_formats : `${file_mime_type}`,
+                    file_path : `${backend_upload_dir}${file_mime_type}s/`,
+
+                });
+
 
                 if(upload_result){
 
@@ -72,23 +71,21 @@ router.post('/', async(req, res, next)=>{
 
                 let images_list = [];
 
-                fs.readdir(`${backend_upload_dir}images/`, (err, files)=>{
+                let files_list = await fileManager.loadFiles(`${backend_upload_dir}images/`);
 
-                    for(let file of files){
+                for(let file of files_list) {
 
-                        images_list.push({
+                    images_list.push({
 
-                            "url" : `${config.backend_url}media/images/${file}`,
-                            "thumb": `${config.backend_url}media/images/${file}`,
-                            "tag" : "image"
+                        "url": `${config.backend_url}media/images/${file}`,
+                        "thumb": `${config.backend_url}media/images/${file}`,
+                        "tag": "image"
 
-                        })
+                    })
 
-                    }
+                }
 
-                    res.json(images_list)
-
-                })
+                res.json(images_list)
 
                 break;
 

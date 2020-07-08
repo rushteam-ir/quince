@@ -9,230 +9,168 @@
 
 
 {<body}
-
     <section>
-        <div class="main_field_of_category mt-4">
+        <div class="main_body">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-9 p-0">
-
-                        <div class="main_field_of_right_col px-5 py-4 text-right dir-rtl">
-
-                            <header>
-                                <p class="header_of_tabs">لیست دسته بندی ها</p>
-                                <p class="small_of_tabs mt-2">لیست تمام دسته بندی های سایت ، در جدول زیر</p>
-
-                                <div class="input-group search_inp_category mb-3 dir-ltr">
-
-                                    {@eq key="{search}" value="true"}
-                                        <i class="fal fa-times remove_search_icon"></i>
-                                    {/eq}
-
-                                    <input autocomplete="off" type="text"
-                                           class="form-control main_form_design text-right category_search dir-rtl"
-                                           placeholder="جستجو"
-                                           aria-label="Recipient's username" aria-describedby="button-addon2"
-                                           name="search_inp" value="{search_value}">
-
-                                    <div class="input-group-append">
-                                        <button class="btn btn-outline-secondary btn_of_search" type="button"
-                                                id="button-addon2">
-                                            <i class="fal fa-search"></i>
-                                        </button>
+                    <div class="col-9 pr-0 pl-0">
+                        <div class="main_col">
+                            <header class="header_field">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-7">
+                                            <div class="d-inline-block field_of_ht">
+                                                <h1>لیست دسته بندی ها</h1>
+                                                <h2>لیست دسته بندی های موجود در سایت</h2>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-5">
+                                            <div class="table_header">
+                                                <div class="input-group mb-3 t_search">
+                                                    <div class="input-group-prepend">
+                                                        <button class="input-group-text btn search_btn" id="basic-addon1">
+                                                            <i class="fal fa-search"></i>
+                                                        </button>
+                                                    </div>
+                                                    <input type="text" class="form-control search_table" placeholder="جستجو ..." aria-describedby="basic-addon1" value="{search_value}">
+                                                </div>
+                                                  <div class="form-group tr_select">
+                                                    <label for="t_row_select" class="d-inline-block select_lable">تعداد ردیف ها :</label>
+                                                    <select class="form-control limit_row" id="t_row_select">
+                                                        {#page_limit_slot}
+                                                            {@eq key="{.}" value="{page_limit}"}
+                                                                <option selected>{.}</option>
+                                                            {:else}
+                                                                <option>{.}</option>
+                                                            {/eq}
+                                                        {/page_limit_slot}
+                                                    </select>
+                                                </div>
+                                                <button class="btn table_delete_btn">
+                                                    <i class="fal fa-trash-alt"></i>
+                                                </button>
+                                            </div>
+                                        </div>
                                     </div>
-
                                 </div>
-
-                                <div class="form-group select_of_category">
-
-                                    <p class="d-inline-block">تعداد ردیف ها :</p>
-
-                                    <select class="form-control main_form_design count_row_table_of_category mr-2">
-                                        {#page_limit_slot}
-                                            {@eq key="{.}" value="{page_limit}"}
-                                                <option selected>{.}</option>
-                                            {:else}
-                                                <option>{.}</option>
-                                            {/eq}
-                                        {/page_limit_slot}
-                                    </select>
-
-                                </div>
-
-                                <button class="btn remove_category_table btn_delete_all_category">
-                                    <i class="fal fa-trash-alt delete_all_category"></i>
-                                </button>
-
                             </header>
-
-                            <table class="table text-center category_table">
-                                <thead>
-                                <tr>
-                                    <th scope="col">
-                                        <label class="checkbox_of_category">
-                                            <input type="checkbox" class="option-input checkbox" id="selectall"
-                                                   name="select_all">
-                                        </label>
-                                    </th>
-                                    <th scope="col">ردیف</th>
-                                    <th scope="col">نام دسته</th>
-                                    <th scope="col">والد دسته</th>
-                                    <th scope="col">تعداد زیر دسته</th>
-                                    <th scope="col">تنظیمات</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                    {#category_list}
-                                    <tr class="category_row">
-                                        <td class="category_table_customize">
-
+                            <div class="QTR">
+                                <table class="Q_table">
+                                    <tr class="TQ_hr">
+                                        <th>
                                             <label class="checkbox_of_category">
-                                                <input type="checkbox" name="delete_checkbox[]"
-                                                       class="table_checkbox option-input checkbox" value="{._id}">
+                                                <input type="checkbox" class="option-input checkbox" id="selectall" name="select_all">
                                             </label>
-
-                                        </td>
-
-                                        <td class="category_table_customize"
-                                            scope="row">{@math key="{rows_begin_number}" method="add" operand="{$idx}"/}</td>
-
-                                        <td class="category_table_customize">{.title}</td>
-
-                                        {@eq key="{.parent}" value="{null}"}
-                                            <td class="category_table_customize">دسته اصلی</td>
-                                        {:else}
-
-                                            <td class="category_table_customize">{.parent.title}</td>
-                                        {/eq}
-
-                                        {@eq key="{.parent}" value="{null}"}
-
-                                            <td class="category_table_customize">
-                                                <p class="sub_category_count">{.child_number}</p>
-                                            </td>
-
-                                        {:else}
-
-                                            <td class="category_table_customize">
-                                                <p class="sub_category_count">0</p>
-                                            </td>
-
-                                        {/eq}
-
-                                        <td class="category_table_customize">
-
-                                            <button class="edit_table_btn btn">
-                                                <i class="far fa-pencil-alt"></i>
-                                            </button>
-
-                                            <button class="btn remove_table_btn mr-2" name="{._id}">
-                                                <i class="fal fa-trash-alt"></i>
-                                            </button>
-                                        </td>
+                                        </th>
+                                        <th>ردیف</th>
+                                        <th>نام دسته</th>
+                                        <th>والد دسته</th>
+                                        <th>تعداد زیر دسته</th>
+                                        <th>تنظیمات</th>
                                     </tr>
+                                    {#category_list}
+                                        <tr>
+                                            <td>
+                                                <label class="checkbox_of_category">
+                                                    <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                                </label>
+                                            </td>
+                                            <td>{@math key="{rows_begin_number}" method="add" operand="{$idx}"/}</td>
+                                            <td class="QT_truncate">
+                                                <div>
+                                                    {title}
+                                                </div>
+                                            </td>
+                                            <td>
+                                                {@eq key="{parent.title}" value="{null}"}
+                                                    دسته اصلی
+                                                {:else}
+                                                    {parent.title}
+                                                {/eq}
+                                            </td>
+                                            <td class="QT_green_pill">
+                                                <div>
+                                                    {child_number}
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <button class="btn blue_btn edit_category"><i class="fal fa-pencil-alt"></i>
+                                                </button>
+                                                <button class="btn red_btn mr-2 delete_category" name="{.id}"><i class="fal fa-trash-alt"></i></button>
+                                            </td>
+                                        </tr>
                                     {/category_list}
-
-                                </tbody>
-                            </table>
-
-                            <nav aria-label="Page navigation dir-ltr text-center">
-                                {@eq key="{search}" value="true"}
-                                    {@page number="{total_pages}" current="{page_number}" url="{backend_url}category/search/{search_value}"/}
-                                {:else}
-                                    {@page number="{total_pages}" current="{page_number}" url="{backend_url}category"/}
-                                {/eq}
-                            </nav>
-
+                                </table>
+                            </div>
                         </div>
-
                     </div>
                     <div class="col-3 pr-0">
-
-                        <div class="main_field_of_right_col p-4 text-right dir-rtl">
-                            <div class="form-group">
-                                <form method="post" action="{backend_url}category" autocomplete="off">
-
-                                    <p class="header_of_creat_category">ثبت دسته بندی جدید</p>
-
-                                    <div class="form-group mt-4">
-                                        <label class="main_lable_design" for="category_name">نام دسته</label>
-                                        <input type="text" class="form-control main_form_design" id="category_name"
-                                               name="title_inp">
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="main_lable_design" for="parent_category">والد دسته</label>
-                                        <select class="form-control main_form_design" id="parent_category"
-                                                name="parent_inp">
-                                            <option value="0">دسته اصلی</option>
-                                            {#parent_list}
-                                                <option value="{_id}">{title}</option>
-                                            {/parent_list}
-                                        </select>
-                                    </div>
-
-                                    <button class="btn_of_save_changes btn mt-3" type="submit">ثبت دسته بندی جدید
-                                    </button>
-
-                                </form>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal_of_category">
-
-                <div class="container-fluid">
-                    <div class="row align-items-center row_custom_category">
-                        <div class="col-4 offset-4 pr-0">
-
-                            <div class="main_field_of_right_col p-4 text-right dir-rtl">
-                                <div class="form-group">
-                                    <form method="post" action="{backend_url}category/api/edit-category"
-                                          autocomplete="off">
-
-
-                                        <p class="header_of_creat_category">ویرایش دسته بندی</p>
-
-                                        <div class="form-group mt-4">
-                                            <label class="main_lable_design" for="category_name">نام دسته</label>
-                                            <input type="text" class="form-control main_form_design category_edit_title"
-                                                   id="category_name_modal"
-                                                   name="title_inp">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label class="main_lable_design" for="parent_category">والد دسته</label>
-                                            <select class="form-control main_form_design category_edit_parent"
-                                                    id="parent_category_modal" name="parent_inp">
-                                                <option value="-1" class="d-none"></option>
-                                                <option value="0">دسته اصلی</option>
-                                                {#parent_list}
-                                                    <option class="modal_opion" value="{_id}">{title}</option>
-                                                {/parent_list}
-
-                                            </select>
-                                        </div>
-
-                                        <input class="category_edit_id" type="hidden" name="category_id" value="CAT_ID">
-
-                                        <button class="btn_of_save_changes btn mt-3 w-25" type="submit">ثبت</button>
-                                        <button class="btn_of_cancel_changes btn mt-3 w-25 mr-2" type="button">لغو
-                                        </button>
-
-                                    </form>
-
+                        <div class="main_col pr-4 pl-4">
+                            <header class="header_field">
+                                <h1>ثبت دسته جدید</h1>
+                            </header>
+                            <form action="" method="post" autocomplete="off">
+                                <div class="form-group mt-4">
+                                    <label for="category_name">نام دسته</label>
+                                    <input type="text" class="form-control main_form_design" id="category_name" name="title_inp">
                                 </div>
-
-                            </div>
+                                <div class="form-group">
+                                    <label for="category_parent">والد دسته</label>
+                                    <select class="form-control main_form_design" id="category_parent" name="parent_inp">
+                                        <option value="0">دسته اصلی</option>
+                                        {#parent_list}
+                                            <option value="{_id}">{title}</option>
+                                        {/parent_list}
+                                    </select>
+                                </div>
+                                <button class="btn green_btn py-2 mt-3">ثبت دسته بندی جدید</button>
+                            </form>
                         </div>
                     </div>
                 </div>
-
             </div>
+        </div>
+        {@eq key="{search}" value="true"}
+            {@page number="{total_pages}"  url="{backend_url}category/search" current="{page_number}"/}
+        {:else}
+            {@page number="{total_pages}"  url="{backend_url}category" current="{page_number}"/}
+        {/eq}
+        <!-- modal -->
+        <div class="category_modal">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6 offset-3">
+                        <div class="field_of_categoey_edit">
+                            <header class="header_field">
+                                <h1>ویرایش دسته بندی</h1>
+                                <h2>دسته بندی مورد نظر خود را ویرایش کنید</h2>
+                                <hr>
+                            </header>
+                            <form action="" class="dir-rtl text-right">
+                                <div class="form-group mt-4">
+                                    <label for="category_name">نام دسته</label>
+                                    <input type="text" class="form-control main_form_design" id="category_name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="category_parent">والد دسته</label>
+                                    <select class="form-control main_form_design" id="category_parent">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="category_modal_btn">
+                                    <button class="btn green_btn py-2 mt-3">ثبت دسته بندی جدید</button>
+                                    <button type="button" class="btn red_btn py-2 mt-3">لغو</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </section>
 

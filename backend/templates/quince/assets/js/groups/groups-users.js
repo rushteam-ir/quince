@@ -17,18 +17,14 @@ $(document).ready(function () {
 
 // img modal
 
-$(document).ready(function () {
+$('.QT_image img').click(function () {
 
-    $('.img_of_user').click(function () {
-
-        $('.img_modal_field').fadeIn();
-
-    });
-
-    $('.remove_img_modal').click(function () {
-
-        $('.img_modal_field').fadeOut();
-
-    });
+    $('.image_modal_field').fadeIn();
 
 });
+
+$('.remove_modal').click(function () {
+
+    $('.image_modal_field').fadeOut();
+
+})
