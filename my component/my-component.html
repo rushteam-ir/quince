@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/ignor.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>my component</title>
+</head>
+
+<body>
+
+
+
+    <section class="main_template mt-5 mb-5">
+
+        <!-- *simple table -->
+        <header class="table_header_ignor">
+            <h3> جدول ساده </h3>
+        </header>
+
+        <div class="QTR">
+            <table class="Q_table">
+                <tr class="TQ_hr">
+                    <th>
+                        <label class="checkbox_of_category">
+                            <input type="checkbox" class="option-input checkbox" id="selectall" name="select_all">
+                        </label>
+                    </th>
+                    <th>ردیف</th>
+                    <th>نام</th>
+                    <th>قیمت</th>
+                    <th>تخفیف</th>
+                    <th>موجودی</th>
+                    <th>وضیع</th>
+                    <th>تنظیمات</th>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="checkbox_of_category">
+                            <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox"
+                                value="{._id}">
+                        </label>
+                    </td>
+                    <td>1</td>
+                    <td class="QT_truncate">
+                        <div>
+                            سلام عزیزم چطوری دوبی؟
+                        </div>
+                    </td>
+                    <td class="QT_red_pill">
+                        <div>
+                            12.500.000
+                        </div>
+                    </td>
+                    <td class="QR_green_pill">
+                        <div>
+                            Smith
+                        </div>
+                    </td>
+                    <td class="QT_yellow_pill">
+                        <div>
+                            50
+                        </div>
+                    </td>
+                    <td class="QT_purple_pill">
+                        <div>
+                            Jill
+                        </div>
+                    </td>
+                    <td>Smith</td>
+                </tr>
+            </table>
+        </div>
+
+    </section>
+
+    <section class="main_template mb-5">
+
+        <!-- *option table -->
+        <header class="table_header_ignor">
+            <h3> جدول با تنظیمات </h3>
+        </header>
+
+        <div class="QTR">
+            <table class="Q_table">
+                <tr class="TQ_hr">
+                    <th>
+                        <label class="checkbox_of_category">
+                            <input type="checkbox" class="option-input checkbox" id="selectall" name="select_all">
+                        </label>
+                    </th>
+                    <th>ردیف</th>
+                    <th>نام</th>
+                    <th>قیمت</th>
+                    <th>تخفیف</th>
+                    <th>موجودی</th>
+                    <th>وضیع</th>
+                    <th>تنظیمات</th>
+                </tr>
+    
+                <tr>
+                    <td>
+                        <label class="checkbox_of_category">
+                            <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox"
+                                value="{._id}">
+                        </label>
+                    </td>
+                    <td>1</td>
+                    <td class="QT_truncate">
+                        <div>
+                            سلام عزیزم چطوری دوبی؟
+                        </div>
+                    </td>
+                    <td class="QT_red_pill">
+                        <div>
+                            12.500.000
+                        </div>
+                    </td>
+                    <td class="QR_green_pill">
+                        <div>
+                            Smith
+                        </div>
+                    </td>
+                    <td class="QT_yellow_pill">
+                        <div>
+                            50
+                        </div>
+                    </td>
+                    <td class="QT_purple_pill">
+                        <div>
+                            Jill
+                        </div>
+                    </td>
+                    <td class="table_option">
+                        <div class="dropdown">
+                            <button class="btn  dropdown-toggle" type="button" id="table_option" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="table_option">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fal fa-align-slash"></i>
+                                    غیر فعال کردن
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fal fa-asterisk"></i>
+                                    افزودن وی ای پی
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fal fa-assistive-listening-systems"></i>
+                                    افزودن گوش و چشم
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+    
+            </table>
+        </div>
+    </section>
+
+    <section class="main_template mt-5 mb-5">
+
+        <!-- *simple table with image -->
+        <header class="table_header_ignor">
+            <h3> جدول عکس دار </h3>
+        </header>
+
+        <div class="QTR">
+            <table class="Q_table">
+                <tr class="TQ_hr">
+                    <th>
+                        <label class="checkbox_of_category">
+                            <input type="checkbox" class="option-input checkbox" id="selectall" name="select_all">
+                        </label>
+                    </th>
+                    <th>ردیف</th>
+                    <th>عکس</th>
+                    <th>قیمت</th>
+                    <th>تخفیف</th>
+                    <th>موجودی</th>
+                    <th>وضیع</th>
+                    <th>تنظیمات</th>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="checkbox_of_category">
+                            <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox"
+                                value="{._id}">
+                        </label>
+                    </td>
+                    <td>1</td>
+                    <td class="QT_image">
+                        <img src="img/img2.jpg" alt="">
+                    </td>
+                    <td class="QT_red_pill">
+                        <div>
+                            12.500.000
+                        </div>
+                    </td>
+                    <td class="QR_green_pill">
+                        <div>
+                            Smith
+                        </div>
+                    </td>
+                    <td class="QT_yellow_pill">
+                        <div>
+                            50
+                        </div>
+                    </td>
+                    <td class="QT_purple_pill">
+                        <div>
+                            Jill
+                        </div>
+                    </td>
+                    <td>Smith</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <!-- *image modal -->
+
+        <div class="image_modal_field">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <div class="IMF_inside">
+                            <div class="remove_modal">
+                                <i class="fal fa-times"></i>
+                            </div>
+                            <img src="img/img2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="main_template mt-5 mb-5">
+
+        <!-- *simple table with button option -->
+        <header class="table_header_ignor">
+            <h3> جدول ساده </h3>
+        </header>
+
+        <div class="QTR">
+            <table class="Q_table">
+                <tr class="TQ_hr">
+                    <th>
+                        <label class="checkbox_of_category">
+                            <input type="checkbox" class="option-input checkbox" id="selectall" name="select_all">
+                        </label>
+                    </th>
+                    <th>ردیف</th>
+                    <th>نام</th>
+                    <th>قیمت</th>
+                    <th>تخفیف</th>
+                    <th>موجودی</th>
+                    <th>وضیع</th>
+                    <th>تنظیمات</th>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="checkbox_of_category">
+                            <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox"
+                                value="{._id}">
+                        </label>
+                    </td>
+                    <td>1</td>
+                    <td class="QT_truncate">
+                        <div>
+                            سلام عزیزم چطوری دوبی؟
+                        </div>
+                    </td>
+                    <td class="QT_red_pill">
+                        <div>
+                            12.500.000
+                        </div>
+                    </td>
+                    <td class="QR_green_pill">
+                        <div>
+                            Smith
+                        </div>
+                    </td>
+                    <td class="QT_yellow_pill">
+                        <div>
+                            50
+                        </div>
+                    </td>
+                    <td class="QT_purple_pill">
+                        <div>
+                            Jill
+                        </div>
+                    </td>
+                    <td>
+                        <button class="btn red_btn"><i class="fal fa-trash-alt"></i></button>
+                        <button class="btn yellow_btn"><i class="fal fa-trash-alt"></i></button>
+                        <button class="btn green_btn"><i class="fal fa-trash-alt"></i></button>
+                        <button class="btn purple_btn"><i class="fal fa-trash-alt"></i></button>
+                        <button class="btn blue_btn"><i class="fal fa-trash-alt"></i></button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </section>
+
+    <section class="main_template mb-5">
+
+        <!-- *header -->
+        <header class="table_header_ignor">
+            <h3> هدر </h3>
+        </header>
+
+        <header class="header_field">
+            <h1>لیست محصولات</h1>
+            <h2>لیست محصولات را در جذول زیر مشاهده کنید</h2>
+        </header>
+
+    </section>
+
+    <section class="main_template mb-5">
+
+        <!-- *table_header -->
+        <header class="table_header_ignor">
+            <h3> هدر جدول </h3>
+        </header>
+
+        <header class="header_field">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-lg-7">
+                        <div class="d-inline-block field_of_ht">
+                            <h1>لیست محصولات</h1>
+                            <h2>لیست محصولات را در جذول زیر مشاهده کنید</h2>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <div class="table_header">
+                            <form action="">
+                                <div class="input-group mb-3 t_search">
+                                    <div class="input-group-prepend">
+                                        <button class="input-group-text btn search_btn" id="basic-addon1">
+                                            <i class="fal fa-search"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="جستجو" aria-describedby="basic-addon1">
+                                </div>
+                                  <div class="form-group tr_select">
+                                    <label for="t_row_select" class="d-inline-block select_lable">تعداد ردیف ها :</label>
+                                    <select class="form-control" id="t_row_select">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </form>
+                            <button class="btn table_delete_btn">
+                                <i class="fal fa-trash-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    </section>
+
+    <section class="main_template mb-5">
+
+        <!-- *remove search -->
+        <header class="table_header_ignor">
+            <h3>جستجو با دکمه حذف</h3>
+        </header>
+
+        <header class="header_field">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-lg-5">
+                        <div class="table_header">
+                            <form action="">
+                                <div class="input-group mb-3 t_search ">
+                                    <div class="input-group-prepend">
+                                        <button class="input-group-text btn search_btn" id="basic-addon1">
+                                            <i class="fal fa-search"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="جستجو" aria-describedby="basic-addon1">
+                                    <i class="fal fa-times"></i>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    </section>
+
+    <!-- *uploader of chose file -->
+
+    <section class="main_template mb-5">
+
+        <header class="table_header_ignor">
+            <h3>اپلودر</h3>
+        </header>
+
+        <div class="field_of_img_template">
+            <div class="box_of_img_template">
+                <div class="box_of_img_template img-box">
+                    <div class="img-show">
+                        <!-- {@eq key="{admin_info.avatar}" value=""} -->
+
+                        <!-- {:else} -->
+                            <div class="remove_parent">
+                                <img class="uploading_img_from_brows" src="media/avatars/{admin_info.avatar}">
+                                <div name="0" class="remove_img_icon avatar_del"></div>
+                            </div>
+                        <!-- {/eq} -->
+                    </div>
+                    <input type="file" name="avatar" id="avatar_img" class="input-file-custom">
+                    <label for="avatar_img" class="btn btn-tertiary2 js-labelFile ">
+                        <i class="icon fa fa-check"></i>
+                        <span class="js-fileName mr-2">انتخاب عکس</span>
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="main_template mb-5">
+
+        <!-- *button -->
+        <header class="table_header_ignor">
+            <h3>انواع دکمه ها</h3>
+        </header>
+
+        <button class="btn red_btn">ورود</button>
+        <button class="btn yellow_btn">ورود</button>
+        <button class="btn green_btn">ورود</button>
+        <button class="btn purple_btn">ورود</button>
+        <button class="btn blue_btn">ورود</button>
+
+
+    </section>
+
+    <section class="main_template mb-5">
+
+        <!-- *pagination -->
+        <header class="table_header_ignor">
+            <h3>شمارنده صفحه</h3>
+        </header>
+
+        <nav class="Page_navigation mt-3" aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+
+    </section>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/component.js"></script>
+</body>
+
+</html>
