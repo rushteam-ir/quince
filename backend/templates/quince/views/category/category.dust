@@ -103,7 +103,7 @@
                                     {/category_list}
                                 </table>
                                 {@eq key="{search}" value="true"}
-                                    {@page number="{total_pages}"  url="{backend_url}category/search" current="{page_number}"/}
+                                    {@page number="{total_pages}"  url="{backend_url}category/search/{search_value}" current="{page_number}"/}
                                 {:else}
                                     {@page number="{total_pages}"  url="{backend_url}category" current="{page_number}"/}
                                 {/eq}
