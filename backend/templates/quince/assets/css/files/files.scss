@@ -5,6 +5,7 @@
 @import '../Partials/table-header';
 @import '../Partials/btn';
 @import '../Partials/table-option';
+@import '../Partials/pagination';
 
 .main_field {
     @include main_field;
@@ -12,7 +13,6 @@
 
 .main_col {
     @include main_col;
-    padding-bottom: 60px !important;
 }
 
 .image_of_folders {
