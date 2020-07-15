@@ -13,8 +13,6 @@
 
 <body>
 
-
-
     <section class="main_template mt-5 mb-5">
 
         <!-- *simple table -->
@@ -101,7 +99,7 @@
                     <th>وضیع</th>
                     <th>تنظیمات</th>
                 </tr>
-    
+
                 <tr>
                     <td>
                         <label class="checkbox_of_category">
@@ -158,7 +156,7 @@
                         </div>
                     </td>
                 </tr>
-    
+
             </table>
         </div>
     </section>
@@ -350,10 +348,12 @@
                                             <i class="fal fa-search"></i>
                                         </button>
                                     </div>
-                                    <input type="text" class="form-control" placeholder="جستجو" aria-describedby="basic-addon1">
+                                    <input type="text" class="form-control" placeholder="جستجو"
+                                        aria-describedby="basic-addon1">
                                 </div>
-                                  <div class="form-group tr_select">
-                                    <label for="t_row_select" class="d-inline-block select_lable">تعداد ردیف ها :</label>
+                                <div class="form-group tr_select">
+                                    <label for="t_row_select" class="d-inline-block select_lable">تعداد ردیف ها
+                                        :</label>
                                     <select class="form-control" id="t_row_select">
                                         <option>1</option>
                                         <option>2</option>
@@ -393,7 +393,8 @@
                                             <i class="fal fa-search"></i>
                                         </button>
                                     </div>
-                                    <input type="text" class="form-control" placeholder="جستجو" aria-describedby="basic-addon1">
+                                    <input type="text" class="form-control" placeholder="جستجو"
+                                        aria-describedby="basic-addon1">
                                     <i class="fal fa-times"></i>
                                 </div>
                             </form>
@@ -420,10 +421,10 @@
                         <!-- {@eq key="{admin_info.avatar}" value=""} -->
 
                         <!-- {:else} -->
-                            <div class="remove_parent">
-                                <img class="uploading_img_from_brows" src="media/avatars/{admin_info.avatar}">
-                                <div name="0" class="remove_img_icon avatar_del"></div>
-                            </div>
+                        <div class="remove_parent">
+                            <img class="uploading_img_from_brows" src="media/avatars/{admin_info.avatar}">
+                            <div name="0" class="remove_img_icon avatar_del"></div>
+                        </div>
                         <!-- {/eq} -->
                     </div>
                     <input type="file" name="avatar" id="avatar_img" class="input-file-custom">
@@ -463,24 +464,42 @@
 
         <nav class="Page_navigation mt-3" aria-label="Page navigation example">
             <ul class="pagination">
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
             </ul>
-          </nav>
+        </nav>
 
 
     </section>
+
+    <section class="main_template mb-5">
+
+        <!-- *input error -->
+        <header class="table_header_ignor">
+            <h3>ارور برای اینپوت ها</h3>
+        </header>
+
+        <form action="" class="">
+            <div class="form-group">
+                <label for="test">سلام</label>
+                <input type="text" name="" class="form-control" id="test">
+            </div>
+        </form>
+
+    </section>
+
+
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>

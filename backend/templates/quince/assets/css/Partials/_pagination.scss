@@ -8,6 +8,7 @@
         border: none;
         margin: 0 2px;
         border-radius: 3px;
+        color: black;
         &:hover{
             background-color: $l_blue;
         }
@@ -16,5 +17,14 @@
                 outline: 0;
                 box-shadow:none;
         }
+        span{
+            color: $d_blue;
+        }
     }
+}
+
+
+.current_page{
+    background-color: $l_blue !important;
+    color: $d_blue !important;
 }
