@@ -1,0 +1,41 @@
+.red_btn{
+    color: $d_red;
+    background-color: $l_red;
+    &:hover{
+        color: white;
+        background-color: $d_red;
+    }
+}
+.yellow_btn{
+    color: $d_yellow;
+    background-color: $l_yellow;
+    &:hover{
+        color: white;
+        background-color: $d_yellow;
+    }
+}
+.green_btn{
+    color: $d_green;
+    background-color: $l_green;
+    &:hover{
+        color: white;
+        background-color: $d_green;
+    }
+}
+.purple_btn{
+    color: $d_purple;
+    background-color: $l_purple;
+    &:hover{
+        color: white;
+        background-color: $d_purple;
+    }
+}
+.blue_btn{
+    color: $d_blue;
+    background-color: $l_blue;
+    &:hover{
+        color: white;
+        background-color: $d_blue;
+    }
+}
+

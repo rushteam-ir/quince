@@ -206,22 +206,22 @@ $('.edit_btn').on('click', function (e) {
     })
 })
 
-function redirect(url) {
-    location.href = url
-}
+$('.search_btn').on('click', function (e) {
 
-$('.btn_of_search').on('click', function (e) {
-
-    let search_value = $('.category_search').val();
+    let search_value = $('.search_table').val();
     if (search_value != "") {
         redirect(`${backend_url}article/search/${search_value}`);
     }
 
 })
 
-$('.remove_search_icon').on('click', function (e) {
+$('.fa-times').on('click', function (e) {
 
     redirect(`${backend_url}article/list`);
 
 })
+
+function redirect(url) {
+    location.href = url
+}
 

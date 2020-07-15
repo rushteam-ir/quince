@@ -33,6 +33,9 @@
                                                         </button>
                                                     </div>
                                                     <input type="text" class="form-control search_table" placeholder="جستجو ..." aria-describedby="basic-addon1" value="{search_value}">
+                                                    {@eq key="{search}" value="true"}
+                                                        <i class="fal fa-times"></i>
+                                                    {/eq}
                                                 </div>
                                                   <div class="form-group tr_select">
                                                     <label for="t_row_select" class="d-inline-block select_lable">تعداد ردیف ها :</label>
@@ -101,6 +104,11 @@
                                         </tr>
                                     {/category_list}
                                 </table>
+                                {@eq key="{search}" value="true"}
+                                    {@page number="{total_pages}"  url="{backend_url}category/search/{search_value}" current="{page_number}"/}
+                                {:else}
+                                    {@page number="{total_pages}"  url="{backend_url}category" current="{page_number}"/}
+                                {/eq}
                             </div>
                         </div>
                     </div>
@@ -130,11 +138,6 @@
                 </div>
             </div>
         </div>
-        {@eq key="{search}" value="true"}
-            {@page number="{total_pages}"  url="{backend_url}category/search" current="{page_number}"/}
-        {:else}
-            {@page number="{total_pages}"  url="{backend_url}category" current="{page_number}"/}
-        {/eq}
         <!-- modal -->
         <div class="category_modal">
             <div class="container">

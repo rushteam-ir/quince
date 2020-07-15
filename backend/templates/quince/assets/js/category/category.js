@@ -106,7 +106,7 @@ $('.search_btn').on('click', function (e) {
 
 })
 
-$('.remove_search_icon').on('click', function (e) {
+$('.fa-times').on('click', function (e) {
 
     redirect(`${backend_url}category`);
 

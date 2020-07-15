@@ -4,9 +4,10 @@ router.get('/', async(req, res, next)=>{
 
     try{
 
-
         let data = {
 
+            routes : ['شاخه اصلی'],
+            current_route : 0,
             directories_list : await fileManager.loadDirectories(`${backend_upload_dir}`),
             files_list : await fileManager.loadFiles(`${backend_upload_dir}`)
 
@@ -31,12 +32,12 @@ router.get('/:id', async(req, res, next)=>{
 
         let data = {
 
+            routes : ['شاخه اصلی', `${directory}`],
+            current_route : 1,
             directories_list : await fileManager.loadDirectories(`${backend_upload_dir}${directory}`),
             files_list : await fileManager.loadFiles(`${backend_upload_dir}${directory}`)
 
         }
-
-        log(data.files_list)
 
         res.render('files/files', data);
 
