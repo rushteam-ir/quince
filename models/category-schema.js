@@ -74,6 +74,12 @@ category_schema.statics = {
 
     },
 
+    getCat : async function (category_id) {
+
+        return await category_model.find({_id : category_id }).populate('parent').exec();;
+
+    },
+
     getAll : async function (page_number, page_limit) {
 
         let result = {}
