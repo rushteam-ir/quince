@@ -151,6 +151,7 @@ $('.fa-times').on('click', function (e) {
 
             let title = data[0].title;
             let parent_id = '';
+            let category_id = data[0]._id;
 
             if(data[0].parent == null){
 
@@ -164,6 +165,7 @@ $('.fa-times').on('click', function (e) {
             }
 
             $('.edit_category_title').val(title);
+            $('.edit_category_id').val(category_id);
             $(`.edit_category_parent option`).removeAttr('selected');
             $(`.edit_category_parent option[value="${parent_id}"]`).attr('selected', 'selected');
 
