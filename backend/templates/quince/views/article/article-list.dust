@@ -129,16 +129,20 @@
                                                 </button>
                                                 <div class="dropdown-menu" aria-labelledby="table_option">
                                                     <a class="dropdown-item" href="#">
+                                                        <i class="fal fa-edit"></i>
+                                                        ویرایش مقاله
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
                                                         <i class="fal fa-align-slash"></i>
-                                                        غیر فعال کردن
+                                                        غیر فعال کردن مقاله
                                                     </a>
                                                     <a class="dropdown-item" href="#">
-                                                        <i class="fal fa-asterisk"></i>
-                                                        افزودن وی ای پی
+                                                        <i class="fal fa-comment-slash"></i>
+                                                        غیرفعال کردن نطرات
                                                     </a>
                                                     <a class="dropdown-item" href="#">
-                                                        <i class="fal fa-assistive-listening-systems"></i>
-                                                        افزودن گوش و چشم
+                                                        <i class="fal fa-trash-alt"></i>
+                                                        حذف مقاله
                                                     </a>
                                                 </div>
                                             </div>
