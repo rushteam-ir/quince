@@ -33,7 +33,7 @@ $(document).ready(function () {
 });
 
 // Delete article
-$('.delete_article').on('click', function (e) {
+$('.article_delete').on('click', function (e) {
 
     let article_id = $(e.currentTarget).attr('name');
 
@@ -102,7 +102,7 @@ $('.table_delete_btn').on('click', function (e) {
 })
 
 // Change article status
-$('.change_status_btn').on('click', function (e) {
+$('.article_status').on('click', function (e) {
 
     let article_id = $(e.currentTarget).attr('name');
     let article_status = $(e.currentTarget).attr('value');
@@ -144,7 +144,7 @@ $('.change_status_btn').on('click', function (e) {
 })
 
 // Change article comments status
-$('.change_comments_status_btn').on('click', function (e) {
+$('.article_comments_status').on('click', function (e) {
 
     let article_id = $(e.currentTarget).attr('name');
     let article_status = $(e.currentTarget).attr('value');
@@ -186,7 +186,7 @@ $('.change_comments_status_btn').on('click', function (e) {
 })
 
 // Edit article
-$('.edit_btn').on('click', function (e) {
+$('.article_edit').on('click', function (e) {
 
     let article_id = $(e.currentTarget).attr('name');
 

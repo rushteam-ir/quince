@@ -128,22 +128,30 @@
                                                     <i class="fas fa-ellipsis-v"></i>
                                                 </button>
                                                 <div class="dropdown-menu" aria-labelledby="table_option">
-                                                    <a class="dropdown-item" href="#">
+                                                    <button class="dropdown-item article_edit" name="{.unique_id}">
                                                         <i class="fal fa-edit"></i>
                                                         ویرایش مقاله
-                                                    </a>
-                                                    <a class="dropdown-item" href="#">
+                                                    </button>
+                                                    <button class="dropdown-item article_status" name="{._id}" value="{status}">
                                                         <i class="fal fa-align-slash"></i>
-                                                        غیر فعال کردن مقاله
-                                                    </a>
-                                                    <a class="dropdown-item" href="#">
+                                                        {@eq key="{status}" value="true"}
+                                                            غیر فعال کردن مقاله
+                                                        {:else}
+                                                            فعال کردن مقاله
+                                                        {/eq}
+                                                    </button>
+                                                    <button class="dropdown-item article_comments_status" name="{._id}" value="{comments_status}">
                                                         <i class="fal fa-comment-slash"></i>
-                                                        غیرفعال کردن نطرات
-                                                    </a>
-                                                    <a class="dropdown-item" href="#">
+                                                        {@eq key="{comments_status}" value="true"}
+                                                            غیر فعال کردن نظرات
+                                                        {:else}
+                                                            فعال کردن نظرات
+                                                        {/eq}
+                                                    </button>
+                                                    <button class="dropdown-item article_delete" name="{._id}">
                                                         <i class="fal fa-trash-alt"></i>
                                                         حذف مقاله
-                                                    </a>
+                                                    </button>
                                                 </div>
                                             </div>
                                         </td>
