@@ -144,6 +144,30 @@ $('.fa-times').on('click', function (e) {
     $('.edit_category').click(function(){
 
         $('.category_modal').fadeIn();
+
+        $.post(`${backend_url}category/api/get-category`, {
+            id: $(this).attr('name'),
+        }, function (data, status) {
+
+            let title = data[0].title;
+            let parent_id = '';
+
+            if(data[0].parent == null){
+
+                parent_id = '0';
+
+            }
+            else{
+
+                parent_id = data[0].parent._id;
+
+            }
+
+            $('.edit_category_title').val(title);
+            $(`.edit_category_parent option`).removeAttr('selected');
+            $(`.edit_category_parent option[value="${parent_id}"]`).attr('selected', 'selected');
+
+        });
     
     });
 
