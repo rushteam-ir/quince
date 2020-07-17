@@ -24,6 +24,6 @@ $('.error_info :last-child').click(function(){
 
        errors.addClass('error_d_none');
 
-    },1000);
+    },400);
 
 });
