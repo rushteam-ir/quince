@@ -1,19 +1,5 @@
 $(document).ready(function () {
 
-    $('#selectall').change(function () {
-
-        if ($(this).prop('checked')) {
-
-            $('.table_checkbox').prop('checked', true);
-
-        } else {
-
-            $('.table_checkbox').prop('checked', false);
-
-        }
-
-    });
-
     $('#selectall').trigger('change');
 
     $('.limit_row').change(function () {
@@ -117,6 +103,7 @@ $(document).ready(function () {
     $('.edit_category').click(function () {
 
         $('.category_modal').fadeIn();
+        $('body').css('overflow','hidden');
 
         $.post(`${backend_url}category/api/get-category`, {
             id: $(this).attr('name'),
@@ -148,6 +135,7 @@ $(document).ready(function () {
     $('.red_btn').click(function () {
 
         $('.category_modal').fadeOut();
+        $('body').css('overflow','auto');
 
     });
 

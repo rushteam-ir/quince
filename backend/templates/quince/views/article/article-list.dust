@@ -5,6 +5,7 @@
 {/css}
 {<js}
     <script src="js/article/article-list.js"></script>
+    <script src="js/custom/checkbox.js"></script>
 {/js}
 
 

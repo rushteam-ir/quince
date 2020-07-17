@@ -1,19 +1,5 @@
 $(document).ready(function () {
 
-    $('#selectall').change(function () {
-
-        if ($(this).prop('checked')) {
-
-            $('.table_checkbox').prop('checked', true);
-
-        } else {
-
-            $('.table_checkbox').prop('checked', false);
-
-        }
-
-    });
-
     $('#selectall').trigger('change');
 
     $('.limit_row').change(function () {
@@ -107,12 +93,11 @@ $('.article_status').on('click', function (e) {
     let article_id = $(e.currentTarget).attr('name');
     let article_status = $(e.currentTarget).attr('value');
 
-    if(article_status == 'true'){
+    if (article_status == 'true') {
 
         article_status = 'غیر فعال';
 
-    }
-    else{
+    } else {
 
         article_status = 'فعال';
 
@@ -149,12 +134,11 @@ $('.article_comments_status').on('click', function (e) {
     let article_id = $(e.currentTarget).attr('name');
     let article_status = $(e.currentTarget).attr('value');
 
-    if(article_status == 'true'){
+    if (article_status == 'true') {
 
         article_status = 'غیر فعال';
 
-    }
-    else{
+    } else {
 
         article_status = 'فعال';
 
@@ -224,4 +208,3 @@ $('.fa-times').on('click', function (e) {
 function redirect(url) {
     location.href = url
 }
-

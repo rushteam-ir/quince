@@ -6,6 +6,7 @@
 {<js}
     <script src="js/profile/profile.js"></script>
     <script src="js/profile/profile-tabs.js"></script>
+    <script src="js/custom/uploader.js"></script>
 {/js}
 {<body}
     <section>

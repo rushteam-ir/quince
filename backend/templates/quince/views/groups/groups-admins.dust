@@ -5,6 +5,8 @@
 {/css}
 {<js}
     <script src="js/groups/groups-admins.js"></script>
+    <script src="js/custom/checkbox.js"></script>
+    <script src="js/custom/image_modal.js"></script>
 {/js}
 
 

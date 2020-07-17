@@ -12,6 +12,7 @@
     <script src="js/general/wysiwyg-image-manager.js"></script>
     <script src="js/general/wysiwyg-custom.js"></script>
     <script src="js/article/article-edit.js"></script>
+    <script src="js/custom/uploader.js"></script>
 
 {/js}
 
