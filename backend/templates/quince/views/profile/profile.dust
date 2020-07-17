@@ -16,11 +16,11 @@
                         <div class="main_field_of_left_pro dir-rtl text-right p-4 display_none" id="first_tab">
                             <header class="header_field">
                                 <h1>اطلاعات پروفایل</h1>
-                                <h2>در ادامه میتوانید اطلاعات پروفایل را ویرایش کنید</h2>
+                                <h2>ویرایش مشخصات حساب کاربری</h2>
                                 <hr>
                             </header>
                             <div class="main_div_of_personal_form">
-                                <form method="post" action="" enctype="multipart/form-data" autocomplete="off">
+                                <form method="post" action="{backend_url}profile/api/change-profile-info" autocomplete="off">
                                     <div class="form-group mt-4 row">
                                         <label for="user_name"
                                                class="col-sm-2 col-form-label main_lable_design">نام</label>
@@ -72,7 +72,7 @@
                                         <button type="submit" class="btn green_btn mt-3" name="profile_info">
                                             ثبت تغییرات
                                         </button>
-                                        <button class="btn red_btn mt-3">لغو</button>
+                                        <button type="reset" class="btn red_btn mt-3">لغو</button>
                                     </div>
                                 </form>
                             </div>
@@ -80,11 +80,11 @@
                         <div class="main_field_of_left_pro dir-rtl text-right p-4 display_none">
                             <header class="header_field">
                                 <h1>اطلاعات شخصی</h1>
-                                <h2>میتوانید اطلاعات شخصی خود را ویرایش کنید</h2>
+                                <h2>ویرایش اطلاعات شخصی مربوط به حساب کاربری</h2>
                                 <hr>
                             </header>
                             <div class="main_div_of_personal_form">
-                                <form method="post" action="" autocomplete="off">
+                                <form method="post" action="{backend_url}profile/api/change-profile-private" autocomplete="off">
                                     <div class="form-group mt-4 row">
                                         <label for="user_birthday" class="col-sm-2 col-form-label main_lable_design">تاریخ تولد</label>
                                         <div class="col-4 col-sm-3 col-md-2">
@@ -130,7 +130,7 @@
                                         <button type="submit" class="btn green_btn mt-1" name="profile_private">
                                             ثبت تغییرات  
                                         </button>
-                                        <button class="btn red_btn mt-1" >لغو</button>
+                                        <button type="reset" class="btn red_btn mt-1" >لغو</button>
                                     </div>
                                 </form>
                             </div>
@@ -138,11 +138,11 @@
                         <div class="main_field_of_left_pro dir-rtl text-right p-4 display_none">
                             <header class="header_field">
                                 <h1>تعویض رمز عبور</h1>
-                                <h2>در ادامه میتوانید رمز عبور خود را تعویض کنید</h2>
+                                <h2>تعویض رمز عبور حساب کاربری</h2>
                                 <hr>
                             </header>
                             <div class="main_div_of_personal_form">
-                                <form method="post" action="" autocomplete="off">
+                                <form method="post" action="{backend_url}profile/api/change-password" autocomplete="off">
                                     <div class="box_of_pass_alert_pro row">
                                         <div class="col-2">
                                             <i class="fad fa-exclamation-circle password_alert_pro"></i>
@@ -182,7 +182,7 @@
                                         <button type="submit" class="btn green_btn mt-1" name="change_password">
                                             ثبت تغییرات
                                         </button>
-                                        <button class="btn red_btn mt-1">لغو</button>
+                                        <button type="reset" class="btn red_btn mt-1">لغو</button>
                                     </div>
                                 </form>
                             </div>
@@ -207,7 +207,7 @@
                         <div class="prodile_tabs p-4">
                             <div class="field_of_pro_img">
 
-                                <form action="">
+                                <form method="post" action="{backend_url}profile/api/upload-avatar" enctype="multipart/form-data" autocomplete="off">
                                     <div class="form-group">
                                         <div class="field_of_img_template">
                                             <div class="box_of_img_template">
@@ -241,9 +241,9 @@
                                             {/eq}
                                             <h3 class="user_access_pro">
                                                 {@eq key="{admin_info.access}" value="main_admin"}
-                                                    ادمین اصلی
+                                                    مدیر اصلی
                                                 {:else}
-                                                    ادمین عادی
+                                                    مدیر عادی
                                                 {/eq}
                                             </h3>
                                         </div>
