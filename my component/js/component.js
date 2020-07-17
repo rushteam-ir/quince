@@ -73,10 +73,18 @@ $('.remove_modal').click(function () {
 // });
 
 
-// drop down
+// error js
 
-$('.dd_menu').click(function(){
 
-    $('.dropdown_menu').toggle()
 
-})
+function testf(){
+    let test = $("input[name=test]").val();
+
+    if( test.length < 20){
+
+        $('.error_info').addClass('error_active');
+        return false;
+
+    }
+
+}
