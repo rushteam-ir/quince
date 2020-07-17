@@ -72,7 +72,7 @@
                                         <button type="submit" class="btn green_btn mt-3" name="profile_info">
                                             ثبت تغییرات
                                         </button>
-                                        <button class="btn red_btn mt-3" name="profile_info">لغو</button>
+                                        <button class="btn red_btn mt-3">لغو</button>
                                     </div>
                                 </form>
                             </div>
@@ -127,10 +127,10 @@
                                         </div>
                                     </div>
                                     <div class="field_of_pr_btn mb-5">
-                                        <button type="submit" class="btn green_btn mt-1" name="profile_reset">
+                                        <button type="submit" class="btn green_btn mt-1" name="profile_private">
                                             ثبت تغییرات  
                                         </button>
-                                        <button class="btn red_btn mt-1" name="profile_info">لغو</button>
+                                        <button class="btn red_btn mt-1" >لغو</button>
                                     </div>
                                 </form>
                             </div>
@@ -179,10 +179,10 @@
                                         </div>
                                     </div>
                                     <div class="field_of_pr_btn mb-5">
-                                        <button type="submit" class="btn green_btn mt-1" name="profile_reset">
+                                        <button type="submit" class="btn green_btn mt-1" name="change_password">
                                             ثبت تغییرات
                                         </button>
-                                        <button class="btn red_btn mt-1" name="profile_info">لغو</button>
+                                        <button class="btn red_btn mt-1">لغو</button>
                                     </div>
                                 </form>
                             </div>
@@ -194,7 +194,12 @@
                                 <hr>
                             </header>
                             <div class="main_div_of_personal_form">
-                                
+                                <div>
+                                    <p>تعداد مطالب : 24</p>
+                                </div>
+                                <div>
+                                    <p>آخرین فعالیت : 2 ساعت پیش</p>
+                                </div>
                             </div>
                         </div>
                     </div>
