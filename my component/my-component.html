@@ -19,14 +19,12 @@
         </header>
 
             <div class="error_info">
-                <p>
-                    <i class="fal fa-exclamation-circle"></i>
-                    رمز عبور باید بیشتر از 8 رقم باشد.
-                    <i class="fal fa-times"></i>
-                </p>
+                <i class="fal fa-exclamation-circle"></i>
+                <p></p>
+                <i class="fal fa-times"></i>
             </div>
 
-        <form action="" class=" text-right dir_rtl form_error" onsubmit="return testf()" name="m_form">
+        <form action="" class=" text-right dir_rtl form_error" onsubmit="return submitE()" name="m_form">
             <div class="form-group">
                 <label for="test">تست</label>
                 <input type="text" name="test" class="form-control" id="test">
@@ -510,9 +508,10 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/image_modal.js"></script>
-    <script src="js/checkbox.js"></script>
-    <script src="js/error.js"></script>
+    <script src="js/component/image_modal.js"></script>
+    <script src="js/component/checkbox.js"></script>
+    <script src="js/component/main-error.js"></script>
+    <script src="js/component/error.js"></script>
 </body>
 
 </html>
