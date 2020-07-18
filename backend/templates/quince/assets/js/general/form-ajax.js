@@ -2,15 +2,9 @@ $('#form_ajax').submit(function(event){
 
     event.preventDefault();
 
-    let first_name_inp = $("input[name=first_name_inp]").val();
+    let front_validation =  profileError();
 
-    if( first_name_inp.length < 4){
-
-        error();
-        $('.error_info p').text('رمز عبور شما کم تر از 8 رقم است.')
-        return false;
-
-    }
+    if(!front_validation) return false;
 
     let post_url = $(this).attr("action");
     let request_method = $(this).attr("method");
