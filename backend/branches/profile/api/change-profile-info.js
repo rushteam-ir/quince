@@ -75,7 +75,7 @@ router.post('/', async(req, res, next)=>{
             req.session.admin_info = result;
             return res.json({
                 status : 'success',
-                msg : 'مشخصات حساب کاربری با موفقیت اصلاح شد.'
+                msg : 'مشخصات حساب کاربری شما با موفقیت اصلاح شد.'
             })
 
         }

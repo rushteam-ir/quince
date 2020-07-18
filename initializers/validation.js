@@ -161,6 +161,12 @@ module.exports = validation =  class {
                     let month = parseInt(date[1]);
                     let year = parseInt(date[0]);
 
+                    if(isNaN(day) || isNaN(month) || isNaN(year)){
+
+                        return 'تاریخ وارد شده معتبر نمی باشد.'
+
+                    }
+
                     if(day < 0 || day > 31){
                         return 'تاریخ وارد شده معتبر نمی باشد.'
                     }

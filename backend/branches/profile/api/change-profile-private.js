@@ -14,7 +14,7 @@ router.post('/', async(req, res, next)=>{
             last_input.birth_year == year_inp && last_input.country == country_inp &&
             last_input.city == city_inp && last_input.biography == bio_inp){
 
-            return res.redirect(`${config.backend_url}profile/?msg=no-change`);
+            return res.json('تغییر جدیدی در اطلاعات اعمال نشده است.')
 
         }
 
@@ -49,7 +49,7 @@ router.post('/', async(req, res, next)=>{
             req.session.admin_info = result;
             return res.json({
                 status : 'success',
-                msg : 'اطلاعات شخسی حساب کاربری با موفقیت اصلاح شد.'
+                msg : 'اطلاعات شخصی حساب کاربری شما با موفقیت اصلاح شد.'
             })
 
         }

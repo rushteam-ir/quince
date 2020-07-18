@@ -1,4 +1,4 @@
-$('#form_ajax').submit(function(event){
+$('.form_ajax').submit(function(event){
 
     event.preventDefault();
 
@@ -25,7 +25,7 @@ $('#form_ajax').submit(function(event){
         }
         else{
 
-            proInfo(response)
+            showMessage(response)
 
         }
 
@@ -44,7 +44,7 @@ function getFormData($form){
     return indexed_array;
 }
 
-function proInfo(text){
+function showMessage(text){
 
     error();
     $('.error_info p').text(text)
@@ -54,7 +54,7 @@ function proInfo(text){
 
 $( function () {
         if(sessionStorage.getItem('reload') == 'true') {
-            proInfo(sessionStorage.getItem('message'));
+            showMessage(sessionStorage.getItem('message'));
             sessionStorage.setItem('reload', 'false');
         }
     }
