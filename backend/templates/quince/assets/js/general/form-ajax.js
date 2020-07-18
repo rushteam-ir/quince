@@ -11,7 +11,7 @@ $('#form_ajax').submit(function(event){
         method: request_method,
         data : form_data
     }).done(function(response){
-        console.log(response)
+        proInfo(response)
     });
 
 });
@@ -25,4 +25,12 @@ function getFormData($form){
     });
 
     return indexed_array;
+}
+
+function proInfo(text){
+
+    error();
+    $('.error_info p').text(text)
+    return false;
+
 }
