@@ -61,16 +61,15 @@ router.post('/', async(req, res, next)=>{
        if (req.files) {
 
            let main_image = req.files.main_image;
-           let uploader_options = {
-
-               allowed_formats : 'image',
-               limited_size : config.image_limited_size,
-               file_path : `${backend_upload_dir}images/`,
-
-           }
 
            let file_name = `${randomSha1String()}.${main_image.name.split(".").pop()}`;
-           let upload_result = new uploader(main_image, file_name, uploader_options).upload();
+
+           let upload_result = fileManager.upload(main_image, file_name,{
+
+               allowed_formats : `image`,
+               file_path : `${backend_upload_dir}images/`,
+
+           });
 
            if(upload_result){
 

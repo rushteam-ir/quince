@@ -5,6 +5,7 @@
 {/css}
 {<js}
     <script src="js/article/article-list.js"></script>
+    <script src="js/custom/checkbox.js"></script>
 {/js}
 
 
@@ -128,18 +129,30 @@
                                                     <i class="fas fa-ellipsis-v"></i>
                                                 </button>
                                                 <div class="dropdown-menu" aria-labelledby="table_option">
-                                                    <a class="dropdown-item" href="#">
+                                                    <button class="dropdown-item article_edit" name="{.unique_id}">
+                                                        <i class="fal fa-edit"></i>
+                                                        ویرایش مقاله
+                                                    </button>
+                                                    <button class="dropdown-item article_status" name="{._id}" value="{status}">
                                                         <i class="fal fa-align-slash"></i>
-                                                        غیر فعال کردن
-                                                    </a>
-                                                    <a class="dropdown-item" href="#">
-                                                        <i class="fal fa-asterisk"></i>
-                                                        افزودن وی ای پی
-                                                    </a>
-                                                    <a class="dropdown-item" href="#">
-                                                        <i class="fal fa-assistive-listening-systems"></i>
-                                                        افزودن گوش و چشم
-                                                    </a>
+                                                        {@eq key="{status}" value="true"}
+                                                            غیر فعال کردن مقاله
+                                                        {:else}
+                                                            فعال کردن مقاله
+                                                        {/eq}
+                                                    </button>
+                                                    <button class="dropdown-item article_comments_status" name="{._id}" value="{comments_status}">
+                                                        <i class="fal fa-comment-slash"></i>
+                                                        {@eq key="{comments_status}" value="true"}
+                                                            غیر فعال کردن نظرات
+                                                        {:else}
+                                                            فعال کردن نظرات
+                                                        {/eq}
+                                                    </button>
+                                                    <button class="dropdown-item article_delete" name="{._id}">
+                                                        <i class="fal fa-trash-alt"></i>
+                                                        حذف مقاله
+                                                    </button>
                                                 </div>
                                             </div>
                                         </td>

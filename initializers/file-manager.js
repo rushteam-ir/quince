@@ -8,7 +8,7 @@ class fileManager {
             case 'image':
             {
 
-                options.allowed_formats = ['png', 'jpeg', 'jpg', 'gif'];
+                options.allowed_formats = ['png', 'jpeg', 'jpg', 'gif', 'PNG', 'JPG', 'JPEG', 'GIF'];
                 limited_size = config.image_limited_size;
                 break;
 

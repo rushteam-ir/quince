@@ -12,7 +12,27 @@
 </head>
 
 <body>
+    <section class="main_template mb-5">
+        <!-- *input error -->
+        <header class="table_header_ignor">
+            <h3>ارور برای اینپوت ها</h3>
+        </header>
 
+            <div class="error_info">
+                <i class="fal fa-exclamation-circle"></i>
+                <p></p>
+                <i class="fal fa-times"></i>
+            </div>
+
+        <form action="" class=" text-right dir_rtl form_error" onsubmit="return submitE()" name="m_form">
+            <div class="form-group">
+                <label for="test">تست</label>
+                <input type="text" name="test" class="form-control" id="test">
+                <button class="btn blue_btn mt-4">done</button>
+            </div>
+        </form>
+
+    </section>
     <section class="main_template mt-5 mb-5">
 
         <!-- *simple table -->
@@ -483,28 +503,15 @@
 
     </section>
 
-    <section class="main_template mb-5">
-
-        <!-- *input error -->
-        <header class="table_header_ignor">
-            <h3>ارور برای اینپوت ها</h3>
-        </header>
-
-        <form action="" class="">
-            <div class="form-group">
-                <label for="test">سلام</label>
-                <input type="text" name="" class="form-control" id="test">
-            </div>
-        </form>
-
-    </section>
-
 
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/component.js"></script>
+    <script src="js/component/image_modal.js"></script>
+    <script src="js/component/checkbox.js"></script>
+    <script src="js/component/main-error.js"></script>
+    <script src="js/component/error.js"></script>
 </body>
 
 </html>

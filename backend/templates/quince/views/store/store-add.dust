@@ -8,6 +8,7 @@
 {<js}
 
     <script src="js/store/store-add.js"></script>
+    <script src="js/custom/uploader.js"></script>
 
 {/js}
 

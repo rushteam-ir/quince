@@ -1,19 +1,5 @@
 $(document).ready(function () {
 
-    $('#selectall').change(function () {
-
-        if ($(this).prop('checked')) {
-
-            $('.table_checkbox').prop('checked', true);
-
-        } else {
-
-            $('.table_checkbox').prop('checked', false);
-
-        }
-
-    });
-
     $('#selectall').trigger('change');
 
     $('.limit_row').change(function () {
@@ -33,7 +19,7 @@ $(document).ready(function () {
 });
 
 // Delete article
-$('.delete_article').on('click', function (e) {
+$('.article_delete').on('click', function (e) {
 
     let article_id = $(e.currentTarget).attr('name');
 
@@ -102,17 +88,16 @@ $('.table_delete_btn').on('click', function (e) {
 })
 
 // Change article status
-$('.change_status_btn').on('click', function (e) {
+$('.article_status').on('click', function (e) {
 
     let article_id = $(e.currentTarget).attr('name');
     let article_status = $(e.currentTarget).attr('value');
 
-    if(article_status == 'true'){
+    if (article_status == 'true') {
 
         article_status = 'غیر فعال';
 
-    }
-    else{
+    } else {
 
         article_status = 'فعال';
 
@@ -144,17 +129,16 @@ $('.change_status_btn').on('click', function (e) {
 })
 
 // Change article comments status
-$('.change_comments_status_btn').on('click', function (e) {
+$('.article_comments_status').on('click', function (e) {
 
     let article_id = $(e.currentTarget).attr('name');
     let article_status = $(e.currentTarget).attr('value');
 
-    if(article_status == 'true'){
+    if (article_status == 'true') {
 
         article_status = 'غیر فعال';
 
-    }
-    else{
+    } else {
 
         article_status = 'فعال';
 
@@ -186,7 +170,7 @@ $('.change_comments_status_btn').on('click', function (e) {
 })
 
 // Edit article
-$('.edit_btn').on('click', function (e) {
+$('.article_edit').on('click', function (e) {
 
     let article_id = $(e.currentTarget).attr('name');
 
@@ -224,4 +208,3 @@ $('.fa-times').on('click', function (e) {
 function redirect(url) {
     location.href = url
 }
-

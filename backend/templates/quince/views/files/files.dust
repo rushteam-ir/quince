@@ -8,6 +8,7 @@
 
     <script src="js/files/files.js"></script>
     <script src="js/general/fingerprint.js"></script>
+    <script src="js/custom/checkbox.js"></script>
 
 {/js}
 {<body}

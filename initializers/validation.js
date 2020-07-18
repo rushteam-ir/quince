@@ -49,7 +49,7 @@ module.exports = validation =  class {
 
                     if(input.value.length < 4) {
 
-                        return 'short-input';
+                        return 0;
 
                     }
 
@@ -62,7 +62,7 @@ module.exports = validation =  class {
 
                     if(input.value.length < 8) {
 
-                        return 'short-input';
+                        return 0;
 
                     }
 
@@ -77,7 +77,7 @@ module.exports = validation =  class {
 
                     if(!email_regexp.test(input.value)){
 
-                        return 'invalid-email';
+                        return 1;
 
                     }
 
@@ -90,7 +90,7 @@ module.exports = validation =  class {
 
                     if(input.value.length != 11){
 
-                        return 'not-phonenumber';
+                        return 2;
 
                     }
 
@@ -103,7 +103,7 @@ module.exports = validation =  class {
 
                     if(isNaN(parseInt(input.value))){
 
-                        return 'not-number';
+                        return 3;
 
                     }
 
@@ -116,7 +116,7 @@ module.exports = validation =  class {
 
                     if(!mongoose.Types.ObjectId.isValid(input.value)){
 
-                        return 'invalid-id';
+                        return 4;
 
                     }
 
@@ -145,7 +145,7 @@ module.exports = validation =  class {
 
                     if(input.value.length == 0){
 
-                        return 'empty-input'
+                        return 5;
 
                     }
 
@@ -162,13 +162,13 @@ module.exports = validation =  class {
                     let year = parseInt(date[0]);
 
                     if(day < 0 || day > 31){
-                        return 'date-input'
+                        return 6
                     }
                     else if(month < 0 || month > 12){
-                        return 'date-input'
+                        return 6
                     }
                     else if(year < 1300){
-                        return 'date-input'
+                        return 6
                     }
 
                     break;
@@ -184,13 +184,13 @@ module.exports = validation =  class {
                     let year = parseInt(date[0]);
 
                     if(day < 0 || day > 31){
-                        return 'date-error'
+                        return 7
                     }
                     else if(month < 0 || month > 12){
-                        return 'date-error'
+                        return 7
                     }
                     else if(year < 1300){
-                        return 'date-error'
+                        return 7
                     }
 
                     let exp_date = JalaliConvert([year, month, day]);
@@ -198,7 +198,7 @@ module.exports = validation =  class {
                     let time_difference = exp_date.getTime() - curr_date.getTime();
 
                     if(time_difference < 0){
-                        return 'date-error';
+                        return 7;
                     }
 
                     break;

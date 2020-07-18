@@ -1,0 +1,54 @@
+.error_info {
+    position: fixed;
+    top: -75px;
+    left: 35%;
+    text-align: right;
+    direction: rtl;
+    background-color: $error_bg;
+    color: $error_color;
+    border: 1px solid $error_border;
+    width: 30%;
+    height: 68px;
+    border-radius: 7px;
+    padding: 20px;
+    margin: 0;
+    @include transition (ease-out, 0.7s);
+    opacity: 0;
+    overflow: hidden;
+
+    i {
+        position: relative;
+        top: 2px;
+        font-size: 1.2rem;
+        margin-left: 4px;
+    }
+
+    p{
+        display: inline-block;
+    }
+
+    & :last-child {
+        position: absolute;
+        left: 20px;
+        top: 22px;
+        cursor: pointer;
+    }
+}
+
+.error_d_none{
+    display: none;
+}
+
+.error_disable{
+    top: -75px;
+    opacity: 0;
+}
+
+.error_d_block{
+    display: block;
+}
+
+.error_active {
+    top: 50px;
+    opacity: 1;
+}

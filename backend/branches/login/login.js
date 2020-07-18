@@ -7,12 +7,13 @@ router.get('/', async(req, res, next)=>{
         let data = {
 
             login_form: req.session.login_form,
-            msg : req.session.msg
+            msg : backend.locals.msg
 
         }
 
+        backend.locals.msg = '';
+
         res.render('login/login', data);
-        req.session.msg = '';
 
     }
     catch (error) {
@@ -38,18 +39,11 @@ router.post('/', async(req, res, next)=>{
             {value : captcha_inp}
         ]).valid()
 
-        if(validation_result){
+        errorManager.set(validation_result);
 
-            if(req.session.msg == ''){
-                req.session.msg = validation_result;
-            }
+        if(captcha_inp.toLowerCase() != req.session.captcha){
 
-        }
-        else if(captcha_inp.toLowerCase() != req.session.captcha){
-
-            if(req.session.msg == ''){
-                req.session.msg = 'کد امنیتی صحیح نمی باشد.';
-            }
+            errorManager.set(8);
             return res.redirect(`${config.backend_url}login`);
 
         }
@@ -73,9 +67,7 @@ router.post('/', async(req, res, next)=>{
                 }
                 else{
 
-                    if(req.session.msg == ''){
-                        req.session.msg = 'حساب شما مسدود می باشد.';
-                    }
+                    errorManager.set(9);
                     return res.redirect(`${config.backend_url}login`);
 
                 }
@@ -83,9 +75,7 @@ router.post('/', async(req, res, next)=>{
             }
             else{
 
-                if(req.session.msg == ''){
-                    req.session.msg = 'ایمیل و یا رمز عبور اشتباه می باشد.';
-                }
+                errorManager.set(10);
                 return res.redirect(`${config.backend_url}login`);
 
             }
@@ -93,9 +83,7 @@ router.post('/', async(req, res, next)=>{
         }
         else{
 
-            if(req.session.msg == ''){
-                req.session.msg = 'ایمیل و یا رمز عبور اشتباه می باشد.';
-            }
+            errorManager.set(11);
             return res.redirect(`${config.backend_url}login`);
 
         }
