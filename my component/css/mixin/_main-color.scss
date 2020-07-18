@@ -17,9 +17,16 @@ $dsh_color: #494B74;
 $dsh_color_light: #3699FF;
 $dsh_text_color:#A2A3B7;
 
-$error_color:#B95000;
-$error_bg:#FEF5EB;
-$error_border:#f1bf98; 
+$warning_color:#B95000;
+$warning_bg:#FEF5EB;
+$warning_border:#f1bf98; 
 
+$danger_color:#b90000;
+$danger_bg:#feebeb;
+$danger_border:#f19898; 
 
-$QT_hover:#F5F5FE
+$success_color:#0fb900;
+$success_bg:#ebfeec;
+$success_border:#98f19d; 
+
+$QT_hover:#F5F5FE;
