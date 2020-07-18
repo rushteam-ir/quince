@@ -23,5 +23,3 @@ backend.locals.limit_page = 5;
 backend.locals.limited_images_size = (config.image_limited_size/1024).toString();
 backend.locals.limited_products_size = (backend_limited_products_size/1024).toString();
 backend.locals.msg = '';
-
-errorManager = require('../initializers/error-manager');
