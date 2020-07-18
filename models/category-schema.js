@@ -180,8 +180,8 @@ category_schema.statics = {
 
                 }
 
-                if(parent == null){
-
+                if(parent == null || this_category.parent != parent){
+                    log('im here')
                     return await category_model.findByIdAndUpdate(category_id, {
                         title: title_inp,
                         parent: parent,

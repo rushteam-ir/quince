@@ -35,6 +35,7 @@ router.post('/', async(req, res, next)=>{
                 req.session.admin_info = result;
                 return res.json({
                     status : 'success',
+                    url : `${config.backend_url}profile`,
                     msg : 'رمز عبور شما با موفقیت تعویض شد.'
                 })
 

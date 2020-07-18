@@ -1,3 +1,12 @@
+$( function () {
+        if(sessionStorage.getItem('reload') == 'true') {
+            showMessage(sessionStorage.getItem('message'));
+            $('.error_info').addClass('success_error')
+            sessionStorage.setItem('reload', 'false');
+        }
+    }
+);
+
 $('.form_ajax').submit(function(event){
 
     event.preventDefault();
@@ -20,7 +29,7 @@ $('.form_ajax').submit(function(event){
 
             sessionStorage.setItem('reload', 'true');
             sessionStorage.setItem('message', response.msg);
-            location.reload();
+            redirect(response.url);
 
         }
         else{
@@ -52,11 +61,6 @@ function showMessage(text){
 
 }
 
-$( function () {
-        if(sessionStorage.getItem('reload') == 'true') {
-            showMessage(sessionStorage.getItem('message'));
-            $('.error_info').addClass('success_error')
-            sessionStorage.setItem('reload', 'false');
-        }
-    }
-);
+function redirect(url) {
+    location.href = url
+}

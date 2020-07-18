@@ -49,6 +49,7 @@ router.post('/', async(req, res, next)=>{
             req.session.admin_info = result;
             return res.json({
                 status : 'success',
+                url : `${config.backend_url}profile`,
                 msg : 'اطلاعات شخصی حساب کاربری شما با موفقیت اصلاح شد.'
             })
 
