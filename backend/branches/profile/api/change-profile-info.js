@@ -42,7 +42,7 @@ router.post('/', async(req, res, next)=>{
 
         if(validation_result){
 
-            return res.redirect(`${config.backend_url}profile/?msg=${validation_result}`);
+            return res.json(validation_result)
 
         }
 
