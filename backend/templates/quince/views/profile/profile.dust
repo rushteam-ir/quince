@@ -21,7 +21,7 @@
                                 <hr>
                             </header>
                             <div class="main_div_of_personal_form">
-                                <form class="form_ajax" method="post" action="{backend_url}profile/api/change-profile-info" autocomplete="off">
+                                <form id="form_ajax" method="post" action="{backend_url}profile/api/change-profile-info" autocomplete="off">
                                     <div class="form-group mt-4 row">
                                         <label for="user_name"
                                                class="col-sm-2 col-form-label main_lable_design">نام</label>

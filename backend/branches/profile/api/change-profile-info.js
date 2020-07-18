@@ -28,7 +28,7 @@ router.post('/', async(req, res, next)=>{
             last_input.phone_number == phone_number_inp && last_input.author_type == last_check_box &&
             !req.files){
 
-            return res.redirect(`${config.backend_url}profile/?msg=no-change`);
+            return res.json('no-change')
 
         }
 
