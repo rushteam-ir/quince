@@ -27,7 +27,7 @@ router.post('/', async(req, res, next)=>{
 
         if(validation_result){
 
-            return res.redirect(`${config.backend_url}profile/?msg=${validation_result}`);
+            return res.json(validation_result)
 
         }
 
@@ -47,12 +47,15 @@ router.post('/', async(req, res, next)=>{
         if(result){
 
             req.session.admin_info = result;
-            return res.redirect(`${config.backend_url}profile/?msg=profile-success`);
+            return res.json({
+                status : 'success',
+                msg : 'اطلاعات شخسی حساب کاربری با موفقیت اصلاح شد.'
+            })
 
         }
         else{
 
-            return res.redirect(`${config.backend_url}profile/?msg=profile-fail`);
+            return res.json('درخواست شما با مشکل مواجه شده ، لطفا با پشتیبانی تماس حاصل فرمایید.')
 
         }
 

@@ -31,12 +31,12 @@ module.exports = validation =  class {
 
         if(input.value == ''){
 
-            return 'empty-input';
+            return 'ورودی خالی معتبر نمی باشد.';
 
         }
         else if(input.type != 'array' && (Array.isArray(input.value))){
 
-            return 'invalid-input';
+            return 'ورودی وارد شده معتبر نمی باشد';
 
         }
 
@@ -49,7 +49,7 @@ module.exports = validation =  class {
 
                     if(input.value.length < 4) {
 
-                        return 0;
+                        return 'نام کاربری باید بیشتر از 4 حرف باشد.';
 
                     }
 
@@ -62,7 +62,7 @@ module.exports = validation =  class {
 
                     if(input.value.length < 8) {
 
-                        return 0;
+                        return 'رمز عبور باید بیشتر از 8 حرف باشد.';
 
                     }
 
@@ -77,7 +77,7 @@ module.exports = validation =  class {
 
                     if(!email_regexp.test(input.value)){
 
-                        return 1;
+                        return 'ایمیل معتبر نمی باشد.';
 
                     }
 
@@ -90,7 +90,7 @@ module.exports = validation =  class {
 
                     if(input.value.length != 11){
 
-                        return 2;
+                        return 'شماره تلفن همراه معتبر نمی باشد.';
 
                     }
 
@@ -103,7 +103,7 @@ module.exports = validation =  class {
 
                     if(isNaN(parseInt(input.value))){
 
-                        return 3;
+                        return 'ورودی وارد شده باید به صورت عدد باشد.';
 
                     }
 
@@ -116,7 +116,7 @@ module.exports = validation =  class {
 
                     if(!mongoose.Types.ObjectId.isValid(input.value)){
 
-                        return 4;
+                        return 'ورودی وارد شده معتبر نمی باشد.';
 
                     }
 
@@ -145,7 +145,7 @@ module.exports = validation =  class {
 
                     if(input.value.length == 0){
 
-                        return 5;
+                        return 'ورودی خالی معتبر نمی باشد.';
 
                     }
 
@@ -162,13 +162,13 @@ module.exports = validation =  class {
                     let year = parseInt(date[0]);
 
                     if(day < 0 || day > 31){
-                        return 6
+                        return 'تاریخ وارد شده معتبر نمی باشد.'
                     }
                     else if(month < 0 || month > 12){
-                        return 6
+                        return 'تاریخ وارد شده معتبر نمی باشد.'
                     }
                     else if(year < 1300){
-                        return 6
+                        return 'تاریخ وارد شده معتبر نمی باشد.'
                     }
 
                     break;
@@ -184,13 +184,13 @@ module.exports = validation =  class {
                     let year = parseInt(date[0]);
 
                     if(day < 0 || day > 31){
-                        return 7
+                        return 'تاریخ وارد شده معتبر نمی باشد و یا گذشته است.'
                     }
                     else if(month < 0 || month > 12){
-                        return 7
+                        return 'تاریخ وارد شده معتبر نمی باشد و یا گذشته است.'
                     }
                     else if(year < 1300){
-                        return 7
+                        return 'تاریخ وارد شده معتبر نمی باشد و یا گذشته است.'
                     }
 
                     let exp_date = JalaliConvert([year, month, day]);
@@ -198,7 +198,7 @@ module.exports = validation =  class {
                     let time_difference = exp_date.getTime() - curr_date.getTime();
 
                     if(time_difference < 0){
-                        return 7;
+                        return 'تاریخ وارد شده معتبر نمی باشد و یا گذشته است.';
                     }
 
                     break;

@@ -13,12 +13,13 @@ $('#form_ajax').submit(function(event){
     $.ajax({
         url : post_url,
         method: request_method,
-        data : form_data
+        data : form_data,
+        dataType : 'json',
     }).done(function(response){
-        if(response == 'success'){
+        if(response.status == 'success'){
 
             sessionStorage.setItem('reload', 'true');
-            sessionStorage.setItem('message', response);
+            sessionStorage.setItem('message', response.msg);
             location.reload();
 
         }
