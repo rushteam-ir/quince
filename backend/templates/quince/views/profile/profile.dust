@@ -98,17 +98,17 @@
                                     <div class="form-group mt-4 row">
                                         <label for="user_birthday" class="col-sm-2 col-form-label main_lable_design">تاریخ تولد</label>
                                         <div class="col-4 col-sm-3 col-md-2">
-                                            <input type="text" maxlength="2" class="form-control main_form_design" id="user_birthday"
+                                            <input type="number" min="1" max="31" maxlength="2"  class="form-control main_form_design" id="user_birthday"
                                                    placeholder="dd" name="day_inp" value="{admin_info.birth_day}">
                                         </div>
                                         <div class="col-4 col-sm-3 col-md-2">
                                             <span class="birth_day_backslash">/</span>
-                                            <input type="text" maxlength="2" class="form-control main_form_design" placeholder="mm"
+                                            <input type="number" min="1" max="12" maxlength="2" class="form-control main_form_design" placeholder="mm"
                                                    name="month_inp" value="{admin_info.birth_month}">
                                         </div>
                                         <div class="col-4 col-sm-3 col-md-2">
                                             <span class="birth_day_backslash">/</span>
-                                            <input type="text" maxlength="4" class="form-control main_form_design" placeholder="yy"
+                                            <input type="number" min="1300" max="1400" maxlength="4" class="form-control main_form_design" placeholder="yy"
                                                    name="year_inp" value="{admin_info.birth_year}">
                                         </div>
                                     </div>

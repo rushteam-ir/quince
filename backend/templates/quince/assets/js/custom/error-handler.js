@@ -22,6 +22,7 @@ class errorHandler {
 
     }
 
+    
     checkValidation(input){
 
         let value = input.value;
@@ -61,6 +62,18 @@ class errorHandler {
                 if(isNaN(value) || value.length != 11){
 
                     return 'شماره تماس وارد شده نامعتبر است.';
+
+                }
+
+                break;
+
+            }
+            case 'born date':
+            {
+
+                if(isNaN(value)){
+
+                    return 'تاریخ تولد وارد شده صحیح نمی باشد.';
 
                 }
 
