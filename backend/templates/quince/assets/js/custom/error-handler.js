@@ -34,7 +34,7 @@ class errorHandler {
 
                 if(value == ''){
 
-                    return 'لطفا تمام ورودی ها را وارد کنید.'
+                    return 'لطفا تمام ورودی ها را وارد کنید.';
 
                 }
 
@@ -48,7 +48,19 @@ class errorHandler {
 
                 if(!email_regexp.test(value)){
 
-                    return 'ایمیل وارد شده معتبر نمی باشد.'
+                    return 'ایمیل وارد شده معتبر نمی باشد.';
+
+                }
+
+                break;
+
+            }
+            case 'phone number':
+            {
+
+                if(isNaN(value) || value.length != 11){
+
+                    return 'شماره تماس وارد شده نامعتبر است.';
 
                 }
 

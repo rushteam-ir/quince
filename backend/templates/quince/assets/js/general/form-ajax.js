@@ -55,6 +55,7 @@ function showMessage(text){
 $( function () {
         if(sessionStorage.getItem('reload') == 'true') {
             showMessage(sessionStorage.getItem('message'));
+            $('.error_info').addClass('success_error')
             sessionStorage.setItem('reload', 'false');
         }
     }
