@@ -11,7 +11,19 @@ $('#form_ajax').submit(function(event){
         method: request_method,
         data : form_data
     }).done(function(response){
-        proInfo(response)
+        if(response == 'success'){
+
+            sessionStorage.setItem('reload', true);
+            sessionStorage.setItem('message', response);
+            location.reload();
+
+        }
+        else{
+
+            proInfo(response)
+
+        }
+
     });
 
 });
@@ -34,3 +46,11 @@ function proInfo(text){
     return false;
 
 }
+
+$( function () {
+        if(sessionStorage.getItem('reload')) {
+            proInfo(sessionStorage.getItem('message'));
+            sessionStorage.setItem('reload', false);
+        }
+    }
+);

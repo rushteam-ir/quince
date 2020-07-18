@@ -73,7 +73,7 @@ router.post('/', async(req, res, next)=>{
         if(result){
 
             req.session.admin_info = result;
-            return res.redirect(`${config.backend_url}profile/?msg=profile-success`);
+            return res.json('success')
 
         }
         else{
