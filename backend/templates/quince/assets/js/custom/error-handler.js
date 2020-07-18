@@ -4,7 +4,7 @@ class errorHandler {
 
         let validation_result = null;
 
-        for(let i = 0; i < inputs.lentgh; i++){
+        for(let i = 0; i < inputs.length; i++){
 
             let input = inputs[i];
 
@@ -34,7 +34,6 @@ class errorHandler {
 
                 if(value == ''){
 
-                    console.log('im in CLASS')
                     return 'لطفا تمام ورودی ها را وارد کنید.'
 
                 }

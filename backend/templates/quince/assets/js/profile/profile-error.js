@@ -24,6 +24,7 @@ function profileError() {
         { value : phone_number_inp, type : 'phone number'},
     ])
 
+
     if(validation_result){
 
         error();
