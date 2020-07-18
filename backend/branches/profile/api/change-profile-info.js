@@ -28,7 +28,7 @@ router.post('/', async(req, res, next)=>{
             last_input.phone_number == phone_number_inp && last_input.author_type == last_check_box &&
             !req.files){
 
-            return res.json('no-change')
+            return res.json('تغییر جدیدی در اطلاعات اعمال نشده است.')
 
         }
 
@@ -73,12 +73,15 @@ router.post('/', async(req, res, next)=>{
         if(result){
 
             req.session.admin_info = result;
-            return res.json('success')
+            return res.json({
+                status : 'success',
+                msg : 'مشخصات حساب کاربری با موفقیت اصلاح شد.'
+            })
 
         }
         else{
 
-            return res.redirect(`${config.backend_url}profile/?msg=profile-fail`);
+            return res.json('درخواست شما با مشکل مواجه شده ، لطفا با پشتیبانی تماس حاصل فرمایید.')
 
         }
 

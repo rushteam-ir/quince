@@ -16,7 +16,7 @@ router.post('/', async(req, res, next)=>{
 
         if(validation_result){
 
-            return res.redirect(`${config.backend_url}profile/?msg=${validation_result}`);
+            return res.json(validation_result)
 
         }
 
@@ -33,19 +33,22 @@ router.post('/', async(req, res, next)=>{
             if(result){
 
                 req.session.admin_info = result;
-                return res.redirect(`${config.backend_url}profile/?msg=password-success`);
+                return res.json({
+                    status : 'success',
+                    msg : 'رمز عبور با موفقیت تعویض شد.'
+                })
 
             }
             else{
 
-                return res.redirect(`${config.backend_url}profile/?msg=password-fail`);
+                return res.json('درخواست شما با مشکل مواجه شده ، لطفا با پشتیبانی تماس حاصل فرمایید.')
 
             }
 
         }
         else{
 
-            return res.redirect(`${config.backend_url}profile/?msg=incorrect-input`);
+            return res.json('رمز عبور فعلی اشتباه است و یا رمز عبور جدید و تکرار آن مشابه نیستند.')
 
         }
 
