@@ -1,5 +1,5 @@
-function submitE(){
-    let test = $("input[name=test]").val();
+function proInfo(){
+    let test = $("input[name=first_name_inp]").val();
 
     if( test.length < 20){
 

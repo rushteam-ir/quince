@@ -5,14 +5,16 @@
     text-align: right;
     direction: rtl;
     background-color: $error_bg;
-    width: 30%;
+    color: $error_color;
     border: 1px solid $error_border;
+    width: 30%;
+    height: 68px;
     border-radius: 7px;
     padding: 20px;
+    margin: 0;
+    @include transition (ease-out, 0.7s);
     opacity: 0;
-    @include transition (ease-out , 0.7s);
     overflow: hidden;
-    height: 68px;
 
     i {
         position: relative;
@@ -21,17 +23,29 @@
         margin-left: 4px;
     }
 
-    p {
-        margin: 0;
-        color: $error_color;
-
-        & :last-child {
-            position: absolute;
-            left: 20px;
-            top: 22px;
-            cursor: pointer;
-        }
+    p{
+        display: inline-block;
     }
+
+    & :last-child {
+        position: absolute;
+        left: 20px;
+        top: 22px;
+        cursor: pointer;
+    }
+}
+
+.error_d_none{
+    display: none;
+}
+
+.error_disable{
+    top: -75px;
+    opacity: 0;
+}
+
+.error_d_block{
+    display: block;
 }
 
 .error_active {
