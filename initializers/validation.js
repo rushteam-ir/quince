@@ -31,7 +31,7 @@ module.exports = validation =  class {
 
         if(input.value == ''){
 
-            return 'ورودی خالی معتبر نمی باشد.';
+            return 'لطفا تمام ورودی ها را وارد کنید.';
 
         }
         else if(input.type != 'array' && (Array.isArray(input.value))){
@@ -77,7 +77,7 @@ module.exports = validation =  class {
 
                     if(!email_regexp.test(input.value)){
 
-                        return 'ایمیل معتبر نمی باشد.';
+                        return 'ایمیل وارد شده معتبر نمی باشد.';
 
                     }
 
@@ -145,7 +145,7 @@ module.exports = validation =  class {
 
                     if(input.value.length == 0){
 
-                        return 'ورودی خالی معتبر نمی باشد.';
+                        return 'لطفا تمام ورودی ها را وارد کنید.';
 
                     }
 
