@@ -162,19 +162,19 @@
         <div class="navbar_profile">
             <div class="d-inline-block">
                 <div class="field_of_name">
-                    {@eq key="{global.admin_info.author_type}" value="name"}
-                        <span>{global.short_letter_name}</span>
+                    {@eq key="{g_author_type}" value="name"}
+                        <span>{g_short_letter_name}</span>
                     {:else}
-                        <span>{global.short_letter_nick_name}</span>
+                        <span>{g_short_letter_nick_name}</span>
                     {/eq}
                 </div>
             </div>
             <div class="d-inline-block hi_user_text">
                 <span> سلام</span>
-                {@eq key="{global.admin_info.author_type}" value="name"}
-                    <span> {global.admin_info.first_name} !</span>
+                {@eq key="{g_author_type}" value="name"}
+                    <span> {g_first_name} !</span>
                 {:else}
-                    <span> {global.admin_info.nick_name} !</span>
+                    <span> {g_nick_name} !</span>
                 {/eq}
             </div>
 
