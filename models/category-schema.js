@@ -147,69 +147,9 @@ category_schema.statics = {
 
     edit : async function (category_id, title_inp, parent_inp) {
 
-        let this_category = await category_model.findById(category_id)
+        let this_category = await category_model.findById(category_id);
 
-        let parent = parent_inp;
-
-        if(parent_inp == '0'){
-
-            parent = null;
-
-        }
-        else if(parent_inp == '-1'){
-
-            parent = this_category.parent
-
-        }
-
-        let find_cat = await category_model.findOne({title : title_inp, parent : parent});
-
-        if(this_category._id != parent) {
-
-            if (!find_cat) {
-
-                await category_model.findByIdAndUpdate(parent, {$inc: {child_number: 1}});
-
-                if (this_category.parent) {
-
-                    await category_model.findByIdAndUpdate(this_category.parent, {$inc: {child_number: -1}});
-
-                } else if(parent_inp != '-1') {
-
-                    await category_model.updateMany({parent: this_category._id}, {parent: null, child_number: 0})
-
-                }
-
-                if(parent == null || this_category.parent != parent){
-                    log('im here')
-                    return await category_model.findByIdAndUpdate(category_id, {
-                        title: title_inp,
-                        parent: parent,
-                        child_number : 0,
-                    });
-
-                }
-                else{
-
-                    return await category_model.findByIdAndUpdate(category_id, {
-                        title: title_inp,
-                        parent: parent,
-                    });
-
-                }
-
-            } else {
-
-                return null
-
-            }
-
-        }
-        else{
-
-            return null
-
-        }
+        
 
     },
 

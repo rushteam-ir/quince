@@ -56,7 +56,7 @@ router.post('/', async(req, res, next)=>{
         }
         else{
 
-            return res.json('درخواست شما با مشکل مواجه شده ، لطفا با پشتیبانی تماس حاصل فرمایید.')
+            return res.json('درخواست شما با مشکل مواجه شده است.')
 
         }
 

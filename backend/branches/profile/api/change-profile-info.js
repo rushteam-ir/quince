@@ -25,8 +25,7 @@ router.post('/', async(req, res, next)=>{
 
         if(last_input.first_name == first_name_inp && last_input.nick_name == nick_name_inp &&
             last_input.last_name == last_name_inp && last_input.email == email_inp &&
-            last_input.phone_number == phone_number_inp && last_input.author_type == last_check_box &&
-            !req.files){
+            last_input.phone_number == phone_number_inp && last_input.author_type == last_check_box){
 
             return res.json('تغییر جدیدی در اطلاعات اعمال نشده است.')
 
@@ -82,7 +81,7 @@ router.post('/', async(req, res, next)=>{
         }
         else{
 
-            return res.json('درخواست شما با مشکل مواجه شده ، لطفا با پشتیبانی تماس حاصل فرمایید.')
+            return res.json('درخواست شما با مشکل مواجه شده است.')
 
         }
 
