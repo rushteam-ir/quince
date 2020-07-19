@@ -7,11 +7,8 @@ router.get('/', async(req, res, next)=>{
         let data = {
 
             login_form: req.session.login_form,
-            msg : backend.locals.msg
 
         }
-
-        backend.locals.msg = '';
 
         res.render('login/login', data);
 
