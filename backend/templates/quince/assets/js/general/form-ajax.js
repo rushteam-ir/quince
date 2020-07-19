@@ -17,13 +17,27 @@ $('.form_ajax').submit(function(event){
     let post_url = $(this).attr("action");
     let request_method = $(this).attr("method");
     let form_data = getFormData($(this));
-
-    $.ajax({
+    let isFileUpload = document.getElementsByClassName('ajax_file');
+    let ajax_options = {
         url : post_url,
         method: request_method,
-        data : form_data,
-        dataType : 'json',
-    }).done(function(response){
+        dataType : 'json'
+    }
+
+    if (Object.keys(form_data).length == 0 && isFileUpload.length > 0) {
+
+        form_data = new FormData();
+        let files = $('.ajax_file')[0].files[0];
+        form_data.append('avatar',files);
+
+        ajax_options.contentType = false;
+        ajax_options.processData = false;
+
+    }
+
+    ajax_options.data = form_data;
+
+    $.ajax(ajax_options).done(function(response){
         if(response.status == 'success'){
 
             sessionStorage.setItem('reload', 'true');

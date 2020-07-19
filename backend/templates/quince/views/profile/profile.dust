@@ -235,7 +235,7 @@
                                                         {/eq}
                                                     </div>
                                                     <input type="file" name="avatar" id="avatar_img"
-                                                            class="input-file-custom" accept="image/*">
+                                                            class="input-file-custom ajax_file" accept="image/jpeg, image/png, image/jpg, image/gif">
                                                     <label for="avatar_img" class="btn btn-tertiary2 js-labelFile ">
                                                         <i class="icon fa fa-check"></i>
                                                         <span class="js-fileName mr-2">آپلود عکس</span>
