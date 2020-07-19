@@ -65,6 +65,12 @@ function profileError() {
                 { value : confirm_password, type : 'empty'},
         
             ]);
+
+            if(new_password !== confirm_password){
+
+                validation_result = 'رمز عبور جدید و تکرار آن مشابه نیستند.';
+
+            }
             
             break;
         
@@ -80,13 +86,8 @@ function profileError() {
         $('.error_info p').text(validation_result);
         return false;
 
-    }else if(new_password !== confirm_password){
-
-        error();
-        $('.error_info p').text('رمز عبور جدید و تکرار آن مشابه نیستند.');
-        return false;
-
-    }else{
+    }
+    else{
 
         return true;
 
