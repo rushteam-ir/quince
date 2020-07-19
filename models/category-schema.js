@@ -147,67 +147,60 @@ category_schema.statics = {
 
     edit : async function (category_id, title_inp, parent_inp) {
 
-        let this_category = await category_model.findById(category_id)
-
-        let parent = parent_inp;
+        let this_category = await category_model.findById(category_id);
 
         if(parent_inp == '0'){
 
-            parent = null;
-
-        }
-        else if(parent_inp == '-1'){
-
-            parent = this_category.parent
+            parent_inp = null;
 
         }
 
-        let find_cat = await category_model.findOne({title : title_inp, parent : parent});
+        let find_cat = await category_model.findOne({title : title_inp, parent : parent_inp});
 
-        if(this_category._id != parent) {
+        if(!find_cat && parent_inp != this_category._id){
 
-            if (!find_cat) {
+            if(this_category.parent == null){
 
-                await category_model.findByIdAndUpdate(parent, {$inc: {child_number: 1}});
+                if(parent_inp != null){
 
-                if (this_category.parent) {
-
-                    await category_model.findByIdAndUpdate(this_category.parent, {$inc: {child_number: -1}});
-
-                } else if(parent_inp != '-1') {
-
-                    await category_model.updateMany({parent: this_category._id}, {parent: null, child_number: 0})
+                    await category_model.updateMany({parent: this_category._id}, {parent: null, child_number : 0});
+                    await category_model.findByIdAndUpdate(category_id, {child_number : 0});
+                    await category_model.findByIdAndUpdate(parent_inp, {$inc: {child_number: 1}});
 
                 }
 
-                if(parent == null){
+            }
+            else{
 
-                    return await category_model.findByIdAndUpdate(category_id, {
-                        title: title_inp,
-                        parent: parent,
-                        child_number : 0,
-                    });
+                if(parent_inp != this_category.parent._id){
+
+                    await category_model.findByIdAndUpdate(this_category.parent._id, {$inc: {child_number: -1}});
+
+                }
+
+                if(parent_inp == null){
+
+                    await category_model.findByIdAndUpdate(category_id, {child_number: 0});
 
                 }
                 else{
 
-                    return await category_model.findByIdAndUpdate(category_id, {
-                        title: title_inp,
-                        parent: parent,
-                    });
+                    if(parent_inp != this_category.parent._id){
+
+                        await category_model.findByIdAndUpdate(parent_inp, {$inc: {child_number: 1}});
+
+                    }
 
                 }
 
-            } else {
-
-                return null
-
             }
+
+            return await category_model.findByIdAndUpdate(category_id, {title: title_inp, parent: parent_inp});
 
         }
         else{
 
-            return null
+            return null;
 
         }
 

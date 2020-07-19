@@ -7,11 +7,8 @@ router.get('/', async(req, res, next)=>{
         let data = {
 
             login_form: req.session.login_form,
-            msg : backend.locals.msg
 
         }
-
-        backend.locals.msg = '';
 
         res.render('login/login', data);
 
@@ -39,11 +36,11 @@ router.post('/', async(req, res, next)=>{
             {value : captcha_inp}
         ]).valid()
 
-        errorManager.set(validation_result);
+        //errorManager.set(validation_result);
 
         if(captcha_inp.toLowerCase() != req.session.captcha){
 
-            errorManager.set(8);
+            //errorManager.set(8);
             return res.redirect(`${config.backend_url}login`);
 
         }
@@ -67,7 +64,7 @@ router.post('/', async(req, res, next)=>{
                 }
                 else{
 
-                    errorManager.set(9);
+                    //errorManager.set(9);
                     return res.redirect(`${config.backend_url}login`);
 
                 }
@@ -75,7 +72,7 @@ router.post('/', async(req, res, next)=>{
             }
             else{
 
-                errorManager.set(10);
+                //errorManager.set(10);
                 return res.redirect(`${config.backend_url}login`);
 
             }
@@ -83,7 +80,7 @@ router.post('/', async(req, res, next)=>{
         }
         else{
 
-            errorManager.set(11);
+            //errorManager.set(11);
             return res.redirect(`${config.backend_url}login`);
 
         }

@@ -25,10 +25,9 @@ router.post('/', async(req, res, next)=>{
 
         if(last_input.first_name == first_name_inp && last_input.nick_name == nick_name_inp &&
             last_input.last_name == last_name_inp && last_input.email == email_inp &&
-            last_input.phone_number == phone_number_inp && last_input.author_type == last_check_box &&
-            !req.files){
+            last_input.phone_number == phone_number_inp && last_input.author_type == last_check_box){
 
-            return res.json('no-change')
+            return res.json('تغییر جدیدی در اطلاعات اعمال نشده است.')
 
         }
 
@@ -73,12 +72,16 @@ router.post('/', async(req, res, next)=>{
         if(result){
 
             req.session.admin_info = result;
-            return res.redirect(`${config.backend_url}profile/?msg=profile-success`);
+            return res.json({
+                status : 'success',
+                url : `${config.backend_url}profile`,
+                msg : 'مشخصات حساب کاربری شما با موفقیت اصلاح شد.'
+            })
 
         }
         else{
 
-            return res.redirect(`${config.backend_url}profile/?msg=profile-fail`);
+            return res.json('درخواست شما با مشکل مواجه شده است.')
 
         }
 

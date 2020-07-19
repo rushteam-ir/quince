@@ -1,6 +1,19 @@
-$('#form_ajax').submit(function(event){
+$( function () {
+        if(sessionStorage.getItem('reload') == 'true') {
+            showMessage(sessionStorage.getItem('message'));
+            $('.error_info').addClass('success_error')
+            sessionStorage.setItem('reload', 'false');
+        }
+    }
+);
+
+$('.form_ajax').submit(function(event){
 
     event.preventDefault();
+
+    let front_validation =  profileError();
+
+    if(!front_validation) return false;
 
     let post_url = $(this).attr("action");
     let request_method = $(this).attr("method");
@@ -9,9 +22,22 @@ $('#form_ajax').submit(function(event){
     $.ajax({
         url : post_url,
         method: request_method,
-        data : form_data
+        data : form_data,
+        dataType : 'json',
     }).done(function(response){
-        console.log(response)
+        if(response.status == 'success'){
+
+            sessionStorage.setItem('reload', 'true');
+            sessionStorage.setItem('message', response.msg);
+            redirect(response.url);
+
+        }
+        else{
+
+            showMessage(response)
+
+        }
+
     });
 
 });
@@ -25,4 +51,16 @@ function getFormData($form){
     });
 
     return indexed_array;
+}
+
+function showMessage(text){
+
+    error();
+    $('.error_info p').text(text)
+    return false;
+
+}
+
+function redirect(url) {
+    location.href = url
 }

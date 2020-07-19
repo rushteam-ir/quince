@@ -16,7 +16,7 @@ router.post('/', async(req, res, next)=>{
 
         if(validation_result){
 
-            return res.redirect(`${config.backend_url}profile/?msg=${validation_result}`);
+            return res.json(validation_result)
 
         }
 
@@ -26,26 +26,39 @@ router.post('/', async(req, res, next)=>{
 
         };
 
-        if(current_password === req.session.admin_info.password && new_password === confirm_password && new_password != "" && confirm_password != ""){
+        if(current_password === req.session.admin_info.password){
 
-            let result = await user_model.edit(admin_id, admin_data);
+            if(new_password === confirm_password){
 
-            if(result){
+                let result = await user_model.edit(admin_id, admin_data);
 
-                req.session.admin_info = result;
-                return res.redirect(`${config.backend_url}profile/?msg=password-success`);
+                if(result){
+
+                    req.session.admin_info = result;
+                    return res.json({
+                        status : 'success',
+                        url : `${config.backend_url}profile`,
+                        msg : 'رمز عبور شما با موفقیت تعویض شد.'
+                    })
+
+                }
+                else{
+
+                    return res.json('درخواست شما با مشکل مواجه شده است.')
+
+                }
 
             }
             else{
 
-                return res.redirect(`${config.backend_url}profile/?msg=password-fail`);
+                return res.json('رمز عبور جدید و تکرار آن مشابه نیستند.');
 
             }
 
         }
         else{
 
-            return res.redirect(`${config.backend_url}profile/?msg=incorrect-input`);
+            return res.json('رمز عبور فعلی اشتباه است.');
 
         }
 

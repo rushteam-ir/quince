@@ -4,12 +4,21 @@
     <link rel="stylesheet" href="css/profile/profile-media-query.css">
 {/css}
 {<js}
-    <script src="js/profile/profile.js"></script>
     <script src="js/profile/profile-tabs.js"></script>
+    <script src="js/custom/main-error.js"></script>
+    <script src="js/custom/error-handler.js"></script>
+    <script src="js/profile/profile.js"></script>
+    <script src="js/profile/profile-error.js"></script>
     <script src="js/general/form-ajax.js"></script>
 {/js}
 {<body}
     <section>
+        <!-- error -->
+        <div class="error_info warning_error">
+            <i class="fal fa-exclamation-circle"></i>
+            <p></p>
+            <i class="fal fa-times"></i>
+        </div>
         <div class="main_field mt-4 mb-4">
             <div class="container-fluid">
                 <div class="row">
@@ -21,7 +30,7 @@
                                 <hr>
                             </header>
                             <div class="main_div_of_personal_form">
-                                <form id="form_ajax" method="post" action="{backend_url}profile/api/change-profile-info" autocomplete="off">
+                                <form class="form_ajax" method="post" action="{backend_url}profile/api/change-profile-info" autocomplete="off">
                                     <div class="form-group mt-4 row">
                                         <label for="user_name"
                                                class="col-sm-2 col-form-label main_lable_design">نام</label>
@@ -85,21 +94,21 @@
                                 <hr>
                             </header>
                             <div class="main_div_of_personal_form">
-                                <form method="post" action="{backend_url}profile/api/change-profile-private" autocomplete="off">
+                                <form class="form_ajax" method="post" action="{backend_url}profile/api/change-profile-private" autocomplete="off">
                                     <div class="form-group mt-4 row">
                                         <label for="user_birthday" class="col-sm-2 col-form-label main_lable_design">تاریخ تولد</label>
                                         <div class="col-4 col-sm-3 col-md-2">
-                                            <input type="text" class="form-control main_form_design" id="user_birthday"
+                                            <input type="number" min="1" max="31" maxlength="2"  class="form-control main_form_design" id="user_birthday"
                                                    placeholder="dd" name="day_inp" value="{admin_info.birth_day}">
                                         </div>
                                         <div class="col-4 col-sm-3 col-md-2">
                                             <span class="birth_day_backslash">/</span>
-                                            <input type="text" class="form-control main_form_design" placeholder="mm"
+                                            <input type="number" min="1" max="12" maxlength="2" class="form-control main_form_design" placeholder="mm"
                                                    name="month_inp" value="{admin_info.birth_month}">
                                         </div>
                                         <div class="col-4 col-sm-3 col-md-2">
                                             <span class="birth_day_backslash">/</span>
-                                            <input type="text" class="form-control main_form_design" placeholder="yy"
+                                            <input type="number" min="1300" max="1400" maxlength="4" class="form-control main_form_design" placeholder="yy"
                                                    name="year_inp" value="{admin_info.birth_year}">
                                         </div>
                                     </div>
@@ -143,7 +152,7 @@
                                 <hr>
                             </header>
                             <div class="main_div_of_personal_form">
-                                <form method="post" action="{backend_url}profile/api/change-password" autocomplete="off">
+                                <form class="form_ajax" method="post" action="{backend_url}profile/api/change-password" autocomplete="off">
                                     <div class="box_of_pass_alert_pro row">
                                         <div class="col-2">
                                             <i class="fad fa-exclamation-circle password_alert_pro"></i>
@@ -208,7 +217,7 @@
                         <div class="prodile_tabs p-4">
                             <div class="field_of_pro_img">
 
-                                <form method="post" action="{backend_url}profile/api/upload-avatar" enctype="multipart/form-data" autocomplete="off">
+                                <form id="form_ajax" method="post" action="{backend_url}profile/api/upload-avatar" enctype="multipart/form-data" autocomplete="off">
                                     <div class="form-group">
                                         <div class="field_of_img_template">
                                             <div class="box_of_img_template">

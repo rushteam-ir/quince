@@ -14,7 +14,7 @@ router.post('/', async(req, res, next)=>{
             last_input.birth_year == year_inp && last_input.country == country_inp &&
             last_input.city == city_inp && last_input.biography == bio_inp){
 
-            return res.redirect(`${config.backend_url}profile/?msg=no-change`);
+            return res.json('تغییر جدیدی در اطلاعات اعمال نشده است.')
 
         }
 
@@ -27,7 +27,7 @@ router.post('/', async(req, res, next)=>{
 
         if(validation_result){
 
-            return res.redirect(`${config.backend_url}profile/?msg=${validation_result}`);
+            return res.json(validation_result)
 
         }
 
@@ -47,12 +47,16 @@ router.post('/', async(req, res, next)=>{
         if(result){
 
             req.session.admin_info = result;
-            return res.redirect(`${config.backend_url}profile/?msg=profile-success`);
+            return res.json({
+                status : 'success',
+                url : `${config.backend_url}profile`,
+                msg : 'اطلاعات شخصی حساب کاربری شما با موفقیت اصلاح شد.'
+            })
 
         }
         else{
 
-            return res.redirect(`${config.backend_url}profile/?msg=profile-fail`);
+            return res.json('درخواست شما با مشکل مواجه شده است.')
 
         }
 
