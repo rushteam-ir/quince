@@ -8,7 +8,8 @@
     <script src="js/general/wysiwyg-editor.js"></script>
     <script src="js/general/wysiwyg-image-manager.js"></script>
     <script src="js/general/wysiwyg-custom.js"></script>
-    <script src="js/article/article-add.js"></script>
+    <script src="js/article/article-add/article-add.js"></script>
+    <script src="js/article/article-add/keyword-append.js"></script>
     <script src="js/custom/uploader.js"></script>
 {/js}
 {<body}
@@ -53,11 +54,13 @@
                                         <label for="article_keyword">کلمات کلیدی مقاله</label>
 
                                     <div class="input-group mb-3">
-                                        <input id="article_keyword" type="text" name="keys_inp" class="form-control main_form_design" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                        <input id="article_keyword" type="text" name="keys_inp" class="form-control main_form_design" aria-label="Username" aria-describedby="basic-addon1">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text plus_adon_article" id="basic-addon1"><button class="btn">+</button></span>
+                                            <span class="input-group-text plus_adon_article" id="basic-addon1"><button class="btn keyword_btn" type="button">+</button></span>
                                         </div>
                                     </div>
+
+                                    <div class="append_keyword"></div>
 
                                     </div>
                                     <div class="form-group">
@@ -65,8 +68,8 @@
                                         <textarea class="form-control main_form_design" id="article_describe" rows="7" name="meta_describe_inp"></textarea>
                                     </div>
                                     <div class="form-group">
-                                        <label for="avatar" class="col-form-label main_lable_design">تصویر اصلی
-                                            مقاله
+                                        <label for="avatar" class="col-form-label main_lable_design">
+                                            تصویر اصلی مقاله
                                         </label>
                                         <div class="field_of_img_template">
                                             <div class="box_of_img_template">
