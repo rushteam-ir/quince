@@ -56,7 +56,7 @@ $(document).ready(function () {
 
             reader.onload = function (e) {
 
-                let fieldHTML = '<div class="remove_parent"><img class="uploading_img_from_brows" src="' + e.target.result + '"> <div class="remove_img_icon remove"></div>  <button class="btn add_img_icon"></button>  </div>';
+                let fieldHTML = '<div class="remove_parent"><img class="uploading_img_from_brows" src="' + e.target.result + '"> <div class="remove_img_icon remove"></div>  <button type="submit" class="btn add_img_icon"></button>  </div>';
                 $(input).prev().append(fieldHTML);
 
             }

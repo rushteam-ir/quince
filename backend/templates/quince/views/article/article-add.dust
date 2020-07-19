@@ -51,7 +51,14 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="article_keyword">کلمات کلیدی مقاله</label>
-                                        <input type="text" class="form-control main_form_design" id="article_keyword" name="keys_inp">
+
+                                    <div class="input-group mb-3">
+                                        <input id="article_keyword" type="text" name="keys_inp" class="form-control main_form_design" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text plus_adon_article" id="basic-addon1"><button class="btn">+</button></span>
+                                        </div>
+                                    </div>
+
                                     </div>
                                     <div class="form-group">
                                         <label for="article_describe">توضیحات کلیدی مقاله</label>
