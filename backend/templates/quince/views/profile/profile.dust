@@ -30,7 +30,7 @@
                                 <hr>
                             </header>
                             <div class="main_div_of_personal_form">
-                                <form class="form_ajax" method="post" action="{backend_url}profile/api/change-profile-info" autocomplete="off">
+                                <form class="form_ajax" method="post" action="{backend_url}profile/api/change-profile-info" autocomplete="off" novalidate>
                                     <div class="form-group mt-4 row">
                                         <label for="user_name"
                                                class="col-sm-2 col-form-label main_lable_design">نام</label>
@@ -94,7 +94,7 @@
                                 <hr>
                             </header>
                             <div class="main_div_of_personal_form">
-                                <form class="form_ajax" method="post" action="{backend_url}profile/api/change-profile-private" autocomplete="off">
+                                <form class="form_ajax" method="post" action="{backend_url}profile/api/change-profile-private" autocomplete="off" novalidate>
                                     <div class="form-group mt-4 row">
                                         <label for="user_birthday" class="col-sm-2 col-form-label main_lable_design">تاریخ تولد</label>
                                         <div class="col-4 col-sm-3 col-md-2">
@@ -152,7 +152,7 @@
                                 <hr>
                             </header>
                             <div class="main_div_of_personal_form">
-                                <form class="form_ajax" method="post" action="{backend_url}profile/api/change-password" autocomplete="off">
+                                <form class="form_ajax" method="post" action="{backend_url}profile/api/change-password" autocomplete="off" novalidate>
                                     <div class="box_of_pass_alert_pro row">
                                         <div class="col-2">
                                             <i class="fad fa-exclamation-circle password_alert_pro"></i>

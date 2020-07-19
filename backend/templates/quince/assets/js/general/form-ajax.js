@@ -12,7 +12,6 @@ $('.form_ajax').submit(function(event){
     event.preventDefault();
 
     let front_validation =  profileError();
-
     if(!front_validation) return false;
 
     let post_url = $(this).attr("action");

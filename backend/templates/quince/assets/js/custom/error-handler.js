@@ -73,7 +73,7 @@ class errorHandler {
 
                 if(isNaN(value)){
 
-                    return 'تاریخ تولد وارد شده صحیح نمی باشد.';
+                    return 'تاریخ وارد شده صحیح نمی باشد.';
 
                 }
 
