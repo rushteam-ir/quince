@@ -217,7 +217,7 @@
                         <div class="prodile_tabs p-4">
                             <div class="field_of_pro_img">
 
-                                <form id="form_ajax" method="post" action="{backend_url}profile/api/upload-avatar" enctype="multipart/form-data" autocomplete="off">
+                                <form class="form_ajax" method="post" action="{backend_url}profile/api/upload-avatar" enctype="multipart/form-data" autocomplete="off">
                                     <div class="form-group">
                                         <div class="field_of_img_template">
                                             <div class="box_of_img_template">
