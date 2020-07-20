@@ -3,8 +3,6 @@ let err = new errorHandler();
 function articleAddError() {
 
     let title_inp = $('input[name=title_inp]').val();
-    let edit_title_inp = $('input[name=edit_title_inp]').val();
-
 
     let validation_result = null;
 
@@ -13,7 +11,6 @@ function articleAddError() {
         { value : title_inp, type : 'empty'},
 
     ]);
-
 
     if(validation_result){
 
