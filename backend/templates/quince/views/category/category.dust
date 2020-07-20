@@ -6,6 +6,8 @@
 {<js}
     <script src="js/category/category.js"></script>
     <script src="js/custom/checkbox.js"></script>
+    <script src="js/custom/main-error.js"></script>
+    <script src="js/custom/error-handler.js"></script>
     <script src="js/general/form-ajax.js"></script>
 {/js}
 
