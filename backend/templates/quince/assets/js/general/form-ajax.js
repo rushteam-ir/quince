@@ -55,7 +55,8 @@ $('.form_ajax').submit(function(event){
 
         form_data = new FormData();
         let files = $('.ajax_file')[0].files[0];
-        form_data.append('avatar',files);
+        let file_name = $('.ajax_file').attr('name');
+        form_data.append(file_name,files);
 
         ajax_options.contentType = false;
         ajax_options.processData = false;

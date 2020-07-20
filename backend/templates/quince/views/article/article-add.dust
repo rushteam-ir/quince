@@ -27,12 +27,12 @@
                     <div class="col-12 main_col">
                         <header class="header_field">
                             <h1>افزودن مقاله</h1>
-                            <h2>نوشتن مقاله جدید</h2>
+                            <h2>نوشتن مقاله جدید و منتشر کردن بر روی وبسایت</h2>
                             <hr>
                         </header>
                         <div class="row dir-ltr">
                             <div class="col-8 offset-2">
-                                <form class="form_ajax text-right dir-rtl" method="post" action="" autocomplete="off" enctype="multipart/form-data">
+                                <form name="article-add" class="form_ajax text-right dir-rtl" method="post" action="" autocomplete="off" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label for="article_name">نام مقاله</label>
                                         <input type="text" class="form-control main_form_design" id="article_name"  name="title_inp">
@@ -71,7 +71,7 @@
                                                 <div class="box_of_img_template img-box">
                                                     <div class="img-show">
                                                     </div>
-                                                    <input type="file" name="main_image" id="avatar_img" class="input-file-custom">
+                                                    <input type="file" name="main_image" id="avatar_img" class="ajax_file input-file-custom">
                                                     <label for="avatar_img" class="btn btn-tertiary2 js-labelFile ">
                                                         <i class="icon fa fa-check"></i>
                                                         <span class="js-fileName mr-2">انتخاب عکس</span>
