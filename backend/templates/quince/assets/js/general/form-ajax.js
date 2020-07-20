@@ -42,7 +42,7 @@ $('.form_ajax').submit(function(event){
             break;
 
         }
-        case 'article-add':
+        case 'article':
         {
 
             let front_validation = articleAddError();
