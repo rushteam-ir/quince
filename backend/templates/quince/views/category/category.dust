@@ -8,6 +8,7 @@
     <script src="js/custom/checkbox.js"></script>
     <script src="js/custom/main-error.js"></script>
     <script src="js/custom/error-handler.js"></script>
+    <script src="js/category/category-error.js"></script>
     <script src="js/general/form-ajax.js"></script>
 {/js}
 
@@ -162,7 +163,7 @@
                             <form class="form_ajax dir-rtl text-right" name="category" method="post" action="{backend_url}category/api/edit-category" autocomplete="off">
                                 <div class="form-group mt-4">
                                     <label for="category_name">نام دسته</label>
-                                    <input type="text" class="form-control main_form_design edit_category_title" id="category_name" name="title_inp">
+                                    <input type="text" class="form-control main_form_design edit_category_title" id="category_name" name="edit_title_inp">
                                     <input class="edit_category_id" hidden="hidden" name="category_id">
                                 </div>
                                 <div class="form-group">

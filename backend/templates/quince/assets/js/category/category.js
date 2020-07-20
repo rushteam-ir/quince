@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
     $('#selectall').trigger('change');
+    sessionStorage.categoryModal = '0';
 
     $('.limit_row').change(function () {
 
@@ -104,6 +105,7 @@ $(document).ready(function () {
 
         $('.category_modal').fadeIn();
         $('body').css('overflow','hidden');
+        sessionStorage.categoryModal = '1';
 
         $.post(`${backend_url}category/api/get-category`, {
             id: $(this).attr('name'),
@@ -136,6 +138,7 @@ $(document).ready(function () {
 
         $('.category_modal').fadeOut();
         $('body').css('overflow','auto');
+        sessionStorage.categoryModal = '0';
 
     });
 

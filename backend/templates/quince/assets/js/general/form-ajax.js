@@ -35,8 +35,8 @@ $('.form_ajax').submit(function(event){
         case 'category':
         {
 
-            // let front_validation =  categoryError();
-            // if(!front_validation) return false;
+            let front_validation =  categoryError();
+            if(!front_validation) return false;
             break;
 
         }
