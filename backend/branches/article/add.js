@@ -28,6 +28,7 @@ router.post('/', async(req, res, next)=>{
    try{
 
        let {title_inp, parent_inp, child_inp, describe_inp, meta_describe_inp} = req.body;
+
        let validation_result = new validation([
            {value : title_inp},
            {value : parent_inp, type : 'objectId'},
@@ -47,8 +48,8 @@ router.post('/', async(req, res, next)=>{
        let article_data = {
 
            title : title_inp,
-           category_parent : parent_inp,
-           category_child : child_inp,
+           category_parent : (parent_inp == '0') ? null : parent_inp,
+           category_child : (child_inp == '0') ? null : child_inp,
            describe : describe_inp,
            meta_describe : meta_describe_inp,
            url : `${config.frontend_url}articles/${article_url}`,
@@ -59,9 +60,7 @@ router.post('/', async(req, res, next)=>{
        if (req.files) {
 
            let main_image = req.files.main_image;
-
            let file_name = `${randomSha1String()}.${main_image.name.split(".").pop()}`;
-
            let upload_result = fileManager.upload(main_image, file_name,{
 
                allowed_formats : `image`,
