@@ -199,7 +199,7 @@ $('.search_btn').on('click', function (e) {
 
 })
 
-$('.fa-times').on('click', function (e) {
+$('.search_btn_cancel').on('click', function (e) {
 
     redirect(`${backend_url}article/list`);
 
