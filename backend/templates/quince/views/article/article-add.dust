@@ -9,7 +9,6 @@
     <script src="js/general/wysiwyg-image-manager.js"></script>
     <script src="js/general/wysiwyg-custom.js"></script>
     <script src="js/article/article-add/article-add.js"></script>
-    <script src="js/article/article-add/keyword-append.js"></script>
     <script src="js/custom/uploader.js"></script>
 {/js}
 {<body}
@@ -72,9 +71,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <p class="alert_pro_descripion mb-1">حجم مجاز برای آپلود تصویر
-                                            حداکثر {limited_images_size} مگابایت و همچنین فرمت های مجاز .png ، .jpg ،
-                                            .jpeg و .gif می باشد.</p>
                                     </div>
                                     <button class="btn green_btn" name="profile_private">ثبت مقاله جدید</button>
                                 </form>
