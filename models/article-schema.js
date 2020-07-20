@@ -31,7 +31,7 @@ article_schema.statics = {
 
     add : async function (article_data, author_id) {
 
-        let find_article = await article_model.findOne({title : article_data.title});
+        let find_article = await article_model.findOne({url : article_data.url});
         let new_id = randomSha1String();
 
         if(!find_article){
@@ -165,11 +165,24 @@ article_schema.statics = {
 
     edit : async function(article_id, article_data){
 
-        let find_article = await article_model.findOne({unique_id : article_id});
+        let find_article = await article_model.findOne({url : article_data.url});
 
-        if(find_article){
+        if(!find_article){
 
-            return await article_model.findByIdAndUpdate(find_article._id, {$set : article_data}, {new : true});
+            let this_article = await article_model.findOne({unique_id : article_id});
+
+            if(this_article){
+
+                article_data.last_edit = getCurrentDate();
+
+                return await article_model.findByIdAndUpdate(this_article._id, {$set : article_data}, {new : true});
+
+            }
+            else{
+
+                return null;
+
+            }
 
         }
         else{
@@ -177,6 +190,8 @@ article_schema.statics = {
             return null;
 
         }
+
+
     },
 
 }

@@ -33,7 +33,7 @@
                     <div class="col-12 main_col">
                         <header class="header_field">
                             <h1>ویرایش مقاله</h1>
-                            <h2>ادیت مقاله خود را در ادامه داریم ها ها</h2>
+                            <h2>شما در حال ویرایش مقاله <strong>{article_info.title}</strong> هستید</h2>
                             <hr>
                         </header>
                         <div class="row dir-ltr">
@@ -93,7 +93,7 @@
                                                             <div class="remove_parent">
                                                                 <img class="uploading_img_from_brows"
                                                                      src="media/images/{article_info.main_image}">
-                                                                <div name="0"
+                                                                <div name="{article_info.unique_id}"
                                                                      class="remove_img_icon image_del"></div>
                                                             </div>
                                                         {/eq}
