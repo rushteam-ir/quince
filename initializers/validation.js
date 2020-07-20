@@ -114,7 +114,7 @@ module.exports = validation =  class {
                 case 'objectId':
                 {
 
-                    if(!mongoose.Types.ObjectId.isValid(input.value)){
+                    if(!mongoose.Types.ObjectId.isValid(input.value) && input.value != 0){
 
                         return 'ورودی وارد شده معتبر نمی باشد.';
 

@@ -4,7 +4,7 @@ router.post('/', async(req, res, next)=>{
 
     try{
 
-        let {category_id, title_inp, parent_inp} = req.body;
+        let {category_id, edit_title_inp, parent_inp} = req.body;
         let back_url = req.header('Referer') || '/';
 
         let result = await category_model.edit(category_id, title_inp, parent_inp);
