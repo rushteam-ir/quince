@@ -50,19 +50,7 @@
                                         <textarea class="form-control main_form_design" id="article_textarea" rows="7" name="describe_inp"></textarea>
                                         <input type='file' name='fileupload' id='fileupload' style='display: none;'>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="article_keyword">کلمات کلیدی مقاله</label>
-
-                                    <div class="input-group mb-3">
-                                        <input id="article_keyword" type="text" name="keys_inp" class="form-control main_form_design" aria-label="Username" aria-describedby="basic-addon1">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text plus_adon_article" id="basic-addon1"><button class="btn keyword_btn" type="button">+</button></span>
-                                        </div>
-                                    </div>
-
-                                    <div class="append_keyword"></div>
-
-                                    </div>
+                                    
                                     <div class="form-group">
                                         <label for="article_describe">توضیحات کلیدی مقاله</label>
                                         <textarea class="form-control main_form_design" id="article_describe" rows="7" name="meta_describe_inp"></textarea>
