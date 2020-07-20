@@ -1,11 +1,13 @@
-
-$('.keyword_btn').click(function(){
+$('.keyword_btn').click(function () {
 
     let keys_inp = $('input[name=keys_inp]').val();
 
-    if(keys_inp !== ''){
+    if (keys_inp !== '') {
 
-        let append_element = '<div class="key_word_box"><p>' + keys_inp + '</p><i class="fas fa-times test_remove"></i></div>';
+        let append_element = '<div class="key_word_box">';
+        append_element += '<p>' + keys_inp + '</p>';
+        append_element += '<button class="btn" type="button" onclick="keywordRemove(this)"><i class="fas fa-times test_remove"></i></button>';
+        append_element += '</div>';
 
         $('.append_keyword').append(append_element);
 
@@ -15,9 +17,8 @@ $('.keyword_btn').click(function(){
 
 });
 
-$('.test_remove').click(function(){
+function keywordRemove(btn) {
 
-    // $('.key_word_box').remove();
-    alert('asdasd')
-
-});
+    btn.parentNode.remove();
+    
+}
