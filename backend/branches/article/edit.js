@@ -26,6 +26,8 @@ router.get('/:id', async(req, res, next)=>{
 
         }
 
+        log(data)
+
         req.session.temp_files = [];
 
         res.render('article/article-edit', data);
@@ -67,7 +69,7 @@ router.post('/:id', async(req, res, next)=>{
            category_parent : parent_inp,
            category_child : child_inp,
            describe : describe_inp,
-           meta_describe : keys_inp,
+           meta_describe : meta_describe_inp,
            url : `${config.frontend_url}article/${article_url}`,
            internal_files : req.session.temp_files,
 

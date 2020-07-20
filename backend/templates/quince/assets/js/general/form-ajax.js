@@ -21,7 +21,9 @@ $('.form_ajax').submit(function(event){
     let ajax_options = {
         url : post_url,
         method: request_method,
-        dataType : 'json'
+        dataType : 'json',
+        contentType : false,
+        processData : false,
     }
 
     switch(form_type){
@@ -45,7 +47,7 @@ $('.form_ajax').submit(function(event){
         case 'article':
         {
 
-            let front_validation = articleAddError();
+            let front_validation = articleError();
             if(!front_validation) return false;
             break;
 
@@ -59,12 +61,14 @@ $('.form_ajax').submit(function(event){
         let file_name = $('.ajax_file').attr('name');
         form_data.append(file_name,files);
 
-        ajax_options.contentType = false;
-        ajax_options.processData = false;
-
     }
 
+    ajax_options.contentType = false;
+    ajax_options.processData = false;
+
     ajax_options.data = form_data;
+
+    console.log(form_data.entries())
 
     $.ajax(ajax_options).done(function(response){
         if(response.status == 'success'){
@@ -89,6 +93,8 @@ function getFormData($form, form_data){
 
     $.map(unindexed_array, function(n, i){
         form_data.append([n['name']], n['value']);
+        console.log([n['name']])
+        console.log(n['value'])
     });
 
     return form_data;

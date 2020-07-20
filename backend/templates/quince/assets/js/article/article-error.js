@@ -1,6 +1,6 @@
 let err = new errorHandler();
 
-function articleAddError() {
+function articleError() {
 
     let title_inp = $('input[name=title_inp]').val();
     let describe_inp = $('textarea[name=describe_inp]').val();
