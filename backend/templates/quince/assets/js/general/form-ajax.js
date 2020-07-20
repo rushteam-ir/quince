@@ -27,7 +27,7 @@ $('.form_ajax').submit(function(event){
         case 'profile':
         {
 
-            let front_validation =  profileError();
+            let front_validation = profileError();
             if(!front_validation) return false;
             break;
 
@@ -35,7 +35,15 @@ $('.form_ajax').submit(function(event){
         case 'category':
         {
 
-            let front_validation =  categoryError();
+            let front_validation = categoryError();
+            if(!front_validation) return false;
+            break;
+
+        }
+        case 'article-add':
+        {
+
+            let front_validation = articleAddError();
             if(!front_validation) return false;
             break;
 

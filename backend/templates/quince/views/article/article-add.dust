@@ -10,21 +10,31 @@
     <script src="js/general/wysiwyg-custom.js"></script>
     <script src="js/article/article-add/article-add.js"></script>
     <script src="js/custom/uploader.js"></script>
+    <script src="js/custom/uploader.js"></script>
+    <script src="js/custom/main-error.js"></script>
+    <script src="js/custom/error-handler.js"></script>
+    <script src="js/general/form-ajax.js"></script>
 {/js}
 {<body}
     <section>
+        <!-- error -->
+        <div class="error_info warning_error">
+            <i class="fal fa-exclamation-circle"></i>
+            <p></p>
+            <i class="fal fa-times"></i>
+        </div>
         <div class="main_field mb-5">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 main_col">
                         <header class="header_field">
                             <h1>افزودن مقاله</h1>
-                            <h2>لیست محصولات را در جذول زیر مشاهده کنید</h2>
+                            <h2>نوشتن مقاله جدید</h2>
                             <hr>
                         </header>
                         <div class="row dir-ltr">
                             <div class="col-8 offset-2">
-                                <form method="post" action="" autocomplete="off" enctype="multipart/form-data" class="text-right dir-rtl">
+                                <form class="form_ajax text-right dir-rtl" method="post" action="" autocomplete="off" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label for="article_name">نام مقاله</label>
                                         <input type="text" class="form-control main_form_design" id="article_name"  name="title_inp">
@@ -72,7 +82,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="btn green_btn" name="profile_private">ثبت مقاله جدید</button>
+                                    <button type="submit" class="btn green_btn" name="profile_private">ثبت مقاله جدید</button>
                                 </form>
                             </div>
                         </div>
