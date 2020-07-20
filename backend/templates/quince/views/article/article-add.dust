@@ -9,8 +9,9 @@
     <script src="js/general/wysiwyg-image-manager.js"></script>
     <script src="js/general/wysiwyg-custom.js"></script>
     <script src="js/custom/uploader.js"></script>
-    <script src="js/article/article-add/article-add.js"></script>
+    <script src="js/custom/main-error.js"></script>
     <script src="js/custom/error-handler.js"></script>
+    <script src="js/article/article-add/article-add.js"></script>
     <script src="js/general/form-ajax.js"></script>
     <script src="js/article/article-add/article-add-error.js"></script>
 {/js}
