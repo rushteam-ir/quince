@@ -110,11 +110,13 @@
                                             </td>
                                         {/eq}
                                         <td>
-                                            {@eq key="{author.author_type}" value="name"}
-                                                {author.first_name} {author.last_name}
-                                            {:else}
-                                                {author.nick_name}
-                                            {/eq}
+                                            <a href="{backend_url}groups/profile/{author.unique_id}">
+                                                {@eq key="{author.author_type}" value="name"}
+                                                    {author.first_name} {author.last_name}
+                                                {:else}
+                                                    {author.nick_name}
+                                                {/eq}
+                                            </a>
                                         </td>
                                         <td>
                                             {last_edit}
