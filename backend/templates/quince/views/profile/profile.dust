@@ -153,17 +153,6 @@
                             </header>
                             <div class="main_div_of_personal_form">
                                 <form class="form_ajax" method="post" action="{backend_url}profile/api/change-password" autocomplete="off" novalidate>
-                                    <div class="box_of_pass_alert_pro row">
-                                        <div class="col-2">
-                                            <i class="fad fa-exclamation-circle password_alert_pro"></i>
-                                        </div>
-                                        <div class="col-10">
-                                            <p class="mb-1 alert_pro_text">
-                                                لطفا توجه داشته باشید که رمز عبور شما حداقل باید شامل 8 عدد یا حرف باشد
-                                                . همچنین با عوض کردن رمز عبور خود امنیت حساب خود را بالا تر ببرید.
-                                            </p>
-                                        </div>
-                                    </div>
                                     <div class="form-group mt-4 row">
                                         <label for="user_old_pass" class="col-sm-2 col-form-label main_lable_design">رمز
                                             عبور فعلی</label>
