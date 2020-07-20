@@ -8,8 +8,6 @@ function categoryError() {
 
     let validation_result = null;
 
-    console.log(sessionStorage.categoryModal)
-
     switch(sessionStorage.categoryModal){
 
         case '0':
