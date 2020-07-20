@@ -11,10 +11,12 @@ $('.form_ajax').submit(function(event){
 
     event.preventDefault();
 
+    let fd_object = new FormData();
     let post_url = $(this).attr("action");
     let request_method = $(this).attr("method");
     let form_type = $(this).attr("name");
-    let form_data = getFormData($(this));
+    let form_data = getFormData($(this), fd_object);
+
     let isFileUpload = document.getElementsByClassName('ajax_file');
     let ajax_options = {
         url : post_url,
@@ -53,7 +55,6 @@ $('.form_ajax').submit(function(event){
 
     if (Object.keys(form_data).length == 0 && isFileUpload.length > 0) {
 
-        form_data = new FormData();
         let files = $('.ajax_file')[0].files[0];
         let file_name = $('.ajax_file').attr('name');
         form_data.append(file_name,files);
@@ -83,15 +84,14 @@ $('.form_ajax').submit(function(event){
 
 });
 
-function getFormData($form){
+function getFormData($form, form_data){
     var unindexed_array = $form.serializeArray();
-    var indexed_array = {};
 
     $.map(unindexed_array, function(n, i){
-        indexed_array[n['name']] = n['value'];
+        form_data.append([n['name']], n['value']);
     });
 
-    return indexed_array;
+    return form_data;
 }
 
 function showMessage(text){

@@ -39,7 +39,7 @@ router.post('/', async(req, res, next)=>{
 
        if(validation_result){
 
-           return res.redirect(`${config.backend_url}article/add/?msg=${validation_result}`);
+           return res.json(validation_result)
 
        }
 
@@ -70,7 +70,7 @@ router.post('/', async(req, res, next)=>{
 
            if(upload_result){
 
-               return res.redirect(`${config.backend_url}article/add/?msg=${upload_result}`);
+               return res.json(upload_result)
 
            }
 
@@ -82,12 +82,16 @@ router.post('/', async(req, res, next)=>{
 
        if(result){
 
-           return res.redirect(`${config.backend_url}article/list/?msg=add-success`)
+           return res.json({
+               status : 'success',
+               url : `${config.backend_url}article/list`,
+               msg : `مقاله جدید با موفقیت ثبت شد.`
+           })
 
        }
        else{
 
-           return res.redirect(`${config.backend_url}article/add/?msg=add-fail`)
+           return res.json('نام مقاله تکراری می باشد، لطفا از نام دیگری استفاده کنید.')
 
        }
 
