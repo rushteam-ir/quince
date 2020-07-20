@@ -33,7 +33,7 @@
                         </header>
                         <div class="row dir-ltr">
                             <div class="col-8 offset-2">
-                                <form name="article-add" class="form_ajax text-right dir-rtl" method="post" action="" autocomplete="off" enctype="multipart/form-data">
+                                <form name="article" class="form_ajax text-right dir-rtl" method="post" action="" autocomplete="off" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label for="article_name">نام مقاله</label>
                                         <input type="text" class="form-control main_form_design" id="article_name"  name="title_inp">
