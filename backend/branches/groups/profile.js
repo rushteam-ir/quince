@@ -6,15 +6,17 @@ router.get('/:id', async(req, res, next)=>{
 
         let user_id = req.params.id;
 
-        if(isObjectId(user_id)){
+        // if(isObjectId(user_id)){
+        //
+        //     res.render('groups/groups-profile');
+        // }
+        // else{
+        //
+        //     res.redirect(`${config.backend_url}groups/admins`);
+        //
+        // }
 
-            res.render('groups/groups-profile');
-        }
-        else{
-
-            res.redirect(`${config.backend_url}groups/admins`);
-
-        }
+        res.render('groups/groups-profile');
 
     }
     catch (error) {
