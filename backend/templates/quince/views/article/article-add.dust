@@ -10,6 +10,7 @@
     <script src="js/general/wysiwyg-custom.js"></script>
     <script src="js/article/article-add/article-add.js"></script>
     <script src="js/custom/uploader.js"></script>
+<<<<<<< HEAD
     <script src="js/custom/uploader.js"></script>
     <script src="js/custom/main-error.js"></script>
     <script src="js/custom/error-handler.js"></script>
@@ -18,6 +19,14 @@
 {<body}
     <section>
         <!-- error -->
+=======
+    <script src="js/general/form-ajax.js"></script>
+    <script src="js/article/article-add/article-add-error.js"></script>
+    <script src="js/custom/error-handler.js"></script>
+{/js}
+{<body}
+    <section>
+>>>>>>> ed741f2120bdfe76a275de4f83f92aa80bae9944
         <div class="error_info warning_error">
             <i class="fal fa-exclamation-circle"></i>
             <p></p>
