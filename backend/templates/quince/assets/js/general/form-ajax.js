@@ -16,7 +16,7 @@ $('.form_ajax').submit(function(event){
     let request_method = $(this).attr("method");
     let form_type = $(this).attr("name");
     let form_data = getFormData($(this), fd_object);
-    console.log(form_data)
+
     let isFileUpload = document.getElementsByClassName('ajax_file');
     let ajax_options = {
         url : post_url,
