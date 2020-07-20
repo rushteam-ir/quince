@@ -68,7 +68,7 @@ router.post('/', async(req, res, next)=>{
 
         if(validation_result){
 
-            return res.redirect(`${config.backend_url}category/?msg=${validation_result}`);
+            return res.json(validation_result);
 
         }
 
@@ -76,12 +76,16 @@ router.post('/', async(req, res, next)=>{
 
         if(result && result != -1){
 
-            return res.redirect(`${config.backend_url}category/?msg=add-success`);
+            return res.json({
+                status : 'success',
+                url : `${config.backend_url}category`,
+                msg : 'دسته جدید با موفقیت ثبت شد.'
+            })
 
         }
         else{
 
-            return res.redirect(`${config.backend_url}category/?msg=add-fail`);
+            return res.json('نام دسته تکراری می باشد.')
 
         }
 

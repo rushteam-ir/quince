@@ -11,17 +11,36 @@ $('.form_ajax').submit(function(event){
 
     event.preventDefault();
 
-    let front_validation =  profileError();
-    if(!front_validation) return false;
-
     let post_url = $(this).attr("action");
     let request_method = $(this).attr("method");
+    let form_type = $(this).attr("name");
     let form_data = getFormData($(this));
     let isFileUpload = document.getElementsByClassName('ajax_file');
     let ajax_options = {
         url : post_url,
         method: request_method,
         dataType : 'json'
+    }
+
+    switch(form_type){
+
+        case 'profile':
+        {
+
+            let front_validation =  profileError();
+            if(!front_validation) return false;
+            break;
+
+        }
+        case 'category':
+        {
+
+            // let front_validation =  categoryError();
+            // if(!front_validation) return false;
+            break;
+
+        }
+
     }
 
     if (Object.keys(form_data).length == 0 && isFileUpload.length > 0) {
