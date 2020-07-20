@@ -97,7 +97,7 @@ router.post('/', async(req, res, next)=>{
 
             let category_list = await category_model.getAll(page_number, page_limit);
             let last_page = category_list.total_pages;
-            
+
             return res.json({
                 status : 'success',
                 url : `${config.backend_url}category/?page=${last_page}`,

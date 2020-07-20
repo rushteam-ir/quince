@@ -127,7 +127,7 @@
                             <header class="header_field">
                                 <h1>ثبت دسته جدید</h1>
                             </header>
-                            <form class="form_ajax" name="category" action="" method="post" autocomplete="off">
+                            <form class="form_ajax" name="category" action="{backend_url}category" method="post" autocomplete="off">
                                 <div class="form-group mt-4">
                                     <label for="category_name">نام دسته</label>
                                     <input type="text" class="form-control main_form_design" id="category_name" name="title_inp">

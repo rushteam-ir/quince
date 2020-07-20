@@ -44,14 +44,13 @@ router.post('/:id', async(req, res, next)=>{
    try{
 
        let article_id = req.params.id;
-       let {title_inp, parent_inp, child_inp, describe_inp, keys_inp, meta_describe_inp} = req.body;
+       let {title_inp, parent_inp, child_inp, describe_inp, meta_describe_inp} = req.body;
        let validation_result = new validation([
            {value : title_inp},
            {value : parent_inp, type : 'objectId'},
            {value : child_inp, type : 'objectId'},
            {value : describe_inp},
            {value : meta_describe_inp},
-           {value : keys_inp}
        ]).valid()
 
        if(validation_result){
@@ -68,7 +67,6 @@ router.post('/:id', async(req, res, next)=>{
            category_parent : parent_inp,
            category_child : child_inp,
            describe : describe_inp,
-           meta_keys : keys_inp,
            meta_describe : keys_inp,
            url : `${config.frontend_url}article/${article_url}`,
            internal_files : req.session.temp_files,
