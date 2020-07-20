@@ -122,12 +122,44 @@
 
         </div>
 
-        <a href="{backend_url}groups/admins" class="dashboard_body_sub">
-            <div class="position-relative">
-                <i class="fad fa-users-crown"></i>
-                <p>کاربران</p>
+        <div class="position-relative dashboard_body_collaps">
+            <i class="fad fa-coins"></i>
+            <p>مدیریت کاربران</p>
+            <i class="fas fa-angle-left"></i>
+
+            <div class="hover_field">
+
+                <a href="{backend_url}groups/admins">
+                    <p>- لیست مدیران</p>
+                </a>
+
+                <a href="{backend_url}groups/users">
+                    <p>-  لیست کاربران</p>
+                </a>
+
+                <a href="{backend_url}groups/add">
+                    <p>- اضافه کردن کاربر جدید</p>
+                </a>
+
             </div>
-        </a>
+
+        </div>
+
+        <div class="collaps_field">
+
+            <a href="{backend_url}groups/admins">
+                <p>- لیست مدیران</p>
+            </a>
+
+            <a href="{backend_url}groups/users">
+                <p>-  لیست کاربران</p>
+            </a>
+
+            <a href="{backend_url}groups/add">
+                <p>- اضافه کردن کاربر جدید</p>
+            </a>
+
+        </div>
 
         <a href="{backend_url}files" class="dashboard_body_sub">
             <div class="position-relative">
