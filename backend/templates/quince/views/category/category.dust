@@ -44,7 +44,7 @@
                                                     </div>
                                                     <input type="text" class="form-control search_table" placeholder="جستجو ..." aria-describedby="basic-addon1" value="{search_value}">
                                                     {@eq key="{search}" value="true"}
-                                                        <i class="fal fa-times"></i>
+                                                        <i class="fal fa-times search_btn_cancel"></i>
                                                     {/eq}
                                                 </div>
                                                   <div class="form-group tr_select">
@@ -159,7 +159,7 @@
                                 <h2>دسته مورد نظر خود را ویرایش کنید</h2>
                                 <hr>
                             </header>
-                            <form method="post" action="{backend_url}category/api/edit-category" autocomplete="off" class="dir-rtl text-right">
+                            <form class="form_ajax dir-rtl text-right" name="category" method="post" action="{backend_url}category/api/edit-category" autocomplete="off">
                                 <div class="form-group mt-4">
                                     <label for="category_name">نام دسته</label>
                                     <input type="text" class="form-control main_form_design edit_category_title" id="category_name" name="title_inp">

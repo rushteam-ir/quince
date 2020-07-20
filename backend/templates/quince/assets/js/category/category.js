@@ -92,7 +92,7 @@ $(document).ready(function () {
 
     })
 
-    $('.fa-times').on('click', function (e) {
+    $('.search_btn_cancel').on('click', function (e) {
 
         redirect(`${backend_url}category`);
 
