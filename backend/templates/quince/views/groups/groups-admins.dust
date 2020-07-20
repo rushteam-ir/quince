@@ -84,7 +84,7 @@
                                     <td class="QT_image">
                                         <img src="img/img2.jpg" alt="">
                                     </td>
-                                    <td class="QT_purple_pill QT_truncate">
+                                    <td>
                                         <div>
                                             MegaNoob
                                         </div>
@@ -99,7 +99,7 @@
                                             فعال
                                         </div>
                                     </td>
-                                    <td class="QT_yellow_pill">
+                                    <td>
                                         <div>
                                             1399/10/25
                                         </div>

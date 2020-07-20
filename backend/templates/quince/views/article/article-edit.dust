@@ -107,7 +107,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn green_btn" name="profile_private">ثبت مقاله جدید</button>
+                                    <button type="submit" class="btn green_btn" name="profile_private">ویرایش مقاله</button>
                                 </form>
                             </div>
                         </div>
