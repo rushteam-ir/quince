@@ -19,7 +19,7 @@
                         <div class="col-2 pr-0">
                             <img class="user_img" src="img/img2.jpg" alt="">
                         </div>
-                        <div class="col-10 pl-0">
+                        <div class="col-10 pl-0 position-relative">
                             <div class="user_ph mt-4">
                                 <div class="header_info">
                                     <p class="user_name">کسری حبیب بیگی</p>
@@ -40,15 +40,37 @@
                                     </p>
                                 </div>
                             </div>
+                            <div class="user_pro_option">
+                                <button class="btn "><i class="far fa-paper-plane"></i></button>
+                                <button class="btn mr-1"><i class="fas fa-sync-alt"></i></button>
+                                <button class="btn mr-1"><i class="fas fa-ban"></i></button>
+                                <button class="btn mr-1"><i class="far fa-user-times"></i></button>
+                            </div>
                         </div>
                     </div>
                     <hr class="mt-4 mb-4">
                     <div class="row">
                         <div class="col-6">
-
+                            <div class="info_user_pro">
+                                <p>نام مستعار : <span>meganoob</span></p>
+                            </div>
+                            <div class="info_user_pro">
+                                <p>شماره تماس : <span>09021414866</span></p>
+                            </div>
+                            <div class="info_user_pro">
+                                <p>تاریخ تولد : <span>1399.10.5</span></p>
+                            </div>
                         </div>
                         <div class="col-6">
-                            
+                            <div class="info_user_pro">
+                                <p> تعداد مطالب : <span>54265</span></p>
+                            </div>
+                            <div class="info_user_pro">
+                                <p> آخرین فعالیت : <span>الان و پس فردا</span></p>
+                            </div>
+                            <div class="info_user_pro">
+                                <p>مکان : <span>ایران . تهران</span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
