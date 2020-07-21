@@ -167,7 +167,7 @@ article_schema.statics = {
 
         let find_article = await article_model.findOne({url : article_data.url});
 
-        if(!find_article){
+        if(!find_article || find_article.unique_id == article_id){
 
             let this_article = await article_model.findOne({unique_id : article_id});
 
