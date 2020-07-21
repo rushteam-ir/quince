@@ -1,0 +1,133 @@
+@font-face {
+  font-family: main_font;
+  src: url(../fonts/Nunito-Italic.ttf);
+}
+@font-face {
+  font-family: second_font;
+  src: url(../fonts/OptimusPrinceps.ttf);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.dir_rtl {
+  direction: rtl;
+}
+
+.index_page {
+  background-image: url("../img/1.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  font-family: second_font;
+}
+.index_page .nav_bar_index {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.index_page .nav_bar_index .logo-of_fashion_web_page {
+  width: 190px;
+  height: 80px;
+}
+.index_page .nav_bar_index .bottom_of_menu_bar {
+  border: none;
+}
+.index_page .nav_bar_index .bottom_of_menu_bar:focus {
+  outline: none;
+}
+.index_page .nav_bar_index .bottom_of_menu_bar .menu_icon {
+  font-size: 1.7rem;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+.index_page .content_of_index .content_of_index_box_menu {
+  height: 80vh;
+}
+.index_page .content_of_index .content_of_index_box_menu .first_text_about_uniti {
+  font-size: 1.8rem;
+  text-align: center;
+  width: 85%;
+  margin: auto;
+  padding-top: 20vh;
+  font-weight: 600;
+}
+.index_page .content_of_index .content_of_index_box_menu .ul_menu_box {
+  padding-top: 18vh;
+}
+.index_page .content_of_index .content_of_index_box_menu .menu_options {
+  font-size: 1.7rem;
+  list-style-type: none;
+  text-align: center;
+  display: none;
+  transition: all 0.2s ease-in;
+  font-weight: 600;
+}
+.index_page .content_of_index .content_of_index_box_menu .menu_options a {
+  color: black;
+}
+.index_page .content_of_index .content_of_index_box_menu .menu_options a:hover {
+  text-decoration: none;
+}
+.index_page .content_of_index .content_of_index_box_menu .menu_options:hover {
+  transform: scale(1.1);
+}
+.index_page .footer_of_index .reg_field, .index_page .footer_of_index .log_field {
+  display: inline-block;
+  margin-right: 50px;
+  padding-top: 15px;
+  font-size: 1.3rem;
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+.index_page .footer_of_index .reg_field:hover, .index_page .footer_of_index .log_field:hover {
+  transform: scale(1.1);
+}
+.index_page .footer_of_index .social_media {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  padding-top: 15px;
+  transition: all 0.2s ease-in;
+}
+.index_page .footer_of_index .social_media:hover {
+  transform: scale(1.1);
+}
+
+.hide_first_text {
+  display: none;
+}
+
+.show_menu_options {
+  display: block;
+}
+
+@media only screen and (max-width: 1200px) {
+  .first_text_about_uniti {
+    font-size: 1.5rem !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .first_text_about_uniti {
+    font-size: 1.7rem !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .first_text_about_uniti {
+    font-size: 2.3rem !important;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
