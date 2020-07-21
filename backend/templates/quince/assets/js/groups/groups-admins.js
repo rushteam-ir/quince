@@ -18,6 +18,21 @@ $(document).ready(function () {
 
 });
 
+$('.search_btn').on('click', function (e) {
+
+    let search_value = $('.search_table').val();
+    if (search_value != "") {
+        redirect(`${backend_url}groups/admins/search/${search_value}`);
+    }
+
+})
+
+$('.search_btn_cancel').on('click', function (e) {
+
+    redirect(`${backend_url}groups/admins`);
+
+})
+
 function redirect(url) {
     location.href = url
 }

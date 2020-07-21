@@ -39,6 +39,8 @@ admin_schema.statics = {
 
             }
 
+            await admin_model.edit(find_user._id, {last_activity : getCurrentDate()})
+
         }
 
         return find_user;
@@ -127,7 +129,38 @@ admin_schema.statics = {
 
         return await admin_model.findOne({unique_id : user_id});
 
-    }
+    },
+
+    search : async function (search_value, page_number, page_limit) {
+
+        let find_list = await admin_model.find();
+        let admin_skip = page_number * page_limit - page_limit;
+        let search_list = [];
+        let result = {};
+
+        for(let i = 0; i < find_list.length; i++){
+
+            log(find_list[i])
+            let first_name = find_list[i].first_name.toLowerCase();
+            let last_name = find_list[i].last_name.toLowerCase();
+            let nick_name = find_list[i].nick_name.toLowerCase();
+            let email = find_list[i].email.toLowerCase();
+
+            if(first_name.includes(search_value.toLowerCase()) || last_name.includes(search_value.toLowerCase()) || nick_name.includes(search_value.toLowerCase()) || email.includes(search_value.toLowerCase())){
+
+                search_list.push(find_list[i]);
+
+            }
+
+        }
+
+        result.rows_begin_number = admin_skip + 1;
+        result.list = search_list.slice(admin_skip, page_limit + admin_skip);
+        result.total_pages = Math.ceil(search_list.length / page_limit);
+
+        return result;
+
+    },
 
 };
 

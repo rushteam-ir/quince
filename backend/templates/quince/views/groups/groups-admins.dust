@@ -28,28 +28,29 @@
                                     </div>
                                     <div class="col-12 col-lg-5">
                                         <div class="table_header">
-                                            <form action="">
-                                                <div class="input-group mb-3 t_search">
-                                                    <div class="input-group-prepend">
-                                                        <button class="input-group-text btn search_btn" id="basic-addon1">
-                                                            <i class="fal fa-search"></i>
-                                                        </button>
-                                                    </div>
-                                                    <input type="text" class="form-control" placeholder="جستجو" aria-describedby="basic-addon1">
+                                            <div class="input-group mb-3 t_search">
+                                                <div class="input-group-prepend">
+                                                    <button class="input-group-text btn search_btn" id="basic-addon1">
+                                                        <i class="fal fa-search"></i>
+                                                    </button>
                                                 </div>
-                                                <div class="form-group tr_select">
-                                                    <label for="t_row_select" class="d-inline-block select_lable">تعداد ردیف ها :</label>
-                                                    <select class="form-control limit_row" id="t_row_select">
-                                                        {#page_limit_slot}
-                                                            {@eq key="{.}" value="{page_limit}"}
-                                                                <option selected>{.}</option>
-                                                            {:else}
-                                                                <option>{.}</option>
-                                                            {/eq}
-                                                        {/page_limit_slot}
-                                                    </select>
-                                                </div>
-                                            </form>
+                                                <input type="text" class="form-control search_table" placeholder="جستجو ..." aria-describedby="basic-addon1" value="{search_value}">
+                                                {@eq key="{search}" value="true"}
+                                                    <i class="fal fa-times search_btn_cancel"></i>
+                                                {/eq}
+                                            </div>
+                                            <div class="form-group tr_select">
+                                                <label for="t_row_select" class="d-inline-block select_lable">تعداد ردیف ها :</label>
+                                                <select class="form-control limit_row" id="t_row_select">
+                                                    {#page_limit_slot}
+                                                        {@eq key="{.}" value="{page_limit}"}
+                                                            <option selected>{.}</option>
+                                                        {:else}
+                                                            <option>{.}</option>
+                                                        {/eq}
+                                                    {/page_limit_slot}
+                                                </select>
+                                            </div>
                                             <button class="btn table_delete_btn">
                                                 <i class="fal fa-trash-alt"></i>
                                             </button>
@@ -170,7 +171,11 @@
                                             <div class="remove_modal">
                                                 <i class="fal fa-times"></i>
                                             </div>
-                                            <img src="img/img2.jpg" alt="">
+                                            {@eq key="{avatar}" value=""}
+                                                <img src="img/default-profile-picture.png" alt="">
+                                            {:else}
+                                                <img src="media/avatars/{avatar}" alt="">
+                                            {/eq}
                                         </div>
                                     </div>
                                 </div>
