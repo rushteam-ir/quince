@@ -10,17 +10,17 @@
     @include main_col;
 }
 
-.user_ph {
+.user_img {
+    width: 100%;
+    border-radius: 7px;
+    display: inline-block;
+}
 
-    img {
-        width: 100%;
-        border-radius: 7px;
-        display: inline-block;
-    }
+.user_ph {
 
     .header_info {
         display: inline-block;
-        width: 77%;
+        width: 90%;
         margin-right: 3%;
 
         .user_name {

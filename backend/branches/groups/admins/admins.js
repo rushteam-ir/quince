@@ -24,26 +24,26 @@ router.get('/', async(req, res, next)=>{
 
         }
 
-        let article_list = await article_model.getAll(page_number, page_limit)
+        let admins_list = await admin_model.getAll(page_number, page_limit)
 
-        if(article_list.list.length == 0 && article_list.total_pages != 0){
+        if(admins_list.list.length == 0 && admins_list.total_pages != 0){
 
-            return res.redirect(`${config.backend_url}article/list/?page=${article_list.total_pages}`)
+            return res.redirect(`${config.backend_url}groups/admins/?page=${admins_list.total_pages}`)
 
         }
 
         let data = {
 
-            article_list : article_list.list,
+            admins_list : admins_list.list,
             page_number : page_number,
             page_limit : page_limit,
-            rows_begin_number : article_list.rows_begin_number,
-            total_pages : article_list.total_pages,
+            rows_begin_number : admins_list.rows_begin_number,
+            total_pages : admins_list.total_pages,
             search : false,
 
         };
 
-        res.render('article/article-list', data);
+        res.render('groups/groups-admins', data);
 
     }
     catch (error) {
@@ -53,5 +53,9 @@ router.get('/', async(req, res, next)=>{
     }
 
 });
+
+const search = require('./search');
+
+router.use('/search', search);
 
 module.exports = router;

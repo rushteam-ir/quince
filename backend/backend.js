@@ -4,12 +4,10 @@ require('./backend-init');
 // Backend Middlewares
 const check_login = require('./middlewares/check-login');
 const check_message = require('./middlewares/check-message');
-const check_activity = require('./middlewares/check-activity');
 const global_options = require('./middlewares/global-options');
 
 backend.use(check_login);
 backend.use(check_message);
-backend.use(check_activity);
 backend.use(global_options);
 
 // Backend Routs

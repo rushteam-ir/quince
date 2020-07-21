@@ -38,7 +38,7 @@ router.post('/', async(req, res)=>{
 
                 }
 
-                let result = await user_model.register(new_user);
+                let result = await admin_model.register(new_user);
 
                 if(result){
 
