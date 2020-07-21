@@ -76,9 +76,16 @@ admin_schema.statics = {
         return await admin_model.findOneAndUpdate({email : user_email, pending_password : user_pending_password}, {$set : user_data}, {new : true});
     },
 
-    get : async function () {
+    getAll : async function (page_number, page_limit) {
 
-        return await admin_model.find().sort({access : 1});
+        let result = {}
+        let admin_skip = page_number * page_limit - page_limit;
+
+        result.rows_begin_number = admin_skip + 1;
+        result.list =  await admin_model.find().skip(admin_skip).limit(page_limit);
+        result.total_pages = Math.ceil(await admin_model.find().countDocuments() / page_limit);
+
+        return result;
 
     },
 

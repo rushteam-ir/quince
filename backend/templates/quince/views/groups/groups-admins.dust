@@ -22,8 +22,8 @@
                                 <div class="row">
                                     <div class="col-12 col-lg-7">
                                         <div class="d-inline-block field_of_ht">
-                                            <h1>لیست ادمین ها </h1>
-                                            <h2>لیست ادمین های سایت را در جدول زیر مشاهده کنید</h2>
+                                            <h1>لیست مدیران</h1>
+                                            <h2>لیست مدیران سایت را در جدول زیر مشاهده کنید</h2>
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-5">
@@ -37,14 +37,16 @@
                                                     </div>
                                                     <input type="text" class="form-control" placeholder="جستجو" aria-describedby="basic-addon1">
                                                 </div>
-                                                  <div class="form-group tr_select">
+                                                <div class="form-group tr_select">
                                                     <label for="t_row_select" class="d-inline-block select_lable">تعداد ردیف ها :</label>
-                                                    <select class="form-control" id="t_row_select">
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
+                                                    <select class="form-control limit_row" id="t_row_select">
+                                                        {#page_limit_slot}
+                                                            {@eq key="{.}" value="{page_limit}"}
+                                                                <option selected>{.}</option>
+                                                            {:else}
+                                                                <option>{.}</option>
+                                                            {/eq}
+                                                        {/page_limit_slot}
                                                     </select>
                                                 </div>
                                             </form>
@@ -67,11 +69,12 @@
                                     <th>ردیف</th>
                                     <th>عکس</th>
                                     <th>نام کاربری</th>
-                                    <th>ایمیل</th>
+                                    <th>سطح دسترسی</th>
                                     <th>وضعیت</th>
                                     <th>آخرین فعالیت</th>
                                     <th>تنظیمات</th>
                                 </tr>
+                                {#admins_list}
                                 <tr>
                                     <td>
                                         <label class="checkbox_of_category">
@@ -82,26 +85,48 @@
                                     </td>
                                     <td>1</td>
                                     <td class="QT_image">
-                                        <img src="img/img2.jpg" alt="">
+                                        {@eq key="{avatar}" value=""}
+                                            <img src="img/default-profile-picture.png" alt="">
+                                        {:else}
+                                            <img src="media/avatars/{avatar}" alt="">
+                                        {/eq}
                                     </td>
                                     <td>
                                         <div>
-                                            MegaNoob
+                                            <a href="{backend_url}groups/profile/{unique_id}">
+                                                {@eq key="{author_type}" value="name"}
+                                                    {first_name} {last_name}
+                                                {:else}
+                                                    {nick_name}
+                                                {/eq}
+                                            </a>
                                         </div>
                                     </td>
                                     <td class="QT_truncate">
                                         <div>
-                                            kasra@gmail.com
+                                            {@eq key="{access}" value="main_admin"}
+                                                مدیر اصلی
+                                            {:else}
+                                                مدیر عادی
+                                            {/eq}
                                         </div>
                                     </td>
-                                    <td class="QT_green_pill">
-                                        <div>
-                                            فعال
-                                        </div>
-                                    </td>
+                                    {@eq key="{status}" value="true"}
+                                        <td class="QT_green_pill">
+                                            <div>
+                                                فعال
+                                            </div>
+                                        </td>
+                                    {:else}
+                                        <td class="QT_red_pill">
+                                            <div>
+                                                مسدود
+                                            </div>
+                                        </td>
+                                    {/eq}
                                     <td>
                                         <div>
-                                            1399/10/25
+                                            {last_activity}
                                         </div>
                                     </td>
                                     <td class="table_option">
@@ -128,24 +153,13 @@
                                         </div>
                                     </td>
                                 </tr>
+                                {/admins_list}
                             </table>
-                            <nav class="Page_navigation mt-3" aria-label="Page navigation example">
-                                <ul class="pagination">
-                                  <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                      <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                  </li>
-                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                  <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                      <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                  </li>
-                                </ul>
-                              </nav>
+                            {@eq key="{search}" value="true"}
+                                {@page number="{total_pages}"  url="{backend_url}groups/admins/search/{search_value}" current="{page_number}"/}
+                            {:else}
+                                {@page number="{total_pages}"  url="{backend_url}groups/admins" current="{page_number}"/}
+                            {/eq}
                         </div>
                         <!-- image modal -->
                         <div class="image_modal_field">

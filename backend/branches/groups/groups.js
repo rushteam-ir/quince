@@ -15,18 +15,19 @@ router.get('/', async(req, res, next)=>{
 
 });
 
+const change_status = require('./api/change-status');
+const delete_user = require('./api/delete-user');
+
 const admins = require('./admins');
 const users = require('./users');
 const profile = require('./profile');
 const add = require('./add');
-const change_status_groups = require('./api/change-status');
-const delete_user_groups = require('./api/delete-user');
+
+router.use('/api/change-status', change_status);
+router.use('/api/delete-user', delete_user);
 
 router.use('/admins', admins);
 router.use('/users', users);
 router.use('/profile', profile);
 router.use('/add', add);
-router.use('/api/change-status', change_status_groups);
-router.use('/api/delete-user', delete_user_groups);
-
 module.exports = router;
