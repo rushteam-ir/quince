@@ -15,27 +15,40 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 main_col">
-                    <div class="user_ph mt-4">
-                        <div class="d-inline-block ">
-                            <img src="img/img2.jpg" alt="">
+                    <div class="row">
+                        <div class="col-2 pr-0">
+                            <img class="user_img" src="img/img2.jpg" alt="">
                         </div>
-                        <div class="header_info">
-                            <p class="user_name">کسری حبیب بیگی</p>
-                            <div>
-                                <i class="fal fa-paper-plane"></i>
-                                <p class="mr-2">kasra@gmail.com</p>
+                        <div class="col-10 pl-0">
+                            <div class="user_ph mt-4">
+                                <div class="header_info">
+                                    <p class="user_name">کسری حبیب بیگی</p>
+                                    <div>
+                                        <i class="fal fa-paper-plane"></i>
+                                        <p class="mr-2">kasra@gmail.com</p>
+                                    </div>
+                                    <div class="mr-4">
+                                        <i class="fal fa-address-card"></i>
+                                        <p class="mr-2">ادمین اصلی</p>
+                                    </div>
+                                    <div class="mr-4">
+                                        <i class="fal fa-street-view"></i>
+                                        <p class="mr-2">ایران</p>
+                                    </div>
+                                    <p class="description">
+                                        سلام ! من یه اسکلمممم اروزو داشتممم کنارم باشیییی من یه سوراخ تنگ و باریکم ارزو داشتممم تو توم من باشیی تو تو من باشیی هر جا که باشم هر جا که باشی تو تو من باشییی تا زنده هستمم میمیرم اگه از تو جدا شمممم 
+                                    </p>
+                                </div>
                             </div>
-                            <div class="mr-4">
-                                <i class="fal fa-address-card"></i>
-                                <p class="mr-2">ادمین اصلی</p>
-                            </div>
-                            <div class="mr-4">
-                                <i class="fal fa-street-view"></i>
-                                <p class="mr-2">ایران</p>
-                            </div>
-                            <p class="description">
-                                سلام ! من یه اسکلمممم اروزو داشتممم کنارم باشیییی من یه سوراخ تنگ و باریکم ارزو داشتممم تو توم من باشیی تو تو من باشیی هر جا که باشم هر جا که باشی تو تو من باشییی تا زنده هستمم میمیرم اگه از تو جدا شمممم 
-                            </p>
+                        </div>
+                    </div>
+                    <hr class="mt-4 mb-4">
+                    <div class="row">
+                        <div class="col-6">
+
+                        </div>
+                        <div class="col-6">
+                            
                         </div>
                     </div>
                 </div>
