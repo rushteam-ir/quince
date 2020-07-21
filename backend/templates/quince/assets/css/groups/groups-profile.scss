@@ -1,0 +1,53 @@
+@import '../Partials/main-color';
+@import '../Partials/mixin';
+@import '../Partials/header-text';
+
+.main_body {
+    @include main_field
+}
+
+.main_col {
+    @include main_col;
+}
+
+.user_ph {
+
+    img {
+        width: 100%;
+        border-radius: 7px;
+        display: inline-block;
+    }
+
+    .header_info {
+        display: inline-block;
+        width: 77%;
+        margin-right: 3%;
+
+        .user_name {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        div {
+            display: inline-block;
+            color: #7E8299;
+
+            i {
+                display: inline-block;
+            }
+
+            p {
+                display: inline-block;
+            }
+        }
+
+        .description {
+            width: 80%;
+            color: #7E8299;
+            font-size: 0.9rem;
+            line-height: 28px;
+        }
+
+    }
+
+}

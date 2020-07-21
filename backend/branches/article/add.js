@@ -77,6 +77,11 @@ router.post('/', async(req, res, next)=>{
            article_data.main_image = file_name;
 
        }
+       else{
+
+           return res.json('یک تصویر به عنوان تصویر اصلی مقاله انتخاب کنید.')
+
+       }
 
        let result = await article_model.add(article_data, req.session.admin_id);
 

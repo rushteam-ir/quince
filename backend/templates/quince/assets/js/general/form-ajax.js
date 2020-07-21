@@ -65,10 +65,7 @@ $('.form_ajax').submit(function(event){
 
     ajax_options.contentType = false;
     ajax_options.processData = false;
-
     ajax_options.data = form_data;
-
-    console.log(form_data.entries())
 
     $.ajax(ajax_options).done(function(response){
         if(response.status == 'success'){
@@ -93,8 +90,6 @@ function getFormData($form, form_data){
 
     $.map(unindexed_array, function(n, i){
         form_data.append([n['name']], n['value']);
-        console.log([n['name']])
-        console.log(n['value'])
     });
 
     return form_data;
