@@ -19,6 +19,9 @@
 {<body}
 
 
-
+<header class="header_of_articles_show">
+    <p>مقالات / دسته طالبی ها</p>
+    <h1>طالبی هستم سلام!</h1>
+</header>
 
 {/body}

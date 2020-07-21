@@ -1,0 +1,514 @@
+@font-face {
+  font-family: main_font;
+  src: url(../fonts/Nunito-Italic.ttf);
+}
+
+@font-face {
+  font-family: second_font;
+  src: url(../fonts/OptimusPrinceps.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.dir_rtl {
+  direction: rtl;
+}
+
+
+.header_of_home_page {
+  background-image: url("../img/landi_bg.jpg");
+  background-size: cover;
+  position: relative;
+  font-family: second_font;
+
+  .particleground  {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(43deg, rgba(212, 145, 162, 0.511) 0%, rgba(214, 189, 140, 0.502) 68%, rgba(182, 147, 147, 0.491) 100%);
+
+
+    .navbar-light .navbar-toggler{
+      border-color: white;
+    }
+    .menu_icon{
+      color: white;
+      padding-top: 2px;
+
+    }
+
+    .nav_bar_home{
+      position: absolute;
+      top: 0;
+      width: 100%;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.8046568969384629) 0%, rgba(0, 0, 0, 0) 100%);
+
+      .navbar-nav{
+        .nav-link{
+          color: white;
+          font-size: 1.2rem;
+          margin-right: 10px;
+          transition: all .1s linear;
+
+          &:hover{
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+
+    .box_of_fashion{
+      position: absolute;
+      top: 12%;
+      width: 600px;
+      left: 70px;
+    }
+    .box_of_details_fashion{
+
+      .logo_of_fashion{
+        width: 66%;
+        margin-left: 20%;
+        margin-bottom: 30px;
+      }
+
+      .txt_of_landing{
+        color: rgb(255, 243, 152);
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: 900;
+
+        li{
+          margin-bottom: 15px;
+        }
+      }
+
+      .landing_btn{
+        width: 400px;
+       margin: auto;
+        background-color: transparent;
+        border-radius: 4px;
+        border: 1px solid rgb(255, 255, 255);
+        color: white;
+        font-size:  1.5rem ;
+        transition: all linear 0.1s;
+
+        &:hover{
+          transform: scale(1.07);
+        }
+
+      }
+    }
+  }
+
+}
+
+.model_of_slider {
+  background-color: #F1F1F1;
+  padding-bottom: 80px;
+
+  .title_of_part_brands {
+    font-family: second_font;
+    position: relative;
+
+    &:after {
+      content: "";
+      width: 180%;
+      height: 2px;
+      background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+      border-radius: 3px;
+      position: absolute;
+      bottom: 0;
+
+      left: 0;
+    }
+  }
+
+  .swiper-container {
+    .swiper-wrapper {
+      .swiper-slide {
+        .brand_slider_img {
+          width: 100%;
+          border-radius: 5px;
+          height: 75vh;
+        }
+
+        .name_of_model {
+          font-family: second_font;
+          padding-top: 20px;
+        }
+
+        .inf_of_brand_slider {
+          font-family: main_font;
+
+          .title_for_inf_of_brand_slider {
+            font-weight: 800;
+          }
+        }
+
+      }
+    }
+  }
+
+
+}
+
+.product_categories {
+  overflow: hidden;
+  margin-bottom: 80px;
+
+  .main_pic_in_product_category {
+    .main_pic {
+      width: 100%;
+      height: 93vh;
+    }
+  }
+
+  .categories_p_3 {
+    .pic_c_box {
+      position: relative;
+
+      .pic_categories {
+        width: 100%;
+        height: 30vh;
+        margin-bottom: 1.5vh;
+      }
+
+      .cover_pic {
+        width: 100%;
+        position: absolute;
+        background-color: rgba(46, 14, 10, 0.74);
+        height: 30vh;
+        z-index: 10;
+        top: 0px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all 0.35s ease-in-out;
+
+        &:hover {
+          background-color: transparent;
+
+          & .title_of_category {
+            transform: rotate(-45deg);
+          }
+
+        }
+
+
+        .title_of_category {
+          color: white;
+          text-transform: uppercase;
+          font-weight: 400;
+          letter-spacing: -1px;
+          width: 70%;
+          margin: auto;
+          text-align: center;
+          position: relative;
+          top: 9vh;
+          transition: all 0.35s ease-in-out;
+
+          &:before, &:after {
+            background-color: white;
+            width: 115%;
+            height: 2px;
+            position: absolute;
+            content: "";
+            left: -10px;
+          }
+
+          &:after {
+            bottom: -10px;
+          }
+
+          &:before {
+            top: -7px;
+          }
+        }
+
+        .span_title_change_style {
+          font-weight: 800;
+
+        }
+      }
+    }
+
+
+  }
+}
+
+
+.abouts_brands {
+
+  .img_of_brands_post {
+    height: 415px;
+    width: 100%;
+  }
+
+  .title_of_part_brands {
+    font-family: second_font;
+    position: relative;
+
+    &:after {
+      content: "";
+      width: 180%;
+      height: 2px;
+      background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+      border-radius: 3px;
+      position: absolute;
+      bottom: 0;
+
+      left: 0;
+    }
+  }
+
+  .title_of_brand {
+    font-family: second_font;
+  }
+
+  .explain_about_brands {
+    font-family: main_font;
+    line-height: 40px;
+    text-align: justify;
+  }
+
+  .date_of_post {
+    color: #6c757d;
+    margin-top: -10px;
+  }
+
+  .btn_for_intredius_brand {
+    width: 200px;
+    height: 35px;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid black;
+    color: black;
+    font-family: 'main_font';
+    text-align: center;
+    transition: all linear 0.2s;
+
+    &:hover {
+      background-color: #2f2f2f;
+      color: white;
+      transform: scale(1.1);
+    }
+  }
+
+}
+
+
+.footer_field {
+  width: 100%;
+  background-color: #1a1a1a;
+  margin-top: 50px;
+  font-family: second_font;
+
+  .field_of_footer_part {
+    border-bottom: 1px solid rgb(59, 59, 59);
+
+    .footer_part_header {
+      color: rgb(210, 226, 151);
+      font-size: 1.2rem;
+    }
+
+    .footer_txt a {
+      color: white;
+      transition: all 0.1s linear;
+
+      &:hover {
+        text-decoration: none;
+        font-weight: 600;
+      }
+    }
+
+    .border_r {
+      border-right: 1px solid rgb(59, 59, 59);
+    }
+
+    .field_of_social, .email_div, .fiel_for_social_media a {
+      color: white;
+    }
+
+    .fiel_for_social_media a {
+      padding-bottom: 20px;
+
+      &:hover {
+        text-decoration: none;
+
+      }
+    }
+
+
+  }
+
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .product_categories .main_pic_in_product_category .main_pic {
+    width: 93%;
+  }
+
+
+  .product_categories .categories_p_3 {
+    width: 140%;
+    position: relative;
+    right: 40%;
+  }
+
+  .model_of_slider .swiper-container .swiper-wrapper .swiper-slide .name_of_model {
+    padding-top: 0;
+  }
+
+  .model_of_slider .swiper-container .swiper-wrapper .swiper-slide .inf_of_brand_slider {
+    font-size: .9rem;
+  }
+  .model_of_slider .swiper-container .swiper-wrapper .swiper-slide .brand_slider_img {
+    height: 68vh;
+  }
+
+}
+
+@media only screen and (max-width: 991px) {
+  .product_categories .main_pic_in_product_category .main_pic {
+    width: 107%;
+  }
+
+  .product_categories .categories_p_3 {
+    width: 85%;
+    left: 15%;
+  }
+
+  .explain_about_brands {
+    line-height: 30px;
+  }
+
+  .abouts_brands .title_of_part_brands {
+    padding-left: 30px;
+
+    &:after {
+      left: 25px;
+      height: 1px;
+    }
+
+  }
+
+  .model_of_slider .swiper-container .swiper-wrapper .swiper-slide .brand_slider_img {
+    width: 80% !important;
+    margin-left: 10%;
+  }
+
+  .model_of_slider .swiper-container .swiper-wrapper .swiper-slide .info_model {
+    width: 80% !important;
+    margin-left: 10%;
+    margin-top: 20px;
+  }
+
+  .model_of_slider .title_box {
+    padding-left: 60px;
+  }
+  .header_of_home_page .particleground .box_of_fashion{
+    left: 20%;
+    top: 10%;
+    width: 550px;
+    font-size: 1rem;
+  }
+
+  .header_of_home_page .particleground{
+    height: 85vh;
+  }
+  .header_of_home_page .particleground .box_of_details_fashion .logo_of_fashion{
+    width: 250px;
+    margin-left: 30%;
+  }
+
+  .header_of_home_page .particleground .box_of_details_fashion .txt_of_landing li{
+    margin-bottom: 5px;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  .product_categories .main_pic_in_product_category .main_pic {
+    height: 70vh;
+  }
+  .product_categories .categories_p_3 {
+    width: 100%;
+    left: 0%;
+    top: 20px;
+
+    .product_categories .categories_p_3 .pic_c_box {
+      display: inline-block;
+    }
+
+  }
+
+  .footer_field .field_of_footer_part .border_r {
+    border: none;
+  }
+
+  .model_of_slider .swiper-container .swiper-wrapper .swiper-slide .brand_slider_img {
+    width: 90% !important;
+    margin-left: 5%;
+  }
+
+  .model_of_slider .swiper-container .swiper-wrapper .swiper-slide .info_model {
+    width: 90% !important;
+    margin-left: 5%;
+    margin-top: 20px;
+  }
+
+  .model_of_slider .title_box {
+    padding-left: 20px;
+  }
+
+  .header_of_home_page .particleground{
+    height: 65vh;
+  }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+
+@media only screen and (max-width: 575px) {
+  .product_categories .categories_p_3 .pic_c_box {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .product_categories .main_pic_in_product_category .main_pic {
+    height: 50vh;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .abouts_brands .title_of_part_brands {
+    padding-left: 30px;
+
+    &:after {
+      width: 120%;
+      left: 30px;
+      height: 1px;
+    }
+
+  }
+
+  .model_of_slider .title_box {
+    padding-left: 30px;
+  }
+
+
+}
+
+@media only screen and (max-width: 500px) {
+}
+
+

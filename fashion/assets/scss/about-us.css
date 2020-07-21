@@ -1,0 +1,508 @@
+@font-face {
+  font-family: main_font;
+  src: url(../fonts/Nunito-Italic.ttf);
+}
+@font-face {
+  font-family: second_font;
+  src: url(../fonts/OptimusPrinceps.ttf);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.dir_rtl {
+  direction: rtl;
+}
+
+body {
+  font-family: main_font;
+}
+
+.box_of_main_ex_about_us {
+  width: 100%;
+  background-color: #c1c9d0;
+  position: relative;
+}
+.box_of_main_ex_about_us .height_of_part1 {
+  height: 150vh;
+}
+.box_of_main_ex_about_us .nav_bar_about_us {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8046568969) 0%, rgba(0, 0, 0, 0) 100%);
+  width: 100%;
+  font-family: second_font;
+}
+.box_of_main_ex_about_us .nav_bar_about_us .nav-item .nav-link {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-right: 10px;
+}
+.box_of_main_ex_about_us .nav_bar_about_us .nav-item .navbar-light .navbar-toggler {
+  border-color: white;
+}
+.box_of_main_ex_about_us .nav_bar_about_us .menu_icon {
+  color: white;
+  padding-top: 2px;
+}
+.box_of_main_ex_about_us .img_box .img_about_us_fashion .img_main_about_us_fashion_h {
+  width: 42%;
+  position: relative;
+  left: 25%;
+  top: 100px;
+  z-index: 100;
+}
+.box_of_main_ex_about_us .img_box .img_about_us_fashion .img_under_main_pic_dots {
+  height: 20%;
+  position: absolute;
+  left: 0px;
+  top: 150px;
+}
+.box_of_main_ex_about_us .img_box .img_about_us_fashion .img_sec_pic_m {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  z-index: 102;
+  left: 5%;
+  top: 25%;
+}
+.box_of_main_ex_about_us .img_box .img_about_us_fashion .img_under_main_pic_dots2 {
+  height: 20%;
+  position: absolute;
+  top: 43%;
+  right: 28%;
+}
+.box_of_main_ex_about_us .img_box .img_about_us_fashion .img_2_about_us {
+  width: 350px;
+  position: absolute;
+  bottom: -10%;
+  height: 400px;
+  right: 0;
+}
+.box_of_main_ex_about_us .img_box .text_explain_box .big_title_of_fashion {
+  color: white;
+  font-weight: 900;
+  z-index: 103;
+  position: absolute;
+  width: 30%;
+  top: 150px;
+  font-size: 3rem;
+  right: 100px;
+}
+.box_of_main_ex_about_us .img_box .text_explain_box .text_about_us {
+  width: 25%;
+  position: absolute;
+  right: 45px;
+  bottom: 30%;
+}
+.box_of_main_ex_about_us .img_box .text_explain_box .exp_about_us_part1 {
+  width: 40%;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+  text-align: justify;
+  margin-top: 170px;
+  position: absolute;
+  left: 26%;
+}
+.box_of_main_ex_about_us .img_box .text_explain_box .text_about_us_part2 {
+  bottom: 20px;
+  position: absolute;
+  width: 40%;
+  left: 26%;
+  text-align: justify;
+  color: #4e555b;
+}
+
+.row_of_text_and_pic {
+  margin-top: 20%;
+}
+.row_of_text_and_pic .text_img {
+  width: 100%;
+  height: 380px;
+}
+
+.box_of_about_fashion {
+  margin-top: 10%;
+}
+.box_of_about_fashion .img_of_fashion_woman {
+  width: 100%;
+  height: 700px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 1px #e7e7e7;
+  margin-top: 100px;
+}
+.box_of_about_fashion .text_box {
+  width: 80%;
+  margin: auto;
+  text-align: justify;
+}
+.box_of_about_fashion .text_box .title_of_fashion_about {
+  font-family: second_font;
+  font-weight: 800;
+  padding-top: 100px;
+  color: #F95B5B;
+}
+.box_of_about_fashion .text_box .explain_of_fashion_about {
+  font-size: 1.1rem;
+  padding-top: 50px;
+}
+.box_of_about_fashion .header_of_part_new_about_us {
+  font-size: 3rem;
+  margin-top: 100px;
+  color: #F95B5B;
+  font-weight: 900;
+}
+.box_of_about_fashion .img_part_2_bpx {
+  position: relative;
+  margin-top: 200px;
+}
+.box_of_about_fashion .img_part_2_bpx .img_about_us_part2 {
+  position: absolute;
+}
+.box_of_about_fashion .img_part_2_bpx .img7 {
+  width: 50%;
+  z-index: 100;
+  top: 250px;
+  left: -25px;
+}
+.box_of_about_fashion .img_part_2_bpx .img8 {
+  width: 80%;
+  right: 0;
+  height: 600px;
+}
+.box_of_about_fashion .img_part_2_bpx .img9 {
+  width: 60%;
+  z-index: 100;
+  top: -140px;
+  left: 30px;
+}
+.box_of_about_fashion .img_part_2_bpx .img6 {
+  width: 40%;
+  right: 50px;
+  top: 560px;
+}
+.box_of_about_fashion .text_our_story {
+  width: 80%;
+  margin: auto;
+}
+.box_of_about_fashion .text_our_story .part_1, .box_of_about_fashion .text_our_story .part_2 {
+  margin-top: 100px;
+}
+.box_of_about_fashion .text_our_story .title_of_fashion_about {
+  font-weight: 800;
+  color: #F95B5B;
+  font-family: second_font;
+}
+.box_of_about_fashion .text_our_story .explain_of_fashion_about {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+.box_of_about_fashion .text_our_story .img_of_fashion {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.footer_field {
+  width: 100%;
+  background-color: #1a1a1a;
+  margin-top: 150px;
+  font-family: second_font;
+}
+.footer_field .field_of_footer_part {
+  border-bottom: 1px solid #3b3b3b;
+}
+.footer_field .field_of_footer_part .footer_part_header {
+  color: #d2e297;
+  font-size: 1.2rem;
+}
+.footer_field .field_of_footer_part .footer_txt a {
+  color: white;
+  transition: all 0.1s linear;
+}
+.footer_field .field_of_footer_part .footer_txt a:hover {
+  text-decoration: none;
+  font-weight: 600;
+}
+.footer_field .field_of_footer_part .border_r {
+  border-right: 1px solid #3b3b3b;
+}
+.footer_field .field_of_footer_part .field_of_social, .footer_field .field_of_footer_part .email_div, .footer_field .field_of_footer_part .fiel_for_social_media a {
+  color: white;
+}
+.footer_field .field_of_footer_part .fiel_for_social_media a {
+  padding-bottom: 20px;
+}
+.footer_field .field_of_footer_part .fiel_for_social_media a:hover {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .box_of_main_ex_about_us .img_box .img_about_us_fashion .img_sec_pic_m {
+    width: 250px;
+    height: 250px;
+    top: 27%;
+  }
+
+  .box_of_main_ex_about_us .img_box .text_explain_box .big_title_of_fashion {
+    font-size: 2.5rem;
+  }
+
+  .box_of_main_ex_about_us .height_of_part1 {
+    height: 135vh;
+  }
+
+  .box_of_main_ex_about_us .img_box .img_about_us_fashion .img_under_main_pic_dots2 {
+    top: 40%;
+  }
+
+  .box_of_main_ex_about_us .img_box .img_about_us_fashion .img_2_about_us {
+    width: 315px;
+    bottom: -14%;
+  }
+
+  .box_of_main_ex_about_us .img_box .text_explain_box .text_about_us {
+    bottom: 31%;
+    right: 35px;
+  }
+
+  .box_of_main_ex_about_us .img_box .text_explain_box .exp_about_us_part1 {
+    font-size: 1.1rem;
+  }
+
+  .box_of_main_ex_about_us .img_box .text_explain_box .text_about_us_part2 {
+    bottom: 20px;
+  }
+
+  .box_of_about_fashion .img_of_fashion_woman {
+    height: 600px;
+  }
+
+  .box_of_about_fashion .text_box {
+    width: 90%;
+    margin-top: 100px;
+  }
+  .box_of_about_fashion .text_box .title_of_fashion_about,
+.box_of_about_fashion .text_box .explain_of_fashion_about {
+    padding-top: 20px;
+  }
+
+  .box_of_about_fashion .text_our_story {
+    width: 90%;
+  }
+  .box_of_about_fashion .text_our_story .part_1, .box_of_about_fashion .text_our_story .part_2 {
+    margin-top: 50px;
+  }
+  .box_of_about_fashion .text_our_story .img_of_fashion {
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .box_of_main_ex_about_us .img_box .img_about_us_fashion .img_main_about_us_fashion_h {
+    width: 50%;
+    height: 450px;
+  }
+
+  .box_of_main_ex_about_us .img_box .img_about_us_fashion .img_sec_pic_m {
+    width: 200px;
+    height: 200px;
+    top: 28%;
+    left: 6%;
+  }
+
+  .box_of_main_ex_about_us .img_box .img_about_us_fashion .img_under_main_pic_dots {
+    width: 30vw;
+    left: 0px;
+  }
+
+  .box_of_main_ex_about_us .img_box .text_explain_box .big_title_of_fashion {
+    width: 35%;
+    right: 15px;
+    font-size: 1.7rem;
+  }
+
+  .box_of_main_ex_about_us .img_box .text_explain_box .text_about_us {
+    width: 22%;
+    right: 3%;
+    bottom: 30%;
+    font-size: 0.7rem;
+  }
+
+  .box_of_main_ex_about_us .img_box .img_about_us_fashion .img_under_main_pic_dots2 {
+    right: 20%;
+    top: 40%;
+  }
+
+  .box_of_main_ex_about_us .img_box .text_explain_box .exp_about_us_part1 {
+    width: 36%;
+    font-size: 1rem;
+    margin-top: 135px;
+    left: 27%;
+  }
+
+  .box_of_main_ex_about_us .height_of_part1 {
+    height: 120vh;
+  }
+
+  .box_of_main_ex_about_us .img_box .img_about_us_fashion .img_2_about_us {
+    width: 250px;
+    height: 300px;
+  }
+
+  .box_of_main_ex_about_us .img_box .text_explain_box .text_about_us_part2 {
+    font-size: 0.8rem;
+    width: 38%;
+  }
+
+  .box_of_about_fashion .img_of_fashion_woman {
+    height: 700px;
+  }
+
+  .box_of_about_fashion .text_box {
+    margin-top: 0;
+  }
+
+  .box_of_about_fashion .text_our_story {
+    position: relative;
+    top: 1100px;
+  }
+
+  .box_of_about_fashion {
+    height: 510vh;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .box_of_about_fashion .text_our_story {
+    top: 1000px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .row_of_text_and_pic {
+    margin-top: 25%;
+  }
+
+  .box_of_main_ex_about_us .height_of_part1 {
+    height: 135vh;
+  }
+
+  .box_of_main_ex_about_us .img_box .img_about_us_fashion .img_main_about_us_fashion_h {
+    width: 80%;
+    height: 500px;
+    left: 10%;
+  }
+
+  .box_of_main_ex_about_us .img_box .img_about_us_fashion .img_under_main_pic_dots2,
+.box_of_main_ex_about_us .img_box .img_about_us_fashion .img_under_main_pic_dots {
+    display: none;
+  }
+
+  .box_of_main_ex_about_us .img_box .img_about_us_fashion .img_sec_pic_m {
+    width: 230px;
+    height: 230px;
+    top: 50%;
+    left: 0%;
+  }
+
+  .box_of_main_ex_about_us .img_box .text_explain_box .big_title_of_fashion {
+    font-size: 2.5rem;
+    width: 70%;
+    top: 35px;
+    right: 40px;
+    overflow: hidden;
+  }
+
+  .box_of_main_ex_about_us .img_box .text_explain_box .text_about_us {
+    bottom: 26%;
+    width: 40%;
+    right: 15%;
+  }
+
+  .box_of_main_ex_about_us .img_box .text_explain_box .exp_about_us_part1 {
+    margin-top: 250px;
+    width: 50%;
+    left: 0;
+    font-size: 0.9rem;
+  }
+
+  .box_of_main_ex_about_us .img_box .text_explain_box .text_about_us_part2 {
+    width: 51%;
+    left: 0;
+    bottom: 10px;
+  }
+
+  .box_of_about_fashion .text_our_story {
+    top: 950px;
+  }
+
+  .footer_field .field_of_footer_part .border_r {
+    border: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .box_of_main_ex_about_us .img_box .text_explain_box .text_about_us {
+    right: 8%;
+  }
+
+  .box_of_main_ex_about_us .img_box .img_about_us_fashion .img_2_about_us {
+    width: 200px;
+    height: 250px;
+    bottom: -10%;
+  }
+
+  .box_of_main_ex_about_us .img_box .text_explain_box .exp_about_us_part1,
+.box_of_main_ex_about_us .img_box .text_explain_box .text_about_us_part2 {
+    width: 53%;
+    font-size: 0.7rem;
+  }
+
+  .box_of_main_ex_about_us .img_box .text_explain_box .exp_about_us_part1 {
+    font-size: 0.8rem;
+  }
+
+  .box_of_about_fashion .img_of_fashion_woman {
+    height: 500px;
+  }
+
+  .box_of_about_fashion .text_our_story {
+    top: 680px;
+  }
+
+  .box_of_about_fashion .img_part_2_bpx .img8 {
+    height: 400px;
+  }
+
+  .box_of_about_fashion .img_part_2_bpx .img7 {
+    top: 150px;
+  }
+
+  .box_of_about_fashion .img_part_2_bpx .img6 {
+    right: 20px;
+    top: 370px;
+  }
+
+  .box_of_about_fashion {
+    height: 450vh;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .box_of_main_ex_about_us .img_box .img_about_us_fashion .img_sec_pic_m {
+    width: 200px;
+    height: 200px;
+    top: 53%;
+    left: 0%;
+  }
+
+  .box_of_main_ex_about_us .img_box .text_explain_box .big_title_of_fashion {
+    font-size: 2rem;
+    top: 60px;
+  }
+
+  .box_of_about_fashion {
+    height: 480vh;
+  }
+}
+
+/*# sourceMappingURL=about-us.css.map */
