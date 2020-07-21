@@ -161,6 +161,7 @@ category_schema.statics = {
 
             if(this_category.parent == null){
 
+
                 if(parent_inp != null){
 
                     await category_model.updateMany({parent: this_category._id}, {parent: null, child_number : 0});
