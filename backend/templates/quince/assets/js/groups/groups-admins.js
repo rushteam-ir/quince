@@ -102,6 +102,47 @@ $('.table_delete_btn').on('click', function (e) {
 
 })
 
+// Change admin status
+$('.admin_status').on('click', function (e) {
+
+    let admin_id = $(e.currentTarget).attr('name');
+    let admin_status = $(e.currentTarget).attr('value');
+
+    if (admin_status == 'true') {
+
+        admin_status = 'مسدود';
+
+    } else {
+
+        admin_status = 'فعال';
+
+    }
+
+    Swal.fire({
+        title: `${admin_status} کردن کاربر`,
+        text: `آیا از ${admin_status} کردن این کاربر مطمئن هستید؟`,
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'بله',
+        cancelButtonText: 'خیر',
+    }).then((result) => {
+        if (result.value) {
+            Swal.fire({
+                title: `${admin_status} شد`,
+                text: `کاربر مور نظر با موفقیت ${admin_status} شد برای تایید نهایی کلیک کنید`,
+                icon: 'success',
+                confirmButtonText: 'تایید',
+            }).then((result) => {
+                if (result.value) {
+                    redirect(`${backend_url}groups/api/change-status/?id=${admin_id}`);
+                }
+            })
+        }
+    })
+})
+
 function redirect(url) {
     location.href = url
 }

@@ -146,9 +146,13 @@
                                                     <i class="fal fa-retweet"></i>
                                                     تغییر دسترسی
                                                 </button>
-                                                <button class="dropdown-item">
+                                                <button class="dropdown-item admin_status" name="{._id}" value="true">
                                                     <i class="fal fa-ban"></i>
-                                                    مسدود کردن حساب
+                                                    {@eq key="{status}" value="true"}
+                                                        مسدود کردن حساب
+                                                    {:else}
+                                                        فعال کردن حساب
+                                                    {/eq}
                                                 </button>
                                                 <button class="user_delete dropdown-item" name="{._id}">
                                                     <i class="fal fa-user-times"></i>
