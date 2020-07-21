@@ -78,7 +78,7 @@ $('.table_delete_btn').on('click', function (e) {
                     confirmButtonText: 'تایید',
                 }).then((result) => {
                     if (result.value) {
-                        redirect(`${backend_url}article/api/delete-select-article/?${query}`);
+                        redirect(`${backend_url}article/api/delete-select/?${query}`);
                     }
                 })
             }
@@ -121,7 +121,7 @@ $('.article_status').on('click', function (e) {
                 confirmButtonText: 'تایید',
             }).then((result) => {
                 if (result.value) {
-                    redirect(`${backend_url}article/api/change-status-article/?id=${article_id}`);
+                    redirect(`${backend_url}article/api/change-status/?id=${article_id}`);
                 }
             })
         }
@@ -162,7 +162,7 @@ $('.article_comments_status').on('click', function (e) {
                 confirmButtonText: 'تایید',
             }).then((result) => {
                 if (result.value) {
-                    redirect(`${backend_url}article/api/change-comments-status-article/?id=${article_id}`);
+                    redirect(`${backend_url}article/api/change-comments-status/?id=${article_id}`);
                 }
             })
         }

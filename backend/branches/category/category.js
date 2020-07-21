@@ -122,16 +122,18 @@ router.post('/', async(req, res, next)=>{
 
 const get_sub_category = require('./api/get-sub-category');
 const delete_category = require('./api/delete-category');
-const delete_select_category = require('./api/delete-select-category');
+const delete_select = require('./api/delete-select');
 const get_category = require('./api/get-category');
-const edit_category = require('./api/edit-category');
+
+const edit = require('./edit');
 const search = require('./search');
 
 router.use('/api/get-sub-category', get_sub_category);
 router.use('/api/delete-category', delete_category);
-router.use('/api/delete-select-category', delete_select_category);
+router.use('/api/delete-select', delete_select);
 router.use('/api/get-category', get_category);
-router.use('/api/edit-category', edit_category);
+
+router.use('/edit', edit);
 router.use('/search', search);
 
 module.exports = router;

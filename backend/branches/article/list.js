@@ -1,6 +1,6 @@
 const router = express.Router();
 
-router.get('/', async(req, res, error)=>{
+router.get('/', async(req, res, next)=>{
 
     try{
 

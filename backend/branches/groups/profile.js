@@ -5,7 +5,7 @@ router.get('/:id', async(req, res, next)=>{
     try{
 
         let user_id = req.params.id;
-        let find_user = await user_model.getByUniqueId(user_id);
+        let find_user = await admin_model.getByUniqueId(user_id);
 
         // if(find_user){
         //
