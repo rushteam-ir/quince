@@ -9,24 +9,23 @@ router.get('/', async(req, res, next)=>{
         if(isObjectId(delete_id)){
 
             let admin_find = await admin_model.getById(delete_id);
-
             let result = await admin_model.del(delete_id);
 
             if(result){
 
-                return res.redirect(`${config.backend_url}users/list`);
+                return res.redirect(`${config.backend_url}groups/admins`);
 
             }
             else{
 
-                return res.redirect(`${config.backend_url}users/list`);
+                return res.redirect(`${config.backend_url}groups/admins`);
 
             }
 
         }
         else{
 
-            return res.redirect(`${config.backend_url}users/list`);
+            return res.redirect(`${config.backend_url}groups/admins`);
 
         }
 

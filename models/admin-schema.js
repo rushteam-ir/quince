@@ -99,6 +99,9 @@ admin_schema.statics = {
 
     del : async function (user_id) {
 
+        let find_user = await admin_model.findById(user_id);
+        fs.unlink(`${backend_upload_dir}avatars/${find_user.avatar}`, function(err) {})
+
         return await admin_model.findByIdAndDelete(user_id);
 
     },
