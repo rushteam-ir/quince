@@ -16,7 +16,8 @@ router.get('/', async(req, res, next)=>{
 });
 
 const change_status = require('./api/change-status');
-const delete_user = require('./api/delete-user');
+const delete_groups = require('./api/delete-groups');
+const delete_select = require('./api/delete-select');
 
 const admins = require('./admins/admins');
 const users = require('./users');
@@ -24,7 +25,8 @@ const profile = require('./profile');
 const add = require('./add');
 
 router.use('/api/change-status', change_status);
-router.use('/api/delete-user', delete_user);
+router.use('/api/delete-groups', delete_groups);
+router.use('/api/delete-select', delete_select);
 
 router.use('/admins', admins);
 router.use('/users', users);

@@ -138,22 +138,22 @@
                                                 <i class="fas fa-ellipsis-v"></i>
                                             </button>
                                             <div class="dropdown-menu" aria-labelledby="table_option">
-                                                <a class="dropdown-item" href="#">
+                                                <button class="dropdown-item">
                                                     <i class="fal fa-paper-plane"></i>
                                                     ارسال پیام
-                                                </a>
-                                                <a class="dropdown-item" href="#">
+                                                </button>
+                                                <button class="dropdown-item">
                                                     <i class="fal fa-retweet"></i>
                                                     تغییر دسترسی
-                                                </a>
-                                                <a class="dropdown-item" href="#">
+                                                </button>
+                                                <button class="dropdown-item">
                                                     <i class="fal fa-ban"></i>
                                                     مسدود کردن حساب
-                                                </a>
-                                                <a class="dropdown-item" href="#">
+                                                </button>
+                                                <button class="user_delete dropdown-item" name="{._id}">
                                                     <i class="fal fa-user-times"></i>
                                                     حذف کاربر
-                                                </a>
+                                                </button>
                                             </div>
                                         </div>
                                     </td>
