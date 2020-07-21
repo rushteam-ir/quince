@@ -139,16 +139,20 @@
                                             </button>
                                             <div class="dropdown-menu" aria-labelledby="table_option">
                                                 <a class="dropdown-item" href="#">
-                                                    <i class="fal fa-align-slash"></i>
-                                                    غیر فعال کردن
+                                                    <i class="fal fa-paper-plane"></i>
+                                                    ارسال پیام
                                                 </a>
                                                 <a class="dropdown-item" href="#">
-                                                    <i class="fal fa-asterisk"></i>
-                                                    افزودن وی ای پی
+                                                    <i class="fal fa-retweet"></i>
+                                                    تغییر دسترسی
                                                 </a>
                                                 <a class="dropdown-item" href="#">
-                                                    <i class="fal fa-assistive-listening-systems"></i>
-                                                    افزودن گوش و چشم
+                                                    <i class="fal fa-ban"></i>
+                                                    مسدود کردن حساب
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <i class="fal fa-user-times"></i>
+                                                    حذف کاربر
                                                 </a>
                                             </div>
                                         </div>
