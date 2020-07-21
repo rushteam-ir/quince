@@ -44,58 +44,63 @@ router.post('/:id', async(req, res, next)=>{
    try{
 
        let article_id = req.params.id;
-       let {title_inp, parent_inp, child_inp, describe_inp, keys_inp, meta_describe_inp} = req.body;
+       let find_article = await article_model.getByUniqueId(article_id);
+       let {title_inp, parent_inp, child_inp, describe_inp, meta_describe_inp} = req.body;
        let validation_result = new validation([
            {value : title_inp},
            {value : parent_inp, type : 'objectId'},
            {value : child_inp, type : 'objectId'},
            {value : describe_inp},
            {value : meta_describe_inp},
-           {value : keys_inp}
        ]).valid()
 
        if(validation_result){
 
-           return res.redirect(`${config.backend_url}article/edit/${article_id}/?msg=${validation_result}`);
+           return res.json(validation_result);
 
        }
 
-       let article_url = title_inp.split(' ').join('-')
+       let article_url = title_inp.split(' ').join('-').toLowerCase();
 
        let article_data = {
 
            title : title_inp,
-           category_parent : parent_inp,
-           category_child : child_inp,
+           category_parent : (parent_inp == '0') ? null : parent_inp,
+           category_child : (child_inp == '0') ? null : child_inp,
            describe : describe_inp,
-           meta_keys : keys_inp,
-           meta_describe : keys_inp,
-           url : `${config.frontend_url}article/${article_url}`,
+           meta_describe : meta_describe_inp,
+           url : `${config.frontend_url}articles/${article_url}`,
            internal_files : req.session.temp_files,
 
        }
 
-       if (req.files) {
+       if(find_article.main_image == ""){
 
-           let main_image = req.files.main_image;
-           let uploader_options = {
+           if (req.files) {
 
-               allowed_formats : 'image',
-               limited_size : config.image_limited_size,
-               file_path : `${backend_upload_dir}images/`,
+               let main_image = req.files.main_image;
+               let file_name = `${randomSha1String()}.${main_image.name.split(".").pop()}`;
+               let upload_result = fileManager.upload(main_image, file_name,{
+
+                   allowed_formats : `image`,
+                   file_path : `${backend_upload_dir}images/`,
+
+               });
+
+               if(upload_result){
+
+                   return res.json(upload_result)
+
+               }
+
+               article_data.main_image = file_name;
 
            }
+           else{
 
-           let file_name = `${randomSha1String()}.${main_image.name.split(".").pop()}`;
-           let upload_result = new uploader(main_image, file_name, uploader_options).upload();
-
-           if(upload_result){
-
-               return res.redirect(`${config.backend_url}article/edit/${article_id}/?msg=${upload_result}`);
+               return res.json('یک تصویر به عنوان تصویر اصلی مقاله انتخاب کنید.');
 
            }
-
-           article_data.main_image = file_name;
 
        }
 
@@ -103,12 +108,16 @@ router.post('/:id', async(req, res, next)=>{
 
        if(result){
 
-           return res.redirect(`${config.backend_url}article/list/?msg=edit-success`)
+           return res.json({
+               status : 'success',
+               url : `${config.backend_url}article/list`,
+               msg : `مقاله موردنظر با موفقیت ویرایش شد`
+           })
 
        }
        else{
 
-           return res.redirect(`${config.backend_url}article/edit/${article_id}/?msg=edit-fail`)
+           return res.json('نام مقاله تکراری می باشد، لطفا از نام دیگری استفاده کنید.')
 
        }
 

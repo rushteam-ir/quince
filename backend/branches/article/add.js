@@ -27,19 +27,19 @@ router.post('/', async(req, res, next)=>{
 
    try{
 
-       let {title_inp, parent_inp, child_inp, describe_inp, keys_inp, meta_describe_inp} = req.body;
+       let {title_inp, parent_inp, child_inp, describe_inp, meta_describe_inp} = req.body;
+
        let validation_result = new validation([
            {value : title_inp},
            {value : parent_inp, type : 'objectId'},
            {value : child_inp, type : 'objectId'},
            {value : describe_inp},
            {value : meta_describe_inp},
-           {value : keys_inp}
        ]).valid()
 
        if(validation_result){
 
-           return res.redirect(`${config.backend_url}article/add/?msg=${validation_result}`);
+           return res.json(validation_result)
 
        }
 
@@ -48,10 +48,9 @@ router.post('/', async(req, res, next)=>{
        let article_data = {
 
            title : title_inp,
-           category_parent : parent_inp,
-           category_child : child_inp,
+           category_parent : (parent_inp == '0') ? null : parent_inp,
+           category_child : (child_inp == '0') ? null : child_inp,
            describe : describe_inp,
-           meta_keys : keys_inp,
            meta_describe : meta_describe_inp,
            url : `${config.frontend_url}articles/${article_url}`,
            internal_files : req.session.temp_files
@@ -61,9 +60,7 @@ router.post('/', async(req, res, next)=>{
        if (req.files) {
 
            let main_image = req.files.main_image;
-
            let file_name = `${randomSha1String()}.${main_image.name.split(".").pop()}`;
-
            let upload_result = fileManager.upload(main_image, file_name,{
 
                allowed_formats : `image`,
@@ -73,11 +70,16 @@ router.post('/', async(req, res, next)=>{
 
            if(upload_result){
 
-               return res.redirect(`${config.backend_url}article/add/?msg=${upload_result}`);
+               return res.json(upload_result)
 
            }
 
            article_data.main_image = file_name;
+
+       }
+       else{
+
+           return res.json('یک تصویر به عنوان تصویر اصلی مقاله انتخاب کنید.')
 
        }
 
@@ -85,12 +87,16 @@ router.post('/', async(req, res, next)=>{
 
        if(result){
 
-           return res.redirect(`${config.backend_url}article/list/?msg=add-success`)
+           return res.json({
+               status : 'success',
+               url : `${config.backend_url}article/list`,
+               msg : `مقاله جدید با موفقیت ثبت شد.`
+           })
 
        }
        else{
 
-           return res.redirect(`${config.backend_url}article/add/?msg=add-fail`)
+           return res.json('نام مقاله تکراری می باشد، لطفا از نام دیگری استفاده کنید.')
 
        }
 

@@ -3,7 +3,7 @@
 {<css}
 
     <link rel="stylesheet" href="css/article/wysiwyg-editor.css">
-    <link rel="stylesheet" href="css/article/article-add.css">
+    <link rel="stylesheet" href="css/article/article-edit.css">
 
 {/css}
 {<js}
@@ -11,65 +11,45 @@
     <script src="js/general/wysiwyg-editor.js"></script>
     <script src="js/general/wysiwyg-image-manager.js"></script>
     <script src="js/general/wysiwyg-custom.js"></script>
-    <script src="js/article/article-edit.js"></script>
     <script src="js/custom/uploader.js"></script>
+    <script src="js/custom/main-error.js"></script>
+    <script src="js/custom/error-handler.js"></script>
+    <script src="js/article/article-edit.js"></script>
+    <script src="js/article/article-error.js"></script>
+    <script src="js/general/form-ajax.js"></script>
 
 {/js}
 
 {<body}
     <section>
-        <div class="main_field_of_add_article mb-5">
+        <div class="error_info warning_error">
+            <i class="fal fa-exclamation-circle"></i>
+            <p></p>
+            <i class="fal fa-times"></i>
+        </div>
+        <div class="main_field_of_add_article mb-5 mt-4">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 main_col">
-                        <header>
-                            <p class="header_of_add_article">ویرایش مقاله</p>
-                            <p class="small_of_header_add_article">شما در حال ویرایش مقاله <b>{article_info.title}</b>
-                                هستید</p>
+                        <header class="header_field">
+                            <h1>ویرایش مقاله</h1>
+                            <h2>شما در حال ویرایش مقاله <strong>{article_info.title}</strong> هستید</h2>
                             <hr>
                         </header>
                         <div class="row dir-ltr">
                             <div class="col-8 offset-2">
-                                <form method="post" action="" autocomplete="off" enctype="multipart/form-data" class="text-right dir-rtl">
-                                    <div class="form-group">
-                                        <label for="avatar" class=" col-form-label main_lable_design">تصویر اصلی
-                                            مقاله
-                                        </label>
-                                        <div class="field_of_img_template">
-                                            <div class="box_of_img_template">
-                                                <div class="box_of_img_template img-box">
-                                                    <div class="img-show">
-                                                        {@eq key="{article_info.main_image}" value=""}
-                                                        {:else}
-                                                            <div class="remove_parent">
-                                                                <img class="uploading_img_from_brows" src="media/images/{article_info.main_image}">
-                                                                <div name="{.article_info.unique_id}" class="remove_img_icon image_del"></div>
-                                                            </div>
-                                                        {/eq}
-                                                    </div>
-                                                    <input type="file" name="main_image" id="avatar_img" class="input-file-custom">
-                                                    <label for="avatar_img" class="btn btn-tertiary2 js-labelFile ">
-                                                        <i class="icon fa fa-check"></i>
-                                                        <span class="js-fileName mr-2">انتخاب عکس</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="alert_pro_descripion mb-1">حجم مجاز برای آپلود تصویر
-                                            حداکثر {limited_images_size} مگابایت و همچنین فرمت های مجاز .png ، .jpg ،
-                                            .jpeg و .gif می باشد.</p>
-                                    </div>
+                                <form name="article" class="form_ajax text-right dir-rtl" method="post" action="" autocomplete="off" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label for="article_name">نام مقاله</label>
-                                        <input type="text" class="form-control main_form_design" id="article_name" name="title_inp" value="{article_info.title}">
+                                        <input type="text" class="form-control main_form_design" id="article_name"  name="title_inp" value="{article_info.title}">
                                     </div>
                                     <div class="form-group">
                                         <label for="article_parent">دسته</label>
                                         <select class="form-control main_form_design select-category" id="article_parent" name="parent_inp">
+                                            <option value="0">-----</option>
                                             {#parent_list}
-                                                {@eq key="{title}" value="{article_info.category_parent.title}"}
-                                                    <option selected
-                                                            value="{_id}">{article_info.category_parent.title}</option>
+                                                {@eq key="{article_info.category_parent._id}" value="{_id}"}
+                                                    <option selected value="{_id}">{title}</option>
                                                 {:else}
                                                     <option value="{_id}">{title}</option>
                                                 {/eq}
@@ -79,9 +59,10 @@
                                     <div class="form-group">
                                         <label for="article_child">زیر دسته</label>
                                         <select class="form-control main_form_design select-sub-category" id="article_child" name="child_inp">
+                                            <option value="0">-----</option>
                                             {#child_list}
-                                                {@eq key="{title}" value="{article_info.category_child.title}"}
-                                                    <option selected value="{_id}">{article_info.category_child.title}</option>
+                                                {@eq key="{article_info.category_child._id}" value="{_id}"}
+                                                    <option selected value="{_id}">{title}</option>
                                                 {:else}
                                                     <option value="{_id}">{title}</option>
                                                 {/eq}
@@ -90,18 +71,43 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="article_textarea">توضیحات مقاله</label>
-                                        <textarea class="form-control main_form_design" id="article_textarea" rows="7"  name="describe_inp">{article_info.describe}</textarea>
+                                        <textarea class="form-control main_form_design" id="article_textarea" rows="7" name="describe_inp">{article_info.describe}</textarea>
                                         <input type='file' name='fileupload' id='fileupload' style='display: none;'>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="article_keyword">کلمات کلیدی مقاله</label>
-                                        <input type="text" class="form-control main_form_design" id="article_keyword" name="keys_inp" value="{article_info.meta_keys}">
-                                    </div>
+                                    
                                     <div class="form-group">
                                         <label for="article_describe">توضیحات کلیدی مقاله</label>
-                                        <textarea class="form-control main_form_design" id="article_describe" rows="7"  name="meta_describe_inp">{article_info.meta_describe}</textarea>
+                                        <textarea class="form-control main_form_design" id="article_describe" rows="7" name="meta_describe_inp">{article_info.meta_describe}</textarea>
                                     </div>
-                                    <button class="btn btn_of_save_changes" name="profile_private">ثبت تغییرات</button>
+                                    <div class="form-group">
+                                        <label for="avatar" class="col-form-label main_lable_design">
+                                            تصویر اصلی مقاله
+                                        </label>
+                                        <div class="field_of_img_template">
+                                            <div class="box_of_img_template">
+                                                <div class="box_of_img_template img-box">
+                                                    <div class="img-show">
+                                                        {@eq key="{article_info.main_image}" value=""}
+
+                                                        {:else}
+                                                            <div class="remove_parent">
+                                                                <img class="uploading_img_from_brows"
+                                                                     src="media/images/{article_info.main_image}">
+                                                                <div name="{article_info.unique_id}"
+                                                                     class="remove_img_icon image_del"></div>
+                                                            </div>
+                                                        {/eq}
+                                                    </div>
+                                                    <input type="file" name="main_image" id="main_img" class="ajax_file input-file-custom">
+                                                    <label for="main_img" class="btn btn-tertiary2 js-labelFile ">
+                                                        <i class="icon fa fa-check"></i>
+                                                        <span class="js-fileName mr-2">انتخاب عکس</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn green_btn" name="profile_private">ویرایش مقاله</button>
                                 </form>
                             </div>
                         </div>

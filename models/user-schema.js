@@ -19,7 +19,7 @@ let user_schema = new mongoose.Schema({
    country : String,
    city : String,
    pending_password : String,
-   row : Number
+   unique_id : String,
 
 });
 
@@ -27,7 +27,21 @@ user_schema.statics = {
 
     login : async function (email_inp, password_inp) {
 
-        return await user_model.findOne({email : email_inp, password : password_inp});
+        let find_user = await user_model.findOne({email : email_inp, password : password_inp});
+
+        if(find_user){
+
+            if(isUndefined(find_user.unique_id)){
+
+                let new_unique_id = randomSha1String();
+
+                await user_model.edit(find_user._id, {unique_id : new_unique_id});
+
+            }
+
+        }
+
+        return find_user;
 
     },
 
@@ -101,6 +115,12 @@ user_schema.statics = {
         }
 
     },
+
+    getByUniqueId : async function (user_id) {
+
+        return await user_model.findOne({unique_id : user_id});
+
+    }
 
 };
 

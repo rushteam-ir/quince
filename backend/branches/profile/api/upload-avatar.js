@@ -16,7 +16,7 @@ router.post('/', async(req, res, next)=>{
 
         if(upload_result){
 
-            return res.redirect(`${config.backend_url}profile/?msg=${upload_result}`);
+            return res.json(upload_result)
 
         }
 
@@ -31,12 +31,16 @@ router.post('/', async(req, res, next)=>{
         if(result){
 
             req.session.admin_info = result;
-            return res.redirect(`${config.backend_url}profile/?msg=profile-success`);
+            return res.json({
+                status : 'success',
+                url : `${config.backend_url}profile`,
+                msg : 'عکس پروفایل شما با موفقیت بروز شد.'
+            })
 
         }
         else{
 
-            return res.redirect(`${config.backend_url}profile/?msg=profile-fail`);
+            return res.json('درخواست شما با مشکل مواجه شده است.');
 
         }
 

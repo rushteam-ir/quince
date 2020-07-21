@@ -11,20 +11,63 @@ $('.form_ajax').submit(function(event){
 
     event.preventDefault();
 
-    let front_validation =  profileError();
-
-    if(!front_validation) return false;
-
+    let fd_object = new FormData();
     let post_url = $(this).attr("action");
     let request_method = $(this).attr("method");
-    let form_data = getFormData($(this));
+    let form_type = $(this).attr("name");
+    let form_data = getFormData($(this), fd_object);
 
-    $.ajax({
+    let isFileUpload = document.getElementsByClassName('ajax_file');
+    let ajax_options = {
         url : post_url,
         method: request_method,
-        data : form_data,
         dataType : 'json',
-    }).done(function(response){
+        contentType : false,
+        processData : false,
+    }
+
+    switch(form_type){
+
+        case 'profile':
+        {
+
+            let front_validation = profileError();
+            if(!front_validation) return false;
+            break;
+
+        }
+        case 'category':
+        {
+
+            let front_validation = categoryError();
+            if(!front_validation) return false;
+            break;
+
+        }
+        case 'article':
+        {
+
+            let front_validation = articleError();
+            if(!front_validation) return false;
+            break;
+
+        }
+
+    }
+
+    if (Object.keys(form_data).length == 0 && isFileUpload.length > 0) {
+
+        let files = $('.ajax_file')[0].files[0];
+        let file_name = $('.ajax_file').attr('name');
+        form_data.append(file_name,files);
+
+    }
+
+    ajax_options.contentType = false;
+    ajax_options.processData = false;
+    ajax_options.data = form_data;
+
+    $.ajax(ajax_options).done(function(response){
         if(response.status == 'success'){
 
             sessionStorage.setItem('reload', 'true');
@@ -42,15 +85,14 @@ $('.form_ajax').submit(function(event){
 
 });
 
-function getFormData($form){
+function getFormData($form, form_data){
     var unindexed_array = $form.serializeArray();
-    var indexed_array = {};
 
     $.map(unindexed_array, function(n, i){
-        indexed_array[n['name']] = n['value'];
+        form_data.append([n['name']], n['value']);
     });
 
-    return indexed_array;
+    return form_data;
 }
 
 function showMessage(text){

@@ -60,6 +60,25 @@ router.post('/', async(req, res, next)=>{
     try{
 
         let {title_inp, parent_inp} = req.body;
+        let page_number = 1;
+        let page_limit = req.session.limit;
+
+        if(req.query.page){
+
+            page_number = parseInt(req.query.page);
+
+            if(page_number <= 0){
+
+                page_number = 1;
+
+            }
+
+        }
+        if(!req.session.limit){
+
+            page_limit = 10;
+
+        }
 
         let validation_result = new validation([
             {value : title_inp},
@@ -68,7 +87,7 @@ router.post('/', async(req, res, next)=>{
 
         if(validation_result){
 
-            return res.redirect(`${config.backend_url}category/?msg=${validation_result}`);
+            return res.json(validation_result);
 
         }
 
@@ -76,12 +95,19 @@ router.post('/', async(req, res, next)=>{
 
         if(result && result != -1){
 
-            return res.redirect(`${config.backend_url}category/?msg=add-success`);
+            let category_list = await category_model.getAll(page_number, page_limit);
+            let last_page = category_list.total_pages;
+
+            return res.json({
+                status : 'success',
+                url : `${config.backend_url}category/?page=${last_page}`,
+                msg : 'دسته جدید با موفقیت ثبت شد.'
+            })
 
         }
         else{
 
-            return res.redirect(`${config.backend_url}category/?msg=add-fail`);
+            return res.json('نام دسته تکراری می باشد. لطفا از نام دیگری استفاده کنید.')
 
         }
 

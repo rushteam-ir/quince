@@ -42,7 +42,7 @@ class fileManager {
 
                     if(err){
 
-                        return 'upload-fail';
+                        return 'آپلود فایل با مشکل مواجه شد.';
 
                     }
                     else{
@@ -56,14 +56,14 @@ class fileManager {
             }
             else{
 
-                return 'limited-size'
+                return 'سایز فایل انتخابی بیشتر از حد مجاز است.'
 
             }
 
         }
         else{
 
-            return 'illegal-file'
+            return 'نوع فایل انتخابی معتبر نمی باشد.'
 
         }
 

@@ -6,12 +6,18 @@
 {<js}
     <script src="js/article/article-list.js"></script>
     <script src="js/custom/checkbox.js"></script>
+    <script src="js/custom/main-error.js"></script>
+    <script src="js/general/form-ajax.js"></script>
 {/js}
 
 
 {<body}
-
     <section>
+        <div class="error_info warning_error">
+            <i class="fal fa-exclamation-circle"></i>
+            <p></p>
+            <i class="fal fa-times"></i>
+        </div>
         <div class="main_body">
             <div class="container-fluid">
                 <div class="row">
@@ -35,7 +41,7 @@
                                                 </div>
                                                 <input type="text" class="form-control search_table" placeholder="جستجو ..." aria-describedby="basic-addon1" value="{search_value}">
                                                 {@eq key="{search}" value="true"}
-                                                    <i class="fal fa-times"></i>
+                                                    <i class="fal fa-times search_btn_cancel"></i>
                                                 {/eq}
                                             </div>
                                               <div class="form-group tr_select">
@@ -85,7 +91,7 @@
                                         <td>{@math key="{rows_begin_number}" method="add" operand="{$idx}"/}</td>
                                         <td class="QT_truncate">
                                             <div>
-                                                <a href="{url}">
+                                                <a href="{url}" target="_blank">
                                                     {title}
                                                 </a>
                                             </div>
@@ -104,11 +110,13 @@
                                             </td>
                                         {/eq}
                                         <td>
-                                            {@eq key="{author.author_type}" value="name"}
-                                                {author.first_name} {author.last_name}
-                                            {:else}
-                                                {author.nick_name}
-                                            {/eq}
+                                            <a href="{backend_url}groups/profile/{author.unique_id}">
+                                                {@eq key="{author.author_type}" value="name"}
+                                                    {author.first_name} {author.last_name}
+                                                {:else}
+                                                    {author.nick_name}
+                                                {/eq}
+                                            </a>
                                         </td>
                                         <td>
                                             {last_edit}

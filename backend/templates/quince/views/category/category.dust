@@ -6,12 +6,21 @@
 {<js}
     <script src="js/category/category.js"></script>
     <script src="js/custom/checkbox.js"></script>
-
+    <script src="js/custom/main-error.js"></script>
+    <script src="js/custom/error-handler.js"></script>
+    <script src="js/category/category-error.js"></script>
+    <script src="js/general/form-ajax.js"></script>
 {/js}
 
 
 {<body}
     <section>
+        <!-- error -->
+        <div class="error_info warning_error">
+            <i class="fal fa-exclamation-circle"></i>
+            <p></p>
+            <i class="fal fa-times"></i>
+        </div>
         <div class="main_body">
             <div class="container-fluid">
                 <div class="row">
@@ -36,7 +45,7 @@
                                                     </div>
                                                     <input type="text" class="form-control search_table" placeholder="جستجو ..." aria-describedby="basic-addon1" value="{search_value}">
                                                     {@eq key="{search}" value="true"}
-                                                        <i class="fal fa-times"></i>
+                                                        <i class="fal fa-times search_btn_cancel"></i>
                                                     {/eq}
                                                 </div>
                                                   <div class="form-group tr_select">
@@ -119,7 +128,7 @@
                             <header class="header_field">
                                 <h1>ثبت دسته جدید</h1>
                             </header>
-                            <form action="" method="post" autocomplete="off">
+                            <form class="form_ajax" name="category" action="{backend_url}category" method="post" autocomplete="off">
                                 <div class="form-group mt-4">
                                     <label for="category_name">نام دسته</label>
                                     <input type="text" class="form-control main_form_design" id="category_name" name="title_inp">
@@ -133,7 +142,7 @@
                                         {/parent_list}
                                     </select>
                                 </div>
-                                <button class="btn green_btn py-2 mt-3">ثبت دسته بندی جدید</button>
+                                <button type="submit" class="btn green_btn py-2 mt-3">ثبت دسته جدید</button>
                             </form>
                         </div>
                     </div>
@@ -151,10 +160,10 @@
                                 <h2>دسته مورد نظر خود را ویرایش کنید</h2>
                                 <hr>
                             </header>
-                            <form method="post" action="{backend_url}category/api/edit-category" autocomplete="off" class="dir-rtl text-right">
+                            <form class="form_ajax dir-rtl text-right" name="category" method="post" action="{backend_url}category/api/edit-category" autocomplete="off">
                                 <div class="form-group mt-4">
                                     <label for="category_name">نام دسته</label>
-                                    <input type="text" class="form-control main_form_design edit_category_title" id="category_name" name="title_inp">
+                                    <input type="text" class="form-control main_form_design edit_category_title" id="category_name" name="edit_title_inp">
                                     <input class="edit_category_id" hidden="hidden" name="category_id">
                                 </div>
                                 <div class="form-group">

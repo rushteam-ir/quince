@@ -6,7 +6,7 @@
 {<js}
     <script src="js/groups/groups-users.js"></script>
     <script src="js/custom/checkbox.js"></script>
-    <script src="js/custom/image_modal.js"></script>
+    <script src="js/custom/image-modal.js"></script>
 {/js}
 
 

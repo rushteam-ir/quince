@@ -115,6 +115,7 @@ textarea.form-control {
     background-color: #F3F6F9;
     border: none;
     height: 44px !important;
+    border-radius: 7px;
 }
 
 .main_form_design:focus {

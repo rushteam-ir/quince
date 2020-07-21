@@ -30,7 +30,7 @@
                                 <hr>
                             </header>
                             <div class="main_div_of_personal_form">
-                                <form class="form_ajax" method="post" action="{backend_url}profile/api/change-profile-info" autocomplete="off">
+                                <form class="form_ajax" name="profile" method="post" action="{backend_url}profile/api/change-profile-info" autocomplete="off" novalidate>
                                     <div class="form-group mt-4 row">
                                         <label for="user_name"
                                                class="col-sm-2 col-form-label main_lable_design">نام</label>
@@ -94,7 +94,7 @@
                                 <hr>
                             </header>
                             <div class="main_div_of_personal_form">
-                                <form class="form_ajax" method="post" action="{backend_url}profile/api/change-profile-private" autocomplete="off">
+                                <form class="form_ajax" name="profile" method="post" action="{backend_url}profile/api/change-profile-private" autocomplete="off" novalidate>
                                     <div class="form-group mt-4 row">
                                         <label for="user_birthday" class="col-sm-2 col-form-label main_lable_design">تاریخ تولد</label>
                                         <div class="col-4 col-sm-3 col-md-2">
@@ -152,18 +152,7 @@
                                 <hr>
                             </header>
                             <div class="main_div_of_personal_form">
-                                <form class="form_ajax" method="post" action="{backend_url}profile/api/change-password" autocomplete="off">
-                                    <div class="box_of_pass_alert_pro row">
-                                        <div class="col-2">
-                                            <i class="fad fa-exclamation-circle password_alert_pro"></i>
-                                        </div>
-                                        <div class="col-10">
-                                            <p class="mb-1 alert_pro_text">
-                                                لطفا توجه داشته باشید که رمز عبور شما حداقل باید شامل 8 عدد یا حرف باشد
-                                                . همچنین با عوض کردن رمز عبور خود امنیت حساب خود را بالا تر ببرید.
-                                            </p>
-                                        </div>
-                                    </div>
+                                <form class="form_ajax" name="profile" method="post" action="{backend_url}profile/api/change-password" autocomplete="off" novalidate>
                                     <div class="form-group mt-4 row">
                                         <label for="user_old_pass" class="col-sm-2 col-form-label main_lable_design">رمز
                                             عبور فعلی</label>
@@ -217,7 +206,7 @@
                         <div class="prodile_tabs p-4">
                             <div class="field_of_pro_img">
 
-                                <form id="form_ajax" method="post" action="{backend_url}profile/api/upload-avatar" enctype="multipart/form-data" autocomplete="off">
+                                <form class="form_ajax" method="post" action="{backend_url}profile/api/upload-avatar" enctype="multipart/form-data" autocomplete="off">
                                     <div class="form-group">
                                         <div class="field_of_img_template">
                                             <div class="box_of_img_template">
@@ -235,7 +224,7 @@
                                                         {/eq}
                                                     </div>
                                                     <input type="file" name="avatar" id="avatar_img"
-                                                            class="input-file-custom" accept="image/*">
+                                                            class="input-file-custom ajax_file" accept="image/jpeg, image/png, image/jpg, image/gif">
                                                     <label for="avatar_img" class="btn btn-tertiary2 js-labelFile ">
                                                         <i class="icon fa fa-check"></i>
                                                         <span class="js-fileName mr-2">آپلود عکس</span>
