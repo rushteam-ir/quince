@@ -42,7 +42,7 @@ router.post('/', async(req, res, next)=>{
 
         };
 
-        let result = await user_model.edit(admin_id, admin_data);
+        let result = await admin_model.edit(admin_id, admin_data);
 
         if(result){
 

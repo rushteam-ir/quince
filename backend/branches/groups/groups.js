@@ -19,8 +19,8 @@ const admins = require('./admins');
 const users = require('./users');
 const profile = require('./profile');
 const add = require('./add');
-const change_status_groups = require('./api/change-status-groups');
-const delete_user_groups = require('./api/delete-user-groups');
+const change_status_groups = require('./api/change-status');
+const delete_user_groups = require('./api/delete-user');
 
 router.use('/admins', admins);
 router.use('/users', users);

@@ -75,7 +75,7 @@ $(document).ready(function () {
                         confirmButtonText: 'تایید',
                     }).then((result) => {
                         if (result.value) {
-                            redirect(`${backend_url}category/api/delete-select-category/?${query}`);
+                            redirect(`${backend_url}category/api/delete-select/?${query}`);
                         }
                     })
                 }

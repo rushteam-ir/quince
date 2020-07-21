@@ -1,4 +1,3 @@
-// Importing NPM Modules
 express = require('express');
 fs = require('fs');
 adaro = require('adaro');
@@ -14,15 +13,13 @@ sha1 = require('sha1');
 compression = require('compression');
 crypto = require('crypto');
 
-// Importing Initializers
 require('./config');
 require('./library');
 dust_helpers = require('./dust-helpers');
 validation = require('./validation');
 fileManager = require('./file-manager');
 
-// Importing Database Models
-user_model = require('../models/user-schema');
+admin_model = require('../models/admin-schema');
 category_model = require('../models/category-schema');
 setting_model = require('../models/setting-schema');
 product_model = require('../models/product-schema');

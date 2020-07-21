@@ -30,7 +30,7 @@ router.post('/', async(req, res, next)=>{
 
             if(new_password === confirm_password){
 
-                let result = await user_model.edit(admin_id, admin_data);
+                let result = await admin_model.edit(admin_id, admin_data);
 
                 if(result){
 

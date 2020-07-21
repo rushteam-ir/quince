@@ -5,7 +5,7 @@ router.use(async(req, res, next)=>{
     try{
 
         // Check last activity
-        let find_user = await user_model.getById(req.session.admin_id);
+        let find_user = await admin_model.getById(req.session.admin_id);
 
         let user_data = {
 
@@ -13,7 +13,7 @@ router.use(async(req, res, next)=>{
 
         }
 
-        let result = await user_model.edit(req.session.admin_id, user_data);
+        let result = await admin_model.edit(req.session.admin_id, user_data);
 
         next()
 
