@@ -56,7 +56,7 @@ $('.user_delete').on('click', function (e) {
                 confirmButtonText: 'تایید',
             }).then((result) => {
                 if (result.value) {
-                    redirect(`${backend_url}groups/api/delete-groups/?id=${user_id}`);
+                    redirect(`${backend_url}groups/admins/api/delete-admins/?id=${user_id}`);
                 }
             })
         }
@@ -93,7 +93,7 @@ $('.table_delete_btn').on('click', function (e) {
                     confirmButtonText: 'تایید',
                 }).then((result) => {
                     if (result.value) {
-                        redirect(`${backend_url}groups/api/delete-select/?${query}`);
+                        redirect(`${backend_url}groups/admins/api/delete-select/?${query}`);
                     }
                 })
             }
@@ -136,7 +136,7 @@ $('.admin_status').on('click', function (e) {
                 confirmButtonText: 'تایید',
             }).then((result) => {
                 if (result.value) {
-                    redirect(`${backend_url}groups/api/change-status/?id=${admin_id}`);
+                    redirect(`${backend_url}groups/admins/api/change-status/?id=${admin_id}`);
                 }
             })
         }

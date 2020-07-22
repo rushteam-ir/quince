@@ -1,4 +1,3 @@
-// MongoDB schema
 let message_schema = new mongoose.Schema({
 
     first_last_name : String,

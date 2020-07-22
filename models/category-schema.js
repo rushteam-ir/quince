@@ -1,4 +1,3 @@
-// MongoDB schema
 let category_schema = new mongoose.Schema({
 
     title : String,

@@ -42,7 +42,7 @@ article_schema.statics = {
             article_data.last_edit = getCurrentDate();
             article_data.status = true;
             article_data.comments_status = true;
-            article_data.unique_id = new_id
+            article_data.unique_id = new_id;
 
             let new_article = new article_model(article_data);
             return await new_article.save();

@@ -1,4 +1,3 @@
-// MongoDB schema
 let admin_schema = new mongoose.Schema({
 
    first_name : String,
