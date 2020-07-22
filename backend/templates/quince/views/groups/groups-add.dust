@@ -48,13 +48,9 @@
                                     <label for="add_access">دسترسی</label>
                                     <select class="form-control main_form_design select_access" id="add_access" name="access_inp">
                                         <option value="0">-----</option>
-                                        <option>سلام</option>
-                                        <option>دلام</option>
-                                        <option>دولام</option>
-                                        <option>سولام</option>
-                                        <option>ومیدددد</option>
-                                        <option>حمیییددد</option>
-                                        <option>طالبیییی</option>
+                                        {#access_list}
+                                            <option value="{._id}">{.title}</option>
+                                        {/access_list}
                                     </select>
                                 </div>
                                 <button type="submit" class="btn green_btn">ساخت مدیر جدید</button>

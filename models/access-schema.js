@@ -43,6 +43,12 @@ access_schema.statics = {
 
     },
 
+    get : async function() {
+
+        return await access_model.find();
+
+    },
+
     del : async function (access_id) {
 
         let find_access = await access_model.findById(access_id);

@@ -4,7 +4,13 @@ router.get('/', async(req, res, next)=>{
 
     try{
 
-        res.render('groups/groups-add');
+        let data = {
+
+            access_list : await access_model.get()
+
+        }
+
+        res.render('groups/groups-add', data);
 
     }
     catch (error) {
