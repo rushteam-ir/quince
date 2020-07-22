@@ -68,6 +68,40 @@
                                 </div>
                             </div>
                         </header>
+                        <div class="QTR">
+                            <table class="Q_table">
+                                <tr class="TQ_hr">
+                                    <th>
+                                        <label class="checkbox_of_category">
+                                            <input type="checkbox" class="option-input checkbox" id="selectall" name="select_all">
+                                        </label>
+                                    </th>
+                                    <th>ردیف</th>
+                                    <th>نام دسترسی</th>
+                                    <th>دسترسی ها</th>
+                                    <th>تنظیمات</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="checkbox_of_category">
+                                            <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox"
+                                                value="{._id}">
+                                        </label>
+                                    </td>
+                                    <td>1</td>
+                                    <td>
+                                            سلام عزیزم چطوری دوبی؟
+                                    </td>
+                                    <td class="access_list_w">
+                                            مقالات , دسته بندی ها , فروشگاه , مدیریت کاربران , مدیریت طالبی ,لیست مدیران
+                                    </td>
+                                    <td class="btn_td_w">
+                                        <button class="btn blue_btn access_btn"><i class="fal fa-pencil-alt"></i></button>
+                                        <button class="btn red_btn mr-2 access_btn"><i class="fal fa-trash-alt"></i></button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </div>
                 <div class="col-3 pr-0">
@@ -81,7 +115,7 @@
                                 <input type="text" class="form-control main_form_design" id="access_name" name="access_name">
                             </div>
                             <div class="form-group mt-4">
-                                <label class="mb-4 mt-0 lable_of_checkbox">دسترسی ها</label>
+                                <label class="mb-4 mt-0">دسترسی ها</label>
                                 <div class="row">
                                     <div class="col-9">
                                         <p>مقالات</p>
@@ -132,7 +166,8 @@
                                         </label>
                                     </div>
                                 </div>
-                                <label class="mt-4 mb-3 lable_of_checkbox">مدیریت کاربران</label>
+                                <hr>
+                                <label class="mt-2 mb-3">مدیریت کاربران</label>
                                 <div class="row">
                                     <div class="col-9">
                                         <p>لیست مدیران</p>

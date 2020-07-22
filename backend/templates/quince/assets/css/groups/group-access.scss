@@ -21,6 +21,28 @@
     right: 0;
 }
 
-.lable_of_checkbox{
-    font-weight: bold;
+.access_list_w{
+    width: 300px;
+}
+
+.btn_td_w{
+    width: 150px;
+}
+
+.access_btn{
+    width: 35px;
+    height: 35px;
+    &:nth-child(1){
+        i{
+            position: relative;
+            left: 5.1px;
+            top: 1px;
+        }
+    }
+    i{
+        font-size: 1.1rem;
+        position: relative;
+        left: 3.1px;
+        top: 1px;
+    }
 }
