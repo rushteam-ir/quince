@@ -137,6 +137,10 @@
                     <p>-  لیست کاربران</p>
                 </a>
 
+                <a href="{backend_url}groups/access">
+                    <p>-  دسترسی ها</p>
+                </a>
+
                 <a href="{backend_url}groups/add">
                     <p>- اضافه کردن کاربر جدید</p>
                 </a>
@@ -153,6 +157,10 @@
 
             <a href="{backend_url}groups/users">
                 <p>-  لیست کاربران</p>
+            </a>
+
+            <a href="{backend_url}groups/access">
+                <p>-  دسترسی ها</p>
             </a>
 
             <a href="{backend_url}groups/add">

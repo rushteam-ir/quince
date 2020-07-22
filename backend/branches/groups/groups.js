@@ -23,6 +23,7 @@ const admins = require('./admins/admins');
 const users = require('./users');
 const profile = require('./profile');
 const add = require('./add');
+const access = require('./access');
 
 router.use('/api/change-status', change_status);
 router.use('/api/delete-groups', delete_groups);
@@ -32,4 +33,6 @@ router.use('/admins', admins);
 router.use('/users', users);
 router.use('/profile', profile);
 router.use('/add', add);
+router.use('/access', access);
+
 module.exports = router;
