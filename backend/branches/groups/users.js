@@ -6,7 +6,7 @@ router.get('/', async(req, res, next)=>{
 
         let data = {
 
-            list : await admin_model.get()
+            list : 'await admin_model.get()'
 
         }
 
