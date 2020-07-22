@@ -18,6 +18,10 @@ let admin_schema = new mongoose.Schema({
    country : String,
    city : String,
    pending_password : String,
+   access_type : {
+       type : 'ObjectId',
+       ref : 'access'
+   },
    unique_id : String,
 
 });

@@ -20,7 +20,7 @@ const admins = require('./admins/admins');
 const users = require('./users');
 const profile = require('./profile');
 const add = require('./add');
-const access = require('./access');
+const access = require('./access/access');
 
 router.use('/admins', admins);
 router.use('/users', users);
