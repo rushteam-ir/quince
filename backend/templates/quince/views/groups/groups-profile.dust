@@ -82,7 +82,7 @@
                         <div class="col-6">
                             <div class="info_user_pro">
                                 <p> تعداد مطالب : <span>
-                                    <a href="{backend_url}article/search/{user_info.first_name}">
+                                    <a href="{backend_url}article/search/{user_info.unique_id}">
                                         4237
                                     </a>
                                 </span></p>
