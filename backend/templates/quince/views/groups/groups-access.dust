@@ -134,7 +134,7 @@
                                     </div>
                                     <div class="col-3 pl-0">
                                         <label class="checkbox_of_category">
-                                            <input type="checkbox" name="access_select_inp[]" class="table_checkbox option-input checkbox access_checkbox" value="1">
+                                            <input type="checkbox" name="access_select_inp[]" class="option-input checkbox access_checkbox" value="1">
                                         </label>
                                     </div>
                                 </div>
@@ -144,7 +144,7 @@
                                     </div>
                                     <div class="col-3 pl-0">
                                         <label class="checkbox_of_category">
-                                            <input type="checkbox" name="access_select_inp[]" class="table_checkbox option-input checkbox access_checkbox" value="2">
+                                            <input type="checkbox" name="access_select_inp[]" class="option-input checkbox access_checkbox" value="2">
                                         </label>
                                     </div>
                                 </div>
@@ -154,7 +154,7 @@
                                     </div>
                                     <div class="col-3 pl-0">
                                         <label class="checkbox_of_category">
-                                            <input type="checkbox" name="access_select_inp[]" class="table_checkbox option-input checkbox access_checkbox" value="3">
+                                            <input type="checkbox" name="access_select_inp[]" class="option-input checkbox access_checkbox" value="3">
                                         </label>
                                     </div>
                                 </div>
@@ -164,7 +164,7 @@
                                     </div>
                                     <div class="col-3 pl-0">
                                         <label class="checkbox_of_category">
-                                            <input type="checkbox" name="access_select_inp[]" class="table_checkbox option-input checkbox access_checkbox" value="4">
+                                            <input type="checkbox" name="access_select_inp[]" class="option-input checkbox access_checkbox" value="4">
                                         </label>
                                     </div>
                                 </div>
@@ -174,7 +174,7 @@
                                     </div>
                                     <div class="col-3 pl-0">
                                         <label class="checkbox_of_category">
-                                            <input type="checkbox" name="access_select_inp[]" class="table_checkbox option-input checkbox access_checkbox" value="5">
+                                            <input type="checkbox" name="access_select_inp[]" class="option-input checkbox access_checkbox" value="5">
                                         </label>
                                     </div>
                                 </div>
@@ -186,7 +186,7 @@
                                     </div>
                                     <div class="col-3 pl-0">
                                         <label class="checkbox_of_category">
-                                            <input type="checkbox" name="access_select_inp[]" class="table_checkbox option-input checkbox access_checkbox" value="6">
+                                            <input type="checkbox" name="access_select_inp[]" class="option-input checkbox access_checkbox" value="6">
                                         </label>
                                     </div>
                                 </div>
@@ -196,7 +196,7 @@
                                     </div>
                                     <div class="col-3 pl-0">
                                         <label class="checkbox_of_category">
-                                            <input type="checkbox" name="access_select_inp[]" class="table_checkbox option-input checkbox access_checkbox" value="7">
+                                            <input type="checkbox" name="access_select_inp[]" class="option-input checkbox access_checkbox" value="7">
                                         </label>
                                     </div>
                                 </div>
@@ -206,7 +206,7 @@
                                     </div>
                                     <div class="col-3 pl-0">
                                         <label class="checkbox_of_category">
-                                            <input type="checkbox" name="access_select_inp[]" class="table_checkbox option-input checkbox access_checkbox" value="8">
+                                            <input type="checkbox" name="access_select_inp[]" class="option-input checkbox access_checkbox" value="8">
                                         </label>
                                     </div>
                                 </div>

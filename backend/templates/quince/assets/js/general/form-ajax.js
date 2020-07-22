@@ -60,6 +60,14 @@ $('.form_ajax').submit(function(event){
             break;
 
         }
+        case 'adminAdd':
+        {
+
+            let front_validation = adminAddError();
+            if(!front_validation) return false;
+            break;
+
+        }
 
     }
 

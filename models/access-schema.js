@@ -17,6 +17,7 @@ access_schema.statics = {
 
         if(!find_access){
 
+            access_data.author = author_id;
             let new_access = new access_model(access_data);
             return await new_access.save();
 

@@ -109,15 +109,21 @@ admin_schema.statics = {
 
     },
 
-    register: async function (user_data) {
+    add : async function (user_data) {
 
-        let list = await admin_model.find();
-
-        user_data.row = list.length + 1;
 
         let find_user = await admin_model.findOne({email : user_data.email});
 
         if(!find_user){
+
+            user_data.unique_id = randomSha1String();
+            user_data.status = true;
+
+            if(user_data.access_type == '0'){
+
+                user_data.access_type = null;
+
+            }
 
             let new_user = new admin_model(user_data);
             return await new_user.save();
@@ -125,7 +131,7 @@ admin_schema.statics = {
         }
         else{
 
-            return null
+            return null;
 
         }
 
