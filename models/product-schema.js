@@ -1,4 +1,3 @@
-// MongoDB schema
 let product_schema = new mongoose.Schema({
 
     title : String,

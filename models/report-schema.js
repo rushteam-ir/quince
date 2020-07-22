@@ -1,4 +1,3 @@
-// MongoDB schema
 let report_schema = new mongoose.Schema({
 
     type : String,

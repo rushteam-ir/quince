@@ -1,4 +1,3 @@
-// MongoDB schema
 let admin_schema = new mongoose.Schema({
 
    first_name : String,
@@ -19,6 +18,10 @@ let admin_schema = new mongoose.Schema({
    country : String,
    city : String,
    pending_password : String,
+   access_type : {
+       type : 'ObjectId',
+       ref : 'access'
+   },
    unique_id : String,
 
 });
@@ -138,6 +141,7 @@ admin_schema.statics = {
 
         let find_list = await admin_model.find();
         let admin_skip = page_number * page_limit - page_limit;
+        let search = search_value.toLowerCase();
         let search_list = [];
         let result = {};
 
@@ -149,7 +153,7 @@ admin_schema.statics = {
             let nick_name = find_list[i].nick_name.toLowerCase();
             let email = find_list[i].email.toLowerCase();
 
-            if(first_name.includes(search_value.toLowerCase()) || last_name.includes(search_value.toLowerCase()) || nick_name.includes(search_value.toLowerCase()) || email.includes(search_value.toLowerCase())){
+            if(first_name.includes(search) || last_name.includes(search) || nick_name.includes(search) || email.includes(search)){
 
                 search_list.push(find_list[i]);
 

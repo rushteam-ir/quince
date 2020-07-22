@@ -40,14 +40,14 @@ router.get('/', async(req, res, next)=>{
             }
             else{
 
-                return res.redirect(`${config.backend_url}users/list`);
+                return res.redirect(`${config.backend_url}groups/admins`);
 
             }
 
         }
         else{
 
-            return res.redirect(`${config.backend_url}users/list`);
+            return res.redirect(`${config.backend_url}groups/admins`);
 
         }
 

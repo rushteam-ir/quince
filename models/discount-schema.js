@@ -1,4 +1,3 @@
-// MongoDB schema
 let discount_schema = new mongoose.Schema({
 
     package_name : String,

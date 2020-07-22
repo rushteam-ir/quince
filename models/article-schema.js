@@ -42,7 +42,7 @@ article_schema.statics = {
             article_data.last_edit = getCurrentDate();
             article_data.status = true;
             article_data.comments_status = true;
-            article_data.unique_id = new_id
+            article_data.unique_id = new_id;
 
             let new_article = new article_model(article_data);
             return await new_article.save();
@@ -91,6 +91,7 @@ article_schema.statics = {
 
         let find_list = await article_model.find().populate('category_parent').populate('category_child').populate('author').exec();
         let article_skip = page_number * page_limit - page_limit;
+        let search = search_value.toLowerCase();
         let search_list = [];
         let result = {};
 
@@ -100,8 +101,9 @@ article_schema.statics = {
             let author_first_name = find_list[i].author.first_name.toLowerCase();
             let author_last_name = find_list[i].author.last_name.toLowerCase();
             let author_nick_name = find_list[i].author.nick_name.toLowerCase();
+            let author_id = find_list[i].author.unique_id.toLowerCase();
 
-            if(title.includes(search_value.toLowerCase()) || author_first_name.includes(search_value.toLowerCase()) || author_last_name.includes(search_value.toLowerCase()) || author_nick_name.includes(search_value.toLowerCase())){
+            if(title.includes(search) || author_first_name.includes(search) || author_last_name.includes(search) || author_nick_name.includes(search) || author_id == search){
 
                 search_list.push(find_list[i]);
 

@@ -1,4 +1,3 @@
-// MongoDB schema
 let setting_schema = new mongoose.Schema({
 
     website_title : String,

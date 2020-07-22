@@ -1,4 +1,3 @@
-// MongoDB schema
 let category_schema = new mongoose.Schema({
 
     title : String,
@@ -116,6 +115,7 @@ category_schema.statics = {
 
         let find_list = await category_model.find().populate('parent').exec();
         let category_skip = page_number * page_limit - page_limit;
+        let search = search_value.toLowerCase();
         let search_list = [];
         let result = {};
 
@@ -129,7 +129,7 @@ category_schema.statics = {
                 parent_title = find_list[i].parent.title.toLowerCase();
 
             }
-            if(title.includes(search_value.toLowerCase()) || parent_title.includes(search_value.toLowerCase())){
+            if(title.includes(search) || parent_title.includes(search)){
 
                 search_list.push(find_list[i]);
 
