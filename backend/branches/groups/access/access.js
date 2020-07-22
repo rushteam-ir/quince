@@ -54,14 +54,64 @@ router.get('/', async(req, res, next)=>{
 
 });
 
+router.post('/', async(req, res, next)=>{
+
+    try{
+
+        let {title_inp} = req.body;
+        let access_list_inp = req.body['access_select_inp[]'];
+
+        let validation_result = new validation([
+            {value : title_inp},
+        ]).valid()
+
+        if(validation_result){
+
+            return res.json(validation_result)
+
+        }
+
+        let access_data = {
+
+            title : title_inp,
+            values : access_list_inp
+
+        }
+
+        let result = await access_model.add(access_data, req.session.admin_id);
+
+        if(result){
+
+            return res.json({
+                status : 'success',
+                url : `${config.backend_url}groups/access`,
+                msg : `دسترسی جدید با موفقیت ثبت شد.`
+            })
+
+        }
+        else{
+
+            return res.json('این نام تکراری می باشد، لطفا از نام دیگری استفاده کنید.')
+
+        }
+
+    }
+    catch (error) {
+
+        next(error);
+
+    }
+
+})
+
 const delete_access = require('./api/delete-access');
 const delete_select = require('./api/delete-select');
 
 const edit = require('./edit');
 const search = require('./search');
 
-router.use('/delete-access', delete_access);
-router.use('/delete-select', delete_select);
+router.use('/api/delete-access', delete_access);
+router.use('/api/delete-select', delete_select);
 
 router.use('/edit', edit);
 router.use('/search', search);

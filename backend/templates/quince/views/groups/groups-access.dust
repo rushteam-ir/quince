@@ -1,14 +1,15 @@
 {>"layouts/dashboard-layout"/}
 
 {<css}
-<link rel="stylesheet" href="css/groups/group-access.css">
+    <link rel="stylesheet" href="css/groups/group-access.css">
 {/css}
+
 {<js} 
-    <script src="js/groups/group-access.js"></script>
+    <script src="js/groups/groups-access.js"></script>
     <script src="js/custom/checkbox.js"></script>
     <script src="js/custom/main-error.js"></script>
     <script src="js/custom/error-handler.js"></script>
-    <script src="js/groups/group-access.js"></script>
+    <script src="js/groups/groups-access-error.js"></script>
     <script src="js/general/form-ajax.js"></script>
 {/js}
 
@@ -81,6 +82,7 @@
                                     <th>دسترسی ها</th>
                                     <th>تنظیمات</th>
                                 </tr>
+                                {#access_list}
                                 <tr>
                                     <td>
                                         <label class="checkbox_of_category">
@@ -88,19 +90,29 @@
                                                 value="{._id}">
                                         </label>
                                     </td>
-                                    <td>1</td>
+                                    <td>{@math key="{rows_begin_number}" method="add" operand="{$idx}"/}</td>
                                     <td>
-                                            سلام عزیزم چطوری دوبی؟
+                                        {title}
                                     </td>
                                     <td class="access_list_w">
-                                            مقالات , دسته بندی ها , فروشگاه , مدیریت کاربران , مدیریت طالبی ,لیست مدیران
+                                        {@eq key="{values}" value=""}
+                                            تعریف نشده
+                                        {:else}
+                                            {values}
+                                        {/eq}
                                     </td>
                                     <td class="btn_td_w">
                                         <button class="btn blue_btn access_btn"><i class="fal fa-pencil-alt"></i></button>
-                                        <button class="btn red_btn mr-2 access_btn"><i class="fal fa-trash-alt"></i></button>
+                                        <button class="btn red_btn mr-2 access_btn access_delete" name="{._id}"><i class="fal fa-trash-alt"></i></button>
                                     </td>
                                 </tr>
+                                {/access_list}
                             </table>
+                            {@eq key="{search}" value="true"}
+                                {@page number="{total_pages}"  url="{backend_url}groups/access/search/{search_value}" current="{page_number}"/}
+                            {:else}
+                                {@page number="{total_pages}"  url="{backend_url}groups/access" current="{page_number}"/}
+                            {/eq}
                         </div>
                     </div>
                 </div>
@@ -109,10 +121,10 @@
                         <header class="header_field">
                             <h1>ثبت دسترسی جدید</h1>
                         </header>
-                        <form autocomplete="off">
+                        <form class="form_ajax" name="access" method="post" action="" autocomplete="off">
                             <div class="form-group mt-4">
                                 <label for="access_name">نام دسترسی</label>
-                                <input type="text" class="form-control main_form_design" id="access_name" name="access_name">
+                                <input type="text" class="form-control main_form_design" id="access_name" name="title_inp">
                             </div>
                             <div class="form-group mt-4">
                                 <label class="mb-4 mt-0">دسترسی ها</label>
@@ -122,7 +134,7 @@
                                     </div>
                                     <div class="col-3 pl-0">
                                         <label class="checkbox_of_category">
-                                            <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                            <input type="checkbox" name="access_select_inp[]" class="table_checkbox option-input checkbox access_checkbox" value="1">
                                         </label>
                                     </div>
                                 </div>
@@ -132,7 +144,7 @@
                                     </div>
                                     <div class="col-3 pl-0">
                                         <label class="checkbox_of_category">
-                                            <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                            <input type="checkbox" name="access_select_inp[]" class="table_checkbox option-input checkbox access_checkbox" value="2">
                                         </label>
                                     </div>
                                 </div>
@@ -142,7 +154,7 @@
                                     </div>
                                     <div class="col-3 pl-0">
                                         <label class="checkbox_of_category">
-                                            <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                            <input type="checkbox" name="access_select_inp[]" class="table_checkbox option-input checkbox access_checkbox" value="3">
                                         </label>
                                     </div>
                                 </div>
@@ -152,7 +164,7 @@
                                     </div>
                                     <div class="col-3 pl-0">
                                         <label class="checkbox_of_category">
-                                            <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                            <input type="checkbox" name="access_select_inp[]" class="table_checkbox option-input checkbox access_checkbox" value="4">
                                         </label>
                                     </div>
                                 </div>
@@ -162,7 +174,7 @@
                                     </div>
                                     <div class="col-3 pl-0">
                                         <label class="checkbox_of_category">
-                                            <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                            <input type="checkbox" name="access_select_inp[]" class="table_checkbox option-input checkbox access_checkbox" value="5">
                                         </label>
                                     </div>
                                 </div>
@@ -174,7 +186,7 @@
                                     </div>
                                     <div class="col-3 pl-0">
                                         <label class="checkbox_of_category">
-                                            <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                            <input type="checkbox" name="access_select_inp[]" class="table_checkbox option-input checkbox access_checkbox" value="6">
                                         </label>
                                     </div>
                                 </div>
@@ -184,7 +196,7 @@
                                     </div>
                                     <div class="col-3 pl-0">
                                         <label class="checkbox_of_category">
-                                            <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                            <input type="checkbox" name="access_select_inp[]" class="table_checkbox option-input checkbox access_checkbox" value="7">
                                         </label>
                                     </div>
                                 </div>
@@ -194,7 +206,7 @@
                                     </div>
                                     <div class="col-3 pl-0">
                                         <label class="checkbox_of_category">
-                                            <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                            <input type="checkbox" name="access_select_inp[]" class="table_checkbox option-input checkbox access_checkbox" value="8">
                                         </label>
                                     </div>
                                 </div>

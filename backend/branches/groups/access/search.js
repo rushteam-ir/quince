@@ -25,7 +25,7 @@ router.get('/:search', async(req, res, next)=>{
 
         }
 
-        let access_list = await access_model.search(page_number, page_limit)
+        let access_list = await access_model.search(search_value, page_number, page_limit)
 
         if(access_list.list.length == 0 && access_list.total_pages != 0){
 
@@ -40,7 +40,7 @@ router.get('/:search', async(req, res, next)=>{
             page_limit : page_limit,
             rows_begin_number : access_list.rows_begin_number,
             total_pages : access_list.total_pages,
-            search : false,
+            search : true,
             search_value : search_value
 
         };
