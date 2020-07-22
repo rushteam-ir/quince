@@ -54,7 +54,15 @@ router.get('/', async(req, res, next)=>{
 
 });
 
+const change_status = require('./api/change-status');
+const delete_admins = require('./api/delete-admins');
+const delete_select = require('./api/delete-select');
+
 const search = require('./search');
+
+router.use('/api/change-status', change_status);
+router.use('/api/delete-groups', delete_admins);
+router.use('/api/delete-select', delete_select);
 
 router.use('/search', search);
 

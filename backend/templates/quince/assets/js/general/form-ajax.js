@@ -52,6 +52,14 @@ $('.form_ajax').submit(function(event){
             break;
 
         }
+        case 'access':
+        {
+
+            let front_validation = accessError();
+            if(!front_validation) return false;
+            break;
+
+        }
 
     }
 
@@ -59,7 +67,7 @@ $('.form_ajax').submit(function(event){
 
         let files = $('.ajax_file')[0].files[0];
         let file_name = $('.ajax_file').attr('name');
-        form_data.append(file_name,files);
+        form_data.append(file_name, files);
 
     }
 

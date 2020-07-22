@@ -51,3 +51,50 @@
     }
 
 }
+
+.info_user_pro {
+    color: #636363;
+    margin-top: 30px;
+
+    p {
+        font-weight: bold;
+
+        span {
+            font-weight: normal;
+        }
+    }
+}
+
+.user_pro_option {
+
+    position: absolute;
+    left: 0px;
+    top: 19px;
+
+    & :nth-child(4) {
+        i {
+            position: relative;
+            top: -0.3px;
+            left: 7px;
+        }
+    }
+
+    button {
+        background-color: #F2F5F8;
+        color: #3699FF;
+        font-size: 1.2rem;
+        width: 38px;
+        height: 38px;
+
+        i {
+            position: relative;
+            top: 0.7px;
+            left: 4px;
+        }
+
+        &:hover {
+            background-color: $d_blue;
+            color: #F2F5F8;
+        }
+    }
+}

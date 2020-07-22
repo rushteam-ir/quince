@@ -7,18 +7,22 @@ router.get('/:id', async(req, res, next)=>{
         let user_id = req.params.id;
         let find_user = await admin_model.getByUniqueId(user_id);
 
-        // if(find_user){
-        //
-        //     res.render('groups/groups-profile');
-        //
-        // }
-        // else{
-        //
-        //     res.status(404).render('errors/404');
-        //
-        // }
+        if(find_user){
 
-        res.render('groups/groups-profile');
+            let data = {
+
+                user_info : find_user
+
+            }
+
+            res.render('groups/groups-profile', data);
+
+        }
+        else{
+
+            res.status(404).render('errors/404');
+
+        }
 
     }
     catch (error) {

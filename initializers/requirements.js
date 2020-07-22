@@ -27,3 +27,4 @@ message_model = require('../models/message-schema');
 discount_model = require('../models/discount-schema');
 article_model = require('../models/article-schema');
 report_model = require('../models/report-schema');
+access_model = require('../models/access-schema');
