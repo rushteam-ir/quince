@@ -1,13 +1,177 @@
 {>"layouts/dashboard-layout"/}
 
 {<css}
-
+<link rel="stylesheet" href="css/groups/group-access.css">
 {/css}
 {<js} 
-
+    <script src="js/groups/group-access.js"></script>
+    <script src="js/custom/checkbox.js"></script>
+    <script src="js/custom/main-error.js"></script>
+    <script src="js/custom/error-handler.js"></script>
+    <script src="js/groups/group-access.js"></script>
+    <script src="js/general/form-ajax.js"></script>
 {/js}
 
 
 {<body}
+<section>
+    <!-- error -->
+    <div class="error_info warning_error">
+        <i class="fal fa-exclamation-circle"></i>
+        <p></p>
+        <i class="fal fa-times"></i>
+    </div>
+    <div class="main_body">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-9 pr-0 pl-0">
+                    <div class="main_col">
+                        <header class="header_field">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 col-lg-7">
+                                        <div class="d-inline-block field_of_ht">
+                                            <h1>لیست دسته بندی ها</h1>
+                                            <h2>لیست دسته بندی های موجود در سایت</h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-5">
+                                        <div class="table_header">
+                                            <div class="input-group mb-3 t_search">
+                                                <div class="input-group-prepend">
+                                                    <button class="input-group-text btn search_btn" id="basic-addon1">
+                                                        <i class="fal fa-search"></i>
+                                                    </button>
+                                                </div>
+                                                <input type="text" class="form-control search_table" placeholder="جستجو ..." aria-describedby="basic-addon1" value="{search_value}">
+                                                {@eq key="{search}" value="true"}
+                                                    <i class="fal fa-times search_btn_cancel"></i>
+                                                {/eq}
+                                            </div>
+                                              <div class="form-group tr_select">
+                                                <label for="t_row_select" class="d-inline-block select_lable">تعداد ردیف ها :</label>
+                                                <select class="form-control limit_row" id="t_row_select">
+                                                    {#page_limit_slot}
+                                                        {@eq key="{.}" value="{page_limit}"}
+                                                            <option selected>{.}</option>
+                                                        {:else}
+                                                            <option>{.}</option>
+                                                        {/eq}
+                                                    {/page_limit_slot}
+                                                </select>
+                                            </div>
+                                            <button class="btn table_delete_btn">
+                                                <i class="fal fa-trash-alt"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                    </div>
+                </div>
+                <div class="col-3 pr-0">
+                    <div class="main_col pr-4 pl-4">
+                        <header class="header_field">
+                            <h1>ثبت دسترسی جدید</h1>
+                        </header>
+                        <form autocomplete="off">
+                            <div class="form-group mt-4">
+                                <label for="access_name">نام دسترسی</label>
+                                <input type="text" class="form-control main_form_design" id="access_name" name="access_name">
+                            </div>
+                            <div class="form-group mt-4">
+                                <label class="mb-4 mt-0 lable_of_checkbox">دسترسی ها</label>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p>مقالات</p>
+                                    </div>
+                                    <div class="col-3 pl-0">
+                                        <label class="checkbox_of_category">
+                                            <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p>دسته بندی ها</p>
+                                    </div>
+                                    <div class="col-3 pl-0">
+                                        <label class="checkbox_of_category">
+                                            <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p>فروشگاه</p>
+                                    </div>
+                                    <div class="col-3 pl-0">
+                                        <label class="checkbox_of_category">
+                                            <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p>مدیریت کاربران</p>
+                                    </div>
+                                    <div class="col-3 pl-0">
+                                        <label class="checkbox_of_category">
+                                            <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p>مدیریت طالبی</p>
+                                    </div>
+                                    <div class="col-3 pl-0">
+                                        <label class="checkbox_of_category">
+                                            <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                        </label>
+                                    </div>
+                                </div>
+                                <label class="mt-4 mb-3 lable_of_checkbox">مدیریت کاربران</label>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p>لیست مدیران</p>
+                                    </div>
+                                    <div class="col-3 pl-0">
+                                        <label class="checkbox_of_category">
+                                            <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p>لیست کاربران</p>
+                                    </div>
+                                    <div class="col-3 pl-0">
+                                        <label class="checkbox_of_category">
+                                            <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p>دسترسی ها</p>
+                                    </div>
+                                    <div class="col-3 pl-0">
+                                        <label class="checkbox_of_category">
+                                            <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <button type="submit" class="btn green_btn py-2 mt-3">ثبت دسترسی جدید</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
 {/body}

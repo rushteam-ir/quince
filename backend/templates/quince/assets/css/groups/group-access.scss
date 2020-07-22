@@ -1,0 +1,26 @@
+@import '../Partials/main-color';
+@import '../Partials/mixin';
+@import '../Partials/checkbox-design';
+@import '../Partials/header-text';
+@import '../Partials/table-header';
+@import '../Partials/btn';
+@import '../Partials/table';
+@import '../Partials/pagination';
+@import '../Partials/error';
+
+
+.main_body {
+    @include main_field
+}
+
+.main_col {
+    @include main_col;
+}
+
+.option-input{
+    right: 0;
+}
+
+.lable_of_checkbox{
+    font-weight: bold;
+}
