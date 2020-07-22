@@ -31,7 +31,7 @@
                     </header>
                     <div class="row dir-ltr">
                         <div class="col-8 offset-2">
-                            <form class="form_ajax" name="adminAdd" method="post" action="" autocomplete="off">
+                            <form class="form_ajax dir-rtl text-right" name="adminAdd" method="post" action="" autocomplete="off">
                                 <div class="form-group">
                                     <label for="add_email">ایمیل</label>
                                     <input type="text" class="form-control main_form_design" id="add_email"  name="email_inp">
