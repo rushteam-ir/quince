@@ -32,25 +32,6 @@
     float: left;
 }
 
-.plus_adon_article {
-    background-color: #f3f6f9;
-    border: 0;
-    height: 44px;
-    padding: 0px;
-    border-radius: 7px 0px 0px 7px !important;
-
-    button {
-        &:hover {
-            color: $d_red;
-        }
-    }
-}
-
-#article_keyword {
-    border-radius: 0px 7px 7px 0px;
-}
-
-
 // editor customize
 
 .fr-toolbar,
