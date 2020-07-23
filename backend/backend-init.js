@@ -11,6 +11,8 @@ backend_allowd_urls = ['/login/', '/recovery/', '/recovery/verify/'];
 backend_access_urls = [
     {name : 'دسته بندی', url : '/category/'},
     {name : 'مقاله ها', url : '/article/'},
+    {name : 'مقاله ها', url : '/article/list/'},
+    {name : 'مقاله ها', url : '/article/add/'},
     {name : 'لیست مدیران', url : '/groups/admins/'},
     {name : 'لیست کاربران', url : '/groups/users/'},
     {name : 'دسترسی ها', url : '/groups/access/'},

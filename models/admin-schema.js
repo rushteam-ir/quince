@@ -30,7 +30,7 @@ admin_schema.statics = {
 
     login : async function (email_inp, password_inp) {
 
-        let find_user = await admin_model.findOne({email : email_inp, password : password_inp});
+        let find_user = await admin_model.findOne({email : email_inp, password : password_inp}).populate('access_type').exec();
 
         if(find_user){
 

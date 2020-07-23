@@ -1,16 +1,15 @@
-// Importing all requirements
 require('./backend-init');
 
-// Backend Middlewares
 const check_login = require('./middlewares/check-login');
 const check_message = require('./middlewares/check-message');
 const global_options = require('./middlewares/global-options');
+const check_access = require('./middlewares/check-access');
 
 backend.use(check_login);
-backend.use(check_message);
 backend.use(global_options);
+backend.use(check_message);
+backend.use(check_access);
 
-// Backend Routs
 const dashboard = require('./branches/dashboard/dashboard');
 const login = require('./branches/login/login');
 const profile = require('./branches/profile/profile');
@@ -41,7 +40,6 @@ backend.use('/article', article);
 backend.use('/files', files);
 backend.use('/api', api);
 
-// Redirect to dashboard rout
 backend.get('/', async(req, res, next)=>{
 
     try{
@@ -57,14 +55,12 @@ backend.get('/', async(req, res, next)=>{
 
 });
 
-// Backend 404 page
 backend.use(async (req, res, next)=>{
 
     res.status(404).render('errors/404');
 
 });
 
-// Backend 500 page
 backend.use(async (error, req, res, next)=>{
 
     let new_report = {
@@ -81,5 +77,4 @@ backend.use(async (error, req, res, next)=>{
 
 });
 
-// Exporting module
 module.exports = backend;
