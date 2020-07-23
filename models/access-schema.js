@@ -5,7 +5,8 @@ let access_schema = new mongoose.Schema({
     author : {
         type : 'ObjectId',
         ref : 'admin'
-    }
+    },
+    count : Number,
 
 });
 
@@ -18,6 +19,8 @@ access_schema.statics = {
         if(!find_access){
 
             access_data.author = author_id;
+            access_data.count = access_data.values.length;
+
             let new_access = new access_model(access_data);
             return await new_access.save();
 
