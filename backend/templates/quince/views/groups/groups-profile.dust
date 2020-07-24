@@ -36,10 +36,10 @@
                                     <div class="mr-4">
                                         <i class="fal fa-address-card"></i>
                                         <p class="mr-2">
-                                            {@eq key="{user_info.access}" value="main_admin"}
-                                                مدیر اصلی
+                                            {@eq key="{user_info.access_type}" value="{null}"}
+                                                تعریف نشده
                                             {:else}
-                                                مدیر عادی
+                                                {user_info.access_type.title}
                                             {/eq}
                                         </p>
                                     </div>

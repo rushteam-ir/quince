@@ -239,10 +239,10 @@
                                                 <h2 class="user_name_pro_page mb-1">{admin_info.nick_name}</h2>
                                             {/eq}
                                             <h3 class="user_access_pro">
-                                                {@eq key="{admin_info.access}" value="main_admin"}
-                                                    مدیر اصلی
+                                                {@eq key="{admin_info.access_type}" value="{null}"}
+                                                    تعریف نشده
                                                 {:else}
-                                                    مدیر عادی
+                                                    {admin_info.access_type.title}
                                                 {/eq}
                                             </h3>
                                         </div>

@@ -40,6 +40,12 @@ router.post('/', async(req, res, next)=>{
 
         }
 
+        if(access_inp == '0'){
+
+            return res.json('لطفا یک سطح دسترسی برای مدیر جدید انتخاب کنید.');
+
+        }
+
 
         if(password_inp != confirm_password_inp){
 

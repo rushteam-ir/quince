@@ -49,30 +49,20 @@ router.post('/', async(req, res, next)=>{
 
         if(result){
 
-            if(result.access == "main_admin" || result.access == "normal_admin"){
+            if(result.status){
 
-                if(result.status){
+                delete req.session.login_form;
+                delete req.session.captcha;
 
-                    delete req.session.login_form;
-                    delete req.session.captcha;
+                req.session.admin_id = result._id;
+                req.session.admin_info = result;
 
-                    req.session.admin_id = result._id;
-                    req.session.admin_info = result;
-
-                    return res.redirect(`${config.backend_url}dashboard`);
-
-                }
-                else{
-
-                    //errorManager.set(9);
-                    return res.redirect(`${config.backend_url}login`);
-
-                }
+                return res.redirect(`${config.backend_url}dashboard`);
 
             }
             else{
 
-                //errorManager.set(10);
+                //errorManager.set(9);
                 return res.redirect(`${config.backend_url}login`);
 
             }

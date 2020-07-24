@@ -24,7 +24,7 @@ router.get('/', async(req, res, next)=>{
 
         }
 
-        let admins_list = await admin_model.getAll(page_number, page_limit)
+        let admins_list = await admin_model.getAll(page_number, page_limit);
 
         if(admins_list.list.length == 0 && admins_list.total_pages != 0){
 
