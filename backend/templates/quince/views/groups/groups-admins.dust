@@ -94,7 +94,7 @@
                                                            value="{._id}">
                                                 </label>
                                             </td>
-                                            <td>1</td>
+                                            <td>{@math key="{rows_begin_number}" method="add" operand="{$idx}"/}</td>
                                             <td class="QT_image">
                                                 {@eq key="{avatar}" value=""}
                                                     <img src="img/default-profile-picture.png" alt="">
@@ -103,15 +103,19 @@
                                                 {/eq}
                                             </td>
                                             <td>
-                                                <div>
-                                                    <a href="{backend_url}groups/profile/{unique_id}">
-                                                        {@eq key="{author_type}" value="name"}
-                                                            {first_name} {last_name}
-                                                        {:else}
-                                                            {nick_name}
-                                                        {/eq}
-                                                    </a>
-                                                </div>
+                                                {@eq key="{first_name}" value=""}
+                                                    ثبت نشده
+                                                {:else}
+                                                    <div>
+                                                        <a href="{backend_url}groups/profile/{unique_id}">
+                                                            {@eq key="{author_type}" value="name"}
+                                                                {first_name} {last_name}
+                                                            {:else}
+                                                                {nick_name}
+                                                            {/eq}
+                                                        </a>
+                                                    </div>
+                                                {/eq}
                                             </td>
                                             <td class="QT_truncate">
                                                 <div>
@@ -136,9 +140,13 @@
                                                 </td>
                                             {/eq}
                                             <td>
-                                                <div>
-                                                    {last_activity}
-                                                </div>
+                                                {@eq key="{last_activity}" value=""}
+                                                    ثبت نشده
+                                                {:else}
+                                                    <div>
+                                                        {last_activity}
+                                                    </div>
+                                                {/eq}
                                             </td>
                                             <td class="table_option">
                                                 <div class="dropdown">

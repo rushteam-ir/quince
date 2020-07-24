@@ -78,8 +78,7 @@
                                         </label>
                                     </th>
                                     <th>ردیف</th>
-                                    <th>نام</th>
-                                    <th>سازنده</th>
+                                    <th>نام دسترسی</th>
                                     <th>تعداد دسترسی ها</th>
                                     <th>تنظیمات</th>
                                 </tr>
@@ -95,17 +94,10 @@
                                     <td>
                                         {title}
                                     </td>
-                                    <td>
-                                        <a href="{backend_url}groups/profile/{author.unique_id}">
-                                            {@eq key="{author.author_type}" value="name"}
-                                                {author.first_name} {author.last_name}
-                                            {:else}
-                                                {author.nick_name}
-                                            {/eq}
-                                        </a>
-                                    </td>
                                     <td class="QT_green_pill">
-                                        {count}
+                                        <div>
+                                            {count}
+                                        </div>
                                     </td>
                                     <td class="btn_td_w">
                                         <button class="btn blue_btn access_btn"><i class="fal fa-pencil-alt"></i></button>

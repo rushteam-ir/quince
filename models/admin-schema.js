@@ -30,7 +30,7 @@ admin_schema.statics = {
 
     login : async function (email_inp, password_inp) {
 
-        let find_user = await admin_model.findOne({email : email_inp, password : password_inp}).populate('access_type').exec();
+        let find_user = await admin_model.findOne({email : email_inp, password : password_inp}).populate('access_type');
 
         if(find_user){
 
@@ -86,7 +86,7 @@ admin_schema.statics = {
         let result = {}
         let admin_skip = page_number * page_limit - page_limit;
 
-        result.rows_begin_number = admin_skip + 1;
+        result.rows_begin_number = admin_skip;
         result.list =  await admin_model.find().skip(admin_skip).limit(page_limit).populate('access_type').exec();
         result.total_pages = Math.ceil(await admin_model.find().countDocuments() / page_limit);
 
@@ -139,7 +139,7 @@ admin_schema.statics = {
 
     getByUniqueId : async function (user_id) {
 
-        return await admin_model.findOne({unique_id : user_id});
+        return await admin_model.findOne({unique_id : user_id}).populate('access_type');
 
     },
 
