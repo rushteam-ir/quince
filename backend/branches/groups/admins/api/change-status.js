@@ -6,6 +6,7 @@ router.get('/', async(req, res, next)=>{
 
         let user_id = req.query.id;
         let user_find = await admin_model.getById(user_id);
+        let back_url = req.header('Referer') || '/';
 
         if(isObjectId(user_id)){
 
@@ -28,26 +29,26 @@ router.get('/', async(req, res, next)=>{
 
                 if(result){
 
-                    return res.redirect(`${config.backend_url}groups/admins`);
+                    return res.redirect(`${back_url}`);
 
                 }
                 else{
 
-                    return res.redirect(`${config.backend_url}groups/admins`);
+                    return res.redirect(`${back_url}`);
 
                 }
 
             }
             else{
 
-                return res.redirect(`${config.backend_url}groups/admins`);
+                return res.redirect(`${back_url}`);
 
             }
 
         }
         else{
 
-            return res.redirect(`${config.backend_url}groups/admins`);
+            return res.redirect(`${back_url}`);
 
         }
 

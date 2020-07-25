@@ -84,100 +84,96 @@
                                     <th>تنظیمات</th>
                                 </tr>
                                 {#admins_list}
-                                    {@eq key="{.supportKey}" value="god"}
-
-                                    {:else}
-                                        <tr>
-                                            <td>
-                                                <label class="checkbox_of_category">
-                                                    <input type="checkbox" name="delete_checkbox[]"
-                                                           class="table_checkbox option-input checkbox"
-                                                           value="{._id}">
-                                                </label>
-                                            </td>
-                                            <td>{@math key="{rows_begin_number}" method="add" operand="{$idx}"/}</td>
-                                            <td class="QT_image">
-                                                {@eq key="{avatar}" value=""}
-                                                    <img src="img/default-profile-picture.png" alt="">
-                                                {:else}
-                                                    <img src="media/avatars/{avatar}" alt="">
-                                                {/eq}
-                                            </td>
-                                            <td>
-                                                <div>
-                                                    <a href="{backend_url}groups/profile/{unique_id}">
-                                                        {@eq key="{author_type}" value="name"}
-                                                            {first_name} {last_name}
-                                                        {:else}
-                                                            {nick_name}
-                                                        {/eq}
-                                                    </a>
-                                                </div>
-                                            </td>
-                                            <td class="QT_truncate">
-                                                <div>
-                                                    {@eq key="{access_type}" value="{null}"}
-                                                        تعریف نشده
-                                                    {:else}
-                                                        {access_type.title}
-                                                    {/eq}
-                                                </div>
-                                            </td>
-                                            {@eq key="{status}" value="true"}
-                                                <td class="QT_green_pill">
-                                                    <div>
-                                                        فعال
-                                                    </div>
-                                                </td>
+                                    <tr>
+                                        <td>
+                                            <label class="checkbox_of_category">
+                                                <input type="checkbox" name="delete_checkbox[]"
+                                                       class="table_checkbox option-input checkbox"
+                                                       value="{._id}">
+                                            </label>
+                                        </td>
+                                        <td>{@math key="{rows_begin_number}" method="add" operand="{$idx}"/}</td>
+                                        <td class="QT_image">
+                                            {@eq key="{avatar}" value=""}
+                                                <img src="img/default-profile-picture.png" alt="">
                                             {:else}
-                                                <td class="QT_red_pill">
-                                                    <div>
-                                                        مسدود
-                                                    </div>
-                                                </td>
+                                                <img src="media/avatars/{avatar}" alt="">
                                             {/eq}
-                                            <td>
-                                                {@eq key="{last_activity}" value=""}
-                                                    ثبت نشده
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <a href="{backend_url}groups/profile/{unique_id}">
+                                                    {@eq key="{author_type}" value="name"}
+                                                        {first_name} {last_name}
+                                                    {:else}
+                                                        {nick_name}
+                                                    {/eq}
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="QT_truncate">
+                                            <div>
+                                                {@eq key="{access_type}" value="{null}"}
+                                                    تعریف نشده
                                                 {:else}
-                                                    <div>
-                                                        {last_activity}
-                                                    </div>
+                                                    {access_type.title}
                                                 {/eq}
-                                            </td>
-                                            <td class="table_option">
-                                                <div class="dropdown">
-                                                    <button class="btn  dropdown-toggle" type="button" id="table_option"
-                                                            data-toggle="dropdown"
-                                                            aria-haspopup="true" aria-expanded="false">
-                                                        <i class="fas fa-ellipsis-v"></i>
-                                                    </button>
-                                                    <div class="dropdown-menu" aria-labelledby="table_option">
-                                                        <button class="dropdown-item">
-                                                            <i class="fal fa-paper-plane"></i>
-                                                            ارسال پیام
-                                                        </button>
-                                                        <button class="dropdown-item edit_btn" name="{._id}">
-                                                            <i class="fal fa-sync-alt"></i>
-                                                            تغییر دسترسی
-                                                        </button>
-                                                        <button class="dropdown-item admin_status" name="{._id}" value="{status}">
-                                                            <i class="fal fa-ban"></i>
-                                                            {@eq key="{status}" value="true"}
-                                                                مسدود کردن حساب
-                                                            {:else}
-                                                                فعال کردن حساب
-                                                            {/eq}
-                                                        </button>
-                                                        <button class="user_delete dropdown-item" name="{._id}">
-                                                            <i class="fal fa-user-times"></i>
-                                                            حذف کاربر
-                                                        </button>
-                                                    </div>
+                                            </div>
+                                        </td>
+                                        {@eq key="{status}" value="true"}
+                                            <td class="QT_green_pill">
+                                                <div>
+                                                    فعال
                                                 </div>
                                             </td>
-                                        </tr>
-                                    {/eq}
+                                        {:else}
+                                            <td class="QT_red_pill">
+                                                <div>
+                                                    مسدود
+                                                </div>
+                                            </td>
+                                        {/eq}
+                                        <td>
+                                            {@eq key="{last_activity}" value=""}
+                                                ثبت نشده
+                                            {:else}
+                                                <div>
+                                                    {last_activity}
+                                                </div>
+                                            {/eq}
+                                        </td>
+                                        <td class="table_option">
+                                            <div class="dropdown">
+                                                <button class="btn  dropdown-toggle" type="button" id="table_option"
+                                                        data-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="table_option">
+                                                    <button class="dropdown-item">
+                                                        <i class="fal fa-paper-plane"></i>
+                                                        ارسال پیام
+                                                    </button>
+                                                    <button class="dropdown-item edit_btn" name="{._id}">
+                                                        <i class="fal fa-sync-alt"></i>
+                                                        تغییر دسترسی
+                                                    </button>
+                                                    <button class="dropdown-item admin_status" name="{._id}" value="{status}">
+                                                        <i class="fal fa-ban"></i>
+                                                        {@eq key="{status}" value="true"}
+                                                            مسدود کردن حساب
+                                                        {:else}
+                                                            فعال کردن حساب
+                                                        {/eq}
+                                                    </button>
+                                                    <button class="user_delete dropdown-item" name="{._id}">
+                                                        <i class="fal fa-user-times"></i>
+                                                        حذف کاربر
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
                                 {/admins_list}
                             </table>
                             {@eq key="{search}" value="true"}

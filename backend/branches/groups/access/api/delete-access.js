@@ -5,6 +5,7 @@ router.get('/', async(req, res, next)=>{
     try{
 
         let delete_id = req.query.id;
+        let back_url = req.header('Referer') || '/';
 
         if(isObjectId(delete_id)){
 
@@ -12,19 +13,19 @@ router.get('/', async(req, res, next)=>{
 
             if(result){
 
-                return res.redirect(`${config.backend_url}groups/access`);
+                return res.redirect(`${back_url}`);
 
             }
             else{
 
-                return res.redirect(`${config.backend_url}groups/access`);
+                return res.redirect(`${back_url}`);
 
             }
 
         }
         else{
 
-            return res.redirect(`${config.backend_url}groups/access`);
+            return res.redirect(`${back_url}`);
 
         }
 
