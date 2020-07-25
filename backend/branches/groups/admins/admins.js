@@ -6,6 +6,7 @@ router.get('/', async(req, res, next)=>{
 
         let page_number = 1;
         let page_limit = req.session.limit;
+        let can_edit = (req.session.admin_info.access_type.values.includes('تنظیمات مدیران')) ? true : false;
 
         if(req.query.page){
 
@@ -40,6 +41,8 @@ router.get('/', async(req, res, next)=>{
             page_limit : page_limit,
             rows_begin_number : admins_list.rows_begin_number,
             total_pages : admins_list.total_pages,
+            can_edit : can_edit,
+            admin_id : req.session.admin_id,
             search : false,
 
         };

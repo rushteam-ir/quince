@@ -142,37 +142,77 @@
                                                 </div>
                                             {/eq}
                                         </td>
-                                        <td class="table_option">
-                                            <div class="dropdown">
-                                                <button class="btn  dropdown-toggle" type="button" id="table_option"
-                                                        data-toggle="dropdown"
-                                                        aria-haspopup="true" aria-expanded="false">
-                                                    <i class="fas fa-ellipsis-v"></i>
-                                                </button>
-                                                <div class="dropdown-menu" aria-labelledby="table_option">
-                                                    <button class="dropdown-item">
-                                                        <i class="fal fa-paper-plane"></i>
-                                                        ارسال پیام
+                                        {@eq key="{admin_id}" value="{_id}"}
+                                            <td class="table_option">
+                                                <div class="dropdown">
+                                                    <button class="btn  dropdown-toggle" type="button" id="table_option"
+                                                            data-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false">
+                                                        <i class="fas fa-ellipsis-v"></i>
                                                     </button>
-                                                    <button class="dropdown-item edit_btn" name="{._id}">
-                                                        <i class="fal fa-sync-alt"></i>
-                                                        تغییر دسترسی
-                                                    </button>
-                                                    <button class="dropdown-item admin_status" name="{._id}" value="{status}">
-                                                        <i class="fal fa-ban"></i>
-                                                        {@eq key="{status}" value="true"}
-                                                            مسدود کردن حساب
-                                                        {:else}
-                                                            فعال کردن حساب
-                                                        {/eq}
-                                                    </button>
-                                                    <button class="user_delete dropdown-item" name="{._id}">
-                                                        <i class="fal fa-user-times"></i>
-                                                        حذف کاربر
-                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="table_option">
+                                                        <button class="dropdown-item">
+                                                            <i class="fal fa-paper-plane"></i>
+                                                            ارسال پیام
+                                                        </button>
+                                                        <button class="dropdown-item edit_btn" name="{._id}">
+                                                            <i class="fal fa-sync-alt"></i>
+                                                            تغییر دسترسی
+                                                        </button>
+                                                        <button class="dropdown-item admin_status" name="{._id}" value="{status}">
+                                                            <i class="fal fa-ban"></i>
+                                                            {@eq key="{status}" value="true"}
+                                                                مسدود کردن حساب
+                                                            {:else}
+                                                                فعال کردن حساب
+                                                            {/eq}
+                                                        </button>
+                                                        <button class="user_delete dropdown-item" name="{._id}">
+                                                            <i class="fal fa-user-times"></i>
+                                                            حذف کاربر
+                                                        </button>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </td>
+                                            </td>
+                                        {:else}
+                                            {@eq key="{can_edit}" value="true"}
+                                                <td class="table_option">
+                                                    <div class="dropdown">
+                                                        <button class="btn  dropdown-toggle" type="button" id="table_option"
+                                                                data-toggle="dropdown"
+                                                                aria-haspopup="true" aria-expanded="false">
+                                                            <i class="fas fa-ellipsis-v"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu" aria-labelledby="table_option">
+                                                            <button class="dropdown-item">
+                                                                <i class="fal fa-paper-plane"></i>
+                                                                ارسال پیام
+                                                            </button>
+                                                            <button class="dropdown-item edit_btn" name="{._id}">
+                                                                <i class="fal fa-sync-alt"></i>
+                                                                تغییر دسترسی
+                                                            </button>
+                                                            <button class="dropdown-item admin_status" name="{._id}" value="{status}">
+                                                                <i class="fal fa-ban"></i>
+                                                                {@eq key="{status}" value="true"}
+                                                                    مسدود کردن حساب
+                                                                {:else}
+                                                                    فعال کردن حساب
+                                                                {/eq}
+                                                            </button>
+                                                            <button class="user_delete dropdown-item" name="{._id}">
+                                                                <i class="fal fa-user-times"></i>
+                                                                حذف کاربر
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            {:else}
+                                                <td>
+                                                    دسترسی ندارید
+                                                </td>
+                                            {/eq}
+                                        {/eq}
                                     </tr>
                                 {/admins_list}
                             </table>

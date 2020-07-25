@@ -6,6 +6,7 @@ router.get('/', async(req, res, next)=>{
 
         let page_number = 1;
         let page_limit = req.session.limit;
+        let can_edit = (req.session.admin_info.access_type.values.includes('ویرایش دسته ها')) ? true : false;
 
         if(req.query.page){
 
@@ -40,6 +41,8 @@ router.get('/', async(req, res, next)=>{
             page_limit : page_limit,
             rows_begin_number : category_list.rows_begin_number,
             total_pages : category_list.total_pages,
+            can_edit : can_edit,
+            admin_id : req.session.admin_id,
             search : false,
 
         };
@@ -91,7 +94,7 @@ router.post('/', async(req, res, next)=>{
 
         }
 
-        let result = await category_model.add(title_inp, parent_inp);
+        let result = await category_model.add(req.session.admin_id, title_inp, parent_inp);
 
         if(result && result != -1){
 

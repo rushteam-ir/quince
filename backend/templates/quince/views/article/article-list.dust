@@ -131,39 +131,81 @@
                                                 {comments_number}
                                             </div>
                                         </td>
-                                        <td class="table_option">
-                                            <div class="dropdown">
-                                                <button class="btn  dropdown-toggle" type="button" id="table_option" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <i class="fas fa-ellipsis-v"></i>
-                                                </button>
-                                                <div class="dropdown-menu" aria-labelledby="table_option">
-                                                    <button class="dropdown-item article_edit" name="{.unique_id}">
-                                                        <i class="fal fa-edit"></i>
-                                                        ویرایش مقاله
+                                        {@eq key="{admin_id}" value="{author._id}"}
+                                            <td class="table_option">
+                                                <div class="dropdown">
+                                                    <button class="btn  dropdown-toggle" type="button" id="table_option" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="fas fa-ellipsis-v"></i>
                                                     </button>
-                                                    <button class="dropdown-item article_status" name="{._id}" value="{status}">
-                                                        <i class="fal fa-align-slash"></i>
-                                                        {@eq key="{status}" value="true"}
-                                                            غیر فعال کردن مقاله
-                                                        {:else}
-                                                            فعال کردن مقاله
-                                                        {/eq}
-                                                    </button>
-                                                    <button class="dropdown-item article_comments_status" name="{._id}" value="{comments_status}">
-                                                        <i class="fal fa-comment-slash"></i>
-                                                        {@eq key="{comments_status}" value="true"}
-                                                            غیر فعال کردن نظرات
-                                                        {:else}
-                                                            فعال کردن نظرات
-                                                        {/eq}
-                                                    </button>
-                                                    <button class="dropdown-item article_delete" name="{._id}">
-                                                        <i class="fal fa-trash-alt"></i>
-                                                        حذف مقاله
-                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="table_option">
+                                                        <button class="dropdown-item article_edit" name="{.unique_id}">
+                                                            <i class="fal fa-edit"></i>
+                                                            ویرایش مقاله
+                                                        </button>
+                                                        <button class="dropdown-item article_status" name="{._id}" value="{status}">
+                                                            <i class="fal fa-align-slash"></i>
+                                                            {@eq key="{status}" value="true"}
+                                                                غیر فعال کردن مقاله
+                                                            {:else}
+                                                                فعال کردن مقاله
+                                                            {/eq}
+                                                        </button>
+                                                        <button class="dropdown-item article_comments_status" name="{._id}" value="{comments_status}">
+                                                            <i class="fal fa-comment-slash"></i>
+                                                            {@eq key="{comments_status}" value="true"}
+                                                                غیر فعال کردن نظرات
+                                                            {:else}
+                                                                فعال کردن نظرات
+                                                            {/eq}
+                                                        </button>
+                                                        <button class="dropdown-item article_delete" name="{._id}">
+                                                            <i class="fal fa-trash-alt"></i>
+                                                            حذف مقاله
+                                                        </button>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </td>
+                                            </td>
+                                        {:else}
+                                            {@eq key="{can_edit}" value="true"}
+                                                <td class="table_option">
+                                                    <div class="dropdown">
+                                                        <button class="btn  dropdown-toggle" type="button" id="table_option" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="fas fa-ellipsis-v"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu" aria-labelledby="table_option">
+                                                            <button class="dropdown-item article_edit" name="{.unique_id}">
+                                                                <i class="fal fa-edit"></i>
+                                                                ویرایش مقاله
+                                                            </button>
+                                                            <button class="dropdown-item article_status" name="{._id}" value="{status}">
+                                                                <i class="fal fa-align-slash"></i>
+                                                                {@eq key="{status}" value="true"}
+                                                                    غیر فعال کردن مقاله
+                                                                {:else}
+                                                                    فعال کردن مقاله
+                                                                {/eq}
+                                                            </button>
+                                                            <button class="dropdown-item article_comments_status" name="{._id}" value="{comments_status}">
+                                                                <i class="fal fa-comment-slash"></i>
+                                                                {@eq key="{comments_status}" value="true"}
+                                                                    غیر فعال کردن نظرات
+                                                                {:else}
+                                                                    فعال کردن نظرات
+                                                                {/eq}
+                                                            </button>
+                                                            <button class="dropdown-item article_delete" name="{._id}">
+                                                                <i class="fal fa-trash-alt"></i>
+                                                                حذف مقاله
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            {:else}
+                                                <td>
+                                                    دسترسی ندارید
+                                                </td>
+                                            {/eq}
+                                        {/eq}
                                     </tr>
                                 {/article_list}
                             </table>

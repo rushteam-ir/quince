@@ -5,13 +5,17 @@ let category_schema = new mongoose.Schema({
         type : 'ObjectId',
         ref : 'category'
     },
+    author : {
+        type : 'ObjectId',
+        ref : 'admin'
+    },
     child_number : Number,
 
 });
 
 category_schema.statics = {
 
-    add : async function (title_inp, parent_inp) {
+    add : async function (admin_id, title_inp, parent_inp) {
 
         let parent = parent_inp;
 
@@ -29,7 +33,8 @@ category_schema.statics = {
         let new_category = new category_model({
 
             title : title_inp,
-            parent : parent
+            parent : parent,
+            author : admin_id
 
         });
 
@@ -75,7 +80,7 @@ category_schema.statics = {
 
     getCat : async function (category_id) {
 
-        return await category_model.find({_id : category_id }).populate('parent').exec();;
+        return await category_model.find({_id : category_id }).populate('parent').populate('author').exec();;
 
     },
 
@@ -85,7 +90,7 @@ category_schema.statics = {
         let category_skip = page_number * page_limit - page_limit;
 
         result.rows_begin_number = category_skip + 1;
-        result.list =  await category_model.find().skip(category_skip).limit(page_limit).populate('parent').exec();
+        result.list =  await category_model.find().skip(category_skip).limit(page_limit).populate('parent').populate('author').exec();
         result.total_pages = Math.ceil(await category_model.find().countDocuments() / page_limit);
 
         return result;
@@ -113,7 +118,7 @@ category_schema.statics = {
 
     search : async function (search_value, page_number, page_limit) {
 
-        let find_list = await category_model.find().populate('parent').exec();
+        let find_list = await category_model.find().populate('parent').populate('author').exec();
         let category_skip = page_number * page_limit - page_limit;
         let search = search_value.toLowerCase();
         let search_list = [];

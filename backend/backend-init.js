@@ -22,7 +22,7 @@ backend_access = {
     edit : {
         'edit-category': 'ویرایش دسته ها',
         'edit-article': 'ویرایش مقاله ها',
-        'edit-admins': 'تنظیمات ادمین ها',
+        'edit-admins': 'تنظیمات مدیران',
         'edit-users': 'تنظیمات کاربران',
     }
 }
