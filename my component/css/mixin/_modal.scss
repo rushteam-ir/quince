@@ -9,7 +9,7 @@
     overflow: auto;
     display: none;
 
-    .row {
+    .modal_row {
         height: 100vh;
 
         .info_field {
@@ -19,4 +19,8 @@
             padding: 30px 30px 84px 30px;
         }
     }
+}
+
+.category_modal_btn{
+    float: left;
 }

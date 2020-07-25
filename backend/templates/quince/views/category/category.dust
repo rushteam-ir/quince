@@ -3,6 +3,7 @@
 {<css}
     <link rel="stylesheet" href="css/category/category.css">
 {/css}
+
 {<js}
     <script src="js/category/category.js"></script>
     <script src="js/custom/checkbox.js"></script>
@@ -10,8 +11,8 @@
     <script src="js/custom/error-handler.js"></script>
     <script src="js/category/category-error.js"></script>
     <script src="js/general/form-ajax.js"></script>
+    <script src="js/custom/modal.js"></script>
 {/js}
-
 
 {<body}
     <section>
@@ -108,7 +109,7 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <button name="{._id}" class="btn blue_btn edit_category"><i class="fal fa-pencil-alt"></i>
+                                                <button name="{._id}" class="btn blue_btn edit_btn"><i class="fal fa-pencil-alt"></i>
                                                 </button>
                                                 <button class="btn red_btn mr-2 delete_category" name="{.id}"><i class="fal fa-trash-alt"></i></button>
                                             </td>
@@ -150,11 +151,12 @@
             </div>
         </div>
         <!-- modal -->
-        <div class="category_modal">
+
+        <div class="modal_field">
             <div class="container">
-                <div class="row align-items-center">
+                <div class="row align-items-center modal_row">
                     <div class="col-6 offset-3">
-                        <div class="field_of_categoey_edit">
+                        <div class="info_field">
                             <header class="header_field">
                                 <h1>ویرایش دسته</h1>
                                 <h2>دسته مورد نظر خود را ویرایش کنید</h2>
@@ -177,7 +179,7 @@
                                 </div>
                                 <div class="category_modal_btn">
                                     <button type="submit" class="btn green_btn py-2 mt-3">ویرایش دسته</button>
-                                    <button type="button" class="btn red_btn py-2 mt-3">لغو</button>
+                                    <button type="button" class="btn red_btn py-2 mt-3 mr-2 close_modal">لغو</button>
                                 </div>
                             </form>
                         </div>
@@ -185,7 +187,6 @@
                 </div>
             </div>
         </div>
-
     </section>
 
 {/body}

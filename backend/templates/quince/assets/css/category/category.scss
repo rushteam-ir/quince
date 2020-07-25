@@ -7,6 +7,7 @@
 @import '../Partials/table';
 @import '../Partials/pagination';
 @import '../Partials/error';
+@import '../Partials/modal';
 
 
 .main_body {
@@ -36,39 +37,6 @@ table {
         .fa-pencil-alt {
             left: 5.3px;
             top: 0px;
-        }
-    }
-}
-
-.category_modal {
-    width: 100%;
-    height: 100vh;
-    background-color: #00000086;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999999;
-    display: none;
-
-    .row {
-        height: 100vh;
-    }
-
-    .field_of_categoey_edit {
-        width: 100%;
-        background-color: white;
-        border-radius: 7px;
-        padding: 30px 30px 84px 30px;
-    }
-    .category_modal_btn{
-        position: relative;
-        & :first-child{
-            position: absolute;
-            left: 55px;
-        }
-        & :last-child{
-            position: absolute;
-            left: 0;
         }
     }
 }
