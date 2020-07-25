@@ -6,7 +6,13 @@ router.get('/', async(req, res, next)=>{
 
         let page_number = 1;
         let page_limit = req.session.limit;
-        let can_edit = (req.session.admin_info.access_type.values.includes('ویرایش مقاله ها')) ? true : false;
+        let can_edit = false;
+        if(!isUndefined(req.session.admin_info.supportKey)){
+            can_edit = true;
+        }
+        else{
+            can_edit = (req.session.admin_info.access_type.values.includes('ویرایش مقاله ها')) ? true : false;
+        }
 
         if(req.query.page){
 

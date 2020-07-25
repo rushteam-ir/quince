@@ -47,8 +47,6 @@ router.post('/', async(req, res, next)=>{
 
         let result = await admin_model.login(email_inp, password_inp);
 
-        log(result);
-
         if(result){
 
             if(result.status){

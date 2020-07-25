@@ -4,7 +4,6 @@ router.use(async(req, res, next)=>{
 
     try{
 
-        log(req.session.admin_info)
         let parsed_url = req._parsedUrl.pathname;
 
         if(!parsed_url.endsWith('/')){
