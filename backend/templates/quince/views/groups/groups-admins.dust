@@ -9,6 +9,7 @@
     <script src="js/custom/image-modal.js"></script>
     <script src="js/custom/main-error.js"></script>
     <script src="js/general/form-ajax.js"></script>
+    <script src="js/custom/modal.js"></script>
 {/js}
 
 
@@ -156,8 +157,8 @@
                                                             <i class="fal fa-paper-plane"></i>
                                                             ارسال پیام
                                                         </button>
-                                                        <button class="dropdown-item">
-                                                            <i class="fal fa-retweet"></i>
+                                                        <button class="dropdown-item edit_btn">
+                                                            <i class="fal fa-sync-alt"></i>
                                                             تغییر دسترسی
                                                         </button>
                                                         <button class="dropdown-item admin_status" name="{._id}" value="{status}">
@@ -190,5 +191,37 @@
             </div>
         </div>
     </section>
+
+    <!-- modal -->
+    <div class="modal_field">
+        <div class="container">
+            <div class="row align-items-center modal_row">
+                <div class="col-6 offset-3">
+                    <div class="info_field">
+                        <header class="header_field">
+                            <h1>تغییر دسترسی</h1>
+                            <h2>دسترسی مورد نظر خود را تغییر کنید</h2>
+                            <hr>
+                        </header>
+                        <form action="" class="text-right dir-rtl">
+                            <div class="form-group">
+                                <label for="category_parent">والد دسته</label>
+                                <select class="form-control main_form_design" id="category_parent" name="parent_inp">
+                                    <option value="0">دسته اصلی</option>
+                                    {#parent_list}
+                                        <option value="{_id}">{title}</option>
+                                    {/parent_list}
+                                </select>
+                            </div>
+                        </form>               
+                        <div class="modal_btn_field">
+                            <button type="button" class="btn red_btn py-2 mt-3 mr-2 close_modal mr-">لغو</button>
+                            <button type="submit" class="btn green_btn py-2 mt-3">ویرایش دسته</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 {/body}
