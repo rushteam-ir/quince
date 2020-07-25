@@ -17,7 +17,11 @@
                 <div class="col-12 main_col">
                     <div class="row">
                         <div class="col-2 pr-0">
-                            <img class="user_img" src="media/avatars/{user_info.avatar}" alt="">
+                            {@eq key="{user_info.avatar}" value=""}
+                                <img class="user_img" src="img/default-profile-picture.png" alt="">
+                            {:else}
+                                <img class="user_img" src="media/avatars/{user_info.avatar}" alt="">
+                            {/eq}
                         </div>
                         <div class="col-10 pl-0 position-relative">
                             <div class="user_ph mt-4">

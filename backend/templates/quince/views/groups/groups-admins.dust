@@ -157,7 +157,7 @@
                                                             <i class="fal fa-paper-plane"></i>
                                                             ارسال پیام
                                                         </button>
-                                                        <button class="dropdown-item edit_btn">
+                                                        <button class="dropdown-item edit_btn" name="{._id}">
                                                             <i class="fal fa-sync-alt"></i>
                                                             تغییر دسترسی
                                                         </button>
@@ -203,21 +203,21 @@
                             <h2>دسترسی مورد نظر خود را تغییر کنید</h2>
                             <hr>
                         </header>
-                        <form action="" class="text-right dir-rtl">
+                        <form class="text-right dir-rtl form_ajax" method="post" action="{backend_url}groups/admins/access">
                             <div class="form-group">
-                                <label for="category_parent">والد دسته</label>
-                                <select class="form-control main_form_design" id="category_parent" name="parent_inp">
-                                    <option value="0">دسته اصلی</option>
-                                    {#parent_list}
+                                <label for="change_access">سطح دسترسی</label>
+                                <select class="form-control main_form_design edit_access" id="change_access" name="access_inp">
+                                    <option value="0">----</option>
+                                    {#access_list}
                                         <option value="{_id}">{title}</option>
-                                    {/parent_list}
+                                    {/access_list}
                                 </select>
                             </div>
-                        </form>               
-                        <div class="modal_btn_field">
-                            <button type="button" class="btn red_btn py-2 mt-3 mr-2 close_modal mr-">لغو</button>
-                            <button type="submit" class="btn green_btn py-2 mt-3">ویرایش دسته</button>
-                        </div>
+                            <div class="modal_btn_field">
+                                <button type="button" class="btn red_btn py-2 mt-3 mr-2 close_modal mr-">لغو</button>
+                                <button type="submit" class="btn green_btn py-2 mt-3">تغییر</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

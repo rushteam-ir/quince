@@ -34,6 +34,7 @@ router.get('/', async(req, res, next)=>{
 
         let data = {
 
+            access_list : await access_model.getList(),
             admins_list : admins_list.list,
             page_number : page_number,
             page_limit : page_limit,
@@ -59,11 +60,13 @@ const delete_admins = require('./api/delete-admins');
 const delete_select = require('./api/delete-select');
 
 const search = require('./search');
+const access = require('./access');
 
 router.use('/api/change-status', change_status);
 router.use('/api/delete-admins', delete_admins);
 router.use('/api/delete-select', delete_select);
 
 router.use('/search', search);
+router.use('/access', access);
 
 module.exports = router;

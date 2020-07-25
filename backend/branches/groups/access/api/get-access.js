@@ -4,11 +4,11 @@ router.post('/', async(req, res, next)=>{
 
     try{
 
-        let access_id = req.body.id;
+        let admin_id = req.body.id;
 
         if(isObjectId(access_id)){
 
-            let access_list = await access_model.get(access_id);
+            let access_list = await access_model.getById(access_id);
 
             res.json(access_list);
 

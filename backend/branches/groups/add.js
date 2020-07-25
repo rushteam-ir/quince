@@ -6,7 +6,7 @@ router.get('/', async(req, res, next)=>{
 
         let data = {
 
-            access_list : await access_model.get()
+            access_list : await access_model.getList()
 
         }
 

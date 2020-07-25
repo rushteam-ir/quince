@@ -143,6 +143,21 @@ $('.admin_status').on('click', function (e) {
     })
 })
 
+// Change Access
+$('.edit_btn').click(function () {
+
+    $.post(`${backend_url}groups/access/api/get-access`, {
+        id: $(this).attr('name'),
+    }, function (data, status) {
+
+
+        $(`.edit_access option`).removeAttr('selected');
+        $(`.edit_access option[value="${data._id}"]`).attr('selected', 'selected');
+
+    });
+
+});
+
 function redirect(url) {
     location.href = url
 }

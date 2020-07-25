@@ -22,7 +22,6 @@ router.post('/', async(req, res, next)=>{
 
             title : edit_title_inp,
             values : edit_access_list,
-            count : edit_access_list.length
 
         }
 

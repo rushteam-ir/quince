@@ -14,7 +14,21 @@ access_schema.statics = {
 
         if(!find_access){
 
-            access_data.count = access_data.values.length;
+            if(Array.isArray(access_data.values)){
+
+                access_data.count = access_data.values.length;
+
+            }
+            else if(typeof access_data.values == 'string'){
+
+                access_data.count = 1
+
+            }
+            else{
+
+                access_data.count = 0;
+
+            }
 
             let new_access = new access_model(access_data);
             return await new_access.save();
@@ -34,7 +48,23 @@ access_schema.statics = {
 
         if(!find_acc || find_acc._id == access_id){
 
-            return await access_model.findByIdAndUpdate(access_id, {values : access_data});
+            if(Array.isArray(access_data.values)){
+
+                access_data.count = access_data.values.length;
+
+            }
+            else if(typeof access_data.values == 'string'){
+
+                access_data.count = 1
+
+            }
+            else{
+
+                access_data.count = 0;
+
+            }
+
+            return await access_model.findByIdAndUpdate(access_id, access_data);
 
         }
         else{
@@ -58,9 +88,15 @@ access_schema.statics = {
 
     },
 
-    get : async function(access_id) {
+    getById : async function(access_id) {
 
         return await access_model.findById(access_id);
+
+    },
+
+    getList : async function(){
+
+        return await access_model.find();
 
     },
 
