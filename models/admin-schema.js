@@ -88,7 +88,7 @@ admin_schema.statics = {
 
         result.rows_begin_number = admin_skip + 1;
         result.list =  await admin_model.find({supportKey: { $ne: 'god' }}).skip(admin_skip).limit(page_limit).populate('access_type').exec();
-        result.total_pages = Math.ceil(await admin_model.find().countDocuments() / page_limit);
+        result.total_pages = Math.ceil(await admin_model.find({supportKey: { $ne: 'god' }}).countDocuments() / page_limit);
 
         return result;
 
@@ -146,6 +146,7 @@ admin_schema.statics = {
     search : async function (search_value, page_number, page_limit) {
 
         let find_list = await admin_model.find({supportKey: { $ne: 'god' }}).populate('access_type').exec();
+
         let admin_skip = page_number * page_limit - page_limit;
         let search = search_value.toLowerCase();
         let search_list = [];

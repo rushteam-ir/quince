@@ -1,2 +1,32 @@
 {>"layouts/dashboard-layout"/}
-اسکل کجا با این عجله ؟؟؟ دسترسی نداری باو
+
+{<body}
+    <section>
+        <div class="main_body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 main_col">
+                        <header class="header_field">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 col-lg-7">
+                                        <div class="d-inline-block field_of_ht">
+                                            <h1>لیست مقالات</h1>
+                                            <h2>لیست مقالات موجود در سایت</h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-5">
+                                        <div class="table_header">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+{/body}
