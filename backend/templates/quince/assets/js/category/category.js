@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     $('#selectall').trigger('change');
-    sessionStorage.categoryModal = '0';
+    sessionStorage.modal = '0';
 
     $('.limit_row').change(function () {
 
@@ -101,46 +101,34 @@ $(document).ready(function () {
 
     // modal
 
-    // $('.edit_category').click(function () {
+    $('.edit_btn').click(function () {
 
-    //     $('.category_modal').fadeIn();
-    //     $('body').css('overflow','hidden');
-    //     sessionStorage.categoryModal = '1';
+        $.post(`${backend_url}category/api/get-category`, {
+            id: $(this).attr('name'),
+        }, function (data, status) {
 
-    //     $.post(`${backend_url}category/api/get-category`, {
-    //         id: $(this).attr('name'),
-    //     }, function (data, status) {
+            let title = data[0].title;
+            let parent_id = '';
+            let category_id = data[0]._id;
 
-    //         let title = data[0].title;
-    //         let parent_id = '';
-    //         let category_id = data[0]._id;
+            if (data[0].parent == null) {
 
-    //         if (data[0].parent == null) {
+                parent_id = '0';
 
-    //             parent_id = '0';
+            } else {
 
-    //         } else {
+                parent_id = data[0].parent._id;
 
-    //             parent_id = data[0].parent._id;
+            }
 
-    //         }
+            $('.edit_category_title').val(title);
+            $('.edit_category_id').val(category_id);
+            $(`.edit_category_parent option`).removeAttr('selected');
+            $(`.edit_category_parent option[value="${parent_id}"]`).attr('selected', 'selected');
 
-    //         $('.edit_category_title').val(title);
-    //         $('.edit_category_id').val(category_id);
-    //         $(`.edit_category_parent option`).removeAttr('selected');
-    //         $(`.edit_category_parent option[value="${parent_id}"]`).attr('selected', 'selected');
+        });
 
-    //     });
-
-    // });
-
-    // $('.red_btn').click(function () {
-
-    //     $('.category_modal').fadeOut();
-    //     $('body').css('overflow','auto');
-    //     sessionStorage.categoryModal = '0';
-
-    // });
+    });
 
 });
 

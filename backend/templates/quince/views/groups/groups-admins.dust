@@ -103,19 +103,15 @@
                                                 {/eq}
                                             </td>
                                             <td>
-                                                {@eq key="{first_name}" value=""}
-                                                    ثبت نشده
-                                                {:else}
-                                                    <div>
-                                                        <a href="{backend_url}groups/profile/{unique_id}">
-                                                            {@eq key="{author_type}" value="name"}
-                                                                {first_name} {last_name}
-                                                            {:else}
-                                                                {nick_name}
-                                                            {/eq}
-                                                        </a>
-                                                    </div>
-                                                {/eq}
+                                                <div>
+                                                    <a href="{backend_url}groups/profile/{unique_id}">
+                                                        {@eq key="{author_type}" value="name"}
+                                                            {first_name} {last_name}
+                                                        {:else}
+                                                            {nick_name}
+                                                        {/eq}
+                                                    </a>
+                                                </div>
                                             </td>
                                             <td class="QT_truncate">
                                                 <div>

@@ -78,7 +78,7 @@ router.post('/', async(req, res, next)=>{
 
         }
 
-        let result = await access_model.add(access_data, req.session.admin_id);
+        let result = await access_model.add(access_data);
 
         if(result){
 
@@ -106,12 +106,14 @@ router.post('/', async(req, res, next)=>{
 
 const delete_access = require('./api/delete-access');
 const delete_select = require('./api/delete-select');
+const get_access = require('./api/get-access');
 
 const edit = require('./edit');
 const search = require('./search');
 
 router.use('/api/delete-access', delete_access);
 router.use('/api/delete-select', delete_select);
+router.use('/api/get-access', get_access);
 
 router.use('/edit', edit);
 router.use('/search', search);

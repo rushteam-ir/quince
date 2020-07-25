@@ -2,27 +2,39 @@ let access_schema = new mongoose.Schema({
 
     title : String,
     values : Array,
-    author : {
-        type : 'ObjectId',
-        ref : 'admin'
-    },
     count : Number,
 
 });
 
 access_schema.statics = {
 
-    add : async function(access_data, author_id){
+    add : async function(access_data){
 
         let find_access = await access_model.findOne({title : access_data.title});
 
         if(!find_access){
 
-            access_data.author = author_id;
             access_data.count = access_data.values.length;
 
             let new_access = new access_model(access_data);
             return await new_access.save();
+
+        }
+        else{
+
+            return null;
+
+        }
+
+    },
+
+    edit : async function(access_id, access_data){
+
+        let find_acc = await access_model.findById(access_id);
+
+        if(!find_acc || find_acc._id == access_id){
+
+            return await access_model.findByIdAndUpdate(access_id, {values : access_data});
 
         }
         else{
@@ -46,9 +58,9 @@ access_schema.statics = {
 
     },
 
-    get : async function() {
+    get : async function(access_id) {
 
-        return await access_model.find();
+        return await access_model.findById(access_id);
 
     },
 

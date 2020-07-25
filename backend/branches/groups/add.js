@@ -55,6 +55,8 @@ router.post('/', async(req, res, next)=>{
 
         let admin_data = {
 
+            nick_name : email_inp.split('@')[0],
+            author_type: 'nick_name',
             email : email_inp,
             password : password_inp,
             access_type : access_inp

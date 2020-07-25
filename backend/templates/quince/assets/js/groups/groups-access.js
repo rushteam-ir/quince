@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
     $('#selectall').trigger('change');
+    sessionStorage.modal = '0';
 
     $('.limit_row').change(function () {
 
@@ -102,9 +103,31 @@ $('.search_btn_cancel').on('click', function (e) {
 
 })
 
+$('.edit_btn').click(function () {
+
+    $.post(`${backend_url}groups/access/api/get-access`, {
+        id: $(this).attr('name'),
+    }, function (data, status) {
+
+        let title = data.title;
+        let access_id = data._id;
+        let access_list = data.values;
+
+        $('.edit_access_title').val(title);
+        $('.edit_access_id').val(access_id);
+
+        $("input[name='edit_access_select_inp[]']:checkbox").prop('checked',false);
+        $.each(access_list, function(i, val){
+
+            $("input[name='edit_access_select_inp[]'][value='" + val + "']").prop('checked', true);
+
+        });
+
+    });
+
+});
+
 function redirect(url) {
     location.href = url
 }
-
-// modal
 

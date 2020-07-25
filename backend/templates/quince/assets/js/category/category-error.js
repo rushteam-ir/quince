@@ -8,7 +8,7 @@ function categoryError() {
 
     let validation_result = null;
 
-    switch(sessionStorage.categoryModal){
+    switch(sessionStorage.modal){
 
         case '0':
         {
@@ -34,8 +34,6 @@ function categoryError() {
         
         }
     }
-
-
 
     if(validation_result){
 

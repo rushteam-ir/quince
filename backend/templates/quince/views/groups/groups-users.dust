@@ -73,80 +73,70 @@
                                     <th>آخرین فعالیت</th>
                                     <th>تنظیمات</th>
                                 </tr>
-                                <tr>
-                                    <td>
-                                        <label class="checkbox_of_category">
-                                            <input type="checkbox" name="delete_checkbox[]"
-                                                   class="table_checkbox option-input checkbox"
-                                                   value="{._id}">
-                                        </label>
-                                    </td>
-                                    <td>1</td>
-                                    <td class="QT_image">
-                                        <img src="img/img2.jpg" alt="">
-                                    </td>
-                                    <td class="QT_purple_pill QT_truncate">
-                                        <div>
-                                            MegaNoob
-                                        </div>
-                                    </td>
-                                    <td class="QT_truncate">
-                                        <div>
-                                            kasra@gmail.com
-                                        </div>
-                                    </td>
-                                    <td class="QT_green_pill">
-                                        <div>
-                                            فعال
-                                        </div>
-                                    </td>
-                                    <td class="QT_yellow_pill">
-                                        <div>
-                                            1399/10/25
-                                        </div>
-                                    </td>
-                                    <td class="table_option">
-                                        <div class="dropdown">
-                                            <button class="btn  dropdown-toggle" type="button" id="table_option"
-                                                    data-toggle="dropdown"
-                                                    aria-haspopup="true" aria-expanded="false">
-                                                <i class="fas fa-ellipsis-v"></i>
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="table_option">
-                                                <a class="dropdown-item" href="#">
-                                                    <i class="fal fa-align-slash"></i>
-                                                    غیر فعال کردن
-                                                </a>
-                                                <a class="dropdown-item" href="#">
-                                                    <i class="fal fa-asterisk"></i>
-                                                    افزودن وی ای پی
-                                                </a>
-                                                <a class="dropdown-item" href="#">
-                                                    <i class="fal fa-assistive-listening-systems"></i>
-                                                    افزودن گوش و چشم
-                                                </a>
+                                {#users_list}
+                                    <tr>
+                                        <td>
+                                            <label class="checkbox_of_category">
+                                                <input type="checkbox" name="delete_checkbox[]"
+                                                       class="table_checkbox option-input checkbox"
+                                                       value="{._id}">
+                                            </label>
+                                        </td>
+                                        <td>1</td>
+                                        <td class="QT_image">
+                                            <img src="img/img2.jpg" alt="">
+                                        </td>
+                                        <td class="QT_purple_pill QT_truncate">
+                                            <div>
+                                                MegaNoob
                                             </div>
-                                        </div>
-                                    </td>
-                                </tr>
+                                        </td>
+                                        <td class="QT_truncate">
+                                            <div>
+                                                kasra@gmail.com
+                                            </div>
+                                        </td>
+                                        <td class="QT_green_pill">
+                                            <div>
+                                                فعال
+                                            </div>
+                                        </td>
+                                        <td class="QT_yellow_pill">
+                                            <div>
+                                                1399/10/25
+                                            </div>
+                                        </td>
+                                        <td class="table_option">
+                                            <div class="dropdown">
+                                                <button class="btn  dropdown-toggle" type="button" id="table_option"
+                                                        data-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="table_option">
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="fal fa-align-slash"></i>
+                                                        غیر فعال کردن
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="fal fa-asterisk"></i>
+                                                        افزودن وی ای پی
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="fal fa-assistive-listening-systems"></i>
+                                                        افزودن گوش و چشم
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                {/users_list}
                             </table>
-                            <nav class="Page_navigation mt-3" aria-label="Page navigation example">
-                                <ul class="pagination">
-                                  <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                      <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                  </li>
-                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                  <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                      <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                  </li>
-                                </ul>
-                              </nav>
+                            {@eq key="{search}" value="true"}
+                                {@page number="{total_pages}"  url="{backend_url}groups/users/search/{search_value}" current="{page_number}"/}
+                            {:else}
+                                {@page number="{total_pages}"  url="{backend_url}groups/users" current="{page_number}"/}
+                            {/eq}
                         </div>
                         <!-- image modal -->
                         <div class="image_modal_field">
