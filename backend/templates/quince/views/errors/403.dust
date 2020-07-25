@@ -8,20 +8,11 @@
 <section>
     <!-- error -->
     <section>
-        <div class="main_field mb-5 mt-4">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 main_col">
-                        <header class="header_field">
-                            <h1>افزودن مقاله</h1>
-                            <h2>نوشتن مقاله جدید و منتشر کردن بر روی وبسایت</h2>
-                            <hr>
-                        </header>
-                        <div class="ban_slot_field ">
-                            <i class="fal fa-lock-alt"></i>
-                            <p>شما به این بخش دسترسی ندارید .</p>
-                        </div>
-                    </div>
+        <div class="container-fluid p-0">
+            <div class="row align-items-center heaight_row_custom">
+                <div class="ban_slot_field w-100">
+                    <i class="fal fa-lock-alt"></i>
+                    <p>شما به این بخش دسترسی ندارید .</p>
                 </div>
             </div>
         </div>
