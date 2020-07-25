@@ -1,32 +1,29 @@
 {>"layouts/dashboard-layout"/}
 
-{<body}
+{<css} 
+    <link rel="stylesheet" href="css/errors/403.css">
+{/css}
+
+{<body} 
+<section>
+    <!-- error -->
     <section>
-        <div class="main_body">
+        <div class="main_field mb-5 mt-4">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 main_col">
                         <header class="header_field">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-12 col-lg-7">
-                                        <div class="d-inline-block field_of_ht">
-                                            <h1>لیست مقالات</h1>
-                                            <h2>لیست مقالات موجود در سایت</h2>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-lg-5">
-                                        <div class="table_header">
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <h1>افزودن مقاله</h1>
+                            <h2>نوشتن مقاله جدید و منتشر کردن بر روی وبسایت</h2>
+                            <hr>
                         </header>
+                        <div class="ban_slot_field ">
+                            <i class="fal fa-lock-alt"></i>
+                            <p>شما به این بخش دسترسی ندارید .</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
-
 {/body}

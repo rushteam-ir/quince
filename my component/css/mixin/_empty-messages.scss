@@ -1,0 +1,17 @@
+.ban_slot_field{
+    width: 100%;
+    padding: 50px 50px;
+    border-radius: 7px;
+    background-color: #eaeaea;
+    text-align: center;
+    direction: rtl;
+    p{
+        color: #737373;
+        font-weight: bold;
+    }
+    i{
+        font-size: 7rem;
+        color: #737373;
+        margin-bottom: 30px;
+    }
+}
