@@ -6,7 +6,6 @@
 {<js}
     <script src="js/groups/groups-users.js"></script>
     <script src="js/custom/checkbox.js"></script>
-    <script src="js/custom/image-modal.js"></script>
 {/js}
 
 
@@ -137,21 +136,6 @@
                             {:else}
                                 {@page number="{total_pages}"  url="{backend_url}groups/users" current="{page_number}"/}
                             {/eq}
-                        </div>
-                        <!-- image modal -->
-                        <div class="image_modal_field">
-                            <div class="container">
-                                <div class="row align-items-center">
-                                    <div class="col">
-                                        <div class="IMF_inside">
-                                            <div class="remove_modal">
-                                                <i class="fal fa-times"></i>
-                                            </div>
-                                            <img src="img/img2.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
