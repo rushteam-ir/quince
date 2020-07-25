@@ -83,11 +83,25 @@
                                 </tr>
                                 {#article_list}
                                     <tr>
-                                        <td>
-                                            <label class="checkbox_of_category">
-                                                <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
-                                            </label>
-                                        </td>
+                                        {@eq key="{admin_id}" value="{author._id}"}
+                                            <td>
+                                                <label class="checkbox_of_category">
+                                                    <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                                </label>
+                                            </td>
+                                        {:else}
+                                            {@eq key="{can_edit}" value="true"}
+                                                <td>
+                                                    <label class="checkbox_of_category">
+                                                        <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                                    </label>
+                                                </td>
+                                            {:else}
+                                                <td>
+
+                                                </td>
+                                            {/eq}
+                                        {/eq}
                                         <td>{@math key="{rows_begin_number}" method="add" operand="{$idx}"/}</td>
                                         <td class="QT_truncate">
                                             <div>
