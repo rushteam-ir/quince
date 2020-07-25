@@ -185,25 +185,6 @@
                                 {@page number="{total_pages}"  url="{backend_url}groups/admins" current="{page_number}"/}
                             {/eq}
                         </div>
-                        <!-- image modal -->
-                        <div class="image_modal_field">
-                            <div class="container">
-                                <div class="row align-items-center">
-                                    <div class="col">
-                                        <div class="IMF_inside">
-                                            <div class="remove_modal">
-                                                <i class="fal fa-times"></i>
-                                            </div>
-                                            {@eq key="{avatar}" value=""}
-                                                <img src="img/default-profile-picture.png" alt="">
-                                            {:else}
-                                                <img src="media/avatars/{avatar}" alt="">
-                                            {/eq}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

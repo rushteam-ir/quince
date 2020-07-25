@@ -177,7 +177,7 @@
                                         {/parent_list}
                                     </select>
                                 </div>
-                                <div class="category_modal_btn">
+                                <div class="modal_btn_field">
                                     <button type="submit" class="btn green_btn py-2 mt-3">ویرایش دسته</button>
                                     <button type="button" class="btn red_btn py-2 mt-3 mr-2 close_modal">لغو</button>
                                 </div>
