@@ -96,7 +96,7 @@ admin_schema.statics = {
 
     getById : async function (user_id) {
 
-        return await admin_model.findById(user_id);
+        return await admin_model.findById(user_id).populate('access_type');
 
     },
 

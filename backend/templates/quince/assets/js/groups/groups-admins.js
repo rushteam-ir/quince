@@ -146,12 +146,15 @@ $('.admin_status').on('click', function (e) {
 // Change Access
 $('.edit_btn').click(function () {
 
-    $.post(`${backend_url}groups/access/api/get-access`, {
-        id: $(this).attr('name'),
+    let admin_id = $(this).attr('name');
+    $.post(`${backend_url}groups/access/api/get-admin-access`, {
+        id: admin_id,
     }, function (data, status) {
 
+        //console.log(data)
 
         $(`.edit_access option`).removeAttr('selected');
+        $(`.edit_access_admin_id`).val(admin_id)
         $(`.edit_access option[value="${data._id}"]`).attr('selected', 'selected');
 
     });

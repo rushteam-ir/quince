@@ -206,6 +206,7 @@
                         <form class="text-right dir-rtl form_ajax" method="post" action="{backend_url}groups/admins/access">
                             <div class="form-group">
                                 <label for="change_access">سطح دسترسی</label>
+                                <input class="edit_access_admin_id" hidden="hidden" name="admin_id">
                                 <select class="form-control main_form_design edit_access" id="change_access" name="access_inp">
                                     <option value="0">----</option>
                                     {#access_list}

@@ -4,7 +4,7 @@ router.post('/', async(req, res, next)=>{
 
     try {
 
-        let {access_inp} = req.body;
+        let {admin_id, access_inp} = req.body;
 
         let validation_result = new validation([
             {value : access_inp, type : 'objectId'},
@@ -28,7 +28,7 @@ router.post('/', async(req, res, next)=>{
 
         }
 
-        let result = await admin_model.edit(admin_data);
+        let result = await admin_model.edit(admin_id, admin_data);
 
         if(result){
 

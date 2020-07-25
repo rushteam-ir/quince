@@ -107,6 +107,7 @@ router.post('/', async(req, res, next)=>{
 const delete_access = require('./api/delete-access');
 const delete_select = require('./api/delete-select');
 const get_access = require('./api/get-access');
+const get_admin_access = require('./api/get-admin-access');
 
 const edit = require('./edit');
 const search = require('./search');
@@ -114,6 +115,7 @@ const search = require('./search');
 router.use('/api/delete-access', delete_access);
 router.use('/api/delete-select', delete_select);
 router.use('/api/get-access', get_access);
+router.use('/api/get-admin-access', get_admin_access);
 
 router.use('/edit', edit);
 router.use('/search', search);
