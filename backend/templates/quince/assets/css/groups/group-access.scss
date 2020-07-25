@@ -7,6 +7,7 @@
 @import '../Partials/table';
 @import '../Partials/pagination';
 @import '../Partials/error';
+@import '../Partials/modal';
 
 
 .main_body {
@@ -19,6 +20,7 @@
 
 .option-input{
     right: 0;
+    top: 0.2rem;
 }
 
 .access_list_w{

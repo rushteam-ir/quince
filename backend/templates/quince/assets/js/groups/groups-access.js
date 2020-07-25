@@ -105,3 +105,6 @@ $('.search_btn_cancel').on('click', function (e) {
 function redirect(url) {
     location.href = url
 }
+
+// modal
+

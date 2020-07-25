@@ -11,6 +11,7 @@
     <script src="js/custom/error-handler.js"></script>
     <script src="js/groups/groups-access-error.js"></script>
     <script src="js/general/form-ajax.js"></script>
+    <script src="js/custom/modal.js"></script>
 {/js}
 
 
@@ -100,7 +101,7 @@
                                         </div>
                                     </td>
                                     <td class="btn_td_w">
-                                        <button class="btn blue_btn access_btn"><i class="fal fa-pencil-alt"></i></button>
+                                        <button class="btn blue_btn access_btn edit_btn"><i class="fal fa-pencil-alt"></i></button>
                                         <button class="btn red_btn mr-2 access_btn access_delete" name="{._id}"><i class="fal fa-trash-alt"></i></button>
                                     </td>
                                 </tr>
@@ -181,4 +182,79 @@
     </div>
 
 </section>
-{/body}
+<!-- modal -->
+    <div class="modal_field">
+        <div class="container">
+            <div class="row align-items-center modal_row">
+                <div class="col-6 offset-3">
+                    <div class="info_field mt-5 mb-5">
+                        <header class="header_field">
+                            <h1>ویرایش دسترسی</h1>
+                            <h2>دسترسی مورد نظر خود را ویرایش کنید</h2>
+                            <hr>
+                        </header>
+                        <form action="" class="dir-rtl text-right">
+                            <form class="form_ajax" name="access" method="post" action="" autocomplete="off">
+                                <div class="form-group mt-4">
+                                    <label for="access_name">نام دسترسی</label>
+                                    <input type="text" class="form-control main_form_design" id="access_name" name="title_inp">
+                                </div>
+                                <div class="form-group mt-4">
+                                    <label class="mb-4 mt-0">بخش های تولید محتوا</label>
+                                    {@keyValue:backend_access.content}
+                                        {@select key=key}
+                                            {@eq value="/article/list/"}{/eq}
+                                            {@eq value="/article/add/"}{/eq}
+                                            {@none}
+                                                <div class="row">
+                                                    <div class="col-10">
+                                                        <p>{value}</p>
+                                                    </div>
+                                                    <div class="col-2 pl-0">
+                                                        <label class="checkbox_of_category">
+                                                            <input type="checkbox" name="access_select_inp[]" class="option-input checkbox access_checkbox" value="{value}">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            {/none}
+                                        {/select}
+                                    {/keyValue}
+                                    <hr>
+                                    <label class="mt-2 mb-3">بخش های مدیریتی</label>
+                                    {@keyValue:backend_access.management}
+                                        <div class="row">
+                                            <div class="col-10">
+                                                <p>{value}</p>
+                                            </div>
+                                            <div class="col-2 pl-0">
+                                                <label class="checkbox_of_category">
+                                                    <input type="checkbox" name="access_select_inp[]" class="option-input checkbox access_checkbox" value="{value}">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    {/keyValue}
+                                    <hr>
+                                    <label class="mt-2 mb-3">ویرایش محتوای دیگران</label>
+                                    {@keyValue:backend_access.edit}
+                                        <div class="row">
+                                            <div class="col-10">
+                                                <p>{value}</p>
+                                            </div>
+                                            <div class="col-2 pl-0">
+                                                <label class="checkbox_of_category">
+                                                    <input type="checkbox" name="access_select_inp[]" class="option-input checkbox access_checkbox" value="{value}">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    {/keyValue}
+                                    <div class="modal_btn_field">
+                                        <button type="submit" class="btn green_btn py-2 mt-3">ویرایش دسترسی</button>
+                                        <button type="button" class="btn red_btn py-2 mt-3 mr-2 close_modal">لغو</button>
+                                    </div>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{/body} 
