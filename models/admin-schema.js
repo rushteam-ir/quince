@@ -52,11 +52,11 @@ admin_schema.statics = {
 
     edit : async function(user_id, user_data){
 
-        let find_user = await admin_model.findOne({email : user_data.email});
+        let find_user = await admin_model.findOne({email : user_data.email}).populate('access_type');
 
         if(!find_user || find_user._id == user_id){
 
-            return await admin_model.findByIdAndUpdate(user_id, {$set : user_data}, {new : true});
+            return await admin_model.findByIdAndUpdate(user_id, {$set : user_data}, {new : true}).populate('access_type');
 
         }
         else{
@@ -68,17 +68,17 @@ admin_schema.statics = {
 
     recoveryEmail : async function(user_email){
 
-        return await uadmin_model.findOne({email : user_email});
+        return await uadmin_model.findOne({email : user_email}).populate('access_type');
     },
 
     setPendingPassword : async function(user_email, user_data){
 
-        return await admin_model.findOneAndUpdate({email : user_email}, {$set : user_data}, {new : true});
+        return await admin_model.findOneAndUpdate({email : user_email}, {$set : user_data}, {new : true}).populate('access_type');
     },
 
     verifyPendingPassword : async function(user_email, user_pending_password, user_data){
 
-        return await admin_model.findOneAndUpdate({email : user_email, pending_password : user_pending_password}, {$set : user_data}, {new : true});
+        return await admin_model.findOneAndUpdate({email : user_email, pending_password : user_pending_password}, {$set : user_data}, {new : true}).populate('access_type');
     },
 
     getAll : async function (page_number, page_limit) {
