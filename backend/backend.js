@@ -23,6 +23,7 @@ const groups = require('./branches/groups/groups');
 const guide = require('./branches/guide/guide');
 const article = require('./branches/article/article');
 const files = require('./branches/files/files');
+const comments = require('./branches/comments/comments');
 const api = require('./api/api');
 
 backend.use('/dashboard', dashboard);
@@ -38,6 +39,7 @@ backend.use('/groups', groups);
 backend.use('/guide', guide);
 backend.use('/article', article);
 backend.use('/files', files);
+backend.use('/comments', comments);
 backend.use('/api', api);
 
 backend.get('/', async(req, res, next)=>{
