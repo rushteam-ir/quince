@@ -3,6 +3,10 @@ let access_schema = new mongoose.Schema({
     title : String,
     values : Array,
     count : Number,
+    author : {
+        type : 'objectId',
+        ref : 'admin'
+    }
 
 });
 

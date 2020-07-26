@@ -4,56 +4,32 @@ router.get('/', async(req, res, next)=>{
 
     try{
 
-        let page_number = 1;
-        let page_limit = req.session.limit;
-        let can_edit = false;
-        if(!isUndefined(req.session.admin_info.supportKey)){
-            can_edit = true;
-        }
-        else{
-            can_edit = (req.session.admin_info.access_type.values.includes('ویرایش مقاله ها')) ? true : false;
-        }
+        await serverHelpers.tableList(req, async (page_number, page_limit, can_edit)=>{
 
-        if(req.query.page){
+            let category_list = await category_model.getAll(page_number, page_limit)
 
-            page_number = parseInt(req.query.page);
+            if(category_list.list.length == 0 && category_list.total_pages != 0){
 
-            if(page_number <= 0){
-
-                page_number = 1;
+                return res.redirect(`${config.backend_url}category/?page=${category_list.total_pages}`)
 
             }
 
-        }
-        if(!req.session.limit){
+            let data = {
 
-            page_limit = 10;
+                parent_list : await category_model.getParent(),
+                category_list : category_list.list,
+                page_number : page_number,
+                page_limit : page_limit,
+                rows_begin_number : category_list.rows_begin_number,
+                total_pages : category_list.total_pages,
+                can_edit : can_edit,
+                search : false,
 
-        }
+            };
 
-        let category_list = await category_model.getAll(page_number, page_limit)
+            res.render('category/category', data);
 
-        if(category_list.list.length == 0 && category_list.total_pages != 0){
-
-            return res.redirect(`${config.backend_url}category/?page=${category_list.total_pages}`)
-
-        }
-
-        let data = {
-
-            parent_list : await category_model.getParent(),
-            category_list : category_list.list,
-            page_number : page_number,
-            page_limit : page_limit,
-            rows_begin_number : category_list.rows_begin_number,
-            total_pages : category_list.total_pages,
-            can_edit : can_edit,
-            admin_id : req.session.admin_id,
-            search : false,
-
-        };
-
-        res.render('category/category', data);
+        })
 
     }
     catch (error) {

@@ -85,7 +85,7 @@
                                 </tr>
                                 {#admins_list}
                                     <tr>
-                                        {@eq key="{admin_id}" value="{_id}"}
+                                        {@eq key="{g_admin_info._id}" value="{_id}"}
                                             <td>
                                                 <label class="checkbox_of_category">
                                                     <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
@@ -154,7 +154,7 @@
                                                 </div>
                                             {/eq}
                                         </td>
-                                        {@eq key="{admin_id}" value="{_id}"}
+                                        {@eq key="{g_admin_info._id}" value="{_id}"}
                                             <td class="table_option">
                                                 <div class="dropdown">
                                                     <button class="btn  dropdown-toggle" type="button" id="table_option"

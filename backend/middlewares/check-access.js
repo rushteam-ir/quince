@@ -29,7 +29,7 @@ router.use(async(req, res, next)=>{
             }
             else{
 
-                if(!isUndefined(req.session.admin_info.supportKey)){
+                if(isUndefined(req.session.admin_info.access_type)){
 
                     return next();
 

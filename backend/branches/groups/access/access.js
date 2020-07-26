@@ -4,46 +4,30 @@ router.get('/', async(req, res, next)=>{
 
     try{
 
-        let page_number = 1;
-        let page_limit = req.session.limit;
+        await serverHelpers.tableList(req, async (page_number, page_limit, can_edit)=>{
 
-        if(req.query.page){
+            let access_list = await access_model.getAll(page_number, page_limit)
 
-            page_number = parseInt(req.query.page);
+            if(access_list.list.length == 0 && access_list.total_pages != 0){
 
-            if(page_number <= 0){
-
-                page_number = 1;
+                return res.redirect(`${config.backend_url}groups/access/?page=${access_list.total_pages}`)
 
             }
 
-        }
-        if(!req.session.limit){
+            let data = {
 
-            page_limit = 10;
+                access_list : access_list.list,
+                page_number : page_number,
+                page_limit : page_limit,
+                rows_begin_number : access_list.rows_begin_number,
+                total_pages : access_list.total_pages,
+                search : false,
 
-        }
+            };
 
-        let access_list = await access_model.getAll(page_number, page_limit)
+            res.render('groups/groups-access', data);
 
-        if(access_list.list.length == 0 && access_list.total_pages != 0){
-
-            return res.redirect(`${config.backend_url}groups/access/?page=${access_list.total_pages}`)
-
-        }
-
-        let data = {
-
-            access_list : access_list.list,
-            page_number : page_number,
-            page_limit : page_limit,
-            rows_begin_number : access_list.rows_begin_number,
-            total_pages : access_list.total_pages,
-            search : false,
-
-        };
-
-        res.render('groups/groups-access', data);
+        })
 
     }
     catch (error) {
@@ -74,7 +58,8 @@ router.post('/', async(req, res, next)=>{
         let access_data = {
 
             title : title_inp,
-            values : access_list_inp
+            values : (access_list_inp == null) ? [] : access_list_inp,
+            author : req.session.admin_id
 
         }
 

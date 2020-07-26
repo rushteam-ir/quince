@@ -20,10 +20,11 @@ backend_access = {
         '/groups/add/': 'افزودن مدیر جدید',
     },
     edit : {
-        'edit-category': 'ویرایش دسته ها',
-        'edit-article': 'ویرایش مقاله ها',
-        'edit-admins': 'تنظیمات مدیران',
-        'edit-users': 'تنظیمات کاربران',
+        'category/': 'ویرایش دسته ها',
+        'article/list/': 'ویرایش مقاله ها',
+        'groups/admins/': 'تنظیمات مدیران',
+        'groups/users/': 'تنظیمات کاربران',
+        'groups/access/': 'ویرایش دسترسی ها',
     }
 }
 

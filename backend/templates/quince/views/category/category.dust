@@ -86,7 +86,7 @@
                                     </tr>
                                     {#category_list}
                                         <tr>
-                                            {@eq key="{admin_id}" value="{author._id}"}
+                                            {@eq key="{g_admin_info._id}" value="{author._id}"}
                                                 <td>
                                                     <label class="checkbox_of_category">
                                                         <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
@@ -132,7 +132,7 @@
                                                     {child_number}
                                                 </div>
                                             </td>
-                                            {@eq key="{admin_id}" value="{author._id}"}
+                                            {@eq key="{g_admin_info._id}" value="{author._id}"}
                                                 <td>
                                                     <button name="{._id}" class="btn blue_btn edit_btn"><i class="fal fa-pencil-alt"></i>
                                                     </button>

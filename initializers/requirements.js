@@ -18,6 +18,7 @@ require('./library');
 dust_helpers = require('./dust-helpers');
 validation = require('./validation');
 fileManager = require('./file-manager');
+serverHelpers = require('./server-helpers');
 
 admin_model = require('../models/admin-schema');
 category_model = require('../models/category-schema');
