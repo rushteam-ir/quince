@@ -228,6 +228,7 @@
                             {:else}
                                 {@page number="{total_pages}"  url="{backend_url}article/list" current="{page_number}"/}
                             {/eq}
+                        </div>
                     </div>
                 </div>
             </div>

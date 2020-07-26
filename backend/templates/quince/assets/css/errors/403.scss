@@ -10,3 +10,7 @@
 .main_col {
     @include main_col;
 }
+
+body{
+    overflow: hidden;
+}

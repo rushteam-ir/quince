@@ -1,0 +1,32 @@
+@import '../Partials/main-color';
+@import '../Partials/mixin';
+@import '../Partials/checkbox-design';
+@import '../Partials/header-text';
+@import '../Partials/table-header';
+@import '../Partials/table-option';
+@import '../Partials/table';
+@import '../Partials/pagination';
+@import '../Partials/error';
+@import '../Partials/table_image';
+
+.main_body {
+    @include main_field
+}
+
+.main_col {
+    @include main_col;
+}
+
+.pagination{
+    padding: 0;
+}
+
+.special_QT_truncate{
+    div {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin: 0 auto;
+        max-width: 400px;
+    }
+}
