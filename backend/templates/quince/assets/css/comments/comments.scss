@@ -59,6 +59,16 @@
     p{
         font-weight: bold;
         margin-top: 5px;
+        display: inline-block;
+        a{
+            display: inline-block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 100px;
+            position: relative;
+            top: 7px;
+        }
     }
 }
 
