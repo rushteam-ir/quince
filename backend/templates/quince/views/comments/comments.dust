@@ -5,7 +5,7 @@
 {/css}
 
 {<js}
-
+    <script src="js/custom/checkbox.js"></script>
 {/js}
 
 {<body}
@@ -72,9 +72,9 @@
                                     </label>
                                 </th>
                                 <th>ردیف</th>
-                                <th>عکس</th>
                                 <th>نام کاربر</th>
                                 <th>خلاصه متن پیام</th>
+                                <th>تاریخ</th>
                                 <th>وضیعت</th>
                                 <th>تنظیمات</th>
                             </tr>
@@ -85,21 +85,30 @@
                                             value="{._id}">
                                     </label>
                                 </td>
-                                <td>1</td>
-                                <td class="QT_image">
+                                <td>
+                                    1
+                                </td>
+                                <td class="user_info_td">
                                     <img src="img/img2.jpg" alt="">
+                                    <div>
+                                        کسری حبیب بیگی
+                                    </div>
+                                </td>
+                                <td class="message_info">
+                                    <div>سلام وقتتون به خیر باشه شما چرا انقدر خوبید ناموسا ؟؟ اخه من شمارو خیلی دوست دارم همین که طالبی بزرگ کنارتون هست عالیههههه خدایا مرسییی</div>
+                                    <p>
+                                        در پاسخ به : 
+                                        <a href="">
+                                            روزبه
+                                        </a>
+                                    </p>
                                 </td>
                                 <td>
-                                    کسری حبیب بیگی
-                                </td>
-                                <td class="special_QT_truncate">
-                                    <div>
-                                        سلام وقتتون به خیر باشه میخواستم بگم ریدید با این سایت تخمیتون خلاصه خیلی خیلی زیا دخسته نباشید لطف کنید دیگه سایت نزنید چون سنگین ترید دستتون درد نکنه
-                                    </div>
+                                        1399.10.30
                                 </td>
                                 <td class="QT_green_pill">
                                     <div>
-                                        منتشر شده
+                                        تایید شده
                                     </div>
                                 </td>
                                 <td class="table_option">
@@ -110,21 +119,22 @@
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="table_option">
                                             <a class="dropdown-item" href="#">
-                                                <i class="fal fa-pencil-alt"></i>
-                                                ویرایش پیام
+                                                <i class="fal fa-align-slash"></i>
+                                                غیر فعال کردن
                                             </a>
                                             <a class="dropdown-item" href="#">
-                                                <i class="fal fa-info-circle"></i>
-                                                مشاهده جزئیات
+                                                <i class="fal fa-asterisk"></i>
+                                                افزودن وی ای پی
                                             </a>
                                             <a class="dropdown-item" href="#">
-                                                <i class="fal fa-trash-alt"></i>
-                                                حذف پیام
+                                                <i class="fal fa-assistive-listening-systems"></i>
+                                                افزودن گوش و چشم
                                             </a>
                                         </div>
                                     </div>
                                 </td>
                             </tr>
+                            
                         </table>
                         {@eq key="{search}" value="true"}
                             {@page number="{total_pages}"  url="{backend_url}article/search/{search_value}" current="{page_number}"/}

@@ -17,16 +17,51 @@
     @include main_col;
 }
 
-.pagination{
+.pagination {
     padding: 0;
 }
 
-.special_QT_truncate{
+
+// comments custom table
+
+.user_info_td {
+    width: 250px;
+
+    img {
+        width: 45px;
+        height: 45px;
+        border-radius: 7px;
+        display: inline-block;
+    }
+
     div {
+        display: inline-block;
+        padding-right: 10px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
         margin: 0 auto;
+        max-width: 170px;
+        position: relative;
+        top: 4px;
+    }
+}
+
+.message_info{
+    text-align: right;
+    width: 420px;
+    div{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         max-width: 400px;
     }
+    p{
+        font-weight: bold;
+        margin-top: 5px;
+    }
+}
+
+.Q_table .QT_green_pill div{
+    width: 130px;
 }
