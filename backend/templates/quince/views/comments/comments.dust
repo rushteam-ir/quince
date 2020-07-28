@@ -6,6 +6,7 @@
 
 {<js}
     <script src="js/custom/checkbox.js"></script>
+    <script src="js/custom/modal.js"></script>
 {/js}
 
 {<body}
@@ -97,15 +98,15 @@
                                 <td class="message_info">
                                     <div>سلام وقتتون به خیر باشه شما چرا انقدر خوبید ناموسا ؟؟ اخه من شمارو خیلی دوست دارم همین که طالبی بزرگ کنارتون هست عالیههههه خدایا مرسییی</div>
                                     <p>
-                                        در پاسخ به : 
-                                        <a href="">
-                                            روزبه
-                                        </a>
-                                    </p>
-                                    <p class="mr-4">
                                         مقاله :
                                         <a href="" class="mr-1">
                                             سلام طالبی جونم
+                                        </a>
+                                    </p>
+                                    <p  class="mr-4">
+                                        در پاسخ به : 
+                                        <a href="">
+                                            روزبه
                                         </a>
                                     </p>
                                 </td>
@@ -132,10 +133,10 @@
                                                 <i class="fal fa-pencil-alt"></i>
                                                 ویرایش پیام
                                             </a>
-                                            <a class="dropdown-item" href="#">
+                                            <span class="dropdown-item edit_btn" href="#">
                                                 <i class="fal fa-eye"></i>
                                                 مشاهده جزئیات
-                                            </a>
+                                            </span>
                                             <a class="dropdown-item" href="#">
                                                 <i class="fal fa-trash-alt"></i>
                                                 حذف پیام
@@ -151,6 +152,48 @@
                         {:else}
                           {@page number="{total_pages}"  url="{backend_url}article/list" current="{page_number}"/}
                         {/eq}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal -->
+    <div class="modal_field">
+        <div class="container">
+            <div class="row align-items-center modal_row">
+                <div class="col-8 offset-2">
+                    <div class="info_field">
+                        <header class="header_field">
+                            <h1>جزئیات پیام</h1>
+                            <h2>جواب پیام های سایت</h2>
+                            <hr>
+                        </header>
+                        <form action="">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-8 text-right dir-rtl modal_info_col">
+                                            <p>کسری حبیب بیگی</p>
+                                            <p>نام مقاله : سلام طالبی جونم!</p>
+                                            <p>تاریخ : 1399.10.13</p>
+                                            <p>در پاسخ به : کسری حبیب </p>
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="user_img_modal" src="img/img2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <p class="modal_messages mt-4">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                                </p>
+                                <div class="form-group dir-rtl text-right">
+                                    <label for="article_describe">پاسخ به پیام</label>
+                                    <textarea class="form-control main_form_design" id="article_describe" rows="7" name="meta_describe_inp"></textarea>
+                                </div>
+                            </div>
+                            <div class="modal_btn_field mr-3">
+                                <button type="button" class="btn red_btn py-2 mt-3 mr-2 close_modal">لغو</button>
+                                <button type="submit" class="btn green_btn py-2 mt-3">ویرایش دسته</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

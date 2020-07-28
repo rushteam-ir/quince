@@ -8,6 +8,8 @@
 @import '../Partials/pagination';
 @import '../Partials/error';
 @import '../Partials/table_image';
+@import '../Partials/modal';
+@import '../Partials/btn';
 
 .main_body {
     @include main_field
@@ -47,20 +49,23 @@
     }
 }
 
-.message_info{
+.message_info {
     text-align: right;
     width: 420px;
-    div{
+
+    div {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
         max-width: 400px;
     }
-    p{
+
+    p {
         font-weight: bold;
         margin-top: 5px;
         display: inline-block;
-        a{
+
+        a {
             display: inline-block;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -72,6 +77,22 @@
     }
 }
 
-.Q_table .QT_green_pill div{
+.Q_table .QT_green_pill div {
     width: 130px;
+}
+
+.modal_info_col {
+    font-weight: bold;
+}
+
+.modal_messages {
+    text-align: justify;
+    direction: rtl;
+    line-height: 30px;
+    font-size: 0.9rem;
+}
+
+.user_img_modal{
+    width: 100%;
+    border-radius: 7px;
 }
