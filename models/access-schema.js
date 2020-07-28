@@ -48,7 +48,7 @@ access_schema.statics = {
 
     edit : async function(access_id, access_data){
 
-        let find_acc = await access_model.findById(access_id);
+        let find_acc = await access_model.findOne({title : access_data.title});
 
         if(!find_acc || find_acc._id == access_id){
 

@@ -23,6 +23,7 @@ router.get('/:search', async(req, res, next)=>{
                 page_limit : page_limit,
                 rows_begin_number : admins_list.rows_begin_number,
                 total_pages : admins_list.total_pages,
+                can_edit : can_edit,
                 search : true,
                 search_value : search_value
 

@@ -24,6 +24,7 @@ router.get('/:search', async(req, res, next)=>{
                 rows_begin_number : article_list.rows_begin_number,
                 total_pages : article_list.total_pages,
                 search : true,
+                can_edit : can_edit,
                 search_value : search_value
 
             };

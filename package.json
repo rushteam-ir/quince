@@ -18,8 +18,8 @@
     "express": "^4.17.1",
     "express-fileupload": "^1.1.6",
     "express-session": "^1.17.1",
-    "jalali-date": "^1.1.0",
-    "mongoose": "^5.9.19",
+    "jalali-date": "^1.1.1",
+    "mongoose": "^5.9.26",
     "nodemailer": "^6.4.10",
     "sha1": "^1.1.1",
     "svg-captcha": "^1.4.0"
