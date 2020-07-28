@@ -7,6 +7,7 @@
 {<js}
     <script src="js/custom/checkbox.js"></script>
     <script src="js/custom/modal.js"></script>
+    <script src="js/custom/modal2.js"></script>
 {/js}
 
 {<body}
@@ -129,10 +130,10 @@
                                                 <i class="fal fa-comment-alt-check"></i>
                                                 تایید پیام
                                             </a>
-                                            <a class="dropdown-item" href="#">
+                                            <span class="dropdown-item second_edit_btn" href="#">
                                                 <i class="fal fa-pencil-alt"></i>
                                                 ویرایش پیام
-                                            </a>
+                                            </span>
                                             <span class="dropdown-item edit_btn" href="#">
                                                 <i class="fal fa-eye"></i>
                                                 مشاهده جزئیات
@@ -191,7 +192,7 @@
                             </div>
                             <div class="modal_btn_field mr-3">
                                 <button type="button" class="btn red_btn py-2 mt-3 mr-2 close_modal">لغو</button>
-                                <button type="submit" class="btn green_btn py-2 mt-3">ویرایش دسته</button>
+                                <button type="submit" class="btn green_btn py-2 mt-3">ارسال پیام</button>
                             </div>
                         </form>
                     </div>
@@ -199,6 +200,33 @@
             </div>
         </div>
     </div>
+
+    <!-- modal 2 -->
+    
+    <div class="second_modal_field">
+        <div class="container">
+            <div class="row align-items-center modal_row">
+                <div class="col-6 offset-3">
+                    <div class="info_field">
+                        <header class="header_field">
+                            <h1>ویرایش پیام</h1>
+                            <h2>می توانید پیام را ویرایش کنید.</h2>
+                            <hr>
+                        </header>
+                        <div class="form-group dir-rtl text-right">
+                            <label for="article_describe"> ویرایش پیام</label>
+                            <textarea class="form-control main_form_design" id="article_describe" rows="7" name="meta_describe_inp"></textarea>
+                        </div>
+                        <div class="modal_btn_field mr-3">
+                            <button type="button" class="btn red_btn py-2 mt-3 mr-2 close_second_modal">لغو</button>
+                            <button type="submit" class="btn green_btn py-2 mt-3">ویرایش پیام</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </section>
 
 {/body}
