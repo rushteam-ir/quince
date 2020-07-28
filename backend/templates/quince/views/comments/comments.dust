@@ -161,7 +161,7 @@
     <div class="modal_field">
         <div class="container">
             <div class="row align-items-center modal_row">
-                <div class="col-8 offset-2">
+                <div class="col-6 offset-3">
                     <div class="info_field">
                         <header class="header_field">
                             <h1>جزئیات پیام</h1>
@@ -171,13 +171,13 @@
                         <form action="">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-8 text-right dir-rtl modal_info_col">
-                                            <p>کسری حبیب بیگی</p>
+                                    <div class="col-7 text-right dir-rtl modal_info_col">
+                                            <p class="mt-2">کسری حبیب بیگی</p>
                                             <p>نام مقاله : سلام طالبی جونم!</p>
                                             <p>تاریخ : 1399.10.13</p>
                                             <p>در پاسخ به : کسری حبیب </p>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-5">
                                         <img class="user_img_modal" src="img/img2.jpg" alt="">
                                     </div>
                                 </div>
