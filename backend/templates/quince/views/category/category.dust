@@ -84,80 +84,79 @@
                                         <th>تعداد زیر دسته</th>
                                         <th>تنظیمات</th>
                                     </tr>
-                                    {?category_list}
-                                        {#category_list}
-                                            <tr>
-                                                {@eq key="{g_admin_info._id}" value="{author._id}"}
+                                    {#category_list}
+                                        <tr>
+                                            {@eq key="{g_admin_info._id}" value="{author._id}"}
+                                                <td>
+                                                    <label class="checkbox_of_category">
+                                                        <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                                    </label>
+                                                </td>
+                                            {:else}
+                                                {@eq key="{can_edit}" value="true"}
                                                     <td>
                                                         <label class="checkbox_of_category">
                                                             <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
                                                         </label>
                                                     </td>
                                                 {:else}
-                                                    {@eq key="{can_edit}" value="true"}
-                                                        <td>
-                                                            <label class="checkbox_of_category">
-                                                                <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
-                                                            </label>
-                                                        </td>
-                                                    {:else}
-                                                        <td>
-
-                                                        </td>
-                                                    {/eq}
-                                                {/eq}
-                                                <td>{@math key="{rows_begin_number}" method="add" operand="{$idx}"/}</td>
-                                                <td class="QT_truncate">
-                                                    <div>
-                                                        {title}
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    {@eq key="{parent.title}" value="{null}"}
-                                                        دسته اصلی
-                                                    {:else}
-                                                        {parent.title}
-                                                    {/eq}
-                                                </td>
-                                                <td>
-                                                    <a href="{backend_url}groups/profile/{author.unique_id}">
-                                                        {@eq key="{author.author_type}" value="name"}
-                                                            {author.first_name} {author.last_name}
-                                                        {:else}
-                                                            {author.nick_name}
-                                                        {/eq}
-                                                    </a>
-                                                </td>
-                                                <td class="QT_green_pill">
-                                                    <div>
-                                                        {child_number}
-                                                    </div>
-                                                </td>
-                                                {@eq key="{g_admin_info._id}" value="{author._id}"}
                                                     <td>
-                                                        <button name="{._id}" class="btn blue_btn edit_btn"><i class="fal fa-pencil-alt"></i>
-                                                        </button>
-                                                        <button class="btn red_btn mr-2 delete_category" name="{.id}"><i class="fal fa-trash-alt"></i></button>
+
                                                     </td>
+                                                {/eq}
+                                            {/eq}
+                                            <td>{@math key="{rows_begin_number}" method="add" operand="{$idx}"/}</td>
+                                            <td class="QT_truncate">
+                                                <div>
+                                                    {title}
+                                                </div>
+                                            </td>
+                                            <td>
+                                                {@eq key="{parent.title}" value="{null}"}
+                                                    دسته اصلی
                                                 {:else}
-                                                    {@eq key="{can_edit}" value="true"}
+                                                    {parent.title}
+                                                {/eq}
+                                            </td>
+                                            <td>
+                                                <a href="{backend_url}groups/profile/{author.unique_id}">
+                                                    {@eq key="{author.author_type}" value="name"}
+                                                        {author.first_name} {author.last_name}
+                                                    {:else}
+                                                        {author.nick_name}
+                                                    {/eq}
+                                                </a>
+                                            </td>
+                                            <td class="QT_green_pill">
+                                                <div>
+                                                    {child_number}
+                                                </div>
+                                            </td>
+                                            {@eq key="{g_admin_info._id}" value="{author._id}"}
+                                                <td>
+                                                    <button name="{._id}" class="btn blue_btn edit_btn"><i class="fal fa-pencil-alt"></i>
+                                                    </button>
+                                                    <button class="btn red_btn mr-2 delete_category" name="{.id}"><i class="fal fa-trash-alt"></i></button>
+                                                </td>
+                                            {:else}
+                                                {@eq key="{can_edit}" value="true"}
                                                         <td>
                                                             <button name="{._id}" class="btn blue_btn edit_btn"><i class="fal fa-pencil-alt"></i>
                                                             </button>
                                                             <button class="btn red_btn mr-2 delete_category" name="{.id}"><i class="fal fa-trash-alt"></i></button>
                                                         </td>
-                                                    {:else}
-                                                        <td>
-                                                            دسترسی ندارید
-                                                        </td>
-                                                    {/eq}
+                                                {:else}
+                                                    <td>
+                                                        دسترسی ندارید
+                                                    </td>
                                                 {/eq}
-                                            </tr>
-                                        {/category_list}
-                                    {:else}
-                                        NOT FOUND
+                                            {/eq}
+                                        </tr>
                                     {/category_list}
                                 </table>
+                                {?category_list}{:else}
+                                    تقصیر ما نیس به خدا خودت چیزی نساختی ناموسا
+                                {/category_list}
                                 {@eq key="{search}" value="true"}
                                     {@page number="{total_pages}"  url="{backend_url}category/search/{search_value}" current="{page_number}"/}
                                 {:else}
