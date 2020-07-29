@@ -60,6 +60,9 @@
                                         <button class="btn table_delete_btn">
                                             <i class="fal fa-trash-alt"></i>
                                         </button>
+                                        <button class="btn table_accept_btn">
+                                            <i class="fal fa-thumbs-up"></i>
+                                        </button>
                                     </div>
                                 </div>
                             </div>

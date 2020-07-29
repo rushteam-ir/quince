@@ -95,7 +95,41 @@
     font-size: 0.9rem;
 }
 
-.user_img_modal{
+.user_img_modal {
     width: 100%;
     border-radius: 7px;
+}
+
+.table_accept_btn {
+    width: 35px;
+    height: 35px;
+    background-color: $l_blue;
+    border-radius: 4px;
+    color: $d_blue;
+    position: absolute;
+    left: 43px;
+    top: 12px;
+
+    i {
+        position: relative;
+        left: 3.8px;
+        top: -0.2px;
+    }
+    &:hover{
+        background-color: $d_blue;
+        color: white;
+    }
+}
+
+.header_field .table_header .tr_select {
+    position: absolute;
+    top: 12px;
+    left: 86px;
+}
+
+.header_field .t_search {
+    position: absolute;
+    width: 270px;
+    left: 260px;
+    top: 13px;
 }
