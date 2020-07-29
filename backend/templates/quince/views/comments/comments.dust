@@ -61,7 +61,7 @@
                                             <i class="fal fa-trash-alt"></i>
                                         </button>
                                         <button class="btn table_accept_btn">
-                                            <i class="fal fa-thumbs-up"></i>
+                                            <i class="fal fa-comment-alt-check"></i>
                                         </button>
                                     </div>
                                 </div>
