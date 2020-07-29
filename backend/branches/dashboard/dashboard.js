@@ -3,7 +3,8 @@ const router = express.Router();
 router.get('/', async(req, res, next)=>{
 
     try{
-        
+
+        a
         res.render('dashboard/dashboard');
 
     }
