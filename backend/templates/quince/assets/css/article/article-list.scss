@@ -7,6 +7,7 @@
 @import '../Partials/table';
 @import '../Partials/pagination';
 @import '../Partials/error';
+@import '../Partials/table-error';
 
 .main_body {
     @include main_field
