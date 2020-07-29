@@ -1,40 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+{>"layouts/dashboard-layout"/}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/errors/404.css">
-    <title>Document</title>
-</head>
+{<css} 
+    <link rel="stylesheet" href="css/errors/error.css">
+{/css}
 
-<body class="bg-purple">
-
-    <div class="stars">
-        <div class="central-body">
-            <img class="image-404" src="img/error-img/404.svg" width="300px">
-            <a href="" class="btn-go-home">بازگشت به داشبورد</a>
-        </div>
-        <div class="objects">
-            <img class="object_rocket" src="img/error-img/rocket.svg" width="40px">
-            <div class="earth-moon">
-                <img class="object_earth" src="img/error-img/earth.svg" width="100px">
-                <img class="object_moon" src="img/error-img/moon.svg" width="80px">
-            </div>
-            <div class="box_astronaut">
-                <img class="object_astronaut" src="img/error-img/astronaut.svg" width="140px">
+{<body} 
+<section>
+    <!-- error -->
+    <section>
+        <div class="container-fluid p-0">
+            <div class="row align-items-center heaight_row_custom">
+                <div class="ban_slot_field w-100">
+                    <i class="fal fa-exclamation-circle"></i>
+                    <p>صفحه مورد نظر یافت نشد .</p>
+                </div>
             </div>
         </div>
-        <div class="glowing_stars">
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-        </div>
-
-    </div>
-
-</body>
-
-</html>
+    </section>
+{/body}

@@ -1,1 +1,20 @@
-{error}
+{>"layouts/dashboard-layout"/}
+
+{<css} 
+    <link rel="stylesheet" href="css/errors/403.css">
+{/css}
+
+{<body} 
+<section>
+    <!-- error -->
+    <section>
+        <div class="container-fluid p-0">
+            <div class="row align-items-center heaight_row_custom">
+                <div class="ban_slot_field w-100">
+                    <i class="fal fa-skull"></i>
+                    <p>{error}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+{/body}
