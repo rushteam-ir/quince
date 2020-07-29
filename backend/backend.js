@@ -4,11 +4,13 @@ const check_login = require('./middlewares/check-login');
 const check_message = require('./middlewares/check-message');
 const global_options = require('./middlewares/global-options');
 const check_access = require('./middlewares/check-access');
+const cache_handler = require('./middlewares/cache-handler');
 
 backend.use(check_login);
 backend.use(global_options);
 backend.use(check_message);
 backend.use(check_access);
+backend.use(cache_handler);
 
 const dashboard = require('./branches/dashboard/dashboard');
 const login = require('./branches/login/login');
