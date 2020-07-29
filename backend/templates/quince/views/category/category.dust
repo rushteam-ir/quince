@@ -155,7 +155,9 @@
                                     {/category_list}
                                 </table>
                                 {?category_list}{:else}
-                                    تقصیر ما نیس به خدا خودت چیزی نساختی ناموسا
+                                    <div class="table_search_error">
+                                        <p>موردی جهت نمایش وجود ندارد !</p>
+                                    </div>
                                 {/category_list}
                                 {@eq key="{search}" value="true"}
                                     {@page number="{total_pages}"  url="{backend_url}category/search/{search_value}" current="{page_number}"/}

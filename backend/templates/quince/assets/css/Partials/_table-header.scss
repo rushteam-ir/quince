@@ -77,11 +77,13 @@
 
         .fa-times {
             position: absolute;
-            top: 9.6px;
-            left: 9px;
+            top: 2.6px;
+            left: 1px;
             cursor: pointer;
             color: #cccccc;
             z-index: 10;
+            background-color: #F3F6F9;
+            padding: 7px 10px 7px 10px;
 
             &:hover {
                 color: $d_red;
