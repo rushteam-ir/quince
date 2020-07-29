@@ -1,10 +1,17 @@
 let comment_schema = new mongoose.Schema({
 
     text: String,
+    status : Boolean,
+    date : String,
+    groupModel : {
+        type : String,
+        required : true,
+        enum : ['admin', 'user']
+    },
     author : {
         type : 'objectId',
         required : true,
-        refPath : 'authorModel'
+        refPath : 'groupModel'
     },
     response: {
         type : 'objectId',
@@ -13,24 +20,22 @@ let comment_schema = new mongoose.Schema({
     reply : {
         type : 'objectId',
         required : true,
-        refPath : 'replyModel'
+        refPath : 'groupModel'
     },
-    authorModel : {
-        type : String,
-        required : true,
-        enum : ['admin', 'user']
-    },
-    replyModel : {
-        type : String,
-        required : true,
-        enum : ['admin', 'user']
-    }
 
 });
 
 comment_schema.statics = {
 
+    add : async function(comment_data){
 
+        comment_data.date = getCurrentDate();
+        commen_date.status = false;
+
+        let new_comment = new comment_model(comment_data);
+        return await new_comment.save();
+
+    }
 
 };
 
