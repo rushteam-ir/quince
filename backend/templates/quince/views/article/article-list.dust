@@ -223,6 +223,11 @@
                                     </tr>
                                 {/article_list}
                             </table>
+                            {?article_list}{:else}
+                                <div class="table_search_error">
+                                    <p>موردی جهت نمایش وجود ندارد !</p>
+                                </div>
+                            {/article_list}
                             {@eq key="{search}" value="true"}
                                 {@page number="{total_pages}"  url="{backend_url}article/search/{search_value}" current="{page_number}"/}
                             {:else}

@@ -133,6 +133,11 @@
                                 </tr>
                                 {/access_list}
                             </table>
+                            {?access_list}{:else}
+                                <div class="table_search_error">
+                                    <p>موردی جهت نمایش وجود ندارد !</p>
+                                </div>
+                            {/access_list}
                             {@eq key="{search}" value="true"}
                                 {@page number="{total_pages}"  url="{backend_url}groups/access/search/{search_value}" current="{page_number}"/}
                             {:else}

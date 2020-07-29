@@ -146,8 +146,12 @@
                                     </div>
                                 </td>
                             </tr>
-                            
                         </table>
+                        {?comment_list}{:else}
+                            <div class="table_search_error">
+                                <p>موردی جهت نمایش وجود ندارد !</p>
+                            </div>
+                        {/comment_list}
                         {@eq key="{search}" value="true"}
                             {@page number="{total_pages}"  url="{backend_url}article/search/{search_value}" current="{page_number}"/}
                         {:else}

@@ -173,6 +173,11 @@
                                 {/files_list}
                                 </tbody>
                             </table>
+                            {?files_list}{:else}
+                                <div class="table_search_error">
+                                    <p>موردی جهت نمایش وجود ندارد !</p>
+                                </div>
+                            {/files_list}
                             <nav class="Page_navigation" aria-label="Page navigation example">
                                 <ul class="pagination">
                                   <li class="page-item">

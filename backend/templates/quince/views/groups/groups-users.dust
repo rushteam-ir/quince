@@ -131,6 +131,11 @@
                                     </tr>
                                 {/users_list}
                             </table>
+                            {?users_list}{:else}
+                                <div class="table_search_error">
+                                    <p>موردی جهت نمایش وجود ندارد !</p>
+                                </div>
+                            {/users_list}
                             {@eq key="{search}" value="true"}
                                 {@page number="{total_pages}"  url="{backend_url}groups/users/search/{search_value}" current="{page_number}"/}
                             {:else}
