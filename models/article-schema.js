@@ -196,6 +196,12 @@ article_schema.statics = {
 
     },
 
+    getByUrl : async function(url){
+
+        return await article_model.findOne({url : url}).populate('author').populate('category_parent').populate('category_child').exec();
+
+    }
+
 }
 
 module.exports = article_model = mongoose.model('article', article_schema);

@@ -52,7 +52,7 @@ router.post('/', async(req, res, next)=>{
            category_child : (child_inp == '0') ? null : child_inp,
            describe : describe_inp,
            meta_describe : meta_describe_inp,
-           url : `${config.frontend_url}articles/${article_url}`,
+           url : article_url,
            internal_files : req.session.temp_files
 
        }

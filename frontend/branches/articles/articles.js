@@ -20,7 +20,24 @@ router.get('/:name', async(req,res)=>{
     try{
 
         let article_name = req.params.name;
-        res.render('articles/articles-show');
+
+        let article_info = await article_model.getByUrl(article_name);
+
+
+        let data = {
+
+            article_info : article_info,
+            comments_list : await comment_model.getByArticleId(article_info._id),
+
+        }
+
+        if(!data.article_info){
+
+            return res.status(404).send('page not found')
+
+        }
+
+        res.render('articles/articles-show', data);
 
     }
     catch (error) {
@@ -30,5 +47,9 @@ router.get('/:name', async(req,res)=>{
     }
 
 });
+
+const comment = require('./comment');
+
+router.use('/comment', comment);
 
 module.exports = router;

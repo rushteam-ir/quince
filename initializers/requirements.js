@@ -12,6 +12,9 @@ JalaliDate = require('jalali-date');
 sha1 = require('sha1');
 compression = require('compression');
 crypto = require('crypto');
+html_entities = require('html-entities').AllHtmlEntities;
+
+entities = new html_entities();
 
 require('./config');
 require('./library');
@@ -29,3 +32,4 @@ discount_model = require('../models/discount-schema');
 article_model = require('../models/article-schema');
 report_model = require('../models/report-schema');
 access_model = require('../models/access-schema');
+comment_model = require('../models/comment-schema');

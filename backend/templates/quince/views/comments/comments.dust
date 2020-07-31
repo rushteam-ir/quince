@@ -83,82 +83,100 @@
                                 <th>وضیعت</th>
                                 <th>تنظیمات</th>
                             </tr>
-                            <tr>
-                                <td>
-                                    <label class="checkbox_of_category">
-                                        <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox"
-                                            value="{._id}">
-                                    </label>
-                                </td>
-                                <td>
-                                    1
-                                </td>
-                                <td class="user_info_td">
-                                    <img src="img/img2.jpg" alt="">
-                                    <div>
-                                        کسری حبیب بیگی
-                                    </div>
-                                </td>
-                                <td class="message_info">
-                                    <div>سلام وقتتون به خیر باشه شما چرا انقدر خوبید ناموسا ؟؟ اخه من شمارو خیلی دوست دارم همین که طالبی بزرگ کنارتون هست عالیههههه خدایا مرسییی</div>
-                                    <p>
-                                        مقاله :
-                                        <a href="" class="mr-1">
-                                            سلام طالبی جونم
-                                        </a>
-                                    </p>
-                                    <p  class="mr-4">
-                                        در پاسخ به : 
-                                        <a href="">
-                                            روزبه
-                                        </a>
-                                    </p>
-                                </td>
-                                <td>
-                                        1399.10.30
-                                </td>
-                                <td class="QT_green_pill">
-                                    <div>
-                                        تایید شده
-                                    </div>
-                                </td>
-                                <td class="table_option">
-                                    <div class="dropdown">
-                                        <button class="btn  dropdown-toggle" type="button" id="table_option" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="table_option">
-                                            <a class="dropdown-item" href="#">
-                                                <i class="fal fa-comment-alt-check"></i>
-                                                تایید پیام
+                            {#comments_list}
+                                <tr>
+                                    <td>
+                                        <label class="checkbox_of_category">
+                                            <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox"
+                                                   value="{._id}">
+                                        </label>
+                                    </td>
+                                    <td>{@math key="{rows_begin_number}" method="add" operand="{$idx}"/}</td>
+                                    <td class="user_info_td">
+                                        {@eq key="{author}" value="{null}"}
+                                            <img src="img/default-profile-picture.png" alt="">
+                                            <div>
+                                                {name}
+                                            </div>
+                                        {:else}
+                                            <img src="img/img2.jpg" alt="">
+                                            <div>
+                                                {name}
+                                            </div>
+                                        {/eq}
+                                    </td>
+                                    <td class="message_info">
+                                        <div>{text}</div>
+                                        <p>
+                                            مقاله :
+                                            <a href="{frontend_url}articles/{response.url}" target="_blank" class="mr-1">
+                                                {response.title}
                                             </a>
-                                            <span class="dropdown-item second_edit_btn" href="#">
+                                        </p>
+                                        {@eq key="{reply}" value="{null}"}
+                                        {:else}
+                                            <p  class="mr-4">
+                                                در پاسخ به :
+                                                <a href="">
+                                                    روزبه
+                                                </a>
+                                            </p>
+                                        {/eq}
+                                    </td>
+                                    <td>
+                                        {date}
+                                    </td>
+                                    {@eq key="{status}" value="true"}
+                                        <td class="QT_green_pill">
+                                            <div>
+                                                تایید شده
+                                            </div>
+                                        </td>
+                                    {:else}
+                                        <td class="QT_red_pill">
+                                            <div>
+                                                تایید نشده
+                                            </div>
+                                        </td>
+                                    {/eq}
+                                    <td class="table_option">
+                                        <div class="dropdown">
+                                            <button class="btn  dropdown-toggle" type="button" id="table_option" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="table_option">
+                                                <a class="dropdown-item" href="#">
+                                                    <i class="fal fa-comment-alt-check"></i>
+                                                    تایید پیام
+                                                </a>
+                                                <span class="dropdown-item second_edit_btn" href="#">
                                                 <i class="fal fa-pencil-alt"></i>
                                                 ویرایش پیام
                                             </span>
-                                            <span class="dropdown-item edit_btn" href="#">
+                                                <span class="dropdown-item edit_btn" href="#">
                                                 <i class="fal fa-eye"></i>
                                                 مشاهده جزئیات
                                             </span>
-                                            <a class="dropdown-item" href="#">
-                                                <i class="fal fa-trash-alt"></i>
-                                                حذف پیام
-                                            </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <i class="fal fa-trash-alt"></i>
+                                                    حذف پیام
+                                                </a>
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
-                            </tr>
+                                    </td>
+                                </tr>
+                            {/comments_list}
                         </table>
-                        {?comment_list}{:else}
+                        {?comments_list}{:else}
                             <div class="table_search_error">
                                 <p>موردی جهت نمایش وجود ندارد !</p>
                             </div>
-                        {/comment_list}
+                        {/comments_list}
                         {@eq key="{search}" value="true"}
-                            {@page number="{total_pages}"  url="{backend_url}article/search/{search_value}" current="{page_number}"/}
+                            {@page number="{total_pages}"  url="{backend_url}comments/search/{search_value}" current="{page_number}"/}
                         {:else}
-                          {@page number="{total_pages}"  url="{backend_url}article/list" current="{page_number}"/}
+                          {@page number="{total_pages}"  url="{backend_url}comments" current="{page_number}"/}
                         {/eq}
                     </div>
                 </div>

@@ -29,6 +29,7 @@ backend_access = {
 }
 
 backend.locals.backend_url = config.backend_url;
+backend.locals.frontend_url = config.frontend_url;
 backend.locals.debug_mode = config.debug_mode;
 backend.locals.captcha_url = config.captcha_url;
 backend.locals.messages_status = false;

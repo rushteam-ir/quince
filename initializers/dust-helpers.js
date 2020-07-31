@@ -19,6 +19,18 @@ module.exports = dust_helpers = {
 
             },
 
+            dust.helpers.renderHtml = function (chunk, context, bodies, params) {
+
+                let text = context.resolve(params.text);
+                let text_decode = entities.decode(text);
+
+                chunk.write(text_decode);
+                chunk.render(bodies.block, context);
+
+                return chunk;
+
+            }
+
             dust.helpers.page = function (chunk, context, bodies, params) {
 
                 let pages_number = parseInt(context.resolve(params.number));

@@ -14,7 +14,7 @@ module.exports = config = {
     captcha_url : `http://${address}:${app_port}/captcha`,
     app_dir : require.main.path + '/',
     backend_tmp : 'quince',
-    frontend_tmp : 'rush team',
+    frontend_tmp : 'fashion',
     session_secret_key : 'rushteamquince',
     session_name : 'quince',
     debug_mode : true,

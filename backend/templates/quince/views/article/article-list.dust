@@ -105,7 +105,7 @@
                                         <td>{@math key="{rows_begin_number}" method="add" operand="{$idx}"/}</td>
                                         <td class="QT_truncate">
                                             <div>
-                                                <a href="{url}" target="_blank">
+                                                <a href="{frontend_url}articles/{url}" target="_blank">
                                                     {title}
                                                 </a>
                                             </div>
