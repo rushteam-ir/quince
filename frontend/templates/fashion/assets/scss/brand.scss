@@ -488,12 +488,14 @@ body {
 
 .comment_info_field {
   position: relative;
-  .name{
+
+  .name {
     color: #CAA661;
     font-size: 1.7rem;
     margin: 0;
   }
-  .date{
+
+  .date {
     color: #adadad;
     font-size: 0.9rem;
     margin: 0;
@@ -512,14 +514,63 @@ body {
 }
 
 .reply_to {
-  span{
+  span {
     color: #000000 !important;
   }
+
   color: #bebebe !important;
   font-size: 0.9rem;
   margin: 0;
 }
 
+.modal_of_reply {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #00000096;
+  height: 100vh;
+  width: 100%;
+  display: none;
+
+  .row_custom {
+    height: 100vh;
+  }
+
+  .modal_field_of_comment {
+    width: 100%;
+    border-radius: 7px;
+    background-color: white;
+    z-index: 999999999;
+    padding: 50px;
+  }
+
+  p {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 30px;
+  }
+
+  button {
+    background-color: #CAA661;
+    color: white;
+    height: 45px;
+    width: 100%;
+    margin-top: 40px;
+
+    &:hover {
+      background-color: #000000;
+      color: white;
+    }
+  }
+
+  i {
+    position: absolute;
+    top: 40px;
+    right: 59px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
 
 
 
