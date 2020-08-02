@@ -5,6 +5,7 @@
 {/css}
 
 {<js}
+    <script src="js/comments/comments.js"></script>
     <script src="js/custom/checkbox.js"></script>
     <script src="js/custom/modal.js"></script>
     <script src="js/custom/modal2.js"></script>
@@ -113,15 +114,15 @@
                                                 {response.title}
                                             </a>
                                         </p>
-                                        {@eq key="{reply}" value="{null}"}
+                                        {@eq key="{reply_to}" value="{null}"}
                                         {:else}
                                             <p  class="mr-4">
                                                 در پاسخ به :
-                                                {@eq key="{reply.author}" value="{null}"}
-                                                    {reply.name}
+                                                {@eq key="{reply_to.author}" value="{null}"}
+                                                    {reply_to.name}
                                                 {:else}
-                                                    <a href="{backend_url}groups/profile/{reply.author.unique_id}">
-                                                        {reply.author.first_name}
+                                                    <a href="{backend_url}groups/profile/{reply_to.author.unique_id}">
+                                                        {reply_to.author.first_name}
                                                     </a>
                                                 {/eq}
                                             </p>
@@ -162,10 +163,10 @@
                                                 <i class="fal fa-eye"></i>
                                                 مشاهده جزئیات
                                             </span>
-                                                <a class="dropdown-item" href="#">
+                                                <button class="dropdown-item comment_delete" name="{._id}">
                                                     <i class="fal fa-trash-alt"></i>
                                                     حذف پیام
-                                                </a>
+                                                </button>
                                             </div>
                                         </div>
                                     </td>

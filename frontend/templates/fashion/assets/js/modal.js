@@ -26,7 +26,9 @@ $('.reply_btn').click(function(){
     $('.modal_of_reply').fadeIn();
 
     let author = $(this).attr('name');
+    let root = $(this).attr('value');
     $('.reply_author').attr('value', author)
+    $('.reply_root').attr('value', root)
 
     $('.close_comment_modal').click(function(){
 

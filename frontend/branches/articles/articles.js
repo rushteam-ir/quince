@@ -30,15 +30,15 @@ router.get('/:name', async(req,res)=>{
         }
 
         req.session.article_id = article_info._id
-        let comments_result = await comment_model.getByArticleId(article_info._id);
 
         let data = {
 
             article_info : article_info,
-            comments_list : comments_result.comments,
-            replies_list : comments_result.replies,
+            comments_list : await comment_model.getByArticleId(article_info._id),
 
         }
+
+        log(data.comments_list)
 
         res.render('articles/articles-show', data);
 

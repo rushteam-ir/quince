@@ -30,12 +30,12 @@ router.post('/', async(req,res)=>{
 
         if(result){
 
-            return res.redirect(`${back_url}/?msg=success`)
+            return res.redirect(`${back_url}?msg=success`)
 
         }
         else{
 
-            return res.redirect(`${back_url}/?msg=error`)
+            return res.redirect(`${back_url}?msg=error`)
 
         }
 
