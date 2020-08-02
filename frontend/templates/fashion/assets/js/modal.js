@@ -22,8 +22,16 @@ $('#search_icon').click(function () {
 // comment modal
 
 $('.reply_btn').click(function(){
+
     $('.modal_of_reply').fadeIn();
+
+    let author = $(this).attr('name');
+    $('.reply_author').attr('value', author)
+
     $('.close_comment_modal').click(function(){
-        $('.modal_of_reply').fadeOut(); 
+
+        $('.modal_of_reply').fadeOut();
+
     })
+
 })

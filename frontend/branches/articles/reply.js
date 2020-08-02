@@ -4,7 +4,8 @@ router.post('/', async(req,res)=>{
 
     try{
 
-        let {name_inp, email_inp, text_inp} = req.body;
+        let {name_inp, email_inp, text_inp, author_inp} = req.body;
+
         let back_url = req.header('Referer') || '/';
 
         let validation_result = new validation([
@@ -24,6 +25,7 @@ router.post('/', async(req,res)=>{
             email : email_inp,
             name : name_inp,
             response : req.session.article_id,
+            reply : author_inp,
         }
 
         let result = await comment_model.add(comment_data);

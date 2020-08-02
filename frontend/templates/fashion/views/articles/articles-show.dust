@@ -143,45 +143,49 @@
                                 </p>
                                 <p class="date">{date} | {time}</p>
                                 <p class="mt-3">{text}</p>
-                                <button class="btn reply_btn">reply</button>
+                                <button class="btn reply_btn" name="{._id}">reply</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {@eq key="{reply}" value="{null}"}
+        {/comments_list}
+        {#replies_list}
+            <div class="reply_comment_preview mt-5">
+                <div class="container_fluid">
+                    <div class="row">
+                        <div class="col-2">
+                            {@eq key="{reply.author}" value="{null}"}
+                                <img class="comment_img" src="img/default-profile-picture.png" alt="">
+                            {:else}
+                                <img class="comment_img" src="img/default-profile-picture.png" alt="">
+                            {/eq}
+                        </div>
+                        <div class="col-10">
+                            <div class="comment_info_field">
+                                <p class="name">
+                                    {@eq key="{reply.author}" value="{null}"}
+                                        {name}
+                                    {:else}
 
-            {:else}
-                <div class="reply_comment_preview mt-5">
-                    <div class="container_fluid">
-                        <div class="row">
-                            <div class="col-2">
-                                {@eq key="{reply.author}" value="{null}"}
-                                    <img class="comment_img" src="img/default-profile-picture.png" alt="">
-                                {:else}
-                                    <img class="comment_img" src="img/default-profile-picture.png" alt="">
-                                {/eq}
-                            </div>
-                            <div class="col-10">
-                                <div class="comment_info_field">
-                                    <p class="name">
-                                        {@eq key="{reply.author}" value="{null}"}
-                                            {name}
-                                        {:else}
-
-                                        {/eq}
-                                    </p>
-                                    <p class="date">{date} | {time}</p>
-                                    <p class="reply_to "><span>reply to :</span> rozbeh</p>
-                                    <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut reiciendis, totam expedita amet dolorem iste accusantium. Nisi explicabo laudantium eum nesciunt iste earum! Vitae minima et odit necessitatibus dolore placeat.</p>
-                                    <button class="btn reply_btn">reply</button>
-                                </div>
+                                    {/eq}
+                                </p>
+                                <p class="date">{date} | {time}</p>
+                                <p class="reply_to "><span>reply to : </span>
+                                    {@eq key="{reply.author}" value="{null}"}
+                                        {reply.name}
+                                    {:else}
+                                        {reply.author.first_name}
+                                    {/eq}
+                                </p>
+                                <p class="mt-3">{text}</p>
+                                <button class="btn reply_btn" name="{._id}">reply</button>
                             </div>
                         </div>
                     </div>
                 </div>
-            {/eq}
-        {/comments_list}
+            </div>
+        {/replies_list}
     </div>
 </section>
 <footer class="footer_field py-5">
@@ -236,16 +240,21 @@
                 <div class="modal_field_of_comment">
                     <p>reply comment</p>
                     <i class="fal fa-times close_comment_modal"></i>
-                    <form method="post" autocomplete="off" action="{frontend_url}articles/comment">
+                    <form method="post" autocomplete="off" action="{frontend_url}articles/reply">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Name</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name_inp">
+                        </div>
                         <div class="form-group">
                           <label for="exampleInputEmail1">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email_inp">
                           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">your comment</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="text_inp"></textarea>
                         </div>
+                        <input type="hidden" class="reply_author" name="author_inp">
                         <button type="submit" class="btn">Submit</button>
                     </form>
                 </div>

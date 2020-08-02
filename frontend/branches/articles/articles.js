@@ -23,17 +23,20 @@ router.get('/:name', async(req,res)=>{
 
         let article_info = await article_model.getByUrl(article_name);
 
+        if(!article_info){
+
+            return res.status(404).send('page not found')
+
+        }
+
+        req.session.article_id = article_info._id
+        let comments_result = await comment_model.getByArticleId(article_info._id);
 
         let data = {
 
             article_info : article_info,
-            comments_list : await comment_model.getByArticleId(article_info._id),
-
-        }
-
-        if(!data.article_info){
-
-            return res.status(404).send('page not found')
+            comments_list : comments_result.comments,
+            replies_list : comments_result.replies,
 
         }
 
@@ -49,7 +52,9 @@ router.get('/:name', async(req,res)=>{
 });
 
 const comment = require('./comment');
+const reply = require('./reply');
 
 router.use('/comment', comment);
+router.use('/reply', reply);
 
 module.exports = router;

@@ -20,7 +20,7 @@ let comment_schema = new mongoose.Schema({
     },
     reply : {
         type : 'objectId',
-        refPath : 'comment'
+        ref : 'comment'
     },
 
 });
@@ -53,7 +53,12 @@ comment_schema.statics = {
 
     getByArticleId : async function(article_id){
 
-        return await comment_model.find({response : article_id, reply : {$exists : false}}).populate('reply');
+        let result = {};
+
+        result.comments = await comment_model.find({response : article_id, reply : {$exists : false}}).populate('reply').exec();
+        result.replies = await comment_model.find({response : article_id, reply : {$exists : true}}).populate('reply').exec();
+
+        return result;
 
     },
 

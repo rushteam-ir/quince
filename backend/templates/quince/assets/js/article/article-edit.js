@@ -21,7 +21,7 @@ $('.image_del').on('click', function (e) {
                 confirmButtonText: 'تایید',
             }).then((result) => {
                 if (result.value) {
-                    redirect(`${backend_url}article/api/delete-main-image-article/?id=${image_id}`);
+                    redirect(`${backend_url}article/api/delete-main-image/?id=${image_id}`);
                 }
             })
         }
