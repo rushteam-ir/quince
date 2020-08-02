@@ -143,49 +143,49 @@
                                 </p>
                                 <p class="date">{date} | {time}</p>
                                 <p class="mt-3">{text}</p>
-                                <button class="btn reply_btn" name="{._id}">reply</button>
+                                <button class="btn reply_btn" value="{root_id}" name="{._id}">reply</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        {/comments_list}
-        {#replies_list}
-            <div class="reply_comment_preview mt-5">
-                <div class="container_fluid">
-                    <div class="row">
-                        <div class="col-2">
-                            {@eq key="{reply.author}" value="{null}"}
-                                <img class="comment_img" src="img/default-profile-picture.png" alt="">
-                            {:else}
-                                <img class="comment_img" src="img/default-profile-picture.png" alt="">
-                            {/eq}
-                        </div>
-                        <div class="col-10">
-                            <div class="comment_info_field">
-                                <p class="name">
-                                    {@eq key="{reply.author}" value="{null}"}
-                                        {name}
-                                    {:else}
+            {#replies}
+                <div class="reply_comment_preview mt-5">
+                    <div class="container_fluid">
+                        <div class="row">
+                            <div class="col-2">
+                                {@eq key="{.author}" value="{null}"}
+                                    <img class="comment_img" src="img/default-profile-picture.png" alt="">
+                                {:else}
+                                    <img class="comment_img" src="img/default-profile-picture.png" alt="">
+                                {/eq}
+                            </div>
+                            <div class="col-10">
+                                <div class="comment_info_field">
+                                    <p class="name">
+                                        {@eq key="{.author}" value="{null}"}
+                                            {.name}
+                                        {:else}
 
-                                    {/eq}
-                                </p>
-                                <p class="date">{date} | {time}</p>
-                                <p class="reply_to "><span>reply to : </span>
-                                    {@eq key="{reply.author}" value="{null}"}
-                                        {reply.name}
-                                    {:else}
-                                        {reply.author.first_name}
-                                    {/eq}
-                                </p>
-                                <p class="mt-3">{text}</p>
-                                <button class="btn reply_btn" name="{._id}">reply</button>
+                                        {/eq}
+                                    </p>
+                                    <p class="date">{.date} | {.time}</p>
+                                    <p class="reply_to "><span>reply to : </span>
+                                        {@eq key="{.reply_to.author}" value="{null}"}
+                                            {.reply_to.name}
+                                        {:else}
+                                            {.reply_to.author.first_name}
+                                        {/eq}
+                                    </p>
+                                    <p class="mt-3">{.text}</p>
+                                    <button class="btn reply_btn" value="{root_id}" name="{._id}">reply</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        {/replies_list}
+            {/replies}
+        {/comments_list}
     </div>
 </section>
 <footer class="footer_field py-5">
@@ -255,6 +255,7 @@
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="text_inp"></textarea>
                         </div>
                         <input type="hidden" class="reply_author" name="author_inp">
+                        <input type="hidden" class="reply_root" name="root_inp">
                         <button type="submit" class="btn">Submit</button>
                     </form>
                 </div>

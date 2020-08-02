@@ -39,4 +39,10 @@ router.get('/', async(req, res, next)=>{
 
 });
 
+const delete_comment = require('./api/delete-comment');
+const delete_select = require('./api/delete-select');
+
+router.use('/api/delete-comment', delete_comment)
+router.use('/api/delete-select', delete_select)
+
 module.exports = router;
