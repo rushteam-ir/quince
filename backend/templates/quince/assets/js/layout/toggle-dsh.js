@@ -5,7 +5,8 @@ $(document).ready(function () {
         dashboard_collaps_jq.removeClass('collaps_on');
         dashboard.removeClass('open_dsh');
         dashboard.addClass('close_dsh');
-        main_cms_field.css('width', '96.2%');
+        main_cms_field.addClass('MCF_larg');
+        dashboard_logo.fadeOut();
 
         for (let i = 0; i < dashboard_collaps.length; i++) {
 
@@ -15,6 +16,7 @@ $(document).ready(function () {
         }
 
         hover_field.css('display', 'block');
+        sessionStorage.oc = 1;
 
     });
 
@@ -22,8 +24,10 @@ $(document).ready(function () {
 
         dashboard.removeClass('close_dsh');
         dashboard.addClass('open_dsh');
-        main_cms_field.css('width', '85%');
+        main_cms_field.removeClass('MCF_larg');
         hover_field.css('display', 'none');
+        dashboard_logo.fadeIn();
+        sessionStorage.oc = 2;
 
     });
 

@@ -52,8 +52,9 @@
 
     }
 
-    &_logo{
+    &_logo {
         width: 60%;
+        @include transition(linear, 0.5s);
     }
 
     &_body {
@@ -166,7 +167,7 @@
                 &:nth-child(3) {
                     position: absolute;
                     left: 20px;
-                    top: 16px;
+                    top: 20px;
                     font-size: 0.8rem;
                 }
             }
@@ -261,7 +262,7 @@
 // close and open classes
 .close_dsh {
     width: 3.8%;
-    
+
     a :nth-child(2) {
         font-size: 0rem;
         color: transparent;
@@ -344,6 +345,19 @@
 
 }
 
+// add classes
+
+.MCF_larg{
+    width: 96.2%;
+}
+
+
+
+
+
+
+
+
 // navbar
 
 .navbar {
@@ -376,18 +390,19 @@
             font-size: 1.15rem;
         }
 
-        .hi_user_text{
-            & :first-child{
+        .hi_user_text {
+            & :first-child {
                 color: #bbbbbb;
                 margin-right: 6px;
             }
-            & :last-child{
+
+            & :last-child {
                 color: $d_red;
                 font-weight: bold;
             }
         }
 
-        .messages_icon{
+        .messages_icon {
             margin-right: 25px;
             color: #3699FF;
             font-size: 1.2rem;
@@ -396,7 +411,7 @@
             cursor: pointer;
         }
 
-        .bell{
+        .bell {
             color: $dsh_color_light;
             cursor: pointer;
         }

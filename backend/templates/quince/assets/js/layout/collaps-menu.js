@@ -6,7 +6,7 @@ for (let i = 0; i < dashboard_collaps.length; i++) {
 
         let panel = this.nextElementSibling;
 
-        if (dashboard.width() > 200) {
+        if (dashboard.width() > 100) {
 
             if (panel.style.maxHeight) {
 
