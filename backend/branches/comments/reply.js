@@ -8,7 +8,7 @@ router.post('/', async(req,res)=>{
         let back_url = req.header('Referer') || '/';
 
         let validation_result = new validation([
-            {value : text_inp},
+            {value : reply_text_inp},
         ]).valid();
 
         if(validation_result){
@@ -19,7 +19,7 @@ router.post('/', async(req,res)=>{
 
         let comment_data = {
             author : req.session.admin_id,
-            text : text_inp,
+            text : reply_text_inp,
         }
 
         let result = await comment_model.reply(comment_data, root_inp);
