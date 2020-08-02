@@ -68,6 +68,14 @@ $('.form_ajax').submit(function(event){
             break;
 
         }
+        case 'comments':
+        {
+
+            let front_validation = commentsError();
+            if(!front_validation) return false;
+            break;
+
+        }
 
     }
 

@@ -100,6 +100,38 @@ comment_schema.statics = {
 
     },
 
+    changeStatus : async function (comment_id) {
+
+        let find_comment = await comment_model.findById(comment_id);
+        let new_status = true;
+
+        if(find_comment.status){
+
+            new_status = false;
+
+        }
+        else{
+
+            new_status = true;
+
+        }
+
+        return await comment_model.findByIdAndUpdate(comment_id, {status : new_status})
+
+    },
+
+    getComment : async function(comment_id){
+
+        return await comment_model.findById(comment_id).populate('response').populate('author').populate('reply_to').exec();
+
+    },
+
+    edit : async function(comment_data, comment_id){
+
+        return await comment_model.findOneAndUpdate(comment_id, {$set : comment_data}, {new : true});
+
+    }
+
 };
 
 

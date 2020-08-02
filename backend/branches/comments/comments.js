@@ -41,8 +41,20 @@ router.get('/', async(req, res, next)=>{
 
 const delete_comment = require('./api/delete-comment');
 const delete_select = require('./api/delete-select');
+const change_status = require('./api/change-status');
+const accept_select = require('./api/accept-select');
+const get_comment = require('./api/get-comment');
 
-router.use('/api/delete-comment', delete_comment)
-router.use('/api/delete-select', delete_select)
+const reply = require('./reply');
+const edit = require('./edit');
+
+router.use('/api/delete-comment', delete_comment);
+router.use('/api/delete-select', delete_select);
+router.use('/api/change-status', change_status);
+router.use('/api/accept-select', accept_select);
+router.use('/api/get-comment', get_comment);
+
+router.use('/reply', reply);
+router.use('/edit', edit);
 
 module.exports = router;
