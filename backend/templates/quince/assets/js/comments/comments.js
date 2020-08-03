@@ -170,11 +170,13 @@ $('.edit_btn').click(function () {
     }, function (data, status) {
 
         let name = '';
-        let response = data.response.title;
+        let response = data.response;
         let date = data.date;
         let reply_to = '';
+        let reply_to_id = data._id;
         let text = data.text;
         let image = "img/default-profile-picture.png";
+        let root_id = '';
 
         if(data.author){
             name = data.author.first_name
@@ -185,22 +187,31 @@ $('.edit_btn').click(function () {
         }
         if(data.reply_to){
             if(data.reply_to.author){
-                reply_to = ata.reply_to.first_name;
+                reply_to = data.reply_to.first_name;
             }
             else{
-                reply_to = ata.reply_to.name;
+                reply_to = data.reply_to.name;
             }
         }
         else{
             reply_to = null;
         }
+        if(data.root_id){
+            root_id = data.root_id;
+        }
+        else{
+            root_id = data.parent_id;
+        }
 
         $('.reply_name').text(name);
-        $('.reply_response').text('نام مقاله : ' + response);
+        $('.reply_response').text('نام مقاله : ' + response.title);
         $('.reply_date').text('تاریخ : ' + date);
         $('.reply_reply_to').text(reply_to);
         $('.reply_text').text(text);
         $('.reply_image').attr('src', image);
+        $('.reply_root_id').val(root_id);
+        $('.reply_response_id').val(response._id);
+        $('.reply_reply_to').val(reply_to_id);
 
     });
 

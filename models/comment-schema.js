@@ -27,7 +27,11 @@ let comment_schema = new mongoose.Schema({
         type : 'objectId',
         ref : 'comment'
     },
-    root_id : 'objectId'
+    root_id : 'objectId',
+    parent_id : {
+        type : 'objectId',
+        ref : 'comment'
+    }
 
 });
 

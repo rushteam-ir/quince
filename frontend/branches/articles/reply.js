@@ -27,6 +27,7 @@ router.post('/', async(req,res)=>{
             name : name_inp,
             response : req.session.article_id,
             reply_to : author_inp,
+            parent_id : root_inp,
         }
 
         let result = await comment_model.reply(comment_data, root_inp);

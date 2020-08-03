@@ -104,9 +104,19 @@
                                                 {name}
                                             </div>
                                         {:else}
-                                            <img src="img/img2.jpg" alt="">
+                                            {@eq key="{author.avatar}" value=""}
+                                                <img src="img/default-profile-picture.png" alt="">
+                                            {:else}
+                                                <img src="media/avatars/{author.avatar}" alt="">
+                                            {/eq}
                                             <div>
-                                                {name}
+                                                <a href="{backend_url}groups/profile/{author.unique_id}">
+                                                    {@eq key="{author.author_type}" value="name"}
+                                                        {author.first_name} {author.last_name}
+                                                    {:else}
+                                                        {author.nick_name}
+                                                    {/eq}
+                                                </a>
                                             </div>
                                         {/eq}
                                     </td>
@@ -227,6 +237,8 @@
                                     <label for="article_describe">پاسخ به پیام</label>
                                     <textarea class="form-control main_form_design" id="article_describe" rows="7" name="reply_text_inp"></textarea>
                                     <input class="reply_root_id" type="hidden" name="root_inp">
+                                    <input class="reply_response_id" type="hidden" name="response_inp">
+                                    <input class="reply_reply_to" type="hidden" name="reply_to__inp">
                                 </div>
                             </div>
                             <div class="modal_btn_field mr-3">
