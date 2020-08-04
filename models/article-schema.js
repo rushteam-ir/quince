@@ -18,7 +18,7 @@ let article_schema = new mongoose.Schema({
     comments_status : Boolean,
     author : {
         type : 'ObjectId',
-        ref : 'admin'
+        ref : 'user'
     },
     last_edit : String,
     views_number : Number,

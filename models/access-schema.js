@@ -5,7 +5,7 @@ let access_schema = new mongoose.Schema({
     count : Number,
     author : {
         type : 'objectId',
-        ref : 'admin'
+        ref : 'user'
     }
 
 });

@@ -6,7 +6,7 @@ let report_schema = new mongoose.Schema({
     url : String,
     who : {
         type : 'ObjectId',
-        ref : 'admin'
+        ref : 'user'
     },
     remote_address : String,
 

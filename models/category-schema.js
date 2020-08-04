@@ -7,7 +7,7 @@ let category_schema = new mongoose.Schema({
     },
     author : {
         type : 'ObjectId',
-        ref : 'admin'
+        ref : 'user'
     },
     child_number : Number,
 

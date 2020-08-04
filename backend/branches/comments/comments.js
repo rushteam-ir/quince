@@ -26,7 +26,7 @@ router.get('/', async(req, res, next)=>{
 
             };
 
-            log(data.comments_list)
+            log(data.comments_list);
 
             res.render('comments/comments', data);
 

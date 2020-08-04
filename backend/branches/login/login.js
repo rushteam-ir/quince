@@ -40,16 +40,15 @@ router.post('/', async(req, res, next)=>{
 
         if(captcha_inp.toLowerCase() != req.session.captcha){
 
-            //errorManager.set(8);
-            return res.redirect(`${config.backend_url}login`);
+            return res.redirect(`${config.backend_url}login/?msg=3`);
 
         }
 
-        let result = await admin_model.login(email_inp, password_inp);
+        let result = await user_model.login(email_inp, password_inp);
 
         if(result){
 
-            if(result.status){
+            if(result.status && result.access == 'admin'){
 
                 delete req.session.login_form;
                 delete req.session.captcha;
@@ -62,16 +61,14 @@ router.post('/', async(req, res, next)=>{
             }
             else{
 
-                //errorManager.set(9);
-                return res.redirect(`${config.backend_url}login`);
+                return res.redirect(`${config.backend_url}login/?msg=1`);
 
             }
 
         }
         else{
 
-            //errorManager.set(11);
-            return res.redirect(`${config.backend_url}login`);
+            return res.redirect(`${config.backend_url}login/?msg=2`);
 
         }
 

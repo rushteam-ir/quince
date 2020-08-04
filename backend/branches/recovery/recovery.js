@@ -27,7 +27,7 @@ router.post('/', async(req, res, next)=>{
 
         if(!validation_result){
 
-            let result = await admin_model.recoveryEmail(email_inp);
+            let result = await user_model.recoveryEmail(email_inp);
 
             if(result){
 
@@ -50,7 +50,7 @@ router.post('/', async(req, res, next)=>{
                     }
                     else {
 
-                        await admin_model.setPendingPassword(email_inp, {
+                        await user_model.setPendingPassword(email_inp, {
                             pending_password : pending_password
                         });
 

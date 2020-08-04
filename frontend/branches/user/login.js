@@ -22,7 +22,7 @@ router.post('/', async(req,res)=>{
         }
         else{
 
-            let result = await admin_model.login(email_inp, password_inp);
+            let result = await user_model.login(email_inp, password_inp);
 
             if(result){
 

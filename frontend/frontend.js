@@ -7,7 +7,7 @@ frontend.use(async(req,res,next)=>{
     try{
 
         // Check last activity
-        let find_me = await admin_model.getById(req.session.admin_id);
+        let find_me = await user_model.getById(req.session.admin_id);
 
         if(find_me){
 
@@ -17,7 +17,7 @@ frontend.use(async(req,res,next)=>{
 
             }
 
-            let result = await admin_model.edit(req.session.admin_id, admin_data)
+            let result = await user_model.edit(req.session.admin_id, admin_data)
 
             if(result){
 

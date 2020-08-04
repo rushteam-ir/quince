@@ -169,6 +169,7 @@ $('.edit_btn').click(function () {
         id: $(this).attr('name'),
     }, function (data, status) {
 
+        console.log(data)
         let name = '';
         let response = data.response;
         let date = data.date;
@@ -179,7 +180,12 @@ $('.edit_btn').click(function () {
         let root_id = '';
 
         if(data.author){
-            name = data.author.first_name
+            if(data.author.author_type == 'name'){
+                name = `${data.author.first_name} ${data.author.last_name}`
+            }
+            else{
+                name = data.author.nick_name
+            }
             image = `media/avatars/${data.author.avatar}`
         }
         else{
@@ -187,7 +193,7 @@ $('.edit_btn').click(function () {
         }
         if(data.reply_to){
             if(data.reply_to.author){
-                reply_to = data.reply_to.first_name;
+                reply_to = `${data.reply_to.author.first_name} ${data.reply_to.author.last_name}`
             }
             else{
                 reply_to = data.reply_to.name;
@@ -206,12 +212,17 @@ $('.edit_btn').click(function () {
         $('.reply_name').text(name);
         $('.reply_response').text('نام مقاله : ' + response.title);
         $('.reply_date').text('تاریخ : ' + date);
-        $('.reply_reply_to').text(reply_to);
+        if(reply_to){
+            $('.reply_reply_to').text('در پاسخ به : ' + reply_to);
+        }
+        else{
+            $('.reply_reply_to').text('');
+        }
         $('.reply_text').text(text);
         $('.reply_image').attr('src', image);
         $('.reply_root_id').val(root_id);
         $('.reply_response_id').val(response._id);
-        $('.reply_reply_to').val(reply_to_id);
+        $('.reply_reply_to_id').val(reply_to_id);
 
     });
 

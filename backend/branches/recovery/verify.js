@@ -40,14 +40,14 @@ router.post('/', async(req, res, next)=>{
 
         }
 
-        let result_verify = await admin_model.verifyPendingPassword(req.session.saved_email, new_password_inp, {
+        let result_verify = await user_model.verifyPendingPassword(req.session.saved_email, new_password_inp, {
             pending_password : randomString(6),
             password : new_password_inp
         })
 
         if(result_verify){
 
-            let result = await admin_model.login(req.session.saved_email, new_password_inp);
+            let result = await user_model.login(req.session.saved_email, new_password_inp);
 
             if(result){
 

@@ -13,7 +13,7 @@ router.get('/', async(req, res, next)=>{
 
             if(isObjectId(user_id)){
 
-                let result = await admin_model.del(user_id);
+                let result = await user_model.del(user_id);
 
                 if(!result){
 

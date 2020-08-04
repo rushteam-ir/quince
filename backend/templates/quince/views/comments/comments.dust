@@ -136,7 +136,7 @@
                                                     {reply_to.name}
                                                 {:else}
                                                     <a href="{backend_url}groups/profile/{reply_to.author.unique_id}">
-                                                        {reply_to.author.first_name}
+                                                        {reply_to.author.first_name} {reply_to.author.last_name}
                                                     </a>
                                                 {/eq}
                                             </p>
@@ -238,7 +238,7 @@
                                     <textarea class="form-control main_form_design" id="article_describe" rows="7" name="reply_text_inp"></textarea>
                                     <input class="reply_root_id" type="hidden" name="root_inp">
                                     <input class="reply_response_id" type="hidden" name="response_inp">
-                                    <input class="reply_reply_to" type="hidden" name="reply_to__inp">
+                                    <input class="reply_reply_to_id" type="hidden" name="reply_to_inp">
                                 </div>
                             </div>
                             <div class="modal_btn_field mr-3">

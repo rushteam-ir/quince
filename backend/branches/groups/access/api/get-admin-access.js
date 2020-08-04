@@ -8,7 +8,7 @@ router.post('/', async(req, res, next)=>{
 
         if(isObjectId(admin_id)){
 
-            let this_admin = await admin_model.getById(admin_id);
+            let this_admin = await user_model.getById(admin_id);
             let access = this_admin.access_type;
 
             res.json(access);

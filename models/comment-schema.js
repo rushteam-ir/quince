@@ -6,13 +6,9 @@ let comment_schema = new mongoose.Schema({
     time : String,
     email : String,
     name : String,
-    groupModel : {
-        type : String,
-        enum : ['admin', 'user']
-    },
     author : {
         type : 'objectId',
-        refPath : 'groupModel'
+        ref : 'user'
     },
     response: {
         type : 'objectId',
@@ -73,7 +69,7 @@ comment_schema.statics = {
         let comment_skip = page_number * page_limit - page_limit;
 
         result.rows_begin_number = comment_skip + 1;
-        result.list =  await comment_model.find().skip(comment_skip).limit(page_limit).populate('response').populate('author').populate('reply_to').exec();
+        result.list =  await comment_model.find().skip(comment_skip).limit(page_limit).populate('response').populate('author').populate({path : 'reply_to', populate : {path : 'author'}}).exec();
         result.total_pages = Math.ceil(await comment_model.find().countDocuments() / page_limit);
 
         return result;
@@ -82,7 +78,7 @@ comment_schema.statics = {
 
     getByArticleId : async function(article_id){
 
-        return await comment_model.find({response : article_id, reply_to : {$exists : false}}).populate({path : 'replies', populate : {path : 'reply_to'}}).exec();
+        return await comment_model.find({response : article_id, reply_to : {$exists : false}}).populate({path : 'replies', populate : {path : 'reply_to'}}).populate({path : 'replies', populate : {path : 'reply_to' , populate : 'author'}}).populate({path : 'replies', populate : {path : 'author'}}).exec();
 
     },
 
@@ -126,7 +122,7 @@ comment_schema.statics = {
 
     getComment : async function(comment_id){
 
-        return await comment_model.findById(comment_id).populate('response').populate('author').populate('reply_to').exec();
+        return await comment_model.findById(comment_id).populate('response').populate('author').populate('reply_to').populate({path : 'reply_to', populate : {path : 'author'}}).exec();
 
     },
 

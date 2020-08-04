@@ -151,40 +151,50 @@
                     </div>
                 </div>
                 {#replies}
-                    <div class="reply_comment_preview mt-5">
-                        <div class="container_fluid">
-                            <div class="row">
-                                <div class="col-2">
-                                    {@eq key="{.author}" value="{null}"}
-                                        <img class="comment_img" src="img/default-profile-picture.png" alt="">
-                                    {:else}
-                                        <img class="comment_img" src="img/default-profile-picture.png" alt="">
-                                    {/eq}
-                                </div>
-                                <div class="col-10">
-                                    <div class="comment_info_field">
-                                        <p class="name">
-                                            {@eq key="{.author}" value="{null}"}
-                                                {.name}
-                                            {:else}
-
-                                            {/eq}
-                                        </p>
-                                        <p class="date">{.date} | {.time}</p>
-                                        <p class="reply_to "><span>reply to : </span>
-                                            {@eq key="{.reply_to.author}" value="{null}"}
-                                                {.reply_to.name}
-                                            {:else}
-                                                {.reply_to.author.first_name}
-                                            {/eq}
-                                        </p>
-                                        <p class="mt-3">{.text}</p>
-                                        <button class="btn reply_btn" value="{root_id}" name="{._id}">reply</button>
+                    {@eq key="{status}" value="true"}
+                        <div class="reply_comment_preview mt-5">
+                            <div class="container_fluid">
+                                <div class="row">
+                                    <div class="col-2">
+                                        {@eq key="{.author}" value="{null}"}
+                                            <img class="comment_img" src="img/default-profile-picture.png" alt="">
+                                        {:else}
+                                            <img class="comment_img" src="quince/media/avatars/{.author.avatar}" alt="">
+                                        {/eq}
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="comment_info_field">
+                                            <p class="name">
+                                                {@eq key="{.author}" value="{null}"}
+                                                    {.name}
+                                                {:else}
+                                                    {@eq key="{.author.author_type}" value="name"}
+                                                        {.author.first_name} {.author.last_name}
+                                                    {:else}
+                                                        {.author.nick_name}
+                                                    {/eq}
+                                                {/eq}
+                                            </p>
+                                            <p class="date">{.date} | {.time}</p>
+                                            <p class="reply_to "><span>reply to : </span>
+                                                {@eq key="{.reply_to.author}" value="{null}"}
+                                                    {.reply_to.name}
+                                                {:else}
+                                                    {@eq key="{.reply_to.author.author_type}" value="name"}
+                                                        {.reply_to.author.first_name} {.reply_to.author.last_name}
+                                                    {:else}
+                                                        {.reply_to.author.nick_name}
+                                                    {/eq}
+                                                {/eq}
+                                            </p>
+                                            <p class="mt-3">{.text}</p>
+                                            <button class="btn reply_btn" value="{root_id}" name="{._id}">reply</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    {/eq}
                 {/replies}
             {/eq}
         {/comments_list}

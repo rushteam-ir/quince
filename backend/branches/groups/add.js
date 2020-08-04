@@ -59,11 +59,12 @@ router.post('/', async(req, res, next)=>{
             author_type: 'nick_name',
             email : email_inp,
             password : password_inp,
-            access_type : access_inp
+            access_type : access_inp,
+            access : 'admin'
 
         }
 
-        let result = await admin_model.add(admin_data);
+        let result = await user_model.add(admin_data);
 
         if(result){
 

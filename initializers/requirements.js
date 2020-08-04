@@ -23,7 +23,7 @@ validation = require('./validation');
 fileManager = require('./file-manager');
 serverHelpers = require('./server-helpers');
 
-admin_model = require('../models/admin-schema');
+user_model = require('../models/user-schema');
 category_model = require('../models/category-schema');
 setting_model = require('../models/setting-schema');
 product_model = require('../models/product-schema');

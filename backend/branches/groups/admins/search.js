@@ -8,7 +8,7 @@ router.get('/:search', async(req, res, next)=>{
 
         await serverHelpers.tableList(req, async (page_number, page_limit, can_edit)=>{
 
-            let admins_list = await admin_model.search(search_value, page_number, page_limit)
+            let admins_list = await user_model.search(search_value, page_number, page_limit)
 
             if(admins_list.list.length == 0 && admins_list.total_pages != 0){
 

@@ -5,7 +5,6 @@ router.post('/', async(req,res)=>{
     try{
 
         let {name_inp, email_inp, text_inp, author_inp, root_inp} = req.body;
-        log(req.body)
 
         let back_url = req.header('Referer') || '/';
 
