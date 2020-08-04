@@ -90,12 +90,25 @@
                             </tr>
                             {#comments_list}
                                 <tr>
-                                    <td>
-                                        <label class="checkbox_of_category">
-                                            <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox"
-                                                   value="{._id}">
-                                        </label>
-                                    </td>
+                                    {@eq key="{g_admin_info._id}" value="{author._id}"}
+                                        <td>
+                                            <label class="checkbox_of_category">
+                                                <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                            </label>
+                                        </td>
+                                    {:else}
+                                        {@eq key="{can_edit}" value="true"}
+                                            <td>
+                                                <label class="checkbox_of_category">
+                                                    <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                                </label>
+                                            </td>
+                                        {:else}
+                                            <td>
+
+                                            </td>
+                                        {/eq}
+                                    {/eq}
                                     <td>{@math key="{rows_begin_number}" method="add" operand="{$idx}"/}</td>
                                     <td class="user_info_td">
                                         {@eq key="{author}" value="{null}"}
@@ -136,7 +149,11 @@
                                                     {reply_to.name}
                                                 {:else}
                                                     <a href="{backend_url}groups/profile/{reply_to.author.unique_id}">
-                                                        {reply_to.author.first_name} {reply_to.author.last_name}
+                                                        {@eq key="{reply_to.author.author_type}" value="name"}
+                                                            {reply_to.author.first_name} {reply_to.author.last_name}
+                                                        {:else}
+                                                            {reply_to.author.nick_name}
+                                                        {/eq}
                                                     </a>
                                                 {/eq}
                                             </p>

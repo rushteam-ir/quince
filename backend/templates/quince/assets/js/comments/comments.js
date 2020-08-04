@@ -169,7 +169,6 @@ $('.edit_btn').click(function () {
         id: $(this).attr('name'),
     }, function (data, status) {
 
-        console.log(data)
         let name = '';
         let response = data.response;
         let date = data.date;

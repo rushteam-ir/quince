@@ -99,7 +99,7 @@ comment_schema.statics = {
             }
 
             return await comment_model.findByIdAndDelete(comment_id);
-            
+
         }
         else{
             return null
