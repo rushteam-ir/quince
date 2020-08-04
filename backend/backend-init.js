@@ -12,6 +12,7 @@ backend_access = {
         '/article/': 'مقاله ها',
         '/article/add/': 'مقاله ها',
         '/article/list/': 'مقاله ها',
+        '/comments/': 'نظرات',
     },
     management : {
         '/groups/admins/': 'لیست مدیران',
@@ -25,6 +26,7 @@ backend_access = {
         'groups/admins/': 'تنظیمات مدیران',
         'groups/users/': 'تنظیمات کاربران',
         'groups/access/': 'ویرایش دسترسی ها',
+        'comments/': 'ویرایش نظرات',
     }
 }
 

@@ -86,17 +86,24 @@ comment_schema.statics = {
 
         let find_comment = await comment_model.findById(comment_id);
 
-        if(find_comment.replies.length != 0){
+        if(find_comment){
 
-            for(let index of find_comment.replies){
+            if(find_comment.replies.length != 0){
 
-                await comment_model.findByIdAndDelete(index);
+                for(let index of find_comment.replies){
+
+                    await comment_model.findByIdAndDelete(index);
+
+                }
 
             }
 
+            return await comment_model.findByIdAndDelete(comment_id);
+            
         }
-
-        return await comment_model.findByIdAndDelete(comment_id);
+        else{
+            return null
+        }
 
     },
 

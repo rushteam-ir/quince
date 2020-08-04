@@ -33,8 +33,8 @@
                             <div class="row">
                                 <div class="col-12 col-lg-7">
                                     <div class="d-inline-block field_of_ht">
-                                        <h1>لیست مقالات</h1>
-                                        <h2>لیست مقالات موجود در سایت</h2>
+                                        <h1>لیست نظرات</h1>
+                                        <h2>لیست نظرات موجود در سایت</h2>
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-5">
@@ -158,36 +158,75 @@
                                             </div>
                                         </td>
                                     {/eq}
-                                    <td class="table_option">
-                                        <div class="dropdown">
-                                            <button class="btn  dropdown-toggle" type="button" id="table_option" data-toggle="dropdown"
-                                                    aria-haspopup="true" aria-expanded="false">
-                                                <i class="fas fa-ellipsis-v"></i>
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="table_option">
-                                                <button class="dropdown-item comment_status" name="{._id}" value="{status}">
-                                                    <i class="fal fa-comment-alt-check"></i>
-                                                    {@eq key="{status}" value="true"}
-                                                        غیر فعال کردن پیام
-                                                    {:else}
-                                                        تایید پیام
-                                                    {/eq}
+                                    {@eq key="{g_admin_info._id}" value="{author._id}"}
+                                        <td class="table_option">
+                                            <div class="dropdown">
+                                                <button class="btn  dropdown-toggle" type="button" id="table_option" data-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-v"></i>
                                                 </button>
-                                                <button class="dropdown-item second_edit_btn" name="{._id}">
-                                                <i class="fal fa-pencil-alt"></i>
-                                                ویرایش پیام
-                                                </button>
-                                                <button class="dropdown-item edit_btn" name="{._id}">
-                                                <i class="fal fa-eye"></i>
-                                                مشاهده جزئیات
-                                                </button>
-                                                <button class="dropdown-item comment_delete" name="{._id}">
-                                                    <i class="fal fa-trash-alt"></i>
-                                                    حذف پیام
-                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="table_option">
+                                                    <button class="dropdown-item comment_status" name="{._id}" value="{status}">
+                                                        <i class="fal fa-comment-alt-check"></i>
+                                                        {@eq key="{status}" value="true"}
+                                                            غیر فعال کردن پیام
+                                                        {:else}
+                                                            تایید پیام
+                                                        {/eq}
+                                                    </button>
+                                                    <button class="dropdown-item second_edit_btn" name="{._id}">
+                                                        <i class="fal fa-pencil-alt"></i>
+                                                        ویرایش پیام
+                                                    </button>
+                                                    <button class="dropdown-item edit_btn" name="{._id}">
+                                                        <i class="fal fa-eye"></i>
+                                                        مشاهده جزئیات
+                                                    </button>
+                                                    <button class="dropdown-item comment_delete" name="{._id}">
+                                                        <i class="fal fa-trash-alt"></i>
+                                                        حذف پیام
+                                                    </button>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </td>
+                                        </td>
+                                    {:else}
+                                        {@eq key="{can_edit}" value="true"}
+                                            <td class="table_option">
+                                                <div class="dropdown">
+                                                    <button class="btn  dropdown-toggle" type="button" id="table_option" data-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false">
+                                                        <i class="fas fa-ellipsis-v"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="table_option">
+                                                        <button class="dropdown-item comment_status" name="{._id}" value="{status}">
+                                                            <i class="fal fa-comment-alt-check"></i>
+                                                            {@eq key="{status}" value="true"}
+                                                                غیر فعال کردن پیام
+                                                            {:else}
+                                                                تایید پیام
+                                                            {/eq}
+                                                        </button>
+                                                        <button class="dropdown-item second_edit_btn" name="{._id}">
+                                                            <i class="fal fa-pencil-alt"></i>
+                                                            ویرایش پیام
+                                                        </button>
+                                                        <button class="dropdown-item edit_btn" name="{._id}">
+                                                            <i class="fal fa-eye"></i>
+                                                            مشاهده جزئیات
+                                                        </button>
+                                                        <button class="dropdown-item comment_delete" name="{._id}">
+                                                            <i class="fal fa-trash-alt"></i>
+                                                            حذف پیام
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        {:else}
+                                            <td>
+                                                دسترسی ندارید
+                                            </td>
+                                        {/eq}
+                                    {/eq}
                                 </tr>
                             {/comments_list}
                         </table>
