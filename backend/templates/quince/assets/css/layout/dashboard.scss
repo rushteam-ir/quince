@@ -54,6 +54,7 @@
 
     &_logo {
         width: 60%;
+        height: 100%;
         @include transition(linear, 0.5s);
     }
 

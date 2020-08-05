@@ -28,42 +28,41 @@
 
 // comments custom table
 
-.user_info_td {
-    width: 250px;
-
-    img {
-        width: 45px;
-        height: 45px;
-        border-radius: 7px;
-        display: inline-block;
-    }
-
+.QT_image {
     div {
-        display: inline-block;
-        padding-right: 10px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        margin: 0 auto;
-        max-width: 170px;
-        position: relative;
-        top: 4px;
+        max-width: 120px;
     }
+}
+
+.comment_info {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 200px;
+    position: absolute;
+    top: 47px;
+}
+
+.article_name_field {
+    width: 140px;
 }
 
 .message_info {
     text-align: right;
-    width: 420px;
+    width: 360px;
+    position: relative;
 
     div {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        max-width: 400px;
+        max-width: 360px;
     }
 
     p {
-        font-weight: bold;
         margin-top: 5px;
         display: inline-block;
 
@@ -115,7 +114,8 @@
         left: 2.8px;
         top: 0.8px;
     }
-    &:hover{
+
+    &:hover {
         background-color: $d_blue;
         color: white;
     }

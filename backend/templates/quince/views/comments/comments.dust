@@ -82,6 +82,7 @@
                                     </label>
                                 </th>
                                 <th>ردیف</th>
+                                <th>عکس</th>
                                 <th>نام کاربر</th>
                                 <th>خلاصه متن پیام</th>
                                 <th>تاریخ</th>
@@ -110,32 +111,17 @@
                                         {/eq}
                                     {/eq}
                                     <td>{@math key="{rows_begin_number}" method="add" operand="{$idx}"/}</td>
-                                    <td class="user_info_td">
-                                        {@eq key="{author}" value="{null}"}
-                                            <img src="img/default-profile-picture.png" alt="">
-                                            <div>
-                                                {name}
-                                            </div>
-                                        {:else}
-                                            {@eq key="{author.avatar}" value=""}
-                                                <img src="img/default-profile-picture.png" alt="">
-                                            {:else}
-                                                <img src="media/avatars/{author.avatar}" alt="">
-                                            {/eq}
-                                            <div>
-                                                <a href="{backend_url}groups/profile/{author.unique_id}">
-                                                    {@eq key="{author.author_type}" value="name"}
-                                                        {author.first_name} {author.last_name}
-                                                    {:else}
-                                                        {author.nick_name}
-                                                    {/eq}
-                                                </a>
-                                            </div>
-                                        {/eq}
+                                    <td class="QT_image">
+                                        <img src="img/img2.jpg" alt="">
+                                    </td>
+                                    <td class="QT_truncate">
+                                        <div>
+                                            کسری حبیب بیگی
+                                        </div>
                                     </td>
                                     <td class="message_info">
                                         <div>{text}</div>
-                                        <p>
+                                        <p class="article_name_field">
                                             مقاله :
                                             <a href="{frontend_url}articles/{response.url}" target="_blank" class="mr-1">
                                                 {response.title}
@@ -143,12 +129,12 @@
                                         </p>
                                         {@eq key="{reply_to}" value="{null}"}
                                         {:else}
-                                            <p  class="mr-4">
+                                            <p class="mr-4">
                                                 در پاسخ به :
                                                 {@eq key="{reply_to.author}" value="{null}"}
                                                     {reply_to.name}
                                                 {:else}
-                                                    <a href="{backend_url}groups/profile/{reply_to.author.unique_id}">
+                                                    <a class="comment_info" href="{backend_url}groups/profile/{reply_to.author.unique_id}">
                                                         {@eq key="{reply_to.author.author_type}" value="name"}
                                                             {reply_to.author.first_name} {reply_to.author.last_name}
                                                         {:else}
@@ -322,8 +308,8 @@
                         </header>
                         <form class="form_ajax" name="comments" action="{backend_url}comments/edit" method="post">
                             <div class="form-group dir-rtl text-right">
-                                <label for="article_describe"> ویرایش پیام</label>
-                                <textarea class="form-control main_form_design edit_comment_text" id="article_describe" rows="7" name="edit_text_inp"></textarea>
+                                <label for="article_describe_edit"> ویرایش پیام</label>
+                                <textarea class="form-control main_form_design edit_comment_text" id="article_describe_edit" rows="7" name="edit_text_inp"></textarea>
                                 <input type="hidden" class="edit_comment_id" name="edit_comment_id">
                             </div>
                             <div class="modal_btn_field mr-3">
