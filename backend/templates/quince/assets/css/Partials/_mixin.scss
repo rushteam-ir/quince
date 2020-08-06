@@ -1,7 +1,7 @@
 $b_radius:7px;
 
 @mixin table_pill($bg_color, $text_color) {
-    width: fit-content;
+    width: max-content;
     padding: 0 30px;
     background-color: $bg_color;
     border-radius: 50px;

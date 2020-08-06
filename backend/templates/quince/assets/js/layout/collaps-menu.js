@@ -19,6 +19,7 @@ for (let i = 0; i < dashboard_collaps.length; i++) {
             }
 
             this.classList.toggle('collaps_on');
+            this.classList.toggle('rotate_parent');
 
         }
 

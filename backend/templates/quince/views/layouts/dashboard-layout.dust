@@ -55,7 +55,7 @@
         <div class="position-relative dashboard_body_collaps">
             <i class="fad fa-newspaper"></i>
             <p>مقاله ها</p>
-            <i class="fas fa-angle-left"></i>
+            <i class="fas fa-angle-left rotate"></i>
 
             <div class="hover_field">
 
@@ -68,7 +68,6 @@
                 </a>
 
             </div>
-
         </div>
 
         <div class="collaps_field">
@@ -83,10 +82,10 @@
 
         </div>
 
-        <!-- <div class="position-relative dashboard_body_collaps">
+        <div class="position-relative dashboard_body_collaps">
             <i class="fad fa-coins"></i>
             <p>فروشگاه</p>
-            <i class="fas fa-angle-left"></i>
+            <i class="fas fa-angle-left rotate"></i>
 
             <div class="hover_field">
 
@@ -120,12 +119,12 @@
                 <p>- کد تخفیف</p>
             </a>
 
-        </div> -->
+        </div>
 
         <div class="position-relative dashboard_body_collaps">
             <i class="fad fa-users-crown"></i>
             <p>مدیریت کاربران</p>
-            <i class="fas fa-angle-left"></i>
+            <i class="fas fa-angle-left rotate"></i>
 
             <div class="hover_field">
 

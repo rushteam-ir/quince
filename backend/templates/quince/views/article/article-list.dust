@@ -74,11 +74,12 @@
                                     </th>
                                     <th>ردیف</th>
                                     <th>نام مقاله</th>
-                                    <th>وضعیت</th>
                                     <th>نویسنده</th>
                                     <th>آخرین تغییرات</th>
                                     <th>تعداد بازدید</th>
                                     <th>تعداد نظرات</th>
+                                    <th>وضعیت نظرات</th>
+                                    <th>وضعیت</th>
                                     <th>تنظیمات</th>
                                 </tr>
                                 {#article_list}
@@ -110,19 +111,6 @@
                                                 </a>
                                             </div>
                                         </td>
-                                        {@eq key="{status}" value="true"}
-                                            <td class="QT_green_pill">
-                                                <div>
-                                                    فعال
-                                                </div>
-                                            </td>
-                                        {:else}
-                                            <td class="QT_red_pill">
-                                                <div>
-                                                    غیر فعال
-                                                </div>
-                                            </td>
-                                        {/eq}
                                         <td>
                                             <a href="{backend_url}groups/profile/{author.unique_id}">
                                                 {@eq key="{author.author_type}" value="name"}
@@ -145,6 +133,25 @@
                                                 {comments_number}
                                             </div>
                                         </td>
+                                        <td class="QT_green_pill">
+                                            <div>
+                                                فعال
+                                            </div>
+                                        </td>
+                                        {@eq key="{status}" value="true"}
+                                        <td class="QT_green_pill">
+                                            <div>
+                                                فعال
+                                            </div>
+                                        </td>
+                                        {:else}
+                                            <td class="QT_red_pill">
+                                                <div>
+                                                    غیر فعال
+                                                </div>
+                                            </td>
+                                            
+                                        {/eq}
                                         {@eq key="{g_admin_info._id}" value="{author._id}"}
                                             <td class="table_option">
                                                 <div class="dropdown">

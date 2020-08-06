@@ -9,7 +9,12 @@
 .main_cms_field {
     width: 85%;
     @include transition(ease-out, 0.5s);
+}
 
+.rotate_parent{
+    .rotate{
+        @include transform(rotate(-90deg));
+    }
 }
 
 .main_body_tag {
