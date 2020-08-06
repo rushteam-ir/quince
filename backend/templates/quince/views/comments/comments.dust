@@ -132,7 +132,9 @@
                                             <p class="mr-4">
                                                 در پاسخ به :
                                                 {@eq key="{reply_to.author}" value="{null}"}
-                                                    {reply_to.name}
+                                                    <span class="reply_to_summary">
+                                                        {reply_to.name}
+                                                    </span>
                                                 {:else}
                                                     <a class="comment_info" href="{backend_url}groups/profile/{reply_to.author.unique_id}">
                                                         {@eq key="{reply_to.author.author_type}" value="name"}
