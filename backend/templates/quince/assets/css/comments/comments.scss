@@ -65,6 +65,7 @@
     p {
         margin-top: 5px;
         display: inline-block;
+        margin-bottom: 0;
 
         a {
             display: inline-block;
@@ -132,4 +133,15 @@
     width: 270px;
     left: 260px;
     top: 13px;
+}
+
+.reply_to_summary{
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 120px;
+    position: relative;
+    top: 8px;
+    right: 6px;
 }

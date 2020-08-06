@@ -15,6 +15,7 @@ function profileError() {
     let current_password = $('input[name=current_password]').val();
     let new_password = $('input[name=new_password]').val();
     let confirm_password = $('input[name=confirm_password]').val();
+    let usernameLimit = first_name_inp.length + last_name_inp.length;
 
     let validation_result = null;
 
@@ -32,6 +33,8 @@ function profileError() {
                 { value : email_inp, type : 'empty'},
                 { value : phone_number_inp, type : 'empty'},
                 { value : phone_number_inp, type : 'phone number'},
+                { value : usernameLimit, type : 'limited username'},
+                { value : nick_name_inp, type : 'limited nickname'},
         
             ]);
             break;

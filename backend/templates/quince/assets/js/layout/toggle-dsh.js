@@ -3,10 +3,11 @@ $(document).ready(function () {
     $(document).on('click', '.close_dsh_btn', function () {
 
         dashboard_collaps_jq.removeClass('collaps_on');
+        main_cms_field.addClass('MCF_larg');
         dashboard.removeClass('open_dsh');
         dashboard.addClass('close_dsh');
-        main_cms_field.addClass('MCF_larg');
-        dashboard_logo.fadeOut();
+        dashboard_logo.removeClass('opacity_on');
+        dashboard_logo.addClass('opacity_none');
 
         for (let i = 0; i < dashboard_collaps.length; i++) {
 
@@ -22,11 +23,12 @@ $(document).ready(function () {
 
     $(document).on('click', '.open_dsh_btn', function () {
 
-        dashboard.removeClass('close_dsh');
-        dashboard.addClass('open_dsh');
         main_cms_field.removeClass('MCF_larg');
         hover_field.css('display', 'none');
-        dashboard_logo.fadeIn();
+        dashboard.removeClass('close_dsh');
+        dashboard.addClass('open_dsh');
+        dashboard_logo.removeClass('opacity_none');
+        dashboard_logo.addClass('opacity_on');
         sessionStorage.oc = 2;
 
     });

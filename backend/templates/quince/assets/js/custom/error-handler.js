@@ -68,6 +68,28 @@ class errorHandler {
                 break;
 
             }
+            case 'limited username': 
+            {
+                if(value > 25){
+
+                    return 'نام یا نام خانوادگی بیشتر از حد مجاز است.';
+
+                }
+
+                break;
+
+            }
+            case 'limited nickname': 
+            {
+                if(value.length > 25){
+
+                    return 'نام مستعار بیشتر از حد مجاز است .';
+
+                }
+
+                break;
+
+            }
             case 'born date':
             {
 

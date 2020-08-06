@@ -21,6 +21,13 @@
     background-color: #E7E8F2;
 }
 
+.opacity_on{
+    opacity: 1;
+}
+.opacity_none{
+    opacity: 0;
+}
+
 .dashboard {
 
     width: 15%;
@@ -58,8 +65,8 @@
     }
 
     &_logo {
-        width: 60%;
-        height: 100%;
+        width: 55%;
+        position: absolute;
         @include transition(linear, 0.5s);
     }
 
