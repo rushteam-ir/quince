@@ -194,10 +194,10 @@
                             </header>
                             <div class="main_div_of_personal_form">
                                 <div>
-                                    <p>تعداد مطالب : 24</p>
+                                    <p>تعداد مقالات : {admin_info.article_count}</p>
                                 </div>
                                 <div>
-                                    <p>آخرین فعالیت : 2 ساعت پیش</p>
+                                    <p>تعداد نظرات / پاسخ به نظرات : {admin_info.comment_count}</p>
                                 </div>
                             </div>
                         </div>

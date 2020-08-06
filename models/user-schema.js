@@ -22,6 +22,14 @@ let user_schema = new mongoose.Schema({
        type : 'ObjectId',
        ref : 'access'
    },
+   article_count : {
+       type : Number,
+       default : 0
+   },
+   comment_count : {
+       type : Number,
+       default : 0
+   },
    unique_id : String,
 
 });
