@@ -67,9 +67,9 @@ comment_schema.statics = {
         await comment_model.findByIdAndUpdate(author_id, {$push : {replies : result._id}});
         await article_model.findByIdAndUpdate(result.response, {$inc: {comments_number : 1 }});
 
-        if(comment_data.author){
+        if(result.author){
 
-            await user_mode.findByIdAndUpdate(result.author, {$inc: {comments_number : 1 }})
+            await user_model.findByIdAndUpdate(result.author, {$inc: {comments_number : 1 }})
 
         }
 
