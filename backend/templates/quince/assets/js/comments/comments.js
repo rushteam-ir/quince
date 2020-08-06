@@ -35,7 +35,7 @@ $('.comment_delete').on('click', function (e) {
         if (result.value) {
             Swal.fire({
                 title: 'حذف شد',
-                text: 'پیام مور نظر با موفقیت حذف شد برای تایید نهایی کلیک کنید',
+                text: 'پیام مورد نظر با موفقیت حذف شد برای تایید نهایی کلیک کنید',
                 icon: 'success',
                 confirmButtonText: 'تایید',
             }).then((result) => {
@@ -137,8 +137,8 @@ $('.table_accept_btn').on('click', function (e) {
 
     if (query != '') {
         Swal.fire({
-            title: 'تایید پیام',
-            text: "آیا از تایید پیام های انتخاب شده مطمئن هستید ؟",
+            title: 'تایید/غیرفعال کردن پیام',
+            text: "آیا از تایید/غیرفعال کردن پیام های انتخاب شده مطمئن هستید ؟",
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
@@ -149,7 +149,7 @@ $('.table_accept_btn').on('click', function (e) {
             if (result.value) {
                 Swal.fire({
                     title: 'حذف شد',
-                    text: 'پیام های انتخاب شده با موفقیت تایید شد برای تایید نهایی کلیک کنید',
+                    text: 'پیام های انتخاب شده با موفقیت تایید/غیرفعال شد برای تایید نهایی کلیک کنید',
                     icon: 'success',
                     confirmButtonText: 'تایید',
                 }).then((result) => {
