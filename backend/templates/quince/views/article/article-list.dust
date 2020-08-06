@@ -133,11 +133,19 @@
                                                 {comments_number}
                                             </div>
                                         </td>
-                                        <td class="QT_green_pill">
-                                            <div>
-                                                فعال
-                                            </div>
-                                        </td>
+                                        {@eq key="{comments_status}" value="true"}
+                                            <td class="QT_green_pill">
+                                                <div>
+                                                    فعال
+                                                </div>
+                                            </td>
+                                        {:else}
+                                            <td class="QT_red_pill">
+                                                <div>
+                                                    غیر فعال
+                                                </div>
+                                            </td>
+                                        {/eq}
                                         {@eq key="{status}" value="true"}
                                         <td class="QT_green_pill">
                                             <div>
@@ -150,7 +158,6 @@
                                                     غیر فعال
                                                 </div>
                                             </td>
-                                            
                                         {/eq}
                                         {@eq key="{g_admin_info._id}" value="{author._id}"}
                                             <td class="table_option">

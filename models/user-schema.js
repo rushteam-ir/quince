@@ -183,6 +183,12 @@ user_schema.statics = {
 
     },
 
+    getById : async function(user_id){
+
+        return await user_model.findById(user_id).populate('access_type');
+
+    }
+
 };
 
 

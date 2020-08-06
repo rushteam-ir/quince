@@ -23,7 +23,7 @@ router.get('/:name', async(req,res)=>{
 
         let article_info = await article_model.getByUrl(article_name);
 
-        if(!article_info){
+        if(!article_info || !article_info.status){
 
             return res.status(404).send('page not found')
 

@@ -27,7 +27,7 @@ router.post('/', async(req, res, next)=>{
 
    try{
 
-       let {title_inp, parent_inp, child_inp, describe_inp, meta_describe_inp} = req.body;
+       let {title_inp, parent_inp, child_inp, summary_inp, describe_inp, meta_describe_inp} = req.body;
 
        let validation_result = new validation([
            {value : title_inp},
@@ -53,7 +53,8 @@ router.post('/', async(req, res, next)=>{
            describe : describe_inp,
            meta_describe : meta_describe_inp,
            url : article_url,
-           internal_files : req.session.temp_files
+           internal_files : req.session.temp_files,
+           summary : summary_inp
 
        }
 

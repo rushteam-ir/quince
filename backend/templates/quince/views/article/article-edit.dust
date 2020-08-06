@@ -72,7 +72,7 @@
                                     
                                     <div class="form-group">
                                         <label for="article_summary">خلاصه مقاله</label>
-                                        <textarea class="form-control main_form_design" id="article_summary" name=""></textarea>
+                                        <textarea class="form-control main_form_design" id="article_summary" name="summary_inp">{article_info.summary}</textarea>
                                     </div>
 
                                     <div class="form-group">

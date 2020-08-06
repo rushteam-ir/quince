@@ -6,7 +6,7 @@ router.get('/', async(req, res, next)=>{
 
         let data = {
 
-            admin_info : req.session.admin_info,
+            admin_info : await user_model.getById(req.session.admin_id),
 
         }
 

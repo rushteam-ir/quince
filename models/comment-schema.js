@@ -98,8 +98,7 @@ comment_schema.statics = {
 
     del : async function (comment_id) {
 
-        let find_comment = await comment_model.findById(comment_id);
-        log(find_comment)
+        let find_comment = await comment_model.findById(comment_id).populate('replies');
 
         if(find_comment){
 
@@ -107,14 +106,27 @@ comment_schema.statics = {
 
                 for(let index of find_comment.replies){
 
-                    await comment_model.findByIdAndDelete(index);
+                    await comment_model.findByIdAndDelete(index._id);
                     await article_model.findByIdAndUpdate(find_comment.response, {$inc: {comments_number : -1 }});
+
+                    if(index.author){
+
+                        await user_model.findByIdAndUpdate(index.author, {$inc: {comments_number : -1 }})
+
+                    }
 
                 }
 
             }
 
             await article_model.findByIdAndUpdate(find_comment.response, {$inc: {comments_number : -1 }});
+
+            if(find_comment.author){
+
+                await user_model.findByIdAndUpdate(find_comment.author, {$inc: {comments_number : -1 }})
+
+            }
+
             return await comment_model.findByIdAndDelete(comment_id);
 
         }

@@ -10,6 +10,7 @@ let article_schema = new mongoose.Schema({
         type : 'ObjectId',
         ref : 'category'
     },
+    summary : String,
     describe : String,
     meta_describe : String,
     main_image : String,
@@ -48,6 +49,9 @@ article_schema.statics = {
             article_data.unique_id = new_id;
 
             let new_article = new article_model(article_data);
+
+            await user_model.findByIdAndUpdate(article_data.author, {$inc : {articles_number : 1}})
+
             return await new_article.save();
 
         }
@@ -87,6 +91,7 @@ article_schema.statics = {
         fs.unlink(`${backend_upload_dir}images/${find_article.main_image}`, function(err) {})
 
         await comment_model.deleteMany({response : article_id});
+        await user_model.findByIdAndUpdate(find_article.author, {$inc : {articles_number : -1}})
 
         return await article_model.findByIdAndDelete(article_id);
 
