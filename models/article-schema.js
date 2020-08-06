@@ -22,7 +22,10 @@ let article_schema = new mongoose.Schema({
     },
     last_edit : String,
     views_number : Number,
-    comments_number : Number,
+    comments_number : {
+        type : Number,
+        default : 0
+    },
     url : String,
 
 })
@@ -82,6 +85,8 @@ article_schema.statics = {
         }
 
         fs.unlink(`${backend_upload_dir}images/${find_article.main_image}`, function(err) {})
+
+        await comment_model.deleteMany({response : article_id});
 
         return await article_model.findByIdAndDelete(article_id);
 

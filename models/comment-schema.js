@@ -43,6 +43,13 @@ comment_schema.statics = {
         let result = await new_comment.save();
 
         await comment_model.findByIdAndUpdate(result._id, {root_id : result._id});
+        await article_model.findByIdAndUpdate(result.response, {$inc: {comments_number : 1 }});
+
+        if(comment_data.author){
+
+            await user_mode.findByIdAndUpdate(result.author, {$inc: {comments_number : 1 }})
+
+        }
 
         return result;
 
@@ -58,6 +65,13 @@ comment_schema.statics = {
         let result = await new_comment.save();
 
         await comment_model.findByIdAndUpdate(author_id, {$push : {replies : result._id}});
+        await article_model.findByIdAndUpdate(result.response, {$inc: {comments_number : 1 }});
+
+        if(comment_data.author){
+
+            await user_mode.findByIdAndUpdate(result.author, {$inc: {comments_number : 1 }})
+
+        }
 
         return result;
 
@@ -85,6 +99,7 @@ comment_schema.statics = {
     del : async function (comment_id) {
 
         let find_comment = await comment_model.findById(comment_id);
+        log(find_comment)
 
         if(find_comment){
 
@@ -93,11 +108,13 @@ comment_schema.statics = {
                 for(let index of find_comment.replies){
 
                     await comment_model.findByIdAndDelete(index);
+                    await article_model.findByIdAndUpdate(find_comment.response, {$inc: {comments_number : -1 }});
 
                 }
 
             }
 
+            await article_model.findByIdAndUpdate(find_comment.response, {$inc: {comments_number : -1 }});
             return await comment_model.findByIdAndDelete(comment_id);
 
         }
