@@ -151,6 +151,8 @@ for (let i = 0; i < lable_collaps.length; i++) {
 
             }
 
+            this.classList.toggle('rotate_angle');
+
     });
 
 }
