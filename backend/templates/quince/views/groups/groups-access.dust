@@ -157,53 +157,78 @@
                                 <input type="text" class="form-control main_form_design" id="access_name" name="title_inp">
                             </div>
                             <div class="form-group mt-4">
-                                <label class="mb-4 mt-0">بخش های تولید محتوا</label>
-                                {@keyValue:backend_access.content}
-                                    {@select key=key}
-                                        {@eq value="/article/list/"}{/eq}
-                                        {@eq value="/article/add/"}{/eq}
-                                        {@none}
-                                            <div class="row">
-                                                <div class="col-9">
-                                                    <p>{value}</p>
+                                <label class="mb-3 mt-0 lable_collaps">
+                                    بخش های تولید محتوا
+                                    <i class="far fa-angle-left"></i>
+                                </label>
+                                <div class="collaps_content">
+                                    {@keyValue:backend_access.content}
+                                        {@select key=key}
+                                            {@eq value="/article/list/"}{/eq}
+                                            {@eq value="/article/add/"}{/eq}
+                                            {@none}
+                                                <div class="row">
+                                                    <div class="col-9">
+                                                        <p>{value}</p>
+                                                    </div>
+                                                    <div class="col-3 pl-0">
+                                                        <label class="checkbox_of_category">
+                                                            <input type="checkbox" name="access_select_inp[]" class="option-input checkbox access_checkbox" value="{value}">
+                                                        </label>
+                                                    </div>
                                                 </div>
-                                                <div class="col-3 pl-0">
-                                                    <label class="checkbox_of_category">
-                                                        <input type="checkbox" name="access_select_inp[]" class="option-input checkbox access_checkbox" value="{value}">
-                                                    </label>
+                                            {/none}
+                                        {/select}
+                                    {/keyValue}
+                                </div>
+                                <label class="mb-3 mt-0 lable_collaps">
+                                    بخش فروشگاه
+                                    <i class="far fa-angle-left"></i>
+                                </label>
+                                <div class="collaps_content">
+                                    {@keyValue:backend_access.content}
+                                        {@select key=key}
+                                            {@eq value="/article/list/"}{/eq}
+                                            {@eq value="/article/add/"}{/eq}
+                                            {@none}
+                                                <div class="row">
+                                                    <div class="col-9">
+                                                        <p>{value}</p>
+                                                    </div>
+                                                    <div class="col-3 pl-0">
+                                                        <label class="checkbox_of_category">
+                                                            <input type="checkbox" name="access_select_inp[]" class="option-input checkbox access_checkbox" value="{value}">
+                                                        </label>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        {/none}
-                                    {/select}
-                                {/keyValue}
-                                <hr>
-                                <label class="mt-2 mb-3">بخش های مدیریتی</label>
-                                {@keyValue:backend_access.management}
-                                    <div class="row">
-                                        <div class="col-9">
-                                            <p>{value}</p>
-                                        </div>
-                                        <div class="col-3 pl-0">
-                                            <label class="checkbox_of_category">
-                                                <input type="checkbox" name="access_select_inp[]" class="option-input checkbox access_checkbox" value="{value}">
-                                            </label>
-                                        </div>
-                                    </div>
-                                {/keyValue}
-                                <hr>
-                                <label class="mt-2 mb-3">ویرایش محتوای دیگران</label>
-                                {@keyValue:backend_access.edit}
-                                    <div class="row">
-                                        <div class="col-9">
-                                            <p>{value}</p>
-                                        </div>
-                                        <div class="col-3 pl-0">
-                                            <label class="checkbox_of_category">
-                                                <input type="checkbox" name="access_select_inp[]" class="option-input checkbox access_checkbox" value="{value}">
-                                            </label>
-                                        </div>
-                                    </div>
-                                {/keyValue}
+                                            {/none}
+                                        {/select}
+                                    {/keyValue}
+                                </div>
+                                <label class="mb-3 mt-0 lable_collaps">
+                                    بخش های مدیریت کاربران
+                                    <i class="far fa-angle-left"></i>
+                                </label>
+                                <div class="collaps_content">
+                                    {@keyValue:backend_access.content}
+                                        {@select key=key}
+                                            {@eq value="/article/list/"}{/eq}
+                                            {@eq value="/article/add/"}{/eq}
+                                            {@none}
+                                                <div class="row">
+                                                    <div class="col-9">
+                                                        <p>{value}</p>
+                                                    </div>
+                                                    <div class="col-3 pl-0">
+                                                        <label class="checkbox_of_category">
+                                                            <input type="checkbox" name="access_select_inp[]" class="option-input checkbox access_checkbox" value="{value}">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            {/none}
+                                        {/select}
+                                    {/keyValue}
+                                </div>
                             <button type="submit" class="btn green_btn py-2 mt-3">ثبت دسترسی جدید</button>
                         </form>
                     </div>

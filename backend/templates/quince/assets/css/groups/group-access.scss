@@ -48,3 +48,24 @@
         top: 1px;
     }
 }
+
+.collaps_content{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.lable_collaps{
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    background: #F3F6F9;
+    padding: 10px 6px;
+    border-radius: 7px;
+    i{
+        position: absolute;
+        left: 4px;
+        top: 13px;
+        color: #a1a1a1;
+    }
+}

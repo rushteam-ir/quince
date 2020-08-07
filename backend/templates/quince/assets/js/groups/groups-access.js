@@ -131,3 +131,26 @@ function redirect(url) {
     location.href = url
 }
 
+// lable collapse
+
+var lable_collaps = document.getElementsByClassName('lable_collaps');
+
+for (let i = 0; i < lable_collaps.length; i++) {
+
+    lable_collaps[i].addEventListener('click', function () {
+
+        let panel = this.nextElementSibling;
+
+            if (panel.style.maxHeight) {
+
+                panel.style.maxHeight = null;
+
+            } else {
+
+                panel.style.maxHeight = panel.scrollHeight + 'px';
+
+            }
+
+    });
+
+}

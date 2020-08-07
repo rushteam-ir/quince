@@ -6,8 +6,9 @@ $(document).ready(function () {
         main_cms_field.addClass('MCF_larg');
         dashboard.removeClass('open_dsh');
         dashboard.addClass('close_dsh');
-        dashboard_logo.removeClass('opacity_on');
-        dashboard_logo.addClass('opacity_none');
+        dashboard_logo.fadeOut(1000);
+
+        hover_field.css('display', 'block');
 
         for (let i = 0; i < dashboard_collaps.length; i++) {
 
@@ -15,9 +16,6 @@ $(document).ready(function () {
             test.style.maxHeight = null;
 
         }
-
-        hover_field.css('display', 'block');
-        sessionStorage.oc = 1;
 
     });
 
@@ -27,9 +25,6 @@ $(document).ready(function () {
         hover_field.css('display', 'none');
         dashboard.removeClass('close_dsh');
         dashboard.addClass('open_dsh');
-        dashboard_logo.removeClass('opacity_none');
-        dashboard_logo.addClass('opacity_on');
-        sessionStorage.oc = 2;
 
     });
 

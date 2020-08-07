@@ -79,10 +79,6 @@
     }
 }
 
-.Q_table .QT_green_pill div {
-    width: 130px;
-}
-
 .modal_info_col {
     font-weight: bold;
     font-size: 0.9rem;
@@ -144,4 +140,8 @@
     position: relative;
     top: 8px;
     right: 6px;
+}
+
+.Q_table .QT_truncate div {
+    max-width: 120px;
 }
