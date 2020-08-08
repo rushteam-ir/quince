@@ -1,0 +1,27 @@
+{>"layouts/index-layout"/}
+
+{<title}
+    <title>
+
+    </title>
+{/title}
+
+{<css}
+    <link rel="stylesheet" href="css/articles/articles-show.css">
+    <link rel="stylesheet" href="css/general/Swiper.css">
+{/css}
+
+{<js}
+    <script src="js/general/Swiper.js"></script>
+    <script src="js/articles/articles-show.js"></script>
+{/js}
+
+{<body}
+
+
+<header class="header_of_articles_show">
+    <p>مقالات / دسته طالبی ها</p>
+    <h1>طالبی هستم سلام!</h1>
+</header>
+
+{/body}

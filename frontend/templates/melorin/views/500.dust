@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/general/general.css">
+    <link rel="stylesheet" href="css/general/404.css">
+</head>
+<body>
+<div class="cont_principal">
+    <div class="cont_error">
+        <h1 class="style_of_404_text style_of_500_text">500</h1>
+        <p class="style_of_not_found_text">Internal Server Error</p>
+    </div>
+    <div class="cont_aura_1"></div>
+    <div class="cont_aura_2"></div>
+    <script src="js/general/404.js"></script>
+</div>
+</body>
+</html>

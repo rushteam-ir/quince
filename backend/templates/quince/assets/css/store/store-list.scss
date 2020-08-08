@@ -1,0 +1,17 @@
+@import '../Partials/main-color';
+@import '../Partials/mixin';
+@import '../Partials/checkbox-design';
+@import '../Partials/header-text';
+@import '../Partials/table-header';
+@import '../Partials/table-option';
+@import '../Partials/table';
+@import '../Partials/pagination';
+@import '../Partials/table-error';
+
+.main_body {
+    @include main_field
+}
+
+.main_col {
+    @include main_col;
+}

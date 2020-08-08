@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <base href="{frontend_url}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/general/bootstrap.css">
+    <link rel="stylesheet" href="css/general/fontawsome.css">
+    <link rel="stylesheet" href="css/general/animate.css">
+    <link rel="stylesheet" href="css/general/layout.css">
+    <link rel="stylesheet" href="css/general/swiper.css">
+    <link rel="stylesheet" href="css/general/general.css">
+    {+css/}
+    {+title/}
+</head>
+
+<body>
+
+    <header class="header_of_navbar">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-6 pl-0">
+                    <div class="input-group mb-3 box_of_search_header">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text btn_of_search_header" id="basic-addon1"><i class="far fa-search"></i></span>
+                        </div>
+                        <input type="text" class="form-control search_inp_header text-right dir-rtl" aria-label="Username" placeholder="... جسنجو کنید"
+                            aria-describedby="basic-addon1">
+                    </div>
+                </div>
+
+
+                <div class="col-3 dir_rtl offset-3 pr-0">
+
+                    <a href="{frontend_url}">
+                        <img class="d-inline-block main_logo mt-2" src="img/logo1.jpg" alt="">
+                        <p class="d-inline-block logo_shop_text mr-2 ">فروشگاه <span>ملورین</span></p>
+                    </a>
+
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <nav class="main_navbar" id="myHeader">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-3  text-left dir-rtl pl-0">
+
+                    <button type="button" class="btn log_req_modal" data-toggle="modal" data-target="#log_reg_main_modal">
+                        <div class="d-inline-block box_of_reg_log_header" id="reg_log_modal">
+                            <p>ورود / عضویت</p>
+                        </div>
+                    </button>
+
+                    <i class="fas fa-shopping-cart shopping_card_header mr-3"></i>
+                    <p class="d-inline-block bag_heaer_text">سبـــد خــریــد</p>
+                    <div class="shopping_card_number">2</div>
+
+                </div>
+
+                <div class="col-9 pr-0">
+
+                    <ul class="dir-rtl text-right mt-4">
+                        <li class="vip_offers_menu mr-4 d-inline-block">
+                            <a href="" class="menu_links vip_offers_menu_link">پیشهاد های ویژه</a>
+                        </li>
+                        <li class="mr-4 d-inline-block">
+                            <a href="{frontend_url}contact-us" class="menu_links">پشتیبانی</a>
+                        </li>
+                        <li class="mr-4 d-inline-block">
+                            <a href="{frontend_url}about-us" class="menu_links">درباره ما</a>
+                        </li>
+                        <li class="mr-4 d-inline-block">
+                            <a href="" class="menu_links">مقاله ها</a>
+                        </li>
+                        <li class="mr-4 d-inline-block">
+                            <a href="" class="menu_links">دسته بندی ها</a>
+                        </li>
+                        <li class="mr-4 d-inline-block">
+                            <a href="" class="menu_links">محصولات</a>
+                        </li>
+                        <li class="active_menu mr-4 d-inline-block">
+                            <a href="{frontend_url}" class="menu_links">صفحه اصلی</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </nav>
+
+    <div class="modal fade text-right" id="log_reg_main_modal" tabindex="-1" role="dialog" aria-labelledby="log_register_modal"
+        aria-hidden="true">
+        <div class="modal-dialog dir_rtl text-right" role="document">
+            <div class="modal-content" id="modal_height">
+                <div class="modal-header">
+
+                    <h5 class="modal-title log_modal_title d-inline-block" id="log_register_modal">ورود به <span class="melorin_titile_modal">ملورین</span></h5>
+                    <button type="button" class="close close_log_modal" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+                <div class="modal-body main_body_of_log_modal">
+                    <form id="login_form" method="post" action="{frontend_url}user/login">
+
+                        <p class="welcom_text_of_log_modal">خوش آمدید !</p>
+
+                        <div class="form-group">
+                          <label for="email_log_modal" class="font-weight-bold">ایمیل</label>
+                          <input type="text" class="form-control text-left dir_ltr" id="email_log_modal" name="email_inp">
+                        </div>
+
+                        <div class="form-group">
+                          <label for="pass_log_modal" class="font-weight-bold">رمز عبور  <span class="forget_pass_box" id="go_recovery">رمز عبور خود را فراموش کرده ای؟</span></label>
+                          <input type="password" class="form-control text-left dir_ltr" id="pass_log_modal" name="password_inp">
+                        </div>
+                  
+                        <label class="checkbox_body" class="font-weight-bold">مرا به خاطر داشته باش
+                            <input type="checkbox" name="">
+                            <span class="checkmark"></span>
+                        </label>
+                        
+                        <button type="submit" class="btn btn-dark w-100 mt-3 ">ورود به حساب کاربری</button>
+
+                        <div class="text-center mt-3 field_of_register_link">
+                            <p class="d-inline-block ">کاربر جدید هستید؟</p>
+                            <p class="d-inline-block register_link_modal" id="go_register">ایجاد حساب جدید </p>
+                        </div>
+
+                      </form>
+
+                      <form id="register_form" method="post" action="{frontend_url}user/register">
+                          
+                          <div class="form-group">
+                              <label for="email_reg_modal" class="font-weight-bold">ایمیل</label>
+                              <input type="text" class="form-control" id="email_reg_modal" name="email_inp">
+                          </div>
+
+                        <div class="form-group">
+                            <label for="mobile_reg_modal" class="font-weight-bold">شماره تلفن</label>
+                            <input type="text" class="form-control" id="mobile_reg_modal" name="phone_number_inp">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="pass_reg_modal" class="font-weight-bold">رمز عبور</label>
+                            <input type="password" class="form-control" id="pass_reg_modal" name="password_inp">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="repass_reg_modal" class="font-weight-bold">تکرار رمز عبور</label>
+                            <input type="password" class="form-control" id="repass_reg_modal" name="password_confirm_inp">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6">
+
+                                <div class="form-group">
+                                    <label for="repass_reg_modal" class="font-weight-bold">کد امنیتی</label>
+                                    <input type="password" class="form-control" id="repass_reg_modal">
+                                </div>
+
+                            </div>
+                            <div class="col-6">
+
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-dark w-100 mt-3 ">ثبت نام در ملورین</button>
+
+                        <div class="text-center mt-3 field_of_register_link">
+                            <p class="d-inline-block ">حساب کاربری دارید؟</p>
+                            <p class="d-inline-block register_link_modal" id="go_login">ورود به حساب کاربری</p>
+                        </div>
+
+                      </form>
+
+                      <form id="recovery_form">
+
+                        <div class="form-group">
+                            <label for="repass_reg_modal" class="font-weight-bold">ایمیل</label>
+                            <input type="text" class="form-control" id="repass_reg_modal">
+                            <small>جهت باز یابی رمز عبور ایمیل مربوط به حساب کاربری خود را وارد کنید.</small>
+                        </div>
+
+                        <button type="submit" class="btn btn-dark w-100 mt-3 ">بازیابی رمز عبور</button>
+
+                        <div class="text-center mt-3 field_of_register_link mt-3">
+                            <p class="d-inline-block ">حساب کاربری دارید؟</p>
+                            <p class="d-inline-block register_link_modal" id="go_login_recovery">ورود به حساب کاربری</p>
+                        </div>
+
+                      </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {+body/}
+
+    <footer class="main_footer">
+
+        <div class="container text-right">
+            <div class="row">
+                <div class="col-3 dir_rtl">
+
+                    <p class="header_of_footer mb-0">با ما در ارتباط باشید</p>
+                    <div class="border_title_footer"></div>
+
+                    <p class="footer_description dir-rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+
+                    <a href="" class="insta_direction_footer btn">در اینستاگرام ما عضو شوید</a>
+
+                </div>
+                <div class="col-2">
+
+                    <p class="header_of_footer mb-0">دسترسی سریع</p>
+                    <div class="border_title_footer_second"></div>
+
+                    <ul>
+                        <li class="mt-3">
+                            <a href="" class="link_of_footer">صفحه اصلی</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="" class="link_of_footer">دسته بندی محصولات</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="" class="link_of_footer">دسته بندی جوراب ها</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="" class="link_of_footer">دسته بندی لباس زیر</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="" class="link_of_footer">پشتیبانی</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="" class="link_of_footer">مقاله ها</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-2">
+
+                    <p class="header_of_footer mb-0">سوالات متداول</p>
+                    <div class="border_title_footer_second"></div>  
+
+                    <ul>
+                        <li class="mt-3">
+                            <a href="" class="link_of_footer">شرایط ارسال چطوره؟</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="" class="link_of_footer">چرا به شما اعتماد کنم؟</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="" class="link_of_footer">ضمانت چه شرایطی دارد؟</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="" class="link_of_footer">ایا امکان مرجوعی وجود دادرد</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="" class="link_of_footer">چطوری سلام کنم دلار نشه؟</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="" class="link_of_footer"></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="col-4 offset-1 text-right dir_rtl col_of_logo_custom">
+
+                    <img class="d-inline-block main_logo mt-2" src="img/logo1.jpg" alt="">
+                    <p class="d-inline-block logo_shop_text_footer mr-2 ">فروشگاه <span>ملورین</span></p>
+
+                    <p class="footer_description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+
+                    <div class="border_footer_customize"></div>
+
+                    <div>
+
+                        <p class="contact_text_footer mb-0">شماره تماس : 02144303785</p>
+                        <p class="contact_text_footer mb-0">ایمیل : melorin@gmail.com</p>
+                        <p class="contact_text_footer mb-0">ادرس:خیابان حافظ بالاتر از سخایی</p>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-3">
+
+                    <img class="enamad_footer" src="img/enamad2.png" alt="">
+
+                </div>
+                <div class="col-9 dir_rtl">
+
+                    <p class="header_of_footer mb-0">بهترین کیفیت را از ما بخواهید</p>
+                    <p class="footer_description mt-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+
+                </div>
+            </div>
+
+        </div>
+        <hr class="hr_footer_custom">
+        
+        <div class="container">
+
+            <p class="footer_copy_right">تمام حقوق مادی و معنوی این سایت متعلق به فروشگاه ملورین می باشد.</p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/general/jquery.js"></script>
+    <script src="js/general/popper.js"></script>
+    <script src="js/general/bootstrap.js"></script>
+    <script src="js/general/wow.js"></script>
+    <script src="js/general/swiper.js"></script>
+    <script src="js/general/layout.js"></script>
+    {+js/}
+</body>
+
+</html>

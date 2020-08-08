@@ -1,0 +1,235 @@
+/*Explain About Us*/
+
+.background_img_of_about_us {
+    background-image: url("../../img/header3.jpg");
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.background_color_img_of_about_us {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.title_of_factory {
+    color: #EEEEEE;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.Introduction_of_factory {
+    width: 80%;
+    text-align: justify;
+    margin: auto;
+    direction: rtl;
+    color: #EEEEEE;
+    font-size: 1.2rem;
+    padding: 20px 0px 90px 0px;
+}
+
+/*End Explain About Us*/
+
+/*Explain Table*/
+.bg_img_of_section {
+    background-image: url("../../img/bg.jpg");
+    background-size: cover;
+}
+
+.box_of_logo, .box_of_explain_table {
+    width: 80%;
+    height: 350px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.logo_of_table {
+    width: 300px;
+    height: 250px;
+    position: relative;
+    top: 50px;
+}
+
+
+.box_of_explain_table{
+    font-family: main-font;
+}
+
+.explain_box_table{
+    margin-top: 30px;
+}
+
+.explain_box_table , .support_option_table{
+    font-size: 1.3rem;
+}
+
+.social_media_table{
+    background: linear-gradient(120deg,#3498db,#8e44ad,#3498db);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+}
+
+.padding_of_title{
+    padding-top: 50px;
+    font-size: 2.2rem;
+    padding-bottom: 10px;
+}
+
+/*End Explain Table*/
+
+/*Our Office*/
+.bg_of_office{
+    background-image: url("../../img/office.png");
+    background-size: cover;
+    height: 400px;
+}
+
+.title_part_of_page {
+    color: #292929;
+    display: inline-block;
+    font-family: main-font;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0;
+    position: relative;
+}
+
+.title_part_of_page::before {
+    background-color: #292929;
+    content: "";
+    height: 1px;
+    left: -210px;
+    position: absolute;
+    top: 21px;
+    transition: all 0.4s ease 0s;
+    width: 160px;
+}
+
+.title_part_of_page::after {
+    background-color: #292929;
+    content: "";
+    height: 1px;
+    right: -210px;
+    position: absolute;
+    top: 21px;
+    transition: all 0.4s ease 0s;
+    width: 160px;
+}
+/*End Our Office*/
+
+/*Why Us*/
+
+.title_of_Fields_of_activity_Melorin , .title_of_Site_Values_Melorin{
+    text-align: right;
+}
+
+
+
+.Fields_of_activity_Melorin , .Site_Values_Melorin{
+    list-style-type: square;
+}
+
+.box_of_why_us{
+    width: 70%;
+    margin: auto;
+}
+/*End Why Us*/
+
+/*Media Query*/
+
+@media only screen and (max-width: 1200px) {
+    .box_of_why_us{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .Introduction_of_factory {
+        font-size: 1rem;
+    }
+
+    .logo_of_table {
+        width: 250px;
+        height: 200px;
+        top: 50px;
+    }
+
+    .box_of_logo, .box_of_explain_table {
+        height: 300px;
+    }
+    .box_of_logo, .box_of_explain_table {
+        width: 100%;
+    }
+    .padding_of_title{
+        padding-top: 30px;
+        font-size: 2rem;
+    }
+    .explain_box_table , .support_option_table{
+        font-size: 1.2rem;
+    }
+
+    .explain_box_table{
+        margin-top: 20px;
+    }
+    .box_of_why_us{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .box_of_logo, .box_of_explain_table {
+        margin: 0px auto;
+    }
+    .title_part_of_page {
+        font-size: 1.4rem;
+    }
+
+    .title_part_of_page::before {
+        width: 140px;
+        left: -180px;
+        top: 15px;
+    }
+
+    .title_part_of_page::after {
+        width: 140px;
+        right: -180px;
+        top: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .Introduction_of_factory {
+        font-size: 0.86rem;
+    }
+    .title_part_of_page {
+        font-size: 1.3rem;
+    }
+
+    .title_part_of_page::before {
+        width: 100px;
+        left: -120px;
+        top: 13px;
+    }
+
+    .title_part_of_page::after {
+        width: 100px;
+        right: -120px;
+        top: 13px;
+    }
+    .title_of_Fields_of_activity_Melorin , .title_of_Site_Values_Melorin{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+}
+
+
+/*End Media Query*/

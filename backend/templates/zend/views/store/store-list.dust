@@ -1,0 +1,264 @@
+{>"layouts/dashboard-layout"/}
+
+{<css} 
+    <link rel="stylesheet" href="css/store/store-list.css">
+    <link rel="stylesheet" href="css/general/slick.css">
+{/css}
+{<js} 
+    <script src="js/general/slick.js"></script>
+    <script src="js/store/store-list.js"></script>
+{/js}
+
+{<body} 
+        <div class="main_filed_of_store_list">
+
+            <p class="store_list_title">
+                لیست محصولات
+            </p>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn search_btn_of_category"  type="button"><i class="fas fa-search"></i></button>
+                </div>
+                <input id="category_search" type="text" class="form-control search_category_inp" placeholder="جستجو">
+            </div>
+
+            {@alertSuccess key="add-success" msg="محصول جدید با موفقیت اضافه شد"}{/alertSuccess}
+            {@alertSuccess key="edit-success" msg="تغییرات اعمال شده روی محصول با موفقیت ثبت شد"}{/alertSuccess}
+
+            <div class="container-fluid p-0">
+
+                <div class="row">
+
+                    {?list}
+                        {#list}
+                            <div class="col-12 main_box_of_product_col p-0">
+
+                                <div class="blog-card alt">
+
+                                    <div class="meta">
+                                        <div class="photo" style="background-image: url(media/products/{._id}_main.png)"></div>
+                                    </div>
+
+
+                                    <div class="description text-right">
+                                        
+                                        <div class="dropdown ">
+                                            <button class=" dropdown-toggle edit_remove_btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-bars"></i>
+                                            </button>
+
+                                            <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
+                                              <a class="dropdown-item" href="{backend_url}store/edit/{._id}">ویرایش</a>
+                                              <hr class="hr_custom">
+                                                {@eq key="{.status}" value="true"}
+                                                    <a class="dropdown-item product_status" name="{._id}" value="غیر فعال کردن">غیر فعال کردن</a>
+                                                {:else}
+                                                    <a class="dropdown-item product_status" name="{._id}" value="فعال کردن">فعال کردن</a>
+                                                {/eq}
+                                              <hr class="hr_custom">
+                                              <a class="dropdown-item product_del" name="{._id}">حذف</a>
+                                            </div>
+                                            
+                                        </div>
+
+
+
+                                        <h1>{.title}</h1>
+                                        <h6>کد محصول : {.code}</h6>
+                                        <h2 class="mt-2 d-inline-block position_customize_prozuct">اخرین تغییرات : <span>{.last_edit}</span></h2>
+                                        <h2 class="d-inline-block mr-4 border_customize_and_padd"> نویسنده : <span>{.author.first_name} {.author.last_name}</span></h2>
+                                        {@eq value="{.status}" key="true"}
+                                            <div class="situation_of_product_color mt-2 mb-0" style="background-color: #5ad67d;"></div>
+                                        {:else}
+                                            <div class="situation_of_product_color mt-2 mb-0" style="background-color: #E13A58;"></div>
+                                        {/eq}
+                                        <div class="text_hidden_able line_clamp text-right dir-rtl">
+                                            <p class="text-break block-with-text">
+                                                    {.describe} 
+                                            </p>
+                                        </div>
+
+                                            <button name="{.points}" value="{.row}" type="button" class="btn btn_of_show_more_product line_clamp" data-toggle="modal" data-target="#exampleModal_{.row}">
+                                                اطلاعات بیشتر
+                                                <i class="fas fa-angle-left left_angle_arrow_of_more_info"></i>
+                                            </button>   
+                                                                                 
+                                    </div>
+
+                                </div>
+
+
+                                
+                            </div>
+                        {/list}
+                          
+                    {:else}
+                    <div class="col-12 p-0">
+                        <div class="nothing_to_see_box">
+                            محصولی جهت نمایش وجود ندارد !
+                        </div> 
+                    </div>
+ 
+                    {/list}
+
+                </div>
+            </div>
+
+            <div class="show_more_field mt-5">
+                <p>نمایش بیشتر</p>
+            </div>
+
+        </div>
+
+        {#list}
+            <div class="modal fade " id="exampleModal_{.row}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+                <div class="modal-dialog " role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="row">
+                                <div class="col-12 text-right">
+
+                                    <div class="row">
+                                        <div class="col-5 pr-0 dir_of_slider">
+
+
+                                            <div class="main_slider">
+                                                {#.images}
+                                                    <div class="main_box_of_modal_slider">
+                                                        <img class="w-100 h-100" src="media/products/{.}" alt="">
+                                                    </div>
+                                                {/.images}
+                                            </div>
+
+                                            <div class="slider-nav">
+                                                {#.images}
+                                                    <div class="nav_slider_modal">
+                                                        <img class="w-100 h-100" src="media/products/{.}" alt="">
+                                                    </div>
+                                                {/.images}
+                                            </div>
+
+
+                                        </div>
+                                        <div class="col-7">
+
+                                            <div class="title_of_modal_product">
+                                                <p class="mb-0">{.title}</p>
+                                            </div>
+                                            <div class="title_of_modal_product">
+                                                <h6 class="mb-0">کد محصول : {.code}</h6>
+                                            </div>
+
+                                            <br>
+
+                                            <div class="star_color_custme d-inline-block star" >
+                                                <i id="star_1_{.row}" class="far fa-star"></i>
+                                                <i id="star_2_{.row}" class="far fa-star"></i>
+                                                <i id="star_3_{.row}" class="far fa-star"></i>
+                                                <i id="star_4_{.row}" class="far fa-star"></i>
+                                                <i id="star_5_{.row}" class="far fa-star"></i>
+                                            </div>
+                                            <span class="d-inline-block">
+                                                (10/{.points})
+                                            </span>
+        
+        
+                                            <hr>
+                                            <div class="price_number_of_modal_product d-inline-block">
+                                                <p class="d-inline-block m-0">{.price_discount}تومان</p>
+                                            </div>
+
+                                            <div class="sale_price_number_of_modal_product d-inline-block mr-4">
+                                                <p class="d-inline-block m-0 line_through">{.price}تومان</p>
+                                            </div>
+
+                                            <hr>
+
+                                            <div class="row">
+                                                <div class="col-5 pr-0">
+                                                    <div>
+                                                        <p>
+                                                            <span class="title_of_info_modal_product">دسته بندی : </span>
+                                                            <span>{.category.title}</span>
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <p>
+                                                            <span class="title_of_info_modal_product">زیر دسته : </span>
+                                                            <span>{.sub_category.title}</span>
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <p>
+                                                            <span class="title_of_info_modal_product"> موجودی :</span>
+                                                            <span>{.stock}  عدد</span>
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <p>
+                                                            <span class="title_of_info_modal_product">وضعیت : </span>
+                                                            {@eq value="{.status}" key="true"}
+                                                                <span class="text-success">فعال</span>
+                                                            {:else}
+                                                                <span class="text-danger">غیر فعال</span>
+                                                            {/eq}
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <p>
+                                                            <span class="title_of_info_modal_product"> نویسنده :</span>
+                                                            <span>{.author.first_name} {.author.last_name}</span>
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <p>
+                                                            <span class="title_of_info_modal_product">تعداد خرید :</span>
+                                                            <span>{.purchases} عدد </span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-7 pr-0">
+                                                    <div class="title_of_info_modal_product">ویژگی های محصول : </div>
+                                                    <ul>
+                                                        {#.features}
+                                                            <li class="mt-2">
+                                                                <span class="mr-1">{.}</span>
+                                                            </li>
+                                                        {/.features}
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="offer_modal_product">
+                                        تخفیف : {.discount}%
+                                    </div>
+
+                                    <hr class="modal_hr_custom">
+
+                                    <div>
+                                        <p class="text-break modal_product_description">
+                                            {.describe}
+                                        </p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {/list}
+
+{/body}

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{article_info.title}</title>
+
+    <base href="{frontend_url}">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/fontAwsome.css">
+    <link rel="stylesheet" type="text/css" href="css/Swiper.css">
+    <link rel="stylesheet" type="text/css" href="scss/brand.css">
+
+</head>
+<body>
+
+<section class="box_of_header">
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light  nav_bar_about_us">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fal fa-bars menu_icon "></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav pl-4 mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Brand</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallary</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contact</a>
+                        </li>
+
+                    </ul>
+                    <ul class="navbar-nav pl-4 ml-auto">
+                        <li class="nav-item">
+                            <button class="nav-link sign_in_up" id="sign_in">sign in</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link sign_in_up" id="sign_up">sign up</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link sign_in_up" id="search_icon">
+                                <i class="far fa-search"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="header_of_article">
+    <img src="quince/media/images/{article_info.main_image}" class="img_of_header">
+</section>
+
+<section class="article_content">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="article_exp">
+                    <div class="header_of_article_content">
+                        <h1 class="title_of_article">{article_info.title}</h1>
+                        <p class="small_text_exp">In HONOR OF GUCCIO GUCCI’S 138TH BIRTHDAY, CR RETURNS TO THE ROOTS OF
+                            THE ICONIC ITALIAN BRAND</p>
+                        <div class="line_bot"></div>
+                        <div class="writer_info">
+                            <i class="fal fa-money-check-edit d-inline-block">
+                                <p class="name_of_writer d-inline-block">
+                                    {@eq key="{article_info.author.author_type}" value="name"}
+                                        {article_info.author.first_name} {article_info.author.last_name}
+                                    {:else}
+                                        {article_info.author.nick_name}
+                                    {/eq}
+                                </p>
+                            </i>
+                            <i class="fal fa-calendar-day">
+                                <p class="date_of_write d-inline-block">{article_info.last_edit}</p>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="content_of_ex_text_img_box">
+                        {@renderHtml text="{article_info.describe}"}{/renderHtml}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comments_form">
+            <div class="row py-5 title_box">
+                <h2 class="title_of_part_brands">
+                    comment
+                </h2>
+            </div>
+            <form action="{frontend_url}articles/comment" autocomplete="off" method="post">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Name</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name_inp">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email_inp">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">your comment</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="text_inp"></textarea>
+                </div>
+                <input type="hidden" value="{article_info._id}" name="article_inp">
+                <button type="submit" class="btn">Submit</button>
+              </form>
+        </div>
+        {#comments_list}
+            {@eq key="{status}" value="true"}
+                <div class="comment_preview">
+                    <div class="container_fluid">
+                        <div class="row">
+                            <div class="col-2">
+                                {@eq key="{author}" value="{null}"}
+                                    <img class="comment_img" src="img/default-profile-picture.png" alt="">
+                                {:else}
+                                    <img class="comment_img" src="img/default-profile-picture.png" alt="">
+                                {/eq}
+                            </div>
+                            <div class="col-10">
+                                <div class="comment_info_field">
+                                    <p class="name">
+                                        {@eq key="{author}" value="{null}"}
+                                            {name}
+                                        {:else}
+
+                                        {/eq}
+                                    </p>
+                                    <p class="date">{date} | {time}</p>
+                                    <p class="mt-3">{text}</p>
+                                    <button class="btn reply_btn" value="{root_id}" name="{._id}">reply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {#replies}
+                    {@eq key="{status}" value="true"}
+                        <div class="reply_comment_preview mt-5">
+                            <div class="container_fluid">
+                                <div class="row">
+                                    <div class="col-2">
+                                        {@eq key="{.author}" value="{null}"}
+                                            <img class="comment_img" src="img/default-profile-picture.png" alt="">
+                                        {:else}
+                                            <img class="comment_img" src="quince/media/avatars/{.author.avatar}" alt="">
+                                        {/eq}
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="comment_info_field">
+                                            <p class="name">
+                                                {@eq key="{.author}" value="{null}"}
+                                                    {.name}
+                                                {:else}
+                                                    {@eq key="{.author.author_type}" value="name"}
+                                                        {.author.first_name} {.author.last_name}
+                                                    {:else}
+                                                        {.author.nick_name}
+                                                    {/eq}
+                                                {/eq}
+                                            </p>
+                                            <p class="date">{.date} | {.time}</p>
+                                            <p class="reply_to "><span>reply to : </span>
+                                                {@eq key="{.reply_to.author}" value="{null}"}
+                                                    {.reply_to.name}
+                                                {:else}
+                                                    {@eq key="{.reply_to.author.author_type}" value="name"}
+                                                        {.reply_to.author.first_name} {.reply_to.author.last_name}
+                                                    {:else}
+                                                        {.reply_to.author.nick_name}
+                                                    {/eq}
+                                                {/eq}
+                                            </p>
+                                            <p class="mt-3">{.text}</p>
+                                            <button class="btn reply_btn" value="{root_id}" name="{._id}">reply</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {/eq}
+                {/replies}
+            {/eq}
+        {/comments_list}
+    </div>
+</section>
+<footer class="footer_field py-5">
+    <div class="container">
+        <div class="row field_of_footer_part">
+            <div class="col-xs-12 col-sm-12 col-md-3  text-center border_r mb-4">
+                <ul class="mb-0 pl-0">
+                    <li class="footer_txt footer_part_header pb-3">fast acces</li>
+                    <li class="footer_txt"><a href="#"> home</a></li>
+                    <li class="footer_txt"><a href="#"> brand </a></li>
+                    <li class="footer_txt"><a href="#"> gallary </a></li>
+                    <li class="footer_txt"><a href="#"> journey </a></li>
+                    <li class="footer_txt"><a href="#"> about </a></li>
+                    <li class="footer_txt"><a href="#"> contact </a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 text-center border_r mb-4">
+                <ul class="pl-0">
+                    <li class="footer_txt footer_part_header pb-3">site parts</li>
+                    <li class="footer_txt"><a href="#">best brand</a></li>
+                    <li class="footer_txt"><a href="#">best models</a></li>
+                    <li class="footer_txt"><a href="#">Intredius brands</a></li>
+                    <li class="footer_txt"><a href="#">Intredius models</a></li>
+                    <li class="footer_txt"><a href="#">log in</a></li>
+                    <li class="footer_txt"><a href="#">sign up</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 last_col_or_footer text-center mb-4">
+                <div class="field_of_social">
+                    <p class="mb-0">social media</p>
+                    <p>please contact with us by social media</p>
+                </div>
+                <div class="fiel_for_social_media">
+                    <a href="#" class="youtube_icon fab fa-youtube fa-2x mr-3"></a>
+                    <a href="#" class="linkdin_icon fab fa-linkedin fa-2x mr-3"></a>
+                    <a href="#" class="insta_icon fab fa-instagram fa-2x"></a>
+                </div>
+                <div class="email_div">
+                    <p class="mb-0">or with email address </p>
+                    <p class="mb-0">Email :semofashion@gmail . com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="text-center mt-3" style="color: white">&copy; copy wright 2020</p>
+</footer>
+
+<section class="modal_of_reply">
+    <div class="container">
+        <div class="row row_custom align-items-center">
+            <div class="col-6 offset-3">
+                <div class="modal_field_of_comment">
+                    <p>reply comment</p>
+                    <i class="fal fa-times close_comment_modal"></i>
+                    <form method="post" autocomplete="off" action="{frontend_url}articles/reply">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Name</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name_inp">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email_inp">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">your comment</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="text_inp"></textarea>
+                        </div>
+                        <input type="hidden" class="reply_author" name="author_inp">
+                        <input type="hidden" class="reply_root" name="root_inp">
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="modal_of_sign_in" id="modal_of_sign_in">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="modal_box">
+                    <div class="modal_content">
+                        <div class="header_of_modal">
+                            <h2 class="title_of_modal d-inline-block"> Sign In</h2>
+                            <button class="btn_of_close float-right"><i
+                                    class="fal fa-times close_icon d-inline-block "></i></button>
+                        </div>
+                        <form>
+                            <div class="form-group">
+                                <label for="name_p">Your Name *</label>
+                                <input type="text" class="form-control" id="name_p" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your E-Mail *</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="Password">Your Password *</label>
+                                <input type="email" class="form-control" id="Password" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="Current">Current Your Password *</label>
+                                <input type="email" class="form-control" id="Current" aria-describedby="emailHelp">
+                            </div>
+
+
+                            <button type="submit" class="btn btn_submit_style">Submit</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="modal_of_sign_up" id="modal_of_sign_up">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="modal_box">
+                    <div class="modal_content">
+                        <div class="header_of_modal">
+                            <h2 class="title_of_modal d-inline-block"> Sign In</h2>
+                            <button class="btn_of_close float-right"><i
+                                    class="fal fa-times close_icon d-inline-block "></i></button>
+                        </div>
+                        <form>
+
+                            <div class="form-group">
+                                <label for="email_p">Your E-Mail *</label>
+                                <input type="email" class="form-control" id="email_p" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="Pass">Your Password *</label>
+                                <input type="email" class="form-control" id="Pass" aria-describedby="emailHelp">
+                            </div>
+
+
+                            <button type="submit" class="btn btn_submit_style">Submit</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="search_box" id="search_box">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="search_box_content">
+                    <div class="header_of_search_box">
+                        <button class="btn_of_close"><i class="fal fa-times close_icon"></i></button>
+                    </div>
+                    <form action="">
+                        <input type="text" placeholder="Search.." name="search" class="form-control field_of_search">
+                        <button type="submit" class="btn_of_search px-0"><i class="fa fa-search search_icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/jquery.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/modal.js"></script>
+
+</body>
+</html>

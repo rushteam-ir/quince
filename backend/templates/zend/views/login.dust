@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="{backend_url}">
+  <link rel="stylesheet" href="css/general/bootstrap.css">
+  <link rel="stylesheet" href="css/general/fontAwsome.css">
+  <link rel="stylesheet" href="css/general/general-css.css">
+  <link rel="stylesheet" href="css/cms/login.css">
+  <link rel="stylesheet" href="css/general/error.css">
+  <title>ورود به سیستم مدیریت محتوا</title>
+</head>
+
+<body class="main_field_of_dashbord_login" dir="ltr">
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
+          <div class="row row_of_dashbord_login_form">
+
+            <div class="col-12 col-md-6 offset-md-1 col_of_log_custom">
+              <div>
+
+                <p class="text-center header_of_dashbord_login">
+                  سیستم مدیریت محتوا
+                </p>
+
+              </div>
+
+              <div id="main_field_of_dashbord_login_form_id" class="main_field_of_dashbord_login_form">
+
+                {@alertSuccess key="sent-success" msg="ایمیل بازیابی با موفیت برای شما ارسال شد"}{/alertSuccess}
+                {@alertSuccess key="change-success" msg="رمز عبور شما با موفقیت تعویض شد"}{/alertSuccess}
+                {@alertSuccess key="logout-success" msg="شما با موفقیت خارج شدید"}{/alertSuccess}
+                {@alertWarn key="captcha-error" msg="کد امنیتی وارد شده صحیح نمی باشد"}{/alertWarn}
+                {@alertError key="inactive-admin" msg="دسترسی شما مسدود می باشد"}{/alertError}
+                {@alertWarn key="incorrect-input" msg="ایمیل یا رمز عبور صحیح نمی باشد"}{/alertWarn}
+
+                <div class="error_warning_alert text-right display_none" id="error_field_warning_front"> 
+
+                  <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeWarningErrorFront()"></i> 
+                  <i class="fal fa-exclamation-circle alert_icon_error"></i>
+
+                    <div class="d-inline-block mr-1" id="error_text"></div>
+
+                </div>
+
+                <form action="" method="post" name="dashbord_login_form" onsubmit="return adminlogerrors()">
+
+                  <div class="form-group">
+                    <label for="email-for-id" class="text-right d-block">ایمیل</label>
+                    <input type="text" class="form-control dashbord_login_input" id="email-for-id" name="email_inp" value="{login_form.email_inp}" autocomplete="off">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="password-for-id" class="text-right d-block">رمز عبور</label>
+                    <input type="password" class="form-control dashbord_login_input" id="password-for-id"
+                      name="password_inp" autocomplete="off">
+                  </div>
+
+                  <div class="row mb-3">
+                    <div class="col-6 pr-0 pl-0">
+                      <div class="mt-4">
+                        <img id="img-captcha" class="captcha_img_class" src="{captcha_url}" alt="captcha" title="captcha">
+                        <button type="button" id="btn-captcha" class="captcha_refresh_btn">
+                          <i class="fas fa-redo captcha_refresh_btn"></i>
+                        </button>
+
+                      </div>
+                    </div>
+ 
+                    <div class="col-6 pr-0">
+                      <div class="form-group">
+                        <label for="captcha-for-id dir-rtl" class="text-right d-block">کد امنیتی</label>
+                        <input type="text" class="form-control dashbord_login_input" id="captcha-for-id"
+                          name="captcha_inp" autocomplete="off">
+                      </div>
+                    </div>
+                    <div class="w-100">
+                      <a class="d-block text-right mr-3" href="{backend_url}recovery/">رمز عبور خود را فراموش کرده اید؟</a>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn sub_btn_of_dashbord_form">ورود</button>
+
+                </form>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 p-0 col_of_left_log_part d-none d-md-block col_of_log_custom_second">
+              <img class="w-100 blur_img_for_login_form" src="img/cms-login-img.jpg" alt="" title="">
+
+              <div class="logo-field">
+                <img class="zend_logo_of_dashbord_form" src="img/fade-zend-logo.png" alt="" title="">
+                <p class="text-center small_of_logo">
+                  version {zend_cms_version}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/general/jquery.js"></script>
+  <script src="js/general/popper.js"></script>
+  <script src="js/general/bootstrap.js"></script>
+  <script src="js/general/wow.js"></script>
+  <script src="js/general/error.js"></script>
+  <script src="js/cms/login.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      $('#btn-captcha').click(function () {
+
+          $('#img-captcha').attr('src', '{captcha_url}?_' + Math.random());
+
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+.error_info {
+    position: fixed;
+    top: -75px;
+    left: 35%;
+    text-align: right;
+    direction: rtl;
+    width: 30%;
+    height: 68px;
+    border-radius: 7px;
+    padding: 20px;
+    margin: 0;
+    @include transition (ease-out, 0.7s);
+    box-shadow: 0px 0px 15px -5px #828282;
+    opacity: 0;
+    overflow: hidden;
+    z-index: 999999999999999999999;
+
+    i {
+        position: relative;
+        top: 2px;
+        font-size: 1.2rem;
+        margin-left: 4px;
+    }
+
+    p{
+        display: inline-block;
+    }
+
+    & :last-child {
+        position: absolute;
+        left: 20px;
+        top: 22px;
+        cursor: pointer;
+    }
+}
+
+.warning_error{
+    background-color: $warning_color;
+    color: $warning_color;
+    border: 1px solid $warning_border;
+}
+
+.danger_error{
+    background-color: $danger_bg;
+    color: $danger_color;
+    border: 1px solid $danger_border;
+}
+
+.success_error{
+    background-color: $success_bg;
+    color: $success_color;
+    border: 1px solid $success_border;
+}
+
+
+.error_d_none{
+    display: none;
+}
+
+.error_disable{
+    top: -75px;
+    opacity: 0;
+}
+
+.error_d_block{
+    display: block;
+}
+
+.error_active {
+    top: 20px;
+    opacity: 1;
+}

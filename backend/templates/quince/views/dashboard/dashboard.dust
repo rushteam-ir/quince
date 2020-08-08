@@ -1,0 +1,13 @@
+{>"layouts/dashboard-layout"/}
+{<js}
+
+    <script src="js/general/fingerprint.js"></script>
+    <script>
+        Fingerprint2.getV18({}, function (result, com) {
+
+            console.log(result)
+
+        });
+    </script>
+
+{/js}

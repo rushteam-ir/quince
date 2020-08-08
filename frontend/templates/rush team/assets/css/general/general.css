@@ -1,0 +1,67 @@
+@font-face {
+    font-family: rush-team-font;
+    src: url("../../fonts/Minbus_Personal-use.otf");
+}
+
+@font-face {
+    font-family: accent-font;
+    src: url("../../fonts/A.Rezvan.ttf");
+}
+
+@font-face {
+    font-family: main-font;
+    src: url("../../fonts/Vazir.ttf");
+}
+
+@font-face {
+    font-family: second-font;
+    src: url("../../fonts/Vazir-Thin.ttf");
+}
+
+body {
+    font-family: main-font;
+}
+
+.dir_rtl {
+    direction: rtl;
+}
+
+.dir_ltr {
+    direction: ltr;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e2d00;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(197, 197, 197);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(85, 94, 129);
+}
+
+.btn.focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}

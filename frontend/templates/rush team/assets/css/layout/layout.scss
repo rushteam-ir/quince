@@ -1,0 +1,328 @@
+@import '../../css/variable/color';
+@import '../../css/mixin/cb-mixin';
+
+// navbar
+
+.navbar_field {
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff00;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000000000;
+    direction: rtl;
+    text-align: right;
+    @include transition(0.2s, linear, 0s);
+
+    ul {
+        list-style-type: none;
+        padding: 0px;
+        padding-right: 20px;
+
+        li {
+            display: inline-block;
+            padding: 0px 10px;
+            text-align: center;
+
+            .active_navbar {
+                border-bottom: 3px solid $d_gold;
+                color: $d_gold;
+                font-weight: bold;
+            }
+
+            a {
+                color: white;
+                width: 80px;
+                display: inline-block;
+                text-align: center;
+                height: 70px;
+                line-height: 70px;
+                border-bottom: 0px solid $d_gold;
+
+                &:hover {
+                    border-bottom: 3px solid $d_gold;
+                    font-weight: bold;
+                }
+
+            }
+
+            .special_one {
+                width: 130px;
+
+                &:hover {
+                    border-bottom: none;
+                    font-size: 1.05rem;
+
+                    span {
+                        border: 1px solid white;
+                    }
+                }
+
+                span {
+                    background-color: $d_gold;
+                    border-radius: 50px;
+                    padding: 5px 15px;
+                    @include transition(0.1s, linear, 0s);
+                }
+            }
+        }
+
+        .field_of_navbar_ltr {
+            display: inline-block;
+            direction: ltr;
+            text-align: left;
+            position: absolute;
+            left: 30px;
+            color: white;
+
+            p {
+                margin-bottom: 0;
+            }
+
+            .nav_logo {
+                font-family: rush-team-font;
+                font-size: 2rem;
+                height: 70px;
+                line-height: 70px;
+            }
+
+            .login_text,
+            .search_box {
+                margin-left: 30px;
+                height: 70px;
+                position: relative;
+                line-height: 70px;
+                top: -8px;
+            }
+
+            .search_box {
+                top: -5px;
+            }
+        }
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000000000;
+
+    .navbar_field {
+        background-color: #222222;
+
+        ul {
+            li {
+                .active_navbar {
+                    border-bottom: 3px solid $d_gold;
+                    color: $d_gold;
+                }
+
+                a {
+                    color: white;
+                }
+
+                .special_one {
+                    &:hover {
+                        span {
+                            border: 1px solid rgb(0, 0, 0);
+                        }
+                    }
+
+                    span {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .field_of_navbar_ltr {
+        color: white !important;
+    }
+}
+
+// footer
+
+.main_gsap_field {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.background__lights {
+    position: absolute;
+    height: 600px;
+    width: 100%;
+    background: #222222;
+}
+
+.lines {
+    opacity: 0.05;
+}
+
+.line {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #4C3A90;
+}
+
+.lights {
+    opacity: 0.9;
+}
+
+.light {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: $d_gold;
+}
+
+.footer_info {
+    margin-top: 100px;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    color: white;
+
+    .footer_header_txt {
+        font-size: 1.3rem;
+
+        & :first-child {
+            margin-bottom: 5px;
+        }
+    }
+
+    .footer_underline_header_text {
+        width: 100px;
+        height: 3px;
+        border-radius: 50px;
+        background-color: $d_gold;
+        margin-bottom: 20px;
+    }
+
+    .footer_info_text {
+        color: $d_text;
+        font-size: 0.9rem;
+        text-align: justify;
+        line-height: 30px;
+    }
+
+    .social_medi_footer_field {
+        ul {
+            list-style-type: none;
+            margin-top: 20px;
+            margin: 0 auto;
+            margin-top: 25px;
+            width: 200px;
+            padding: 0;
+
+            li {
+                display: inline-block;
+                width: 50px;
+
+                i {
+                    font-size: 2rem;
+                    color: $d_gold;
+                }
+            }
+        }
+    }
+
+    .footer_fast_access {
+        ul {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                a {
+                    color: $l_text;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+
+    .footer_unknown {
+        ul {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                a {
+                    color: $l_text;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+
+    .footer_logo_field {
+        img {
+            width: 100px;
+        }
+
+        p {
+            display: inline-block;
+            font-size: 1.3rem;
+            margin-right: 20px;
+        }
+    }
+
+    .footer_main_infi_text {
+        color: $d_text;
+        font-size: 0.9rem;
+        text-align: justify;
+        line-height: 30px;
+    }
+
+    .footer_underline_bigest {
+        width: 160px;
+        height: 3px;
+        background-color: $d_gold;
+        border-radius: 50px;
+    }
+
+    .p_e_filed_footer {
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 1.1rem;
+
+            li {
+                color: $d_text;
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    .end_text_of_footer {
+        text-align: right;
+        direction: rtl;
+
+        p {
+            text-align: center;
+            font-size: 0.9rem;
+            color: $d_text;
+            line-height: 30px;
+        }
+    }
+
+    .footer_hr {
+        background-color: $d_text;
+        width: 90%;
+    }
+
+    .copy_right {
+        width: 100%;
+        direction: rtl;
+
+        p {
+            color: $l_text;
+            text-align: center;
+        }
+    }
+}

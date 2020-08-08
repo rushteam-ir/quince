@@ -1,0 +1,43 @@
+@import '../Partials/main-color';
+@import '../Partials/mixin';
+@import '../Partials/checkbox-design';
+@import '../Partials/header-text';
+@import '../Partials/table-header';
+@import '../Partials/btn';
+@import '../Partials/table';
+@import '../Partials/pagination';
+@import '../Partials/error';
+@import '../Partials/modal';
+@import '../Partials/table-error';
+
+
+.main_body {
+    @include main_field
+}
+
+.main_col {
+    @include main_col;
+}
+
+// category custom
+
+table {
+
+    .blue_btn,
+    .red_btn {
+        width: 35px;
+        height: 35px;
+
+        i {
+            font-size: 1.1rem;
+            position: relative;
+            left: 3.3px;
+            top: 1px;
+        }
+
+        .fa-pencil-alt {
+            left: 5.3px;
+            top: 0px;
+        }
+    }
+}

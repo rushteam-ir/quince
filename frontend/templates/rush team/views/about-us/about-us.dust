@@ -1,0 +1,313 @@
+{>"layouts/index-layout"/}
+
+{<title}
+    <title>
+
+    </title>
+{/title}
+
+{<css}
+    <link rel="stylesheet" href="css/about-us/about-us.css">
+{/css}
+
+{<js}
+    <script src="js/about-us/about-us.js"></script>
+{/js}
+
+{<body}
+
+{!Header Of About Us Page!}
+    <section class="header_of_about_us">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 px-0">
+                    <div class="box_of_img_header">
+                        <h1 class="name_of_team">Rush Team</h1>
+                        <h2 class="sub_name_of_team">گروهی کوچک میتواند تاثیری بزرگ داشته باشد</h2>
+                        <p class="explain_about_Rush_team dir_rtl">
+                            رسانه دیجیتال میتواند تاثیری مثبت روی زندگی ما بگذارد . کسب و کار ها از این رسانه هامیتوانند
+                            برای شفافیت بیشتر، خدمت رسانی بهتر و صمیمت بیشتر با مشتری ها استفاده کند . مامیخواهیم در این
+                            مسیر تاثیری کوچک داشته باشیم.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="box_of_Principles_of_Rush_team">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="box_of_Principles">
+                                    <i class="fas fa-cat icons_of_Principles_rush_team"></i>
+                                    <h3 class="title_of_Principles_rush_team">گرم و صمیمی</h3>
+                                    <p class="explain_about_Principles_of_rush dir_rtl">ارتباط میان اعضا صمیمانه است و
+                                        آنها برای
+                                        بیان
+                                        ایده ها،عقاید و نقطه نظرات خود احساس راحتی و آزادی میکنند.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="box_of_Principles">
+                                    <i class="fas fa-unicorn icons_of_Principles_rush_team"></i>
+                                    <h3 class="title_of_Principles_rush_team">گرم و صمیمی</h3>
+                                    <p class="explain_about_Principles_of_rush dir_rtl">ارتباط میان اعضا صمیمانه است و
+                                        آنها برای
+                                        بیان
+                                        ایده ها،عقاید و نقطه نظرات خود احساس راحتی و آزادی میکنند.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="box_of_Principles">
+                                    <i class="fas fa-dog icons_of_Principles_rush_team"></i>
+                                    <h3 class="title_of_Principles_rush_team">گرم و صمیمی</h3>
+                                    <p class="explain_about_Principles_of_rush dir_rtl">ارتباط میان اعضا صمیمانه است و
+                                        آنها برای
+                                        بیان
+                                        ایده ها،عقاید و نقطه نظرات خود احساس راحتی و آزادی میکنند.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {!End Header Of About Us Page!}
+
+    {!Property Of Rush Team!}
+    <section class="property_of_rush_team">
+        <div class="container">
+            <div class="row row_of_property">
+                <div class="col-lg-6">
+                    <div class="box_of_number w-50 mt-4 d-inline-block">
+                        <i class="fal fa-handshake-alt icon_of_counter"></i>
+                        <div class="box_counter_of_number">
+                            <span class="plus_of_counter">+</span>
+                            <p class="counter_of_number d-inline-block">35</p>
+                        </div>
+                        <p class="title_of_counter">
+                            تعداد پروژه ها
+                        </p>
+                    </div>
+                    <div class="w-50 box_of_number d-inline-block">
+                        <i class="fal fa-calendar-check icon_of_counter"></i>
+                        <div class="box_counter_of_number">
+                            <span class="plus_of_counter">+</span>
+                            <p class="counter_of_number d-inline-block">10</p>
+                        </div>
+                        <p class="title_of_counter">
+                            سال ها تجربه
+                        </p>
+                    </div>
+                    <div class="w-50 box_of_number d-inline-block">
+                        <i class="fal fa-clock icon_of_counter"></i>
+                        <div class="box_counter_of_number">
+                            <span class="plus_of_counter">+</span>
+                            <p class="counter_of_number d-inline-block">200</p>
+                        </div>
+                        <p class="title_of_counter">
+                            ساعات کار
+                        </p>
+                    </div>
+                    <div class="w-50 box_of_number d-inline-block">
+                        <i class="fal fa-laugh-beam icon_of_counter"></i>
+                        <div class="box_counter_of_number">
+                            <span class="plus_of_counter">+</span>
+                            <p class="counter_of_number d-inline-block">20</p>
+                        </div>
+                        <p class="title_of_counter">
+                            مشتریان خوشحال
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="box_of_property_of_rush_team">
+
+                        <div class="circle_of_property"></div>
+                        <span class="property_of_rush_team_jquery">
+                            <div class="inside_of_circle position-absolute property_1 display_of_explain_about_property_rush_team">
+                                <h3 class="title_of_property_rush_team">ریسپانسیو1</h3>
+                                <h4 class="sub_title_of_property_rush_team">طراحی واکنش گرا</h4>
+                                <p class="explain_about_property_rush_team">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                    صنعت چاپ، و با استفاده از طراحان گرافیک
+                                    است.
+                                </p>
+                            </div>
+                            <div class="icons_of_property_rush_team_box property_1 mouseover_change_color_icon_of_property"
+                                 id="property_1">
+                                <i class="fal fa-laptop-code icons_of_property_rush_team "></i>
+                            </div>
+                        </span>
+
+                        <span class="property_of_rush_team_jquery">
+                            <div class="inside_of_circle position-absolute property_2">
+                                <h3 class="title_of_property_rush_team">ریسپانسیو2</h3>
+                                <h4 class="sub_title_of_property_rush_team">طراحی واکنش گرا</h4>
+                                <p class="explain_about_property_rush_team">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                    صنعت چاپ، و با استفاده از طراحان گرافیک
+                                    است.
+                                </p>
+                            </div>
+                            <div class="icons_of_property_rush_team_box property_2" id="property_2">
+                                <i class="fal fa-laptop-code icons_of_property_rush_team"></i>
+                            </div>
+                        </span>
+
+
+                        <span class="property_of_rush_team_jquery">
+                            <div class="inside_of_circle position-absolute  property_3">
+                                <h3 class="title_of_property_rush_team">ریسپانسیو3</h3>
+                                <h4 class="sub_title_of_property_rush_team">طراحی واکنش گرا</h4>
+                                <p class="explain_about_property_rush_team">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                    صنعت چاپ، و با استفاده از طراحان گرافیک
+                                    است.
+                                </p>
+                            </div>
+                            <div class="icons_of_property_rush_team_box property_3" id="property_3">
+                                <i class="fal fa-laptop-code icons_of_property_rush_team "></i>
+                            </div>
+                        </span>
+
+                        <span class="property_of_rush_team_jquery">
+                            <div class="inside_of_circle position-absolute  property_4">
+                                <h3 class="title_of_property_rush_team">ریسپانسیو4</h3>
+                                <h4 class="sub_title_of_property_rush_team">طراحی واکنش گرا</h4>
+                                <p class="explain_about_property_rush_team">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                    صنعت چاپ، و با استفاده از طراحان گرافیک
+                                    است.
+                                </p>
+                            </div>
+                            <div class="icons_of_property_rush_team_box property_4" id="property_4">
+                                <i class="fal fa-laptop-code icons_of_property_rush_team "></i>
+                            </div>
+                        </span>
+
+                        <span class="property_of_rush_team_jquery">
+                            <div class="inside_of_circle position-absolute  property_5">
+                                <h3 class="title_of_property_rush_team">ریسپانسیو5</h3>
+                                <h4 class="sub_title_of_property_rush_team">طراحی واکنش گرا</h4>
+                                <p class="explain_about_property_rush_team">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                    صنعت چاپ، و با استفاده از طراحان گرافیک
+                                    است.
+                                </p>
+                            </div>
+                            <div class="icons_of_property_rush_team_box property_5" id="property_5">
+                                <i class="fal fa-laptop-code icons_of_property_rush_team "></i>
+                            </div>
+                        </span>
+
+                        <span class="property_of_rush_team_jquery">
+                            <div class="inside_of_circle position-absolute property_6">
+                                <h3 class="title_of_property_rush_team">ریسپانسیو6</h3>
+                                <h4 class="sub_title_of_property_rush_team">طراحی واکنش گرا</h4>
+                                <p class="explain_about_property_rush_team">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                    صنعت چاپ، و با استفاده از طراحان گرافیک
+                                    است.
+                                </p>
+                            </div>
+                            <div class="icons_of_property_rush_team_box property_6" id="property_6">
+                                <i class="fal fa-laptop-code icons_of_property_rush_team "></i>
+                            </div>
+                        </span>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {!End Property Of Rush Team!}
+
+    {!Introduction Our Team!}
+    <section class="introduction_our_team_box">
+        <div class="container">
+            <h2 class="w-100 text-center dir_rtl mb-5"> - تیم ما! -</h2>
+            <div class="row">
+                <div class="col-4">
+                    <div class="introduction_our_team">
+                        <img src="../../img/bradpitt.png" alt="تیم ما" class="image_of_our_team">
+                        <div class="content_of_our_team_person">
+                            <h3 class="name_of_person">کسری حبیب بیگی</h3>
+                            <span class="role_of_person_in_our_team">طراح و توسعه دهنده سایت</span>
+                            <p class="description_of_person_in_our_team dir_rtl">
+                                رسانه دیجیتال میتواند تاثیری مثبت روی زندگی ما بگذارد . کسب و کار ها از این رسانه
+                                هامیتوانند.
+                            </p>
+                            <ul class="social_media_our_team_box">
+                                <li class="list_of_social_media">
+                                    <a href="#" class="fab fa-facebook-f social_media_link"></a>
+                                </li>
+                                <li class="list_of_social_media">
+                                    <a href="#" class="fab fa-telegram-plane social_media_link"></a>
+                                </li>
+                                <li class="list_of_social_media">
+                                    <a href="#" class="fab fa-linkedin-in social_media_link"></a>
+                                </li>
+                                <li class="list_of_social_media">
+                                    <a href="#" class="fab fa-twitter social_media_link"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="introduction_our_team">
+                        <img src="../../img/robbie.png" alt="تیم ما" class="image_of_our_team">
+                        <div class="content_of_our_team_person">
+                            <h3 class="name_of_person">نادیه نجم آبادی</h3>
+                            <span class="role_of_person_in_our_team">طراح و توسعه دهنده سایت</span>
+                            <p class="description_of_person_in_our_team dir_rtl">
+                                رسانه دیجیتال میتواند تاثیری مثبت روی زندگی ما بگذارد . کسب و کار ها از این رسانه
+                                هامیتوانند.
+                            </p>
+                            <ul class="social_media_our_team_box">
+                                <li class="list_of_social_media">
+                                    <a href="#" class="fab fa-facebook-f social_media_link"></a>
+                                </li>
+                                <li class="list_of_social_media">
+                                    <a href="#" class="fab fa-telegram-plane social_media_link"></a>
+                                </li>
+                                <li class="list_of_social_media">
+                                    <a href="#" class="fab fa-linkedin-in social_media_link"></a>
+                                </li>
+                                <li class="list_of_social_media">
+                                    <a href="#" class="fab fa-twitter social_media_link"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="introduction_our_team">
+                        <img src="../../img/leo-dec.jpg" alt="تیم ما" class="image_of_our_team">
+                        <div class="content_of_our_team_person">
+                            <h3 class="name_of_person">روزبه سبزه ای</h3>
+                            <span class="role_of_person_in_our_team">طراح و توسعه دهنده سایت</span>
+                            <p class="description_of_person_in_our_team dir_rtl">
+                                رسانه دیجیتال میتواند تاثیری مثبت روی زندگی ما بگذارد . کسب و کار ها از این رسانه
+                                هامیتوانند.
+                            </p>
+                            <ul class="social_media_our_team_box">
+                                <li class="list_of_social_media">
+                                    <a href="#" class="fab fa-facebook-f social_media_link"></a>
+                                </li>
+                                <li class="list_of_social_media">
+                                    <a href="#" class="fab fa-telegram-plane social_media_link"></a>
+                                </li>
+                                <li class="list_of_social_media">
+                                    <a href="#" class="fab fa-linkedin-in social_media_link"></a>
+                                </li>
+                                <li class="list_of_social_media">
+                                    <a href="#" class="fab fa-twitter social_media_link"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{!End Introduction Our Team!}
+
+{/body}

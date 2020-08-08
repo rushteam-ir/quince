@@ -1,0 +1,127 @@
+.main_field_of_messages {
+    width: 76%;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    margin-left: 3.5%;
+    padding: 20px 20px;
+    direction: rtl;
+    text-align: right;
+}
+
+.messages_title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 43px;
+    border-right: 5px solid #E13A58;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.profile_message_img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+}
+
+.message_name_field {
+    position: relative;
+    top: 13px;
+    right: 12px;
+}
+
+.main_field_of_messages_text {
+    background-color: white;
+    padding: 30px 50px;
+}
+
+.info_txt_message {
+    line-height: 30px;
+    width: 100%;
+    margin: 0 0 2em 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.more_info_of_messages {
+    position: relative;
+    color: #E13A58;
+    font-weight: bold;
+    font-family: main-font;
+    left: -922px;
+    cursor: pointer;
+}
+
+.edit_remove_btn {
+    position: absolute;
+    left: -20px;
+    top: -80px;
+    color: #E13A58;
+    background-color: transparent;
+    border: none;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-item {
+    padding: 0px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    padding: 0px;
+}
+
+.product_del {
+    cursor: pointer;
+}
+
+.title_of_messages {
+    font-size: 1.5rem !important;
+    font-family: main-font;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: #6F7275;
+    text-decoration: none;
+    background-color: #FFFFFF;
+}
+
+.nothing_to_see_box {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    background-color: #0000000d;
+    border-radius: 5px;
+}
+
+.answer_true{
+    width: 130px;
+    text-align: center;
+    height: 35px;
+    background-color: #E6F8F3;
+    color: #0ABB87;
+    line-height: 35px;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+
+.answer_false{
+    width: 130px;
+    text-align: center;
+    height: 35px;
+    background-color: #F8D7DA;
+    color: #ff3748;
+    line-height: 35px;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+}

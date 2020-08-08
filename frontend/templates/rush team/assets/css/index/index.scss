@@ -1,0 +1,341 @@
+@import '../../css/variable/color';
+@import '../../css/mixin/cb-mixin';
+@import '../../css/mixin/main-mixin';
+
+
+
+// slider animation
+
+// .fs_t_1 {
+//     opacity: 0;
+//     @include transition(0.61s, cubic-bezier(0.215, 0.61, 0.355, 1), 0.5s);
+//     transform: translate3d(0, -20px, 0);
+// }
+
+// .fs_s_1 {
+//     opacity: 0;
+//     @include transition(0.61s, cubic-bezier(0.215, 0.61, 0.355, 1), 0.8s);
+//     transform: translate3d(0px, -20px, 0);
+// }
+
+// .fs_te_1 {
+//     opacity: 0;
+//     @include transition(0.61s, cubic-bezier(0.215, 0.61, 0.355, 1), 1s);
+//     transform: translate3d(0px, -20px, 0);
+// }
+
+// .fs_btn_1 {
+//     opacity: 0;
+//     @include transition(0.61s, cubic-bezier(0.215, 0.61, 0.355, 1), 1s);
+//     transform: translate3d(0px, -20px, 0);
+// }
+
+// .bordered_box {
+//     opacity: 0;
+//     @include transition(0.61s, cubic-bezier(0.215, 0.61, 0.355, 1), 1s);
+//     transform: translate3d(20px, 0px, 0);
+// }
+
+body{
+    background-color: #f7f7f7;
+}
+
+.swiper-slide-active .fs_t_1,
+.swiper-slide-active .fs_s_1,
+.swiper-slide-active .fs_te_1,
+.swiper-slide-active .fs_btn_1,
+.swiper-slide-active .bordered_box {
+    @include transform(translate3d(0, 0, 0));
+    opacity: 1;
+}
+
+// header
+.header_video_player {
+    width: 100%;
+    height: 100%;
+}
+
+.text_of_header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    .row {
+        height: 100vh;
+    }
+
+    .info_header_text {
+        direction: rtl;
+
+        h1 {
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        p {
+            color: $l_text;
+            line-height: 40px;
+            font-size: 1.2rem;
+        }
+    }
+
+    .btn_n1 {
+        border: 2px solid white;
+        color: white;
+        height: 70px;
+        padding: 0px 30px;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    .btn_n2 {
+        background-color: $d_gold;
+        color: white;
+        height: 70px;
+        padding: 0px 30px;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+}
+
+.header_layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00000063;
+    height: 861px;
+    width: 100%;
+}
+
+// why chose us
+.why_chose_us {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+
+    .why_chose_us_field {
+        text-align: right;
+        direction: rtl;
+        width: 90%;
+        margin-left: 5%;
+
+        h3 {
+            font-weight: bold;
+            font-size: 2.7vw;
+            line-height: 70px;
+        }
+
+        .main_title_of_wcuf {
+            text-align: justify;
+            margin-top: 30px;
+            color: $d_text;
+            line-height: 30px;
+        }
+
+        .subset_wcu_p1,
+        .subset_wcu_p2,
+        .subset_wcu_p3 {
+            width: 100%;
+
+            .left_subset_wcu {
+                width: 80px;
+                height: 80px;
+                border: 10px solid $d_gold;
+                position: relative;
+                top: 20px;
+
+                p {
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                    background-color: white;
+                    width: 40px;
+                    height: 40px;
+                    position: relative;
+                    right: -21px;
+                    top: -19px;
+                    line-height: 40px;
+                    text-align: center;
+                }
+
+                i {
+                    font-size: 3rem;
+                    position: relative;
+                    left: -20px;
+                    top: -30px;
+                }
+            }
+
+            .right_subset_wcu {
+                width: 310px;
+                margin-right: 40px;
+
+                & :first-child {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+
+                }
+
+                & :last-child {
+                    color: $d_text;
+                }
+            }
+        }
+
+        .wcu_p_btn {
+            color: black;
+            background-color: $d_gold;
+            font-weight: bold;
+            padding: 16px 60px;
+            font-size: 1.2rem;
+            width: 70%;
+            margin-right: 15%;
+            margin-top: 70px;
+        }
+    }
+
+    .wcu_side_img_field {
+        position: relative;
+
+        .wcu_side_img_p2 {
+            position: absolute;
+            top: -50px;
+            right: 100px;
+            width: 60%;
+        }
+
+        .wcu_side_img_p1 {
+            position: absolute;
+            top: 320px;
+            left: -50px;
+        }
+
+        .wcu_side_img_p3 {
+            position: absolute;
+            top: 520px;
+            left: 245px;
+        }
+
+        .wcu_side_img_p4 {
+            position: absolute;
+            top: 0px;
+            left: -50px;
+        }
+    }
+}
+
+// price and pack
+
+
+.main_field_of_price {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 20px 1px #e7e7e7;
+    border-radius: 7px;
+    padding: 80px 0px;
+
+    h3 {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .subtitle_of_pack {
+        text-align: center;
+        font-size: 0.7rem;
+        margin-bottom: 10px;
+    }
+
+    .price_of_pack {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: $d_gold;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 30px;
+        font-family: second-font;
+
+        i {
+            color: #61CE70;
+            margin-left: 10px;
+        }
+    }
+
+    .complete_inco_of_pack {
+        font-size: 0.8rem;
+        padding: 0px 90px;
+        line-height: 29px;
+    }
+
+    button {
+        background-color: $d_gold;
+        color: white;
+        width: 50%;
+        margin-right: 25%;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+}
+
+.main_field_of_pack_info {
+    text-align: right;
+    direction: rtl;
+    padding-top: 30px;
+    padding-right: 100px;
+
+    .header_number_of_ip {
+        font-weight: bold;
+        font-size: 2rem;
+        color: $d_gold;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 40px;
+            height: 7px;
+            position: absolute;
+            background-color: $d_gold;
+            top: 18px;
+            right: 44px;
+            border-radius: 31px;
+        }
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 3rem;
+        width: 90%;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 30px;
+        color: $d_text;
+        text-align: justify;
+        font-family: second-font;
+    }
+
+    button {
+        border: 2px solid $d_gold;
+        color: $d_gold;
+        width: 200px;
+        height: 55px;
+        font-size: 1.3rem;
+    }
+}
+
+.swiper-button-next.swiper-button-white,
+.swiper-button-prev.swiper-button-white {
+    --swiper-navigation-color: #000000 !important;
+}
+
+.test1{
+    width: 100%;
+    padding: 70px 0;
+    background-color: white;
+}

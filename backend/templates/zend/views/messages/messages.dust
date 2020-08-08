@@ -1,0 +1,81 @@
+{>"layouts/dashboard-layout"/}
+
+{<css} <link rel="stylesheet" href="css/messages/messages.css">
+    {/css}
+    {<js} <script src="js/messages/messages.js">
+        </script>
+        {/js}
+
+        {<body}
+
+        <div class="main_field_of_messages">
+
+
+            <p class="messages_title">
+                پیام ها
+            </p>
+
+            {@alertSuccess key="sent-success" msg="پیام شما با موفقیت ارسال شد"}{/alertSuccess}
+
+            {?list}
+                {#list}
+                <div class="main_field_of_messages_text mt-3">
+
+                    <div class="d-inline-block">
+                        <img class="profile_message_img" src="img/question-icon.png" alt="">
+                    </div>
+
+                    <div class="d-inline-block message_name_field">
+                        <p class="font-weight-bold mb-0">{first_last_name}</p>
+                        <small>{date}</small>
+                    </div>
+
+                    <div class="dropdown ">
+                        <button class=" dropdown-toggle edit_remove_btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+
+                        <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
+                            <a href="{backend_url}messages/reply/{._id}" class="dropdown-item product_del ">ارسال نظر</a>
+                            <hr class="m-0">
+                            <a class="dropdown-item product_del ">پروفایل</a>
+                            <hr class="m-0">
+                            <a class="message_del dropdown-item" name="{._id}">حذف</a>
+                        </div>
+
+                    </div>
+
+                    <div>
+
+                        {@eq key="{reply}" value="true"}
+                            <p class="answer_true">پاسخ داده شد</p>
+                        {:else}
+                            <p class="answer_false">پاسخ داده نشد</p>
+                        {/eq}
+                        <p class="d-inline-block mt-3">ایمیل : {email}</p>
+                        <p class="d-inline-block mr-5">شماره تلفن : {phone_number}  </p>
+
+                        <h3 class="title_of_messages">{title}</h3>
+
+                        <p class="text-justify text-break mt-3 info_txt_message">
+                            {text}
+                        </p>
+
+
+
+                    </div>
+
+                </div>
+
+                {/list}
+            {:else}
+                <div class="col-12 p-0">
+                    <div class="nothing_to_see_box">
+                        پیامی جهت نمایش وجود ندارد !
+                    </div>
+                </div>
+            {/list}
+
+        </div>
+
+            {/body}

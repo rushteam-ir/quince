@@ -1,0 +1,30 @@
+
+.Page_navigation{
+    margin: 0 auto;
+    width: fit-content;
+    .page-link{
+        color: #007bff;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        margin: 0 2px;
+        border-radius: 3px;
+        color: black;
+        &:hover{
+            background-color: $l_blue;
+        }
+        &:focus{
+                z-index: 3;
+                outline: 0;
+                box-shadow:none;
+        }
+        span{
+            color: $d_blue;
+        }
+    }
+}
+
+
+.current_page{
+    background-color: $l_blue !important;
+    color: $d_blue !important;
+}

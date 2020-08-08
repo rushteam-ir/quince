@@ -1,0 +1,100 @@
+@import '../Partials/main-color';
+@import '../Partials/mixin';
+@import '../Partials/header-text';
+
+.main_body {
+    @include main_field
+}
+
+.main_col {
+    @include main_col;
+}
+
+.user_img {
+    width: 100%;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+.user_ph {
+
+    .header_info {
+        display: inline-block;
+        width: 90%;
+        margin-right: 3%;
+
+        .user_name {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        div {
+            display: inline-block;
+            color: #7E8299;
+
+            i {
+                display: inline-block;
+            }
+
+            p {
+                display: inline-block;
+            }
+        }
+
+        .description {
+            width: 80%;
+            color: #7E8299;
+            font-size: 0.9rem;
+            line-height: 28px;
+        }
+
+    }
+
+}
+
+.info_user_pro {
+    color: #636363;
+    margin-top: 30px;
+
+    p {
+        font-weight: bold;
+
+        span {
+            font-weight: normal;
+        }
+    }
+}
+
+.user_pro_option {
+
+    position: absolute;
+    left: 0px;
+    top: 19px;
+
+    & :nth-child(4) {
+        i {
+            position: relative;
+            top: -0.3px;
+            left: 7px;
+        }
+    }
+
+    button {
+        background-color: #F2F5F8;
+        color: #3699FF;
+        font-size: 1.2rem;
+        width: 38px;
+        height: 38px;
+
+        i {
+            position: relative;
+            top: 0.7px;
+            left: 4px;
+        }
+
+        &:hover {
+            background-color: $d_blue;
+            color: #F2F5F8;
+        }
+    }
+}

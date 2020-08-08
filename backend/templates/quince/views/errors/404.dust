@@ -1,0 +1,20 @@
+{>"layouts/dashboard-layout"/}
+
+{<css} 
+    <link rel="stylesheet" href="css/errors/error.css">
+{/css}
+
+{<body} 
+<section>
+    <!-- error -->
+    <section>
+        <div class="container-fluid p-0">
+            <div class="row align-items-center heaight_row_custom">
+                <div class="ban_slot_field w-100">
+                    <i class="fal fa-exclamation-circle"></i>
+                    <p>صفحه مورد نظر یافت نشد .</p>
+                </div>
+            </div>
+        </div>
+    </section>
+{/body}

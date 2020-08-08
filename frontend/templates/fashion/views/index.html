@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/fontAwsome.css">
+    <link rel="stylesheet" type="text/css" href="../assets/scss/index.css">
+</head>
+<body>
+
+<section class="index_page">
+    <div class="container-fluid">
+        <div class="row nav_bar_index">
+            <div class="col-6">
+                <img src="../assets/img/Logo.png" alt="uniti logo" title="uniti logo" class="logo-of_fashion_web_page">
+            </div>
+            <div class="col-6 text-right">
+                <button type="button" class="bottom_of_menu_bar bg-transparent">
+                    <i class="fal fa-bars menu_icon "></i>
+                </button>
+                <button type="button" class="bottom_of_close bg-transparent">
+                    <i class="fal fa-times close_icon "></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="row content_of_index">
+            <div class="col-10 offset-1  col-sm-8 offset-sm-2 col-lg-6 offset-lg-0  w-100">
+                <div class="content_of_index_box_menu">
+                    <p class="first_text_about_uniti" id="first_text_about_uniti">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quis reprehenderit nisi
+                        consequuntur ratione voluptatem beatae, placeat harum voluptatibus alias deleniti blanditiis
+                        suscipit ab, ipsam earum, architecto nihil fugiat nemo.
+                    </p>
+                    <ul class="ul_menu_box">
+                        <li class="menu_options wow fadeIn" id="menu-bar-1">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="menu_options wow fadeIn mt-2" data-wow-delay=".2s">
+                            <a href="#">Brands</a>
+                        </li>
+
+                        <li class="menu_options wow fadeIn mt-2" data-wow-delay=".4s">
+                            <a href="#">Gallary</a>
+                        </li>
+                        <li class="menu_options  wow fadeIn mt-2" data-wow-delay=".6s">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="menu_options wow fadeIn mt-2" data-wow-delay=".8s">
+                            <a href="#">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row footer_of_index">
+            <div class="col-6">
+                <button class="nav-link sign_in_up" id="sign_in">sign in</button>
+                <button class="nav-link sign_in_up" id="sign_up">sign up</button>
+            </div>
+            <div class="col-6 text-right">
+                <a href="#">
+                    <i class="fab fa-youtube social_media"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram social_media"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-telegram social_media"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="modal_of_sign_in" id="modal_of_sign_in">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="modal_box">
+                    <div class="modal_content">
+                        <div class="header_of_modal">
+                            <h2 class="title_of_modal d-inline-block"> Sign In</h2>
+                            <button class="btn_of_close float-right"><i
+                                    class="fal fa-times close_icon d-inline-block "></i></button>
+                        </div>
+                        <form>
+                            <div class="form-group">
+                                <label for="name_p">Your Name *</label>
+                                <input type="text" class="form-control" id="name_p" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your E-Mail *</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="Password">Your Password *</label>
+                                <input type="email" class="form-control" id="Password" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="Current">Current Your Password *</label>
+                                <input type="email" class="form-control" id="Current" aria-describedby="emailHelp">
+                            </div>
+
+
+                            <button type="submit" class="btn btn_submit_style">Submit</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="modal_of_sign_up" id="modal_of_sign_up">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="modal_box">
+                    <div class="modal_content">
+                        <div class="header_of_modal">
+                            <h2 class="title_of_modal d-inline-block"> Sign In</h2>
+                            <button class="btn_of_close float-right"><i
+                                    class="fal fa-times close_icon d-inline-block "></i></button>
+                        </div>
+                        <form>
+
+                            <div class="form-group">
+                                <label for="email_p">Your E-Mail *</label>
+                                <input type="email" class="form-control" id="email_p" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="Pass">Your Password *</label>
+                                <input type="email" class="form-control" id="Pass" aria-describedby="emailHelp">
+                            </div>
+
+
+                            <button type="submit" class="btn btn_submit_style">Submit</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="../assets/js/jquery.js"></script>
+<script src="../assets/js/popper.js"></script>
+<script src="../assets/js/bootstrap.js"></script>
+<script src="../assets/js/wow.min.js"></script>
+<script src="../assets/js/index.js"></script>
+</body>
+</html>

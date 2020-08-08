@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="{backend_url}">
+	<meta charset="UTF-8">
+	<base href="{backend_url}">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/general/404.css">
+	<title>404</title>
+</head>
+
+<body>
+
+{error}
+
+	<body class="bg-purple">
+
+		<div class="stars">
+
+			<div class="central-body">
+				<img class="image-404" src="http://salehriaz.com/404Page/img/404.svg">
+				<a href="{backend_url}dashboard" class="btn-go-home">برگشت به خانه</a>
+			</div>
+			<div class="objects">
+				<img class="object_rocket" src="http://salehriaz.com/404Page/img/rocket.svg">
+				<div class="earth-moon">
+					<img class="object_earth" src="http://salehriaz.com/404Page/img/earth.svg">
+					<img class="object_moon" src="http://salehriaz.com/404Page/img/moon.svg">
+				</div>
+				<div class="box_astronaut">
+					<img class="object_astronaut" src="http://salehriaz.com/404Page/img/astronaut.svg">
+				</div>
+			</div>
+			<div class="glowing_stars">
+				<div class="star"></div>
+				<div class="star"></div>
+				<div class="star"></div>
+				<div class="star"></div>
+				<div class="star"></div>
+			</div>
+
+		</div>
+
+	</body>
+
+</body>
+
+</html>

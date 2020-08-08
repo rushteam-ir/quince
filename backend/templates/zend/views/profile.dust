@@ -1,0 +1,150 @@
+{>"layouts/dashboard-layout"/}
+{<css}
+    <link rel="stylesheet" href="css/cms/profile.css">
+{/css}
+{<js} 
+    <script src="js/cms/profile.js"></script>
+{/js}
+{<body}
+
+
+    <div class="main_field_of_profile_input">
+
+            <div class="main_filed_of_profile_option_btn main_filed_of_profile_option_first_btn" id="first_pro_box" onclick="firstChangeDisplay()">
+                <div class="d-inline-block number_of_profile_header" id="first_profile_header_number"><i class="fas fa-pencil-alt d-inline-block"></i></div>
+                <p class="d-inline-block profile_header_text">تغییر مشخصات</p>
+            </div>
+
+            <div class="main_filed_of_profile_option_btn main_filed_of_profile_option_second_btn" id="second_pro_box" onclick="secondChangeDisplay()">
+                <div class="d-inline-block number_of_profile_header second_number_of_profile_header" id="second_profile_header_number"><i class="fas fa-unlock-alt d-inline-block"></i></div>
+                <p class="d-inline-block profile_header_text">تغییر رمز عبور</p>
+            </div>
+
+            <div id="admin_pro_edit">
+                
+
+                {@alertWarn key="no-change" msg="تغییری در مشخصات پروفایل اعمال نشده است."}{/alertWarn}
+                {@alertWarn key="limited-file" msg="حجم تصویر انتخاب شده بیشتر از حد مجاز است."}{/alertWarn}
+                {@alertWarn key="illegal-file" msg="پسوند تصویر انتخاب شده مجاز نمی باشد."}{/alertWarn}
+                {@alertSuccess key="profile-success" msg="مشخصات پروفایل شما با موفقیت ثبت شد."}{/alertSuccess}
+                {@alertError key="profile-fail" msg="مشخصات پروفایل شما تغییر نکرد. احتمال دارد ایمیل شما قبلا ثبت شده باشد. لطفا مجدد تلاش فرمایید."}{/alertError}
+
+                <div class="error_warning_alert text-right display_none" id="error_field_warning_front"> 
+
+                    <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeWarningErrorFront()"></i> 
+                    <i class="fal fa-exclamation-circle alert_icon_error"></i>
+        
+                      <div class="d-inline-block mr-1" id="error_text"></div>
+        
+                </div>
+
+                <form action="" method="post" autocomplete="off" enctype="multipart/form-data" name="pro_op_main_form" onsubmit="return proError()">
+
+                    <div class="form-group">
+                        <label for="email_inp">ایمیل</label>
+                        <input type="text" id="email_inp" class="form-control" name="email_inp"
+                               value="{admin_info.email}">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="firstname_inp">نام</label>
+                        <input type="text" class="form-control" id="firstname_inp" name="firstname_inp"
+                            value="{admin_info.first_name}">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastname_inp">نام خانوادگی</label>
+                        <input type="text" class="form-control" id="lastname_inp" name="lastname_inp"
+                            value="{admin_info.last_name}">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phonenumber_inp">شماره تلفن همراه</label>
+                        <input type="text" id="phonenumber_inp" class="form-control" name="phonenumber_inp"
+                            value="{admin_info.phone_number}">
+                    </div>
+                    
+                    <div class="form-group d-inline-block">
+                        <label for="avatar">تصویر پروفایل</label>
+
+                        <div class="field_of_img_template">
+
+                            <div class="box_of_img_template">
+    
+                                <div class="box_of_img_template img-box">
+                                    <div class="img-show">
+                                        {@eq key="{admin_info.avatar}" value=""}
+
+                                        {:else}
+                                            <div class="remove_parent">
+                                                <img class="uploading_img_from_brows" src="media/avatars/{admin_info.avatar}"><div name="0" class="remove_img_icon avatar_del"></div>
+                                            </div>
+                                        {/eq}
+                                    </div>
+                                    <input type="file" name="avatar" id="avatar_img" class="input-file-custom">
+                                    <label for="avatar_img" class="btn btn-tertiary2 js-labelFile ">
+                                        <i class="icon fa fa-check"></i>
+                                        <span class="js-fileName mr-2">انتخاب عکس</span>
+                                    </label>
+                                </div>
+    
+                            </div>
+
+                            <small id="avatar" class="form-text text-muted mt-3">حجم مجاز برای اپلود تصویر پروفایل {limited_images_size} مگابایت است.</small>
+                        </div>
+
+                    </div>
+
+                    <label class="checkbox_body">آیا تمایل دارید که ایمیل خود به عنوان نام پروفایل انتخاب گردد؟
+                        {@eq key="{admin_info.author_type}" value="name"}
+                            <input type="checkbox" name="author_type">
+                        {:else}
+                            <input type="checkbox" checked="checked" name="author_type">
+                        {/eq}
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <button type="submit" name="change_profile" class="btn profile_submit">ذخیره</button>
+                </form>
+            </div>
+
+            <div id="admin_change_pass">
+
+                {@alertError key="incorrect-input" msg="رمز فعلی اشتباه است و یا رمز جدید و تکرار آن مشابه نیستند."}{/alertError}
+                {@alertError key="password-fail" msg="رمز عبور شما تعویض نشد. لطفا مجدد تلاش فرمایید."}{/alertError}
+                {@alertSuccess key="password-success" msg="رمز عبور شما با موفقیت تعویض شد."}{/alertSuccess}
+
+                <div class="error_warning_alert text-right display_none" id="error_field_warning_password"> 
+
+                    <i class="fal fa-times d-inline-block remove_error_icon" onclick="removeWarningErrorFront()"></i> 
+                    <i class="fal fa-exclamation-circle alert_icon_error"></i>
+        
+                      <div class="d-inline-block mr-1" id="error_text_pass"></div>
+        
+                </div>
+
+                <form action="" method="post" name="admin_pro_pass_edit" onsubmit="return passerror()" autocomplete="off">
+
+                    <div id="admin_profile_password_error" class="alert alert-warning"></div>
+                    
+                    <div class="form-group">
+                        <label for="current_password">رمز عبور فعلی</label>
+                        <input type="password" id="current_password" class="form-control" name="current_password" value="">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="new_password">رمز عبور جدید</label>
+                        <input type="password" id="new_password" class="form-control" name="new_password" value="">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm_password">تکرار رمز عبور جدید</label>
+                        <input type="password" id="confirm_password" class="form-control" name="confirm_password" value="">
+                    </div>
+
+                    <button type="submit" name="change_password" class="btn profile_submit" >ذخیره</button>
+                </form>
+
+            </div>
+        </div>
+{/body}

@@ -1,0 +1,588 @@
+{>"layouts/layout"/}
+
+{<title}
+    <title>جوراب زنانه طرح میوه ای</title>
+{/title}
+{<css}
+    <link rel="stylesheet" href="css/front-end/product.css">
+{/css}
+{<js}
+    <script src="js/front-end/product.js"></script>
+{/js}
+
+
+{<body}
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-right mt-5">
+                    <p class="rout_of_product"> صفحه اصلی / فروشگاه / زنانه / جوراب / طرح دار </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {!Slider Of Product!}
+    <section>
+        <div class="container mt-2 border_radius_of_box bg-white">
+            <div class="row mb-5">
+                <div class="col-lg-7 offset-lg-0 col-10 offset-1 order-1 order-lg-0">
+                    <div class="explain_about_product_box">
+                        <div class="row">
+                            <div class="rate_of_product_star w-25">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p class=" number_of_comments w-25" dir="rtl">54 دیدگاه/</p>
+                            <h4 class="text-right title_of_product w-50 dir_rtl">جوراب زنانه طرح k23</h4>
+                        </div>
+                        <hr>
+                        <div class="explain_about_product_details">
+                            <div class="row">
+                                <div class="col-md-6 col-12 order-1 order-md-0 px-0">
+                                    <div class="price_and_explain_of_product mt-4">
+                                        <ul class="pl-0 ul_size_price">
+                                            <li class="list_price_exp_product">
+                                                <i class="far fa-check-square mx-2"></i>
+                                                گارانتی اصالت و سلامت فیزیکی کالا
+                                            </li>
+                                            <hr class="my-0">
+                                            <li class="list_price_exp_product">
+                                                <i class="far fa-store mx-2"></i>
+                                                موجود در انبار
+                                            </li>
+                                            <hr class="my-0">
+                                            <li class="list_price_exp_product">
+                                                <i class="fal fa-credit-card mx-2"></i>
+                                                40.000 تومان
+                                            </li>
+                                            <hr class="my-0">
+                                        </ul>
+                                        <ul class="m-0 mt-1">
+                                            <li class="list_price_exp_product d-inline-block w-25 text-center mr-3 font_style_of_fontawsome">
+                                                <i class="fas fa-share-alt" data-toggle="tooltip"
+                                                   data-placement="bottom" title="اشتراک گذاری محصول"></i>
+                                            </li>
+                                            <li class="list_price_exp_product d-inline-block w-25 text-center mr-3 font_style_of_fontawsome">
+                                                <i class="far fa-heart" data-toggle="tooltip" data-placement="bottom"
+                                                   title="افزودن به لیست علاقه مندی ها"></i>
+                                            </li>
+                                            <li class="list_price_exp_product d-inline-block w-25 text-center mr-3 font_style_of_fontawsome">
+                                                <i class="far fa-comment-alt" data-toggle="tooltip"
+                                                   data-placement="bottom" title="کامنت بگذارید"></i>
+                                            </li>
+                                        </ul>
+                                        <button type="button" class="btn_of_add_product">افزودن به سبد خرید</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12 order-0 order-md-1">
+                                    <ul class="unordered_list_of_explain_details pl-0">
+                                        <li class="list_of_explain_details my-4">
+                                            <i class="fas fa-layer-group" aria-hidden="true">
+                                                &nbsp;
+                                            </i>
+                                            <p class="d-inline-block p_font_family_style">دسته بندی</p>
+                                            <p class="mr-3"> جوراب زنانه</p>
+                                        </li>
+                                        <li class="list_of_explain_details my-2">
+
+                                            <i class="fas fa-tasks">
+                                                &nbsp;
+                                            </i>
+                                            <p class="d-inline-block p_font_family_style">مشخصات محصول</p>
+
+                                            <ul class="size_of_details ml-0">
+                                                <li class="p-1 size_of_details">
+                                                    جنس: نخ
+                                                </li>
+                                                <li class="p-1">
+                                                    سایز: فری سایز
+                                                </li>
+                                                <li class="p-1">
+                                                    نوع: بدون ساق
+                                                </li>
+                                                <li class="p-1">
+                                                    طرح پارچه: ساده
+                                                </li>
+                                                <li class="p-1">
+                                                    ضخامت: نازک
+                                                </li>
+                                                <li class="p-1">
+                                                    رنگ بندی:
+                                                    <button class="bg-green btn_color_of_product"></button>
+                                                    <button class="bg-pink btn_color_of_product"></button>
+                                                    <button class="bg-yellow btn_color_of_product"></button>
+                                                    <button class="bg-red btn_color_of_product"></button>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-0 col-10 offset-1 my-5 p-0 order-0 order-lg-1 mb-lg-0 mb-5 ">
+                    <div id="wrap" class="gallery_of_product">
+                        <img src="img/transparent8.png" alt="" id="current" class="img_of_gallery">
+                        <div class="thumb-wrap mb-5">
+                            <img src="img/transparent7.png" alt="" class="thumb">
+                            <img src="img/transparent6.png" alt="" class="thumb">
+                            <img src="img/transparent9.png" alt="" class="thumb">
+                            <img src="img/transparent8.png" alt="" class="thumb">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {!END Slider Of Product!}
+
+    {!Similar Product Slider!}
+    <section class="section_of_product_slider mb-5">
+
+        <div class="container bg-white py-4">
+
+            <div class="swiper-container main_product_swiper" dir="rtl">
+
+                <div class="header_of_sliders text-right dir-rtl mb-4">
+
+                    <h3 class="header_info">
+                        پر فروش ترین ها
+                    </h3>
+
+                </div>
+                <div class="swiper-wrapper product_slider">
+
+                    <div class="swiper-slide text-right slider_card_product">
+
+                        <div class="mx-2">
+
+                            <img class="img_of_product_slider mb-3" src="img/transparent20.png" alt="">
+
+                            <div class="main_field_of_product_assets">
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-eye eye_icon_custom"></i>
+                                </div>
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+
+                            </div>
+
+                            <div class="star_product_slider">
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                            </div>
+                            <div class="product_slider_info">
+                                <p class="mt-1">جوراب مردانه کد 1154</p>
+                                <hr>
+
+                                <div>
+                                    <p class="price_product_slider">25.000<span class="price_unic">تومان</span></p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide text-right slider_card_product">
+
+                        <div class="mx-2">
+
+                            <img class="img_of_product_slider mb-3" src="img/transparent21.png" alt="">
+
+                            <div class="main_field_of_product_assets">
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-eye eye_icon_custom"></i>
+                                </div>
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+
+                            </div>
+
+                            <div class="star_product_slider">
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                            </div>
+                            <div class="product_slider_info">
+                                <p class="mt-1">جوراب مردانه کد 1154</p>
+                                <hr>
+
+                                <div class="d-inline-block">
+                                    <p class="price_product_slider ">25.000<span class="price_unic">تومان</span></p>
+                                </div>
+
+                                <div class="sale_price d-inline-block mr-3">
+                                    <p class="price_product_slider ">25.000<span class="price_unic">تومان</span></p>
+                                </div>
+
+                                <div class="d-inline-block mr-3">
+                                    <p class="num_of_sale">
+                                        30%-
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide text-right slider_card_product">
+
+                        <div class="mx-2">
+
+                            <img class="img_of_product_slider mb-3" src="img/transparent20.png" alt="">
+
+                            <div class="main_field_of_product_assets">
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-eye eye_icon_custom"></i>
+                                </div>
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+
+                            </div>
+
+                            <div class="star_product_slider">
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                            </div>
+                            <div class="product_slider_info">
+                                <p class="mt-1">جوراب مردانه کد 1154</p>
+                                <hr>
+
+                                <div>
+                                    <p class="price_product_slider">25.000<span class="price_unic">تومان</span></p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide text-right slider_card_product">
+
+                        <div class="mx-2">
+
+                            <img class="img_of_product_slider mb-3" src="img/transparent22.png" alt="">
+
+                            <div class="main_field_of_product_assets">
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-eye eye_icon_custom"></i>
+                                </div>
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+
+                            </div>
+
+                            <div class="star_product_slider">
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                            </div>
+                            <div class="product_slider_info">
+                                <p class="mt-1">جوراب مردانه کد 1154</p>
+                                <hr>
+
+                                <div class="d-inline-block">
+                                    <p class="price_product_slider ">25.000<span class="price_unic">تومان</span></p>
+                                </div>
+
+                                <div class="sale_price d-inline-block mr-3">
+                                    <p class="price_product_slider ">25.000<span class="price_unic">تومان</span></p>
+                                </div>
+
+                                <div class="d-inline-block mr-3">
+                                    <p class="num_of_sale">
+                                        30%-
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide text-right slider_card_product">
+
+                        <div class="mx-2">
+
+                            <img class="img_of_product_slider mb-3" src="img/transparent20.png" alt="">
+
+                            <div class="main_field_of_product_assets">
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-eye eye_icon_custom"></i>
+                                </div>
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+
+                            </div>
+
+                            <div class="star_product_slider">
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                            </div>
+                            <div class="product_slider_info">
+                                <p class="mt-1">جوراب مردانه کد 1154</p>
+                                <hr>
+
+                                <div>
+                                    <p class="price_product_slider">25.000<span class="price_unic">تومان</span></p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide text-right slider_card_product">
+
+                        <div class="mx-2">
+
+                            <img class="img_of_product_slider mb-3" src="img/transparent21.png" alt="">
+
+                            <div class="main_field_of_product_assets">
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-eye eye_icon_custom"></i>
+                                </div>
+
+                                <div class="container_of_p_icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+
+                            </div>
+
+                            <div class="star_product_slider">
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                                <i class="fas fa-star empty_slot"></i>
+                            </div>
+                            <div class="product_slider_info">
+                                <p class="mt-1">جوراب مردانه کد 1154</p>
+                                <hr>
+
+                                <div class="d-inline-block">
+                                    <p class="price_product_slider ">25.000<span class="price_unic">تومان</span></p>
+                                </div>
+
+                                <div class="sale_price d-inline-block mr-3">
+                                    <p class="price_product_slider ">25.000<span class="price_unic">تومان</span></p>
+                                </div>
+
+                                <div class="d-inline-block mr-3">
+                                    <p class="num_of_sale">
+                                        30%-
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="swiper-button-prev product_arrow_prev"></div>
+                <div class="swiper-button-next product_arrow_next"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+    {!End Similar Product Slider!}
+
+    {!Explain Product!}
+    <section class="mt-5">
+        <div class="container mb-5 bg-white">
+            <div class="row position-relative row_of_btn">
+                <div class="col-12">
+                    <ul class="btn_ul_list  text-right m-0 dir_rtl">
+                        <li class="list_style_btn_click_to_show d-inline-block bg-white" onclick="explain()">توضیحات</li>
+                        <li class="list_style_btn_click_to_show d-inline-block bg-white" onclick="comments_product()">نظرات کاربران
+                        </li>
+                        <li class="list_style_btn_click_to_show d-inline-block bg-white" onclick="add_comments()">ثبت نظر</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mx-0 ">
+                <div class="col-12">
+                    <div class="explain_about_product " id="explain">
+                        <p class="text-justify dir_rtl">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در
+                            شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها
+                            شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
+                            ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط
+                            سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته
+                            اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-0">
+                <div class="col-12">
+                    <div class="explain_about_product" id="comments_product">
+                        <div class="row">
+                            <div class="col-10">
+                                <div class="text_of_comment text-right">
+                                    <div class="font_size_of_rate_user">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="text-right name_of_user">
+                                    <p class="d-inline-block text-left w-50">1399/12/02</p>
+                                    <p class="d-inline-block w-50">نادیه نجم آبادی</p>
+
+                                </div>
+                                <div class="text_of_comments_user text-justify dir_rtl">
+                                    <p>کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="pic_of_comment text-left">
+                                    <i class="fad fa-user-circle style_of_pic_comment d-inline-block"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row mt-5">
+                            <div class="col-10">
+                                <div class="text_of_comment text-right">
+                                    <div class="font_size_of_rate_user">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="text-right name_of_user">
+                                    <p class="d-inline-block text-left w-50">1399/12/02</p>
+                                    <p class="d-inline-block w-50">نادیه نجم آبادی</p>
+
+                                </div>
+                                <div class="text_of_comments_user text-justify dir_rtl">
+                                    <p>کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="pic_of_comment text-left">
+                                    <i class="fad fa-user-circle style_of_pic_comment d-inline-block"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-0">
+                <div class="col-12">
+                    <div class="explain_about_product p_of_this" id="add_comments">
+                        <form class="w-75 m-auto position-relative" autocomplete="off">
+                            <div class="form-group">
+                                <label for="email" class="text-right w-100">ایمیل </label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="text-right w-100">امتیاز شما </label>
+                                <div class="rate_of_product_star font_size_of_rate_us">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="title_of_comment" class="text-right w-100">عنوان نظر شما </label>
+                                <input type="title_of_comment" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="text_of_comment" class="text-right w-100"> متن نظر شما</label>
+                                <textarea class="form-control" id="text_of_comment" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn_of_send_comment">ارسال نظر</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+{!End Explain Product!}
+
+
+
+{/body}

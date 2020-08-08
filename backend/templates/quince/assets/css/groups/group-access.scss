@@ -1,0 +1,77 @@
+@import '../Partials/main-color';
+@import '../Partials/mixin';
+@import '../Partials/checkbox-design';
+@import '../Partials/header-text';
+@import '../Partials/table-header';
+@import '../Partials/btn';
+@import '../Partials/table';
+@import '../Partials/pagination';
+@import '../Partials/error';
+@import '../Partials/modal';
+@import '../Partials/table-error';
+
+.main_body {
+    @include main_field
+}
+
+.main_col {
+    @include main_col;
+}
+
+.option-input{
+    right: 0;
+    top: 0.2rem;
+}
+
+.access_list_w{
+    width: 300px;
+}
+
+.btn_td_w{
+    width: 150px;
+}
+
+.access_btn{
+    width: 35px;
+    height: 35px;
+    &:nth-child(1){
+        i{
+            position: relative;
+            left: 5.1px;
+            top: 1px;
+        }
+    }
+    i{
+        font-size: 1.1rem;
+        position: relative;
+        left: 3.1px;
+        top: 1px;
+    }
+}
+
+.collaps_content{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.lable_collaps{
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    padding: 10px 6px;
+    border-radius: 7px;
+    i{
+        position: absolute;
+        left: 4px;
+        top: 13px;
+        color: #a1a1a1;
+        @include transition( linear , 0.2s)
+    }
+}
+
+.rotate_angle{
+    i{
+        @include transform(rotate(-90deg));
+    }
+}

@@ -1,0 +1,65 @@
+{>"layouts/dashboard-layout"/}
+
+{<css}
+    <link rel="stylesheet" href="css/groups/groups-add.css">
+{/css}
+
+{<js}
+    <script src="js/groups/groups-add.js"></script>
+    <script src="js/custom/main-error.js"></script>
+    <script src="js/custom/error-handler.js"></script>
+    <script src="js/groups/groups-add-error.js"></script>
+    <script src="js/general/form-ajax.js"></script>
+{/js}
+
+
+{<body}
+<section>
+    <div class="error_info warning_error">
+        <i class="fal fa-exclamation-circle"></i>
+        <p></p>
+        <i class="fal fa-times"></i>
+    </div>
+    <div class="main_field mb-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 main_col">
+                    <header class="header_field">
+                        <h1>افزودن مدیر جدید</h1>
+                        <h2>تعریف کردن مدیر با ایمیل و رمز عبور جدید</h2>
+                        <hr>
+                    </header>
+                    <div class="row dir-ltr">
+                        <div class="col-8 offset-2">
+                            <form class="form_ajax dir-rtl text-right" name="adminAdd" method="post" action="" autocomplete="off">
+                                <div class="form-group">
+                                    <label for="add_email">ایمیل</label>
+                                    <input type="text" class="form-control main_form_design" id="add_email"  name="email_inp">
+                                </div>
+                                <div class="form-group">
+                                    <label for="add_pass">رمز عبور</label>
+                                    <input type="password" class="form-control main_form_design" id="add_pass"  name="password_inp">
+                                </div>
+                                <div class="form-group">
+                                    <label for="add_repass">تکرار رمز عبور</label>
+                                    <input type="password" class="form-control main_form_design" id="add_repass"  name="confirm_password_inp">
+                                </div>
+                                <div class="form-group">
+                                    <label for="add_access">سطح دسترسی</label>
+                                    <select class="form-control main_form_design select_access" id="add_access" name="access_inp">
+                                        <option value="0">-----</option>
+                                        {#access_list}
+                                            <option value="{._id}">{.title}</option>
+                                        {/access_list}
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn green_btn">ساخت مدیر جدید</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{/body}

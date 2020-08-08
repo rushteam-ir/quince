@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="{backend_url}">
+    <link rel="stylesheet" href="css/general/bootstrap.css">
+    <link rel="stylesheet" href="css/general/fontAwsome.css">
+    <link rel="stylesheet" href="css/general/general-css.css">
+    <link rel="stylesheet" href="css/login/login.css">
+
+    <title>Rush Team CMS</title>
+</head>
+
+<body>
+<div class="container-fluid ">
+    <div class="row align-items-center log_row_mid">
+        <div class="col-12">
+            <div class="main_filed_of_login">
+                <div class="field_of_logo">
+                    <img class="main_logo" src="img/logo2.png" alt="">
+                </div>
+                <form class="text-right mt-4" action="" method="post" autocomplete="off"
+                      onsubmit="return loginError()" name="login_form">
+                    {@eq key="{msg}" value=""}
+                        <div class="error_warning_alert text-right display_none" id="error_field_warning_front">
+                            <i class="fal fa-times d-inline-block remove_error_icon"
+                               onclick="removeWarningErrorFront()"></i>
+                            <i class="fal fa-exclamation-circle alert_icon_error"></i>
+                            <div class="d-inline-block mr-1" id="error_text"></div>
+                        </div>
+                    {:else}
+                        <div class="error_warning_alert text-right " id="error_field_warning_front">
+                            <i class="fal fa-times d-inline-block remove_error_icon"
+                               onclick="removeWarningErrorFront()"></i>
+                            <i class="fal fa-exclamation-circle alert_icon_error"></i>
+                            <div class="d-inline-block mr-1" id="error_text">{msg}</div>
+                        </div>
+                    {/eq}
+                    <div class="form-group">
+                        <input type="text" placeholder="ایمیل" class="form-control text-right login_inp"
+                               name="email_inp" value="{login_form.email_inp}">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="رمز عبور" class="form-control text-right login_inp"
+                               name="password_inp">
+                    </div>
+                    <div class="row">
+                        <div class="col-6 pl-0">
+                            <img class="w-100 img_captcha" src="{captcha_url}">
+                        </div>
+                        <div class="col-6 pr-0">
+                            <div class="form-group">
+                                <button type="button" class="refresh_capthcha">
+                                    <i class="fas fa-redo-alt"></i>
+                                </button>
+                                <input type="text" placeholder="کد امنیتی" class="form-control text-right login_inp"
+                                       name="captcha_inp">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn_of_login mt-2">ورود به حساب کاربری</button>
+                    <a href="{backend_url}recovery" class="mt-3 d-inline-block recovery_link" id="recovery_page">رمز
+                        عبور خود را فراموش کرده اید ؟</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/general/jquery.js"></script>
+<script src="js/login/login.js"></script>
+<script>
+    $(document).on('click', '.refresh_capthcha', function () {
+
+        $('.img_captcha').attr('src', '{captcha_url}?_' + Math.random());
+
+    });
+</script>
+</body>
+
+</html>

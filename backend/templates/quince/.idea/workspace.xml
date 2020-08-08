@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6e31f3e5-5877-4226-869b-048ee656442a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/assets/css/article/article-add.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/article/article-add.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/article/article-add.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/article/article-add.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/article/article-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/article/article-list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/article/article-list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/article/article-list.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/category/category.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/category/category.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/category/category.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/category/category.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/files/files.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/files/files.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/files/files.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/files/files.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/general/general-css.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/general/general-css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/groups/groups-admins.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/groups/groups-admins.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/groups/groups-admins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/groups/groups-admins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/groups/groups-users.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/groups/groups-users.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/groups/groups-users.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/groups/groups-users.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/layout/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/layout/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/profile/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/profile/profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/profile/profile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/profile/profile.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/store/store-add.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/store/store-add.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/store/store-add.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/store/store-add.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/store/store-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/store/store-list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/store/store-list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/store/store-list.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/category/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/category/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/groups/groups-admins.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/groups/groups-admins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/groups/groups-users.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/groups/groups-users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/article/article-add.dust" beforeDir="false" afterPath="$PROJECT_DIR$/views/article/article-add.dust" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/article/article-edit.dust" beforeDir="false" afterPath="$PROJECT_DIR$/views/article/article-edit.dust" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/article/article-list.dust" beforeDir="false" afterPath="$PROJECT_DIR$/views/article/article-list.dust" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/category/category.dust" beforeDir="false" afterPath="$PROJECT_DIR$/views/category/category.dust" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/dashboard/dashboard.dust" beforeDir="false" afterPath="$PROJECT_DIR$/views/dashboard/dashboard.dust" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/files/files.dust" beforeDir="false" afterPath="$PROJECT_DIR$/views/files/files.dust" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/groups/groups-admins.dust" beforeDir="false" afterPath="$PROJECT_DIR$/views/groups/groups-admins.dust" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/groups/groups-users.dust" beforeDir="false" afterPath="$PROJECT_DIR$/views/groups/groups-users.dust" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layouts/dashboard-layout.dust" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/dashboard-layout.dust" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login/login.dust" beforeDir="false" afterPath="$PROJECT_DIR$/views/login/login.dust" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/profile/profile.dust" beforeDir="false" afterPath="$PROJECT_DIR$/views/profile/profile.dust" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/recovery/recovery-verify.dust" beforeDir="false" afterPath="$PROJECT_DIR$/views/recovery/recovery-verify.dust" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/recovery/recovery.dust" beforeDir="false" afterPath="$PROJECT_DIR$/views/recovery/recovery.dust" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/store/store-add.dust" beforeDir="false" afterPath="$PROJECT_DIR$/views/store/store-add.dust" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/store/store-list.dust" beforeDir="false" afterPath="$PROJECT_DIR$/views/store/store-list.dust" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../frontend/templates/Rush Team/assets/css/about-us/about-us.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/templates/Rush Team/assets/css/about-us/about-us.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../frontend/templates/Rush Team/assets/css/articles/articles-show.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/templates/Rush Team/assets/css/articles/articles-show.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../frontend/templates/Rush Team/assets/css/articles/articles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/templates/Rush Team/assets/css/articles/articles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../frontend/templates/Rush Team/assets/css/contact-us/contact-us.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/templates/Rush Team/assets/css/contact-us/contact-us.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../frontend/templates/Rush Team/assets/css/index/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/templates/Rush Team/assets/css/index/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../frontend/templates/Rush Team/assets/css/index/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/templates/Rush Team/assets/css/index/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../frontend/templates/Rush Team/assets/css/layout/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/templates/Rush Team/assets/css/layout/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../frontend/templates/Rush Team/assets/css/layout/layout.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/templates/Rush Team/assets/css/layout/layout.css.map" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1eJz27zTOVX1lh0oguHNhjDgtJd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e31f3e5-5877-4226-869b-048ee656442a" name="Default Changelist" comment="" />
+      <created>1594054273227</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594054273227</updated>
+      <workItem from="1594054274370" duration="153000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+</project>

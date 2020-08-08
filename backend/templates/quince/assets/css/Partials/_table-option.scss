@@ -1,0 +1,48 @@
+.dropdown-toggle::after {
+    display: none;
+}
+
+.btn.focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.dropdown-menu {
+    direction: rtl;
+    text-align: right;
+    padding: 0;
+}
+
+.btn:hover {
+    color: #000000;
+}
+
+.dropdown-item {
+    font-family: second-font;
+    @include transition(linear, 0.2s);
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    i {
+        margin-left: 5px;
+        font-size: 0.9rem !important;
+    }
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    color: $d_purple;
+    text-decoration: none;
+    background-color: #F8F9FA;
+}
+
+@media only screen and (max-width: 992px) {
+    .dropdown-item {
+        font-size: 0.8rem;
+    }
+}
+
+.edit_btn{
+    cursor: pointer;
+}

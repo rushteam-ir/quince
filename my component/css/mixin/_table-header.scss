@@ -1,0 +1,127 @@
+.header_field {
+    .table_header {
+        width: 100%;
+        height: 50px;
+        position: relative;
+        display: inline-block;
+
+        .table_delete_btn {
+            width: 35px;
+            height: 35px;
+            background-color: $l_red;
+            border-radius: 4px;
+            color: $d_red;
+            position: absolute;
+            left: 0;
+            top: 12px;
+
+            &:hover {
+                background-color: $d_red;
+                color: $l_red;
+            }
+
+            i {
+                position: absolute;
+                right: 9px;
+                top: 9px;
+            }
+        }
+
+        .tr_select {
+            position: absolute;
+            top: 12px;
+            left: 50px;
+        }
+
+        select {
+            background-color: #F3F6F9;
+            border: 0;
+            display: inline-block;
+            width: 60px;
+            font-family: second-font;
+            font-size: 0.9rem;
+        }
+
+        .select_lable {
+            font-size: 0.8rem;
+            direction: rtl;
+            margin-left: 7px;
+        }
+    }
+
+    .t_search {
+        position: absolute;
+        width: 270px;
+        left: 220px;
+        top: 13px;
+
+        input {
+            height: 35px;
+            border-radius: 4px 0px 0px 4px !important;
+            border: 0;
+            background-color: #F3F6F9;
+            font-size: 0.8rem;
+            color: #888888;
+        }
+
+        .search_btn {
+            background-color: #F3F6F9;
+            border: 0;
+            height: 35px;
+            border-radius: 0px 4px 4px 0px !important;
+
+            &:hover {
+                color: $d_red;
+            }
+        }
+
+        .fa-times {
+            position: absolute;
+            top: 9.6px;
+            left: 9px;
+            cursor: pointer;
+            color: #cccccc;
+            z-index: 10;
+
+            &:hover {
+                color: $d_red;
+            }
+        }
+    }
+}
+
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 992px) {
+    .header_field .t_search {
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .header_field .table_header {
+        height: 100px;
+    }
+
+    .header_field .table_header .table_delete_btn {
+        bottom: 0;
+        top: unset;
+    }
+
+    .header_field .table_header .tr_select {
+        bottom: 0px;
+        margin: 0;
+        top: unset;
+    }
+
+    .header_field .t_search {
+        width: 100%;
+    }
+}

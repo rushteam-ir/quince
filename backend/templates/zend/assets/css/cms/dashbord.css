@@ -1,0 +1,308 @@
+.main_dashbord_field {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    background-color: #1E1E2D;
+    z-index: 1000;
+}
+
+.field_of_zend_cms_img {
+    width: 100%;
+    background-color: #1A1A2C;
+}
+
+.zend_cms_img_for_dashbord {
+    width: 110px;
+    margin: 15px 70px;
+}
+
+.field_of_dashbord_partion {
+    color: rgb(177, 177, 177);
+    padding-right: 15px;
+    cursor: pointer;
+    padding-top: 18px;
+    transition: all linear 0.1s;
+    background-color: transparent !;
+}
+
+.field_of_dashbord_partion:hover {
+    background-color: #1A1A2C;
+}
+
+.field_of_dashbord_partion:hover .dashbord_tiny_icons {
+    color: #5D78FF;
+}
+
+.field_of_dashbord_partion:hover .dashbord_tiny_arrow {
+    color: rgb(212, 212, 212);
+}
+
+.field_of_dashbord_partion:hover .title_text_of_dashbord {
+    color: rgb(243, 243, 243);
+}
+
+.dashbord_tiny_arrow {
+    font-size: 0.5rem;
+    color: #4A4C69;
+    transition: all linear 0.1s;
+    position: absolute;
+    left: 22px;
+    margin-top: 10px;
+}
+
+.dashbord_tiny_icons {
+    font-size: 1.2rem;
+    color: #494B74;
+    transition: all linear 0.1s;
+}
+
+.title_text_of_dashbord {
+    margin-right: 10px;
+    transition: all linear 0.1s;
+}
+
+.shop_list_main_field {
+    list-style-type: none;
+    position: relative;
+    display: none;
+    padding: 0px;
+}
+
+.shop_list_text {
+    color: rgb(209, 209, 209);
+    text-align: right;
+    height: 44px;
+    line-height: 50px;
+    padding-right: 60px;
+}
+
+.shop_list_text:hover {
+    background-color: #1A1A2C;
+    color: white;
+}
+
+/* %%%%%%% nav bar %%%%%%% */
+.main_admin_navbar {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0px 0px 10px -6px black;
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+}
+
+.profile_admin_img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 7px;
+}
+
+.main_background-color {
+    background-color: #F2F3F8;
+}
+
+.field_of_admin_name {
+    background-color: white;
+    height: 60px;
+    border-right: 1px solid #e3e3e3;
+    padding-right: 18px;
+}
+
+.nick_name_of_admin_dashbord {
+    position: relative;
+    top: 5px;
+    left: 8px;
+}
+
+.notification_main_box {
+    height: 60px;
+}
+
+.notification_icon {
+    width: 20px;
+    font-size: 1.5rem;
+    color: #555555;
+    position: relative;
+    top: 8px;
+    left: 15px;
+}
+
+.number_of_dashbord_notif {
+    width: 17px;
+    height: 17px;
+    position: relative;
+    z-index: 10;
+    top: -5px;
+    left: 11px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 0.7rem;
+    border-radius: 50%;
+    line-height: 22px;
+    display: inline-block;
+
+}
+
+.custom_number_of_dashbord_notif {
+    top: -5px;
+    left: 3px;
+}
+
+.special_class_for_exit {
+    position: relative;
+    top: -3px;
+}
+
+.notification_bell_of_navbar {
+    -webkit-animation: ringRinging 4s .7s ease-in-out infinite;
+    -webkit-transform-origin: 50% 4px;
+    -moz-animation: ringRinging 4s .7s ease-in-out infinite;
+    -moz-transform-origin: 50% 4px;
+    animation: ringRinging 4s .7s ease-in-out infinite;
+    transform-origin: 50% 4px;
+    color: #5D78FF;
+    font-size: 1.2rem;
+}
+
+.notification_btn_navbar {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    top: 7px;
+    left: 10px;
+}
+
+.notification_envelope_of_navbar {
+    color: #5D78FF;
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+.main_field_of_notif_dropdown {
+    width: 388px;
+    position: absolute;
+    top: 61px;
+    z-index: 10000000;
+    box-shadow: 0px 15px 50px -20px #0000006e;
+    display: none;
+}
+
+.new_notif_header {
+    color: white;
+    font-size: 1.5rem;
+    right: 10px;
+    margin-top: 19px;
+}
+
+.small_of_new_notif_header {
+    position: absolute;
+    color: #a2a2a2;
+    right: 10px;
+    margin-top: 58px;
+}
+
+.info_of_notif_body {
+    max-height: 434px;
+    background-color: white;
+    overflow-y: scroll;
+}
+
+.img_of_notif_field {
+    height: 100px;
+}
+
+.main_field_of_one_basket {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid rgb(241, 241, 241);
+    color: #575757;
+}
+
+.main_field_of_one_basket:hover {
+    color: #000000;
+}
+
+.main_field_of_one_basket:hover .notif_drd_tiny_arrow {
+    color: #222222;
+}
+
+.text_of_notif_box {
+    margin-top: 16px;
+}
+
+.basket_font_icon {
+    width: 60px;
+}
+
+.socks_icon_class {
+    font-size: 1.7rem;
+    position: relative;
+    top: -5px;
+    right: 13px;
+    color: #36e0ae;
+}
+
+.notif_drd_tiny_arrow {
+    right: 220px;
+    position: relative;
+    top: -13px;
+    color: #e0e0e0;
+    transition: all linear 0.1s;
+}
+
+.number_of_basket {
+    font-size: 0.7rem;
+    position: relative;
+    top: -3px;
+}
+
+.red_dot{
+    width: 7px;
+    height: 7px;
+    background-color: red;
+    position: relative;
+    border-radius: 50%;
+    top: -26px;
+    left: 26px;
+}
+
+.guid_box_alert{
+    width: 550px;
+    height: 60px;
+    border-radius: 14px;
+    background-color: #3a3a57;
+    position: absolute;
+    left: -1271px;
+    bottom: 20px;
+}
+
+.text_offuid_alert{
+    color: #ecefff;
+    position: relative;
+    top: 17px;
+}
+
+.remove_gild_alert{
+    position: absolute;
+    left: 20px;
+    color: #ECEFFF;
+    top: 18px;
+    cursor: pointer;
+}
+
+.link_to_guid{
+    border-bottom: 1px dashed #ECEFFF;
+    cursor: help;
+    color: rgb(151, 166, 255);
+}
+
+.link_to_guid:hover{
+    color: rgb(151, 166, 255);
+}

@@ -1,0 +1,120 @@
+.bg_of_address_name{
+    background-image: url("../../img/bg.png");
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    font-family: main-font;
+}
+
+.title_of_wishList{
+    padding-top: 60px;
+}
+
+.address_of_wishList{
+    color: #6c757d;
+    font-size: .8rem;
+}
+
+.address_of_wishList_link{
+    color: #4e555b;
+}
+
+.address_of_wishList_link:hover{
+    color: black;
+}
+
+.explain_of_empty_wish_list{
+    font-size: 1.5rem;
+}
+
+.btn_of_back_homePage{
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    border: 2px solid rgba(168,97,17,0.79);
+    outline: none;
+    color: #684505;
+    margin: 40px;
+    font-family: 'Merriweather', serif;
+    white-space: nowrap;
+    background-color: transparent;
+}
+
+
+.btn_of_back_homePage::after, .btn_of_back_homePage::before {
+    content: "";
+    position: absolute;
+    border: 2px solid  rgba(168,97,17,0.79);
+    width: calc(100% + 15px);
+    height: 60px;
+    transition: 0.5s ease;
+}
+.btn_of_back_homePage::after {
+    top: -10px;
+    left: -10px;
+    border-right: none;
+    border-bottom: none;
+}
+.btn_of_back_homePage::before {
+    bottom: -10px;
+    right: -10px;
+    border-left: none;
+    border-top: none;
+}
+.btn_of_back_homePage:hover:after, .btn_of_back_homePage:hover:before {
+    width: calc(100% - 10px);
+    height: 65px;
+}
+
+.img_of_product_in_wish_list{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.padding_top_td{
+    padding-top: 25px!important;
+}
+
+.btn_of_delete_favorite{
+    color: red;
+}
+.btn_of_delete_favorite:hover{
+    color: red;
+}
+
+.add_shopping_card{
+    color: forestgreen;
+}
+
+.add_shopping_card:hover{
+    color: green;
+}
+
+/* Media Query*/
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+
+@media only screen and (max-width: 991px) {
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+    .explain_of_empty_wish_list{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+}
+
+
+
+/*End Media Query*/

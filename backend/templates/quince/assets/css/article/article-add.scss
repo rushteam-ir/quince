@@ -1,0 +1,57 @@
+@import '../Partials/main-color';
+@import '../Partials/mixin';
+@import '../Partials/btn';
+@import '../Partials/header-text';
+@import '../Partials/uploader';
+@import '../Partials/error';
+
+.main_field {
+    @include main_field;
+}
+
+.main_col {
+    @include main_col;
+    padding-bottom: 60px !important;
+}
+
+.main_lable_design {
+    font-size: 1rem;
+}
+
+.box_of_img_template {
+    width: 376px;
+    height: 230px;
+}
+
+.btn-tertiary2 {
+    font-size: 1.2rem;
+    line-height: 230px;
+}
+
+.green_btn {
+    float: left;
+}
+
+// editor customize
+
+.fr-toolbar,
+.second-toolbar,
+.fr-box.fr-basic .fr-wrapper {
+    background-color: #F3F6F9;
+    border: none;
+}
+
+.fr-box.fr-basic .fr-element {
+    text-align: right;
+    direction: rtl;
+    font-family: main-font;
+    min-height: 300px;
+}
+
+.fr-toolbar .fr-more-toolbar {
+    background-color: #F3F6F9;
+}
+
+#logo {
+    display: none !important;
+}
