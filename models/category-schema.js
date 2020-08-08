@@ -13,6 +13,8 @@ let category_schema = new mongoose.Schema({
 
 });
 
+category_schema.index({'$**' : 'text'});
+
 category_schema.statics = {
 
     add : async function (admin_id, title_inp, parent_inp) {
@@ -152,7 +154,9 @@ category_schema.statics = {
         let category_skip = page_number * page_limit - page_limit;
 
         result.rows_begin_number = category_skip + 1;
-        result.list =  await category_model.find({$text : {$search : search_value}}).skip(category_skip).limit(page_limit).populate('parent').populate('author').exec();
+        result.list =  await category_model
+        .find({$text : {$search : { $regex: search_value, $options: "i" }}})
+        .skip(category_skip).limit(page_limit).exec();
         result.total_pages = Math.ceil( await category_model.find({$text : {$search : search_value}}).countDocuments() / page_limit);
 
         return result;
