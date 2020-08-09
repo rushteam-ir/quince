@@ -31,6 +31,8 @@ let comment_schema = new mongoose.Schema({
 
 });
 
+comment_schema.index({'$**' : 'text'});
+
 comment_schema.statics = {
 
     add : async function(comment_data){
@@ -164,9 +166,23 @@ comment_schema.statics = {
 
     edit : async function(comment_data, comment_id){
 
-        return await comment_model.findOneAndUpdate(comment_id, {$set : comment_data}, {new : true});
+        return await comment_model.findByIdAndUpdate(comment_id, {$set : comment_data}, {new : true});
 
-    }
+    },
+
+    search : async function (search_value, page_number, page_limit) {
+
+        let result = {}
+        let _skip = page_number * page_limit - page_limit;
+
+        result.rows_begin_number = _skip + 1;
+        result.list =  await comment_model.find({$text : {$search : search_value}}).populate('response').populate('author').populate({path : 'reply_to', populate : {path : 'author'}}).skip(_skip).limit(page_limit).exec();
+
+        result.total_pages = Math.ceil( await comment_model.find({$text : {$search : search_value}}).countDocuments() / page_limit);
+
+        return result;
+
+    },
 
 };
 

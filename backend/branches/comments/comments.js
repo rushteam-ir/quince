@@ -47,6 +47,7 @@ const get_comment = require('./api/get-comment');
 
 const reply = require('./reply');
 const edit = require('./edit');
+const search = require('./search');
 
 router.use('/api/delete-comment', delete_comment);
 router.use('/api/delete-select', delete_select);
@@ -56,5 +57,6 @@ router.use('/api/get-comment', get_comment);
 
 router.use('/reply', reply);
 router.use('/edit', edit);
+router.use('/search', search);
 
 module.exports = router;

@@ -31,6 +31,8 @@ let article_schema = new mongoose.Schema({
 
 })
 
+article_schema.index({'$**' : 'text'});
+
 article_schema.statics = {
 
     add : async function (article_data, author_id) {
@@ -99,31 +101,13 @@ article_schema.statics = {
 
     search : async function (search_value, page_number, page_limit) {
 
-        let find_list = await article_model.find().populate('category_parent').populate('category_child').populate('author').exec();
-        let article_skip = page_number * page_limit - page_limit;
-        let search = search_value.toLowerCase();
-        let search_list = [];
-        let result = {};
+        let result = {}
+        let _skip = page_number * page_limit - page_limit;
 
-        for(let i = 0; i < find_list.length; i++){
+        result.rows_begin_number = _skip + 1;
+        result.list =  await article_model.find({$text : {$search : search_value}}).populate('category_parent').populate('category_child').populate('author').skip(_skip).limit(page_limit).exec();
 
-            let title = find_list[i].title.toLowerCase();
-            let author_first_name = find_list[i].author.first_name.toLowerCase();
-            let author_last_name = find_list[i].author.last_name.toLowerCase();
-            let author_nick_name = find_list[i].author.nick_name.toLowerCase();
-            let author_id = find_list[i].author.unique_id.toLowerCase();
-
-            if(title.includes(search) || author_first_name.includes(search) || author_last_name.includes(search) || author_nick_name.includes(search) || author_id == search){
-
-                search_list.push(find_list[i]);
-
-            }
-
-        }
-
-        result.rows_begin_number = article_skip + 1;
-        result.list = search_list.slice(article_skip, page_limit + article_skip);
-        result.total_pages = Math.ceil(search_list.length / page_limit);
+        result.total_pages = Math.ceil( await article_model.find({$text : {$search : search_value}}).countDocuments() / page_limit);
 
         return result;
 
