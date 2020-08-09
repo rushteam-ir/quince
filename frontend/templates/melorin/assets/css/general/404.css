@@ -46,8 +46,8 @@ body {
     height: 120%;
     top:25px;
     right: -340px;
-    background-color: #8A65DF;
-    box-shadow: 0px 0px  60px  20px  rgba(137,100,222,0.5);
+    background-color: rgba(255,107,107,0.80);
+    box-shadow: 0px 0px 30px 10px rgba(255,107,107,0.5);
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
@@ -58,8 +58,9 @@ body {
     height: 300px;
     right:-10%;
     bottom:-301px;
-    background-color: #8B65E4;
-    box-shadow: 0px 0px 60px 10px rgba(131, 95, 214, 0.5),0px 0px  20px  0px  rgba(0,0,0,0.1);
+    background-color: rgb(255,109,107);
+    color:rgba(255,107,107,0.5);
+    box-shadow: 0px 0px 30px 10px rgba(255,107,107,0.5),0px 0px  20px  0px  rgba(0,0,0,0.1);
     z-index:5;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
@@ -172,7 +173,7 @@ body {
 .style_of_404_text{
     margin-bottom: 0px;
     font-size: 72px;
-    background: -webkit-linear-gradient(#cc99ff , #ff9999);
+    background: -webkit-linear-gradient(#de6262 , #ffb88c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -185,7 +186,7 @@ body {
     width: 100px;
     height: 50px;
     text-decoration: none;
-    background-color: #8965DE;
+    background-color: #FF6B6B;
     color: white;
     line-height: 50px;
     border-radius: 5px;
