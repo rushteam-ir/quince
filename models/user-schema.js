@@ -34,6 +34,8 @@ let user_schema = new mongoose.Schema({
 
 });
 
+user_schema.index({'$**' : 'text'});
+
 user_schema.statics = {
 
     login : async function (email_inp, password_inp) {
@@ -153,31 +155,13 @@ user_schema.statics = {
 
     search : async function (search_value, page_number, page_limit) {
 
-        let find_list = await user_model.find({access_type: { $exists: true }}).populate('access_type').exec();
+        let result = {}
+        let _skip = page_number * page_limit - page_limit;
 
-        let admin_skip = page_number * page_limit - page_limit;
-        let search = search_value.toLowerCase();
-        let search_list = [];
-        let result = {};
+        result.rows_begin_number = _skip + 1;
+        result.list =  await user_model.find({$text : {$search : search_value}}).populate('author').skip(_skip).limit(page_limit).exec();
 
-        for(let i = 0; i < find_list.length; i++){
-
-            let first_name = find_list[i].first_name.toLowerCase();
-            let last_name = find_list[i].last_name.toLowerCase();
-            let nick_name = find_list[i].nick_name.toLowerCase();
-            let email = find_list[i].email.toLowerCase();
-
-            if(first_name.includes(search) || last_name.includes(search) || nick_name.includes(search) || email.includes(search)){
-
-                search_list.push(find_list[i]);
-
-            }
-
-        }
-
-        result.rows_begin_number = admin_skip + 1;
-        result.list = search_list.slice(admin_skip, page_limit + admin_skip);
-        result.total_pages = Math.ceil(search_list.length / page_limit);
+        result.total_pages = Math.ceil( await user_model.find({$text : {$search : search_value}}).countDocuments() / page_limit);
 
         return result;
 

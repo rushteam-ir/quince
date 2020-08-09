@@ -6,6 +6,7 @@ router.use(async(req, res, next)=>{
 
         if(!isUndefined(req.session.admin_info)){
 
+            req.session.admin_info = await user_model.getById(req.session.admin_id);
             res.locals.g_admin_info = req.session.admin_info;
 
             if(!isUndefined(req.session.admin_info.first_name)){

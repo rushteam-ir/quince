@@ -120,43 +120,12 @@ category_schema.statics = {
 
     search : async function (search_value, page_number, page_limit) {
 
-        // let find_list = await category_model.find().populate('parent').populate('author').exec();
-        // let category_skip = page_number * page_limit - page_limit;
-        // let search = search_value.toLowerCase();
-        // let search_list = [];
-        // let result = {};
-        //
-        // for(let i = 0; i < find_list.length; i++){
-        //
-        //     let title = find_list[i].title.toLowerCase();
-        //     let parent_title = "دسته اصلی";
-        //
-        //     if(find_list[i].parent != null){
-        //
-        //         parent_title = find_list[i].parent.title.toLowerCase();
-        //
-        //     }
-        //     if(title.includes(search) || parent_title.includes(search)){
-        //
-        //         search_list.push(find_list[i]);
-        //
-        //     }
-        //
-        // }
-        //
-        // result.rows_begin_number = category_skip + 1;
-        // result.list = search_list.slice(category_skip, page_limit + category_skip);
-        // result.total_pages = Math.ceil(search_list.length / page_limit);
-        //
-        // return result;
-
         let result = {}
-        let category_skip = page_number * page_limit - page_limit;
+        let _skip = page_number * page_limit - page_limit;
 
-        result.rows_begin_number = category_skip + 1;
-        result.list =  await category_model
-        .find({$text : {$search : { $regex: search_value, $options: "i" }}})
-        .skip(category_skip).limit(page_limit).exec();
+        result.rows_begin_number = _skip + 1;
+        result.list =  await category_model.find({$text : {$search : search_value}}).populate('parent').populate('author').skip(_skip).limit(page_limit).exec();
+
         result.total_pages = Math.ceil( await category_model.find({$text : {$search : search_value}}).countDocuments() / page_limit);
 
         return result;
