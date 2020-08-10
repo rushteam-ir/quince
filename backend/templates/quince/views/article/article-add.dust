@@ -36,7 +36,15 @@
                                 <form name="article" class="form_ajax text-right dir-rtl" method="post" action="" autocomplete="off" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label for="article_name">نام مقاله</label>
-                                        <input type="text" class="form-control main_form_design" id="article_name"  name="title_inp">
+                                        <input type="text" class="form-control main_form_design " id="article_name"  name="title_inp">
+                                    </div>
+                                    <div class="form-group position-relative">
+                                        <label for="article_photo">عکس مقاله</label>
+                                        <span class="show_img mr-1">(مشاهده عکس)</span>
+                                        <input type="file" class="form-control chose_file_inp main_form_design fal" name="article_photo" id="article_photo">
+                                        <div class="img_upload_field display_none">
+                                            <img src="" alt="">
+                                        </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="article_parent">دسته</label>
@@ -69,25 +77,7 @@
                                         <label for="article_describe">توضیحات کلیدی مقاله</label>
                                         <textarea class="form-control main_form_design" id="article_describe" name="meta_describe_inp"></textarea>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="avatar" class="col-form-label main_lable_design">
-                                            تصویر اصلی مقاله
-                                        </label>
-                                        <div class="field_of_img_template">
-                                            <div class="box_of_img_template">
-                                                <div class="box_of_img_template img-box">
-                                                    <div class="img-show">
-                                                    </div>
-                                                    <input type="file" name="main_image" id="avatar_img" class="ajax_file input-file-custom">
-                                                    <label for="avatar_img" class="btn btn-tertiary2 js-labelFile ">
-                                                        <i class="icon fa fa-check"></i>
-                                                        <span class="js-fileName mr-2">انتخاب عکس</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button type="submit" class="btn green_btn" name="profile_private">ثبت مقاله جدید</button>
+                                    <button type="submit" class="btn green_btn mt-3" name="profile_private">ثبت مقاله جدید</button>
                                 </form>
                             </div>
                         </div>
