@@ -43,6 +43,14 @@
                                         <label for="article_name">نام مقاله</label>
                                         <input type="text" class="form-control main_form_design" id="article_name"  name="title_inp" value="{article_info.title}">
                                     </div>
+                                    <div class="form-group position-relative">
+                                        <label for="article_photo">عکس مقاله</label>
+                                        <span class="show_img mr-1">(مشاهده عکس)</span>
+                                        <input type="file" class="form-control chose_file_inp main_form_design fal" name="article_photo" id="article_photo">
+                                        <div class="img_upload_field display_none">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
                                     <div class="form-group">
                                         <label for="article_parent">دسته</label>
                                         <select class="form-control main_form_design select-category" id="article_parent" name="parent_inp">
@@ -85,34 +93,7 @@
                                         <label for="article_describe">توضیحات کلیدی مقاله</label>
                                         <textarea class="form-control main_form_design" id="article_describe" rows="7" name="meta_describe_inp">{article_info.meta_describe}</textarea>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="avatar" class="col-form-label main_lable_design">
-                                            تصویر اصلی مقاله
-                                        </label>
-                                        <div class="field_of_img_template">
-                                            <div class="box_of_img_template">
-                                                <div class="box_of_img_template img-box">
-                                                    <div class="img-show">
-                                                        {@eq key="{article_info.main_image}" value=""}
 
-                                                        {:else}
-                                                            <div class="remove_parent">
-                                                                <img class="uploading_img_from_brows"
-                                                                     src="media/images/{article_info.main_image}">
-                                                                <div name="{article_info.unique_id}"
-                                                                     class="remove_img_icon image_del"></div>
-                                                            </div>
-                                                        {/eq}
-                                                    </div>
-                                                    <input type="file" name="main_image" id="main_img" class="ajax_file input-file-custom">
-                                                    <label for="main_img" class="btn btn-tertiary2 js-labelFile ">
-                                                        <i class="icon fa fa-check"></i>
-                                                        <span class="js-fileName mr-2">انتخاب عکس</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <button type="submit" class="btn green_btn" name="profile_private">ویرایش مقاله</button>
                                 </form>
                             </div>
