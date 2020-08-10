@@ -1,15 +1,28 @@
 .chose_file_inp::-webkit-file-upload-button {
-    visibility: hidden;
+    display: none;
+}
+.chose_file_inp::-o-file-upload-button {
+    display: none;
+}
+.chose_file_inp::-moz-file-upload-button {
+    display: none;
 }
 
 .chose_file_inp {
     cursor: pointer;
     &:before {
+
         content: '\f0c6';
         color: #9c9c9c;
         font-size: 1.1rem;
         position: relative;
         top: 5px;
+    }
+    &:after{
+        content: attr(data-value);
+        position: absolute;
+        right: 40px;
+        top: 44px;
     }
 }
 
