@@ -6,7 +6,7 @@ $(document).ready(function () {
         main_cms_field.addClass('MCF_larg');
         dashboard.removeClass('open_dsh');
         dashboard.addClass('close_dsh');
-        dashboard_logo.fadeOut(1000);
+        dashboard_logo.fadeOut();
 
         hover_field.css('display', 'block');
 
@@ -25,7 +25,8 @@ $(document).ready(function () {
         hover_field.css('display', 'none');
         dashboard.removeClass('close_dsh');
         dashboard.addClass('open_dsh');
-
+        dashboard_logo.fadeIn();
+        
     });
 
 });
