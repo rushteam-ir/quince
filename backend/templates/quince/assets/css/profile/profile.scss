@@ -150,7 +150,7 @@
         height: 13px;
         background-color: #909090;
         position: absolute;
-        transform: rotate(45deg);
+        @include transform(rotate(45deg));
         right: 9px;
         top: 7px;
     }
@@ -161,7 +161,7 @@
         height: 6px;
         background-color: #909090;
         position: absolute;
-        transform: rotate(-45deg);
+        @include transform(rotate(-45deg));
         right: 15.3px;
         top: 12.2px;
     }
@@ -261,14 +261,13 @@
     height: 13px;
     background-color: #909090;
     position: absolute;
-    transform: rotate(45deg);
+    @include transform(rotate(45deg));
     right: 11.8px;
     top: 5px;
 }
 
 .remove_img_icon::after {
-    transform: rotate(-45deg);
-
+    @include transform(rotate(-45deg));
 }
 
 .uploading_img_from_brows {
