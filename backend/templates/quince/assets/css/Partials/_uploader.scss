@@ -1,15 +1,18 @@
 .chose_file_inp::-webkit-file-upload-button {
     display: none;
 }
+
 .chose_file_inp::-o-file-upload-button {
     display: none;
 }
+
 .chose_file_inp::-moz-file-upload-button {
     display: none;
 }
 
 .chose_file_inp {
     cursor: pointer;
+
     &:before {
 
         content: '\f0c6';
@@ -18,7 +21,8 @@
         position: relative;
         top: 5px;
     }
-    &:after{
+
+    &:after {
         content: attr(data-value);
         position: absolute;
         right: 40px;
@@ -26,19 +30,55 @@
     }
 }
 
-.img_upload_field{
+.img_upload_field {
     width: 190px;
     border-radius: 7px;
     position: absolute;
     top: 4px;
     right: -220px;
-    overflow: hidden;
-    img{
+
+    img {
         width: 100%;
+        border-radius: 7px;
+    }
+
+    .remove_main_img {
+        width: 25px;
+        height: 25px;
+        background-color: #ffffff;
+        position: absolute;
+        z-index: 50;
+        top: -10px;
+        border-radius: 50px;
+        cursor: pointer;
+        right: -13px;
+        box-shadow: 0px 0px 10px -3px #515151;
+
+        &::after {
+            content: "";
+            width: 1.5px;
+            height: 13px;
+            background-color: #909090;
+            position: absolute;
+            @include transform(rotate(45deg));
+            right: 11.8px;
+            top: 5px;
+        }
+
+        &::before {
+            content: "";
+            width: 1.5px;
+            height: 13px;
+            background-color: #909090;
+            position: absolute;
+            @include transform(rotate(-45deg));
+            right: 11.8px;
+            top: 5px;
+        }
     }
 }
 
-.show_img{
+.show_img {
     font-size: 0.8rem;
     color: $d_red;
     margin-bottom: -10px;
@@ -47,6 +87,6 @@
     display: none;
 }
 
-.display_none{
+.display_none {
     display: none;
 }
