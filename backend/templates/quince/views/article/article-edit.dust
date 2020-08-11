@@ -11,7 +11,6 @@
     <script src="js/general/wysiwyg-editor.js"></script>
     <script src="js/general/wysiwyg-image-manager.js"></script>
     <script src="js/general/wysiwyg-custom.js"></script>
-    <script src="js/custom/uploader.js"></script>
     <script src="js/custom/main-error.js"></script>
     <script src="js/custom/error-handler.js"></script>
     <script src="js/article/article-edit.js"></script>
@@ -48,7 +47,12 @@
                                         <span class="show_img mr-1">(مشاهده عکس)</span>
                                         <input type="file" class="form-control chose_file_inp main_form_design fal ajax_file" name="main_image" id="article_photo">
                                         <div class="img_upload_field display_none">
+<<<<<<< HEAD
                                             <img src="media/images/{article_info.main_image}" alt="">
+=======
+                                            <div class="remove_main_img"></div>
+                                            <img src="" alt="">
+>>>>>>> dc79ba697eed81a544bd77de924253a27476265e
                                         </div>
                                     </div>
                                     <div class="form-group">
