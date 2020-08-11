@@ -75,8 +75,6 @@ $(document).ready(function () {
 
 
 // uploader custom
-$('.show_img').css('display', 'inline-block');
-$('.img_upload_field').css('display', 'block');
 
 $(".chose_file_inp").change(function () {
 
@@ -91,8 +89,6 @@ $(".chose_file_inp").change(function () {
 });
 
 $('.remove_main_img').click(function () {
-
-    if($(this).hasClass('image_del')){return}
 
     $('.img_upload_field , .show_img').css('display', 'none');
 
