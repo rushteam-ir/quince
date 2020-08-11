@@ -92,6 +92,8 @@ $(".chose_file_inp").change(function () {
 
 $('.remove_main_img').click(function () {
 
+    if($(this).hasClass('image_del')){return}
+
     $('.img_upload_field , .show_img').css('display', 'none');
 
     $(".chose_file_inp").val('');

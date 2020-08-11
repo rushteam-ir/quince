@@ -45,10 +45,14 @@
                                     <div class="form-group position-relative">
                                         <label for="article_photo">عکس مقاله</label>
                                         <span class="show_img mr-1">(مشاهده عکس)</span>
-                                        <input type="file" class="form-control chose_file_inp main_form_design fal ajax_file" name="main_image" id="article_photo">
+                                        <input type="file" class="form-control chose_file_inp main_form_design fal ajax_file" name="main_image" id="article_photo" data-value="{article_info.main_image}">
                                         <div class="img_upload_field display_none">
-                                            <div class="remove_main_img"></div>
-                                            <img src="" alt="">
+                                            {@eq key="{article_info.main_image}" value=""}
+                                                <div class="remove_main_img"></div>
+                                            {:else}
+                                                <div class="remove_main_img image_del" name="{article_info.unique_id}"></div>
+                                            {/eq}
+                                            <img src="media/images/{article_info.main_image}" alt="">
                                         </div>
                                     </div>
                                     <div class="form-group">
