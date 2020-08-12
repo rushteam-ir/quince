@@ -19,7 +19,6 @@ const delete_article = require('./api/delete-article');
 const delete_select = require('./api/delete-select');
 const change_status = require('./api/change-status');
 const change_comments_status = require('./api/change-comments-status');
-const delete_main_image = require('./api/delete-main-image');
 
 const list = require('./list');
 const add = require('./add');
@@ -30,7 +29,6 @@ router.use('/api/delete-article', delete_article);
 router.use('/api/delete-select', delete_select);
 router.use('/api/change-status', change_status);
 router.use('/api/change-comments-status', change_comments_status);
-router.use('/api/delete-main-image', delete_main_image);
 
 router.use('/list', list);
 router.use('/add', add);
