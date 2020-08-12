@@ -59,15 +59,6 @@ $(".chose_file_inp").change(function () {
 
 });
 
-$('.remove_main_img').click(function () {
-
-    $('.img_upload_field , .show_img').css('display', 'none');
-
-    $(".chose_file_inp").val('');
-
-    $('.chose_file_inp').attr('data-value', '');
-
-});
 
 function readURL(input) {
 
