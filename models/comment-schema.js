@@ -1,11 +1,18 @@
 let comment_schema = new mongoose.Schema({
 
     text: String,
-    status : Boolean,
+    status : {
+        type : Boolean,
+        default : false,
+    },
     date : String,
     time : String,
     email : String,
     name : String,
+    read : {
+        type :  Boolean,
+        default: false
+    },
     author : {
         type : 'objectId',
         ref : 'user'
@@ -39,7 +46,6 @@ comment_schema.statics = {
 
         comment_data.date = getCurrentDate();
         comment_data.time = getCurrentTime();
-        comment_data.status = false;
 
         let new_comment = new comment_model(comment_data);
         let result = await new_comment.save();
@@ -61,7 +67,6 @@ comment_schema.statics = {
 
         comment_data.date = getCurrentDate();
         comment_data.time = getCurrentTime();
-        comment_data.status = false;
 
         let new_comment = new comment_model(comment_data);
         let result = await new_comment.save();
@@ -183,6 +188,34 @@ comment_schema.statics = {
         return result;
 
     },
+
+    getNotifications : async function(){
+
+        let find_comments = await comment_model.find({read : false}).populate('author').populate('response').populate({path : 'reply_to', populate : {path : 'author'}});
+        let result = {};
+        let notification_list = {};
+
+        for(let comment of find_comments){
+
+            if(notification_list.hasOwnProperty(comment.date)){
+
+                notification_list[comment.date].push(comment);
+
+            }
+            else{
+
+                notification_list[comment.date] = [comment];
+
+            }
+
+        }
+
+        result.list = notification_list;
+        result.count = find_comments.length;
+
+        return result;
+
+    }
 
 };
 
