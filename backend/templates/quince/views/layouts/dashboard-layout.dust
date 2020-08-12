@@ -178,7 +178,7 @@
         <a href="{backend_url}comments" class="dashboard_body_sub">
             <div class="position-relative">
                 <i class="fad fa-comments-alt"></i>
-                <p>نطرات</p>
+                <p>نظرات</p>
             </div>
         </a>
 
