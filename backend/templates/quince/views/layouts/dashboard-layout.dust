@@ -224,20 +224,49 @@
                 {/eq}
             </div>
 
-            <div class="d-inline-block messages_icon">
+        </div>
+
+        <div class="nav_data_content">
+            <div class="nav_icon_field">
                 <i class="fad fa-envelope"></i>
             </div>
-
-            <div class="d-inline-block messages_icon">
-                <i class="fad fa-bell bell"></i>
+            <div class="nav_icon_field nav_modal_data">
+                <i class="fad fa-comments-alt"></i>
             </div>
+            <!-- <div class="nav_comment_field">
+                <div class="comment_header_notif">
+                    <h2>نظرات کاربران</h2>
+                </div>
+                <div class="nav_comment_info">
+                    <div class="CI_image">
+                        <img src="img/default-profile-picture.png" alt="">
+                    </div>
+                    <div class="CI_name">
+                        <p>کسری حبیب بیگی</p>
+                        <p>سلام من به تو یار قدیمی </p>
+                    </div>
+                </div>
+            </div> -->
 
-            <div class="d-inline-block messages_icon">
-                <i class="far fa-search"></i>
+            <div class="nav_icon_field nav_modal_data">
+                <i class="fal fa-search"></i>
+            </div>
+            <div class="nav_search_field">
+                <form action="">
+                    <div class="form-group w-100 m-0">
+                        <div class="row w-100">
+                            <div class="col-1 p-0">
+                                <button type="submit" class="far fa-search btn"></button>
+                            </div>
+                            <div class="col-11 p-0">
+                                <input type="text" name="" placeholder="جستجو">
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
 
         </div>
-
     </nav>
 
     {+body/}
@@ -251,6 +280,7 @@
 <script src="js/layout/get-element.js"></script>
 <script src="js/layout/collaps-menu.js"></script>
 <script src="js/layout/toggle-dsh.js"></script>
+<script src="js/layout/data-nav.js"></script>
 
     {+js/}
 </body>
