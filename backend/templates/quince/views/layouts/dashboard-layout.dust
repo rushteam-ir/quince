@@ -168,12 +168,12 @@
 
         </div>
 
-        <!-- <a href="{backend_url}files" class="dashboard_body_sub">
+        <a href="{backend_url}files" class="dashboard_body_sub">
             <div class="position-relative">
                 <i class="fad fa-folder-open"></i>
                 <p>مدیریت فایل ها</p>
             </div>
-        </a> -->
+        </a>
 
         <a href="{backend_url}comments" class="dashboard_body_sub">
             <div class="position-relative">
@@ -233,7 +233,7 @@
             <div class="nav_icon_field nav_modal_data">
                 <i class="fad fa-comments-alt"></i>
             </div>
-            <!-- <div class="nav_comment_field">
+            <div class="nav_comment_field">
                 <div class="comment_header_notif">
                     <h2>نظرات کاربران</h2>
                 </div>
@@ -246,7 +246,7 @@
                         <p>سلام من به تو یار قدیمی </p>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
             <div class="nav_icon_field nav_modal_data">
                 <i class="fal fa-search"></i>

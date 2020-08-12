@@ -51,9 +51,24 @@ $(".chose_file_inp").change(function () {
 
     readURL(this);
 
-    $('.show_img').css('display', 'inline-block');
+    let img_name = ''
 
-    let img_name = this.files[0].name;
+    if(this.files && this.files.length){
+
+        img_name = this.files[0].name;
+
+        $('.show_img').css('display', 'inline-block');
+
+    }
+    else{
+
+        img_name = '';
+
+        $('.show_img').css('display', 'none');
+
+        $('.img_upload_field').css('display' , 'none');
+
+    }
 
     $('.chose_file_inp').attr('data-value', img_name);
 
