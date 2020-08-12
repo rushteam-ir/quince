@@ -76,6 +76,9 @@ $(document).ready(function () {
 
 // uploader custom
 
+$('.show_img').css('display', 'inline-block');
+$('.img_upload_field').css('display' , 'block');
+
 $(".chose_file_inp").change(function () {
 
     readURL(this);
