@@ -165,6 +165,7 @@ comment_schema.statics = {
 
     getComment : async function(comment_id){
 
+        await comment_model.findByIdAndUpdate(comment_id, {read : true});
         return await comment_model.findById(comment_id).populate('response').populate('author').populate('reply_to').populate({path : 'reply_to', populate : {path : 'author'}}).exec();
 
     },
