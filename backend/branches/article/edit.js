@@ -75,33 +75,40 @@ router.post('/:id', async(req, res, next)=>{
 
        }
 
-       if(find_article.main_image == ""){
+       if (req.files) {
 
-           if (req.files) {
+           let current_main_image = await article_model.edit(article_id, {
+               main_image : ""
+           });
 
-               let main_image = req.files.main_image;
-               let file_name = `${randomSha1String()}.${main_image.name.split(".").pop()}`;
-               let upload_result = fileManager.upload(main_image, file_name,{
+           if(current_main_image){
 
-                   allowed_formats : `image`,
-                   file_path : `${backend_upload_dir}images/`,
-
-               });
-
-               if(upload_result){
-
-                   return res.json(upload_result)
-
-               }
-
-               article_data.main_image = file_name;
+               let file_path = `${backend_upload_dir}images/${current_main_image.main_image}`;
+               fs.unlink(file_path, function (err) {});
 
            }
-           else{
 
-               return res.json('یک تصویر به عنوان تصویر اصلی مقاله انتخاب کنید.');
+           let main_image = req.files.main_image;
+           let file_name = `${randomSha1String()}.${main_image.name.split(".").pop()}`;
+           let upload_result = fileManager.upload(main_image, file_name,{
+
+               allowed_formats : `image`,
+               file_path : `${backend_upload_dir}images/`,
+
+           });
+
+           if(upload_result){
+
+               return res.json(upload_result)
 
            }
+
+           article_data.main_image = file_name;
+
+       }
+       else if(find_article.main_image == ""){
+
+           return res.json('یک تصویر به عنوان تصویر اصلی مقاله انتخاب کنید.');
 
        }
 
