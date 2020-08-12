@@ -6,8 +6,6 @@ for(let i = 0 ; i < nav_modal_data.length ; i++){
 
         $(this).next().fadeToggle(200);
 
-        alert(    nav_modal_data.eq(i))
-
     });
 
 }

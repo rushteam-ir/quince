@@ -501,7 +501,9 @@
     position: absolute;
     left: 60px;
     top: 56px;
-    overflow: auto;
+    overflow: hidden;
+    direction: rtl;
+    text-align: right;
 
     .comment_header_notif {
         width: 100%;
@@ -522,23 +524,111 @@
     .nav_comment_info {
         direction: rtl;
         text-align: right;
+        padding: 10px;
+        border-bottom: 1px solid rgb(216, 216, 216);
+
+        &:hover {
+            background-color: #F5F5FE;
+        }
 
         div {
             display: inline-block;
 
         }
-        .CI_image{
-            width: 15%;
-            img{
+
+        .CI_image {
+            width: 12%;
+            position: relative;
+            top: -8px;
+
+            img {
                 width: 100%;
                 border-radius: 7px;
             }
         }
-        .CI_name{
-            width: 65%;
-            p{
+
+        .CI_name {
+            width: 78%;
+            padding-right: 10px;
+            position: relative;
+            top: 10px;
+
+            p {
                 margin: 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+
+                &:first-child {
+                    max-width: 120px;
+                    color: #5d5d5d;
+                    font-size: 0.9rem;
+                }
+
+                &:last-child {
+                    max-width: 230px;
+                    font-size: 0.8rem;
+                }
+                span{
+                    font-weight: bold;
+                }
             }
         }
+
+        .CI_reply_top{
+            margin: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 140px !important;
+        }
+
+        .CI_see_info {
+            width: 10%;
+            i {
+                width: 28px;
+                height: 28px;
+                color: #adadad;
+                background-color: #efefef;
+                border-radius: 3px;
+                cursor: pointer;
+                padding-right: 5.2px;
+                line-height: 29px;
+
+                &:hover {
+                    color: #8f8f8f;
+                }
+            }
+        }
+    }
+}
+
+.NVI_main_field{
+    height: 380px;
+    overflow: auto;
+}
+
+.data_row{
+    text-align: center;
+    direction: rtl;
+    padding: 10px;
+    font-size: 0.8rem;
+    color: #9c9c9c;
+    position: relative;
+    p{
+        background-color: white;
+        width: 80px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+    }
+    &::after{
+        content: '';
+        width: 170px;
+        height: 1px;
+        position: absolute;
+        top: 17px;
+        background-color: #c2c2c2;
+        right: 113px;
     }
 }
