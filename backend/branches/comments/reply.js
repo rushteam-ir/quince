@@ -24,6 +24,8 @@ router.post('/', async(req,res)=>{
             response : response_inp,
             reply_to : reply_to_inp,
             parent_id : root_inp,
+            read : true,
+            status : true,
         }
 
         let result = await comment_model.reply(comment_data, root_inp);

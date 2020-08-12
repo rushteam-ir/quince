@@ -43,6 +43,7 @@ router.post('/:id', async(req, res, next)=>{
 
    try{
 
+       log(req.files);
        let article_id = req.params.id;
        let find_article = await article_model.getByUniqueId(article_id);
        let {title_inp, parent_inp, child_inp, summary_inp, describe_inp, meta_describe_inp} = req.body;
