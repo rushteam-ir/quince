@@ -497,7 +497,6 @@
     width: 400px;
     height: 500px;
     background-color: #ffffff;
-    border-radius: 7px;
     position: absolute;
     left: 60px;
     top: 56px;
@@ -512,7 +511,9 @@
         background-size: cover;
         direction: rtl;
         text-align: center;
-        padding-top: 20px;
+        padding-top: 27px;
+        position: relative;
+        border-bottom: 3px solid #C2CBEA;
 
         h2 {
             color: white;
@@ -525,7 +526,9 @@
         direction: rtl;
         text-align: right;
         padding: 10px;
-        border-bottom: 1px solid rgb(216, 216, 216);
+        border-bottom: 1px solid #efefef;
+        display: block;
+        color: #5d5d5d;
 
         &:hover {
             background-color: #F5F5FE;
@@ -544,6 +547,7 @@
             img {
                 width: 100%;
                 border-radius: 7px;
+                height: 45px;
             }
         }
 
@@ -569,13 +573,14 @@
                     max-width: 230px;
                     font-size: 0.8rem;
                 }
-                span{
+
+                span {
                     font-weight: bold;
                 }
             }
         }
 
-        .CI_reply_top{
+        .CI_reply_top {
             margin: 0;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -585,44 +590,48 @@
 
         .CI_see_info {
             width: 10%;
+            position: relative;
+            top: -7px;
+            left: -9px;
+
             i {
-                width: 28px;
-                height: 28px;
-                color: #adadad;
-                background-color: #efefef;
+
                 border-radius: 3px;
-                cursor: pointer;
                 padding-right: 5.2px;
                 line-height: 29px;
 
-                &:hover {
-                    color: #8f8f8f;
-                }
             }
         }
     }
 }
 
-.NVI_main_field{
+.NVI_main_field {
     height: 380px;
     overflow: auto;
 }
 
-.data_row{
+#shop_comment {
+    display: none;
+}
+
+.data_row {
     text-align: center;
     direction: rtl;
     padding: 10px;
     font-size: 0.8rem;
     color: #9c9c9c;
     position: relative;
-    p{
+    border-bottom: 1px solid #efefef;
+
+    p {
         background-color: white;
         width: 80px;
         margin: 0 auto;
         position: relative;
         z-index: 1;
     }
-    &::after{
+
+    &::after {
         content: '';
         width: 170px;
         height: 1px;
@@ -631,4 +640,36 @@
         background-color: #c2c2c2;
         right: 113px;
     }
+}
+
+.comment_partion {
+    position: absolute;
+    bottom: -2px;
+    left: 10px;
+    height: 37px;
+
+    p {
+        display: inline-block;
+        color: #d8d8d8;
+        margin-bottom: 0;
+        margin-right: 10px;
+        padding: 5px 10px;
+        cursor: pointer;
+
+        &:hover {
+            border-bottom: 3px solid $d_green;
+            color: white;
+        }
+    }
+}
+
+.comment_btn {
+    border-bottom: 3px solid $d_green;
+    color: white;
+}
+
+
+.active_border {
+    border-bottom: 3px solid $d_green !important;
+    color: white !important;
 }
