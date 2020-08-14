@@ -192,7 +192,7 @@ comment_schema.statics = {
 
     getNotifications : async function(){
 
-        let find_comments = await comment_model.find({read : false}).populate('author').populate('response').populate({path : 'reply_to', populate : {path : 'author'}});
+        let find_comments = await comment_model.find({read : false}).sort({date : -1}).populate('author').populate('response').populate({path : 'reply_to', populate : {path : 'author'}});
         let result = {};
         let notification_list = {};
 
