@@ -237,8 +237,8 @@
                 <div class="comment_header_notif">
                     <h2>نظرات کاربران</h2>
                     <div class="comment_partion">
-                        <p class="comment_btn" id="comment_btn">مقاله</p>
-                        <p id="shop_btn">فروشگاه</p>
+                        <p class="comment_btn" id="comment_btn">مقاله <span>12</span></p>
+                        <p id="shop_btn">فروشگاه <span>50</span></p>
                     </div>
                 </div>
                 <div class="NVI_main_field" id="article_comment">
