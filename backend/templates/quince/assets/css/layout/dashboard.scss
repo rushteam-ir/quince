@@ -501,8 +501,8 @@
     left: 60px;
     top: 56px;
     overflow: hidden;
-    direction: rtl;
     text-align: right;
+    z-index: 20;
     box-shadow: 14px 10px 20px -2px #00000017;
 
     .comment_header_notif {
