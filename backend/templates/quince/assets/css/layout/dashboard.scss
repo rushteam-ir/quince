@@ -572,10 +572,12 @@
 
                 &:last-child {
                     max-width: 230px;
+                    font-size: 0.8rem;
                 }
 
                 span {
                     font-weight: bold;
+                    font-size: 0.8rem;
                 }
             }
         }
@@ -587,7 +589,6 @@
             white-space: nowrap;
             max-width: 140px !important;
             font-size: 0.8rem;
-            
         }
 
         .CI_see_info {
