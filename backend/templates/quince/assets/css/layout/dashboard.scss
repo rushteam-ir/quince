@@ -673,21 +673,22 @@
     font-weight: bold;
 }
 
-#comment_btn{
+#comment_btn {
     position: relative;
- span {
-    width: max-content;
-    background-color: #1fd5cc;
-    padding: 2px 8px 0px 8px;
-    color: white;
-    font-size: 0.7rem;
-    font-weight: bold;
-    border-radius: 8px;
-    position: absolute;
-    right: -21px;
-    top: -14px;
-    margin: 0;
-}
+
+    span {
+        width: max-content;
+        background-color: $d_green;
+        padding: 2px 8px 0px 8px;
+        color: white;
+        font-size: 0.7rem;
+        font-weight: bold;
+        border-radius: 8px;
+        position: absolute;
+        right: -21px;
+        top: -14px;
+        margin: 0;
+    }
 }
 
 #shop_btn {
@@ -695,7 +696,7 @@
 
     span {
         width: max-content;
-        background-color: #1fd5cc;
+        background-color: $d_green;
         padding: 2px 8px 0px 8px;
         color: white;
         font-size: 0.7rem;
