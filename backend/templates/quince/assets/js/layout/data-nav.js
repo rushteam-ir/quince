@@ -1,10 +1,24 @@
-let nav_modal_data =  $('.nav_modal_data')
+let nav_modal_data =  $('.nav_modal_data');
 
 for(let i = 0 ; i < nav_modal_data.length ; i++){
 
     nav_modal_data.eq(i).click(function(){
 
-        $(this).next().fadeToggle(200);
+        let nextElement = $(this).next();
+
+        nav_modal_data.next().fadeOut(150);
+        nav_modal_data.css('background-color' , 'transparent');
+
+        if(nextElement.css('display') == 'none'){
+
+            nextElement.fadeIn(150);
+            $(this).css('background-color' , '#eee');
+
+        }else{
+
+            nextElement.fadeOut(150);
+
+        }
 
     });
 
