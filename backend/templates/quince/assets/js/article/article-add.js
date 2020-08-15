@@ -104,12 +104,4 @@ $('.show_img').click(function () {
 
 
 
-    document.getElementById('article_collaps').addEventListener('load', function () {
-
-        let panel = this.nextElementSibling;
-
-
-                panel.style.maxHeight = panel.scrollHeight + 'px';
-
-
-    });
+    document.getElementById('article_collaps').nextElementSibling.style.maxHeight = document.getElementById('article_collaps').nextElementSibling.scrollHeight + 'px';
