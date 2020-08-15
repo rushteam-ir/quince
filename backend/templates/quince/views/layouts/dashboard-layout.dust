@@ -253,7 +253,7 @@
                             <p>{key}</p>
                         </div>
                         {#value}
-                            <a href="" class="nav_comment_info">
+                            <a href="{backend_url}comments/search/{_id}" class="nav_comment_info">
                                 <div class="CI_image">
                                     {@eq key="{author}" value="{null}"}
                                         <img src="img/default-profile-picture.png" alt="">

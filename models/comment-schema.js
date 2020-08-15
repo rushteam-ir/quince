@@ -190,6 +190,24 @@ comment_schema.statics = {
 
     },
 
+    searchId : async function (search_value, page_number, page_limit) {
+
+        let result = {}
+        let _skip = page_number * page_limit - page_limit;
+
+        result.rows_begin_number = _skip + 1;
+        result.list = [await comment_model.findById(search_value).populate('response').populate('author').populate({path : 'reply_to', populate : {path : 'author'}}).skip(_skip).limit(page_limit).exec()];
+        result.total_pages = Math.ceil( await comment_model.findById(search_value).countDocuments() / page_limit);
+
+        const index = result.list.indexOf(null);
+        if (index > -1) {
+            result.list.splice(index, 1);
+        }
+
+        return result;
+
+    },
+
     getNotifications : async function(){
 
         let find_comments = await comment_model.find({read : false}).sort({date : -1}).populate('author').populate('response').populate({path : 'reply_to', populate : {path : 'author'}});

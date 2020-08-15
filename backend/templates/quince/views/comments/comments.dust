@@ -258,11 +258,13 @@
                                 <p>موردی جهت نمایش وجود ندارد !</p>
                             </div>
                         {/comments_list}
-                        {@eq key="{search}" value="true"}
-                            {@page number="{total_pages}"  url="{backend_url}comments/search/{search_value}" current="{page_number}"/}
-                        {:else}
-                          {@page number="{total_pages}"  url="{backend_url}comments" current="{page_number}"/}
-                        {/eq}
+                        {@ne key="{search_value}" value=""}
+                            {@eq key="{search}" value="true"}
+                                {@page number="{total_pages}"  url="{backend_url}comments/search/{search_value}" current="{page_number}"/}
+                            {:else}
+                                {@page number="{total_pages}"  url="{backend_url}comments" current="{page_number}"/}
+                            {/eq}
+                        {/ne}
                     </div>
                 </div>
             </div>

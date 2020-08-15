@@ -8,11 +8,23 @@ router.get('/:search', async(req, res, next)=>{
 
         await serverHelpers.tableList(req, async (page_number, page_limit, can_edit)=>{
 
-            let comments_list = await comment_model.search(search_value, page_number, page_limit)
+            let comments_list = null;
 
-            if(comments_list.list.length == 0 && comments_list.total_pages != 0){
+            if(isObjectId(search_value)){
 
-                return res.redirect(`${config.backend_url}comments/search/${search_value}/?page=${comments_list.total_pages}`)
+                comments_list = await comment_model.searchId(search_value, page_number, page_limit)
+                search_value = ''
+                
+            }
+            else{
+
+                comments_list = await comment_model.search(search_value, page_number, page_limit)
+
+                if(comments_list.list.length == 0 && comments_list.total_pages != 0){
+
+                    return res.redirect(`${config.backend_url}comments/search/${search_value}/?page=${comments_list.total_pages}`)
+
+                }
 
             }
 
