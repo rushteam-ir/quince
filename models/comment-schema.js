@@ -204,8 +204,6 @@ comment_schema.statics = {
             result.list.splice(index, 1);
         }
 
-        log(result)
-
         return result;
 
     },
