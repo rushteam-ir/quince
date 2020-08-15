@@ -98,3 +98,18 @@ $('.show_img').click(function () {
     $('.img_upload_field').fadeToggle();
 
 });
+
+
+
+
+
+
+    document.getElementById('article_collaps').addEventListener('load', function () {
+
+        let panel = this.nextElementSibling;
+
+
+                panel.style.maxHeight = panel.scrollHeight + 'px';
+
+
+    });

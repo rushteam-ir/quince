@@ -52,7 +52,7 @@
             </div>
         </a>
 
-        <div class="position-relative dashboard_body_collaps ">
+        <div class="position-relative dashboard_body_collaps" id="article_collaps">
             <i class="fad fa-newspaper"></i>
             <p>مقاله ها</p>
             <i class="fas fa-angle-left rotate"></i>
@@ -70,7 +70,7 @@
             </div>
         </div>
 
-        <div class="collaps_field">
+        <div class="collaps_field testkasra">
 
             <a href="{backend_url}article/list">
                 <p>- لیست مقالات</p>
@@ -325,7 +325,6 @@
 <script src="js/layout/collaps-menu.js"></script>
 <script src="js/layout/toggle-dsh.js"></script>
 <script src="js/layout/data-nav.js"></script>
-
     {+js/}
 </body>
 
