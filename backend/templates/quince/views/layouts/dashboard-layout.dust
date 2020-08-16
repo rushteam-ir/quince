@@ -52,7 +52,7 @@
             </div>
         </a>
 
-        <div class="position-relative dashboard_body_collaps" id="article_collaps">
+        <div class="position-relative dashboard_body_collaps">
             <i class="fad fa-newspaper"></i>
             <p>مقاله ها</p>
             <i class="fas fa-angle-left rotate"></i>
@@ -70,13 +70,13 @@
             </div>
         </div>
 
-        <div class="collaps_field testkasra">
+        <div class="collaps_field" id="article_collaps">
 
-            <a href="{backend_url}article/list">
+            <a id="article_list" href="{backend_url}article/list">
                 <p>- لیست مقالات</p>
             </a>
 
-            <a href="{backend_url}article/add">
+            <a id="article_add" href="{backend_url}article/add">
                 <p>- افزودن مقاله</p>
             </a>
 
@@ -148,21 +148,21 @@
 
         </div>
 
-        <div class="collaps_field">
+        <div class="collaps_field" id="user_management">
 
-            <a href="{backend_url}groups/admins">
+            <a id="admin_list" href="{backend_url}groups/admins">
                 <p>- لیست مدیران</p>
             </a>
 
-            <a href="{backend_url}groups/users">
+            <a id="user_list" href="{backend_url}groups/users">
                 <p>-  لیست کاربران</p>
             </a>
 
-            <a href="{backend_url}groups/access">
+            <a id="access" href="{backend_url}groups/access">
                 <p>-  دسترسی ها</p>
             </a>
 
-            <a href="{backend_url}groups/add">
+            <a id="add_manager" href="{backend_url}groups/add">
                 <p>- افزودن مدیر جدید</p>
             </a>
 

@@ -75,3 +75,14 @@
         @include transform(rotate(-90deg));
     }
 }
+
+#user_management{
+    max-height: 160px; 
+}
+
+#access{
+    p{
+        color: white;
+        background-color: #1B1B28;
+    }
+}
