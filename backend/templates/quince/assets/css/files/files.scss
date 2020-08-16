@@ -107,6 +107,15 @@
     }
 }
 
-.back_file_btn{
-
+#file_management{
+    div{
+        background-color: $dsh_bg_dark;
+        border-right: 3px solid $dsh_color_light;
+        p{
+            color: white;
+        }
+        i{
+            color: $dsh_color_light;
+        }
+    }
 }

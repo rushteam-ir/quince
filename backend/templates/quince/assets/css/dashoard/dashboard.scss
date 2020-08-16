@@ -1,0 +1,14 @@
+@import '../Partials/main-color';
+
+#dashboard{
+    div{
+        background-color: $dsh_bg_dark;
+        border-right: 3px solid $dsh_color_light;
+        p{
+            color: white;
+        }
+        i{
+            color: $dsh_color_light;
+        }
+    }
+}

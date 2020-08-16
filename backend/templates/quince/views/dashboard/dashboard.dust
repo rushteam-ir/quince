@@ -1,4 +1,7 @@
 {>"layouts/dashboard-layout"/}
+{<css}
+    <link rel="stylesheet" href="css/dashoard/dashboard.css">
+{/css}
 {<js}
 
     <script src="js/general/fingerprint.js"></script>
