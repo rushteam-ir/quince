@@ -15,6 +15,7 @@ class serverHelpers {
 
         parsed_url = parsed_url.split('/').slice(2).join('/')
         parsed_url = (parsed_url.includes('/search/') ? parsed_url.substring(0, parsed_url.indexOf('search/')) : parsed_url)
+        parsed_url = (parsed_url.includes('/get/') ? parsed_url.substring(0, parsed_url.indexOf('get/')) : parsed_url)
 
         let find_access_edit = backend_access.edit[parsed_url];
 

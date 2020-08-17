@@ -1,18 +1,18 @@
 const router = express.Router();
 
-router.get('/:search', async(req, res, next)=>{
+router.get('/:id', async(req, res, next)=>{
 
     try{
 
-        let search_value = req.params.search;
+        let comment_id = req.params.id;
 
         await serverHelpers.tableList(req, async (page_number, page_limit, can_edit)=>{
 
-            let comments_list = await comment_model.search(search_value, page_number, page_limit)
+            let comments_list = await comment_model.searchId(comment_id, page_number, page_limit)
 
             if(comments_list.list.length == 0 && comments_list.total_pages != 0){
 
-                return res.redirect(`${config.backend_url}comments/search/${search_value}/?page=${comments_list.total_pages}`)
+                return res.redirect(`${config.backend_url}comments/get/${comment_id}/?page=${comments_list.total_pages}`)
 
             }
 
@@ -24,9 +24,8 @@ router.get('/:search', async(req, res, next)=>{
                 rows_begin_number : comments_list.rows_begin_number,
                 total_pages : comments_list.total_pages,
                 can_edit : can_edit,
-                search : true,
-                search_value : search_value,
-                pagination_url : `/search/${search_value}`
+                search : false,
+                pagination_url : `/get/${comment_id}`
 
             };
 

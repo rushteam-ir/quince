@@ -23,6 +23,7 @@ router.get('/', async(req, res, next)=>{
                 total_pages : comments_list.total_pages,
                 can_edit : can_edit,
                 search : false,
+                pagination_url : ''
 
             };
 
@@ -48,6 +49,7 @@ const get_comment = require('./api/get-comment');
 const reply = require('./reply');
 const edit = require('./edit');
 const search = require('./search');
+const get = require('./get');
 
 router.use('/api/delete-comment', delete_comment);
 router.use('/api/delete-select', delete_select);
@@ -58,5 +60,6 @@ router.use('/api/get-comment', get_comment);
 router.use('/reply', reply);
 router.use('/edit', edit);
 router.use('/search', search);
+router.use('/get', get);
 
 module.exports = router;
