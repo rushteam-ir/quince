@@ -194,7 +194,11 @@
                             </header>
                             <div class="main_div_of_personal_form">
                                 <div>
-                                    <p>تعداد مقالات : {admin_info.articles_number}</p>
+                                    <p>تعداد مقالات :
+                                        <a href="{backend_url}article/get/{admin_info._id}">
+                                            {admin_info.articles_number}
+                                        </a>
+                                    </p>
                                 </div>
                                 <div>
                                     <p>تعداد نظرات / پاسخ به نظرات : {admin_info.comments_number}</p>

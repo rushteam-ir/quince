@@ -24,6 +24,7 @@ const list = require('./list');
 const add = require('./add');
 const edit = require('./edit');
 const search = require('./search');
+const get = require('./get');
 
 router.use('/api/delete-article', delete_article);
 router.use('/api/delete-select', delete_select);
@@ -34,6 +35,6 @@ router.use('/list', list);
 router.use('/add', add);
 router.use('/edit', edit);
 router.use('/search', search);
-
+router.use('/get', get);
 
 module.exports = router;

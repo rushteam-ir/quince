@@ -4,15 +4,15 @@ router.get('/:id', async(req, res, next)=>{
 
     try{
 
-        let comment_id = req.params.id;
+        let _id = req.params.id;
 
         await serverHelpers.tableList(req, async (page_number, page_limit, can_edit)=>{
 
-            let comments_list = await comment_model.searchId(comment_id, page_number, page_limit)
+            let comments_list = await comment_model.searchId(_id, page_number, page_limit)
 
             if(comments_list.list.length == 0 && comments_list.total_pages != 0){
 
-                return res.redirect(`${config.backend_url}comments/get/${comment_id}/?page=${comments_list.total_pages}`)
+                return res.redirect(`${config.backend_url}comments/get/${_id}/?page=${comments_list.total_pages}`)
 
             }
 
@@ -25,7 +25,7 @@ router.get('/:id', async(req, res, next)=>{
                 total_pages : comments_list.total_pages,
                 can_edit : can_edit,
                 search : false,
-                pagination_url : `/get/${comment_id}`
+                pagination_url : `/get/${_id}`
 
             };
 

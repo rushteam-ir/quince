@@ -190,7 +190,7 @@ comment_schema.statics = {
 
     },
 
-    searchId : async function (comment_id, page_number, page_limit) {
+    searchId : async function (_id, page_number, page_limit) {
 
         let _skip = page_number * page_limit - page_limit;
         let result = {
@@ -199,14 +199,14 @@ comment_schema.statics = {
         }
         result.rows_begin_number = _skip + 1;
 
-        if(!isObjectId(comment_id)){
+        if(!isObjectId(_id)){
 
             return result;
 
         }
 
-        result.list = [await comment_model.findById(comment_id).populate('response').populate('author').populate({path : 'reply_to', populate : {path : 'author'}}).skip(_skip).limit(page_limit).exec()];
-        result.total_pages = Math.ceil( await comment_model.findById(comment_id).countDocuments() / page_limit);
+        result.list = [await comment_model.findById(_id).populate('response').populate('author').populate({path : 'reply_to', populate : {path : 'author'}}).skip(_skip).limit(page_limit).exec()];
+        result.total_pages = Math.ceil( await comment_model.findById(_id).countDocuments() / page_limit);
 
         const index = result.list.indexOf(null);
         if (index > -1) {
