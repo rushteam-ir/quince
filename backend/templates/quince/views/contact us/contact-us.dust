@@ -1,0 +1,17 @@
+{>"layouts/dashboard-layout"/}
+
+{<css}
+
+{/css}
+
+{<js}
+    <script src="js/custom/checkbox.js"></script>
+    <script src="js/custom/main-error.js"></script>
+    <script src="js/custom/error-handler.js"></script>
+    <script src="js/general/form-ajax.js"></script>
+    <script src="js/custom/modal.js"></script>
+{/js}
+
+{<body}
+
+{/body}

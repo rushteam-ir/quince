@@ -28,6 +28,7 @@ const guide = require('./branches/guide/guide');
 const article = require('./branches/article/article');
 const files = require('./branches/files/files');
 const comments = require('./branches/comments/comments');
+const contact_us = require('./branches/contact us/contact-us');
 const api = require('./api/api');
 
 backend.use('/dashboard', dashboard);
@@ -44,6 +45,7 @@ backend.use('/guide', guide);
 backend.use('/article', article);
 backend.use('/files', files);
 backend.use('/comments', comments);
+backend.use('/contact-us', contact_us);
 backend.use('/api', api);
 
 backend.get('/', async(req, res, next)=>{

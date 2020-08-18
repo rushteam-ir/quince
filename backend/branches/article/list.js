@@ -4,6 +4,8 @@ router.get('/', async(req, res, next)=>{
 
     try{
 
+        let search = req.params.search;
+
         await serverHelpers.tableList(req, async (page_number, page_limit, can_edit)=>{
 
             let article_list = await article_model.getAll(page_number, page_limit)

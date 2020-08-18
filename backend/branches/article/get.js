@@ -8,7 +8,7 @@ router.get('/:id', async(req, res, next)=>{
 
         await serverHelpers.tableList(req, async (page_number, page_limit, can_edit)=>{
 
-            let article_list = await article_model.searchId(_id, page_number, page_limit)
+            let article_list = await article_model.searchId(_id, page_number, page_limit);
 
             if(article_list.list.length == 0 && article_list.total_pages != 0){
 
