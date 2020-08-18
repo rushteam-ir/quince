@@ -101,7 +101,7 @@
                                     1399/05/24
                                 </td>
                                 <td class="table_option_btn">
-                                    <button class="btn blue_btn ml-2 edit_btn"><i class="fal fa-pencil-alt"></i></button>
+                                    <button class="btn blue_btn ml-2 edit_btn"><i class="fal fa-eye"></i></button>
                                     <button class="btn red_btn"><i class="fal fa-trash-alt"></i></button>
                                 </td>
                             </tr>
@@ -116,8 +116,8 @@
                     <div class="col-6 offset-3">
                         <div class="info_field">
                             <header class="header_field">
-                                <h1>ویرایش دسته</h1>
-                                <h2>دسته مورد نظر خود را ویرایش کنید</h2>
+                                <h1>متن تماس با ما</h1>
+                                <h2>متن تماس با ما را در زیر مشاهده کنید .</h2>
                                 <hr>
                             </header>
                             <form action="">
@@ -136,11 +136,16 @@
                                             <p class="mt-4 ">من اعتراض دارممممم !!!!</p>
                                             <p>a sd asdasdasdasdsdsa dsad sadasdasda das das dsa dsa dsa das dsa dsd asd sad asd asdsada sdas das das dsa ds adas d sads ad sa</p>
                                         </div>
+                                        <div class="form-group dir-rtl text-right w-100">
+                                            <label for="article_describe_edit">پاسخ به پیام</label>
+                                            <textarea class="form-control main_form_design edit_comment_text" id="article_describe_edit" name="edit_text_inp"></textarea>
+                                            <input type="hidden" class="edit_comment_id" name="edit_comment_id">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="modal_btn_field mr-3">
                                     <button type="button" class="btn red_btn py-2 mt-3 mr-2 close_modal">لغو</button>
-                                    <button type="submit" class="btn green_btn py-2 mt-3">ویرایش دسته</button>
+                                    <button type="submit" class="btn green_btn py-2 mt-3">ارسال پاسخ</button>
                                 </div>
                             </form>
                         </div>
