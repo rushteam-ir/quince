@@ -12,11 +12,10 @@ for (let i = 0; i < dashboard_collaps.length; i++) {
             if (maxheightvar !== '0px') {
 
                 panel.style.maxHeight = '0px';
-                $('.collaps_field').css('max-Height')
                 this.classList.remove('collaps_on');
                 this.classList.remove('rotate_parent');
 
-            } else{
+            } else {
 
                 panel.style.maxHeight = panel.scrollHeight + 'px';
                 this.classList.add('collaps_on');
@@ -29,3 +28,4 @@ for (let i = 0; i < dashboard_collaps.length; i++) {
     });
 
 }
+

@@ -52,7 +52,7 @@
             </div>
         </a>
 
-        <div class="position-relative dashboard_body_collaps">
+        <div class="position-relative dashboard_body_collaps" id="article_group">
             <i class="fad fa-newspaper"></i>
             <p>مقاله ها</p>
             <i class="fas fa-angle-left rotate"></i>

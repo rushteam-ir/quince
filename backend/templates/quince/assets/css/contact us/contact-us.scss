@@ -1,0 +1,75 @@
+@import '../Partials/main-color';
+@import '../Partials/mixin';
+@import '../Partials/checkbox-design';
+@import '../Partials/header-text';
+@import '../Partials/table-header';
+@import '../Partials/table-option';
+@import '../Partials/table';
+@import '../Partials/pagination';
+@import '../Partials/error';
+@import '../Partials/table-error';
+@import '../Partials/modal';
+@import '../Partials/table_image';
+@import '../Partials/btn';
+
+.main_body {
+    @include main_field
+}
+
+.main_col {
+    @include main_col;
+}
+
+.name_summery {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 120px;
+}
+
+.text_summery {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 350px;
+}
+
+.table_option_btn {
+    button {
+        width: 35px;
+        height: 35px;
+        i{
+            position: relative;
+            left: 3px;
+            font-size: 1.1rem;
+        }
+        .fa-pencil-alt{
+            position: relative;
+            left: 5px;
+        }
+    }
+}
+
+// modal custom
+
+.modal_img{
+    border-radius: 7px;
+    width: 100%;
+}
+
+.modal_info_col{
+    font-size: 0.8rem;
+}
+
+.contact_message{
+    text-align: right;
+    direction: rtl;
+    & :first-child{
+        font-weight: bold;
+    }
+    & :last-child{
+        line-height: 28px;
+        text-align: justify;
+        font-size: 0.9rem;
+    }
+}

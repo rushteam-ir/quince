@@ -28,14 +28,7 @@
 
 // comments custom table
 
-.QT_image {
-    div {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        max-width: 120px;
-    }
-}
+
 
 .comment_info {
     overflow: hidden;
@@ -80,7 +73,6 @@
 }
 
 .modal_info_col {
-    font-weight: bold;
     font-size: 0.9rem;
 }
 

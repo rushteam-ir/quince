@@ -278,13 +278,13 @@
                         <form class="form_ajax" name="comments" action="{backend_url}comments/reply" method="post">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-7 text-right dir-rtl modal_info_col">
-                                            <p class="mt-2 reply_name">کسری حبیب بیگی</p>
+                                    <div class="col-7 text-right dir-rtl modal_info_col pl-0 mt-2">
+                                            <p class="reply_name">کسری حبیب بیگی</p>
                                             <p class="reply_response">سلام طالبی جونم!</p>
                                             <p class="reply_date">تاریخ : 1399.10.13</p>
                                             <p class="reply_reply_to">در پاسخ به : کسری حبیب </p>
                                     </div>
-                                    <div class="col-5">
+                                    <div class="col-5 pr-0">
                                         <img class="user_img_modal reply_image" src="img/img2.jpg" alt="">
                                     </div>
                                 </div>
