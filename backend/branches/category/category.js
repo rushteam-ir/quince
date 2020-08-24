@@ -6,7 +6,23 @@ router.get('/', async(req, res, next)=>{
 
         await serverHelpers.tableList(req, async (page_number, page_limit, can_edit)=>{
 
-            let category_list = await category_model.getAll(page_number, page_limit)
+            let search_inp = req.query.search;
+            let author_inp = req.query.author;
+            let data = {search : false, pagination_url: '/'};
+
+            if(!isUndefined(search_inp)){
+                data.search = true;
+                data.search_value = search_inp;
+                data.pagination_url = `/?search=${search_inp}`;
+            }
+            else if(!isUndefined(author_inp)){
+                data.pagination_url = `/?author=${author_inp}`
+            }
+            else if(!isUndefined(author_inp) && !isUndefined(author_inp)){
+                data.pagination_url = `/?author=${author_inp}&search=${search_inp}`
+            }
+
+            let category_list = await category_model.search(author_inp ? {author : author_inp} : null, search_inp ? search_inp : null, page_number, page_limit);
 
             if(category_list.list.length == 0 && category_list.total_pages != 0){
 
@@ -14,18 +30,13 @@ router.get('/', async(req, res, next)=>{
 
             }
 
-            let data = {
-
-                parent_list : await category_model.getParent(),
-                category_list : category_list.list,
-                page_number : page_number,
-                page_limit : page_limit,
-                rows_begin_number : category_list.rows_begin_number,
-                total_pages : category_list.total_pages,
-                can_edit : can_edit,
-                search : false,
-
-            };
+            data.parent_list = await category_model.getParent();
+            data.category_list = category_list.list;
+            data.page_number = page_number;
+            data.page_limit = page_limit;
+            data.rows_begin_number = category_list.rows_begin_number;
+            data.total_pages = category_list.total_pages;
+            data.can_edit = can_edit;
 
             res.render('category/category', data);
 

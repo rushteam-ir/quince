@@ -50,6 +50,8 @@ category_schema.statics = {
 
             }
 
+            await user_model.findByIdAndUpdate(admin_id, { $inc: {categories_number : 1 } });
+
             new_category.child_number = 0;
 
             let new_cat = new category_model(new_category);
@@ -101,7 +103,7 @@ category_schema.statics = {
 
     del : async function (category_id) {
 
-        let parent_inp = await category_model.findById(category_id);
+        let parent_inp = await category_model.findById(category_id).populate('author');
 
         if(parent_inp.parent != null){
 
@@ -114,19 +116,44 @@ category_schema.statics = {
 
         }
 
+        await user_model.findByIdAndUpdate(parent_inp.author._id, { $inc: {categories_number : -1 } });
+
         return await category_model.findByIdAndDelete(category_id);
 
     },
 
-    search : async function (search_value, page_number, page_limit) {
+    search : async function (query, search_value, page_number, page_limit) {
+
+        let result = {};
+        let _skip = page_number * page_limit - page_limit;
+
+        result.rows_begin_number = _skip + 1;
+        let _list = await category_model.find(query).populate('parent').populate('author');
+        let temp_list = []
+
+        if(search_value){
+            for(let index of _list){
+                jsonSearch(['title', 'author.nick_name', 'author.first_name', 'author.last_name'], search_value, index) ? temp_list.push(index) : null;
+            }
+            result.total_pages = Math.ceil(temp_list.length / page_limit);
+            result.list = temp_list.slice(_skip, _skip + page_limit)
+        }
+        else{
+            result.list = _list.slice(_skip, _skip + page_limit)
+            result.total_pages = Math.ceil(await category_model.find(query).countDocuments() / page_limit);
+        }
+        return result;
+
+    },
+
+    getByAuthor : async function (author_inp, page_number, page_limit) {
 
         let result = {}
         let _skip = page_number * page_limit - page_limit;
 
         result.rows_begin_number = _skip + 1;
-        result.list =  await category_model.find({$text : {$search : search_value}}).populate('parent').populate('author').skip(_skip).limit(page_limit).exec();
-
-        result.total_pages = Math.ceil( await category_model.find({$text : {$search : search_value}}).countDocuments() / page_limit);
+        result.list =  await category_model.find({author : author_inp}).populate('parent').populate('author').skip(_skip).limit(page_limit).exec();
+        result.total_pages = Math.ceil( await category_model.find({author : author_inp}).countDocuments() / page_limit);
 
         return result;
 

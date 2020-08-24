@@ -242,11 +242,7 @@
                                     <p>موردی جهت نمایش وجود ندارد !</p>
                                 </div>
                             {/article_list}
-                            {@eq key="{search}" value="true"}
-                                {@page number="{total_pages}"  url="{backend_url}article/search/{search_value}" current="{page_number}"/}
-                            {:else}
-                                {@page number="{total_pages}"  url="{backend_url}article/list" current="{page_number}"/}
-                            {/eq}
+                            {@page number="{total_pages}"  url="{backend_url}article/{pagination_url}" current="{page_number}"/}
                         </div>
                     </div>
                 </div>

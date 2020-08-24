@@ -36,6 +36,12 @@ module.exports = dust_helpers = {
                 let pages_number = parseInt(context.resolve(params.number));
                 let url_pagination = context.resolve(params.url);
                 let current_page = parseInt(context.resolve(params.current));
+                let query = context.resolve(params.query);
+                let sub = '?';
+
+                if(query != '/'){
+                    sub = '&'
+                }
 
                 let html = `<nav class="Page_navigation mt-3" aria-label="Page navigation example"><ul class="pagination">`;
                 let prev_etc = false;
@@ -49,12 +55,12 @@ module.exports = dust_helpers = {
                 }
                 if(current_page == 1){
 
-                    html += `<li class="page-item"><a class="page-link" href="${url_pagination}/?page=1" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>`;
+                    html += `<li class="page-item"><a class="page-link" href="${url_pagination}${sub}page=1" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>`;
 
                 }
                 else{
 
-                    html += `<li class="page-item"><a class="page-link" href="${url_pagination}/?page=${current_page - 1}" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>`;
+                    html += `<li class="page-item"><a class="page-link" href="${url_pagination}${sub}page=${current_page - 1}" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>`;
 
                 }
 
@@ -64,12 +70,12 @@ module.exports = dust_helpers = {
 
                         if(i == current_page){
 
-                            html += `<li class="page-item"><a class="page-link current_page" href="${url_pagination}/?page=${i}">${i}</a></li>`
+                            html += `<li class="page-item"><a class="page-link current_page" href="${url_pagination}${sub}page=${i}">${i}</a></li>`
 
                         }
                         else{
 
-                            html += `<li class="page-item"><a class="page-link" href="${url_pagination}/?page=${i}">${i}</a></li>`
+                            html += `<li class="page-item"><a class="page-link" href="${url_pagination}${sub}page=${i}">${i}</a></li>`
 
                         }
 
@@ -78,14 +84,14 @@ module.exports = dust_helpers = {
                     }
                     if(i == current_page){
 
-                        html += `<li class="page-item"><a class="page-link current_page" href="${url_pagination}/?page=${i}">${i}</a></li>`
+                        html += `<li class="page-item"><a class="page-link current_page" href="${url_pagination}${sub}page=${i}">${i}</a></li>`
 
                     }
                     if(current_page != 1 && current_page != pages_number){
 
                         if(i == current_page - 1 || i == current_page + 1){
 
-                            html += `<li class="page-item"><a class="page-link" href="${url_pagination}/?page=${i}">${i}</a></li>`;
+                            html += `<li class="page-item"><a class="page-link" href="${url_pagination}${sub}page=${i}">${i}</a></li>`;
 
                         }
                         else{
@@ -110,7 +116,7 @@ module.exports = dust_helpers = {
 
                         if(i >= current_page - 2 && i <= current_page + 2){
 
-                            html += `<li class="page-item"><a class="page-link" href="${url_pagination}/?page=${i}">${i}</a></li>`;
+                            html += `<li class="page-item"><a class="page-link" href="${url_pagination}${sub}page=${i}">${i}</a></li>`;
 
                         }
                         else{
@@ -136,12 +142,12 @@ module.exports = dust_helpers = {
 
                 if(current_page == pages_number){
 
-                    html += `<li class="page-item"><a class="page-link" href="${url_pagination}/?page=${pages_number}" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>`
+                    html += `<li class="page-item"><a class="page-link" href="${url_pagination}${sub}page=${pages_number}" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>`
 
                 }
                 else{
 
-                    html += `<li class="page-item"><a class="page-link" href="${url_pagination}/?page=${current_page + 1}" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>`
+                    html += `<li class="page-item"><a class="page-link" href="${url_pagination}${sub}page=${current_page + 1}" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>`
 
                 }
 

@@ -201,6 +201,13 @@
                                     </p>
                                 </div>
                                 <div>
+                                    <p>تعداد دسته ها :
+                                        <a href="{backend_url}category/?author={admin_info._id}">
+                                            {admin_info.categories_number}
+                                        </a>
+                                    </p>
+                                </div>
+                                <div>
                                     <p>تعداد نظرات / پاسخ به نظرات : {admin_info.comments_number}</p>
                                 </div>
                             </div>

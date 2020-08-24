@@ -30,6 +30,10 @@ let user_schema = new mongoose.Schema({
        type : Number,
        default : 0
    },
+   categories_number : {
+       type : Number,
+       default : 0
+   },
    unique_id : String,
 
 });

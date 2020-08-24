@@ -88,7 +88,7 @@ $(document).ready(function () {
 
         let search_value = $('.search_table').val();
         if (search_value != "") {
-            redirect(`${backend_url}category/search/${search_value}`);
+            redirect(`${backend_url}category/?search=${search_value}`);
         }
 
     })

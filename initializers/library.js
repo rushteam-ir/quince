@@ -78,3 +78,30 @@ randomSha1String = function () {
     return `${sha1(new Date().getTime() + Math.random())}`
 
 }
+
+jsonSearch = function(keys_inp, search_value, json_inp){
+
+    let result = false;
+
+    for(let keys of keys_inp){
+
+        if(!keys.includes('.')){
+
+            if(json_inp[keys].includes(search_value)){
+                result = true;
+            }
+
+        }
+        else{
+
+            if(json_inp[keys.split('.')[0]][keys.split('.')[1]].includes(search_value)){
+                result = true;
+            }
+
+        }
+
+    }
+
+    return result;
+
+}
