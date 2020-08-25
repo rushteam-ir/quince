@@ -20,21 +20,21 @@ router.get('/', async(req, res, next)=>{
                 query = {author : author_inp};
             }
 
-            let article_list = await article_model.search(query, search_inp ? search_inp : null, page_number, page_limit);
+            let comments_list = await comment_model.search(query, search_inp ? search_inp : null, page_number, page_limit);
 
-            if(article_list.list.length == 0 && article_list.total_pages != 0){
+            if(comments_list.list.length == 0 && comments_list.total_pages != 0){
 
-                return res.redirect(`${config.backend_url}article/list/?page=${article_list.total_pages}`)
+                return res.redirect(`${config.backend_url}comments/?page=${comments_list.total_pages}`)
 
             }
 
-            data.article_list = article_list.list;
+            data.comments_list = comments_list.list;
             data.page_number = page_number;
             data.page_limit = page_limit;
-            data.rows_begin_number = article_list.rows_begin_number;
-            data.total_pages = article_list.total_pages;
+            data.rows_begin_number = comments_list.rows_begin_number;
+            data.total_pages = comments_list.total_pages;
 
-            res.render('article/article-list', data);
+            res.render('contact/contact', data);
 
         })
 

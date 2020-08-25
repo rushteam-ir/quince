@@ -13,8 +13,6 @@ let category_schema = new mongoose.Schema({
 
 });
 
-category_schema.index({'$**' : 'text'});
-
 category_schema.statics = {
 
     add : async function (admin_id, title_inp, parent_inp) {

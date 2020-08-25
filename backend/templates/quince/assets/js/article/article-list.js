@@ -194,7 +194,7 @@ $('.search_btn').on('click', function (e) {
 
     let search_value = $('.search_table').val();
     if (search_value != "") {
-        redirect(`${backend_url}article/search/${search_value}`);
+        redirect(`${backend_url}article/list/?search=${search_value}`);
     }
 
 })

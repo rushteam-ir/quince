@@ -92,7 +92,7 @@ $('.search_btn').on('click', function (e) {
 
     let search_value = $('.search_table').val();
     if (search_value != "") {
-        redirect(`${backend_url}groups/access/search/${search_value}`);
+        redirect(`${backend_url}groups/access/?=search${search_value}`);
     }
 
 })

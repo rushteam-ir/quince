@@ -38,8 +38,6 @@ let comment_schema = new mongoose.Schema({
 
 });
 
-comment_schema.index({'$**' : 'text'});
-
 comment_schema.statics = {
 
     add : async function(comment_data){
@@ -176,16 +174,26 @@ comment_schema.statics = {
 
     },
 
-    search : async function (search_value, page_number, page_limit) {
+    search : async function (query, search_value, page_number, page_limit) {
 
-        let result = {}
+        let result = {};
         let _skip = page_number * page_limit - page_limit;
 
         result.rows_begin_number = _skip + 1;
-        result.list =  await comment_model.find({$text : {$search : search_value}}).populate('response').populate('author').populate({path : 'reply_to', populate : {path : 'author'}}).skip(_skip).limit(page_limit).exec();
+        let _list = await comment_model.find(query).populate('author').populate({path : 'reply_to', populate : {path : 'author'}});
+        let temp_list = []
 
-        result.total_pages = Math.ceil( await comment_model.find({$text : {$search : search_value}}).countDocuments() / page_limit);
-
+        if(search_value){
+            for(let index of _list){
+                jsonSearch(['text', 'name', 'email', 'author.first_name', 'author.last_name', 'author.email', 'author.nick_name'], search_value, index) ? temp_list.push(index) : null;
+            }
+            result.total_pages = Math.ceil(temp_list.length / page_limit);
+            result.list = temp_list.slice(_skip, _skip + page_limit)
+        }
+        else{
+            result.list = _list.slice(_skip, _skip + page_limit)
+            result.total_pages = Math.ceil(await comment_model.find(query).countDocuments() / page_limit);
+        }
         return result;
 
     },

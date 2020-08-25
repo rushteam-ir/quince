@@ -195,7 +195,7 @@
                             <div class="main_div_of_personal_form">
                                 <div>
                                     <p>تعداد مقالات :
-                                        <a href="{backend_url}article/get/{admin_info._id}">
+                                        <a href="{backend_url}article/list/?author={admin_info._id}">
                                             {admin_info.articles_number}
                                         </a>
                                     </p>
@@ -208,7 +208,11 @@
                                     </p>
                                 </div>
                                 <div>
-                                    <p>تعداد نظرات / پاسخ به نظرات : {admin_info.comments_number}</p>
+                                    <p>تعداد نظرات / پاسخ به نظرات :
+                                        <a href="{backend_url}comments/?author={admin_info._id}">
+                                            {admin_info.comments_number}
+                                        </a>
+                                    </p>
                                 </div>
                             </div>
                         </div>

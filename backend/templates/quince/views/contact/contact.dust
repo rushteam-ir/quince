@@ -1,7 +1,7 @@
 {>"layouts/dashboard-layout"/}
 
 {<css}
-<link rel="stylesheet" href="css/contact us/contact-us.css">
+<link rel="stylesheet" href="css/contact/contact.css">
 {/css}
 
 {<js}

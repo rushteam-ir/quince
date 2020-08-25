@@ -31,8 +31,6 @@ let article_schema = new mongoose.Schema({
 
 })
 
-article_schema.index({'$**' : 'text'});
-
 article_schema.statics = {
 
     add : async function (article_data, author_id) {
@@ -99,16 +97,26 @@ article_schema.statics = {
 
     },
 
-    search : async function (search_value, page_number, page_limit) {
+    search : async function (query, search_value, page_number, page_limit) {
 
-        let result = {}
+        let result = {};
         let _skip = page_number * page_limit - page_limit;
 
         result.rows_begin_number = _skip + 1;
-        result.list =  await article_model.find({$text : {$search : search_value}}).populate('category_parent').populate('category_child').populate('author').skip(_skip).limit(page_limit).exec();
+        let _list = await article_model.find(query).populate('category_parent').populate('category_child').populate('author');
+        let temp_list = []
 
-        result.total_pages = Math.ceil( await article_model.find({$text : {$search : search_value}}).countDocuments() / page_limit);
-
+        if(search_value){
+            for(let index of _list){
+                jsonSearch(['title', 'author.nick_name', 'author.first_name', 'author.last_name'], search_value, index) ? temp_list.push(index) : null;
+            }
+            result.total_pages = Math.ceil(temp_list.length / page_limit);
+            result.list = temp_list.slice(_skip, _skip + page_limit)
+        }
+        else{
+            result.list = _list.slice(_skip, _skip + page_limit)
+            result.total_pages = Math.ceil(await article_model.find(query).countDocuments() / page_limit);
+        }
         return result;
 
     },

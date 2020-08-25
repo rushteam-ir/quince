@@ -87,14 +87,14 @@ jsonSearch = function(keys_inp, search_value, json_inp){
 
         if(!keys.includes('.')){
 
-            if(json_inp[keys].includes(search_value)){
+            if(!isUndefined(json_inp[keys]) && json_inp[keys].includes(search_value)){
                 result = true;
             }
 
         }
         else{
 
-            if(json_inp[keys.split('.')[0]][keys.split('.')[1]].includes(search_value)){
+            if(!isUndefined(json_inp[keys.split('.')[0]]) && !isUndefined(json_inp[keys.split('.')[0]][keys.split('.')[1]]) && json_inp[keys.split('.')[0]][keys.split('.')[1]].includes(search_value)){
                 result = true;
             }
 
