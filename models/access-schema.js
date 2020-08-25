@@ -10,8 +10,6 @@ let access_schema = new mongoose.Schema({
 
 });
 
-access_schema.index({'$**' : 'text'});
-
 access_schema.statics = {
 
     add : async function(access_data){
@@ -114,16 +112,26 @@ access_schema.statics = {
 
     },
 
-    search : async function (search_value, page_number, page_limit) {
+    search : async function (query, search_value, page_number, page_limit) {
 
-        let result = {}
+        let result = {};
         let _skip = page_number * page_limit - page_limit;
 
         result.rows_begin_number = _skip + 1;
-        result.list =  await access_model.find({$text : {$search : search_value}}).populate('author').skip(_skip).limit(page_limit).exec();
+        let _list = await access_model.find(query).populate('author');
+        let temp_list = []
 
-        result.total_pages = Math.ceil( await access_model.find({$text : {$search : search_value}}).countDocuments() / page_limit);
-
+        if(search_value){
+            for(let index of _list){
+                jsonSearch(['title'], search_value, index) ? temp_list.push(index) : null;
+            }
+            result.total_pages = Math.ceil(temp_list.length / page_limit);
+            result.list = temp_list.slice(_skip, _skip + page_limit)
+        }
+        else{
+            result.list = _list.slice(_skip, _skip + page_limit)
+            result.total_pages = Math.ceil(await access_model.find(query).countDocuments() / page_limit);
+        }
         return result;
 
     },

@@ -4,9 +4,18 @@ router.get('/', async(req, res, next)=>{
 
     try{
 
-        await serverHelpers.tableList(req, async (page_number, page_limit, can_edit)=>{
+        await serverHelpers.tableList(req, async (page_number, page_limit, data)=>{
 
-            let access_list = await access_model.getAll(page_number, page_limit)
+            let search_inp = req.query.search;
+            let query = null;
+
+            if(!isUndefined(search_inp)){
+                data.search = true;
+                data.search_value = search_inp;
+                data.pagination_url = `/?search=${search_inp}`;
+            }
+
+            let access_list = await access_model.search(query, search_inp ? search_inp : null, page_number, page_limit);
 
             if(access_list.list.length == 0 && access_list.total_pages != 0){
 
@@ -14,17 +23,11 @@ router.get('/', async(req, res, next)=>{
 
             }
 
-            let data = {
-
-                access_list : access_list.list,
-                page_number : page_number,
-                page_limit : page_limit,
-                rows_begin_number : access_list.rows_begin_number,
-                total_pages : access_list.total_pages,
-                can_edit : can_edit,
-                search : false,
-
-            };
+            data.access_list = access_list.list;
+            data.page_number = page_number;
+            data.page_limit = page_limit;
+            data.rows_begin_number = access_list.rows_begin_number;
+            data.total_pages = access_list.total_pages;
 
             res.render('groups/groups-access', data);
 
@@ -96,7 +99,6 @@ const get_access = require('./api/get-access');
 const get_admin_access = require('./api/get-admin-access');
 
 const edit = require('./edit');
-const search = require('./search');
 
 router.use('/api/delete-access', delete_access);
 router.use('/api/delete-select', delete_select);
@@ -104,6 +106,5 @@ router.use('/api/get-access', get_access);
 router.use('/api/get-admin-access', get_admin_access);
 
 router.use('/edit', edit);
-router.use('/search', search);
 
 module.exports = router;

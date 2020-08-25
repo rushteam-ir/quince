@@ -22,6 +22,8 @@ router.use(async(req, res, next)=>{
 
         }
 
+        res.locals.g_website_title = config.frontend_tmp;
+
         next();
 
     }

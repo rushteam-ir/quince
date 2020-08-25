@@ -4,11 +4,11 @@ router.get('/', async(req, res, next)=>{
 
     try{
 
-        await serverHelpers.tableList(req, async (page_number, page_limit, can_edit)=>{
+        await serverHelpers.tableList(req, async (page_number, page_limit, data)=>{
 
             let search_inp = req.query.search;
             let author_inp = req.query.author;
-            let data = {search : false, pagination_url: '/'};
+            let query = null;
 
             if(!isUndefined(search_inp)){
                 data.search = true;
@@ -16,13 +16,11 @@ router.get('/', async(req, res, next)=>{
                 data.pagination_url = `/?search=${search_inp}`;
             }
             else if(!isUndefined(author_inp)){
-                data.pagination_url = `/?author=${author_inp}`
-            }
-            else if(!isUndefined(author_inp) && !isUndefined(author_inp)){
-                data.pagination_url = `/?author=${author_inp}&search=${search_inp}`
+                data.pagination_url = `/?author=${author_inp}`;
+                query = {author : author_inp};
             }
 
-            let category_list = await category_model.search(author_inp ? {author : author_inp} : null, search_inp ? search_inp : null, page_number, page_limit);
+            let category_list = await category_model.search(query, search_inp ? search_inp : null, page_number, page_limit);
 
             if(category_list.list.length == 0 && category_list.total_pages != 0){
 
@@ -36,7 +34,6 @@ router.get('/', async(req, res, next)=>{
             data.page_limit = page_limit;
             data.rows_begin_number = category_list.rows_begin_number;
             data.total_pages = category_list.total_pages;
-            data.can_edit = can_edit;
 
             res.render('category/category', data);
 
@@ -122,7 +119,6 @@ const delete_select = require('./api/delete-select');
 const get_category = require('./api/get-category');
 
 const edit = require('./edit');
-const search = require('./search');
 
 router.use('/api/get-sub-category', get_sub_category);
 router.use('/api/delete-category', delete_category);
@@ -130,6 +126,5 @@ router.use('/api/delete-select', delete_select);
 router.use('/api/get-category', get_category);
 
 router.use('/edit', edit);
-router.use('/search', search);
 
 module.exports = router;

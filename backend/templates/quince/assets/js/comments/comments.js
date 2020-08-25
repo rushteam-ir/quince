@@ -233,7 +233,6 @@ $('.second_edit_btn').click(function () {
         id: $(this).attr('name'),
     }, function (data, status) {
 
-        console.log(data)
         let text = data.text;
         let comment_id = data._id;
 
@@ -248,7 +247,7 @@ $('.search_btn').on('click', function (e) {
 
     let search_value = $('.search_table').val();
     if (search_value != "") {
-        redirect(`${backend_url}comments/search/${search_value}`);
+        redirect(`${backend_url}comments/?search=${search_value}`);
     }
 
 })

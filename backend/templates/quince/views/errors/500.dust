@@ -4,8 +4,7 @@
     <link rel="stylesheet" href="css/errors/error.css">
 {/css}
 
-{<body} 
-<section>
+{<body}
     <!-- error -->
     <section>
         <div class="container-fluid p-0">
@@ -13,7 +12,11 @@
                 <div class="ban_slot_field w-100">
                     <i class="fal fa-skull"></i>
                     <p>درخواست شما با مشکل مواجه شد !</p>
-                    <p>{error}</p>
+                    <p>
+                        {@eq key="{debug_mode}" value="true"}
+                            {error}
+                        {/eq}
+                    </p>
                 </div>
             </div>
         </div>

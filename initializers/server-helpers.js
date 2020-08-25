@@ -6,6 +6,7 @@ class serverHelpers {
         let page_number = 1;
         let page_limit = req.session.limit;
         let can_edit = false;
+        let data = {search : false, pagination_url: '/'};
 
         if(!parsed_url.endsWith('/')){
 
@@ -14,8 +15,6 @@ class serverHelpers {
         }
 
         parsed_url = parsed_url.split('/').slice(2).join('/')
-        parsed_url = (parsed_url.includes('/search/') ? parsed_url.substring(0, parsed_url.indexOf('search/')) : parsed_url)
-        parsed_url = (parsed_url.includes('/get/') ? parsed_url.substring(0, parsed_url.indexOf('get/')) : parsed_url)
 
         let find_access_edit = backend_access.edit[parsed_url];
 
@@ -29,6 +28,8 @@ class serverHelpers {
             can_edit = (req.session.admin_info.access_type.values.includes(find_access_edit)) ? true : false;
 
         }
+
+        data.can_edit = can_edit;
 
         if(req.query.page){
 
@@ -47,7 +48,7 @@ class serverHelpers {
 
         }
 
-        await callback(page_number, page_limit, can_edit);
+        await callback(page_number, page_limit, data);
 
     }
 

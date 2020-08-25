@@ -182,6 +182,13 @@
             </div>
         </a>
 
+        <a href="{backend_url}contact" class="dashboard_body_sub" id="contact">
+            <div class="position-relative">
+                <i class="fad fa-phone"></i>
+                <p>تماس با ما</p>
+            </div>
+        </a>
+
         <a href="#" class="dashboard_body_sub">
             <div class="position-relative">
                 <i class="fad fa-question-circle"></i>
@@ -235,7 +242,7 @@
             </div>
             <div class="nav_comment_field">
                 <div class="comment_header_notif">
-                    <h2>نظرات کاربران</h2>
+                    <h2>اعلانات پیام ها</h2>
                     <div class="comment_partion">
                         <p class="comment_btn" id="comment_btn">مقاله
                             {@ne key="{g_notification_comments.count}" value="0"}
@@ -243,6 +250,9 @@
                             {/ne}
                         </p>
                         <p id="shop_btn">فروشگاه
+
+                        </p>
+                        <p class="contact_btn" id="contact_btn">تماس با ما
 
                         </p>
                     </div>
@@ -253,7 +263,7 @@
                             <p>{key}</p>
                         </div>
                         {#value}
-                            <a href="{backend_url}comments/search/{_id}" class="nav_comment_info">
+                            <a href="{backend_url}comments/?id={_id}" class="nav_comment_info">
                                 <div class="CI_image">
                                     {@eq key="{author}" value="{null}"}
                                         <img src="img/default-profile-picture.png" alt="">
@@ -289,6 +299,9 @@
                     {/keyValue}
                 </div>
                 <div class="NVI_main_field" id="shop_comment">
+
+                </div>
+                <div class="NVI_main_field" id="contact_us">
 
                 </div>
             </div>

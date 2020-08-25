@@ -33,3 +33,4 @@ article_model = require('../models/article-schema');
 report_model = require('../models/report-schema');
 access_model = require('../models/access-schema');
 comment_model = require('../models/comment-schema');
+contact_model = require('../models/contact-schema');
