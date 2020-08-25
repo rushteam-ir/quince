@@ -20,19 +20,19 @@ router.get('/', async(req, res, next)=>{
                 query = {author : author_inp};
             }
 
-            let comments_list = await comment_model.search(query, search_inp ? search_inp : null, page_number, page_limit);
+            let contacts_list = await contact_model.search(query, search_inp ? search_inp : null, page_number, page_limit);
 
-            if(comments_list.list.length == 0 && comments_list.total_pages != 0){
+            if(contacts_list.list.length == 0 && contacts_list.total_pages != 0){
 
-                return res.redirect(`${config.backend_url}comments/?page=${comments_list.total_pages}`)
+                return res.redirect(`${config.backend_url}contact/?page=${contacts_list.total_pages}`)
 
             }
 
-            data.comments_list = comments_list.list;
+            data.contacts_list = contacts_list.list;
             data.page_number = page_number;
             data.page_limit = page_limit;
-            data.rows_begin_number = comments_list.rows_begin_number;
-            data.total_pages = comments_list.total_pages;
+            data.rows_begin_number = contacts_list.rows_begin_number;
+            data.total_pages = contacts_list.total_pages;
 
             res.render('contact/contact', data);
 
@@ -46,5 +46,11 @@ router.get('/', async(req, res, next)=>{
     }
 
 });
+
+const delete_contact = require('./api/delete-contact');
+const delete_select = require('./api/delete-select');
+
+router.use('/api/delete-contact', delete_contact);
+router.use('/api/delete-select', delete_select);
 
 module.exports = router;

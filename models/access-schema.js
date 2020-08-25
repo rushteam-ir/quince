@@ -10,8 +10,6 @@ let access_schema = new mongoose.Schema({
 
 });
 
-access_schema.index({'$**' : 'text'});
-
 access_schema.statics = {
 
     add : async function(access_data){

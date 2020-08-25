@@ -5,6 +5,7 @@
 {/css}
 
 {<js}
+    <script src="js/contact/contact.js"></script>
     <script src="js/custom/checkbox.js"></script>
     <script src="js/custom/main-error.js"></script>
     <script src="js/custom/error-handler.js"></script>
@@ -80,32 +81,73 @@
                                 <th>تاریخ</th>
                                 <th>تنظیمات</th>
                             </tr>
-                            <tr>
-                                <td>
-                                    <label class="checkbox_of_category">
-                                        <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox"
-                                            value="{._id}">
-                                    </label>
-                                </td>
-                                <td>1</td>
-                                <td class="QT_image">
-                                    <img src="img/img2.jpg" alt="">
-                                </td>
-                                <td class="name_summery">
-                                    کسری حبیب بیگی
-                                </td>
-                                <td class="text_summery">
-                                        سلام خدمت شما ذوستان عزیزم که جونمم براتون میدم چون شما خیلی خوب هستید مخصوصا اقا علی تون که یا رو بلد نیست به خدا .
-                                </td>
-                                <td>
-                                    1399/05/24
-                                </td>
-                                <td class="table_option_btn">
-                                    <button class="btn blue_btn ml-2 edit_btn"><i class="fal fa-eye"></i></button>
-                                    <button class="btn red_btn"><i class="fal fa-trash-alt"></i></button>
-                                </td>
-                            </tr>
+                            {#contacts_list}
+                                <tr>
+                                    {@eq key="{g_admin_info._id}" value="{author._id}"}
+                                        <td>
+                                            <label class="checkbox_of_category">
+                                                <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                            </label>
+                                        </td>
+                                    {:else}
+                                        {@eq key="{can_edit}" value="true"}
+                                            <td>
+                                                <label class="checkbox_of_category">
+                                                    <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                                </label>
+                                            </td>
+                                        {:else}
+                                            <td>
+
+                                            </td>
+                                        {/eq}
+                                    {/eq}
+                                    <td>{@math key="{rows_begin_number}" method="add" operand="{$idx}"/}</td>
+                                    <td class="QT_image">
+                                        {@eq key="{author}" value="{null}"}
+                                            <img src="img/default-profile-picture.png" alt="">
+                                        {:else}
+                                            <img src="media/avatars/{author.avatar}" alt="">
+                                        {/eq}
+                                    </td>
+                                    <td class="name_summery">
+                                        {@eq key="{author}" value="{null}"}
+                                            {name}
+                                        {:else}
+                                            {author.first_name} {author.last_name}
+                                        {/eq}
+                                    </td>
+                                    <td class="text_summery">
+                                        {text}
+                                    </td>
+                                    <td>
+                                        {date}
+                                    </td>
+                                    {@eq key="{g_admin_info._id}" value="{author._id}"}
+                                        <td class="table_option_btn">
+                                            <button class="btn blue_btn ml-2 edit_btn"><i class="fal fa-eye"></i></button>
+                                            <button class="btn red_btn contact_delete"><i class="fal fa-trash-alt"></i></button>
+                                        </td>
+                                    {:else}
+                                        {@eq key="{can_edit}" value="true"}
+                                            <td class="table_option_btn">
+                                                <button class="btn blue_btn ml-2 edit_btn"><i class="fal fa-eye"></i></button>
+                                                <button class="btn red_btn contact_delete"><i class="fal fa-trash-alt"></i></button>
+                                            </td>
+                                        {:else}
+                                            <td>
+                                                دسترسی ندارید
+                                            </td>
+                                        {/eq}
+                                    {/eq}
+                                </tr>
+                            {/contacts_list}
                         </table>
+                        {?contacts_list}{:else}
+                            <div class="table_search_error">
+                                <p>موردی جهت نمایش وجود ندارد !</p>
+                            </div>
+                        {/contacts_list}
                     </div>
                 </div>
             </div>

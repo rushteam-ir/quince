@@ -8,10 +8,10 @@ $(document).ready(function () {
         let page_limit = $(this).val();
         $.post(`${backend_url}api/get-page-limit`, {
             limit: page_limit,
-            url: `${backend_url}groups/access`,
+            url: `${backend_url}contact`,
         }, function (data, status) {
 
-            redirect(`${backend_url}groups/access`);
+            redirect(`${backend_url}contact`);
 
         })
 
@@ -19,14 +19,14 @@ $(document).ready(function () {
 
 });
 
-// Delete Access
-$('.access_delete').on('click', function (e) {
+// Delete contact
+$('.contact_delete').on('click', function (e) {
 
-    let access_id = $(e.currentTarget).attr('name');
+    let contact_id = $(e.currentTarget).attr('name');
 
     Swal.fire({
-        title: 'حذف دسترسی',
-        text: "آیا از حذف این دسترسی مطمئن هستید ؟",
+        title: 'حذف پیام',
+        text: "آیا از حذف این پیام مطمئن هستید ؟",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
@@ -37,12 +37,12 @@ $('.access_delete').on('click', function (e) {
         if (result.value) {
             Swal.fire({
                 title: 'حذف شد',
-                text: 'دسترسی مور نظر با موفقیت حذف شد برای تایید نهایی کلیک کنید',
+                text: 'پیام مور نظر با موفقیت حذف شد برای تایید نهایی کلیک کنید',
                 icon: 'success',
                 confirmButtonText: 'تایید',
             }).then((result) => {
                 if (result.value) {
-                    redirect(`${backend_url}groups/access/api/delete-access/?id=${access_id}`);
+                    redirect(`${backend_url}contact/api/delete-contact/?id=${contact_id}`);
                 }
             })
         }
@@ -55,15 +55,15 @@ $('.table_delete_btn').on('click', function (e) {
     let query = ''
 
     $(':checkbox:checked').each(function (i) {
-        if ($(this).attr('name') != 'select_all' && $(this).attr('name') != 'access_select') {
+        if ($(this).attr('name') != 'select_all') {
             query += '&id[]=' + $(this).val();
         }
     });
 
     if (query != '') {
         Swal.fire({
-            title: 'حذف دسترسی',
-            text: "آیا از حذف دسترسی های انتخاب شده مطمئن هستید ؟",
+            title: 'حذف پیام ها',
+            text: "آیا از حذف پیام های انتخاب شده مطمئن هستید ؟",
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
@@ -74,12 +74,12 @@ $('.table_delete_btn').on('click', function (e) {
             if (result.value) {
                 Swal.fire({
                     title: 'حذف شد',
-                    text: 'دسترسی های انتخاب شده با موفقیت حذف شد برای تایید نهایی کلیک کنید',
+                    text: 'پیام های انتخاب شده با موفقیت حذف شد برای تایید نهایی کلیک کنید',
                     icon: 'success',
                     confirmButtonText: 'تایید',
                 }).then((result) => {
                     if (result.value) {
-                        redirect(`${backend_url}groups/access/api/delete-select/?${query}`);
+                        redirect(`${backend_url}contact/api/delete-select/?${query}`);
                     }
                 })
             }
@@ -92,40 +92,15 @@ $('.search_btn').on('click', function (e) {
 
     let search_value = $('.search_table').val();
     if (search_value != "") {
-        redirect(`${backend_url}groups/access/?search=${search_value}`);
+        redirect(`${backend_url}contact/?search=${search_value}`);
     }
-
 })
 
 $('.search_btn_cancel').on('click', function (e) {
 
-    redirect(`${backend_url}groups/access`);
+    redirect(`${backend_url}contact`);
 
 })
-
-$('.edit_btn').click(function () {
-
-    $.post(`${backend_url}groups/access/api/get-access`, {
-        id: $(this).attr('name'),
-    }, function (data, status) {
-
-        let title = data.title;
-        let access_id = data._id;
-        let access_list = data.values;
-
-        $('.edit_access_title').val(title);
-        $('.edit_access_id').val(access_id);
-
-        $("input[name='edit_access_select_inp[]']:checkbox").prop('checked',false);
-        $.each(access_list, function(i, val){
-
-            $("input[name='edit_access_select_inp[]'][value='" + val + "']").prop('checked', true);
-
-        });
-
-    });
-
-});
 
 function redirect(url) {
     location.href = url
@@ -141,17 +116,17 @@ for (let i = 0; i < lable_collaps.length; i++) {
 
         let panel = this.nextElementSibling;
 
-            if (panel.style.maxHeight) {
+        if (panel.style.maxHeight) {
 
-                panel.style.maxHeight = null;
+            panel.style.maxHeight = null;
 
-            } else {
+        } else {
 
-                panel.style.maxHeight = panel.scrollHeight + 'px';
+            panel.style.maxHeight = panel.scrollHeight + 'px';
 
-            }
+        }
 
-            this.classList.toggle('rotate_angle');
+        this.classList.toggle('rotate_angle');
 
     });
 

@@ -182,6 +182,13 @@
             </div>
         </a>
 
+        <a href="{backend_url}contact" class="dashboard_body_sub" id="contact">
+            <div class="position-relative">
+                <i class="fad fa-phone"></i>
+                <p>تماس با ما</p>
+            </div>
+        </a>
+
         <a href="#" class="dashboard_body_sub">
             <div class="position-relative">
                 <i class="fad fa-question-circle"></i>
@@ -218,10 +225,17 @@
             <div class="d-inline-block hi_user_text">
                 <span> سلام</span>
                 {@eq key="{g_admin_info.author_type}" value="name"}
-                    <span> {g_admin_info.first_name} !</span>
+                    <span> {g_admin_info.first_name}</span>
                 {:else}
-                    <span> {g_admin_info.nick_name} !</span>
+                    <span> {g_admin_info.nick_name}</span>
                 {/eq}
+                <span>به پنل مدیریت وبسایت </span>
+                <span>
+                    <a href="{frontend_url}" target="_blank">
+                        {g_website_title}
+                    </a>
+                </span>
+                <span>خوش آمدید ! </span>
             </div>
 
         </div>
