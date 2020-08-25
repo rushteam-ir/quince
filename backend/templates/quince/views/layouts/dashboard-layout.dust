@@ -225,17 +225,10 @@
             <div class="d-inline-block hi_user_text">
                 <span> سلام</span>
                 {@eq key="{g_admin_info.author_type}" value="name"}
-                    <span> {g_admin_info.first_name}</span>
+                    <span> {g_admin_info.first_name} !</span>
                 {:else}
-                    <span> {g_admin_info.nick_name}</span>
+                    <span> {g_admin_info.nick_name} !</span>
                 {/eq}
-                <span>به پنل مدیریت وبسایت </span>
-                <span>
-                    <a href="{frontend_url}" target="_blank">
-                        {g_website_title}
-                    </a>
-                </span>
-                <span>خوش آمدید ! </span>
             </div>
 
         </div>
@@ -249,7 +242,7 @@
             </div>
             <div class="nav_comment_field">
                 <div class="comment_header_notif">
-                    <h2>نظرات کاربران</h2>
+                    <h2>اعلانات پیام ها</h2>
                     <div class="comment_partion">
                         <p class="comment_btn" id="comment_btn">مقاله
                             {@ne key="{g_notification_comments.count}" value="0"}
@@ -257,6 +250,9 @@
                             {/ne}
                         </p>
                         <p id="shop_btn">فروشگاه
+
+                        </p>
+                        <p class="contact_btn" id="contact_btn">تماس با ما
 
                         </p>
                     </div>
@@ -303,6 +299,9 @@
                     {/keyValue}
                 </div>
                 <div class="NVI_main_field" id="shop_comment">
+
+                </div>
+                <div class="NVI_main_field" id="contact_us">
 
                 </div>
             </div>

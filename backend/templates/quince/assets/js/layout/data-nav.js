@@ -42,3 +42,13 @@ $('#shop_btn').click(function(){
     $('#comment_btn').removeClass('comment_btn');
 
 });
+
+$('#contact_btn').click(function(){
+
+    $('#article_comment').css('display' , 'none');
+    $('#shop_comment').css('display' , 'block');
+    $('#shop_btn').addClass('active_border');
+    $('#comment_btn').removeClass('active_border');
+    $('#comment_btn').removeClass('comment_btn');
+
+});
