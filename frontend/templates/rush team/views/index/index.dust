@@ -8,192 +8,87 @@
 
 {<css}
     <link rel="stylesheet" href="css/index/index.css">
-    <link rel="stylesheet" href="css/general/Swiper.css">
 {/css}
 
 {<js}
-    <script src="js/general/Swiper.js"></script>
     <script src="js/index/index.js"></script>
 {/js}
 
 {<body}
-
-    <section class="position-relative">
-
-        <div class="header_layer"></div>
-
-        <video class="header_video_player" autoplay loop muted>
-            <source src="img/bg-vido.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-
-        <div class="text_of_header">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-6 offset-3 text-center info_header_text">
-                        <h1>کسب کار خود را بالا ببرید</h1>
-                        <p>
-                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
-                        </p>
-                        <button class="btn btn_n1">
-                            تعرفه های طراحی سایت 
-                        </button>
-                        <button class="btn btn_n2">
-                            همین الان شروع کن !
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </section>
-
-    <section class="why_chose_us">
+<section>
+    <div class="header_field">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-7">
-                    <div class="wcu_side_img_field">
-                        <img class="wcu_side_img_p1" src="img/wcu-2.jpg" alt="">
-                        <img class="wcu_side_img_p2" src="img/wcu-1.jpg" alt="">
-                        <img class="wcu_side_img_p3" src="img/wcu-3.jpg" alt="">
-                        <img class="wcu_side_img_p4" src="img/wcu-4.jpg" alt="">
+            <div class="row align-items-center HCR">
+                <div class="col-8 offset-2">
+                    <div class="header_info">
+                        <i class="fal fa-anchor"></i>
+                        <h2>جذابیت و خلاقیت</h2>
+                        <h1>تجربه شگفت انگیز همراه با تیم خبره راش تیم</h1>
+                        <p>بهتریم تجربه را در کنار تیم نوب سگ راش تیم را داشته باشید و زندگی کنید با ما زندگیتون از این رو به اون رو مشه عزیزم پس بهتره بیای سفارش بدی چون میتونی . شسی شسی شسیشس یشسی شسیید شبهعب خشخخ شسیتش سیشت سهیا</p>
+                        <button class="btn">درباره ما </button>
                     </div> 
                 </div>
-                <div class="col-4">
-                    <div class="why_chose_us_field">
-                        <h3>چرا باید به ما اعتماد کنید؟</h3>
-                        <p class="main_title_of_wcuf">به دلایل خیلی زیاد باید مارو انتخاب کنی چاره ای هم نداری یه مقداری اینجا بیان شده بقیش رو تو درباره ما بخون دوست خوبم .</p>
-                        <div class="subset_wcu_p1 mt-5">
-                            <div class="left_subset_wcu d-inline-block">
-                                <p>01</p>
-                                <i class="fal fa-scroll"></i>
-                            </div>
-                            <div class="right_subset_wcu d-inline-block">
-                                <p>تیم اسکرام</p>
-                                <p>سکرام روش برنامه ریزی است که باعص میشود حتی یک روز از وقت گران قیمت شما تلف نشده حتی پروژه زود ت از موعد تحویل دهیم</p>
-                            </div>
-                        </div>
-                        <div class="subset_wcu_p2 mt-5">
-                            <div class="left_subset_wcu d-inline-block">
-                                <p>02</p>
-                                <i class="fal fa-lightbulb-on"></i>
-                            </div>
-                            <div class="right_subset_wcu d-inline-block">
-                                <p>ایده های خلاقانه</p>
-                                <p>سکرام روش برنامه ریزی است که باعص میشود حتی یک روز از وقت گران قیمت شما تلف نشده حتی پروژه زود ت از موعد تحویل دهیم</p>
-                            </div>
-                        </div>
-                        <div class="subset_wcu_p3 mt-5">
-                            <div class="left_subset_wcu d-inline-block">
-                                <p>03</p>
-                                <i class="fal fa-heart"></i>
-                            </div>
-                            <div class="right_subset_wcu d-inline-block">
-                                <p>وجود طالبی</p>
-                                <p>سکرام روش برنامه ریزی است که باعص میشود حتی یک روز از وقت گران قیمت شما تلف نشده حتی پروژه زود ت از موعد تحویل دهیم</p>
-                            </div>
-                        </div>
-                        <button class="btn wcu_p_btn">راجب ما بیشتر بدانید</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="service_sec">
+    <div class="container-fluid">
+        <div class="row align-items-center SSH">
+            <div class="col-4">
+                <div class="field_of_SP">
+                    <div class="d-inline-block second_service_part">
+                        <h3>ریسپانسیو</h3>
+                        <p>ریسپانیو تمام صفحات سایت </p>
+                        <p>ریسپاسنیو تمام صفحات وب حتی از اون صفحاتی که اریا داره ششسی ش شسیش ت خ اشمنتسی شسیت نتم اغهتنمئ</p>
+                    </div>
+                    <div class="d-inline-block first_service_part">
+                        <i class="fal fa-mobile"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="field_of_SP">
+                    <div class="d-inline-block second_service_part">
+                        <h3>خلاق</h3>
+                        <p>ریسپانیو تمام صفحات سایت </p>
+                        <p>ریسپاسنیو تمام صفحات وب حتی از اون صفحاتی که اریا داره ششسی ش شسیش ت خ اشمنتسی شسیت نتم اغهتنمئ</p>
+                    </div>
+                    <div class="d-inline-block first_service_part">
+                        <i class="fal fa-acorn"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="field_of_SP">
+                    <div class="d-inline-block second_service_part">
+                        <h3>زمانبندی</h3>
+                        <p>ریسپانیو تمام صفحات سایت </p>
+                        <p>ریسپاسنیو تمام صفحات وب حتی از اون صفحاتی که اریا داره ششسی ش شسیش ت خ اشمنتسی شسیت نتم اغهتنمئ</p>
+                    </div>
+                    <div class="d-inline-block first_service_part">
+                        <i class="fal fa-alarm-clock"></i>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="test1">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper ">
-                          <div class="swiper-slide">
-                              <div class="row p-5">
-                                <div class="col-7">
-                                    <div class="main_field_of_pack_info">
-                                        <div class="header_number_of_ip">01</div>
-                                        <h3>بالا ترین کارایی سایت را داشته باشید .</h3>
-                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چدهاد.</p>
-                                        <button class="btn">مشاوره رایگان</button>
-                                    </div>
-                                </div>
-                                <div class="col-5">
-                                    <div class="main_field_of_price dir_rtl text-right">
-                                        <h3>وب سایت شخصی</h3>
-                                        <p class="subtitle_of_pack">شروع قیمت از </p>
-                                        <p class="price_of_pack">2 میلون تومان</p>
-                                        <p>
-                                           <i class="fas fa-check"></i>
-                                            طراحی UI  حرفه ای
-                                        </p>
-                                        <p>
-                                           <i class="fas fa-check"></i>
-                                            پشتیبانی تا 3 ماه
-                                        </p>
-                                        <p>
-                                           <i class="fas fa-check"></i>
-                                            به صرفه 
-                                        </p>
-                                        <p class="mb-2">
-                                           <i class="fas fa-check"></i>
-                                            مدیریت محتوی کویینس
-                                        </p>
-
-                                        <p class="complete_inco_of_pack">برای اطلاعات تکمیلی روی دکمه زیر کلیک کنید</p>
-                                        <button class="btn">
-                                            مشاهده پکیچ
-                                        </button>
-                                    </div>
-                                </div>
-                              </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="row p-5">
-                                <div class="col-7">
-                                    <div class="main_field_of_pack_info">
-                                        <div class="header_number_of_ip">02</div>
-                                        <h3>بالا ترین کارایی سایت را داشته باشید .</h3>
-                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چدهاد.</p>
-                                        <button class="btn">مشاوره رایگان</button>
-                                    </div>
-                                </div>
-                                <div class="col-5">
-                                    <div class="main_field_of_price dir_rtl text-right">
-                                        <h3>وب سایت شخصی</h3>
-                                        <p class="subtitle_of_pack">شروع قیمت از </p>
-                                        <p class="price_of_pack">2 میلون تومان</p>
-                                        <p>
-                                           <i class="fas fa-check"></i>
-                                            طراحی UI  حرفه ای
-                                        </p>
-                                        <p>
-                                           <i class="fas fa-check"></i>
-                                            پشتیبانی تا 3 ماه
-                                        </p>
-                                        <p>
-                                           <i class="fas fa-check"></i>
-                                            به صرفه 
-                                        </p>
-                                        <p class="mb-2">
-                                           <i class="fas fa-check"></i>
-                                            مدیریت محتوی کویینس
-                                        </p>
-
-                                        <p class="complete_inco_of_pack">برای اطلاعات تکمیلی روی دکمه زیر کلیک کنید</p>
-                                        <button class="btn">
-                                            مشاهده پکیچ
-                                        </button>
-                                    </div>
-                                </div>
-                              </div>
-                          </div>
-                        </div>
-                        <!-- Add Arrows -->
-                        <div class="swiper-button-next swiper-button-white"></div>
-                        <div class="swiper-button-prev swiper-button-white"></div>
-                      </div>
+    </div>
+</section>
+<section class="RT_meet_section">
+    <div class="container-flid">
+        <div class="row">
+            <div class="col-4">
+                <div class="see_RT_part">
+                    <h2>دیدار با راش تیم</h2>
+                    <h3> طراحی تمیز وزیبا</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سا را قرار گیرد.</p>
+                    <button class="btn">بیشتر بدانید ! <i class="fas fa-angle-left"></i></button>
                 </div>
             </div>
+            <div class="col-8">
+                <img class="see_RT_part_img" src="img/Home_8_img_1-1024x486.png" alt="">
+            </div>
         </div>
-    </section>
-
+    </div>
+</section>
 {/body}

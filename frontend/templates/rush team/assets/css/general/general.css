@@ -1,26 +1,3 @@
-@font-face {
-    font-family: rush-team-font;
-    src: url("../../fonts/Minbus_Personal-use.otf");
-}
-
-@font-face {
-    font-family: accent-font;
-    src: url("../../fonts/A.Rezvan.ttf");
-}
-
-@font-face {
-    font-family: main-font;
-    src: url("../../fonts/Vazir.ttf");
-}
-
-@font-face {
-    font-family: second-font;
-    src: url("../../fonts/Vazir-Thin.ttf");
-}
-
-body {
-    font-family: main-font;
-}
 
 .dir_rtl {
     direction: rtl;

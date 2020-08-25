@@ -32,10 +32,10 @@
                     <a href="">درباره ما</a>
                 </li>
                 <li class="navbar_iteam">
-                    <a href="">تماس با ما</a>
+                    <a href="">مقالات</a>
                 </li>
                 <li class="navbar_iteam">
-                    <a href="">وبلاگ</a>
+                    <a href="">تماس با ما</a>
                 </li>
                 <li class="navbar_iteam ">
                     <a href="" class="special_one">
@@ -47,7 +47,7 @@
 
                 <div class="field_of_navbar_ltr">
                    <p class="nav_logo d-inline-block">
-                       rush teram
+                       <img src="img/rushteam1.png" alt="">
                    </p>
                    <div class="d-inline-block login_text">
                         ورود | عضویت
@@ -152,7 +152,6 @@
                             
                             <div class="col-4 offset-1 dir_rtl text-right">
                                 <div class="footer_logo_field">
-                                    <img src="img/RT-logo.PNG" alt="">
                                     <p>گروه طراحی سایت راش تیم</p>
                                 </div>
                                 <p class="footer_main_infi_text">

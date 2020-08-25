@@ -9,8 +9,6 @@ function animateWithRandomNumber(myClass, from, to) {
       onCompleteParams: [myClass, from, to],
       ease: Linear.easeNone
     });
-
-
 }
 
 const itemsDown = [

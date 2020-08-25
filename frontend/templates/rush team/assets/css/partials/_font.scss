@@ -1,0 +1,36 @@
+
+$AF : accent_font;
+$MF : Medium_font;
+$TF : Thin_font;
+$BF : Bold_font;
+$LF : Light_font;
+
+
+body{
+    font-family: $TF;
+}
+
+@font-face {
+    font-family: accent_font;
+    src: url("../../fonts/A.Rezvan.ttf");
+}
+
+@font-face {
+    font-family: Medium_font;
+    src: url("../../fonts/Shabnam-Medium.ttf");
+}
+
+@font-face {
+    font-family: Thin_font;
+    src: url("../../fonts/Shabnam-Thin.ttf");
+}
+
+@font-face {
+    font-family: Bold_font;
+    src: url("../../fonts/Shabnam-Bold.ttf");
+}
+
+@font-face {
+    font-family: Light_font;
+    src: url("../../fonts/Shabnam-Light.ttf");
+}
