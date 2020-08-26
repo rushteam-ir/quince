@@ -36,11 +36,15 @@ router.post('/', async(req, res, next)=>{
             {value : captcha_inp}
         ]).valid()
 
-        //errorManager.set(validation_result);
+        if(validation_result){
+
+            return res.json(validation_result);
+
+        }
 
         if(captcha_inp.toLowerCase() != req.session.captcha){
 
-            return res.redirect(`${config.backend_url}login/?msg=3`);
+            return res.json('کد امنیتی وارد شده صحیح نمی باشد.')
 
         }
 
@@ -56,19 +60,22 @@ router.post('/', async(req, res, next)=>{
                 req.session.admin_id = result._id;
                 req.session.admin_info = result;
 
-                return res.redirect(`${config.backend_url}dashboard`);
+                return res.json({
+                    status : 'success-noMsg',
+                    url : `${config.backend_url}`
+                })
 
             }
             else{
 
-                return res.redirect(`${config.backend_url}login/?msg=1`);
+                return res.json('ایمیل یا رمز عبور صحیح نمی باشد.');
 
             }
 
         }
         else{
 
-            return res.redirect(`${config.backend_url}login/?msg=2`);
+            return res.json('ایمیل یا رمز عبور صحیح نمی باشد.');
 
         }
 

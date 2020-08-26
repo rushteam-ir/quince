@@ -11,10 +11,16 @@
     <link rel="stylesheet" href="css/general/general-css.css">
     <link rel="stylesheet" href="css/login/login.css">
 
-    <title>Rush Team CMS</title>
+
+    <title>Quince</title>
 </head>
 
 <body>
+<div class="error_info warning_error">
+    <i class="fal fa-exclamation-circle"></i>
+    <p></p>
+    <i class="fal fa-times"></i>
+</div>
 <div class="container-fluid ">
     <div class="row align-items-center log_row_mid">
         <div class="col-12">
@@ -22,23 +28,7 @@
                 <div class="field_of_logo">
                     <img class="main_logo" src="img/logo2.png" alt="">
                 </div>
-                <form class="text-right mt-4" action="" method="post" autocomplete="off"
-                      onsubmit="return loginError()" name="login_form">
-                    {@eq key="{msg}" value=""}
-                        <div class="error_warning_alert text-right display_none" id="error_field_warning_front">
-                            <i class="fal fa-times d-inline-block remove_error_icon"
-                               onclick="removeWarningErrorFront()"></i>
-                            <i class="fal fa-exclamation-circle alert_icon_error"></i>
-                            <div class="d-inline-block mr-1" id="error_text"></div>
-                        </div>
-                    {:else}
-                        <div class="error_warning_alert text-right " id="error_field_warning_front">
-                            <i class="fal fa-times d-inline-block remove_error_icon"
-                               onclick="removeWarningErrorFront()"></i>
-                            <i class="fal fa-exclamation-circle alert_icon_error"></i>
-                            <div class="d-inline-block mr-1" id="error_text">{msg}</div>
-                        </div>
-                    {/eq}
+                <form class="text-right mt-4 form_ajax" name="login" action="{backend_url}login" method="post" autocomplete="off">
                     <div class="form-group">
                         <input type="text" placeholder="ایمیل" class="form-control text-right login_inp"
                                name="email_inp" value="{login_form.email_inp}">
@@ -70,15 +60,15 @@
     </div>
 </div>
 
+<script>
+    captcha_url = '{captcha_url}';
+</script>
 <script src="js/general/jquery.js"></script>
 <script src="js/login/login.js"></script>
-<script>
-    $(document).on('click', '.refresh_capthcha', function () {
-
-        $('.img_captcha').attr('src', '{captcha_url}?_' + Math.random());
-
-    });
-</script>
+<script src="js/custom/main-error.js"></script>
+<script src="js/custom/error-handler.js"></script>
+<script src="js/login/login-error.js"></script>
+<script src="js/general/form-ajax.js"></script>
 </body>
 
 </html>
