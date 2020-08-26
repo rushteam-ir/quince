@@ -17,7 +17,7 @@ router.get('/', async(req, res, next)=>{
 
 
 const admins = require('./admins/admins');
-const users = require('./users');
+const users = require('./users/users');
 const profile = require('./profile');
 const add = require('./add');
 const access = require('./access/access');

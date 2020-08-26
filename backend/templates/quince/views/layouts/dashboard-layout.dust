@@ -182,7 +182,7 @@
             </div>
         </a>
 
-        <a href="{backend_url}contact" class="dashboard_body_sub" id="contact">
+        <a href="{backend_url}contacts" class="dashboard_body_sub" id="contact">
             <div class="position-relative">
                 <i class="fad fa-phone"></i>
                 <p>تماس با ما</p>

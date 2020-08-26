@@ -76,6 +76,14 @@ $('.form_ajax').submit(function(event){
             break;
 
         }
+        case 'contact':
+        {
+
+            let front_validation = contactsError();
+            if(!front_validation) return false;
+            break;
+
+        }
 
     }
 

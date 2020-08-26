@@ -165,7 +165,7 @@ $('.table_accept_btn').on('click', function (e) {
 // Modal reply
 $('.edit_btn').click(function () {
 
-    $.post(`${backend_url}comments/api/get-comment`, {
+    $.post(`${backend_url}contacts/api/get-contact`, {
         id: $(this).attr('name'),
     }, function (data, status) {
 

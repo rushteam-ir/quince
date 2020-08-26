@@ -1,14 +1,15 @@
 {>"layouts/dashboard-layout"/}
 
 {<css}
-<link rel="stylesheet" href="css/contact/contact.css">
+<link rel="stylesheet" href="css/contacts/contacts.css">
 {/css}
 
 {<js}
-    <script src="js/contact/contact.js"></script>
+    <script src="js/contacts/contacts.js"></script>
     <script src="js/custom/checkbox.js"></script>
     <script src="js/custom/main-error.js"></script>
     <script src="js/custom/error-handler.js"></script>
+    <script src="js/contacts/contacts-error.js"></script>
     <script src="js/general/form-ajax.js"></script>
     <script src="js/custom/modal.js"></script>
 {/js}
@@ -125,14 +126,14 @@
                                     </td>
                                     {@eq key="{g_admin_info._id}" value="{author._id}"}
                                         <td class="table_option_btn">
-                                            <button class="btn blue_btn ml-2 edit_btn"><i class="fal fa-eye"></i></button>
-                                            <button class="btn red_btn contact_delete"><i class="fal fa-trash-alt"></i></button>
+                                            <button class="btn blue_btn ml-2 edit_btn" name="{._id}"><i class="fal fa-eye"></i></button>
+                                            <button class="btn red_btn contact_delete" name="{._id}"><i class="fal fa-trash-alt"></i></button>
                                         </td>
                                     {:else}
                                         {@eq key="{can_edit}" value="true"}
                                             <td class="table_option_btn">
-                                                <button class="btn blue_btn ml-2 edit_btn"><i class="fal fa-eye"></i></button>
-                                                <button class="btn red_btn contact_delete"><i class="fal fa-trash-alt"></i></button>
+                                                <button class="btn blue_btn ml-2 edit_btn" name="{._id}"><i class="fal fa-eye"></i></button>
+                                                <button class="btn red_btn contact_delete" name="{._id}"><i class="fal fa-trash-alt"></i></button>
                                             </td>
                                         {:else}
                                             <td>
@@ -148,6 +149,7 @@
                                 <p>موردی جهت نمایش وجود ندارد !</p>
                             </div>
                         {/contacts_list}
+                        {@page number="{total_pages}"  url="{backend_url}contacts{pagination_url}" current="{page_number}" query="{pagination_url}"/}
                     </div>
                 </div>
             </div>
@@ -162,26 +164,26 @@
                                 <h2>متن تماس با ما را در زیر مشاهده کنید .</h2>
                                 <hr>
                             </header>
-                            <form action="">
+                            <form class="form_ajax" name="contact" action="{backend_url}contacts/reply" method="post" autocomplete="off">
                                 <div class="container-fluid">
                                     <div class="row">
                                         <div class="col-7 text-right dir-rtl modal_info_col pl-0 pr-1 mt-3">
-                                            <p>کسری حبیب بیگی</p>
-                                            <p>ایمیل : kasrahabibbeygi@gmail.com</p>
-                                            <p>تلفن : 09021414866</p>
-                                            <p>تاریخ : 1399/10/02</p>
+                                            <p class="reply_name">کسری حبیب بیگی</p>
+                                            <p class="reply_email">ایمیل : kasrahabibbeygi@gmail.com</p>
+                                            <p class="reply_phone_number">تلفن : 09021414866</p>
+                                            <p class="reply_date">تاریخ : 1399/10/02</p>
                                         </div>
                                         <div class="col-5 pr-0">
-                                            <img class="modal_img" src="img/img2.jpg" alt="">
+                                            <img class="modal_img reply_image" src="img/img2.jpg" alt="">
                                         </div>
-                                        <div class="contact_message">
-                                            <p class="mt-4 ">من اعتراض دارممممم !!!!</p>
-                                            <p>a sd asdasdasdasdsdsa dsad sadasdasda das das dsa dsa dsa das dsa dsd asd sad asd asdsada sdas das das dsa ds adas d sads ad sa</p>
+                                        <div class="contact_message text-right dir-rtl w-100">
+                                            <p class="mt-4 reply_title">من اعتراض دارممممم !!!!</p>
+                                            <p class="reply_text">a sd asdasdasdasdsdsa dsad sadasdasda das das dsa dsa dsa das dsa dsd asd sad asd asdsada sdas das das dsa ds adas d sads ad sa</p>
                                         </div>
                                         <div class="form-group dir-rtl text-right w-100">
                                             <label for="article_describe_edit">پاسخ به پیام</label>
-                                            <textarea class="form-control main_form_design edit_comment_text" id="article_describe_edit" name="edit_text_inp"></textarea>
-                                            <input type="hidden" class="edit_comment_id" name="edit_comment_id">
+                                            <textarea class="form-control main_form_design edit_comment_text" id="article_describe_edit" name="reply_text_inp"></textarea>
+                                            <input type="hidden" class="reply_id" name="reply_id_inp">
                                         </div>
                                     </div>
                                 </div>

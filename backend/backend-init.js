@@ -13,7 +13,7 @@ backend_access = {
         '/article/add/': 'مقاله ها',
         '/article/list/': 'مقاله ها',
         '/comments/': 'نظرات',
-        '/contact/': 'تماس با ما',
+        '/contacts/': 'تماس با ما',
     },
     management : {
         '/groups/admins/': 'لیست مدیران',
@@ -28,7 +28,7 @@ backend_access = {
         'groups/users/': 'تنظیمات کاربران',
         'groups/access/': 'ویرایش دسترسی ها',
         'comments/': 'ویرایش نظرات',
-        'contact/': 'ویرایش تماس با ما',
+        'contacts/': 'ویرایش تماس با ما',
     }
 }
 

@@ -1,5 +1,6 @@
 let contact_schema = new mongoose.Schema({
 
+    title : String,
     text : String,
     author : {
         type : 'objectId',
@@ -9,10 +10,45 @@ let contact_schema = new mongoose.Schema({
     email : String,
     phone_number : String,
     date : String,
+    time : String,
+    replies : [{
+        text : String,
+        date : String,
+        time : String,
+        author : {
+            type : 'objectId',
+            ref : 'user'
+        }
+    }],
+    read : {
+        type : Boolean,
+        default : false
+    }
 
 });
 
 contact_schema.statics = {
+
+    add : async function(contact_data){
+
+        contact_data.date = getCurrentDate();
+        contact_data.time = getCurrentTime();
+
+        let new_contact = new contact_model(contact_data);
+        let result = await new_contact.save();
+
+        return result;
+
+    },
+
+    reply : async function(contact_id, reply_data){
+
+        reply_data.date = getCurrentDate();
+        reply_data.time = getCurrentTime();
+
+        return await contact_model.findByIdAndUpdate(contact_id, {$push : {replies : reply_data}});
+
+    },
 
     search : async function (query, search_value, page_number, page_limit) {
 
@@ -43,6 +79,14 @@ contact_schema.statics = {
         return await contact_model.findByIdAndDelete(contact_id);
 
     },
+
+    getContact : async function (contact_id) {
+
+        await contact_model.findByIdAndUpdate(contact_id, {read : true});
+        return await contact_model.findById(contact_id).populate('author').exec();
+
+    },
+
 
 };
 

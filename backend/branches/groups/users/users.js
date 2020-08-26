@@ -7,7 +7,7 @@ router.get('/', async(req, res, next)=>{
         await serverHelpers.tableList(req, async (page_number, page_limit, data)=>{
 
             let search_inp = req.query.search;
-            let query = {access_type: { $exists: true }, access : 'admin'};
+            let query = {access_type: { $exists: true }, access : 'user'};
 
             if(!isUndefined(search_inp)){
                 data.search = true;
@@ -30,7 +30,7 @@ router.get('/', async(req, res, next)=>{
             data.rows_begin_number = admins_list.rows_begin_number;
             data.total_pages = admins_list.total_pages;
 
-            res.render('groups/groups-admins', data);
+            res.render('groups/groups-users', data);
 
         })
 
@@ -42,17 +42,5 @@ router.get('/', async(req, res, next)=>{
     }
 
 });
-
-const change_status = require('./api/change-status');
-const delete_admins = require('./api/delete-admins');
-const delete_select = require('./api/delete-select');
-
-const access = require('./access');
-
-router.use('/api/change-status', change_status);
-router.use('/api/delete-admins', delete_admins);
-router.use('/api/delete-select', delete_select);
-
-router.use('/access', access);
 
 module.exports = router;

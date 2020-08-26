@@ -203,11 +203,7 @@
                                     <p>موردی جهت نمایش وجود ندارد !</p>
                                 </div>
                             {/admins_list}
-                            {@eq key="{search}" value="true"}
-                                {@page number="{total_pages}"  url="{backend_url}groups/admins/search/{search_value}" current="{page_number}"/}
-                            {:else}
-                                {@page number="{total_pages}"  url="{backend_url}groups/admins" current="{page_number}"/}
-                            {/eq}
+                            {@page number="{total_pages}"  url="{backend_url}groups/admins{pagination_url}" current="{page_number}" query="{pagination_url}"/}
                         </div>
                     </div>
                 </div>

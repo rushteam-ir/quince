@@ -242,7 +242,7 @@
                                     <p>موردی جهت نمایش وجود ندارد !</p>
                                 </div>
                             {/article_list}
-                            {@page number="{total_pages}"  url="{backend_url}article/{pagination_url}" current="{page_number}"/}
+                            {@page number="{total_pages}"  url="{backend_url}article/list{pagination_url}" current="{page_number}" query="{pagination_url}"/}
                         </div>
                     </div>
                 </div>

@@ -34,7 +34,9 @@ router.get('/', async(req, res, next)=>{
             data.rows_begin_number = contacts_list.rows_begin_number;
             data.total_pages = contacts_list.total_pages;
 
-            res.render('contact/contact', data);
+            log(data)
+
+            res.render('contacts/contacts', data);
 
         })
 
@@ -49,8 +51,14 @@ router.get('/', async(req, res, next)=>{
 
 const delete_contact = require('./api/delete-contact');
 const delete_select = require('./api/delete-select');
+const get_contact = require('./api/get-contact');
+
+const reply = require('./reply');
 
 router.use('/api/delete-contact', delete_contact);
 router.use('/api/delete-select', delete_select);
+router.use('/api/get-contact', get_contact);
+
+router.use('/reply', reply);
 
 module.exports = router;

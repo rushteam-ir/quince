@@ -8,10 +8,10 @@ $(document).ready(function () {
         let page_limit = $(this).val();
         $.post(`${backend_url}api/get-page-limit`, {
             limit: page_limit,
-            url: `${backend_url}contact`,
+            url: `${backend_url}contacts`,
         }, function (data, status) {
 
-            redirect(`${backend_url}contact`);
+            redirect(`${backend_url}contacts`);
 
         })
 
@@ -42,7 +42,7 @@ $('.contact_delete').on('click', function (e) {
                 confirmButtonText: 'تایید',
             }).then((result) => {
                 if (result.value) {
-                    redirect(`${backend_url}contact/api/delete-contact/?id=${contact_id}`);
+                    redirect(`${backend_url}contacts/api/delete-contact/?id=${contact_id}`);
                 }
             })
         }
@@ -79,7 +79,7 @@ $('.table_delete_btn').on('click', function (e) {
                     confirmButtonText: 'تایید',
                 }).then((result) => {
                     if (result.value) {
-                        redirect(`${backend_url}contact/api/delete-select/?${query}`);
+                        redirect(`${backend_url}contacts/api/delete-select/?${query}`);
                     }
                 })
             }
@@ -92,15 +92,60 @@ $('.search_btn').on('click', function (e) {
 
     let search_value = $('.search_table').val();
     if (search_value != "") {
-        redirect(`${backend_url}contact/?search=${search_value}`);
+        redirect(`${backend_url}contacts/?search=${search_value}`);
     }
 })
 
 $('.search_btn_cancel').on('click', function (e) {
 
-    redirect(`${backend_url}contact`);
+    redirect(`${backend_url}contacts`);
 
 })
+
+// Modal reply
+$('.edit_btn').click(function () {
+
+    $.post(`${backend_url}contacts/api/get-contact`, {
+        id: $(this).attr('name'),
+    }, function (data, status) {
+
+        let name = '';
+        let date = data.date;
+        let text = data.text;
+        let title = data.title;
+        let email = '';
+        let phone_number = '';
+        let image = "img/default-profile-picture.png";
+
+        if(data.author){
+            if(data.author.author_type == 'name'){
+                name = `${data.author.first_name} ${data.author.last_name}`;
+            }
+            else{
+                name = data.author.nick_name
+            }
+            email = data.author.email;
+            phone_number = data.author.phone_number;
+            image = `media/avatars/${data.author.avatar}`
+        }
+        else{
+            email = data.email;
+            phone_number = data.phone_number;
+            name = data.name;
+        }
+
+        $('.reply_name').text(name);
+        $('.reply_date').text('تاریخ : ' + date);
+        $('.reply_email').text('ایمیل : ' + email);
+        $('.reply_id').val(data._id)
+        $('.reply_phone_number').text('تلفن : ' + phone_number);
+        $('.reply_text').text(text);
+        $('.reply_title').text(title);
+        $('.reply_image').attr('src', image);
+
+    });
+
+});
 
 function redirect(url) {
     location.href = url
