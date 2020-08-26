@@ -38,6 +38,7 @@
 .header .bottom_box_of_nav_bar .nav_bar_box .nav_bar .nav_bar_ul {
   list-style-type: none;
   font-family: second-font;
+  font-size: 0.9rem;
 }
 .header .bottom_box_of_nav_bar .nav_bar_box .nav_bar .nav_bar_ul .nav_bar_item {
   display: inline-block;
@@ -82,7 +83,7 @@
   color: #FF6B6B;
 }
 .header .bottom_box_of_nav_bar .cart_and_sign_box .card_box .card_name {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
   font-family: second-font;
 }
@@ -109,6 +110,7 @@
   border: none;
   border-right: 1px solid #a5a5a5;
   font-family: second-font;
+  font-size: 0.9rem;
 }
 .header .layer_of_nav {
   display: none;

@@ -236,7 +236,7 @@
                 <div class="exp_of_page dir_rtl">
                     <img src="../../img/logo_bg_black.jpg" alt="فروشگاه ملورین" title="فروشگاه ملورین"
                          class="logo_of_footer">
-                    <h2 class="title_of_footer d-inline-block mr-lg-3">فروشگاه <span>ملورین</span>
+                    <h2 class="title_of_footer d-inline-block mr-3">فروشگاه <span>ملورین</span>
                     </h2>
                     <p class="text_of_exp">
                         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
@@ -262,7 +262,7 @@
                      class="electronic_logo">
             </div>
             <div class="col-10 col-md-6 col-lg-8  offset-1 offset-md-0 offset-lg-0 mt-lg-0 mt-md-0 mt-5">
-                <div class="right_box">
+                <div class="right_box mt-5">
                     <h3 class="title_of_best_p">بهترین کیفیت را از ما بخواهید</h3>
                     <p class="exp_e_footer">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
                         طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
