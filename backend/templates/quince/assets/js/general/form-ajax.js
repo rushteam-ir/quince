@@ -84,6 +84,14 @@ $('.form_ajax').submit(function(event){
             break;
 
         }
+        case 'login':
+        {
+
+            let front_validation = loginError();
+            if(!front_validation) return false;
+            break;
+
+        }
 
     }
 
@@ -101,16 +109,15 @@ $('.form_ajax').submit(function(event){
 
     $.ajax(ajax_options).done(function(response){
         if(response.status == 'success'){
-
             sessionStorage.setItem('reload', 'true');
             sessionStorage.setItem('message', response.msg);
             redirect(response.url);
-
+        }
+        else if(response.status == 'success-noMsg'){
+            redirect(response.url);
         }
         else{
-
             showMessage(response)
-
         }
 
     });

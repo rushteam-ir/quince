@@ -8,12 +8,12 @@ router.get('/', async(req, res, next)=>{
 
             if(!err){
 
-                res.redirect(`${config.backend_url}login/?msg=logout-success`);
+                return res.redirect(`${config.backend_url}login`);
 
             }
             else{
 
-                res.redirect(`${config.backend_url}dashboard`);
+                return res.redirect(`${config.backend_url}dashboard`);
 
             }
 
