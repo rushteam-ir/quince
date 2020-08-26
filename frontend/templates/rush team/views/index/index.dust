@@ -8,9 +8,11 @@
 
 {<css}
     <link rel="stylesheet" href="css/index/index.css">
+    <link rel="stylesheet" href="css/general/Swiper.css">
 {/css}
 
 {<js}
+<script src="js/general/Swiper.js"></script>
     <script src="js/index/index.js"></script>
 {/js}
 
@@ -179,6 +181,173 @@
         <p>برای مشاهده نمونه کار های بیشتر ب روی دکمه روبرو کلیک کنید </p>
         <a href="">نمونه کار ها <i class="fas fa-angle-left"></i></a>
     </div>
+</section>
+
+<section class="price_packages">
+    <div class="header_WE">
+        <p>مشتریان عزیز</p>
+        <h3> پلن های طراحی سایت</h3>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper p-5">
+            <div class="swiper-slide">
+                <div class="price_info_field">
+                  <p class="PI_header">شخصی</p>
+                  <hr>
+                  <p class="price_number">شروع از 2 میلیون </p>
+                  <p>این وب سایت ها مناسب اشخاصی است که میخواهد خود را به جامعه مورد نظر معرفی کنند یا مناسب کسب کار های کوچک نیز می باشد .</p>
+                  <hr>
+                  <p class="what_PI_have">
+                      <i class="fas fa-check"></i>
+                      پنل مدیریت محتوی
+                  </p>
+                  <p class="what_PI_have">
+                      <i class="fas fa-check"></i>
+                      خلاقیت بی اندازه و چشم نواز
+                  </p>
+                  <p class="what_PI_have">
+                      <i class="fas fa-check"></i>
+                      بالا بردن کسب کار
+                  </p>
+                  <p class="what_PI_have">
+                      <i class="fas fa-check"></i>
+                      سئو رایگان
+                  </p>
+                  <p class="what_PI_have">
+                      <i class="fas fa-check"></i>
+                      بازاریابی تا پولدار شدن
+                  </p>
+                  <button class="btn">سفارش سایت</button>
+                </div>
+               </div>
+          <div class="swiper-slide">
+            <div class="price_info_field">
+              <p class="PI_header">شخصی</p>
+              <hr>
+              <p class="price_number">شروع از 2 میلیون </p>
+              <p>این وب سایت ها مناسب اشخاصی است که میخواهد خود را به جامعه مورد نظر معرفی کنند یا مناسب کسب کار های کوچک نیز می باشد .</p>
+              <hr>
+              <p class="what_PI_have">
+                  <i class="fas fa-check"></i>
+                  پنل مدیریت محتوی
+              </p>
+              <p class="what_PI_have">
+                  <i class="fas fa-check"></i>
+                  خلاقیت بی اندازه و چشم نواز
+              </p>
+              <p class="what_PI_have">
+                  <i class="fas fa-check"></i>
+                  بالا بردن کسب کار
+              </p>
+              <p class="what_PI_have">
+                  <i class="fas fa-check"></i>
+                  سئو رایگان
+              </p>
+              <p class="what_PI_have">
+                  <i class="fas fa-check"></i>
+                  بازاریابی تا پولدار شدن
+              </p>
+              <button class="btn">سفارش سایت</button>
+            </div>
+           </div>
+
+           <div class="swiper-slide">
+            <div class="price_info_field">
+              <p class="PI_header">شخصی</p>
+              <hr>
+              <p class="price_number">شروع از 2 میلیون </p>
+              <p>این وب سایت ها مناسب اشخاصی است که میخواهد خود را به جامعه مورد نظر معرفی کنند یا مناسب کسب کار های کوچک نیز می باشد .</p>
+              <hr>
+              <p class="what_PI_have">
+                  <i class="fas fa-check"></i>
+                  پنل مدیریت محتوی
+              </p>
+              <p class="what_PI_have">
+                  <i class="fas fa-check"></i>
+                  خلاقیت بی اندازه و چشم نواز
+              </p>
+              <p class="what_PI_have">
+                  <i class="fas fa-check"></i>
+                  بالا بردن کسب کار
+              </p>
+              <p class="what_PI_have">
+                  <i class="fas fa-check"></i>
+                  سئو رایگان
+              </p>
+              <p class="what_PI_have">
+                  <i class="fas fa-check"></i>
+                  بازاریابی تا پولدار شدن
+              </p>
+              <button class="btn">سفارش سایت</button>
+            </div>
+           </div>
+
+           <div class="swiper-slide">
+            <div class="price_info_field">
+              <p class="PI_header">شخصی</p>
+              <hr>
+              <p class="price_number">شروع از 2 میلیون </p>
+              <p>این وب سایت ها مناسب اشخاصی است که میخواهد خود را به جامعه مورد نظر معرفی کنند یا مناسب کسب کار های کوچک نیز می باشد .</p>
+              <hr>
+              <p class="what_PI_have">
+                  <i class="fas fa-check"></i>
+                  پنل مدیریت محتوی
+              </p>
+              <p class="what_PI_have">
+                  <i class="fas fa-check"></i>
+                  خلاقیت بی اندازه و چشم نواز
+              </p>
+              <p class="what_PI_have">
+                  <i class="fas fa-check"></i>
+                  بالا بردن کسب کار
+              </p>
+              <p class="what_PI_have">
+                  <i class="fas fa-check"></i>
+                  سئو رایگان
+              </p>
+              <p class="what_PI_have">
+                  <i class="fas fa-check"></i>
+                  بازاریابی تا پولدار شدن
+              </p>
+              <button class="btn">سفارش سایت</button>
+            </div>
+           </div>
+
+           <div class="swiper-slide">
+            <div class="price_info_field">
+              <p class="PI_header">شخصی</p>
+              <hr>
+              <p class="price_number">شروع از 2 میلیون </p>
+              <p>این وب سایت ها مناسب اشخاصی است که میخواهد خود را به جامعه مورد نظر معرفی کنند یا مناسب کسب کار های کوچک نیز می باشد .</p>
+              <hr>
+              <p class="what_PI_have">
+                  <i class="fas fa-check"></i>
+                  پنل مدیریت محتوی
+              </p>
+              <p class="what_PI_have">
+                  <i class="fas fa-check"></i>
+                  خلاقیت بی اندازه و چشم نواز
+              </p>
+              <p class="what_PI_have">
+                  <i class="fas fa-check"></i>
+                  بالا بردن کسب کار
+              </p>
+              <p class="what_PI_have">
+                  <i class="fas fa-check"></i>
+                  سئو رایگان
+              </p>
+              <p class="what_PI_have">
+                  <i class="fas fa-check"></i>
+                  بازاریابی تا پولدار شدن
+              </p>
+              <button class="btn">سفارش سایت</button>
+            </div>
+           </div>
+           
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
 </section>
 
 {/body}

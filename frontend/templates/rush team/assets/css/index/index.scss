@@ -184,13 +184,14 @@ $SSH:350px;
     img {
         width: 100%;
         height: 100%;
-        @include transition(linear , 0.2s , 0s)
+        @include transition(linear, 0.2s, 0s)
     }
 
     &:hover .WE_hover_field {
         opacity: 1;
     }
-    &:hover img{
+
+    &:hover img {
         @include transform(scale(1.1))
     }
 }
@@ -204,8 +205,9 @@ $SSH:350px;
     left: 0;
     opacity: 0;
     text-align: center;
-    @include transition(linear , 0.2s , 0s);
-    h3{
+    @include transition(linear, 0.2s, 0s);
+
+    h3 {
         color: white;
         text-align: center;
         margin-top: 80px;
@@ -214,7 +216,8 @@ $SSH:350px;
         width: 80%;
         margin-left: 10%;
     }
-    p{
+
+    p {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -224,17 +227,20 @@ $SSH:350px;
         color: white;
         font-size: 1.3rem;
     }
-    a{
+
+    a {
         color: white;
         font-weight: bold;
         font-size: 1.5rem;
         margin-top: 40px;
         height: 46px;
-        i{
-            @include transition(ease , 0.2s , 0s);
+
+        i {
+            @include transition(ease, 0.2s, 0s);
             color: white;
         }
-        div{
+
+        div {
             opacity: 0;
             position: relative;
             background-color: white;
@@ -244,19 +250,23 @@ $SSH:350px;
             color: black;
             border-radius: 50px;
             top: 0;
-            @include transition(ease , 0.3s , 0s);       
-            i{
+            @include transition(ease, 0.3s, 0s);
+
+            i {
                 color: black;
-            } 
+            }
         }
-        &:hover{
-            i{
+
+        &:hover {
+            i {
                 opacity: 0;
             }
-            div{
+
+            div {
                 opacity: 1;
                 top: -45px;
-                i{
+
+                i {
                     opacity: 1;
                 }
             }
@@ -266,12 +276,13 @@ $SSH:350px;
 
 // more work example
 
-.more_WE{
+.more_WE {
     height: 200px;
     width: 100%;
     overflow: hidden;
     position: relative;
-    .MWE_layer{
+
+    .MWE_layer {
         width: 100%;
         height: 100%;
         background-color: $LO_MC;
@@ -279,12 +290,14 @@ $SSH:350px;
         top: 0;
         z-index: 1;
     }
-    img{
+
+    img {
         width: 100%;
         position: relative;
         top: -100px;
     }
-    .MWE_info_layout{
+
+    .MWE_info_layout {
         position: absolute;
         top: 0;
         left: 0;
@@ -296,11 +309,13 @@ $SSH:350px;
         z-index: 2;
         line-height: 190px;
         padding-right: 40px;
-        p{
+
+        p {
             font-size: 2rem;
             font-weight: bold;
         }
-        a{
+
+        a {
             position: absolute;
             left: 40px;
             top: 80px;
@@ -315,7 +330,8 @@ $SSH:350px;
             line-height: 46px;
             padding-right: 15px;
             font-size: 1.2rem;
-            i{
+
+            i {
                 position: relative;
                 top: 2px;
                 right: 40px;
@@ -325,3 +341,48 @@ $SSH:350px;
 }
 
 // price part
+
+.price_packages {
+    text-align: right;
+    width: 100%;
+    padding: 0px 100px;
+    direction: rtl;
+
+    .price_info_field {
+        padding: 30px;
+        direction: rtl;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.11);
+        width: 90%;
+        margin-right: 5%;
+
+        .PI_header {
+            color: $main_color;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+        .price_number {
+            color: #333333;
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+
+        .what_PI_have {
+            i {
+                color: #62BE10;
+                margin-left: 10px;
+            }
+
+            p {
+                color: rgb(46, 46, 46);
+            }
+        }
+        button{
+            color: white;
+            background-color: $main_color;
+            border-radius: 50px;
+            width: 80%;
+            margin-right: 10%;
+        }
+    }
+}
