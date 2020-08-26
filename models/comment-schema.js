@@ -180,7 +180,7 @@ comment_schema.statics = {
         let _skip = page_number * page_limit - page_limit;
 
         result.rows_begin_number = _skip + 1;
-        let _list = await comment_model.find(query).populate('author').populate({path : 'reply_to', populate : {path : 'author'}});
+        let _list = await comment_model.find(query).populate('author').populate('response').populate({path : 'reply_to', populate : {path : 'author'}});
         let temp_list = []
 
         if(search_value){
