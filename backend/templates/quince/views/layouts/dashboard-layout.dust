@@ -253,7 +253,9 @@
 
                         </p>
                         <p class="contact_btn" id="contact_btn">تماس با ما
-
+                            {@ne key="{g_notification_contacts.count}" value="0"}
+                                <span>{g_notification_contacts.count}</span>
+                            {/ne}
                         </p>
                     </div>
                 </div>
@@ -276,7 +278,11 @@
                                         {@eq key="{author}" value="{null}"}
                                             {name}
                                         {:else}
-                                            {author.first_name} {author.last_name}
+                                            {@eq key="{author.author_type}" value="name"}
+                                                {author.first_name} {author.last_name}
+                                            {:else}
+                                                {author.nick_name}
+                                            {/eq}
                                         {/eq}
                                     </p>
                                     {@ne key="{reply_to}" value="{null}"}
@@ -285,7 +291,11 @@
                                             {@eq key="{reply_to.author}" value="{null}"}
                                                 {reply_to.name}
                                             {:else}
-                                                {reply_to.first_name} {reply_to.last_name}
+                                                {@eq key="{reply_to.author.author_type}" value="name"}
+                                                    {reply_to.author.first_name} {reply_to.author.last_name}
+                                                {:else}
+                                                    {reply_to.author.nick_name}
+                                                {/eq}
                                             {/eq}
                                         </p>
                                     {/ne}
@@ -302,7 +312,39 @@
 
                 </div>
                 <div class="NVI_main_field" id="contact_us">
-
+                    {@keyValue:g_notification_contacts.list}
+                        <div class="data_row">
+                            <p>{key}</p>
+                        </div>
+                        {#value}
+                            <a href="{backend_url}contacts/?id={_id}" class="nav_comment_info">
+                                <div class="CI_image">
+                                    {@eq key="{author}" value="{null}"}
+                                        <img src="img/default-profile-picture.png" alt="">
+                                    {:else}
+                                        <img src="media/avatars/{author.avatar}" alt="">
+                                    {/eq}
+                                </div>
+                                <div class="CI_name">
+                                    <p class="d-inline-block">
+                                        {@eq key="{author}" value="{null}"}
+                                            {name}
+                                        {:else}
+                                            {@eq key="{author.author_type}" value="name"}
+                                                {author.first_name} {author.last_name}
+                                            {:else}
+                                                {author.nick_name}
+                                            {/eq}
+                                        {/eq}
+                                    </p>
+                                    <p><span>خلاصه پیام : </span>{text}</p>
+                                </div>
+                                <div class="CI_see_info">
+                                    <i class="far fa-angle-left"></i>
+                                </div>
+                            </a>
+                        {/value}
+                    {/keyValue}
                 </div>
             </div>
             <div class="nav_icon_field nav_modal_data">

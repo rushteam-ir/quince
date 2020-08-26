@@ -54,7 +54,7 @@ router.post('/', async(req,res)=>{
 
         }
 
-        // transporter.sendMail(mail_options, async function(error, info){
+        // await transporter.sendMail(mail_options, async function(error, info){
         //
         //     if (error) {
         //

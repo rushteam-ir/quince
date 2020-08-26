@@ -87,6 +87,34 @@ contact_schema.statics = {
 
     },
 
+    getNotifications : async function(){
+
+        let find_contacts = await contact_model.find({read : false}).sort({date : -1}).populate('author');
+        let result = {};
+        let notification_list = {};
+
+        for(let contact of find_contacts){
+
+            if(notification_list.hasOwnProperty(contact.date)){
+
+                notification_list[contact.date].push(contact);
+
+            }
+            else{
+
+                notification_list[contact.date] = [contact];
+
+            }
+
+        }
+
+        result.list = notification_list;
+        result.count = find_contacts.length;
+
+        return result;
+
+    }
+
 
 };
 

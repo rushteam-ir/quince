@@ -8,6 +8,7 @@ router.get('/', async(req, res, next)=>{
 
             let search_inp = req.query.search;
             let author_inp = req.query.author;
+            let id_inp = req.query.id;
             let query = null;
 
             if(!isUndefined(search_inp)){
@@ -18,6 +19,10 @@ router.get('/', async(req, res, next)=>{
             else if(!isUndefined(author_inp)){
                 data.pagination_url = `/?author=${author_inp}`;
                 query = {author : author_inp};
+            }
+            else if(!isUndefined(id_inp)){
+                data.pagination_url = `/?id=${id_inp}`;
+                query = {_id : id_inp};
             }
 
             let contacts_list = await contact_model.search(query, search_inp ? search_inp : null, page_number, page_limit);

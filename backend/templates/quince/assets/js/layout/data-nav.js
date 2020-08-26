@@ -28,8 +28,10 @@ $('#comment_btn').click(function(){
 
     $('#article_comment').css('display' , 'block');
     $('#shop_comment').css('display' , 'none');
+    $('#contact_us').css('display' , 'none');
     $('#comment_btn').addClass('active_border');
     $('#shop_btn').removeClass('active_border');
+    $('#contact_btn').removeClass('active_border');
 
 });
 
@@ -37,18 +39,24 @@ $('#shop_btn').click(function(){
 
     $('#article_comment').css('display' , 'none');
     $('#shop_comment').css('display' , 'block');
+    $('#contact_us').css('display' , 'none');
     $('#shop_btn').addClass('active_border');
     $('#comment_btn').removeClass('active_border');
+    $('#contact_btn').removeClass('active_border');
     $('#comment_btn').removeClass('comment_btn');
+    $('#contact_btn').removeClass('contact_btn');
 
 });
 
 $('#contact_btn').click(function(){
 
     $('#article_comment').css('display' , 'none');
-    $('#shop_comment').css('display' , 'block');
-    $('#shop_btn').addClass('active_border');
+    $('#shop_comment').css('display' , 'none');
+    $('#contact_us').css('display' , 'block');
+    $('#contact_btn').addClass('active_border');
     $('#comment_btn').removeClass('active_border');
+    $('#shop_btn').removeClass('active_border');
     $('#comment_btn').removeClass('comment_btn');
+    $('#contact_btn').removeClass('contact_btn');
 
 });
