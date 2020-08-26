@@ -1,0 +1,245 @@
+.header .top_box_of_nav_bar {
+  background-color: #fff;
+  padding: 15px 0px;
+  border-bottom: 1px solid #d6d6d6;
+  height: 110px;
+}
+.header .top_box_of_nav_bar .right_box .logo_of_header {
+  width: 18%;
+}
+.header .top_box_of_nav_bar .right_box .name_of_web_site {
+  font-family: accent-font;
+  font-size: 2.2rem;
+}
+.header .top_box_of_nav_bar .right_box .name_of_web_site span {
+  color: #FF6B6B;
+}
+.header .top_box_of_nav_bar .left_box .form {
+  margin-top: 22px;
+}
+.header .top_box_of_nav_bar .left_box .form .search_box {
+  border-radius: 0px 5px 5px 0px;
+}
+.header .top_box_of_nav_bar .left_box .form .search_box:focus {
+  box-shadow: none;
+  border: 1px solid #ced4da;
+}
+.header .top_box_of_nav_bar .left_box .form .input-group-text {
+  border-radius: 5px 0px 0px 5px;
+  background-color: #FF6B6B;
+}
+.header .top_box_of_nav_bar .left_box .form .input-group-text .fa-search {
+  color: #fff;
+}
+.header .bottom_box_of_nav_bar {
+  background-color: white;
+  box-shadow: 0px 10px 20px -20px #2b2b2b;
+}
+.header .bottom_box_of_nav_bar .nav_bar_box .nav_bar .nav_bar_ul {
+  list-style-type: none;
+  font-family: second-font;
+}
+.header .bottom_box_of_nav_bar .nav_bar_box .nav_bar .nav_bar_ul .nav_bar_item {
+  display: inline-block;
+  padding-right: 20px;
+}
+.header .bottom_box_of_nav_bar .nav_bar_box .nav_bar .nav_bar_ul .nav_bar_item .nav_link {
+  color: #4e4e4e;
+}
+.header .bottom_box_of_nav_bar .nav_bar_box .nav_bar .nav_bar_ul .nav_bar_item .nav_link:hover {
+  color: #FF6B6B;
+  border-bottom: 2px solid #FF6B6B;
+  font-weight: bold;
+}
+.header .bottom_box_of_nav_bar .nav_bar_box .nav_bar .nav_bar_ul .nav_bar_item .active_item {
+  color: #FF6B6B;
+  border-bottom: 2px solid #FF6B6B;
+  font-weight: bold;
+}
+.header .bottom_box_of_nav_bar .nav_bar_box .nav_bar .nav_bar_ul .nav_bar_item .special_item {
+  background-color: #FF6B6B;
+  padding: 5px 20px;
+  border-radius: 20px;
+  color: #fff;
+  height: 37px;
+  display: inline-block;
+}
+.header .bottom_box_of_nav_bar .nav_bar_box .nav_bar .nav_bar_ul .nav_bar_item .special_item:hover {
+  color: #fff;
+}
+.header .bottom_box_of_nav_bar .nav_bar_box .nav_bar .nav_btn_responsive {
+  border: none;
+  background-color: transparent;
+  display: none;
+}
+.header .bottom_box_of_nav_bar .nav_bar_box .nav_bar .nav_btn_responsive .fa-bars {
+  font-size: 1.5rem;
+  color: #4e4e4e;
+}
+.header .bottom_box_of_nav_bar .cart_and_sign_box .card_box {
+  background-color: transparent;
+  border: none;
+  color: #FF6B6B;
+}
+.header .bottom_box_of_nav_bar .cart_and_sign_box .card_box .card_name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: second-font;
+}
+.header .bottom_box_of_nav_bar .cart_and_sign_box .card_box .badge_card {
+  background-color: #FF6B6B;
+  color: #fff;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  line-height: 20px;
+  position: relative;
+  display: inline-block;
+  font-size: 0.7rem;
+  border: 2px solid white;
+  top: -15px;
+  left: -7px;
+}
+.header .bottom_box_of_nav_bar .cart_and_sign_box .card_box .fa-shopping-cart {
+  font-size: 1.2rem;
+}
+.header .bottom_box_of_nav_bar .cart_and_sign_box .sign_box .sign_btn {
+  background-color: transparent;
+  border: none;
+  border-right: 1px solid #a5a5a5;
+  font-family: second-font;
+}
+.header .layer_of_nav {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.42);
+  position: absolute;
+  top: 0;
+  z-index: 100;
+}
+.header .layer_of_nav .nav_bar_responsive {
+  width: 350px;
+  background-color: #fff;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+}
+.header .layer_of_nav .nav_bar_responsive .header_of_responsive_nav_bar .title_of_page {
+  font-size: 1.5rem;
+  font-family: accent-font;
+  margin-right: 50px;
+}
+.header .layer_of_nav .nav_bar_responsive .header_of_responsive_nav_bar .title_of_page span {
+  color: #FF6B6B;
+}
+.header .layer_of_nav .nav_bar_responsive .header_of_responsive_nav_bar .btn_close {
+  border: none;
+  background-color: transparent;
+}
+.header .layer_of_nav .nav_bar_responsive .header_of_responsive_nav_bar .btn_close .fa-times {
+  margin-right: 120px;
+  font-size: 1.5rem;
+  position: relative;
+  top: 5px;
+}
+.header .layer_of_nav .nav_bar_responsive .nav_bar_ul_responsive {
+  margin-right: 50px;
+  list-style-type: none;
+}
+.header .layer_of_nav .nav_bar_responsive .nav_bar_ul_responsive .nav_bar_item_responsive .nav_link_responsive {
+  color: black;
+}
+
+.footer {
+  width: 100%;
+  background-color: #262626;
+  padding: 100px 0px 10px;
+}
+.footer .exp_of_page {
+  color: #adadad;
+}
+.footer .exp_of_page .logo_of_footer {
+  width: 23%;
+}
+.footer .exp_of_page .title_of_footer {
+  font-family: accent-font;
+  font-size: 2rem;
+}
+.footer .exp_of_page .title_of_footer span {
+  color: #FF6B6B;
+}
+.footer .exp_of_page .text_of_exp, .footer .exp_of_page .contact_footer {
+  font-size: 0.9rem;
+  font-family: second-font;
+  margin-top: 15px;
+  text-align: justify;
+  width: 80%;
+}
+.footer .exp_of_page .hr_style {
+  width: 100px;
+  height: 2px;
+  background-color: #FF6B6B;
+}
+.footer .info_footer {
+  direction: rtl;
+  color: #adadad;
+}
+.footer .info_footer .style_of_header_footer {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+}
+.footer .info_footer .hr_style {
+  width: 100px;
+  height: 2px;
+  background-color: #FF6B6B;
+}
+.footer .info_footer .list_of_info_footer {
+  list-style-type: none;
+  padding-right: 0px !important;
+  font-size: 0.9rem;
+  font-family: second-font;
+}
+.footer .info_footer .list_of_info_footer .link_list {
+  color: #adadad;
+}
+.footer .info_footer .list_of_info_footer .link_list:hover {
+  color: #FF6B6B;
+  font-weight: 600;
+}
+.footer .info_footer .contact_info_footer {
+  font-size: 0.9rem;
+  font-family: second-font;
+  text-align: justify;
+}
+.footer .info_footer .btn_social_instagram {
+  padding: 15px 50px;
+  border-radius: 30px;
+  border: none;
+  background-color: #FF6B6B;
+  color: white;
+  font-size: 0.8rem;
+}
+.footer .electronic_logo {
+  width: 40%;
+}
+.footer .right_box .title_of_best_p {
+  color: white;
+  font-size: 1.2rem;
+}
+.footer .right_box .exp_e_footer {
+  color: #adadad;
+  font-size: 0.9rem;
+  direction: rtl;
+  font-family: second-font;
+}
+.footer .hr_footer {
+  background-color: #adadad;
+}
+.footer .copyright {
+  color: #adadad;
+}
+
+/*# sourceMappingURL=layouts.css.map */

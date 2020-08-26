@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="fa">
+<head>
+    <base href="{frontend_url}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/general/bootstrap.css">
+    <link rel="stylesheet" href="css/general/fontAwsome.css">
+    <link rel="stylesheet" href="css/general/Swiper.css">
+    <link rel="stylesheet" href="css/general/main_css/main_css.css">
+    <link rel="stylesheet" href="css/layouts/layouts.css">
+    <link rel="stylesheet" href="css/layouts/responsive.css">
+
+    {+css/}
+    {+title/}
+
+</head>
+<body>
+<div class="header dir_rtl">
+    <nav class="top_box_of_nav_bar">
+        <div class="container-md container-fluid">
+            <div class="row ">
+                <div class="col-6 text-right">
+                    <div class="right_box">
+                        <img src="../../img/logo_bg_white.jpg" class="logo_of_header" alt="فروشگاه ملورین">
+                        <h1 class="name_of_web_site d-inline-block mr-1 mr-sm-2 mr-lg-3">فروشگاه <span>ملورین</span>
+                        </h1>
+                    </div>
+
+                </div>
+                <div class="col-6">
+                    <div class="left_box">
+                        <form class="form">
+                            <div class="input-group mb-2">
+                                <input class="form-control mr-sm-2 search_box" type="search" placeholder="جستجو کنید..."
+                                       aria-label="Search">
+                                <div class="input-group-prepend">
+                                    <button class="input-group-text">
+                                        <i class="far fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="bottom_box_of_nav_bar pt-4">
+        <div class="container-md container-fluid">
+            <div class="row ">
+                <div class="col-4 col-lg-8">
+                    <nav class="nav_bar_box dir_rtl text-right">
+                        <div class="nav_bar">
+
+                            <button class="nav_btn_responsive">
+                                <i class="fal fa-bars"></i>
+                            </button>
+
+                            <ul class="nav_bar_ul pr-0 mb-0">
+                                <li class="nav_bar_item  pb-lg-4">
+                                    <a class="nav_link active_item  pb-4" href="#">صفحه اصلی</a>
+                                </li>
+                                <li class="nav_bar_item">
+                                    <a class="nav_link pb-lg-4" href="#">محصولات</a>
+                                </li>
+                                <li class="nav_bar_item">
+                                    <a class="nav_link pb-lg-4" href="#">مقاله ها</a>
+                                </li>
+                                <li class="nav_bar_item">
+                                    <a class="nav_link pb-lg-4" href="#">درباره ما</a>
+                                </li>
+                                <li class="nav_bar_item">
+                                    <a class="nav_link pb-lg-4" href="#">پشتیبانی</a>
+                                </li>
+                                <li class="nav_bar_item ">
+                                    <a class="nav_link special_item" href="#">پیشنهادهای ویژه</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-8 col-lg-4 text-left">
+                    <div class="cart_and_sign_box d-inline-block">
+                        <button class="card_box">
+                            <div class="badge_card">2</div>
+                            <i class="fas fa-shopping-cart"></i>
+                            <p class="card_name d-inline-block">سبد خرید</p>
+                        </button>
+                        <div class="sign_box d-inline-block">
+                            <button class="sign_btn">
+                                ورود/ عضویت
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <div class="layer_of_nav">
+        <div class="nav_bar_responsive text-right py-3">
+            <div class="header_of_responsive_nav_bar">
+                <h2 class="title_of_page d-inline-block">
+                    فروشگاه <span>ملورین</span>
+                </h2>
+                <button class="btn_close">
+                    <i class="fal fa-times d-inline-block text-left"></i>
+                </button>
+            </div>
+            <hr>
+            <ul class="nav_bar_ul_responsive pr-0 mb-0">
+                <li class="nav_bar_item_responsive mb-3">
+                    <a class="nav_link_responsive active_item" href="#">صفحه اصلی</a>
+                </li>
+                <li class="nav_bar_item_responsive mb-3">
+                    <a class="nav_link_responsive" href="#">محصولات</a>
+                </li>
+                <li class="nav_bar_item_responsive mb-3">
+                    <a class="nav_link_responsive" href="#">مقاله ها</a>
+                </li>
+                <li class="nav_bar_item_responsive mb-3">
+                    <a class="nav_link_responsive" href="#">درباره ما</a>
+                </li>
+                <li class="nav_bar_item_responsive mb-3">
+                    <a class="nav_link_responsive" href="#">پشتیبانی</a>
+                </li>
+                <li class="nav_bar_item_responsive mb-3">
+                    <a class="nav_link_responsive special_item" href="#">پیشنهادهای ویژه</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+
+    {+body/}
+
+<footer class="footer text-right ">
+    <div class="container">
+        <div class="row">
+            <div class="col-10 col-md-6 col-lg-3 offset-1 offset-md-0 offset-lg-0 order-lg-0 order-md-2 order-3 mt-md-5 mt-lg-0 mt-4">
+                <div class="info_footer">
+                    <h3 class="style_of_header_footer">با ما در ارتباط باشید</h3>
+                    <div class="hr_style"></div>
+                    <p class="contact_info_footer mt-3">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </p>
+                    <button class="btn_social_instagram mt-5">
+                        در اینستاگرام ما عضو شوید
+                    </button>
+                </div>
+            </div>
+            <div class="col-10 col-md-6 col-lg-2 offset-1 offset-md-0 offset-lg-0 order-lg-1 order-md-3 order-2 mt-md-5  mt-lg-0  mt-4">
+                <div class="info_footer">
+                    <h3 class="style_of_header_footer">دسترسی سریع</h3>
+                    <div class="hr_style"></div>
+                    <ul class="list_of_info_footer">
+                        <li class="list_item mt-3">
+                            <a href="" class="link_list">
+                                صفحه اصلی
+                            </a>
+                        </li>
+                        <li class="list_item mt-3">
+                            <a href="" class="link_list">
+                                دسته بندی محصولات
+                            </a>
+                        </li>
+                        <li class="list_item mt-3">
+                            <a href="" class="link_list">
+                                دسته بندی جوراب ها
+                            </a>
+                        </li>
+                        <li class="list_item mt-3">
+                            <a href="" class="link_list">
+                                دسته بندی لباس زیر
+                            </a>
+                        </li>
+                        <li class="list_item mt-3">
+                            <a href="" class="link_list">
+                                پشتیبانی
+                            </a>
+                        </li>
+                        <li class="list_item mt-3">
+                            <a href="" class="link_list">
+                                مقاله ها
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class=" col-10 col-md-6 col-lg-2 offset-1 offset-md-0 offset-lg-0 order-lg-2 order-md-0 order-1 mt-lg-0 mt-md-0 mt-5">
+                <div class="info_footer">
+                    <h3 class="style_of_header_footer">سوالات متداول</h3>
+                    <div class="hr_style"></div>
+                    <ul class="list_of_info_footer">
+                        <li class="list_item mt-3">
+                            <a href="" class="link_list">
+                                شرایط ارسال چطوره؟
+                            </a>
+                        </li>
+                        <li class="list_item mt-3">
+                            <a href="" class="link_list">
+                                چرا به شما اعتماد کنم؟
+                            </a>
+                        </li>
+                        <li class="list_item mt-3">
+                            <a href="" class="link_list">
+                                ضمانت چه شرایطی دارد؟
+                            </a>
+                        </li>
+                        <li class="list_item mt-3">
+                            <a href="" class="link_list">
+                                ایا امکان مرجوعی وجود دارد؟
+                            </a>
+                        </li>
+                        <li class="list_item mt-3">
+                            <a href="" class="link_list">
+                                چطوری سلام کنم دلام نشه؟
+                            </a>
+                        </li>
+                        <li class="list_item mt-3">
+                            <a href="" class="link_list">
+                                چطوری سلام کنم دلام نشه؟
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-10 col-md-6 col-lg-5 offset-1 offset-md-0 offset-lg-0 order-lg-3  order-md-1 order-0">
+                <div class="exp_of_page dir_rtl">
+                    <img src="../../img/logo_bg_black.jpg" alt="فروشگاه ملورین" title="فروشگاه ملورین"
+                         class="logo_of_footer">
+                    <h2 class="title_of_footer d-inline-block mr-lg-3">فروشگاه <span>ملورین</span>
+                    </h2>
+                    <p class="text_of_exp">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                        مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                    </p>
+                    <div class="hr_style"></div>
+                    <p class="contact_footer">
+                        شماره تماس : 02144303785
+                        <br>
+
+                        ایمیل : melorin@gmail.com
+
+                        <br>
+                        ادرس:خیابان حافظ بالاتر از سخایی
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-10 col-md-6 col-lg-4 offset-1 offset-md-0 offset-lg-0  mt-lg-0 mt-md-0 mt-5 text-center ">
+                <img src="../../img/enamad.png" alt="نماد الکترونیکی" title="نماد الکترونیکی"
+                     class="electronic_logo">
+            </div>
+            <div class="col-10 col-md-6 col-lg-8  offset-1 offset-md-0 offset-lg-0 mt-lg-0 mt-md-0 mt-5">
+                <div class="right_box">
+                    <h3 class="title_of_best_p">بهترین کیفیت را از ما بخواهید</h3>
+                    <p class="exp_e_footer">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                        طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
+                        شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                </div>
+            </div>
+        </div>
+        <hr class="hr_footer">
+        <p class="text-center copyright dir_rtl">تمام حقوق مادی و معنوی این سایت متعلق به فروشگاه ملورین می باشد. </p>
+    </div>
+
+</footer>
+
+<script src="js/general/jquery.js"></script>
+<script src="js/general/popper.js"></script>
+<script src="js/general/bootstrap.js"></script>
+<script src="js/general/Swiper.js"></script>
+<script src="js/layouts/layouts.js"></script>
+
+
+</body>
+</html>

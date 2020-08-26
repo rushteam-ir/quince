@@ -1,0 +1,12 @@
+{>"layouts/layout"/}
+
+{<title}
+    <title>ملورین</title>
+{/title}
+{<css}
+{/css}
+{<js}
+{/js}
+
+{<body}
+{/body}

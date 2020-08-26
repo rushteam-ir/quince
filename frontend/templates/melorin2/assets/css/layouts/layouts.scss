@@ -1,0 +1,333 @@
+@import "../partials/main -colors";
+@import "../partials/mixin";
+
+.header {
+
+  .top_box_of_nav_bar {
+    background-color: $white;
+    padding: 15px 0px;
+    border-bottom: 1px solid $l-gray;
+    height: 110px;
+
+    .right_box {
+
+      .logo_of_header {
+        width: 18%;
+      }
+
+      .name_of_web_site {
+        font-family: accent-font;
+        font-size: 2.2rem;
+
+        span {
+          color: $l_red;
+        }
+      }
+    }
+
+    .left_box {
+
+      .form {
+
+        margin-top: 22px;
+
+        .search_box {
+          border-radius: 0px 5px 5px 0px;
+
+          &:focus {
+            box-shadow: none;
+            border: 1px solid #ced4da;
+          }
+        }
+
+        .input-group-text {
+          border-radius: 5px 0px 0px 5px;
+          background-color: $l_red;
+
+          .fa-search {
+            color: $white;
+          }
+        }
+
+      }
+    }
+
+  }
+
+  .bottom_box_of_nav_bar {
+    background-color: white;
+    box-shadow: 0px 10px 20px -20px #2b2b2b;
+
+    .nav_bar_box {
+      .nav_bar {
+        .nav_bar_ul {
+          list-style-type: none;
+          font-family: second-font;
+
+          .nav_bar_item {
+            display: inline-block;
+            padding-right: 20px;
+
+            .nav_link {
+              color: $l-black;
+
+              &:hover {
+                color: $l_red;
+                border-bottom: 2px solid $l_red;
+                font-weight: bold;
+              }
+            }
+
+
+            .active_item {
+              color: $l_red;
+              border-bottom: 2px solid $l_red;
+              font-weight: bold;
+            }
+
+            .special_item {
+              background-color: $l_red;
+              padding: 5px 20px;
+              border-radius: 20px;
+              color: $white;
+              height: 37px;
+              display: inline-block;
+
+              &:hover {
+                color: $white;
+              }
+            }
+          }
+
+
+        }
+
+        .nav_btn_responsive {
+          border: none;
+          background-color: transparent;
+          display: none;
+
+          .fa-bars {
+            font-size: 1.5rem;
+            color: $l_black;
+          }
+        }
+      }
+    }
+
+    .cart_and_sign_box {
+      .card_box {
+        background-color: transparent;
+        border: none;
+        color: $l_red;
+
+        .card_name {
+          font-size: 1.2rem;
+          font-weight: bold;
+          font-family: second-font;
+        }
+
+        .badge_card {
+          background-color: $l_red;
+          color: $white;
+          border-radius: 50%;
+          width: 22px;
+          height: 22px;
+          text-align: center;
+          line-height: 20px;
+          position: relative;
+          display: inline-block;
+          font-size: .7rem;
+          border: 2px solid white;
+          top: -15px;
+          left: -7px;
+        }
+
+        .fa-shopping-cart {
+          font-size: 1.2rem;
+        }
+      }
+
+      .sign_box {
+        .sign_btn {
+          background-color: transparent;
+          border: none;
+          border-right: 1px solid #a5a5a5;
+          font-family: second-font;
+        }
+      }
+    }
+
+  }
+
+  .layer_of_nav {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.42);
+    position: absolute;
+    top: 0;
+    z-index: 100;
+
+    .nav_bar_responsive {
+      width: 350px;
+      background-color: $white;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+
+      .header_of_responsive_nav_bar {
+        .title_of_page {
+          font-size: 1.5rem;
+          font-family: accent-font;
+          margin-right: 50px;
+
+          span {
+            color: $l_red;
+
+          }
+        }
+
+        .btn_close {
+          border: none;
+          background-color: transparent;
+
+          .fa-times {
+            margin-right: 120px;
+            font-size: 1.5rem;
+            position: relative;
+            top: 5px;
+          }
+        }
+
+      }
+
+      .nav_bar_ul_responsive {
+        margin-right: 50px;
+        list-style-type: none;
+
+        .nav_bar_item_responsive {
+
+          .nav_link_responsive {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+.footer {
+  width: 100%;
+  background-color: $d_gray;
+  padding: 100px 0px 10px;
+
+  .exp_of_page {
+    color: #adadad;
+
+    .logo_of_footer {
+      width: 23%;
+    }
+
+    .title_of_footer {
+      font-family: accent-font;
+      font-size: 2rem;
+
+      span {
+        color: $l_red;
+      }
+    }
+
+    .text_of_exp , .contact_footer{
+      font-size: 0.9rem;
+      font-family: second-font;
+      margin-top: 15px;
+      text-align: justify;
+      width: 80%;
+    }
+
+    .hr_style{
+      width: 100px;
+      height: 2px;
+      background-color: $l_red;
+    }
+
+
+  }
+
+  .info_footer{
+    direction: rtl;
+    color: #adadad;
+
+    .style_of_header_footer{
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: $white;
+    }
+
+    .hr_style{
+      width: 100px;
+      height: 2px;
+      background-color: $l_red;
+    }
+
+    .list_of_info_footer{
+      list-style-type: none;
+      padding-right: 0px!important;
+      font-size: 0.9rem;
+      font-family: second-font;
+
+      .link_list{
+        color:#adadad;
+        &:hover{
+          color: $l_red;
+          font-weight: 600;
+        }
+      }
+
+    }
+
+    .contact_info_footer{
+      font-size: 0.9rem;
+      font-family: second-font;
+      text-align: justify;
+    }
+
+    .btn_social_instagram{
+     padding: 15px 50px;
+      border-radius: 30px;
+      border: none;
+      background-color: $l_red;
+      color: white;
+    font-size: .8rem;
+    }
+  }
+
+  .electronic_logo{
+    width: 40%;
+
+  }
+
+  .right_box{
+    .title_of_best_p{
+      color: white;
+      font-size: 1.2rem;
+    }
+    .exp_e_footer{
+      color: #adadad;
+      font-size: 0.9rem;
+      direction: rtl;
+      font-family: second-font;
+    }
+  }
+
+  .hr_footer{
+    background-color:#adadad ;
+  }
+
+  .copyright{
+    color:#adadad ;
+  }
+}
