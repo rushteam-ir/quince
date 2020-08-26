@@ -44,7 +44,7 @@ $header_height :80vh;
         width: 150px;
         border-radius: 100PX;
         color: white;
-        border: 2px solid $d_gold;
+        border: 2px solid $main_color;
     }
 }
 
@@ -52,7 +52,7 @@ $header_height :80vh;
     width: 10%;
 
     i {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         color: #BBBBBB;
         position: relative;
         top: -80px;
@@ -66,10 +66,11 @@ $header_height :80vh;
 
     h3 {
         color: rgb(88, 88, 88);
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 }
 
+// service part
 $SSH:350px;
 
 .service_sec {
@@ -97,16 +98,19 @@ $SSH:350px;
 }
 
 .field_of_SP {
-    height: 250px;
+    height: 200px;
     border-right: 1px solid #e4e4e4;
-    padding: 55px 55px 35px 35px;
+    padding: 40px 55px 35px 35px;
 }
 
+
+// part3
 .RT_meet_section {
     width: 100%;
     background-color: #F9F9F9;
     padding: 120px 100px;
-    margin-top: 70px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .see_RT_part {
@@ -128,9 +132,10 @@ $SSH:350px;
         color: #929292;
         font-size: 0.9rem;
         line-height: 25px;
+        text-align: justify;
     }
 
-    button {    
+    button {
         background-color: #E8E8E8;
         color: #505050;
         width: 170px;
@@ -138,11 +143,185 @@ $SSH:350px;
         font-weight: bold;
         font-size: 0.8rem;
         height: 40px;
+
+        i {}
     }
 }
 
-.see_RT_part_img{
+.see_RT_part_img {
     width: 100%;
     position: absolute;
     top: -200px;
+    left: 30px;
 }
+
+// work example
+
+
+.header_WE {
+    width: 100%;
+    text-align: center;
+    direction: rtl;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    p {
+        color: rgb(150, 150, 150);
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        color: rgb(70, 70, 70);
+        font-size: 2rem;
+        font-family: $MF;
+    }
+}
+
+.WE_main_field {
+    height: 320px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        @include transition(linear , 0.2s , 0s)
+    }
+
+    &:hover .WE_hover_field {
+        opacity: 1;
+    }
+    &:hover img{
+        @include transform(scale(1.1))
+    }
+}
+
+.WE_hover_field {
+    width: 100%;
+    height: 100%;
+    background-color: $LO_MC;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    text-align: center;
+    @include transition(linear , 0.2s , 0s);
+    h3{
+        color: white;
+        text-align: center;
+        margin-top: 80px;
+        font-weight: bold;
+        font-size: 2rem;
+        width: 80%;
+        margin-left: 10%;
+    }
+    p{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 200px;
+        margin: 0 auto;
+        direction: rtl;
+        color: white;
+        font-size: 1.3rem;
+    }
+    a{
+        color: white;
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-top: 40px;
+        height: 46px;
+        i{
+            @include transition(ease , 0.2s , 0s);
+            color: white;
+        }
+        div{
+            opacity: 0;
+            position: relative;
+            background-color: white;
+            width: 45px;
+            height: 45px;
+            line-height: 50px;
+            color: black;
+            border-radius: 50px;
+            top: 0;
+            @include transition(ease , 0.3s , 0s);       
+            i{
+                color: black;
+            } 
+        }
+        &:hover{
+            i{
+                opacity: 0;
+            }
+            div{
+                opacity: 1;
+                top: -45px;
+                i{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+// more work example
+
+.more_WE{
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    .MWE_layer{
+        width: 100%;
+        height: 100%;
+        background-color: $LO_MC;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+    img{
+        width: 100%;
+        position: relative;
+        top: -100px;
+    }
+    .MWE_info_layout{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        color: white;
+        text-align: right;
+        direction: rtl;
+        z-index: 2;
+        line-height: 190px;
+        padding-right: 40px;
+        p{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        a{
+            position: absolute;
+            left: 40px;
+            top: 80px;
+            background-color: transparent;
+            border-radius: 50px;
+            border: 3px solid white;
+            color: white;
+            z-index: 2;
+            width: 190px;
+            height: 50px;
+            font-weight: bold;
+            line-height: 46px;
+            padding-right: 15px;
+            font-size: 1.2rem;
+            i{
+                position: relative;
+                top: 2px;
+                right: 40px;
+            }
+        }
+    }
+}
+
+// price part

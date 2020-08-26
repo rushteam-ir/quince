@@ -55,7 +55,7 @@
                         <p>ریسپاسنیو تمام صفحات وب حتی از اون صفحاتی که اریا داره ششسی ش شسیش ت خ اشمنتسی شسیت نتم اغهتنمئ</p>
                     </div>
                     <div class="d-inline-block first_service_part">
-                        <i class="fal fa-acorn"></i>
+                        <i class="fal fa-acorn test1"></i>
                     </div>
                 </div>
             </div>
@@ -74,6 +74,7 @@
         </div>
     </div>
 </section>
+
 <section class="RT_meet_section">
     <div class="container-flid">
         <div class="row">
@@ -91,4 +92,93 @@
         </div>
     </div>
 </section>
+
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="header_WE">
+                <p>کلیک کنید</p>
+                <h3>نمونه کار ها</h3>
+            </div>
+            <div class="col-3 p-0">
+                <div class="WE_main_field">
+                    <img src="img/WE1.png" alt="">
+                    <div class="WE_hover_field">
+                        <h3>وب سایت ملورین</h3>
+                        <p>
+                            طراحی سایت ، طراحی ui 
+                        </p>
+                        <a class="btn">
+                            <i class="fal fa-search"></i>
+                                <div>
+                                    <i class="fal fa-search"></i>
+                                </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 p-0">
+                <div class="WE_main_field">
+                    <img src="img/WE2.png" alt="">
+                    <div class="WE_hover_field">
+                        <h3>وب سایت ملورین</h3>
+                        <p>
+                            طراحی سایت ، طراحی ui 
+                        </p>
+                        <a class="btn">
+                            <i class="fal fa-search"></i>
+                                <div>
+                                    <i class="fal fa-search"></i>
+                                </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 p-0">
+                <div class="WE_main_field">
+                    <img src="img/WE3.png" alt="">
+                    <div class="WE_hover_field">
+                        <h3>وب سایت ملورین</h3>
+                        <p>
+                            طراحی سایت ، طراحی ui 
+                        </p>
+                        <a class="btn">
+                            <i class="fal fa-search"></i>
+                                <div>
+                                    <i class="fal fa-search"></i>
+                                </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 p-0">
+                <div class="WE_main_field">
+                    <img src="img/WE4.png" alt="">
+                    <div class="WE_hover_field">
+                        <h3>وب سایت ملورین</h3>
+                        <p>
+                            طراحی سایت ، طراحی ui 
+                        </p>
+                        <a class="btn">
+                            <i class="fal fa-search"></i>
+                                <div>
+                                    <i class="fal fa-search"></i>
+                                </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="more_WE">
+    <div class="MWE_layer"></div>
+    <img src="img/test1.jpg" alt="">
+    <div class="MWE_info_layout">
+        <p>برای مشاهده نمونه کار های بیشتر ب روی دکمه روبرو کلیک کنید </p>
+        <a href="">نمونه کار ها <i class="fas fa-angle-left"></i></a>
+    </div>
+</section>
+
 {/body}
