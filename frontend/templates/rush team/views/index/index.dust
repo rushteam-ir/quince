@@ -9,10 +9,13 @@
 {<css}
     <link rel="stylesheet" href="css/index/index.css">
     <link rel="stylesheet" href="css/general/Swiper.css">
+    <link rel="stylesheet" href="css/general/animate.css">
 {/css}
 
 {<js}
-<script src="js/general/Swiper.js"></script>
+    <script src="js/general/Swiper.js"></script>
+    <script src="js/general/wow.min.js"></script>
+    <script src="js/general/type.min.js"></script>
     <script src="js/index/index.js"></script>
 {/js}
 
@@ -23,11 +26,11 @@
             <div class="row align-items-center HCR">
                 <div class="col-8 offset-2">
                     <div class="header_info">
-                        <i class="fal fa-anchor"></i>
-                        <h2>جذابیت و خلاقیت</h2>
-                        <h1>تجربه شگفت انگیز همراه با تیم خبره راش تیم</h1>
-                        <p>بهتریم تجربه را در کنار تیم نوب سگ راش تیم را داشته باشید و زندگی کنید با ما زندگیتون از این رو به اون رو مشه عزیزم پس بهتره بیای سفارش بدی چون میتونی . شسی شسی شسیشس یشسی شسیید شبهعب خشخخ شسیتش سیشت سهیا</p>
-                        <button class="btn">درباره ما </button>
+                        <i class="fal fa-anchor wow fadeInDown"></i>
+                        <h2 class="wow fadeInDown" data-wow-delay="0.2s">جذابیت و خلاقیت</h2>
+                        <h1 class="wow fadeInDown" data-wow-delay="0.6s">تجربه شگفت انگیز همراه با تیم خبره راش تیم</h1>
+                        <p class="wow fadeInDown" data-wow-delay="0.9s">بهتریم تجربه را در کنار تیم نوب سگ راش تیم را داشته باشید و زندگی کنید با ما زندگیتون از این رو به اون رو مشه عزیزم پس بهتره بیای سفارش بدی چون میتونی . شسی شسی شسیشس یشسی شسیید شبهعب خشخخ شسیتش سیشت سهیا</p>
+                        <button class="btn wow fadeInDown" data-wow-delay="1.3s">درباره ما </button>
                     </div> 
                 </div>
             </div>
@@ -40,36 +43,36 @@
             <div class="col-4">
                 <div class="field_of_SP">
                     <div class="d-inline-block second_service_part">
-                        <h3>ریسپانسیو</h3>
-                        <p>ریسپانیو تمام صفحات سایت </p>
-                        <p>ریسپاسنیو تمام صفحات وب حتی از اون صفحاتی که اریا داره ششسی ش شسیش ت خ اشمنتسی شسیت نتم اغهتنمئ</p>
+                        <h3 class="wow fadeInLeft" data-wow-delay="1s">ریسپانسیو</h3>
+                        <p class="wow fadeInLeft" data-wow-delay="1.2s">ریسپانیو تمام صفحات سایت </p>
+                        <p class="wow fadeInLeft" data-wow-delay="1.4s">ریسپاسنیو تمام صفحات وب حتی از اون صفحاتی که اریا داره ششسی ش شسیش ت خ اشمنتسی شسیت نتم اغهتنمئ</p>
                     </div>
                     <div class="d-inline-block first_service_part">
-                        <i class="fal fa-mobile"></i>
+                        <i class="fal fa-mobile wow fadeInLeft" data-wow-delay="0.8s"></i>
                     </div>
                 </div>
             </div>
             <div class="col-4">
                 <div class="field_of_SP">
                     <div class="d-inline-block second_service_part">
-                        <h3>خلاق</h3>
-                        <p>ریسپانیو تمام صفحات سایت </p>
-                        <p>ریسپاسنیو تمام صفحات وب حتی از اون صفحاتی که اریا داره ششسی ش شسیش ت خ اشمنتسی شسیت نتم اغهتنمئ</p>
+                        <h3 class="wow fadeInLeft" data-wow-delay="0.6s">خلاق</h3>
+                        <p class="wow fadeInLeft" data-wow-delay="0.8s">ریسپانیو تمام صفحات سایت </p>
+                        <p class="wow fadeInLeft" data-wow-delay="1s">ریسپاسنیو تمام صفحات وب حتی از اون صفحاتی که اریا داره ششسی ش شسیش ت خ اشمنتسی شسیت نتم اغهتنمئ</p>
                     </div>
                     <div class="d-inline-block first_service_part">
-                        <i class="fal fa-acorn test1"></i>
+                        <i class="fal fa-acorn wow fadeInLeft" data-wow-delay="0.4s"></i>
                     </div>
                 </div>
             </div>
             <div class="col-4">
                 <div class="field_of_SP">
                     <div class="d-inline-block second_service_part">
-                        <h3>زمانبندی</h3>
-                        <p>ریسپانیو تمام صفحات سایت </p>
-                        <p>ریسپاسنیو تمام صفحات وب حتی از اون صفحاتی که اریا داره ششسی ش شسیش ت خ اشمنتسی شسیت نتم اغهتنمئ</p>
+                        <h3 class="wow fadeInLeft" data-wow-delay="0.2s">زمانبندی</h3>
+                        <p class="wow fadeInLeft" data-wow-delay="0.4s">ریسپانیو تمام صفحات سایت </p>
+                        <p class="wow fadeInLeft" data-wow-delay="0.6s">ریسپاسنیو تمام صفحات وب حتی از اون صفحاتی که اریا داره ششسی ش شسیش ت خ اشمنتسی شسیت نتم اغهتنمئ</p>
                     </div>
                     <div class="d-inline-block first_service_part">
-                        <i class="fal fa-alarm-clock"></i>
+                        <i class="fal fa-alarm-clock wow fadeInLeft" data-wow-delay="0s"></i>
                     </div>
                 </div>
             </div>
@@ -82,10 +85,10 @@
         <div class="row">
             <div class="col-4">
                 <div class="see_RT_part">
-                    <h2>دیدار با راش تیم</h2>
-                    <h3> طراحی تمیز وزیبا</h3>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سا را قرار گیرد.</p>
-                    <button class="btn">بیشتر بدانید ! <i class="fas fa-angle-left"></i></button>
+                    <h2 class="wow fadeInDown" data-wow-delay="0.2s">دیدار با راش تیم</h2>
+                    <h3 class="wow fadeInDown" data-wow-delay="0.6s"> طراحی تمیز وزیبا</h3>
+                    <p class="wow fadeInDown" data-wow-delay="0.9s">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سا را قرار گیرد.</p>
+                    <button class="btn wow fadeInDown"  data-wow-delay="1.2s">بیشتر بدانید ! <i class="fas fa-angle-left"></i></button>
                 </div>
             </div>
             <div class="col-8">
@@ -105,16 +108,16 @@
             <div class="col-3 p-0">
                 <div class="WE_main_field">
                     <img src="img/WE1.png" alt="">
-                    <div class="WE_hover_field">
+                    <div class="WE_hover_field" id="WE_hover_field_1">
                         <h3>وب سایت ملورین</h3>
                         <p>
                             طراحی سایت ، طراحی ui 
                         </p>
                         <a class="btn">
                             <i class="fal fa-search"></i>
-                                <div>
-                                    <i class="fal fa-search"></i>
-                                </div>
+                            <div>
+                                <i class="fal fa-search"></i>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -122,16 +125,16 @@
             <div class="col-3 p-0">
                 <div class="WE_main_field">
                     <img src="img/WE2.png" alt="">
-                    <div class="WE_hover_field">
+                    <div class="WE_hover_field" id="WE_hover_field_2">
                         <h3>وب سایت ملورین</h3>
                         <p>
                             طراحی سایت ، طراحی ui 
                         </p>
                         <a class="btn">
                             <i class="fal fa-search"></i>
-                                <div>
-                                    <i class="fal fa-search"></i>
-                                </div>
+                            <div>
+                                <i class="fal fa-search"></i>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -139,16 +142,16 @@
             <div class="col-3 p-0">
                 <div class="WE_main_field">
                     <img src="img/WE3.png" alt="">
-                    <div class="WE_hover_field">
+                    <div class="WE_hover_field" id="WE_hover_field_3">
                         <h3>وب سایت ملورین</h3>
                         <p>
                             طراحی سایت ، طراحی ui 
                         </p>
                         <a class="btn">
                             <i class="fal fa-search"></i>
-                                <div>
-                                    <i class="fal fa-search"></i>
-                                </div>
+                            <div>
+                                <i class="fal fa-search"></i>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -156,16 +159,16 @@
             <div class="col-3 p-0">
                 <div class="WE_main_field">
                     <img src="img/WE4.png" alt="">
-                    <div class="WE_hover_field">
+                    <div class="WE_hover_field" id="WE_hover_field_4">
                         <h3>وب سایت ملورین</h3>
                         <p>
                             طراحی سایت ، طراحی ui 
                         </p>
                         <a class="btn">
                             <i class="fal fa-search"></i>
-                                <div>
-                                    <i class="fal fa-search"></i>
-                                </div>
+                            <div>
+                                <i class="fal fa-search"></i>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -178,176 +181,108 @@
     <div class="MWE_layer"></div>
     <img src="img/test1.jpg" alt="">
     <div class="MWE_info_layout">
-        <p>برای مشاهده نمونه کار های بیشتر ب روی دکمه روبرو کلیک کنید </p>
-        <a href="">نمونه کار ها <i class="fas fa-angle-left"></i></a>
+        <span id="MW_typed"></span>
+        <a href="" class="wow fadeInDown">نمونه کار ها <i class="fas fa-angle-left"></i></a>
     </div>
 </section>
 
-<section class="price_packages">
+<section class="price_packages mb-5">
     <div class="header_WE">
         <p>مشتریان عزیز</p>
         <h3> پلن های طراحی سایت</h3>
     </div>
-    <div class="swiper-container">
-        <div class="swiper-wrapper p-5">
-            <div class="swiper-slide">
-                <div class="price_info_field">
-                  <p class="PI_header">شخصی</p>
-                  <hr>
-                  <p class="price_number">شروع از 2 میلیون </p>
-                  <p>این وب سایت ها مناسب اشخاصی است که میخواهد خود را به جامعه مورد نظر معرفی کنند یا مناسب کسب کار های کوچک نیز می باشد .</p>
-                  <hr>
-                  <p class="what_PI_have">
-                      <i class="fas fa-check"></i>
-                      پنل مدیریت محتوی
-                  </p>
-                  <p class="what_PI_have">
-                      <i class="fas fa-check"></i>
-                      خلاقیت بی اندازه و چشم نواز
-                  </p>
-                  <p class="what_PI_have">
-                      <i class="fas fa-check"></i>
-                      بالا بردن کسب کار
-                  </p>
-                  <p class="what_PI_have">
-                      <i class="fas fa-check"></i>
-                      سئو رایگان
-                  </p>
-                  <p class="what_PI_have">
-                      <i class="fas fa-check"></i>
-                      بازاریابی تا پولدار شدن
-                  </p>
-                  <button class="btn">سفارش سایت</button>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 col_of_PP p-0 wow fadeInDown" data-wow-delay="0.6s">
+                <div class="main_field_of_PP">
+                    <i class="fas fa-user PP_header_icon"></i>
+                    <p class="header_PP_text">
+                        سایت شخصی
+                    </p>
+                    <div class="PP_header">
+                        <p>شروع قیمت از</p>
+                        <p>2.000.000</p>
+                        <p>میلیون تومان</p>
+                    </div>
+                    <div class="PP_description">
+                        با ما بهترین باشید 
+                    </div>
+                    <div class="PP_description mt-4">
+                       مخصوص سایت های فروشگاهی 
+                    </div>
+                    <a href="" class="btn btn_of_PP">
+                        سفارش پلن 
+                    </a>
                 </div>
-               </div>
-          <div class="swiper-slide">
-            <div class="price_info_field">
-              <p class="PI_header">شخصی</p>
-              <hr>
-              <p class="price_number">شروع از 2 میلیون </p>
-              <p>این وب سایت ها مناسب اشخاصی است که میخواهد خود را به جامعه مورد نظر معرفی کنند یا مناسب کسب کار های کوچک نیز می باشد .</p>
-              <hr>
-              <p class="what_PI_have">
-                  <i class="fas fa-check"></i>
-                  پنل مدیریت محتوی
-              </p>
-              <p class="what_PI_have">
-                  <i class="fas fa-check"></i>
-                  خلاقیت بی اندازه و چشم نواز
-              </p>
-              <p class="what_PI_have">
-                  <i class="fas fa-check"></i>
-                  بالا بردن کسب کار
-              </p>
-              <p class="what_PI_have">
-                  <i class="fas fa-check"></i>
-                  سئو رایگان
-              </p>
-              <p class="what_PI_have">
-                  <i class="fas fa-check"></i>
-                  بازاریابی تا پولدار شدن
-              </p>
-              <button class="btn">سفارش سایت</button>
             </div>
-           </div>
-
-           <div class="swiper-slide">
-            <div class="price_info_field">
-              <p class="PI_header">شخصی</p>
-              <hr>
-              <p class="price_number">شروع از 2 میلیون </p>
-              <p>این وب سایت ها مناسب اشخاصی است که میخواهد خود را به جامعه مورد نظر معرفی کنند یا مناسب کسب کار های کوچک نیز می باشد .</p>
-              <hr>
-              <p class="what_PI_have">
-                  <i class="fas fa-check"></i>
-                  پنل مدیریت محتوی
-              </p>
-              <p class="what_PI_have">
-                  <i class="fas fa-check"></i>
-                  خلاقیت بی اندازه و چشم نواز
-              </p>
-              <p class="what_PI_have">
-                  <i class="fas fa-check"></i>
-                  بالا بردن کسب کار
-              </p>
-              <p class="what_PI_have">
-                  <i class="fas fa-check"></i>
-                  سئو رایگان
-              </p>
-              <p class="what_PI_have">
-                  <i class="fas fa-check"></i>
-                  بازاریابی تا پولدار شدن
-              </p>
-              <button class="btn">سفارش سایت</button>
+            <div class="col-3 col_of_PP p-0 wow fadeInDown" data-wow-delay="0.3s">
+                <div class="main_field_of_PP">
+                    <i class="fas fa-newspaper PP_header_icon"></i>
+                    <p class="header_PP_text">
+                        سایت خبری
+                    </p>
+                    <div class="PP_header">
+                        <p>شروع قیمت از</p>
+                        <p>5.000.000</p>
+                        <p>میلیون تومان</p>
+                    </div>
+                    <div class="PP_description">
+                        با ما بهترین باشید 
+                    </div>
+                    <div class="PP_description mt-4">
+                       مخصوص سایت های فروشگاهی 
+                    </div>
+                    <a href="" class="btn btn_of_PP">
+                        سفارش پلن 
+                    </a>
+                </div>
             </div>
-           </div>
-
-           <div class="swiper-slide">
-            <div class="price_info_field">
-              <p class="PI_header">شخصی</p>
-              <hr>
-              <p class="price_number">شروع از 2 میلیون </p>
-              <p>این وب سایت ها مناسب اشخاصی است که میخواهد خود را به جامعه مورد نظر معرفی کنند یا مناسب کسب کار های کوچک نیز می باشد .</p>
-              <hr>
-              <p class="what_PI_have">
-                  <i class="fas fa-check"></i>
-                  پنل مدیریت محتوی
-              </p>
-              <p class="what_PI_have">
-                  <i class="fas fa-check"></i>
-                  خلاقیت بی اندازه و چشم نواز
-              </p>
-              <p class="what_PI_have">
-                  <i class="fas fa-check"></i>
-                  بالا بردن کسب کار
-              </p>
-              <p class="what_PI_have">
-                  <i class="fas fa-check"></i>
-                  سئو رایگان
-              </p>
-              <p class="what_PI_have">
-                  <i class="fas fa-check"></i>
-                  بازاریابی تا پولدار شدن
-              </p>
-              <button class="btn">سفارش سایت</button>
+            <div class="col-3 col_of_PP p-0 wow fadeInDown" data-wow-delay="1.2s" data-wow-duration="2s">
+                <div class="main_field_of_PP" id="special_PP">
+                    <i class="fas fa-building PP_header_icon"></i>
+                    <p class="header_PP_text">
+                        سایت شرکتی
+                    </p>
+                    <div class="PP_header">
+                        <p>شروع قیمت از</p>
+                        <p>6.000.000</p>
+                        <p>میلیون تومان</p>
+                    </div>
+                    <div class="PP_description">
+                        با ما بهترین باشید 
+                    </div>
+                    <div class="PP_description mt-4">
+                       مخصوص سایت های فروشگاهی 
+                    </div>
+                    <a href="" class="btn btn_of_PP">
+                        سفارش پلن 
+                    </a>
+                </div>
             </div>
-           </div>
-
-           <div class="swiper-slide">
-            <div class="price_info_field">
-              <p class="PI_header">شخصی</p>
-              <hr>
-              <p class="price_number">شروع از 2 میلیون </p>
-              <p>این وب سایت ها مناسب اشخاصی است که میخواهد خود را به جامعه مورد نظر معرفی کنند یا مناسب کسب کار های کوچک نیز می باشد .</p>
-              <hr>
-              <p class="what_PI_have">
-                  <i class="fas fa-check"></i>
-                  پنل مدیریت محتوی
-              </p>
-              <p class="what_PI_have">
-                  <i class="fas fa-check"></i>
-                  خلاقیت بی اندازه و چشم نواز
-              </p>
-              <p class="what_PI_have">
-                  <i class="fas fa-check"></i>
-                  بالا بردن کسب کار
-              </p>
-              <p class="what_PI_have">
-                  <i class="fas fa-check"></i>
-                  سئو رایگان
-              </p>
-              <p class="what_PI_have">
-                  <i class="fas fa-check"></i>
-                  بازاریابی تا پولدار شدن
-              </p>
-              <button class="btn">سفارش سایت</button>
+            <div class="col-3 col_of_PP p-0 wow fadeInDown">
+                <div class="main_field_of_PP">
+                    <i class="fas fa-shopping-cart PP_header_icon"></i>
+                    <p class="header_PP_text">
+                        سایت فروشگاهی
+                    </p>
+                    <div class="PP_header">
+                        <p>شروع قیمت از</p>
+                        <p>10.000.000</p>
+                        <p>میلیون تومان</p>
+                    </div>
+                    <div class="PP_description">
+                        با ما بهترین باشید 
+                    </div>
+                    <div class="PP_description mt-4">
+                       مخصوص سایت های فروشگاهی 
+                    </div>
+                    <a href="" class="btn btn_of_PP">
+                        سفارش پلن 
+                    </a>
+                </div>
             </div>
-           </div>
-           
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-      </div>
+    </div>
 </section>
 
 {/body}

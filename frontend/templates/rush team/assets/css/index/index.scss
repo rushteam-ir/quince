@@ -3,7 +3,7 @@
 @import '../../css/partials/main-mixin';
 @import '../partials/font';
 
-$header_height :80vh;
+$header_height :100vh;
 
 .header_field {
     background-image: url(../../img/header.jpg);
@@ -110,7 +110,7 @@ $SSH:350px;
     background-color: #F9F9F9;
     padding: 120px 100px;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 25px;
 }
 
 .see_RT_part {
@@ -144,7 +144,7 @@ $SSH:350px;
         font-size: 0.8rem;
         height: 40px;
 
-        i {}
+
     }
 }
 
@@ -187,8 +187,20 @@ $SSH:350px;
         @include transition(linear, 0.2s, 0s)
     }
 
-    &:hover .WE_hover_field {
-        opacity: 1;
+    &:hover #WE_hover_field_1 {
+        opacity: 0.7;
+    }
+
+    &:hover #WE_hover_field_2 {
+        opacity: 0.7;
+    }
+
+    &:hover #WE_hover_field_3 {
+        opacity: 0.7;
+    }
+
+    &:hover #WE_hover_field_4 {
+        opacity: 0.7;
     }
 
     &:hover img {
@@ -196,10 +208,30 @@ $SSH:350px;
     }
 }
 
+#WE_hover_field_1 {
+    background: linear-gradient(90deg, rgba(14, 72, 123, 1) 0%, rgba(74, 82, 117, 1) 100%);
+    opacity: 0;
+}
+
+#WE_hover_field_2 {
+    background: linear-gradient(90deg, rgba(74, 82, 116, 1) 0%, rgba(134, 93, 110, 1) 100%);
+    opacity: 0;
+}
+
+#WE_hover_field_3 {
+    background: linear-gradient(90deg, rgba(134, 92, 110, 1) 0%, rgba(194, 102, 103, 1) 100%);
+    opacity: 0;
+}
+
+#WE_hover_field_4 {
+    background: linear-gradient(90deg, rgba(195, 103, 104, 1) 0%, rgba(254, 113, 97, 1) 100%);
+    opacity: 0;
+}
+
+
 .WE_hover_field {
     width: 100%;
     height: 100%;
-    background-color: $LO_MC;
     position: absolute;
     top: 0;
     left: 0;
@@ -277,7 +309,7 @@ $SSH:350px;
 // more work example
 
 .more_WE {
-    height: 200px;
+    height: 160px;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -285,7 +317,8 @@ $SSH:350px;
     .MWE_layer {
         width: 100%;
         height: 100%;
-        background-color: $LO_MC;
+        background: linear-gradient(90deg, rgba(14, 72, 123, 1) 0%, rgba(255, 113, 97, 1) 100%);
+        opacity: 0.7;
         position: absolute;
         top: 0;
         z-index: 1;
@@ -302,34 +335,34 @@ $SSH:350px;
         top: 0;
         left: 0;
         width: 100%;
-        height: 200px;
+        height: 160px;
         color: white;
         text-align: right;
         direction: rtl;
         z-index: 2;
-        line-height: 190px;
-        padding-right: 40px;
+        margin-top: 60px;
+        padding-right: 100px;
 
-        p {
-            font-size: 2rem;
-            font-weight: bold;
+        span{
+            font-size: 1.3rem;
+            font-family: $LF;
         }
 
         a {
             position: absolute;
-            left: 40px;
-            top: 80px;
+            left: 100px;
             background-color: transparent;
             border-radius: 50px;
-            border: 3px solid white;
+            border: 2px solid white;
             color: white;
             z-index: 2;
-            width: 190px;
+            width: 170px;
             height: 50px;
             font-weight: bold;
             line-height: 46px;
             padding-right: 15px;
-            font-size: 1.2rem;
+            font-size: 1rem;
+            top: -7px;
 
             i {
                 position: relative;
@@ -343,46 +376,71 @@ $SSH:350px;
 // price part
 
 .price_packages {
-    text-align: right;
-    width: 100%;
-    padding: 0px 100px;
+    padding: 0 100px;
+}
+
+.main_field_of_PP {
+    text-align: center;
     direction: rtl;
+    padding: 30px;
+    box-shadow: 0px 0px 10px -2px #00000017;
 
-    .price_info_field {
-        padding: 30px;
-        direction: rtl;
-        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.11);
-        width: 90%;
-        margin-right: 5%;
+    .PP_header_icon {
+        font-size: 2rem;
+        margin-bottom: 30px;
+        color: rgb(78, 78, 78);
+        margin-top: 50px;
+    }
 
-        .PI_header {
+    .header_PP_text {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: rgb(78, 78, 78);
+    }
+
+    .PP_header {
+        & :nth-child(1) {
+            margin: 0;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        & :nth-child(2) {
+            font-weight: bold;
+            font-size: 1.6rem;
             color: $main_color;
+            margin: 0;
+        }
+
+        & :nth-child(3) {
+            margin: 0;
+            position: relative;
+            top: -5px;
+            font-size: 0.8rem;
             font-weight: bold;
-            font-size: 2rem;
-        }
-
-        .price_number {
-            color: #333333;
-            font-weight: bold;
-            font-size: 1.4rem;
-        }
-
-        .what_PI_have {
-            i {
-                color: #62BE10;
-                margin-left: 10px;
-            }
-
-            p {
-                color: rgb(46, 46, 46);
-            }
-        }
-        button{
-            color: white;
-            background-color: $main_color;
-            border-radius: 50px;
-            width: 80%;
-            margin-right: 10%;
+            margin-bottom: 20px;
         }
     }
+
+    .btn_of_PP {
+        background-color: $main_color;
+        color: white;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-radius: 50px;
+        font-weight: bold;
+        width: 170px;
+    }
+}
+
+.col_of_PP{ 
+    background-color: #f5f5f50c;
+    @include transition(linear , 0.2s , 0s)
+    &:hover{
+        background-color: #0f4c820c;
+    }
+}
+
+#special_PP {
+    background-color: #0f4c820c;
 }
