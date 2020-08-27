@@ -131,7 +131,7 @@ category_schema.statics = {
 
         if(search_value){
             for(let index of _list){
-                jsonSearch(['title', 'parent.title', 'author.nick_name', 'author.first_name', 'author.last_name'], search_value, index) ? temp_list.push(index) : null;
+                jsonSearch(['title', 'author.nick_name', 'author.first_name', 'author.last_name'], search_value, index) ? temp_list.push(index) : null;
             }
             result.total_pages = Math.ceil(temp_list.length / page_limit);
             result.list = temp_list.slice(_skip, _skip + page_limit)
