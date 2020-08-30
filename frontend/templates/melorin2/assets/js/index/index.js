@@ -1,6 +1,6 @@
 //main slider
 
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.main_slider', {
     spaceBetween: 30,
     effect: 'fade',
     autoplay: {
@@ -12,8 +12,8 @@ var swiper = new Swiper('.swiper-container', {
         clickable: true,
     },
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.next_main_btn',
+        prevEl: '.prev_main_btn',
     },
 });
 
@@ -25,7 +25,7 @@ var swiper = new Swiper('.swiper-container', {
 var swiper = new Swiper('.swiper_slider_product', {
     slidesPerView: 4,
     spaceBetween: 0,
-    slidesPerGroup: 4,
+    slidesPerGroup: 1,
     loop: true,
     loopFillGroupWithBlank: true,
 

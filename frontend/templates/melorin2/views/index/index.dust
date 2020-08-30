@@ -28,8 +28,8 @@
                 </div>
             </div>
             <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next next_main_btn"></div>
+            <div class="swiper-button-prev prev_main_btn"></div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
         </div>
@@ -42,7 +42,8 @@
                     <div class="services_box mt-4 mt-lg-0 mt-md-0">
                         <i class="fal fa-shield-check icons_services"></i>
                         <h4 class="title_of_service">کیفیت بالا</h4>
-                        <p class="exp_service">اگه زیاد بخری بهت تخفیف میدیم عشق کنی هر چی بیشتر بخری تخفیفت بیشتر میشه
+                        <p class="exp_service dir_rtl">اگه زیاد بخری بهت تخفیف میدیم عشق کنی هر چی بیشتر بخری تخفیفت
+                            بیشتر میشه
                             از 30 درصد بگیر تا اصلا بردار و برئ.ما اینجوری مشتری مداری میکنیم دیه.</p>
                     </div>
                 </div>
@@ -50,7 +51,8 @@
                     <div class="services_box">
                         <i class="fal fa-user-headset icons_services"></i>
                         <h4 class="title_of_service">پشتیبانی 24 ساعته</h4>
-                        <p class="exp_service">اگه زیاد بخری بهت تخفیف میدیم عشق کنی هر چی بیشتر بخری تخفیفت بیشتر میشه
+                        <p class="exp_service dir_rtl">اگه زیاد بخری بهت تخفیف میدیم عشق کنی هر چی بیشتر بخری تخفیفت
+                            بیشتر میشه
                             از 30 درصد بگیر تا اصلا بردار و برئ.ما اینجوری مشتری مداری میکنیم دیه.</p>
                     </div>
                 </div>
@@ -58,7 +60,8 @@
                     <div class="services_box">
                         <i class="fal fa-gift icons_services"></i>
                         <h4 class="title_of_service">کوپن های تخفیف</h4>
-                        <p class="exp_service">اگه زیاد بخری بهت تخفیف میدیم عشق کنی هر چی بیشتر بخری تخفیفت بیشتر میشه
+                        <p class="exp_service dir_rtl">اگه زیاد بخری بهت تخفیف میدیم عشق کنی هر چی بیشتر بخری تخفیفت
+                            بیشتر میشه
                             از 30 درصد بگیر تا اصلا بردار و برئ.ما اینجوری مشتری مداری میکنیم دیه.</p>
                     </div>
                 </div>
@@ -66,7 +69,8 @@
                     <div class="services_box">
                         <i class="fal fa-truck icons_services"></i>
                         <h4 class="title_of_service">ارسال رایگان</h4>
-                        <p class="exp_service">اگه زیاد بخری بهت تخفیف میدیم عشق کنی هر چی بیشتر بخری تخفیفت بیشتر میشه
+                        <p class="exp_service dir_rtl">اگه زیاد بخری بهت تخفیف میدیم عشق کنی هر چی بیشتر بخری تخفیفت
+                            بیشتر میشه
                             از 30 درصد بگیر تا اصلا بردار و برئ.ما اینجوری مشتری مداری میکنیم دیه.</p>
                     </div>
                 </div>
@@ -126,23 +130,283 @@
                     <h3 class="title_of_slider dir_rtl text-right">پر فروش ترین ها</h3>
                 </div>
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="../../img/slider_product_1.png" alt="" class="img_slider">
+                    <div class="swiper-slide dir_rtl text-right">
+                        <a class="slider_slide_link" href="">
+                            <img src="../../img/slider_product_1.png" alt="" class="img_slider">
+                            <div class="body_slider">
+                                <div class="rate_of_product">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="name_of_product">
+                                    جوراب مردانه کد 1154
+                                </p>
+                                <p class="price_of_product d-inline-block">
+                                    22.000
+                                    <span class="price">تومان</span>
+                                </p>
+                                <p class="price_of_product_line d-inline-block">
+                                    25.000
+                                    <span class="price">تومان</span>
+                                </p>
+                                <div class="off_sale d-inline-block">30%</div>
+                            </div>
+                            <div class="social_box">
+                                <button class="icon_link icon_link_heart">
+                                    <i class="fas fa-heart icon_product"></i>
+                                </button>
+                                <button class="icon_link icon_link_eye">
+                                    <i class="fas fa-eye icon_product"></i>
+                                </button>
+                                <button class="icon_link icon_link_shopping">
+                                    <i class="fas fa-shopping-cart icon_product"></i>
+                                </button>
+                            </div>
+                        </a>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="../../img/slider_product_2.png" alt="" class="img_slider">
+                    <div class="swiper-slide dir_rtl text-right">
+                        <a class="slider_slide_link" href="">
+                            <img src="../../img/slider_product_2.png" alt="" class="img_slider">
+                            <div class="body_slider">
+                                <div class="rate_of_product">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="name_of_product">
+                                    جوراب مردانه کد 1154
+                                </p>
+                                <p class="price_of_product d-inline-block">
+                                    25.000
+                                    <span class="price">تومان</span>
+                                </p>
+                            </div>
+                            <div class="social_box">
+                                <button class="icon_link icon_link_heart">
+                                    <i class="fas fa-heart icon_product"></i>
+                                </button>
+                                <button class="icon_link icon_link_eye">
+                                    <i class="fas fa-eye icon_product"></i>
+                                </button>
+                                <button class="icon_link icon_link_shopping">
+                                    <i class="fas fa-shopping-cart icon_product"></i>
+                                </button>
+                            </div>
+                        </a>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="../../img/slider_product_3.png" alt="" class="img_slider">
+                    <div class="swiper-slide dir_rtl text-right">
+                        <a class="slider_slide_link" href="">
+                            <img src="../../img/slider_product_3.png" alt="" class="img_slider">
+                            <div class="body_slider">
+                                <div class="rate_of_product">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="name_of_product">
+                                    جوراب مردانه کد 1154
+                                </p>
+                                <p class="price_of_product d-inline-block">
+                                    25.000
+                                    <span class="price">تومان</span>
+                                </p>
+                            </div>
+                            <div class="social_box">
+                                <button class="icon_link icon_link_heart">
+                                    <i class="fas fa-heart icon_product"></i>
+                                </button>
+                                <button class="icon_link icon_link_eye">
+                                    <i class="fas fa-eye icon_product"></i>
+                                </button>
+                                <button class="icon_link icon_link_shopping">
+                                    <i class="fas fa-shopping-cart icon_product"></i>
+                                </button>
+                            </div>
+                        </a>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="../../img/slider_product_4.png" alt="" class="img_slider">
+                    <div class="swiper-slide dir_rtl text-right">
+                        <a class="slider_slide_link" href="">
+                            <img src="../../img/slider_product_4.png" alt="" class="img_slider">
+                            <div class="body_slider">
+                                <div class="rate_of_product">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="name_of_product">
+                                    جوراب مردانه کد 1154
+                                </p>
+                                <p class="price_of_product d-inline-block">
+                                    22.000
+                                    <span class="price">تومان</span>
+                                </p>
+                                <p class="price_of_product_line d-inline-block">
+                                    25.000
+                                    <span class="price">تومان</span>
+                                </p>
+                                <div class="off_sale d-inline-block">30%</div>
+                            </div>
+                            <div class="social_box">
+                                <button class="icon_link icon_link_heart">
+                                    <i class="fas fa-heart icon_product"></i>
+                                </button>
+                                <button class="icon_link icon_link_eye">
+                                    <i class="fas fa-eye icon_product"></i>
+                                </button>
+                                <button class="icon_link icon_link_shopping">
+                                    <i class="fas fa-shopping-cart icon_product"></i>
+                                </button>
+                            </div>
+                        </a>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="../../img/slider_product_1.png" alt="" class="img_slider">
+                    <div class="swiper-slide dir_rtl text-right">
+                        <a class="slider_slide_link" href="">
+                            <img src="../../img/slider_product_1.png" alt="" class="img_slider">
+                            <div class="body_slider">
+                                <div class="rate_of_product">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="name_of_product">
+                                    جوراب مردانه کد 1154
+                                </p>
+                                <p class="price_of_product d-inline-block">
+                                    22.000
+                                    <span class="price">تومان</span>
+                                </p>
+                                <p class="price_of_product_line d-inline-block">
+                                    25.000
+                                    <span class="price">تومان</span>
+                                </p>
+                                <div class="off_sale d-inline-block">30%</div>
+                            </div>
+                            <div class="social_box">
+                                <button class="icon_link icon_link_heart">
+                                    <i class="fas fa-heart icon_product"></i>
+                                </button>
+                                <button class="icon_link icon_link_eye">
+                                    <i class="fas fa-eye icon_product"></i>
+                                </button>
+                                <button class="icon_link icon_link_shopping">
+                                    <i class="fas fa-shopping-cart icon_product"></i>
+                                </button>
+                            </div>
+                        </a>
+
                     </div>
-                    <div class="swiper-slide bg-secondary">
-                        <img src="../../img/slider_product_3.png" alt="" class="img_slider">
+                    <div class="swiper-slide dir_rtl text-right">
+                        <a class="slider_slide_link" href="">
+                            <img src="../../img/slider_product_2.png" alt="" class="img_slider">
+                            <div class="body_slider">
+                                <div class="rate_of_product">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="name_of_product">
+                                    جوراب مردانه کد 1154
+                                </p>
+                                <p class="price_of_product d-inline-block">
+                                    25.000
+                                    <span class="price">تومان</span>
+                                </p>
+                            </div>
+                            <div class="social_box">
+                                <button class="icon_link icon_link_heart">
+                                    <i class="fas fa-heart icon_product"></i>
+                                </button>
+                                <button class="icon_link icon_link_eye">
+                                    <i class="fas fa-eye icon_product"></i>
+                                </button>
+                                <button class="icon_link icon_link_shopping">
+                                    <i class="fas fa-shopping-cart icon_product"></i>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide dir_rtl text-right">
+                        <a class="slider_slide_link" href="">
+                            <img src="../../img/slider_product_3.png" alt="" class="img_slider">
+                            <div class="body_slider">
+                                <div class="rate_of_product">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="name_of_product">
+                                    جوراب مردانه کد 1154
+                                </p>
+                                <p class="price_of_product d-inline-block">
+                                    25.000
+                                    <span class="price">تومان</span>
+                                </p>
+                            </div>
+                            <div class="social_box">
+                                <button class="icon_link icon_link_heart">
+                                    <i class="fas fa-heart icon_product"></i>
+                                </button>
+                                <button class="icon_link icon_link_eye">
+                                    <i class="fas fa-eye icon_product"></i>
+                                </button>
+                                <button class="icon_link icon_link_shopping">
+                                    <i class="fas fa-shopping-cart icon_product"></i>
+                                </button>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="swiper-slide dir_rtl text-right">
+                        <a class="slider_slide_link" href="">
+                            <img src="../../img/slider_product_4.png" alt="" class="img_slider">
+                            <div class="body_slider">
+                                <div class="rate_of_product">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="name_of_product">
+                                    جوراب مردانه کد 1154
+                                </p>
+                                <p class="price_of_product d-inline-block">
+                                    22.000
+                                    <span class="price">تومان</span>
+                                </p>
+                                <p class="price_of_product_line d-inline-block">
+                                    25.000
+                                    <span class="price">تومان</span>
+                                </p>
+                                <div class="off_sale d-inline-block">30%</div>
+                            </div>
+                            <div class="social_box">
+                                <button class="icon_link icon_link_heart">
+                                    <i class="fas fa-heart icon_product"></i>
+                                </button>
+                                <button class="icon_link icon_link_eye">
+                                    <i class="fas fa-eye icon_product"></i>
+                                </button>
+                                <button class="icon_link icon_link_shopping">
+                                    <i class="fas fa-shopping-cart icon_product"></i>
+                                </button>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="swiper-button-next product_arrow_next"></div>
