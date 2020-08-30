@@ -123,6 +123,9 @@
 .slider_product .swiper-container .swiper-wrapper .swiper-slide {
   height: 500px;
 }
+.slider_product .swiper-container .swiper-wrapper .swiper-slide .img_slider {
+  width: 100%;
+}
 
 .parallax_box .parallax {
   background-image: url("../../img/parallax.jpg");

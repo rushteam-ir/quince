@@ -144,6 +144,10 @@
     .swiper-wrapper{
       .swiper-slide{
         height: 500px;
+
+        .img_slider{
+          width: 100%;
+        }
       }
     }
   }

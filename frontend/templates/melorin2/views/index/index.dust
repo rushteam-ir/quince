@@ -121,28 +121,28 @@
 
     <section class="slider_product my-3">
         <div class="container bg-white mb-5">
-            <div class="swiper-container ">
+            <div class="swiper-container swiper_slider_product">
                 <div class="header_of_slider_swiper">
                     <h3 class="title_of_slider dir_rtl text-right">پر فروش ترین ها</h3>
                 </div>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="../../img/slider_product_1.png" alt="">
+                        <img src="../../img/slider_product_1.png" alt="" class="img_slider">
                     </div>
                     <div class="swiper-slide">
-                        <img src="../../img/slider_product_2.png" alt="">
+                        <img src="../../img/slider_product_2.png" alt="" class="img_slider">
                     </div>
                     <div class="swiper-slide">
-                        <img src="../../img/slider_product_3.png" alt="">
+                        <img src="../../img/slider_product_3.png" alt="" class="img_slider">
                     </div>
                     <div class="swiper-slide">
-                        <img src="../../img/slider_product_4.png" alt="">
+                        <img src="../../img/slider_product_4.png" alt="" class="img_slider">
                     </div>
                     <div class="swiper-slide">
-                        <img src="../../img/slider_product_1.png" alt="">
+                        <img src="../../img/slider_product_1.png" alt="" class="img_slider">
                     </div>
                     <div class="swiper-slide bg-secondary">
-                        <img src="../../img/slider_product_3.png" alt="">
+                        <img src="../../img/slider_product_3.png" alt="" class="img_slider">
                     </div>
                 </div>
                 <div class="swiper-button-next product_arrow_next"></div>
