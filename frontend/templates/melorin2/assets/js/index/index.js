@@ -23,7 +23,7 @@ var swiper = new Swiper('.main_slider', {
 //product slider
 
 var swiper = new Swiper('.swiper_slider_product', {
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 0,
     slidesPerGroup: 1,
     loop: true,
@@ -33,4 +33,18 @@ var swiper = new Swiper('.swiper_slider_product', {
         nextEl: '.product_arrow_next',
         prevEl: '.product_arrow_prev',
     },
+    breakpoints: {
+        600:{
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 4,
+        },
+    }
 });

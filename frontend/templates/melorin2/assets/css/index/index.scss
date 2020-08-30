@@ -169,18 +169,18 @@
               text-align: center;
               line-height: 30px;
               color: white;
-            }
 
-            .icon_link_heart{
-              top: -120px;
-            }
+              &_heart{
+                top: -120px;
+              }
 
-            .icon_link_eye{
-              top: -85px;
-            }
+              &_eye{
+                top: -85px;
+              }
 
-            .icon_link_shopping{
-              top: -50px;
+              &_shopping{
+                top: -50px;
+              }
             }
 
           }
