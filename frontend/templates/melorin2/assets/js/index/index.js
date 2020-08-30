@@ -34,7 +34,11 @@ var swiper = new Swiper('.swiper_slider_product', {
         prevEl: '.product_arrow_prev',
     },
     breakpoints: {
-        600:{
+        400:{
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
+        500:{
             slidesPerView: 2,
         },
         768: {
