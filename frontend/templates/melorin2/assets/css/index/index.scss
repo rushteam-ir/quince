@@ -1,0 +1,267 @@
+@import "../partials/main -colors";
+@import "../partials/mixin";
+@import "../partials/fonts";
+
+
+.slider_main_page {
+  .main_slider {
+    .img_of_main_slider {
+      width: 100%;
+      height: 616px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: $white;
+    }
+  }
+}
+
+.services_part {
+  box-shadow: rgb(171, 171, 171) 0px 20px 30px -30px;
+  margin-bottom: 60px;
+  background-color: white;
+
+  .services_box {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 40px 0px;
+
+    .icons_services {
+      color: $l_red;
+      font-size: 3rem;
+
+    }
+
+    .title_of_service {
+      font-size: 1.1rem;
+      margin: 15px 0px;
+    }
+
+    .exp_service {
+      font-size: 0.9rem;
+      font-family: $s_f;
+    }
+  }
+}
+
+.product_part {
+  position: relative;
+
+  .img_of_product {
+    width: 100%;
+    height: 454px;
+  }
+
+  .small_pic {
+    height: 225px;
+  }
+
+  .text-box {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+
+    .title_of_product {
+      font-size: 1.5rem;
+      color: $white;
+
+    }
+
+    .text_small {
+      font-size: 1.1rem;
+    }
+
+    .btn_of_product {
+      background-color: $l_red;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      padding: 10px 30px;
+      margin-top: 20px;
+    }
+
+    .btn_small {
+      font-size: .75rem;
+      padding: 10px 8px;
+      margin-top: 10px;
+    }
+  }
+
+  .box_3 {
+    top: 90px;
+  }
+
+}
+
+.slider_product{
+  .swiper-container{
+
+    .header_of_slider_swiper{
+      border-bottom: 1px solid $l-gray;
+      .title_of_slider{
+        font-size: 1.3rem;
+        padding: 20px 10px 5px 0px;
+      }
+    }
+
+    .product_arrow_prev,
+    .product_arrow_next {
+      top: 35px !important;
+      &:focus{
+        outline: none;
+      }
+    }
+
+    .product_arrow_prev {
+      left: 50px !important;
+    }
+
+
+    .product_arrow_next{
+      left: 10px !important;
+    }
+
+    .product_arrow_prev::after {
+      content: "\f138" !important;
+      position: relative;
+      font-family: "Font Awesome 5 Pro" !important;
+      font-weight: 300;
+      font-size: 2rem !important;
+      color: #EB7269 !important
+    }
+
+    .product_arrow_next::after {
+      content: "\f137" !important;
+      position: relative;
+      font-family: "Font Awesome 5 Pro" !important;
+      font-weight: 300;
+      font-size: 2rem !important;
+      color: #EB7269 !important
+    }
+
+    .swiper-wrapper{
+      .swiper-slide{
+        height: 500px;
+      }
+    }
+  }
+}
+
+.parallax_box {
+  .parallax {
+    background-image: url("../../img/parallax.jpg");
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: right;
+
+    .text_box {
+      padding: 110px 100px;
+
+      .main_title, .small_title {
+        font-family: $a_f;
+        color: white;
+      }
+
+      .main_title {
+        font-size: 3rem;
+      }
+
+      .small_title {
+        font-size: 2rem;
+      }
+
+      .btn_of_parallax {
+        background-color: $l_red;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 10px 20px;
+        margin-top: 20px;
+      }
+
+
+    }
+
+  }
+}
+
+.news_part {
+  .title_of_news_box {
+    .title {
+      padding-bottom: 10px;
+      border-bottom: 1px solid $l-gray;
+      font-size: 1.3rem;
+    }
+  }
+
+  .news_box {
+    width: 100%;
+    background-color: $white;
+    margin: auto;
+    position: relative;
+
+    .pic_of_news {
+      width: 100%;
+      height: 300px;
+    }
+
+    .news_title_in_img{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: white;
+      background-color:$d_gray;
+      width: 70px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      border-radius: 20px;
+    }
+
+    .body_news {
+      padding: 20px;
+
+      .title_news {
+        font-weight: bold;
+        font-size: 1.3rem;
+      }
+
+      .small_date {
+        color: #6c757d;
+        margin-bottom: 20px;
+        display: block;
+      }
+
+      .short_exp_of_news{
+        color: #4e555b;
+        font-family: $s_f;
+      }
+
+      .footer_of_news{
+        font-family: $s_f;
+        color: $d_gray;
+      .small_views{
+        position: absolute;
+        left: 20px;
+        color: #4e555b;
+
+        .fa-eye{
+          margin-right: 5px;
+        }
+      }
+
+      }
+    }
+
+  }
+}
+
+
+@import "responsive_index";
+
+

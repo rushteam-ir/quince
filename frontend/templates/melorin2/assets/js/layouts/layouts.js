@@ -14,7 +14,6 @@ $(document).ready(function () {
             $('.layer_of_nav').css('display','none');
         }
     });
-
-
+    
 });
 

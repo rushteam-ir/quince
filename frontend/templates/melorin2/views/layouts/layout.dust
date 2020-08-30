@@ -9,10 +9,8 @@
 
     <link rel="stylesheet" href="css/general/bootstrap.css">
     <link rel="stylesheet" href="css/general/fontAwsome.css">
-    <link rel="stylesheet" href="css/general/Swiper.css">
     <link rel="stylesheet" href="css/general/main_css/main_css.css">
     <link rel="stylesheet" href="css/layouts/layouts.css">
-    <link rel="stylesheet" href="css/layouts/responsive.css">
 
     {+css/}
     {+title/}
@@ -279,9 +277,8 @@
 <script src="js/general/jquery.js"></script>
 <script src="js/general/popper.js"></script>
 <script src="js/general/bootstrap.js"></script>
-<script src="js/general/Swiper.js"></script>
 <script src="js/layouts/layouts.js"></script>
 
-
+    {+js/}
 </body>
 </html>

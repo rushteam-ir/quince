@@ -1,5 +1,6 @@
 @import "../partials/main -colors";
 @import "../partials/mixin";
+@import "../partials/fonts";
 
 .header {
 
@@ -16,7 +17,7 @@
       }
 
       .name_of_web_site {
-        font-family: accent-font;
+        font-family: $a_f;
         font-size: 2.2rem;
 
         span {
@@ -57,12 +58,13 @@
   .bottom_box_of_nav_bar {
     background-color: white;
     box-shadow: 0px 10px 20px -20px #2b2b2b;
+    padding-bottom: 2px;
 
     .nav_bar_box {
       .nav_bar {
         .nav_bar_ul {
           list-style-type: none;
-          font-family: second-font;
+          font-family: $s_f;
           font-size: 0.9rem;
 
           .nav_bar_item {
@@ -93,6 +95,7 @@
               color: $white;
               height: 37px;
               display: inline-block;
+              line-height: 28px;
 
               &:hover {
                 color: $white;
@@ -125,7 +128,7 @@
         .card_name {
           font-size: 1.1rem;
           font-weight: bold;
-          font-family: second-font;
+          font-family: $s_f;
         }
 
         .badge_card {
@@ -154,7 +157,7 @@
           background-color: transparent;
           border: none;
           border-right: 1px solid #a5a5a5;
-          font-family: second-font;
+          font-family: $s_f;
           font-size: 0.9rem;
         }
       }
@@ -181,7 +184,7 @@
       .header_of_responsive_nav_bar {
         .title_of_page {
           font-size: 1.5rem;
-          font-family: accent-font;
+          font-family: $a_f;
           margin-right: 50px;
 
           span {
@@ -234,7 +237,7 @@
     }
 
     .title_of_footer {
-      font-family: accent-font;
+      font-family: $a_f;
       font-size: 2rem;
 
       span {
@@ -244,7 +247,7 @@
 
     .text_of_exp , .contact_footer{
       font-size: 0.9rem;
-      font-family: second-font;
+      font-family: $s_f;
       margin-top: 15px;
       text-align: justify;
       width: 80%;
@@ -279,7 +282,7 @@
       list-style-type: none;
       padding-right: 0px!important;
       font-size: 0.9rem;
-      font-family: second-font;
+      font-family: $s_f;
 
       .link_list{
         color:#adadad;
@@ -293,7 +296,7 @@
 
     .contact_info_footer{
       font-size: 0.9rem;
-      font-family: second-font;
+      font-family: $s_f;
       text-align: justify;
     }
 
@@ -321,7 +324,7 @@
       color: #adadad;
       font-size: 0.9rem;
       direction: rtl;
-      font-family: second-font;
+      font-family: $s_f;
     }
   }
 
@@ -333,3 +336,6 @@
     color:#adadad ;
   }
 }
+
+
+@import "responsive";

@@ -4,9 +4,244 @@
     <title>ملورین</title>
 {/title}
 {<css}
+    <link rel="stylesheet" href="css/general/Swiper.css">
+    <link href="css/index/index.css" rel="stylesheet">
 {/css}
 {<js}
+    <script src="js/general/Swiper.js"></script>
+    <script src="js/index/index.js"></script>
 {/js}
 
 {<body}
+
+    <section class="slider_main_page">
+        <div class="swiper-container main_slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../../img/big_slider3%20(1).jpg" class="img_of_main_slider" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../../img/big_slider3%20(2).jpg" class="img_of_main_slider" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../../img/big_slider3%20(3).jpg" class="img_of_main_slider" alt="">
+                </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="services_part">
+        <div class="container-fluid">
+            <div class="row">
+                <div class=" col-10 col-md-6 col-lg-3 offset-1 offset-md-0 offset-lg-0">
+                    <div class="services_box mt-4 mt-lg-0 mt-md-0">
+                        <i class="fal fa-shield-check icons_services"></i>
+                        <h4 class="title_of_service">کیفیت بالا</h4>
+                        <p class="exp_service">اگه زیاد بخری بهت تخفیف میدیم عشق کنی هر چی بیشتر بخری تخفیفت بیشتر میشه
+                            از 30 درصد بگیر تا اصلا بردار و برئ.ما اینجوری مشتری مداری میکنیم دیه.</p>
+                    </div>
+                </div>
+                <div class=" col-10 col-md-6 col-lg-3 offset-1 offset-md-0 offset-lg-0">
+                    <div class="services_box">
+                        <i class="fal fa-user-headset icons_services"></i>
+                        <h4 class="title_of_service">پشتیبانی 24 ساعته</h4>
+                        <p class="exp_service">اگه زیاد بخری بهت تخفیف میدیم عشق کنی هر چی بیشتر بخری تخفیفت بیشتر میشه
+                            از 30 درصد بگیر تا اصلا بردار و برئ.ما اینجوری مشتری مداری میکنیم دیه.</p>
+                    </div>
+                </div>
+                <div class=" col-10 col-md-6 col-lg-3 offset-1 offset-md-0 offset-lg-0">
+                    <div class="services_box">
+                        <i class="fal fa-gift icons_services"></i>
+                        <h4 class="title_of_service">کوپن های تخفیف</h4>
+                        <p class="exp_service">اگه زیاد بخری بهت تخفیف میدیم عشق کنی هر چی بیشتر بخری تخفیفت بیشتر میشه
+                            از 30 درصد بگیر تا اصلا بردار و برئ.ما اینجوری مشتری مداری میکنیم دیه.</p>
+                    </div>
+                </div>
+                <div class=" col-10 col-md-6 col-lg-3 offset-1 offset-md-0 offset-lg-0">
+                    <div class="services_box">
+                        <i class="fal fa-truck icons_services"></i>
+                        <h4 class="title_of_service">ارسال رایگان</h4>
+                        <p class="exp_service">اگه زیاد بخری بهت تخفیف میدیم عشق کنی هر چی بیشتر بخری تخفیفت بیشتر میشه
+                            از 30 درصد بگیر تا اصلا بردار و برئ.ما اینجوری مشتری مداری میکنیم دیه.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product_part">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 col-md-10 offset-lg-0 offset-md-1 px-0 mb-3">
+                    <img src="../../img/category3.jpg" class="img_of_product" alt="">
+                    <div class="text-box text-right first_box_responsive">
+                        <h2 class="title_of_product dir_rtl">
+                            انواع جوراب
+                            <br>
+                            <span class="mt-4 d-inline-block">تا 20% تخفیف بهاره در تمام سایز ها</span>
+                        </h2>
+                        <button class="btn_of_product">مشاهده دسته بندی</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-10 offset-lg-0 offset-md-1 px-0  pl-lg-1 p-l-md-0">
+                    <div class="row">
+                        <div class="col-lg-12 mb-1 pb-3 pb-lg-0">
+                            <img src="../../img/category1.jpg" class="img_of_product small_pic" alt="">
+                            <div class="text-box text-right">
+                                <h2 class="title_of_product dir_rtl  text_small">
+                                    زیر پوش مردانه
+                                    <br>
+                                    <span class="mt-3 d-inline-block">تا 15% تخفیف بهاره</span>
+                                </h2>
+                                <button class="btn_of_product btn_small">مشاهده دسته بندی</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <img src="../../img/category2.jpg" class="img_of_product small_pic" alt="">
+                            <div class="text-box box_3 text-right">
+                                <h2 class="title_of_product dir_rtl  text_small ">
+                                    زیر پوش مردانه
+                                    <br>
+                                    <span class="mt-3 d-inline-block">تا 15% تخفیف بهاره</span>
+                                </h2>
+                                <button class="btn_of_product btn_small">مشاهده دسته بندی</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slider_product my-3">
+        <div class="container bg-white mb-5">
+            <div class="swiper-container ">
+                <div class="header_of_slider_swiper">
+                    <h3 class="title_of_slider dir_rtl text-right">پر فروش ترین ها</h3>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../../img/slider_product_1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../img/slider_product_2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../img/slider_product_3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../img/slider_product_4.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../img/slider_product_1.png" alt="">
+                    </div>
+                    <div class="swiper-slide bg-secondary">
+                        <img src="../../img/slider_product_3.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-button-next product_arrow_next"></div>
+                <div class="swiper-button-prev product_arrow_prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="parallax_box">
+        <div class="parallax">
+            <div class="text_box">
+                <h2 class="main_title">حراج محصولات برتر بهاره</h2>
+                <h3 class="small_title">تا سقف 30% تخفیف</h3>
+                <button class="btn_of_parallax">همین حالا خرید کنید</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="news_part">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mt-5 mb-4">
+                    <div class="title_of_news_box">
+                        <h2 class="title text-right">
+                            اخبار روز
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row mb-5">
+                        <div class="col-lg-4 col-md-8 col-sm-10 offset-sm-1 offset-md-2 offset-lg-0 mb-4 dir_rtl text-right">
+                            <div class="news_box">
+                                <img src="../../img/news2.jpg" alt="" class="pic_of_news">
+                                <div class="news_title_in_img">اخبار</div>
+                                <div class="body_news">
+                                    <h3 class="title_news">سلام من به تو</h3>
+                                    <small class="small_date">20 فروردین ، 98</small>
+                                    <p class="short_exp_of_news text-justify">
+                                        ارسال رایگان برا همه نیست ، خوشحال نشو ، فقط واسه اونایی که 150 تومن به بالا
+                                        خرید کینن ارسالشون رایگانه در غیر این صورت هزینش پا خودن به ما ربطی نداره
+                                    </p>
+                                    <div class="footer_of_news">
+                                        <p class="writer_news d-inline-block">نادیه نجم آبادی</p>
+                                        <small class="small_views d-inline-block text-left">550
+                                            <i class="far fa-eye"></i>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-8 col-sm-10 offset-sm-1 offset-md-2 offset-lg-0 mb-4 dir_rtl text-right">
+                            <div class="news_box">
+                                <img src="../../img/news1.jpg" alt="" class="pic_of_news">
+                                <div class="news_title_in_img">اخبار</div>
+                                <div class="body_news">
+                                    <h3 class="title_news">سلام من به تو</h3>
+                                    <small class="small_date">20 فروردین ، 98</small>
+                                    <p class="short_exp_of_news text-justify">
+                                        ارسال رایگان برا همه نیست ، خوشحال نشو ، فقط واسه اونایی که 150 تومن به بالا
+                                        خرید کینن ارسالشون رایگانه در غیر این صورت هزینش پا خودن به ما ربطی نداره
+                                    </p>
+                                    <div class="footer_of_news">
+                                        <p class="writer_news d-inline-block">نادیه نجم آبادی</p>
+                                        <small class="small_views d-inline-block text-left">550
+                                            <i class="far fa-eye"></i>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-8 col-sm-10 offset-sm-1 offset-md-2 offset-lg-0 mb-4 dir_rtl text-right">
+                            <div class="news_box">
+                                <img src="../../img/news3.jpg" alt="" class="pic_of_news">
+                                <div class="news_title_in_img">اخبار</div>
+                                <div class="body_news">
+                                    <h3 class="title_news">سلام من به تو</h3>
+                                    <small class="small_date">20 فروردین ، 98</small>
+                                    <p class="short_exp_of_news text-justify">
+                                        ارسال رایگان برا همه نیست ، خوشحال نشو ، فقط واسه اونایی که 150 تومن به بالا
+                                        خرید
+                                        کینن ارسالشون رایگانه در غیر این صورت هزینش پا خودن به ما ربطی نداره
+                                    </p>
+                                    <div class="footer_of_news">
+                                        <p class="writer_news d-inline-block">نادیه نجم آبادی</p>
+                                        <small class="small_views d-inline-block text-left">550
+                                            <i class=" far fa-eye"></i>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
 {/body}

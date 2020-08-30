@@ -1,0 +1,182 @@
+@media (min-width: 1200px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1250px;
+  }
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+
+  .product_part .text-box .title_of_product{
+    font-size: 1.2rem;
+  }
+
+  .product_part .text-box .text_small{
+    font-size: 0.8rem;
+  }
+
+
+}
+
+@media only screen and (max-width: 991px) {
+  .slider_main_page .main_slider .img_of_main_slider{
+    height: 450px;
+  }
+
+  .services_part .services_box .icons_services{
+    font-size: 2.5rem;
+  }
+
+  .product_part .img_of_product{
+    height: 250px;
+  }
+
+  .product_part .text-box .title_of_product{
+    font-size: 1rem;
+  }
+
+  .product_part .text-box .btn_of_product{
+    font-size: 1rem;
+    padding: 7px 20px;
+  }
+
+  .product_part .text-box{
+    top: 20px;
+    right: 50px;
+    width: 40%;
+  }
+
+  .first_box_responsive{
+    right: 37px !important;
+  }
+
+  .parallax_box .parallax{
+    height: 350px;
+  }
+
+  .parallax_box .parallax .text_box{
+    padding:70px 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+
+  .services_part .services_box .icons_services{
+    font-size: 2.3rem;
+  }
+
+  .services_part .services_box .exp_service {
+    font-size: 0.8rem;
+  }
+
+  .services_part .services_box{
+    padding: 20px 0px;
+  }
+
+  .parallax_box .parallax{
+    height: 300px;
+  }
+
+  .parallax_box .parallax .text_box{
+    padding:60px 20px;
+  }
+
+  .parallax_box .parallax .text_box .small_title{
+  font-size: 1.5rem;
+  }
+
+  .parallax_box .parallax .text_box .main_title{
+    font-size: 2.5rem;
+  }
+
+  .news_part .news_box .body_news .short_exp_of_news{
+    font-size: .9rem;
+  }
+
+  .news_part .news_box .body_news .footer_of_news{
+    font-size: 0.85rem;
+  }
+
+  .news_part .news_box .body_news .title_news{
+    font-size: 1.15rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .slider_main_page .main_slider .img_of_main_slider{
+    height: 350px;
+  }
+
+  .services_part .services_box .icons_services{
+    font-size: 2rem;
+  }
+
+  .services_part .services_box .title_of_service{
+    font-size: 0.9rem;
+  }
+
+  .services_part .services_box .exp_service{
+    font-size: 0.75rem;
+  }
+
+  .services_part .services_box{
+    padding: 10px 0px;
+  }
+
+  .product_part .text-box .btn_of_product{
+    font-size: .7rem;
+  }
+  .parallax_box .parallax .text_box .btn_of_parallax  ,
+  .news_part .news_box .body_news .short_exp_of_news{
+    font-size: 0.8rem;
+  }
+  .news_part .news_box .body_news .small_date,
+  .news_part .news_box .body_news .footer_of_news
+  {
+    font-size: 0.7rem;
+  }
+
+  .news_part .news_box .body_news .title_news{
+    font-size: 1rem;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .slider_main_page .main_slider .img_of_main_slider{
+    height: 300px;
+  }
+
+  .parallax_box .parallax {
+    height: 240px;
+  }
+
+  .parallax_box .parallax .text_box .main_title{
+    font-size: 2rem;
+  }
+
+  .parallax_box .parallax .text_box .small_title {
+    font-size: 1.2rem;
+  }
+  .parallax_box .parallax .text_box{
+    padding:40px 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .slider_main_page .main_slider .img_of_main_slider{
+    height: 250px;
+  }
+
+}
+
+
+

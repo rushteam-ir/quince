@@ -1,0 +1,19 @@
+$m_f :main-font;
+$s_f :second-font;
+$a_f :accent-font;
+
+
+@font-face {
+  font-family: $m_f;
+  src: url("../../font/Vazir.ttf");
+}
+
+@font-face {
+  font-family: $s_f;
+  src: url("../../font/Vazir-Thin.ttf");
+}
+
+@font-face {
+  font-family: $a_f;
+  src: url("../../font/A.Rezvan.ttf");
+}
