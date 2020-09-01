@@ -26,7 +26,7 @@ var swiper = new Swiper('.swiper_slider_product', {
     slidesPerView: 1,
     spaceBetween: 0,
     slidesPerGroup: 1,
-    loop: true,
+    loop: false,
     loopFillGroupWithBlank: true,
 
     navigation: {
@@ -52,3 +52,8 @@ var swiper = new Swiper('.swiper_slider_product', {
         },
     }
 });
+
+
+//parallax
+
+$('.parallax-window').parallax({imageSrc: "../../img/parallax.jpg"});

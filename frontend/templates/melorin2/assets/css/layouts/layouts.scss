@@ -167,19 +167,24 @@
 
   .layer_of_nav {
     display: none;
+    background-color: rgba(0, 0, 0, 0.42);
+    z-index: 99;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.42);
-    position: absolute;
+    position: fixed;
     top: 0;
-    z-index: 100;
+  }
 
+  .nav_responsive{
     .nav_bar_responsive {
       width: 350px;
       background-color: $white;
       height: 100vh;
-      position: absolute;
+      position: fixed;
       top: 0;
+      right: -350px;
+      z-index: 100;
+
 
       .header_of_responsive_nav_bar {
         .title_of_page {
@@ -220,7 +225,6 @@
       }
     }
   }
-
 }
 
 

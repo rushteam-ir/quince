@@ -99,7 +99,8 @@
         </div>
 
     </nav>
-    <div class="layer_of_nav">
+    <div class="layer_of_nav"></div>
+    <div class="nav_responsive">
         <div class="nav_bar_responsive text-right py-3">
             <div class="header_of_responsive_nav_bar">
                 <h2 class="title_of_page d-inline-block">
@@ -132,8 +133,6 @@
             </ul>
         </div>
     </div>
-
-
 </div>
 
     {+body/}

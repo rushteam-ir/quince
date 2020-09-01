@@ -128,43 +128,45 @@
 }
 .header .layer_of_nav {
   display: none;
+  background-color: rgba(0, 0, 0, 0.42);
+  z-index: 99;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.42);
-  position: absolute;
+  position: fixed;
   top: 0;
-  z-index: 100;
 }
-.header .layer_of_nav .nav_bar_responsive {
+.header .nav_responsive .nav_bar_responsive {
   width: 350px;
   background-color: #fff;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
+  right: -350px;
+  z-index: 100;
 }
-.header .layer_of_nav .nav_bar_responsive .header_of_responsive_nav_bar .title_of_page {
+.header .nav_responsive .nav_bar_responsive .header_of_responsive_nav_bar .title_of_page {
   font-size: 1.5rem;
   font-family: accent-font;
   margin-right: 50px;
 }
-.header .layer_of_nav .nav_bar_responsive .header_of_responsive_nav_bar .title_of_page span {
+.header .nav_responsive .nav_bar_responsive .header_of_responsive_nav_bar .title_of_page span {
   color: #FF6B6B;
 }
-.header .layer_of_nav .nav_bar_responsive .header_of_responsive_nav_bar .btn_close {
+.header .nav_responsive .nav_bar_responsive .header_of_responsive_nav_bar .btn_close {
   border: none;
   background-color: transparent;
 }
-.header .layer_of_nav .nav_bar_responsive .header_of_responsive_nav_bar .btn_close .fa-times {
+.header .nav_responsive .nav_bar_responsive .header_of_responsive_nav_bar .btn_close .fa-times {
   margin-right: 120px;
   font-size: 1.5rem;
   position: relative;
   top: 5px;
 }
-.header .layer_of_nav .nav_bar_responsive .nav_bar_ul_responsive {
+.header .nav_responsive .nav_bar_responsive .nav_bar_ul_responsive {
   margin-right: 50px;
   list-style-type: none;
 }
-.header .layer_of_nav .nav_bar_responsive .nav_bar_ul_responsive .nav_bar_item_responsive .nav_link_responsive {
+.header .nav_responsive .nav_bar_responsive .nav_bar_ul_responsive .nav_bar_item_responsive .nav_link_responsive {
   color: black;
 }
 
@@ -305,7 +307,8 @@
     font-size: 0.6rem;
   }
 
-  .header .bottom_box_of_nav_bar .cart_and_sign_box .card_box .card_name {
+  .header .bottom_box_of_nav_bar .cart_and_sign_box .card_box .card_name,
+.header .top_box_of_nav_bar .left_box .form .search_box {
     font-size: 0.9rem;
   }
 

@@ -43,7 +43,8 @@
   .footer .info_footer .btn_social_instagram {
     font-size: 0.6rem;
   }
-  .header .bottom_box_of_nav_bar .cart_and_sign_box .card_box .card_name {
+  .header .bottom_box_of_nav_bar .cart_and_sign_box .card_box .card_name,
+  .header .top_box_of_nav_bar .left_box .form .search_box{
     font-size: .9rem;
   }
   .header .bottom_box_of_nav_bar .cart_and_sign_box .card_box .fa-shopping-cart {
@@ -58,6 +59,7 @@
   .header .bottom_box_of_nav_bar .nav_bar_box .nav_bar .nav_bar_ul .nav_bar_item .special_item {
     height: 28px;
   }
+
 }
 
 @media only screen and (max-width: 991px) {

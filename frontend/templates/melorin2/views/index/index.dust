@@ -9,6 +9,7 @@
 {/css}
 {<js}
     <script src="js/general/Swiper.js"></script>
+    <script src="js/general/parallax.js"></script>
     <script src="js/index/index.js"></script>
 {/js}
 
@@ -416,7 +417,7 @@
     </section>
 
     <section class="parallax_box">
-        <div class="parallax">
+        <div class="parallax parallax-window dir_rtl text-right" data-parallax="scroll" data-image-src="../../img/parallax.jpg">
             <div class="text_box">
                 <h2 class="main_title">حراج محصولات برتر بهاره</h2>
                 <h3 class="small_title">تا سقف 30% تخفیف</h3>
