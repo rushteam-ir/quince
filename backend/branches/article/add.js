@@ -29,7 +29,7 @@ router.post('/', async(req, res, next)=>{
 
        let {title_inp, parent_inp, child_inp, summary_inp, describe_inp, meta_describe_inp} = req.body;
        let tags_inp = req.body['tags_inp[]'];
-       log(tags_inp)
+
        let validation_result = new validation([
            {value : title_inp},
            {value : parent_inp, type : 'objectId'},

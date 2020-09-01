@@ -103,6 +103,7 @@
                                                     {.}
                                                 </p>
                                                 <i class="fas fa-times remove_tag"></i>
+                                                <input type="hidden" name="tags_inp[]" value="{.}">
                                             </div>
                                             {/article_info.tags}
                                         </div>
