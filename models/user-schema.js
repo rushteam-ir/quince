@@ -4,7 +4,10 @@ let user_schema = new mongoose.Schema({
    last_name : String,
    nick_name : String,
    password : String,
-   email : {type : String, unique : true},
+   email : {
+       type : String,
+       unique : true
+   },
    phone_number : String,
    avatar : String,
    author_type : String,
@@ -31,6 +34,10 @@ let user_schema = new mongoose.Schema({
        default : 0
    },
    categories_number : {
+       type : Number,
+       default : 0
+   },
+   products_number : {
        type : Number,
        default : 0
    },

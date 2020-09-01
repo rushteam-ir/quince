@@ -208,6 +208,13 @@
                                     </p>
                                 </div>
                                 <div>
+                                    <p>تعداد محصولات :
+                                        <a href="{backend_url}store/list/?author={admin_info._id}">
+                                            {admin_info.products_number}
+                                        </a>
+                                    </p>
+                                </div>
+                                <div>
                                     <p>تعداد نظرات / پاسخ به نظرات :
                                         <a href="{backend_url}comments/?author={admin_info._id}">
                                             {admin_info.comments_number}
