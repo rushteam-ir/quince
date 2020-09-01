@@ -11,7 +11,7 @@ body{
 }
 
 @font-face {
-    font-family: accent_font;
+    font-family: $AF;
     src: url("../../fonts/A.Rezvan.ttf");
 }
 
@@ -34,3 +34,4 @@ body{
     font-family: Light_font;
     src: url("../../fonts/Shabnam-Light.ttf");
 }
+

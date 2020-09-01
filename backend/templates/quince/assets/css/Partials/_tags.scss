@@ -1,0 +1,46 @@
+.add_tags {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    color: #969696;
+    background-color: #F3F6F9;
+    height: 44px;
+    border-radius: 6px 0px 0px 6px;
+    &:hover{
+        color: #5c5c5c;
+    }
+}
+
+.tags_lable_field {
+    width: 100%;
+    margin-right :-8px;
+
+    .tags_lable {
+        display: inline-block;
+        width: max-content;
+        padding: 10px;
+        background-color: #F3F6F9;
+        color: rgb(43, 43, 43);
+        border-radius: 7px;
+        text-align: right;
+        direction: rtl;
+        margin-top: 10px;
+        font-size: 0.9rem;
+
+        i {
+            color: $d_red;
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            top: 3px;
+
+        }
+
+        p {
+            display: inline-block;
+            margin: 0;
+            margin-left: 10px;
+            font-size: 0.8rem;
+        }
+    }
+}

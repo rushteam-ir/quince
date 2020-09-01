@@ -16,6 +16,8 @@
     <script src="js/article/article-edit.js"></script>
     <script src="js/article/article-error.js"></script>
     <script src="js/general/form-ajax.js"></script>
+    <script src="js/custom/uploader.js"></script>
+    <script src="js/custom/tag.js"></script>
 
 {/js}
 
@@ -86,6 +88,24 @@
                                         <label for="article_textarea">توضیحات مقاله</label>
                                         <textarea class="form-control main_form_design" id="article_textarea" rows="7" name="describe_inp">{article_info.describe}</textarea>
                                         <input type='file' name='fileupload' id='fileupload' style='display: none;'>
+                                    </div>
+
+                                    <div class="form-group position-relative">
+                                        <label for="tags_field">برچسب ها</label>
+                                        <input type="text" class="form-control main_form_design " id="tags_field"  name="tags_inp">
+                                        <button type="button" class="btn add_tags">
+                                            <i class="far fa-check"></i>
+                                        </button>
+                                        <div class="tags_lable_field">
+                                            {#article_info.tags}
+                                            <div class="tags_lable mr-2">
+                                                <p>
+                                                    {.}
+                                                </p>
+                                                <i class="fas fa-times remove_tag"></i>
+                                            </div>
+                                            {/article_info.tags}
+                                        </div>
                                     </div>
                                     
                                     <div class="form-group">

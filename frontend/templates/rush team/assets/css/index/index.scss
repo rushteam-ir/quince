@@ -6,9 +6,16 @@
 $header_height :100vh;
 
 .header_field {
-    background-image: url(../../img/header.jpg);
-    background-size: cover;
     height: $header_height;
+}
+
+.header_img {
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .HCR {
@@ -327,7 +334,6 @@ $SSH:350px;
     img {
         width: 100%;
         position: relative;
-        top: -100px;
     }
 
     .MWE_info_layout {
@@ -343,7 +349,7 @@ $SSH:350px;
         margin-top: 60px;
         padding-right: 100px;
 
-        span{
+        span {
             font-size: 1.3rem;
             font-family: $LF;
         }
@@ -433,14 +439,71 @@ $SSH:350px;
     }
 }
 
-.col_of_PP{ 
+.col_of_PP {
     background-color: #f5f5f50c;
-    @include transition(linear , 0.2s , 0s)
-    &:hover{
+    @include transition(linear, 0.2s, 0s);
+
+    &:hover {
         background-color: #0f4c820c;
     }
 }
 
 #special_PP {
-    background-color: #0f4c820c;
+    background-color: #0f4c8217;
 }
+
+// article part
+
+.swiper-slide{
+    padding: 30px;
+}
+
+.article_tag{
+    background-color: #0F4C82;
+    color: white;
+    padding: 6px 10px;
+    text-align: center;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    border-radius: 50px;
+}
+
+.article_sec{
+    padding: 0 70px;
+    .main_field_of_article{
+        width: 100%;
+        text-align: right;
+        direction: rtl;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.075);
+        border: 1px solid #ebebeb;
+        border-radius: 2px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 190px;
+        }
+        .article_info{
+            padding: 50px;
+            h3{
+                font-weight: bold;
+                font-size: 1.3rem;
+            }
+            p{
+                font-size: 0.9rem;
+                text-align: justify;
+                color: rgb(56, 56, 56);
+            }
+            div{
+                color: rgb(92, 92, 92);
+                font-size: 0.9rem;
+                i{
+                    color: rgb(192, 192, 192);
+                }
+            }
+        }
+
+    }
+}
+

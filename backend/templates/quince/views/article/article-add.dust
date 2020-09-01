@@ -13,6 +13,8 @@
     <script src="js/article/article-add.js"></script>
     <script src="js/article/article-error.js"></script>
     <script src="js/general/form-ajax.js"></script>
+    <script src="js/custom/uploader.js"></script>
+    <script src="js/custom/tag.js"></script>
 {/js}
 {<body}
     <section>
@@ -70,6 +72,17 @@
                                         <label for="article_textarea">توضیحات مقاله</label>
                                         <textarea class="form-control main_form_design" id="article_textarea" name="describe_inp"></textarea>
                                         <input type='file' name='fileupload' id='fileupload' style='display: none;'>
+                                    </div>
+
+                                    <div class="form-group position-relative">
+                                        <label for="tags_field">برچسب ها</label>
+                                        <input type="text" class="form-control main_form_design " id="tags_field"  name="tags_inp">
+                                        <button type="button" class="btn add_tags">
+                                            <i class="far fa-check"></i>
+                                        </button>
+                                        <div class="tags_lable_field">
+
+                                        </div>
                                     </div>
                                     
                                     <div class="form-group">
