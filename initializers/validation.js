@@ -29,7 +29,7 @@ module.exports = validation =  class {
 
     checkValidation(input){
 
-        if(input.value == ''){
+        if(input.value == '' || isUndefined(input.value)){
 
             return 'لطفا تمام ورودی ها را وارد کنید.';
 
@@ -126,26 +126,20 @@ module.exports = validation =  class {
 
                 case 'array':
                 {
-
                     if(!Array.isArray(input.value)){
 
-                        input.value = [''];
+                        let last_value = input.value;
+                        input.value = [last_value];
 
                     }
 
-                    for(let i = 0; i < input.value.length; i++){
+                    for(let index of input.value){
 
-                        if(input.value[i] == ''){
+                        if(index.length == 0){
 
-                            input.value.splice(i , 1);
+                            return 'لطفا تمام ورودی ها را وارد کنید.';
 
                         }
-
-                    }
-
-                    if(input.value.length == 0){
-
-                        return 'لطفا تمام ورودی ها را وارد کنید.';
 
                     }
 

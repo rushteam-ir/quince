@@ -23,10 +23,9 @@ function createTag(){
 
     if (tag !== '') {
 
-        let tag_container = '<div class="tags_lable mr-2"><p>' + tag + '</p><i class="fas fa-times remove_tag"></i></div>';
+        let tag_container = '<div class="tags_lable mr-2"><p>' + tag + '</p><i class="fas fa-times remove_tag"></i><input type="hidden" name="tags_inp[]" value="'+ tag +'"></div>';
 
         $('.tags_lable_field').append(tag_container);
-
         $('#tags_field').val('');
 
     }
