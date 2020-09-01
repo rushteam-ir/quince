@@ -1,5 +1,6 @@
 @import '../Partials/main-color';
 @import '../Partials/mixin';
+@import '../Partials/bell-ring';
 
 
 .display_none {
@@ -447,6 +448,10 @@
     }
 }
 
+.bell_icon_nav{
+    padding-left: 2px;
+}
+
 .nav_search_field {
     position: absolute;
     left: 100px;
@@ -675,7 +680,7 @@
     font-weight: bold;
 }
 
-#comment_btn {
+#comment_btn ,#contact_btn , #shop_btn{
     position: relative;
 
     span {
@@ -687,26 +692,9 @@
         font-weight: bold;
         border-radius: 8px;
         position: absolute;
-        right: -21px;
+        right: -2px;
         top: -14px;
         margin: 0;
-    }
-}
-
-#shop_btn {
-    position: relative;
-
-    span {
-        width: max-content;
-        background-color: $d_green;
-        padding: 2px 8px 0px 8px;
-        color: white;
-        font-size: 0.7rem;
-        font-weight: bold;
-        border-radius: 8px;
-        position: absolute;
-        right: -10px;
-        top: -14px;
     }
 }
 
