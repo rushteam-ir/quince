@@ -4,31 +4,15 @@ router.get('/', async(req, res, next)=>{
 
     try{
 
-        /*
-        let data = null;
+        let data = {
 
-        if(Object.keys(req.query).length === 0){
-            delete req.session.product_add_from;
-
-            data = {
-
-                list : await category_model.get(),
-
-            }
-        }
-        else{
-
-            data = {
-
-                list : await category_model.get(),
-                product_add_from : req.session.product_add_form,
-
-            }
+            parent_list : await category_model.getParent(),
 
         }
-         */
 
-        res.render('store/store-add');
+        req.session.temp_files = [];
+
+        res.render('store/store-add', data);
 
     }
     catch (error) {
@@ -43,128 +27,110 @@ router.post('/', async(req, res, next)=>{
 
     try{
 
-        let {title_inp, parent_inp, child_inp, describe_inp, price_inp, stock_inp, discount_inp} = req.body;
-        let product_features_inp = req.body['product_features_inp[]'];
-        let product_form = {title_inp, describe_inp, price_inp, stock_inp, discount_inp};
-
-        req.session.product_add_form = product_form;
-
-
-        if(!req.files){
-            return res.redirect(`${config.backend_url}store/add/?msg=few-images`);
-        }
-        else if(!req.files.product_main_image){
-            return res.redirect(`${config.backend_url}store/add/?msg=few-images`);
-        }
-        else if(!req.files['product_other_images[]']){
-            return res.redirect(`${config.backend_url}store/add/?msg=few-images`);
-        }
-        else if(req.files['product_other_images[]'].length < 3){
-            return res.redirect(`${config.backend_url}store/add/?msg=few-images`);
-        }
+        let {title_inp, parent_inp, child_inp, summery_inp, describe_inp, meta_describe_inp, tags_inp,
+            regular_price_inp, sale_price_inp, stock_inp, max_order_inp, weight_inp, length_inp,
+            width_inp, height_inp} = req.body;
 
         let validation_result = new validation([
             {value : title_inp},
             {value : parent_inp, type : 'objectId'},
             {value : child_inp, type : 'objectId'},
             {value : describe_inp},
-            {value : price_inp , type : 'number'},
-            {value : stock_inp , type : 'number'},
-            {value : discount_inp , type : 'number'},
-            {value : product_features_inp , type : 'array'},
+            {value : meta_describe_inp},
+            {value : tags_inp ,type : 'array'},
+            {value : regular_price_inp ,type : 'number'},
+            {value : sale_price_inp ,type : 'number'},
+            {value : stock_inp ,type : 'number'},
+            {value : max_order_inp ,type : 'number'},
+            {value : weight_inp ,type : 'number'},
+            {value : length_inp ,type : 'number'},
+            {value : width_inp ,type : 'number'},
+            {value : height_inp ,type : 'number'},
         ]).valid();
 
         if(validation_result){
 
-            return res.redirect(`${config.backend_url}store/add/?msg=${validation_result}`);
+            return res.json(validation_result)
 
         }
 
-        let price_discount = Math.round(parseInt(price_inp) * (100 - parseInt(discount_inp)) / 100);
+        let code_generated = randomInt(1000000, 9999999);
 
-        let new_product = {
-
-            title : title_inp,
-            category : parent_inp,
-            sub_category : child_inp,
-            describe : describe_inp,
-            stock : stock_inp,
-            price : price_inp,
-            price_discount : price_discount,
-            discount : discount_inp,
-            features : product_features_inp,
-            last_edit : getCurrentDate(),
-            author : req.session.admin_id,
-            status : true,
-            purchases : '0',
-            points : '0'
-
-        };
-
-        let result = await product_model.add(new_product);
-
-        if(result){
-
-            if(req.files){
-
-                let product_images = [];
-                let uploader_options = {
-
-                    allowed_formats : 'image',
-                    limited_size : backend_limited_products_size,
-                    file_path : `${backend_upload_dir}products/`,
-
-                }
-
-                let file_name = `${result._id}_main.png`;
-                let upload_result = new uploader(req.files.product_main_image, file_name, uploader_options).upload();
-
-                if(upload_result){
-
-                    return res.redirect(`${config.backend_url}store/add/?msg=${upload_result}`);
-
-                }
-
-                product_images.push(`${file_name}`);
-
-                for(let i = 0; i < req.files['product_other_images[]'].length; i++){
-
-                    let file_name = `${result._id}_${i+1}.png`;
-                    let upload_result = new uploader(req.files['product_other_images[]'][i], file_name, uploader_options).upload();
-
-                    if(upload_result){
-
-                        return res.redirect(`${config.backend_url}store/add/?msg=${upload_result}`);
-                        break;
-
-                    }
-
-                    product_images.push(`${file_name}`);
-
-                }
-
-                new_product['images'] = product_images;
-
-            }
-
-            let final_result = await product_model.edit(result._id, new_product);
-
-            if(final_result){
-
-                delete req.session.product_add_form;
-                return res.redirect(`${config.backend_url}store/list/?msg=add-success`);
-
+        while(true){
+            if(!await product_model.find({code : {$ne : code_generated}})){
+                break;
             }
             else{
+                continue;
+            }
+        }
 
-                return res.redirect(`${config.backend_url}store/add/?msg=add-fail`);
+        let product_url = `${code_generated}/${title_inp.split(' ').join('-').toLowerCase()}`;
+
+        let product_data = {
+
+            title : title_inp,
+            category_parent : (parent_inp == '0') ? null : parent_inp,
+            category_child : (child_inp == '0') ? null : child_inp,
+            describe : describe_inp,
+            meta_describe : meta_describe_inp,
+            code : code_generated,
+            internal_files : req.session.temp_files,
+            summary : summary_inp,
+            tags : tags_inp,
+            regular_price : regular_price_inp,
+            sale_price : sale_price_inp,
+            stock : stock_inp,
+            max_order : max_order_inp,
+            weight : weight_inp,
+            length : length_inp,
+            width : width_inp,
+            height : height_inp,
+            url : product_url,
+            author : req.session.admin_id
+
+        }
+
+        if (req.files) {
+
+            let main_image = req.files.main_image;
+            let file_name = `${randomSha1String()}.${main_image.name.split(".").pop()}`;
+            let upload_result = fileManager.upload(main_image, file_name,{
+
+                allowed_formats : `image`,
+                file_path : `${backend_upload_dir}images/`,
+
+            });
+
+            if(upload_result){
+
+                return res.json(upload_result)
 
             }
+
+            product_data.main_image = file_name;
 
         }
         else{
 
-            return res.redirect(`${config.backend_url}store/add/?msg=add-fail`);
+            return res.json('یک تصویر به عنوان تصویر اصلی محصول انتخاب کنید.');
+
+        }
+
+        let result = await product_model.add(product_data);
+
+        if(result){
+
+            return res.json({
+                status : 'success',
+                msg : 'محصول جدید با موفقیت ثبت شد.',
+                url : `${config.backend_url}store/list`
+            })
+
+        }
+        else{
+
+            return res.json('این نام تکراری می باشد لطفا از نام دیگری استفاده کنید.');
 
         }
 

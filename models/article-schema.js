@@ -22,11 +22,15 @@ let article_schema = new mongoose.Schema({
         ref : 'user'
     },
     last_edit : String,
-    views_number : Number,
+    views_number : {
+        type : Number,
+        default : 0
+    },
     comments_number : {
         type : Number,
         default : 0
     },
+    tags : Array,
     url : String,
 
 })

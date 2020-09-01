@@ -43,16 +43,16 @@ router.post('/:id', async(req, res, next)=>{
 
    try{
 
-       log(req.files);
        let article_id = req.params.id;
        let find_article = await article_model.getByUniqueId(article_id);
-       let {title_inp, parent_inp, child_inp, summary_inp, describe_inp, meta_describe_inp} = req.body;
+       let {title_inp, parent_inp, child_inp, summary_inp, describe_inp, meta_describe_inp, tags_inp} = req.body;
        let validation_result = new validation([
            {value : title_inp},
            {value : parent_inp, type : 'objectId'},
            {value : child_inp, type : 'objectId'},
            {value : describe_inp},
            {value : meta_describe_inp},
+           {value : tags_inp, type : 'array'},
        ]).valid()
 
        if(validation_result){

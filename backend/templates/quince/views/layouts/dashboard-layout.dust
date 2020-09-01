@@ -82,8 +82,8 @@
 
         </div>
 
-        <!-- <div class="position-relative dashboard_body_collaps">
-            <i class="fad fa-coins"></i>
+        <div class="position-relative dashboard_body_collaps">
+            <i class="fad fa-shopping-cart"></i>
             <p>فروشگاه</p>
             <i class="fas fa-angle-left rotate"></i>
 
@@ -119,7 +119,7 @@
                 <p>- کد تخفیف</p>
             </a>
 
-        </div> -->
+        </div>
 
         <div class="position-relative dashboard_body_collaps">
             <i class="fad fa-users-crown"></i>
