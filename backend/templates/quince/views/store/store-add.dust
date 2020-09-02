@@ -9,264 +9,264 @@
 
     <script src="js/store/store-add.js"></script>
     <script src="js/custom/uploader.js"></script>
+    <script src="js/custom/checkbox.js"></script>
+    <script src="js/custom/error-handler.js"></script>
+    <script src="js/custom/main-error.js"></script>
+    <script src="js/custom/tag.js"></script>
 
 {/js}
 
 {<body}
-    <section>
-        <div class="main_bodu_of_store_add mb-5">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 main_col_of_store_add">
-                        <header class="header_field">
-                            <h1>لیست محصولات</h1>
-                            <h2>لیست محصولات را در جذول زیر مشاهده کنید</h2>
-                            <hr>
-                        </header>
-                        <div class="row dir-ltr">
-                            <div class="col-8 offset-2">
-                                <form class="text-right dir-rtl">
-                                    <div class="form-group">
-                                        <label for="article_name">نام محصول</label>
-                                        <input type="text" class="form-control main_form_design" id="article_name">
+<section>
+    <!-- error -->
+    <div class="error_info warning_error">
+        <i class="fal fa-exclamation-circle"></i>
+        <p></p>
+        <i class="fal fa-times"></i>
+    </div>
+    <div class="main_body">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-9 pr-0 pl-0 mb-4">
+                    <form action="">
+                        <div class="main_col field_of_shop_tabs pb-4" id="product_detail_tab">
+                            <header class="header_field mb-5">
+                                <h1>مشخصات محصول</h1>
+                                <h2>مشحصات محصول را در کادر زیر وارد کنید</h2>
+                                <hr>
+                            </header>
+                            <div class="shop_field_padding_custom">
+                                <div class="form-group ">
+                                    <label for="product_name">نام محصول</label>
+                                    <input type="text" class="form-control main_form_design" id="product_name">
+                                </div>
+                                <div class="form-group ">
+                                    <label for="product_category">دسته</label>
+                                    <select class="form-control main_form_design select-sub-category" id="product_category">
+                                        <option value="0">-----</option>
+                                    </select>
+                                </div>
+                                <div class="form-group ">
+                                    <label for="product_sub_category">زیر دسته</label>
+                                    <select class="form-control main_form_design select-sub-category" id="product_sub_category">
+                                        <option value="0">-----</option>
+                                    </select>
+                                </div>
+                                <div class="form-group ">
+                                    <label for="summary_description">توضیحات مختصر</label>
+                                    <textarea class="form-control main_form_design" id="summary_description"></textarea>
+                                </div>
+                                <div class="form-group ">
+                                    <label for="main_description">توضیحات</label>
+                                    <textarea class="form-control main_form_design" id="main_description"></textarea>
+                                </div>
+                                <div class="form-group position-relative">
+                                    <label for="tags_field">برچسب ها</label>
+                                    <input type="text" class="form-control main_form_design " id="tags_field">
+                                    <button type="button" class="btn add_tags">
+                                        <i class="far fa-check"></i>
+                                    </button>
+                                    <div class="tags_lable_field">
+
                                     </div>
-                                    <div class="form-group">
-                                        <label class="main_lable_design" for="store_add_select">والد دسته</label>
-                                        <select class="form-control main_form_design category_edit_title"
-                                                id="store_add_select ">
-                                            <option>شما چند وقته کد میزنی؟</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="main_lable_design" for="store_add_select">نام دسته</label>
-                                        <select class="form-control main_form_design category_edit_title"
-                                                id="store_add_select ">
-                                            <option>طالبی</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="article_name">توضیحات</label>
-                                        <textarea type="text" class="form-control main_form_design"
-                                                  id="article_name"></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="article_name">قیمت <span class="description_of_label">(تومان)</span></label>
-                                        <input type="text" class="form-control main_form_design" id="article_name">
-                                    </div>
-                                    <div class="row">
-                                        <div class="col pr-0">
-                                            <label for="article_name">تخفیف</label>
-                                            <div class="input-group mb-3">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text" id="Sale_addon">%</span>
-                                                </div>
-                                                <input type="number"
-                                                       class="form-control main_form_design sale_inp_custom"
-                                                       aria-label="Username" aria-describedby="Sale_addon">
-                                            </div>
-                                        </div>
-                                        <div class="col pl-0">
-                                            <div class="form-group">
-                                                <label for="article_name">موجودی انبار</label>
-                                                <input type="number" class="form-control main_form_design"
-                                                       id="article_name">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="article_name">کلمات کلیدی</label>
-                                        <input type="text" class="form-control main_form_design" id="article_name">
-                                        <small>قالب استاندارد : <span
-                                                class="key_word_custom">جوراب ، جوراب مردانه ، ...</span></small>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="article_name">توصیافات لینک </label>
-                                        <textarea type="text" class="form-control main_form_design"
-                                                  id="article_name"></textarea>
-                                    </div>
-                                    <label for="avatar" class=" col-form-label main_lable_design">تصویر پروفایل</label>
-                                    <div class="row">
-                                        <div class="col-4 pr-0">
-                                            <div class="form-group">
-                                                <div class="field_of_img_template">
-                                                    <div class="box_of_img_template">
-                                                        <div class="box_of_img_template img-box">
-                                                            <div class="img-show">
-                                                                {@eq key="{admin_info.avatar}" value=""}
-                                                                {:else}
-                                                                    <div class="remove_parent">
-                                                                        <img class="uploading_img_from_brows"
-                                                                             src="media/avatars/{admin_info.avatar}">
-                                                                        <div name="0"
-                                                                             class="remove_img_icon avatar_del"></div>
-                                                                    </div>
-                                                                {/eq}
-                                                            </div>
-                                                            <input type="file" name="avatar" id="avatar_img"
-                                                                   class="input-file-custom">
-                                                            <label for="avatar_img"
-                                                                   class="btn btn-tertiary2 js-labelFile ">
-                                                                <i class="icon fa fa-check"></i>
-                                                                <span class="js-fileName mr-2">انتخاب عکس</span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4 pr-2 pl-2">
-                                            <div class="form-group">
-                                                <div class="field_of_img_template">
-                                                    <div class="box_of_img_template">
-                                                        <div class="box_of_img_template img-box">
-                                                            <div class="img-show">
-                                                                {@eq key="{admin_info.avatar}" value=""}
-                                                                {:else}
-                                                                    <div class="remove_parent">
-                                                                        <img class="uploading_img_from_brows"
-                                                                             src="media/avatars/{admin_info.avatar}">
-                                                                        <div name="0"
-                                                                             class="remove_img_icon avatar_del"></div>
-                                                                    </div>
-                                                                {/eq}
-                                                            </div>
-                                                            <input type="file" name="avatar" id="avatar_img"
-                                                                   class="input-file-custom">
-                                                            <label for="avatar_img"
-                                                                   class="btn btn-tertiary2 js-labelFile ">
-                                                                <i class="icon fa fa-check"></i>
-                                                                <span class="js-fileName mr-2">انتخاب عکس</span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4 pl-0">
-                                            <div class="form-group ">
-                                                <div class="field_of_img_template">
-                                                    <div class="box_of_img_template">
-                                                        <div class="box_of_img_template img-box">
-                                                            <div class="img-show">
-                                                                {@eq key="{admin_info.avatar}" value=""}
-                                                                {:else}
-                                                                    <div class="remove_parent">
-                                                                        <img class="uploading_img_from_brows"
-                                                                             src="media/avatars/{admin_info.avatar}">
-                                                                        <div name="0"
-                                                                             class="remove_img_icon avatar_del"></div>
-                                                                    </div>
-                                                                {/eq}
-                                                            </div>
-                                                            <input type="file" name="avatar" id="avatar_img"
-                                                                   class="input-file-custom">
-                                                            <label for="avatar_img"
-                                                                   class="btn btn-tertiary2 js-labelFile ">
-                                                                <i class="icon fa fa-check"></i>
-                                                                <span class="js-fileName mr-2">انتخاب عکس</span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                </div>
+                                <div class="form-group ">
+                                    <label for="product_type">نوع محصول</label>
+                                    <select class="form-control main_form_design select_procut_type" id="product_type">
+                                        <option value="0">فیزیکی</option>
+                                        <option value="0">مجازی</option>
+                                        <option value="0">قابل دانلود</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 p-0">
+                                        <div class="form-group position-relative">
+                                            <input id="tax_checker" type="checkbox" class="option-input checkbox">
+                                            <p class="checkbox_text">آیا محصول شما شامل مالیات می شود؟</p>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-4 pr-0">
-                                            <div class="form-group">
-                                                <div class="field_of_img_template">
-                                                    <div class="box_of_img_template">
-                                                        <div class="box_of_img_template img-box">
-                                                            <div class="img-show">
-                                                                {@eq key="{admin_info.avatar}" value=""}
-                                                                {:else}
-                                                                    <div class="remove_parent">
-                                                                        <img class="uploading_img_from_brows"
-                                                                             src="media/avatars/{admin_info.avatar}">
-                                                                        <div name="0"
-                                                                             class="remove_img_icon avatar_del"></div>
-                                                                    </div>
-                                                                {/eq}
-                                                            </div>
-                                                            <input type="file" name="avatar" id="avatar_img"
-                                                                   class="input-file-custom">
-                                                            <label for="avatar_img"
-                                                                   class="btn btn-tertiary2 js-labelFile ">
-                                                                <i class="icon fa fa-check"></i>
-                                                                <span class="js-fileName mr-2">انتخاب عکس</span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <div class="col-6 p-0">
+                                        <div class="form-group position-relative">
+                                            <input id="sale_checker" type="checkbox" class="option-input checkbox">
+                                            <p class="checkbox_text">آیا محصول شما شامل تخفیف می شود؟</p>
                                         </div>
-                                        <div class="col-4 pr-2 pl-2">
-                                            <div class="form-group">
-                                                <div class="field_of_img_template">
-                                                    <div class="box_of_img_template">
-                                                        <div class="box_of_img_template img-box">
-                                                            <div class="img-show">
-                                                                {@eq key="{admin_info.avatar}" value=""}
-                                                                {:else}
-                                                                    <div class="remove_parent">
-                                                                        <img class="uploading_img_from_brows"
-                                                                             src="media/avatars/{admin_info.avatar}">
-                                                                        <div name="0"
-                                                                             class="remove_img_icon avatar_del"></div>
-                                                                    </div>
-                                                                {/eq}
-                                                            </div>
-                                                            <input type="file" name="avatar" id="avatar_img"
-                                                                   class="input-file-custom">
-                                                            <label for="avatar_img"
-                                                                   class="btn btn-tertiary2 js-labelFile ">
-                                                                <i class="icon fa fa-check"></i>
-                                                                <span class="js-fileName mr-2">انتخاب عکس</span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4 pl-0">
-                                            <div class="form-group ">
-                                                <div class="field_of_img_template">
-                                                    <div class="box_of_img_template">
-                                                        <div class="box_of_img_template img-box">
-                                                            <div class="img-show">
-                                                                {@eq key="{admin_info.avatar}" value=""}
-                                                                {:else}
-                                                                    <div class="remove_parent">
-                                                                        <img class="uploading_img_from_brows"
-                                                                             src="media/avatars/{admin_info.avatar}">
-                                                                        <div name="0"
-                                                                             class="remove_img_icon avatar_del"></div>
-                                                                    </div>
-                                                                {/eq}
-                                                            </div>
-                                                            <input type="file" name="avatar" id="avatar_img"
-                                                                   class="input-file-custom">
-                                                            <label for="avatar_img"
-                                                                   class="btn btn-tertiary2 js-labelFile ">
-                                                                <i class="icon fa fa-check"></i>
-                                                                <span class="js-fileName mr-2">انتخاب عکس</span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="alert_pro_descripion mb-1">حجم مجاز برای آپلود تصویر
-                                            حداکثر {limited_images_size} مگابایت و همچنین فرمت های مجاز .png ، .jpg ،
-                                            .jpeg و .gif می باشد.</p>
                                     </div>
-                                    <button class="btn green_btn">افزودن محصول جدید</button>
-                                </form>
-                            </div>
+                                </div>
+                            </div>                    
+                        </div>
+
+                        <div class="main_col field_of_shop_tabs pb-5" id="product_price_tab">
+                            <header class="header_field mb-5">
+                                <h1>قیمت محصول</h1>
+                                <h2>قیمت و ننظیمات مربوطه را وارد نمایید</h2>
+                                <hr>
+                            </header>
+                            <div class="shop_field_padding_custom">
+                                <div class="form-group ">
+                                    <label for="product_price">قیمت محصول <span class="small_of_title">(تومان)</span></label>
+                                    <input type="text" class="form-control main_form_design" id="product_price">
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 pr-0">
+                                        <div class="form-group ">
+                                            <label for="product_sale">مقدار تخفیف <span class="small_of_title">(تومان)</span></label>
+                                            <input type="text" class="form-control main_form_design sale_inp_shop" id="product_sale" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 pl-0">
+                                        <div class="form-group ">
+                                            <label for="product_Percent">درصد تخفیف</label>
+                                            <input type="text" class="form-control main_form_design sale_inp_shop" id="product_Percent" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 pr-0">
+                                        <div class="form-group ">
+                                            <label for="product_sale_date_from">مدت تخفیف از</label>
+                                            <input type="date" class="form-control main_form_design sale_inp_shop" id="product_sale_date_from" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 pl-0">
+                                        <div class="form-group ">
+                                            <label for="product_sale_date_to">تا</label>
+                                            <input type="date" class="form-control main_form_design sale_inp_shop" id="product_sale_date_to" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                    
+                        </div>
+
+                        <div class="main_col field_of_shop_tabs pb-5" id="product_price_tab">
+                            <header class="header_field mb-5">
+                                <h1>مالیات</h1>
+                                <h2>مالیات محصول خود را کنترل کنید</h2>
+                                <hr>
+                            </header>                  
+                        </div>
+
+                        <div class="main_col field_of_shop_tabs pb-5" id="product_face">
+                            <header class="header_field mb-5">
+                                <h1>مشخصات طاهری</h1>
+                                <h2>مشخصات ظاهری کالای خود را وارد کنید</h2>
+                                <hr>
+                            </header>
+                            <div class="shop_field_padding_custom">
+                                <div class="form-group">
+                                    <label for="weight_unit">واحد وزن</label>
+                                    <select class="form-control main_form_design select-sub-category" id="weight_unit">
+                                        <option value="0">گرم</option>
+                                        <option value="0">کیلو گرم</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="priduct_weight">وزن</label>
+                                    <input type="text" class="form-control main_form_design" id="priduct_weight">
+                                </div>
+                                <div class="form-group">
+                                    <label for="length_unit">واحد طول و عرض</label>
+                                    <select class="form-control main_form_design select-sub-category" id="length_unit">
+                                        <option value="0">سانتی متر</option>
+                                        <option value="0">متر</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="product_length">طول</label>
+                                    <input type="text" class="form-control main_form_design" id="product_length">
+                                </div>
+                                <div class="form-group">
+                                    <label for="product_width">عرض </label>
+                                    <input type="text" class="form-control main_form_design" id="product_width">
+                                </div>
+                                <div class="form-group">
+                                    <label for="product_height">ارتفاع </label>
+                                    <input type="text" class="form-control main_form_design" id="product_height">
+                                </div>
+                            </div>                    
+                        </div>
+
+                        <div class="main_col field_of_shop_tabs pb-5" id="product_store">
+                            <header class="header_field mb-5">
+                                <h1>مشخصات انبار</h1>
+                                <h2>مشخصات انبار خود را وارد کنید</h2>
+                                <hr>
+                            </header>
+                            <div class="shop_field_padding_custom">
+                                <div class="form-group">
+                                    <label for="store_number">موجودی انبار</label>
+                                    <input type="text" class="form-control main_form_design" id="store_number">
+                                </div>
+                                <div class="form-group">
+                                    <label for="store_tupe">وضعیت انبار</label>
+                                    <select class="form-control main_form_design select-sub-category" id="store_tupe">
+                                        <option value="0">موجود</option>
+                                        <option value="0">نا موجود</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="max_user_can_buy">حداکثر تعداد قابل سفارش</label>
+                                    <input type="text" class="form-control main_form_design" id="max_user_can_buy">
+                                </div>
+                            </div>                    
+                        </div>
+
+                        <div class="main_col field_of_shop_tabs pb-5" id="attributes">
+                            <header class="header_field mb-5">
+                                <h1>ویژگی های محصول</h1>
+                                <h2>ویژگی های محصول خود را بنویسید</h2>
+                                <hr>
+                            </header>
+                            <div class="shop_field_padding_custom">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="form-group">
+                                            <label>نام</label>
+                                            <input type="text" class="form-control main_form_design">
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="form-group">
+                                            <label>توضیحات</label>
+                                            <textarea class="form-control main_form_design attr_description_field"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div></div>
+                                <button type="button" class="btn add_layer"><i class="fal fa-layer-plus"></i></button>
+                            </div>                    
+                        </div>
+                    </form>
+                </div>
+                <div class="col-3 pr-0">
+                    <div class="main_col p-4">
+                        <div class="shop_tabs shop_tabs_active">
+                            <i class="fas fa-barcode"></i>
+                            <p class="d-inline-block mr-3 mt-3">مشخصات محصول</p>
+                        </div>
+                        <div class="shop_tabs">
+                            <i class="far fa-money-bill-wave"></i>
+                            <p class="d-inline-block mr-3 mt-3">قیمت محصول</p>
+                        </div>
+                        <div class="shop_tabs" id="tax_tab">
+                            <i class="far fa-badge-dollar"></i>
+                            <p class="d-inline-block mr-3 mt-3">مالیات</p>
+                        </div>
+                        <div class="shop_tabs" id="pro_Appearance">
+                            <i class="far fa-weight"></i>
+                            <p class="d-inline-block mr-3 mt-3">مشخصات ظاهری</p>
+                        </div>
+                        <div class="shop_tabs">
+                            <i class="far fa-tasks"></i>
+                            <p class="d-inline-block mr-3 mt-3">مشخصات انبار</p>
+                        </div>
+                        <div class="shop_tabs">
+                            <i class="far fa-clipboard-list"></i>
+                            <p class="d-inline-block mr-3 mt-3">ویژگی ها</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 {/body}

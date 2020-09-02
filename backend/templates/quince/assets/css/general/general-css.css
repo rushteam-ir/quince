@@ -116,6 +116,7 @@ textarea.form-control {
     border: none;
     height: 44px !important;
     border-radius: 7px;
+    font-size: 0.9rem;
 }
 
 .main_form_design:focus {

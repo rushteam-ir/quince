@@ -1,9 +1,11 @@
+// create tag with clicl on tik btn
 $('.add_tags').click(function () {
 
     createTag();
 
 });
 
+// create tag with press enter key
 $('#tags_field').keypress(function (e) {
 
     let key = e.which;
@@ -17,6 +19,7 @@ $('#tags_field').keypress(function (e) {
 
 });
 
+// create tag function
 function createTag(){
 
     let tag = $('#tags_field').val();
@@ -28,12 +31,20 @@ function createTag(){
         $('.tags_lable_field').append(tag_container);
         $('#tags_field').val('');
 
+        // remove tags affter add tags
+        $('.remove_tag').click(function () {
+
+            $(this).parent().remove();
+        
+        });
+
     }
 
-    $('.remove_tag').click(function () {
-
-        $(this).parent().remove();
-
-    });
-
 }
+
+// remove tags in article list
+$('.remove_tag').click(function () {
+
+    $(this).parent().remove();
+
+});

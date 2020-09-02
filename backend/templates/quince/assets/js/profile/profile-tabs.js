@@ -83,5 +83,3 @@ $(document).ready(function () {
     $('#first_tab').removeClass('display_none');
 
 });
-
-
