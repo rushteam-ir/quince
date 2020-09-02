@@ -237,7 +237,15 @@
                 <i class="fal fa-envelope"></i>
             </div>
             <div class="nav_icon_field nav_modal_data">
-                <i class="fal fa-bell bell_icon_nav bell"></i>
+                {@ne key="{g_notification_comments.count}" value="0"}
+                    <i class="fal fa-bell bell_icon_nav bell"></i>
+                {:else}
+                    {@ne key="{g_notification_contacts.count}" value="0"}
+                        <i class="fal fa-bell bell_icon_nav bell"></i>
+                    {:else}
+                        <i class="fal fa-bell bell_icon_nav"></i>
+                    {/ne}
+                {/ne}
             </div>
             <div class="nav_comment_field">
                 <div class="comment_header_notif">
