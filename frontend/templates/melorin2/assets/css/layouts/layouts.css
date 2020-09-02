@@ -170,6 +170,13 @@
   color: black;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 80;
+}
+
 .footer {
   width: 100%;
   background-color: #262626;
@@ -258,6 +265,134 @@
 }
 .footer .copyright {
   color: #adadad;
+}
+
+.modal_register, .modal_login {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+}
+.modal_register .main_row, .modal_login .main_row {
+  width: 100%;
+  height: 100vh;
+}
+.modal_register .main_row .modal_body, .modal_login .main_row .modal_body {
+  width: 500px;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 7px;
+}
+.modal_register .main_row .modal_body .header_of_modal, .modal_login .main_row .modal_body .header_of_modal {
+  padding: 20px 20px 0px 20px;
+  text-align: right;
+  position: relative;
+}
+.modal_register .main_row .modal_body .header_of_modal .title_of_modal, .modal_login .main_row .modal_body .header_of_modal .title_of_modal {
+  font-size: 1.5rem;
+  font-family: accent-font;
+}
+.modal_register .main_row .modal_body .header_of_modal .title_of_modal span, .modal_login .main_row .modal_body .header_of_modal .title_of_modal span {
+  color: #FF6B6B;
+}
+.modal_register .main_row .modal_body .header_of_modal .btn_close, .modal_login .main_row .modal_body .header_of_modal .btn_close {
+  position: absolute;
+  left: 20px;
+  top: 23px;
+  border: none;
+  background-color: transparent;
+  font-size: 1.3rem;
+}
+.modal_register .main_row .modal_body .body_of_modal, .modal_login .main_row .modal_body .body_of_modal {
+  padding: 0px 80px;
+  direction: rtl;
+  text-align: right;
+}
+.modal_register .main_row .modal_body .body_of_modal form .field_of_register, .modal_login .main_row .modal_body .body_of_modal form .field_of_register {
+  height: 32px;
+}
+.modal_register .main_row .modal_body .body_of_modal form .field_of_register:focus, .modal_login .main_row .modal_body .body_of_modal form .field_of_register:focus {
+  box-shadow: none;
+  border: 1px solid #ced4da;
+}
+.modal_register .main_row .modal_body .body_of_modal form .btn_register, .modal_login .main_row .modal_body .body_of_modal form .btn_register {
+  background-color: #343A40;
+  color: white;
+}
+.modal_register .main_row .modal_body .body_of_modal form .btn_register:hover, .modal_login .main_row .modal_body .body_of_modal form .btn_register:hover {
+  background-color: #262626;
+}
+.modal_register .main_row .modal_body .body_of_modal .register_link, .modal_login .main_row .modal_body .body_of_modal .register_link {
+  color: #FF6B6B;
+}
+
+.modal_login {
+  display: block;
+}
+.modal_login .check_box_label {
+  font-family: second-font;
+}
+.modal_login .btn_login {
+  background-color: #343A40;
+  color: white;
+}
+.modal_login .btn_login:hover {
+  background-color: #262626;
+}
+.modal_login .login_link {
+  color: #FF6B6B;
+}
+.modal_login .check_box_label {
+  display: block;
+  position: relative;
+  padding-right: 35px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.modal_login .check_box_label:hover .checkmark {
+  background-color: #ccc;
+}
+.modal_login .check_box_label .input_check_box {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.modal_login .check_box_label .input_check_box:checked ~ .checkmark {
+  background-color: #106ef3;
+}
+.modal_login .check_box_label .input_check_box:checked ~ .checkmark:after {
+  display: block;
+}
+.modal_login .check_box_label .checkmark {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 5px;
+}
+.modal_login .check_box_label .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 9px;
+  top: 1px;
+  width: 7px;
+  height: 18px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
 }
 
 @media (min-width: 1200px) {

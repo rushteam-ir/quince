@@ -11,6 +11,7 @@
     <script src="js/general/Swiper.js"></script>
     <script src="js/general/parallax.js"></script>
     <script src="js/index/index.js"></script>
+    <script src="js/custom/product-slider.js"></script>
 {/js}
 
 {<body}
@@ -131,7 +132,7 @@
                     <h3 class="title_of_slider dir_rtl text-right">پر فروش ترین ها</h3>
                 </div>
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide dir_rtl text-right">
+                    <div class="swiper-slide swiper-product dir_rtl text-right">
                         <a class="slider_slide_link" href="">
                             <img src="../../img/slider_product_1.png" alt="" class="img_slider">
                             <div class="body_slider">
@@ -168,7 +169,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="swiper-slide dir_rtl text-right">
+                    <div class="swiper-slide swiper-product dir_rtl text-right">
                         <a class="slider_slide_link" href="">
                             <img src="../../img/slider_product_2.png" alt="" class="img_slider">
                             <div class="body_slider">
@@ -200,7 +201,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="swiper-slide dir_rtl text-right">
+                    <div class="swiper-slide swiper-product dir_rtl text-right">
                         <a class="slider_slide_link" href="">
                             <img src="../../img/slider_product_3.png" alt="" class="img_slider">
                             <div class="body_slider">
@@ -232,7 +233,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="swiper-slide dir_rtl text-right">
+                    <div class="swiper-slide swiper-product dir_rtl text-right">
                         <a class="slider_slide_link" href="">
                             <img src="../../img/slider_product_4.png" alt="" class="img_slider">
                             <div class="body_slider">
@@ -269,7 +270,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="swiper-slide dir_rtl text-right">
+                    <div class="swiper-slide swiper-product dir_rtl text-right">
                         <a class="slider_slide_link" href="">
                             <img src="../../img/slider_product_1.png" alt="" class="img_slider">
                             <div class="body_slider">
@@ -307,7 +308,7 @@
                         </a>
 
                     </div>
-                    <div class="swiper-slide dir_rtl text-right">
+                    <div class="swiper-slide swiper-product dir_rtl text-right">
                         <a class="slider_slide_link" href="">
                             <img src="../../img/slider_product_2.png" alt="" class="img_slider">
                             <div class="body_slider">
@@ -339,7 +340,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="swiper-slide dir_rtl text-right">
+                    <div class="swiper-slide swiper-product dir_rtl text-right">
                         <a class="slider_slide_link" href="">
                             <img src="../../img/slider_product_3.png" alt="" class="img_slider">
                             <div class="body_slider">
@@ -372,7 +373,7 @@
                         </a>
 
                     </div>
-                    <div class="swiper-slide dir_rtl text-right">
+                    <div class="swiper-slide swiper-product dir_rtl text-right">
                         <a class="slider_slide_link" href="">
                             <img src="../../img/slider_product_4.png" alt="" class="img_slider">
                             <div class="body_slider">

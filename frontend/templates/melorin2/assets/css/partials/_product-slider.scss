@@ -1,0 +1,134 @@
+
+.slider_product{
+  .swiper-container{
+
+    .header_of_slider_swiper{
+      border-bottom: 1px solid $l-gray;
+      .title_of_slider{
+        font-size: 1.3rem;
+        padding: 20px 10px 5px 0px;
+      }
+    }
+
+    .product_arrow_prev,
+    .product_arrow_next {
+      top: 35px !important;
+      &:focus{
+        outline: none;
+      }
+    }
+
+    .product_arrow_prev {
+      left: 10px !important;
+    }
+
+
+    .product_arrow_next{
+      left: 50px !important;
+    }
+
+    .product_arrow_prev::after {
+
+      content: "\f137" !important;
+      position: relative;
+      font-family: "Font Awesome 5 Pro" !important;
+      font-weight: 300;
+      font-size: 2rem !important;
+      color: $l_red !important
+    }
+
+    .product_arrow_next::after {
+      content: "\f138" !important;
+      position: relative;
+      font-family: "Font Awesome 5 Pro" !important;
+      font-weight: 300;
+      font-size: 2rem !important;
+      color: $l_red !important
+    }
+
+    .swiper-wrapper{
+      .swiper-slide{
+
+        .slider_slide_link{
+          color: $black;
+          position: relative;
+
+          &:hover .social_box{
+            right: 0px;
+            z-index: 100;
+          }
+
+          .social_box{
+            position: absolute;
+            top: 0px;
+            right: -30px;
+            @include transition(ease-in-out,0.3s);
+
+            .icon_link{
+              border: none;
+              position: absolute;
+              background-color: $l_red;
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+              text-align: center;
+              line-height: 30px;
+              color: white;
+
+              &_heart{
+                top: -120px;
+              }
+
+              &_eye{
+                top: -85px;
+              }
+
+              &_shopping{
+                top: -50px;
+              }
+            }
+
+          }
+          .img_slider{
+            width: 100%;
+            margin-top: 20px;
+          }
+
+          .body_slider{
+            margin-top: 20px;
+            .rate_of_product{
+              font-size: .7rem;
+              color: rgba(116,116,116,0.51);
+            }
+
+            .name_of_product{
+              font-size:.8rem ;
+              color: #6c757d;
+              padding: 10px 0px 25px 0px;
+              border-bottom: 1px solid $l-gray;
+            }
+
+            .price_of_product,
+            .price_of_product_line{
+              font-size: 0.9rem;
+              font-weight: bold;
+              padding-bottom: 20px;
+              margin-left: 30px;
+            }
+
+            .price_of_product_line{
+              text-decoration: line-through;
+              color: #6c757d;
+            }
+
+            .off_sale{
+              color: $l_red;
+              font-size: 0.8rem;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
