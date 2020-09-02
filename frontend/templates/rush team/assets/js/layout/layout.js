@@ -1,14 +1,21 @@
 function animateWithRandomNumber(myClass, from, to) {
+
   TweenLite.fromTo(
+
     myClass,
     Math.floor(Math.random() * 20 + 1), {
+
       y: from
+
     }, {
+
       y: to,
       onComplete: animateWithRandomNumber,
       onCompleteParams: [myClass, from, to],
       ease: Linear.easeNone
+
     });
+
 }
 
 const itemsDown = [
@@ -36,17 +43,40 @@ const itemsUp = [
 forEach(e => animateWithRandomNumber(e, 1080, -1080));
 
 
-window.onscroll = function () {
-  myFunction()
-};
+// window.onscroll = function () {
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+//   myFunction();
 
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-      navbar.classList.add("sticky")
-  } else {
-      navbar.classList.remove("sticky");
-  }
-}
+// };
+
+// var navbar = document.getElementById("navbar");
+// var sticky = navbar.offsetTop;
+
+// function myFunction() {
+
+//   if (window.pageYOffset > sticky) {
+
+//     navbar.classList.add("sticky")
+
+//   } else {
+
+//     navbar.classList.remove("sticky");
+
+//   }
+// }
+
+
+
+// contact us modal
+
+$('#nav_contact_us').click(function () {
+
+  $('.sec_of_CUM').fadeIn();
+
+  $('#close_CUM').click(function () {
+
+    $('.sec_of_CUM').fadeOut();
+
+  });
+
+});

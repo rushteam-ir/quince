@@ -1,0 +1,11 @@
+Index: models/global.js
+===================================================================
+--- models/global.js	(revision 804920ff5178372ee6c7bd901b889b5e0d287cb2)
++++ models/global.js	(revision 804920ff5178372ee6c7bd901b889b5e0d287cb2)
+@@ -1,5 +0,0 @@
+-module.exports = async function (schema, options){
+-
+-
+-
+-}
+\ No newline at end of file

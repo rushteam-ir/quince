@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/general/fontAwsome.css">
     <link rel="stylesheet" href="css/general/general-css.css">
     <link rel="stylesheet" href="css/layout/dashboard.css">
-    <link rel="stylesheet" href="css/general/css-animate.css">
     {+css/}
     <title>Quince</title>
 </head>
@@ -235,10 +234,10 @@
 
         <div class="nav_data_content">
             <div class="nav_icon_field">
-                <i class="fad fa-envelope"></i>
+                <i class="fal fa-envelope"></i>
             </div>
             <div class="nav_icon_field nav_modal_data">
-                <i class="fad fa-comments-alt"></i>
+                <i class="fal fa-bell bell_icon_nav bell"></i>
             </div>
             <div class="nav_comment_field">
                 <div class="comment_header_notif">

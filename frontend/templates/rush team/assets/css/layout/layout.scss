@@ -145,6 +145,10 @@
     }
 }
 
+.navbar_iteam{
+    cursor: pointer;
+}
+
 // footer
 
 $footer_height:400px;
@@ -267,4 +271,103 @@ $footer_height:400px;
     p {
         margin: 0;
     }
+}
+
+// contact us modal
+
+
+
+.sec_of_CUM {
+    height: 100vh;
+    width: 100%;
+    background-color: #000000c4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000000000000000;
+    display: none;
+
+    .CUM_row_custom {
+        height: 100vh;
+
+        .main_field_of_CUM {
+            width: 100%;
+            background-color: white;
+        }
+    }
+
+    .info_of_CUM {
+        position: relative;
+        background-image: url(../../img/bg-1.jpg);
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        padding: 70px;
+
+        .fa-times {
+            position: absolute;
+            left: 30px;
+            top: 20px;
+            font-size: 2rem;
+            color: #9d9d9d;
+            cursor: pointer;
+        }
+
+        .CUM_info_text {
+            text-align: right;
+            direction: rtl;
+            color: white;
+            margin-bottom: 40px;
+
+            i {
+                margin-left: 20px;
+                color: rgb(158, 158, 158);
+            }
+
+            .info_text_detail {
+                color: rgb(199, 199, 199);
+            }
+        }
+    }
+
+    .CUM_form {
+        direction: rtl;
+        text-align: right;
+
+        button {
+            background-color: $main_color;
+            width: 160px;
+        }
+
+        input,
+        textarea {
+            border: 1px solid rgb(228, 228, 228);
+        }
+    }
+
+    .header_text_of_CUM {
+        direction: rtl;
+        text-align: right;
+
+        h3 {
+            font-weight: bold;
+            font-size: 1.45rem;
+            font-family: $LF;
+        }
+
+        p {
+            font-size: 0.8rem;
+            color: #6c6c6c;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    .col_Padding_custom {
+        padding: 40px 70px;
+    }
+}
+
+.show{
+    display: block;
 }

@@ -27,7 +27,8 @@ router.post('/', async(req, res, next)=>{
 
    try{
 
-       let {title_inp, parent_inp, child_inp, summary_inp, describe_inp, meta_describe_inp, tags_inp} = req.body;
+       let {title_inp, parent_inp, child_inp, summary_inp, describe_inp, meta_describe_inp} = req.body;
+       let tags_inp = req.body['tags_inp[]'];
 
        let validation_result = new validation([
            {value : title_inp},
@@ -35,7 +36,7 @@ router.post('/', async(req, res, next)=>{
            {value : child_inp, type : 'objectId'},
            {value : describe_inp},
            {value : meta_describe_inp},
-           {value : tags_inp ,type : 'array'},
+           {value : tags_inp , type : 'array'},
        ]).valid();
 
        if(validation_result){

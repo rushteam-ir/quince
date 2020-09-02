@@ -34,8 +34,8 @@
                 <li class="navbar_iteam">
                     <a href="">مقالات</a>
                 </li>
-                <li class="navbar_iteam">
-                    <a href="">تماس با ما</a>
+                <li class="navbar_iteam" id="nav_contact_us">
+                    <a>تماس با ما</a>
                 </li>
                 <li class="navbar_iteam ">
                     <a href="" class="special_one">
@@ -185,6 +185,89 @@
     <div class="copy_right_field">
         <p>&copy تمام حقوق مادی و معنوی این سایت متعلق به گروه راش تیم می باشد  .</p>
     </div>
+
+    
+<!-- contact us modla -->
+
+<section class="sec_of_CUM" >
+    <div class="container-fluid">
+        <div class="row align-items-center CUM_row_custom">
+            <div class="col-8 offset-2">
+                <div class="main_field_of_CUM" id="test">
+                    <div class="row">
+                        <div class="col-6 p-0">
+                            <div class="info_of_CUM">
+                                <i class="fal fa-times" id="close_CUM"></i>
+                                <div class="row align-items-center h-100">
+                                    <div class="col-12">
+                                        <div class="CUM_info_text">
+                                            <p>
+                                                <i class="fal fa-phone"></i>
+                                                شماره تماس 
+                                            </p>
+                                            <p class="info_text_detail">
+                                                09021414866
+                                            </p>
+                                        </div>
+                                        <div class="CUM_info_text">
+                                            <p>
+                                                <i class="fal fa-at"></i>
+                                                پست الکترونیکی
+                                            </p>
+                                            <p class="info_text_detail">
+                                                kasrahabibbeygi@gmail.com
+                                            </p>
+                                        </div>
+                                        <div class="CUM_info_text">
+                                            <p>
+                                                <i class="fal fa-question"></i>
+                                                سوالات متداول 
+                                            </p>
+                                            <p class="info_text_detail">
+                                                برای پرسش به سوالات متداول به لنک زیر مراجعه فرمایید تا پاسخ پرسش های خود را بیابید در غیر این صورت با ما تماس بگیرید .
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col_Padding_custom">
+                            <div class="header_text_of_CUM">
+                                <h3>فرم تماس با ما</h3>
+                                <p>نظرات و پیشنهادات و انتقادات خود را برای بهبود تیم ما با ما  با اشتراک بگذارید .</p>
+                            </div>
+                            <form class="CUM_form">
+                                <div class="form-group">
+                                    <label for="name_CUM">نام و نام خانوادگی</label>
+                                    <input type="email" class="form-control" id="name_CUM">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email_CUM">پست الکترونیکی</label>
+                                    <input type="password" class="form-control" id="email_CUM">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone_CUM">شماره تماس</label>
+                                    <input type="password" class="form-control" id="phone_CUM">
+                                </div>
+                                <div class="form-group">
+                                    <label for="title_CUM">موضوع پیام</label>
+                                    <input type="password" class="form-control" id="title_CUM">
+                                </div>
+                                <div class="form-group">
+                                    <label for="text_CUM">متن پیام</label>
+                                    <textarea class="form-control" id="text_CUM" rows="4"></textarea>
+                                  </div>
+                                <button type="submit" class="btn btn-primary">ثبت و ارسال</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
     <script src="js/general/jquery.js"></script>
     <script src="js/general/popper.js"></script>
     <script src="js/general/bootstrap.js"></script>
