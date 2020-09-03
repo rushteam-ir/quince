@@ -24,7 +24,8 @@
     border-radius: 5px;
     padding-right: 10px;
     margin-top: 10px;
-    i{
+
+    i {
         position: relative;
         top: 3px;
     }
@@ -49,55 +50,57 @@
     font-size: 1.5rem;
 }
 
-.shop_field_padding_custom{
+.shop_field_padding_custom {
     padding: 0px 70px;
 }
 
-.checkbox_text{
+.checkbox_text {
     display: inline-block;
     margin-right: 10px;
     position: relative;
     top: 4px;
     font-size: 0.9rem;
 }
-.option-input{
+
+.option-input {
     margin-right: 0;
 }
 
-.small_of_title{
+.small_of_title {
     color: $d_red;
     font-size: 0.8rem;
 }
 
-.shop_field_padding_custom{
-    .attr_description_field{
+.shop_field_padding_custom {
+    .attr_description_field {
         height: 100px !important;
     }
 }
 
-.field_of_shop_tabs{
+.field_of_shop_tabs {
     display: none;
 }
 
-// #product_detail_tab{
-//     display: block;
-// }
-#attributes{
+#product_detail_tab {
     display: block;
+}
+
+#attributes {
     overflow: auto;
 }
 
-#tax_tab{
-    display: none;
+#tax_tab {
+    display: non;
 }
 
-.add_layer{
+.add_layer {
     font-size: 1.7rem;
     color: #7fe0dc;
     float: left;
     position: relative;
     top: 10px;
-    &:hover{
+
+    &:hover {
         color: $d_green;
     }
 }
