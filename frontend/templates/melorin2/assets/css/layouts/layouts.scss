@@ -360,6 +360,7 @@
     height: 100vh;
 
     .modal_body{
+      position: relative;
       width: 500px;
       background-color: $white;
       margin: auto;
@@ -427,7 +428,7 @@
 
 .modal_login{
   @extend .modal_register;
-  display: block;
+  display: none;
 
   .check_box_label{
     font-family: $s_f;
@@ -447,6 +448,7 @@
   }
 
   .check_box_label{
+    margin-top: 15px;
     display: block;
     position: relative;
     padding-right: 35px;
@@ -500,6 +502,29 @@
     }
 
 
+  }
+
+  .recovery_box_link{
+    position: relative;
+    top: -10px;
+    .recovery_link{
+      color: #343A40;
+    }
+  }
+
+}
+
+.modal_recovery{
+  @extend .modal_register;
+  display: none;
+
+  .recovery_btn{
+    background-color: #343A40;
+    color: white;
+
+    &:hover{
+      background-color: $d_gray;
+    }
   }
 
 }

@@ -118,6 +118,137 @@
   font-size: 0.8rem;
 }
 
+.modal_fast_see {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 1001;
+  top: 0;
+  width: 100%;
+}
+.modal_fast_see .modal_see_row {
+  width: 100%;
+  height: 100vh;
+}
+.modal_fast_see .modal_see_row .body_modal {
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  border-radius: 7px;
+  position: relative;
+}
+.modal_fast_see .modal_see_row .body_modal .header_of_modal {
+  padding: 20px 30px 0px 0px;
+  position: relative;
+}
+.modal_fast_see .modal_see_row .body_modal .header_of_modal .btn_close {
+  position: absolute;
+  left: 30px;
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+}
+.modal_fast_see .modal_see_row .body_modal .header_of_modal .title_of_product {
+  font-size: 1.8rem;
+  font-family: accent-font;
+  color: #FF6B6B;
+}
+.modal_fast_see .modal_see_row .body_modal .content_modal {
+  padding: 10px 30px 40px 10px;
+}
+.modal_fast_see .modal_see_row .body_modal .content_modal .slider_product {
+  padding: 0px 70px 0px 40px;
+}
+.modal_fast_see .modal_see_row .body_modal .content_modal .slider_product .swiper-slide .main_img {
+  height: 350px;
+  width: 100%;
+  border-radius: 5px;
+}
+.modal_fast_see .modal_see_row .body_modal .content_modal .slider_product .gallery-thumbs {
+  margin-top: 20px;
+}
+.modal_fast_see .modal_see_row .body_modal .content_modal .slider_product .gallery-thumbs .thumb_img {
+  height: 90px;
+  width: 90px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.modal_fast_see .modal_see_row .body_modal .content_modal .detail_product {
+  position: relative;
+  padding-left: 50px;
+}
+.modal_fast_see .modal_see_row .body_modal .content_modal .detail_product .cm_rate {
+  font-size: 0.8rem;
+}
+.modal_fast_see .modal_see_row .body_modal .content_modal .detail_product .cm_rate .rate_box {
+  color: #d6d6d6;
+}
+.modal_fast_see .modal_see_row .body_modal .content_modal .detail_product .cm_rate .cm_box {
+  position: absolute;
+  left: 50px;
+}
+.modal_fast_see .modal_see_row .body_modal .content_modal .detail_product .name_price .name_of_product {
+  font-size: 1.3rem;
+  margin-top: 20px;
+}
+.modal_fast_see .modal_see_row .body_modal .content_modal .detail_product .title_of_detail, .modal_fast_see .modal_see_row .body_modal .content_modal .detail_product .detail_of_product, .modal_fast_see .modal_see_row .body_modal .content_modal .detail_product .color_list_title {
+  font-family: second-font;
+}
+.modal_fast_see .modal_see_row .body_modal .content_modal .detail_product .detail_of_product .list_detail {
+  list-style-type: none;
+}
+.modal_fast_see .modal_see_row .body_modal .content_modal .detail_product .detail_of_product .list_detail:before {
+  content: "";
+  /* FontAwesome Unicode */
+  font-family: "Font Awesome 5 Pro";
+  display: inline-block;
+  font-weight: lighter;
+  position: relative;
+  right: -5px;
+  top: 3px;
+}
+.modal_fast_see .modal_see_row .body_modal .content_modal .detail_product .color_list {
+  padding-inline-start: 0px;
+  position: relative;
+  top: 10px;
+}
+.modal_fast_see .modal_see_row .body_modal .content_modal .detail_product .color_list .link_color {
+  display: inline-block;
+  margin-right: 10px;
+}
+.modal_fast_see .modal_see_row .body_modal .content_modal .detail_product .color_list .link_color .link {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 50%;
+}
+.modal_fast_see .modal_see_row .body_modal .content_modal .detail_product .color_list .link_color_1 {
+  background-color: #E8C52D;
+}
+.modal_fast_see .modal_see_row .body_modal .content_modal .detail_product .color_list .link_color_2 {
+  background-color: #F6C2C1;
+}
+.modal_fast_see .modal_see_row .body_modal .content_modal .detail_product .color_list .link_color_3 {
+  background-color: #323E1A;
+}
+.modal_fast_see .modal_see_row .body_modal .content_modal .detail_product .color_list .link_color_4 {
+  background-color: #DC0219;
+}
+.modal_fast_see .modal_see_row .body_modal .content_modal .detail_product .price_of_product {
+  font-family: accent-font;
+  font-size: 1.5rem;
+  color: #FF6B6B;
+}
+.modal_fast_see .modal_see_row .body_modal .content_modal .detail_product .btn_style {
+  background-color: #FF6B6B;
+  border: none;
+  border-radius: 5px;
+  margin-left: 20px;
+  padding: 8px 20px;
+  color: white;
+}
+
 .slider_main_page .main_slider .img_of_main_slider {
   width: 100%;
   height: 620px;

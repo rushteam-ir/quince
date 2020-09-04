@@ -267,7 +267,7 @@
   color: #adadad;
 }
 
-.modal_register, .modal_login {
+.modal_register, .modal_recovery, .modal_login {
   display: none;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.45);
@@ -275,29 +275,30 @@
   top: 0;
   width: 100%;
 }
-.modal_register .main_row, .modal_login .main_row {
+.modal_register .main_row, .modal_recovery .main_row, .modal_login .main_row {
   width: 100%;
   height: 100vh;
 }
-.modal_register .main_row .modal_body, .modal_login .main_row .modal_body {
+.modal_register .main_row .modal_body, .modal_recovery .main_row .modal_body, .modal_login .main_row .modal_body {
+  position: relative;
   width: 500px;
   background-color: #fff;
   margin: auto;
   border-radius: 7px;
 }
-.modal_register .main_row .modal_body .header_of_modal, .modal_login .main_row .modal_body .header_of_modal {
+.modal_register .main_row .modal_body .header_of_modal, .modal_recovery .main_row .modal_body .header_of_modal, .modal_login .main_row .modal_body .header_of_modal {
   padding: 20px 20px 0px 20px;
   text-align: right;
   position: relative;
 }
-.modal_register .main_row .modal_body .header_of_modal .title_of_modal, .modal_login .main_row .modal_body .header_of_modal .title_of_modal {
+.modal_register .main_row .modal_body .header_of_modal .title_of_modal, .modal_recovery .main_row .modal_body .header_of_modal .title_of_modal, .modal_login .main_row .modal_body .header_of_modal .title_of_modal {
   font-size: 1.5rem;
   font-family: accent-font;
 }
-.modal_register .main_row .modal_body .header_of_modal .title_of_modal span, .modal_login .main_row .modal_body .header_of_modal .title_of_modal span {
+.modal_register .main_row .modal_body .header_of_modal .title_of_modal span, .modal_recovery .main_row .modal_body .header_of_modal .title_of_modal span, .modal_login .main_row .modal_body .header_of_modal .title_of_modal span {
   color: #FF6B6B;
 }
-.modal_register .main_row .modal_body .header_of_modal .btn_close, .modal_login .main_row .modal_body .header_of_modal .btn_close {
+.modal_register .main_row .modal_body .header_of_modal .btn_close, .modal_recovery .main_row .modal_body .header_of_modal .btn_close, .modal_login .main_row .modal_body .header_of_modal .btn_close {
   position: absolute;
   left: 20px;
   top: 23px;
@@ -305,31 +306,31 @@
   background-color: transparent;
   font-size: 1.3rem;
 }
-.modal_register .main_row .modal_body .body_of_modal, .modal_login .main_row .modal_body .body_of_modal {
+.modal_register .main_row .modal_body .body_of_modal, .modal_recovery .main_row .modal_body .body_of_modal, .modal_login .main_row .modal_body .body_of_modal {
   padding: 0px 80px;
   direction: rtl;
   text-align: right;
 }
-.modal_register .main_row .modal_body .body_of_modal form .field_of_register, .modal_login .main_row .modal_body .body_of_modal form .field_of_register {
+.modal_register .main_row .modal_body .body_of_modal form .field_of_register, .modal_recovery .main_row .modal_body .body_of_modal form .field_of_register, .modal_login .main_row .modal_body .body_of_modal form .field_of_register {
   height: 32px;
 }
-.modal_register .main_row .modal_body .body_of_modal form .field_of_register:focus, .modal_login .main_row .modal_body .body_of_modal form .field_of_register:focus {
+.modal_register .main_row .modal_body .body_of_modal form .field_of_register:focus, .modal_recovery .main_row .modal_body .body_of_modal form .field_of_register:focus, .modal_login .main_row .modal_body .body_of_modal form .field_of_register:focus {
   box-shadow: none;
   border: 1px solid #ced4da;
 }
-.modal_register .main_row .modal_body .body_of_modal form .btn_register, .modal_login .main_row .modal_body .body_of_modal form .btn_register {
+.modal_register .main_row .modal_body .body_of_modal form .btn_register, .modal_recovery .main_row .modal_body .body_of_modal form .btn_register, .modal_login .main_row .modal_body .body_of_modal form .btn_register {
   background-color: #343A40;
   color: white;
 }
-.modal_register .main_row .modal_body .body_of_modal form .btn_register:hover, .modal_login .main_row .modal_body .body_of_modal form .btn_register:hover {
+.modal_register .main_row .modal_body .body_of_modal form .btn_register:hover, .modal_recovery .main_row .modal_body .body_of_modal form .btn_register:hover, .modal_login .main_row .modal_body .body_of_modal form .btn_register:hover {
   background-color: #262626;
 }
-.modal_register .main_row .modal_body .body_of_modal .register_link, .modal_login .main_row .modal_body .body_of_modal .register_link {
+.modal_register .main_row .modal_body .body_of_modal .register_link, .modal_recovery .main_row .modal_body .body_of_modal .register_link, .modal_login .main_row .modal_body .body_of_modal .register_link {
   color: #FF6B6B;
 }
 
 .modal_login {
-  display: block;
+  display: none;
 }
 .modal_login .check_box_label {
   font-family: second-font;
@@ -345,6 +346,7 @@
   color: #FF6B6B;
 }
 .modal_login .check_box_label {
+  margin-top: 15px;
   display: block;
   position: relative;
   padding-right: 35px;
@@ -393,6 +395,24 @@
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
+}
+.modal_login .recovery_box_link {
+  position: relative;
+  top: -10px;
+}
+.modal_login .recovery_box_link .recovery_link {
+  color: #343A40;
+}
+
+.modal_recovery {
+  display: none;
+}
+.modal_recovery .recovery_btn {
+  background-color: #343A40;
+  color: white;
+}
+.modal_recovery .recovery_btn:hover {
+  background-color: #262626;
 }
 
 @media (min-width: 1200px) {
@@ -493,6 +513,10 @@
   .header .bottom_box_of_nav_bar .nav_bar_box .nav_bar .nav_btn_responsive .fa-bars {
     font-size: 1.2rem;
   }
+
+  .modal_register .main_row .modal_body, .modal_recovery .main_row .modal_body, .modal_login .main_row .modal_body {
+    width: 470px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .header .top_box_of_nav_bar {
@@ -569,6 +593,14 @@
 
   .footer .exp_of_page .contact_footer {
     margin-right: 33%;
+  }
+
+  .modal_register .main_row .modal_body, .modal_recovery .main_row .modal_body, .modal_login .main_row .modal_body {
+    width: 400px;
+  }
+
+  .modal_register .main_row .modal_body .body_of_modal, .modal_recovery .main_row .modal_body .body_of_modal, .modal_login .main_row .modal_body .body_of_modal {
+    padding: 0px 40px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -668,6 +700,47 @@
 
   .footer .copyright {
     font-size: 0.8rem;
+  }
+
+  .modal_register .main_row .modal_body, .modal_recovery .main_row .modal_body, .modal_login .main_row .modal_body {
+    width: 330px;
+  }
+
+  .modal_register .main_row .modal_body .header_of_modal .title_of_modal,
+.modal_recovery .main_row .modal_body .header_of_modal .title_of_modal,
+.modal_login .main_row .modal_body .header_of_modal .title_of_modal,
+.modal_register .main_row .modal_body .header_of_modal .btn_close,
+.modal_recovery .main_row .modal_body .header_of_modal .btn_close,
+.modal_login .main_row .modal_body .header_of_modal .btn_close {
+    font-size: 1.1rem;
+  }
+
+  .modal_register .main_row .modal_body .body_of_modal,
+.modal_recovery .main_row .modal_body .body_of_modal,
+.modal_login .main_row .modal_body .body_of_modal {
+    font-size: 0.7rem;
+  }
+
+  .modal_register .main_row .modal_body .body_of_modal form .btn_register, .modal_login .main_row .modal_body .body_of_modal form .btn_register, .modal_recovery .main_row .modal_body .body_of_modal form .btn_register,
+.modal_login .btn_login,
+.modal_recovery .recovery_btn {
+    font-size: 0.8rem;
+  }
+
+  .modal_register .main_row .modal_body .body_of_modal form .field_of_register,
+.modal_recovery .main_row .modal_body .body_of_modal form .field_of_register,
+.modal_login .main_row .modal_body .body_of_modal form .field_of_register {
+    height: 25px;
+  }
+
+  .text_footer {
+    font-size: 0.8rem !important;
+  }
+
+  .modal_login .check_box_label .checkmark {
+    width: 20px;
+    height: 20px;
+    top: -3px;
   }
 }
 @media only screen and (max-width: 400px) {
