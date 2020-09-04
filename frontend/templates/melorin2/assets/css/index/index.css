@@ -56,35 +56,6 @@
   right: 0px;
   z-index: 100;
 }
-.slider_product .swiper-container .swiper-wrapper .swiper-slide .slider_slide_link .social_box {
-  position: absolute;
-  top: 0px;
-  right: -30px;
-  transition: all ease-in-out 0.3s;
-  -webkit-transition: all ease-in-out 0.3s;
-  -moz-transition: all ease-in-out 0.3s;
-  -ms-transition: all ease-in-out 0.3s;
-}
-.slider_product .swiper-container .swiper-wrapper .swiper-slide .slider_slide_link .social_box .icon_link {
-  border: none;
-  position: absolute;
-  background-color: #FF6B6B;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 30px;
-  color: white;
-}
-.slider_product .swiper-container .swiper-wrapper .swiper-slide .slider_slide_link .social_box .icon_link_heart {
-  top: -120px;
-}
-.slider_product .swiper-container .swiper-wrapper .swiper-slide .slider_slide_link .social_box .icon_link_eye {
-  top: -85px;
-}
-.slider_product .swiper-container .swiper-wrapper .swiper-slide .slider_slide_link .social_box .icon_link_shopping {
-  top: -50px;
-}
 .slider_product .swiper-container .swiper-wrapper .swiper-slide .slider_slide_link .img_slider {
   width: 100%;
   margin-top: 20px;
@@ -116,6 +87,35 @@
 .slider_product .swiper-container .swiper-wrapper .swiper-slide .slider_slide_link .body_slider .off_sale {
   color: #FF6B6B;
   font-size: 0.8rem;
+}
+.slider_product .swiper-container .swiper-wrapper .social_box {
+  position: absolute;
+  top: 0px;
+  right: -30px;
+  transition: all ease-in-out 0.3s;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -ms-transition: all ease-in-out 0.3s;
+}
+.slider_product .swiper-container .swiper-wrapper .social_box .icon_link {
+  border: none;
+  position: absolute;
+  background-color: #FF6B6B;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+.slider_product .swiper-container .swiper-wrapper .social_box .icon_link_heart {
+  top: -120px;
+}
+.slider_product .swiper-container .swiper-wrapper .social_box .icon_link_eye {
+  top: -85px;
+}
+.slider_product .swiper-container .swiper-wrapper .social_box .icon_link_shopping {
+  top: -50px;
 }
 
 .modal_fast_see {

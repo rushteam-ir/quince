@@ -375,7 +375,7 @@
 
                     </div>
                     <div class="swiper-slide swiper-product dir_rtl text-right">
-                        <a class="slider_slide_link" href="">
+                        <a class="slider_slide_link">
                             <img src="../../img/slider_product_4.png" alt="" class="img_slider">
                             <div class="body_slider">
                                 <div class="rate_of_product">
@@ -398,18 +398,18 @@
                                 </p>
                                 <div class="off_sale d-inline-block">30%</div>
                             </div>
-                            <div class="social_box">
-                                <button class="icon_link icon_link_heart">
-                                    <i class="fas fa-heart icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_eye">
-                                    <i class="fas fa-eye icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_shopping">
-                                    <i class="fas fa-shopping-cart icon_product"></i>
-                                </button>
-                            </div>
                         </a>
+                        <div class="social_box">
+                            <button class="icon_link icon_link_heart"  type="button">
+                                <i class="fas fa-heart icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_eye"  type="button">
+                                <i class="fas fa-eye icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_shopping"  type="button">
+                                <i class="fas fa-shopping-cart icon_product"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-button-next product_arrow_next"></div>
