@@ -157,18 +157,19 @@
                                 </p>
                                 <div class="off_sale d-inline-block">30%</div>
                             </div>
-                            <div class="social_box">
-                                <button class="icon_link icon_link_heart">
-                                    <i class="fas fa-heart icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_eye">
-                                    <i class="fas fa-eye icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_shopping">
-                                    <i class="fas fa-shopping-cart icon_product"></i>
-                                </button>
-                            </div>
+
                         </a>
+                        <div class="social_box">
+                            <button class="icon_link icon_link_heart">
+                                <i class="fas fa-heart icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_eye">
+                                <i class="fas fa-eye icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_shopping">
+                                <i class="fas fa-shopping-cart icon_product"></i>
+                            </button>
+                        </div>
                     </div>
                     <div class="swiper-slide swiper-product dir_rtl text-right">
                         <a class="slider_slide_link" href="">
@@ -189,18 +190,19 @@
                                     <span class="price">تومان</span>
                                 </p>
                             </div>
-                            <div class="social_box">
-                                <button class="icon_link icon_link_heart">
-                                    <i class="fas fa-heart icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_eye">
-                                    <i class="fas fa-eye icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_shopping">
-                                    <i class="fas fa-shopping-cart icon_product"></i>
-                                </button>
-                            </div>
+
                         </a>
+                        <div class="social_box">
+                            <button class="icon_link icon_link_heart">
+                                <i class="fas fa-heart icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_eye">
+                                <i class="fas fa-eye icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_shopping">
+                                <i class="fas fa-shopping-cart icon_product"></i>
+                            </button>
+                        </div>
                     </div>
                     <div class="swiper-slide swiper-product dir_rtl text-right">
                         <a class="slider_slide_link" href="">
@@ -221,18 +223,19 @@
                                     <span class="price">تومان</span>
                                 </p>
                             </div>
-                            <div class="social_box">
-                                <button class="icon_link icon_link_heart">
-                                    <i class="fas fa-heart icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_eye">
-                                    <i class="fas fa-eye icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_shopping">
-                                    <i class="fas fa-shopping-cart icon_product"></i>
-                                </button>
-                            </div>
+
                         </a>
+                        <div class="social_box">
+                            <button class="icon_link icon_link_heart">
+                                <i class="fas fa-heart icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_eye">
+                                <i class="fas fa-eye icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_shopping">
+                                <i class="fas fa-shopping-cart icon_product"></i>
+                            </button>
+                        </div>
                     </div>
                     <div class="swiper-slide swiper-product dir_rtl text-right">
                         <a class="slider_slide_link" href="">
@@ -258,18 +261,19 @@
                                 </p>
                                 <div class="off_sale d-inline-block">30%</div>
                             </div>
-                            <div class="social_box">
-                                <button class="icon_link icon_link_heart">
-                                    <i class="fas fa-heart icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_eye">
-                                    <i class="fas fa-eye icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_shopping">
-                                    <i class="fas fa-shopping-cart icon_product"></i>
-                                </button>
-                            </div>
+
                         </a>
+                        <div class="social_box">
+                            <button class="icon_link icon_link_heart">
+                                <i class="fas fa-heart icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_eye">
+                                <i class="fas fa-eye icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_shopping">
+                                <i class="fas fa-shopping-cart icon_product"></i>
+                            </button>
+                        </div>
                     </div>
                     <div class="swiper-slide swiper-product dir_rtl text-right">
                         <a class="slider_slide_link" href="">
@@ -295,19 +299,19 @@
                                 </p>
                                 <div class="off_sale d-inline-block">30%</div>
                             </div>
-                            <div class="social_box">
-                                <button class="icon_link icon_link_heart">
-                                    <i class="fas fa-heart icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_eye">
-                                    <i class="fas fa-eye icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_shopping">
-                                    <i class="fas fa-shopping-cart icon_product"></i>
-                                </button>
-                            </div>
-                        </a>
 
+                        </a>
+                        <div class="social_box">
+                            <button class="icon_link icon_link_heart">
+                                <i class="fas fa-heart icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_eye">
+                                <i class="fas fa-eye icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_shopping">
+                                <i class="fas fa-shopping-cart icon_product"></i>
+                            </button>
+                        </div>
                     </div>
                     <div class="swiper-slide swiper-product dir_rtl text-right">
                         <a class="slider_slide_link" href="">
@@ -328,21 +332,21 @@
                                     <span class="price">تومان</span>
                                 </p>
                             </div>
-                            <div class="social_box">
-                                <button class="icon_link icon_link_heart">
-                                    <i class="fas fa-heart icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_eye">
-                                    <i class="fas fa-eye icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_shopping">
-                                    <i class="fas fa-shopping-cart icon_product"></i>
-                                </button>
-                            </div>
                         </a>
+                        <div class="social_box">
+                            <button class="icon_link icon_link_heart">
+                                <i class="fas fa-heart icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_eye">
+                                <i class="fas fa-eye icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_shopping">
+                                <i class="fas fa-shopping-cart icon_product"></i>
+                            </button>
+                        </div>
                     </div>
                     <div class="swiper-slide swiper-product dir_rtl text-right">
-                        <a class="slider_slide_link" href="">
+                        <a class="slider_slide_link">
                             <img src="../../img/slider_product_3.png" alt="" class="img_slider">
                             <div class="body_slider">
                                 <div class="rate_of_product">
@@ -360,19 +364,18 @@
                                     <span class="price">تومان</span>
                                 </p>
                             </div>
-                            <div class="social_box">
-                                <button class="icon_link icon_link_heart">
-                                    <i class="fas fa-heart icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_eye">
-                                    <i class="fas fa-eye icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_shopping">
-                                    <i class="fas fa-shopping-cart icon_product"></i>
-                                </button>
-                            </div>
                         </a>
-
+                        <div class="social_box">
+                            <button class="icon_link icon_link_heart">
+                                <i class="fas fa-heart icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_eye">
+                                <i class="fas fa-eye icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_shopping">
+                                <i class="fas fa-shopping-cart icon_product"></i>
+                            </button>
+                        </div>
                     </div>
                     <div class="swiper-slide swiper-product dir_rtl text-right">
                         <a class="slider_slide_link">
@@ -523,7 +526,7 @@
                         <hr>
                         <div class="content_modal">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-md-10 offset-md-1 col-lg-6 offset-lg-0 order-md-1">
                                     <div class="detail_product text-right dir_rtl">
                                         <div class="cm_rate">
                                             <div class="rate_box d-inline-block">
@@ -572,12 +575,12 @@
                                             </li>
                                         </ul>
                                         <p class="price_of_product">820,000 تومان</p>
-                                        <button class="btn_shopping btn_style mt-3">افزودن به سبد خرید</button>
+                                        <button class="btn_shopping btn_style mt-3 ml-2">افزودن به سبد خرید</button>
                                         <button class="btn_see_more btn_style mt-3">مشاهده بیشتر جزییات</button>
 
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-md-10 offset-md-1 col-lg-6 offset-lg-0 order-md-0 mb-md-5 mb-lg-0">
                                     <div class="slider_product">
                                         <!-- Swiper -->
                                         <div class="swiper-container gallery-top">

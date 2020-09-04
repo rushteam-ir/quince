@@ -85,24 +85,6 @@
     padding:70px 40px;
   }
 
-  .slider_product .swiper-container .swiper-wrapper .swiper-slide .slider_slide_link:hover .social_box {
-    right: 10px;
-  }
-
-  .slider_product .swiper-container .swiper-wrapper .swiper-slide .slider_slide_link .social_box{
-    right: 10px;
-  }
-
-  .slider_product .swiper-container .swiper-wrapper .swiper-slide .slider_slide_link .social_box .icon_link_heart{
-    top: -135px;
-  }
-  .slider_product .swiper-container .swiper-wrapper .swiper-slide .slider_slide_link .social_box .icon_link_eye{
-    top: -100px;
-  }
-  .slider_product .swiper-container .swiper-wrapper .swiper-slide .slider_slide_link .social_box .icon_link_shopping{
-    top: -65px;
-  }
-
   .services_part .services_box{
     width: 80%;
   }
@@ -159,17 +141,6 @@
     font-size: 1.15rem;
   }
 
-  .slider_product .swiper-container .swiper-wrapper .swiper-slide .slider_slide_link .social_box .icon_link_heart{
-    top: -100px;
-  }
-  .slider_product .swiper-container .swiper-wrapper .swiper-slide .slider_slide_link .social_box .icon_link_eye{
-    top: -65px;
-  }
-  .slider_product .swiper-container .swiper-wrapper .swiper-slide .slider_slide_link .social_box .icon_link_shopping{
-    top: -30px;
-  }
-
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -211,11 +182,6 @@
     font-size: 1rem;
   }
 
-  .slider_product .swiper-container .swiper-wrapper .swiper-slide .slider_slide_link .body_slider .price_of_product,
-  .slider_product .swiper-container .swiper-wrapper .swiper-slide .slider_slide_link .body_slider .price_of_product_line{
-    margin-left: 15px;
-  }
-
   .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after,
   .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after{
     font-size:2rem;
@@ -242,36 +208,11 @@
     padding:40px 20px;
   }
 
-  .slider_product .swiper-container .swiper-wrapper .swiper-slide .slider_slide_link .img_slider{
-    width: 80% ;
-  }
-
-  .slider_product .swiper-container .swiper-wrapper .swiper-slide .slider_slide_link .social_box {
-    right: 90px;
-    top:10px;
-  }
-
-  .swiper-product{
-    padding: 0 10% !important;
-  }
-
 }
 
 @media only screen and (max-width: 400px) {
   .slider_main_page .main_slider .img_of_main_slider{
     height: 250px;
-  }
-
-  .slider_product .swiper-container .swiper-wrapper .swiper-slide .slider_slide_link .img_slider{
-    width: 90% ;
-  }
-
-  .slider_product .swiper-container .swiper-wrapper .swiper-slide .slider_slide_link .social_box {
-    right: 30px;
-  }
-
-  .swiper-product{
-    padding: 0 5%!important;
   }
 
 }

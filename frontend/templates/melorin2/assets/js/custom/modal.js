@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $('.icon_link icon_link_eye').click(function () {
+    $('.icon_link_eye').click(function () {
         $('.modal_fast_see').fadeIn();
     });
     $('.btn_close').click(function () {
