@@ -7,6 +7,8 @@
   top: 0;
   width: 100%;
   height: 100%;
+  overflow: auto;
+  padding: 100px 0px;
 
   .modal_see_row{
     width: 100%;
@@ -212,8 +214,8 @@
   }
 
   .modal_fast_see .modal_see_row .body_modal .content_modal .slider_product .gallery-thumbs .thumb_img {
-    width: 90px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
   }
 
   .modal_fast_see .modal_see_row .body_modal .content_modal .detail_product .cm_rate .cm_box{

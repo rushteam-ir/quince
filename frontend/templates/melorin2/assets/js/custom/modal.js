@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
     $('.icon_link_eye').click(function () {
+        $('body').css('overflow','hidden');
         $('.modal_fast_see').fadeIn();
     });
     $('.btn_close').click(function () {

@@ -526,7 +526,7 @@
                         <hr>
                         <div class="content_modal">
                             <div class="row">
-                                <div class="col-md-10 offset-md-1 col-lg-6 offset-lg-0 order-md-1">
+                                <div class="col-10 offset-1 col-lg-6 offset-lg-0 order-1">
                                     <div class="detail_product text-right dir_rtl">
                                         <div class="cm_rate">
                                             <div class="rate_box d-inline-block">
@@ -580,7 +580,7 @@
 
                                     </div>
                                 </div>
-                                <div class="col-md-10 offset-md-1 col-lg-6 offset-lg-0 order-md-0 mb-md-5 mb-lg-0">
+                                <div class="col-10 offset-1 col-lg-6 offset-lg-0 order-md-0 mb-5 mb-lg-0">
                                     <div class="slider_product">
                                         <!-- Swiper -->
                                         <div class="swiper-container gallery-top">
