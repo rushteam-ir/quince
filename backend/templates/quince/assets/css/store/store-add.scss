@@ -72,7 +72,8 @@
     }
 }
 
-.field_of_shop_tabs {
+.field_of_shop_tabs,
+.remove_video_uploader {
     display: none;
 }
 
@@ -80,15 +81,15 @@
     display: block;
 }
 
-#attributes {
+#attributes,
+#product_store {
     overflow: auto;
 }
 
-#tax_tab {
-    display: none;
-}
-
-.add_layer , .remove_layer {
+.add_layer,
+.remove_layer,
+.remove_video_uploader,
+.add_video_uploader {
     font-size: 1.7rem;
     color: #7fe0dc;
     float: left;
@@ -100,6 +101,37 @@
     }
 }
 
-.remove_layer{
+.remove_layer .remove_video_uploader {
     display: none;
+}
+
+.add_uploader {
+    font-size: 1.7rem;
+    color: #7fe0dc;
+    float: left;
+    position: relative;
+    top: 10px;
+
+    &:hover {
+        color: $d_green;
+    }
+}
+
+#video_uploader {
+    overflow: auto;
+
+    .video_descript {
+        height: 120px !important;
+    }
+}
+
+#video_upload{
+    display: none;
+}
+
+.row_UV_custom,
+.add_layer_box {
+    margin-top: 50px;
+    padding-top: 40px;
+    border-top: 1px solid rgb(231, 231, 231);
 }

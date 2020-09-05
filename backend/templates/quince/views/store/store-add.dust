@@ -57,7 +57,11 @@
                                     <textarea class="form-control main_form_design" id="main_description"></textarea>
                                 </div>
                                 <div class="form-group ">
-                                    <label for="summary_description">توضیحات مختصر</label>
+                                    <label for="meta_description">توضیحات مختصر</label>
+                                    <textarea class="form-control main_form_design" id="meta_description"></textarea>
+                                </div>
+                                <div class="form-group ">
+                                    <label for="summary_description">توضیحات کلیدی</label>
                                     <textarea class="form-control main_form_design" id="summary_description"></textarea>
                                 </div>
                                 <div class="form-group position-relative">
@@ -80,7 +84,11 @@
                                 </div>
                                 <div class="form-group position-relative">
                                     <input id="tax_checker" type="checkbox" class="option-input checkbox">
-                                    <p class="checkbox_text">آیا محصول شما شامل مالیات می شود؟</p>
+                                    <label for="tax_checker" class="checkbox_text">آیا محصول شما شامل مالیات می شود؟</label>
+                                </div>
+                                <div class="form-group position-relative">
+                                    <input id="VIP_product" type="checkbox" class="option-input checkbox">
+                                    <label for="VIP_product" class="checkbox_text">آیا محصول شما پیشنهاد ویژه است؟</label>
                                 </div>
                             </div>                    
                         </div>
@@ -135,6 +143,39 @@
                             </div>                    
                         </div>
 
+                        <div class="main_col field_of_shop_tabs pb-5" id="video_uploader">
+                            <header class="header_field mb-5">
+                                <h1>آپلود ویدیو</h1>
+                                <h2>ویدیو های خود را برای دانلود اپلود کنید</h2>
+                                <hr>
+                            </header>
+                            <div class="shop_field_padding_custom">
+                                <div class="row">
+                                    <div class="col-6 pr-0">
+                                        <div class="form-group ">
+                                            <label>نام فایل</label>
+                                            <input type="text" class="form-control main_form_design">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 pl-0">
+                                        <div class="form-group position-relative">
+                                            <label>اپلود فایل</label>
+                                            <input type="file" class="form-control chose_file_inp main_form_design fal ajax_file" name="main_image">
+                                        </div>
+                                    </div>  
+                                    <div class="col-12 p-0">
+                                        <div class="form-group">
+                                            <label>توضیحات فایل</label>
+                                            <textarea class="form-control main_form_design video_descript"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div></div>
+                                <button type="button" class="btn add_video_uploader"><i class="fal fa-layer-plus"></i></button>
+                                <button type="button" class="btn remove_video_uploader"><i class="fal fa-layer-minus"></i></button>
+                            </div>                    
+                        </div>
+
                         <div class="main_col field_of_shop_tabs pb-5" id="product_face">
                             <header class="header_field mb-5">
                                 <h1>مشخصات ظاهری</h1>
@@ -183,20 +224,22 @@
                             </header>
                             <div class="shop_field_padding_custom">
                                 <div class="row">
-                                    <div class="col-3">
+                                    <div class="col-3 pr-0">
                                         <div class="form-group">
                                             <label>نام</label>
                                             <input type="text" class="form-control main_form_design">
                                         </div>
                                     </div>
-                                    <div class="col-9">
+                                    <div class="col-9 pl-0">
                                         <div class="form-group">
                                             <label>توضیحات</label>
                                             <textarea class="form-control main_form_design attr_description_field"></textarea>
                                         </div>
                                     </div>
                                 </div>
-                                <div></div>
+                                <div>
+
+                                </div>
                                 <button type="button" class="btn add_layer"><i class="fal fa-layer-plus"></i></button>
                                 <button type="button" class="btn remove_layer"><i class="fal fa-layer-minus"></i></button>
                             </div>                    
@@ -238,6 +281,10 @@
                         <div class="shop_tabs">
                             <i class="far fa-money-bill-wave"></i>
                             <p class="d-inline-block mr-3 mt-3">قیمت محصول</p>
+                        </div>
+                        <div class="shop_tabs" id="video_upload">
+                            <i class="far fa-upload"></i>
+                            <p class="d-inline-block mr-3 mt-3">آپلود</p>
                         </div>
                         <div class="shop_tabs" id="pro_Appearance">
                             <i class="far fa-weight"></i>

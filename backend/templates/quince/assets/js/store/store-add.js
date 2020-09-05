@@ -51,13 +51,20 @@ $('.select_procut_type').change(function () {
 
     let selected = $('.select_procut_type').find(":selected").text();
 
-    if (selected == 'مجازی' || selected == 'قابل دانلود') {
+    if (selected == 'مجازی') {
 
         $('#pro_Appearance').css('display', 'none');
+        $('#video_upload').css('display', 'none');
 
-    } else {
+    } else if (selected == 'قابل دانلود') {
+
+        $('#video_upload').css('display', 'block');
+        $('#pro_Appearance').css('display', 'none');
+
+    } else if (selected == 'فیزیکی') {
 
         $('#pro_Appearance').css('display', 'block');
+        $('#video_upload').css('display', 'none');
 
     }
 
@@ -73,21 +80,70 @@ $('.add_layer').click(function () {
 
     }
 
-    let temp = '<div class="row"><div class="col-3"><div class="form-group">';
+    let temp = '<div class="row add_layer_box"><div class="col-3 pr-0"><div class="form-group">';
     temp += ' <label>نام</label> <input type="text" class="form-control main_form_design" id="attr_name"> </div></div>';
-    temp += '<div class="col-9"><div class="form-group"><label>توضیحات</label>';
+    temp += '<div class="col-9 pl-0"><div class="form-group"><label>توضیحات</label>';
     temp += '<textarea class="form-control main_form_design attr_description_field" id="attr_description"></textarea>';
     temp += '</div></div></div>';
 
     $('.add_layer').prev().append(temp);
     cont += 1;
 
-    $('.remove_layer').css('display' , 'block')
+    $('.remove_layer').css('display', 'block');
 
 });
 
-$('.remove_layer').click(function(){
+// remove layer from attr tabs
+$('.remove_layer').click(function () {
 
-    
+    $('.add_layer_box:last-child').remove();
+
+
+    if ($('.add_layer_box').length == 0) {
+
+        $('.remove_layer').css('display', 'none');
+
+    }
+
+});
+
+
+
+// btn to add video uploader to video_uploader tabs
+
+let cont2 = 1
+$('.add_video_uploader').click(function () {
+
+    if (cont2 >= 30) {
+
+        let temp = '';
+
+    }
+
+    temp = '<div class="row row_UV_custom"><div class="col-6 pr-0"><div class="form-group "><label>نام فایل</label>';
+    temp += '<input type="text" class="form-control main_form_design"></div></div><div class="col-6 pl-0">';
+    temp += '<div class="form-group position-relative"><label>اپلود فایل</label>';
+    temp += '<input type="file" class="form-control chose_file_inp main_form_design fal ajax_file" name="main_image"></div>';
+    temp += '</div><div class="col-12 p-0"><div class="form-group"><label>توضیحات فایل</label> <textarea class="form-control main_form_design video_descript"></textarea></div></div></div>';
+
+    $('.add_video_uploader').prev().append(temp);
+    cont2 += 1;
+
+    $('.remove_video_uploader').css('display', 'block');
+
+});
+
+
+// remove layer from video_uploader tabs
+$('.remove_video_uploader').click(function () {
+
+    $('.row_UV_custom:last-child').remove();
+
+
+    if ($('.row_UV_custom').length == 0) {
+
+        $('.remove_video_uploader').css('display', 'none');
+
+    }
 
 });
