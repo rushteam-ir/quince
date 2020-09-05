@@ -1,0 +1,69 @@
+@import "../partials/main-colors";
+@import "../partials/fonts";
+@import "../partials/mixin";
+
+
+.header_of_contact_us {
+  background-image: url("../../img/c-bg-2.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 80px;
+  text-align: center;
+
+  .title_of_contact_us {
+    line-height: 80px;
+    font-family: $a_f;
+    font-size: 2.2rem;
+  }
+}
+
+.contact_us_content_field {
+  background: white;
+  padding: 70px 0px;
+
+  .text_contact_us {
+    font-family: $s_f;
+    text-align: justify;
+
+    .title_of_contact_text{
+      font-family: $a_f;
+      font-size: 2rem;
+      color: $l_red;
+    }
+    .exp_contact_text{
+      line-height: 30px;
+    }
+
+    .exp_contact_text_sec{
+      @extend .exp_contact_text;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  }
+
+  .main_form_contact_us{
+
+    .form-group{
+      input , textarea{
+        &:focus{
+          box-shadow: none;
+          border: 1px solid #ced4da;
+        }
+      }
+    }
+
+    .btn_of_contact{
+      background: $l_red;
+      width: 200px;
+      color: white;
+      &:focus{
+        box-shadow: none;
+      }
+    }
+
+  }
+}
+
+
+
+@import "responsive";

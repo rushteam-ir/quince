@@ -1,0 +1,70 @@
+@media (min-width: 1200px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1250px;
+  }
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 991px) {
+  .header_of_contact_us .title_of_contact_us{
+    font-size: 1.8rem;
+  }
+
+  .contact_us_content_field .text_contact_us .title_of_contact_text{
+    font-size: 1.7rem;
+  }
+
+  .contact_us_content_field .text_contact_us .exp_contact_text,
+  .contact_us_content_field .main_form_contact_us .form-group label,
+  .contact_us_content_field .main_form_contact_us .btn_of_contact{
+    font-size: 0.9rem;
+  }
+
+  .contact_us_content_field .text_contact_us .exp_contact_text_sec{
+    font-size: 1.05rem;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+  .header_of_contact_us .title_of_contact_us{
+    font-size: 1.6rem;
+  }
+
+  .contact_us_content_field .text_contact_us .title_of_contact_text{
+    font-size: 1.5rem;
+  }
+
+  .contact_us_content_field .text_contact_us .exp_contact_text,
+  .contact_us_content_field .main_form_contact_us .form-group label,
+  .contact_us_content_field .main_form_contact_us .btn_of_contact{
+    font-size: 0.8rem;
+  }
+
+  .contact_us_content_field .text_contact_us .exp_contact_text_sec{
+    font-size: 1rem;
+  }
+
+}
+
+@media only screen and (max-width: 499px) {
+
+}
+
+@media only screen and (max-width: 400px) {
+
+}

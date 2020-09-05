@@ -1,0 +1,107 @@
+@font-face {
+  font-family: main-font;
+  src: url("../../font/Vazir.ttf");
+}
+@font-face {
+  font-family: second-font;
+  src: url("../../font/Vazir-Thin.ttf");
+}
+@font-face {
+  font-family: accent-font;
+  src: url("../../font/A.Rezvan.ttf");
+}
+.header_of_contact_us {
+  background-image: url("../../img/c-bg-2.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 80px;
+  text-align: center;
+}
+.header_of_contact_us .title_of_contact_us {
+  line-height: 80px;
+  font-family: accent-font;
+  font-size: 2.2rem;
+}
+
+.contact_us_content_field {
+  background: white;
+  padding: 70px 0px;
+}
+.contact_us_content_field .text_contact_us {
+  font-family: second-font;
+  text-align: justify;
+}
+.contact_us_content_field .text_contact_us .title_of_contact_text {
+  font-family: accent-font;
+  font-size: 2rem;
+  color: #FF6B6B;
+}
+.contact_us_content_field .text_contact_us .exp_contact_text, .contact_us_content_field .text_contact_us .exp_contact_text_sec {
+  line-height: 30px;
+}
+.contact_us_content_field .text_contact_us .exp_contact_text_sec {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.contact_us_content_field .main_form_contact_us .form-group input:focus, .contact_us_content_field .main_form_contact_us .form-group textarea:focus {
+  box-shadow: none;
+  border: 1px solid #ced4da;
+}
+.contact_us_content_field .main_form_contact_us .btn_of_contact {
+  background: #FF6B6B;
+  width: 200px;
+  color: white;
+}
+.contact_us_content_field .main_form_contact_us .btn_of_contact:focus {
+  box-shadow: none;
+}
+
+@media (min-width: 1200px) {
+  .container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+    max-width: 1250px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .header_of_contact_us .title_of_contact_us {
+    font-size: 1.8rem;
+  }
+
+  .contact_us_content_field .text_contact_us .title_of_contact_text {
+    font-size: 1.7rem;
+  }
+
+  .contact_us_content_field .text_contact_us .exp_contact_text, .contact_us_content_field .text_contact_us .exp_contact_text_sec,
+.contact_us_content_field .main_form_contact_us .form-group label,
+.contact_us_content_field .main_form_contact_us .btn_of_contact {
+    font-size: 0.9rem;
+  }
+
+  .contact_us_content_field .text_contact_us .exp_contact_text_sec {
+    font-size: 1.05rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header_of_contact_us .title_of_contact_us {
+    font-size: 1.6rem;
+  }
+
+  .contact_us_content_field .text_contact_us .title_of_contact_text {
+    font-size: 1.5rem;
+  }
+
+  .contact_us_content_field .text_contact_us .exp_contact_text, .contact_us_content_field .text_contact_us .exp_contact_text_sec,
+.contact_us_content_field .main_form_contact_us .form-group label,
+.contact_us_content_field .main_form_contact_us .btn_of_contact {
+    font-size: 0.8rem;
+  }
+
+  .contact_us_content_field .text_contact_us .exp_contact_text_sec {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=contact-us.css.map */
