@@ -315,7 +315,7 @@
 
                                 <button type="submit" class="btn mt-3 text-center w-100 btn_register">ثبت نام در ملورین</button>
                             </form>
-                            <p class="text-center py-4">حساب کاربری دارید؟ <a href="#" class="register_link">ورود به حساب کاربری</a></p>
+                            <p class="text-center py-4 text_footer">حساب کاربری دارید؟ <a href="#" class="register_link">ورود به حساب کاربری</a></p>
                         </div>
                         <hr>
                     </div>
@@ -349,7 +349,9 @@
                                     <label for="password">کلمه عبور</label>
                                     <input type="password" class="form-control field_of_register" id="password">
                                 </div>
-
+                                <small class="recovery_box_link">
+                                    <a href="#" class="recovery_link text-center" id="recovery_link">کلمه عبور خود را فراموش کرده اید؟</a>
+                                </small>
                                 <label class="check_box_label dir_rtl">
                                     <input type="checkbox" class="ml-2 input_check_box">
                                     <span class="checkmark"></span>
@@ -359,9 +361,44 @@
 
                                 <button type="submit" class="btn mt-3 text-center w-100 btn_login">ورود در ملورین</button>
                             </form>
-                            <p class="text-center py-4">کاربر جدید هستید؟ <a href="#" class="login_link" id="login_link">ایجاد حساب جدید</a></p>
+                            <p class="text-center py-4 text_footer">کاربر جدید هستید؟ <a href="#" class="login_link" id="login_link">ایجاد حساب جدید</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="modal_recovery" id="modal_recovery">
+    <div class="container-fluid px-0 mx-0">
+        <div class="row align-items-center main_row  px-0 mx-0">
+            <div class="col-12 px-0">
+                <div class="layer_of_modal">
+                    <div class="modal_body">
+                        <div class="header_of_modal">
+                            <button class="btn_close">
+                                <i class="fal fa-times d-inline-block text-left"></i>
+                            </button>
+                            <h3 class="title_of_modal d-inline-block">
+                                بازیابی <span>کلمه عبور</span>
+                            </h3>
                         </div>
                         <hr>
+                        <div class="body_of_modal">
+                            <form>
+                                <div class="form-group">
+                                    <label for="email2">ایمیل</label>
+                                    <input type="email" class="form-control field_of_register" id="email2">
+                                    <small class="recovery_box_link">
+                                        جهت باز یابی رمز عبور ایمیل مربوط به حساب کاربری خود را وارد کنید.
+                                    </small>
+                                </div>
+                                <button type="submit" class="btn mt-3 text-center w-100 recovery_btn">بازیابی کلمه عبور</button>
+                            </form>
+                            <p class="text-center py-4 text_footer">حساب کاربری دارید؟ <a href="#" class="register_link">ورود به حساب کاربری</a></p>
+                        </div>
+
                     </div>
                 </div>
             </div>

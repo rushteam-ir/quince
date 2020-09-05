@@ -12,6 +12,7 @@
     <script src="js/general/parallax.js"></script>
     <script src="js/index/index.js"></script>
     <script src="js/custom/product-slider.js"></script>
+    <script src="js/custom/modal.js"></script>
 {/js}
 
 {<body}
@@ -156,18 +157,19 @@
                                 </p>
                                 <div class="off_sale d-inline-block">30%</div>
                             </div>
-                            <div class="social_box">
-                                <button class="icon_link icon_link_heart">
-                                    <i class="fas fa-heart icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_eye">
-                                    <i class="fas fa-eye icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_shopping">
-                                    <i class="fas fa-shopping-cart icon_product"></i>
-                                </button>
-                            </div>
+
                         </a>
+                        <div class="social_box">
+                            <button class="icon_link icon_link_heart">
+                                <i class="fas fa-heart icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_eye">
+                                <i class="fas fa-eye icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_shopping">
+                                <i class="fas fa-shopping-cart icon_product"></i>
+                            </button>
+                        </div>
                     </div>
                     <div class="swiper-slide swiper-product dir_rtl text-right">
                         <a class="slider_slide_link" href="">
@@ -188,18 +190,19 @@
                                     <span class="price">تومان</span>
                                 </p>
                             </div>
-                            <div class="social_box">
-                                <button class="icon_link icon_link_heart">
-                                    <i class="fas fa-heart icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_eye">
-                                    <i class="fas fa-eye icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_shopping">
-                                    <i class="fas fa-shopping-cart icon_product"></i>
-                                </button>
-                            </div>
+
                         </a>
+                        <div class="social_box">
+                            <button class="icon_link icon_link_heart">
+                                <i class="fas fa-heart icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_eye">
+                                <i class="fas fa-eye icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_shopping">
+                                <i class="fas fa-shopping-cart icon_product"></i>
+                            </button>
+                        </div>
                     </div>
                     <div class="swiper-slide swiper-product dir_rtl text-right">
                         <a class="slider_slide_link" href="">
@@ -220,18 +223,19 @@
                                     <span class="price">تومان</span>
                                 </p>
                             </div>
-                            <div class="social_box">
-                                <button class="icon_link icon_link_heart">
-                                    <i class="fas fa-heart icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_eye">
-                                    <i class="fas fa-eye icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_shopping">
-                                    <i class="fas fa-shopping-cart icon_product"></i>
-                                </button>
-                            </div>
+
                         </a>
+                        <div class="social_box">
+                            <button class="icon_link icon_link_heart">
+                                <i class="fas fa-heart icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_eye">
+                                <i class="fas fa-eye icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_shopping">
+                                <i class="fas fa-shopping-cart icon_product"></i>
+                            </button>
+                        </div>
                     </div>
                     <div class="swiper-slide swiper-product dir_rtl text-right">
                         <a class="slider_slide_link" href="">
@@ -257,18 +261,19 @@
                                 </p>
                                 <div class="off_sale d-inline-block">30%</div>
                             </div>
-                            <div class="social_box">
-                                <button class="icon_link icon_link_heart">
-                                    <i class="fas fa-heart icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_eye">
-                                    <i class="fas fa-eye icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_shopping">
-                                    <i class="fas fa-shopping-cart icon_product"></i>
-                                </button>
-                            </div>
+
                         </a>
+                        <div class="social_box">
+                            <button class="icon_link icon_link_heart">
+                                <i class="fas fa-heart icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_eye">
+                                <i class="fas fa-eye icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_shopping">
+                                <i class="fas fa-shopping-cart icon_product"></i>
+                            </button>
+                        </div>
                     </div>
                     <div class="swiper-slide swiper-product dir_rtl text-right">
                         <a class="slider_slide_link" href="">
@@ -294,19 +299,19 @@
                                 </p>
                                 <div class="off_sale d-inline-block">30%</div>
                             </div>
-                            <div class="social_box">
-                                <button class="icon_link icon_link_heart">
-                                    <i class="fas fa-heart icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_eye">
-                                    <i class="fas fa-eye icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_shopping">
-                                    <i class="fas fa-shopping-cart icon_product"></i>
-                                </button>
-                            </div>
-                        </a>
 
+                        </a>
+                        <div class="social_box">
+                            <button class="icon_link icon_link_heart">
+                                <i class="fas fa-heart icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_eye">
+                                <i class="fas fa-eye icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_shopping">
+                                <i class="fas fa-shopping-cart icon_product"></i>
+                            </button>
+                        </div>
                     </div>
                     <div class="swiper-slide swiper-product dir_rtl text-right">
                         <a class="slider_slide_link" href="">
@@ -327,21 +332,21 @@
                                     <span class="price">تومان</span>
                                 </p>
                             </div>
-                            <div class="social_box">
-                                <button class="icon_link icon_link_heart">
-                                    <i class="fas fa-heart icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_eye">
-                                    <i class="fas fa-eye icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_shopping">
-                                    <i class="fas fa-shopping-cart icon_product"></i>
-                                </button>
-                            </div>
                         </a>
+                        <div class="social_box">
+                            <button class="icon_link icon_link_heart">
+                                <i class="fas fa-heart icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_eye">
+                                <i class="fas fa-eye icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_shopping">
+                                <i class="fas fa-shopping-cart icon_product"></i>
+                            </button>
+                        </div>
                     </div>
                     <div class="swiper-slide swiper-product dir_rtl text-right">
-                        <a class="slider_slide_link" href="">
+                        <a class="slider_slide_link">
                             <img src="../../img/slider_product_3.png" alt="" class="img_slider">
                             <div class="body_slider">
                                 <div class="rate_of_product">
@@ -359,22 +364,21 @@
                                     <span class="price">تومان</span>
                                 </p>
                             </div>
-                            <div class="social_box">
-                                <button class="icon_link icon_link_heart">
-                                    <i class="fas fa-heart icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_eye">
-                                    <i class="fas fa-eye icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_shopping">
-                                    <i class="fas fa-shopping-cart icon_product"></i>
-                                </button>
-                            </div>
                         </a>
-
+                        <div class="social_box">
+                            <button class="icon_link icon_link_heart">
+                                <i class="fas fa-heart icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_eye">
+                                <i class="fas fa-eye icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_shopping">
+                                <i class="fas fa-shopping-cart icon_product"></i>
+                            </button>
+                        </div>
                     </div>
                     <div class="swiper-slide swiper-product dir_rtl text-right">
-                        <a class="slider_slide_link" href="">
+                        <a class="slider_slide_link">
                             <img src="../../img/slider_product_4.png" alt="" class="img_slider">
                             <div class="body_slider">
                                 <div class="rate_of_product">
@@ -397,18 +401,18 @@
                                 </p>
                                 <div class="off_sale d-inline-block">30%</div>
                             </div>
-                            <div class="social_box">
-                                <button class="icon_link icon_link_heart">
-                                    <i class="fas fa-heart icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_eye">
-                                    <i class="fas fa-eye icon_product"></i>
-                                </button>
-                                <button class="icon_link icon_link_shopping">
-                                    <i class="fas fa-shopping-cart icon_product"></i>
-                                </button>
-                            </div>
                         </a>
+                        <div class="social_box">
+                            <button class="icon_link icon_link_heart"  type="button">
+                                <i class="fas fa-heart icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_eye"  type="button">
+                                <i class="fas fa-eye icon_product"></i>
+                            </button>
+                            <button class="icon_link icon_link_shopping"  type="button">
+                                <i class="fas fa-shopping-cart icon_product"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-button-next product_arrow_next"></div>
@@ -418,7 +422,8 @@
     </section>
 
     <section class="parallax_box">
-        <div class="parallax parallax-window dir_rtl text-right" data-parallax="scroll" data-image-src="../../img/parallax.jpg">
+        <div class="parallax parallax-window dir_rtl text-right" data-parallax="scroll"
+             data-image-src="../../img/parallax.jpg">
             <div class="text_box">
                 <h2 class="main_title">حراج محصولات برتر بهاره</h2>
                 <h3 class="small_title">تا سقف 30% تخفیف</h3>
@@ -496,6 +501,124 @@
                                         <small class="small_views d-inline-block text-left">550
                                             <i class=" far fa-eye"></i>
                                         </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="modal_fast_see">
+        <div class="container-fluid">
+            <div class="row modal_see_row align-items-center">
+                <div class="col-12">
+                    <div class="body_modal">
+                        <div class="header_of_modal text-right">
+                            <button class="btn_close">
+                                <i class="fal fa-times text-left"></i>
+                            </button>
+                            <h2 class="title_of_product d-inline-block"> مشاهده سریع</h2>
+                        </div>
+                        <hr class="mt-0">
+                        <div class="content_modal">
+                            <div class="row">
+                                <div class="col-10 offset-1 col-lg-6 offset-lg-0 order-1 order-lg-0">
+                                    <div class="detail_product text-right dir_rtl">
+                                        <div class="cm_rate">
+                                            <div class="rate_box d-inline-block">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="cm_box d-inline-block">
+                                                <p class="num d-inline-block ml-1">2342</p>
+                                                <i class="far fa-eye d-inline-block"></i>
+                                            </div>
+                                        </div>
+                                        <div class="name_price">
+                                            <h3 class="name_of_product">
+                                                ساعت هوشمند اپل واچ ۳ مدل Gold Aluminum Case
+                                            </h3>
+                                            <small>
+                                                Apple iPhone XR 128GB Mobile Phone-1
+                                            </small>
+                                        </div>
+
+                                        <p class="title_of_detail mt-3">جزییات محصول :</p>
+                                        <ul class="detail_of_product">
+                                            <li class="list_detail">برند : اپل</li>
+                                            <li  class="list_detail">حافظه داخلی: 256 گیگابایت</li>
+                                            <li  class="list_detail">مقدار رم : 3 گیگابایت</li>
+                                            <li  class="list_detail">رزولوشن عکس: 12.0 مگاپیکسل</li>
+                                            <li class="list_detail">تعداد سیم کارت: تک</li>
+                                        </ul>
+
+                                        <p class="color_list_title d-inline-block mt-3">رنگبندی :</p>
+                                        <ul class="color_list d-inline-block">
+                                            <li class="link_color ">
+                                                <a class="link_color_1 link"></a>
+                                            </li>
+                                            <li class="link_color ">
+                                                <a class="link_color_2 link"></a>
+                                            </li>
+                                            <li class="link_color ">
+                                                <a class="link_color_3 link"></a>
+                                            </li>
+                                            <li class="link_color ">
+                                                <a class="link_color_4 link"></a>
+                                            </li>
+                                        </ul>
+                                        <p class="price_of_product">820,000 تومان</p>
+                                        <div class="btn_modal text-center w-100">
+                                            <button class="btn_shopping btn_style mb-5 ml-2">افزودن به سبد خرید</button>
+                                            <button class="btn_see_more btn_style mb-5">مشاهده بیشتر جزییات</button>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-10 offset-1 col-lg-6 offset-lg-0 order-0 order-lg-1 mb-5 mb-lg-0">
+                                    <div class="slider_product">
+                                        <!-- Swiper -->
+                                        <div class="swiper-container gallery-top">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="../../img/p-1.jpg" class="main_img">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="../../img/p-2.jpg" class="main_img">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="../../img/p-3.jpg" class="main_img">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="../../img/p-4.jpg" class="main_img">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="swiper-container gallery-thumbs">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="../../img/p-1.jpg" class="thumb_img">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="../../img/p-2.jpg" class="thumb_img">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="../../img/p-3.jpg" class="thumb_img">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="../../img/p-4.jpg" class="thumb_img">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
