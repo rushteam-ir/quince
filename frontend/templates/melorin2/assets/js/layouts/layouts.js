@@ -3,7 +3,7 @@ $(document).ready(function () {
     // sticky navbar
     $(document).scroll(function () {
         var scroll = $(window).scrollTop();
-        if (scroll) {
+        if (scroll > 110) {
             $('.bottom_box_of_nav_bar').addClass('sticky');
         } else {
             $('.bottom_box_of_nav_bar').removeClass('sticky');
