@@ -24,4 +24,62 @@
             </div>
         </div>
     </section>
+
+    <section class="contact_us_content_field">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-10 offset-md-1 offset-lg-0">
+                    <div class="text_contact_us dir_rtl">
+                        <h3 class="title_of_contact_text">منتظر پیشنهادات و انتقادات شما هستیم</h3>
+                        <p class="exp_contact_text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                        <p class="exp_contact_text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                        <p class="exp_contact_text_sec">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                        <p class="exp_contact_text mt-5">از اعتماد شما سپاس گزارم</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-10 offset-md-1 offset-lg-0 mt-5 mt-lg-0">
+                    <form class="main_form_contact_us text-right dir_rtl" method="post" action="">
+                        <div class="row">
+                            <div class="col-xl-6 text-right pl-xl-1 px-0">
+
+                                <div class="form-group">
+                                    <label for="name_contact_inp">نام و نام خانوادگی</label>
+                                    <input type="text" class="form-control" id="name_contact_inp" name="firstlastname_inp">
+                                </div>
+
+                            </div>
+                            <div class="col-xl-6 text-right pr-xl-1 px-0">
+
+                                <div class="form-group">
+                                    <label for="number_contact_inp">تلفن</label>
+                                    <input type="text" class="form-control" id="number_contact_inp" name="phonenumber_inp">
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="form-group text-right">
+                            <label for="number_contact_inp">ایمیل</label>
+                            <input type="text" class="form-control" id="number_contact_inp" name="email_inp">
+                        </div>
+
+                        <div class="form-group text-right">
+                            <label for="title_contact_inp">عنوان</label>
+                            <input type="text" class="form-control" id="title_contact_inp" name="title_inp">
+                        </div>
+
+                        <div class="form-group text-right">
+                            <label for="exampleFormControlTextarea1">پیام</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="text_inp"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn_of_contact">ارسال</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 {/body}

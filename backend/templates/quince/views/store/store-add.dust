@@ -93,20 +93,28 @@
                             </header>
                             <div class="shop_field_padding_custom">
                                 <div class="form-group ">
-                                    <label for="product_price">قیمت محصول <span class="small_of_title">(تومان)</span></label>
-                                    <input type="text" class="form-control main_form_design" id="product_price">
+                                    <label for="product_price">واحد پولی</label>
+                                    <select class="form-control main_form_design select-sub-category" id="product_sub_category">
+                                        <option value="0">ریال</option>
+                                        <option value="1">تومان</option>
+                                        <option value="3">دلار آمریکا</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="product_price">قیمت محصول</label>
+                                    <input type="number" class="form-control main_form_design" id="product_price">
                                 </div>
                                 <div class="row">
                                     <div class="col-6 pr-0">
                                         <div class="form-group ">
-                                            <label for="product_sale">قیمت نهایی با تخفیف <span class="small_of_title">(تومان)</span></label>
-                                            <input type="text" class="form-control main_form_design sale_inp_shop" id="product_sale">
+                                            <label for="product_sale">قیمت نهایی با تخفیف</label>
+                                            <input type="number" class="form-control main_form_design sale_inp_shop" id="product_sale">
                                         </div>
                                     </div>
                                     <div class="col-6 pl-0">
                                         <div class="form-group ">
                                             <label for="product_Percent">درصد تخفیف</label>
-                                            <input type="text" class="form-control main_form_design sale_inp_shop" id="product_Percent">
+                                            <input type="number" class="form-control main_form_design sale_inp_shop" id="product_Percent">
                                         </div>
                                     </div>
                                 </div>
@@ -143,7 +151,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="priduct_weight">وزن</label>
-                                    <input type="text" class="form-control main_form_design" id="priduct_weight">
+                                    <input type="number" class="form-control main_form_design" id="priduct_weight">
                                 </div>
                                 <div class="form-group">
                                     <label for="length_unit">واحد طول و عرض</label>
@@ -154,40 +162,15 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="product_length">طول</label>
-                                    <input type="text" class="form-control main_form_design" id="product_length">
+                                    <input type="number" class="form-control main_form_design" id="product_length">
                                 </div>
                                 <div class="form-group">
                                     <label for="product_width">عرض </label>
-                                    <input type="text" class="form-control main_form_design" id="product_width">
+                                    <input type="number" class="form-control main_form_design" id="product_width">
                                 </div>
                                 <div class="form-group">
                                     <label for="product_height">ارتفاع </label>
-                                    <input type="text" class="form-control main_form_design" id="product_height">
-                                </div>
-                            </div>                    
-                        </div>
-
-                        <div class="main_col field_of_shop_tabs pb-5" id="product_store">
-                            <header class="header_field mb-5">
-                                <h1>مشخصات انبار</h1>
-                                <h2>مشخصات انبار خود را وارد کنید</h2>
-                                <hr>
-                            </header>
-                            <div class="shop_field_padding_custom">
-                                <div class="form-group">
-                                    <label for="store_number">موجودی انبار</label>
-                                    <input type="text" class="form-control main_form_design" id="store_number">
-                                </div>
-                                <div class="form-group">
-                                    <label for="store_tupe">وضعیت انبار</label>
-                                    <select class="form-control main_form_design select-sub-category" id="store_tupe">
-                                        <option value="0">موجود</option>
-                                        <option value="0">نا موجود</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="max_user_can_buy">حداکثر تعداد قابل سفارش</label>
-                                    <input type="text" class="form-control main_form_design" id="max_user_can_buy" placeholder="&#8734">
+                                    <input type="number" class="form-control main_form_design" id="product_height">
                                 </div>
                             </div>                    
                         </div>
@@ -215,6 +198,33 @@
                                 </div>
                                 <div></div>
                                 <button type="button" class="btn add_layer"><i class="fal fa-layer-plus"></i></button>
+                                <button type="button" class="btn remove_layer"><i class="fal fa-layer-minus"></i></button>
+                            </div>                    
+                        </div>
+
+                        <div class="main_col field_of_shop_tabs pb-5" id="product_store">
+                            <header class="header_field mb-5">
+                                <h1>مشخصات انبار</h1>
+                                <h2>مشخصات انبار خود را وارد کنید</h2>
+                                <hr>
+                            </header>
+                            <div class="shop_field_padding_custom">
+                                <div class="form-group">
+                                    <label for="store_number">موجودی انبار</label>
+                                    <input type="text" class="form-control main_form_design" id="store_number">
+                                </div>
+                                <div class="form-group">
+                                    <label for="store_tupe">وضعیت نمایش</label>
+                                    <select class="form-control main_form_design select-sub-category" id="store_tupe">
+                                        <option value="0">نمایش داده شود</option>
+                                        <option value="0">تعلیق</option>
+                                        <option value="0">غیر فعال</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="max_user_can_buy">حداکثر تعداد قابل سفارش</label>
+                                    <input type="number" class="form-control main_form_design" id="max_user_can_buy" placeholder="&#8734">
+                                </div>
                             </div>                    
                         </div>
                     </form>
@@ -234,12 +244,12 @@
                             <p class="d-inline-block mr-3 mt-3">مشخصات ظاهری</p>
                         </div>
                         <div class="shop_tabs">
-                            <i class="far fa-tasks"></i>
-                            <p class="d-inline-block mr-3 mt-3">مشخصات انبار</p>
-                        </div>
-                        <div class="shop_tabs">
                             <i class="far fa-clipboard-list"></i>
                             <p class="d-inline-block mr-3 mt-3">ویژگی ها</p>
+                        </div>
+                        <div class="shop_tabs">
+                            <i class="far fa-tasks"></i>
+                            <p class="d-inline-block mr-3 mt-3">مشخصات انبار</p>
                         </div>
                     </div>
                 </div>

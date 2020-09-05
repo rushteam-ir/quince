@@ -82,4 +82,12 @@ $('.add_layer').click(function () {
     $('.add_layer').prev().append(temp);
     cont += 1;
 
+    $('.remove_layer').css('display' , 'block')
+
+});
+
+$('.remove_layer').click(function(){
+
+    
+
 });
