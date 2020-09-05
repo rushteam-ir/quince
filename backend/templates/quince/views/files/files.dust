@@ -59,17 +59,7 @@
                                     </div>
                                     <nav class="QT_breadcrumb" aria-label="breadcrumb">
                                         <ol class="breadcrumb">
-                                          {#routes}
-                                              {@eq key="{$idx}" value="{current_route}"}
-                                                  <li class="breadcrumb-item active" aria-current="page">{.}</li>
-                                              {:else}
-                                                  {@eq key="{.}" value="شاخه اصلی"}
-                                                      <li class="breadcrumb-item"><a href="{backend_url}files">{.}</a></li>
-                                                  {:else}
-                                                      <li class="breadcrumb-item"><a href="{backend_url}files/{.}">{.}</a></li>
-                                                  {/eq}
-                                              {/eq}
-                                          {/routes}
+                                            <li class="breadcrumb-item">شاخه اصلی</li>
                                         </ol>
                                     </nav>
                                 </div>
@@ -93,22 +83,34 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                {#directories_list}
+                                {#content_list}
                                     <tr class="files_table_row">
                                         <td>
                                             <label class="checkbox_of_category">
                                                 <input type="checkbox" name="delete_checkbox[]"
-                                                       class="table_checkbox option-input checkbox" value="{._id}">
+                                                       class="table_checkbox option-input checkbox" value="ID_ID">
                                             </label>
                                         </td>
                                         <td class="pl-0 text-center">
-                                            <img class="image_of_folders" src="img/folder-img.png" alt="">
+                                            {@eq key="{type}" value=""}
+                                                <img class="image_of_folders" src="img/folder-img.png" alt="">
+                                            {:else}
+                                                <img class="image_of_folders" src="img/document-img.png" alt="">
+                                            {/eq}
                                         </td>
                                         <td class="pr-0 folder_name_custom table_data">
-                                            {.}
+                                            {name}
                                         </td>
-                                        <td class="table_data">1399/10/30</td>
-                                        <td class="table_data padding_custom_f">20M</td>
+                                        <td class="table_data">
+                                            {modified}
+                                        </td>
+                                        <td class="table_data padding_custom_f">
+                                            {@eq key="{size}" value=""}
+
+                                            {:else}
+                                                {size}
+                                            {/eq}
+                                        </td>
                                         <td class="table_option">
                                             <div class="dropdown">
                                                 <button class="btn  dropdown-toggle" type="button" id="table_option" data-toggle="dropdown"
@@ -132,54 +134,9 @@
                                             </div>
                                         </td>
                                     </tr>
-                                {/directories_list}
-                                {#files_list}
-                                    <tr class="files_table_row">
-                                        <td>
-                                            <label class="checkbox_of_category">
-                                                <input type="checkbox" name="delete_checkbox[]"
-                                                       class="table_checkbox option-input checkbox" value="{._id}">
-                                            </label>
-                                        </td>
-                                        <td class="pl-0 text-center">
-                                            <img class="image_of_folders" src="img/document-img.png" alt="">
-                                        </td>
-                                        <td class="pr-0 folder_name_custom table_data">{.}</td>
-                                        <td class="table_data">1399/10/30</td>
-                                        <td class="table_data padding_custom_f">20M</td>
-                                        <td class="table_option">
-                                            <div class="dropdown">
-                                                <button class="btn  dropdown-toggle" type="button" id="table_option" data-toggle="dropdown"
-                                                    aria-haspopup="true" aria-expanded="false">
-                                                    <i class="fas fa-ellipsis-v"></i>
-                                                </button>
-                                                <div class="dropdown-menu" aria-labelledby="table_option">
-                                                    <a class="dropdown-item" href="#">
-                                                        <i class="fal fa-align-slash"></i>
-                                                        غیر فعال کردن
-                                                    </a>
-                                                    <a class="dropdown-item" href="#">
-                                                        <i class="fal fa-asterisk"></i>
-                                                        افزودن وی ای پی
-                                                    </a>
-                                                    <a class="dropdown-item" href="#">
-                                                        <i class="fal fa-assistive-listening-systems"></i>
-                                                        افزودن گوش و چشم
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                {/files_list}
+                                {/content_list}
                                 </tbody>
                             </table>
-                            {?directories_list}{:else}
-                                {?files_list}{:else}
-                                    <div class="table_search_error">
-                                        <p>موردی جهت نمایش وجود ندارد !</p>
-                                    </div>
-                                {/files_list}
-                            {/directories_list}
                             <nav class="Page_navigation" aria-label="Page navigation example">
                                 <ul class="pagination">
                                   <li class="page-item">

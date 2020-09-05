@@ -1,3 +1,5 @@
+const path = require('path')
+
 class fileManager {
 
     upload(file, file_name, options) {
@@ -32,7 +34,7 @@ class fileManager {
 
         }
 
-        let file_extension = this.getExtension(file);
+        let file_extension = path.extname(file);
 
         if(options.allowed_formats.includes(file_extension) || options.allowed_formats[0] == '*'){
 
@@ -83,11 +85,11 @@ class fileManager {
 
     }
 
-    loadFiles(file_path){
+    getPathContent(file_path){
 
         return new Promise((resolve, reject)=>{
 
-            fs.readdir(file_path, {withFileTypes : true}, (err, files)=>{
+            fs.readdir(file_path, (err, files)=>{
 
                 if(err){
 
@@ -96,7 +98,17 @@ class fileManager {
                 }
                 else{
 
-                    resolve(files.filter(dirent => dirent.isFile()).map(dirent => dirent.name));
+                    let promise_array = []
+
+                    for(let file_name of files){
+                        promise_array.push(this.getPathDetail(file_path + file_name));
+                    }
+
+                    Promise.all(promise_array).then((content)=>{
+
+                        resolve(content)
+
+                    })
 
                 }
 
@@ -106,32 +118,47 @@ class fileManager {
 
     }
 
-    loadDirectories(file_path){
+    getPathDetail(file_path){
 
         return new Promise((resolve, reject)=>{
 
-            fs.readdir(file_path, {withFileTypes : true}, (err, files)=>{
+            fs.stat(file_path, (err, stats)=>{
 
-                if(err){
+                resolve({
 
-                    reject(err);
+                    name : path.basename(file_path),
+                    size : this.getSize(stats.size),
+                    isFile : stats.isFile(),
+                    modified : JalaliDate.toJalali(stats.ctime),
+                    created : stats.mtime,
+                    type : path.extname(file_path)
 
-                }
-                else{
+                });
 
-                    resolve(files.filter(dirent => dirent.isDirectory()).map(dirent => dirent.name));
-
-                }
-
-            })
+            });
 
         })
 
     }
 
-    getExtension(file){
+    getSize(size){
 
-        return file.name.split('.').pop();
+        let result;
+
+        if(size < 1024){
+            result = size + ' B';
+        }
+        else if(size < 1024*1024){
+            result = (size/1024).toFixed(2) + ' KB';
+        }
+        else if(size < 1024*1024*1024){
+            result = (size/1024/1024).toFixed(2) + ' MB';
+        }
+        else{
+            result = (size/1024/1024/1024).toFixed(2) + ' GB';
+        }
+
+        return result;
 
     }
 
