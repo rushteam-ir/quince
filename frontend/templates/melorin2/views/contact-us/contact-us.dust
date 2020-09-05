@@ -1,0 +1,27 @@
+{>"layouts/layout"/}
+
+{<title}
+    <title>تماس با ما</title>
+{/title}
+{<css}
+    <link rel="stylesheet" href="css/contact-us/contact-us.css">
+{/css}
+
+{<js}
+    <script src="js/contact-us/contact-us.js"></script>
+{/js}
+
+{<body}
+
+    <section class="header_of_contact_us">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="title_of_contact_us">
+                        تماس با ما
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+{/body}

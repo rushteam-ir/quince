@@ -1,0 +1,26 @@
+@font-face {
+  font-family: main-font;
+  src: url("../../font/Vazir.ttf");
+}
+@font-face {
+  font-family: second-font;
+  src: url("../../font/Vazir-Thin.ttf");
+}
+@font-face {
+  font-family: accent-font;
+  src: url("../../font/A.Rezvan.ttf");
+}
+.header_of_contact_us {
+  background-image: url("../../img/c-bg-2.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 80px;
+  text-align: center;
+}
+.header_of_contact_us .title_of_contact_us {
+  line-height: 80px;
+  font-family: accent-font;
+  font-size: 2.2rem;
+}
+
+/*# sourceMappingURL=contact-us.css.map */
