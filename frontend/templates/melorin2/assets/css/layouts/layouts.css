@@ -31,6 +31,7 @@
 }
 .header .top_box_of_nav_bar .left_box .form .search_box {
   border-radius: 0px 5px 5px 0px;
+  font-size: 0.8rem;
 }
 .header .top_box_of_nav_bar .left_box .form .search_box:focus {
   box-shadow: none;

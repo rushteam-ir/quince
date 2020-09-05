@@ -523,10 +523,10 @@
                             </button>
                             <h2 class="title_of_product d-inline-block"> مشاهده سریع</h2>
                         </div>
-                        <hr>
+                        <hr class="mt-0">
                         <div class="content_modal">
                             <div class="row">
-                                <div class="col-10 offset-1 col-lg-6 offset-lg-0 order-1">
+                                <div class="col-10 offset-1 col-lg-6 offset-lg-0 order-1 order-lg-0">
                                     <div class="detail_product text-right dir_rtl">
                                         <div class="cm_rate">
                                             <div class="rate_box d-inline-block">
@@ -575,12 +575,15 @@
                                             </li>
                                         </ul>
                                         <p class="price_of_product">820,000 تومان</p>
-                                        <button class="btn_shopping btn_style mt-3 ml-2">افزودن به سبد خرید</button>
-                                        <button class="btn_see_more btn_style mt-3">مشاهده بیشتر جزییات</button>
+                                        <div class="btn_modal text-center w-100">
+                                            <button class="btn_shopping btn_style mb-5 ml-2">افزودن به سبد خرید</button>
+                                            <button class="btn_see_more btn_style mb-5">مشاهده بیشتر جزییات</button>
+                                        </div>
+
 
                                     </div>
                                 </div>
-                                <div class="col-10 offset-1 col-lg-6 offset-lg-0 order-md-0 mb-5 mb-lg-0">
+                                <div class="col-10 offset-1 col-lg-6 offset-lg-0 order-0 order-lg-1 mb-5 mb-lg-0">
                                     <div class="slider_product">
                                         <!-- Swiper -->
                                         <div class="swiper-container gallery-top">
