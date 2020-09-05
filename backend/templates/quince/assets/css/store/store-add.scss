@@ -66,11 +66,6 @@
     margin-right: 0;
 }
 
-.small_of_title {
-    color: $d_red;
-    font-size: 0.8rem;
-}
-
 .shop_field_padding_custom {
     .attr_description_field {
         height: 100px !important;
@@ -93,7 +88,7 @@
     display: none;
 }
 
-.add_layer {
+.add_layer , .remove_layer {
     font-size: 1.7rem;
     color: #7fe0dc;
     float: left;
@@ -103,4 +98,8 @@
     &:hover {
         color: $d_green;
     }
+}
+
+.remove_layer{
+    display: none;
 }

@@ -78,12 +78,12 @@
 @media only screen and (max-width: 991px) {
 
   .bottom_box_of_nav_bar {
-    height: 45px;
-    padding-top: 9px !important;
+    height: 65px;
+    padding-top: 19px !important;
   }
 
   .header .top_box_of_nav_bar .right_box .logo_of_header {
-    width: 33%;
+    width: 26%;
   }
 
   .header .top_box_of_nav_bar .right_box .name_of_web_site,
@@ -131,7 +131,7 @@
   }
 
   .header .top_box_of_nav_bar .right_box .logo_of_header {
-    width: 33%;
+    width: 21%;
   }
 
   .header .top_box_of_nav_bar .right_box .name_of_web_site,
@@ -145,8 +145,12 @@
 
   .header .top_box_of_nav_bar .left_box .form .search_box,
   .header .top_box_of_nav_bar .left_box .form .input-group-text {
-    height: 25px;
+    height: 35px;
     font-size: 0.8rem;
+  }
+
+  .main_field_of_search {
+    top: -7px;
   }
 
   .header .bottom_box_of_nav_bar .cart_and_sign_box .card_box .fa-shopping-cart,
@@ -226,6 +230,10 @@
 
 @media only screen and (max-width: 600px) {
 
+  .main_field_of_search {
+    top: -0px;
+  }
+
   .footer {
     text-align: center !important;
     padding: 70px 0px 10px;
@@ -233,7 +241,7 @@
 
   .header .top_box_of_nav_bar .right_box .name_of_web_site,
   .footer .exp_of_page .title_of_footer {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
 
   .header .top_box_of_nav_bar .left_box .form .search_box,
@@ -297,6 +305,10 @@
 }
 
 @media only screen and (max-width: 500px) {
+  .main_field_of_search {
+    top: 10px;
+  }
+
   .header .top_box_of_nav_bar .right_box .logo_of_header {
     width: 33%;
   }
@@ -310,7 +322,7 @@
     font-size: 1rem;
   }
 
-  .main_field_of_search{
+  .main_field_of_search {
     position: absolute;
     left: 10px;
   }
@@ -381,7 +393,7 @@
   .header .top_box_of_nav_bar .left_box .form .search_box,
   .header .top_box_of_nav_bar .left_box .form .input-group-text {
     height: 18px;
-    font-size:0.7rem;
+    font-size: 0.7rem;
   }
 
   .header .layer_of_nav .nav_bar_responsive {
