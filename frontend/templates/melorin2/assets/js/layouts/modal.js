@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-    //register modal
 
     $('.sign_btn').click(function () {
         $('body').css('overflow','hidden');

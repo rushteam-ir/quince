@@ -22,6 +22,11 @@ $(document).ready(function () {
         $('.nav_bar_responsive').animate({right: '-350px',display:'none'});
     });
 
+    $(window).on('resize',function () {
+        if ($(window).width() >= 991){
+            $('.layer_of_nav').fadeOut();
+        }
+    })
 
 });
 
