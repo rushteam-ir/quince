@@ -22,43 +22,6 @@ for (let i = 0; i <= store_tabs.length; i++) {
 
 }
 
-
-// disable and enable sale
-
-let sale_checker = $('#sale_checker');
-
-sale_checker.change(function () {
-
-    if (sale_checker.is(':checked')) {
-
-        $('.sale_inp_shop').prop('disabled', false);
-
-    } else {
-
-        $('.sale_inp_shop').prop('disabled', true);
-
-    }
-
-});
-
-
-let tax_checker = $('#tax_checker');
-
-tax_checker.change(function () {
-
-    if (tax_checker.is(':checked')) {
-
-        $('#tax_tab').css('display', 'block');
-
-    } else {
-
-        $('#tax_tab').css('display', 'none');
-
-    }
-
-});
-
-
 // place dot after type number 
 
 $('#product_Percent, #product_sale ,#product_price').keyup(function () {

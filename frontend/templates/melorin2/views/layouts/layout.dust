@@ -32,7 +32,7 @@
                 <div class="col-6">
                     <div class="left_box">
                         <form class="form">
-                            <div class="input-group mb-2">
+                            <div class="input-group mb-2 main_field_of_search">
                                 <input class="form-control mr-sm-2 search_box" type="search" placeholder="جستجو کنید..."
                                        aria-label="Search">
                                 <div class="input-group-prepend">

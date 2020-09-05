@@ -53,12 +53,12 @@
                                     </select>
                                 </div>
                                 <div class="form-group ">
-                                    <label for="summary_description">توضیحات مختصر</label>
-                                    <textarea class="form-control main_form_design" id="summary_description"></textarea>
-                                </div>
-                                <div class="form-group ">
                                     <label for="main_description">توضیحات</label>
                                     <textarea class="form-control main_form_design" id="main_description"></textarea>
+                                </div>
+                                <div class="form-group ">
+                                    <label for="summary_description">توضیحات مختصر</label>
+                                    <textarea class="form-control main_form_design" id="summary_description"></textarea>
                                 </div>
                                 <div class="form-group position-relative">
                                     <label for="tags_field">برچسب ها</label>
@@ -78,19 +78,9 @@
                                         <option value="0">قابل دانلود</option>
                                     </select>
                                 </div>
-                                <div class="row">
-                                    <div class="col-6 p-0">
-                                        <div class="form-group position-relative">
-                                            <input id="tax_checker" type="checkbox" class="option-input checkbox">
-                                            <p class="checkbox_text">آیا محصول شما شامل مالیات می شود؟</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 p-0">
-                                        <div class="form-group position-relative">
-                                            <input id="sale_checker" type="checkbox" class="option-input checkbox">
-                                            <p class="checkbox_text">آیا محصول شما شامل تخفیف می شود؟</p>
-                                        </div>
-                                    </div>
+                                <div class="form-group position-relative">
+                                    <input id="tax_checker" type="checkbox" class="option-input checkbox">
+                                    <p class="checkbox_text">آیا محصول شما شامل مالیات می شود؟</p>
                                 </div>
                             </div>                    
                         </div>
@@ -109,14 +99,14 @@
                                 <div class="row">
                                     <div class="col-6 pr-0">
                                         <div class="form-group ">
-                                            <label for="product_sale">مقدار تخفیف <span class="small_of_title">(تومان)</span></label>
-                                            <input type="text" class="form-control main_form_design sale_inp_shop" id="product_sale" disabled>
+                                            <label for="product_sale">قیمت نهایی با تخفیف <span class="small_of_title">(تومان)</span></label>
+                                            <input type="text" class="form-control main_form_design sale_inp_shop" id="product_sale">
                                         </div>
                                     </div>
                                     <div class="col-6 pl-0">
                                         <div class="form-group ">
                                             <label for="product_Percent">درصد تخفیف</label>
-                                            <input type="text" class="form-control main_form_design sale_inp_shop" id="product_Percent" disabled>
+                                            <input type="text" class="form-control main_form_design sale_inp_shop" id="product_Percent">
                                         </div>
                                     </div>
                                 </div>
@@ -124,30 +114,22 @@
                                     <div class="col-6 pr-0">
                                         <div class="form-group ">
                                             <label for="product_sale_date_from">مدت تخفیف از</label>
-                                            <input type="date" class="form-control main_form_design sale_inp_shop" id="product_sale_date_from" disabled>
+                                            <input type="date" class="form-control main_form_design sale_inp_shop" id="product_sale_date_from">
                                         </div>
                                     </div>
                                     <div class="col-6 pl-0">
                                         <div class="form-group ">
                                             <label for="product_sale_date_to">تا</label>
-                                            <input type="date" class="form-control main_form_design sale_inp_shop" id="product_sale_date_to" disabled>
+                                            <input type="date" class="form-control main_form_design sale_inp_shop" id="product_sale_date_to">
                                         </div>
                                     </div>
                                 </div>
                             </div>                    
                         </div>
 
-                        <div class="main_col field_of_shop_tabs pb-5" id="product_price_tab">
-                            <header class="header_field mb-5">
-                                <h1>مالیات</h1>
-                                <h2>مالیات محصول خود را کنترل کنید</h2>
-                                <hr>
-                            </header>                  
-                        </div>
-
                         <div class="main_col field_of_shop_tabs pb-5" id="product_face">
                             <header class="header_field mb-5">
-                                <h1>مشخصات طاهری</h1>
+                                <h1>مشخصات ظاهری</h1>
                                 <h2>مشخصات ظاهری کالای خود را وارد کنید</h2>
                                 <hr>
                             </header>
@@ -205,7 +187,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="max_user_can_buy">حداکثر تعداد قابل سفارش</label>
-                                    <input type="text" class="form-control main_form_design" id="max_user_can_buy">
+                                    <input type="text" class="form-control main_form_design" id="max_user_can_buy" placeholder="&#8734">
                                 </div>
                             </div>                    
                         </div>
@@ -246,10 +228,6 @@
                         <div class="shop_tabs">
                             <i class="far fa-money-bill-wave"></i>
                             <p class="d-inline-block mr-3 mt-3">قیمت محصول</p>
-                        </div>
-                        <div class="shop_tabs" id="tax_tab">
-                            <i class="far fa-badge-dollar"></i>
-                            <p class="d-inline-block mr-3 mt-3">مالیات</p>
                         </div>
                         <div class="shop_tabs" id="pro_Appearance">
                             <i class="far fa-weight"></i>

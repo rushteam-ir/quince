@@ -13,87 +13,93 @@
 
 @media only screen and (max-width: 1200px) {
 
-  .product_part .text-box .title_of_product{
+  .modal_fast_see .modal_see_row .body_modal .content_modal .detail_product .name_price .name_of_product{
+    line-height: 25px;
+  }
+
+  .product_part .text-box .title_of_product {
     font-size: 1.2rem;
   }
 
-  .product_part .text-box .text_small{
+  .product_part .text-box .text_small {
     font-size: 0.8rem;
   }
 
-  .header .bottom_box_of_nav_bar .nav_bar_box .nav_bar .nav_bar_ul .nav_bar_item .special_item{
+  .header .bottom_box_of_nav_bar .nav_bar_box .nav_bar .nav_bar_ul .nav_bar_item .special_item {
     line-height: 20px;
   }
-  .slider_main_page .main_slider .img_of_main_slider{
-   height: 570px;
+
+  .slider_main_page .main_slider .img_of_main_slider {
+    height: 570px;
   }
 
-  .services_part .services_box .icons_services{
+  .services_part .services_box .icons_services {
     font-size: 2.3rem;
   }
 
-  .services_part .services_box .title_of_service{
+  .services_part .services_box .title_of_service {
     font-size: 1rem;
   }
 
-  .services_part .services_box .exp_service{
+  .services_part .services_box .exp_service {
     font-size: 0.8rem;
   }
 
-  .services_part .services_box{
+  .services_part .services_box {
     width: 100%;
   }
 }
 
 @media only screen and (max-width: 991px) {
-  .slider_main_page .main_slider .img_of_main_slider{
+  .slider_main_page .main_slider .img_of_main_slider {
     height: 450px;
   }
 
-  .services_part .services_box .icons_services{
+  .services_part .services_box .icons_services {
     font-size: 2.5rem;
   }
 
-  .product_part .img_of_product{
+  .product_part .img_of_product {
     height: 250px;
   }
 
-  .product_part .text-box .title_of_product{
+  .product_part .text-box .title_of_product {
     font-size: 1rem;
   }
 
-  .product_part .text-box .btn_of_product{
+  .product_part .text-box .btn_of_product {
     font-size: 1rem;
     padding: 7px 20px;
   }
 
-  .product_part .text-box{
+  .product_part .text-box {
     top: 20px;
     right: 50px;
     width: 40%;
   }
 
-  .first_box_responsive{
+  .first_box_responsive {
     right: 37px !important;
   }
 
-  .parallax_box .parallax{
+  .parallax_box .parallax {
     height: 350px;
   }
 
-  .parallax_box .parallax .text_box{
-    padding:70px 40px;
+  .parallax_box .parallax .text_box {
+    padding: 70px 40px;
   }
 
-  .services_part .services_box{
-    width: 80%;
+  .services_part .services_box {
+    width: 100%;
   }
 
-  .news_part .news_box .body_news .title_news{
+  .news_part .news_box .body_news .title_news {
     font-size: 1.1rem;
   }
+
   .news_part .news_box .body_news .short_exp_of_news,
-  .news_part .news_box .body_news .footer_of_news{
+  .news_part .news_box .body_news .footer_of_news {
     font-size: 0.9rem;
   }
 }
@@ -101,43 +107,43 @@
 @media only screen and (max-width: 768px) {
 
 
-  .services_part .services_box .icons_services{
-    font-size: 2.3rem;
+  .services_part .services_box .icons_services {
+    font-size: 2.5rem;
   }
 
   .services_part .services_box .exp_service {
     font-size: 0.8rem;
   }
 
-  .services_part .services_box{
+  .services_part .services_box {
     padding: 20px 0px;
   }
 
-  .parallax_box .parallax{
+  .parallax_box .parallax {
     height: 300px;
   }
 
-  .parallax_box .parallax .text_box{
-    padding:60px 20px;
+  .parallax_box .parallax .text_box {
+    padding: 60px 20px;
   }
 
-  .parallax_box .parallax .text_box .small_title{
-  font-size: 1.5rem;
+  .parallax_box .parallax .text_box .small_title {
+    font-size: 1.5rem;
   }
 
-  .parallax_box .parallax .text_box .main_title{
+  .parallax_box .parallax .text_box .main_title {
     font-size: 2.5rem;
   }
 
-  .news_part .news_box .body_news .short_exp_of_news{
+  .news_part .news_box .body_news .short_exp_of_news {
     font-size: .9rem;
   }
 
-  .news_part .news_box .body_news .footer_of_news{
+  .news_part .news_box .body_news .footer_of_news {
     font-size: 0.85rem;
   }
 
-  .news_part .news_box .body_news .title_news{
+  .news_part .news_box .body_news .title_news {
     font-size: 1.15rem;
   }
 
@@ -145,51 +151,68 @@
 
 @media only screen and (max-width: 600px) {
 
-  .slider_main_page .main_slider .img_of_main_slider{
+  .slider_main_page .main_slider .img_of_main_slider {
     height: 350px;
   }
 
-  .services_part .services_box .icons_services{
-    font-size: 2rem;
+  .services_part .services_box .icons_services {
+    font-size: 2.5rem;
   }
 
-  .services_part .services_box .title_of_service{
+  .services_part .services_box .title_of_service {
+    font-size: 1.1rem;
+  }
+
+  .services_part .services_box .exp_service {
     font-size: 0.9rem;
   }
 
-  .services_part .services_box .exp_service{
-    font-size: 0.75rem;
-  }
-
-  .services_part .services_box{
+  .services_part .services_box {
     padding: 10px 0px;
   }
 
-  .product_part .text-box .btn_of_product{
+  .product_part .text-box .btn_of_product {
     font-size: .7rem;
   }
-  .parallax_box .parallax .text_box .btn_of_parallax  ,
-  .news_part .news_box .body_news .short_exp_of_news{
-    font-size: 0.8rem;
+
+  .parallax_box .parallax .text_box .btn_of_parallax,
+  .news_part .news_box .body_news .short_exp_of_news {
+    font-size: 0.9rem;
   }
+
   .news_part .news_box .body_news .small_date,
-  .news_part .news_box .body_news .footer_of_news
-  {
+  .news_part .news_box .body_news .footer_of_news {
     font-size: 0.7rem;
   }
 
-  .news_part .news_box .body_news .title_news{
+  .news_part .news_box .body_news .title_news {
     font-size: 1rem;
   }
 
-  .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after,
-  .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after{
-    font-size:2rem;
+  .swiper-button-prev:after,
+  .swiper-container-rtl .swiper-button-next:after,
+  .swiper-button-next:after,
+  .swiper-container-rtl .swiper-button-prev:after {
+    font-size: 2rem;
+  }
+
+  .modal_fast_see .modal_see_row .body_modal {
+    width: 100%;
+  }
+
+  .news_part .news_box .pic_of_news {
+    width: 100%;
+    height: 240px;
+  }
+
+  .news_part .news_box .body_news .footer_of_news .small_views {
+    font-size: 0.8rem;
+    bottom: 28px;
   }
 }
 
 @media only screen and (max-width: 499px) {
-  .slider_main_page .main_slider .img_of_main_slider{
+  .slider_main_page .main_slider .img_of_main_slider {
     height: 300px;
   }
 
@@ -197,25 +220,23 @@
     height: 240px;
   }
 
-  .parallax_box .parallax .text_box .main_title{
+  .parallax_box .parallax .text_box .main_title {
     font-size: 2rem;
   }
 
   .parallax_box .parallax .text_box .small_title {
     font-size: 1.2rem;
   }
-  .parallax_box .parallax .text_box{
-    padding:40px 20px;
+
+  .parallax_box .parallax .text_box {
+    padding: 40px 20px;
   }
 
 }
 
 @media only screen and (max-width: 400px) {
-  .slider_main_page .main_slider .img_of_main_slider{
+  .slider_main_page .main_slider .img_of_main_slider {
     height: 250px;
   }
 
 }
-
-
-

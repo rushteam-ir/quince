@@ -97,7 +97,7 @@
                 </div>
                 <div class="col-lg-4 col-md-10 offset-lg-0 offset-md-1 px-0  pl-lg-1 p-l-md-0">
                     <div class="row">
-                        <div class="col-lg-12 mb-1 pb-3 pb-lg-0">
+                        <div class="col-lg-12 mb-1 pb-3 pb-lg-0  px-0">
                             <img src="../../img/category1.jpg" class="img_of_product small_pic" alt="">
                             <div class="text-box text-right">
                                 <h2 class="title_of_product dir_rtl  text_small">
@@ -108,7 +108,7 @@
                                 <button class="btn_of_product btn_small">مشاهده دسته بندی</button>
                             </div>
                         </div>
-                        <div class="col-lg-12">
+                        <div class="col-lg-12  px-0">
                             <img src="../../img/category2.jpg" class="img_of_product small_pic" alt="">
                             <div class="text-box box_3 text-right">
                                 <h2 class="title_of_product dir_rtl  text_small ">
