@@ -9,8 +9,8 @@
     <script src="js/files/files.js"></script>
     <script src="js/general/fingerprint.js"></script>
     <script src="js/custom/checkbox.js"></script>
-    <script src="../../assets/js/custom/error-handler.js"></script>
-    <script src="../../assets/js/custom/main-error.js"></script>
+    <script src="js/custom/error-handler.js"></script>
+    <script src="js/custom/main-error.js"></script>
 
 {/js}
 {<body}
@@ -76,47 +76,64 @@
                                     </label>
                                 </th>
                                 <th class="FM_name">نام</th>
-                                <th ></th>
+                                <th></th>
                                 <th>آخرین تغییرات</th>
                                 <th>حجم</th>
                                 <th>تنظیمات</th>
                             </tr>
-                            <tr>
-                                <td class="FM_check_box">
-                                    <label class="checkbox_of_category">
-                                        <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox"
-                                            value="{._id}">
-                                    </label>
-                                </td>
-                                <td class="FM_icons"><i class="fad fa-file-alt"></i></td>
-                                <td class="text-right pr-0">Avatars</td>
-                                <td class="FM_info">1399.12.02</td>
-                                <td class="FM_info">15MB</td>
+                            {#content_list}
+                                <tr class="content_row" path="{path}" is-file="{isFile}">
+                                    <td class="FM_check_box">
+                                        <label class="checkbox_of_category">
+                                            <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox"
+                                                   value="{path}">
+                                        </label>
+                                    </td>
+                                    <td class="FM_icons">
+                                        {@eq key="{isFile}" value="true"}
+                                            <i class="fad fa-file"></i>
+                                        {:else}
+                                            <i class="fas fa-folder"></i>
+                                        {/eq}
+                                    </td>
+                                    <td class="text-right pr-0">
+                                        {name}
+                                    </td>
+                                    <td class="FM_info">
+                                        {modified}
+                                    </td>
+                                    <td class="FM_info">
+                                        {@eq key="{isFile}" value="true"}
+                                            {size}
+                                        {:else}
 
-                                <td class="table_option FM_info">
-                                    <div class="dropdown">
-                                        <button class="btn  dropdown-toggle" type="button" id="table_option" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="table_option">
-                                            <a class="dropdown-item" href="#">
-                                                <i class="fal fa-align-slash"></i>
-                                                غیر فعال کردن
-                                            </a>
-                                            <a class="dropdown-item" href="#">
-                                                <i class="fal fa-asterisk"></i>
-                                                افزودن وی ای پی
-                                            </a>
-                                            <a class="dropdown-item" href="#">
-                                                <i class="fal fa-assistive-listening-systems"></i>
-                                                افزودن گوش و چشم
-                                            </a>
+                                        {/eq}
+                                    </td>
+
+                                    <td class="table_option FM_info">
+                                        <div class="dropdown">
+                                            <button class="btn  dropdown-toggle" type="button" id="table_option" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="table_option">
+                                                <a class="dropdown-item" href="#">
+                                                    <i class="fal fa-align-slash"></i>
+                                                    غیر فعال کردن
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <i class="fal fa-asterisk"></i>
+                                                    افزودن وی ای پی
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <i class="fal fa-assistive-listening-systems"></i>
+                                                    افزودن گوش و چشم
+                                                </a>
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
-                            </tr>
-            
+                                    </td>
+                                </tr>
+                            {/content_list}
                         </table>
                     </div>
 
