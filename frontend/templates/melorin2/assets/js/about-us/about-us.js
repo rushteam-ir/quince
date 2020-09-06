@@ -1,0 +1,1 @@
+$('.parallax_about_us').parallax({imageSrc: "../../img/office.png"});

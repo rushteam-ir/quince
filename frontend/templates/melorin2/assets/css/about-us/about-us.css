@@ -1,0 +1,268 @@
+@font-face {
+  font-family: main-font;
+  src: url("../../font/Vazir.ttf");
+}
+@font-face {
+  font-family: second-font;
+  src: url("../../font/Vazir-Thin.ttf");
+}
+@font-face {
+  font-family: accent-font;
+  src: url("../../font/A.Rezvan.ttf");
+}
+.company_pic .title_part_of_page, .ways_to_contact_us .title_part_of_page {
+  color: #292929;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  position: relative;
+  font-size: 1.7rem;
+}
+.company_pic .title_part_of_page::before, .ways_to_contact_us .title_part_of_page::before {
+  background-color: #292929;
+  content: "";
+  height: 1px;
+  left: -210px;
+  position: absolute;
+  top: 21px;
+  transition: all 0.4s ease 0s;
+  width: 160px;
+}
+.company_pic .title_part_of_page::after, .ways_to_contact_us .title_part_of_page::after {
+  background-color: #292929;
+  content: "";
+  height: 1px;
+  right: -210px;
+  position: absolute;
+  top: 21px;
+  transition: all 0.4s ease 0s;
+  width: 160px;
+}
+
+.field_of_header_about_us {
+  background-image: url("../../img/header-about-us.jpg");
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  position: relative;
+}
+.field_of_header_about_us .main_row {
+  height: 60vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.field_of_header_about_us .main_row .content_of_header .layer_of_header_about_us {
+  width: 100%;
+}
+.field_of_header_about_us .main_row .content_of_header .layer_of_header_about_us .content_box {
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+.field_of_header_about_us .main_row .content_of_header .layer_of_header_about_us .content_box .name_of_company {
+  font-family: accent-font;
+  font-size: 2.2rem;
+  text-shadow: 1px 1px 2px white;
+}
+.field_of_header_about_us .main_row .content_of_header .layer_of_header_about_us .content_box .exp_about_company {
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.ways_to_contact_us {
+  background-image: url("../../img/bg-about-us.jpg");
+  padding: 50px 40px 80px 40px;
+  text-align: center;
+}
+.ways_to_contact_us .img_of_logo {
+  width: 250px;
+}
+.ways_to_contact_us .box_of_explain_table .padding_of_title {
+  font-size: 2.2rem;
+  font-family: accent-font;
+  padding-bottom: 20px;
+  color: #FF6B6B;
+}
+.ways_to_contact_us .box_of_explain_table .explain_box_table .support_option_table {
+  font-size: 1.1rem;
+}
+.ways_to_contact_us .box_of_explain_table .explain_box_table .social_media_table {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #f7b42c;
+  background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+  text-align: center;
+  line-height: 35px;
+  color: #ffeeee;
+  font-size: 1.2rem;
+}
+
+.company_pic .parallax_about_us {
+  height: 300px !important;
+  background: transparent;
+}
+
+@media only screen and (max-width: 1200px) {
+  .ways_to_contact_us .img_of_logo {
+    width: 240px;
+  }
+
+  .ways_to_contact_us .box_of_explain_table .explain_box_table .support_option_table {
+    font-size: 1rem;
+  }
+
+  .ways_to_contact_us .box_of_explain_table .explain_box_table .social_media_table {
+    font-size: 1.1rem;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .field_of_header_about_us .main_row .content_of_header .layer_of_header_about_us .content_box .name_of_company {
+    font-size: 1.8rem;
+  }
+
+  .field_of_header_about_us .main_row .content_of_header .layer_of_header_about_us .content_box .exp_about_company,
+.field_of_header_about_us .main_row .content_of_header .layer_of_header_about_us .content_box .small_text_about_company,
+.ways_to_contact_us .box_of_explain_table .explain_box_table .support_option_table {
+    font-size: 0.9rem;
+  }
+
+  .field_of_header_about_us,
+.field_of_header_about_us .main_row {
+    height: 70vh;
+  }
+
+  .ways_to_contact_us .title_part_of_page,
+.company_pic .title_part_of_page {
+    font-size: 1.5rem;
+  }
+
+  .ways_to_contact_us .box_of_explain_table .padding_of_title {
+    font-size: 1.8rem;
+  }
+
+  .ways_to_contact_us .img_of_logo {
+    width: 210px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .field_of_header_about_us .main_row .content_of_header .layer_of_header_about_us .content_box {
+    width: 90%;
+  }
+
+  .field_of_header_about_us .main_row .content_of_header .layer_of_header_about_us .content_box .exp_about_company,
+.field_of_header_about_us .main_row .content_of_header .layer_of_header_about_us .content_box .small_text_about_company {
+    font-size: 0.8rem;
+  }
+
+  .field_of_header_about_us .main_row .content_of_header .layer_of_header_about_us .content_box .name_of_company {
+    font-size: 1.5rem;
+  }
+
+  .ways_to_contact_us .img_of_logo {
+    margin-bottom: 50px;
+    width: 170px;
+  }
+
+  .ways_to_contact_us .title_part_of_page,
+.company_pic .title_part_of_page {
+    font-size: 1.3rem;
+  }
+
+  .ways_to_contact_us .title_part_of_page::before,
+.company_pic .title_part_of_page::before {
+    left: -170px;
+    width: 120px;
+  }
+
+  .ways_to_contact_us .title_part_of_page::after,
+.company_pic .title_part_of_page::after {
+    right: -170px;
+    width: 120px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .field_of_header_about_us .main_row .content_of_header .layer_of_header_about_us .content_box .name_of_company,
+.ways_to_contact_us .box_of_explain_table .padding_of_title {
+    font-size: 1.5rem;
+  }
+
+  .field_of_header_about_us .main_row .content_of_header .layer_of_header_about_us .content_box .exp_about_company,
+.field_of_header_about_us .main_row .content_of_header .layer_of_header_about_us .content_box .small_text_about_company {
+    font-size: 0.7rem;
+  }
+
+  .ways_to_contact_us .box_of_explain_table .explain_box_table .support_option_table {
+    font-size: 0.8rem;
+  }
+
+  .ways_to_contact_us .title_part_of_page,
+.company_pic .title_part_of_page {
+    font-size: 1.1rem;
+  }
+
+  .ways_to_contact_us .title_part_of_page::before,
+.company_pic .title_part_of_page::before {
+    left: -140px;
+    width: 100px;
+  }
+
+  .ways_to_contact_us .title_part_of_page::after,
+.company_pic .title_part_of_page::after {
+    right: -140px;
+    width: 100px;
+  }
+
+  .ways_to_contact_us .img_of_logo {
+    width: 180px;
+  }
+
+  .ways_to_contact_us .box_of_explain_table .explain_box_table .social_media_table {
+    font-size: 0.9rem;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 499px) {
+  .field_of_header_about_us,
+.field_of_header_about_us .main_row {
+    height: 80vh;
+  }
+
+  .field_of_header_about_us .main_row .content_of_header .layer_of_header_about_us .content_box .name_of_company {
+    font-size: 1.1rem;
+  }
+
+  .ways_to_contact_us .title_part_of_page,
+.ways_to_contact_us .title_part_of_page {
+    font-size: 1rem;
+  }
+
+  .ways_to_contact_us .img_of_logo {
+    width: 150px;
+  }
+
+  .ways_to_contact_us .title_part_of_page::before,
+.ways_to_contact_us .title_part_of_page::before {
+    left: -100px;
+    width: 80px;
+  }
+
+  .ways_to_contact_us .title_part_of_page::after,
+.company_pic .title_part_of_page::after {
+    right: -100px;
+    width: 80px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .ways_to_contact_us .img_of_logo {
+    width: 120px;
+  }
+}
+
+/*# sourceMappingURL=about-us.css.map */
