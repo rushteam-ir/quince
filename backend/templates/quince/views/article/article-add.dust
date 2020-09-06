@@ -84,6 +84,14 @@
 
                                         </div>
                                     </div>
+
+                                    <div class="form-group ">
+                                        <label for="article_type">نوع نمایش</label>
+                                        <select class="form-control main_form_design" id="article_type" name>
+                                            <option value="0">فعال</option>
+                                            <option value="1">غیر فعال</option>
+                                        </select>
+                                    </div>
                                     
                                     <div class="form-group">
                                         <label for="article_describe">توضیحات کلیدی مقاله</label>

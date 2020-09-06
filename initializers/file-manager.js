@@ -85,7 +85,7 @@ class fileManager {
 
     }
 
-    getPathContent(file_path){
+    getPathContent(file_path, root_path){
 
         return new Promise((resolve, reject)=>{
 
@@ -101,7 +101,7 @@ class fileManager {
                     let promise_array = []
 
                     for(let file_name of files){
-                        promise_array.push(this.getPathDetail(file_path + file_name));
+                        promise_array.push(this.getPathDetail(file_path + file_name, root_path));
                     }
 
                     Promise.all(promise_array).then((content)=>{
@@ -118,19 +118,24 @@ class fileManager {
 
     }
 
-    getPathDetail(file_path){
+    getPathDetail(file_path, root_path){
 
         return new Promise((resolve, reject)=>{
 
             fs.stat(file_path, (err, stats)=>{
 
+                let new_modified = new JalaliDate(stats.mtime);
+                let new_created = new JalaliDate(stats.ctime);
+                let aa = file_path.replace(root_path, '')
+
                 resolve({
 
                     name : path.basename(file_path),
-                    size : this.getSize(stats.size),
+                    path : file_path.replace(root_path, ''),
+                    size : this.convertSize(stats.size),
                     isFile : stats.isFile(),
-                    modified : JalaliDate.toJalali(stats.ctime),
-                    created : stats.mtime,
+                    modified : new_modified.format('YYYY/MM/DD'),
+                    created : new_created.format('YYYY/MM/DD'),
                     type : path.extname(file_path)
 
                 });
@@ -141,7 +146,7 @@ class fileManager {
 
     }
 
-    getSize(size){
+    convertSize(size){
 
         let result;
 

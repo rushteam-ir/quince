@@ -6,7 +6,7 @@ router.get('/', async(req, res, next)=>{
 
         let data = {
 
-            content_list : await fileManager.getPathContent(backend_upload_dir)
+            content_list : await fileManager.getPathContent(backend_upload_dir, backend_upload_dir)
 
         }
 

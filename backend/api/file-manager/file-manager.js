@@ -1,7 +1,7 @@
 const router = express.Router();
 
-const loader = require('./loader.js');
+const content_load = require('./content-load.js');
 
-router.use('/loader', loader);
+router.use('/content-load', content_load);
 
 module.exports = router;

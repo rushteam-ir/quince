@@ -75,16 +75,16 @@
                                                    name="select_all">
                                         </label>
                                     </th>
-                                    <th class="fr_custom text-center pl-0">نام پوشه</th>
+                                    <th class="fr_custom text-center pl-0">نام</th>
                                     <th class="sr_custom"></th>
                                     <th class="thr_custom">آخرین تغییرات</th>
-                                    <th class="fthr_cutom">حجم پوشه</th>
+                                    <th class="fthr_cutom">حجم</th>
                                     <th>تنظیمات</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 {#content_list}
-                                    <tr class="files_table_row">
+                                    <tr class="files_table_row" name="{path}">
                                         <td>
                                             <label class="checkbox_of_category">
                                                 <input type="checkbox" name="delete_checkbox[]"
@@ -93,9 +93,9 @@
                                         </td>
                                         <td class="pl-0 text-center">
                                             {@eq key="{type}" value=""}
-                                                <img class="image_of_folders" src="img/folder-img.png" alt="">
+                                                <i class="fas fa-folder"></i>
                                             {:else}
-                                                <img class="image_of_folders" src="img/document-img.png" alt="">
+                                                <i class="fas fa-file"></i>
                                             {/eq}
                                         </td>
                                         <td class="pr-0 folder_name_custom table_data">
@@ -105,9 +105,7 @@
                                             {modified}
                                         </td>
                                         <td class="table_data padding_custom_f">
-                                            {@eq key="{size}" value=""}
-
-                                            {:else}
+                                            {@eq key="{isFile}" value="true"}
                                                 {size}
                                             {/eq}
                                         </td>
