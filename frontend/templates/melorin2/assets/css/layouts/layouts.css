@@ -47,7 +47,6 @@
 .header .bottom_box_of_nav_bar {
   background-color: white;
   box-shadow: 0px 10px 20px -20px #2b2b2b;
-  padding-bottom: 2px;
 }
 .header .bottom_box_of_nav_bar .nav_bar_box .nav_bar .nav_bar_ul {
   list-style-type: none;
@@ -544,7 +543,7 @@
   }
 
   .header .top_box_of_nav_bar .right_box .logo_of_header {
-    width: 21%;
+    width: 65px;
   }
 
   .header .top_box_of_nav_bar .right_box .name_of_web_site,
@@ -679,7 +678,7 @@
   .header .bottom_box_of_nav_bar .cart_and_sign_box .card_box .fa-shopping-cart,
 .header .bottom_box_of_nav_bar .cart_and_sign_box .card_box .card_name,
 .header .bottom_box_of_nav_bar .cart_and_sign_box .sign_box .sign_btn {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .header .bottom_box_of_nav_bar .nav_bar_box .nav_bar .nav_btn_responsive .fa-bars {
@@ -709,7 +708,7 @@
   }
 
   .footer .exp_of_page .logo_of_footer {
-    width: 35%;
+    width: 90px;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -721,8 +720,8 @@
     width: 33%;
   }
 
-  .header .top_box_of_nav_bar .right_box .logo_of_header {
-    width: 33%;
+  .footer .exp_of_page .logo_of_footer {
+    width: 70px;
   }
 
   .header .top_box_of_nav_bar .right_box .name_of_web_site {

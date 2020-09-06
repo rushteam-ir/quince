@@ -1,15 +1,3 @@
-@media (min-width: 1200px) {
-
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl {
-    max-width: 1250px;
-  }
-}
-
-
 
 @media only screen and (max-width: 1200px) {
 
@@ -24,9 +12,14 @@
     font-size: 1.7rem;
   }
 
+  .social_connect_box .social_content .field_of_contact_info .title_of_contact_box{
+    font-size: 1.5rem;
+  }
+
   .contact_us_content_field .text_contact_us .exp_contact_text,
   .contact_us_content_field .main_form_contact_us .form-group label,
-  .contact_us_content_field .main_form_contact_us .btn_of_contact{
+  .contact_us_content_field .main_form_contact_us .btn_of_contact,
+  .social_connect_box .social_content .field_of_contact_info .contact_box{
     font-size: 0.9rem;
   }
 
@@ -34,6 +27,22 @@
     font-size: 1.05rem;
   }
 
+  .social_connect_box .social_content .field_of_contact_icon{
+    font-size: 1.5rem;
+  }
+  .social_connect_box .social_content .field_of_contact_icon .icons {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+  }
+
+  .social_connect_box .social_content .field_of_contact_icon{
+    padding-bottom: 20px;
+  }
+
+  .social_connect_box .social_content{
+    height: 250px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -49,16 +58,35 @@
     font-size: 1.5rem;
   }
 
+  .social_connect_box .social_content .field_of_contact_info .title_of_contact_box{
+    font-size: 1.3rem;
+  }
   .contact_us_content_field .text_contact_us .exp_contact_text,
   .contact_us_content_field .main_form_contact_us .form-group label,
-  .contact_us_content_field .main_form_contact_us .btn_of_contact{
+  .contact_us_content_field .main_form_contact_us .btn_of_contact,
+  .social_connect_box .social_content .field_of_contact_info .contact_box{
     font-size: 0.8rem;
   }
 
   .contact_us_content_field .text_contact_us .exp_contact_text_sec{
     font-size: 1rem;
   }
+  .social_connect_box .social_content .field_of_contact_icon{
+    font-size: 1.3rem;
+  }
+  .social_connect_box .social_content .field_of_contact_icon .icons {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+  }
 
+  .social_connect_box .social_content .field_of_contact_icon{
+    padding-bottom: 10px;
+  }
+
+  .social_connect_box .social_content{
+    height: 210px;
+  }
 }
 
 @media only screen and (max-width: 499px) {
@@ -66,5 +94,15 @@
 }
 
 @media only screen and (max-width: 400px) {
+  .social_connect_box .social_content{
+    height: 230px;
+  }
+}
 
+
+@media only screen and (max-width:576px) and (min-width:465px ) {
+  .social_connect_box .social_content {
+    width: 370px;
+    margin: 40px auto;
+  }
 }

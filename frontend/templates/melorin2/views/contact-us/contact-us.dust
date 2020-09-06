@@ -82,4 +82,48 @@
             </div>
         </div>
     </section>
+
+    <section class="social_connect_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-8 col-sm-10 offset-lg-0 offset-md-2 offset-sm-1">
+                    <div class="social_content text-center dir_rtl">
+                        <div class="field_of_contact_icon"><i class="fas fa-map-marked-alt icons"></i></div>
+                        <div class="field_of_contact_info">
+                            <p class="title_of_contact_box">
+                                آدرس فروشگاه
+                            </p>
+                            <p class="contact_box line_height_p">میدان امام خمینی - خیابان حافظ - بالاتر از خیابان سخایی</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-10 offset-lg-0 offset-md-2 offset-sm-1">
+                    <div class="social_content text-center dir_rtl">
+                        <div class="field_of_contact_icon"><i class="fas fa-phone icons"></i></div>
+                        <div class="field_of_contact_info">
+                            <p class="title_of_contact_box">
+                                تلفن
+                            </p>
+                            <p class="contact_box">1414866 - 0902</p>
+                            <p class="contact_box">44303785 - 021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-10 offset-lg-0 offset-md-2 offset-sm-1">
+                    <div class="social_content text-center dir_rtl">
+                        <div class="field_of_contact_icon"><i class="far fa-at icons"></i></div>
+                        <div class="field_of_contact_info">
+                            <p class="title_of_contact_box">
+                                ایمیل
+                            </p>
+                            <p class="contact_box">kasrahabibeygi@gmail.com</p>
+                            <p class="contact_box">kasrahabibeygi@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 {/body}
