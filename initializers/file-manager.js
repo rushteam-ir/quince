@@ -124,13 +124,16 @@ class fileManager {
 
             fs.stat(file_path, (err, stats)=>{
 
+                let new_modified = new JalaliDate(stats.mtime);
+                let new_created = new JalaliDate(stats.ctime);
+
                 resolve({
 
                     name : path.basename(file_path),
-                    size : this.getSize(stats.size),
+                    size : this.convertSize(stats.size),
                     isFile : stats.isFile(),
-                    modified : JalaliDate.toJalali(stats.ctime),
-                    created : stats.mtime,
+                    modified : new_modified.format('YYYY/MM/DD'),
+                    created : new_created.format('YYYY/MM/DD'),
                     type : path.extname(file_path)
 
                 });
@@ -141,7 +144,7 @@ class fileManager {
 
     }
 
-    getSize(size){
+    convertSize(size){
 
         let result;
 
