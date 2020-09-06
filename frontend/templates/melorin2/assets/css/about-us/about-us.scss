@@ -1,0 +1,164 @@
+@import "../partials/main-colors";
+@import "../partials/fonts";
+
+%title_part_style {
+  color: #292929;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  position: relative;
+  font-size: 1.7rem;
+
+  &::before{
+    background-color: #292929;
+    content: "";
+    height: 1px;
+    left: -210px;
+    position: absolute;
+    top: 21px;
+    transition: all 0.4s ease 0s;
+    width: 160px;
+  }
+
+  &::after{
+    background-color: #292929;
+    content: "";
+    height: 1px;
+    right: -210px;
+    position: absolute;
+    top: 21px;
+    transition: all 0.4s ease 0s;
+    width: 160px;
+  }
+}
+
+.field_of_header_about_us{
+  background-image: url("../../img/header-about-us.jpg");
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  position: relative;
+
+  .main_row{
+    height: 60vh;
+    background-color: rgba(0,0,0,0.4);
+
+    .content_of_header{
+
+      .layer_of_header_about_us{
+        width: 100%;
+
+        .content_box{
+          width: 80%;
+          margin: auto;
+          color: white;
+
+          .name_of_company{
+            font-family: $a-f;
+            font-size: 2.2rem;
+            text-shadow: 1px 1px 2px white;
+          }
+
+          .exp_about_company{
+            line-height: 30px;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.ways_to_contact_us{
+  background-image: url("../../img/bg-about-us.jpg");
+  padding: 50px 40px 80px 40px;
+  text-align: center;
+
+  .title_part_of_page {
+    @extend %title_part_style;
+  }
+
+
+  .img_of_logo{
+    width: 250px;
+  }
+
+  .box_of_explain_table{
+      .padding_of_title{
+        font-size: 2.2rem;
+        font-family: $a_f;
+        padding-bottom: 20px;
+        color: $l-red;
+      }
+
+    .explain_box_table{
+
+      .support_option_table{
+        font-size: 1.1rem;
+      }
+
+      .social_media_table{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: #f7b42c;
+        background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+        text-align: center;
+        line-height: 35px;
+        color: #ffeeee;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.company_pic{
+  .title_part_of_page{
+    @extend  %title_part_style;
+  }
+
+  .parallax_about_us {
+    height: 300px !important;
+    background: transparent;
+  }
+}
+
+.why_choose_our_company_pic{
+  background: white;
+  padding-bottom: 50px;
+  .title_part_of_page{
+    @extend  %title_part_style;
+  }
+
+  .box_of_why_us{
+    width: 80%;
+    margin-right: 20%;
+
+    .title_of_Site_Values_Melorin,
+    .title_of_Fields_of_activity_Melorin{
+      font-family: $a_f;
+      color: $l_red;
+    }
+
+    .Site_Values_Melorin,
+    .Fields_of_activity_Melorin{
+      list-style-type: none;
+      font-family: $s_f;
+
+      &::before{
+        content: "";
+        font-family: "Font Awesome 5 Pro";
+        display: inline-block;
+        font-weight: lighter;
+        position: relative;
+        right: -10px;
+        top: 3px;
+      }
+    }
+  }
+}
+
+@import "responsive";

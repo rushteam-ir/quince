@@ -21,7 +21,7 @@
     <nav class="top_box_of_nav_bar">
         <div class="container-md container-fluid">
             <div class="row ">
-                <div class="col-6 text-right">
+                <div class="col-6 text-right col_p">
                     <div class="right_box">
                         <img src="../../img/logo_bg_white.jpg" class="logo_of_header" alt="فروشگاه ملورین">
                         <h1 class="name_of_web_site d-inline-block mr-1 mr-sm-2 mr-lg-3">فروشگاه <span>ملورین</span>
@@ -29,7 +29,7 @@
                     </div>
 
                 </div>
-                <div class="col-6">
+                <div class="col-6 col_p">
                     <div class="left_box">
                         <form class="form">
                             <div class="input-group mb-2 main_field_of_search">

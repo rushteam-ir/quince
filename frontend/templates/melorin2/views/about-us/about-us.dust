@@ -1,0 +1,140 @@
+{>"layouts/layout"/}
+
+{<title}
+    <title>تماس با ما</title>
+{/title}
+{<css}
+    <link rel="stylesheet" href="css/about-us/about-us.css">
+{/css}
+
+{<js}
+    <script src="js/general/parallax.js"></script>
+    <script src="js/about-us/about-us.js"></script>
+{/js}
+
+{<body}
+
+    <section class="field_of_header_about_us">
+        <div class="container-fluid px-0">
+            <div class="row px-0 align-items-center main_row">
+                <div class="col-12 px-0">
+                    <div class="content_of_header dir_rtl text-center">
+                        <div class="layer_of_header_about_us ">
+                            <div class="content_box ">
+                                <h2 class="name_of_company">
+                                    ملورین
+                                </h2>
+                                <p class="small_text_about_company">برترین تولید کننده جوراب و پخش کننده انلاین</p>
+                                <p class="exp_about_company text-justify">گسترش روز افزون فناوری اطلاعات و کاربرد آن در
+                                    تمامی علوم ، حقیقتی است انکار نشدنی کهپیشگامان علم و تکنولوژی را به خود مشغول کرده
+                                    است.
+                                    علم شاخص عصر حاضر، علوم کامپیوتر و بهعبارت کلی تکنولوژی اطلاعات IT شناخته شده است.
+                                    لذا
+                                    جوامع، سازمانها و موسساتی که بیشترینبهره مندی از این تکنولوژی را دارند ، در ارائه
+                                    خدمات
+                                    بهتر و سود آوری بیشتر پیشتاز خواهندامروز اینترنت وارد تمام جنبه‌های زندگی‌ ما شده
+                                    است.
+                                    بسیاری از کارهایی‌ که تا قبل ازاینترنت تنها با حضور فیزیکی‌ انجام می‌شد، اکنون با یک
+                                    کلیک پیش می‌رود. خرید اینترنتی،یکی‌ از مهم‌ترین‌ها است که توانسته تا حد زیادی شیوه
+                                    سنتی
+                                    خرید را تغییر دهد. تعدادفروشگاه‌های اینترنتی در حال افزایش است و فضا بیش از پیش
+                                    رقابتی
+                                    شده است. تاپ کوپن سعی‌دارد این فضای رقابتی را به شیوه‌ای درست هدایت کند. ما شرایطی
+                                    را
+                                    فراهم کرده‌ایم کهفروشگاه‌ها بتوانند تخفیف‌های خود را از طریق سایت ما به مشتریان خود
+                                    ارائه دهند.بود.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ways_to_contact_us">
+        <div class="container-fluid">
+            <div class="row py-5">
+                <div class="col-10 offset-1 text-center">
+                    <h3 class="title_part_of_page">راه های ارتباط با ما</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-10 offset-sm-1 col-md-6 offset-md-0 order-md-1 offset-sm-0">
+                    <img class="img_of_logo" alt="" src="../../img/logo_bg_white.jpg">
+                </div>
+                <div class="col-sm-10 offset-sm-1 col-md-6 offset-md-0  order-md-0 offset-sm-1">
+                    <div class="box_of_explain_table text-center">
+                        <h1 class="padding_of_title">ملورین</h1>
+                        <div class="explain_box_table">
+                            <p class="support_option_table">021-44610035<i class="fa fa-phone ml-2"></i></p>
+                            <p class="support_option_table">test@example.com <i class="fas fa-envelope ml-2"></i></p>
+                            <p class="support_option_table">بازار - سلام - خوبی <i class="fas fa-map-marker-alt ml-2"></i></p>
+                            <i class="fab fa-telegram-plane mr-3 social_media_table"></i>
+                            <i class="fab fa-facebook-f mr-3 social_media_table"></i>
+                            <i class="fab fa-instagram social_media_table"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="company_pic">
+        <div class="container-fluid px-0">
+            <div class="row py-5">
+                <div class="col-10 offset-1 text-center">
+                    <h3 class="title_part_of_page">تولیدی ما</h3>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col-12 px-0">
+                    <div class="parallax parallax-window parallax_about_us" data-parallax="scroll"
+                         data-image-src="../../img/office.png">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="why_choose_our_company_pic">
+        <div class="container-fluid px-0">
+            <div class="row py-5">
+                <div class="col-10 offset-1 text-center">
+                    <h3 class="title_part_of_page">چرا ملورین</h3>
+                </div>
+            </div>
+
+            <div class="row text-right dir_rtl">
+                <div class="col-md-6 offset-md-0 col-10 offset-1">
+                    <div class="box_of_why_us">
+                        <h3 class="title_of_Site_Values_Melorin mb-4">ارزش ها و برتری های ملورین</h3>
+                        <ul class="text-right pr-5" dir="rtl" >
+                            <li class="Site_Values_Melorin">رضایت شما مهمترین دارایی ما است</li>
+                            <li class="Site_Values_Melorin">ما به گفته هایمان متعهد هستیم</li>
+                            <li class="Site_Values_Melorin">همواره سعی می کنیم به ایدال شما نزدیک شویم</li>
+                            <li class="Site_Values_Melorin text-justify">ما با ارج نهادن به تولید کنندگان و فروشنده های ایرانی بستری
+                                مناسب برای خرید و فروش انلاین آنها را فراهم نموده ایم
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 offset-md-0 col-10 offset-1">
+                    <div class="box_of_why_us">
+                        <h3 class="title_of_Fields_of_activity_Melorin  mb-4">زمینه های فعالیت ملورین</h3>
+                        <ul class="text-right  pr-5 text_of_explain" dir="rtl">
+                            <li class="Fields_of_activity_Melorin">عرضه انواع جوراب</li>
+                            <li class="Fields_of_activity_Melorin">عرضه انواع لباس زیر</li>
+                            <li class="Fields_of_activity_Melorin">عرضه انواع تیشرت و شلوار خانگی</li>
+                            <li class="Fields_of_activity_Melorin">فروش تکی و عمده</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+{/body}
