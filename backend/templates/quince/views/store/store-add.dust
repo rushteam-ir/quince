@@ -254,7 +254,7 @@
                             <div class="shop_field_padding_custom">
                                 <div class="form-group">
                                     <label for="store_number">موجودی انبار</label>
-                                    <input type="text" class="form-control main_form_design" id="store_number">
+                                    <input type="text" class="form-control main_form_design" id="store_number" placeholder="&#8734">
                                 </div>
                                 <div class="form-group">
                                     <label for="store_tupe">وضعیت نمایش</label>
