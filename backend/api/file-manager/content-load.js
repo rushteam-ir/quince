@@ -7,7 +7,7 @@ router.post('/', async (req, res, next)=>{
         let file_path = backend_upload_dir + req.body.path + '/';
         let content_list = await fileManager.getPathContent(file_path, backend_upload_dir);
 
-        res.json(content_list)
+        res.json(content_list);
 
     }
     catch (error) {

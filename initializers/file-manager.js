@@ -96,7 +96,7 @@ class fileManager {
                     reject(err);
 
                 }
-                if(path.extname(file_path) == ""){
+                else{
 
                     let promise_array = []
 
@@ -106,16 +106,6 @@ class fileManager {
 
                     Promise.all(promise_array).then((content)=>{
 
-                        resolve(content)
-
-                    })
-
-                }
-                else{
-
-                    Promise.all([this.getPathDetail(file_path, root_path)]).then((content)=>{
-
-                        log(content)
                         resolve(content)
 
                     })
