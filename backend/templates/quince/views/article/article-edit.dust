@@ -108,6 +108,19 @@
                                             {/article_info.tags}
                                         </div>
                                     </div>
+
+                                    <div class="form-group ">
+                                        <label for="article_type">نوع نمایش</label>
+                                        <select class="form-control main_form_design" id="article_type" name="type_inp">
+                                            {@eq key="{article_info.status}" value="true"}
+                                                <option value="0" selected>فعال</option>
+                                                <option value="1">غیر فعال</option>
+                                            {:else}
+                                                <option value="0">فعال</option>
+                                                <option value="1" selected>غیر فعال</option>
+                                            {/eq}
+                                        </select>
+                                    </div>
                                     
                                     <div class="form-group">
                                         <label for="article_describe">توضیحات کلیدی مقاله</label>

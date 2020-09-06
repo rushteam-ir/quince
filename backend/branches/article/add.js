@@ -27,7 +27,7 @@ router.post('/', async(req, res, next)=>{
 
    try{
 
-       let {title_inp, parent_inp, child_inp, summary_inp, describe_inp, meta_describe_inp} = req.body;
+       let {title_inp, parent_inp, child_inp, summary_inp, describe_inp, meta_describe_inp, type_inp} = req.body;
        let tags_inp = req.body['tags_inp[]'];
 
        let validation_result = new validation([
@@ -36,6 +36,7 @@ router.post('/', async(req, res, next)=>{
            {value : child_inp, type : 'objectId'},
            {value : describe_inp},
            {value : meta_describe_inp},
+           {value : type_inp},
            {value : tags_inp , type : 'array'},
        ]).valid();
 
@@ -57,9 +58,12 @@ router.post('/', async(req, res, next)=>{
            url : article_url,
            internal_files : req.session.temp_files,
            summary : summary_inp,
-           tags : tags_inp
+           tags : tags_inp,
+           status : (type_inp == '0') ? true : false,
 
        }
+
+       log(article_data.status)
 
        if (req.files) {
 

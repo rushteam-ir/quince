@@ -45,13 +45,14 @@ router.post('/:id', async(req, res, next)=>{
 
        let article_id = req.params.id;
        let find_article = await article_model.getByUniqueId(article_id);
-       let {title_inp, parent_inp, child_inp, summary_inp, describe_inp, meta_describe_inp} = req.body;
+       let {title_inp, parent_inp, child_inp, summary_inp, describe_inp, meta_describe_inp, type_inp} = req.body;
        let tags_inp = req.body['tags_inp[]'];
        let validation_result = new validation([
            {value : title_inp},
            {value : parent_inp, type : 'objectId'},
            {value : child_inp, type : 'objectId'},
            {value : meta_describe_inp},
+           {value : type_inp},
            {value : tags_inp, type : 'array'},
        ]).valid()
 
@@ -72,7 +73,8 @@ router.post('/:id', async(req, res, next)=>{
            meta_describe : meta_describe_inp,
            url : article_url,
            internal_files : req.session.temp_files,
-           summary : summary_inp
+           summary : summary_inp,
+           status : (type_inp == '0') ? true : false,
 
        }
 

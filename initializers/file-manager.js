@@ -10,7 +10,7 @@ class fileManager {
             case 'image':
             {
 
-                options.allowed_formats = ['png', 'jpeg', 'jpg', 'gif', 'PNG', 'JPG', 'JPEG', 'GIF'];
+                options.allowed_formats = ['.png', '.jpeg', '.jpg', '.gif', '.PNG', '.JPG', '.JPEG', '.GIF'];
                 limited_size = config.image_limited_size;
                 break;
 
@@ -26,7 +26,7 @@ class fileManager {
             case 'video':
             {
 
-                options.allowed_formats = ['mp4', 'webm', 'ogg', 'mkv'];
+                options.allowed_formats = ['.mp4', '.webm', '.ogg', '.mkv'];
                 limited_size = config.video_limited_size;
                 break;
 
@@ -34,7 +34,7 @@ class fileManager {
 
         }
 
-        let file_extension = path.extname(file);
+        let file_extension = path.extname(file_name);
 
         if(options.allowed_formats.includes(file_extension) || options.allowed_formats[0] == '*'){
 

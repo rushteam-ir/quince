@@ -48,7 +48,6 @@ article_schema.statics = {
             article_data.views_number= 0;
             article_data.comments_number = 0;
             article_data.last_edit = getCurrentDate();
-            article_data.status = true;
             article_data.comments_status = true;
             article_data.unique_id = new_id;
 
