@@ -84,7 +84,7 @@
                                 </thead>
                                 <tbody>
                                 {#content_list}
-                                    <tr class="files_table_row" name="{name}">
+                                    <tr class="files_table_row" name="{path}">
                                         <td>
                                             <label class="checkbox_of_category">
                                                 <input type="checkbox" name="delete_checkbox[]"
