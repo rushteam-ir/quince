@@ -126,4 +126,39 @@
   }
 }
 
+.why_choose_our_company_pic{
+  background: white;
+  padding-bottom: 50px;
+  .title_part_of_page{
+    @extend  %title_part_style;
+  }
+
+  .box_of_why_us{
+    width: 80%;
+    margin-right: 20%;
+
+    .title_of_Site_Values_Melorin,
+    .title_of_Fields_of_activity_Melorin{
+      font-family: $a_f;
+      color: $l_red;
+    }
+
+    .Site_Values_Melorin,
+    .Fields_of_activity_Melorin{
+      list-style-type: none;
+      font-family: $s_f;
+
+      &::before{
+        content: "";
+        font-family: "Font Awesome 5 Pro";
+        display: inline-block;
+        font-weight: lighter;
+        position: relative;
+        right: -10px;
+        top: 3px;
+      }
+    }
+  }
+}
+
 @import "responsive";

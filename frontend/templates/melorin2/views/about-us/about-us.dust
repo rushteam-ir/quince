@@ -98,5 +98,43 @@
         </div>
     </section>
 
+    <section class="why_choose_our_company_pic">
+        <div class="container-fluid px-0">
+            <div class="row py-5">
+                <div class="col-10 offset-1 text-center">
+                    <h3 class="title_part_of_page">چرا ملورین</h3>
+                </div>
+            </div>
+
+            <div class="row text-right dir_rtl">
+                <div class="col-md-6 offset-md-0 col-10 offset-1">
+                    <div class="box_of_why_us">
+                        <h3 class="title_of_Site_Values_Melorin mb-4">ارزش ها و برتری های ملورین</h3>
+                        <ul class="text-right pr-5" dir="rtl" >
+                            <li class="Site_Values_Melorin">رضایت شما مهمترین دارایی ما است</li>
+                            <li class="Site_Values_Melorin">ما به گفته هایمان متعهد هستیم</li>
+                            <li class="Site_Values_Melorin">همواره سعی می کنیم به ایدال شما نزدیک شویم</li>
+                            <li class="Site_Values_Melorin text-justify">ما با ارج نهادن به تولید کنندگان و فروشنده های ایرانی بستری
+                                مناسب برای خرید و فروش انلاین آنها را فراهم نموده ایم
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 offset-md-0 col-10 offset-1">
+                    <div class="box_of_why_us">
+                        <h3 class="title_of_Fields_of_activity_Melorin  mb-4">زمینه های فعالیت ملورین</h3>
+                        <ul class="text-right  pr-5 text_of_explain" dir="rtl">
+                            <li class="Fields_of_activity_Melorin">عرضه انواع جوراب</li>
+                            <li class="Fields_of_activity_Melorin">عرضه انواع لباس زیر</li>
+                            <li class="Fields_of_activity_Melorin">عرضه انواع تیشرت و شلوار خانگی</li>
+                            <li class="Fields_of_activity_Melorin">فروش تکی و عمده</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 
 {/body}

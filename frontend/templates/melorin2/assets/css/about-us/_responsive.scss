@@ -14,6 +14,10 @@
     height: 30px;
     line-height: 30px;
   }
+
+  .company_pic .parallax_about_us{
+    height: 250px !important;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -23,7 +27,9 @@
   }
   .field_of_header_about_us .main_row .content_of_header .layer_of_header_about_us .content_box .exp_about_company,
   .field_of_header_about_us .main_row .content_of_header .layer_of_header_about_us .content_box .small_text_about_company,
-  .ways_to_contact_us .box_of_explain_table .explain_box_table .support_option_table{
+  .ways_to_contact_us .box_of_explain_table .explain_box_table .support_option_table,
+  .why_choose_our_company_pic .box_of_why_us .Site_Values_Melorin,
+  .why_choose_our_company_pic .box_of_why_us .Fields_of_activity_Melorin{
     font-size: 0.9rem;
   }
   .field_of_header_about_us,
@@ -32,7 +38,8 @@
   }
 
   .ways_to_contact_us .title_part_of_page,
-  .company_pic .title_part_of_page{
+  .company_pic .title_part_of_page,
+  .why_choose_our_company_pic .title_part_of_page{
     font-size: 1.5rem;
   }
 
@@ -42,6 +49,9 @@
 
   .ways_to_contact_us .img_of_logo{
     width: 210px;
+  }
+  .company_pic .parallax_about_us{
+    height: 210px !important;
   }
 
 }
@@ -53,6 +63,8 @@
 
   .field_of_header_about_us .main_row .content_of_header .layer_of_header_about_us .content_box .exp_about_company,
   .field_of_header_about_us .main_row .content_of_header .layer_of_header_about_us .content_box .small_text_about_company,
+  .why_choose_our_company_pic .box_of_why_us .Site_Values_Melorin,
+  .why_choose_our_company_pic .box_of_why_us .Fields_of_activity_Melorin
   {
     font-size: 0.8rem;
   }
@@ -67,28 +79,42 @@
   }
 
   .ways_to_contact_us .title_part_of_page ,
-  .company_pic .title_part_of_page{
+  .company_pic .title_part_of_page,
+  .why_choose_our_company_pic .title_part_of_page{
     font-size: 1.3rem;
   }
 
   .ways_to_contact_us .title_part_of_page::before ,
-  .company_pic .title_part_of_page::before{
+  .company_pic .title_part_of_page::before,
+  .why_choose_our_company_pic .title_part_of_page::before{
     left: -170px;
     width: 120px;
   }
 
   .ways_to_contact_us .title_part_of_page::after,
-  .company_pic .title_part_of_page::after{
+  .company_pic .title_part_of_page::after,
+  .why_choose_our_company_pic .title_part_of_page::after{
     right: -170px;
     width: 120px;
   }
+  .company_pic .parallax_about_us{
+    height: 180px !important;
+  }
 
+  .why_choose_our_company_pic .box_of_why_us .title_of_Site_Values_Melorin, .why_choose_our_company_pic .box_of_why_us .title_of_Fields_of_activity_Melorin{
+    text-align: center!important;
+  }
 
+  .why_choose_our_company_pic .box_of_why_us{
+    margin-top: 40px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .field_of_header_about_us .main_row .content_of_header .layer_of_header_about_us .content_box .name_of_company,
-  .ways_to_contact_us .box_of_explain_table .padding_of_title{
+  .ways_to_contact_us .box_of_explain_table .padding_of_title,
+  .why_choose_our_company_pic .box_of_why_us .title_of_Site_Values_Melorin,
+  .why_choose_our_company_pic .box_of_why_us .title_of_Fields_of_activity_Melorin{
     font-size: 1.5rem;
   }
 
@@ -103,18 +129,21 @@
   }
 
   .ways_to_contact_us .title_part_of_page,
-  .company_pic .title_part_of_page{
+  .company_pic .title_part_of_page,
+  .why_choose_our_company_pic .title_part_of_page{
     font-size: 1.1rem;
   }
 
   .ways_to_contact_us .title_part_of_page::before,
-  .company_pic .title_part_of_page::before{
+  .company_pic .title_part_of_page::before,
+  .why_choose_our_company_pic .title_part_of_page::before{
     left: -140px;
     width: 100px;
   }
 
   .ways_to_contact_us .title_part_of_page::after,
-  .company_pic .title_part_of_page::after{
+  .company_pic .title_part_of_page::after,
+    .why_choose_our_company_pic .title_part_of_page::after{
     right: -140px;
     width: 100px;
   }
@@ -143,7 +172,8 @@
   }
 
   .ways_to_contact_us .title_part_of_page,
-  .ways_to_contact_us .title_part_of_page{
+  .ways_to_contact_us .title_part_of_page,
+  .why_choose_our_company_pic .title_part_of_page{
     font-size: 1rem;
   }
 
@@ -152,15 +182,21 @@
   }
 
   .ways_to_contact_us .title_part_of_page::before ,
-  .ways_to_contact_us .title_part_of_page::before
+  .ways_to_contact_us .title_part_of_page::before,
+  .why_choose_our_company_pic .title_part_of_page::before
   {
     left: -100px;
     width: 80px;
   }
 
+  .company_pic .parallax_about_us{
+    height: 150px !important;
+  }
+
 
   .ways_to_contact_us .title_part_of_page::after,
-  .company_pic .title_part_of_page::after{
+  .company_pic .title_part_of_page::after,
+  .why_choose_our_company_pic .title_part_of_page::after{
     right: -100px;
     width: 80px;
   }
@@ -170,6 +206,16 @@
 @media only screen and (max-width: 400px) {
   .ways_to_contact_us .img_of_logo{
     width: 120px;
+  }
+
+  .why_choose_our_company_pic .box_of_why_us .title_of_Site_Values_Melorin,
+  .why_choose_our_company_pic .box_of_why_us .title_of_Fields_of_activity_Melorin{
+    font-size: 1.2rem;
+  }
+
+  .why_choose_our_company_pic .box_of_why_us .Site_Values_Melorin,
+  .why_choose_our_company_pic .box_of_why_us .Fields_of_activity_Melorin{
+    font-size: .7rem;
   }
 }
 
