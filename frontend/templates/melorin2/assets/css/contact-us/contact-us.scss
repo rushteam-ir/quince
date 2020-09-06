@@ -64,6 +64,45 @@
   }
 }
 
+.social_connect_box{
+  .social_content{
+    border-radius: 7px;
+    background-color: $white;
+    width: 100%;
+    padding: 30px 40px 20px 40px ;
+    margin: 40px 0px;
+    height: 280px;
 
+    .field_of_contact_icon{
+      color: $l-red;
+      font-size: 2rem;
+      padding-bottom: 30px;
+
+      .icons{
+        width: 65px;
+        height: 65px;
+        border: 2px solid $l_red;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 60px;
+      }
+    }
+
+    .field_of_contact_info{
+      .title_of_contact_box{
+        font-size: 1.7rem;
+        font-family: $a_f;
+      }
+
+      .contact_box{
+        font-family: $s_f;
+      }
+
+      .line_height_p{
+        line-height: 30px;
+      }
+    }
+  }
+}
 
 @import "responsive";

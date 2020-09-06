@@ -645,15 +645,6 @@
   margin-right: 5px;
 }
 
-@media (min-width: 1200px) {
-  .container,
-.container-lg,
-.container-md,
-.container-sm,
-.container-xl {
-    max-width: 1250px;
-  }
-}
 @media only screen and (max-width: 1200px) {
   .modal_fast_see .modal_see_row .body_modal .content_modal .detail_product .name_price .name_of_product {
     line-height: 25px;

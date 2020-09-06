@@ -81,7 +81,7 @@
                         </div>
                     </nav>
                 </div>
-                <div class="col-8 col-lg-4 text-left">
+                <div class="col-8 col-lg-4 text-left px-0">
                     <div class="cart_and_sign_box d-inline-block">
                         <button class="card_box">
                             <div class="badge_card">2</div>
