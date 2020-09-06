@@ -24,23 +24,56 @@ for (let i = 0; i <= store_tabs.length; i++) {
 
 // place dot after type number 
 
-$('#product_Percent, #product_sale ,#product_price').keyup(function () {
+// $('#product_Percent, #product_sale ,#product_price').keyup(function () {
 
-    if (this.value.slice(-1).match(/^[0-9]+\.?[0-9]*$/)) {
+//     if (this.value.slice(-1).match(/^[0-9]+\.?[0-9]*$/)) {
 
-        var a = this.value.replace(/\./g, '').split('').reverse();
+//         var a = this.value.replace(/\./g, '').split('').reverse();
 
-        var pos = 3;
-        while (a[pos] !== undefined) {
+//         var pos = 3;
+//         while (a[pos] !== undefined) {
 
-            a.splice(pos, 0, '.');
-            pos = pos + 4;
+//             a.splice(pos, 0, '.');
+//             pos = pos + 4;
 
-        }
+//         }
 
-        this.value = a.reverse().join('');
+//         this.value = a.reverse().join('');
+
+//     }
+
+// });
+
+// sale price calculate
+// when main price and sale price changed , percent input changed
+
+let percent = 0
+let sale = 0
+
+$('#product_price , #product_sale ').change(function(){
+
+    let product_price = $('#product_price').val();
+    let product_sale = $('#product_sale').val();
+
+
+    if(product_price !== '' && product_sale !== ''){
+
+        percent = 100 * product_sale / product_price ; 
+        $('#product_Percent').val(percent.toFixed(1));
+
 
     }
+
+});
+
+// when percent changed sale price changed to
+$('#product_Percent').change(function(){
+
+    let product_price = $('#product_price').val();
+    let product_Percent = $('#product_Percent').val();
+
+    sale = product_Percent * product_price / 100;
+    $('#product_sale').val(sale);
 
 });
 
@@ -147,3 +180,4 @@ $('.remove_video_uploader').click(function () {
     }
 
 });
+

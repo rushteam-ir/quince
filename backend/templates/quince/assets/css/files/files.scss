@@ -7,115 +7,35 @@
 @import '../Partials/table-option';
 @import '../Partials/pagination';
 @import '../Partials/table-error';
+@import '../Partials/table';
+@import '../Partials/error';
 
-.main_field {
-    @include main_field;
+.main_body {
+    @include main_field
 }
 
 .main_col {
     @include main_col;
 }
 
-.image_of_folders {
+// custom table file manager
+
+.FM_check_box{
+    width: 40px;
+    padding: 20px 0px !important;
+}
+
+.FM_name{
     width: 40px;
 }
 
-.fr_custom {
-    width: 100px;
-    padding-right: 10px !important;
+.FM_icons{
+    color: $d_blue;
+    i{
+        font-size: 2.5rem;
+    }
 }
 
-.folder_name_custom {
-    line-height: 40px;
-}
-
-.sr_custom {
-    width: 300px;
-}
-
-.thr_custom {
-    width: 180px;
-}
-
-.fthr_cutom {
+.FM_info{
     width: 150px;
-}
-
-.files_table_row {
-    cursor: pointer;
-
-    &:hover {
-        background-color: #F2F2F2;
-    }
-}
-
-.table_data {
-    line-height: 40px;
-}
-
-.padding_custom_f {
-    padding-right: 28px !important;
-}
-
-.zero_custom {
-    width: 40px;
-
-    input {
-        top: 13px;
-    }
-}
-
-.table {
-    width: 100%;
-
-    tr {
-        th {
-            padding: 0;
-            padding-bottom: 20px;
-            padding-top: 10px;
-            padding-right: 0.75rem;
-        }
-    }
-
-    .table_option {
-        padding-right: 20px;
-    }
-}
-
-.QT_file {
-    overflow-x: auto;
-}
-
-.QT_breadcrumb {
-    direction: rtl;
-    text-align: right;
-    position: absolute;
-    top: 72px;
-
-    .breadcrumb-item+.breadcrumb-item {
-        padding-left: 0;
-    }
-
-    .breadcrumb-item+.breadcrumb-item::before {
-        padding-right: 5px;
-        padding-left: 5px;
-    }
-
-    ol {
-        background-color: transparent;
-        font-size: 0.9rem;
-    }
-}
-
-#file_management{
-    div{
-        background-color: $dsh_bg_dark;
-        border-right: 3px solid $dsh_color_light;
-        p{
-            color: white;
-        }
-        i{
-            color: $dsh_color_light;
-        }
-    }
 }

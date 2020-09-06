@@ -9,157 +9,122 @@
     <script src="js/files/files.js"></script>
     <script src="js/general/fingerprint.js"></script>
     <script src="js/custom/checkbox.js"></script>
+    <script src="../../assets/js/custom/error-handler.js"></script>
+    <script src="../../assets/js/custom/main-error.js"></script>
 
 {/js}
 {<body}
 
-
-    <section>
-        <div class="main_field mb-5">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 main_col">
-                        <header class="header_field">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-12 col-lg-7">
-                                        <div class="d-inline-block field_of_ht">
-                                            <h1>مدیریت فایل ها</h1>
-                                            <h2>لیست فایل های سیستم مدیریت محتوا</h2>
-                                        </div>
+<section>
+    <div class="error_info warning_error">
+        <i class="fal fa-exclamation-circle"></i>
+        <p></p>
+        <i class="fal fa-times"></i>
+    </div>
+    <div class="main_body">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 main_col">
+                    <header class="header_field">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-lg-7">
+                                    <div class="d-inline-block field_of_ht">
+                                        <h1>لیست مقالات</h1>
+                                        <h2>لیست مقالات موجود در سایت</h2>
                                     </div>
-                                    <div class="col-12 col-lg-5">
-                                        <div class="table_header">
-                                            <form action="">
-                                                <div class="input-group mb-3 t_search">
-                                                    <div class="input-group-prepend">
-                                                        <button class="input-group-text btn search_btn" id="basic-addon1">
-                                                            <i class="fal fa-search"></i>
-                                                        </button>
-                                                    </div>
-                                                    <input type="text" class="form-control" placeholder="جستجو"
-                                                           aria-describedby="basic-addon1">
-                                                </div>
-                                                <div class="form-group tr_select">
-                                                    <label for="t_row_select" class="d-inline-block select_lable">تعداد
-                                                        ردیف ها :</label>
-                                                    <select class="form-control" id="t_row_select">
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                    </select>
-                                                </div>
-                                            </form>
-                                            <button class="btn table_delete_btn">
-                                                <i class="fal fa-trash-alt"></i>
-                                            </button>
+                                </div>
+                                <div class="col-12 col-lg-5">
+                                    <div class="table_header">
+                                        <div class="input-group mb-3 t_search">
+                                            <div class="input-group-prepend">
+                                                <button class="input-group-text btn search_btn" id="basic-addon1">
+                                                    <i class="fal fa-search"></i>
+                                                </button>
+                                            </div>
+                                            <input type="text" class="form-control search_table" placeholder="جستجو ..." aria-describedby="basic-addon1" value="{search_value}">
+                                            {@eq key="{search}" value="true"}
+                                                <i class="fal fa-times search_btn_cancel"></i>
+                                            {/eq}
                                         </div>
+                                          <div class="form-group tr_select">
+                                            <label for="t_row_select" class="d-inline-block select_lable">تعداد ردیف ها :</label>
+                                              <select class="form-control limit_row" id="t_row_select">
+                                                  {#page_limit_slot}
+                                                      {@eq key="{.}" value="{page_limit}"}
+                                                          <option selected>{.}</option>
+                                                      {:else}
+                                                          <option>{.}</option>
+                                                      {/eq}
+                                                  {/page_limit_slot}
+                                              </select>
+                                        </div>
+                                        <button class="btn table_delete_btn">
+                                            <i class="fal fa-trash-alt"></i>
+                                        </button>
                                     </div>
-                                    <nav class="QT_breadcrumb" aria-label="breadcrumb">
-                                        <ol class="breadcrumb">
-                                            <li class="breadcrumb-item">شاخه اصلی</li>
-                                        </ol>
-                                    </nav>
                                 </div>
                             </div>
-                        </header>
-                        <div class="QT_file mt-3">
-                            <table class="table table-borderless text-right dir_rtl mt-4">
-                                <thead class="border-top border-bottom">
-                                <tr>
-                                    <th class="zero_custom">
-                                        <label class="checkbox_of_category">
-                                            <input type="checkbox" class="option-input checkbox" id="selectall"
-                                                   name="select_all">
-                                        </label>
-                                    </th>
-                                    <th class="fr_custom text-center pl-0">نام پوشه</th>
-                                    <th class="sr_custom"></th>
-                                    <th class="thr_custom">آخرین تغییرات</th>
-                                    <th class="fthr_cutom">حجم پوشه</th>
-                                    <th>تنظیمات</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                {#content_list}
-                                    <tr class="files_table_row">
-                                        <td>
-                                            <label class="checkbox_of_category">
-                                                <input type="checkbox" name="delete_checkbox[]"
-                                                       class="table_checkbox option-input checkbox" value="ID_ID">
-                                            </label>
-                                        </td>
-                                        <td class="pl-0 text-center">
-                                            {@eq key="{type}" value=""}
-                                                <img class="image_of_folders" src="img/folder-img.png" alt="">
-                                            {:else}
-                                                <img class="image_of_folders" src="img/document-img.png" alt="">
-                                            {/eq}
-                                        </td>
-                                        <td class="pr-0 folder_name_custom table_data">
-                                            {name}
-                                        </td>
-                                        <td class="table_data">
-                                            {modified}
-                                        </td>
-                                        <td class="table_data padding_custom_f">
-                                            {@eq key="{size}" value=""}
-
-                                            {:else}
-                                                {size}
-                                            {/eq}
-                                        </td>
-                                        <td class="table_option">
-                                            <div class="dropdown">
-                                                <button class="btn  dropdown-toggle" type="button" id="table_option" data-toggle="dropdown"
-                                                    aria-haspopup="true" aria-expanded="false">
-                                                    <i class="fas fa-ellipsis-v"></i>
-                                                </button>
-                                                <div class="dropdown-menu" aria-labelledby="table_option">
-                                                    <a class="dropdown-item" href="#">
-                                                        <i class="fal fa-align-slash"></i>
-                                                        غیر فعال کردن
-                                                    </a>
-                                                    <a class="dropdown-item" href="#">
-                                                        <i class="fal fa-asterisk"></i>
-                                                        افزودن وی ای پی
-                                                    </a>
-                                                    <a class="dropdown-item" href="#">
-                                                        <i class="fal fa-assistive-listening-systems"></i>
-                                                        افزودن گوش و چشم
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                {/content_list}
-                                </tbody>
-                            </table>
-                            <nav class="Page_navigation" aria-label="Page navigation example">
-                                <ul class="pagination">
-                                  <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                      <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                  </li>
-                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                  <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                      <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                  </li>
-                                </ul>
-                              </nav>
                         </div>
+                    </header>
+                    <div class="QTR">
+                        <table class="Q_table">
+                            <tr class="TQ_hr">
+                                <th class="FM_check_box">
+                                    <label class="checkbox_of_category">
+                                        <input type="checkbox" class="option-input checkbox" id="selectall" name="select_all">
+                                    </label>
+                                </th>
+                                <th class="FM_name">نام</th>
+                                <th ></th>
+                                <th>آخرین تغییرات</th>
+                                <th>حجم</th>
+                                <th>تنظیمات</th>
+                            </tr>
+                            <tr>
+                                <td class="FM_check_box">
+                                    <label class="checkbox_of_category">
+                                        <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox"
+                                            value="{._id}">
+                                    </label>
+                                </td>
+                                <td class="FM_icons"><i class="fad fa-file-alt"></i></td>
+                                <td class="text-right pr-0">Avatars</td>
+                                <td class="FM_info">1399.12.02</td>
+                                <td class="FM_info">15MB</td>
+
+                                <td class="table_option FM_info">
+                                    <div class="dropdown">
+                                        <button class="btn  dropdown-toggle" type="button" id="table_option" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="table_option">
+                                            <a class="dropdown-item" href="#">
+                                                <i class="fal fa-align-slash"></i>
+                                                غیر فعال کردن
+                                            </a>
+                                            <a class="dropdown-item" href="#">
+                                                <i class="fal fa-asterisk"></i>
+                                                افزودن وی ای پی
+                                            </a>
+                                            <a class="dropdown-item" href="#">
+                                                <i class="fal fa-assistive-listening-systems"></i>
+                                                افزودن گوش و چشم
+                                            </a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+            
+                        </table>
                     </div>
+
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 
 {/body}

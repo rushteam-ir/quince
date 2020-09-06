@@ -10,7 +10,7 @@ class fileManager {
             case 'image':
             {
 
-                options.allowed_formats = ['png', 'jpeg', 'jpg', 'gif', 'PNG', 'JPG', 'JPEG', 'GIF'];
+                options.allowed_formats = ['.png', '.jpeg', '.jpg', '.gif', '.PNG', '.JPG', '.JPEG', '.GIF'];
                 limited_size = config.image_limited_size;
                 break;
 
@@ -26,7 +26,7 @@ class fileManager {
             case 'video':
             {
 
-                options.allowed_formats = ['mp4', 'webm', 'ogg', 'mkv'];
+                options.allowed_formats = ['.mp4', '.webm', '.ogg', '.mkv'];
                 limited_size = config.video_limited_size;
                 break;
 
@@ -34,7 +34,7 @@ class fileManager {
 
         }
 
-        let file_extension = path.extname(file);
+        let file_extension = path.extname(file_name);
 
         if(options.allowed_formats.includes(file_extension) || options.allowed_formats[0] == '*'){
 
@@ -85,7 +85,7 @@ class fileManager {
 
     }
 
-    getPathContent(file_path){
+    getPathContent(file_path, root_path){
 
         return new Promise((resolve, reject)=>{
 
@@ -101,7 +101,7 @@ class fileManager {
                     let promise_array = []
 
                     for(let file_name of files){
-                        promise_array.push(this.getPathDetail(file_path + file_name));
+                        promise_array.push(this.getPathDetail(file_path + file_name, root_path));
                     }
 
                     Promise.all(promise_array).then((content)=>{
@@ -118,19 +118,24 @@ class fileManager {
 
     }
 
-    getPathDetail(file_path){
+    getPathDetail(file_path, root_path){
 
         return new Promise((resolve, reject)=>{
 
             fs.stat(file_path, (err, stats)=>{
 
+                let new_modified = new JalaliDate(stats.mtime);
+                let new_created = new JalaliDate(stats.ctime);
+                let aa = file_path.replace(root_path, '')
+
                 resolve({
 
                     name : path.basename(file_path),
-                    size : this.getSize(stats.size),
+                    path : file_path.replace(root_path, ''),
+                    size : this.convertSize(stats.size),
                     isFile : stats.isFile(),
-                    modified : JalaliDate.toJalali(stats.ctime),
-                    created : stats.mtime,
+                    modified : new_modified.format('YYYY/MM/DD'),
+                    created : new_created.format('YYYY/MM/DD'),
                     type : path.extname(file_path)
 
                 });
@@ -141,7 +146,7 @@ class fileManager {
 
     }
 
-    getSize(size){
+    convertSize(size){
 
         let result;
 
