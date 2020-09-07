@@ -81,8 +81,8 @@
                                 <th>حجم</th>
                                 <th>تنظیمات</th>
                             </tr>
-                            {#content_list}
-                                <tr class="content_row" path="{path}" is-file="{isFile}">
+                                {#content_list}
+                                    <tr class="content_row" path="{path}" is-file="{isFile}">
                                     <td class="FM_check_box">
                                         <label class="checkbox_of_category">
                                             <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox"
@@ -133,7 +133,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                            {/content_list}
+                                {/content_list}
                         </table>
                     </div>
 

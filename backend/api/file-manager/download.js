@@ -1,14 +1,12 @@
 const router = express.Router();
 
-router.post('/:id', async (req, res, next)=>{
+router.get('/', async (req, res, next)=>{
 
     try{
 
-        let file_path = backend_upload_dir + req.body.path + '/';
+        let file_path = backend_upload_dir + req.query.path;
 
-        res.download(file_path);
-
-        // download file to on script github file manager ro ye nega bendaz
+        res.download(file_path, path.basename(file_path));
 
     }
     catch (error) {

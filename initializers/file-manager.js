@@ -1,5 +1,3 @@
-const path = require('path')
-
 class fileManager {
 
     upload(file, file_name, options) {
@@ -98,7 +96,7 @@ class fileManager {
                 }
                 else{
 
-                    let promise_array = []
+                    let promise_array = [];
 
                     for(let file_name of files){
                         promise_array.push(this.getPathDetail(file_path + file_name, root_path));
@@ -106,7 +104,10 @@ class fileManager {
 
                     Promise.all(promise_array).then((content)=>{
 
-                        resolve(content)
+                        let content_sorted = content.sort((a, b)=>{return (a.isFile === b.isFile)? 0 : a? -1 : 1;});
+                        log(content_sorted)
+
+                        resolve(content_sorted);
 
                     })
 
@@ -126,7 +127,6 @@ class fileManager {
 
                 let new_modified = new JalaliDate(stats.mtime);
                 let new_created = new JalaliDate(stats.ctime);
-                let aa = file_path.replace(root_path, '')
 
                 resolve({
 
