@@ -20,22 +20,81 @@
 
 // custom table file manager
 
-.FM_check_box{
+.FM_check_box {
     width: 40px;
     padding: 20px 0px !important;
 }
 
-.FM_name{
+.FM_name {
     width: 40px;
 }
 
-.FM_icons{
+.FM_icons {
     color: $d_blue;
-    i{
+
+    i {
         font-size: 2.5rem;
     }
 }
 
-.FM_info{
+.FM_info {
     width: 150px;
+}
+
+.table_backward_btn {
+    position: absolute;
+    left: 42px;
+    top: 12px;
+    height: 35px;
+    width: 35px;
+
+    &:hover {
+        i {
+            color: white;
+        }
+    }
+
+    i {
+        position: relative;
+        left: 4px;
+    }
+}
+
+.table_home_btn {
+    position: absolute;
+    left: 84px;
+    top: 12px;
+    height: 35px;
+    width: 35px;
+
+    &:hover {
+        i {
+            color: white;
+        }
+    }
+
+    i {
+        position: relative;
+        left: 5px;
+        font-size: 1.1rem;
+    }
+}
+
+.header_field .table_header .tr_select {
+    position: absolute;
+    top: 12px;
+    left: 200px;
+}
+
+.header_field .t_search {
+    position: absolute;
+    width: 270px;
+    left: 360px;
+    top: 13px;
+}
+
+.Breadcrumb_field{
+    font-size: 1rem;
+    color: #818181;
+    margin-top: 10px;
 }
