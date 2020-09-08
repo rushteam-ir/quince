@@ -86,18 +86,30 @@
                                 {#access_list}
                                 <tr>
                                     {@eq key="{g_admin_info._id}" value="{author._id}"}
-                                        <td>
-                                            <label class="checkbox_of_category">
-                                                <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
-                                            </label>
-                                        </td>
-                                    {:else}
-                                        {@eq key="{can_edit}" value="true"}
+                                        {@ne key="{g_admin_info.access_type._id}" value="{._id}"}
                                             <td>
                                                 <label class="checkbox_of_category">
                                                     <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
                                                 </label>
                                             </td>
+                                        {:else}
+                                            <td>
+
+                                            </td>
+                                        {/ne}
+                                    {:else}
+                                        {@eq key="{can_edit}" value="true"}
+                                            {@ne key="{g_admin_info.access_type._id}" value="{._id}"}
+                                                <td>
+                                                    <label class="checkbox_of_category">
+                                                        <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox" value="{._id}">
+                                                    </label>
+                                                </td>
+                                            {:else}
+                                                <td>
+
+                                                </td>
+                                            {/ne}
                                         {:else}
                                             <td>
 
@@ -114,16 +126,28 @@
                                         </div>
                                     </td>
                                     {@eq key="{g_admin_info._id}" value="{author._id}"}
-                                        <td class="btn_td_w">
-                                            <button class="btn blue_btn access_btn edit_btn" name="{._id}"><i class="fal fa-pencil-alt"></i></button>
-                                            <button class="btn red_btn mr-2 access_btn access_delete" name="{._id}"><i class="fal fa-trash-alt"></i></button>
-                                        </td>
-                                    {:else}
-                                        {@eq key="{can_edit}" value="true"}
+                                        {@ne key="{g_admin_info.access_type._id}" value="{._id}"}
                                             <td class="btn_td_w">
                                                 <button class="btn blue_btn access_btn edit_btn" name="{._id}"><i class="fal fa-pencil-alt"></i></button>
                                                 <button class="btn red_btn mr-2 access_btn access_delete" name="{._id}"><i class="fal fa-trash-alt"></i></button>
                                             </td>
+                                        {:else}
+                                            <td>
+                                                دسترسی ندارید
+                                            </td>
+                                        {/ne}
+                                    {:else}
+                                        {@eq key="{can_edit}" value="true"}
+                                            {@ne key="{g_admin_info.access_type._id}" value="{._id}"}
+                                                <td class="btn_td_w">
+                                                    <button class="btn blue_btn access_btn edit_btn" name="{._id}"><i class="fal fa-pencil-alt"></i></button>
+                                                    <button class="btn red_btn mr-2 access_btn access_delete" name="{._id}"><i class="fal fa-trash-alt"></i></button>
+                                                </td>
+                                            {:else}
+                                                <td>
+                                                    دسترسی ندارید
+                                                </td>
+                                            {/ne}
                                         {:else}
                                             <td>
                                                 دسترسی ندارید
