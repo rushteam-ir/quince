@@ -30,11 +30,11 @@
                             <div class="row">
                                 <div class="col-12 col-lg-7">
                                     <div class="d-inline-block field_of_ht">
-                                        <h1>مدیریت فایل</h1>
+                                        <h1>مدیریت فایل ها</h1>
                                         <h2>لیست فایل های موجود در سرور</h2>
                                     </div>
                                     <div class="Breadcrumb_field">
-                                        شاخه اصلی / ممه روزبه / کونش
+
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-5">
@@ -91,7 +91,7 @@
                                 <th>حجم</th>
                                 <th>تنظیمات</th>
                             </tr>
-                                {#content_list}
+                                {#content_list.content}
                                     <tr class="content_row" path="{path}" is-file="{isFile}">
                                     <td class="FM_check_box">
                                         <label class="checkbox_of_category">
@@ -143,7 +143,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                {/content_list}
+                                {/content_list.content}
                         </table>
                     </div>
 

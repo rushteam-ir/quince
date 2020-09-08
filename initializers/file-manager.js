@@ -104,9 +104,15 @@ class fileManager {
 
                     Promise.all(promise_array).then((content)=>{
 
-                        let content_sorted = content.sort((a, b)=>{return (a.isFile === b.isFile)? 0 : a? -1 : 1;});
+                        let temp_parent_path_1 = file_path.replace(path.basename(file_path) + '/', '');
+                        let temp_parent_path_2 = temp_parent_path_1.replace(/\/\//g, '/');
+                        let temp_breadcrumb_2 = file_path.replace(/\/\//g, '/');
 
-                        resolve(content_sorted);
+                        resolve({
+                            breadcrumb : temp_breadcrumb_2.replace(root_path, ''),
+                            parent_directory : temp_parent_path_2.replace(root_path, ''),
+                            content : content.sort((a, b)=>{return (a.isFile === b.isFile)? 0 : a? -1 : 1;})
+                        });
 
                     })
 

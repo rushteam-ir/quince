@@ -1,4 +1,11 @@
-$(document).on('click', '.content_row', function(){
+$(document).on('click', '.table_home_btn', function(){
+
+    redirect(`${backend_url}files`);
+
+})
+
+
+$(document).on('click', '.content_row,.table_backward_btn', function(){
 
     let path = $(this).attr('path');
 
@@ -14,6 +21,7 @@ $(document).on('click', '.content_row', function(){
         })
             .done((data)=>{
 
+                console.log(data)
                 loadNewContent(data);
 
             })
@@ -30,11 +38,17 @@ $(document).on('click', '.content_row', function(){
 function loadNewContent(data_list){
 
     let image_type = ['.png', '.jpeg', '.jpg', '.gif', '.PNG', '.JPG', '.JPEG', '.GIF'];
-    $('.content_row').remove();
 
-    for(let data of data_list){
+    $('.content_row').remove();
+    $('.table_backward_btn').attr('path', data_list.parent_directory);
+    $('.table_backward_btn').attr('is-file', 'false');
+    $('.Breadcrumb_field').text(data_list.breadcrumb);
+    console.log(data_list.breadcrumb)
+
+    for(let data of data_list.content){
 
         let icon = ``;
+        data.size = data.isFile ? data.size : '';
 
         if(!data.isFile){
 
