@@ -29,6 +29,7 @@ $(document).on('click', '.content_row', function(){
 
 function loadNewContent(data_list){
 
+    let image_type = ['.png', '.jpeg', '.jpg', '.gif', '.PNG', '.JPG', '.JPEG', '.GIF'];
     $('.content_row').remove();
 
     for(let data of data_list){
@@ -42,20 +43,14 @@ function loadNewContent(data_list){
         }
         else{
 
-            switch(data.type){
-
-                default:{
-
-                    icon = `<i class="fad fa-file"></i>`
-                    break;
-
-                }
-
+            if(image_type.includes(data.type)){
+                icon = `<i class="fad fa-file-image"></i>`
+            }
+            else{
+                icon = `<i class="fad fa-file"></i>`
             }
 
         }
-
-        console.log(icon)
 
         let new_content_row = `
         

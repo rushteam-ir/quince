@@ -22,6 +22,7 @@ let article_schema = new mongoose.Schema({
         ref : 'user'
     },
     last_edit : String,
+    last_edit_time : String,
     views_number : {
         type : Number,
         default : 0
@@ -48,6 +49,7 @@ article_schema.statics = {
             article_data.views_number= 0;
             article_data.comments_number = 0;
             article_data.last_edit = getCurrentDate();
+            article_data.last_edit_time = getCurrentTime();
             article_data.comments_status = true;
             article_data.unique_id = new_id;
 
@@ -106,7 +108,7 @@ article_schema.statics = {
         let _skip = page_number * page_limit - page_limit;
 
         result.rows_begin_number = _skip + 1;
-        let _list = await article_model.find(query).populate('category_parent').populate('category_child').populate('author');
+        let _list = await article_model.find(query).populate('category_parent').populate('category_child').populate('author').exec();
         let temp_list = []
 
         if(search_value){
@@ -114,10 +116,10 @@ article_schema.statics = {
                 jsonSearch(['title', 'author.nick_name', 'author.first_name', 'author.last_name'], search_value, index) ? temp_list.push(index) : null;
             }
             result.total_pages = Math.ceil(temp_list.length / page_limit);
-            result.list = temp_list.slice(_skip, _skip + page_limit)
+            result.list = temp_list.slice(_skip, _skip + page_limit).reverse()
         }
         else{
-            result.list = _list.slice(_skip, _skip + page_limit)
+            result.list = _list.slice(_skip, _skip + page_limit).reverse()
             result.total_pages = Math.ceil(await article_model.find(query).countDocuments() / page_limit);
         }
         return result;

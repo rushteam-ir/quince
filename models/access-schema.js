@@ -126,10 +126,10 @@ access_schema.statics = {
                 jsonSearch(['title'], search_value, index) ? temp_list.push(index) : null;
             }
             result.total_pages = Math.ceil(temp_list.length / page_limit);
-            result.list = temp_list.slice(_skip, _skip + page_limit)
+            result.list = temp_list.slice(_skip, _skip + page_limit).reverse()
         }
         else{
-            result.list = _list.slice(_skip, _skip + page_limit)
+            result.list = _list.slice(_skip, _skip + page_limit).reverse()
             result.total_pages = Math.ceil(await access_model.find(query).countDocuments() / page_limit);
         }
         return result;

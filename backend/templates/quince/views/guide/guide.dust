@@ -1,0 +1,25 @@
+{>"layouts/dashboard-layout"/}
+{<css}
+    <link rel="stylesheet" href="css/guide/guide.scss">
+{/css}
+{<js}
+
+    <script src="js/guide/guide.js"></script>
+
+{/js}
+
+{<body}
+
+    <section>
+        <div class="main_field mb-5 mt-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 main_col">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{/body}

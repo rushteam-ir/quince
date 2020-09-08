@@ -99,13 +99,12 @@ class fileManager {
                     let promise_array = [];
 
                     for(let file_name of files){
-                        promise_array.push(this.getPathDetail(file_path + file_name, root_path));
+                        promise_array.push(this.getPathDetail(file_path + file_name, root_path, true));
                     }
 
                     Promise.all(promise_array).then((content)=>{
 
                         let content_sorted = content.sort((a, b)=>{return (a.isFile === b.isFile)? 0 : a? -1 : 1;});
-                        log(content_sorted)
 
                         resolve(content_sorted);
 
@@ -119,7 +118,7 @@ class fileManager {
 
     }
 
-    getPathDetail(file_path, root_path){
+    getPathDetail(file_path, root_path, convert_size){
 
         return new Promise((resolve, reject)=>{
 
@@ -132,7 +131,7 @@ class fileManager {
 
                     name : path.basename(file_path),
                     path : file_path.replace(root_path, ''),
-                    size : this.convertSize(stats.size),
+                    size : convert_size ? this.convertSize(stats.size) : stats.size,
                     isFile : stats.isFile(),
                     modified : new_modified.format('YYYY/MM/DD'),
                     created : new_created.format('YYYY/MM/DD'),

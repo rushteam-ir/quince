@@ -81,44 +81,44 @@
 
         </div>
 
-        <div class="position-relative dashboard_body_collaps">
-            <i class="fad fa-shopping-cart"></i>
-            <p>فروشگاه</p>
-            <i class="fas fa-angle-left rotate"></i>
+{!        <div class="position-relative dashboard_body_collaps">!}
+{!            <i class="fad fa-shopping-cart"></i>!}
+{!            <p>فروشگاه</p>!}
+{!            <i class="fas fa-angle-left rotate"></i>!}
 
-            <div class="hover_field">
+{!            <div class="hover_field">!}
 
-                <a href="{backend_url}store/list">
-                    <p>- لیست محصولات</p>
-                </a>
+{!                <a href="{backend_url}store/list">!}
+{!                    <p>- لیست محصولات</p>!}
+{!                </a>!}
 
-                <a href="{backend_url}store/add">
-                    <p>- افزودن محصول</p>
-                </a>
+{!                <a href="{backend_url}store/add">!}
+{!                    <p>- افزودن محصول</p>!}
+{!                </a>!}
 
-                <a href="">
-                    <p>- کد تخفیف</p>
-                </a>
+{!                <a href="">!}
+{!                    <p>- کد تخفیف</p>!}
+{!                </a>!}
 
-            </div>
+{!            </div>!}
 
-        </div>
+{!        </div>!}
 
-        <div class="collaps_field">
+{!        <div class="collaps_field">!}
 
-            <a href="{backend_url}store/list">
-                <p>- لیست محصولات</p>
-            </a>
+{!            <a href="{backend_url}store/list">!}
+{!                <p>- لیست محصولات</p>!}
+{!            </a>!}
 
-            <a href="{backend_url}store/add">
-                <p>- افزودن محصول</p>
-            </a>
+{!            <a href="{backend_url}store/add">!}
+{!                <p>- افزودن محصول</p>!}
+{!            </a>!}
 
-            <a href="">
-                <p>- کد تخفیف</p>
-            </a>
+{!            <a href="">!}
+{!                <p>- کد تخفیف</p>!}
+{!            </a>!}
 
-        </div>
+{!        </div>!}
 
         <div class="position-relative dashboard_body_collaps">
             <i class="fad fa-users-crown"></i>
@@ -188,7 +188,7 @@
             </div>
         </a>
 
-        <a href="#" class="dashboard_body_sub">
+        <a href="{backend_url}guide" class="dashboard_body_sub">
             <div class="position-relative">
                 <i class="fad fa-question-circle"></i>
                 <p>راهنما</p>

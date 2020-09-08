@@ -134,10 +134,10 @@ category_schema.statics = {
                 jsonSearch(['title', 'author.nick_name', 'author.first_name', 'author.last_name'], search_value, index) ? temp_list.push(index) : null;
             }
             result.total_pages = Math.ceil(temp_list.length / page_limit);
-            result.list = temp_list.slice(_skip, _skip + page_limit)
+            result.list = temp_list.slice(_skip, _skip + page_limit).reverse()
         }
         else{
-            result.list = _list.slice(_skip, _skip + page_limit)
+            result.list = _list.slice(_skip, _skip + page_limit).reverse()
             result.total_pages = Math.ceil(await category_model.find(query).countDocuments() / page_limit);
         }
         return result;
