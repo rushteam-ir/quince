@@ -8,7 +8,7 @@ router.get('/', async(req, res, next)=>{
 
             let search_inp = req.query.search;
             let path_inp = req.query.path;
-            let search_pagination = 
+            let search_pagination = ''
 
             if(!isUndefined(search_inp)) {
                 data.search = true;
