@@ -62,7 +62,7 @@
                                                   {/page_limit_slot}
                                               </select>
                                         </div>
-                                        <button class="btn table_delete_btn">
+                                        <button class="btn table_delete_btn" name="{path}">
                                             <i class="fal fa-trash-alt"></i>
                                         </button>
                                         <button class="btn blue_btn table_backward_btn" name="{parent_directory}">
@@ -128,7 +128,9 @@
 
                                         <td class="FM_info">
                                             <button name="{path}" class="btn blue_btn download_btn"><i class="fal fa-download"></i></button>
-                                            <button class="btn red_btn mr-2" name="{path}"><i class="fal fa-trash-alt"></i></button>
+                                            {@eq key="{isFile}" value="true"}
+                                                <button class="btn red_btn mr-2 file_delete" name="{path}"><i class="fal fa-trash-alt"></i></button>
+                                            {/eq}
                                         </td>
                                     </tr>
                                 {/content_list}
