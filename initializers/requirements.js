@@ -2,6 +2,7 @@ express = require('express');
 fs = require('fs');
 adaro = require('adaro');
 path = require('path');
+disk = require('check-disk-space');
 svg_captcha = require('svg-captcha');
 session = require('express-session');
 body_parser = require('body-parser');

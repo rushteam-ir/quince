@@ -37,7 +37,6 @@ router.post('/', async(req, res, next)=>{
            {value : describe_inp},
            {value : meta_describe_inp},
            {value : type_inp},
-           {value : tags_inp , type : 'array'},
        ]).valid();
 
        if(validation_result){

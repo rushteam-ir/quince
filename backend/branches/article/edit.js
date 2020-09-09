@@ -53,7 +53,6 @@ router.post('/:id', async(req, res, next)=>{
            {value : child_inp, type : 'objectId'},
            {value : meta_describe_inp},
            {value : type_inp},
-           {value : tags_inp, type : 'array'},
        ]).valid()
 
        if(validation_result){
@@ -75,6 +74,7 @@ router.post('/:id', async(req, res, next)=>{
            internal_files : req.session.temp_files,
            summary : summary_inp,
            status : (type_inp == '0') ? true : false,
+           tags : tags_inp
 
        }
 

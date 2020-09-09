@@ -202,6 +202,26 @@
                                     {/keyValue}
                                 </div>
                                 <label class="mb-3 mt-0 lable_collaps">
+                                    بخش های پشتیبانی
+                                    <i class="far fa-angle-left"></i>
+                                </label>
+                                <div class="collaps_content">
+                                    {@keyValue:backend_access.support}
+                                        {@select key=key}
+                                            <div class="row">
+                                                <div class="col-9">
+                                                    <p>{value}</p>
+                                                </div>
+                                                <div class="col-3 pl-0">
+                                                    <label class="checkbox_of_category">
+                                                        <input type="checkbox" name="access_select_inp[]" class="option-input checkbox access_checkbox" value="{value}">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        {/select}
+                                    {/keyValue}
+                                </div>
+                                <label class="mb-3 mt-0 lable_collaps">
                                    بخش های مدیریتی
                                     <i class="far fa-angle-left"></i>
                                 </label>
@@ -291,6 +311,20 @@
                                     <hr>
                                     <label class="mt-2 mb-3">بخش های مدیریتی</label>
                                     {@keyValue:backend_access.management}
+                                        <div class="row">
+                                            <div class="col-10">
+                                                <p>{value}</p>
+                                            </div>
+                                            <div class="col-2 pl-0">
+                                                <label class="checkbox_of_category">
+                                                    <input type="checkbox" name="edit_access_select_inp[]" class="option-input checkbox access_checkbox" value="{value}">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    {/keyValue}
+                                    <hr>
+                                    <label class="mt-2 mb-3">بخش های پشتیبانی</label>
+                                    {@keyValue:backend_access.support}
                                         <div class="row">
                                             <div class="col-10">
                                                 <p>{value}</p>

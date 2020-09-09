@@ -151,6 +151,21 @@ class fileManager {
 
     }
 
+    getDiskInfo(disk_path){
+
+        return disk((disk_path)).then((diskSpace)=>{
+
+            return {
+
+                size : this.convertSize(diskSpace.size),
+                free : this.convertSize(diskSpace.free),
+
+            }
+
+        })
+
+    }
+
     convertSize(size){
 
         let result;

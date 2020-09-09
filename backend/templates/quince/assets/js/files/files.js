@@ -42,7 +42,7 @@ function loadNewContent(data_list){
     $('.content_row').remove();
     $('.table_backward_btn').attr('path', data_list.parent_directory);
     $('.table_backward_btn').attr('is-file', 'false');
-    $('.Breadcrumb_field').text(data_list.breadcrumb);
+    $('.Breadcrumb_field').text('شاخه اصلی/' + data_list.breadcrumb);
     console.log(data_list.breadcrumb)
 
     for(let data of data_list.content){

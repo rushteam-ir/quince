@@ -92,7 +92,7 @@
 
                                     <div class="form-group position-relative">
                                         <label for="tags_field">برچسب ها</label>
-                                        <input type="text" class="form-control main_form_design " id="tags_field"  name="tags_inp">
+                                        <input type="text" class="form-control main_form_design " id="tags_field">
                                         <button type="button" class="btn add_tags">
                                             <i class="far fa-check"></i>
                                         </button>

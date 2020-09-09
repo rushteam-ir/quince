@@ -88,8 +88,8 @@
                                     <div class="form-group ">
                                         <label for="article_type">نوع نمایش</label>
                                         <select class="form-control main_form_design" id="article_type" name="type_inp">
-                                            <option value="true">فعال</option>
-                                            <option value="false">غیر فعال</option>
+                                            <option value="0">فعال</option>
+                                            <option value="1">غیر فعال</option>
                                         </select>
                                     </div>
                                     

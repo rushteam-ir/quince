@@ -166,10 +166,6 @@
                                                             <i class="fas fa-ellipsis-v"></i>
                                                         </button>
                                                         <div class="dropdown-menu" aria-labelledby="table_option">
-                                                            <button class="dropdown-item">
-                                                                <i class="fal fa-paper-plane"></i>
-                                                                ارسال پیام
-                                                            </button>
                                                             <button class="dropdown-item edit_btn" name="{._id}">
                                                                 <i class="fal fa-sync-alt"></i>
                                                                 تغییر دسترسی

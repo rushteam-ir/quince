@@ -12,6 +12,8 @@ backend_access = {
         '/article/': 'مقاله ها',
         '/article/add/': 'مقاله ها',
         '/article/list/': 'مقاله ها',
+    },
+    support : {
         '/comments/': 'نظرات',
         '/contacts/': 'تماس با ما',
     },
@@ -20,6 +22,7 @@ backend_access = {
         '/groups/users/': 'لیست کاربران',
         '/groups/access/': 'دسترسی ها',
         '/groups/add/': 'افزودن مدیر جدید',
+        '/files/': 'مدیریت فایل ها',
     },
     edit : {
         'category/': 'ویرایش دسته ها',
