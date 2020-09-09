@@ -1,3 +1,4 @@
+// gasp script for footer
 function animateWithRandomNumber(myClass, from, to) {
 
   TweenLite.fromTo(
@@ -43,40 +44,73 @@ const itemsUp = [
 forEach(e => animateWithRandomNumber(e, 1080, -1080));
 
 
-// window.onscroll = function () {
+// fixed navbar and change color to white when scroll down
+window.onscroll = function () {
 
-//   myFunction();
+  myFunction();
 
-// };
+};
 
-// var navbar = document.getElementById("navbar");
-// var sticky = navbar.offsetTop;
+// when user at middle of page and refresh add sticky class to nav bar to fixed and change color to white
+$(document).scroll(function(){
 
-// function myFunction() {
+  var scroll = $(window).scrollTop();
+  if(scroll > 0){
 
-//   if (window.pageYOffset > sticky) {
+    $('#navbar').addClass(sticky);
 
-//     navbar.classList.add("sticky")
+  }
 
-//   } else {
+});
 
-//     navbar.classList.remove("sticky");
+// get navbar element
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
 
-//   }
-// }
+function myFunction() {
 
+  if (window.pageYOffset > sticky) {
 
+    navbar.classList.add("sticky")
+
+  } else {
+
+    navbar.classList.remove("sticky");
+
+  }
+}
 
 // contact us modal
 
 $('#nav_contact_us').click(function () {
 
   $('.sec_of_CUM').fadeIn();
+  $('body').css('overflow' , 'hidden');
+  $('.sec_of_CUM').css('overflow' , 'auto');
 
   $('#close_CUM').click(function () {
 
     $('.sec_of_CUM').fadeOut();
+    $('body').css('overflow' , 'auto');
 
   });
+
+});
+
+// click service side bar
+
+$('#nav_service').click(function(){
+
+  $('#body_field').toggleClass('body_field');
+
+  $('.service_sidebar').toggleClass('show_SSP');
+
+});
+
+$('#close_SSP').click(function(){
+
+  $('#body_field').removeClass('body_field');
+
+  $('.service_sidebar').removeClass('show_SSP');
 
 });

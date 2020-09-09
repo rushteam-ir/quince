@@ -16,8 +16,6 @@
     <script src="js/general/Swiper.js"></script>
     <script src="js/general/wow.js"></script>
     <script src="js/general/type.js"></script>
-    <script src="js/general/simpleparallax.js"></script>
-    <script src="js/general/parallax.js"></script>
     <script src="js/index/index.js"></script>
 {/js}
 
@@ -25,16 +23,20 @@
 <section>
     <div class="header_field">
         <div class="container-fluid">
-            <div class="header_img" data-parallax="scroll" data-image-src="img/header.jpg"></div>
-            <div class="row align-items-center HCR">
-                <div class="col-8 offset-2">
-                    <div class="header_info">
-                        <i class="fal fa-anchor wow fadeInDown"></i>
-                        <h2 class="wow fadeInDown" data-wow-delay="0.2s">جذابیت و خلاقیت</h2>
-                        <h1 class="wow fadeInDown" data-wow-delay="0.6s">تجربه شگفت انگیز همراه با تیم خبره راش تیم</h1>
-                        <p class="wow fadeInDown" data-wow-delay="0.9s">بهتریم تجربه را در کنار تیم نوب سگ راش تیم را داشته باشید و زندگی کنید با ما زندگیتون از این رو به اون رو مشه عزیزم پس بهتره بیای سفارش بدی چون میتونی . شسی شسی شسیشس یشسی شسیید شبهعب خشخخ شسیتش سیشت سهیا</p>
-                        <button class="btn wow fadeInDown" data-wow-delay="1.3s">درباره ما </button>
-                    </div> 
+            <div class="row">
+                <video id="header_video" width="100%" height="auto" autoplay muted loop>
+                    <source src="img/header_v.mp4" type="video/mp4">
+                </video>
+                <div class="row align-items-center HCR">
+                    <div class="col-8 offset-2">
+                        <div class="header_info">
+                            <i class="fal fa-anchor wow fadeInDown"></i>
+                            <h2 class="wow fadeInDown" data-wow-delay="0.2s">جذابیت و خلاقیت</h2>
+                            <h1 class="wow fadeInDown" data-wow-delay="0.6s">تجربه شگفت انگیز همراه با تیم خبره راش تیم</h1>
+                            <p class="wow fadeInDown" data-wow-delay="0.9s">بهتریم تجربه را در کنار تیم نوب سگ راش تیم را داشته باشید و زندگی کنید با ما زندگیتون از این رو به اون رو مشه عزیزم پس بهتره بیای سفارش بدی چون میتونی . شسی شسی شسیشس یشسی شسیید شبهعب خشخخ شسیتش سیشت سهیا</p>
+                            <button class="btn wow fadeInDown" data-wow-delay="1.3s">درباره ما </button>
+                        </div> 
+                    </div>
                 </div>
             </div>
         </div>
@@ -182,10 +184,43 @@
 
 <section class="more_WE">
     <div class="MWE_layer"></div>
-    <img id="MWE_parallax" src="img/test2.jpg" alt="">
     <div class="MWE_info_layout">
         <span id="MW_typed"></span>
         <a href="" class="wow fadeInDown">نمونه کار ها <i class="fas fa-angle-left"></i></a>
+    </div>
+</section>
+
+<section class="CMSP">
+    <div class="container">
+        <div class="row">
+            <div class="header_WE">
+                <p>کویینس</p>
+                <h3>پنل مدیریت محتوی</h3>
+            </div>
+            <div class="row_of_CMS_pages">
+                <ul class="CMS_row_text">
+                    <li class="active_CMSP">صفحه اصلی</li>
+                    <li>مدیریت</li>
+                    <li>فروشگاهی</li>
+                    <li>همه چی با هم</li>
+                </ul>
+            </div>
+            <div class="row cms_info_field">
+                <div class="col-8 pr-0">
+                    <div class="cms_info_text">
+                        <p>01</p>
+                        <h3>یکی از برترین سیستم های مدیریت محتوی </h3>
+                        <p class="text_info_cms">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فرد استفاده قرار گیرد.
+                        </p>
+                        <a>بیشتر بدانید !</a>
+                    </div>
+                </div>
+                <div class="col-4 pl-0">
+                    <img src="img/quince-teaser.png" alt="">
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 

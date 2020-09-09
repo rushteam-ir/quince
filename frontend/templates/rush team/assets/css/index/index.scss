@@ -3,23 +3,15 @@
 @import '../../css/partials/main-mixin';
 @import '../partials/font';
 
+// header
 $header_height :100vh;
-
-.header_field {
-    height: $header_height;
-}
-
-.header_img {
-    width: 100%;
-    height: 100vh;
-    background: transparent;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
 
 .HCR {
     height: $header_height;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 !important;
 }
 
 .header_info {
@@ -54,7 +46,7 @@ $header_height :100vh;
         border: 2px solid $main_color;
     }
 }
-
+// service part
 .first_service_part {
     width: 10%;
 
@@ -64,6 +56,7 @@ $header_height :100vh;
         position: relative;
         top: -80px;
         right: -24px;
+        @include transition(0.5s, linear, 0s)
     }
 }
 
@@ -77,7 +70,6 @@ $header_height :100vh;
     }
 }
 
-// service part
 $SSH:350px;
 
 .service_sec {
@@ -108,6 +100,13 @@ $SSH:350px;
     height: 200px;
     border-right: 1px solid #e4e4e4;
     padding: 40px 55px 35px 35px;
+
+    &:hover {
+        i {
+            color: $main_color;
+            top: -120px;
+        }
+    }
 }
 
 
@@ -216,22 +215,22 @@ $SSH:350px;
 }
 
 #WE_hover_field_1 {
-    background: linear-gradient(90deg, rgba(14, 72, 123, 1) 0%, rgba(74, 82, 117, 1) 100%);
+    background: linear-gradient(90deg, rgba(11, 30, 114, 1) 0%, rgba(52, 82, 164, 1) 100%);
     opacity: 0;
 }
 
 #WE_hover_field_2 {
-    background: linear-gradient(90deg, rgba(74, 82, 116, 1) 0%, rgba(134, 93, 110, 1) 100%);
+    background: linear-gradient(90deg, rgba(52, 82, 164, 1) 0%, rgba(86, 125, 205, 1) 100%);
     opacity: 0;
 }
 
 #WE_hover_field_3 {
-    background: linear-gradient(90deg, rgba(134, 92, 110, 1) 0%, rgba(194, 102, 103, 1) 100%);
+    background: linear-gradient(90deg, rgba(87, 126, 206, 1) 0%, rgba(52, 82, 164, 1) 100%);
     opacity: 0;
 }
 
 #WE_hover_field_4 {
-    background: linear-gradient(90deg, rgba(195, 103, 104, 1) 0%, rgba(254, 113, 97, 1) 100%);
+    background: linear-gradient(90deg, rgba(52, 82, 164, 1) 0%, rgba(12, 31, 115, 1) 100%);
     opacity: 0;
 }
 
@@ -324,8 +323,8 @@ $SSH:350px;
     .MWE_layer {
         width: 100%;
         height: 100%;
-        background: linear-gradient(90deg, rgba(14, 72, 123, 1) 0%, rgba(255, 113, 97, 1) 100%);
-        opacity: 0.7;
+        background: radial-gradient(circle, #5E87D7 0%, #0B1E72 100%);
+        opacity: 1;
         position: absolute;
         top: 0;
         z-index: 1;
@@ -334,6 +333,7 @@ $SSH:350px;
     img {
         width: 100%;
         position: relative;
+        top: -540px;
     }
 
     .MWE_info_layout {
@@ -454,11 +454,11 @@ $SSH:350px;
 
 // article part
 
-.swiper-slide{
+.swiper-slide {
     padding: 30px;
 }
 
-.article_tag{
+.article_tag {
     background-color: #0F4C82;
     color: white;
     padding: 6px 10px;
@@ -470,9 +470,10 @@ $SSH:350px;
     border-radius: 50px;
 }
 
-.article_sec{
+.article_sec {
     padding: 0 70px;
-    .main_field_of_article{
+
+    .main_field_of_article {
         width: 100%;
         text-align: right;
         direction: rtl;
@@ -480,25 +481,31 @@ $SSH:350px;
         border: 1px solid #ebebeb;
         border-radius: 2px;
         overflow: hidden;
-        img{
+
+        img {
             width: 100%;
             height: 190px;
         }
-        .article_info{
+
+        .article_info {
             padding: 50px;
-            h3{
+
+            h3 {
                 font-weight: bold;
                 font-size: 1.3rem;
             }
-            p{
+
+            p {
                 font-size: 0.9rem;
                 text-align: justify;
                 color: rgb(56, 56, 56);
             }
-            div{
+
+            div {
                 color: rgb(92, 92, 92);
                 font-size: 0.9rem;
-                i{
+
+                i {
                     color: rgb(192, 192, 192);
                 }
             }
@@ -507,3 +514,108 @@ $SSH:350px;
     }
 }
 
+// cms part
+
+.CMSP {
+    padding: 0px 100px 100px 100px;
+    background-color: #F5F5F5;
+
+    .row_of_CMS_pages {
+        width: 100%;
+        margin-bottom: 50px;
+
+        .CMS_row_text {
+            direction: rtl;
+            width: max-content;
+            margin: 0 auto;
+            padding-right: 0;
+
+            .active_CMSP {
+                color: $main_color;
+                border-bottom: 3px solid $main_color;
+            }
+
+            li {
+                color: rgb(70, 70, 70);
+                list-style-type: none;
+                display: inline-block;
+                text-align: right;
+                direction: rtl;
+                margin: 0px 10px;
+                padding-bottom: 10px;
+                cursor: pointer;
+                @include transition(0.2s, ease, 0s);
+
+                &:hover {
+                    color: $main_color;
+                    border-bottom: 3px solid $main_color;
+                }
+            }
+        }
+    }
+
+    .cms_info_field {
+        width: 100%;
+
+        img {
+            width: 100%;
+            border-radius: 0px 7px 7px 0px;
+            height: 450px;
+        }
+
+        .cms_info_text {
+            background-color: white;
+            width: 100%;
+            height: 450px;
+            border-radius: 7px 0px 0px 7px;
+            text-align: right;
+            direction: rtl;
+            padding: 40px;
+
+            & :first-child {
+                font-size: 3rem;
+                color: #dedede;
+                padding-right: 35px;
+
+                &::before {
+                    content: '';
+                    width: 30px;
+                    height: 5px;
+                    border-radius: 50px;
+                    background-color: #2998EC;
+                    position: absolute;
+                    top: 67px;
+                    right: 39px;
+                }
+            }
+
+            h3 {
+                font-weight: bold;
+                font-size: 2rem;
+            }
+
+            .text_info_cms {
+                color: #6d6d6d;
+                line-height: 27px;
+                font-size: 1rem;
+                margin-top: 30px;
+            }
+
+            a {
+
+                background-color: $main_color;
+                color: white;
+                border-radius: 50px;
+                width: 130px;
+                display: inline-block;
+                height: 40px;
+                font-size: 1rem;
+                position: relative;
+                line-height: 37px;
+                text-align: center;
+                margin-top: 20px;
+
+            }
+        }
+    }
+}

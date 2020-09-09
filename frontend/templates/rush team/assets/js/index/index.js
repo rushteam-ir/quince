@@ -7,18 +7,6 @@ var typed = new Typed('#MW_typed', {
     loop: true
 });
 
-var MWE = document.getElementById('MWE_parallax');
-new simpleParallax(MWE, {
-    scale: 1.1,
-    orientation: 'right',
-    delay: 10,
-    transition: 'cubic-bezier(0,0,0,10)',
-});
-
-$('.header_img').parallax({
-    imageSrc: 'img/header.jpg'
-});
-
 var swiper = new Swiper('.swiper-container', {
     slidesPerView: 3,
     spaceBetween: 0,
