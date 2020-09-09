@@ -56,7 +56,7 @@ $header_height :100vh;
         position: relative;
         top: -80px;
         right: -24px;
-        @include transition(0.5s, linear, 0s)
+        @include transition(0.5s, cubic-bezier(0, 0, 0.47, 1.32), 0s)
     }
 }
 

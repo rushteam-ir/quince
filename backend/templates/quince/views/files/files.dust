@@ -66,10 +66,10 @@
                                             <i class="fal fa-trash-alt"></i>
                                         </button>
                                         <button class="btn blue_btn table_backward_btn">
-                                            <i class="far fa-reply"></i>
+                                            <i class="fal fa-reply"></i>
                                         </button>
                                         <button class="btn blue_btn table_home_btn">
-                                            <i class="far fa-home-alt"></i>
+                                            <i class="fal fa-home-alt"></i>
                                         </button>
 
                                     </div>
@@ -120,27 +120,9 @@
                                         {/eq}
                                     </td>
 
-                                    <td class="table_option FM_info">
-                                        <div class="dropdown">
-                                            <button class="btn  dropdown-toggle" type="button" id="table_option" data-toggle="dropdown"
-                                                    aria-haspopup="true" aria-expanded="false">
-                                                <i class="fas fa-ellipsis-v"></i>
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="table_option">
-                                                <a class="dropdown-item" href="#">
-                                                    <i class="fal fa-align-slash"></i>
-                                                    غیر فعال کردن
-                                                </a>
-                                                <a class="dropdown-item" href="#">
-                                                    <i class="fal fa-asterisk"></i>
-                                                    افزودن وی ای پی
-                                                </a>
-                                                <a class="dropdown-item" href="#">
-                                                    <i class="fal fa-assistive-listening-systems"></i>
-                                                    افزودن گوش و چشم
-                                                </a>
-                                            </div>
-                                        </div>
+                                    <td class="FM_info">
+                                        <button name="{._id}" class="btn blue_btn edit_btn"><i class="fal fa-download"></i></button>
+                                        <button class="btn red_btn mr-2" name="{.id}"><i class="fal fa-trash-alt"></i></button>
                                     </td>
                                 </tr>
                                 {/content_list.content}
