@@ -1,10 +1,11 @@
 backend = express();
 
 backend.disable('x-powered-by');
-backend.use(express.static(`${config.app_dir}backend/templates/${config.backend_tmp}/assets`));
-backend.set('views', `${config.app_dir}backend/templates/${config.backend_tmp}/views`);
+backend_root_dir = `${config.app_dir}backend/templates/${config.backend_tmp}`;
+backend.use(express.static(`${backend_root_dir}/assets`));
+backend.set('views', `${backend_root_dir}/views`);
 
-backend_upload_dir = `${config.app_dir}backend/templates/${config.backend_tmp}/assets/media/`;
+backend_upload_dir = `${backend_root_dir}/assets/media/`;
 backend_allowd_urls = ['/login/', '/recovery/', '/recovery/verify/'];
 backend_access = {
     content : {

@@ -34,7 +34,7 @@
                                         <h2>لیست فایل های موجود در سرور</h2>
                                     </div>
                                     <div class="Breadcrumb_field">
-                                        شاخه اصلی/
+                                        شاخه اصلی/{breadcrumb}
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-5">
@@ -65,7 +65,7 @@
                                         <button class="btn table_delete_btn">
                                             <i class="fal fa-trash-alt"></i>
                                         </button>
-                                        <button class="btn blue_btn table_backward_btn">
+                                        <button class="btn blue_btn table_backward_btn" name="{parent_directory}">
                                             <i class="fal fa-reply"></i>
                                         </button>
                                         <button class="btn blue_btn table_home_btn">
@@ -91,42 +91,54 @@
                                 <th>حجم</th>
                                 <th>تنظیمات</th>
                             </tr>
-                                {#content_list.content}
+                                {#content_list}
                                     <tr class="content_row" path="{path}" is-file="{isFile}">
-                                    <td class="FM_check_box">
-                                        <label class="checkbox_of_category">
-                                            <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox"
-                                                   value="{path}">
-                                        </label>
-                                    </td>
-                                    <td class="FM_icons">
-                                        {@eq key="{isFile}" value="true"}
-                                            <i class="fad fa-file"></i>
-                                        {:else}
-                                            <i class="fas fa-folder"></i>
-                                        {/eq}
-                                    </td>
-                                    <td class="text-right pr-0">
-                                        {name}
-                                    </td>
-                                    <td class="FM_info">
-                                        {modified}
-                                    </td>
-                                    <td class="FM_info">
-                                        {@eq key="{isFile}" value="true"}
-                                            {size}
-                                        {:else}
+                                        <td class="FM_check_box">
+                                            <label class="checkbox_of_category">
+                                                <input type="checkbox" name="delete_checkbox[]" class="table_checkbox option-input checkbox"
+                                                       value="{path}">
+                                            </label>
+                                        </td>
+                                        <td class="FM_icons">
+                                            {@eq key="{isFile}" value="true"}
+                                                <i class="fad fa-file"></i>
+                                            {:else}
+                                                <i class="fas fa-folder"></i>
+                                            {/eq}
+                                        </td>
+                                        <td class="text-right pr-0">
+                                            {@eq key="{isFile}" value="true"}
+                                                {name}
+                                            {:else}
+                                                <a href="{backend_url}files/?path={path}">
+                                                    {name}
+                                                </a>
+                                            {/eq}
+                                        </td>
+                                        <td class="FM_info">
+                                            {modified}
+                                        </td>
+                                        <td class="FM_info">
+                                            {@eq key="{isFile}" value="true"}
+                                                {size}
+                                            {:else}
 
-                                        {/eq}
-                                    </td>
+                                            {/eq}
+                                        </td>
 
-                                    <td class="FM_info">
-                                        <button name="{._id}" class="btn blue_btn edit_btn"><i class="fal fa-download"></i></button>
-                                        <button class="btn red_btn mr-2" name="{.id}"><i class="fal fa-trash-alt"></i></button>
-                                    </td>
-                                </tr>
-                                {/content_list.content}
+                                        <td class="FM_info">
+                                            <button name="{path}" class="btn blue_btn download_btn"><i class="fal fa-download"></i></button>
+                                            <button class="btn red_btn mr-2" name="{path}"><i class="fal fa-trash-alt"></i></button>
+                                        </td>
+                                    </tr>
+                                {/content_list}
                         </table>
+                        {?content_list}{:else}
+                            <div class="table_search_error">
+                                <p>موردی جهت نمایش وجود ندارد !</p>
+                            </div>
+                        {/content_list}
+                        {@page number="{total_pages}"  url="{backend_url}files{pagination_url}" current="{page_number}" query="{pagination_url}"/}
                     </div>
 
                 </div>

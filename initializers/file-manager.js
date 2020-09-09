@@ -83,7 +83,7 @@ class fileManager {
 
     }
 
-    getPathContent(file_path, root_path){
+    getPathContent(file_path, root_path, page_number, page_limit){
 
         return new Promise((resolve, reject)=>{
 
@@ -107,11 +107,21 @@ class fileManager {
                         let temp_parent_path_1 = file_path.replace(path.basename(file_path) + '/', '');
                         let temp_parent_path_2 = temp_parent_path_1.replace(/\/\//g, '/');
                         let temp_breadcrumb_2 = file_path.replace(/\/\//g, '/');
+                        let skip = page_number * page_limit - page_limit;
+                        let content_limited = content.slice(skip, skip + page_limit);
+
+                        if(`${backend_root_dir}/assets/` == temp_parent_path_2){
+
+                            temp_parent_path_2 = ''
+
+                        }
 
                         resolve({
                             breadcrumb : temp_breadcrumb_2.replace(root_path, ''),
                             parent_directory : temp_parent_path_2.replace(root_path, ''),
-                            content : content.sort((a, b)=>{return (a.isFile === b.isFile)? 0 : a? -1 : 1;})
+                            list : content_limited.sort((a, b)=>{return (a.isFile === b.isFile)? 0 : a? -1 : 1;}),
+                            rows_begin_number : skip + 1,
+                            total_pages : Math.ceil(content.length / page_limit)
                         });
 
                     })

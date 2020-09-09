@@ -8,29 +8,35 @@ router.get('/', async(req, res, next)=>{
 
             let search_inp = req.query.search;
             let path_inp = req.query.path;
-            let search_pagination = isUndefined(search_inp)
+            let search_pagination = !isUndefined(search_inp) ? `/?search=${search_inp}` : '';
+            let path_pagination = !isUndefined(path_inp) ? `/?path=${path_inp}` : '';
+            let file_path = backend_upload_dir;
 
             if(!isUndefined(search_inp)) {
                 data.search = true;
                 data.search_value = search_inp;
             }
+            if(!isUndefined(path_inp)) {
+                file_path += (path_pagination == '') ?  '' : path_inp + '/';
+            }
 
-            data.pagination_url = `/?search=${search_inp}`;
+            data.pagination_url += search_pagination + path_pagination;
 
-            let category_list = await category_model.search(query, search_inp ? search_inp : null, page_number, page_limit);
+            let content_list = await fileManager.getPathContent(file_path, backend_upload_dir, page_number, page_limit);
 
-            if(category_list.list.length == 0 && category_list.total_pages != 0){
+            if(content_list.list.length == 0 && content_list.total_pages != 0){
 
-                return res.redirect(`${config.backend_url}category/?page=${category_list.total_pages}`)
+                return res.redirect(`${config.backend_url}files/?page=${content_list.total_pages}`)
 
             }
 
-            data.parent_list = await category_model.getParent();
-            data.category_list = category_list.list;
+            data.content_list = content_list.list;
+            data.parent_directory = content_list.parent_directory;
             data.page_number = page_number;
             data.page_limit = page_limit;
-            data.rows_begin_number = category_list.rows_begin_number;
-            data.total_pages = category_list.total_pages;
+            data.rows_begin_number = content_list.rows_begin_number;
+            data.total_pages = content_list.total_pages;
+            data.breadcrumb = content_list.breadcrumb;
 
             res.render('files/files', data);
 
