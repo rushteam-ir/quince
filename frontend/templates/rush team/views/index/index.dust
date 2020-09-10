@@ -323,103 +323,50 @@
     </div>
 </section>
 
-<section class="article_sec">
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-              <div class="main_field_of_article">
-                  <span class="article_tag">آموزشی</span>
-                  <img src="img/slider2.jpg" alt="">
-                  <div class="article_info">
-                      <h3>بهترین بازی 2020</h3>
-                      <p>بهترین بازی امسال چیزی انتخاب نشد به دلیل اینکه 
-                        انقدر همه بازی ها خوب بودن که دیگه نشد اره خلاصه
-                         اینم از دعوای من و روزبه و ببختی های پشت سر هم 
-                        یککککک هفتس اوضاع همینه ...</p>
+<section class="article_part">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="title_of_articles">
+                    <p>برترین</p>
+                    <p>مقالات <span>راش تیم</span></p>
+                </div>
+                <div class="article_mag_part">
 
-                        <div class="d-inline-block ml-5">
-                            <i class="fas fa-eye ml-2"></i>
-                            15463
+                </div>
+            </div>
+            <div class="col-6">
+                <a href="">
+                    <div class="article_mag_part article_1">
+                        <div class="upper_hover">
+                            <div>
+                                <p>
+                                    <i class="fas fa-eye"></i>
+                                    984512
+                                </p>
+                                <p>
+                                    <i class="fas fa-heart"></i>
+                                    94856
+                                </p>
+                                <p class="article_points">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </p>
+                            </div>
                         </div>
-                        <div class="d-inline-block">
-                            <i class="fal fa-calendar-alt ml-2"></i>
-                         5 تیر 1399
+    
+                        <div class="lower_hover">
+                            <h3>برترین زبان های برنامه نویسی</h3>
+                            <p>یکی از برترین زبان های برنامه نویسی زبان chicken است به با ان میتوانید مرغ چاپ کنید ولی خب برای گربه زبان خاصی نداریم .</p>
                         </div>
-                  </div>
-              </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="main_field_of_article">
-                <span class="article_tag">آموزشی</span>
-                <img src="img/slider1.jpg" alt="">
-                <div class="article_info">
-                    <h3>بهترین بازی 2020</h3>
-                    <p>بهترین بازی امسال چیزی انتخاب نشد به دلیل اینکه 
-                      انقدر همه بازی ها خوب بودن که دیگه نشد اره خلاصه
-                       اینم از دعوای من و روزبه و ببختی های پشت سر هم 
-                      یککککک هفتس اوضاع همینه ...</p>
-
-                      <div class="d-inline-block ml-5">
-                          <i class="fas fa-eye ml-2"></i>
-                          15463
-                      </div>
-                      <div class="d-inline-block">
-                          <i class="fas fa-stopwatch ml-2"></i>
-                          1399.07.05
-                      </div>
-                </div>
+                    </div>
+                </a>
             </div>
         </div>
-        <div class="swiper-slide">
-            <div class="main_field_of_article">
-                <span class="article_tag">آموزشی</span>
-                <img src="img/slider3.jpg" alt="">
-                <div class="article_info">
-                    <h3>بهترین بازی 2020</h3>
-                    <p>بهترین بازی امسال چیزی انتخاب نشد به دلیل اینکه 
-                      انقدر همه بازی ها خوب بودن که دیگه نشد اره خلاصه
-                       اینم از دعوای من و روزبه و ببختی های پشت سر هم 
-                      یککککک هفتس اوضاع همینه ...</p>
-
-                      <div class="d-inline-block ml-5">
-                          <i class="fas fa-eye ml-2"></i>
-                          15463
-                      </div>
-                      <div class="d-inline-block">
-                          <i class="fas fa-stopwatch ml-2"></i>
-                          1399.07.05
-                      </div>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="main_field_of_article">
-                <span class="article_tag">آموزشی</span>
-                <img src="img/slider2.jpg" alt="">
-                <div class="article_info">
-                    <h3>بهترین بازی 2020</h3>
-                    <p>بهترین بازی امسال چیزی انتخاب نشد به دلیل اینکه 
-                      انقدر همه بازی ها خوب بودن که دیگه نشد اره خلاصه
-                       اینم از دعوای من و روزبه و ببختی های پشت سر هم 
-                      یککککک هفتس اوضاع همینه ...</p>
-
-                      <div class="d-inline-block ml-5">
-                          <i class="fas fa-eye ml-2"></i>
-                          15463
-                      </div>
-                      <div class="d-inline-block">
-                          <i class="fas fa-stopwatch ml-2"></i>
-                          1399.07.05
-                      </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-      </div>
+    </div>
 </section>
-
-
 
 {/body}
