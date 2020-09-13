@@ -21,8 +21,9 @@ router.use(async(req, res, next)=>{
 
             let find_access_content = backend_access.content[parsed_url];
             let find_access_management = backend_access.management[parsed_url];
+            let find_access_support = backend_access.support[parsed_url];
 
-            if(isUndefined(find_access_content) && isUndefined(find_access_management)){
+            if(isUndefined(find_access_content) && isUndefined(find_access_management) && isUndefined(find_access_content)){
 
                 next();
 
