@@ -40,7 +40,7 @@ router.get('/:name', async(req,res)=>{
         //
         // log(data.comments_list)
 
-        res.render('articles/articles-show', data);
+        res.render('articles/articles-show');
 
     }
     catch (error) {
