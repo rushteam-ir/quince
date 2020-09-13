@@ -81,6 +81,7 @@
                                     <th>ردیف</th>
                                     <th>نام دسترسی</th>
                                     <th>تعداد دسترسی ها</th>
+                                    <th>سازنده</th>
                                     <th>تنظیمات</th>
                                 </tr>
                                 {#access_list}
@@ -124,6 +125,24 @@
                                         <div>
                                             {count}
                                         </div>
+                                    </td>
+                                    <td>
+                                        {@eq key="{author.access_type}" value="{null}"}
+                                            {@eq key="{author.author_type}" value="{name}"}
+                                                {author.first_name} {author.last_name}
+                                            {:else}
+                                                {author.nick_name}
+                                            {/eq}
+                                        {:else}
+                                            <a href="{backend_url}groups/profile/{author.unique_id}">
+                                                {@eq key="{author.author_type}" value="{name}"}
+                                                    {author.first_name} {author.last_name}
+                                                {:else}
+                                                    {author.nick_name}
+                                                {/eq}
+                                            </a>
+                                        {/eq}
+
                                     </td>
                                     {@eq key="{g_admin_info._id}" value="{author._id}"}
                                         {@ne key="{g_admin_info.access_type._id}" value="{._id}"}
@@ -242,7 +261,7 @@
                                     {/keyValue}
                                 </div>
                                 <label class="mb-3 mt-0 lable_collaps">
-                                    ویرایش محتوای دیگران
+                                    تنظیمات کلی
                                     <i class="far fa-angle-left"></i>
                                 </label>
                                 <div class="collaps_content">
@@ -337,7 +356,7 @@
                                         </div>
                                     {/keyValue}
                                     <hr>
-                                    <label class="mt-2 mb-3">ویرایش محتوای دیگران</label>
+                                    <label class="mt-2 mb-3">تنظیمات کلی</label>
                                     {@keyValue:backend_access.edit}
                                         <div class="row">
                                             <div class="col-10">

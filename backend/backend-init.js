@@ -33,7 +33,6 @@ backend_access = {
         'groups/access/': 'ویرایش دسترسی ها',
         'comments/': 'ویرایش نظرات',
         'contacts/': 'ویرایش تماس با ما',
-        'files/': 'تنظیمات فایل ها',
     }
 }
 

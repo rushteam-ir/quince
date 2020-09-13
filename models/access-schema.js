@@ -119,11 +119,11 @@ access_schema.statics = {
 
         result.rows_begin_number = _skip + 1;
         let _list = await access_model.find(query).populate('author');
-        let temp_list = []
+        let temp_list = [];
 
         if(search_value){
             for(let index of _list){
-                jsonSearch(['title'], search_value, index) ? temp_list.push(index) : null;
+                jsonSearch(['title', 'author.nick_name', 'author.first_name', 'author.last_name'], search_value, index) ? temp_list.push(index) : null;
             }
             result.total_pages = Math.ceil(temp_list.length / page_limit);
             result.list = temp_list.slice(_skip, _skip + page_limit).reverse()

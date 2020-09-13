@@ -1,7 +1,6 @@
 require('./backend-init');
 
 const check_login = require('./middlewares/check-login');
-const check_message = require('./middlewares/check-message');
 const global_options = require('./middlewares/global-options');
 const check_access = require('./middlewares/check-access');
 const cache_handler = require('./middlewares/cache-handler');
@@ -9,7 +8,6 @@ const check_notification = require('./middlewares/check-notification');
 
 backend.use(check_login);
 backend.use(global_options);
-backend.use(check_message);
 backend.use(check_access);
 backend.use(cache_handler);
 backend.use(check_notification);
@@ -22,7 +20,6 @@ const recovery = require('./branches/recovery/recovery');
 const store = require('./branches/store/store');
 const settings = require('./branches/settings/settings');
 const logout = require('./branches/logout/logout');
-const messages = require('./branches/messages/messages');
 const groups = require('./branches/groups/groups');
 const guide = require('./branches/guide/guide');
 const article = require('./branches/article/article');
@@ -39,7 +36,6 @@ backend.use('/recovery', recovery);
 backend.use('/store', store);
 backend.use('/settings', settings);
 backend.use('/logout', logout);
-backend.use('/messages', messages);
 backend.use('/groups', groups);
 backend.use('/guide', guide);
 backend.use('/article', article);
