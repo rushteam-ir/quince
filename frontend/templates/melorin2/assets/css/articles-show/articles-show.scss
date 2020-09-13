@@ -89,6 +89,7 @@
           direction: rtl;
           text-align: justify;
           padding: 40px 0;
+          line-height: 30px;
         }
 
         .row_style{
@@ -177,14 +178,6 @@
           border: 1px solid #ced4da;
           border-radius: 5px;
           text-align: right;
-
-          .form_size{
-            width: 430px;
-            margin-bottom: 30px;
-          }
-          .mr_10{
-            margin-right: 10px;
-          }
 
           .btn_style{
             width: 200px;

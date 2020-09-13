@@ -18,19 +18,19 @@
                 <div class="row">
                     <div class="col-6">
                         <div class="title_box_left">
-                            <div class="writer_of_article">
+                            <div class="writer_of_article left_box_style">
                                 <p class="writer_name d-inline-block pr-2">نویسنده : نادیه نجم آبادی</p>
                                 <i class="fal fa-pen-square d-inline-block"></i>
                             </div>
-                            <div class="view_of_article">
+                            <div class="view_of_article left_box_style">
                                 <p class="number_of_view d-inline-block pr-2">بازدید : 2030</p>
                                 <i class="fal fa-eye d-inline-block"></i>
                             </div>
-                            <div class="date_of_write_articles">
+                            <div class="date_of_write_articles left_box_style">
                                 <p class="date_of_write pr-2 d-inline-block">تاریخ ثبت مقاله : 1399/06/23</p>
                                 <i class="fal fa-calendar-day d-inline-block"></i>
                             </div>
-                            <div class="time_of_reading_box ">
+                            <div class="time_of_reading_box left_box_style">
                                 <p class="time_of_reading d-inline-block pr-2">
                                     زمان مورد نیاز مطالعه : 2 دقیقه
                                 </p>
@@ -153,7 +153,7 @@
                             <hr>
                             <div class="react_box text-left">
                                 <div class="row">
-                                    <div class="col-6 px-0">
+                                    <div class="col-10 offset-1 col-md-6 offset-md-0 px-0">
                                         <div class="left_box">
                                             <a href="#" class="link_style">
                                                 <i class="fal fa-share-alt d-inline-block mr-5"></i>
@@ -172,7 +172,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6 px-0">
+                                    <div class="col-10 offset-1 col-md-6 offset-md-0 px-0">
                                         <div class="right_box text-right ">
                                             <p class="text_rate d-inline-block">5 / 4.9 (از مجموع 8 رای)</p>
                                             <div class="rate_star_box d-inline-block ml-4">
@@ -191,10 +191,10 @@
                                 <h3 class="title_cm">دیدگاه شما</h3>
 
                                 <form class="form_style dir_rtl">
-                                    <div class="form-group d-inline-block form_size">
+                                    <div class="form-group">
                                         <input type="text" class="form-control form_field_style"  placeholder="نام و نام خانوادگی">
                                     </div>
-                                    <div class="form-group d-inline-block form_size mr_10">
+                                    <div class="form-group">
                                         <input type="email" class="form-control form_field_style"  placeholder="ایمیل">
                                     </div>
                                     <div class="form-group">
@@ -227,7 +227,7 @@
 
                                 <div class="cm_reply">
                                     <div class="row">
-                                        <div class="col-6">
+                                        <div class="col-8 offset-0 col-md-6 offset-md-0 ">
                                             <i class="fad fa-user-circle d-inline-block"></i>
                                             <div class="text_behind_profile d-inline-block mr-4">
                                                 <p class="name_of_writer_cm mb-0">سلطان طالبی</p>
@@ -235,7 +235,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col-6 text-left">
+                                        <div class="col-4 offset-0 col-md-6 offset-md-0 text-left">
                                             <a><i class="fas fa-reply"></i></a>
                                         </div>
                                     </div>
