@@ -1,0 +1,257 @@
+{>"layouts/layout"/}
+
+{<title}
+    <title>تماس با ما</title>
+{/title}
+{<css}
+    <link rel="stylesheet" href="css/articles-show/articles-show.css">
+{/css}
+
+{<js}
+    <script src=""></script>
+{/js}
+
+{<body}
+    <section class="box_of_article_show">
+        <div class="header_of_article">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="title_box_left">
+                            <div class="writer_of_article">
+                                <p class="writer_name d-inline-block pr-2">نویسنده : نادیه نجم آبادی</p>
+                                <i class="fal fa-pen-square d-inline-block"></i>
+                            </div>
+                            <div class="view_of_article">
+                                <p class="number_of_view d-inline-block pr-2">بازدید : 2030</p>
+                                <i class="fal fa-eye d-inline-block"></i>
+                            </div>
+                            <div class="date_of_write_articles">
+                                <p class="date_of_write pr-2 d-inline-block">تاریخ ثبت مقاله : 1399/06/23</p>
+                                <i class="fal fa-calendar-day d-inline-block"></i>
+                            </div>
+                            <div class="time_of_reading_box ">
+                                <p class="time_of_reading d-inline-block pr-2">
+                                    زمان مورد نیاز مطالعه : 2 دقیقه
+                                </p>
+                                <i class="fal fa-stopwatch d-inline-block"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="title_box_right">
+                            <div class="behind_title_part"></div>
+                            <h2 class="title_of_article">جوراب گیمری، از ملزومات جدید بازی</h2>
+                            <p class="small_text d-inline-block">شگفتانه ای دیگر از شرکت پوما اینبار در حوزه بازی</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="content_box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content_of_article_box">
+                            <div class="main_content">
+                                <img src="../../img/Puma_Gamer_Socks.jpg" class="main_pic_of_article mt-5" alt="">
+                                <p class="text_article">شرکت «پوما» (Puma) که لیستی بلند و بالا از محصولات ورزشی و لباس‌های
+                                    مختلف دارد، ظاهرا به تازگی متوجه شده است که جمعیتی بزرگ از ورزشکاران را جای انداخته است؛
+                                    جمعیتی که فعالیت فیزیکی سنگین، بخشی مهم از ورزش آن‌هاست: گیمرها. در همین راستا، پوما در
+                                    اولین تلاش خود برای عرضه‌ی محصولات گیمری، از یک جفت جوراب گیمینگ رونمایی کرده است.
+
+                                    سری جدید جوراب‌های گیمری پوما با اسم Active Gaming Footwear از سوی این شرکت رونمایی و عرضه
+                                    شده است. این جوراب‌ها قرار است در صدمین تلاش‌تان برای یک «ویکتوری رویال» گرفتن در تمام
+                                    هفته‌ی گذشته، به کمک‌تان بیایند. یا شاید هم به درد «رید»های دنیای وارکرفت بخورند که به لطف
+                                    گیلد بسیار خوب‌تان، بیست ساعت طول کشیده‌اند. در هر صورت، پوما می‌گوید که این جوراب‌ها را
+                                    برای گیمرها طراحی کرده است و قیمتی ۱۰۰ دلاری هم برای هر جفت آن‌ها در نظر گرفته است.
+
+                                    در توضیح این جوراب‌های گیمری پوما، در وب‌سایت رسمی این شرکت، آمده است: «جوراب‌هایی برای
+                                    استفاده در محیط‌های بسته، یا محیط‌های تورنمنت‌ها که راحتی طولانی مدت و پشتیبانی و چسبندگی
+                                    بسیار خوبی ارایه می‌دهند تا گیمرها بتوانند در حالت‌های مختلف و به بهترین شکل ممکن بازی
+                                    کنند.»</p>
+                                <div class="row row_style">
+                                    <div class="col-4 px-0">
+                                        <img src="../../img/p1.png" class="pic_of_article" alt="">
+                                    </div>
+                                    <div class="col-4 px-0">
+                                        <img src="../../img/p2.png" class="pic_of_article" alt="">
+                                    </div>
+                                    <div class="col-4 px-0">
+                                        <img src="../../img/p3.png" class="pic_of_article pr-0" alt="">
+                                    </div>
+                                </div>
+                                <p class="text_article">شرکت «پوما» (Puma) که لیستی بلند و بالا از محصولات ورزشی و لباس‌های
+                                    مختلف دارد، ظاهرا به تازگی متوجه شده است که جمعیتی بزرگ از ورزشکاران را جای انداخته است؛
+                                    جمعیتی که فعالیت فیزیکی سنگین، بخشی مهم از ورزش آن‌هاست: گیمرها. در همین راستا، پوما در
+                                    اولین تلاش خود برای عرضه‌ی محصولات گیمری، از یک جفت جوراب گیمینگ رونمایی کرده است.
+
+                                    سری جدید جوراب‌های گیمری پوما با اسم Active Gaming Footwear از سوی این شرکت رونمایی و عرضه
+                                    شده است. این جوراب‌ها قرار است در صدمین تلاش‌تان برای یک «ویکتوری رویال» گرفتن در تمام
+                                    هفته‌ی گذشته، به کمک‌تان بیایند. یا شاید هم به درد «رید»های دنیای وارکرفت بخورند که به لطف
+                                    گیلد بسیار خوب‌تان، بیست ساعت طول کشیده‌اند. در هر صورت، پوما می‌گوید که این جوراب‌ها را
+                                    برای گیمرها طراحی کرده است و قیمتی ۱۰۰ دلاری هم برای هر جفت آن‌ها در نظر گرفته است.
+
+                                    در توضیح این جوراب‌های گیمری پوما، در وب‌سایت رسمی این شرکت، آمده است: «جوراب‌هایی برای
+                                    استفاده در محیط‌های بسته، یا محیط‌های تورنمنت‌ها که راحتی طولانی مدت و پشتیبانی و چسبندگی
+                                    بسیار خوبی ارایه می‌دهند تا گیمرها بتوانند در حالت‌های مختلف و به بهترین شکل ممکن بازی
+                                    کنند.»
+
+
+                                </p>
+                                <p class="text_article">شرکت «پوما» (Puma) که لیستی بلند و بالا از محصولات ورزشی و لباس‌های
+                                    مختلف دارد، ظاهرا به تازگی متوجه شده است که جمعیتی بزرگ از ورزشکاران را جای انداخته است؛
+                                    جمعیتی که فعالیت فیزیکی سنگین، بخشی مهم از ورزش آن‌هاست: گیمرها. در همین راستا، پوما در
+                                    اولین تلاش خود برای عرضه‌ی محصولات گیمری، از یک جفت جوراب گیمینگ رونمایی کرده است.
+
+                                    سری جدید جوراب‌های گیمری پوما با اسم Active Gaming Footwear از سوی این شرکت رونمایی و عرضه
+                                    شده است. این جوراب‌ها قرار است در صدمین تلاش‌تان برای یک «ویکتوری رویال» گرفتن در تمام
+                                    هفته‌ی گذشته، به کمک‌تان بیایند. یا شاید هم به درد «رید»های دنیای وارکرفت بخورند که به لطف
+                                    گیلد بسیار خوب‌تان، بیست ساعت طول کشیده‌اند. در هر صورت، پوما می‌گوید که این جوراب‌ها را
+                                    برای گیمرها طراحی کرده است و قیمتی ۱۰۰ دلاری هم برای هر جفت آن‌ها در نظر گرفته است.
+
+                                    در توضیح این جوراب‌های گیمری پوما، در وب‌سایت رسمی این شرکت، آمده است: «جوراب‌هایی برای
+                                    استفاده در محیط‌های بسته، یا محیط‌های تورنمنت‌ها که راحتی طولانی مدت و پشتیبانی و چسبندگی
+                                    بسیار خوبی ارایه می‌دهند تا گیمرها بتوانند در حالت‌های مختلف و به بهترین شکل ممکن بازی
+                                    کنند.»
+
+
+                                </p>
+                                <div class="row last_row_style">
+                                    <div class="col-6 px-0">
+                                        <img src="../../img/p4.png" class="pic_of_article" alt="">
+                                    </div>
+                                    <div class="col-6 px-0">
+                                        <img src="../../img/p5.png" class="pic_of_article" alt="">
+                                    </div>
+                                </div>
+                                <div class="row last_row_style">
+                                    <div class="col-4 px-0">
+                                        <img src="../../img/p6.png" class="pic_of_article" alt="">
+                                    </div>
+                                    <div class="col-4 px-0">
+                                        <img src="../../img/p7.png" class="pic_of_article" alt="">
+                                    </div>
+                                    <div class="col-4 px-0">
+                                        <img src="../../img/p8.png" class="pic_of_article" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="source_of_article">
+                                    <p class="link_of_source d-inline-block">
+                                        <a href="#">سایت نادیه</a>
+                                        ,
+                                        <a href="#">سایت کسری</a>
+                                        ,
+                                        <a href="#">سایت روزبه</a>
+                                    </p>
+                                    <p class="dir_rtl text-right d-inline-block">منابع : </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="react_box text-left">
+                                <div class="row">
+                                    <div class="col-6 px-0">
+                                        <div class="left_box">
+                                            <a href="#" class="link_style">
+                                                <i class="fal fa-share-alt d-inline-block mr-5"></i>
+                                            </a>
+                                            <div class="like d-inline-block mr-5">
+                                                <a href="#" class="link_style">
+                                                    <i class="fal fa-heart d-inline-block "></i>
+                                                    <p class="counter_of_like d-inline-block ml-1">12</p>
+                                                </a>
+                                            </div>
+                                            <div class="cm d-inline-block mr-5">
+                                                <a href="#" class="link_style">
+                                                    <i class="fal fa-comment"></i>
+                                                    <p class="counter_of_cm d-inline-block ml-1">5</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 px-0">
+                                        <div class="right_box text-right ">
+                                            <p class="text_rate d-inline-block">5 / 4.9 (از مجموع 8 رای)</p>
+                                            <div class="rate_star_box d-inline-block ml-4">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fal fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="add_cm_box">
+                                <h3 class="title_cm">دیدگاه شما</h3>
+
+                                <form class="form_style dir_rtl">
+                                    <div class="form-group d-inline-block form_size">
+                                        <input type="text" class="form-control form_field_style"  placeholder="نام و نام خانوادگی">
+                                    </div>
+                                    <div class="form-group d-inline-block form_size mr_10">
+                                        <input type="email" class="form-control form_field_style"  placeholder="ایمیل">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control form_field_style" rows="4" placeholder="دیدگاه"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn_style">ارسال دیدگاه</button>
+                                </form>
+                            </div>
+
+                            <div class="cm_show">
+                                <h3 class="title_cm">5 دیدگاه</h3>
+                                <div class="cm_text">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <i class="fad fa-user-circle d-inline-block"></i>
+                                            <div class="text_behind_profile d-inline-block mr-4">
+                                                <p class="name_of_writer_cm mb-0">سلطان طالبی</p>
+                                                <p class="time_of_write_box">23 شهریور 1399 / 12:30</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-6 text-left">
+                                            <a><i class="fas fa-reply"></i></a>
+                                        </div>
+                                    </div>
+                                    <p class="text_of_cm">
+                                        خداوکیلی 100 تومن  میدم بگو واقعا نود جی اس رو با پی اچ پی زدن؟
+                                    </p>
+                                </div>
+
+                                <div class="cm_reply">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <i class="fad fa-user-circle d-inline-block"></i>
+                                            <div class="text_behind_profile d-inline-block mr-4">
+                                                <p class="name_of_writer_cm mb-0">سلطان طالبی</p>
+                                                <p class="time_of_write_box">23 شهریور 1399 / 12:30</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-6 text-left">
+                                            <a><i class="fas fa-reply"></i></a>
+                                        </div>
+                                    </div>
+                                    <p class="text_of_cm">
+                                        خداوکیلی 100 تومن  میدم بگو واقعا نود جی اس رو با پی اچ پی زدن؟
+                                    </p>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+{/body}
