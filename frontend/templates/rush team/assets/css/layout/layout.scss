@@ -1,6 +1,6 @@
 @import '../partials/color';
-@import '../partials/cb-mixin';
 @import '../partials/font';
+@import '../partials/mixin';
 // navbar
 
 .navbar_field {
@@ -297,17 +297,19 @@ $footer_height:400px;
 
 .copy_right_field {
     width: 100%;
-    height: 75px;
+    height: 65px;
     background-color: white;
     text-align: center;
     direction: rtl;
     font-size: 1rem;
     color: #A1A1A1;
     font-weight: bold;
-    line-height: 70px;
+    line-height: 35px;
 
     p {
         margin: 0;
+        position: relative;
+        top: 15px;
     }
 }
 
@@ -431,7 +433,7 @@ $footer_height:400px;
     position: fixed;
     right: -300px;
     top: 0;
-    background-color: rgb(41, 41, 41);
+    background-color: #161616;
     color: $white;
     text-align: right;
     direction: rtl;

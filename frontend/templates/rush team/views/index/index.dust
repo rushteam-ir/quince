@@ -206,7 +206,10 @@
                 </ul>
             </div>
             <div class="row cms_info_field">
-                <div class="col-8 pr-0">
+                <div class="col-4 pr-0">
+                    <img src="img/quince-teaser.png" alt="">
+                </div>
+                <div class="col-8 pl-0">
                     <div class="cms_info_text">
                         <p>01</p>
                         <h3>یکی از برترین سیستم های مدیریت محتوی </h3>
@@ -215,9 +218,6 @@
                         </p>
                         <a>بیشتر بدانید !</a>
                     </div>
-                </div>
-                <div class="col-4 pl-0">
-                    <img src="img/quince-teaser.png" alt="">
                 </div>
             </div>
         </div>
@@ -327,16 +327,7 @@
     <div class="container">
         <div class="row">
             <div class="col-6">
-                <div class="title_of_articles">
-                    <p>برترین</p>
-                    <p>مقالات <span>راش تیم</span></p>
-                </div>
-                <div class="article_mag_part">
-
-                </div>
-            </div>
-            <div class="col-6">
-                <a href="">
+                <a href="" class="article_link_tamplate">
                     <div class="article_mag_part article_1">
                         <div class="upper_hover">
                             <div>
@@ -349,11 +340,11 @@
                                     94856
                                 </p>
                                 <p class="article_points">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
                                 </p>
                             </div>
                         </div>
@@ -364,6 +355,70 @@
                         </div>
                     </div>
                 </a>
+                <a href="" class="article_link_tamplate">
+                    <div class="article_mag_part article_1">
+                        <div class="upper_hover">
+                            <div>
+                                <p>
+                                    <i class="fas fa-eye"></i>
+                                    984512
+                                </p>
+                                <p>
+                                    <i class="fas fa-heart"></i>
+                                    94856
+                                </p>
+                                <p class="article_points">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="lower_hover">
+                            <h3>برترین زبان های برنامه نویسی</h3>
+                            <p>یکی از برترین زبان های برنامه نویسی زبان chicken است به با ان میتوانید مرغ چاپ کنید ولی خب برای گربه زبان خاصی نداریم .</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6">
+                <div class="title_of_articles">
+                    <p>برترین</p>
+                    <p>مقالات <span>راش تیم</span></p>
+                    <span class="small_article_title">بهترین مقالات راش تیم را در زیر مشاهده کنید .</span>
+                </div>
+                <a href="" class="article_link_tamplate">
+                    <div class="article_mag_part article_1">
+                        <div class="upper_hover">
+                            <div>
+                                <p>
+                                    <i class="fas fa-eye"></i>
+                                    984512
+                                </p>
+                                <p>
+                                    <i class="fas fa-heart"></i>
+                                    94856
+                                </p>
+                                <p class="article_points">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="lower_hover">
+                            <h3>برترین زبان های برنامه نویسی</h3>
+                            <p>یکی از برترین زبان های برنامه نویسی زبان chicken است به با ان میتوانید مرغ چاپ کنید ولی خب برای گربه زبان خاصی نداریم .</p>
+                        </div>
+                    </div>
+                </a>
+
             </div>
         </div>
     </div>
