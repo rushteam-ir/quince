@@ -1,0 +1,194 @@
+@import '../partials/color';
+@import '../partials/font';
+@import '../partials/mixin';
+
+body {
+    background-color: #fcfcfc;
+}
+
+// article header css
+$AH : 350px;
+
+.article_header {
+    background-image: url(../../img/am-header-2.jpg);
+    background-size: cover;
+    height: $AH;
+    width: 100%;
+    position: relative;
+
+    .AH_layer {
+        width: 100%;
+        height: $AH;
+        background: radial-gradient(circle, rgba(93, 134, 214, 1) 0%, rgba(12, 31, 115, 1) 100%);
+        opacity: 0.5;
+        position: absolute;
+    }
+}
+
+// article body
+
+.article_body {
+    padding: 0px 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: right;
+
+    .main_body_of_AB {
+        width: 100%;
+        background-color: white;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.048);
+
+        h2 {
+            font-family: $MF;
+            direction: rtl;
+            color: rgb(54, 54, 54);
+            padding: 30px 20px 30px 0px;
+            margin-bottom: 0;
+        }
+
+        .breadcrumb-item+.breadcrumb-item::before{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        nav {
+            text-align: right;
+            direction: rtl;
+
+            ol {
+                border-radius: 0px !important;
+                margin-bottom: 0;
+            }
+        }
+
+        .main_article_img {
+            width: 100%;
+            border-radius: 7px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .article_info {
+        text-align: right;
+        direction: rtl;
+        padding: 50px 50px 20px 50px;
+
+        img {
+            border-radius: 7px;
+        }
+
+        h3 {
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #171717;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 35px;
+            text-align: justify;
+        }
+    }
+
+    .detail_side_bar {
+        width: 100%;
+        padding: 40px 20px;
+        background-color: white;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.048);
+
+
+        h3 {
+            color: #171717;
+            font-weight: bold;
+            margin-bottom: 30px;
+            border-right: 5px solid #2998EC;
+            padding-right: 17px;
+            position: relative;
+            right: -20px;
+        }
+
+        p {
+            font-size: 0.9rem;
+
+            span {
+                color: #171717;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .tags_side_bar {
+        width: 100%;
+        padding: 40px 20px;
+        background-color: white;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.048);
+        direction: rtl;
+
+
+        h3 {
+            color: #171717;
+            font-weight: bold;
+            margin-bottom: 30px;
+            border-right: 5px solid #2998EC;
+            padding-right: 17px;
+            position: relative;
+            right: -20px;
+        }
+
+        a {
+            width: max-content;
+            padding: 6px 20px;
+            text-align: center;
+            direction: rtl;
+            background-color: rgb(245, 245, 245);
+            display: inline-block;
+            margin: 10px 10px 0px 0px;
+
+            p {
+                margin-bottom: 0px;
+                font-size: 0.8rem;
+                color: black;
+            }
+        }
+    }
+
+    .author_side_bar {
+        width: 100%;
+        padding: 40px 20px;
+        background-color: white;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.048);
+        direction: rtl;
+
+
+        h3 {
+            color: #171717;
+            font-weight: bold;
+            margin-bottom: 30px;
+            border-right: 5px solid #2998EC;
+            padding-right: 17px;
+            position: relative;
+            right: -20px;
+        }
+
+        .user_pro_img {
+            width: 111px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+
+            i {
+                font-size: 7rem;
+                color: #2998EC;
+            }
+        }
+
+        p {
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.article_sugest{
+    padding: 0px 100px;
+}

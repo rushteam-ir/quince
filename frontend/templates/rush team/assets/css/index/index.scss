@@ -1,7 +1,6 @@
-@import '../../css/partials/color';
-@import '../../css/partials/cb-mixin';
-@import '../../css/partials/main-mixin';
+@import '../partials/color';
 @import '../partials/font';
+@import '../partials/mixin';
 
 // header
 $header_height :100vh;
@@ -501,7 +500,7 @@ $SSH:350px;
 
         img {
             width: 100%;
-            border-radius: 0px 7px 7px 0px;
+            border-radius: 7px 0px 0px 7px;
             height: 450px;
         }
 
@@ -509,7 +508,7 @@ $SSH:350px;
             background-color: white;
             width: 100%;
             height: 450px;
-            border-radius: 7px 0px 0px 7px;
+            border-radius: 0px 7px 7px 0px;
             text-align: right;
             direction: rtl;
             padding: 40px;
@@ -580,10 +579,17 @@ $SSH:350px;
         span {
             font-weight: bold;
         }
+
+        .small_article_title {
+            font-size: 1.1rem;
+            font-weight: normal;
+            width: 220px;
+            display: inline-block;
+            margin-top: 20px;
+        }
     }
 
     .article_mag_part {
-        background-image: url(../../img/quince-teaser.png);
         background-position: center;
         background-size: cover;
         width: 100%;
@@ -621,6 +627,7 @@ $SSH:350px;
                 .article_points {
                     position: absolute;
                     left: 10px;
+                    color: #f7b600;
                 }
 
                 p {
@@ -648,7 +655,7 @@ $SSH:350px;
             @include transition(0.5s, cubic-bezier(0, 0, 0.4, 1), 0s);
             text-align: right;
             direction: rtl;
-            padding: 0px 15px 0px 15px;
+            padding: 20px 15px 0px 15px;
 
             h3 {
                 color: $main_color;
@@ -667,4 +674,9 @@ $SSH:350px;
         background-image: url(../../img/../img/article-2.png);
         background-position: center;
     }
+}
+
+.article_link_tamplate{
+    display: block;
+    margin-bottom: 30px;
 }
