@@ -45,7 +45,7 @@
                                                     <i class="fal fa-search"></i>
                                                 </button>
                                             </div>
-                                            <input type="text" class="form-control search_table" placeholder="جستجو ..." aria-describedby="basic-addon1" value="{search_value}">
+                                            <input type="text" class="form-control search_table" placeholder="جستجو ..." aria-describedby="basic-addon1" value="{search_value}" path="{current_directory}">
                                             {@eq key="{search}" value="true"}
                                                 <i class="fal fa-times search_btn_cancel"></i>
                                             {/eq}
@@ -125,12 +125,11 @@
 
                                             {/eq}
                                         </td>
-
                                         <td class="FM_info">
+                                        {@eq key="{isFile}" value="true"}
                                             <button name="{path}" class="btn blue_btn download_btn"><i class="fal fa-download"></i></button>
-                                            {@eq key="{isFile}" value="true"}
-                                                <button class="btn red_btn mr-2 file_delete" name="{path}"><i class="fal fa-trash-alt"></i></button>
-                                            {/eq}
+                                            <button class="btn red_btn mr-2 file_delete" name="{path}"><i class="fal fa-trash-alt"></i></button>
+                                        {/eq}
                                         </td>
                                     </tr>
                                 {/content_list}

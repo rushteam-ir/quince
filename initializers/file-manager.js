@@ -83,7 +83,7 @@ class fileManager {
 
     }
 
-    getPathContent(file_path, root_path, page_number, page_limit){
+    getPathContent(file_path, root_path, search_inp, page_number, page_limit){
 
         return new Promise((resolve, reject)=>{
 
@@ -91,7 +91,7 @@ class fileManager {
 
                 if(err){
 
-                    reject(err);
+                    reject(null);
 
                 }
                 else{
@@ -108,18 +108,37 @@ class fileManager {
                         let temp_parent_path_2 = temp_parent_path_1.replace(/\/\//g, '/');
                         let temp_breadcrumb_2 = file_path.replace(/\/\//g, '/');
                         let skip = page_number * page_limit - page_limit;
-                        let content_limited = content.slice(skip, skip + page_limit);
 
                         if(`${backend_root_dir}/assets/` == temp_parent_path_2){
 
                             temp_parent_path_2 = ''
 
                         }
+                        if(!isUndefined(search_inp)){
+
+                            let search_list = []
+                            for(let item of content){
+
+                                let item_name = item.name;
+
+                                if(item_name.includes(search_inp)){
+
+                                    search_list.push(item);
+
+                                }
+
+                            }
+
+                            content = search_list
+
+                        }
+
+                        let content_limited = content.slice(skip, skip + page_limit);
 
                         resolve({
                             breadcrumb : temp_breadcrumb_2.replace(root_path, ''),
                             parent_directory : temp_parent_path_2.replace(root_path, ''),
-                            list : content_limited.sort((a, b)=>{return (a.isFile === b.isFile)? 0 : a? -1 : 1;}),
+                            list : content_limited.sort((a, b)=>{return (a.isFile !== b.isFile)? 0 : a? -1 : 1;}),
                             rows_begin_number : skip + 1,
                             total_pages : Math.ceil(content.length / page_limit)
                         });
