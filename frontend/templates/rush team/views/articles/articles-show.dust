@@ -118,7 +118,7 @@
                             </ol>
                         </nav>
                         <div class="article_info">
-                            <img class="main_article_img" src="{backend_url}/media/images/0a6c33f8cd5d70f070b9ce6a7d69f1bb3df0ae07.png" alt="">
+                            <img class="main_article_img" src="{backend_url}/media/images/{article_info.main_image}" alt="">
                             <h3>{article_info.title}</h3>
                             {@renderHtml text="{article_info.describe}"}{/renderHtml}
                         </div>
