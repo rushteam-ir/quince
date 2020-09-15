@@ -1,0 +1,124 @@
+{>"layouts/index-layout"/}
+
+{<title}
+    <title>
+
+    </title>
+{/title}
+
+{<css}
+    <link rel="stylesheet" href="css/article/article-list.css">
+{/css}
+
+{<js}
+    <script src="js/articles/article-list.js"></script>
+{/js}
+
+{<body}
+    <section class="article_list_header">
+        <div class="article_list_layer"></div>
+    </section>
+
+    <section class="article_list_cards">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <a href="">
+                        <div class="MF_of_article_cards mt-4">
+                            <img src="img/slider1.jpg" alt="">
+                            <div>
+                                <small>بهینه سازی</small>
+                                <h3>سئو و بهینه سازی به روش من </h3>
+                                <p class="card_info">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد</p>
+                                <p class="card_read_time">زمان مطالعه: 10 دقیقه</p>
+                                <div class="card_like">
+                                    <i class="fas fa-heart"></i>
+                                    15k
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="MF_of_article_cards mt-4">
+                            <img src="img/slider2.jpg" alt="">
+                            <div>
+                                <small>بهینه سازی</small>
+                                <h3>سئو و بهینه سازی به روش من </h3>
+                                <p class="card_info">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرای مقرار گیرد</p>
+                                <p class="card_read_time">زمان مطالعه: 10 دقیقه</p>
+                                <div class="card_like">
+                                    <i class="fas fa-heart"></i>
+                                    15k
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="">
+                        <div class="MF_of_article_cards mt-4">
+                            <img src="img/slider2.jpg" alt="">
+                            <div>
+                                <small>بهینه سازی</small>
+                                <h3>سئو و بهینه سازی به روش من </h3>
+                                <p class="card_info">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرای مقرار گیرد</p>
+                                <p class="card_read_time">زمان مطالعه: 10 دقیقه</p>
+                                <div class="card_like">
+                                    <i class="fas fa-heart"></i>
+                                    15k
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="MF_of_article_cards mt-4">
+                            <img src="img/slider1.jpg" alt="">
+                            <div>
+                                <small>بهینه سازی</small>
+                                <h3>سئو و بهینه سازی به روش من </h3>
+                                <p class="card_info">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد</p>
+                                <p class="card_read_time">زمان مطالعه: 10 دقیقه</p>
+                                <div class="card_like">
+                                    <i class="fas fa-heart"></i>
+                                    15k
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="">
+                        <div class="MF_of_article_cards mt-4">
+                            <img src="img/slider3.jpg" alt="">
+                            <div>
+                                <small>بهینه سازی</small>
+                                <h3>سئو و بهینه سازی به روش من </h3>
+                                <p class="card_info">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بر گیرد</p>
+                                <p class="card_read_time">زمان مطالعه: 10 دقیقه</p>
+                                <div class="card_like">
+                                    <i class="fas fa-heart"></i>
+                                    15k
+                                </div>
+                            </div>
+                        </div>
+                    </a>  
+                    <a href="">
+                        <div class="MF_of_article_cards mt-4">
+                            <img src="img/slider1.jpg" alt="">
+                            <div>
+                                <small>بهینه سازی</small>
+                                <h3>سئو و بهینه سازی به روش من </h3>
+                                <p class="card_info">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد</p>
+                                <p class="card_read_time">زمان مطالعه: 10 دقیقه</p>
+                                <div class="card_like">
+                                    <i class="fas fa-heart"></i>
+                                    15k
+                                </div>
+                            </div>
+                        </div>
+                    </a>                 
+                </div>
+            </div>
+        </div>
+    </section>
+{/body}

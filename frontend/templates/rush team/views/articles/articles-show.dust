@@ -8,13 +8,9 @@
 
 {<css}
     <link rel="stylesheet" href="css/article/article-show.css">
-    <link rel="stylesheet" href="css/general/Swiper.css">
-    <link rel="stylesheet" href="css/general/animate.css">
 {/css}
 
 {<js}
-    <script src="js/general/Swiper.js"></script>
-    <script src="js/general/wow.js"></script>
     <script src="js/articles/article-show.js"></script>
 {/js}
 
@@ -34,14 +30,6 @@
                         <p><span>تعداد لایک ها :</span> 50</p>
                         <p><span>دسته بندی ها :</span> تشخض کسری</p>
                     </div>
-                    <div class="tags_side_bar mt-5">
-                        <h3>برچسب ها</h3>
-                        <a href="#"><p>تشخیص یاب</p></a>
-                        <a href="#"><p>ویدیو</p></a>
-                        <a href="#"><p>آموزشی</p></a>
-                        <a href="#"><p>آدم باز</p></a>
-                        <a href="#"><p>ردی</p></a>
-                    </div>
                     <div class="author_side_bar mt-5">
                         <h3>نویسنده</h3>
                         <div class="user_pro_img">
@@ -50,6 +38,44 @@
                         <p><span>نام :</span> کسری حبیب بیگی</p>
                         <p><span>تعداد مقالات :</span> 1356</p>
                         <p><span>تعداد آموزش ها :</span> 10</p>
+                    </div>
+                    <div class="tags_side_bar mt-5">
+                        <h3>برچسب ها</h3>
+                        <a href="#"><p>تشخیص یاب</p></a>
+                        <a href="#"><p>ویدیو</p></a>
+                        <a href="#"><p>آموزشی</p></a>
+                        <a href="#"><p>آدم باز</p></a>
+                        <a href="#"><p>ردی</p></a>
+                    </div>
+                    <div class="article_suggest_sidebar">
+                        <a href="" class="field_of_article_SS">
+                            <img src="img/slider1.jpg" alt="">
+                            <div>
+                                <small>برنامه نویسی</small>
+                                <p>برترین زبان های برنامه نویسی در سال 2030</p>
+                            </div>
+                        </a>
+                        <a href="" class="field_of_article_SS">
+                            <img src="img/slider2.jpg" alt="">
+                            <div>
+                                <small>آموزشی</small>
+                                <p>برترین زبان های برنامه نویسی در سال 2030</p>
+                            </div>
+                        </a>
+                        <a href="" class="field_of_article_SS">
+                            <img src="img/slider3.jpg" alt="">
+                            <div>
+                                <small>برنامه نویسی</small>
+                                <p>برترین زبان های برنامه نویسی در سال 2030</p>
+                            </div>
+                        </a>
+                        <a href="" class="field_of_article_SS">
+                            <img src="img/slider1.jpg" alt="">
+                            <div>
+                                <small>برنامه نویسی</small>
+                                <p>برترین زبان های برنامه نویسی در سال 2030</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-9 pr-0">
@@ -70,29 +96,81 @@
                             <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
                             <img class="main_article_img" src="img/slider1.jpg" alt="">
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="article_sugest">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">Slide 1</div>
-                          <div class="swiper-slide">Slide 2</div>
-                          <div class="swiper-slide">Slide 3</div>
-                          <div class="swiper-slide">Slide 4</div>
-                          <div class="swiper-slide">Slide 5</div>
-                          <div class="swiper-slide">Slide 6</div>
-                          <div class="swiper-slide">Slide 7</div>
-                          <div class="swiper-slide">Slide 8</div>
-                          <div class="swiper-slide">Slide 9</div>
-                          <div class="swiper-slide">Slide 10</div>
+                        <div class="article_comment">
+                            <form action="" class="comment_form">
+                                <p class="header_of_comment">خوشحال میشویم نظرات خود را با ما در میان بگذارید</p>
+                                <div class="form-group">
+                                    <label for="user_name">نام و نام خانوادگی</label>
+                                    <input type="text" class="form-control" id="user_name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="user_name">پست الکترونیکی</label>
+                                    <input type="text" class="form-control" id="user_name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="user_name">متن پیام</label>
+                                    <textarea type="text" class="form-control" id="user_name" rows="10"></textarea>
+                                </div>
+                                <button class="btn">ثبت پیام</button>
+                            </form>
+
+                            <div class="comments_field mt-5">
+                                <div class="row mt-5">
+                                    <div class="reply_comment"><button class="btn"><i class="fas fa-reply"></i></button></div>
+                                    <div class="col-2 pl-0">
+                                        <div class="user_img">
+                                            <i class="fad fa-user-circle"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-10 pr-0">
+                                        <h3>کسری حبیب بیگی</h3>
+                                        <p class="comment_date">12 شهریور 1399</p>
+                                        <p>سلام من خیلی خوشحالم که خوشحالم من واقعاااا خوشحالم که حوشحالما نمیدونم باید چی کار کنم چون دیروز خوشحال نبودم از خوشحالیم</p>
+                                    </div>
+                                </div>
+                                <div class="row mt-5 reply_comment_field">
+                                    <div class="reply_comment"><button class="btn"><i class="fas fa-reply"></i></button></div>
+                                    <div class="col-2 pl-0">
+                                        <div class="user_img">
+                                            <i class="fad fa-user-circle"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-10 pr-0">
+                                        <h3>کسری حبیب بیگی</h3>
+                                        <p class="comment_date">12 شهریور 1399</p>
+                                        <p class="reply_to_text">در پاسخ به : 2 ساله از تهران</p>
+                                        <p>سلام من خیلی خوشحالم که خوشحالم من واقعاااا خوشحالم که حوشحالما نمیدونم باید چی کار کنم چون دیروز خوشحال نبودم از خوشحالیم</p>
+                                    </div>
+                                </div>
+                                <div class="row mt-5">
+                                    <div class="reply_comment"><button class="btn"><i class="fas fa-reply"></i></button></div>
+                                    <div class="col-2 pl-0">
+                                        <div class="user_img">
+                                            <img src="img/slider3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-10 pr-0">
+                                        <h3>کسری حبیب بیگی</h3>
+                                        <p class="comment_date">12 شهریور 1399</p>
+                                        <p>سلام من خیلی خوشحالم که خوشحالم من واقعاااا خوشحالم که حوشحالما نمیدونم باید چی کار کنم چون دیروز خوشحال نبودم از خوشحالیم</p>
+                                    </div>
+                                </div>
+                                <div class="row mt-5">
+                                    <div class="reply_comment"><button class="btn"><i class="fas fa-reply"></i></button></div>
+                                    <div class="col-2 pl-0">
+                                        <div class="user_img">
+                                            <img src="img/slider2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-10 pr-0">
+                                        <h3>کسری حبیب بیگی</h3>
+                                        <p class="comment_date">12 شهریور 1399</p>
+                                        <p>سلام من خیلی خوشحالم که خوشحالم من واقعاااا خوشحالم که حوشحالما نمیدونم باید چی کار کنم چون دیروز خوشحال نبودم از خوشحالیم</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
