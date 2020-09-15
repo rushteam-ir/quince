@@ -13,6 +13,7 @@ frontend_upload_dir = `${config.app_dir}frontend/templates/${config.frontend_tmp
 
 // Frontend Local variables using in Dust template engine
 frontend.locals.frontend_url = config.frontend_url;
+frontend.locals.backend_url = config.backend_url;
 frontend.locals.debug_mode = config.debug_mode;
 frontend.locals.captcha_url = config.captcha_url;
 //frontend.locals.limited_avatars_size = (frontend_limited_avatars_size/1024).toString();

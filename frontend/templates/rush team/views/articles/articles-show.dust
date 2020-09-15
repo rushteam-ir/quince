@@ -2,7 +2,7 @@
 
 {<title}
     <title>
-
+        {article_info.title}
     </title>
 {/title}
 
@@ -24,28 +24,52 @@
                 <div class="col-3 pl-0">
                     <div class="detail_side_bar">
                         <h3>مشخصات مقاله</h3>
-                        <p><span>تاریخ :</span> 1399.10.02</p>
+                        <p><span>تاریخ :</span>{article_info.last_edit}</p>
                         <p><span>تعداد نظرات :</span> 157</p>
                         <p><span>زمان لازم برای خواندن :</span > 10 دقیقه</p>
                         <p><span>تعداد لایک ها :</span> 50</p>
-                        <p><span>دسته بندی ها :</span> تشخض کسری</p>
+                        <p><span>دسته بندی ها : </span>
+                        {@ne key="{article_info.category_parent}" value="{null}"}
+                            <a href="{frontend_url}articles/?category={article_info.category_parent._id}">
+                                {article_info.category_parent.title}
+                            </a>
+                        {/ne}
+                            {@ne key="{article_info.category_child}" value="{null}"}
+                                ،
+                                <a href="{frontend_url}articles/?category={article_info.category_child._id}">
+                                    {article_info.category_child.title}
+                                </a>
+                            {/ne}
+                        </p>
                     </div>
                     <div class="author_side_bar mt-5">
                         <h3>نویسنده</h3>
                         <div class="user_pro_img">
-                            <i class="fad fa-user-circle"></i>
+                            {@eq key="{article_info.author.avatar}" value="{null}"}
+                                <i class="fad fa-user-circle"></i>
+                            {:else}
+                                <img class="user_img" src="{backend_url}/media/avatars/{article_info.author.avatar}" alt="">
+                            {/eq}
                         </div>
-                        <p><span>نام :</span> کسری حبیب بیگی</p>
-                        <p><span>تعداد مقالات :</span> 1356</p>
-                        <p><span>تعداد آموزش ها :</span> 10</p>
+                        <p><span>نام : </span>
+                            {@eq key="{article_info.author_type}" value="name"}
+                                {article_info.author.first_name} {article_info.authoe.last_name}
+                            {:else}
+                                {article_info.author.nick_name}
+                            {/eq}
+                        </p>
+                        <p><span>تعداد مقالات : </span>
+                            {article_info.author.articles_number}
+                        </p>
+                        <p><span>درباره من : </span>
+                            {article_info.author.biography}
+                        </p>
                     </div>
                     <div class="tags_side_bar mt-5">
                         <h3>برچسب ها</h3>
-                        <a href="#"><p>تشخیص یاب</p></a>
-                        <a href="#"><p>ویدیو</p></a>
-                        <a href="#"><p>آموزشی</p></a>
-                        <a href="#"><p>آدم باز</p></a>
-                        <a href="#"><p>ردی</p></a>
+                        {#article_info.tags}
+                            <a href="{frontend_url}articles/?tag={.}"><p>{.}</p></a>
+                        {/article_info.tags}
                     </div>
                     <div class="article_suggest_sidebar">
                         <a href="" class="field_of_article_SS">
@@ -80,21 +104,23 @@
                 </div>
                 <div class="col-9 pr-0">
                     <div class="main_body_of_AB">
-                        <h2>بترین کسری دنیا چه کسی است به همراه عکس </h2>
+                        <h2>{article_info.title}</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                              <li class="breadcrumb-item"><a href="#">صفحه اصلی</a></li>
-                              <li class="breadcrumb-item"><a href="#">لیست مقالات</a></li>
-                              <li class="breadcrumb-item active" aria-current="page">بترین کسری دنیا چه کسی است به همراه عکس</li>
+                              <li class="breadcrumb-item"><a href="{frontend_url}articles">مقالات</a></li>
+                              {@ne key="{article_info.category_parent}" value="{null}"}
+                                  <li class="breadcrumb-item"><a href="{frontend_url}articles/?category={article_info.category_parent._id}">{article_info.category_parent.title}</a></li>
+                              {/ne}
+                              {@ne key="{article_info.category_child}" value="{null}"}
+                                  <li class="breadcrumb-item"><a href="{frontend_url}articles/?category={article_info.category_child._id}">{article_info.category_child.title}</a></li>
+                              {/ne}
+                              <li class="breadcrumb-item active" aria-current="page">{article_info.title}</li>
                             </ol>
                         </nav>
                         <div class="article_info">
-                            <img class="main_article_img" src="img/article-2.png" alt="">
-                            <h3>لورم چیست و از کجا می آید؟</h3>
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
-                            <img class="main_article_img" src="img/article-1.png" alt="">
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
-                            <img class="main_article_img" src="img/slider1.jpg" alt="">
+                            <img class="main_article_img" src="{backend_url}/media/images/0a6c33f8cd5d70f070b9ce6a7d69f1bb3df0ae07.png" alt="">
+                            <h3>{article_info.title}</h3>
+                            {@renderHtml text="{article_info.describe}"}{/renderHtml}
                         </div>
                         <div class="article_comment">
                             <form action="" class="comment_form">

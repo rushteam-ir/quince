@@ -170,6 +170,10 @@
                                                                 <i class="fal fa-sync-alt"></i>
                                                                 تغییر دسترسی
                                                             </button>
+                                                            <button class="dropdown-item edit_btn" name="{._id}">
+                                                                <i class="fal fa-lock-alt"></i>
+                                                                تغییر رمز عبور
+                                                            </button>
                                                             <button class="dropdown-item admin_status" name="{._id}" value="{status}">
                                                                 <i class="fal fa-ban"></i>
                                                                 {@eq key="{status}" value="true"}

@@ -19,28 +19,26 @@ router.get('/:name', async(req,res)=>{
 
     try{
 
-        // let article_name = req.params.name;
-        //
-        // let article_info = await article_model.getByUrl(article_name);
-        //
-        // if(!article_info || !article_info.status){
-        //
-        //     return res.status(404).send('page not found')
-        //
-        // }
-        //
-        // req.session.article_id = article_info._id
-        //
-        // let data = {
-        //
-        //     article_info : article_info,
-        //     comments_list : await comment_model.getByArticleId(article_info._id),
-        //
-        // }
-        //
-        // log(data.comments_list)
+        let article_name = req.params.name;
 
-        res.render('articles/articles-show');
+        let article_info = await article_model.getByUrl(article_name);
+
+        if(!article_info || !article_info.status){
+
+            return res.status(404).send('page not found')
+
+        }
+
+        req.session.article_id = article_info._id
+
+        let data = {
+
+            article_info : article_info,
+            comments_list : await comment_model.getByArticleId(article_info._id),
+
+        }
+
+        res.render('articles/articles-show', data);
 
     }
     catch (error) {
