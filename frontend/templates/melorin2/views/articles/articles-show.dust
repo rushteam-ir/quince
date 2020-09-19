@@ -4,7 +4,7 @@
     <title>تماس با ما</title>
 {/title}
 {<css}
-    <link rel="stylesheet" href="css/articles-show/articles-show.css">
+    <link rel="stylesheet" href="css/articles/articles-show/articles-show.css">
 {/css}
 
 {<js}
@@ -208,7 +208,7 @@
                                 <h3 class="title_cm">5 دیدگاه</h3>
                                 <div class="cm_text">
                                     <div class="row">
-                                        <div class="col-6">
+                                        <div class="col-8 offset-0 col-md-6 offset-md-0">
                                             <i class="fad fa-user-circle d-inline-block"></i>
                                             <div class="text_behind_profile d-inline-block mr-4">
                                                 <p class="name_of_writer_cm mb-0">سلطان طالبی</p>
@@ -216,7 +216,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col-6 text-left">
+                                        <div class="col-4 offset-0 col-md-6 offset-md-0 text-left">
                                             <a><i class="fas fa-reply"></i></a>
                                         </div>
                                     </div>

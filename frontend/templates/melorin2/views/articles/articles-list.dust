@@ -1,0 +1,18 @@
+{>"layouts/index-layout"/}
+
+{<title}
+    <title>
+
+    </title>
+{/title}
+
+{<css}
+    <link rel="stylesheet" href="css/articles/article-list/article-list.css">
+{/css}
+
+{<js}
+{/js}
+
+{<body}
+
+{/body}
