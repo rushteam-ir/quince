@@ -16,7 +16,7 @@
         <div class="header_of_article">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-6 col_p_400">
                         <div class="title_box_left">
                             <div class="writer_of_article left_box_style">
                                 <p class="writer_name d-inline-block pr-2">نویسنده : نادیه نجم آبادی</p>
@@ -188,10 +188,9 @@
                             </div>
 
                             <div class="add_cm_box">
-                                <h3 class="title_cm">دیدگاه شما</h3>
-
                                 <form class="form_style dir_rtl">
-                                    <div class="form-group">
+                                    <h3 class="title_cm">دیدگاه شما</h3>
+                                    <div class="form-group pt-4">
                                         <input type="text" class="form-control form_field_style"  placeholder="نام و نام خانوادگی">
                                     </div>
                                     <div class="form-group">
@@ -208,7 +207,7 @@
                                 <h3 class="title_cm">5 دیدگاه</h3>
                                 <div class="cm_text">
                                     <div class="row">
-                                        <div class="col-8 offset-0 col-md-6 offset-md-0">
+                                        <div class="col-8 offset-0 col-md-6 offset-md-0 col_p_400">
                                             <i class="fad fa-user-circle d-inline-block"></i>
                                             <div class="text_behind_profile d-inline-block mr-4">
                                                 <p class="name_of_writer_cm mb-0">سلطان طالبی</p>
@@ -227,7 +226,7 @@
 
                                 <div class="cm_reply">
                                     <div class="row">
-                                        <div class="col-8 offset-0 col-md-6 offset-md-0 ">
+                                        <div class="col-8 offset-0 col-md-6 offset-md-0 col_p_400">
                                             <i class="fad fa-user-circle d-inline-block"></i>
                                             <div class="text_behind_profile d-inline-block mr-4">
                                                 <p class="name_of_writer_cm mb-0">سلطان طالبی</p>
