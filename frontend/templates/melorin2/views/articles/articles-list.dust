@@ -12,8 +12,559 @@
 {/css}
 
 {<js}
+    <script src="js/article-list/articles-list.js"></script>
 {/js}
 
 {<body}
+    <section class="most_popular_blog_list">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-10 offset-1 text-center">
+                    <h3 class="title_part_of_page">محبوب ترین مقالات</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="most_popular_blog_post">
+                        <img src="../../img/article_1.jpg" alt="" class="img_of_popular_blog">
+                        <div class="content_of_popular_blog">
+                            <div class="container-fluid pr-0">
+                                <div class="row">
+                                    <div class="col-lg-2 px-0">
+                                        <div class="date_of_post_blog">
+                                            <p class="day">17</p>
+                                            <p class="month">مهر</p>
+                                            <p class="year">1395</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="short_content_blog">
+                                            <h2 class="title_of_blog">الیاف جوراب</h2>
+                                            <div class="writer_of_article d-inline-block">
+                                                <i class="fal fa-user-alt d-inline-block ml-2"></i>
+                                                <p class="number d-inline-block">نادیه نجم آبادی</p>
+                                            </div>
+                                            <div class="view_blog_post d-inline-block">
+                                                <i class="fal fa-eye d-inline-block ml-2"></i>
+                                                <p class="counter_of_view d-inline-block ">1433</p>
+                                            </div>
+                                            <p class="short_exp_of_blog_post text-justify">لورم ایپسوم متن ساختگی با
+                                                تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+                                                ابزارهای کاربردی می باشد.</p>
+                                            <button class="btn_of_view_post">مشاهده مقاله</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="most_popular_blog_post">
+                        <img src="../../img/article_4.jpg" alt="" class="img_of_popular_blog">
+                        <div class="content_of_popular_blog">
+                            <div class="container-fluid pr-0">
+                                <div class="row">
+                                    <div class="col-lg-2 px-0">
+                                        <div class="date_of_post_blog">
+                                            <p class="day">17</p>
+                                            <p class="month">مهر</p>
+                                            <p class="year">1395</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="short_content_blog">
+                                            <h2 class="title_of_blog">الیاف جوراب</h2>
+                                            <div class="writer_of_article d-inline-block">
+                                                <i class="fal fa-user-alt d-inline-block ml-2"></i>
+                                                <p class="number d-inline-block">نادیه نجم آبادی</p>
+                                            </div>
+                                            <div class="view_blog_post d-inline-block">
+                                                <i class="fal fa-eye d-inline-block ml-2"></i>
+                                                <p class="counter_of_view d-inline-block ">1433</p>
+                                            </div>
+                                            <p class="short_exp_of_blog_post text-justify">لورم ایپسوم متن ساختگی با
+                                                تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+                                                ابزارهای کاربردی می باشد.</p>
+                                            <button class="btn_of_view_post">مشاهده مقاله</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="most_popular_blog_post">
+                        <img src="../../img/article_3.jpg" alt="" class="img_of_popular_blog">
+                        <div class="content_of_popular_blog">
+                            <div class="container-fluid pr-0">
+                                <div class="row">
+                                    <div class="col-lg-2 px-0">
+                                        <div class="date_of_post_blog">
+                                            <p class="day">17</p>
+                                            <p class="month">مهر</p>
+                                            <p class="year">1395</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="short_content_blog">
+                                            <h2 class="title_of_blog">الیاف جوراب</h2>
+                                            <div class="writer_of_article d-inline-block">
+                                                <i class="fal fa-user-alt d-inline-block ml-2"></i>
+                                                <p class="number d-inline-block">نادیه نجم آبادی</p>
+                                            </div>
+                                            <div class="view_blog_post d-inline-block">
+                                                <i class="fal fa-eye d-inline-block ml-2"></i>
+                                                <p class="counter_of_view d-inline-block ">1433</p>
+                                            </div>
+                                            <p class="short_exp_of_blog_post text-justify">لورم ایپسوم متن ساختگی با
+                                                تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+                                                ابزارهای کاربردی می باشد.</p>
+                                            <button class="btn_of_view_post">مشاهده مقاله</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="filter_field_blog dir_rtl">
+        <div class="container-fluid">
+
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <div id="btn_of_filter_blog" class="dir_rtl">
+                        <button class="btn btn_filter active" onclick="filterSelection('all')"> همه</button>
+                        <button class="btn btn_filter" onclick="filterSelection('sucks')">جوراب</button>
+                        <button class="btn btn_filter" onclick="filterSelection('cloth')"> پارچه</button>
+                        <button class="btn btn_filter" onclick="filterSelection('thread')"> نخ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-lg-3 col_style sucks">
+                    <div class="blog_post">
+                        <img src="../../img/article_1.jpg" alt="" class="img_of_popular_blog">
+                        <div class="content_of_popular_blog">
+                            <div class="container-fluid pr-0">
+                                <div class="row">
+                                    <div class="col-lg-2 px-0">
+                                        <div class="date_of_post_blog">
+                                            <p class="day">17</p>
+                                            <p class="month">مهر</p>
+                                            <p class="year">1395</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="short_content_blog">
+                                            <h2 class="title_of_blog">الیاف جوراب</h2>
+                                            <div class="writer_of_article d-inline-block">
+                                                <i class="fal fa-user-alt d-inline-block ml-2"></i>
+                                                <p class="number d-inline-block">نادیه نجم آبادی</p>
+                                            </div>
+                                            <div class="view_blog_post d-inline-block">
+                                                <i class="fal fa-eye d-inline-block ml-2"></i>
+                                                <p class="counter_of_view d-inline-block ">1433</p>
+                                            </div>
+                                            <p class="short_exp_of_blog_post text-justify">لورم ایپسوم متن ساختگی با
+                                                تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+                                                ابزارهای کاربردی می باشد.</p>
+                                            <button class="btn_of_view_post">مشاهده مقاله</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col_style sucks">
+                    <div class="blog_post ">
+                        <img src="../../img/article_2.jpg" alt="" class="img_of_popular_blog">
+                        <div class="content_of_popular_blog">
+                            <div class="container-fluid pr-0">
+                                <div class="row">
+                                    <div class="col-lg-2 px-0">
+                                        <div class="date_of_post_blog">
+                                            <p class="day">17</p>
+                                            <p class="month">مهر</p>
+                                            <p class="year">1395</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="short_content_blog">
+                                            <h2 class="title_of_blog">الیاف جوراب</h2>
+                                            <div class="writer_of_article d-inline-block">
+                                                <i class="fal fa-user-alt d-inline-block ml-2"></i>
+                                                <p class="number d-inline-block">نادیه نجم آبادی</p>
+                                            </div>
+                                            <div class="view_blog_post d-inline-block">
+                                                <i class="fal fa-eye d-inline-block ml-2"></i>
+                                                <p class="counter_of_view d-inline-block ">1433</p>
+                                            </div>
+                                            <p class="short_exp_of_blog_post text-justify">لورم ایپسوم متن ساختگی با
+                                                تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+                                                ابزارهای کاربردی می باشد.</p>
+                                            <button class="btn_of_view_post">مشاهده مقاله</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col_style sucks">
+                    <div class="blog_post ">
+                        <img src="../../img/article_3.jpg" alt="" class="img_of_popular_blog">
+                        <div class="content_of_popular_blog">
+                            <div class="container-fluid pr-0">
+                                <div class="row">
+                                    <div class="col-lg-2 px-0">
+                                        <div class="date_of_post_blog">
+                                            <p class="day">17</p>
+                                            <p class="month">مهر</p>
+                                            <p class="year">1395</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="short_content_blog">
+                                            <h2 class="title_of_blog">الیاف جوراب</h2>
+                                            <div class="writer_of_article d-inline-block">
+                                                <i class="fal fa-user-alt d-inline-block ml-2"></i>
+                                                <p class="number d-inline-block">نادیه نجم آبادی</p>
+                                            </div>
+                                            <div class="view_blog_post d-inline-block">
+                                                <i class="fal fa-eye d-inline-block ml-2"></i>
+                                                <p class="counter_of_view d-inline-block ">1433</p>
+                                            </div>
+                                            <p class="short_exp_of_blog_post text-justify">لورم ایپسوم متن ساختگی با
+                                                تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+                                                ابزارهای کاربردی می باشد.</p>
+                                            <button class="btn_of_view_post">مشاهده مقاله</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col_style cloth">
+                    <div class="blog_post ">
+                        <img src="../../img/article_4.jpg" alt="" class="img_of_popular_blog">
+                        <div class="content_of_popular_blog">
+                            <div class="container-fluid pr-0">
+                                <div class="row">
+                                    <div class="col-lg-2 px-0">
+                                        <div class="date_of_post_blog">
+                                            <p class="day">17</p>
+                                            <p class="month">مهر</p>
+                                            <p class="year">1395</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="short_content_blog">
+                                            <h2 class="title_of_blog">الیاف جوراب</h2>
+                                            <div class="writer_of_article d-inline-block">
+                                                <i class="fal fa-user-alt d-inline-block ml-2"></i>
+                                                <p class="number d-inline-block">نادیه نجم آبادی</p>
+                                            </div>
+                                            <div class="view_blog_post d-inline-block">
+                                                <i class="fal fa-eye d-inline-block ml-2"></i>
+                                                <p class="counter_of_view d-inline-block ">1433</p>
+                                            </div>
+                                            <p class="short_exp_of_blog_post text-justify">لورم ایپسوم متن ساختگی با
+                                                تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+                                                ابزارهای کاربردی می باشد.</p>
+                                            <button class="btn_of_view_post">مشاهده مقاله</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col_style cloth">
+                    <div class="blog_post">
+                        <img src="../../img/article_5.jpg" alt="" class="img_of_popular_blog">
+                        <div class="content_of_popular_blog">
+                            <div class="container-fluid pr-0">
+                                <div class="row">
+                                    <div class="col-lg-2 px-0">
+                                        <div class="date_of_post_blog">
+                                            <p class="day">17</p>
+                                            <p class="month">مهر</p>
+                                            <p class="year">1395</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="short_content_blog">
+                                            <h2 class="title_of_blog">الیاف جوراب</h2>
+                                            <div class="writer_of_article d-inline-block">
+                                                <i class="fal fa-user-alt d-inline-block ml-2"></i>
+                                                <p class="number d-inline-block">نادیه نجم آبادی</p>
+                                            </div>
+                                            <div class="view_blog_post d-inline-block">
+                                                <i class="fal fa-eye d-inline-block ml-2"></i>
+                                                <p class="counter_of_view d-inline-block ">1433</p>
+                                            </div>
+                                            <p class="short_exp_of_blog_post text-justify">لورم ایپسوم متن ساختگی با
+                                                تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+                                                ابزارهای کاربردی می باشد.</p>
+                                            <button class="btn_of_view_post">مشاهده مقاله</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col_style cloth">
+                    <div class="blog_post ">
+                        <img src="../../img/article_6.jpg" alt="" class="img_of_popular_blog">
+                        <div class="content_of_popular_blog">
+                            <div class="container-fluid pr-0">
+                                <div class="row">
+                                    <div class="col-lg-2 px-0">
+                                        <div class="date_of_post_blog">
+                                            <p class="day">17</p>
+                                            <p class="month">مهر</p>
+                                            <p class="year">1395</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="short_content_blog">
+                                            <h2 class="title_of_blog">الیاف جوراب</h2>
+                                            <div class="writer_of_article d-inline-block">
+                                                <i class="fal fa-user-alt d-inline-block ml-2"></i>
+                                                <p class="number d-inline-block">نادیه نجم آبادی</p>
+                                            </div>
+                                            <div class="view_blog_post d-inline-block">
+                                                <i class="fal fa-eye d-inline-block ml-2"></i>
+                                                <p class="counter_of_view d-inline-block ">1433</p>
+                                            </div>
+                                            <p class="short_exp_of_blog_post text-justify">لورم ایپسوم متن ساختگی با
+                                                تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+                                                ابزارهای کاربردی می باشد.</p>
+                                            <button class="btn_of_view_post">مشاهده مقاله</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col_style cloth">
+                    <div class="blog_post ">
+                        <img src="../../img/article_7.jpg" alt="" class="img_of_popular_blog">
+                        <div class="content_of_popular_blog">
+                            <div class="container-fluid pr-0">
+                                <div class="row">
+                                    <div class="col-lg-2 px-0">
+                                        <div class="date_of_post_blog">
+                                            <p class="day">17</p>
+                                            <p class="month">مهر</p>
+                                            <p class="year">1395</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="short_content_blog">
+                                            <h2 class="title_of_blog">الیاف جوراب</h2>
+                                            <div class="writer_of_article d-inline-block">
+                                                <i class="fal fa-user-alt d-inline-block ml-2"></i>
+                                                <p class="number d-inline-block">نادیه نجم آبادی</p>
+                                            </div>
+                                            <div class="view_blog_post d-inline-block">
+                                                <i class="fal fa-eye d-inline-block ml-2"></i>
+                                                <p class="counter_of_view d-inline-block ">1433</p>
+                                            </div>
+                                            <p class="short_exp_of_blog_post text-justify">لورم ایپسوم متن ساختگی با
+                                                تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+                                                ابزارهای کاربردی می باشد.</p>
+                                            <button class="btn_of_view_post">مشاهده مقاله</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col_style sucks">
+                    <div class="blog_post ">
+                        <img src="../../img/article_2.jpg" alt="" class="img_of_popular_blog">
+                        <div class="content_of_popular_blog">
+                            <div class="container-fluid pr-0">
+                                <div class="row">
+                                    <div class="col-lg-2 px-0">
+                                        <div class="date_of_post_blog">
+                                            <p class="day">17</p>
+                                            <p class="month">مهر</p>
+                                            <p class="year">1395</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="short_content_blog">
+                                            <h2 class="title_of_blog">الیاف جوراب</h2>
+                                            <div class="writer_of_article d-inline-block">
+                                                <i class="fal fa-user-alt d-inline-block ml-2"></i>
+                                                <p class="number d-inline-block">نادیه نجم آبادی</p>
+                                            </div>
+                                            <div class="view_blog_post d-inline-block">
+                                                <i class="fal fa-eye d-inline-block ml-2"></i>
+                                                <p class="counter_of_view d-inline-block ">1433</p>
+                                            </div>
+                                            <p class="short_exp_of_blog_post text-justify">لورم ایپسوم متن ساختگی با
+                                                تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+                                                ابزارهای کاربردی می باشد.</p>
+                                            <button class="btn_of_view_post">مشاهده مقاله</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col_style cloth">
+                    <div class="blog_post ">
+                        <img src="../../img/article_3.jpg" alt="" class="img_of_popular_blog">
+                        <div class="content_of_popular_blog">
+                            <div class="container-fluid pr-0">
+                                <div class="row">
+                                    <div class="col-lg-2 px-0">
+                                        <div class="date_of_post_blog">
+                                            <p class="day">17</p>
+                                            <p class="month">مهر</p>
+                                            <p class="year">1395</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="short_content_blog">
+                                            <h2 class="title_of_blog">الیاف جوراب</h2>
+                                            <div class="writer_of_article d-inline-block">
+                                                <i class="fal fa-user-alt d-inline-block ml-2"></i>
+                                                <p class="number d-inline-block">نادیه نجم آبادی</p>
+                                            </div>
+                                            <div class="view_blog_post d-inline-block">
+                                                <i class="fal fa-eye d-inline-block ml-2"></i>
+                                                <p class="counter_of_view d-inline-block ">1433</p>
+                                            </div>
+                                            <p class="short_exp_of_blog_post text-justify">لورم ایپسوم متن ساختگی با
+                                                تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+                                                ابزارهای کاربردی می باشد.</p>
+                                            <button class="btn_of_view_post">مشاهده مقاله</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col_style cloth">
+                    <div class="blog_post ">
+                        <img src="../../img/article_4.jpg" alt="" class="img_of_popular_blog">
+                        <div class="content_of_popular_blog">
+                            <div class="container-fluid pr-0">
+                                <div class="row">
+                                    <div class="col-lg-2 px-0">
+                                        <div class="date_of_post_blog">
+                                            <p class="day">17</p>
+                                            <p class="month">مهر</p>
+                                            <p class="year">1395</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="short_content_blog">
+                                            <h2 class="title_of_blog">الیاف جوراب</h2>
+                                            <div class="writer_of_article d-inline-block">
+                                                <i class="fal fa-user-alt d-inline-block ml-2"></i>
+                                                <p class="number d-inline-block">نادیه نجم آبادی</p>
+                                            </div>
+                                            <div class="view_blog_post d-inline-block">
+                                                <i class="fal fa-eye d-inline-block ml-2"></i>
+                                                <p class="counter_of_view d-inline-block ">1433</p>
+                                            </div>
+                                            <p class="short_exp_of_blog_post text-justify">لورم ایپسوم متن ساختگی با
+                                                تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+                                                ابزارهای کاربردی می باشد.</p>
+                                            <button class="btn_of_view_post">مشاهده مقاله</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col_style thread">
+                    <div class="blog_post ">
+                        <img src="../../img/article_5.jpg" alt="" class="img_of_popular_blog">
+                        <div class="content_of_popular_blog">
+                            <div class="container-fluid pr-0">
+                                <div class="row">
+                                    <div class="col-lg-2 px-0">
+                                        <div class="date_of_post_blog">
+                                            <p class="day">17</p>
+                                            <p class="month">مهر</p>
+                                            <p class="year">1395</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="short_content_blog">
+                                            <h2 class="title_of_blog">الیاف جوراب</h2>
+                                            <div class="writer_of_article d-inline-block">
+                                                <i class="fal fa-user-alt d-inline-block ml-2"></i>
+                                                <p class="number d-inline-block">نادیه نجم آبادی</p>
+                                            </div>
+                                            <div class="view_blog_post d-inline-block">
+                                                <i class="fal fa-eye d-inline-block ml-2"></i>
+                                                <p class="counter_of_view d-inline-block ">1433</p>
+                                            </div>
+                                            <p class="short_exp_of_blog_post text-justify">لورم ایپسوم متن ساختگی با
+                                                تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+                                                ابزارهای کاربردی می باشد.</p>
+                                            <button class="btn_of_view_post">مشاهده مقاله</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
 
 {/body}

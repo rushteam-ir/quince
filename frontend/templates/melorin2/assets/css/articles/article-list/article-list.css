@@ -1,3 +1,233 @@
+@font-face {
+  font-family: main-font;
+  src: url("../../font/Vazir.ttf");
+}
+@font-face {
+  font-family: second-font;
+  src: url("../../font/Vazir-Thin.ttf");
+}
+@font-face {
+  font-family: accent-font;
+  src: url("../../font/A.Rezvan.ttf");
+}
+.most_popular_blog_list {
+  margin: 0 0 100px 0;
+}
+.most_popular_blog_list .title_part_of_page {
+  color: #292929;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  position: relative;
+  font-size: 1.7rem;
+  font-family: accent-font;
+}
+.most_popular_blog_list .title_part_of_page::before {
+  background-color: #292929;
+  content: "";
+  height: 1px;
+  left: -210px;
+  position: absolute;
+  top: 21px;
+  transition: all 0.4s ease 0s;
+  width: 160px;
+}
+.most_popular_blog_list .title_part_of_page::after {
+  background-color: #292929;
+  content: "";
+  height: 1px;
+  right: -210px;
+  position: absolute;
+  top: 21px;
+  transition: all 0.4s ease 0s;
+  width: 160px;
+}
+.most_popular_blog_list .most_popular_blog_post {
+  width: 100%;
+  background: white;
+  box-shadow: 0 0 10px 0 #a5a5a5;
+}
+.most_popular_blog_list .most_popular_blog_post .img_of_popular_blog {
+  width: 100%;
+  height: 300px;
+}
+.most_popular_blog_list .most_popular_blog_post .content_of_popular_blog {
+  text-align: right;
+  direction: rtl;
+}
+.most_popular_blog_list .most_popular_blog_post .content_of_popular_blog .short_content_blog .short_exp_of_blog_post {
+  line-height: 25px;
+}
+.most_popular_blog_list .most_popular_blog_post .content_of_popular_blog .short_content_blog .title_of_blog {
+  font-family: accent-font;
+  width: 100%;
+  text-align: center;
+  font-size: 1.7rem;
+  margin: 10px 0px;
+  color: #FF6B6B;
+}
+.most_popular_blog_list .most_popular_blog_post .content_of_popular_blog .short_content_blog .writer_of_article,
+.most_popular_blog_list .most_popular_blog_post .content_of_popular_blog .short_content_blog .view_blog_post {
+  font-size: 0.7rem;
+  color: #a9a9a9;
+  width: 50%;
+}
+.most_popular_blog_list .most_popular_blog_post .content_of_popular_blog .short_content_blog .view_blog_post {
+  font-family: accent-font;
+}
+.most_popular_blog_list .most_popular_blog_post .content_of_popular_blog .short_content_blog .short_exp_of_blog_post {
+  font-size: 0.9rem;
+}
+.most_popular_blog_list .most_popular_blog_post .content_of_popular_blog .date_of_post_blog {
+  font-family: accent-font;
+  background-color: #f3f3f3;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.most_popular_blog_list .most_popular_blog_post .content_of_popular_blog .date_of_post_blog .day {
+  font-size: 2.5rem;
+  padding-top: 85px;
+}
+.most_popular_blog_list .most_popular_blog_post .content_of_popular_blog .btn_of_view_post {
+  width: 100%;
+  padding: 5px 0px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  color: #FF6B6B;
+  border: 1px solid #FF6B6B;
+  transition: all ease-in-out 0.4s;
+  -webkit-transition: all ease-in-out 0.4s;
+  -moz-transition: all ease-in-out 0.4s;
+  -ms-transition: all ease-in-out 0.4s;
+}
+.most_popular_blog_list .most_popular_blog_post .content_of_popular_blog .btn_of_view_post:focus {
+  outline: none;
+}
+.most_popular_blog_list .most_popular_blog_post .content_of_popular_blog .btn_of_view_post:hover {
+  color: #fff;
+  background-color: #FF6B6B;
+}
 
+.filter_field_blog {
+  box-sizing: border-box;
+}
+.filter_field_blog .blog_post {
+  width: 100%;
+  background: white;
+  box-shadow: 0 0 10px 0 #a5a5a5;
+}
+.filter_field_blog .blog_post .img_of_popular_blog {
+  width: 100%;
+  height: 300px;
+}
+.filter_field_blog .blog_post .content_of_popular_blog {
+  text-align: right;
+  direction: rtl;
+}
+.filter_field_blog .blog_post .content_of_popular_blog .short_content_blog .short_exp_of_blog_post {
+  line-height: 25px;
+}
+.filter_field_blog .blog_post .content_of_popular_blog .short_content_blog .title_of_blog {
+  font-family: accent-font;
+  width: 100%;
+  text-align: center;
+  font-size: 1.7rem;
+  margin: 10px 0px;
+  color: #FF6B6B;
+}
+.filter_field_blog .blog_post .content_of_popular_blog .short_content_blog .writer_of_article,
+.filter_field_blog .blog_post .content_of_popular_blog .short_content_blog .view_blog_post {
+  font-size: 0.7rem;
+  color: #a9a9a9;
+  width: 50%;
+}
+.filter_field_blog .blog_post .content_of_popular_blog .short_content_blog .view_blog_post {
+  font-family: accent-font;
+}
+.filter_field_blog .blog_post .content_of_popular_blog .short_content_blog .short_exp_of_blog_post {
+  font-size: 0.9rem;
+}
+.filter_field_blog .blog_post .content_of_popular_blog .date_of_post_blog {
+  font-family: accent-font;
+  background-color: #f3f3f3;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.filter_field_blog .blog_post .content_of_popular_blog .date_of_post_blog .day {
+  font-size: 2.5rem;
+  padding-top: 85px;
+}
+.filter_field_blog .blog_post .content_of_popular_blog .btn_of_view_post {
+  width: 100%;
+  padding: 5px 0px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  color: #FF6B6B;
+  border: 1px solid #FF6B6B;
+  transition: all ease-in-out 0.4s;
+  -webkit-transition: all ease-in-out 0.4s;
+  -moz-transition: all ease-in-out 0.4s;
+  -ms-transition: all ease-in-out 0.4s;
+}
+.filter_field_blog .blog_post .content_of_popular_blog .btn_of_view_post:focus {
+  outline: none;
+}
+.filter_field_blog .blog_post .content_of_popular_blog .btn_of_view_post:hover {
+  color: #fff;
+  background-color: #FF6B6B;
+}
+
+/* Create three equal columns that floats next to each other */
+.col_style {
+  float: right;
+  width: 33.33%;
+  display: none;
+  /* Hide columns by default */
+  margin-bottom: 20px;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn_filter {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+  margin-left: 10px;
+  width: 100px;
+}
+.btn_filter:focus {
+  box-shadow: none;
+}
+
+/* Add a grey background color on mouse-over */
+.btn_filter:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn_filter.active {
+  background-color: #666;
+  color: white;
+}
 
 /*# sourceMappingURL=article-list.css.map */

@@ -1,0 +1,260 @@
+@import "../../partials/main-colors";
+@import "../../partials/fonts";
+@import "../../partials/mixin";
+.most_popular_blog_list{
+  margin: 0 0 100px 0;
+
+  .title_part_of_page {
+    color: #292929;
+    display: inline-block;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0;
+    position: relative;
+    font-size: 1.7rem;
+    font-family: $a_f;
+
+    &::before{
+      background-color: #292929;
+      content: "";
+      height: 1px;
+      left: -210px;
+      position: absolute;
+      top: 21px;
+      transition: all 0.4s ease 0s;
+      width: 160px;
+    }
+
+    &::after{
+      background-color: #292929;
+      content: "";
+      height: 1px;
+      right: -210px;
+      position: absolute;
+      top: 21px;
+      transition: all 0.4s ease 0s;
+      width: 160px;
+    }
+  }
+  .most_popular_blog_post{
+    width: 100%;
+    background: white;
+    box-shadow: 0 0 10px 0 #a5a5a5;
+
+    .img_of_popular_blog{
+      width: 100%;
+      height: 300px;
+
+    }
+
+    .content_of_popular_blog{
+      text-align: right;
+      direction: rtl;
+
+      .short_content_blog{
+
+        .short_exp_of_blog_post{
+          line-height: 25px;
+        }
+        .title_of_blog{
+          font-family: $a_f;
+          width: 100%;
+          text-align: center;
+          font-size: 1.7rem;
+          margin: 10px 0px;
+          color: $l-red;
+
+        }
+        .writer_of_article,
+        .view_blog_post{
+          font-size: .7rem;
+          color: #a9a9a9;
+          width: 50%;
+        }
+
+        .view_blog_post{
+          font-family: $a_f;
+        }
+
+        .short_exp_of_blog_post{
+          font-size: .9rem;
+
+        }
+      }
+
+      .date_of_post_blog{
+        font-family: $a_f;
+        background-color: #f3f3f3;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+        .day{
+          font-size: 2.5rem;
+          padding-top: 85px;
+        }
+      }
+
+      .btn_of_view_post{
+        width: 100%;
+
+        padding: 5px 0px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        background-color: transparent;
+        color: $l_red;
+        border: 1px solid $l_red;
+        @include transition(ease-in-out,.4s);
+        &:focus{
+          outline: none;
+        }
+
+        &:hover{
+          color: $white;
+          background-color: $l_red;
+        }
+      }
+    }
+
+  }
+}
+
+.filter_field_blog{
+  box-sizing: border-box;
+
+  .blog_post{
+    width: 100%;
+    background: white;
+    box-shadow: 0 0 10px 0 #a5a5a5;
+
+    .img_of_popular_blog{
+      width: 100%;
+      height: 300px;
+
+    }
+
+    .content_of_popular_blog{
+      text-align: right;
+      direction: rtl;
+
+      .short_content_blog{
+
+        .short_exp_of_blog_post{
+          line-height: 25px;
+        }
+        .title_of_blog{
+          font-family: $a_f;
+          width: 100%;
+          text-align: center;
+          font-size: 1.7rem;
+          margin: 10px 0px;
+          color: $l-red;
+
+        }
+        .writer_of_article,
+        .view_blog_post{
+          font-size: .7rem;
+          color: #a9a9a9;
+          width: 50%;
+        }
+
+        .view_blog_post{
+          font-family: $a_f;
+        }
+
+        .short_exp_of_blog_post{
+          font-size: .9rem;
+
+        }
+      }
+
+      .date_of_post_blog{
+        font-family: $a_f;
+        background-color: #f3f3f3;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+        .day{
+          font-size: 2.5rem;
+          padding-top: 85px;
+        }
+      }
+
+      .btn_of_view_post{
+        width: 100%;
+
+        padding: 5px 0px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        background-color: transparent;
+        color: $l_red;
+        border: 1px solid $l_red;
+        @include transition(ease-in-out,.4s);
+        &:focus{
+          outline: none;
+        }
+
+        &:hover{
+          color: $white;
+          background-color: $l_red;
+        }
+      }
+    }
+
+  }
+
+}
+
+
+//
+
+
+
+
+/* Create three equal columns that floats next to each other */
+.col_style {
+  float: right;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+  margin-bottom: 20px;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn_filter {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+  margin-left: 10px;
+  width: 100px;
+
+  &:focus{
+    box-shadow: none;
+  }
+}
+
+/* Add a grey background color on mouse-over */
+.btn_filter:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn_filter.active {
+  background-color: #666;
+  color: white;
+}

@@ -161,23 +161,22 @@
         margin: auto;
         margin-top: 20px;
 
-        .title_cm{
-          font-size: 1rem;
-          font-weight: bold;
-          background-color: white;
-          padding: 0px 20px;
-          top: 20px;
-          position: relative;
-          width: 120px;
-          left: 810px;
-          text-align: center;
-        }
+
 
         .form_style{
           padding: 40px;
           border: 1px solid #ced4da;
           border-radius: 5px;
           text-align: right;
+          .title_cm{
+            font-size: 1rem;
+            font-weight: bold;
+            background-color: white;
+            margin-top: -50px;
+            margin-right: -10px;
+            width: 100px;
+            text-align: center;
+          }
 
           .btn_style{
             width: 200px;
