@@ -1,0 +1,19 @@
+{>"layouts/index-layout"/}
+
+{<title}
+    <title>
+
+    </title>
+{/title}
+
+{<css}
+
+{/css}
+
+{<js}
+
+{/js}
+
+{<body}
+
+{/body}
