@@ -75,7 +75,7 @@ frontend.get('/', async(req,res)=>{
 
     try{
 
-        res.render('index');
+        res.render('index/index');
 
     }
     catch (error) {
