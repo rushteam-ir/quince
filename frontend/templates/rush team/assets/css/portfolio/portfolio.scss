@@ -1,0 +1,76 @@
+@import '../partials/color';
+@import '../partials/font';
+@import '../partials/mixin';
+
+$html_color : #DD4B25;
+$vue_color : #41B883;
+$css_color: #264DE4;
+$node_color : #5C9554;
+$sass_color : #C76494;
+
+.portfolio_header{
+    width: 100%;
+    height: 250px;
+    .portfolio_header_img{
+        background-image: url(../../img/portfolio-header1.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.portfolio_part {
+    padding: 50px 100px;
+    padding-top: 150px;
+
+    .portfolio_main_img {
+        width: 100%;
+        height: 300px;
+        border-radius: 15px;
+    }
+
+    .portfolio_info {
+        text-align: right;
+        direction: rtl;
+
+        .portfolio_category {
+            color: $main_color;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+        h3{
+            font-weight: bold;
+        }
+        .portfolio_description{
+            line-height: 25px;
+            text-align: justify;
+        }
+    }
+    .development_tech{
+        border: 3px solid black;
+        border-right: 0;
+        border-left: 0;
+        padding: 10px 0px;
+        margin-top: 40px;
+        i{
+            font-size: 2.5rem;
+            margin-left: 20px;
+        }
+        .fa-html5{
+            color: $html_color;
+        }
+        .fa-css3-alt{
+            color: $css_color;
+        }
+        .fa-vuejs{
+            color: $vue_color;
+        }
+        .fa-node-js{
+            color: $node_color;;
+        }
+        .fa-sass{
+            color: $sass_color;
+        }
+    }
+}

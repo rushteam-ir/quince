@@ -32,7 +32,7 @@
                         <a href="">نمونه کار ها</a>
                     </li>
                     <li class="navbar_iteam">
-                        <a href="">مقالات</a>
+                        <a href="{frontend_url}articles">مقالات</a>
                     </li>
                     <li class="navbar_iteam">
                         <a href="">درباره ما</a>

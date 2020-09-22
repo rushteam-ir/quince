@@ -18,7 +18,50 @@
     <section class="article_list_header">
         <div class="article_list_layer"></div>
     </section>
-
+    <section class="filter_part">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="filter_main_field mt-4">
+                        <div class="row">
+                            <div class="col-4 offset-4">
+                                <div class="search_field">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" id="search_inp"><button class="btn"><i class="fal fa-search"></i></button></span>
+                                        </div>
+                                        <input type="text" placeholder="جستجو مطلب ..." class="form-control" aria-label="Recipient's username" aria-describedby="search_inp">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="form-group category_dropdown">
+                                    <select class="form-control">
+                                      <option>بر اساس دسته بندی</option>
+                                      <option>سئو و بهینه سازی</option>
+                                      <option>آموزشی</option>
+                                      <option>طالبی</option>
+                                      <option>ارههه بابا</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="form-group category_dropdown">
+                                    <select class="form-control">
+                                      <option>بر اساس جدید ترین ها</option>
+                                      <option>سئو و بهینه سازی</option>
+                                      <option>آموزشی</option>
+                                      <option>طالبی</option>
+                                      <option>ارههه بابا</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="article_list_cards">
         <div class="container-fluid">
             <div class="row">
@@ -26,21 +69,6 @@
                     <a href="">
                         <div class="MF_of_article_cards mt-4">
                             <img src="img/slider1.jpg" alt="">
-                            <div>
-                                <small>بهینه سازی</small>
-                                <h3>سئو و بهینه سازی به روش من </h3>
-                                <p class="card_info">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد</p>
-                                <p class="card_read_time">زمان مطالعه: 10 دقیقه</p>
-                                <div class="card_like">
-                                    <i class="fas fa-heart"></i>
-                                    15k
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="MF_of_article_cards mt-4">
-                            <img src="img/slider2.jpg" alt="">
                             <div>
                                 <small>بهینه سازی</small>
                                 <h3>سئو و بهینه سازی به روش من </h3>
@@ -62,21 +90,6 @@
                                 <small>بهینه سازی</small>
                                 <h3>سئو و بهینه سازی به روش من </h3>
                                 <p class="card_info">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرای مقرار گیرد</p>
-                                <p class="card_read_time">زمان مطالعه: 10 دقیقه</p>
-                                <div class="card_like">
-                                    <i class="fas fa-heart"></i>
-                                    15k
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="MF_of_article_cards mt-4">
-                            <img src="img/slider1.jpg" alt="">
-                            <div>
-                                <small>بهینه سازی</small>
-                                <h3>سئو و بهینه سازی به روش من </h3>
-                                <p class="card_info">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد</p>
                                 <p class="card_read_time">زمان مطالعه: 10 دقیقه</p>
                                 <div class="card_like">
                                     <i class="fas fa-heart"></i>
@@ -93,7 +106,7 @@
                             <div>
                                 <small>بهینه سازی</small>
                                 <h3>سئو و بهینه سازی به روش من </h3>
-                                <p class="card_info">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بر گیرد</p>
+                                <p class="card_info">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرای مقرار گیرد</p>
                                 <p class="card_read_time">زمان مطالعه: 10 دقیقه</p>
                                 <div class="card_like">
                                     <i class="fas fa-heart"></i>
@@ -101,22 +114,7 @@
                                 </div>
                             </div>
                         </div>
-                    </a>  
-                    <a href="">
-                        <div class="MF_of_article_cards mt-4">
-                            <img src="img/slider1.jpg" alt="">
-                            <div>
-                                <small>بهینه سازی</small>
-                                <h3>سئو و بهینه سازی به روش من </h3>
-                                <p class="card_info">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد</p>
-                                <p class="card_read_time">زمان مطالعه: 10 دقیقه</p>
-                                <div class="card_like">
-                                    <i class="fas fa-heart"></i>
-                                    15k
-                                </div>
-                            </div>
-                        </div>
-                    </a>                 
+                    </a>              
                 </div>
             </div>
         </div>
