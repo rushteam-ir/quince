@@ -94,6 +94,7 @@ const product = require('./branches/product');
 const user = require('./branches/user/user');
 const recovery = require('./branches/recovery/recovery');
 const articles = require('./branches/articles/articles');
+const portfolio = require('./branches/portfolio/portfolio');
 
 frontend.use('/captcha', captcha);
 frontend.use('/about-us', about_us);
@@ -102,6 +103,7 @@ frontend.use('/product', product);
 frontend.use('/user', user);
 frontend.use('/recovery', recovery);
 frontend.use('/articles', articles);
+frontend.use('/portfolio', portfolio);
 
 // Frontend 404 page
 frontend.use(async(req,res,next)=>{
