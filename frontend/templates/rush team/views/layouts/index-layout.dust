@@ -23,13 +23,13 @@
 
                 <ul>
                     <li class="navbar_iteam">
-                        <a class="active_navbar" href="">خانه</a>
+                        <a  href="{frontend_url}" class="active_navbar">خانه</a>
                     </li>
                     <li class="navbar_iteam" id="nav_service">
                         <a>خدمات ما</a>
                     </li>
                     <li class="navbar_iteam">
-                        <a href="">نمونه کار ها</a>
+                        <a href="{frontend_url}portfolio">نمونه کار ها</a>
                     </li>
                     <li class="navbar_iteam">
                         <a href="{frontend_url}articles">مقالات</a>

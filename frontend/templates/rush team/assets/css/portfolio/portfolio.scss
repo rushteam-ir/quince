@@ -2,75 +2,111 @@
 @import '../partials/font';
 @import '../partials/mixin';
 
-$html_color : #DD4B25;
-$vue_color : #41B883;
-$css_color: #264DE4;
-$node_color : #5C9554;
-$sass_color : #C76494;
+#portfolio-1{
+    background-image: url(../../img/portfolio1.jpg);
+}
+#portfolio-2{
+    background-image: url(../../img/portfolio3.jpg);
+}
+#portfolio-3{
+    background-image: url(../../img/portfolio2.PNG);
+}
+#portfolio-4{
+    background-image: url(../../img/slider3.jpg);
+}
 
-.portfolio_header{
+
+.portfolio_header {
     width: 100%;
     height: 250px;
-    .portfolio_header_img{
+
+    .portfolio_header_img {
         background-image: url(../../img/portfolio-header1.jpg);
         background-size: cover;
         background-position: center;
         height: 100%;
         width: 100%;
     }
+
+    .portfolio_header_layout {
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, rgba(93, 134, 214, 1) 0%, rgba(12, 31, 115, 1) 100%);
+        opacity: 0.7;
+    }
 }
 
-.portfolio_part {
-    padding: 50px 100px;
-    padding-top: 150px;
+// portofolio box
 
-    .portfolio_main_img {
+.portfolio_part {
+    padding: 0 100px;
+
+    .main_box_of_portfolio {
+        background-size: cover;
         width: 100%;
         height: 300px;
-        border-radius: 15px;
-    }
+        margin: 20px 0;
+        transition: all linear 0.1s;
+        position: relative;
+        top: 0px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
 
-    .portfolio_info {
-        text-align: right;
-        direction: rtl;
+        .upper_box {
+            width: 100%;
+            height: 150px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 13px solid rgba(83, 83, 83, 0.8);
+            border-bottom: 0;
+            color: white;
+            text-align: right;
+            direction: rtl;
+            padding: 20px 20px;
+            position: relative;
+            right: -100%;
+            @include transition(0.5s, cubic-bezier(0, 0, 0.4, 1), 0s);
 
-        .portfolio_category {
-            color: $main_color;
-            font-weight: bold;
-            margin-bottom: 0;
+            .portofolio_type {
+                color: $main_color;
+                margin-bottom: 5px;
+                margin-top: 20px;
+            }
+
+            h3 {
+                font-weight: bold;
+            }
         }
-        h3{
-            font-weight: bold;
+
+        .lower_box {
+            width: 100%;
+            height: 150px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 13px solid rgba(83, 83, 83, 0.8);
+            border-top: 0;
+            color: white;
+            text-align: right;
+            direction: rtl;
+            padding: 20px 20px;
+            position: relative;
+            left: -100%;
+            @include transition(0.5s, cubic-bezier(0, 0, 0.4, 1), 0s);
+
+            p {
+                line-height: 25px;
+                font-size: 0.9rem;
+                margin-top: 20px;
+            }
         }
-        .portfolio_description{
-            line-height: 25px;
-            text-align: justify;
-        }
-    }
-    .development_tech{
-        border: 3px solid black;
-        border-right: 0;
-        border-left: 0;
-        padding: 10px 0px;
-        margin-top: 40px;
-        i{
-            font-size: 2.5rem;
-            margin-left: 20px;
-        }
-        .fa-html5{
-            color: $html_color;
-        }
-        .fa-css3-alt{
-            color: $css_color;
-        }
-        .fa-vuejs{
-            color: $vue_color;
-        }
-        .fa-node-js{
-            color: $node_color;;
-        }
-        .fa-sass{
-            color: $sass_color;
+
+        &:hover {
+            .lower_box {
+                left: 0%;
+            }
+
+            .upper_box {
+                right: 0%;
+            }
+
         }
     }
 }

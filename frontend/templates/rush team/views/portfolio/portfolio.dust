@@ -16,27 +16,56 @@
 
 {<body}
     <section class="portfolio_header">
-        <div class="portfolio_header_img"></div>
+        <div class="portfolio_header_img">
+            <div class="portfolio_header_layout"></div>
+        </div>
     </section>
     <section class="portfolio_part">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-4">
-                    <div class="portfolio_info">
-                        <p class="portfolio_category">طراحی وب سایت فروشگاهی</p>
-                        <h3>طراحی وب سایت ملورین</h3>
-                        <p class="portfolio_description">فروشگاه ملورین یکی از برترین و بهترین تولید کننده ها در زمینه جوراب  و لباس زیر می باشد که بیش از 20 سال مشغول له فعالیت در این زمینه است .</p>
+                <div class="col-6">
+                    <div class="main_box_of_portfolio" id="portfolio-1">
+                        <div class="upper_box">
+                            <p class="portofolio_type">سایت فروشگاهی</p>
+                            <h3>فروشگاه ملورین</h3>
+                        </div>
+                        <div class="lower_box">
+                            <p>با تلاش های فراوان و پی در پی ما توانستیم که این فروشگاه را بنزیم و بالاهخره سی ام اس خودمان را نیز به اتمام برسانیم البته بابامون هم در امدا الکی نیست خلاصه که اره باا اینجوریاااااا</p>
+                        </div>
                     </div>
-                    <div class="development_tech">
-                        <i class="fab fa-html5"></i>
-                        <i class="fab fa-css3-alt"></i>
-                        <i class="fab fa-vuejs"></i>
-                        <i class="fab fa-node-js"></i>
-                        <i class="fab fa-sass"></i>
+                </div>
+                <div class="col-6">
+                    <div class="main_box_of_portfolio" id="portfolio-2">
+                        <div class="upper_box">
+                            <p class="portofolio_type">سایت فروشگاهی</p>
+                            <h3>فروشگاه ملورین</h3>
+                        </div>
+                        <div class="lower_box">
+                            <p>با تلاش های فراوان و پی در پی ما توانستیم که این فروشگاه را بنزیم و بالاهخره سی ام اس خودمان را نیز به اتمام برسانیم البته بابامون هم در امدا الکی نیست خلاصه که اره باا اینجوریاااااا</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-8">
-                    <img class="portfolio_main_img" src="img/portfolio1.jpg" alt="">
+                    <div class="main_box_of_portfolio" id="portfolio-3">
+                        <div class="upper_box">
+                            <p class="portofolio_type">سایت فروشگاهی</p>
+                            <h3>فروشگاه ملورین</h3>
+                        </div>
+                        <div class="lower_box">
+                            <p>با تلاش های فراوان و پی در پی ما توانستیم که این فروشگاه را بنزیم و بالاهخره سی ام اس خودمان را نیز به اتمام برسانیم البته بابامون هم در امدا الکی نیست خلاصه که اره باا اینجوریاااااا</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="main_box_of_portfolio" id="portfolio-4">
+                        <div class="upper_box">
+                            <p class="portofolio_type">سایت فروشگاهی</p>
+                            <h3>فروشگاه ملورین</h3>
+                        </div>
+                        <div class="lower_box">
+                            <p>با تلاش های فراوان و پی در پی ما توانستیم که این فروشگاه را بنزیم و بالاهخره سی ام اس خودمان را نیز به اتمام برسانیم البته بابامون هم در امدا الکی نیست خلاصه که اره باا اینجوریاااااا</p>
+                        </div>
+                    </div>
                 </div>
             </div> 
         </div>
