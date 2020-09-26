@@ -16,6 +16,7 @@
     <script src="js/general/Swiper.js"></script>
     <script src="js/general/wow.js"></script>
     <script src="js/general/type.js"></script>
+    <script src="js/general/parallax.js"></script>
     <script src="js/index/index.js"></script>
 {/js}
 
@@ -24,9 +25,9 @@
     <div class="header_field">
         <div class="container-fluid">
             <div class="row">
-                <video id="header_video" width="100%" height="auto" autoplay muted loop>
-                    <source src="img/header_v.mp4" type="video/mp4">
-                </video>
+                <div class="header_img">
+                    <img src="img/header.jpg" alt="">
+                </div>
                 <div class="row align-items-center HCR">
                     <div class="col-8 offset-2">
                         <div class="header_info">
@@ -323,102 +324,78 @@
     </div>
 </section>
 
-<section class="article_part">
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <a href="" class="article_link_tamplate">
-                    <div class="article_mag_part article_1">
-                        <div class="upper_hover">
-                            <div>
-                                <p>
-                                    <i class="fas fa-eye"></i>
-                                    984512
-                                </p>
-                                <p>
-                                    <i class="fas fa-heart"></i>
-                                    94856
-                                </p>
-                                <p class="article_points">
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </p>
-                            </div>
-                        </div>
-    
-                        <div class="lower_hover">
-                            <h3>برترین زبان های برنامه نویسی</h3>
-                            <p>یکی از برترین زبان های برنامه نویسی زبان chicken است به با ان میتوانید مرغ چاپ کنید ولی خب برای گربه زبان خاصی نداریم .</p>
-                        </div>
+<section class="Consulting_part">
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/Consulting-pic.png">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="Consulting_text">
+                        <h3>با طراحان و توسعه دهندگان وب متخصص ما مشورت کنید</h3>
+                        <span></span>
+                        <p>لورم ایپسوم یک متن ساختگی و نامفهوم برای طراحان وب است تا محتوای پیشفرض را برای پر کردن صفحات وب وارد کنند.</p>
+                        <a href="">مشاوره رایگان</a>
                     </div>
-                </a>
-                <a href="" class="article_link_tamplate">
-                    <div class="article_mag_part article_1">
-                        <div class="upper_hover">
-                            <div>
-                                <p>
-                                    <i class="fas fa-eye"></i>
-                                    984512
-                                </p>
-                                <p>
-                                    <i class="fas fa-heart"></i>
-                                    94856
-                                </p>
-                                <p class="article_points">
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="article_part">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4">
+                <a href="">
+                    <div class="MF_of_article_cards">
+                        <img src="img/slider1.jpg" alt="">
+                        <div>
+                            <small>بهینه سازی</small>
+                            <h3>سئو و بهینه سازی به روش من </h3>
+                            <p class="card_info">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرای مقرار گیرد</p>
+                            <p class="card_read_time">زمان مطالعه: 10 دقیقه</p>
+                            <div class="card_like">
+                                <i class="fas fa-heart"></i>
+                                15k
                             </div>
-                        </div>
-    
-                        <div class="lower_hover">
-                            <h3>برترین زبان های برنامه نویسی</h3>
-                            <p>یکی از برترین زبان های برنامه نویسی زبان chicken است به با ان میتوانید مرغ چاپ کنید ولی خب برای گربه زبان خاصی نداریم .</p>
                         </div>
                     </div>
                 </a>
             </div>
-            <div class="col-6">
-                <div class="title_of_articles">
-                    <p>برترین</p>
-                    <p>مقالات <span>راش تیم</span></p>
-                    <span class="small_article_title">بهترین مقالات راش تیم را در زیر مشاهده کنید .</span>
-                </div>
-                <a href="" class="article_link_tamplate">
-                    <div class="article_mag_part article_1">
-                        <div class="upper_hover">
-                            <div>
-                                <p>
-                                    <i class="fas fa-eye"></i>
-                                    984512
-                                </p>
-                                <p>
-                                    <i class="fas fa-heart"></i>
-                                    94856
-                                </p>
-                                <p class="article_points">
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </p>
+            <div class="col-4">
+                <a href="">
+                    <div class="MF_of_article_cards">
+                        <img src="img/slider1.jpg" alt="">
+                        <div>
+                            <small>بهینه سازی</small>
+                            <h3>سئو و بهینه سازی به روش من </h3>
+                            <p class="card_info">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرای مقرار گیرد</p>
+                            <p class="card_read_time">زمان مطالعه: 10 دقیقه</p>
+                            <div class="card_like">
+                                <i class="fas fa-heart"></i>
+                                15k
                             </div>
-                        </div>
-    
-                        <div class="lower_hover">
-                            <h3>برترین زبان های برنامه نویسی</h3>
-                            <p>یکی از برترین زبان های برنامه نویسی زبان chicken است به با ان میتوانید مرغ چاپ کنید ولی خب برای گربه زبان خاصی نداریم .</p>
                         </div>
                     </div>
                 </a>
-
+            </div>
+            <div class="col-4">
+                <div class="article_text_title">
+                    <a href="">
+                        <h3>چه خدمات برای قربانیان جرم و جنایت در دسترس هستند</h3>
+                        <p>12 شهریور 1399</p>
+                    </a>
+                    <a href="">
+                        <h3>چه خدمات برای قربانیان جرم و جنایت در دسترس هستند</h3>
+                        <p>12 شهریور 1399</p>
+                    </a>
+                    <a href="">
+                        <h3>چه خدمات برای قربانیان جرم و جنایت در دسترس هستند</h3>
+                        <p>12 شهریور 1399</p>
+                    </a>
+                    <div class="more_article">
+                        <a href="{frontend_url}articles">ادامه مقالات </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

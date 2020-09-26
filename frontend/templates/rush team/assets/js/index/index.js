@@ -7,11 +7,7 @@ var typed = new Typed('#MW_typed', {
     loop: true
 });
 
-var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 3,
-    spaceBetween: 0,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
+$('.parallax-window').parallax({
+    imageSrc: 'img/Consulting-pic.png',
+    speed: 0.5
 });
