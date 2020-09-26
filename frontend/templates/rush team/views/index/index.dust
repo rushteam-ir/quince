@@ -26,17 +26,16 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="header_img">
-                    <img src="img/header.jpg" alt="">
+                    <img src="img/header-bg-2.jpg" alt="">
+                    <div class="header_layer"></div>
                 </div>
                 <div class="row align-items-center HCR">
-                    <div class="col-8 offset-2">
+                    <div class="col-12">
                         <div class="header_info">
-                            <i class="fal fa-anchor wow fadeInDown"></i>
-                            <h2 class="wow fadeInDown" data-wow-delay="0.2s">جذابیت و خلاقیت</h2>
-                            <h1 class="wow fadeInDown" data-wow-delay="0.6s">تجربه شگفت انگیز همراه با تیم خبره راش تیم</h1>
-                            <p class="wow fadeInDown" data-wow-delay="0.9s">بهتریم تجربه را در کنار تیم نوب سگ راش تیم را داشته باشید و زندگی کنید با ما زندگیتون از این رو به اون رو مشه عزیزم پس بهتره بیای سفارش بدی چون میتونی . شسی شسی شسیشس یشسی شسیید شبهعب خشخخ شسیتش سیشت سهیا</p>
-                            <button class="btn wow fadeInDown" data-wow-delay="1.3s">درباره ما </button>
-                        </div> 
+                            <h2>بهترین دیزاین و شگفت انگیز ترین خلاق ها</h2>
+                            <h1>با راش تیم</h1>
+                            <a href="">سفارش سایت</a>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -15,44 +15,49 @@ $header_height :85vh;
     }
 }
 
+.header_layer {
+    width: 100%;
+    height: $header_height;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+}
+
 .HCR {
     height: $header_height;
     position: absolute;
     top: 0;
     left: 0;
     margin: 0 !important;
-}
+    width: 100%;
 
-.header_info {
-    color: white;
-    text-align: center;
-    direction: rtl;
+    .header_info {
+        text-align: right;
+        direction: rtl;
+        color: $white;
+        padding-right: 150px;
 
-    i {
-        font-size: 4rem;
-    }
+        h1 {
+            font-weight: bold;
+            font-family: $BF;
+            font-size: 3.5rem;
+            margin-bottom: 40px;
+        }
 
-    h2 {
-        font-family: $TF;
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
+        h2 {
+            font-weight: bold;
+        }
 
-    h1 {
-        font-weight: bold;
-        margin-bottom: 25px;
-    }
-
-    p {
-        font-family: $TF;
-        line-height: 35px;
-    }
-
-    button {
-        width: 150px;
-        border-radius: 100PX;
-        color: white;
-        border: 2px solid $main_color;
+        a {
+            color: $white;
+            padding: 15px 15px;
+            display: inline-block;
+            position: absolute;
+            top: 28vh;
+            border-bottom: 3px solid $main_color;
+            text-align: revert;
+            width: 170px;
+        }
     }
 }
 
@@ -62,7 +67,7 @@ $header_height :85vh;
 
     i {
         font-size: 2.3rem;
-        color: #BBBBBB;
+        color: $main_color;
         position: relative;
         top: -80px;
         right: -24px;
@@ -256,7 +261,7 @@ $SSH:350px;
     @include transition(linear, 0.2s, 0s);
 
     h3 {
-        color: white;
+        color: $white;
         text-align: center;
         margin-top: 80px;
         font-weight: bold;
@@ -272,12 +277,12 @@ $SSH:350px;
         max-width: 200px;
         margin: 0 auto;
         direction: rtl;
-        color: white;
+        color: $white;
         font-size: 1.3rem;
     }
 
     a {
-        color: white;
+        color: $white;
         font-weight: bold;
         font-size: 1.5rem;
         margin-top: 40px;
@@ -285,13 +290,13 @@ $SSH:350px;
 
         i {
             @include transition(ease, 0.2s, 0s);
-            color: white;
+            color: $white;
         }
 
         div {
             opacity: 0;
             position: relative;
-            background-color: white;
+            background-color: $white;
             width: 45px;
             height: 45px;
             line-height: 50px;
@@ -352,7 +357,7 @@ $SSH:350px;
         left: 0;
         width: 100%;
         height: 160px;
-        color: white;
+        color: $white;
         text-align: right;
         direction: rtl;
         z-index: 2;
@@ -369,8 +374,8 @@ $SSH:350px;
             left: 100px;
             background-color: transparent;
             border-radius: 50px;
-            border: 2px solid white;
-            color: white;
+            border: 2px solid $white;
+            color: $white;
             z-index: 2;
             width: 170px;
             height: 50px;
@@ -440,7 +445,7 @@ $SSH:350px;
 
     .btn_of_PP {
         background-color: $main_color;
-        color: white;
+        color: $white;
         margin-top: 50px;
         margin-bottom: 50px;
         border-radius: 50px;
@@ -514,7 +519,7 @@ $SSH:350px;
         }
 
         .cms_info_text {
-            background-color: white;
+            background-color: $white;
             width: 100%;
             height: 450px;
             border-radius: 0px 7px 7px 0px;
@@ -532,7 +537,7 @@ $SSH:350px;
                     width: 30px;
                     height: 5px;
                     border-radius: 50px;
-                    background-color: #2998EC;
+                    background-color: $main_color;
                     position: absolute;
                     top: 67px;
                     right: 39px;
@@ -554,7 +559,7 @@ $SSH:350px;
             a {
 
                 background-color: $main_color;
-                color: white;
+                color: $white;
                 border-radius: 50px;
                 width: 130px;
                 display: inline-block;
@@ -578,7 +583,7 @@ $SSH:350px;
     .MF_of_article_cards {
         width: 100%;
         height: 450px;
-        background-color: white;
+        background-color: $white;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
         text-align: right;
         direction: rtl;
@@ -598,7 +603,7 @@ $SSH:350px;
             padding: 20px 30px;
 
             small {
-                color: #2998EC;
+                color: $main_color;
                 font-size: 0.9rem;
                 margin-bottom: 10px;
                 display: inline-block;
@@ -698,7 +703,7 @@ $SSH:350px;
             height: 500px;
 
             .Consulting_text {
-                color: white;
+                color: $white;
                 padding: 0px 150px;
 
                 h3 {
@@ -712,7 +717,7 @@ $SSH:350px;
                 span {
                     width: 60px;
                     height: 1px;
-                    background-color: white;
+                    background-color: $white;
                     display: inline-block;
                     border-radius: 50px;
                     margin: 20px 0px;
@@ -726,13 +731,13 @@ $SSH:350px;
 
                 a {
                     display: inline-block;
-                    color: white;
-                    background-color: #2998EC;
-                    padding: 15px 20px;
-                    border-radius: 2px;
+                    color: #fff;
+                    padding: 10px 48px;
                     text-align: center;
                     font-weight: bold;
+                    border: 1px solid #fab162;
                     font-size: 1.1rem;
+                    border-radius: 50px;
                 }
             }
         }
