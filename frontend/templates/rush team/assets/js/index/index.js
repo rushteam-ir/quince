@@ -8,6 +8,6 @@ var typed = new Typed('#MW_typed', {
 });
 
 $('.parallax-window').parallax({
-    imageSrc: 'img/Consulting-pic.png',
+    imageSrc: 'img/test-1.jpg',
     speed: 0.5
 });
