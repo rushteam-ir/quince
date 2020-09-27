@@ -128,7 +128,7 @@ $SSH:350px;
 // part3
 .RT_meet_section {
     width: 100%;
-    background-color: #F9F9F9;
+    background: linear-gradient(0deg, rgba(252,252,252,1) 0%, rgba(253,253,253,1) 100%);
     padding: 120px 100px;
     margin-top: 100px;
     margin-bottom: 25px;
@@ -171,9 +171,6 @@ $SSH:350px;
 
 .see_RT_part_img {
     width: 100%;
-    position: absolute;
-    top: -200px;
-    left: 30px;
 }
 
 // work example
@@ -359,6 +356,7 @@ $SSH:350px;
         color: rgb(78, 78, 78);
         margin-top: 50px;
     }
+
 
     .header_PP_text {
         font-size: 1.2rem;

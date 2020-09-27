@@ -88,7 +88,7 @@
 <section class="RT_meet_section">
     <div class="container-flid">
         <div class="row">
-            <div class="col-4">
+            <div class="col-5">
                 <div class="see_RT_part">
                     <h2 class="wow fadeInDown" data-wow-delay="0.2s">دیدار با راش تیم</h2>
                     <h3 class="wow fadeInDown" data-wow-delay="0.6s"> طراحی تمیز وزیبا</h3>
@@ -96,8 +96,8 @@
                     <button class="btn wow fadeInDown"  data-wow-delay="1.2s">بیشتر بدانید ! <i class="fas fa-angle-left"></i></button>
                 </div>
             </div>
-            <div class="col-8">
-                <img class="see_RT_part_img" src="img/Home_8_img_1-1024x486.png" alt="">
+            <div class="col-7">
+                <img class="see_RT_part_img" src="img/Home_8_img_1-1024x486.jpg" alt="">
             </div>
         </div>
     </div>
