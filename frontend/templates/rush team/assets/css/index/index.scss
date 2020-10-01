@@ -128,7 +128,7 @@ $SSH:350px;
 // part3
 .RT_meet_section {
     width: 100%;
-    background-color: #F9F9F9;
+    background: linear-gradient(0deg, rgba(252,252,252,1) 0%, rgba(253,253,253,1) 100%);
     padding: 120px 100px;
     margin-top: 100px;
     margin-bottom: 25px;
@@ -171,9 +171,6 @@ $SSH:350px;
 
 .see_RT_part_img {
     width: 100%;
-    position: absolute;
-    top: -200px;
-    left: 30px;
 }
 
 // work example
@@ -201,130 +198,79 @@ $SSH:350px;
 .WE_main_field {
     height: 320px;
     overflow: hidden;
+    position: relative;
 
     img {
         width: 100%;
         height: 100%;
-        @include transition(linear, 0.2s, 0s)
-    }
-
-    &:hover #WE_hover_field_1 {
-        opacity: 0.7;
-    }
-
-    &:hover #WE_hover_field_2 {
-        opacity: 0.7;
-    }
-
-    &:hover #WE_hover_field_3 {
-        opacity: 0.7;
-    }
-
-    &:hover #WE_hover_field_4 {
-        opacity: 0.7;
+        @include transition(0.2s, linear, 0s);
     }
 
     &:hover img {
-        @include transform(scale(1.1))
-    }
-}
-
-#WE_hover_field_1 {
-    background: linear-gradient(90deg, rgba(11, 30, 114, 1) 0%, rgba(52, 82, 164, 1) 100%);
-    opacity: 0;
-}
-
-#WE_hover_field_2 {
-    background: linear-gradient(90deg, rgba(52, 82, 164, 1) 0%, rgba(86, 125, 205, 1) 100%);
-    opacity: 0;
-}
-
-#WE_hover_field_3 {
-    background: linear-gradient(90deg, rgba(87, 126, 206, 1) 0%, rgba(52, 82, 164, 1) 100%);
-    opacity: 0;
-}
-
-#WE_hover_field_4 {
-    background: linear-gradient(90deg, rgba(52, 82, 164, 1) 0%, rgba(12, 31, 115, 1) 100%);
-    opacity: 0;
-}
-
-
-.WE_hover_field {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    text-align: center;
-    @include transition(linear, 0.2s, 0s);
-
-    h3 {
-        color: $white;
-        text-align: center;
-        margin-top: 80px;
-        font-weight: bold;
-        font-size: 2rem;
-        width: 80%;
-        margin-left: 10%;
+        @include transform(scale(1.1));
     }
 
-    p {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        max-width: 200px;
-        margin: 0 auto;
-        direction: rtl;
-        color: $white;
-        font-size: 1.3rem;
-    }
-
-    a {
-        color: $white;
-        font-weight: bold;
-        font-size: 1.5rem;
-        margin-top: 40px;
-        height: 46px;
-
-        i {
-            @include transition(ease, 0.2s, 0s);
-            color: $white;
+    &:hover {
+        .WE_hover_field {
+            opacity: 1;
         }
+    }
+
+    .WE_hover_field {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fab0629f;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        @include transition(0.2s, linear, 0s);
 
         div {
-            opacity: 0;
-            position: relative;
-            background-color: $white;
-            width: 45px;
-            height: 45px;
-            line-height: 50px;
-            color: black;
-            border-radius: 50px;
-            top: 0;
-            @include transition(ease, 0.3s, 0s);
+            text-align: center;
+            direction: rtl;
 
-            i {
-                color: black;
-            }
-        }
-
-        &:hover {
-            i {
-                opacity: 0;
+            h3 {
+                font-weight: bold;
+                font-size: 2.5rem
             }
 
-            div {
-                opacity: 1;
-                top: -45px;
+            p {
+                font-size: 1.3rem;
+                font-weight: bold;
+            }
+
+            a {
+                display: inline-block;
+                @include transition(0.2s, linear, 0s);
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                padding-top: 11px;
 
                 i {
-                    opacity: 1;
+                    color: $white;
+                    font-size: 1.7rem;
+                }
+
+                &:hover {
+                    background-color: $white;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50px;
+                    padding-top: 11px;
+
+                    i {
+                        color: rgb(48, 48, 48);
+                    }
                 }
             }
         }
     }
+
 }
 
 // more work example
@@ -334,21 +280,17 @@ $SSH:350px;
     width: 100%;
     overflow: hidden;
     position: relative;
+    background-image: url(../../img/test-3.jpg);
+    background-size: cover;
+    background-position: center;
 
     .MWE_layer {
         width: 100%;
         height: 100%;
-        background: radial-gradient(circle, rgba(250,177,98,1) 0%, rgba(254,113,97,1) 100%);
         opacity: 1;
         position: absolute;
         top: 0;
         z-index: 1;
-    }
-
-    img {
-        width: 100%;
-        position: relative;
-        top: -540px;
     }
 
     .MWE_info_layout {
@@ -361,8 +303,10 @@ $SSH:350px;
         text-align: right;
         direction: rtl;
         z-index: 2;
-        margin-top: 60px;
+        padding-top: 60px;
         padding-right: 100px;
+        background: radial-gradient(circle, rgba(250, 177, 98, 0.1226201432474544) 0%, rgba(250, 177, 98, 0.3698111544834094) 100%);
+
 
         span {
             font-size: 1.3rem;
@@ -383,7 +327,7 @@ $SSH:350px;
             line-height: 46px;
             padding-right: 15px;
             font-size: 1rem;
-            top: -7px;
+            top: 53px;
 
             i {
                 position: relative;
@@ -412,6 +356,7 @@ $SSH:350px;
         color: rgb(78, 78, 78);
         margin-top: 50px;
     }
+
 
     .header_PP_text {
         font-size: 1.2rem;
@@ -731,11 +676,11 @@ $SSH:350px;
 
                 a {
                     display: inline-block;
-                    color: #fff;
+                    color: $white;
                     padding: 10px 48px;
                     text-align: center;
                     font-weight: bold;
-                    border: 1px solid #fab162;
+                    border: 1px solid $main_color;
                     font-size: 1.1rem;
                     border-radius: 50px;
                 }

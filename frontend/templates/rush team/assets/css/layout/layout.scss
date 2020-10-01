@@ -145,6 +145,7 @@
 
         ul {
             padding-right: 100px;
+
             li {
                 .active_navbar {
                     border-bottom: 4px solid $main_color;
@@ -153,7 +154,7 @@
 
                 a {
                     height: 44px;
-                    color: rgb(255, 255, 255);
+                    color: $white;
                     margin-top: 20.2px;
 
                     &:focus {
@@ -171,8 +172,9 @@
 
             .field_of_navbar_ltr {
                 top: 22px;
+
                 .login_text {
-                    color: rgb(255, 255, 255);
+                    color:$white;
                 }
             }
         }
@@ -362,16 +364,16 @@ $footer_height:400px;
             text-align: right;
             direction: rtl;
             font-weight: bold;
-            color: black;
+            color: $black;
             margin-bottom: 40px;
 
             i {
                 margin-left: 20px;
-                color: #000000;
+                color: $black;
             }
 
             .info_text_detail {
-                color: #000000;
+                color: $black;
                 font-weight: normal;
             }
         }
@@ -392,6 +394,11 @@ $footer_height:400px;
         input,
         textarea {
             border: 1px solid rgb(228, 228, 228);
+        }
+
+        textarea {
+            resize: none;
+            margin: 30px 0px;
         }
     }
 
@@ -414,7 +421,7 @@ $footer_height:400px;
     }
 
     .col_Padding_custom {
-        padding: 40px 70px;
+        padding: 30px 70px;
     }
 }
 
@@ -424,18 +431,18 @@ $footer_height:400px;
 
 // service side bar
 
-.BF{
-    @include transition(0.5s , cubic-bezier(0, 0, 0.2, 1) , 0s);
+.BF {
+    @include transition(0.5s, cubic-bezier(0, 0, 0.2, 1), 0s);
     position: relative;
     right: 0px;
 }
 
-.body_field{
+.body_field {
     right: 300px;
 }
 
-.service_sidebar{
-    @include transition(0.5s , cubic-bezier(0, 0, 0.2, 1) , 0s);
+.service_sidebar {
+    @include transition(0.5s, cubic-bezier(0, 0, 0.2, 1), 0s);
     width: 300px;
     height: 100vh;
     position: fixed;
@@ -445,7 +452,8 @@ $footer_height:400px;
     color: $white;
     text-align: right;
     direction: rtl;
-    #close_SSP{
+
+    #close_SSP {
         position: absolute;
         top: 20px;
         right: 20px;
@@ -453,22 +461,26 @@ $footer_height:400px;
         font-size: 1.5rem;
         cursor: pointer;
     }
-    .row{
+
+    .row {
         height: 100vh;
     }
-    ul{
+
+    ul {
         width: 100%;
         padding: 0;
         list-style-type: none;
-        li{
+
+        li {
             width: 100%;
-            &:last-child{
-                a{
+
+            &:last-child {
+                a {
                     border-bottom: none;
                 }
             }
 
-            a{
+            a {
                 border-bottom: 1px solid #3d3d3d;
                 width: 100%;
                 color: #c0c0c0;
@@ -476,7 +488,8 @@ $footer_height:400px;
                 padding: 20px 0px 20px 0px;
                 text-align: center;
                 cursor: pointer;
-                &:hover{
+
+                &:hover {
                     color: $white;
                 }
             }
@@ -484,6 +497,6 @@ $footer_height:400px;
     }
 }
 
-.show_SSP{
+.show_SSP {
     right: 0px;
 }

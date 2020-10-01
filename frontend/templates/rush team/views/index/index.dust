@@ -88,7 +88,7 @@
 <section class="RT_meet_section">
     <div class="container-flid">
         <div class="row">
-            <div class="col-4">
+            <div class="col-5">
                 <div class="see_RT_part">
                     <h2 class="wow fadeInDown" data-wow-delay="0.2s">دیدار با راش تیم</h2>
                     <h3 class="wow fadeInDown" data-wow-delay="0.6s"> طراحی تمیز وزیبا</h3>
@@ -96,8 +96,8 @@
                     <button class="btn wow fadeInDown"  data-wow-delay="1.2s">بیشتر بدانید ! <i class="fas fa-angle-left"></i></button>
                 </div>
             </div>
-            <div class="col-8">
-                <img class="see_RT_part_img" src="img/Home_8_img_1-1024x486.png" alt="">
+            <div class="col-7">
+                <img class="see_RT_part_img" src="img/Home_8_img_1-1024x486.jpg" alt="">
             </div>
         </div>
     </div>
@@ -113,68 +113,48 @@
             <div class="col-3 p-0">
                 <div class="WE_main_field">
                     <img src="img/WE1.png" alt="">
-                    <div class="WE_hover_field" id="WE_hover_field_1">
-                        <h3>وب سایت ملورین</h3>
-                        <p>
-                            طراحی سایت ، طراحی ui 
-                        </p>
-                        <a class="btn">
-                            <i class="fal fa-search"></i>
-                            <div>
-                                <i class="fal fa-search"></i>
-                            </div>
-                        </a>
+                    <div class="WE_hover_field">
+                        <div>
+                            <h3>فروشگاه ملورین</h3>
+                            <p>سایت فروشگاهی ملورین</p>
+                            <a href=""><i class="fal fa-search"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-3 p-0">
                 <div class="WE_main_field">
                     <img src="img/WE2.png" alt="">
-                    <div class="WE_hover_field" id="WE_hover_field_2">
-                        <h3>وب سایت ملورین</h3>
-                        <p>
-                            طراحی سایت ، طراحی ui 
-                        </p>
-                        <a class="btn">
-                            <i class="fal fa-search"></i>
-                            <div>
-                                <i class="fal fa-search"></i>
-                            </div>
-                        </a>
+                    <div class="WE_hover_field">
+                        <div>
+                            <h3>فروشگاه ملورین</h3>
+                            <p>سایت فروشگاهی ملورین</p>
+                            <a href=""><i class="fal fa-search"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-3 p-0">
                 <div class="WE_main_field">
                     <img src="img/WE3.png" alt="">
-                    <div class="WE_hover_field" id="WE_hover_field_3">
-                        <h3>وب سایت ملورین</h3>
-                        <p>
-                            طراحی سایت ، طراحی ui 
-                        </p>
-                        <a class="btn">
-                            <i class="fal fa-search"></i>
-                            <div>
-                                <i class="fal fa-search"></i>
-                            </div>
-                        </a>
+                    <div class="WE_hover_field">
+                        <div>
+                            <h3>فروشگاه ملورین</h3>
+                            <p>سایت فروشگاهی ملورین</p>
+                            <a href=""><i class="fal fa-search"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-3 p-0">
                 <div class="WE_main_field">
                     <img src="img/WE4.png" alt="">
-                    <div class="WE_hover_field" id="WE_hover_field_4">
-                        <h3>وب سایت ملورین</h3>
-                        <p>
-                            طراحی سایت ، طراحی ui 
-                        </p>
-                        <a class="btn">
-                            <i class="fal fa-search"></i>
-                            <div>
-                                <i class="fal fa-search"></i>
-                            </div>
-                        </a>
+                    <div class="WE_hover_field">
+                        <div>
+                            <h3>فروشگاه ملورین</h3>
+                            <p>سایت فروشگاهی ملورین</p>
+                            <a href=""><i class="fal fa-search"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -324,7 +304,7 @@
 </section>
 
 <section class="Consulting_part">
-    <div class="parallax-window" data-parallax="scroll" data-image-src="img/Consulting-pic.png">
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/test-1.jpg">
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-12">
