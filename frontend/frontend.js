@@ -108,8 +108,7 @@ frontend.use('/portfolio', portfolio);
 // Frontend 404 page
 frontend.use(async(req,res,next)=>{
 
-    res.status(404).render('errors/404');
-
+    res.render('errors/404');
 });
 
 // Exporting module
