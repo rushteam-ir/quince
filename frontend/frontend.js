@@ -108,7 +108,7 @@ frontend.use('/portfolio', portfolio);
 // Frontend 404 page
 frontend.use(async(req,res,next)=>{
 
-    res.status(404).render('404');
+    res.status(404).render('errors/404');
 
 });
 
